@@ -46,7 +46,7 @@ const PARSE_SCHEMA = {
         additionalProperties: false,
         required: ['name', 'strokes'],
         properties: {
-          name: { type: 'string' },
+          name: { type: 'string', description: 'Spelersnaam, of lege string als er geen naam genoemd is' },
           strokes: { type: 'integer' },
         },
       },
@@ -54,11 +54,20 @@ const PARSE_SCHEMA = {
   },
 };
 
-// Vangnet voor zinnen die de lokale herkenning niet snapt.
-export async function aiParseEntry(apiKey, text, { players, currentHole, pars }) {
+// Vangnet voor zinnen die de lokale herkenning niet zeker snapt.
+// texts: de varianten die de spraakherkenning gaf (de eerste is de waarschijnlijkste).
+export async function aiParseEntry(apiKey, texts, { players, currentHole, pars }) {
+  const variants = texts.map((t, i) => `${i + 1}. "${t}"`).join('\n');
   return askJson(apiKey, {
-    system: 'Je zet ingesproken golfscores (Nederlands, via spraakherkenning, kan fouten bevatten) om naar gestructureerde data. Gebruik exact de bekende spelersnamen als een naam erop lijkt. Golftermen reken je om met de par van de hole (birdie = par-1, bogey = par+1, dubbel bogey = par+2, enz.). Verzin geen scores die niet genoemd worden.',
-    prompt: `Bekende spelers: ${players.join(', ') || '(nog geen)'}\nHuidige hole (als er geen hole genoemd wordt): ${currentHole}\nPar per hole: ${pars.map((p, i) => `hole ${i + 1}: ${p}`).join(', ')}\n\nTekst: "${text}"`,
+    system: [
+      'Je zet ingesproken golfscores om naar gestructureerde data. De tekst komt uit Nederlandse spraakherkenning en bevat vaak fouten.',
+      'Bekende verhaspelingen: "hole" wordt vaak "hol", "hal", "hool", "hold" of "whole", en wordt soms aan het getal vastgeplakt ("holdrie" = hole 3). Zulke woorden zijn nooit een spelersnaam.',
+      'Namen: gebruik exact de bekende spelersnaam als een woord erop lijkt (bijv. "Rudi" of "roedie" = "Rudy"). Neem alleen een nieuwe naam op als die duidelijk als persoon genoemd wordt en op geen enkele bekende speler lijkt.',
+      'Wordt er een score genoemd zonder naam, geef dan name als lege string.',
+      'Golftermen reken je om met de par van de hole (birdie = par-1, bogey = par+1, dubbel bogey = par+2, enz.).',
+      'Je krijgt soms meerdere varianten van dezelfde zin; kies de interpretatie die het meest logisch is. Verzin geen scores die niet genoemd worden.',
+    ].join(' '),
+    prompt: `Bekende spelers: ${players.join(', ') || '(nog geen)'}\nHuidige hole (als er geen hole genoemd wordt): ${currentHole}\nPar per hole: ${pars.map((p, i) => `hole ${i + 1}: ${p}`).join(', ')}\n\nVarianten van wat er gezegd is:\n${variants}`,
     schema: PARSE_SCHEMA,
     effort: 'low',
     maxTokens: 2000,

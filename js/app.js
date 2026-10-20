@@ -1,4 +1,4 @@
-import { parseEntry } from './parser.js';
+import { pickBest, matchPlayer } from './parser.js';
 import { analysePlayer, handicapIndexFromDifferentials } from './handicap.js';
 
 // ---------- Opslag ----------
@@ -91,68 +91,134 @@ function toast(html, ms = 3500) {
 // ---------- Invoer verwerken ----------
 
 let lastUndo = null;
+// Vragen die nog beantwoord moeten worden: score zonder naam of onbekende naam.
+let pending = null;
 
-async function handleText(text) {
-  text = text.trim();
-  if (!text) return;
+function parseOpts() {
+  return { players: state.players.map((p) => p.name), currentHole: state.round.currentHole, parForHole: parOf };
+}
+
+// texts: één of meer varianten van wat er gezegd is (spraakherkenning geeft alternatieven).
+async function handleInput(texts) {
+  texts = texts.map((t) => t.trim()).filter(Boolean);
+  if (!texts.length) return;
   const names = state.players.map((p) => p.name);
-  let result = parseEntry(text, { players: names, currentHole: state.round.currentHole, parForHole: parOf });
+  const best = pickBest(texts, parseOpts());
+  const text = best.text;
+  let result = best.result;
   let viaAi = false;
+  let aiNote = '';
 
-  if (!result.scores.length && state.apiKey) {
+  // Niet zeker? Laat de AI meekijken (als die is ingesteld).
+  if (!result.certain && state.apiKey) {
     showFeedback('<div class="feedback info">🤖 AI kijkt mee…</div>');
     try {
       const { aiParseEntry, describeError } = await import('./ai.js');
       try {
-        const ai = await aiParseEntry(state.apiKey, text, {
+        const ai = await aiParseEntry(state.apiKey, texts, {
           players: names, currentHole: state.round.currentHole, pars: state.course.pars,
         });
-        result = {
-          hole: ai.hole ?? state.round.currentHole,
-          scores: ai.scores.map((s) => ({ ...s, isNew: !names.includes(s.name) })),
-        };
-        viaAi = true;
+        const scores = [];
+        const unknownNames = [];
+        let bareScore = null;
+        for (const s of ai.scores) {
+          const known = s.name ? matchPlayer(s.name, names) : null;
+          if (known) scores.push({ name: known, strokes: s.strokes });
+          else if (s.name) unknownNames.push({ name: s.name, strokes: s.strokes });
+          else if (names.length === 1) scores.push({ name: names[0], strokes: s.strokes });
+          else bareScore = s.strokes;
+        }
+        if (scores.length || unknownNames.length || bareScore != null) {
+          result = { hole: ai.hole ?? state.round.currentHole, scores, unknownNames, bareScore, leftovers: [], certain: !unknownNames.length && bareScore == null };
+          viaAi = true;
+        }
       } catch (err) {
-        showFeedback(`<div class="feedback error">${esc(describeError(err))}</div>`);
-        return;
+        aiNote = `<br><small>AI: ${esc(describeError(err))}</small>`;
       }
     } catch {
-      showFeedback('<div class="feedback error">AI niet bereikbaar (geen internet?).</div>');
-      return;
+      aiNote = '<br><small>AI niet bereikbaar (geen internet?).</small>';
     }
   }
 
-  if (!result.scores.length) {
-    showFeedback(`<div class="feedback error">Niet begrepen: “${esc(text)}”.<br>Probeer: “Hole 3, Rudy 5, Peter 4”.</div>`);
+  const nothing = !result.scores.length && !result.unknownNames.length && result.bareScore == null;
+  if (nothing) {
+    showFeedback(`<div class="feedback error">Niet begrepen: “${esc(text)}”.<br>Probeer: “Hole 3, Rudy 5, Peter 4”${state.players.length === 1 ? ' of “Hole 3, 5 slagen”' : ''}.${aiNote}</div>`);
     return;
   }
   if (!roundHoles().includes(result.hole)) {
-    showFeedback(`<div class="feedback error">Hole ${result.hole} hoort niet bij deze ronde. Pas de holes aan bij Instellingen.</div>`);
+    showFeedback(`<div class="feedback error">Hole ${result.hole} hoort niet bij deze ronde (“${esc(text)}”). Pas de holes aan bij Instellingen.</div>`);
     return;
   }
 
+  // Bekende spelers direct opslaan.
   const previous = result.scores.map((s) => ({ name: s.name, value: scoreOf(s.name, result.hole) }));
-  const added = [];
-  for (const s of result.scores) {
-    if (s.isNew && !state.players.some((p) => p.name === s.name)) {
-      state.players.push({ name: s.name, index: null, tee: 'geel' });
-      added.push(s.name);
-    }
-    setScore(s.name, result.hole, s.strokes);
-  }
+  for (const s of result.scores) setScore(s.name, result.hole, s.strokes);
   state.round.log.unshift({ time: new Date().toISOString(), hole: result.hole, text, viaAi, scores: result.scores.map(({ name, strokes }) => ({ name, strokes })) });
-  lastUndo = { hole: result.hole, previous, added, logId: state.round.log[0].time, prevHole: state.round.currentHole };
-
+  lastUndo = { hole: result.hole, previous, added: [], logId: state.round.log[0].time, prevHole: state.round.currentHole };
   state.round.currentHole = result.hole;
-  const everyoneDone = state.players.every((p) => scoreOf(p.name, result.hole) != null);
-  if (everyoneDone) advanceToOpenHole(result.hole);
+
+  // Twijfelgevallen vragen we na.
+  pending = { hole: result.hole, text, items: [] };
+  if (result.bareScore != null) pending.items.push({ name: null, strokes: result.bareScore });
+  for (const u of result.unknownNames) pending.items.push({ name: u.name, strokes: u.strokes });
+  if (!pending.items.length) pending = null;
+
+  if (!pending && result.certain) advanceIfHoleDone(result.hole);
   save();
   render();
 
   const summary = result.scores.map((s) => `<b>${esc(s.name)}</b> ${s.strokes}`).join(' · ');
-  showFeedback(`<div class="feedback ok">✅ Hole ${result.hole}: ${summary}${viaAi ? ' <span class="badge">AI</span>' : ''}
-    ${added.length ? `<br><small>Nieuwe speler: ${added.map(esc).join(', ')}</small>` : ''}
-    <button class="link" data-action="undo">Ongedaan maken</button></div>`);
+  const doubt = !result.certain && !pending && result.leftovers?.length
+    ? `<br><small>⚠️ Niet alles begrepen in “${esc(text)}”. Klopt dit?</small>` : '';
+  showFeedback(`${summary ? `<div class="feedback ok">✅ Hole ${result.hole}: ${summary}${viaAi ? ' <span class="badge">AI</span>' : ''}${doubt}${aiNote}
+    <button class="link" data-action="undo">Ongedaan maken</button></div>` : ''}<div id="pending"></div>`);
+  renderPending();
+}
+
+function renderPending() {
+  const el = $('#pending');
+  if (!el) return;
+  if (!pending) { el.innerHTML = ''; return; }
+  el.innerHTML = pending.items.map((item, k) => `<div class="feedback info">
+    ${item.name
+      ? `❓ “${esc(item.name)}” is geen speler. Score <b>${item.strokes}</b> op hole ${pending.hole} is voor:`
+      : `❓ Voor wie is <b>${item.strokes}</b> op hole ${pending.hole}?`}
+    <div class="choice-row">
+      ${state.players.map((p) => `<button data-action="assign" data-k="${k}" data-player="${esc(p.name)}">${esc(p.name)}</button>`).join('')}
+      ${item.name ? `<button data-action="assign" data-k="${k}" data-new="1">+ ${esc(item.name)} toevoegen</button>` : ''}
+      <button data-action="assign" data-k="${k}" data-skip="1">Negeren</button>
+    </div>
+  </div>`).join('');
+}
+
+function assignPending(btn) {
+  const k = Number(btn.dataset.k);
+  const item = pending?.items[k];
+  if (!item) return;
+  let name = btn.dataset.player ?? null;
+  if (btn.dataset.new) {
+    name = item.name;
+    if (!state.players.some((p) => p.name === name)) state.players.push({ name, index: null, tee: 'geel' });
+  }
+  if (name) {
+    setScore(name, pending.hole, item.strokes);
+    state.round.log[0]?.scores.push({ name, strokes: item.strokes });
+  }
+  pending.items.splice(k, 1);
+  const hole = pending.hole;
+  if (!pending.items.length) {
+    pending = null;
+    advanceIfHoleDone(hole);
+  }
+  lastUndo = null; // na een keuze geldt "ongedaan maken" niet meer voor de hele invoer
+  save();
+  render();
+  showFeedback(name ? `<div class="feedback ok">✅ Hole ${hole}: <b>${esc(name)}</b> ${item.strokes}</div><div id="pending"></div>` : '<div id="pending"></div>');
+  renderPending();
+}
+
+function advanceIfHoleDone(hole) {
+  if (state.players.every((p) => scoreOf(p.name, hole) != null)) advanceToOpenHole(hole);
 }
 
 function advanceToOpenHole(from) {
@@ -174,6 +240,7 @@ function undo() {
   state.round.log = state.round.log.filter((l) => l.time !== lastUndo.logId);
   state.round.currentHole = lastUndo.prevHole;
   lastUndo = null;
+  pending = null;
   save();
   render();
   showFeedback('<div class="feedback info">Ongedaan gemaakt.</div>');
@@ -184,6 +251,7 @@ function showFeedback(html) { $('#feedback').innerHTML = html; }
 // ---------- Spraak ----------
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const MAX_ALTERNATIVES = 5;
 let recognition = null;
 
 function toggleMic() {
@@ -198,8 +266,8 @@ function toggleMic() {
   recognition.lang = 'nl-NL';
   recognition.interimResults = true;
   recognition.continuous = false;
-  recognition.maxAlternatives = 1;
-  let finalText = '';
+  recognition.maxAlternatives = MAX_ALTERNATIVES;
+  let finals = []; // per stuk tekst: lijst met alternatieven
 
   const live = $('#live');
   recognition.onstart = () => {
@@ -209,12 +277,14 @@ function toggleMic() {
     live.textContent = '…';
   };
   recognition.onresult = (e) => {
+    finals = [];
     let interim = '';
-    for (let i = e.resultIndex; i < e.results.length; i++) {
-      if (e.results[i].isFinal) finalText += e.results[i][0].transcript;
-      else interim += e.results[i][0].transcript;
+    for (let i = 0; i < e.results.length; i++) {
+      const res = e.results[i];
+      if (res.isFinal) finals.push(Array.from(res, (alt) => alt.transcript));
+      else interim += res[0].transcript;
     }
-    live.textContent = finalText + interim;
+    live.textContent = finals.map((f) => f[0]).join(' ') + interim;
   };
   recognition.onerror = (e) => {
     if (e.error === 'not-allowed') showFeedback('<div class="feedback error">Geen toegang tot de microfoon. Sta dit toe in je browser.</div>');
@@ -225,7 +295,14 @@ function toggleMic() {
     $('#mic-label').textContent = 'Druk en spreek in';
     live.hidden = true;
     recognition = null;
-    if (finalText) handleText(finalText);
+    if (!finals.length) return;
+    // Variant k = alternatief k van elk stuk tekst (of de beste als er minder zijn).
+    const texts = [];
+    for (let k = 0; k < MAX_ALTERNATIVES; k++) {
+      if (!finals.some((f) => f[k])) break;
+      texts.push(finals.map((f) => f[k] ?? f[0]).join(' '));
+    }
+    handleInput(texts);
   };
   recognition.start();
 }
@@ -459,6 +536,7 @@ document.addEventListener('click', (e) => {
       break;
     }
     case 'undo': undo(); break;
+    case 'assign': assignPending(btn); break;
     case 'remove-player': {
       const p = state.players[Number(btn.dataset.i)];
       if (confirm(`${p.name} verwijderen?`)) {
@@ -472,6 +550,7 @@ document.addEventListener('click', (e) => {
       if (confirm('Nieuwe ronde starten? Scores die je niet hebt opgeslagen gaan verloren.')) {
         state.round = newRound($('#round-holes').value);
         lastUndo = null;
+        pending = null;
         showFeedback('');
         $('#ai-result').innerHTML = '';
         save(); render(); switchTab('ronde');
@@ -500,7 +579,7 @@ document.addEventListener('click', (e) => {
 $('#text-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const input = $('#text-input');
-  handleText(input.value);
+  handleInput([input.value]);
   input.value = '';
 });
 

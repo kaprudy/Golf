@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseEntry } from '../js/parser.js';
+import { parseEntry, pickBest } from '../js/parser.js';
 
 const players = ['Rudy', 'Peter'];
 const opts = { players, currentHole: 2, parForHole: (h) => (h === 4 ? 3 : 4) };
@@ -43,11 +43,51 @@ test('kleine spraakfouten in namen', () => {
   assert.deepEqual(map(r), { Rudy: 5, Peter: 4 });
 });
 
-test('nieuwe speler wordt herkend', () => {
+test('onbekende naam wordt niet als score opgeslagen maar apart teruggegeven', () => {
   const r = parseEntry('hole 1 Rudy 5 Anna 6', opts);
-  const anna = r.scores.find((s) => s.name === 'Anna');
-  assert.ok(anna?.isNew);
-  assert.equal(anna.strokes, 6);
+  assert.deepEqual(map(r), { Rudy: 5 });
+  assert.deepEqual(r.unknownNames, [{ name: 'Anna', strokes: 6 }]);
+  assert.equal(r.certain, false);
+});
+
+test('spraakfouten voor hole: Hal, hol, holdrie', () => {
+  const a = parseEntry('Hal 1 Rudi 7', opts);
+  assert.equal(a.hole, 1);
+  assert.deepEqual(map(a), { Rudy: 7 });
+  assert.deepEqual(a.unknownNames, []);
+  assert.ok(a.certain);
+  const b = parseEntry('holdrie Rudi 6', opts);
+  assert.equal(b.hole, 3);
+  assert.deepEqual(map(b), { Rudy: 6 });
+  const c = parseEntry('hol 2 Rudy 3', opts);
+  assert.equal(c.hole, 2);
+  assert.equal(parseEntry('hole4 Peter 5', opts).hole, 4);
+});
+
+test('alleen spelen: score zonder naam', () => {
+  const solo = { ...opts, players: ['Rudy'] };
+  const r = parseEntry('hol 1, 5 slagen', solo);
+  assert.equal(r.hole, 1);
+  assert.deepEqual(map(r), { Rudy: 5 });
+  assert.ok(r.certain);
+  assert.deepEqual(map(parseEntry('hole 4 birdie', solo)), { Rudy: 2 });
+});
+
+test('score zonder naam bij meerdere spelers: vragen voor wie', () => {
+  const r = parseEntry('hol 1, 5 slagen', opts);
+  assert.deepEqual(r.scores, []);
+  assert.equal(r.bareScore, 5);
+});
+
+test('onbegrepen woorden maken het onzeker', () => {
+  const r = parseEntry('Rudy 5 en de bal lag in het water', opts);
+  assert.deepEqual(map(r), { Rudy: 5 });
+  assert.equal(r.certain, false);
+});
+
+test('beste spraakalternatief kiezen', () => {
+  const best = pickBest(['Hal 1 roede 7', 'hole 1 Rudy 7'], opts);
+  assert.equal(best.text, 'hole 1 Rudy 7');
 });
 
 test('5 slagen voor Rudy', () => {

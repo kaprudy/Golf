@@ -2,10 +2,12 @@
 //   "Hole 4, Rudy 5 slagen, Peter 3 slagen"
 //   "Rudy vijf en Peter drie op de vierde hole"
 //   "Rudy par, Peter bogey"
-// Werkt zonder internet; AI (ai.js) is alleen een vangnet.
+// Spraakherkenning maakt van "hole" vaak "hol", "hal" of plakt het vast aan het getal
+// ("holdrie"); daar houdt de parser rekening mee. Werkt zonder internet; AI (ai.js) is
+// een vangnet voor zinnen die hier niet zeker herkend worden.
 
 const NUMBER_WORDS = {
-  nul: 0, een: 1, eén: 1, één: 1, twee: 2, drie: 3, vier: 4, vijf: 5, zes: 6, zeven: 7,
+  nul: 0, een: 1, twee: 2, drie: 3, vier: 4, vijf: 5, zes: 6, zeven: 7,
   acht: 8, negen: 9, tien: 10, elf: 11, twaalf: 12, dertien: 13, veertien: 14,
   vijftien: 15, zestien: 16, zeventien: 17, achttien: 18,
 };
@@ -18,39 +20,61 @@ const ORDINAL_WORDS = {
 
 // Golftermen als verschil ten opzichte van par.
 const TERMS = {
-  albatros: -3, albatross: -3, eagle: -2, birdie: -1, berdie: -1, par: 0,
-  bogey: 1, bogie: 1, bogy: 1,
+  albatros: -3, albatross: -3, eagle: -2, birdie: -1, berdie: -1, burdie: -1, par: 0,
+  bogey: 1, bogie: 1, bogy: 1, bogi: 1, boogie: 1,
 };
 const TERM_PREFIX = { dubbel: 1, dubbele: 1, double: 1, triple: 2, tripel: 2, driedubbele: 2 };
 
-const HOLE_WORDS = new Set(['hole', 'holes', 'hool', 'hol', 'hoel', 'holl']);
+// Zo verstaat spraakherkenning het woord "hole" regelmatig.
+const HOLE_WORDS = new Set([
+  'hole', 'holes', 'hool', 'hol', 'holl', 'hoel', 'hoal', 'hal', 'hall', 'hold', 'holt',
+  'whole', 'hoolt', 'holle',
+]);
+const HOLE_PREFIXES = [...HOLE_WORDS].sort((a, b) => b.length - a.length);
+
 const FILLER = new Set([
   'heeft', 'had', 'deed', 'doet', 'speelde', 'scoorde', 'met', 'in', 'is', 'was', 'slagen',
   'slag', 'slagjes', 'en', 'de', 'het', 'op', 'voor', 'van', 'nummer', 'score', 'gescoord',
   'gemaakt', 'maakte', 'totaal', 'dan', 'ook', 'nog', 'toen', 'ik', 'wij', 'we', 'zij', 'hij',
-  'die', 'daar', 'hier', 'ok', 'oke', 'oké', 'dus', 'eh', 'uh', 'um', 'zo', 'erin', 'gehaald',
+  'die', 'daar', 'hier', 'ok', 'oke', 'dus', 'eh', 'uh', 'um', 'zo', 'erin', 'gehaald', 'er',
+  'a', 'the', 'and', 'en', 'hole', 'stuks',
 ]);
 const NOT_A_NAME = new Set([...FILLER, ...HOLE_WORDS, ...Object.keys(TERMS),
   ...Object.keys(TERM_PREFIX), ...Object.keys(NUMBER_WORDS), ...Object.keys(ORDINAL_WORDS),
-  'in', 'one', 'putts', 'putt', 'par3', 'par4', 'par5', 'volgende', 'vorige', 'laatste']);
+  'one', 'putts', 'putt', 'volgende', 'vorige', 'laatste', 'over', 'onder']);
+
+const isNumberish = (s) => /^\d+e?$/.test(s) || s in NUMBER_WORDS || s in ORDINAL_WORDS;
+
+// "holdrie" -> ["hol", "drie"], "hole4" -> ["hole", "4"]
+function splitGlued(tok) {
+  if (HOLE_WORDS.has(tok)) return [tok];
+  for (const p of HOLE_PREFIXES) {
+    if (tok.startsWith(p) && isNumberish(tok.slice(p.length))) return [p, tok.slice(p.length)];
+  }
+  return [tok];
+}
 
 export function normalize(text) {
   return text
     .toLowerCase()
     .normalize('NFD').replace(/[̀-ͯ]/g, '')
     .replace(/(\d+)\s*(e|de|ste)\b/g, '$1e') // "4 de" -> "4e"
+    .replace(/(\d+)([a-z])/g, '$1 $2') // "5slagen" -> "5 slagen"
     .replace(/[^a-z0-9\s]/g, ' ')
     .split(/\s+/)
-    .filter(Boolean);
+    .filter(Boolean)
+    .flatMap(splitGlued);
 }
 
 function toNumber(tok) {
+  if (tok == null) return null;
   if (/^\d+$/.test(tok)) return Number(tok);
   if (tok in NUMBER_WORDS) return NUMBER_WORDS[tok];
   return null;
 }
 
 function toOrdinal(tok) {
+  if (tok == null) return null;
   const m = tok.match(/^(\d+)e$/);
   if (m) return Number(m[1]);
   return ORDINAL_WORDS[tok] ?? null;
@@ -58,7 +82,7 @@ function toOrdinal(tok) {
 
 const simplify = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
 
-// Kleine Levenshtein-afstand, zodat "ruddy" of "pieter" nog bij "Rudy"/"Peter" past.
+// Kleine Levenshtein-afstand, zodat "Rudi" of "Pieter" nog bij "Rudy"/"Peter" past.
 function distance(a, b) {
   const dp = Array.from({ length: a.length + 1 }, (_, i) => [i, ...new Array(b.length).fill(0)]);
   for (let j = 1; j <= b.length; j++) dp[0][j] = j;
@@ -73,7 +97,7 @@ function distance(a, b) {
 
 export function matchPlayer(token, players) {
   const t = simplify(token);
-  if (t.length < 2) return null;
+  if (t.length < 2 || HOLE_WORDS.has(t)) return null;
   let best = null;
   for (const name of players) {
     const n = simplify(name);
@@ -96,10 +120,10 @@ function readScore(tokens, i) {
     if (tok === 'een' && tokens[j + 1] && (tokens[j + 1] in TERMS || tokens[j + 1] in TERM_PREFIX)) {
       j++; continue;
     }
-    if (tok === 'hole' && tokens[j + 1] === 'in' && tokens[j + 2] === 'one') {
+    if (HOLE_WORDS.has(tok) && tokens[j + 1] === 'in' && tokens[j + 2] === 'one') {
       return { value: 1, kind: 'strokes', next: j + 3 };
     }
-    if (tok in TERM_PREFIX && tokens[j + 1] && /^bog/.test(tokens[j + 1])) {
+    if (tok in TERM_PREFIX && tokens[j + 1] && /^bog|^boog/.test(tokens[j + 1])) {
       return { value: 1 + TERM_PREFIX[tok], kind: 'term', next: j + 2 };
     }
     if (tok in TERMS) return { value: TERMS[tok], kind: 'term', next: j + 1 };
@@ -118,22 +142,23 @@ function readScore(tokens, i) {
 
 // Zoekt het holenummer en haalt die woorden uit de tokens.
 function extractHole(tokens) {
+  let holeWordWithoutNumber = false;
   for (let i = 0; i < tokens.length; i++) {
-    if (HOLE_WORDS.has(tokens[i])) {
-      if (tokens[i + 1] === 'in' && tokens[i + 2] === 'one') continue;
-      let k = i + 1;
-      if (tokens[k] === 'nummer') k++;
-      const n = toNumber(tokens[k]) ?? toOrdinal(tokens[k] ?? '');
-      if (n != null && n >= 1 && n <= 18) {
-        return { hole: n, tokens: [...tokens.slice(0, i), ...tokens.slice(k + 1)] };
-      }
-      const prev = toOrdinal(tokens[i - 1] ?? '') ?? (tokens[i - 2] === 'de' ? null : null);
-      if (prev != null && prev >= 1 && prev <= 18) {
-        return { hole: prev, tokens: [...tokens.slice(0, i - 1), ...tokens.slice(i + 1)] };
-      }
+    if (!HOLE_WORDS.has(tokens[i])) continue;
+    if (tokens[i + 1] === 'in' && tokens[i + 2] === 'one') continue;
+    let k = i + 1;
+    if (tokens[k] === 'nummer') k++;
+    const n = toNumber(tokens[k]) ?? toOrdinal(tokens[k]);
+    if (n != null && n >= 1 && n <= 18) {
+      return { hole: n, holeWordWithoutNumber: false, tokens: [...tokens.slice(0, i), ...tokens.slice(k + 1)] };
     }
+    const prev = toOrdinal(tokens[i - 1]);
+    if (prev != null && prev >= 1 && prev <= 18) {
+      return { hole: prev, holeWordWithoutNumber: false, tokens: [...tokens.slice(0, i - 1), ...tokens.slice(i + 1)] };
+    }
+    holeWordWithoutNumber = true;
   }
-  return { hole: null, tokens };
+  return { hole: null, holeWordWithoutNumber, tokens };
 }
 
 /**
@@ -142,14 +167,24 @@ function extractHole(tokens) {
  * @param {string[]} opts.players bekende spelers
  * @param {number} opts.currentHole hole die geldt als er geen hole genoemd wordt
  * @param {(hole:number)=>number} opts.parForHole par van een hole (voor "birdie" e.d.)
- * @returns {{hole:number, holeMentioned:boolean, scores:{name:string, strokes:number, isNew:boolean}[]}}
+ * @returns {{
+ *   hole:number, holeMentioned:boolean,
+ *   scores:{name:string, strokes:number}[],        // bekende spelers
+ *   bareScore:number|null,                         // score zonder naam (meerdere spelers)
+ *   unknownNames:{name:string, strokes:number}[],  // onbekende naam + score: eerst bevestigen
+ *   leftovers:string[],                            // woorden die niet begrepen zijn
+ *   certain:boolean                                // veilig om direct op te slaan
+ * }}
  */
 export function parseEntry(text, { players = [], currentHole = 1, parForHole = () => 4 } = {}) {
-  const { hole: mentioned, tokens } = extractHole(normalize(text));
+  const { hole: mentioned, holeWordWithoutNumber, tokens } = extractHole(normalize(text));
   const hole = mentioned ?? currentHole;
   const par = parForHole(hole);
   const scores = new Map();
+  const unknown = new Map();
+  const used = new Set();
   const toStrokes = (s) => (s.kind === 'term' ? par + s.value : s.value);
+  const valid = (n) => n >= 1 && n <= 20;
 
   for (let i = 0; i < tokens.length; i++) {
     const tok = tokens[i];
@@ -159,26 +194,68 @@ export function parseEntry(text, { players = [], currentHole = 1, parForHole = (
 
     // Patroon 1: "naam ... score"
     const s = readScore(tokens, i + 1);
-    if (s) {
-      const strokes = toStrokes(s);
-      if (strokes >= 1 && strokes <= 20) {
-        const name = known ?? candidate[0].toUpperCase() + candidate.slice(1);
-        scores.set(name, { name, strokes, isNew: !known });
-        i = s.next - 1;
-        continue;
+    if (s && valid(toStrokes(s))) {
+      if (known) scores.set(known, { name: known, strokes: toStrokes(s) });
+      else {
+        const name = candidate[0].toUpperCase() + candidate.slice(1);
+        unknown.set(name, { name, strokes: toStrokes(s) });
       }
+      for (let k = i; k < s.next; k++) used.add(k);
+      i = s.next - 1;
+      continue;
     }
     // Patroon 2: "5 slagen voor Rudy" (alleen bekende spelers)
     if (known && tokens[i - 1] === 'voor') {
       let k = i - 2;
       while (k >= 0 && (tokens[k] === 'slagen' || tokens[k] === 'slag')) k--;
       const back = k >= 0 ? readScore(tokens, k) : null;
-      if (back && !scores.has(known)) {
-        const strokes = toStrokes(back);
-        if (strokes >= 1 && strokes <= 20) scores.set(known, { name: known, strokes, isNew: false });
+      if (back && !scores.has(known) && valid(toStrokes(back))) {
+        scores.set(known, { name: known, strokes: toStrokes(back) });
+        for (let m = k; m <= i; m++) used.add(m);
       }
     }
   }
 
-  return { hole, holeMentioned: mentioned != null, scores: [...scores.values()] };
+  // Geen naam genoemd ("hol 1, 5 slagen"): losse score. Bij één speler is die van hem/haar.
+  let bareScore = null;
+  if (!scores.size && !unknown.size) {
+    for (let i = 0; i < tokens.length; i++) {
+      const s = (toNumber(tokens[i]) != null || tokens[i] in TERMS || tokens[i] in TERM_PREFIX || tokens[i] === 'een')
+        ? readScore(tokens, i) : null;
+      if (s && valid(toStrokes(s))) {
+        bareScore = toStrokes(s);
+        for (let k = i; k < s.next; k++) used.add(k);
+        break;
+      }
+    }
+    if (bareScore != null && players.length === 1) {
+      scores.set(players[0], { name: players[0], strokes: bareScore });
+      bareScore = null;
+    }
+  }
+
+  const leftovers = tokens.filter((t, i) => !used.has(i) && !FILLER.has(t));
+  const certain = scores.size > 0 && unknown.size === 0 && leftovers.length === 0 && !holeWordWithoutNumber;
+
+  return {
+    hole,
+    holeMentioned: mentioned != null,
+    scores: [...scores.values()],
+    bareScore, // score zonder naam terwijl er meerdere spelers zijn: vragen voor wie
+    unknownNames: [...unknown.values()],
+    leftovers,
+    certain,
+  };
+}
+
+// Kiest uit meerdere spraakalternatieven de best herkende zin.
+export function pickBest(texts, opts) {
+  let best = null;
+  for (const text of texts) {
+    const r = parseEntry(text, opts);
+    const score = r.scores.length * 10 + (r.bareScore != null ? 4 : 0) + (r.holeMentioned ? 3 : 0) + (r.certain ? 5 : 0)
+      - r.unknownNames.length * 6 - r.leftovers.length * 2;
+    if (!best || score > best.score) best = { text, result: r, score };
+  }
+  return best;
 }

@@ -16,7 +16,13 @@ handicapberekening** volgens het World Handicap System (WHS) dat de NGF gebruikt
   - `Rudy par, Peter bogey` / `Rudy een birdie` / `Peter dubbel bogey` / `hole in one`
   - `5 slagen voor Rudy`
   - Zonder holenummer geldt de huidige hole; als iedereen een score heeft gaat de app door naar de volgende hole.
-  - Kleine spraakfouten in namen („Ruddy”, „Pieter”) worden opgevangen. Een nieuwe naam wordt automatisch als speler toegevoegd.
+  - Speel je alleen, dan is `Hol 1, 5 slagen` genoeg: een score zonder naam is voor de enige speler.
+    Met meerdere spelers vraagt de app voor wie de score is.
+  - Spraakfouten worden opgevangen: „Rudi” = Rudy, en „hal 1”, „hol 2” of „holdrie” = hole 1, 2, 3.
+    De app vergelijkt meerdere varianten van wat de spraakherkenning hoorde en kiest de beste.
+  - Een onbekende naam wordt nooit zomaar een nieuwe speler: de app vraagt eerst of het een
+    bestaande speler is, een nieuwe speler, of genegeerd moet worden.
+  - Twijfelt de app en heb je een API-sleutel ingesteld, dan kijkt de AI mee.
 - **Ongedaan maken** direct na elke invoer, plus **+/−-knoppen** per speler.
 - **Scorekaart** met kleuren (birdie, bogey, …) die je met de hand kunt aanpassen.
 - **Analyse** per speler: bruto, tegen par, Stableford, verdeling birdies/pars/bogeys, beste en lastigste hole,

@@ -161,3 +161,5 @@ details summary { cursor: pointer; color: var(--blue); }
   position: fixed; left: 16px; right: 16px; bottom: calc(84px + env(safe-area-inset-bottom));
   background: #222; color: #fff; padding: 12px 14px; border-radius: 10px; text-align: center; z-index: 10;
 }
+.choice-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.choice-row button { flex: 1 1 auto; }
