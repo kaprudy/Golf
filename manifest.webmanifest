@@ -1,0 +1,14 @@
+{
+  "name": "Golfscore Ommen",
+  "short_name": "Golfscore",
+  "description": "Spraakgestuurde golfscorekaart met handicapberekening",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f7f4",
+  "theme_color": "#1f6b3a",
+  "lang": "nl",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

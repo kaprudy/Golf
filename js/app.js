@@ -1,0 +1,564 @@
+import { parseEntry } from './parser.js';
+import { analysePlayer, handicapIndexFromDifferentials } from './handicap.js';
+
+// ---------- Opslag ----------
+
+const STORAGE_KEY = 'golfscore-v1';
+
+// Hooge Graven (Ommen), par 72. Ratings volgens openbare baangegevens; controleer ze
+// op de scorekaart van de club. Par en stroke index per hole vul je zelf in.
+const DEFAULT_COURSE = {
+  name: 'Hooge Graven, Ommen',
+  pars: Array(18).fill(4),
+  si: Array.from({ length: 18 }, (_, i) => i + 1),
+  confirmed: false,
+  tees: [
+    { id: 'geel', name: 'Geel (heren)', rating: 71.7, slope: 129, rating9: null, slope9: null },
+    { id: 'wit', name: 'Wit (heren)', rating: 72.9, slope: 132, rating9: null, slope9: null },
+    { id: 'rood', name: 'Rood (dames)', rating: 72.4, slope: 124, rating9: null, slope9: null },
+    { id: 'blauw', name: 'Blauw (dames)', rating: 74.5, slope: 127, rating9: null, slope9: null },
+  ],
+};
+
+function newRound(holesChoice = 'front') {
+  return { id: Date.now(), date: new Date().toISOString(), holesChoice, currentHole: holesChoice === 'back' ? 10 : 1, scores: {}, log: [] };
+}
+
+function load() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    if (saved) return saved;
+  } catch { /* lege of kapotte opslag: opnieuw beginnen */ }
+  return {
+    players: [{ name: 'Rudy', index: null, tee: 'geel' }, { name: 'Peter', index: null, tee: 'geel' }],
+    course: structuredClone(DEFAULT_COURSE),
+    round: newRound(),
+    history: [],
+    apiKey: '',
+  };
+}
+
+let state = load();
+const save = () => localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+
+// ---------- Hulpfuncties ----------
+
+const $ = (sel) => document.querySelector(sel);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const round1 = (n) => Math.round(n * 10) / 10;
+const fmt = (n) => (n == null ? '–' : String(n).replace('.', ','));
+const fmt1 = (n) => (n == null ? '–' : n.toFixed(1).replace('.', ','));
+const signed = (n) => (n > 0 ? `+${n}` : n === 0 ? 'E' : String(n));
+
+function roundHoles(choice = state.round.holesChoice) {
+  if (choice === 'back') return Array.from({ length: 9 }, (_, i) => i + 10);
+  if (choice === 'all') return Array.from({ length: 18 }, (_, i) => i + 1);
+  return Array.from({ length: 9 }, (_, i) => i + 1);
+}
+
+const parOf = (hole) => state.course.pars[hole - 1];
+const scoreOf = (name, hole) => state.round.scores[name]?.[hole] ?? null;
+
+function setScore(name, hole, strokes) {
+  state.round.scores[name] ??= {};
+  if (strokes == null) delete state.round.scores[name][hole];
+  else state.round.scores[name][hole] = strokes;
+}
+
+function courseForPlayer(player) {
+  const holes = roundHoles();
+  const tee = state.course.tees.find((t) => t.id === player.tee) ?? state.course.tees[0];
+  const nine = holes.length === 9;
+  return {
+    name: state.course.name,
+    holes: holes.length,
+    pars: holes.map(parOf),
+    strokeIndexes: holes.map((h) => state.course.si[h - 1]),
+    rating: nine ? (tee.rating9 ?? round1(tee.rating / 2)) : tee.rating,
+    slope: nine ? (tee.slope9 ?? tee.slope) : tee.slope,
+    teeName: tee.name,
+  };
+}
+
+function toast(html, ms = 3500) {
+  const el = $('#toast');
+  el.innerHTML = html;
+  el.hidden = false;
+  clearTimeout(toast.timer);
+  toast.timer = setTimeout(() => { el.hidden = true; }, ms);
+}
+
+// ---------- Invoer verwerken ----------
+
+let lastUndo = null;
+
+async function handleText(text) {
+  text = text.trim();
+  if (!text) return;
+  const names = state.players.map((p) => p.name);
+  let result = parseEntry(text, { players: names, currentHole: state.round.currentHole, parForHole: parOf });
+  let viaAi = false;
+
+  if (!result.scores.length && state.apiKey) {
+    showFeedback('<div class="feedback info">🤖 AI kijkt mee…</div>');
+    try {
+      const { aiParseEntry, describeError } = await import('./ai.js');
+      try {
+        const ai = await aiParseEntry(state.apiKey, text, {
+          players: names, currentHole: state.round.currentHole, pars: state.course.pars,
+        });
+        result = {
+          hole: ai.hole ?? state.round.currentHole,
+          scores: ai.scores.map((s) => ({ ...s, isNew: !names.includes(s.name) })),
+        };
+        viaAi = true;
+      } catch (err) {
+        showFeedback(`<div class="feedback error">${esc(describeError(err))}</div>`);
+        return;
+      }
+    } catch {
+      showFeedback('<div class="feedback error">AI niet bereikbaar (geen internet?).</div>');
+      return;
+    }
+  }
+
+  if (!result.scores.length) {
+    showFeedback(`<div class="feedback error">Niet begrepen: “${esc(text)}”.<br>Probeer: “Hole 3, Rudy 5, Peter 4”.</div>`);
+    return;
+  }
+  if (!roundHoles().includes(result.hole)) {
+    showFeedback(`<div class="feedback error">Hole ${result.hole} hoort niet bij deze ronde. Pas de holes aan bij Instellingen.</div>`);
+    return;
+  }
+
+  const previous = result.scores.map((s) => ({ name: s.name, value: scoreOf(s.name, result.hole) }));
+  const added = [];
+  for (const s of result.scores) {
+    if (s.isNew && !state.players.some((p) => p.name === s.name)) {
+      state.players.push({ name: s.name, index: null, tee: 'geel' });
+      added.push(s.name);
+    }
+    setScore(s.name, result.hole, s.strokes);
+  }
+  state.round.log.unshift({ time: new Date().toISOString(), hole: result.hole, text, viaAi, scores: result.scores.map(({ name, strokes }) => ({ name, strokes })) });
+  lastUndo = { hole: result.hole, previous, added, logId: state.round.log[0].time, prevHole: state.round.currentHole };
+
+  state.round.currentHole = result.hole;
+  const everyoneDone = state.players.every((p) => scoreOf(p.name, result.hole) != null);
+  if (everyoneDone) advanceToOpenHole(result.hole);
+  save();
+  render();
+
+  const summary = result.scores.map((s) => `<b>${esc(s.name)}</b> ${s.strokes}`).join(' · ');
+  showFeedback(`<div class="feedback ok">✅ Hole ${result.hole}: ${summary}${viaAi ? ' <span class="badge">AI</span>' : ''}
+    ${added.length ? `<br><small>Nieuwe speler: ${added.map(esc).join(', ')}</small>` : ''}
+    <button class="link" data-action="undo">Ongedaan maken</button></div>`);
+}
+
+function advanceToOpenHole(from) {
+  const holes = roundHoles();
+  const start = holes.indexOf(from);
+  for (let k = 1; k <= holes.length; k++) {
+    const h = holes[(start + k) % holes.length];
+    if (state.players.some((p) => scoreOf(p.name, h) == null)) {
+      state.round.currentHole = h;
+      return;
+    }
+  }
+}
+
+function undo() {
+  if (!lastUndo) return;
+  for (const p of lastUndo.previous) setScore(p.name, lastUndo.hole, p.value);
+  state.players = state.players.filter((p) => !lastUndo.added.includes(p.name));
+  state.round.log = state.round.log.filter((l) => l.time !== lastUndo.logId);
+  state.round.currentHole = lastUndo.prevHole;
+  lastUndo = null;
+  save();
+  render();
+  showFeedback('<div class="feedback info">Ongedaan gemaakt.</div>');
+}
+
+function showFeedback(html) { $('#feedback').innerHTML = html; }
+
+// ---------- Spraak ----------
+
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+let recognition = null;
+
+function toggleMic() {
+  if (!SpeechRecognition) {
+    showFeedback('<div class="feedback error">Spraakherkenning werkt niet in deze browser. Gebruik Chrome (Android) of Safari (iPhone), of typ de scores.</div>');
+    $('#text-input').focus();
+    return;
+  }
+  if (recognition) { recognition.stop(); return; }
+
+  recognition = new SpeechRecognition();
+  recognition.lang = 'nl-NL';
+  recognition.interimResults = true;
+  recognition.continuous = false;
+  recognition.maxAlternatives = 1;
+  let finalText = '';
+
+  const live = $('#live');
+  recognition.onstart = () => {
+    $('#mic').classList.add('listening');
+    $('#mic-label').textContent = 'Luistert… (tik om te stoppen)';
+    live.hidden = false;
+    live.textContent = '…';
+  };
+  recognition.onresult = (e) => {
+    let interim = '';
+    for (let i = e.resultIndex; i < e.results.length; i++) {
+      if (e.results[i].isFinal) finalText += e.results[i][0].transcript;
+      else interim += e.results[i][0].transcript;
+    }
+    live.textContent = finalText + interim;
+  };
+  recognition.onerror = (e) => {
+    if (e.error === 'not-allowed') showFeedback('<div class="feedback error">Geen toegang tot de microfoon. Sta dit toe in je browser.</div>');
+    else if (e.error !== 'no-speech' && e.error !== 'aborted') showFeedback(`<div class="feedback error">Spraakfout: ${esc(e.error)}</div>`);
+  };
+  recognition.onend = () => {
+    $('#mic').classList.remove('listening');
+    $('#mic-label').textContent = 'Druk en spreek in';
+    live.hidden = true;
+    recognition = null;
+    if (finalText) handleText(finalText);
+  };
+  recognition.start();
+}
+
+// ---------- Weergave ----------
+
+function render() {
+  const holes = roundHoles();
+  if (!holes.includes(state.round.currentHole)) state.round.currentHole = holes[0];
+  const h = state.round.currentHole;
+  $('#course-label').textContent = `${state.course.name} · ${holes.length === 9 ? (holes[0] === 1 ? 'holes 1–9' : 'holes 10–18') : '18 holes'}`;
+  $('#hole-number').textContent = h;
+  $('#hole-number-2').textContent = h;
+  $('#hole-meta').textContent = `Par ${parOf(h)} · SI ${state.course.si[h - 1]}`;
+  renderQuickEntry();
+  renderLog();
+  renderScorecard();
+  renderAnalysis();
+  renderSettings();
+}
+
+function renderQuickEntry() {
+  const h = state.round.currentHole;
+  $('#quick-entry').innerHTML = state.players.map((p, i) => {
+    const s = scoreOf(p.name, h);
+    const diff = s == null ? '' : `<span class="diff d${Math.max(-2, Math.min(3, s - parOf(h)))}">${signed(s - parOf(h))}</span>`;
+    return `<div class="qe-row">
+      <span class="qe-name">${esc(p.name)}</span>
+      <button data-action="minus" data-i="${i}" aria-label="Min">−</button>
+      <span class="qe-score">${s ?? '·'}</span>
+      <button data-action="plus" data-i="${i}" aria-label="Plus">+</button>
+      ${diff}
+    </div>`;
+  }).join('') || '<p class="muted">Voeg spelers toe bij Instellingen, of noem gewoon een naam.</p>';
+}
+
+function renderLog() {
+  $('#log').innerHTML = state.round.log.slice(0, 20).map((l) => `<li>
+    <span class="muted small">${new Date(l.time).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })} · hole ${l.hole}${l.viaAi ? ' · AI' : ''}</span><br>
+    “${esc(l.text)}” → ${l.scores.map((s) => `${esc(s.name)} ${s.strokes}`).join(', ')}
+  </li>`).join('') || '<li class="muted">Nog niets ingesproken.</li>';
+}
+
+function renderScorecard() {
+  const holes = roundHoles();
+  const head = `<tr><th>Hole</th><th>Par</th>${state.players.map((p) => `<th>${esc(p.name)}</th>`).join('')}</tr>`;
+  const rows = holes.map((h) => `<tr class="${h === state.round.currentHole ? 'current' : ''}">
+    <td>${h}</td><td>${parOf(h)}</td>
+    ${state.players.map((p) => {
+      const s = scoreOf(p.name, h);
+      const cls = s == null ? '' : `d${Math.max(-2, Math.min(3, s - parOf(h)))}`;
+      return `<td><input class="cell ${cls}" type="number" inputmode="numeric" min="1" max="20" value="${s ?? ''}" data-name="${esc(p.name)}" data-hole="${h}"></td>`;
+    }).join('')}
+  </tr>`).join('');
+  const parTotal = holes.reduce((s, h) => s + parOf(h), 0);
+  const totals = `<tr class="total"><td>Totaal</td><td>${parTotal}</td>${state.players.map((p) => {
+    const played = holes.filter((h) => scoreOf(p.name, h) != null);
+    const gross = played.reduce((s, h) => s + scoreOf(p.name, h), 0);
+    const toPar = gross - played.reduce((s, h) => s + parOf(h), 0);
+    return `<td>${played.length ? `${gross}<br><small>${signed(toPar)}</small>` : '–'}</td>`;
+  }).join('')}</tr>`;
+  $('#scorecard').innerHTML = head + rows + totals;
+}
+
+function computeResults() {
+  return state.players.map((p) => {
+    const course = courseForPlayer(p);
+    const holes = roundHoles();
+    const scores = holes.map((h) => scoreOf(p.name, h));
+    const res = analysePlayer(course, p, scores);
+    const previous = state.history.flatMap((r) => r.results.filter((x) => x.name === p.name).map((x) => x.differential18));
+    const allDiffs = [...previous, res.differential18];
+    return {
+      ...res,
+      scores,
+      holeNumbers: holes,
+      teeName: course.teeName,
+      rating: course.rating,
+      slope: course.slope,
+      roundsCounted: allDiffs.length,
+      newIndex: handicapIndexFromDifferentials(allDiffs),
+    };
+  }).filter((r) => r.holesPlayed > 0);
+}
+
+function renderAnalysis() {
+  const results = computeResults();
+  if (!results.length) {
+    $('#analysis').innerHTML = '<p class="muted">Nog geen scores. Speel eerst een paar holes 🙂</p>';
+    return;
+  }
+  const holesTotal = roundHoles().length;
+  const best = [...results].sort((a, b) => (a.stableford != null && b.stableford != null ? b.stableford - a.stableford : a.toPar - b.toPar))[0];
+  $('#analysis').innerHTML = `<p class="muted small">Berekend volgens het World Handicap System. Ontbrekende holes tellen als netto par.</p>` +
+    results.map((r) => {
+      const t = r.tally;
+      const bestHole = r.holeNumbers.map((h, i) => ({ h, d: r.scores[i] == null ? null : r.scores[i] - parOf(h) }))
+        .filter((x) => x.d != null).sort((a, b) => a.d - b.d);
+      return `<div class="result ${r === best && results.length > 1 ? 'winner' : ''}">
+        <h3>${esc(r.name)} ${r === best && results.length > 1 ? '🏆' : ''}</h3>
+        <div class="stats">
+          <div><span>Bruto</span><b>${r.gross}</b><small>${signed(r.toPar)} (${r.holesPlayed}/${holesTotal} holes)</small></div>
+          <div><span>Stableford</span><b>${r.stableford ?? '–'}</b><small>${r.courseHandicap != null ? `CH ${r.courseHandicap}` : 'geen HCP'}</small></div>
+          <div><span>Differential</span><b>${fmt1(r.differential18)}</b><small>${holesTotal === 9 ? `9 holes: ${fmt1(r.differential)}` : '18 holes'}</small></div>
+          <div><span>Handicap</span><b>${r.newIndex != null ? fmt1(r.newIndex) : `≈ ${fmt1(Math.min(54, r.differential18))}`}</b><small>${r.newIndex != null ? `index uit ${Math.min(20, r.roundsCounted)} rondes` : `indicatie · nog ${3 - r.roundsCounted} ronde(s) voor index`}</small></div>
+        </div>
+        <p class="small">
+          ${t.eagleOfBeter ? `🦅 ${t.eagleOfBeter} eagle · ` : ''}🐦 ${t.birdie} birdie · ✅ ${t.par} par · ${t.bogey} bogey · ${t.doubleBogey} dubbel · ${t.slechter} slechter
+          ${bestHole.length ? `<br>Beste hole: ${bestHole[0].h} (${signed(bestHole[0].d)}) · lastigste: ${bestHole.at(-1).h} (${signed(bestHole.at(-1).d)})` : ''}
+        </p>
+        <details class="small"><summary>Hoe is dit berekend?</summary>
+          <p>Tee ${esc(r.teeName)}: course rating ${fmt(r.rating)}, slope ${r.slope}.
+          ${r.index != null ? `Handicap index ${fmt(r.index)} → course handicap ${r.courseHandicap} (${r.strokesReceived} slagen).` : 'Geen handicap ingevuld: maximaal par + 5 per hole.'}
+          Aangepaste bruto score (${r.index != null ? 'max. netto double bogey' : 'max. par + 5'} per hole): ${r.adjustedGross}.
+          Score differential = 113 / ${r.slope} × (${r.adjustedGross} − ${fmt(r.rating)}) = <b>${fmt1(r.differential)}</b>.
+          ${holesTotal === 9 ? `Omgerekend naar 18 holes: ${fmt1(r.differential18)} (${esc(r.differential18Note)}).` : ''}</p>
+        </details>
+      </div>`;
+    }).join('');
+}
+
+function renderHistory() {
+  $('#history').innerHTML = state.history.slice().reverse().map((r) => `<div class="hist">
+    <b>${new Date(r.date).toLocaleDateString('nl-NL', { day: 'numeric', month: 'short', year: 'numeric' })}</b> · ${esc(r.label)}<br>
+    ${r.results.map((x) => `${esc(x.name)}: ${x.gross} (${signed(x.toPar)}), diff. ${fmt1(x.differential18)}`).join('<br>')}
+  </div>`).join('') || '<p class="muted">Nog geen opgeslagen rondes.</p>';
+}
+
+function renderSettings() {
+  $('#round-holes').value = state.round.holesChoice;
+  const tees = state.course.tees;
+  $('#players').innerHTML = state.players.map((p, i) => `<div class="player-row">
+    <input type="text" value="${esc(p.name)}" data-player="${i}" data-field="name" aria-label="Naam">
+    <input type="number" step="0.1" min="-10" max="54" value="${p.index ?? ''}" placeholder="HCP" data-player="${i}" data-field="index" aria-label="Handicap index">
+    <select data-player="${i}" data-field="tee" aria-label="Tee">${tees.map((t) => `<option value="${t.id}" ${t.id === p.tee ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</select>
+    <button data-action="remove-player" data-i="${i}" aria-label="Verwijderen">✕</button>
+  </div>`).join('');
+
+  $('#course-name').value = state.course.name;
+  $('#tees').innerHTML = `<table class="scorecard tees"><tr><th>Tee</th><th>CR 18</th><th>Slope 18</th><th>CR 9</th><th>Slope 9</th></tr>${tees.map((t, i) => `<tr>
+    <td>${esc(t.name)}</td>
+    <td><input type="number" step="0.1" value="${t.rating}" data-tee="${i}" data-field="rating"></td>
+    <td><input type="number" value="${t.slope}" data-tee="${i}" data-field="slope"></td>
+    <td><input type="number" step="0.1" value="${t.rating9 ?? ''}" placeholder="${fmt(round1(t.rating / 2))}" data-tee="${i}" data-field="rating9"></td>
+    <td><input type="number" value="${t.slope9 ?? ''}" placeholder="${t.slope}" data-tee="${i}" data-field="slope9"></td>
+  </tr>`).join('')}</table>`;
+
+  $('#course-warning').innerHTML = state.course.confirmed ? '' :
+    `<div class="feedback info">⚠️ Vul de <b>par en stroke index per hole</b> in zoals op de scorekaart van de club (nu staat alles op par 4). <button class="link" data-action="confirm-course">Klopt, verberg</button></div>`;
+  $('#course-table').innerHTML = `<tr><th>Hole</th>${state.course.pars.map((_, i) => `<th>${i + 1}</th>`).join('')}<th>Tot.</th></tr>
+    <tr><td>Par</td>${state.course.pars.map((p, i) => `<td><input class="cell" type="number" inputmode="numeric" min="3" max="6" value="${p}" data-course="pars" data-h="${i}"></td>`).join('')}<td>${state.course.pars.reduce((a, b) => a + b, 0)}</td></tr>
+    <tr><td>SI</td>${state.course.si.map((s, i) => `<td><input class="cell" type="number" inputmode="numeric" min="1" max="18" value="${s}" data-course="si" data-h="${i}"></td>`).join('')}<td></td></tr>`;
+  if (document.activeElement?.id !== 'api-key') $('#api-key').value = state.apiKey;
+  $('#ai-btn').disabled = !state.apiKey;
+  $('#ai-btn').title = state.apiKey ? '' : 'Vul eerst een API-sleutel in bij Instellingen';
+  renderHistory();
+}
+
+// ---------- AI-analyse en opslaan ----------
+
+async function runAiAnalysis() {
+  const results = computeResults();
+  if (!results.length) { toast('Nog geen scores om te analyseren.'); return; }
+  const out = $('#ai-result');
+  out.innerHTML = '<div class="feedback info">🤖 Claude analyseert de ronde…</div>';
+  let ai;
+  try {
+    ai = await import('./ai.js');
+  } catch {
+    out.innerHTML = '<div class="feedback error">AI niet bereikbaar (geen internet?).</div>';
+    return;
+  }
+  try {
+    const course = { ...courseForPlayer(state.players[0] ?? { tee: 'geel' }) };
+    const transcripts = state.round.log.slice().reverse().map((l) => `hole ${l.hole}: ${l.text}`);
+    const a = await ai.aiAnalyseRound(state.apiKey, { course, results, transcripts });
+    out.innerHTML = `<div class="ai-box">
+      <p>${esc(a.samenvatting)}</p>
+      ${a.spelers.map((s) => `<h3>${esc(s.naam)}</h3><p>${esc(s.analyse)}</p><p>💡 <i>${esc(s.tip)}</i></p>`).join('')}
+      ${a.controle.length ? `<h3>Controle</h3><ul>${a.controle.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>` : '<p class="muted small">✔️ Ingesproken teksten en scorekaart komen overeen.</p>'}
+    </div>`;
+  } catch (err) {
+    out.innerHTML = `<div class="feedback error">${esc(ai.describeError(err))}</div>`;
+  }
+}
+
+function saveRound() {
+  const results = computeResults();
+  if (!results.length) { toast('Nog geen scores om op te slaan.'); return; }
+  const holes = roundHoles();
+  const entry = {
+    id: state.round.id,
+    date: state.round.date,
+    label: `${state.course.name}, ${holes.length === 9 ? `holes ${holes[0]}–${holes.at(-1)}` : '18 holes'}`,
+    results: results.map((r) => ({ name: r.name, gross: r.gross, toPar: r.toPar, differential: r.differential, differential18: r.differential18, scores: r.scores })),
+  };
+  state.history = state.history.filter((r) => r.id !== entry.id);
+  state.history.push(entry);
+  save();
+  render();
+  toast('Ronde opgeslagen. Start een nieuwe ronde via Instellingen.');
+}
+
+// ---------- Gebeurtenissen ----------
+
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('active', t.id === `tab-${name}`));
+  document.querySelectorAll('.tabs button').forEach((b) => b.classList.toggle('active', b.dataset.tab === name));
+  window.scrollTo(0, 0);
+}
+
+document.addEventListener('click', (e) => {
+  const tabBtn = e.target.closest('[data-tab]');
+  if (tabBtn) { switchTab(tabBtn.dataset.tab); return; }
+  const btn = e.target.closest('[data-action]');
+  if (!btn) return;
+  const holes = roundHoles();
+  const idx = holes.indexOf(state.round.currentHole);
+  switch (btn.dataset.action) {
+    case 'mic': toggleMic(); break;
+    case 'prev-hole': state.round.currentHole = holes[(idx - 1 + holes.length) % holes.length]; save(); render(); break;
+    case 'next-hole': state.round.currentHole = holes[(idx + 1) % holes.length]; save(); render(); break;
+    case 'plus':
+    case 'minus': {
+      const p = state.players[Number(btn.dataset.i)];
+      const h = state.round.currentHole;
+      const cur = scoreOf(p.name, h);
+      const next = cur == null ? parOf(h) : cur + (btn.dataset.action === 'plus' ? 1 : -1);
+      setScore(p.name, h, next < 1 ? null : Math.min(20, next));
+      save(); render();
+      break;
+    }
+    case 'undo': undo(); break;
+    case 'remove-player': {
+      const p = state.players[Number(btn.dataset.i)];
+      if (confirm(`${p.name} verwijderen?`)) {
+        state.players.splice(Number(btn.dataset.i), 1);
+        delete state.round.scores[p.name];
+        save(); render();
+      }
+      break;
+    }
+    case 'new-round':
+      if (confirm('Nieuwe ronde starten? Scores die je niet hebt opgeslagen gaan verloren.')) {
+        state.round = newRound($('#round-holes').value);
+        lastUndo = null;
+        showFeedback('');
+        $('#ai-result').innerHTML = '';
+        save(); render(); switchTab('ronde');
+      }
+      break;
+    case 'confirm-course': state.course.confirmed = true; save(); render(); break;
+    case 'ai-analyse': runAiAnalysis(); break;
+    case 'save-round': saveRound(); break;
+    case 'export': {
+      const blob = new Blob([JSON.stringify({ ...state, apiKey: undefined }, null, 2)], { type: 'application/json' });
+      const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `golfscore-${new Date().toISOString().slice(0, 10)}.json` });
+      a.click();
+      URL.revokeObjectURL(a.href);
+      break;
+    }
+    case 'reset':
+      if (confirm('Echt alles wissen? Spelers, baan, rondes en historie worden verwijderd.')) {
+        localStorage.removeItem(STORAGE_KEY);
+        state = load();
+        render();
+      }
+      break;
+  }
+});
+
+$('#text-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = $('#text-input');
+  handleText(input.value);
+  input.value = '';
+});
+
+$('#player-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = $('#player-name').value.trim();
+  if (name && !state.players.some((p) => p.name.toLowerCase() === name.toLowerCase())) {
+    state.players.push({ name, index: null, tee: 'geel' });
+    save(); render();
+  }
+  $('#player-name').value = '';
+});
+
+document.addEventListener('change', (e) => {
+  const t = e.target;
+  if (t.matches('#scorecard input')) {
+    const v = t.value === '' ? null : Math.max(1, Math.min(20, Math.round(Number(t.value))));
+    setScore(t.dataset.name, Number(t.dataset.hole), v);
+  } else if (t.dataset.player != null) {
+    const p = state.players[Number(t.dataset.player)];
+    if (t.dataset.field === 'name') {
+      const name = t.value.trim();
+      if (name && !state.players.some((x) => x !== p && x.name === name)) {
+        if (state.round.scores[p.name]) {
+          state.round.scores[name] = state.round.scores[p.name];
+          delete state.round.scores[p.name];
+        }
+        p.name = name;
+      }
+    } else if (t.dataset.field === 'index') {
+      p.index = t.value === '' ? null : Math.min(54, Number(t.value));
+    } else {
+      p.tee = t.value;
+    }
+  } else if (t.dataset.tee != null) {
+    const tee = state.course.tees[Number(t.dataset.tee)];
+    const optional = t.dataset.field.endsWith('9');
+    tee[t.dataset.field] = t.value === '' && optional ? null : Number(t.value);
+  } else if (t.dataset.course) {
+    state.course[t.dataset.course][Number(t.dataset.h)] = Number(t.value);
+  } else if (t.id === 'course-name') {
+    state.course.name = t.value.trim() || DEFAULT_COURSE.name;
+  } else if (t.id === 'api-key') {
+    state.apiKey = t.value.trim();
+  } else if (t.id === 'round-holes') {
+    // Pas de holes direct aan als er nog niets gespeeld is.
+    const empty = Object.values(state.round.scores).every((s) => !Object.keys(s).length);
+    if (empty) state.round = newRound(t.value);
+    else toast('Er zijn al scores. Kies “Nieuwe ronde starten” om andere holes te spelen.');
+  } else {
+    return;
+  }
+  save();
+  render();
+});
+
+render();
+
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f6b3a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Golfscore">
+  <title>Golfscore Ommen</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>⛳ Golfscore</h1>
+    <span id="course-label" class="muted"></span>
+  </header>
+
+  <main>
+    <!-- RONDE -->
+    <section id="tab-ronde" class="tab active">
+      <div class="hole-nav">
+        <button class="nav-btn" data-action="prev-hole" aria-label="Vorige hole">◀</button>
+        <div class="hole-info">
+          <div class="hole-number">Hole <span id="hole-number">1</span></div>
+          <div class="muted" id="hole-meta">Par 4</div>
+        </div>
+        <button class="nav-btn" data-action="next-hole" aria-label="Volgende hole">▶</button>
+      </div>
+
+      <button id="mic" class="mic" data-action="mic" aria-label="Inspreken">
+        <span class="mic-icon">🎤</span>
+        <span id="mic-label">Druk en spreek in</span>
+      </button>
+      <p class="hint">Bijv. <em>“Hole 4, Rudy 5 slagen, Peter 3 slagen”</em> of <em>“Rudy par, Peter bogey”</em></p>
+      <div id="live" class="live" hidden></div>
+
+      <form id="text-form" class="text-form">
+        <input id="text-input" type="text" placeholder="Of typ: Rudy 5, Peter 3" autocomplete="off">
+        <button type="submit">OK</button>
+      </form>
+
+      <div id="feedback"></div>
+
+      <h2>Scores hole <span id="hole-number-2">1</span></h2>
+      <div id="quick-entry" class="quick-entry"></div>
+
+      <h2>Ingesproken</h2>
+      <ul id="log" class="log"></ul>
+    </section>
+
+    <!-- SCOREKAART -->
+    <section id="tab-kaart" class="tab">
+      <div class="card-scroll"><table id="scorecard" class="scorecard"></table></div>
+      <p class="muted small">Tik op een vakje om een score aan te passen.</p>
+    </section>
+
+    <!-- ANALYSE -->
+    <section id="tab-analyse" class="tab">
+      <div id="analysis"></div>
+      <div class="button-row">
+        <button data-action="ai-analyse" class="primary" id="ai-btn">🤖 AI-analyse</button>
+        <button data-action="save-round" class="primary">💾 Ronde opslaan</button>
+      </div>
+      <div id="ai-result"></div>
+      <h2>Eerdere rondes</h2>
+      <div id="history"></div>
+    </section>
+
+    <!-- INSTELLINGEN -->
+    <section id="tab-instellingen" class="tab">
+      <h2>Ronde</h2>
+      <div class="field-row">
+        <label>Welke holes
+          <select id="round-holes">
+            <option value="front">Eerste 9 (1–9)</option>
+            <option value="back">Laatste 9 (10–18)</option>
+            <option value="all">18 holes</option>
+          </select>
+        </label>
+      </div>
+      <button data-action="new-round" class="danger">Nieuwe ronde starten</button>
+
+      <h2>Spelers</h2>
+      <div id="players"></div>
+      <form id="player-form" class="text-form">
+        <input id="player-name" type="text" placeholder="Naam" required>
+        <button type="submit">+ Speler</button>
+      </form>
+
+      <h2>Baan</h2>
+      <label>Naam <input id="course-name" type="text"></label>
+      <div id="tees"></div>
+      <p class="muted small">Course rating en slope staan op de scorekaart van de club. De 9-holes waarden zijn standaard de helft van de 18-holes rating; vul de officiële 9-holes waarden in als je die hebt.</p>
+      <div id="course-warning"></div>
+      <div class="card-scroll"><table id="course-table" class="scorecard"></table></div>
+
+      <h2>AI (optioneel)</h2>
+      <p class="muted small">Met een Claude API-sleutel herkent de app ook lastige zinnen en krijg je aan het eind een uitgebreide analyse. De sleutel blijft alleen op dit toestel.</p>
+      <label>Claude API-sleutel <input id="api-key" type="password" placeholder="sk-ant-..." autocomplete="off"></label>
+
+      <h2>Gegevens</h2>
+      <div class="button-row">
+        <button data-action="export">Exporteren</button>
+        <button data-action="reset" class="danger">Alles wissen</button>
+      </div>
+    </section>
+  </main>
+
+  <nav class="tabs">
+    <button data-tab="ronde" class="active">🎤<span>Ronde</span></button>
+    <button data-tab="kaart">📋<span>Scorekaart</span></button>
+    <button data-tab="analyse">📊<span>Analyse</span></button>
+    <button data-tab="instellingen">⚙️<span>Instellingen</span></button>
+  </nav>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
