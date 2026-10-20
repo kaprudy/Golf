@@ -1,5 +1,5 @@
 import { pickBest, matchPlayer, simplify } from './parser.js';
-import { analysePlayer, handicapIndexFromDifferentials } from './handicap.js';
+import { analysePlayer, handicapIndexFromDifferentials, scoreName } from './handicap.js';
 
 // ---------- Opslag ----------
 
@@ -119,6 +119,8 @@ const round1 = (n) => Math.round(n * 10) / 10;
 const fmt = (n) => (n == null ? '–' : String(n).replace('.', ','));
 const fmt1 = (n) => (n == null ? '–' : n.toFixed(1).replace('.', ','));
 const signed = (n) => (n > 0 ? `+${n}` : n === 0 ? 'E' : String(n));
+// "5 (bogey)" met de kleur van de score
+const termTag = (strokes, par) => `<span class="term d${Math.max(-2, Math.min(3, strokes - par))}">${scoreName(strokes, par)}</span>`;
 
 const course = () => state.courses.find((c) => c.id === state.round.courseId) ?? state.courses[0];
 
@@ -256,10 +258,10 @@ async function handleInput(texts) {
   save();
   render();
 
-  const summary = result.scores.map((s) => `<b>${esc(s.name)}</b> ${s.strokes}`).join(' · ');
+  const summary = result.scores.map((s) => `<b>${esc(s.name)}</b> ${s.strokes} ${termTag(s.strokes, parOf(result.hole))}`).join('<br>');
   const doubt = !result.certain && !pending && result.leftovers?.length
     ? `<br><small>⚠️ Niet alles begrepen in “${esc(text)}”. Klopt dit?</small>` : '';
-  showFeedback(`${summary ? `<div class="feedback ok">✅ Hole ${result.hole}: ${summary}${viaAi ? ' <span class="badge">AI</span>' : ''}${doubt}${aiNote}
+  showFeedback(`${summary ? `<div class="feedback ok">✅ <b>Hole ${result.hole}</b> (par ${parOf(result.hole)})<br>${summary}${viaAi ? ' <span class="badge">AI</span>' : ''}${doubt}${aiNote}
     <button class="link" data-action="undo">Ongedaan maken</button></div>` : ''}<div id="pending"></div>`);
   renderPending();
 }
@@ -312,7 +314,7 @@ function assignPending(btn) {
   lastUndo = null; // na een keuze geldt "ongedaan maken" niet meer voor de hele invoer
   save();
   render();
-  showFeedback(name ? `<div class="feedback ok">✅ Hole ${hole}: <b>${esc(name)}</b> ${item.strokes}${learned}</div><div id="pending"></div>` : '<div id="pending"></div>');
+  showFeedback(name ? `<div class="feedback ok">✅ Hole ${hole}: <b>${esc(name)}</b> ${item.strokes} ${termTag(item.strokes, parOf(hole))}${learned}</div><div id="pending"></div>` : '<div id="pending"></div>');
   renderPending();
 }
 
@@ -429,7 +431,7 @@ function renderQuickEntry() {
     const s = scoreOf(p.name, h);
     const diff = s == null ? '' : `<span class="diff d${Math.max(-2, Math.min(3, s - parOf(h)))}">${signed(s - parOf(h))}</span>`;
     return `<div class="qe-row">
-      <span class="qe-name">${esc(p.name)}</span>
+      <span class="qe-name">${esc(p.name)}${s == null ? '' : `<br>${termTag(s, parOf(h))}`}</span>
       <button data-action="minus" data-i="${i}" aria-label="Min">−</button>
       <span class="qe-score">${s ?? '·'}</span>
       <button data-action="plus" data-i="${i}" aria-label="Plus">+</button>
@@ -441,7 +443,7 @@ function renderQuickEntry() {
 function renderLog() {
   $('#log').innerHTML = state.round.log.slice(0, 20).map((l) => `<li>
     <span class="muted small">${new Date(l.time).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })} · hole ${l.hole}${l.viaAi ? ' · AI' : ''}</span><br>
-    “${esc(l.text)}” → ${l.scores.map((s) => `${esc(s.name)} ${s.strokes}`).join(', ')}
+    “${esc(l.text)}” → ${l.scores.map((s) => `${esc(s.name)} ${s.strokes} ${termTag(s.strokes, parOf(l.hole))}`).join(', ')}
   </li>`).join('') || '<li class="muted">Nog niets ingesproken.</li>';
 }
 
@@ -516,7 +518,7 @@ function renderAnalysis() {
         </div>
         <p class="small">
           ${t.eagleOfBeter ? `🦅 ${t.eagleOfBeter} eagle · ` : ''}🐦 ${t.birdie} birdie · ✅ ${t.par} par · ${t.bogey} bogey · ${t.doubleBogey} dubbel · ${t.slechter} slechter
-          ${bestHole.length ? `<br>Beste hole: ${bestHole[0].h} (${signed(bestHole[0].d)}) · lastigste: ${bestHole.at(-1).h} (${signed(bestHole.at(-1).d)})` : ''}
+          ${bestHole.length ? `<br>Beste hole: ${bestHole[0].h} (${scoreName(bestHole[0].d + parOf(bestHole[0].h), parOf(bestHole[0].h))}) · lastigste: ${bestHole.at(-1).h} (${scoreName(bestHole.at(-1).d + parOf(bestHole.at(-1).h), parOf(bestHole.at(-1).h))})` : ''}
         </p>
         <details class="small"><summary>Hoe is dit berekend?</summary>
           <p>Tee ${esc(r.teeName)}: course rating ${fmt(r.rating)}, slope ${r.slope}.

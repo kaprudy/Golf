@@ -169,3 +169,6 @@ button.link.inline { display: inline; margin-left: 6px; }
 .add-course { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 10px 12px; margin: 10px 0; }
 .add-course summary { cursor: pointer; font-weight: 600; color: var(--green); }
 .field-row.two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.term { display: inline-block; border-radius: 6px; padding: 0 6px; font-size: .78rem; font-weight: 600; white-space: nowrap; }
+.term.d0 { background: var(--green-light); }
+.qe-name .term { margin-top: 2px; }

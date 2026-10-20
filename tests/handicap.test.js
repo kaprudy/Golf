@@ -46,3 +46,16 @@ test('speler zonder handicap: max par + 5', () => {
   assert.equal(res.adjusted[0], 9);
   assert.equal(res.differential18, (41 - 36) * 2);
 });
+
+test('naam van de score', async () => {
+  const { scoreName } = await import('../js/handicap.js');
+  assert.equal(scoreName(3, 4), 'birdie');
+  assert.equal(scoreName(4, 4), 'par');
+  assert.equal(scoreName(5, 4), 'bogey');
+  assert.equal(scoreName(6, 4), 'dubbel bogey');
+  assert.equal(scoreName(7, 4), 'triple bogey');
+  assert.equal(scoreName(9, 4), '5 boven par');
+  assert.equal(scoreName(3, 5), 'eagle');
+  assert.equal(scoreName(1, 3), 'hole-in-one');
+  assert.equal(scoreName(2, 5), 'albatros');
+});

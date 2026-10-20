@@ -155,3 +155,14 @@ export function analysePlayer(course, player, scores) {
     tally,
   };
 }
+
+// Naam van een score ten opzichte van par: "birdie", "dubbel bogey", ...
+export function scoreName(strokes, par) {
+  if (strokes == null || par == null) return '';
+  if (strokes === 1) return 'hole-in-one';
+  const d = strokes - par;
+  if (d <= -3) return 'albatros';
+  return {
+    '-2': 'eagle', '-1': 'birdie', 0: 'par', 1: 'bogey', 2: 'dubbel bogey', 3: 'triple bogey', 4: 'quadruple bogey',
+  }[d] ?? `${d} boven par`;
+}

@@ -1,5 +1,5 @@
 // Offline-ondersteuning: de app werkt op de baan ook zonder bereik (behalve de AI).
-const CACHE = 'golfscore-v5';
+const CACHE = 'golfscore-v6';
 const FILES = ['./', 'index.html', 'css/style.css', 'js/app.js', 'js/parser.js', 'js/handicap.js', 'js/ai.js', 'js/vendor/anthropic-sdk.js', 'manifest.webmanifest', 'icon.svg'];
 
 self.addEventListener('install', (e) => {
