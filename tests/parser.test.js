@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseEntry, pickBest } from '../js/parser.js';
+import { parseEntry, pickBest, matchPlayer } from '../js/parser.js';
 
 const players = ['Rudy', 'Peter'];
 const opts = { players, currentHole: 2, parForHole: (h) => (h === 4 ? 3 : 4) };
@@ -99,4 +99,27 @@ test('hole in one', () => {
   const r = parseEntry('hole 4 Peter hole in one', opts);
   assert.equal(r.hole, 4);
   assert.equal(map(r).Peter, 1);
+});
+
+test('namen op klank: Roedie, Ruddie, Pieter', () => {
+  for (const w of ['Roedie', 'Ruddie', 'rudi', 'Ruudy']) assert.equal(matchPlayer(w, players), 'Rudy', w);
+  for (const w of ['Pieter', 'Peeter', 'Petr']) assert.equal(matchPlayer(w, players), 'Peter', w);
+  assert.equal(matchPlayer('vier', ['Piet']), null);
+  assert.equal(matchPlayer('hal', players), null);
+});
+
+test('verhaspelde getallen', () => {
+  assert.deepEqual(map(parseEntry('hole 2 Rudy fijf Peter ses', opts)), { Rudy: 5, Peter: 6 });
+  assert.deepEqual(map(parseEntry('hol dri rudi ach', opts)), { Rudy: 8 });
+  assert.equal(parseEntry('hol dri rudi ach', opts).hole, 3);
+});
+
+test('naam en getal aan elkaar', () => {
+  assert.deepEqual(map(parseEntry('hole 1 rudi5 peter4', opts)), { Rudy: 5, Peter: 4 });
+});
+
+test('geleerde aliassen', () => {
+  const r = parseEntry('hole 1 roede 5', { ...opts, aliases: { roede: 'Rudy' } });
+  assert.deepEqual(map(r), { Rudy: 5 });
+  assert.ok(r.certain);
 });

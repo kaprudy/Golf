@@ -10,6 +10,9 @@ const NUMBER_WORDS = {
   nul: 0, een: 1, twee: 2, drie: 3, vier: 4, vijf: 5, zes: 6, zeven: 7,
   acht: 8, negen: 9, tien: 10, elf: 11, twaalf: 12, dertien: 13, veertien: 14,
   vijftien: 15, zestien: 16, zeventien: 17, achttien: 18,
+  // Zo schrijft spraakherkenning getallen soms op.
+  twe: 2, dri: 3, drij: 3, vir: 4, fier: 4, veer: 4, fijf: 5, vijv: 5, fijv: 5, ses: 6, zess: 6,
+  zeve: 7, seven: 7, ach: 8, agt: 8, achd: 8, nege: 9, neegen: 9, ellf: 11,
 };
 
 const ORDINAL_WORDS = {
@@ -60,6 +63,7 @@ export function normalize(text) {
     .normalize('NFD').replace(/[̀-ͯ]/g, '')
     .replace(/(\d+)\s*(e|de|ste)\b/g, '$1e') // "4 de" -> "4e"
     .replace(/(\d+)([a-z])/g, '$1 $2') // "5slagen" -> "5 slagen"
+    .replace(/([a-z])(\d)/g, '$1 $2') // "rudi5" -> "rudi 5"
     .replace(/[^a-z0-9\s]/g, ' ')
     .split(/\s+/)
     .filter(Boolean)
@@ -80,7 +84,7 @@ function toOrdinal(tok) {
   return ORDINAL_WORDS[tok] ?? null;
 }
 
-const simplify = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+export const simplify = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
 
 // Kleine Levenshtein-afstand, zodat "Rudi" of "Pieter" nog bij "Rudy"/"Peter" past.
 function distance(a, b) {
@@ -95,15 +99,38 @@ function distance(a, b) {
   return dp[a.length][b.length];
 }
 
-export function matchPlayer(token, players) {
+// Nederlandse klank: "Roedie", "Ruddy" en "Rudi" klinken allemaal als "rudi".
+export function phonetic(s) {
+  return simplify(s)
+    .replace(/ph/g, 'f').replace(/ch/g, 'g').replace(/c(?=[eiy])/g, 's').replace(/[cq]/g, 'k')
+    .replace(/x/g, 'ks').replace(/z/g, 's').replace(/v/g, 'f').replace(/w/g, 'v')
+    .replace(/ij|y/g, 'i').replace(/ei/g, 'i').replace(/ie/g, 'i').replace(/oe/g, 'u').replace(/ou|au/g, 'au')
+    .replace(/(.)h/g, '$1')
+    .replace(/(.)\1+/g, '$1')
+    .replace(/d$/, 't');
+}
+
+/**
+ * Zoekt welke speler bedoeld wordt met een (verkeerd verstaan) woord.
+ * aliases: { "roede": "Rudy" } — woorden die de gebruiker eerder aan een speler koppelde.
+ */
+export function matchPlayer(token, players, aliases = {}) {
   const t = simplify(token);
   if (t.length < 2 || HOLE_WORDS.has(t)) return null;
+  if (aliases[t] && players.includes(aliases[t])) return aliases[t];
+  const exact = players.find((name) => simplify(name) === t || simplify(name.split(/\s+/)[0]) === t);
+  if (exact) return exact;
+  // Getallen, golftermen en vulwoorden zijn nooit een (verhaspelde) naam.
+  if (NOT_A_NAME.has(t)) return null;
+  const tp = phonetic(t);
   let best = null;
   for (const name of players) {
     const n = simplify(name);
     const first = simplify(name.split(/\s+/)[0]);
     if (t === n || t === first) return name;
-    const d = Math.min(distance(t, first), distance(t, n));
+    const fp = phonetic(first);
+    if (tp === fp || tp === phonetic(n)) return name;
+    const d = Math.min(distance(t, first), distance(t, n), distance(tp, fp) + 0.5);
     const allowed = first.length >= 5 ? 2 : first.length >= 3 ? 1 : 0;
     if (d <= allowed && (!best || d < best.d)) best = { name, d };
   }
@@ -165,6 +192,7 @@ function extractHole(tokens) {
  * @param {string} text           ingesproken/getypte tekst
  * @param {object} opts
  * @param {string[]} opts.players bekende spelers
+ * @param {Object<string,string>} opts.aliases eerder geleerde woorden -> spelersnaam
  * @param {number} opts.currentHole hole die geldt als er geen hole genoemd wordt
  * @param {(hole:number)=>number} opts.parForHole par van een hole (voor "birdie" e.d.)
  * @returns {{
@@ -176,7 +204,7 @@ function extractHole(tokens) {
  *   certain:boolean                                // veilig om direct op te slaan
  * }}
  */
-export function parseEntry(text, { players = [], currentHole = 1, parForHole = () => 4 } = {}) {
+export function parseEntry(text, { players = [], aliases = {}, currentHole = 1, parForHole = () => 4 } = {}) {
   const { hole: mentioned, holeWordWithoutNumber, tokens } = extractHole(normalize(text));
   const hole = mentioned ?? currentHole;
   const par = parForHole(hole);
@@ -188,7 +216,7 @@ export function parseEntry(text, { players = [], currentHole = 1, parForHole = (
 
   for (let i = 0; i < tokens.length; i++) {
     const tok = tokens[i];
-    const known = matchPlayer(tok, players);
+    const known = matchPlayer(tok, players, aliases);
     const candidate = known ?? (!NOT_A_NAME.has(tok) && /^[a-z]{2,}$/.test(tok) ? tok : null);
     if (!candidate) continue;
 

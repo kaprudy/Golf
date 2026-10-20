@@ -56,7 +56,7 @@ const PARSE_SCHEMA = {
 
 // Vangnet voor zinnen die de lokale herkenning niet zeker snapt.
 // texts: de varianten die de spraakherkenning gaf (de eerste is de waarschijnlijkste).
-export async function aiParseEntry(apiKey, texts, { players, currentHole, pars }) {
+export async function aiParseEntry(apiKey, texts, { players, aliases = {}, currentHole, pars }) {
   const variants = texts.map((t, i) => `${i + 1}. "${t}"`).join('\n');
   return askJson(apiKey, {
     system: [
@@ -67,7 +67,7 @@ export async function aiParseEntry(apiKey, texts, { players, currentHole, pars }
       'Golftermen reken je om met de par van de hole (birdie = par-1, bogey = par+1, dubbel bogey = par+2, enz.).',
       'Je krijgt soms meerdere varianten van dezelfde zin; kies de interpretatie die het meest logisch is. Verzin geen scores die niet genoemd worden.',
     ].join(' '),
-    prompt: `Bekende spelers: ${players.join(', ') || '(nog geen)'}\nHuidige hole (als er geen hole genoemd wordt): ${currentHole}\nPar per hole: ${pars.map((p, i) => `hole ${i + 1}: ${p}`).join(', ')}\n\nVarianten van wat er gezegd is:\n${variants}`,
+    prompt: `Bekende spelers: ${players.join(', ') || '(nog geen)'}\n${Object.keys(aliases).length ? `Eerder geleerde verhaspelingen: ${Object.entries(aliases).map(([a, n]) => `"${a}" = ${n}`).join(', ')}\n` : ''}Huidige hole (als er geen hole genoemd wordt): ${currentHole}\nPar per hole: ${pars.map((p, i) => `hole ${i + 1}: ${p}`).join(', ')}\n\nVarianten van wat er gezegd is:\n${variants}`,
     schema: PARSE_SCHEMA,
     effort: 'low',
     maxTokens: 2000,

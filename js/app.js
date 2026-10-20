@@ -1,4 +1,4 @@
-import { pickBest, matchPlayer } from './parser.js';
+import { pickBest, matchPlayer, simplify } from './parser.js';
 import { analysePlayer, handicapIndexFromDifferentials } from './handicap.js';
 
 // ---------- Opslag ----------
@@ -94,8 +94,13 @@ let lastUndo = null;
 // Vragen die nog beantwoord moeten worden: score zonder naam of onbekende naam.
 let pending = null;
 
+// Woorden die de gebruiker eerder aan een speler koppelde, bijv. { roede: 'Rudy' }.
+function aliasMap() {
+  return Object.fromEntries(state.players.flatMap((p) => (p.aliases ?? []).map((a) => [a, p.name])));
+}
+
 function parseOpts() {
-  return { players: state.players.map((p) => p.name), currentHole: state.round.currentHole, parForHole: parOf };
+  return { players: state.players.map((p) => p.name), aliases: aliasMap(), currentHole: state.round.currentHole, parForHole: parOf };
 }
 
 // texts: één of meer varianten van wat er gezegd is (spraakherkenning geeft alternatieven).
@@ -116,13 +121,13 @@ async function handleInput(texts) {
       const { aiParseEntry, describeError } = await import('./ai.js');
       try {
         const ai = await aiParseEntry(state.apiKey, texts, {
-          players: names, currentHole: state.round.currentHole, pars: state.course.pars,
+          players: names, aliases: aliasMap(), currentHole: state.round.currentHole, pars: state.course.pars,
         });
         const scores = [];
         const unknownNames = [];
         let bareScore = null;
         for (const s of ai.scores) {
-          const known = s.name ? matchPlayer(s.name, names) : null;
+          const known = s.name ? matchPlayer(s.name, names, aliasMap()) : null;
           if (known) scores.push({ name: known, strokes: s.strokes });
           else if (s.name) unknownNames.push({ name: s.name, strokes: s.strokes });
           else if (names.length === 1) scores.push({ name: names[0], strokes: s.strokes });
@@ -200,6 +205,16 @@ function assignPending(btn) {
     name = item.name;
     if (!state.players.some((p) => p.name === name)) state.players.push({ name, index: null, tee: 'geel' });
   }
+  // Leren: dit woord betekent voortaan deze speler.
+  let learned = '';
+  if (btn.dataset.player && item.name) {
+    const player = state.players.find((p) => p.name === name);
+    const alias = simplify(item.name);
+    if (player && alias && alias !== simplify(name)) {
+      player.aliases = [...new Set([...(player.aliases ?? []), alias])];
+      learned = `<br><small>Onthouden: “${esc(item.name)}” = ${esc(name)}</small>`;
+    }
+  }
   if (name) {
     setScore(name, pending.hole, item.strokes);
     state.round.log[0]?.scores.push({ name, strokes: item.strokes });
@@ -213,7 +228,7 @@ function assignPending(btn) {
   lastUndo = null; // na een keuze geldt "ongedaan maken" niet meer voor de hele invoer
   save();
   render();
-  showFeedback(name ? `<div class="feedback ok">✅ Hole ${hole}: <b>${esc(name)}</b> ${item.strokes}</div><div id="pending"></div>` : '<div id="pending"></div>');
+  showFeedback(name ? `<div class="feedback ok">✅ Hole ${hole}: <b>${esc(name)}</b> ${item.strokes}${learned}</div><div id="pending"></div>` : '<div id="pending"></div>');
   renderPending();
 }
 
@@ -439,6 +454,8 @@ function renderSettings() {
     <input type="number" step="0.1" min="-10" max="54" value="${p.index ?? ''}" placeholder="HCP" data-player="${i}" data-field="index" aria-label="Handicap index">
     <select data-player="${i}" data-field="tee" aria-label="Tee">${tees.map((t) => `<option value="${t.id}" ${t.id === p.tee ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</select>
     <button data-action="remove-player" data-i="${i}" aria-label="Verwijderen">✕</button>
+    ${p.aliases?.length ? `<div class="aliases small muted">Herkent ook: ${p.aliases.map(esc).join(', ')}
+      <button class="link inline" data-action="clear-aliases" data-i="${i}">wissen</button></div>` : ''}
   </div>`).join('');
 
   $('#course-name').value = state.course.name;
@@ -537,6 +554,7 @@ document.addEventListener('click', (e) => {
     }
     case 'undo': undo(); break;
     case 'assign': assignPending(btn); break;
+    case 'clear-aliases': state.players[Number(btn.dataset.i)].aliases = []; save(); render(); break;
     case 'remove-player': {
       const p = state.players[Number(btn.dataset.i)];
       if (confirm(`${p.name} verwijderen?`)) {

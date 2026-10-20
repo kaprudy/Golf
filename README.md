@@ -18,7 +18,10 @@ handicapberekening** volgens het World Handicap System (WHS) dat de NGF gebruikt
   - Zonder holenummer geldt de huidige hole; als iedereen een score heeft gaat de app door naar de volgende hole.
   - Speel je alleen, dan is `Hol 1, 5 slagen` genoeg: een score zonder naam is voor de enige speler.
     Met meerdere spelers vraagt de app voor wie de score is.
-  - Spraakfouten worden opgevangen: „Rudi” = Rudy, en „hal 1”, „hol 2” of „holdrie” = hole 1, 2, 3.
+  - Spraakfouten worden opgevangen: namen worden op klank vergeleken („Roedie”, „Ruddie” = Rudy),
+    verhaspelde getallen herkend („fijf”, „ses”, „ach”) en „hal 1”, „hol 2” of „holdrie” = hole 1, 2, 3.
+  - De app leert: koppel je een onbekend woord aan een speler, dan herkent hij het de volgende keer zelf
+    (te zien en te wissen bij Instellingen → Spelers).
     De app vergelijkt meerdere varianten van wat de spraakherkenning hoorde en kiest de beste.
   - Een onbekende naam wordt nooit zomaar een nieuwe speler: de app vraagt eerst of het een
     bestaande speler is, een nieuwe speler, of genegeerd moet worden.
