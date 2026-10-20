@@ -93,6 +93,27 @@
         <button type="submit">+ Speler</button>
       </form>
 
+      <h2>Banen</h2>
+      <div id="home-course" class="small"></div>
+      <div class="button-row">
+        <button data-action="make-home" id="make-home-btn">★ Maak dit mijn thuisbaan</button>
+        <button data-action="remove-course" id="remove-course-btn" class="danger">Baan verwijderen</button>
+      </div>
+      <details class="add-course">
+        <summary>+ Andere baan toevoegen</summary>
+        <form id="course-form">
+          <label>Naam van de baan <input id="new-course-name" type="text" placeholder="Bijv. Golfclub De Lemelerberg" required></label>
+          <div class="field-row two">
+            <label>Holes
+              <select id="new-course-holes"><option value="18">18 holes</option><option value="9">9 holes</option></select>
+            </label>
+            <label>Totale par <input id="new-course-par" type="number" inputmode="numeric" min="27" max="80" placeholder="72"></label>
+          </div>
+          <button type="submit" class="primary">Baan toevoegen</button>
+          <p class="muted small">Daarna vul je course rating, slope en par per hole in van de scorekaart van die club.</p>
+        </form>
+      </details>
+
       <h2>Baangegevens</h2>
       <p class="muted small">Hieronder staan de gegevens van de baan die bij <b>Ronde</b> gekozen is.</p>
       <label>Naam <input id="course-name" type="text"></label>

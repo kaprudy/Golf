@@ -13,6 +13,7 @@ const DEFAULT_COURSES = [
     id: 'hooge-graven',
     name: 'Hooge Graven (18 holes)',
     holeCount: 18,
+    parTotal: 72,
     pars: Array(18).fill(4),
     si: Array.from({ length: 18 }, (_, i) => i + 1),
     confirmed: false,
@@ -28,6 +29,7 @@ const DEFAULT_COURSES = [
     name: 'Hooge Graven Par 3 (9 holes)',
     holeCount: 9,
     countsForIndex: false, // te kort voor een WHS-qualifying ronde
+    parTotal: 27,
     pars: Array(9).fill(3),
     si: Array.from({ length: 9 }, (_, i) => i + 1),
     confirmed: false,
@@ -36,9 +38,39 @@ const DEFAULT_COURSES = [
       { id: 'par3-dames', name: 'Dames', gender: 'd', rating: 25.2, slope: 70 },
     ],
   },
+  // Banen in de buurt (ratings volgens 1golf.eu; par per hole nog invullen).
+  standardCourse('zwolle', 'Golfclub Zwolle', 72, [
+    ['zwolle-geel', 'Geel (heren)', 'h', 71.4, 131],
+    ['zwolle-rood', 'Rood (dames)', 'd', 72.8, 129],
+  ]),
+  standardCourse('de-koepel', 'Golfclub De Koepel (Wierden)', 70, [
+    ['koepel-geel', 'Geel (heren)', 'h', 69.5, 126],
+    ['koepel-rood', 'Rood (dames)', 'd', 70.3, 122],
+  ]),
+  standardCourse('de-hoek', 'Sallandsche Golfclub De Hoek (Diepenveen)', 72, [
+    ['hoek-wit', 'Wit (heren)', 'h', 72.4, 131],
+    ['hoek-geel', 'Geel (heren)', 'h', 71.5, 128],
+    ['hoek-blauw', 'Blauw (heren)', 'h', 68.5, 118],
+    ['hoek-rood', 'Rood (heren)', 'h', 67.4, 115],
+    ['hoek-geel-d', 'Geel (dames)', 'd', 77.4, 140],
+  ]),
 ];
 
-function newRound(holesChoice = 'front', courseId = 'hooge-graven') {
+// 18-holes baan waarvan we alleen de totale par en de tee-ratings kennen.
+function standardCourse(id, name, parTotal, tees, holeCount = 18) {
+  return {
+    id,
+    name,
+    holeCount,
+    parTotal,
+    pars: Array(holeCount).fill(4),
+    si: Array.from({ length: holeCount }, (_, i) => i + 1),
+    confirmed: false,
+    tees: tees.map(([teeId, teeName, gender, rating, slope]) => ({ id: teeId, name: teeName, gender, rating, slope, rating9: null, slope9: null })),
+  };
+}
+
+function newRound(holesChoice = 'front', courseId = state?.homeCourseId ?? 'hooge-graven') {
   return { id: Date.now(), date: new Date().toISOString(), courseId, holesChoice, currentHole: holesChoice === 'back' ? 10 : 1, scores: {}, log: [] };
 }
 
@@ -52,9 +84,12 @@ function migrate(saved) {
     delete saved.course;
   }
   for (const def of DEFAULT_COURSES) {
-    if (!saved.courses.some((c) => c.id === def.id)) saved.courses.push(structuredClone(def));
+    const existing = saved.courses.find((c) => c.id === def.id);
+    if (!existing) saved.courses.push(structuredClone(def));
+    else existing.parTotal ??= def.parTotal;
   }
   saved.round.courseId ??= 'hooge-graven';
+  saved.homeCourseId ??= 'hooge-graven';
   return saved;
 }
 
@@ -66,7 +101,8 @@ function load() {
   return {
     players: [{ name: 'Rudy', index: null, tee: 'geel' }, { name: 'Peter', index: null, tee: 'geel' }],
     courses: structuredClone(DEFAULT_COURSES),
-    round: newRound(),
+    homeCourseId: 'hooge-graven',
+    round: newRound('front', 'hooge-graven'),
     history: [],
     apiKey: '',
   };
@@ -501,7 +537,12 @@ function renderHistory() {
 }
 
 function renderSettings() {
-  $('#round-course').innerHTML = state.courses.map((c) => `<option value="${esc(c.id)}">${esc(c.name)}</option>`).join('');
+  const home = state.courses.find((c) => c.id === state.homeCourseId) ?? state.courses[0];
+  const ordered = [home, ...state.courses.filter((c) => c !== home)];
+  $('#round-course').innerHTML = ordered.map((c) => `<option value="${esc(c.id)}">${c === home ? '★ ' : ''}${esc(c.name)}</option>`).join('');
+  $('#home-course').innerHTML = `Thuisbaan: <b>★ ${esc(home.name)}</b> (staat bij elke nieuwe ronde vooraf gekozen)`;
+  $('#make-home-btn').hidden = course() === home;
+  $('#remove-course-btn').hidden = !course().custom;
   $('#round-course').value = course().id;
   $('#round-holes').value = state.round.holesChoice;
   $('#round-holes-label').hidden = course().holeCount === 9;
@@ -532,8 +573,12 @@ function renderSettings() {
     <td><input type="number" value="${t.slope9 ?? ''}" placeholder="${t.slope}" data-tee="${i}" data-field="slope9"></td>
   </tr>`).join('')}</table>`;
 
-  $('#course-warning').innerHTML = course().confirmed ? '' :
-    `<div class="feedback info">⚠️ Vul de <b>${nineHoleCourse ? 'stroke index' : 'par en stroke index'} per hole</b> in zoals op de scorekaart van de club${nineHoleCourse ? '' : ' (nu staat alles op par 4)'}. <button class="link" data-action="confirm-course">Klopt, verberg</button></div>`;
+  const parSum = course().pars.reduce((a, b) => a + b, 0);
+  const warnings = [];
+  if (course().tees.some((t) => t.ratingUnknown)) warnings.push('Vul <b>course rating en slope</b> per tee in van de scorekaart (nu staan er neutrale waarden).');
+  if (course().parTotal && parSum !== course().parTotal) warnings.push(`De totale par moet <b>${course().parTotal}</b> zijn, nu is het ${parSum}. Pas de par per hole aan.`);
+  $('#course-warning').innerHTML = (warnings.length ? `<div class="feedback error">⚠️ ${warnings.join('<br>⚠️ ')}</div>` : '') + (course().confirmed ? '' :
+    `<div class="feedback info">⚠️ Vul de <b>${nineHoleCourse ? 'stroke index' : 'par en stroke index'} per hole</b> in zoals op de scorekaart van de club${nineHoleCourse ? '' : ' (nu staat alles op par 4)'}. <button class="link" data-action="confirm-course">Klopt, verberg</button></div>`);
   $('#course-table').innerHTML = `<tr><th>Hole</th>${course().pars.map((_, i) => `<th>${i + 1}</th>`).join('')}<th>Tot.</th></tr>
     <tr><td>Par</td>${course().pars.map((p, i) => `<td><input class="cell" type="number" inputmode="numeric" min="3" max="6" value="${p}" data-course="pars" data-h="${i}"></td>`).join('')}<td>${course().pars.reduce((a, b) => a + b, 0)}</td></tr>
     <tr><td>SI</td>${course().si.map((s, i) => `<td><input class="cell" type="number" inputmode="numeric" min="1" max="18" value="${s}" data-course="si" data-h="${i}"></td>`).join('')}<td></td></tr>`;
@@ -641,6 +686,20 @@ document.addEventListener('click', (e) => {
       }
       break;
     case 'confirm-course': course().confirmed = true; save(); render(); break;
+    case 'make-home':
+      state.homeCourseId = course().id;
+      save(); render();
+      toast(`${esc(course().name)} is nu je thuisbaan.`);
+      break;
+    case 'remove-course': {
+      const c = course();
+      if (!c.custom || !confirm(`${c.name} verwijderen?`)) break;
+      state.courses = state.courses.filter((x) => x !== c);
+      if (state.homeCourseId === c.id) state.homeCourseId = state.courses[0].id;
+      state.round = newRound('front', state.homeCourseId);
+      save(); render();
+      break;
+    }
     case 'ai-analyse': runAiAnalysis(); break;
     case 'save-round': saveRound(); break;
     case 'export': {
@@ -665,6 +724,28 @@ $('#text-form').addEventListener('submit', (e) => {
   const input = $('#text-input');
   handleInput([input.value]);
   input.value = '';
+});
+
+$('#course-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = $('#new-course-name').value.trim();
+  if (!name) return;
+  const holeCount = Number($('#new-course-holes').value);
+  const parTotal = Number($('#new-course-par').value) || (holeCount === 9 ? 36 : 72);
+  const c = standardCourse(`eigen-${Date.now()}`, name, parTotal, [
+    // Neutrale startwaarden (rating = par, slope 113) tot de echte waarden zijn ingevuld.
+    ['geel', 'Geel (heren)', 'h', parTotal, 113],
+    ['rood', 'Rood (dames)', 'd', parTotal, 113],
+  ], holeCount);
+  c.custom = true;
+  c.tees.forEach((t) => { t.ratingUnknown = true; });
+  state.courses.push(c);
+  const empty = Object.values(state.round.scores).every((sc) => !Object.keys(sc).length);
+  if (empty) state.round = newRound('front', c.id);
+  $('#course-form').reset();
+  $('#course-form').closest('details').open = false;
+  save(); render();
+  toast(empty ? `${esc(name)} toegevoegd en gekozen.` : `${esc(name)} toegevoegd. Start een nieuwe ronde om er te spelen.`);
 });
 
 $('#player-form').addEventListener('submit', (e) => {
@@ -702,6 +783,7 @@ document.addEventListener('change', (e) => {
     }
   } else if (t.dataset.tee != null) {
     const tee = course().tees[Number(t.dataset.tee)];
+    delete tee.ratingUnknown;
     const optional = t.dataset.field.endsWith('9');
     tee[t.dataset.field] = t.value === '' && optional ? null : Number(t.value);
   } else if (t.dataset.course) {
