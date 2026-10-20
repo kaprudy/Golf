@@ -72,7 +72,10 @@
     <!-- INSTELLINGEN -->
     <section id="tab-instellingen" class="tab">
       <h2>Ronde</h2>
-      <div class="field-row">
+      <label>Baan
+        <select id="round-course"></select>
+      </label>
+      <div class="field-row" id="round-holes-label">
         <label>Welke holes
           <select id="round-holes">
             <option value="front">Eerste 9 (1–9)</option>
@@ -90,10 +93,11 @@
         <button type="submit">+ Speler</button>
       </form>
 
-      <h2>Baan</h2>
+      <h2>Baangegevens</h2>
+      <p class="muted small">Hieronder staan de gegevens van de baan die bij <b>Ronde</b> gekozen is.</p>
       <label>Naam <input id="course-name" type="text"></label>
       <div id="tees"></div>
-      <p class="muted small">Course rating en slope staan op de scorekaart van de club. De 9-holes waarden zijn standaard de helft van de 18-holes rating; vul de officiële 9-holes waarden in als je die hebt.</p>
+      <p class="muted small" id="rating-help">Course rating en slope staan op de scorekaart van de club. De 9-holes waarden zijn standaard de helft van de 18-holes rating; vul de officiële 9-holes waarden in als je die hebt.</p>
       <div id="course-warning"></div>
       <div class="card-scroll"><table id="course-table" class="scorecard"></table></div>
 

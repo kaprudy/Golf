@@ -5,33 +5,67 @@ import { analysePlayer, handicapIndexFromDifferentials } from './handicap.js';
 
 const STORAGE_KEY = 'golfscore-v1';
 
-// Hooge Graven (Ommen), par 72. Ratings volgens openbare baangegevens; controleer ze
-// op de scorekaart van de club. Par en stroke index per hole vul je zelf in.
-const DEFAULT_COURSE = {
-  name: 'Hooge Graven, Ommen',
-  pars: Array(18).fill(4),
-  si: Array.from({ length: 18 }, (_, i) => i + 1),
-  confirmed: false,
-  tees: [
-    { id: 'geel', name: 'Geel (heren)', rating: 71.7, slope: 129, rating9: null, slope9: null },
-    { id: 'wit', name: 'Wit (heren)', rating: 72.9, slope: 132, rating9: null, slope9: null },
-    { id: 'rood', name: 'Rood (dames)', rating: 72.4, slope: 124, rating9: null, slope9: null },
-    { id: 'blauw', name: 'Blauw (dames)', rating: 74.5, slope: 127, rating9: null, slope9: null },
-  ],
-};
+// Banen van Hooge Graven (Ommen). Ratings volgens openbare baangegevens; controleer ze
+// op de scorekaart van de club. Stroke index (en bij de grote baan de par) per hole vul je zelf in.
+// Bij een 9-holes baan zijn rating en slope de 9-holes waarden.
+const DEFAULT_COURSES = [
+  {
+    id: 'hooge-graven',
+    name: 'Hooge Graven (18 holes)',
+    holeCount: 18,
+    pars: Array(18).fill(4),
+    si: Array.from({ length: 18 }, (_, i) => i + 1),
+    confirmed: false,
+    tees: [
+      { id: 'geel', name: 'Geel (heren)', gender: 'h', rating: 71.7, slope: 129, rating9: null, slope9: null },
+      { id: 'wit', name: 'Wit (heren)', gender: 'h', rating: 72.9, slope: 132, rating9: null, slope9: null },
+      { id: 'rood', name: 'Rood (dames)', gender: 'd', rating: 72.4, slope: 124, rating9: null, slope9: null },
+      { id: 'blauw', name: 'Blauw (dames)', gender: 'd', rating: 74.5, slope: 127, rating9: null, slope9: null },
+    ],
+  },
+  {
+    id: 'par3',
+    name: 'Hooge Graven Par 3 (9 holes)',
+    holeCount: 9,
+    countsForIndex: false, // te kort voor een WHS-qualifying ronde
+    pars: Array(9).fill(3),
+    si: Array.from({ length: 9 }, (_, i) => i + 1),
+    confirmed: false,
+    tees: [
+      { id: 'par3-heren', name: 'Heren', gender: 'h', rating: 24.4, slope: 68 },
+      { id: 'par3-dames', name: 'Dames', gender: 'd', rating: 25.2, slope: 70 },
+    ],
+  },
+];
 
-function newRound(holesChoice = 'front') {
-  return { id: Date.now(), date: new Date().toISOString(), holesChoice, currentHole: holesChoice === 'back' ? 10 : 1, scores: {}, log: [] };
+function newRound(holesChoice = 'front', courseId = 'hooge-graven') {
+  return { id: Date.now(), date: new Date().toISOString(), courseId, holesChoice, currentHole: holesChoice === 'back' ? 10 : 1, scores: {}, log: [] };
+}
+
+// Oudere opslag had één baan (state.course); zet die om naar de lijst met banen.
+function migrate(saved) {
+  if (saved.course && !saved.courses) {
+    const old = { ...saved.course, id: 'hooge-graven', holeCount: 18 };
+    if (old.name === 'Hooge Graven, Ommen') old.name = DEFAULT_COURSES[0].name;
+    old.tees = old.tees.map((t) => ({ ...t, gender: t.gender ?? (['rood', 'blauw'].includes(t.id) ? 'd' : 'h') }));
+    saved.courses = [old, ...structuredClone(DEFAULT_COURSES).slice(1)];
+    delete saved.course;
+  }
+  for (const def of DEFAULT_COURSES) {
+    if (!saved.courses.some((c) => c.id === def.id)) saved.courses.push(structuredClone(def));
+  }
+  saved.round.courseId ??= 'hooge-graven';
+  return saved;
 }
 
 function load() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    if (saved) return saved;
+    if (saved) return migrate(saved);
   } catch { /* lege of kapotte opslag: opnieuw beginnen */ }
   return {
     players: [{ name: 'Rudy', index: null, tee: 'geel' }, { name: 'Peter', index: null, tee: 'geel' }],
-    course: structuredClone(DEFAULT_COURSE),
+    courses: structuredClone(DEFAULT_COURSES),
     round: newRound(),
     history: [],
     apiKey: '',
@@ -50,13 +84,16 @@ const fmt = (n) => (n == null ? '–' : String(n).replace('.', ','));
 const fmt1 = (n) => (n == null ? '–' : n.toFixed(1).replace('.', ','));
 const signed = (n) => (n > 0 ? `+${n}` : n === 0 ? 'E' : String(n));
 
+const course = () => state.courses.find((c) => c.id === state.round.courseId) ?? state.courses[0];
+
 function roundHoles(choice = state.round.holesChoice) {
+  if (course().holeCount === 9) return Array.from({ length: 9 }, (_, i) => i + 1);
   if (choice === 'back') return Array.from({ length: 9 }, (_, i) => i + 10);
   if (choice === 'all') return Array.from({ length: 18 }, (_, i) => i + 1);
   return Array.from({ length: 9 }, (_, i) => i + 1);
 }
 
-const parOf = (hole) => state.course.pars[hole - 1];
+const parOf = (hole) => course().pars[hole - 1];
 const scoreOf = (name, hole) => state.round.scores[name]?.[hole] ?? null;
 
 function setScore(name, hole, strokes) {
@@ -65,17 +102,28 @@ function setScore(name, hole, strokes) {
   else state.round.scores[name][hole] = strokes;
 }
 
+// Tee van een speler op deze baan. Spelers kiezen een tee op de grote baan; op een andere
+// baan nemen we de tee voor hetzelfde geslacht (of een eerder gekozen tee voor die baan).
+function teeFor(player, c = course()) {
+  const own = c.tees.find((t) => t.id === player.tees?.[c.id] || t.id === player.tee);
+  if (own) return own;
+  const main = state.courses[0].tees.find((t) => t.id === player.tee);
+  return c.tees.find((t) => t.gender === main?.gender) ?? c.tees[0];
+}
+
 function courseForPlayer(player) {
   const holes = roundHoles();
-  const tee = state.course.tees.find((t) => t.id === player.tee) ?? state.course.tees[0];
-  const nine = holes.length === 9;
+  const c = course();
+  const tee = teeFor(player, c);
+  // Op een 18-holes baan zijn de 9-holes waarden standaard de helft van de rating.
+  const half = holes.length === 9 && c.holeCount === 18;
   return {
-    name: state.course.name,
+    name: c.name,
     holes: holes.length,
     pars: holes.map(parOf),
-    strokeIndexes: holes.map((h) => state.course.si[h - 1]),
-    rating: nine ? (tee.rating9 ?? round1(tee.rating / 2)) : tee.rating,
-    slope: nine ? (tee.slope9 ?? tee.slope) : tee.slope,
+    strokeIndexes: holes.map((h) => c.si[h - 1]),
+    rating: half ? (tee.rating9 ?? round1(tee.rating / 2)) : tee.rating,
+    slope: half ? (tee.slope9 ?? tee.slope) : tee.slope,
     teeName: tee.name,
   };
 }
@@ -121,7 +169,7 @@ async function handleInput(texts) {
       const { aiParseEntry, describeError } = await import('./ai.js');
       try {
         const ai = await aiParseEntry(state.apiKey, texts, {
-          players: names, aliases: aliasMap(), currentHole: state.round.currentHole, pars: state.course.pars,
+          players: names, aliases: aliasMap(), currentHole: state.round.currentHole, pars: course().pars,
         });
         const scores = [];
         const unknownNames = [];
@@ -328,10 +376,10 @@ function render() {
   const holes = roundHoles();
   if (!holes.includes(state.round.currentHole)) state.round.currentHole = holes[0];
   const h = state.round.currentHole;
-  $('#course-label').textContent = `${state.course.name} · ${holes.length === 9 ? (holes[0] === 1 ? 'holes 1–9' : 'holes 10–18') : '18 holes'}`;
+  $('#course-label').textContent = course().holeCount === 9 ? course().name : `${course().name} · ${holes.length === 9 ? (holes[0] === 1 ? 'holes 1–9' : 'holes 10–18') : '18 holes'}`;
   $('#hole-number').textContent = h;
   $('#hole-number-2').textContent = h;
-  $('#hole-meta').textContent = `Par ${parOf(h)} · SI ${state.course.si[h - 1]}`;
+  $('#hole-meta').textContent = `Par ${parOf(h)} · SI ${course().si[h - 1]}`;
   renderQuickEntry();
   renderLog();
   renderScorecard();
@@ -384,20 +432,24 @@ function renderScorecard() {
 
 function computeResults() {
   return state.players.map((p) => {
-    const course = courseForPlayer(p);
+    const playerCourse = courseForPlayer(p);
     const holes = roundHoles();
     const scores = holes.map((h) => scoreOf(p.name, h));
-    const res = analysePlayer(course, p, scores);
-    const previous = state.history.flatMap((r) => r.results.filter((x) => x.name === p.name).map((x) => x.differential18));
-    const allDiffs = [...previous, res.differential18];
+    const res = analysePlayer(playerCourse, p, scores);
+    const counts = course().countsForIndex !== false;
+    const previous = state.history
+      .filter((r) => state.courses.find((c) => c.id === (r.courseId ?? 'hooge-graven'))?.countsForIndex !== false)
+      .flatMap((r) => r.results.filter((x) => x.name === p.name).map((x) => x.differential18));
+    const allDiffs = counts ? [...previous, res.differential18] : previous;
     return {
       ...res,
       scores,
       holeNumbers: holes,
-      teeName: course.teeName,
-      rating: course.rating,
-      slope: course.slope,
+      teeName: playerCourse.teeName,
+      rating: playerCourse.rating,
+      slope: playerCourse.slope,
       roundsCounted: allDiffs.length,
+      countsForIndex: counts,
       newIndex: handicapIndexFromDifferentials(allDiffs),
     };
   }).filter((r) => r.holesPlayed > 0);
@@ -422,7 +474,9 @@ function renderAnalysis() {
           <div><span>Bruto</span><b>${r.gross}</b><small>${signed(r.toPar)} (${r.holesPlayed}/${holesTotal} holes)</small></div>
           <div><span>Stableford</span><b>${r.stableford ?? '–'}</b><small>${r.courseHandicap != null ? `CH ${r.courseHandicap}` : 'geen HCP'}</small></div>
           <div><span>Differential</span><b>${fmt1(r.differential18)}</b><small>${holesTotal === 9 ? `9 holes: ${fmt1(r.differential)}` : '18 holes'}</small></div>
-          <div><span>Handicap</span><b>${r.newIndex != null ? fmt1(r.newIndex) : `≈ ${fmt1(Math.min(54, r.differential18))}`}</b><small>${r.newIndex != null ? `index uit ${Math.min(20, r.roundsCounted)} rondes` : `indicatie · nog ${3 - r.roundsCounted} ronde(s) voor index`}</small></div>
+          ${r.countsForIndex
+            ? `<div><span>Handicap</span><b>${r.newIndex != null ? fmt1(r.newIndex) : `≈ ${fmt1(Math.min(54, r.differential18))}`}</b><small>${r.newIndex != null ? `index uit ${Math.min(20, r.roundsCounted)} rondes` : `indicatie · nog ${3 - r.roundsCounted} ronde(s) voor index`}</small></div>`
+            : `<div><span>Handicap</span><b>${r.newIndex != null ? fmt1(r.newIndex) : '–'}</b><small>par 3-ronde telt niet mee voor de index</small></div>`}
         </div>
         <p class="small">
           ${t.eagleOfBeter ? `🦅 ${t.eagleOfBeter} eagle · ` : ''}🐦 ${t.birdie} birdie · ✅ ${t.par} par · ${t.bogey} bogey · ${t.doubleBogey} dubbel · ${t.slechter} slechter
@@ -447,19 +501,30 @@ function renderHistory() {
 }
 
 function renderSettings() {
+  $('#round-course').innerHTML = state.courses.map((c) => `<option value="${esc(c.id)}">${esc(c.name)}</option>`).join('');
+  $('#round-course').value = course().id;
   $('#round-holes').value = state.round.holesChoice;
-  const tees = state.course.tees;
+  $('#round-holes-label').hidden = course().holeCount === 9;
+  const tees = course().tees;
+  const nineHoleCourse = course().holeCount === 9;
+  $('#rating-help').hidden = nineHoleCourse;
   $('#players').innerHTML = state.players.map((p, i) => `<div class="player-row">
     <input type="text" value="${esc(p.name)}" data-player="${i}" data-field="name" aria-label="Naam">
     <input type="number" step="0.1" min="-10" max="54" value="${p.index ?? ''}" placeholder="HCP" data-player="${i}" data-field="index" aria-label="Handicap index">
-    <select data-player="${i}" data-field="tee" aria-label="Tee">${tees.map((t) => `<option value="${t.id}" ${t.id === p.tee ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</select>
+    <select data-player="${i}" data-field="tee" aria-label="Tee">${tees.map((t) => `<option value="${t.id}" ${t.id === teeFor(p).id ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</select>
     <button data-action="remove-player" data-i="${i}" aria-label="Verwijderen">✕</button>
     ${p.aliases?.length ? `<div class="aliases small muted">Herkent ook: ${p.aliases.map(esc).join(', ')}
       <button class="link inline" data-action="clear-aliases" data-i="${i}">wissen</button></div>` : ''}
   </div>`).join('');
 
-  $('#course-name').value = state.course.name;
-  $('#tees').innerHTML = `<table class="scorecard tees"><tr><th>Tee</th><th>CR 18</th><th>Slope 18</th><th>CR 9</th><th>Slope 9</th></tr>${tees.map((t, i) => `<tr>
+  $('#course-name').value = course().name;
+  $('#tees').innerHTML = nineHoleCourse
+    ? `<table class="scorecard tees"><tr><th>Tee</th><th>Course rating (9)</th><th>Slope (9)</th></tr>${tees.map((t, i) => `<tr>
+      <td>${esc(t.name)}</td>
+      <td><input type="number" step="0.1" value="${t.rating}" data-tee="${i}" data-field="rating"></td>
+      <td><input type="number" value="${t.slope}" data-tee="${i}" data-field="slope"></td>
+    </tr>`).join('')}</table>`
+    : `<table class="scorecard tees"><tr><th>Tee</th><th>CR 18</th><th>Slope 18</th><th>CR 9</th><th>Slope 9</th></tr>${tees.map((t, i) => `<tr>
     <td>${esc(t.name)}</td>
     <td><input type="number" step="0.1" value="${t.rating}" data-tee="${i}" data-field="rating"></td>
     <td><input type="number" value="${t.slope}" data-tee="${i}" data-field="slope"></td>
@@ -467,11 +532,11 @@ function renderSettings() {
     <td><input type="number" value="${t.slope9 ?? ''}" placeholder="${t.slope}" data-tee="${i}" data-field="slope9"></td>
   </tr>`).join('')}</table>`;
 
-  $('#course-warning').innerHTML = state.course.confirmed ? '' :
-    `<div class="feedback info">⚠️ Vul de <b>par en stroke index per hole</b> in zoals op de scorekaart van de club (nu staat alles op par 4). <button class="link" data-action="confirm-course">Klopt, verberg</button></div>`;
-  $('#course-table').innerHTML = `<tr><th>Hole</th>${state.course.pars.map((_, i) => `<th>${i + 1}</th>`).join('')}<th>Tot.</th></tr>
-    <tr><td>Par</td>${state.course.pars.map((p, i) => `<td><input class="cell" type="number" inputmode="numeric" min="3" max="6" value="${p}" data-course="pars" data-h="${i}"></td>`).join('')}<td>${state.course.pars.reduce((a, b) => a + b, 0)}</td></tr>
-    <tr><td>SI</td>${state.course.si.map((s, i) => `<td><input class="cell" type="number" inputmode="numeric" min="1" max="18" value="${s}" data-course="si" data-h="${i}"></td>`).join('')}<td></td></tr>`;
+  $('#course-warning').innerHTML = course().confirmed ? '' :
+    `<div class="feedback info">⚠️ Vul de <b>${nineHoleCourse ? 'stroke index' : 'par en stroke index'} per hole</b> in zoals op de scorekaart van de club${nineHoleCourse ? '' : ' (nu staat alles op par 4)'}. <button class="link" data-action="confirm-course">Klopt, verberg</button></div>`;
+  $('#course-table').innerHTML = `<tr><th>Hole</th>${course().pars.map((_, i) => `<th>${i + 1}</th>`).join('')}<th>Tot.</th></tr>
+    <tr><td>Par</td>${course().pars.map((p, i) => `<td><input class="cell" type="number" inputmode="numeric" min="3" max="6" value="${p}" data-course="pars" data-h="${i}"></td>`).join('')}<td>${course().pars.reduce((a, b) => a + b, 0)}</td></tr>
+    <tr><td>SI</td>${course().si.map((s, i) => `<td><input class="cell" type="number" inputmode="numeric" min="1" max="18" value="${s}" data-course="si" data-h="${i}"></td>`).join('')}<td></td></tr>`;
   if (document.activeElement?.id !== 'api-key') $('#api-key').value = state.apiKey;
   $('#ai-btn').disabled = !state.apiKey;
   $('#ai-btn').title = state.apiKey ? '' : 'Vul eerst een API-sleutel in bij Instellingen';
@@ -493,9 +558,9 @@ async function runAiAnalysis() {
     return;
   }
   try {
-    const course = { ...courseForPlayer(state.players[0] ?? { tee: 'geel' }) };
+    const roundCourse = courseForPlayer(state.players[0] ?? { tee: 'geel' });
     const transcripts = state.round.log.slice().reverse().map((l) => `hole ${l.hole}: ${l.text}`);
-    const a = await ai.aiAnalyseRound(state.apiKey, { course, results, transcripts });
+    const a = await ai.aiAnalyseRound(state.apiKey, { course: roundCourse, results, transcripts });
     out.innerHTML = `<div class="ai-box">
       <p>${esc(a.samenvatting)}</p>
       ${a.spelers.map((s) => `<h3>${esc(s.naam)}</h3><p>${esc(s.analyse)}</p><p>💡 <i>${esc(s.tip)}</i></p>`).join('')}
@@ -513,7 +578,8 @@ function saveRound() {
   const entry = {
     id: state.round.id,
     date: state.round.date,
-    label: `${state.course.name}, ${holes.length === 9 ? `holes ${holes[0]}–${holes.at(-1)}` : '18 holes'}`,
+    courseId: course().id,
+    label: course().holeCount === 9 ? course().name : `${course().name}, ${holes.length === 9 ? `holes ${holes[0]}–${holes.at(-1)}` : '18 holes'}`,
     results: results.map((r) => ({ name: r.name, gross: r.gross, toPar: r.toPar, differential: r.differential, differential18: r.differential18, scores: r.scores })),
   };
   state.history = state.history.filter((r) => r.id !== entry.id);
@@ -566,7 +632,7 @@ document.addEventListener('click', (e) => {
     }
     case 'new-round':
       if (confirm('Nieuwe ronde starten? Scores die je niet hebt opgeslagen gaan verloren.')) {
-        state.round = newRound($('#round-holes').value);
+        state.round = newRound($('#round-holes').value, $('#round-course').value);
         lastUndo = null;
         pending = null;
         showFeedback('');
@@ -574,7 +640,7 @@ document.addEventListener('click', (e) => {
         save(); render(); switchTab('ronde');
       }
       break;
-    case 'confirm-course': state.course.confirmed = true; save(); render(); break;
+    case 'confirm-course': course().confirmed = true; save(); render(); break;
     case 'ai-analyse': runAiAnalysis(); break;
     case 'save-round': saveRound(); break;
     case 'export': {
@@ -629,23 +695,29 @@ document.addEventListener('change', (e) => {
       }
     } else if (t.dataset.field === 'index') {
       p.index = t.value === '' ? null : Math.min(54, Number(t.value));
-    } else {
+    } else if (course().id === state.courses[0].id) {
       p.tee = t.value;
+    } else {
+      p.tees = { ...p.tees, [course().id]: t.value };
     }
   } else if (t.dataset.tee != null) {
-    const tee = state.course.tees[Number(t.dataset.tee)];
+    const tee = course().tees[Number(t.dataset.tee)];
     const optional = t.dataset.field.endsWith('9');
     tee[t.dataset.field] = t.value === '' && optional ? null : Number(t.value);
   } else if (t.dataset.course) {
-    state.course[t.dataset.course][Number(t.dataset.h)] = Number(t.value);
+    course()[t.dataset.course][Number(t.dataset.h)] = Number(t.value);
   } else if (t.id === 'course-name') {
-    state.course.name = t.value.trim() || DEFAULT_COURSE.name;
+    course().name = t.value.trim() || DEFAULT_COURSES.find((c) => c.id === course().id)?.name || 'Baan';
   } else if (t.id === 'api-key') {
     state.apiKey = t.value.trim();
+  } else if (t.id === 'round-course') {
+    const empty = Object.values(state.round.scores).every((s) => !Object.keys(s).length);
+    if (empty) state.round = newRound(state.round.holesChoice, t.value);
+    else toast('Er zijn al scores. Kies “Nieuwe ronde starten” om op een andere baan te spelen.');
   } else if (t.id === 'round-holes') {
     // Pas de holes direct aan als er nog niets gespeeld is.
     const empty = Object.values(state.round.scores).every((s) => !Object.keys(s).length);
-    if (empty) state.round = newRound(t.value);
+    if (empty) state.round = newRound(t.value, state.round.courseId);
     else toast('Er zijn al scores. Kies “Nieuwe ronde starten” om andere holes te spelen.');
   } else {
     return;

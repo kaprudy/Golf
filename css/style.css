@@ -165,3 +165,4 @@ details summary { cursor: pointer; color: var(--blue); }
 .choice-row button { flex: 1 1 auto; }
 .aliases { grid-column: 1 / -1; margin: -2px 0 4px 4px; }
 button.link.inline { display: inline; margin-left: 6px; }
+[hidden] { display: none !important; }

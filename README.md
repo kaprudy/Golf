@@ -58,7 +58,9 @@ Open **Instellingen**:
    (standaard staat alles op par 4). De course ratings/slopes van Hooge Graven
    (geel 71,7/129, wit 72,9/132, rood 72,4/124, blauw 74,5/127) komen uit openbare
    baangegevens – controleer ze op de scorekaart. Heb je officiële 9-holes ratings, vul die ook in.
-3. **Welke holes**: eerste 9, laatste 9 of 18 holes.
+3. **Baan**: de grote baan (18 holes) of de **par 3-baan** (9 holes, par 27; CR heren 24,4 / slope 68,
+   dames 25,2 / slope 70). Op de grote baan kies je ook: eerste 9, laatste 9 of 18 holes.
+   Rondes op de par 3-baan tellen niet mee voor de handicap index (te kort voor een WHS-qualifying ronde).
 4. Optioneel: **Claude API-sleutel** (maak er een op <https://console.anthropic.com>). De sleutel blijft alleen op je telefoon.
 
 ## Op je telefoon zetten
