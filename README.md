@@ -56,9 +56,10 @@ Open **Instellingen**:
 
 Spraakherkenning in de browser werkt alleen via **https**. De makkelijkste manier is GitHub Pages:
 
-1. Merge deze code naar de `main`-branch.
+1. Zorg dat de repository openbaar is (gratis GitHub Pages werkt alleen bij openbare repositories).
 2. Ga in GitHub naar **Settings → Pages** en kies bij *Source* **GitHub Actions**.
-3. Na de volgende push staat de app op `https://<gebruikersnaam>.github.io/<repo>/`.
+3. Elke push naar de standaardbranch publiceert de app op `https://<gebruikersnaam>.github.io/<repo>/`
+   (handmatig: *Actions → Test en publiceer → Run workflow*).
 4. Open die link op je telefoon:
    - **iPhone (Safari)**: deelknop → *Zet op beginscherm*.
    - **Android (Chrome)**: menu ⋮ → *App installeren*.

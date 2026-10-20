@@ -2,7 +2,6 @@ name: Test en publiceer
 
 on:
   push:
-    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -22,7 +21,8 @@ jobs:
       - run: npm test
 
   deploy:
-    if: github.ref == 'refs/heads/main'
+    # Publiceer vanaf de standaardbranch van de repository (wat die ook is).
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
     needs: test
     runs-on: ubuntu-latest
     environment:
