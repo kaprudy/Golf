@@ -54,10 +54,10 @@ Het is een eigen berekening als hulpmiddel; je officiële handicap registreer je
 Open **Instellingen**:
 
 1. **Spelers**: namen, eventueel huidige handicap index en de tee (geel/rood/…).
-2. **Baan**: vul de **par en stroke index per hole** in van de scorekaart van de club
-   (standaard staat alles op par 4). De course ratings/slopes van Hooge Graven
-   (geel 71,7/129, wit 72,9/132, rood 72,4/124, blauw 74,5/127) komen uit openbare
-   baangegevens – controleer ze op de scorekaart. Heb je officiële 9-holes ratings, vul die ook in.
+2. **Baan**: voor Hooge Graven (18 holes en par 3) staan par, stroke index en lengtes van de
+   officiële scorekaarten van de club al in de app. De course ratings/slopes (wit 72,9/132,
+   geel 71,7/129, blauw 74,5/127, rood 72,4/124) staan niet op de scorekaart en komen uit
+   openbare baangegevens – controleer ze bij de club. Voor andere banen vul je par en stroke index zelf in.
 3. **Banen**: in de app staan Hooge Graven (18 holes en par 3), Golfclub Zwolle, Golfclub De Koepel (Wierden)
    en Sallandsche Golfclub De Hoek (Diepenveen). Er bestaat geen openbare lijst met Nederlandse baangegevens;
    de ratings komen van [1golf.eu](https://www.1golf.eu) – controleer ze op de scorekaart en vul de par per hole in.

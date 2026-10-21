@@ -8,34 +8,47 @@ const STORAGE_KEY = 'golfscore-v1';
 // Banen van Hooge Graven (Ommen). Ratings volgens openbare baangegevens; controleer ze
 // op de scorekaart van de club. Stroke index (en bij de grote baan de par) per hole vul je zelf in.
 // Bij een 9-holes baan zijn rating en slope de 9-holes waarden.
+// Hooge Graven: par, stroke index en lengtes van de officiële scorekaarten van de club.
+// Course rating en slope volgens 1golf.eu (staan niet op de scorekaart); de lengtes per tee
+// komen daarmee overeen. Verhoog dataVersion als deze gegevens wijzigen: opgeslagen
+// banen worden dan bijgewerkt.
 const DEFAULT_COURSES = [
   {
     id: 'hooge-graven',
+    dataVersion: 2,
     name: 'Hooge Graven (18 holes)',
     holeCount: 18,
     parTotal: 72,
-    pars: Array(18).fill(4),
-    si: Array.from({ length: 18 }, (_, i) => i + 1),
-    confirmed: false,
+    pars: [4, 3, 4, 4, 4, 5, 3, 5, 3, 5, 3, 4, 4, 4, 5, 4, 4, 4],
+    si: [6, 14, 18, 4, 8, 2, 16, 12, 10, 9, 17, 15, 3, 1, 13, 11, 5, 7],
+    confirmed: true,
     tees: [
-      { id: 'geel', name: 'Geel (heren)', gender: 'h', rating: 71.7, slope: 129, rating9: null, slope9: null },
-      { id: 'wit', name: 'Wit (heren)', gender: 'h', rating: 72.9, slope: 132, rating9: null, slope9: null },
-      { id: 'rood', name: 'Rood (dames)', gender: 'd', rating: 72.4, slope: 124, rating9: null, slope9: null },
-      { id: 'blauw', name: 'Blauw (dames)', gender: 'd', rating: 74.5, slope: 127, rating9: null, slope9: null },
+      { id: 'wit', name: 'Wit (heren)', gender: 'h', rating: 72.9, slope: 132, rating9: null, slope9: null,
+        lengths: [401, 168, 301, 364, 364, 503, 167, 453, 182, 499, 172, 303, 368, 380, 458, 340, 394, 377] },
+      { id: 'geel', name: 'Geel (heren)', gender: 'h', rating: 71.7, slope: 129, rating9: null, slope9: null,
+        lengths: [387, 158, 295, 349, 349, 488, 159, 443, 172, 490, 157, 288, 358, 372, 435, 330, 381, 363] },
+      { id: 'blauw', name: 'Blauw (dames)', gender: 'd', rating: 74.5, slope: 127, rating9: null, slope9: null,
+        lengths: [331, 147, 284, 340, 337, 478, 145, 386, 153, 407, 147, 277, 314, 353, 382, 282, 340, 304] },
+      { id: 'rood', name: 'Rood (dames)', gender: 'd', rating: 72.4, slope: 124, rating9: null, slope9: null,
+        lengths: [331, 137, 251, 296, 294, 410, 126, 382, 153, 404, 133, 257, 310, 325, 377, 282, 340, 304] },
     ],
   },
   {
+    // 9 holes; voor 18 holes speel je ze twee keer (holes 10-18 = tweede ronde, met eigen S.I.).
     id: 'par3',
-    name: 'Hooge Graven Par 3 (9 holes)',
-    holeCount: 9,
+    dataVersion: 2,
+    name: 'Hooge Graven Par 3',
+    holeCount: 18,
     countsForIndex: false, // te kort voor een WHS-qualifying ronde
-    parTotal: 27,
-    pars: Array(9).fill(3),
-    si: Array.from({ length: 9 }, (_, i) => i + 1),
-    confirmed: false,
+    parTotal: 54,
+    pars: Array(18).fill(3),
+    si: [9, 3, 7, 11, 15, 5, 13, 1, 17, 10, 4, 8, 12, 16, 6, 14, 2, 18],
+    confirmed: true,
     tees: [
-      { id: 'par3-heren', name: 'Heren', gender: 'h', rating: 24.4, slope: 68 },
-      { id: 'par3-dames', name: 'Dames', gender: 'd', rating: 25.2, slope: 70 },
+      { id: 'par3-heren', name: 'Heren', gender: 'h', rating: 48.8, slope: 68, rating9: 24.4, slope9: 68,
+        lengths: [89, 111, 86, 73, 87, 128, 78, 100, 93, 89, 111, 86, 73, 87, 128, 78, 100, 93] },
+      { id: 'par3-dames', name: 'Dames', gender: 'd', rating: 50.4, slope: 70, rating9: 25.2, slope9: 70,
+        lengths: [89, 111, 86, 73, 87, 128, 78, 100, 93, 89, 111, 86, 73, 87, 128, 78, 100, 93] },
     ],
   },
   // Banen in de buurt (ratings volgens 1golf.eu; par per hole nog invullen).
@@ -86,7 +99,14 @@ function migrate(saved) {
   for (const def of DEFAULT_COURSES) {
     const existing = saved.courses.find((c) => c.id === def.id);
     if (!existing) saved.courses.push(structuredClone(def));
-    else existing.parTotal ??= def.parTotal;
+    else if ((existing.dataVersion ?? 1) < (def.dataVersion ?? 1)) {
+      // Nieuwe officiële baangegevens: overnemen (ingevulde 9-holes ratings blijven staan).
+      const tees = def.tees.map((t) => {
+        const old = existing.tees.find((x) => x.id === t.id);
+        return { ...structuredClone(t), rating9: t.rating9 ?? old?.rating9 ?? null, slope9: t.slope9 ?? old?.slope9 ?? null };
+      });
+      Object.assign(existing, structuredClone(def), { tees });
+    } else existing.parTotal ??= def.parTotal;
   }
   saved.round.courseId ??= 'hooge-graven';
   saved.homeCourseId ??= 'hooge-graven';
@@ -417,7 +437,9 @@ function render() {
   $('#course-label').textContent = course().holeCount === 9 ? course().name : `${course().name} · ${holes.length === 9 ? (holes[0] === 1 ? 'holes 1–9' : 'holes 10–18') : '18 holes'}`;
   $('#hole-number').textContent = h;
   $('#hole-number-2').textContent = h;
-  $('#hole-meta').textContent = `Par ${parOf(h)} · SI ${course().si[h - 1]}`;
+  const tee = teeFor(state.players[0] ?? { tee: 'geel' });
+  const len = tee.lengths?.[h - 1];
+  $('#hole-meta').textContent = `Par ${parOf(h)} · SI ${course().si[h - 1]}${len ? ` · ${len} m (${tee.name.split(' ')[0].toLowerCase()})` : ''}`;
   const next = inputHole();
   $('#next-hint').innerHTML = next !== h
     ? `Hole ${h} is compleet. Zonder holenummer gaat je volgende invoer naar <b>hole ${next}</b>.`
