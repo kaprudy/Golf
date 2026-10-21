@@ -186,7 +186,7 @@ function aliasMap() {
 }
 
 function parseOpts() {
-  return { players: state.players.map((p) => p.name), aliases: aliasMap(), currentHole: state.round.currentHole, parForHole: parOf };
+  return { players: state.players.map((p) => p.name), aliases: aliasMap(), currentHole: inputHole(), parForHole: parOf };
 }
 
 // texts: één of meer varianten van wat er gezegd is (spraakherkenning geeft alternatieven).
@@ -207,7 +207,7 @@ async function handleInput(texts) {
       const { aiParseEntry, describeError } = await import('./ai.js');
       try {
         const ai = await aiParseEntry(state.apiKey, texts, {
-          players: names, aliases: aliasMap(), currentHole: state.round.currentHole, pars: course().pars,
+          players: names, aliases: aliasMap(), currentHole: inputHole(), pars: course().pars,
         });
         const scores = [];
         const unknownNames = [];
@@ -254,7 +254,6 @@ async function handleInput(texts) {
   for (const u of result.unknownNames) pending.items.push({ name: u.name, strokes: u.strokes });
   if (!pending.items.length) pending = null;
 
-  if (!pending && result.certain) advanceIfHoleDone(result.hole);
   save();
   render();
 
@@ -307,10 +306,7 @@ function assignPending(btn) {
   }
   pending.items.splice(k, 1);
   const hole = pending.hole;
-  if (!pending.items.length) {
-    pending = null;
-    advanceIfHoleDone(hole);
-  }
+  if (!pending.items.length) pending = null;
   lastUndo = null; // na een keuze geldt "ongedaan maken" niet meer voor de hele invoer
   save();
   render();
@@ -318,20 +314,24 @@ function assignPending(btn) {
   renderPending();
 }
 
-function advanceIfHoleDone(hole) {
-  if (state.players.every((p) => scoreOf(p.name, hole) != null)) advanceToOpenHole(hole);
-}
+const holeComplete = (hole) => state.players.length > 0 && state.players.every((p) => scoreOf(p.name, hole) != null);
 
-function advanceToOpenHole(from) {
+// Eerstvolgende hole na `from` waar nog scores ontbreken (of null als alles gespeeld is).
+function nextOpenHole(from) {
   const holes = roundHoles();
   const start = holes.indexOf(from);
   for (let k = 1; k <= holes.length; k++) {
     const h = holes[(start + k) % holes.length];
-    if (state.players.some((p) => scoreOf(p.name, h) == null)) {
-      state.round.currentHole = h;
-      return;
-    }
+    if (!holeComplete(h)) return h;
   }
+  return null;
+}
+
+// Het scherm blijft op de hole die je het laatst noemde. Een invoer zonder holenummer
+// gaat naar die hole, of naar de volgende open hole als die al compleet is.
+function inputHole() {
+  const h = state.round.currentHole;
+  return holeComplete(h) ? (nextOpenHole(h) ?? h) : h;
 }
 
 function undo() {
@@ -418,6 +418,10 @@ function render() {
   $('#hole-number').textContent = h;
   $('#hole-number-2').textContent = h;
   $('#hole-meta').textContent = `Par ${parOf(h)} · SI ${course().si[h - 1]}`;
+  const next = inputHole();
+  $('#next-hint').innerHTML = next !== h
+    ? `Hole ${h} is compleet. Zonder holenummer gaat je volgende invoer naar <b>hole ${next}</b>.`
+    : '';
   renderQuickEntry();
   renderLog();
   renderScorecard();

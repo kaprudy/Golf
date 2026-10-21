@@ -172,3 +172,5 @@ button.link.inline { display: inline; margin-left: 6px; }
 .term { display: inline-block; border-radius: 6px; padding: 0 6px; font-size: .78rem; font-weight: 600; white-space: nowrap; }
 .term.d0 { background: var(--green-light); }
 .qe-name .term { margin-top: 2px; }
+.next-hint { text-align: center; font-size: .85rem; color: var(--muted); margin: -6px 0 12px; min-height: 0; }
+.next-hint:empty { display: none; }
