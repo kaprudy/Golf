@@ -1,7 +1,9 @@
 // Offline-ondersteuning: de app werkt op de baan ook zonder bereik (behalve de AI).
-const CACHE = 'golfscore-v9';
+const CACHE = 'golfscore-v10';
 const FILES = ['./', 'index.html', 'css/style.css', 'js/app.js', 'js/parser.js', 'js/handicap.js', 'js/ai.js', 'js/vendor/anthropic-sdk.js', 'manifest.webmanifest', 'icon.svg',
-  'img/hooge-graven-1-9.webp', 'img/hooge-graven-10-18.webp', 'img/hooge-graven-par3.webp'];
+  'img/hooge-graven-1-9.webp', 'img/hooge-graven-10-18.webp', 'img/hooge-graven-par3.webp',
+  ...Array.from({ length: 18 }, (_, i) => [`img/holes/hg-${i + 1}.webp`, `img/holes/hg-pin-${i + 1}.webp`]).flat(),
+  ...Array.from({ length: 9 }, (_, i) => `img/holes/par3-${i + 1}.webp`)];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));

@@ -185,3 +185,11 @@ button.link.inline { display: inline; margin-left: 6px; }
 }
 .overlay-bar button { background: none; border: 0; color: #fff; font-size: 1.3rem; }
 .overlay img { display: block; width: 100%; max-width: 640px; margin: 0 auto; height: auto; }
+.hole-view {
+  display: flex; gap: 10px; align-items: center; justify-content: center;
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 8px; margin: 0 0 14px;
+}
+.hole-view #hole-img { max-height: 210px; max-width: 70%; object-fit: contain; border-radius: 8px; cursor: zoom-in; }
+.hole-side { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.hole-side #pin-img { width: 80px; height: auto; }
+.center { margin: 0 auto 12px; }

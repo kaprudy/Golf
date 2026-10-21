@@ -33,6 +33,16 @@
 
       <p id="next-hint" class="next-hint"></p>
 
+      <div id="hole-view" class="hole-view" hidden>
+        <img id="hole-img" alt="Plattegrond van deze hole" data-action="show-map">
+        <div class="hole-side">
+          <img id="pin-img" alt="Pinposities op de green">
+          <span id="pin-label" class="muted small">Pinposities</span>
+          <button class="link small" data-action="toggle-hole-view">Verbergen</button>
+        </div>
+      </div>
+      <button id="hole-view-show" class="link small center" data-action="toggle-hole-view" hidden>⛳ Hole tonen</button>
+
       <button id="mic" class="mic" data-action="mic" aria-label="Inspreken">
         <span class="mic-icon">🎤</span>
         <span id="mic-label">Druk en spreek in</span>

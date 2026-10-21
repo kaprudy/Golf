@@ -80,6 +80,19 @@ const COURSE_MAPS = {
   ],
 };
 
+// Uitsnede van één hole (en de pinposities) uit de kaarten. De par 3-baan speel je twee
+// keer rond: holes 10-18 zijn dezelfde holes als 1-9.
+function holeImages(hole) {
+  if (course().id === 'hooge-graven') return { hole: `img/holes/hg-${hole}.webp`, pin: `img/holes/hg-pin-${hole}.webp` };
+  if (course().id === 'par3') return { hole: `img/holes/par3-${((hole - 1) % 9) + 1}.webp`, pin: null };
+  return null;
+}
+
+// Per toestel onthouden of de hole-afbeelding verborgen is.
+function holeViewHidden() {
+  try { return localStorage.getItem('golfscore-hide-hole') === '1'; } catch { return false; }
+}
+
 const mapForHole = (hole) => COURSE_MAPS[course().id]?.find((m) => m.holes.includes(hole)) ?? null;
 
 // 18-holes baan waarvan we alleen de totale par en de tee-ratings kennen.
@@ -454,6 +467,16 @@ function render() {
   const len = tee.lengths?.[h - 1];
   $('#hole-meta').textContent = `Par ${parOf(h)} · SI ${course().si[h - 1]}${len ? ` · ${len} m (${tee.name.split(' ')[0].toLowerCase()})` : ''}`;
   $('#map-btn').hidden = !mapForHole(h);
+  const imgs = holeImages(h);
+  const hidden = holeViewHidden();
+  $('#hole-view').hidden = !imgs || hidden;
+  $('#hole-view-show').hidden = !imgs || !hidden;
+  if (imgs && !hidden) {
+    $('#hole-img').src = imgs.hole;
+    $('#pin-img').hidden = !imgs.pin;
+    $('#pin-label').hidden = !imgs.pin;
+    if (imgs.pin) $('#pin-img').src = imgs.pin;
+  }
   const next = inputHole();
   $('#next-hint').innerHTML = next !== h
     ? `Hole ${h} is compleet. Zonder holenummer gaat je volgende invoer naar <b>hole ${next}</b>.`
@@ -715,6 +738,10 @@ document.addEventListener('click', (e) => {
       break;
     }
     case 'close-map': $('#map-overlay').hidden = true; break;
+    case 'toggle-hole-view':
+      try { localStorage.setItem('golfscore-hide-hole', holeViewHidden() ? '0' : '1'); } catch { /* geen opslag: blijft zichtbaar */ }
+      render();
+      break;
     case 'assign': assignPending(btn); break;
     case 'clear-aliases': state.players[Number(btn.dataset.i)].aliases = []; save(); render(); break;
     case 'remove-player': {
