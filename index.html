@@ -26,6 +26,7 @@
         <div class="hole-info">
           <div class="hole-number">Hole <span id="hole-number">1</span></div>
           <div class="muted" id="hole-meta">Par 4</div>
+          <button class="link map-link" id="map-btn" data-action="show-map" hidden>🗺️ Baankaart</button>
         </div>
         <button class="nav-btn" data-action="next-hole" aria-label="Volgende hole">▶</button>
       </div>
@@ -144,6 +145,14 @@
   </nav>
 
   <div id="toast" class="toast" hidden></div>
+
+  <div id="map-overlay" class="overlay" data-action="close-map" hidden>
+    <div class="overlay-bar">
+      <span id="map-title"></span>
+      <button data-action="close-map" aria-label="Sluiten">✕</button>
+    </div>
+    <img id="map-img" data-action="none" alt="Plattegrond van de baan">
+  </div>
 
   <script type="module" src="js/app.js"></script>
 </body>

@@ -69,6 +69,19 @@ const DEFAULT_COURSES = [
   ]),
 ];
 
+// Plattegronden van de club (scorekaarten), per groep holes.
+const COURSE_MAPS = {
+  'hooge-graven': [
+    { holes: [1, 2, 3, 4, 5, 6, 7, 8, 9], src: 'img/hooge-graven-1-9.webp', title: 'Holes 1 t/m 9' },
+    { holes: [10, 11, 12, 13, 14, 15, 16, 17, 18], src: 'img/hooge-graven-10-18.webp', title: 'Holes 10 t/m 18' },
+  ],
+  par3: [
+    { holes: Array.from({ length: 18 }, (_, i) => i + 1), src: 'img/hooge-graven-par3.webp', title: 'Par 3-baan' },
+  ],
+};
+
+const mapForHole = (hole) => COURSE_MAPS[course().id]?.find((m) => m.holes.includes(hole)) ?? null;
+
 // 18-holes baan waarvan we alleen de totale par en de tee-ratings kennen.
 function standardCourse(id, name, parTotal, tees, holeCount = 18) {
   return {
@@ -440,6 +453,7 @@ function render() {
   const tee = teeFor(state.players[0] ?? { tee: 'geel' });
   const len = tee.lengths?.[h - 1];
   $('#hole-meta').textContent = `Par ${parOf(h)} · SI ${course().si[h - 1]}${len ? ` · ${len} m (${tee.name.split(' ')[0].toLowerCase()})` : ''}`;
+  $('#map-btn').hidden = !mapForHole(h);
   const next = inputHole();
   $('#next-hint').innerHTML = next !== h
     ? `Hole ${h} is compleet. Zonder holenummer gaat je volgende invoer naar <b>hole ${next}</b>.`
@@ -692,6 +706,15 @@ document.addEventListener('click', (e) => {
       break;
     }
     case 'undo': undo(); break;
+    case 'show-map': {
+      const m = mapForHole(state.round.currentHole);
+      if (!m) break;
+      $('#map-title').textContent = `${course().name} · ${m.title}`;
+      $('#map-img').src = m.src;
+      $('#map-overlay').hidden = false;
+      break;
+    }
+    case 'close-map': $('#map-overlay').hidden = true; break;
     case 'assign': assignPending(btn); break;
     case 'clear-aliases': state.players[Number(btn.dataset.i)].aliases = []; save(); render(); break;
     case 'remove-player': {
