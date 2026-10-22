@@ -21,11 +21,12 @@
   <main>
     <!-- RONDE -->
     <section id="tab-ronde" class="tab active">
+      <div class="hero">
       <div class="hole-nav">
         <button class="nav-btn" data-action="prev-hole" aria-label="Vorige hole">◀</button>
         <div class="hole-info">
           <div class="hole-number">Hole <span id="hole-number">1</span></div>
-          <div class="muted" id="hole-meta">Par 4</div>
+          <div id="hole-meta" class="hole-meta"></div>
           <button class="link map-link" id="map-btn" data-action="show-map" hidden>🗺️ Baankaart</button>
         </div>
         <button class="nav-btn" data-action="next-hole" aria-label="Volgende hole">▶</button>
@@ -42,6 +43,7 @@
         </div>
       </div>
       <button id="hole-view-show" class="link small center" data-action="toggle-hole-view" hidden>⛳ Hole tonen</button>
+      </div>
 
       <button id="mic" class="mic" data-action="mic" aria-label="Inspreken">
         <span class="mic-icon">🎤</span>

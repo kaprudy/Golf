@@ -465,7 +465,9 @@ function render() {
   $('#hole-number-2').textContent = h;
   const tee = teeFor(state.players[0] ?? { tee: 'geel' });
   const len = tee.lengths?.[h - 1];
-  $('#hole-meta').textContent = `Par ${parOf(h)} · SI ${course().si[h - 1]}${len ? ` · ${len} m (${tee.name.split(' ')[0].toLowerCase()})` : ''}`;
+  const tile = (label, value) => `<span class="tile"><small>${esc(label)}</small><b>${esc(value)}</b></span>`;
+  $('#hole-meta').innerHTML = tile('Par', parOf(h)) + tile('SI', course().si[h - 1])
+    + (len ? tile(tee.name.split(' ')[0], `${len} m`) : '');
   $('#map-btn').hidden = !mapForHole(h);
   const imgs = holeImages(h);
   const hidden = holeViewHidden();
