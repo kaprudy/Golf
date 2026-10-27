@@ -335,3 +335,15 @@ label.check input { width: 22px; height: 22px; min-height: 0; margin: 0; accent-
 .sheet p { line-height: 1.45; }
 .sheet .button-row { margin-top: 14px; }
 .sheet-close { position: absolute; top: 12px; right: 12px; border: 0; background: none; font-size: 1.2rem; color: var(--muted); min-height: 40px; }
+
+/* Baan en starthole kiezen */
+.start-course { margin: 16px 0 8px; font-size: 1rem; }
+.start-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.start-grid button {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 12px 14px;
+  border-radius: 16px; min-height: 64px; text-align: left;
+}
+.start-grid button b { font-family: var(--serif); font-size: 1.15rem; color: var(--accent-ink); }
+.start-grid button span { font-size: .85rem; color: var(--muted); }
+.start-others { margin-top: 16px; }
+.start-others summary { cursor: pointer; font-weight: 600; }

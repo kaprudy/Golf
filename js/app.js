@@ -115,7 +115,8 @@ function standardCourse(id, name, parTotal, tees, holeCount = 18) {
 }
 
 function newRound(holesChoice = 'front', courseId = state?.homeCourseId ?? 'hooge-graven') {
-  return { id: Date.now(), date: new Date().toISOString(), courseId, holesChoice, currentHole: holesChoice === 'back' ? 10 : 1, scores: {}, log: [] };
+  const now = new Date().toISOString();
+  return { id: Date.now(), date: now, startedAt: now, courseId, holesChoice, currentHole: ['back', 'all10'].includes(holesChoice) ? 10 : 1, scores: {}, log: [] };
 }
 
 // Oudere opslag had één baan (state.course); zet die om naar de lijst met banen.
@@ -153,7 +154,7 @@ function load() {
     players: [{ name: 'Rudy', index: null, tee: 'geel' }, { name: 'Peter', index: null, tee: 'geel' }],
     courses: structuredClone(DEFAULT_COURSES),
     homeCourseId: 'hooge-graven',
-    round: newRound('front', 'hooge-graven'),
+    round: { ...newRound('front', 'hooge-graven'), startedAt: null }, // eerst baan kiezen
     history: [],
     apiKey: '',
     sync: { localChangedAt: null, syncedAt: null },
@@ -679,8 +680,7 @@ function afterRound() {
       <button class="link small" data-action="register-never">Niet meer vragen</button>`;
   }
   if (!html) return;
-  $('#after-round-body').innerHTML = html;
-  $('#after-round').hidden = false;
+  showSheet(html, 'Na de ronde');
 }
 
 function afterRoundThanks() {
@@ -702,6 +702,77 @@ async function deleteSharedSpeech() {
     toast(`${esc(e.title)}: ${esc(e.detail)}`, 6000);
   }
   render();
+}
+
+// ---------- Bij openen: baan en starthole kiezen, of verder met de vorige ronde ----------
+
+const STALE_MS = 3 * 3600e3; // zo lang niets ingevuld: dan is de vorige ronde waarschijnlijk klaar
+const START_OPTIONS_18 = [
+  ['all', 'Hole 1', '18 holes'], ['all10', 'Hole 10', '18 holes'],
+  ['front', 'Hole 1', '9 holes'], ['back', 'Hole 10', '9 holes'],
+];
+
+const roundHasScores = (r = state.round) => Object.values(r.scores).some((sc) => Object.keys(sc).length);
+function lastActivity(r = state.round) {
+  const times = [r.date, r.startedAt, r.lastActivity, ...r.log.map((l) => l.time)].map((t) => Date.parse(t) || 0);
+  return Math.max(...times);
+}
+
+function showSheet(html, label) {
+  $('#after-round-body').innerHTML = html;
+  $('#after-round .sheet').setAttribute('aria-label', label);
+  $('#after-round').hidden = false;
+}
+
+function startPrompt() {
+  const stale = Date.now() - lastActivity() > STALE_MS;
+  if (roundHasScores()) {
+    if (stale) showResumeQuestion();
+  } else if (stale || !state.round.startedAt) {
+    showCoursePicker();
+  }
+}
+
+function startButtons(c) {
+  // De par 3-baan heeft 9 holes; 18 holes is twee keer rond.
+  const options = c.holeCount === 9 ? [['front', 'Hole 1', '9 holes']]
+    : c.id === 'par3' ? [['front', '9 holes', 'één keer rond'], ['all', '18 holes', 'twee keer rond']]
+    : START_OPTIONS_18;
+  return `<div class="start-grid">${options.map(([choice, first, len]) => `<button data-action="start-round" data-course="${esc(c.id)}" data-holes="${choice}">
+    <b>${first}</b><span>${len}</span></button>`).join('')}</div>`;
+}
+
+function showCoursePicker() {
+  const home = state.courses.find((c) => c.id === state.homeCourseId) ?? state.courses[0];
+  // Thuisclub bovenaan: de thuisbaan en de banen die erbij horen (zoals de par 3-baan).
+  const club = state.courses.filter((c) => c === home || (home.id === 'hooge-graven' && c.id === 'par3'));
+  const others = state.courses.filter((c) => !club.includes(c));
+  showSheet(`<h2>Waar speel je vandaag?</h2>
+    ${club.map((c) => `<h3 class="start-course">${c === home ? '★ ' : ''}${esc(c.name)}</h3>${startButtons(c)}`).join('')}
+    ${others.length ? `<details class="start-others"><summary>Andere baan</summary>
+      ${others.map((c) => `<h3 class="start-course">${esc(c.name)}</h3>${startButtons(c)}`).join('')}</details>` : ''}`, 'Baan kiezen');
+}
+
+function showResumeQuestion() {
+  const played = new Set(Object.values(state.round.scores).flatMap((sc) => Object.keys(sc))).size;
+  const when = new Date(lastActivity()).toLocaleDateString('nl-NL', { weekday: 'long', day: 'numeric', month: 'long' });
+  showSheet(`<h2>Nieuwe ronde starten?</h2>
+    <p>Je vorige ronde op <b>${esc(course().name)}</b> was ${esc(when)} (${played} ${played === 1 ? 'hole' : 'holes'} ingevuld).
+    Die wordt bewaard bij je rondes.</p>
+    <div class="button-row"><button class="primary" data-action="resume-new">Nieuwe ronde</button><button data-action="resume-continue">Verder met vorige</button></div>`, 'Nieuwe ronde');
+}
+
+function startRound(courseId, holesChoice) {
+  if (roundHasScores()) archiveRound();
+  state.round = newRound(holesChoice, courseId);
+  lastUndo = null;
+  pending = null;
+  showFeedback('');
+  $('#ai-result').innerHTML = '';
+  closeAfterRound();
+  save(); render(); switchTab('ronde');
+  const holes = roundHoles();
+  toast(`${esc(course().name)}: start op hole ${holes[0]}, ${holes.length} holes. Succes!`);
 }
 
 function closeAfterRound() {
@@ -726,6 +797,7 @@ function roundHoles(choice = state.round.holesChoice) {
   if (course().holeCount === 9) return Array.from({ length: 9 }, (_, i) => i + 1);
   if (choice === 'back') return Array.from({ length: 9 }, (_, i) => i + 10);
   if (choice === 'all') return Array.from({ length: 18 }, (_, i) => i + 1);
+  if (choice === 'all10') return Array.from({ length: 18 }, (_, i) => ((i + 9) % 18) + 1); // 10–18, dan 1–9
   return Array.from({ length: 9 }, (_, i) => i + 1);
 }
 
@@ -734,6 +806,7 @@ const scoreOf = (name, hole) => state.round.scores[name]?.[hole] ?? null;
 
 function setScore(name, hole, strokes) {
   state.round.scores[name] ??= {};
+  state.round.lastActivity = new Date().toISOString();
   if (strokes == null) delete state.round.scores[name][hole];
   else state.round.scores[name][hole] = strokes;
 }
@@ -1257,9 +1330,10 @@ async function runAiAnalysis() {
   }
 }
 
-function saveRound() {
+// Ronde bij de opgeslagen rondes zetten (zonder vragen). Geeft false als er niets te bewaren is.
+function archiveRound() {
   const results = computeResults();
-  if (!results.length) { toast('Nog geen scores om op te slaan.'); return; }
+  if (!results.length) return false;
   const holes = roundHoles();
   const entry = {
     id: state.round.id,
@@ -1270,10 +1344,15 @@ function saveRound() {
   };
   state.history = state.history.filter((r) => r.id !== entry.id);
   state.history.push(entry);
+  finishRoundSamples();
+  return true;
+}
+
+function saveRound() {
+  if (!archiveRound()) { toast('Nog geen scores om op te slaan.'); return; }
   save();
   render();
   toast('Ronde opgeslagen. Start een nieuwe ronde via Instellingen.');
-  finishRoundSamples();
   afterRound();
 }
 
@@ -1378,6 +1457,9 @@ document.addEventListener('click', (e) => {
     case 'learn-no': disableLearning(); closeAfterRound(); render(); break;
     case 'learn-delete': deleteSharedSpeech(); break;
     case 'close-after-round': closeAfterRound(); break;
+    case 'start-round': startRound(btn.dataset.course, btn.dataset.holes); break;
+    case 'resume-new': showCoursePicker(); break;
+    case 'resume-continue': state.round.lastActivity = new Date().toISOString(); save(); closeAfterRound(); break;
     case 'register-never': setMeta({ never: true }); closeAfterRound(); break;
     case 'register-now':
       closeAfterRound();
@@ -1512,6 +1594,7 @@ document.addEventListener('submit', (e) => {
 });
 
 render();
+startPrompt();
 initCloud();
 if (gpsOn()) startGps();
 

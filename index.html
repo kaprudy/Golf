@@ -111,7 +111,8 @@
           <select id="round-holes">
             <option value="front">Eerste 9 (1–9)</option>
             <option value="back">Laatste 9 (10–18)</option>
-            <option value="all">18 holes</option>
+            <option value="all">18 holes, start op 1</option>
+            <option value="all10">18 holes, start op 10</option>
           </select>
         </label>
       </div>
@@ -189,7 +190,7 @@
   <div id="toast" class="toast" hidden></div>
 
   <div id="after-round" class="sheet-backdrop" hidden>
-    <div class="sheet" role="dialog" aria-modal="true" aria-label="Na de ronde">
+    <div class="sheet" role="dialog" aria-modal="true" aria-label="Vraag">
       <button class="sheet-close" data-action="close-after-round" aria-label="Sluiten">✕</button>
       <div id="after-round-body"></div>
     </div>
