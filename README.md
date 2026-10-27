@@ -120,3 +120,10 @@ Eenmalig instellen in het Supabase-dashboard:
 Let op: de ingebouwde mailserver van Supabase verstuurt alleen een paar mails per uur en alleen
 naar leden van je Supabase-team. Voor andere gebruikers stel je een eigen SMTP-dienst in
 (Authentication → Emails → SMTP Settings, bijvoorbeeld Resend of Brevo).
+
+## Buggy-scherm (Bluetooth)
+
+Een klein scherm op de golfbuggy (bijv. M5Stack CoreInk) toont de huidige hole en de stand,
+en met de knoppen pas je scores aan. Het praat via Bluetooth met de app (Chrome op Android).
+Alles over het apparaat, de software erop en het koppelen staat in
+[`hardware/buggy-display/README.md`](hardware/buggy-display/README.md).

@@ -1,6 +1,7 @@
 import { pickBest, matchPlayer, simplify } from './parser.js';
 import { decideSync, mergeStates, toCloud, fromCloud } from './sync.js';
 import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config.js';
+import { createBuggy, buggySupported } from './buggy.js';
 import { analysePlayer, handicapIndexFromDifferentials, scoreName } from './handicap.js';
 
 // ---------- Opslag ----------
@@ -166,6 +167,87 @@ function save({ fromCloud: fromRemote = false } = {}) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   if (!fromRemote) scheduleSync();
 }
+
+// ---------- Bediening (knoppen in de app en het buggy-scherm) ----------
+
+function moveHole(delta) {
+  const holes = roundHoles();
+  const idx = holes.indexOf(state.round.currentHole);
+  state.round.currentHole = holes[(idx + delta + holes.length) % holes.length];
+  save();
+  render();
+}
+
+// Eén slag erbij of eraf op de huidige hole; een lege score begint bij par.
+function adjustScore(playerIndex, delta) {
+  const p = state.players[playerIndex];
+  if (!p) return;
+  const h = state.round.currentHole;
+  const cur = scoreOf(p.name, h);
+  const next = cur == null ? parOf(h) : cur + delta;
+  setScore(p.name, h, next < 1 ? null : Math.min(20, next));
+  save();
+  render();
+}
+
+// ---------- Buggy-scherm (Bluetooth) ----------
+
+let buggyStatus = { text: 'Niet verbonden', connected: false, name: null };
+const buggy = createBuggy({
+  onStatus: (s) => { buggyStatus = s; render(); },
+  onCommand: (cmd) => {
+    if (cmd.type === 'hole') moveHole(cmd.delta);
+    else if (cmd.type === 'score') adjustScore(cmd.player, cmd.delta);
+    else render(); // 'hello': stand opnieuw sturen
+  },
+});
+
+async function connectBuggy() {
+  try {
+    await buggy.connect();
+  } catch (err) {
+    // Annuleren in de keuzelijst is geen fout.
+    buggyStatus = { ...buggyStatus, text: err?.name === 'NotFoundError' ? 'Geen scherm gekozen.' : `Verbinden mislukt: ${err?.message ?? err}` };
+    render();
+  }
+}
+
+// Wat het buggy-scherm laat zien: de huidige hole en de stand per speler.
+function buggySummary() {
+  const h = state.round.currentHole;
+  const holes = roundHoles();
+  const tee = teeFor(state.players[0] ?? { tee: 'geel' });
+  return {
+    course: course().name,
+    hole: h,
+    par: parOf(h),
+    si: course().si[h - 1],
+    length: tee.lengths?.[h - 1] ?? 0,
+    players: state.players.map((p) => {
+      const played = holes.filter((x) => scoreOf(p.name, x) != null);
+      const gross = played.reduce((sum, x) => sum + scoreOf(p.name, x), 0);
+      return { name: p.name, strokes: scoreOf(p.name, h), gross, toPar: gross - played.reduce((sum, x) => sum + parOf(x), 0) };
+    }),
+  };
+}
+
+function renderBuggy() {
+  const el = $('#buggy');
+  if (!el) return;
+  $('#buggy-badge').hidden = !buggyStatus.connected;
+  if (!buggySupported()) {
+    el.innerHTML = '<p class="small muted">Deze browser kan geen Bluetooth gebruiken. Gebruik Chrome op Android (of op een computer). Safari op de iPhone ondersteunt dit niet.</p>';
+    return;
+  }
+  el.innerHTML = `<p class="small">${buggyStatus.connected ? `Verbonden met <b>${esc(buggyStatus.name ?? 'buggy-scherm')}</b>.` : esc(buggyStatus.text)}</p>
+    <div class="button-row">${buggyStatus.connected
+      ? '<button data-action="buggy-disconnect">Verbreken</button>'
+      : '<button data-action="buggy-connect" class="primary">Verbinden met buggy-scherm</button>'}</div>
+    <p class="small muted">Houd de app open tijdens de ronde. Valt de verbinding weg, dan probeert de app het zelf opnieuw.</p>`;
+  if (buggy.connected) buggy.send(buggySummary());
+}
+
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') buggy.resume(); });
 
 // ---------- Cloud (Supabase) ----------
 
@@ -630,6 +712,7 @@ function render() {
   renderAnalysis();
   renderSettings();
   renderCloud();
+  renderBuggy();
 }
 
 function renderQuickEntry() {
@@ -856,22 +939,14 @@ document.addEventListener('click', (e) => {
   if (tabBtn) { switchTab(tabBtn.dataset.tab); return; }
   const btn = e.target.closest('[data-action]');
   if (!btn) return;
-  const holes = roundHoles();
-  const idx = holes.indexOf(state.round.currentHole);
   switch (btn.dataset.action) {
     case 'mic': toggleMic(); break;
-    case 'prev-hole': state.round.currentHole = holes[(idx - 1 + holes.length) % holes.length]; save(); render(); break;
-    case 'next-hole': state.round.currentHole = holes[(idx + 1) % holes.length]; save(); render(); break;
+    case 'prev-hole': moveHole(-1); break;
+    case 'next-hole': moveHole(1); break;
     case 'plus':
-    case 'minus': {
-      const p = state.players[Number(btn.dataset.i)];
-      const h = state.round.currentHole;
-      const cur = scoreOf(p.name, h);
-      const next = cur == null ? parOf(h) : cur + (btn.dataset.action === 'plus' ? 1 : -1);
-      setScore(p.name, h, next < 1 ? null : Math.min(20, next));
-      save(); render();
-      break;
-    }
+    case 'minus': adjustScore(Number(btn.dataset.i), btn.dataset.action === 'plus' ? 1 : -1); break;
+    case 'buggy-connect': connectBuggy(); break;
+    case 'buggy-disconnect': buggy.disconnect(); break;
     case 'undo': undo(); break;
     case 'show-map': {
       const m = mapForHole(state.round.currentHole);
