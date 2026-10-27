@@ -372,9 +372,21 @@ function buggySummary() {
   };
 }
 
+// Het buggy-scherm is nog niet klaar voor iedereen: alleen zichtbaar met ?buggy=1 (onthouden
+// op dit toestel; ?buggy=0 zet het weer uit).
+const BUGGY_FLAG = 'golfscore-buggy';
+try {
+  const q = new URLSearchParams(location.search).get('buggy');
+  if (q === '1') localStorage.setItem(BUGGY_FLAG, '1');
+  if (q === '0') localStorage.removeItem(BUGGY_FLAG);
+} catch { /* geen opslag */ }
+const buggyEnabled = () => { try { return localStorage.getItem(BUGGY_FLAG) === '1'; } catch { return false; } };
+
 function renderBuggy() {
   const el = $('#buggy');
   if (!el) return;
+  $('#buggy-section').hidden = !buggyEnabled();
+  if (!buggyEnabled()) { $('#buggy-badge').hidden = true; return; }
   $('#buggy-badge').hidden = !buggyStatus.connected;
   if (!buggySupported()) {
     el.innerHTML = '<p class="small muted">Deze browser kan geen Bluetooth gebruiken. Gebruik Chrome op Android (of op een computer). Safari op de iPhone ondersteunt dit niet.</p>';

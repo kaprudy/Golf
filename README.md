@@ -134,3 +134,6 @@ Een klein scherm op de golfbuggy (bijv. M5Stack CoreInk) toont de huidige hole e
 en met de knoppen pas je scores aan. Het praat via Bluetooth met de app (Chrome op Android).
 Alles over het apparaat, de software erop en het koppelen staat in
 [`hardware/buggy-display/README.md`](hardware/buggy-display/README.md).
+
+Nog niet voor iedereen zichtbaar: open de app één keer met `?buggy=1` achter het adres om het
+buggy-scherm bij Instellingen te tonen (`?buggy=0` verbergt het weer).
