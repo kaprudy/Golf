@@ -1,4 +1,6 @@
 import { pickBest, matchPlayer, simplify } from './parser.js';
+import { decideSync, mergeStates, toCloud, fromCloud } from './sync.js';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config.js';
 import { analysePlayer, handicapIndexFromDifferentials, scoreName } from './handicap.js';
 
 // ---------- Opslag ----------
@@ -151,11 +153,150 @@ function load() {
     round: newRound('front', 'hooge-graven'),
     history: [],
     apiKey: '',
+    sync: { localChangedAt: null, syncedAt: null },
   };
 }
 
 let state = load();
-const save = () => localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+state.sync ??= { localChangedAt: null, syncedAt: null };
+
+// Lokaal opslaan; een wijziging door de gebruiker wordt daarna ook naar de cloud gestuurd.
+function save({ fromCloud: fromRemote = false } = {}) {
+  if (!fromRemote) state.sync.localChangedAt = new Date().toISOString();
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  if (!fromRemote) scheduleSync();
+}
+
+// ---------- Cloud (Supabase) ----------
+
+const cloudConfigured = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
+const cloud = { api: null, user: null, status: '', busy: false, again: false, codeSentTo: null, timer: null };
+
+async function cloudApi() {
+  if (!cloudConfigured) return null;
+  cloud.api ??= await import('./cloud.js');
+  return cloud.api;
+}
+
+function scheduleSync(delay = 4000) {
+  if (!cloud.user) return;
+  clearTimeout(cloud.timer);
+  cloud.timer = setTimeout(syncNow, delay);
+}
+
+async function syncNow() {
+  const api = await cloudApi();
+  if (!api || !cloud.user || !navigator.onLine) return;
+  if (cloud.busy) { cloud.again = true; return; }
+  cloud.busy = true;
+  try {
+    const remote = await api.fetchState(cloud.user.id);
+    const action = decideSync({ ...state.sync, remoteUpdatedAt: remote?.updated_at ?? null });
+    if (action === 'pull') {
+      state = migrate(fromCloud(remote.data, state));
+      state.sync.syncedAt = remote.updated_at;
+    } else if (action === 'push' || action === 'merge') {
+      if (action === 'merge') state = mergeStates(state, migrate(fromCloud(remote.data, state)));
+      state.sync.syncedAt = await api.pushState(cloud.user.id, toCloud(state));
+      state.sync.localChangedAt = state.sync.syncedAt;
+    }
+    cloud.status = `Gesynchroniseerd om ${new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`;
+    save({ fromCloud: true });
+  } catch (err) {
+    cloud.status = api.describeCloudError(err);
+  } finally {
+    cloud.busy = false;
+    render();
+    if (cloud.again) { cloud.again = false; syncNow(); }
+  }
+}
+
+async function initCloud() {
+  const api = await cloudApi();
+  if (!api) return;
+  api.onAuthChange((user) => {
+    const changed = user?.id !== cloud.user?.id;
+    cloud.user = user;
+    if (changed) { render(); if (user) syncNow(); }
+  });
+  cloud.user = await api.currentUser();
+  render();
+  if (cloud.user) syncNow();
+  window.addEventListener('online', () => syncNow());
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') syncNow(); });
+}
+
+function renderCloud() {
+  const el = $('#cloud');
+  if (!el) return;
+  $('#cloud-section').hidden = !cloudConfigured;
+  if (!cloudConfigured) return;
+  if (cloud.user) {
+    el.innerHTML = `<p class="small">Ingelogd als <b>${esc(cloud.user.email ?? '')}</b>.<br>
+      <span class="muted">${esc(cloud.status || 'Je gegevens worden automatisch bewaard in de cloud.')}</span></p>
+      <div class="button-row">
+        <button data-action="cloud-sync">Nu synchroniseren</button>
+        <button data-action="cloud-logout">Uitloggen</button>
+      </div>
+      <button class="link small danger" data-action="cloud-delete">Mijn gegevens in de cloud verwijderen</button>`;
+  } else if (cloud.codeSentTo) {
+    el.innerHTML = `<p class="small">We hebben een mail gestuurd naar <b>${esc(cloud.codeSentTo)}</b>. Vul de code uit die mail in, of tik op de link in de mail.</p>
+      <form class="text-form" data-form="cloud-code">
+        <label class="grow"><span class="sr-only">Inlogcode</span><input id="cloud-code" type="text" inputmode="numeric" autocomplete="one-time-code" placeholder="Code uit de mail" required></label>
+        <button type="submit" class="primary">Inloggen</button>
+      </form>
+      <button class="link small" data-action="cloud-restart">Ander e-mailadres</button>
+      ${cloud.status ? `<p class="small muted">${esc(cloud.status)}</p>` : ''}`;
+  } else {
+    el.innerHTML = `<p class="small muted">Log in met je e-mailadres om je spelers, banen en rondes in de cloud te bewaren. Op een nieuwe telefoon log je in en staat alles er weer.</p>
+      <form class="text-form" data-form="cloud-email">
+        <label class="grow"><span class="sr-only">E-mailadres</span><input id="cloud-email" type="email" autocomplete="email" placeholder="jouw@email.nl" required></label>
+        <button type="submit" class="primary">Stuur code</button>
+      </form>
+      ${cloud.status ? `<p class="small muted">${esc(cloud.status)}</p>` : ''}`;
+  }
+}
+
+async function cloudAction(action, form) {
+  const api = await cloudApi();
+  if (!api) return;
+  try {
+    if (action === 'cloud-email') {
+      const email = $('#cloud-email').value.trim();
+      await api.sendCode(email);
+      cloud.codeSentTo = email;
+      cloud.status = '';
+    } else if (action === 'cloud-code') {
+      cloud.user = await api.verifyCode(cloud.codeSentTo, $('#cloud-code').value.trim());
+      cloud.codeSentTo = null;
+      cloud.status = 'Ingelogd. Gegevens worden samengevoegd…';
+      state.sync.syncedAt = null; // eerste keer: lokaal en cloud samenvoegen
+      syncNow();
+    } else if (action === 'cloud-sync') {
+      syncNow();
+    } else if (action === 'cloud-logout') {
+      await api.signOut();
+      cloud.user = null;
+      cloud.status = 'Uitgelogd. Je gegevens blijven op deze telefoon staan.';
+      state.sync.syncedAt = null;
+      save({ fromCloud: true });
+    } else if (action === 'cloud-delete') {
+      if (!confirm('Je gegevens in de cloud verwijderen? Op deze telefoon blijven ze staan.')) return;
+      await api.deleteState(cloud.user.id);
+      state.sync.syncedAt = null;
+      await api.signOut();
+      cloud.user = null;
+      cloud.status = 'Je gegevens in de cloud zijn verwijderd en je bent uitgelogd.';
+      save({ fromCloud: true });
+    } else if (action === 'cloud-restart') {
+      cloud.codeSentTo = null;
+      cloud.status = '';
+    }
+  } catch (err) {
+    cloud.status = api.describeCloudError(err);
+  }
+  render();
+}
 
 // ---------- Hulpfuncties ----------
 
@@ -488,6 +629,7 @@ function render() {
   renderScorecard();
   renderAnalysis();
   renderSettings();
+  renderCloud();
 }
 
 function renderQuickEntry() {
@@ -789,6 +931,12 @@ document.addEventListener('click', (e) => {
       URL.revokeObjectURL(a.href);
       break;
     }
+    case 'cloud-sync':
+    case 'cloud-logout':
+    case 'cloud-delete':
+    case 'cloud-restart':
+      cloudAction(btn.dataset.action);
+      break;
     case 'reset':
       if (confirm('Echt alles wissen? Spelers, baan, rondes en historie worden verwijderd.')) {
         localStorage.removeItem(STORAGE_KEY);
@@ -888,7 +1036,15 @@ document.addEventListener('change', (e) => {
   render();
 });
 
+document.addEventListener('submit', (e) => {
+  const form = e.target.closest('[data-form]');
+  if (!form) return;
+  e.preventDefault();
+  cloudAction(form.dataset.form);
+});
+
 render();
+initCloud();
 
 if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
   navigator.serviceWorker.register('sw.js').catch(() => {});

@@ -218,3 +218,6 @@ button.link.inline { display: inline; margin-left: 6px; }
 @media (prefers-color-scheme: dark) {
   .hero .hole-view .link { color: #8ab4ff; }
 }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+label.grow { flex: 1; margin: 0; }
+button.link.danger { color: var(--red); }
