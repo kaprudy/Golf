@@ -110,8 +110,8 @@ const DEFAULT_COURSES = [
 ];
 
 // Tees en greens uit OpenStreetMap (© OpenStreetMap-bijdragers, ODbL), opgehaald met
-// tools/osm-fetch.mjs. Alleen tees waarvan de OSM-lengte klopt met de scorekaart (geel, ±8%);
-// greens altijd. Wat je zelf vastlegt (course.geo) gaat voor.
+// tools/osm-fetch.mjs. Grote baan: alleen tees waarvan de OSM-lengte klopt met de scorekaart
+// (geel, ±8%); greens altijd. Wat je zelf vastlegt (course.geo) gaat voor.
 const BASE_GEO = {
   'hooge-graven': {
     1: { tee: { lat: 52.547305, lon: 6.448482 }, green: { lat: 52.544257, lon: 6.447306 } },
@@ -133,6 +133,20 @@ const BASE_GEO = {
     17: { tee: { lat: 52.545124, lon: 6.447312 }, green: { lat: 52.547428, lon: 6.444507 } },
     18: { green: { lat: 52.543196, lon: 6.446594 } },
   },
+  // Par 3-baan: in OSM zonder holenummers; toegewezen met de plattegrond en de lengtes van de
+  // scorekaart. Hole 8 alleen de green (lengte wijkt af), hole 2 en 7 zonder green (in OSM één vlak).
+  // Holes 10–18 zijn de tweede ronde over dezelfde holes.
+  par3: Object.fromEntries(Object.entries({
+    1: { tee: { lat: 52.543122, lon: 6.447753 }, green: { lat: 52.543499, lon: 6.448908 } },
+    2: { tee: { lat: 52.543934, lon: 6.449169 } },
+    3: { tee: { lat: 52.544085, lon: 6.45142 }, green: { lat: 52.544243, lon: 6.450184 } },
+    4: { tee: { lat: 52.543806, lon: 6.450917 }, green: { lat: 52.543478, lon: 6.451854 } },
+    5: { tee: { lat: 52.54341, lon: 6.45246 }, green: { lat: 52.543102, lon: 6.451388 } },
+    6: { tee: { lat: 52.543624, lon: 6.45245 }, green: { lat: 52.544667, lon: 6.451666 } },
+    7: { tee: { lat: 52.544457, lon: 6.451482 } },
+    8: { green: { lat: 52.543943, lon: 6.449185 } },
+    9: { tee: { lat: 52.543866, lon: 6.448823 }, green: { lat: 52.54338, lon: 6.447728 } },
+  }).flatMap(([h, pts]) => [[h, pts], [String(Number(h) + 9), pts]])),
 };
 
 // Punten van een baan: OpenStreetMap als basis, eigen punten eroverheen.
@@ -299,7 +313,11 @@ function onPosition(p) {
   gps.pos = { lat: p.coords.latitude, lon: p.coords.longitude, accuracy: p.coords.accuracy };
   gps.error = null;
   // Alleen reageren als je een (andere) tee op loopt, niet zolang je er blijft staan.
-  const tee = teeAt(gps.pos, geoOf(), roundHoles());
+  let tee = teeAt(gps.pos, geoOf(), roundHoles());
+  // Twee keer rond over dezelfde holes (par 3-baan): in de tweede ronde holes 10–18 kiezen.
+  const geo = geoOf();
+  const same = (a, b) => a && b && a.lat === b.lat && a.lon === b.lon;
+  if (tee && tee <= 9 && state.round.currentHole > 9 && roundHoles().includes(tee + 9) && same(geo[tee]?.tee, geo[tee + 9]?.tee)) tee += 9;
   if (tee !== gps.lastTee) {
     gps.lastTee = tee;
     gps.suggest = null;

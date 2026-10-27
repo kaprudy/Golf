@@ -110,7 +110,8 @@ npm test         # tests voor tekstherkenning en handicapberekening
 
 Voor Hooge Graven staan de greens (18) en de tees (12, waar de lengte klopt met de scorekaart) uit
 OpenStreetMap in de app, zodat de afstand tot de green en het automatisch wisselen van hole direct
-werken. Wat je zelf vastlegt gaat voor. Data © OpenStreetMap-bijdragers (ODbL). Een baan ophalen:
+werken. Ook de par 3-baan (8 tees, 7 greens; holes toegewezen met de plattegrond en de lengtes van de
+scorekaart; 10–18 = tweede ronde). Wat je zelf vastlegt gaat voor. Data © OpenStreetMap-bijdragers (ODbL). Een baan ophalen:
 GitHub → Actions → *OpenStreetMap ophalen* (of `node tools/osm-fetch.mjs --lat … --lon …`).
 
 ## Opslag in de cloud (eigen server)
