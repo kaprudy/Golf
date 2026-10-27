@@ -98,3 +98,17 @@ test('ongeldige invoer', async () => {
   assert.equal((await call('PUT', '/api/state', { token, body: { data: [1, 2] } })).status, 400);
   assert.equal((await call('GET', '/api/onbekend', { token })).status, 404);
 });
+
+test('voorbeelden insturen, tellen, leren en verwijderen', async () => {
+  const { token } = (await call('POST', '/api/register', { body: { email: 'leer@example.nl', password: 'wachtwoordL' } })).body;
+  const sample = (text, final) => ({ v: 1, hole: 4, par: 4, texts: [text], final });
+  const samples = [sample('s1 fijf', { s1: 5 }), sample('s1 fijf s2 vier', { s1: 5, s2: 4 }), sample('hal 4 s1 fijf', { s1: 5 }), 'geen object'];
+  assert.equal((await call('POST', '/api/samples', { token, body: { samples } })).body.stored, 3);
+  assert.equal((await call('GET', '/api/samples/stats', { token })).body.count, 3);
+  const vocab = (await call('GET', '/api/vocab')).body; // zonder inloggen
+  assert.deepEqual(vocab.numbers, { fijf: 5 });
+  assert.equal((await call('POST', '/api/samples', { body: { samples } })).status, 401);
+  assert.equal((await call('DELETE', '/api/samples', { token })).status, 204);
+  assert.equal((await call('GET', '/api/samples/stats', { token })).body.count, 0);
+  assert.deepEqual((await call('GET', '/api/vocab')).body.numbers, {});
+});

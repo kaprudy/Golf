@@ -1,7 +1,7 @@
 FROM node:22-alpine
 ENV NODE_ENV=production
 WORKDIR /app
-COPY package.json server.js backup.js ./
+COPY package.json server.js learn.js backup.js ./
 RUN mkdir -p /data/backups && chown -R node:node /data
 USER node
 EXPOSE 3000

@@ -8,11 +8,16 @@
 //   GET    /api/state                           -> {data, updated_at} | null
 //   PUT    /api/state      {data}              -> {updated_at}
 //   DELETE /api/state                           -> gegevens en account verwijderen
+//   POST   /api/samples    {samples:[...]}     -> {stored}   ingesproken tekst (met toestemming)
+//   GET    /api/samples/stats                   -> {count}
+//   DELETE /api/samples                         -> eigen voorbeelden verwijderen
+//   GET    /api/vocab                           -> geleerde woorden (voor iedereen, zonder inloggen)
 //   GET    /api/health                          -> {ok:true}
 
 import http from 'node:http';
 import crypto from 'node:crypto';
 import { DatabaseSync } from 'node:sqlite';
+import { learnVocabulary } from './learn.js';
 
 const PORT = Number(process.env.PORT ?? 3000);
 const DB_PATH = process.env.DB_PATH ?? '/data/golf.db';
@@ -20,6 +25,9 @@ const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS ?? 'https://kaprudy.github.
   .split(',').map((s) => s.trim()).filter(Boolean);
 const MAX_BODY = 2 * 1024 * 1024; // ruim genoeg voor jaren aan rondes
 const TOKEN_DAYS = 180;
+const MAX_SAMPLES_PER_CALL = 200;
+const MAX_SAMPLE_BYTES = 4000;
+const VOCAB_CACHE_MS = 10 * 60 * 1000;
 
 // ---------- Database ----------
 
@@ -44,6 +52,13 @@ export function openDatabase(path = DB_PATH) {
       data       TEXT NOT NULL,
       updated_at TEXT NOT NULL
     );
+    CREATE TABLE IF NOT EXISTS speech_samples (
+      id         INTEGER PRIMARY KEY,
+      user_id    INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      created_at TEXT NOT NULL,
+      payload    TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS speech_samples_user ON speech_samples(user_id);
   `);
   return db;
 }
@@ -144,7 +159,23 @@ export function createServer(db) {
     putState: db.prepare(`INSERT INTO golf_state (user_id, data, updated_at) VALUES (?, ?, ?)
                           ON CONFLICT(user_id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at`),
     deleteUser: db.prepare('DELETE FROM users WHERE id = ?'),
+    insertSample: db.prepare('INSERT INTO speech_samples (user_id, created_at, payload) VALUES (?, ?, ?)'),
+    countSamples: db.prepare('SELECT COUNT(*) AS n FROM speech_samples WHERE user_id = ?'),
+    deleteSamples: db.prepare('DELETE FROM speech_samples WHERE user_id = ?'),
+    allSamples: db.prepare('SELECT user_id, payload FROM speech_samples ORDER BY id DESC LIMIT 20000'),
   };
+
+  // Geleerde woorden: uit alle voorbeelden, een tijdje bewaard zodat het niet bij elk verzoek opnieuw hoeft.
+  let vocabCache = null;
+  function vocabulary() {
+    if (vocabCache && Date.now() - vocabCache.at < VOCAB_CACHE_MS) return vocabCache.value;
+    const rows = q.allSamples.all().map((r) => {
+      try { return { user: r.user_id, sample: JSON.parse(r.payload) }; } catch { return null; }
+    }).filter(Boolean);
+    const value = { ...learnVocabulary(rows), generatedAt: new Date().toISOString() };
+    vocabCache = { at: Date.now(), value };
+    return value;
+  }
 
   function newSession(user) {
     const token = crypto.randomBytes(32).toString('base64url');
@@ -166,6 +197,7 @@ export function createServer(db) {
     const key = `${req.method} ${url.pathname}`;
 
     if (key === 'GET /api/health') return send(res, 200, { ok: true });
+    if (key === 'GET /api/vocab') return send(res, 200, vocabulary());
 
     if (key === 'POST /api/register' || key === 'POST /api/login') {
       if (tooMany(`ip:${ip}`, 30)) throw new HttpError(429, 'Te veel pogingen, probeer het later opnieuw');
@@ -207,6 +239,26 @@ export function createServer(db) {
       const updatedAt = new Date().toISOString();
       q.putState.run(user.id, JSON.stringify(data), updatedAt);
       return send(res, 200, { updated_at: updatedAt });
+    }
+    if (key === 'POST /api/samples') {
+      const { samples } = await readJson(req);
+      if (!Array.isArray(samples) || samples.length > MAX_SAMPLES_PER_CALL) throw new HttpError(400, 'Geen geldige voorbeelden');
+      const now = new Date().toISOString();
+      let stored = 0;
+      for (const sample of samples) {
+        const json = JSON.stringify(sample);
+        if (!sample || typeof sample !== 'object' || json.length > MAX_SAMPLE_BYTES) continue;
+        q.insertSample.run(user.id, now, json);
+        stored++;
+      }
+      vocabCache = null;
+      return send(res, 200, { stored });
+    }
+    if (key === 'GET /api/samples/stats') return send(res, 200, { count: q.countSamples.get(user.id).n });
+    if (key === 'DELETE /api/samples') {
+      q.deleteSamples.run(user.id);
+      vocabCache = null;
+      return send(res, 204);
     }
     if (key === 'DELETE /api/state') {
       q.deleteUser.run(user.id); // verwijdert ook sessies en gegevens (cascade)
