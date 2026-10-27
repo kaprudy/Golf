@@ -15,16 +15,16 @@ alter table public.golf_state enable row level security;
 
 drop policy if exists "eigen gegevens lezen" on public.golf_state;
 create policy "eigen gegevens lezen" on public.golf_state
-  for select using (auth.uid() = user_id);
+  for select to authenticated using ((select auth.uid()) = user_id);
 
 drop policy if exists "eigen gegevens toevoegen" on public.golf_state;
 create policy "eigen gegevens toevoegen" on public.golf_state
-  for insert with check (auth.uid() = user_id);
+  for insert to authenticated with check ((select auth.uid()) = user_id);
 
 drop policy if exists "eigen gegevens wijzigen" on public.golf_state;
 create policy "eigen gegevens wijzigen" on public.golf_state
-  for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
+  for update to authenticated using ((select auth.uid()) = user_id) with check ((select auth.uid()) = user_id);
 
 drop policy if exists "eigen gegevens verwijderen" on public.golf_state;
 create policy "eigen gegevens verwijderen" on public.golf_state
-  for delete using (auth.uid() = user_id);
+  for delete to authenticated using ((select auth.uid()) = user_id);
