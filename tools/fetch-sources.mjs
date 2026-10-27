@@ -44,7 +44,7 @@ for (const site of urls) {
   const seen = new Set();
   const queue = [site];
   let pages = 0;
-  while (queue.length && pages < 14) {
+  while (queue.length && pages < 18) {
     const u = queue.shift();
     if (seen.has(u)) continue;
     seen.add(u);
