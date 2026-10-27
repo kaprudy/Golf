@@ -200,3 +200,21 @@ test('beheeroverzicht alleen voor beheerders', async () => {
     adminServer.close();
   }
 });
+
+test('OpenStreetMap-baan ophalen (met cache, alleen ingelogd)', async () => {
+  let calls = 0;
+  const osmServer = createServer(openDatabase(':memory:'), { osm: async (p) => { calls++; return { source: 'test', holes: [], query: p }; } });
+  await new Promise((r) => osmServer.listen(0, r));
+  const url = `http://127.0.0.1:${osmServer.address().port}`;
+  try {
+    const token = (await (await fetch(`${url}/api/device`, { method: 'POST', body: JSON.stringify({ secret: 'o'.repeat(40) }) })).json()).token;
+    const get = (q, t = token) => fetch(`${url}/api/osm/course${q}`, { headers: t ? { Authorization: `Bearer ${t}` } : {} });
+    assert.equal((await get('?name=Hooge', null)).status, 401);
+    assert.equal((await get('')).status, 400);
+    assert.deepEqual((await (await get('?name=Hooge%20Graven')).json()).query, { name: 'Hooge Graven' });
+    await get('?name=Hooge%20Graven');
+    assert.equal(calls, 1);
+  } finally {
+    osmServer.close();
+  }
+});

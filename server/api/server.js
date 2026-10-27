@@ -15,6 +15,7 @@
 //   DELETE /api/samples                         -> eigen voorbeelden verwijderen
 //   GET    /api/vocab                           -> geleerde woorden (voor iedereen, zonder inloggen)
 //   POST   /api/events     {events:[...]}      -> {stored}   gebruik: app geopend, ronde gestart/opgeslagen
+//   GET    /api/osm/course?name=…|lat=…&lon=…   -> holes (tee, green, par) uit OpenStreetMap
 //   GET    /api/admin/overview                  -> overzicht voor beheerders (ADMIN_EMAILS)
 //   GET    /api/health                          -> {ok:true}
 
@@ -22,6 +23,7 @@ import http from 'node:http';
 import crypto from 'node:crypto';
 import { DatabaseSync } from 'node:sqlite';
 import { learnVocabulary, wordStats } from './learn.js';
+import { fetchCourse } from './osm.js';
 
 const PORT = Number(process.env.PORT ?? 3000);
 const DB_PATH = process.env.DB_PATH ?? '/data/golf.db';
@@ -170,7 +172,8 @@ const validSecret = (s) => typeof s === 'string' && s.length >= 32 && s.length <
 
 // ---------- Server ----------
 
-export function createServer(db, { adminEmails = ADMIN_EMAILS } = {}) {
+export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse } = {}) {
+  const osmCache = new Map(); // query -> {at, value}
   const q = {
     userByEmail: db.prepare('SELECT * FROM users WHERE email = ?'),
     insertUser: db.prepare('INSERT INTO users (email, pw_hash, created_at) VALUES (?, ?, ?)'),
@@ -459,6 +462,26 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS } = {}) {
         stored++;
       }
       return send(res, 200, { stored });
+    }
+    if (key === 'GET /api/osm/course') {
+      const name = url.searchParams.get('name')?.trim();
+      const lat = Number(url.searchParams.get('lat'));
+      const lon = Number(url.searchParams.get('lon'));
+      if (!name && !(Math.abs(lat) <= 90 && Math.abs(lon) <= 180 && url.searchParams.has('lat'))) throw new HttpError(400, 'Geef een naam of lat en lon');
+      const params = name ? { name } : { lat, lon, radius: Number(url.searchParams.get('radius')) || undefined };
+      const cacheKey = JSON.stringify(params);
+      const hit = osmCache.get(cacheKey);
+      if (hit && Date.now() - hit.at < 24 * 3600e3) return send(res, 200, hit.value);
+      if (tooMany(`osm:${user.id}`, 20, 3600e3)) throw new HttpError(429, 'Te veel verzoeken, probeer het later opnieuw');
+      let value;
+      try {
+        value = { ...(await osm(params)), fetchedAt: new Date().toISOString() };
+      } catch (err) {
+        console.error('OSM', err);
+        throw new HttpError(502, 'OpenStreetMap is nu niet bereikbaar, probeer het later opnieuw');
+      }
+      osmCache.set(cacheKey, { at: Date.now(), value });
+      return send(res, 200, value);
     }
     if (key === 'GET /api/samples/stats') return send(res, 200, { count: q.countSamples.get(user.id).n });
     if (key === 'DELETE /api/samples') {

@@ -6,6 +6,6 @@
   "description": "API voor Golfscore: opslag per gebruiker (Node, SQLite)",
   "scripts": {
     "start": "node --disable-warning=ExperimentalWarning server.js",
-    "test": "node --disable-warning=ExperimentalWarning --test api.test.js learn.test.js"
+    "test": "node --disable-warning=ExperimentalWarning --test api.test.js learn.test.js osm.test.js"
   }
 }
