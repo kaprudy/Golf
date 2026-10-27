@@ -25,6 +25,8 @@ FILES=(-f docker-compose.yml)
 if grep -q '^NPM_NETWORK=' .env 2>/dev/null; then FILES+=(-f docker-compose.npm.yml); fi
 docker compose "${FILES[@]}" up -d --build --remove-orphans 2>&1 | tail -15
 docker image prune -f >/dev/null
+# nginx-instellingen zijn een gekoppeld bestand: opnieuw inlezen (geen herstart nodig)
+docker compose "${FILES[@]}" exec -T web nginx -s reload 2>/dev/null || true
 
 echo "== controleren"
 for i in $(seq 1 20); do
