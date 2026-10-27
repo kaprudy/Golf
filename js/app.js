@@ -56,22 +56,57 @@ const DEFAULT_COURSES = [
         lengths: [89, 111, 86, 73, 87, 128, 78, 100, 93, 89, 111, 86, 73, 87, 128, 78, 100, 93] },
     ],
   },
-  // Banen in de buurt (ratings volgens 1golf.eu; par per hole nog invullen).
-  standardCourse('zwolle', 'Golfclub Zwolle', 72, [
-    ['zwolle-geel', 'Geel (heren)', 'h', 71.4, 131],
-    ['zwolle-rood', 'Rood (dames)', 'd', 72.8, 129],
-  ]),
-  standardCourse('de-koepel', 'Golfclub De Koepel (Wierden)', 70, [
-    ['koepel-geel', 'Geel (heren)', 'h', 69.5, 126],
-    ['koepel-rood', 'Rood (dames)', 'd', 70.3, 122],
-  ]),
-  standardCourse('de-hoek', 'Sallandsche Golfclub De Hoek (Diepenveen)', 72, [
-    ['hoek-wit', 'Wit (heren)', 'h', 72.4, 131],
-    ['hoek-geel', 'Geel (heren)', 'h', 71.5, 128],
-    ['hoek-blauw', 'Blauw (heren)', 'h', 68.5, 118],
-    ['hoek-rood', 'Rood (heren)', 'h', 67.4, 115],
-    ['hoek-geel-d', 'Geel (dames)', 'd', 77.4, 140],
-  ]),
+  // Banen in de regio (par, stroke index en ratings uit openbare bronnen; nog controleren met de
+  // scorekaart van de club, daarom confirmed: false). Tees zonder bekende rating: ratingUnknown.
+  {
+    id: 'zwolle', dataVersion: 2, name: 'Golfclub Zwolle', holeCount: 18, parTotal: 72, pars: [4, 5, 3, 5, 4, 4, 4, 3, 4, 4, 3, 4, 4, 4, 5, 3, 4, 5], si: [11, 1, 15, 5, 3, 13, 9, 17, 7, 2, 16, 6, 10, 14, 12, 18, 8, 4], confirmed: false, fromSources: true, location: {lat: 52.537, lon: 6.15}, website: 'https://www.golfclubzwolle.nl/',
+    tees: [
+      {id: 'zwolle-geel', name: 'Geel (heren)', gender: 'h', rating: 71.4, slope: 131, rating9: null, slope9: null},
+      {id: 'zwolle-rood', name: 'Rood (dames)', gender: 'd', rating: 72.8, slope: 129, rating9: null, slope9: null},
+    ],
+  },
+  {
+    id: 'de-koepel', dataVersion: 2, name: 'Golfclub De Koepel (Wierden)', holeCount: 18, parTotal: 70, pars: [4, 5, 3, 4, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 4, 4, 4, 3], si: [8, 6, 18, 4, 2, 16, 12, 10, 14, 5, 17, 1, 9, 3, 15, 7, 11, 13], confirmed: false, fromSources: true, location: {lat: 52.369, lon: 6.583}, website: 'https://www.golfclubdekoepel.nl/',
+    tees: [
+      {id: 'koepel-geel', name: 'Geel (heren)', gender: 'h', rating: 70.0, slope: 129, rating9: null, slope9: null, lengths: [303, 465, 134, 339, 459, 166, 320, 342, 168, 433, 149, 399, 347, 379, 282, 391, 340, 160]},
+      {id: 'koepel-geel-d', name: 'Geel (dames)', gender: 'd', rating: 75.7, slope: 137, rating9: null, slope9: null, lengths: [303, 465, 134, 339, 459, 166, 320, 342, 168, 433, 149, 399, 347, 379, 282, 391, 340, 160]},
+      {id: 'koepel-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.2, slope: 112, rating9: null, slope9: null},
+      {id: 'koepel-rood', name: 'Rood (dames)', gender: 'd', rating: 70.8, slope: 128, rating9: null, slope9: null},
+      {id: 'koepel-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 64.2, slope: 102, rating9: null, slope9: null},
+    ],
+  },
+  {
+    id: 'de-hoek', dataVersion: 2, name: 'Sallandsche Golfclub De Hoek (Diepenveen)', holeCount: 18, parTotal: 72, pars: [4, 4, 4, 5, 3, 4, 5, 4, 3, 4, 5, 4, 4, 3, 4, 5, 4, 3], si: [7, 5, 17, 3, 13, 11, 9, 1, 15, 4, 16, 12, 10, 18, 2, 14, 6, 8], confirmed: false, fromSources: true, location: {lat: 52.297, lon: 6.163}, website: 'https://sallandsche.nl/',
+    tees: [
+      {id: 'hoek-wit', name: 'Wit (heren)', gender: 'h', rating: 72.4, slope: 131, rating9: null, slope9: null, lengths: [361, 421, 270, 502, 150, 364, 441, 343, 130, 396, 454, 339, 347, 177, 380, 460, 324, 196]},
+      {id: 'hoek-geel', name: 'Geel (heren)', gender: 'h', rating: 71.5, slope: 128, rating9: null, slope9: null, lengths: [341, 395, 265, 490, 145, 342, 441, 338, 130, 379, 454, 331, 327, 162, 375, 460, 319, 192]},
+      {id: 'hoek-blauw', name: 'Blauw (heren)', gender: 'h', rating: 68.5, slope: 118, rating9: null, slope9: null},
+      {id: 'hoek-rood', name: 'Rood (heren)', gender: 'h', rating: 67.4, slope: 115, rating9: null, slope9: null},
+      {id: 'hoek-geel-d', name: 'Geel (dames)', gender: 'd', rating: 77.4, slope: 140, rating9: null, slope9: null, lengths: [341, 395, 265, 490, 145, 342, 441, 338, 130, 379, 454, 331, 327, 162, 375, 460, 319, 192]},
+    ],
+  },
+  {
+    id: 'martensplek', dataVersion: 2, name: 'Golfclub Martensplek (Tiendeveen)', holeCount: 18, parTotal: 72, pars: [5, 4, 4, 4, 4, 3, 4, 3, 5, 5, 3, 4, 4, 4, 4, 4, 5, 3], si: [14, 8, 6, 4, 10, 18, 2, 16, 12, 1, 17, 7, 3, 11, 15, 5, 9, 13], confirmed: false, fromSources: true, location: {lat: 52.725, lon: 6.535}, website: null,
+    tees: [
+      {id: 'martensplek-wit', name: 'Wit (heren)', gender: 'h', rating: 72, slope: 113, rating9: null, slope9: null, ratingUnknown: true},
+      {id: 'martensplek-rood', name: 'Rood (dames)', gender: 'd', rating: 72, slope: 113, rating9: null, slope9: null, ratingUnknown: true},
+    ],
+  },
+  {
+    id: 'gelpenberg', dataVersion: 2, name: 'Drentse Golfclub De Gelpenberg (Aalden)', holeCount: 18, parTotal: 72, pars: [5, 3, 4, 5, 4, 4, 4, 3, 4, 4, 4, 3, 5, 4, 4, 5, 3, 4], si: [6, 8, 14, 12, 4, 18, 2, 16, 10, 13, 1, 17, 9, 3, 7, 11, 15, 5], confirmed: false, fromSources: true, location: {lat: 52.785, lon: 6.736}, website: 'https://www.dgcdegelpenberg.nl/',
+    tees: [
+      {id: 'gelpenberg-geel', name: 'Geel (heren)', gender: 'h', rating: 71.6, slope: 128, rating9: null, slope9: null},
+      {id: 'gelpenberg-rood', name: 'Rood (dames)', gender: 'd', rating: 72.5, slope: 124, rating9: null, slope9: null},
+    ],
+  },
+  {
+    id: 'twentsche', dataVersion: 2, name: 'Twentsche Golfclub (Ambt Delden)', holeCount: 18, parTotal: 72, pars: [4, 4, 3, 4, 5, 3, 5, 4, 4, 4, 3, 5, 4, 4, 3, 4, 4, 5], si: [5, 17, 13, 3, 11, 15, 7, 9, 1, 6, 14, 10, 4, 2, 16, 8, 18, 12], confirmed: false, fromSources: true, location: {lat: 52.272, lon: 6.712}, website: 'https://twentschegolfclub.nl/',
+    tees: [
+      {id: 'twentsche-blauw', name: 'Blauw (heren)', gender: 'h', rating: 72, slope: 113, rating9: null, slope9: null, lengths: [322, 244, 125, 310, 430, 134, 438, 316, 344, 354, 143, 395, 327, 339, 119, 299, 244, 386], ratingUnknown: true},
+      {id: 'twentsche-geel', name: 'Geel (heren)', gender: 'h', rating: 72, slope: 113, rating9: null, slope9: null, ratingUnknown: true},
+      {id: 'twentsche-rood', name: 'Rood (dames)', gender: 'd', rating: 72, slope: 113, rating9: null, slope9: null, ratingUnknown: true},
+    ],
+  },
 ];
 
 // Plattegronden van de club (scorekaarten), per groep holes.
@@ -1347,7 +1382,9 @@ function renderSettings() {
   if (course().tees.some((t) => t.ratingUnknown)) warnings.push('Vul <b>course rating en slope</b> per tee in van de scorekaart (nu staan er neutrale waarden).');
   if (course().parTotal && parSum !== course().parTotal) warnings.push(`De totale par moet <b>${course().parTotal}</b> zijn, nu is het ${parSum}. Pas de par per hole aan.`);
   $('#course-warning').innerHTML = (warnings.length ? `<div class="feedback error">⚠️ ${warnings.join('<br>⚠️ ')}</div>` : '') + (course().confirmed ? '' :
-    `<div class="feedback info">⚠️ Vul de <b>${nineHoleCourse ? 'stroke index' : 'par en stroke index'} per hole</b> in zoals op de scorekaart van de club${nineHoleCourse ? '' : ' (nu staat alles op par 4)'}. <button class="link" data-action="confirm-course">Klopt, verberg</button></div>`);
+    (course().fromSources
+      ? `<div class="feedback info">⚠️ Par, stroke index en ratings van deze baan komen uit openbare bronnen. Vergelijk ze met de scorekaart van de club${course().website ? ` (<a href="${esc(course().website)}" target="_blank" rel="noopener">website</a>)` : ''}. <button class="link" data-action="confirm-course">Klopt, verberg</button></div>`
+      : `<div class="feedback info">⚠️ Vul de <b>${nineHoleCourse ? 'stroke index' : 'par en stroke index'} per hole</b> in zoals op de scorekaart van de club${nineHoleCourse ? '' : ' (nu staat alles op par 4)'}. <button class="link" data-action="confirm-course">Klopt, verberg</button></div>`));
   $('#course-table').innerHTML = `<tr><th>Hole</th>${course().pars.map((_, i) => `<th>${i + 1}</th>`).join('')}<th>Tot.</th></tr>
     <tr><td>Par</td>${course().pars.map((p, i) => `<td><input class="cell" type="number" inputmode="numeric" min="3" max="6" value="${p}" data-course="pars" data-h="${i}"></td>`).join('')}<td>${course().pars.reduce((a, b) => a + b, 0)}</td></tr>
     <tr><td>SI</td>${course().si.map((s, i) => `<td><input class="cell" type="number" inputmode="numeric" min="1" max="18" value="${s}" data-course="si" data-h="${i}"></td>`).join('')}<td></td></tr>`;
