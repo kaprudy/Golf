@@ -18,14 +18,17 @@ te pakken. De telefoon blijft de baas: alles wordt in de app bewaard (en in de c
 
 ## Wat heb je nodig
 
-| | Apparaat | Waarom | Ongeveer |
+| | Apparaat | Waarom | Prijs |
 |---|---|---|---|
-| **Aanbevolen** | **M5Stack CoreInk** | E-ink: goed leesbaar in de zon, zuinig, echte knoppen (werkt met handschoen) | € 40 |
-| Alternatief | M5Stack Core2 | Groter kleurenscherm met aanraken; in fel zonlicht minder goed leesbaar | € 55 |
+| **Aanbevolen** | **M5Stack CoreInk** | E-ink: goed leesbaar in de zon, zuinig, echte knoppen (werkt met handschoen) | £ 34,10 bij The Pi Hut (aanbieding, okt. 2026) |
+| Alternatief | M5Stack Core2 | Groter kleurenscherm met aanraken; in fel zonlicht minder goed leesbaar | niet gecontroleerd |
 
 Verder: een **USB-C-kabel** (om te programmeren en op te laden) en een **houder** voor op de
 buggy, bijvoorbeeld een telefoon- of fietsstuurhouder, of klittenband. Het apparaat is niet
 waterdicht: gebruik bij regen een klein plastic hoesje.
+
+Een tweede voorstel, de **M5Stack PaperS3** (4,7" e-ink, 1800 mAh, ± £ 56,70), staat uitgewerkt in een
+apart ontwerp. Prijzen verschillen per winkel; controleer ze voor je bestelt.
 
 Controleer of het apparaat nog leverbaar is (bijv. bij m5stack.com of een Nederlandse
 elektronicawinkel). Dezelfde software werkt op meer M5Stack-apparaten, omdat de bibliotheek
