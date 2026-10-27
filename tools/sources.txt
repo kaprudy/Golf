@@ -1,0 +1,7 @@
+# Websites van golfclubs voor .github/workflows/sources.yml (één per regel)
+https://hoogegraven.nl/golfen/onze-baan/
+https://www.golfclubzwolle.nl/
+https://www.golfclubdekoepel.nl/
+https://sallandsche.nl/
+https://www.dgcdegelpenberg.nl/
+https://twentschegolfclub.nl/

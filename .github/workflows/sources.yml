@@ -1,0 +1,30 @@
+name: Bronnen ophalen
+
+# Haalt de websites van golfclubs op (zie tools/sources.txt) en zet de tekst en PDF's op de
+# branch 'bronnen', zodat de scorekaarten uit de bron gelezen kunnen worden.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get install -y -qq poppler-utils >/dev/null
+      - name: Ophalen
+        run: node tools/fetch-sources.mjs tools/sources.txt /tmp/bronnen
+      - name: Op branch 'bronnen' zetten
+        run: |
+          cd /tmp/bronnen
+          git init -q -b bronnen
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git commit -qm "Bronnen van ${GITHUB_SHA::7}"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" bronnen
