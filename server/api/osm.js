@@ -27,7 +27,18 @@ function inside(p, poly) {
 }
 
 // Overpass-query: op naam van de baan, of rond een punt.
-export function buildQuery({ name, lat, lon, radius = 2500 }) {
+export function buildQuery({ name, lat, lon, radius = 2500, osmId }) {
+  if (osmId) {
+    // Eén baan op OSM-id ("way/123" of "relation/456"): de baan zelf en alles erbinnen.
+    const [type, id] = String(osmId).split('/');
+    if (!['way', 'relation'].includes(type) || !/^\d+$/.test(id)) throw new Error('Ongeldig OSM-id');
+    return `[out:json][timeout:60];
+${type}(${id})->.c;
+.c map_to_area->.a;
+(way(area.a)["golf"~"^(hole|green|tee)$"];)->.g;
+(.c;.g;);
+out geom;`;
+  }
   if (name) {
     const safe = String(name).replace(/[^\p{L}\p{N} '-]/gu, '').slice(0, 60);
     return `[out:json][timeout:25];
@@ -98,8 +109,31 @@ export function parseOverpass(json) {
   };
 }
 
-export async function fetchCourse(params, { fetchImpl = fetch, urls = OVERPASS_URLS } = {}) {
-  const body = `data=${encodeURIComponent(buildQuery(params))}`;
+export async function fetchCourse(params, opts = {}) {
+  const { json, server } = await overpass(buildQuery(params), opts);
+  return { ...parseOverpass(json), server };
+}
+
+// Golfbanen rond een punt: naam, website, aantal holes volgens OSM, midden.
+export async function listCourses({ lat, lon, radius = 50000 }, opts = {}) {
+  const at = `${Number(lat).toFixed(5)},${Number(lon).toFixed(5)}`;
+  const r = Math.min(80000, Math.max(1000, Number(radius) || 50000));
+  const { json } = await overpass(`[out:json][timeout:120];
+(way["leisure"="golf_course"](around:${r},${at});relation["leisure"="golf_course"](around:${r},${at}););
+out center tags;`, opts);
+  return (json.elements ?? []).map((e) => ({
+    osmId: `${e.type}/${e.id}`,
+    name: e.tags?.name ?? null,
+    website: e.tags?.website ?? e.tags?.['contact:website'] ?? null,
+    holes: Number(e.tags?.holes) || null,
+    par: Number(e.tags?.par) || null,
+    center: e.center ? { lat: +e.center.lat.toFixed(5), lon: +e.center.lon.toFixed(5) } : null,
+    distanceKm: e.center ? Math.round(distanceM({ lat: Number(lat), lon: Number(lon) }, e.center) / 100) / 10 : null,
+  })).sort((a, b) => (a.distanceKm ?? 999) - (b.distanceKm ?? 999));
+}
+
+export async function overpass(query, { fetchImpl = fetch, urls = OVERPASS_URLS } = {}) {
+  const body = `data=${encodeURIComponent(query)}`;
   const problems = [];
   for (const url of urls) {
     const host = new URL(url).host;
@@ -114,7 +148,7 @@ export async function fetchCourse(params, { fetchImpl = fetch, urls = OVERPASS_U
         body,
         signal: AbortSignal.timeout(Number(process.env.OVERPASS_TIMEOUT_MS ?? 38000)),
       });
-      if (res.ok) return { ...parseOverpass(await res.json()), server: host };
+      if (res.ok) return { json: await res.json(), server: host };
       problems.push(`${host}: ${res.status}`);
     } catch (err) {
       problems.push(`${host}: ${err.cause?.code ?? err.name ?? err.message}`);

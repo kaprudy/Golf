@@ -9,6 +9,7 @@ on:
       lon: { description: 'Lengtegraad', required: false, default: '6.44' }
       radius: { description: 'Straal in meters', required: false, default: '5000' }
       name: { description: 'Of: naam van de baan', required: false, default: '' }
+      region: { description: 'Alle banen in de straal (ja/nee)', required: false, default: 'nee' }
 
 permissions:
   contents: read
@@ -21,15 +22,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Verbinding testen
-        continue-on-error: true
-        run: |
-          for u in https://overpass-api.de/api/interpreter https://overpass.private.coffee/api/interpreter; do
-            curl -sS -m 90 -o /tmp/t.json -w "$u klein: %{http_code} %{time_total}s\n" --data-urlencode 'data=[out:json];node(1);out;' "$u" || true
-            Q="[out:json][timeout:60];way[\"golf\"=\"hole\"](around:6000,52.53,6.44);out geom;"
-            curl -sS -m 90 -o /tmp/q.json -w "$u holes: %{http_code} %{time_total}s\n" --data-urlencode "data=$Q" "$u" || true
-            head -c 300 /tmp/q.json; echo
-          done
       - name: Ophalen
         env:
           LAT: ${{ inputs.lat }}
@@ -37,8 +29,10 @@ jobs:
           RADIUS: ${{ inputs.radius }}
           OVERPASS_TIMEOUT_MS: "80000"
           NAME: ${{ inputs.name }}
+          REGION: ${{ inputs.region }}
         run: |
-          if [ -n "$NAME" ]; then node tools/osm-fetch.mjs --name "$NAME" > osm.json
+          if [ "$REGION" = "ja" ]; then node tools/osm-region.mjs --lat "$LAT" --lon "$LON" --radius "$RADIUS" > osm.json
+          elif [ -n "$NAME" ]; then node tools/osm-fetch.mjs --name "$NAME" > osm.json
           else node tools/osm-fetch.mjs --lat "$LAT" --lon "$LON" --radius "$RADIUS" > osm.json; fi
           cat osm.json
       - uses: actions/upload-artifact@v4
