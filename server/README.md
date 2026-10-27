@@ -96,9 +96,9 @@ Zet in `js/config.js` van de app `API_URL = 'https://golf.kapital.nl'` en public
 
 ## Automatisch uitrollen (GitHub Actions)
 
-Bij elke push naar `main` draait GitHub eerst de tests en logt daarna met een eigen SSH-sleutel in
+Bij elke push naar de standaardbranch draait GitHub eerst de tests en logt daarna met een eigen SSH-sleutel in
 op de server. Die sleutel mag **alleen** `server/deploy.sh` starten (geen shell, geen tunnels). Het
-script haalt `main` op, bouwt de containers opnieuw en controleert of de API werkt.
+script haalt precies die geteste commit op, bouwt de containers opnieuw en controleert of de API werkt.
 
 Eenmalig op de server (als root):
 

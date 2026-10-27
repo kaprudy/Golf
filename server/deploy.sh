@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Wordt op de server gestart door GitHub Actions (via een SSH-sleutel die alleen dit script mag
-# draaien). Haalt de laatste versie van main op en bouwt de containers opnieuw.
+# draaien). Haalt de geteste versie op en bouwt de containers opnieuw.
 # Met de hand kan ook:  bash /opt/golf/server/deploy.sh
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -9,9 +9,16 @@ exec 9>/tmp/golf-deploy.lock
 flock -w 600 9   # nooit twee keer tegelijk
 
 echo "== code ophalen"
-git -C .. fetch --quiet origin main
-git -C .. checkout --quiet -B main origin/main   # .env en de database blijven staan (niet in git)
-git -C .. log --oneline -1
+# GitHub geeft de geteste commit mee (via SSH_ORIGINAL_COMMAND); met de hand: de standaardbranch.
+REV="${1:-${SSH_ORIGINAL_COMMAND:-}}"
+git -C .. fetch --quiet origin
+if [[ "$REV" =~ ^[0-9a-f]{40}$ ]]; then
+  git -C .. checkout --quiet --detach "$REV"
+else
+  git -C .. remote set-head origin --auto >/dev/null
+  git -C .. checkout --quiet --detach origin/HEAD
+fi
+git -C .. log --oneline -1   # .env en de database blijven staan (niet in git)
 
 echo "== containers bouwen en starten"
 FILES=(-f docker-compose.yml)
