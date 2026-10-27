@@ -1,6 +1,6 @@
 import { pickBest, matchPlayer, simplify } from './parser.js';
 import { decideSync, mergeStates, toCloud, fromCloud } from './sync.js';
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config.js';
+import { API_URL } from './config.js';
 import { createBuggy, buggySupported } from './buggy.js';
 import { analysePlayer, handicapIndexFromDifferentials, scoreName } from './handicap.js';
 
@@ -269,10 +269,10 @@ function renderBuggy() {
 
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') buggy.resume(); });
 
-// ---------- Cloud (Supabase) ----------
+// ---------- Cloud (eigen server, zie server/) ----------
 
-const cloudConfigured = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
-const cloud = { api: null, user: null, status: '', busy: false, again: false, codeSentTo: null, timer: null };
+const cloudConfigured = Boolean(API_URL);
+const cloud = { api: null, user: null, status: '', busy: false, again: false, timer: null };
 
 async function cloudApi() {
   if (!cloudConfigured) return null;
@@ -335,44 +335,36 @@ function renderCloud() {
   if (!cloudConfigured) return;
   if (cloud.user) {
     el.innerHTML = `<p class="small">Ingelogd als <b>${esc(cloud.user.email ?? '')}</b>.<br>
-      <span class="muted">${esc(cloud.status || 'Je gegevens worden automatisch bewaard in de cloud.')}</span></p>
+      <span class="muted">${esc(cloud.status || 'Je gegevens worden automatisch bewaard op de server.')}</span></p>
       <div class="button-row">
         <button data-action="cloud-sync">Nu synchroniseren</button>
         <button data-action="cloud-logout">Uitloggen</button>
       </div>
-      <button class="link small danger" data-action="cloud-delete">Mijn gegevens in de cloud verwijderen</button>`;
-  } else if (cloud.codeSentTo) {
-    el.innerHTML = `<p class="small">We hebben een mail gestuurd naar <b>${esc(cloud.codeSentTo)}</b>. Vul de code uit die mail in, of tik op de link in de mail.</p>
-      <form class="text-form" data-form="cloud-code">
-        <label class="grow"><span class="sr-only">Inlogcode</span><input id="cloud-code" type="text" inputmode="numeric" autocomplete="one-time-code" placeholder="Code uit de mail" required></label>
-        <button type="submit" class="primary">Inloggen</button>
-      </form>
-      <button class="link small" data-action="cloud-restart">Ander e-mailadres</button>
-      ${cloud.status ? `<p class="small muted">${esc(cloud.status)}</p>` : ''}`;
+      <button class="link small danger" data-action="cloud-delete">Mijn account en gegevens op de server verwijderen</button>`;
   } else {
-    el.innerHTML = `<p class="small muted">Log in met je e-mailadres om je spelers, banen en rondes in de cloud te bewaren. Op een nieuwe telefoon log je in en staat alles er weer.</p>
-      <form class="text-form" data-form="cloud-email">
-        <label class="grow"><span class="sr-only">E-mailadres</span><input id="cloud-email" type="email" autocomplete="email" placeholder="jouw@email.nl" required></label>
-        <button type="submit" class="primary">Stuur code</button>
+    el.innerHTML = `<p class="small muted">Log in om je spelers, banen en rondes op de server te bewaren. Op een nieuwe telefoon log je in en staat alles er weer.</p>
+      <form class="cloud-form" data-form="cloud-auth">
+        <label>E-mailadres <input id="cloud-email" type="email" autocomplete="email" placeholder="jouw@email.nl" required></label>
+        <label>Wachtwoord <input id="cloud-password" type="password" autocomplete="current-password" minlength="8" placeholder="minstens 8 tekens" required></label>
+        <div class="button-row">
+          <button type="submit" class="primary" data-mode="login">Inloggen</button>
+          <button type="submit" data-mode="register">Account aanmaken</button>
+        </div>
       </form>
       ${cloud.status ? `<p class="small muted">${esc(cloud.status)}</p>` : ''}`;
   }
 }
 
-async function cloudAction(action, form) {
+async function cloudAction(action, submitter) {
   const api = await cloudApi();
   if (!api) return;
   try {
-    if (action === 'cloud-email') {
+    if (action === 'cloud-auth') {
       const email = $('#cloud-email').value.trim();
-      await api.sendCode(email);
-      cloud.codeSentTo = email;
-      cloud.status = '';
-    } else if (action === 'cloud-code') {
-      cloud.user = await api.verifyCode(cloud.codeSentTo, $('#cloud-code').value.trim());
-      cloud.codeSentTo = null;
+      const password = $('#cloud-password').value;
+      cloud.user = submitter?.dataset.mode === 'register' ? await api.register(email, password) : await api.login(email, password);
       cloud.status = 'Ingelogd. Gegevens worden samengevoegd…';
-      state.sync.syncedAt = null; // eerste keer: lokaal en cloud samenvoegen
+      state.sync.syncedAt = null; // eerste keer: lokaal en server samenvoegen
       syncNow();
     } else if (action === 'cloud-sync') {
       syncNow();
@@ -383,16 +375,12 @@ async function cloudAction(action, form) {
       state.sync.syncedAt = null;
       save({ fromCloud: true });
     } else if (action === 'cloud-delete') {
-      if (!confirm('Je gegevens in de cloud verwijderen? Op deze telefoon blijven ze staan.')) return;
-      await api.deleteState(cloud.user.id);
-      state.sync.syncedAt = null;
-      await api.signOut();
+      if (!confirm('Je account en gegevens op de server verwijderen? Op deze telefoon blijven ze staan.')) return;
+      await api.deleteState();
       cloud.user = null;
-      cloud.status = 'Je gegevens in de cloud zijn verwijderd en je bent uitgelogd.';
+      cloud.status = 'Je account en gegevens op de server zijn verwijderd.';
+      state.sync.syncedAt = null;
       save({ fromCloud: true });
-    } else if (action === 'cloud-restart') {
-      cloud.codeSentTo = null;
-      cloud.status = '';
     }
   } catch (err) {
     cloud.status = api.describeCloudError(err);
@@ -1046,7 +1034,6 @@ document.addEventListener('click', (e) => {
     case 'cloud-sync':
     case 'cloud-logout':
     case 'cloud-delete':
-    case 'cloud-restart':
       cloudAction(btn.dataset.action);
       break;
     case 'reset':
@@ -1152,7 +1139,7 @@ document.addEventListener('submit', (e) => {
   const form = e.target.closest('[data-form]');
   if (!form) return;
   e.preventDefault();
-  cloudAction(form.dataset.form);
+  cloudAction(form.dataset.form, e.submitter);
 });
 
 render();

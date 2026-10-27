@@ -1,64 +1,97 @@
-// Inloggen en opslag in Supabase. Wordt alleen geladen als js/config.js is ingevuld.
-import { createClient } from './vendor/supabase.js';
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config.js';
+// Inloggen en opslag op de eigen server (golf.kapital.nl, zie server/).
+// Wordt alleen geladen als API_URL in js/config.js is ingevuld.
+import { API_URL } from './config.js';
 
-const client = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
-  auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true },
-});
+const TOKEN_KEY = 'golfscore-cloud';
+const listeners = [];
+
+function loadSession() {
+  try { return JSON.parse(localStorage.getItem(TOKEN_KEY)) ?? null; } catch { return null; }
+}
+function saveSession(session) {
+  try {
+    if (session) localStorage.setItem(TOKEN_KEY, JSON.stringify(session));
+    else localStorage.removeItem(TOKEN_KEY);
+  } catch { /* geen opslag: alleen deze sessie ingelogd */ }
+  listeners.forEach((cb) => cb(session?.user ?? null));
+}
+
+let session = loadSession();
+
+class CloudError extends Error {
+  constructor(status, message) { super(message); this.status = status; }
+}
+
+async function api(method, path, body) {
+  let res;
+  try {
+    res = await fetch(API_URL + path, {
+      method,
+      headers: {
+        ...(body ? { 'Content-Type': 'application/json' } : {}),
+        ...(session?.token ? { Authorization: `Bearer ${session.token}` } : {}),
+      },
+      body: body ? JSON.stringify(body) : undefined,
+    });
+  } catch {
+    throw new CloudError(0, 'Geen verbinding met de server (geen internet?).');
+  }
+  const text = await res.text();
+  const data = text ? JSON.parse(text) : null;
+  if (res.status === 401 && session && !path.startsWith('/api/login')) {
+    session = null; // token verlopen of ingetrokken
+    saveSession(null);
+  }
+  if (!res.ok) throw new CloudError(res.status, data?.error ?? `Serverfout (${res.status})`);
+  return data;
+}
 
 export async function currentUser() {
-  const { data } = await client.auth.getSession();
-  return data.session?.user ?? null;
+  if (!session) return null;
+  try {
+    const { user } = await api('GET', '/api/me');
+    return user;
+  } catch (err) {
+    // Offline: met de bewaarde gegevens doorgaan; synchroniseren lukt later wel.
+    return err.status === 0 ? session?.user ?? null : null;
+  }
 }
 
 export function onAuthChange(callback) {
-  client.auth.onAuthStateChange((_event, session) => callback(session?.user ?? null));
+  listeners.push(callback);
 }
 
-// Stuurt een mail met een inlogcode (en een link). Nieuwe gebruikers worden aangemaakt.
-export async function sendCode(email) {
-  const { error } = await client.auth.signInWithOtp({
-    email,
-    options: { shouldCreateUser: true, emailRedirectTo: location.origin + location.pathname },
-  });
-  if (error) throw error;
+async function authenticate(path, email, password) {
+  const result = await api('POST', path, { email, password });
+  session = { token: result.token, user: result.user };
+  saveSession(session);
+  return result.user;
 }
 
-export async function verifyCode(email, token) {
-  const { data, error } = await client.auth.verifyOtp({ email, token, type: 'email' });
-  if (error) throw error;
-  return data.user;
-}
+export const login = (email, password) => authenticate('/api/login', email, password);
+export const register = (email, password) => authenticate('/api/register', email, password);
 
 export async function signOut() {
-  await client.auth.signOut();
+  try { await api('POST', '/api/logout'); } catch { /* ook offline uitloggen */ }
+  session = null;
+  saveSession(null);
 }
 
-export async function fetchState(userId) {
-  const { data, error } = await client.from('golf_state').select('data, updated_at').eq('user_id', userId).maybeSingle();
-  if (error) throw error;
-  return data; // null als er nog niets in de cloud staat
+export async function fetchState() {
+  return api('GET', '/api/state'); // null als er nog niets op de server staat
 }
 
-export async function pushState(userId, data) {
-  const { data: row, error } = await client
-    .from('golf_state')
-    .upsert({ user_id: userId, data, updated_at: new Date().toISOString() })
-    .select('updated_at')
-    .single();
-  if (error) throw error;
-  return row.updated_at;
+export async function pushState(_userId, data) {
+  return (await api('PUT', '/api/state', { data })).updated_at;
 }
 
-export async function deleteState(userId) {
-  const { error } = await client.from('golf_state').delete().eq('user_id', userId);
-  if (error) throw error;
+// Verwijdert account én gegevens op de server.
+export async function deleteState() {
+  await api('DELETE', '/api/state');
+  session = null;
+  saveSession(null);
 }
 
 export function describeCloudError(err) {
-  const msg = err?.message ?? String(err);
-  if (/fetch|network/i.test(msg)) return 'Geen verbinding met de cloud (geen internet?).';
-  if (/token|otp|expired|invalid/i.test(msg)) return 'De code klopt niet of is verlopen. Vraag een nieuwe aan.';
-  if (/rate|too many/i.test(msg)) return 'Te veel pogingen. Wacht even en probeer het opnieuw.';
-  return `Cloudfout: ${msg}`;
+  return err?.message ?? String(err);
 }

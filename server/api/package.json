@@ -1,0 +1,11 @@
+{
+  "name": "golfscore-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API voor Golfscore: opslag per gebruiker (Node, SQLite)",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test api.test.js"
+  }
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golfscore</title>
+  <meta name="description" content="Golfscore: golfscores inspreken tijdens je ronde, met handicapberekening en een buggy-scherm.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
+  <style>
+    :root {
+      --accent: #1E4D36; --accent-ink: #1E4D36; --on-accent: #FBF8F1;
+      --bg: #F4EEE2; --card: #FBF8F1; --sand: #E9DFCB; --border: #E2D7C1;
+      --text: #1F2A22; --muted: #5C5A4E;
+      --serif: 'Fraunces', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --accent: #2E6B4C; --accent-ink: #9CCDB0; --on-accent: #F4EEE2;
+        --bg: #171A15; --card: #20241D; --sand: #2A2E25; --border: #353A2F;
+        --text: #EFE9DC; --muted: #B3AC98;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 var(--sans); }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+    h1, h2 { font-family: var(--serif); font-weight: 600; color: var(--accent-ink); line-height: 1.15; }
+    h1 { font-size: clamp(2.4rem, 8vw, 3.6rem); margin: 8px 0 12px; }
+    h2 { font-size: 1.5rem; margin: 0 0 10px; }
+    .overline { font-size: .75rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+    .lead { font-size: 1.15rem; color: var(--muted); max-width: 36em; }
+    .cta { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 26px;
+           background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; margin: 12px 0 8px; }
+    .status { display: inline-flex; align-items: center; gap: 8px; font-size: .9rem; color: var(--muted); margin-left: 12px; }
+    .dot { width: 9px; height: 9px; border-radius: 5px; background: var(--muted); }
+    .dot.ok { background: #3C8D5A; } .dot.bad { background: #B4532A; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 28px 0; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 22px; padding: 18px; }
+    .card h3 { font-family: var(--serif); font-weight: 600; font-size: 1.15rem; margin: 0 0 6px; }
+    .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+    section { margin: 36px 0; }
+    .sand { background: var(--sand); border-radius: 22px; padding: 20px; }
+    ul { padding-left: 1.2em; } li { margin: 4px 0; }
+    a { color: var(--accent-ink); text-underline-offset: 3px; }
+    footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--border); padding-top: 16px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="overline">Hooge Graven · Ommen</div>
+  <h1>Golfscore</h1>
+  <p class="lead">Spreek je slagen in terwijl je loopt – “Hole 4, Rudy 5, Peter 4” – en krijg na de ronde direct je stand en handicapberekening.</p>
+  <a class="cta" href="https://kaprudy.github.io/Golf/">Open de app</a>
+  <span class="status" aria-live="polite"><span class="dot" id="dot" aria-hidden="true"></span><span id="status">Opslagdienst controleren…</span></span>
+
+  <div class="grid">
+    <div class="card"><h3>Inspreken</h3><p>Nederlandse spraakherkenning die golftermen en verhaspelde namen begrijpt, en leert van je correcties.</p></div>
+    <div class="card"><h3>Tellen per slag</h3><p>Tik op een speler voor elke slag; de telefoon trilt zodat je niet hoeft te kijken.</p></div>
+    <div class="card"><h3>Handicap</h3><p>Score differential en handicap index volgens het World Handicap System, met uitleg.</p></div>
+    <div class="card"><h3>Buggy-scherm</h3><p>Een klein e-ink-scherm op de buggy dat via Bluetooth de stand laat zien.</p></div>
+  </div>
+
+  <section>
+    <h2>Je gegevens</h2>
+    <div class="sand">
+      <p>Met een account bewaart de app je spelers, banen, rondes en geleerde woorden op deze server, zodat je ze op een nieuwe telefoon terugkrijgt.</p>
+      <ul>
+        <li>We bewaren alleen: je e-mailadres, een versleutelde vorm van je wachtwoord (scrypt) en je app-gegevens.</li>
+        <li>Je wachtwoord zelf en je eventuele Claude API-sleutel komen nooit op de server.</li>
+        <li>Alles gaat via een beveiligde verbinding (HTTPS). Iedere gebruiker ziet alleen zijn eigen gegevens.</li>
+        <li>Je kunt je account en al je gegevens verwijderen via de app: <em>Instellingen → Account en cloud</em>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>Golfscore · een persoonlijk project · gehost op kapital.nl</footer>
+</main>
+<script>
+  fetch('/api/health', { cache: 'no-store' })
+    .then((r) => r.ok ? r.json() : Promise.reject())
+    .then(() => { document.getElementById('dot').className = 'dot ok'; document.getElementById('status').textContent = 'Opslagdienst werkt'; })
+    .catch(() => { document.getElementById('dot').className = 'dot bad'; document.getElementById('status').textContent = 'Opslagdienst niet bereikbaar'; });
+</script>
+</body>
+</html>

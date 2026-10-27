@@ -1,0 +1,44 @@
+# Golfscore op golf.kapital.nl
+#
+# Variant A – de server heeft nog geen webserver op poort 80/443:
+#   docker compose --profile caddy up -d --build
+#   (Caddy haalt zelf een HTTPS-certificaat op bij Let's Encrypt)
+#
+# Variant B – er draait al nginx/Apache:
+#   docker compose up -d --build
+#   en laat nginx /api/ doorsturen naar 127.0.0.1:3080 (zie nginx-golf.conf)
+
+services:
+  api:
+    build: ./api
+    restart: unless-stopped
+    environment:
+      DB_PATH: /data/golf.db
+      ALLOWED_ORIGINS: https://kaprudy.github.io,https://golf.kapital.nl
+    volumes:
+      - golf-data:/data
+    ports:
+      - "127.0.0.1:3080:3000"   # alleen bereikbaar vanaf de server zelf
+
+  caddy:
+    profiles: ["caddy"]
+    image: caddy:2.8-alpine
+    restart: unless-stopped
+    environment:
+      DOMAIN: golf.kapital.nl
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./site:/srv/site:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - api
+
+volumes:
+  golf-data:
+  caddy-data:
+  caddy-config:

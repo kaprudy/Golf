@@ -102,26 +102,15 @@ npm test         # tests voor tekstherkenning en handicapberekening
 | `js/vendor/anthropic-sdk.js` | Gebundelde `@anthropic-ai/sdk` 0.135.0 (MIT, zie LICENSE-bestand) |
 | `sw.js`, `manifest.webmanifest` | Offline gebruik en installeren als app |
 
-## Opslag in de cloud (Supabase)
+## Opslag in de cloud (eigen server)
 
-Met een account worden spelers, banen, rondes en geleerde woorden in de cloud bewaard.
-Op een nieuwe telefoon log je in en staat alles er weer. De app blijft offline werken en
-synchroniseert zodra er internet is. De Claude API-sleutel blijft altijd alleen op de telefoon.
+Met een account worden spelers, banen, rondes en geleerde woorden op de eigen server bewaard
+(`golf.kapital.nl`). Op een nieuwe telefoon log je in en staat alles er weer. De app blijft offline
+werken en synchroniseert zodra er internet is. De Claude API-sleutel blijft altijd alleen op de telefoon.
 
-Eenmalig instellen in het Supabase-dashboard:
-
-1. **SQL Editor → New query**: plak de inhoud van [`supabase/schema.sql`](supabase/schema.sql) en kies *Run*.
-   Dit maakt de tabel `golf_state`, waarin iedere gebruiker alleen zijn eigen gegevens kan zien.
-2. **Authentication → URL Configuration**: zet *Site URL* op `https://kaprudy.github.io/Golf/`
-   en voeg dezelfde URL toe bij *Redirect URLs*.
-3. **Authentication → Emails → Magic Link**: zet `{{ .Token }}` in de mail, zodat er ook een
-   inlogcode in staat (handig op de iPhone, waar de link in Safari opent in plaats van in de app).
-4. Vul in [`js/config.js`](js/config.js) de *Project URL* en de *anon/publishable key* in
-   (Project Settings → API). Die sleutel mag in de app staan; de beveiliging zit in de database.
-
-Let op: de ingebouwde mailserver van Supabase verstuurt alleen een paar mails per uur en alleen
-naar leden van je Supabase-team. Voor andere gebruikers stel je een eigen SMTP-dienst in
-(Authentication → Emails → SMTP Settings, bijvoorbeeld Resend of Brevo).
+De server (API met SQLite-database en een infopagina, in Docker) staat in [`server/`](server/);
+installatie en beheer staan in [`server/README.md`](server/README.md). Zodra de server draait,
+vul je in [`js/config.js`](js/config.js) `API_URL` in (`https://golf.kapital.nl`).
 
 ## Buggy-scherm (Bluetooth)
 
