@@ -67,7 +67,8 @@ export function parseOverpass(json) {
     const rings = e.type === 'relation'
       ? (e.members ?? []).filter((m) => m.role !== 'inner').map((m) => geom(m)).filter((g) => g.length > 2)
       : [geom(e)].filter((g) => g.length > 2);
-    courses.push({ osmId: `${e.type}/${e.id}`, name: e.tags.name ?? 'Golfbaan', rings, center: rings.length ? centroid(rings.flat()) : null });
+    courses.push({ osmId: `${e.type}/${e.id}`, name: e.tags.name ?? 'Golfbaan', rings, center: rings.length ? centroid(rings.flat()) : null,
+      website: e.tags.website ?? e.tags['contact:website'] ?? null, holesTag: Number(e.tags.holes) || null });
   }
 
   const greens = elements.filter((e) => e.tags?.golf === 'green').map((e) => ({ ref: int(e.tags.ref), center: centroid(geom(e)), poly: geom(e) }))
@@ -102,7 +103,7 @@ export function parseOverpass(json) {
   holes.sort((a, b) => (a.course ?? '').localeCompare(b.course ?? '') || (a.ref ?? 99) - (b.ref ?? 99));
   return {
     source: 'OpenStreetMap',
-    courses: courses.map(({ osmId, name, center }) => ({ osmId, name, center, holes: holes.filter((h) => h.course === osmId).length })),
+    courses: courses.map(({ osmId, name, center, website, holesTag }) => ({ osmId, name, center, website, holesTag, holes: holes.filter((h) => h.course === osmId).length })),
     holes,
     greens: greens.length,
     tees: elements.filter((e) => e.tags?.golf === 'tee').length,
@@ -158,4 +159,16 @@ export async function overpass(query, { fetchImpl = fetch, urls = OVERPASS_URLS 
     }
   }
   throw new Error(`OpenStreetMap niet bereikbaar (${problems.join('; ')})`);
+}
+
+// Alles in een rechthoek in één keer: banen en hun holes, greens en tees.
+export async function fetchArea({ lat, lon, radius = 50000 }, opts = {}) {
+  const r = Math.min(80000, Math.max(1000, Number(radius) || 50000));
+  const dLat = r / 111320;
+  const dLon = r / (111320 * Math.cos((Number(lat) * Math.PI) / 180));
+  const bbox = [Number(lat) - dLat, Number(lon) - dLon, Number(lat) + dLat, Number(lon) + dLon].map((v) => v.toFixed(4)).join(',');
+  const { json, server } = await overpass(`[out:json][timeout:180][bbox:${bbox}];
+(way["leisure"="golf_course"];relation["leisure"="golf_course"];way["golf"~"^(hole|green|tee)$"];);
+out geom;`, opts);
+  return { ...parseOverpass(json), server };
 }

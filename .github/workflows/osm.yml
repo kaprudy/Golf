@@ -27,7 +27,7 @@ jobs:
           LAT: ${{ inputs.lat }}
           LON: ${{ inputs.lon }}
           RADIUS: ${{ inputs.radius }}
-          OVERPASS_TIMEOUT_MS: "80000"
+          OVERPASS_TIMEOUT_MS: "200000"
           NAME: ${{ inputs.name }}
           REGION: ${{ inputs.region }}
         run: |
