@@ -20,7 +20,7 @@ const STORAGE_KEY = 'golfscore-v1';
 const DEFAULT_COURSES = [
   {
     id: 'hooge-graven',
-    dataVersion: 2,
+    dataVersion: 3,
     name: 'Hooge Graven (18 holes)',
     holeCount: 18,
     parTotal: 72,
@@ -28,20 +28,30 @@ const DEFAULT_COURSES = [
     si: [6, 14, 18, 4, 8, 2, 16, 12, 10, 9, 17, 15, 3, 1, 13, 11, 5, 7],
     confirmed: true,
     tees: [
-      { id: 'wit', name: 'Wit (heren)', gender: 'h', rating: 72.9, slope: 132, rating9: null, slope9: null,
+      { id: 'wit', name: 'Wit (heren)', gender: 'h', rating: 73.7, slope: 141, rating9: 35.7, slope9: 131, rating9Back: 38.1, slope9Back: 151,
         lengths: [401, 168, 301, 364, 364, 503, 167, 453, 182, 499, 172, 303, 368, 380, 458, 340, 394, 377] },
-      { id: 'geel', name: 'Geel (heren)', gender: 'h', rating: 71.7, slope: 129, rating9: null, slope9: null,
+      { id: 'geel', name: 'Geel (heren)', gender: 'h', rating: 72.9, slope: 137, rating9: 35.3, slope9: 133, rating9Back: 37.6, slope9Back: 142,
         lengths: [387, 158, 295, 349, 349, 488, 159, 443, 172, 490, 157, 288, 358, 372, 435, 330, 381, 363] },
-      { id: 'blauw', name: 'Blauw (dames)', gender: 'd', rating: 74.5, slope: 127, rating9: null, slope9: null,
+      { id: 'blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 70.1, slope: 127, rating9: 34.3, slope9: 128, rating9Back: 35.9, slope9Back: 126,
         lengths: [331, 147, 284, 340, 337, 478, 145, 386, 153, 407, 147, 277, 314, 353, 382, 282, 340, 304] },
-      { id: 'rood', name: 'Rood (dames)', gender: 'd', rating: 72.4, slope: 124, rating9: null, slope9: null,
+      { id: 'rood-h', name: 'Rood (heren)', gender: 'h', rating: 68.5, slope: 122, rating9: 33.2, slope9: 115, rating9Back: 35.4, slope9Back: 128,
         lengths: [331, 137, 251, 296, 294, 410, 126, 382, 153, 404, 133, 257, 310, 325, 377, 282, 340, 304] },
+      { id: 'oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 65.2, slope: 110, rating9: 31.8, slope9: 106, rating9Back: 33.7, slope9Back: 115,
+        lengths: [290, 113, 211, 246, 257, 360, 102, 330, 136, 365, 113, 195, 268, 284, 367, 235, 290, 255] },
+      { id: 'geel-d', name: 'Geel (dames)', gender: 'd', rating: 79.4, slope: 145, rating9: 38.1, slope9: 139, rating9Back: 41.3, slope9Back: 152,
+        lengths: [387, 158, 295, 349, 349, 488, 159, 443, 172, 490, 157, 288, 358, 372, 435, 330, 381, 363] },
+      { id: 'blauw', name: 'Blauw (dames)', gender: 'd', rating: 75.5, slope: 134, rating9: 37.0, slope9: 131, rating9Back: 38.5, slope9Back: 139,
+        lengths: [331, 147, 284, 340, 337, 478, 145, 386, 153, 407, 147, 277, 314, 353, 382, 282, 340, 304] },
+      { id: 'rood', name: 'Rood (dames)', gender: 'd', rating: 73.7, slope: 135, rating9: 35.6, slope9: 129, rating9Back: 38.1, slope9Back: 140,
+        lengths: [331, 137, 251, 296, 294, 410, 126, 382, 153, 404, 133, 257, 310, 325, 377, 282, 340, 304] },
+      { id: 'oranje', name: 'Oranje (dames)', gender: 'd', rating: 69.6, slope: 121, rating9: 33.4, slope9: 115, rating9Back: 36.2, slope9Back: 127,
+        lengths: [290, 113, 211, 246, 257, 360, 102, 330, 136, 365, 113, 195, 268, 284, 367, 235, 290, 255] },
     ],
   },
   {
     // 9 holes; voor 18 holes speel je ze twee keer (holes 10-18 = tweede ronde, met eigen S.I.).
     id: 'par3',
-    dataVersion: 2,
+    dataVersion: 3,
     name: 'Hooge Graven Par 3',
     holeCount: 18,
     countsForIndex: false, // te kort voor een WHS-qualifying ronde
@@ -50,9 +60,9 @@ const DEFAULT_COURSES = [
     si: [9, 3, 7, 11, 15, 5, 13, 1, 17, 10, 4, 8, 12, 16, 6, 14, 2, 18],
     confirmed: true,
     tees: [
-      { id: 'par3-heren', name: 'Heren', gender: 'h', rating: 48.8, slope: 68, rating9: 24.4, slope9: 68,
+      { id: 'par3-heren', name: 'Heren', gender: 'h', rating: 48.9, slope: 70, rating9: 24.5, slope9: 70,
         lengths: [89, 111, 86, 73, 87, 128, 78, 100, 93, 89, 111, 86, 73, 87, 128, 78, 100, 93] },
-      { id: 'par3-dames', name: 'Dames', gender: 'd', rating: 50.4, slope: 70, rating9: 25.2, slope9: 70,
+      { id: 'par3-dames', name: 'Dames', gender: 'd', rating: 50.8, slope: 77, rating9: 25.4, slope9: 77,
         lengths: [89, 111, 86, 73, 87, 128, 78, 100, 93, 89, 111, 86, 73, 87, 128, 78, 100, 93] },
     ],
   },
@@ -66,23 +76,39 @@ const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'de-koepel', dataVersion: 2, name: 'Golfclub De Koepel (Wierden)', holeCount: 18, parTotal: 70, pars: [4, 5, 3, 4, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 4, 4, 4, 3], si: [8, 6, 18, 4, 2, 16, 12, 10, 14, 5, 17, 1, 9, 3, 15, 7, 11, 13], confirmed: false, fromSources: true, location: {lat: 52.369, lon: 6.583}, website: 'https://www.golfclubdekoepel.nl/',
+    id: 'de-koepel', dataVersion: 3, name: 'Golfclub De Koepel (Wierden)', holeCount: 18, parTotal: 70, pars: [4, 5, 3, 4, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 4, 4, 4, 3], si: [8, 6, 18, 4, 2, 16, 12, 10, 14, 5, 17, 1, 9, 3, 15, 7, 11, 13], confirmed: false, fromSources: true, location: {lat: 52.369, lon: 6.583}, website: 'https://www.golfclubdekoepel.nl/',
     tees: [
-      {id: 'koepel-geel', name: 'Geel (heren)', gender: 'h', rating: 70.0, slope: 129, rating9: null, slope9: null, lengths: [303, 465, 134, 339, 459, 166, 320, 342, 168, 433, 149, 399, 347, 379, 282, 391, 340, 160]},
-      {id: 'koepel-geel-d', name: 'Geel (dames)', gender: 'd', rating: 75.7, slope: 137, rating9: null, slope9: null, lengths: [303, 465, 134, 339, 459, 166, 320, 342, 168, 433, 149, 399, 347, 379, 282, 391, 340, 160]},
-      {id: 'koepel-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.2, slope: 112, rating9: null, slope9: null},
-      {id: 'koepel-rood', name: 'Rood (dames)', gender: 'd', rating: 70.8, slope: 128, rating9: null, slope9: null},
-      {id: 'koepel-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 64.2, slope: 102, rating9: null, slope9: null},
+      { id: 'koepel-geel', name: 'Geel (heren)', gender: 'h', rating: 70.0, slope: 129, rating9: 34.6, slope9: 129, rating9Back: 35.5, slope9Back: 129,
+        lengths: [303, 465, 134, 339, 459, 166, 320, 342, 168, 433, 149, 399, 347, 379, 282, 391, 340, 160] },
+      { id: 'koepel-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.2, slope: 112, rating9: 32.7, slope9: 112, rating9Back: 33.6, slope9Back: 112 },
+      { id: 'koepel-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 61.8, slope: 100, rating9: 30.6, slope9: 102, rating9Back: 31.2, slope9Back: 97 },
+      { id: 'koepel-geel-d', name: 'Geel (dames)', gender: 'd', rating: 75.7, slope: 137, rating9: 37.4, slope9: 133, rating9Back: 38.4, slope9Back: 139,
+        lengths: [303, 465, 134, 339, 459, 166, 320, 342, 168, 433, 149, 399, 347, 379, 282, 391, 340, 160] },
+      { id: 'koepel-rood', name: 'Rood (dames)', gender: 'd', rating: 70.8, slope: 128, rating9: 34.8, slope9: 127, rating9Back: 36.0, slope9Back: 129 },
+      { id: 'koepel-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 64.2, slope: 102, rating9: 32.1, slope9: 103, rating9Back: 32.2, slope9Back: 100 },
     ],
   },
   {
-    id: 'de-hoek', dataVersion: 2, name: 'Sallandsche Golfclub De Hoek (Diepenveen)', holeCount: 18, parTotal: 72, pars: [4, 4, 4, 5, 3, 4, 5, 4, 3, 4, 5, 4, 4, 3, 4, 5, 4, 3], si: [7, 5, 17, 3, 13, 11, 9, 1, 15, 4, 16, 12, 10, 18, 2, 14, 6, 8], confirmed: false, fromSources: true, location: {lat: 52.297, lon: 6.163}, website: 'https://sallandsche.nl/',
+    id: 'de-hoek', dataVersion: 3, name: 'Sallandsche Golfclub De Hoek (Diepenveen)', holeCount: 18, parTotal: 72, pars: [4, 4, 4, 5, 3, 4, 5, 4, 3, 4, 5, 4, 4, 3, 4, 5, 4, 3], si: [7, 5, 17, 3, 13, 11, 9, 1, 15, 4, 16, 12, 10, 18, 2, 14, 6, 8], confirmed: true, location: {lat: 52.297, lon: 6.163}, website: 'https://sallandsche.nl/',
     tees: [
-      {id: 'hoek-wit', name: 'Wit (heren)', gender: 'h', rating: 72.4, slope: 131, rating9: null, slope9: null, lengths: [361, 421, 270, 502, 150, 364, 441, 343, 130, 396, 454, 339, 347, 177, 380, 460, 324, 196]},
-      {id: 'hoek-geel', name: 'Geel (heren)', gender: 'h', rating: 71.5, slope: 128, rating9: null, slope9: null, lengths: [341, 395, 265, 490, 145, 342, 441, 338, 130, 379, 454, 331, 327, 162, 375, 460, 319, 192]},
-      {id: 'hoek-blauw', name: 'Blauw (heren)', gender: 'h', rating: 68.5, slope: 118, rating9: null, slope9: null},
-      {id: 'hoek-rood', name: 'Rood (heren)', gender: 'h', rating: 67.4, slope: 115, rating9: null, slope9: null},
-      {id: 'hoek-geel-d', name: 'Geel (dames)', gender: 'd', rating: 77.4, slope: 140, rating9: null, slope9: null, lengths: [341, 395, 265, 490, 145, 342, 441, 338, 130, 379, 454, 331, 327, 162, 375, 460, 319, 192]},
+      { id: 'hoek-wit', name: 'Wit (heren)', gender: 'h', rating: 72.4, slope: 131, rating9: 36.1, slope9: 136, rating9Back: 36.4, slope9Back: 125,
+        lengths: [361, 421, 270, 502, 150, 364, 441, 343, 130, 396, 454, 339, 347, 128, 380, 510, 324, 196] },
+      { id: 'hoek-geel', name: 'Geel (heren)', gender: 'h', rating: 71.5, slope: 128, rating9: 35.8, slope9: 131, rating9Back: 35.8, slope9Back: 125,
+        lengths: [341, 395, 265, 502, 145, 342, 441, 338, 130, 379, 454, 331, 327, 116, 375, 450, 319, 192] },
+      { id: 'hoek-blauw', name: 'Blauw (heren)', gender: 'h', rating: 68.5, slope: 118, rating9: 34.4, slope9: 114, rating9Back: 34.1, slope9Back: 123,
+        lengths: [311, 331, 253, 431, 130, 297, 429, 279, 109, 325, 394, 300, 287, 116, 318, 424, 305, 170] },
+      { id: 'hoek-rood', name: 'Rood (heren)', gender: 'h', rating: 67.4, slope: 115, rating9: 33.8, slope9: 110, rating9Back: 33.7, slope9Back: 119,
+        lengths: [299, 331, 227, 431, 120, 297, 367, 279, 109, 325, 394, 300, 282, 104, 318, 386, 285, 161] },
+      { id: 'hoek-oranje', name: 'Oranje (heren)', gender: 'h', rating: 63.4, slope: 109, rating9: 31.1, slope9: 107, rating9Back: 32.7, slope9Back: 112,
+        lengths: [200, 240, 177, 350, 69, 215, 290, 212, 89, 289, 367, 294, 250, 104, 292, 386, 271, 111] },
+      { id: 'hoek-geel-d', name: 'Geel (dames)', gender: 'd', rating: 77.4, slope: 140, rating9: 38.6, slope9: 139, rating9Back: 38.8, slope9Back: 141,
+        lengths: [341, 395, 265, 502, 145, 342, 441, 338, 130, 379, 454, 331, 327, 116, 375, 450, 319, 192] },
+      { id: 'hoek-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 73.8, slope: 130, rating9: 36.7, slope9: 131, rating9Back: 37.1, slope9Back: 130,
+        lengths: [311, 331, 253, 431, 130, 297, 429, 279, 109, 325, 394, 300, 287, 116, 318, 424, 305, 170] },
+      { id: 'hoek-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72.6, slope: 128, rating9: 36.2, slope9: 126, rating9Back: 36.5, slope9Back: 129,
+        lengths: [299, 331, 227, 431, 120, 297, 367, 279, 109, 325, 394, 300, 282, 104, 318, 386, 285, 161] },
+      { id: 'hoek-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 67.6, slope: 112, rating9: 32.6, slope9: 105, rating9Back: 35.1, slope9Back: 120,
+        lengths: [200, 240, 177, 350, 69, 215, 290, 212, 89, 289, 367, 294, 250, 104, 292, 386, 271, 111] },
     ],
   },
   {
@@ -93,10 +119,10 @@ const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'gelpenberg', dataVersion: 2, name: 'Drentse Golfclub De Gelpenberg (Aalden)', holeCount: 18, parTotal: 72, pars: [5, 3, 4, 5, 4, 4, 4, 3, 4, 4, 4, 3, 5, 4, 4, 5, 3, 4], si: [6, 8, 14, 12, 4, 18, 2, 16, 10, 13, 1, 17, 9, 3, 7, 11, 15, 5], confirmed: false, fromSources: true, location: {lat: 52.785, lon: 6.736}, website: 'https://www.dgcdegelpenberg.nl/',
+    id: 'gelpenberg', dataVersion: 3, name: 'Drentse Golfclub De Gelpenberg (Aalden)', holeCount: 18, parTotal: 72, pars: [5, 3, 4, 5, 4, 4, 4, 3, 4, 4, 4, 3, 5, 4, 4, 5, 3, 4], si: [6, 8, 14, 12, 4, 18, 2, 16, 10, 13, 1, 17, 9, 3, 7, 11, 15, 5], confirmed: false, fromSources: true, location: {lat: 52.785, lon: 6.736}, website: 'https://www.dgcdegelpenberg.nl/',
     tees: [
-      {id: 'gelpenberg-geel', name: 'Geel (heren)', gender: 'h', rating: 71.6, slope: 128, rating9: null, slope9: null},
-      {id: 'gelpenberg-rood', name: 'Rood (dames)', gender: 'd', rating: 72.5, slope: 124, rating9: null, slope9: null},
+      {id: 'gelpenberg-geel', name: 'Geel (heren)', gender: 'h', rating: 71.6, slope: 128, rating9: null, slope9: null, lengths: [489,  174,  338,  443,  400,  274,  373,  139,  340,  337,  377,  127,  477,  381,  373,  441,  174,  374]},
+      {id: 'gelpenberg-rood', name: 'Rood (dames)', gender: 'd', rating: 72.5, slope: 124, rating9: null, slope9: null, lengths: [409,  147,  292,  403,  328,  237,  316,  108,  300,  304,  328,  109,  420,  334,  312,  380,  150,  317]},
     ],
   },
   {
@@ -970,13 +996,14 @@ function courseForPlayer(player) {
   const tee = teeFor(player, c);
   // Op een 18-holes baan zijn de 9-holes waarden standaard de helft van de rating.
   const half = holes.length === 9 && c.holeCount === 18;
+  const back = holes[0] >= 10; // officiële ratings verschillen per negen (rating9 = holes 1–9)
   return {
     name: c.name,
     holes: holes.length,
     pars: holes.map(parOf),
     strokeIndexes: holes.map((h) => c.si[h - 1]),
-    rating: half ? (tee.rating9 ?? round1(tee.rating / 2)) : tee.rating,
-    slope: half ? (tee.slope9 ?? tee.slope) : tee.slope,
+    rating: half ? ((back ? tee.rating9Back : null) ?? tee.rating9 ?? round1(tee.rating / 2)) : tee.rating,
+    slope: half ? ((back ? tee.slope9Back : null) ?? tee.slope9 ?? tee.slope) : tee.slope,
     teeName: tee.name,
   };
 }
