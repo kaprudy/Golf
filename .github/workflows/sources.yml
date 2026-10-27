@@ -22,6 +22,7 @@ jobs:
       - name: Op branch 'bronnen' zetten
         run: |
           cd /tmp/bronnen
+          find . -type f -size +20M -print -delete
           git init -q -b bronnen
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"

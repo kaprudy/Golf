@@ -9,6 +9,7 @@ const [list, outDir] = process.argv.slice(2);
 fs.mkdirSync(outDir, { recursive: true });
 const urls = fs.readFileSync(list, 'utf8').split('\n').map((s) => s.trim()).filter((s) => s && !s.startsWith('#'));
 const KEY = /scorekaart|scorecard|score-card|baaninfo|baan-info|onze-baan|de-baan|golfbaan|baan|course|holes?|hole-|slope|rating|\.pdf/i;
+const MAX_BYTES = 15e6; // grote brochures overslaan
 const UA = { 'User-Agent': 'Mozilla/5.0 (Golfscore scorekaart-onderzoek; https://golf.kapital.nl)' };
 
 const slug = (u) => u.replace(/^https?:\/\//, '').replace(/[^a-z0-9]+/gi, '_').slice(0, 120);
@@ -19,11 +20,14 @@ const text = (html) => html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(
 async function get(url) {
   const res = await fetch(url, { headers: UA, redirect: 'follow', signal: AbortSignal.timeout(25000) });
   if (!res.ok) throw new Error(`${res.status}`);
+  const size = Number(res.headers.get('content-length') ?? 0);
+  if (size > MAX_BYTES) { res.body?.cancel(); throw new Error(`te groot (${Math.round(size / 1e6)} MB)`); }
   return { type: res.headers.get('content-type') ?? '', buf: Buffer.from(await res.arrayBuffer()), finalUrl: res.url };
 }
 
 async function save(url, dir) {
   const { type, buf, finalUrl } = await get(url);
+  if (buf.length > MAX_BYTES) throw new Error(`te groot (${Math.round(buf.length / 1e6)} MB)`);
   const base = path.join(dir, slug(url));
   if (type.includes('pdf') || /\.pdf($|\?)/i.test(url)) {
     fs.writeFileSync(`${base}.pdf`, buf);
