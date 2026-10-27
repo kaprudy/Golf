@@ -177,6 +177,25 @@ test('beheeroverzicht alleen voor beheerders', async () => {
     assert.deepEqual(o.candidates.map((c) => [c.word, c.value, c.learned]), [['fijf', 5, false]]);
     assert.equal(o.recentUsers.find((u) => u.email == null).samples, 1);
     assert.equal(JSON.stringify(o).includes('pw_hash'), false);
+
+    // Sessies, rondes en GPS-punten
+    const ev = await post('/api/events', { events: [
+      { kind: 'open', at: new Date().toISOString(), data: { gps: true, standalone: true } },
+      { kind: 'open', at: '2099-01-01T00:00:00Z', data: { gps: false } },
+      { kind: 'round_start', data: { course: 'par3', holes: 'front' } },
+      { kind: 'onbekend' },
+    ] }, dev);
+    assert.equal(ev.stored, 3);
+    await fetch(`${url}/api/state`, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${dev}` },
+      body: JSON.stringify({ data: { courses: [{ id: 'par3', name: 'Par 3', geo: { 1: { tee: { lat: 52.5, lon: 6.4 }, green: { lat: 52.501, lon: 6.4 } } } }] } }) });
+    await fetch(`${url}/api/state`, { method: 'PUT', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${baas}` },
+      body: JSON.stringify({ data: { courses: [{ id: 'par3', geo: { 1: { tee: { lat: 52.5002, lon: 6.4 } } } }] } }) });
+    const o2 = await (await get('/api/admin/overview', baas)).json();
+    assert.deepEqual([o2.sessions.last7, o2.sessions.users7, o2.sessions.gpsUsers, o2.sessions.installed], [2, 1, 1, 1]);
+    assert.deepEqual(o2.rounds, [{ course: 'par3', started: 1, saved: 0, users: 1, name: 'Par 3' }]);
+    const tee = o2.geo[0].points.find((p) => p.kind === 'tee');
+    assert.equal(tee.n, 2);
+    assert.ok(tee.spreadM >= 10 && tee.spreadM <= 12, String(tee.spreadM));
   } finally {
     adminServer.close();
   }

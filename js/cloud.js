@@ -153,6 +153,9 @@ export const sampleStats = () => api('GET', '/api/samples/stats');
 export const deleteSamples = () => api('DELETE', '/api/samples');
 export const fetchVocab = () => api('GET', '/api/vocab');
 
+// Gebruik (app geopend, ronde gestart/opgeslagen) voor het beheeroverzicht. Geen locatie.
+export const sendEvents = (events) => api('POST', '/api/events', { events });
+
 // Controleert of de server bereikbaar is. Geeft {ok, error}.
 export async function testConnection() {
   try {

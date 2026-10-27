@@ -424,6 +424,7 @@ async function syncNow() {
       state.sync.localChangedAt = state.sync.syncedAt;
     }
     uploadSamples();
+    flushEvents();
     cloud.status = `Gesynchroniseerd om ${new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`;
     save({ fromCloud: true });
   } catch (err) {
@@ -595,6 +596,47 @@ function setMeta(patch) {
 }
 setMeta({ opens: (getMeta().opens ?? 0) + 1 });
 
+// ---------- Gebruik bijhouden (voor het beheeroverzicht; geen locatie, geen scores) ----------
+
+const EVENTS_KEY = 'golfscore-events';
+const SESSION_GAP_MS = 30 * 60 * 1000; // na een half uur weg telt terugkomen als nieuwe sessie
+
+function logEvent(kind, data) {
+  try {
+    const q = JSON.parse(localStorage.getItem(EVENTS_KEY)) ?? [];
+    q.push({ kind, at: new Date().toISOString(), data });
+    localStorage.setItem(EVENTS_KEY, JSON.stringify(q.slice(-300)));
+  } catch { /* geen opslag: dan tellen we deze niet */ }
+  flushEvents();
+}
+
+async function flushEvents() {
+  if (!cloud.user || flushEvents.busy) return;
+  let batch;
+  try { batch = (JSON.parse(localStorage.getItem(EVENTS_KEY)) ?? []).slice(0, 100); } catch { return; }
+  if (!batch.length) return;
+  const api = await cloudApi();
+  if (!api) return;
+  flushEvents.busy = true;
+  try {
+    await api.sendEvents(batch);
+    const rest = (JSON.parse(localStorage.getItem(EVENTS_KEY)) ?? []).slice(batch.length);
+    localStorage.setItem(EVENTS_KEY, JSON.stringify(rest));
+  } catch { /* later opnieuw */ } finally {
+    flushEvents.busy = false;
+  }
+}
+
+function logSession() {
+  const last = Date.parse(getMeta().lastSessionAt) || 0;
+  if (Date.now() - last < SESSION_GAP_MS) return;
+  setMeta({ lastSessionAt: new Date().toISOString() });
+  logEvent('open', { gps: gpsOn(), standalone: matchMedia('(display-mode: standalone)').matches || navigator.standalone === true });
+}
+setMeta({ lastSessionAt: null });
+logSession();
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') logSession(); });
+
 // ---------- Leren van ingesproken tekst (zie learning.js) ----------
 
 const learningOn = () => state.learning?.consent === true;
@@ -765,6 +807,7 @@ function showResumeQuestion() {
 function startRound(courseId, holesChoice) {
   if (roundHasScores()) archiveRound();
   state.round = newRound(holesChoice, courseId);
+  logEvent('round_start', { course: courseId, holes: holesChoice });
   lastUndo = null;
   pending = null;
   showFeedback('');
@@ -1344,6 +1387,7 @@ function archiveRound() {
   };
   state.history = state.history.filter((r) => r.id !== entry.id);
   state.history.push(entry);
+  logEvent('round_saved', { course: entry.courseId, holes: holes.length, players: results.length });
   finishRoundSamples();
   return true;
 }
@@ -1422,6 +1466,7 @@ document.addEventListener('click', (e) => {
       if (confirm('Nieuwe ronde starten? Scores die je niet hebt opgeslagen gaan verloren.')) {
         finishRoundSamples();
         state.round = newRound($('#round-holes').value, $('#round-course').value);
+        logEvent('round_start', { course: state.round.courseId, holes: state.round.holesChoice });
         lastUndo = null;
         pending = null;
         showFeedback('');

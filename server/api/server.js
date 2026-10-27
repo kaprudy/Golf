@@ -14,6 +14,7 @@
 //   GET    /api/samples/stats                   -> {count}
 //   DELETE /api/samples                         -> eigen voorbeelden verwijderen
 //   GET    /api/vocab                           -> geleerde woorden (voor iedereen, zonder inloggen)
+//   POST   /api/events     {events:[...]}      -> {stored}   gebruik: app geopend, ronde gestart/opgeslagen
 //   GET    /api/admin/overview                  -> overzicht voor beheerders (ADMIN_EMAILS)
 //   GET    /api/health                          -> {ok:true}
 
@@ -32,6 +33,8 @@ const MAX_BODY = 2 * 1024 * 1024; // ruim genoeg voor jaren aan rondes
 const TOKEN_DAYS = 180;
 const MAX_SAMPLES_PER_CALL = 200;
 const MAX_SAMPLE_BYTES = 4000;
+const EVENT_KINDS = new Set(['open', 'round_start', 'round_saved']);
+const MAX_EVENTS_PER_CALL = 100;
 const VOCAB_CACHE_MS = 10 * 60 * 1000;
 
 // ---------- Database ----------
@@ -64,6 +67,14 @@ export function openDatabase(path = DB_PATH) {
       payload    TEXT NOT NULL
     );
     CREATE INDEX IF NOT EXISTS speech_samples_user ON speech_samples(user_id);
+    CREATE TABLE IF NOT EXISTS app_events (
+      id         INTEGER PRIMARY KEY,
+      user_id    INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      kind       TEXT NOT NULL,
+      created_at TEXT NOT NULL,
+      data       TEXT
+    );
+    CREATE INDEX IF NOT EXISTS app_events_time ON app_events(created_at);
   `);
   // Anonieme accounts (alleen een geheim van de telefoon, geen e-mail). Kolom later toegevoegd.
   if (!db.prepare('PRAGMA table_info(users)').all().some((c) => c.name === 'device_hash')) {
@@ -179,6 +190,7 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS } = {}) {
     insertSample: db.prepare('INSERT INTO speech_samples (user_id, created_at, payload) VALUES (?, ?, ?)'),
     countSamples: db.prepare('SELECT COUNT(*) AS n FROM speech_samples WHERE user_id = ?'),
     deleteSamples: db.prepare('DELETE FROM speech_samples WHERE user_id = ?'),
+    insertEvent: db.prepare('INSERT INTO app_events (user_id, kind, created_at, data) VALUES (?, ?, ?, ?)'),
     allSamples: db.prepare('SELECT user_id, payload FROM speech_samples ORDER BY id DESC LIMIT 20000'),
   };
 
@@ -192,6 +204,48 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS } = {}) {
     const value = { ...learnVocabulary(rows), generatedAt: new Date().toISOString() };
     vocabCache = { at: Date.now(), value };
     return value;
+  }
+
+  // Baannamen uit de opgeslagen gegevens (voor leesbare namen in het overzicht).
+  let courseNames = {};
+
+  // Tee- en greenpunten die gebruikers vastlegden, per baan en hole samengevoegd (mediaan),
+  // met hoeveel mensen het punt vastlegden en hoe ver hun punten uit elkaar liggen.
+  function courseGeo() {
+    const points = new Map(); // "baan|hole|soort" -> [{lat, lon}]
+    const names = {};
+    for (const { data } of db.prepare('SELECT data FROM golf_state').all()) {
+      let state;
+      try { state = JSON.parse(data); } catch { continue; }
+      for (const c of state.courses ?? []) {
+        if (!c?.id) continue;
+        names[c.id] ??= c.name;
+        for (const [hole, pts] of Object.entries(c.geo ?? {})) {
+          for (const kind of ['tee', 'green']) {
+            const p = pts?.[kind];
+            if (!Number.isFinite(p?.lat) || !Number.isFinite(p?.lon)) continue;
+            const k = `${c.id}|${hole}|${kind}`;
+            if (!points.has(k)) points.set(k, []);
+            points.get(k).push({ lat: p.lat, lon: p.lon });
+          }
+        }
+      }
+    }
+    courseNames = names;
+    const median = (xs) => { const s = [...xs].sort((a, b) => a - b); const m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+    const dist = (a, b) => {
+      const rad = (d) => (d * Math.PI) / 180;
+      const h = Math.sin(rad(b.lat - a.lat) / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(rad(b.lon - a.lon) / 2) ** 2;
+      return 2 * 6371000 * Math.asin(Math.sqrt(h));
+    };
+    const courses = {};
+    for (const [k, list] of points) {
+      const [course, hole, kind] = k.split('|');
+      const mid = { lat: +median(list.map((p) => p.lat)).toFixed(6), lon: +median(list.map((p) => p.lon)).toFixed(6) };
+      const c = (courses[course] ??= { course, name: names[course] ?? course, points: [] });
+      c.points.push({ hole: Number(hole), kind, ...mid, n: list.length, spreadM: Math.round(Math.max(...list.map((p) => dist(mid, p)))) });
+    }
+    return Object.values(courses).map((c) => ({ ...c, points: c.points.sort((a, b) => a.hole - b.hole || a.kind.localeCompare(b.kind)) }));
   }
 
   // Overzicht voor de beheerder: aantallen en e-mailadressen, nooit de scores of rondes zelf.
@@ -247,10 +301,37 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS } = {}) {
     const recentSamples = db.prepare('SELECT created_at, payload FROM speech_samples ORDER BY id DESC LIMIT 40').all().map((r) => {
       try { const p = JSON.parse(r.payload); return { createdAt: r.created_at, hole: p.hole, par: p.par, texts: p.texts, parsed: p.parsed, final: p.final, ai: p.ai }; } catch { return null; }
     }).filter(Boolean);
+    // Gebruik: sessies (app geopend) en rondes
+    const sessions = {
+      last7: one("SELECT COUNT(*) n FROM app_events WHERE kind = 'open' AND created_at > ?", ago(7)).n,
+      users7: one("SELECT COUNT(DISTINCT user_id) n FROM app_events WHERE kind = 'open' AND created_at > ?", ago(7)).n,
+      today: one("SELECT COUNT(*) n FROM app_events WHERE kind = 'open' AND created_at > ?", new Date().toISOString().slice(0, 10)).n,
+      usersToday: one("SELECT COUNT(DISTINCT user_id) n FROM app_events WHERE kind = 'open' AND created_at > ?", new Date().toISOString().slice(0, 10)).n,
+      perDay: db.prepare(`SELECT substr(created_at, 1, 10) day, COUNT(*) count, COUNT(DISTINCT user_id) users FROM app_events
+        WHERE kind = 'open' AND created_at > ? GROUP BY day ORDER BY day`).all(ago(30)),
+      gpsUsers: one(`SELECT COUNT(DISTINCT user_id) n FROM app_events WHERE kind = 'open' AND created_at > ?
+        AND json_extract(data, '$.gps') = 1`, ago(30)).n,
+      users30: one("SELECT COUNT(DISTINCT user_id) n FROM app_events WHERE kind = 'open' AND created_at > ?", ago(30)).n,
+      installed: one(`SELECT COUNT(DISTINCT user_id) n FROM app_events WHERE kind = 'open' AND created_at > ?
+        AND json_extract(data, '$.standalone') = 1`, ago(30)).n,
+    };
+    const rounds = db.prepare(`SELECT json_extract(data, '$.course') course, kind, COUNT(*) n, COUNT(DISTINCT user_id) users
+        FROM app_events WHERE kind IN ('round_start', 'round_saved') AND created_at > ? GROUP BY course, kind`).all(ago(30));
+    const geo = courseGeo(); // vult ook courseNames
+    const roundsByCourse = {};
+    for (const r of rounds) {
+      const c = (roundsByCourse[r.course ?? '?'] ??= { course: r.course ?? '?', started: 0, saved: 0, users: 0 });
+      if (r.kind === 'round_start') { c.started = r.n; c.users = Math.max(c.users, r.users); } else c.saved = r.n;
+    }
+    for (const c of Object.values(roundsByCourse)) c.name = courseNames[c.course] ?? c.course;
+
     const vocab = vocabulary();
     const learned = new Set([...Object.keys(vocab.numbers), ...vocab.holeWords]);
     const candidates = wordStats(rows).slice(0, 60).map((w) => ({ ...w, learned: learned.has(w.word) }));
-    return { generatedAt: new Date().toISOString(), users, active, registrations, recentUsers, samples, recentSamples, vocab, candidates };
+    return {
+      generatedAt: new Date().toISOString(), users, active, registrations, recentUsers, samples, recentSamples, vocab, candidates,
+      sessions, rounds: Object.values(roundsByCourse).sort((a, b) => b.started - a.started), geo,
+    };
   }
 
   function newSession(user) {
@@ -360,6 +441,23 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS } = {}) {
         stored++;
       }
       vocabCache = null;
+      return send(res, 200, { stored });
+    }
+    if (key === 'POST /api/events') {
+      const { events } = await readJson(req);
+      if (!Array.isArray(events) || events.length > MAX_EVENTS_PER_CALL) throw new HttpError(400, 'Geen geldige gebeurtenissen');
+      const now = Date.now();
+      let stored = 0;
+      for (const e of events) {
+        if (!e || !EVENT_KINDS.has(e.kind)) continue;
+        // Offline verzameld: de tijd van de telefoon, maar niet in de toekomst en hooguit 30 dagen terug.
+        const t = Date.parse(e.at);
+        const at = new Date(Number.isFinite(t) && t <= now && t > now - 30 * 864e5 ? t : now).toISOString();
+        const data = e.data && typeof e.data === 'object' ? JSON.stringify(e.data) : null;
+        if (data && data.length > 500) continue;
+        q.insertEvent.run(user.id, e.kind, at, data);
+        stored++;
+      }
       return send(res, 200, { stored });
     }
     if (key === 'GET /api/samples/stats') return send(res, 200, { count: q.countSamples.get(user.id).n });

@@ -7,6 +7,7 @@
   <title>Golfscore beheer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
   <style>
     :root {
@@ -70,6 +71,10 @@
     .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
     .tip { position: absolute; pointer-events: none; background: var(--text); color: var(--bg); font-size: .78rem; padding: 6px 9px; border-radius: 8px; white-space: nowrap; transform: translate(-50%, -110%); }
     .max { font-size: .72rem; color: var(--muted); }
+    .map { height: 420px; border-radius: 14px; border: 1px solid var(--border); margin-top: 10px; z-index: 0; }
+    .hole-label { background: none; border: 0; }
+    .hole-label span { display: inline-block; min-width: 22px; padding: 1px 5px; border-radius: 11px; font: 600 11px/16px var(--sans); text-align: center; color: #fff; border: 2px solid #fff; }
+    select { font: inherit; min-height: 40px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg); color: var(--text); padding: 0 10px; }
   </style>
 </head>
 <body>
@@ -153,7 +158,7 @@ function barChart(id, days, series) {
     const total = d.values.reduce((a, b) => a + b, 0);
     const lastIdx = d.values.map((v, k) => (v ? k : -1)).filter((k) => k >= 0).pop();
     const segs = d.values.map((v, k) => (v ? `<div class="seg ${k === lastIdx ? 'top' : ''}" style="height:calc(${(v / max) * 100}% - 2px);background:${series[k].color}"></div>` : '')).join('');
-    const tip = `${date(d.day)}: ${series.map((s, k) => `${s.name} ${d.values[k]}`).join(' · ')}${series.length > 1 ? ` · totaal ${total}` : ''}`;
+    const tip = `${date(d.day)}: ${series.map((s, k) => `${s.name} ${d.values[k]}`).join(' · ')}${series.length > 1 ? ` · totaal ${total}` : ''}${d.extra ? ` · ${d.extra}` : ''}`;
     return `<div class="col" data-tip="${esc(tip)}" data-i="${i}">${segs}</div>`;
   }).join('');
   return `<div class="legend">${series.map((s) => `<span><i style="background:${s.color}"></i>${esc(s.name)}</span>`).join('')}<span class="max">max ${max} per dag</span></div>
@@ -169,11 +174,16 @@ function render(o) {
   const learnedCount = Object.keys(o.vocab.numbers).length + o.vocab.holeWords.length;
   const regDays = last30(o.registrations, (r) => [r?.email ?? 0, r?.anonymous ?? 0]);
   const sampleDays = last30(o.samples.perDay, (r) => [r?.count ?? 0]);
+  const sessionDays = last30(o.sessions.perDay, (r) => [r?.count ?? 0]).map((d) => ({ ...d, users: o.sessions.perDay.find((r) => r.day === d.day)?.users ?? 0 }));
+  const share = (n, of) => (of ? `${Math.round((n / of) * 100)}%` : '–');
 
   $('#dash').innerHTML = `
     <div class="tiles">
       <div class="tile"><div class="label">Accounts</div><div class="value">${nf.format(o.users.total)}</div><div class="sub">${o.users.email} met e-mail · ${o.users.anonymous} anoniem</div></div>
       <div class="tile"><div class="label">Nieuw</div><div class="value">${nf.format(o.users.last7)}</div><div class="sub">afgelopen 7 dagen · ${o.users.last30} in 30 dagen</div></div>
+      <div class="tile"><div class="label">Sessies (7 dagen)</div><div class="value">${nf.format(o.sessions.last7)}</div><div class="sub">door ${o.sessions.users7} gebruiker(s) · vandaag ${o.sessions.today} door ${o.sessions.usersToday}</div></div>
+      <div class="tile"><div class="label">GPS aan</div><div class="value">${share(o.sessions.gpsUsers, o.sessions.users30)}</div><div class="sub">${o.sessions.gpsUsers} van ${o.sessions.users30} gebruikers (30 dagen)</div></div>
+      <div class="tile"><div class="label">Op beginscherm gezet</div><div class="value">${share(o.sessions.installed, o.sessions.users30)}</div><div class="sub">${o.sessions.installed} van ${o.sessions.users30} gebruikers (30 dagen)</div></div>
       <div class="tile"><div class="label">Actief (gesynchroniseerd)</div><div class="value">${nf.format(o.active.d7)}</div><div class="sub">7 dagen · vandaag ${o.active.d1} · 30 dagen ${o.active.d30}</div></div>
       <div class="tile"><div class="label">Spraakvoorbeelden</div><div class="value">${nf.format(o.samples.total)}</div><div class="sub">van ${o.samples.users} gebruiker(s) · ${o.samples.last7} deze week</div></div>
       <div class="tile"><div class="label">Meteen goed verstaan</div><div class="value">${pct(o.samples.firstTimeRight)}</div><div class="sub">verstaan = eindscore op de kaart</div></div>
@@ -181,6 +191,15 @@ function render(o) {
     </div>
 
     <div class="two">
+      <div class="card"><h2>Sessies</h2><p class="muted small">Keren dat de app geopend werd per dag (na een half uur weg telt terugkomen opnieuw), laatste 30 dagen.</p>
+        ${barChart('ses', sessionDays.map((d) => ({ ...d, extra: `${d.users} gebruiker(s)` })), [{ name: 'Sessies', color: cEmail }])}</div>
+      <div class="card"><h2>Rondes per baan</h2><p class="muted small">Laatste 30 dagen. Opgeslagen = met “Ronde opslaan” of bewaard bij het starten van een nieuwe ronde.</p>
+        <div class="scroll"><table><tr><th>Baan</th><th class="num">Gestart</th><th class="num">Opgeslagen</th><th class="num">Spelers (accounts)</th></tr>
+        ${o.rounds.map((r) => `<tr><td>${esc(r.name)}</td><td class="num">${r.started}</td><td class="num">${r.saved}</td><td class="num">${r.users}</td></tr>`).join('')
+          || '<tr><td colspan="4" class="muted">Nog geen rondes.</td></tr>'}</table></div></div>
+    </div>
+
+    <div class="two" style="margin-top:16px">
       <div class="card"><h2>Registraties</h2><p class="muted small">Nieuwe accounts per dag, laatste 30 dagen. Een anoniem account dat later een e-mailadres kreeg telt als e-mail.</p>
         ${barChart('reg', regDays, [{ name: 'Met e-mail', color: cEmail }, { name: 'Anoniem', color: cAnon }])}</div>
       <div class="card"><h2>Gedeelde spraak</h2><p class="muted small">Ingesproken zinnen per dag (alleen met toestemming), laatste 30 dagen.</p>
@@ -212,6 +231,12 @@ function render(o) {
       </table></div>
     </div>
 
+    <div class="card"><h2>GPS-punten van de banen</h2>
+      <p class="muted small">Tees en greens die gebruikers tijdens een ronde vastlegden, per hole samengevoegd (mediaan). “Spreiding” is hoe ver het verste punt van het midden ligt: groot = iemand tikte op de verkeerde plek. Locaties van spelers zelf komen niet op de server.</p>
+      ${o.geo.length ? `<label class="small">Baan <select id="geo-course">${o.geo.map((c, i) => `<option value="${i}">${esc(c.name)}</option>`).join('')}</select></label>
+        <div id="geo-detail"></div>` : '<p class="muted">Nog geen punten vastgelegd.</p>'}
+    </div>
+
     <div class="card"><h2>Accounts</h2>
       <p class="muted small">De nieuwste 100. Scores en rondes zelf zijn hier niet te zien, alleen aantallen.</p>
       <div class="scroll"><table>
@@ -220,6 +245,12 @@ function render(o) {
           <td>${dateTime(u.createdAt)}</td><td>${dateTime(u.lastSync)}</td><td class="num">${u.rounds ?? '–'}</td><td class="num">${u.players ?? '–'}</td><td class="num">${u.samples}</td></tr>`).join('')}
       </table></div>
     </div>`;
+
+  if (o.geo.length) {
+    const show = (i) => renderGeo(o.geo[i]);
+    $('#geo-course').addEventListener('change', (e) => show(Number(e.target.value)));
+    show(0);
+  }
 
   // Tooltip per dag (de hele kolom is het doel)
   for (const chart of document.querySelectorAll('.chart')) {
@@ -240,6 +271,67 @@ function render(o) {
     });
     chart.addEventListener('pointerleave', () => { tip.hidden = true; });
   }
+}
+
+// ---------- GPS-kaart (Leaflet + OpenStreetMap, alleen geladen als er punten zijn) ----------
+
+let leaflet = null;
+let map = null;
+function loadLeaflet() {
+  leaflet ??= new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';
+    s.onload = () => resolve(window.L);
+    s.onerror = reject;
+    document.head.append(s);
+  });
+  return leaflet;
+}
+
+async function renderGeo(course) {
+  const holes = [...new Set(course.points.map((p) => p.hole))].sort((a, b) => a - b);
+  const get = (h, kind) => course.points.find((p) => p.hole === h && p.kind === kind);
+  const tees = course.points.filter((p) => p.kind === 'tee').length;
+  const greens = course.points.filter((p) => p.kind === 'green').length;
+  const css = getComputedStyle(document.documentElement);
+  const cTee = css.getPropertyValue('--s-anon').trim();
+  const cGreen = css.getPropertyValue('--s-email').trim();
+  const cell = (p) => (p ? `${p.n}× · ${p.spreadM} m` : '<span class="muted">–</span>');
+  $('#geo-detail').innerHTML = `<p class="small">${tees} tees en ${greens} greens vastgelegd.</p>
+    <div class="legend"><span><i style="background:${cTee}"></i>Tee</span><span><i style="background:${cGreen}"></i>Green</span></div>
+    <div class="map" id="geo-map" role="img" aria-label="Kaart met vastgelegde tees en greens"></div>
+    <div class="scroll" style="margin-top:12px"><table>
+      <tr><th class="num">Hole</th><th>Tee (mensen · spreiding)</th><th>Green (mensen · spreiding)</th><th class="num">Tee → green</th></tr>
+      ${holes.map((h) => { const t = get(h, 'tee'); const g = get(h, 'green');
+        return `<tr><td class="num">${h}</td><td>${cell(t)}</td><td>${cell(g)}</td><td class="num">${t && g ? `${Math.round(distM(t, g))} m` : '–'}</td></tr>`; }).join('')}
+    </table></div>`;
+  try {
+    const L = await loadLeaflet();
+    map?.remove();
+    map = L.map('geo-map', { scrollWheelZoom: false });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OpenStreetMap' }).addTo(map);
+    const bounds = [];
+    for (const h of holes) {
+      const t = get(h, 'tee');
+      const g = get(h, 'green');
+      if (t && g) L.polyline([[t.lat, t.lon], [g.lat, g.lon]], { color: cGreen, weight: 2, opacity: .6, dashArray: '4 6' }).addTo(map);
+      for (const p of [t, g].filter(Boolean)) {
+        bounds.push([p.lat, p.lon]);
+        L.marker([p.lat, p.lon], { icon: L.divIcon({ className: 'hole-label', html: `<span style="background:${p.kind === 'tee' ? cTee : cGreen}">${h}</span>`, iconSize: [26, 20], iconAnchor: [13, 10] }) })
+          .bindTooltip(`Hole ${h} ${p.kind === 'tee' ? 'tee' : 'green'} · ${p.n} ${p.n === 1 ? 'persoon' : 'mensen'} · spreiding ${p.spreadM} m`)
+          .addTo(map);
+      }
+    }
+    if (bounds.length) map.fitBounds(bounds, { padding: [30, 30], maxZoom: 17 });
+  } catch {
+    $('#geo-map').innerHTML = '<p class="muted small" style="padding:12px">Kaart kon niet laden.</p>';
+  }
+}
+
+function distM(a, b) {
+  const rad = (d) => (d * Math.PI) / 180;
+  const h = Math.sin(rad(b.lat - a.lat) / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(rad(b.lon - a.lon) / 2) ** 2;
+  return 2 * 6371000 * Math.asin(Math.sqrt(h));
 }
 
 $('#login-form').addEventListener('submit', async (e) => {
