@@ -116,10 +116,13 @@ export async function fetchCourse(params, opts = {}) {
 
 // Golfbanen rond een punt: naam, website, aantal holes volgens OSM, midden.
 export async function listCourses({ lat, lon, radius = 50000 }, opts = {}) {
-  const at = `${Number(lat).toFixed(5)},${Number(lon).toFixed(5)}`;
   const r = Math.min(80000, Math.max(1000, Number(radius) || 50000));
-  const { json } = await overpass(`[out:json][timeout:120];
-(way["leisure"="golf_course"](around:${r},${at});relation["leisure"="golf_course"](around:${r},${at}););
+  // Rechthoek om de cirkel: veel lichter voor Overpass dan 'around' met een grote straal.
+  const dLat = r / 111320;
+  const dLon = r / (111320 * Math.cos((Number(lat) * Math.PI) / 180));
+  const bbox = [Number(lat) - dLat, Number(lon) - dLon, Number(lat) + dLat, Number(lon) + dLon].map((v) => v.toFixed(4)).join(',');
+  const { json } = await overpass(`[out:json][timeout:120][bbox:${bbox}];
+(way["leisure"="golf_course"];relation["leisure"="golf_course"];);
 out center tags;`, opts);
   return (json.elements ?? []).map((e) => ({
     osmId: `${e.type}/${e.id}`,
