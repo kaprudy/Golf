@@ -106,6 +106,13 @@ npm test         # tests voor tekstherkenning en handicapberekening
 | `js/vendor/anthropic-sdk.js` | Gebundelde `@anthropic-ai/sdk` 0.135.0 (MIT, zie LICENSE-bestand) |
 | `sw.js`, `manifest.webmanifest` | Offline gebruik en installeren als app |
 
+### Tees en greens uit OpenStreetMap
+
+Voor Hooge Graven staan de greens (18) en de tees (12, waar de lengte klopt met de scorekaart) uit
+OpenStreetMap in de app, zodat de afstand tot de green en het automatisch wisselen van hole direct
+werken. Wat je zelf vastlegt gaat voor. Data © OpenStreetMap-bijdragers (ODbL). Een baan ophalen:
+GitHub → Actions → *OpenStreetMap ophalen* (of `node tools/osm-fetch.mjs --lat … --lon …`).
+
 ## Opslag in de cloud (eigen server)
 
 Spelers, banen, rondes en geleerde woorden worden op de eigen server bewaard (`golf.kapital.nl`).

@@ -109,6 +109,40 @@ const DEFAULT_COURSES = [
   },
 ];
 
+// Tees en greens uit OpenStreetMap (© OpenStreetMap-bijdragers, ODbL), opgehaald met
+// tools/osm-fetch.mjs. Alleen tees waarvan de OSM-lengte klopt met de scorekaart (geel, ±8%);
+// greens altijd. Wat je zelf vastlegt (course.geo) gaat voor.
+const BASE_GEO = {
+  'hooge-graven': {
+    1: { tee: { lat: 52.547305, lon: 6.448482 }, green: { lat: 52.544257, lon: 6.447306 } },
+    2: { tee: { lat: 52.548625, lon: 6.448108 }, green: { lat: 52.547514, lon: 6.446521 } },
+    3: { tee: { lat: 52.546917, lon: 6.451189 }, green: { lat: 52.549381, lon: 6.449573 } },
+    4: { tee: { lat: 52.546631, lon: 6.451232 }, green: { lat: 52.543619, lon: 6.453097 } },
+    5: { green: { lat: 52.546496, lon: 6.452204 } },
+    6: { tee: { lat: 52.545936, lon: 6.453987 }, green: { lat: 52.550007, lon: 6.451198 } },
+    7: { tee: { lat: 52.549748, lon: 6.449431 }, green: { lat: 52.550367, lon: 6.451504 } },
+    8: { tee: { lat: 52.548945, lon: 6.449014 }, green: { lat: 52.545203, lon: 6.451063 } },
+    9: { green: { lat: 52.543862, lon: 6.447774 } },
+    10: { green: { lat: 52.54392, lon: 6.445616 } },
+    11: { tee: { lat: 52.546128, lon: 6.443466 }, green: { lat: 52.547558, lon: 6.44271 } },
+    12: { tee: { lat: 52.545704, lon: 6.443848 }, green: { lat: 52.543244, lon: 6.44497 } },
+    13: { green: { lat: 52.542838, lon: 6.444094 } },
+    14: { green: { lat: 52.547948, lon: 6.441739 } },
+    15: { tee: { lat: 52.549339, lon: 6.448286 }, green: { lat: 52.548341, lon: 6.442005 } },
+    16: { tee: { lat: 52.54796, lon: 6.443245 }, green: { lat: 52.548639, lon: 6.448139 } },
+    17: { tee: { lat: 52.545124, lon: 6.447312 }, green: { lat: 52.547428, lon: 6.444507 } },
+    18: { green: { lat: 52.543196, lon: 6.446594 } },
+  },
+};
+
+// Punten van een baan: OpenStreetMap als basis, eigen punten eroverheen.
+function geoOf(c = course()) {
+  const base = BASE_GEO[c.id] ?? {};
+  const out = {};
+  for (const h of new Set([...Object.keys(base), ...Object.keys(c.geo ?? {})])) out[h] = { ...base[h], ...c.geo?.[h] };
+  return out;
+}
+
 // Plattegronden van de club (scorekaarten), per groep holes.
 const COURSE_MAPS = {
   'hooge-graven': [
@@ -265,7 +299,7 @@ function onPosition(p) {
   gps.pos = { lat: p.coords.latitude, lon: p.coords.longitude, accuracy: p.coords.accuracy };
   gps.error = null;
   // Alleen reageren als je een (andere) tee op loopt, niet zolang je er blijft staan.
-  const tee = teeAt(gps.pos, course().geo, roundHoles());
+  const tee = teeAt(gps.pos, geoOf(), roundHoles());
   if (tee !== gps.lastTee) {
     gps.lastTee = tee;
     gps.suggest = null;
@@ -297,11 +331,11 @@ function renderGps() {
   el.hidden = !gpsOn();
   if (!gpsOn()) return;
   const h = state.round.currentHole;
-  const points = course().geo?.[h] ?? {};
+  const points = geoOf()[h] ?? {};
   if (gps.suggest === h) gps.suggest = null;
   if (gps.error) { el.innerHTML = `<p class="gps-msg">${esc(gps.error)}</p>`; return; }
   if (!gps.pos) { el.innerHTML = '<p class="gps-msg">GPS zoekt je positie…</p>'; return; }
-  const dist = toGreen(gps.pos, course().geo, h);
+  const dist = toGreen(gps.pos, geoOf(), h);
   el.innerHTML = `
     ${dist != null
       ? `<p class="gps-dist"><span class="gps-num">${dist}</span> m <span class="muted">tot de green</span></p>`
@@ -339,13 +373,15 @@ function renderGpsSettings() {
     el.innerHTML = '<p class="small muted">Deze browser kan je locatie niet gebruiken.</p>';
     return;
   }
-  const p = geoProgress(course().geo, roundHoles());
+  const p = geoProgress(geoOf(), roundHoles());
+  const own = geoProgress(course().geo, roundHoles());
+  const fromOsm = Boolean(BASE_GEO[course().id]);
   el.innerHTML = `
     <label class="check"><input type="checkbox" id="gps-on" ${gpsOn() ? 'checked' : ''}> GPS gebruiken tijdens de ronde</label>
     <label class="check"><input type="checkbox" id="gps-auto" ${gpsAuto() ? 'checked' : ''} ${gpsOn() ? '' : 'disabled'}> Automatisch naar de hole van de tee waar je staat</label>
-    <p class="small">Vastgelegd voor ${esc(course().name)}: <b>${p.tees}</b> van ${p.total} tees, <b>${p.greens}</b> van ${p.total} greens.</p>
+    <p class="small">Bekend voor ${esc(course().name)}: <b>${p.tees}</b> van ${p.total} tees, <b>${p.greens}</b> van ${p.total} greens${fromOsm ? ` (uit OpenStreetMap © OpenStreetMap-bijdragers, aangevuld met ${own.tees + own.greens} eigen punten)` : ''}.</p>
     <p class="small muted">Leg tijdens een ronde per hole één keer de tee en het midden van de green vast (knoppen bij het holenummer). Daarna ziet de app de afstand tot de green en op welke tee je staat. Je locatie blijft op je telefoon; alleen deze punten worden bij de baan bewaard. GPS werkt alleen met de app open en kost wat extra batterij.</p>
-    ${p.tees + p.greens ? '<button class="link small danger" data-action="gps-clear">GPS-punten van deze baan wissen</button>' : ''}`;
+    ${own.tees + own.greens ? `<button class="link small danger" data-action="gps-clear">Eigen GPS-punten van deze baan wissen</button>` : ''}`;
 }
 
 // ---------- Buggy-scherm (Bluetooth) ----------

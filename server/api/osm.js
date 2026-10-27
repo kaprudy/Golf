@@ -112,7 +112,7 @@ export async function fetchCourse(params, { fetchImpl = fetch, urls = OVERPASS_U
           'User-Agent': 'Golfscore/1.0 (https://golf.kapital.nl)',
         },
         body,
-        signal: AbortSignal.timeout(Number(process.env.OVERPASS_TIMEOUT_MS ?? 15000)),
+        signal: AbortSignal.timeout(Number(process.env.OVERPASS_TIMEOUT_MS ?? 38000)),
       });
       if (res.ok) return { ...parseOverpass(await res.json()), server: host };
       problems.push(`${host}: ${res.status}`);
