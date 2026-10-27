@@ -4,6 +4,12 @@
 # Met de hand kan ook:  bash /opt/golf/server/deploy.sh
 set -euo pipefail
 cd "$(dirname "$0")"
+# Git kan dit bestand tijdens het uitrollen vervangen; draai daarom een kopie.
+if [[ -z "${GOLF_DEPLOY_COPY:-}" ]]; then
+  cp "$0" /tmp/golf-deploy.sh
+  GOLF_DEPLOY_COPY="$PWD" exec bash /tmp/golf-deploy.sh "$@"
+fi
+cd "$GOLF_DEPLOY_COPY"
 
 exec 9>/tmp/golf-deploy.lock
 flock -w 600 9   # nooit twee keer tegelijk
