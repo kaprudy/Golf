@@ -39,7 +39,7 @@ Maak bij je DNS-beheer een **A-record** `golf.kapital.nl` dat wijst naar het IP-
 
 ```bash
 sudo mkdir -p /opt/golf && sudo chown "$USER" /opt/golf
-git clone https://github.com/kaprudy/Golf.git /opt/golf
+git clone -b ccr-c7728072-5kjkp5 https://github.com/kaprudy/Golf.git /opt/golf
 cd /opt/golf/server
 ```
 
@@ -65,6 +65,20 @@ sudo certbot --nginx -d golf.kapital.nl
 
 Gebruikt je server Apache: laat Apache `/api/` doorsturen naar `http://127.0.0.1:3080` en de map
 `server/site` serveren; vraag gerust om een voorbeeldconfiguratie.
+
+### 3c. Starten – Nginx Proxy Manager op poort 80/443 (kapital.nl)
+
+Zoek het docker-netwerk van NPM op en start de API plus een kleine webcontainer in dat netwerk:
+
+```bash
+docker inspect kapital-proxy -f '{{range $k, $v := .NetworkSettings.Networks}}{{$k}} {{end}}'
+export NPM_NETWORK=<naam uit de regel hierboven>
+docker compose -f docker-compose.yml -f docker-compose.npm.yml up -d --build
+```
+
+Daarna in NPM (http://<server>:81) → *Hosts* → *Proxy Hosts* → *Add Proxy Host*:
+domein `golf.kapital.nl`, scheme `http`, forward hostname `golf-web`, poort `80`,
+*Block Common Exploits* aan; tabblad *SSL*: *Request a new SSL Certificate*, *Force SSL* en *HTTP/2* aan.
 
 ### 4. Controleren
 
