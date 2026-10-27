@@ -36,3 +36,36 @@ jobs:
           path: .
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  server:
+    # Server op golf.kapital.nl bijwerken. De sleutel mag op de server alleen deploy.sh draaien
+    # (zie server/README.md, "Automatisch uitrollen"). Zonder ingestelde secrets wordt dit overgeslagen.
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    needs: test
+    runs-on: ubuntu-latest
+    concurrency: server-deploy
+    env:
+      HOST: ${{ secrets.DEPLOY_HOST }}
+    steps:
+      - name: Uitrollen
+        if: env.HOST != ''
+        env:
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+          USER: ${{ secrets.DEPLOY_USER }}
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/deploy && chmod 600 ~/.ssh/deploy
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          ssh -i ~/.ssh/deploy -o StrictHostKeyChecking=yes -o BatchMode=yes "${USER:-root}@$HOST" "$GITHUB_SHA"
+      - name: Controleren
+        if: env.HOST != ''
+        run: |
+          for i in 1 2 3 4 5 6; do
+            curl -fsS https://golf.kapital.nl/api/health && exit 0
+            sleep 5
+          done
+          exit 1
+      - name: Overgeslagen
+        if: env.HOST == ''
+        run: echo "Geen DEPLOY_HOST ingesteld; server niet bijgewerkt."

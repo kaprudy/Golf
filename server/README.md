@@ -94,6 +94,34 @@ De infopagina toont rechtsboven *"Opslagdienst werkt"*.
 Zet in `js/config.js` van de app `API_URL = 'https://golf.kapital.nl'` en publiceer de app
 (of vraag het aan Claude). In de app verschijnt dan bij Instellingen **Account en cloud**.
 
+## Automatisch uitrollen (GitHub Actions)
+
+Bij elke push naar `main` draait GitHub eerst de tests en logt daarna met een eigen SSH-sleutel in
+op de server. Die sleutel mag **alleen** `server/deploy.sh` starten (geen shell, geen tunnels). Het
+script haalt `main` op, bouwt de containers opnieuw en controleert of de API werkt.
+
+Eenmalig op de server (als root):
+
+```bash
+ssh-keygen -t ed25519 -N '' -C golf-deploy -f /root/.ssh/golf_deploy
+echo "command=\"/opt/golf/server/deploy.sh\",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty $(cat /root/.ssh/golf_deploy.pub)" >> /root/.ssh/authorized_keys
+ssh-keyscan -t ed25519 95.217.187.222 2>/dev/null   # -> DEPLOY_KNOWN_HOSTS
+cat /root/.ssh/golf_deploy                          # -> DEPLOY_SSH_KEY (daarna: shred -u /root/.ssh/golf_deploy)
+```
+
+In GitHub: *Settings → Secrets and variables → Actions → New repository secret*:
+
+| Secret | Waarde |
+|---|---|
+| `DEPLOY_HOST` | `95.217.187.222` |
+| `DEPLOY_USER` | `root` |
+| `DEPLOY_SSH_KEY` | de hele private key, inclusief de BEGIN- en END-regels |
+| `DEPLOY_KNOWN_HOSTS` | de regel van `ssh-keyscan` |
+
+Zonder `DEPLOY_HOST` slaat GitHub het uitrollen over. De poort 22 van de server moet bereikbaar zijn
+vanaf internet (GitHub). Met de hand uitrollen kan altijd met `bash /opt/golf/server/deploy.sh`.
+De sleutel intrekken: haal de regel met `golf-deploy` weg uit `/root/.ssh/authorized_keys`.
+
 ## Beheeroverzicht
 
 Op https://golf.kapital.nl/admin.html zie je registraties, actieve gebruikers, gedeelde spraak en
