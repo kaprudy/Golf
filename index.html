@@ -3,59 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#1f6b3a">
+  <meta name="theme-color" content="#F4EEE2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#171a15" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Golfscore">
   <title>Golfscore Ommen</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="top">
-    <h1>⛳ Golfscore</h1>
-    <span id="course-label" class="muted"></span>
+    <div class="top-course">
+      <h1 id="course-label">Golfscore</h1>
+      <span id="course-sub" class="muted small"></span>
+    </div>
+    <p id="buggy-badge" class="buggy-badge" hidden><span class="dot" aria-hidden="true"></span>Buggy-scherm verbonden</p>
   </header>
 
   <main>
     <!-- RONDE -->
     <section id="tab-ronde" class="tab active">
-      <div class="hero">
-      <div class="hole-nav">
-        <button class="nav-btn" data-action="prev-hole" aria-label="Vorige hole">◀</button>
-        <div class="hole-info">
-          <div class="hole-number">Hole <span id="hole-number">1</span></div>
-          <div id="hole-meta" class="hole-meta"></div>
-          <button class="link map-link" id="map-btn" data-action="show-map" hidden>🗺️ Baankaart</button>
+      <section class="hero" aria-label="Huidige hole">
+        <div class="hole-nav">
+          <button class="nav-btn" data-action="prev-hole" aria-label="Vorige hole"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></button>
+          <div class="hole-info">
+            <div class="overline">Hole</div>
+            <div class="hole-number" id="hole-number">1</div>
+          </div>
+          <button class="nav-btn next" data-action="next-hole" aria-label="Volgende hole"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></button>
         </div>
-        <button class="nav-btn" data-action="next-hole" aria-label="Volgende hole">▶</button>
-      </div>
+        <div id="hole-meta" class="hole-meta"></div>
+        <p id="next-hint" class="next-hint"></p>
+      </section>
 
-      <p id="next-hint" class="next-hint"></p>
-      <p id="buggy-badge" class="buggy-badge" hidden>Buggy-scherm verbonden</p>
-
-      <div id="hole-view" class="hole-view" hidden>
-        <img id="hole-img" alt="Plattegrond van deze hole" data-action="show-map">
-        <div class="hole-side">
+      <section id="hole-view" class="hole-view" aria-label="Plattegrond" hidden>
+        <button class="hole-pics" data-action="show-map" aria-label="Hele baankaart tonen">
+          <img id="hole-img" alt="Plattegrond van deze hole">
           <img id="pin-img" alt="Pinposities op de green">
-          <span id="pin-label" class="muted small">Pinposities</span>
-          <button class="link small" data-action="toggle-hole-view">Verbergen</button>
+        </button>
+        <div class="hole-side">
+          <div id="pin-label" class="serif-title">Pinposities A · B · C</div>
+          <div id="pin-sub" class="small muted-strong"></div>
+          <div class="hole-links">
+            <button class="link" id="map-btn" data-action="show-map" hidden>Baankaart <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></button>
+            <button class="link small" data-action="toggle-hole-view">Verbergen</button>
+          </div>
         </div>
-      </div>
-      <button id="hole-view-show" class="link small center" data-action="toggle-hole-view" hidden>⛳ Hole tonen</button>
-      </div>
+      </section>
+      <button id="hole-view-show" class="link small center" data-action="toggle-hole-view" hidden>Plattegrond tonen</button>
 
       <button id="mic" class="mic" data-action="mic" aria-label="Inspreken">
-        <span class="mic-icon">🎤</span>
-        <span id="mic-label">Druk en spreek in</span>
+        <span class="mic-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0014 0M12 18v3"></path></svg></span>
+        <span class="mic-text">
+          <span id="mic-label" class="serif-title">Druk en spreek in</span>
+          <span class="mic-example">“Hole 4, Rudy 5, Peter 4”</span>
+        </span>
       </button>
-      <p class="hint">Bijv. <em>“Hole 4, Rudy 5 slagen, Peter 3 slagen”</em> of <em>“Rudy par, Peter bogey”</em></p>
       <div id="live" class="live" hidden></div>
 
       <form id="text-form" class="text-form">
-        <input id="text-input" type="text" placeholder="Of typ: Rudy 5, Peter 3" autocomplete="off">
-        <button type="submit">OK</button>
+        <label class="grow"><span class="sr-only">Of typ de scores</span><input id="text-input" type="text" placeholder="Of typ: Rudy 5, Peter 4" autocomplete="off"></label>
+        <button type="submit" class="round-btn" aria-label="Scores verwerken"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
       </form>
 
       <div id="feedback"></div>
@@ -158,11 +171,11 @@
     </section>
   </main>
 
-  <nav class="tabs">
-    <button data-tab="ronde" class="active">🎤<span>Ronde</span></button>
-    <button data-tab="kaart">📋<span>Scorekaart</span></button>
-    <button data-tab="analyse">📊<span>Analyse</span></button>
-    <button data-tab="instellingen">⚙️<span>Instellingen</span></button>
+  <nav class="tabs" aria-label="Hoofdmenu">
+    <button data-tab="ronde" class="active"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 21V3M6 4h11l-3 4 3 4H6"></path></svg><span>Ronde</span></button>
+    <button data-tab="kaart"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M4 9h16M4 15h16M10 3v18"></path></svg><span>Scorekaart</span></button>
+    <button data-tab="analyse"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M7 16v-5M12 16V6M17 16v-8"></path></svg><span>Analyse</span></button>
+    <button data-tab="instellingen"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"></path><circle cx="16" cy="6" r="2"></circle><circle cx="10" cy="12" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg><span>Instellingen</span></button>
   </nav>
 
   <div id="toast" class="toast" hidden></div>

@@ -212,10 +212,19 @@ async function connectBuggy() {
   }
 }
 
+// Bruto en stand t.o.v. par over de gespeelde holes van deze ronde.
+function playerTotals(p) {
+  const played = roundHoles().filter((x) => scoreOf(p.name, x) != null);
+  const gross = played.reduce((sum, x) => sum + scoreOf(p.name, x), 0);
+  return { played: played.length, gross, toPar: gross - played.reduce((sum, x) => sum + parOf(x), 0) };
+}
+
+// Kleur van het tee-bolletje bij de lengte.
+const TEE_COLORS = { wit: '#FFFFFF', geel: '#E8C33A', blauw: '#3B6FB6', rood: '#C8402E', oranje: '#E8862A' };
+
 // Wat het buggy-scherm laat zien: de huidige hole en de stand per speler.
 function buggySummary() {
   const h = state.round.currentHole;
-  const holes = roundHoles();
   const tee = teeFor(state.players[0] ?? { tee: 'geel' });
   return {
     course: course().name,
@@ -224,9 +233,8 @@ function buggySummary() {
     si: course().si[h - 1],
     length: tee.lengths?.[h - 1] ?? 0,
     players: state.players.map((p) => {
-      const played = holes.filter((x) => scoreOf(p.name, x) != null);
-      const gross = played.reduce((sum, x) => sum + scoreOf(p.name, x), 0);
-      return { name: p.name, strokes: scoreOf(p.name, h), gross, toPar: gross - played.reduce((sum, x) => sum + parOf(x), 0) };
+      const { gross, toPar } = playerTotals(p);
+      return { name: p.name, strokes: scoreOf(p.name, h), gross, toPar };
     }),
   };
 }
@@ -683,14 +691,16 @@ function render() {
   const holes = roundHoles();
   if (!holes.includes(state.round.currentHole)) state.round.currentHole = holes[0];
   const h = state.round.currentHole;
-  $('#course-label').textContent = course().holeCount === 9 ? course().name : `${course().name} · ${holes.length === 9 ? (holes[0] === 1 ? 'holes 1–9' : 'holes 10–18') : '18 holes'}`;
+  $('#course-label').textContent = course().name;
+  $('#course-sub').textContent = holes.length === 9 ? (holes[0] === 1 ? 'holes 1–9' : 'holes 10–18') : '18 holes';
   $('#hole-number').textContent = h;
   $('#hole-number-2').textContent = h;
   const tee = teeFor(state.players[0] ?? { tee: 'geel' });
   const len = tee.lengths?.[h - 1];
-  const tile = (label, value) => `<span class="tile"><small>${esc(label)}</small><b>${esc(value)}</b></span>`;
-  $('#hole-meta').innerHTML = tile('Par', parOf(h)) + tile('SI', course().si[h - 1])
-    + (len ? tile(tee.name.split(' ')[0], `${len} m`) : '');
+  const chip = (label, value) => `<span class="chip"><span class="muted">${esc(label)}</span> <strong>${esc(value)}</strong></span>`;
+  const teeColor = TEE_COLORS[tee.name.split(' ')[0].toLowerCase()];
+  $('#hole-meta').innerHTML = chip('Par', parOf(h)) + chip('SI', course().si[h - 1])
+    + (len ? `<span class="chip" title="${esc(tee.name)}">${teeColor ? `<span class="tee-dot" style="background:${teeColor}" aria-hidden="true"></span>` : `<span class="muted">${esc(tee.name)}</span> `}<strong>${len} m</strong></span>` : '');
   $('#map-btn').hidden = !mapForHole(h);
   const imgs = holeImages(h);
   const hidden = holeViewHidden();
@@ -699,8 +709,9 @@ function render() {
   if (imgs && !hidden) {
     $('#hole-img').src = imgs.hole;
     $('#pin-img').hidden = !imgs.pin;
-    $('#pin-label').hidden = !imgs.pin;
     if (imgs.pin) $('#pin-img').src = imgs.pin;
+    $('#pin-label').textContent = imgs.pin ? 'Pinposities A · B · C' : `Hole ${h}`;
+    $('#pin-sub').textContent = imgs.pin ? `Green van hole ${h}` : `Par ${parOf(h)}${len ? ` · ${len} m` : ''}`;
   }
   const next = inputHole();
   $('#next-hint').innerHTML = next !== h
@@ -717,17 +728,22 @@ function render() {
 
 function renderQuickEntry() {
   const h = state.round.currentHole;
-  $('#quick-entry').innerHTML = state.players.map((p, i) => {
+  const rows = state.players.map((p, i) => {
     const s = scoreOf(p.name, h);
-    const diff = s == null ? '' : `<span class="diff d${Math.max(-2, Math.min(3, s - parOf(h)))}">${signed(s - parOf(h))}</span>`;
+    const { played, toPar } = playerTotals(p);
     return `<div class="qe-row">
-      <span class="qe-name">${esc(p.name)}${s == null ? '' : `<br>${termTag(s, parOf(h))}`}</span>
-      <button data-action="minus" data-i="${i}" aria-label="Min">−</button>
-      <span class="qe-score">${s ?? '·'}</span>
-      <button data-action="plus" data-i="${i}" aria-label="Plus">+</button>
-      ${diff}
+      <div class="qe-info">
+        <div class="qe-name">${esc(p.name)}</div>
+        <div class="qe-sub">${s == null ? '<span class="muted">Nog geen score</span>' : termTag(s, parOf(h))}
+          ${played ? `<span class="muted">Totaal <strong>${signed(toPar)}</strong></span>` : ''}</div>
+      </div>
+      <button class="round-btn" data-action="minus" data-i="${i}" aria-label="${esc(p.name)}: één slag minder">−</button>
+      <span class="qe-score" aria-label="${s ?? 0} slagen">${s ?? '·'}</span>
+      <button class="round-btn plus" data-action="plus" data-i="${i}" aria-label="${esc(p.name)}: één slag meer">+</button>
     </div>`;
-  }).join('') || '<p class="muted">Voeg spelers toe bij Instellingen, of noem gewoon een naam.</p>';
+  }).join('');
+  $('#quick-entry').innerHTML = rows || '<p class="muted">Voeg spelers toe bij Instellingen, of noem gewoon een naam.</p>';
+  $('#quick-entry').classList.toggle('empty', !rows);
 }
 
 function renderLog() {
