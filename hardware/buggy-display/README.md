@@ -70,10 +70,10 @@ worden (A, C en B). Zitten + en − bij jou net andersom, laat het weten: dan dr
 | Volgende hole | B lang |
 | Vorige hole | A lang |
 
-**Core2 (aanraken)**: tik op een speler om hem te kiezen; onderste balk *− / Speler / +*;
+**Core2 (aanraken)**: tik op een speler voor een slag erbij; onderste balk *− / Speler / +*;
 bovenste balk links/rechts = vorige/volgende hole.
 
-Een lege score begint bij **par**, net als de +/− knoppen in de app. Het scherm laat de wijziging
+Bedoeld om **per slag te tellen** tijdens het lopen: een lege score begint bij 1, net als in de app. Het scherm laat de wijziging
 meteen zien; de app stuurt direct de echte stand terug.
 
 ## Hoe het werkt

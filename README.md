@@ -27,6 +27,8 @@ handicapberekening** volgens het World Handicap System (WHS) dat de NGF gebruikt
     bestaande speler is, een nieuwe speler, of genegeerd moet worden.
   - Twijfelt de app en heb je een API-sleutel ingesteld, dan kijkt de AI mee.
 - **Ongedaan maken** direct na elke invoer, plus **+/−-knoppen** per speler.
+- **Tellen tijdens het lopen**: tik op een speler voor elke slag (de telefoon trilt kort). Zolang je op
+  die hole bent staat de score op *bezig*; naar de volgende hole gaan of de score inspreken rondt hem af.
 - **Scorekaart** met kleuren (birdie, bogey, …) die je met de hand kunt aanpassen.
 - **Analyse** per speler: bruto, tegen par, Stableford, verdeling birdies/pars/bogeys, beste en lastigste hole,
   score differential en handicap(-indicatie) – met uitleg hoe het berekend is.

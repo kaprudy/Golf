@@ -178,14 +178,16 @@ function moveHole(delta) {
   render();
 }
 
-// Eén slag erbij of eraf op de huidige hole; een lege score begint bij par.
+// Eén slag erbij of eraf op de huidige hole. Bedoeld om tijdens het lopen per slag te tellen:
+// een lege score begint bij 1.
 function adjustScore(playerIndex, delta) {
   const p = state.players[playerIndex];
   if (!p) return;
   const h = state.round.currentHole;
   const cur = scoreOf(p.name, h);
-  const next = cur == null ? parOf(h) : cur + delta;
+  const next = cur == null ? (delta > 0 ? 1 : 0) : cur + delta;
   setScore(p.name, h, next < 1 ? null : Math.min(20, next));
+  setLive(p.name, h, next >= 1);
   save();
   render();
 }
@@ -212,9 +214,19 @@ async function connectBuggy() {
   }
 }
 
-// Bruto en stand t.o.v. par over de gespeelde holes van deze ronde.
+// Getikte scores zijn "bezig" zolang je op die hole bent: de speler kan nog slagen maken.
+// Naar een andere hole gaan of de score inspreken rondt ze af.
+function setLive(name, hole, on) {
+  let live = state.round.live;
+  if (!live || live.hole !== hole) live = state.round.live = { hole, names: [] };
+  live.names = live.names.filter((n) => n !== name);
+  if (on) live.names.push(name);
+}
+const isLive = (name, hole) => state.round.live?.hole === hole && state.round.live.names.includes(name);
+
+// Bruto en stand t.o.v. par over de gespeelde holes van deze ronde (zonder een hole die nog bezig is).
 function playerTotals(p) {
-  const played = roundHoles().filter((x) => scoreOf(p.name, x) != null);
+  const played = roundHoles().filter((x) => scoreOf(p.name, x) != null && !isLive(p.name, x));
   const gross = played.reduce((sum, x) => sum + scoreOf(p.name, x), 0);
   return { played: played.length, gross, toPar: gross - played.reduce((sum, x) => sum + parOf(x), 0) };
 }
@@ -520,7 +532,10 @@ async function handleInput(texts) {
 
   // Bekende spelers direct opslaan.
   const previous = result.scores.map((s) => ({ name: s.name, value: scoreOf(s.name, result.hole) }));
-  for (const s of result.scores) setScore(s.name, result.hole, s.strokes);
+  for (const s of result.scores) {
+    setScore(s.name, result.hole, s.strokes);
+    setLive(s.name, result.hole, false); // ingesproken = definitief
+  }
   state.round.log.unshift({ time: new Date().toISOString(), hole: result.hole, text, viaAi, scores: result.scores.map(({ name, strokes }) => ({ name, strokes })) });
   lastUndo = { hole: result.hole, previous, added: [], logId: state.round.log[0].time, prevHole: state.round.currentHole };
   state.round.currentHole = result.hole;
@@ -591,7 +606,8 @@ function assignPending(btn) {
   renderPending();
 }
 
-const holeComplete = (hole) => state.players.length > 0 && state.players.every((p) => scoreOf(p.name, hole) != null);
+const holeComplete = (hole) => state.players.length > 0
+  && state.players.every((p) => scoreOf(p.name, hole) != null && !isLive(p.name, hole));
 
 // Eerstvolgende hole na `from` waar nog scores ontbreken (of null als alles gespeeld is).
 function nextOpenHole(from) {
@@ -691,6 +707,8 @@ function render() {
   const holes = roundHoles();
   if (!holes.includes(state.round.currentHole)) state.round.currentHole = holes[0];
   const h = state.round.currentHole;
+  // Weg van de hole waarop geteld werd: die scores zijn nu definitief.
+  if (state.round.live && state.round.live.hole !== h) state.round.live = null;
   $('#course-label').textContent = course().name;
   $('#course-sub').textContent = holes.length === 9 ? (holes[0] === 1 ? 'holes 1–9' : 'holes 10–18') : '18 holes';
   $('#hole-number').textContent = h;
@@ -732,11 +750,11 @@ function renderQuickEntry() {
     const s = scoreOf(p.name, h);
     const { played, toPar } = playerTotals(p);
     return `<div class="qe-row">
-      <div class="qe-info">
-        <div class="qe-name">${esc(p.name)}</div>
-        <div class="qe-sub">${s == null ? '<span class="muted">Nog geen score</span>' : termTag(s, parOf(h))}
-          ${played ? `<span class="muted">Totaal <strong>${signed(toPar)}</strong></span>` : ''}</div>
-      </div>
+      <button class="qe-info qe-tap" data-action="plus" data-i="${i}" aria-label="${esc(p.name)}: slag erbij">
+        <span class="qe-name">${esc(p.name)}</span>
+        <span class="qe-sub">${s == null ? '<span class="muted">Tik per slag</span>' : isLive(p.name, h) ? '<span class="term live">Bezig</span>' : termTag(s, parOf(h))}
+          ${played ? `<span class="muted">Totaal <strong>${signed(toPar)}</strong></span>` : ''}</span>
+      </button>
       <button class="round-btn" data-action="minus" data-i="${i}" aria-label="${esc(p.name)}: één slag minder">−</button>
       <span class="qe-score" aria-label="${s ?? 0} slagen">${s ?? '·'}</span>
       <button class="round-btn plus" data-action="plus" data-i="${i}" aria-label="${esc(p.name)}: één slag meer">+</button>
@@ -960,7 +978,10 @@ document.addEventListener('click', (e) => {
     case 'prev-hole': moveHole(-1); break;
     case 'next-hole': moveHole(1); break;
     case 'plus':
-    case 'minus': adjustScore(Number(btn.dataset.i), btn.dataset.action === 'plus' ? 1 : -1); break;
+    case 'minus':
+      adjustScore(Number(btn.dataset.i), btn.dataset.action === 'plus' ? 1 : -1);
+      navigator.vibrate?.(btn.dataset.action === 'plus' ? 25 : [15, 40, 15]); // voelbaar zonder te kijken
+      break;
     case 'buggy-connect': connectBuggy(); break;
     case 'buggy-disconnect': buggy.disconnect(); break;
     case 'undo': undo(); break;

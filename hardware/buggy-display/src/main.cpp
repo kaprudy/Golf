@@ -7,7 +7,7 @@
 // Bediening met knoppen (CoreInk: multifunctieknop omhoog / indrukken / omlaag = A / B / C):
 //   A kort: slag eraf   C kort: slag erbij   B kort: volgende speler
 //   B lang: volgende hole   A lang: vorige hole
-// Bediening met aanraken (Core2): tik op een speler om te kiezen, onderste balk − / speler / +,
+// Bediening met aanraken (Core2/PaperS3): tik op een speler = slag erbij, onderste balk − / speler / +,
 //   bovenste balk links/rechts = vorige/volgende hole.
 
 #include <M5Unified.h>
@@ -157,7 +157,7 @@ static void changeScore(int delta) {
   if (!connected) return;
   Player& p = standing.players[selected];
   const int before = p.strokes;
-  int after = before == 0 ? standing.par : before + delta;  // lege score begint bij par, net als in de app
+  int after = before == 0 ? (delta > 0 ? 1 : 0) : before + delta;  // tellen per slag: leeg begint bij 1, net als in de app
   if (after < 1) after = 0;
   // Bijdrage van deze hole aan "tegen par": 0 als er (nog) geen score is.
   auto overPar = [](int strokes, int par) { return strokes == 0 ? 0 : strokes - par; };
@@ -279,10 +279,11 @@ static void handleTouch() {
     else if (t.x > w * 2 / 3) changeScore(1);
     else nextPlayer();
   } else {
-    // Rij aangetikt: die speler kiezen
+    // Rij aangetikt: die speler kiezen en één slag erbij (tellen per slag)
     for (int i = 0; i < standing.count; i++) {
       if (t.y >= rowTop[i] && t.y < rowTop[i] + rowHeight) {
         selected = i;
+        changeScore(1);
         needsDraw = true;
       }
     }
