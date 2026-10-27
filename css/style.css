@@ -297,3 +297,14 @@ details summary { cursor: pointer; color: var(--link); font-weight: 600; }
 .hint-line { margin: -4px 0 8px; }
 .term.live { background: var(--sand); color: var(--text); }
 .hole-side .serif-title { font-size: 1.05rem; }
+
+/* Duidelijke foutmelding */
+.alert {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--bogey-bg); color: var(--bogey-fg); border: 2px solid currentColor;
+  border-radius: 18px; padding: 14px 16px; margin: 10px 0 14px; outline: none;
+}
+.alert svg { flex: none; margin-top: 2px; }
+.alert strong { display: block; font-family: var(--serif); font-size: 1.2rem; color: var(--bogey-fg); }
+.alert p { margin: 4px 0 2px; color: var(--text); }
+.alert .link { color: var(--bogey-fg); }

@@ -19,7 +19,20 @@ function saveSession(session) {
 let session = loadSession();
 
 class CloudError extends Error {
-  constructor(status, message) { super(message); this.status = status; }
+  // status 0 = de server is niet bereikt; reason: 'offline' | 'blocked' (bereikbaar, maar weigert de app) | 'unreachable'
+  constructor(status, message, reason = null) { super(message); this.status = status; this.reason = reason; }
+}
+
+// Na een mislukte aanroep: is de server wel bereikbaar? Een 'no-cors'-verzoek lukt ook als de
+// server de app niet toestaat (CORS); dan weten we dat het daaraan ligt.
+async function diagnose() {
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) return 'offline';
+  try {
+    await fetch(`${API_URL}/api/health`, { mode: 'no-cors', cache: 'no-store' });
+    return 'blocked';
+  } catch {
+    return 'unreachable';
+  }
 }
 
 async function api(method, path, body) {
@@ -33,11 +46,14 @@ async function api(method, path, body) {
       },
       body: body ? JSON.stringify(body) : undefined,
     });
-  } catch {
-    throw new CloudError(0, 'Geen verbinding met de server (geen internet?).');
+  } catch (err) {
+    const reason = await diagnose();
+    console.warn('Golfscore: server niet bereikt', API_URL + path, reason, err);
+    throw new CloudError(0, 'Geen verbinding met de server.', reason);
   }
   const text = await res.text();
-  const data = text ? JSON.parse(text) : null;
+  let data = null;
+  try { data = text ? JSON.parse(text) : null; } catch { /* geen JSON: bijv. een foutpagina van de webserver */ }
   if (res.status === 401 && session && !path.startsWith('/api/login')) {
     session = null; // token verlopen of ingetrokken
     saveSession(null);
@@ -92,6 +108,39 @@ export async function deleteState() {
   saveSession(null);
 }
 
+// Controleert of de server bereikbaar is. Geeft {ok, error}.
+export async function testConnection() {
+  try {
+    await api('GET', '/api/health');
+    return { ok: true };
+  } catch (err) {
+    return { ok: false, error: err };
+  }
+}
+
+// Foutmelding voor de gebruiker: {title, detail} in gewone taal, met wat je kunt doen.
 export function describeCloudError(err) {
-  return err?.message ?? String(err);
+  const host = API_URL.replace(/^https?:\/\//, '');
+  const status = err?.status;
+  if (status === 0) {
+    if (err.reason === 'offline') {
+      return { title: 'Geen internet', detail: 'Je telefoon heeft nu geen verbinding met internet. Je gegevens blijven op de telefoon staan; probeer het opnieuw als je bereik hebt.' };
+    }
+    if (err.reason === 'blocked') {
+      return {
+        title: 'Server weigert de app',
+        detail: `${host} is bereikbaar, maar staat verzoeken van de app niet toe (CORS). Zet in server/docker-compose.yml bij ALLOWED_ORIGINS het adres ${typeof location !== 'undefined' ? location.origin : 'van de app'} en herstart met: docker compose up -d`,
+      };
+    }
+    return {
+      title: 'Server niet bereikbaar',
+      detail: `${host} reageert niet. Controleer of de server draait: open ${host} in je browser, daar moet "Opslagdienst werkt" staan.`,
+    };
+  }
+  if (status === 401) return { title: 'Inloggen mislukt', detail: err.message };
+  if (status === 409) return { title: 'Account bestaat al', detail: 'Er is al een account met dit e-mailadres. Tik op Inloggen.' };
+  if (status === 400) return { title: 'Controleer je invoer', detail: err.message };
+  if (status === 429) return { title: 'Even wachten', detail: err.message };
+  if (status === 404) return { title: 'Server niet goed ingesteld', detail: `${host} antwoordt, maar de opslagdienst niet (404). Wordt /api/ doorgestuurd naar de API-container?` };
+  return { title: 'Serverfout', detail: `${err?.message ?? err}${status ? ` (code ${status})` : ''}` };
 }

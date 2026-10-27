@@ -272,7 +272,7 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
 // ---------- Cloud (eigen server, zie server/) ----------
 
 const cloudConfigured = Boolean(API_URL);
-const cloud = { api: null, user: null, status: '', busy: false, again: false, timer: null };
+const cloud = { api: null, user: null, status: '', error: null, busy: false, again: false, timer: null };
 
 async function cloudApi() {
   if (!cloudConfigured) return null;
@@ -305,7 +305,8 @@ async function syncNow() {
     cloud.status = `Gesynchroniseerd om ${new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`;
     save({ fromCloud: true });
   } catch (err) {
-    cloud.status = api.describeCloudError(err);
+    const e = api.describeCloudError(err);
+    cloud.status = `${e.title}: synchroniseren lukte niet, de app probeert het later opnieuw.`;
   } finally {
     cloud.busy = false;
     render();
@@ -328,6 +329,16 @@ async function initCloud() {
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') syncNow(); });
 }
 
+// Grote, duidelijke foutmelding (blijft staan tot een volgende poging lukt).
+function cloudErrorBox() {
+  if (!cloud.error) return '';
+  return `<div class="alert" role="alert" tabindex="-1" id="cloud-alert">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 7v6M12 17h.01"></path></svg>
+    <div><strong>${esc(cloud.error.title)}</strong><p>${esc(cloud.error.detail)}</p>
+    <button class="link" data-action="cloud-test">Verbinding testen</button></div>
+  </div>`;
+}
+
 function renderCloud() {
   const el = $('#cloud');
   if (!el) return;
@@ -343,6 +354,7 @@ function renderCloud() {
       <button class="link small danger" data-action="cloud-delete">Mijn account en gegevens op de server verwijderen</button>`;
   } else {
     el.innerHTML = `<p class="small muted">Log in om je spelers, banen en rondes op de server te bewaren. Op een nieuwe telefoon log je in en staat alles er weer.</p>
+      ${cloudErrorBox()}
       <form class="cloud-form" data-form="cloud-auth">
         <label>E-mailadres <input id="cloud-email" type="email" autocomplete="email" placeholder="jouw@email.nl" required></label>
         <label>Wachtwoord <input id="cloud-password" type="password" autocomplete="current-password" minlength="8" placeholder="minstens 8 tekens" required></label>
@@ -358,8 +370,16 @@ function renderCloud() {
 async function cloudAction(action, submitter) {
   const api = await cloudApi();
   if (!api) return;
+  cloud.error = null;
   try {
-    if (action === 'cloud-auth') {
+    if (action === 'cloud-test') {
+      const t = await api.testConnection();
+      if (t.ok) {
+        cloud.status = 'De server is bereikbaar. Probeer opnieuw in te loggen of een account aan te maken.';
+      } else {
+        cloud.error = api.describeCloudError(t.error);
+      }
+    } else if (action === 'cloud-auth') {
       const email = $('#cloud-email').value.trim();
       const password = $('#cloud-password').value;
       cloud.user = submitter?.dataset.mode === 'register' ? await api.register(email, password) : await api.login(email, password);
@@ -383,9 +403,16 @@ async function cloudAction(action, submitter) {
       save({ fromCloud: true });
     }
   } catch (err) {
-    cloud.status = api.describeCloudError(err);
+    cloud.error = api.describeCloudError(err);
+    cloud.status = '';
   }
   render();
+  if (cloud.error) {
+    const alert = $('#cloud-alert');
+    alert?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    alert?.focus({ preventScroll: true });
+    navigator.vibrate?.([30, 60, 30]);
+  }
 }
 
 // ---------- Hulpfuncties ----------
@@ -1034,6 +1061,7 @@ document.addEventListener('click', (e) => {
     case 'cloud-sync':
     case 'cloud-logout':
     case 'cloud-delete':
+    case 'cloud-test':
       cloudAction(btn.dataset.action);
       break;
     case 'reset':
