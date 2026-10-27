@@ -33,7 +33,7 @@ const HOLE_WORDS = new Set([
   'hole', 'holes', 'hool', 'hol', 'holl', 'hoel', 'hoal', 'hal', 'hall', 'hold', 'holt',
   'whole', 'hoolt', 'holle',
 ]);
-const HOLE_PREFIXES = [...HOLE_WORDS].sort((a, b) => b.length - a.length);
+let HOLE_PREFIXES = [...HOLE_WORDS].sort((a, b) => b.length - a.length);
 
 const FILLER = new Set([
   'heeft', 'had', 'deed', 'doet', 'speelde', 'scoorde', 'met', 'in', 'is', 'was', 'slagen',
@@ -45,6 +45,22 @@ const FILLER = new Set([
 const NOT_A_NAME = new Set([...FILLER, ...HOLE_WORDS, ...Object.keys(TERMS),
   ...Object.keys(TERM_PREFIX), ...Object.keys(NUMBER_WORDS), ...Object.keys(ORDINAL_WORDS),
   'one', 'putts', 'putt', 'volgende', 'vorige', 'laatste', 'over', 'onder']);
+
+// Woorden die de server leerde uit ingesproken tekst van alle gebruikers (GET /api/vocab):
+// { numbers: { fijf: 5 }, holeWords: ['hal'] }. Bestaande woorden worden nooit overschreven.
+export function setLearnedVocab(vocab) {
+  const usable = (w) => typeof w === 'string' && /^[a-z]{2,20}$/.test(w) && !NOT_A_NAME.has(w);
+  for (const [w, n] of Object.entries(vocab?.numbers ?? {})) {
+    if (usable(w) && Number.isInteger(n) && n >= 1 && n <= 20) { NUMBER_WORDS[w] = n; NOT_A_NAME.add(w); }
+  }
+  for (const w of vocab?.holeWords ?? []) {
+    if (usable(w)) { HOLE_WORDS.add(w); NOT_A_NAME.add(w); }
+  }
+  HOLE_PREFIXES = [...HOLE_WORDS].sort((a, b) => b.length - a.length);
+}
+
+// Hoort dit woord bij de "taal" van de app (getal, hole, golfterm, vulwoord) en is het dus geen naam?
+export const isVocabWord = (w) => NOT_A_NAME.has(simplify(w)) || isNumberish(simplify(w));
 
 const isNumberish = (s) => /^\d+e?$/.test(s) || s in NUMBER_WORDS || s in ORDINAL_WORDS;
 

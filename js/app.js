@@ -1,4 +1,5 @@
-import { pickBest, matchPlayer, simplify } from './parser.js';
+import { pickBest, matchPlayer, simplify, setLearnedVocab } from './parser.js';
+import { recordEntry, loadQueue, saveQueue, finalizeRound } from './learning.js';
 import { decideSync, mergeStates, toCloud, fromCloud } from './sync.js';
 import { API_URL } from './config.js';
 import { createBuggy, buggySupported } from './buggy.js';
@@ -161,6 +162,7 @@ function load() {
 
 let state = load();
 state.sync ??= { localChangedAt: null, syncedAt: null };
+state.learning ??= { consent: null };
 
 // Lokaal opslaan; een wijziging door de gebruiker wordt daarna ook naar de cloud gestuurd.
 function save({ fromCloud: fromRemote = false } = {}) {
@@ -420,6 +422,7 @@ async function syncNow() {
       state.sync.syncedAt = await api.pushState(cloud.user.id, toCloud(state));
       state.sync.localChangedAt = state.sync.syncedAt;
     }
+    uploadSamples();
     cloud.status = `Gesynchroniseerd om ${new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`;
     save({ fromCloud: true });
   } catch (err) {
@@ -441,10 +444,28 @@ async function initCloud() {
     if (changed) { render(); if (user) syncNow(); }
   });
   cloud.user = await api.currentUser();
+  // Geen account? Dan een anoniem account voor deze telefoon, zodat alles toch bewaard wordt.
+  // E-mail en wachtwoord zijn optioneel; daar vragen we pas om na een ronde (zie afterRound).
+  if (!cloud.user && api.autoDeviceAllowed() && navigator.onLine) {
+    try { cloud.user = await api.deviceLogin(); state.sync.syncedAt = null; } catch { /* later opnieuw */ }
+  }
   render();
   if (cloud.user) syncNow();
+  refreshVocab(api);
   window.addEventListener('online', () => syncNow());
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') syncNow(); });
+}
+
+// Geleerde woorden van de server (voor iedereen hetzelfde), ook offline bruikbaar via de cache.
+const VOCAB_KEY = 'golfscore-vocab';
+try { setLearnedVocab(JSON.parse(localStorage.getItem(VOCAB_KEY))); } catch { /* nog niets geleerd */ }
+
+async function refreshVocab(api) {
+  try {
+    const vocab = await api.fetchVocab();
+    setLearnedVocab(vocab);
+    localStorage.setItem(VOCAB_KEY, JSON.stringify({ numbers: vocab.numbers, holeWords: vocab.holeWords }));
+  } catch { /* offline: de vorige lijst blijft gelden */ }
 }
 
 // Grote, duidelijke foutmelding (blijft staan tot een volgende poging lukt).
@@ -462,7 +483,13 @@ function renderCloud() {
   if (!el) return;
   $('#cloud-section').hidden = !cloudConfigured;
   if (!cloudConfigured) return;
-  if (cloud.user) {
+  if (cloud.user?.anonymous) {
+    el.innerHTML = `<p class="small">Je gegevens worden bewaard op de server, gekoppeld aan <b>deze telefoon</b> (zonder account).<br>
+      <span class="muted">${esc(cloud.status || 'Een account met e-mail is niet nodig, maar wel handig: dan raak je niets kwijt als je een andere telefoon neemt.')}</span></p>
+      ${cloudErrorBox()}
+      ${authForm('Account maken', 'Bestaand account')}
+      <p class="small muted">Inloggen met een bestaand account voegt de gegevens van deze telefoon daaraan toe.</p>`;
+  } else if (cloud.user) {
     el.innerHTML = `<p class="small">Ingelogd als <b>${esc(cloud.user.email ?? '')}</b>.<br>
       <span class="muted">${esc(cloud.status || 'Je gegevens worden automatisch bewaard op de server.')}</span></p>
       <div class="button-row">
@@ -473,16 +500,20 @@ function renderCloud() {
   } else {
     el.innerHTML = `<p class="small muted">Log in om je spelers, banen en rondes op de server te bewaren. Op een nieuwe telefoon log je in en staat alles er weer.</p>
       ${cloudErrorBox()}
-      <form class="cloud-form" data-form="cloud-auth">
-        <label>E-mailadres <input id="cloud-email" type="email" autocomplete="email" placeholder="jouw@email.nl" required></label>
-        <label>Wachtwoord <input id="cloud-password" type="password" autocomplete="current-password" minlength="8" placeholder="minstens 8 tekens" required></label>
-        <div class="button-row">
-          <button type="submit" class="primary" data-mode="login">Inloggen</button>
-          <button type="submit" data-mode="register">Account aanmaken</button>
-        </div>
-      </form>
+      ${authForm('Account aanmaken', 'Inloggen', true)}
+      <button class="link small" data-action="cloud-device">Of: zonder account bewaren, gekoppeld aan deze telefoon</button>
       ${cloud.status ? `<p class="small muted">${esc(cloud.status)}</p>` : ''}`;
   }
+}
+
+function authForm(registerLabel, loginLabel, loginFirst = false) {
+  const reg = `<button type="submit" ${loginFirst ? '' : 'class="primary"'} data-mode="register">${registerLabel}</button>`;
+  const log = `<button type="submit" ${loginFirst ? 'class="primary"' : ''} data-mode="login">${loginLabel}</button>`;
+  return `<form class="cloud-form" data-form="cloud-auth">
+    <label>E-mailadres <input id="cloud-email" type="email" autocomplete="email" placeholder="jouw@email.nl" required></label>
+    <label>Wachtwoord <input id="cloud-password" type="password" autocomplete="${loginFirst ? 'current-password' : 'new-password'}" minlength="8" placeholder="minstens 8 tekens" required></label>
+    <div class="button-row">${loginFirst ? log + reg : reg + log}</div>
+  </form>`;
 }
 
 async function cloudAction(action, submitter) {
@@ -500,9 +531,23 @@ async function cloudAction(action, submitter) {
     } else if (action === 'cloud-auth') {
       const email = $('#cloud-email').value.trim();
       const password = $('#cloud-password').value;
-      cloud.user = submitter?.dataset.mode === 'register' ? await api.register(email, password) : await api.login(email, password);
-      cloud.status = 'Ingelogd. Gegevens worden samengevoegd…';
-      state.sync.syncedAt = null; // eerste keer: lokaal en server samenvoegen
+      const register = submitter?.dataset.mode === 'register';
+      if (register && cloud.user?.anonymous) {
+        // Zelfde account, nu met e-mail: alles blijft staan.
+        cloud.user = await api.upgradeAccount(email, password);
+        cloud.status = 'Account gemaakt. Je gegevens staan veilig onder je e-mailadres.';
+        setMeta({ registered: true });
+      } else {
+        cloud.user = register ? await api.register(email, password) : await api.login(email, password);
+        cloud.status = 'Ingelogd. Gegevens worden samengevoegd…';
+        state.sync.syncedAt = null; // eerste keer: lokaal en server samenvoegen
+        syncNow();
+      }
+      closeAfterRound();
+    } else if (action === 'cloud-device') {
+      cloud.user = await api.deviceLogin();
+      cloud.status = 'Je gegevens worden nu bewaard, gekoppeld aan deze telefoon.';
+      state.sync.syncedAt = null;
       syncNow();
     } else if (action === 'cloud-sync') {
       syncNow();
@@ -531,6 +576,137 @@ async function cloudAction(action, submitter) {
     alert?.focus({ preventScroll: true });
     navigator.vibrate?.([30, 60, 30]);
   }
+}
+
+// ---------- Hoe vaak is de app geopend (voor de vraag om een account te maken) ----------
+
+const META_KEY = 'golfscore-meta';
+const REGISTER_AFTER_OPENS = 5; // pas vragen als de app een paar keer gebruikt is
+const ASK_AGAIN_OPENS = 10; // na "Later" pas weer na zoveel keer openen
+
+function getMeta() {
+  try { return JSON.parse(localStorage.getItem(META_KEY)) ?? {}; } catch { return {}; }
+}
+function setMeta(patch) {
+  const meta = { ...getMeta(), ...patch };
+  try { localStorage.setItem(META_KEY, JSON.stringify(meta)); } catch { /* geen opslag */ }
+  return meta;
+}
+setMeta({ opens: (getMeta().opens ?? 0) + 1 });
+
+// ---------- Leren van ingesproken tekst (zie learning.js) ----------
+
+const learningOn = () => state.learning?.consent === true;
+
+function recordSample(hole, texts, scores, viaAi) {
+  if (!learningOn()) return;
+  const q = loadQueue();
+  q.open.push(recordEntry({
+    roundId: state.round.id, hole, par: parOf(hole), texts, scores, viaAi,
+    players: state.players.map((p) => p.name), aliases: aliasMap(),
+  }));
+  saveQueue(q);
+}
+
+// Toestemming gegeven: ook wat al eerder in deze ronde is ingesproken telt mee.
+function enableLearning() {
+  state.learning = { consent: true, decidedAt: new Date().toISOString() };
+  saveQueue({ open: [], ready: loadQueue().ready });
+  for (const l of state.round.log.slice().reverse()) recordSample(l.hole, [l.text], l.scores, l.viaAi);
+  save();
+}
+
+function disableLearning() {
+  state.learning = { consent: false, decidedAt: new Date().toISOString() };
+  saveQueue({ open: [], ready: [] });
+  save();
+}
+
+// Na de ronde: eindscores (met je verbeteringen) erbij en versturen.
+function finishRoundSamples() {
+  if (!learningOn()) return;
+  saveQueue(finalizeRound(loadQueue(), state.round.id, scoreOf));
+  uploadSamples();
+}
+
+async function uploadSamples() {
+  if (!learningOn() || !cloud.user) return;
+  const api = await cloudApi();
+  const batch = loadQueue().ready.slice(0, 200);
+  if (!api || !batch.length) return;
+  try {
+    await api.sendSamples(batch);
+    const q = loadQueue();
+    saveQueue({ open: q.open, ready: q.ready.slice(batch.length) });
+    setMeta({ samplesSent: (getMeta().samplesSent ?? 0) + batch.length });
+    renderLearning();
+  } catch { /* later opnieuw, bij de volgende synchronisatie */ }
+}
+
+function renderLearning() {
+  const el = $('#learn-settings');
+  if (!el) return;
+  const on = learningOn();
+  const q = loadQueue();
+  let learned = 0;
+  try { const v = JSON.parse(localStorage.getItem(VOCAB_KEY)); learned = Object.keys(v?.numbers ?? {}).length + (v?.holeWords?.length ?? 0); } catch { /* niets */ }
+  el.innerHTML = `<label class="check"><input type="checkbox" id="learn-on" ${on ? 'checked' : ''}> Ingesproken tekst delen om de herkenning te verbeteren</label>
+    <p class="small muted">Gedeeld wordt alleen wat de telefoon verstond en welke score er na de ronde op de kaart stond (dus ook je verbeteringen).
+    Spelersnamen worden s1, s2, …; andere woorden met een hoofdletter worden x. Geen geluid, geen locatie. Versturen gebeurt pas na de ronde.</p>
+    <p class="small">${on ? `Klaar om te versturen: <b>${q.ready.length + q.open.length}</b> · verstuurd: <b>${getMeta().samplesSent ?? 0}</b> · ` : ''}Woorden geleerd van alle spelers: <b>${learned}</b></p>
+    ${cloud.user ? '<button class="link small danger" data-action="learn-delete">Mijn gedeelde spraak van de server verwijderen</button>' : ''}`;
+}
+
+// ---------- Na de ronde: het moment om iets te vragen (niet ervoor of tijdens) ----------
+
+function afterRound() {
+  const meta = getMeta();
+  let html = null;
+  if (state.learning?.consent == null && state.round.log.length) {
+    html = `<h2>Mag de app leren van wat je insprak?</h2>
+      <p>Spraakherkenning maakt van “vijf” soms “fijf” en van “hole” soms “hal”. Als je de ingesproken tekst deelt,
+      leert de app zulke woorden herkennen, voor jou en voor andere golfers.</p>
+      <p class="small muted">Namen worden vervangen door s1, s2, …. Geen geluid, geen locatie. Je kunt dit altijd uitzetten en je gedeelde tekst verwijderen bij Instellingen.</p>
+      <div class="button-row"><button class="primary" data-action="learn-yes">Ja, help mee</button><button data-action="learn-no">Nee, liever niet</button></div>`;
+  } else if (cloudConfigured && !(cloud.user && !cloud.user.anonymous) && !meta.never && !meta.registered
+    && (meta.opens ?? 0) >= REGISTER_AFTER_OPENS && (meta.askedAt == null || meta.opens - meta.askedAt >= ASK_AGAIN_OPENS)) {
+    setMeta({ askedAt: meta.opens });
+    html = `<h2>Bewaar je rondes met een account</h2>
+      <p>Je hebt al ${state.history.length} ${state.history.length === 1 ? 'ronde' : 'rondes'} opgeslagen.
+      ${cloud.user ? 'Ze staan op de server, maar alleen gekoppeld aan deze telefoon.' : 'Ze staan nu alleen op deze telefoon.'}
+      Met een e-mailadres en wachtwoord zie je alles terug op een nieuwe telefoon, en blijft je handicap bewaard.</p>
+      <div class="button-row"><button class="primary" data-action="register-now">Account maken</button><button data-action="close-after-round">Later</button></div>
+      <button class="link small" data-action="register-never">Niet meer vragen</button>`;
+  }
+  if (!html) return;
+  $('#after-round-body').innerHTML = html;
+  $('#after-round').hidden = false;
+}
+
+function afterRoundThanks() {
+  $('#after-round-body').innerHTML = `<h2>Dankjewel!</h2>
+    <p>De tekst van deze ronde wordt gedeeld${cloud.user ? '' : ' zodra je verbinding hebt met de server'}. Uitzetten kan altijd bij Instellingen → Spraakherkenning verbeteren.</p>
+    <div class="button-row"><button class="primary" data-action="close-after-round">Sluiten</button></div>`;
+  render();
+}
+
+async function deleteSharedSpeech() {
+  if (!confirm('Alle ingesproken tekst die je deelde van de server verwijderen?')) return;
+  const api = await cloudApi();
+  try {
+    await api.deleteSamples();
+    setMeta({ samplesSent: 0 });
+    toast('Je gedeelde spraak is verwijderd van de server.');
+  } catch (err) {
+    const e = api.describeCloudError(err);
+    toast(`${esc(e.title)}: ${esc(e.detail)}`, 6000);
+  }
+  render();
+}
+
+function closeAfterRound() {
+  const el = $('#after-round');
+  if (el) el.hidden = true;
 }
 
 // ---------- Hulpfuncties ----------
@@ -654,7 +830,9 @@ async function handleInput(texts) {
   }
 
   const nothing = !result.scores.length && !result.unknownNames.length && result.bareScore == null;
+  const alternatives = [text, ...texts.filter((t) => t !== text)];
   if (nothing) {
+    recordSample(inputHole(), alternatives, [], viaAi);
     showFeedback(`<div class="feedback error">Niet begrepen: “${esc(text)}”.<br>Probeer: “Hole 3, Rudy 5, Peter 4”${state.players.length === 1 ? ' of “Hole 3, 5 slagen”' : ''}.${aiNote}</div>`);
     return;
   }
@@ -670,6 +848,7 @@ async function handleInput(texts) {
     setLive(s.name, result.hole, false); // ingesproken = definitief
   }
   state.round.log.unshift({ time: new Date().toISOString(), hole: result.hole, text, viaAi, scores: result.scores.map(({ name, strokes }) => ({ name, strokes })) });
+  recordSample(result.hole, alternatives, result.scores, viaAi);
   lastUndo = { hole: result.hole, previous, added: [], logId: state.round.log[0].time, prevHole: state.round.currentHole };
   state.round.currentHole = result.hole;
 
@@ -874,6 +1053,7 @@ function render() {
   renderAnalysis();
   renderSettings();
   renderCloud();
+  renderLearning();
   renderBuggy();
   renderGps();
   renderGpsSettings();
@@ -1093,6 +1273,8 @@ function saveRound() {
   save();
   render();
   toast('Ronde opgeslagen. Start een nieuwe ronde via Instellingen.');
+  finishRoundSamples();
+  afterRound();
 }
 
 // ---------- Gebeurtenissen ----------
@@ -1159,6 +1341,7 @@ document.addEventListener('click', (e) => {
     }
     case 'new-round':
       if (confirm('Nieuwe ronde starten? Scores die je niet hebt opgeslagen gaan verloren.')) {
+        finishRoundSamples();
         state.round = newRound($('#round-holes').value, $('#round-course').value);
         lastUndo = null;
         pending = null;
@@ -1191,6 +1374,18 @@ document.addEventListener('click', (e) => {
       URL.revokeObjectURL(a.href);
       break;
     }
+    case 'learn-yes': enableLearning(); finishRoundSamples(); afterRoundThanks(); break;
+    case 'learn-no': disableLearning(); closeAfterRound(); render(); break;
+    case 'learn-delete': deleteSharedSpeech(); break;
+    case 'close-after-round': closeAfterRound(); break;
+    case 'register-never': setMeta({ never: true }); closeAfterRound(); break;
+    case 'register-now':
+      closeAfterRound();
+      switchTab('instellingen');
+      $('#cloud-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setTimeout(() => $('#cloud-email')?.focus(), 400);
+      break;
+    case 'cloud-device':
     case 'cloud-sync':
     case 'cloud-logout':
     case 'cloud-delete':
@@ -1281,6 +1476,10 @@ document.addEventListener('change', (e) => {
   } else if (t.id === 'gps-on') {
     setGpsPref('golfscore-gps', t.checked);
     if (t.checked) startGps(); else stopGps();
+    render();
+    return;
+  } else if (t.id === 'learn-on') {
+    if (t.checked) { enableLearning(); uploadSamples(); } else disableLearning();
     render();
     return;
   } else if (t.id === 'gps-auto') {

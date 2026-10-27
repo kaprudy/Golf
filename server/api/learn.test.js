@@ -36,3 +36,10 @@ test('woord voor "hole" wordt geleerd', () => {
 test('kapotte voorbeelden worden genegeerd', () => {
   assert.deepEqual(learnVocabulary([{ user: 1, sample: null }, { user: 1, sample: { texts: [42] } }]).numbers, {});
 });
+
+test('alleen gespeeld: getal zonder naam', () => {
+  const rows = [row(1, 'hal 4 fijf slagen', 4, { s1: 5 }), row(1, 'fijf', 5, { s1: 5 }), row(1, 'hole 6 fijf', 6, { s1: 5 })];
+  const v = learnVocabulary(rows);
+  assert.deepEqual(v.numbers, { fijf: 5 });
+  assert.deepEqual(v.holeWords, []); // "hal" maar één keer
+});

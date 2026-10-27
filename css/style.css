@@ -319,3 +319,19 @@ details summary { cursor: pointer; color: var(--link); font-weight: 600; }
 .chip-btn { min-height: 40px; padding: 6px 14px; font-size: .85rem; background: var(--bg); }
 label.check { display: flex; align-items: center; gap: 10px; color: var(--text); font-size: .95rem; margin: 8px 0; }
 label.check input { width: 22px; height: 22px; min-height: 0; margin: 0; accent-color: var(--accent); }
+
+/* ---------- Vraag na de ronde (onderin, over de app heen) ---------- */
+.sheet-backdrop {
+  position: fixed; inset: 0; z-index: 30; background: rgba(20, 22, 18, .55);
+  display: flex; align-items: flex-end; justify-content: center;
+}
+.sheet-backdrop[hidden] { display: none; }
+.sheet {
+  position: relative; width: 100%; max-width: 560px; max-height: 85vh; overflow: auto;
+  background: var(--card); color: var(--text); border-radius: 22px 22px 0 0;
+  padding: 22px 20px calc(20px + env(safe-area-inset-bottom)); box-shadow: 0 -8px 30px rgba(0, 0, 0, .25);
+}
+.sheet h2 { margin: 0 32px 10px 0; font-family: var(--serif); color: var(--accent-ink); }
+.sheet p { line-height: 1.45; }
+.sheet .button-row { margin-top: 14px; }
+.sheet-close { position: absolute; top: 12px; right: 12px; border: 0; background: none; font-size: 1.2rem; color: var(--muted); min-height: 40px; }

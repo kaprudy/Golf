@@ -3,6 +3,8 @@
 import { API_URL } from './config.js';
 
 const TOKEN_KEY = 'golfscore-cloud';
+// Geheim van deze telefoon voor een anoniem account, of {off:true} als de gebruiker uitlogde.
+const DEVICE_KEY = 'golfscore-device';
 const listeners = [];
 
 function loadSession() {
@@ -81,16 +83,51 @@ async function authenticate(path, email, password) {
   const result = await api('POST', path, { email, password });
   session = { token: result.token, user: result.user };
   saveSession(session);
+  setDeviceInfo({});
   return result.user;
 }
 
 export const login = (email, password) => authenticate('/api/login', email, password);
 export const register = (email, password) => authenticate('/api/register', email, password);
 
+function deviceInfo() {
+  try { return JSON.parse(localStorage.getItem(DEVICE_KEY)) ?? {}; } catch { return {}; }
+}
+function setDeviceInfo(info) {
+  try { localStorage.setItem(DEVICE_KEY, JSON.stringify(info)); } catch { /* geen opslag */ }
+}
+
+// Mag de app vanzelf een anoniem account voor deze telefoon gebruiken? Niet meer na uitloggen.
+export const autoDeviceAllowed = () => !deviceInfo().off;
+
+// Anoniem account voor deze telefoon: geen e-mail of wachtwoord nodig.
+export async function deviceLogin() {
+  let { secret } = deviceInfo();
+  if (!secret) {
+    const bytes = crypto.getRandomValues(new Uint8Array(32));
+    secret = btoa(String.fromCharCode(...bytes)).replace(/[+/=]/g, (c) => ({ '+': '-', '/': '_', '=': '' }[c]));
+  }
+  setDeviceInfo({ secret });
+  const result = await api('POST', '/api/device', { secret });
+  session = { token: result.token, user: result.user };
+  saveSession(session);
+  return result.user;
+}
+
+// Anoniem account omzetten naar e-mail en wachtwoord; gegevens blijven staan.
+export async function upgradeAccount(email, password) {
+  const { user } = await api('POST', '/api/account', { email, password });
+  session = { ...session, user };
+  saveSession(session);
+  setDeviceInfo({}); // de oude apparaatcode geeft geen toegang meer
+  return user;
+}
+
 export async function signOut() {
   try { await api('POST', '/api/logout'); } catch { /* ook offline uitloggen */ }
   session = null;
   saveSession(null);
+  setDeviceInfo({ off: true }); // niet vanzelf weer inloggen; ook een gedeelde telefoon is dan echt uitgelogd
 }
 
 export async function fetchState() {
@@ -106,7 +143,15 @@ export async function deleteState() {
   await api('DELETE', '/api/state');
   session = null;
   saveSession(null);
+  setDeviceInfo({ off: true });
 }
+
+// ---------- Leren van ingesproken tekst (alleen met toestemming) ----------
+
+export const sendSamples = (samples) => api('POST', '/api/samples', { samples });
+export const sampleStats = () => api('GET', '/api/samples/stats');
+export const deleteSamples = () => api('DELETE', '/api/samples');
+export const fetchVocab = () => api('GET', '/api/vocab');
 
 // Controleert of de server bereikbaar is. Geeft {ok, error}.
 export async function testConnection() {

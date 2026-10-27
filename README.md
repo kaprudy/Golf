@@ -108,9 +108,21 @@ npm test         # tests voor tekstherkenning en handicapberekening
 
 ## Opslag in de cloud (eigen server)
 
-Met een account worden spelers, banen, rondes en geleerde woorden op de eigen server bewaard
-(`golf.kapital.nl`). Op een nieuwe telefoon log je in en staat alles er weer. De app blijft offline
-werken en synchroniseert zodra er internet is. De Claude API-sleutel blijft altijd alleen op de telefoon.
+Spelers, banen, rondes en geleerde woorden worden op de eigen server bewaard (`golf.kapital.nl`).
+Een account is niet nodig: bij de eerste keer openen krijgt de telefoon een anoniem account (een
+geheime apparaatcode, geen e-mail). Een e-mailadres en wachtwoord zijn optioneel; daar vraagt de app
+pas om als je de app een paar keer gebruikt hebt, en alleen direct na het opslaan van een ronde (niet
+ervoor of tijdens). Met e-mail log je op een nieuwe telefoon in en staat alles er weer. De app blijft
+offline werken en synchroniseert zodra er internet is. De Claude API-sleutel blijft altijd alleen op de telefoon.
+
+### Leren van ingesproken tekst
+
+Alleen met toestemming (de app vraagt het één keer, na je eerste ronde; aan/uit bij Instellingen →
+Spraakherkenning verbeteren). Na de ronde stuurt de app per ingesproken zin wat er verstaan werd en
+welke score er uiteindelijk op de kaart stond, dus inclusief je eigen verbeteringen. Spelersnamen worden
+`s1`, `s2`, …; andere woorden met een hoofdletter `x`. De server zoekt woorden die steeds hetzelfde
+betekenen (bijv. “fijf” = 5, “hal” = hole) en de app gebruikt die lijst daarna bij iedereen
+(`GET /api/vocab`). Je gedeelde tekst verwijder je met één knop.
 
 De server (API met SQLite-database en een infopagina, in Docker) staat in [`server/`](server/);
 installatie en beheer staan in [`server/README.md`](server/README.md). Zodra de server draait,

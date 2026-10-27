@@ -159,6 +159,9 @@
       <h2>Buggy-scherm (Bluetooth)</h2>
       <div id="buggy"></div>
 
+      <h2>Spraakherkenning verbeteren</h2>
+      <div id="learn-settings"></div>
+
       <section id="cloud-section" hidden>
         <h2>Account en cloud</h2>
         <div id="cloud"></div>
@@ -184,6 +187,13 @@
   </nav>
 
   <div id="toast" class="toast" hidden></div>
+
+  <div id="after-round" class="sheet-backdrop" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-label="Na de ronde">
+      <button class="sheet-close" data-action="close-after-round" aria-label="Sluiten">✕</button>
+      <div id="after-round-body"></div>
+    </div>
+  </div>
 
   <div id="map-overlay" class="overlay" data-action="close-map" hidden>
     <div class="overlay-bar">

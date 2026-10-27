@@ -3,6 +3,8 @@
 //
 //   POST   /api/register   {email, password}  -> {token, user}
 //   POST   /api/login      {email, password}  -> {token, user}
+//   POST   /api/device     {secret}           -> {token, user}   anoniem account voor deze telefoon
+//   POST   /api/account    {email, password}  -> {user}          anoniem account omzetten naar e-mail
 //   POST   /api/logout                          (Authorization: Bearer <token>)
 //   GET    /api/me                              -> {user}
 //   GET    /api/state                           -> {data, updated_at} | null
@@ -60,6 +62,11 @@ export function openDatabase(path = DB_PATH) {
     );
     CREATE INDEX IF NOT EXISTS speech_samples_user ON speech_samples(user_id);
   `);
+  // Anonieme accounts (alleen een geheim van de telefoon, geen e-mail). Kolom later toegevoegd.
+  if (!db.prepare('PRAGMA table_info(users)').all().some((c) => c.name === 'device_hash')) {
+    db.exec('ALTER TABLE users ADD COLUMN device_hash TEXT');
+  }
+  db.exec('CREATE UNIQUE INDEX IF NOT EXISTS users_device ON users(device_hash)');
   return db;
 }
 
@@ -142,7 +149,10 @@ function corsHeaders(origin) {
 }
 
 const validEmail = (e) => typeof e === 'string' && e.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
-const publicUser = (u) => ({ id: u.id, email: u.email });
+// Anonieme accounts krijgen intern een e-mailveld zonder @ (kan dus nooit inloggen met een wachtwoord).
+const isAnonymous = (u) => !u.email.includes('@');
+const publicUser = (u) => ({ id: u.id, email: isAnonymous(u) ? null : u.email, anonymous: isAnonymous(u) });
+const validSecret = (s) => typeof s === 'string' && s.length >= 32 && s.length <= 200;
 
 // ---------- Server ----------
 
@@ -159,6 +169,10 @@ export function createServer(db) {
     putState: db.prepare(`INSERT INTO golf_state (user_id, data, updated_at) VALUES (?, ?, ?)
                           ON CONFLICT(user_id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at`),
     deleteUser: db.prepare('DELETE FROM users WHERE id = ?'),
+    userByDevice: db.prepare('SELECT * FROM users WHERE device_hash = ?'),
+    insertDeviceUser: db.prepare('INSERT INTO users (email, pw_hash, created_at, device_hash) VALUES (?, ?, ?, ?)'),
+    upgradeUser: db.prepare('UPDATE users SET email = ?, pw_hash = ?, device_hash = NULL WHERE id = ?'),
+    userById: db.prepare('SELECT * FROM users WHERE id = ?'),
     insertSample: db.prepare('INSERT INTO speech_samples (user_id, created_at, payload) VALUES (?, ?, ?)'),
     countSamples: db.prepare('SELECT COUNT(*) AS n FROM speech_samples WHERE user_id = ?'),
     deleteSamples: db.prepare('DELETE FROM speech_samples WHERE user_id = ?'),
@@ -222,7 +236,35 @@ export function createServer(db) {
       return send(res, 200, newSession(user));
     }
 
+    if (key === 'POST /api/device') {
+      if (tooMany(`device:${ip}`, 60)) throw new HttpError(429, 'Te veel pogingen, probeer het later opnieuw');
+      const { secret } = await readJson(req);
+      if (!validSecret(secret)) throw new HttpError(400, 'Ongeldige apparaatcode');
+      const deviceHash = sha256(secret);
+      let user = q.userByDevice.get(deviceHash);
+      const created = !user;
+      if (created) {
+        q.insertDeviceUser.run(`anon-${crypto.randomBytes(12).toString('hex')}`, '!', new Date().toISOString(), deviceHash);
+        user = q.userByDevice.get(deviceHash);
+      }
+      return send(res, created ? 201 : 200, newSession(user));
+    }
+
     const { user, tokenHash } = authUser(req);
+
+    if (key === 'POST /api/account') {
+      if (!isAnonymous(user)) throw new HttpError(400, 'Dit account heeft al een e-mailadres');
+      const { email: rawEmail, password } = await readJson(req);
+      const email = String(rawEmail ?? '').trim().toLowerCase();
+      if (!validEmail(email)) throw new HttpError(400, 'Vul een geldig e-mailadres in');
+      if (typeof password !== 'string' || password.length < 8 || password.length > 200) {
+        throw new HttpError(400, 'Het wachtwoord moet minstens 8 tekens hebben');
+      }
+      if (q.userByEmail.get(email)) throw new HttpError(409, 'Er bestaat al een account met dit e-mailadres');
+      // Vanaf nu alleen nog met e-mail en wachtwoord; de apparaatcode geeft geen toegang meer.
+      q.upgradeUser.run(email, hashPassword(password), user.id);
+      return send(res, 200, { user: publicUser(q.userById.get(user.id)) });
+    }
 
     if (key === 'GET /api/me') return send(res, 200, { user: publicUser(user) });
     if (key === 'POST /api/logout') {

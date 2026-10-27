@@ -46,6 +46,12 @@ export function learnVocabulary(rows, { minCount = 3, minUsers = 1, minShare = 0
   for (const { user, sample } of rows) {
     const tokens = tokenize(sample?.texts?.[0] ?? '');
     const final = sample?.final ?? {};
+    // Alleen gespeeld ("hal 4 fijf slagen"): geen speler in de zin, één score op de kaart.
+    const finals = Object.values(final).filter(Number.isInteger);
+    if (finals.length === 1 && !tokens.some(isPlayer)) {
+      const word = tokens.find((t, i) => usable(t) && !(isNumber(tokens[i + 1] ?? '') && numberValue(tokens[i + 1]) === sample.hole));
+      if (word) bump(numbers, word, user, finals[0]);
+    }
     tokens.forEach((t, i) => {
       // "s1 fijf": het eerste onbekende woord na een speler, terwijl die speler een score kreeg
       if (isPlayer(t) && Number.isInteger(final[t])) {

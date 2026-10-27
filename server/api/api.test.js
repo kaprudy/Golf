@@ -112,3 +112,45 @@ test('voorbeelden insturen, tellen, leren en verwijderen', async () => {
   assert.equal((await call('GET', '/api/samples/stats', { token })).body.count, 0);
   assert.deepEqual((await call('GET', '/api/vocab')).body.numbers, {});
 });
+
+test('anoniem account per telefoon, later omzetten naar e-mail', async () => {
+  const secret = 'x'.repeat(40);
+  const first = await call('POST', '/api/device', { body: { secret } });
+  assert.equal(first.status, 201);
+  assert.deepEqual({ email: first.body.user.email, anonymous: first.body.user.anonymous }, { email: null, anonymous: true });
+  const again = await call('POST', '/api/device', { body: { secret } });
+  assert.equal(again.status, 200);
+  assert.equal(again.body.user.id, first.body.user.id);
+  assert.equal((await call('POST', '/api/device', { body: { secret: 'kort' } })).status, 400);
+
+  const token = again.body.token;
+  await call('PUT', '/api/state', { token, body: { data: { rondes: 3 } } });
+  assert.equal((await call('POST', '/api/account', { token, body: { email: 'rudy@example.nl', password: 'geheim1234' } })).status, 409);
+  const up = await call('POST', '/api/account', { token, body: { email: 'Anoniem@Example.nl', password: 'geheim1234' } });
+  assert.equal(up.status, 200);
+  assert.deepEqual(up.body.user, { id: first.body.user.id, email: 'anoniem@example.nl', anonymous: false });
+  assert.equal((await call('POST', '/api/account', { token, body: { email: 'z@example.nl', password: 'geheim1234' } })).status, 400);
+
+  // Gegevens blijven, inloggen met e-mail werkt, de apparaatcode geeft geen toegang meer tot dit account.
+  const login = await call('POST', '/api/login', { body: { email: 'anoniem@example.nl', password: 'geheim1234' } });
+  assert.deepEqual((await call('GET', '/api/state', { token: login.body.token })).body.data, { rondes: 3 });
+  const fresh = await call('POST', '/api/device', { body: { secret } });
+  assert.equal(fresh.status, 201);
+  assert.notEqual(fresh.body.user.id, first.body.user.id);
+});
+
+test('bestaande database krijgt de nieuwe kolom', async () => {
+  const { DatabaseSync } = await import('node:sqlite');
+  const fs = await import('node:fs');
+  const os = await import('node:os');
+  const path = `${fs.mkdtempSync(`${os.tmpdir()}/golf-`)}/oud.db`;
+  const old = new DatabaseSync(path);
+  old.exec("CREATE TABLE users (id INTEGER PRIMARY KEY, email TEXT NOT NULL UNIQUE, pw_hash TEXT NOT NULL, created_at TEXT NOT NULL)");
+  old.exec("INSERT INTO users (email, pw_hash, created_at) VALUES ('oud@example.nl', 'x', 'nu')");
+  old.close();
+  const migrated = openDatabase(path);
+  assert.ok(migrated.prepare('PRAGMA table_info(users)').all().some((c) => c.name === 'device_hash'));
+  openDatabase(path).close(); // tweede keer: geen fout
+  migrated.close();
+  fs.rmSync(path.replace(/\/oud\.db$/, ''), { recursive: true });
+});
