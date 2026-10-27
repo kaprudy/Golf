@@ -1,0 +1,37 @@
+name: OpenStreetMap ophalen
+
+# Met de hand starten: haalt holes (tee, green, par) van een golfbaan uit OpenStreetMap.
+# Het resultaat staat in de log en als download (artifact) bij de run.
+on:
+  workflow_dispatch:
+    inputs:
+      lat: { description: 'Breedtegraad', required: false, default: '52.53' }
+      lon: { description: 'Lengtegraad', required: false, default: '6.44' }
+      radius: { description: 'Straal in meters', required: false, default: '5000' }
+      name: { description: 'Of: naam van de baan', required: false, default: '' }
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Ophalen
+        env:
+          LAT: ${{ inputs.lat }}
+          LON: ${{ inputs.lon }}
+          RADIUS: ${{ inputs.radius }}
+          NAME: ${{ inputs.name }}
+        run: |
+          if [ -n "$NAME" ]; then node tools/osm-fetch.mjs --name "$NAME" > osm.json
+          else node tools/osm-fetch.mjs --lat "$LAT" --lon "$LON" --radius "$RADIUS" > osm.json; fi
+          cat osm.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: osm
+          path: osm.json
