@@ -34,6 +34,12 @@ async function save(url, dir) {
     try { execFileSync('pdftotext', ['-layout', `${base}.pdf`, `${base}.txt`]); } catch { /* geen tekst */ }
     return { url, kind: 'pdf', links: [] };
   }
+  if (/^image\//.test(type) || /\.(png|jpe?g|webp|gif)($|\?)/i.test(url)) {
+    // Scorekaarten staan soms als afbeelding online: binair bewaren.
+    const ext = (type.split('/')[1] ?? 'img').split(';')[0].replace('jpeg', 'jpg');
+    fs.writeFileSync(`${base}.${ext}`, buf);
+    return { url, kind: 'image', links: [] };
+  }
   const html = buf.toString('utf8');
   fs.writeFileSync(`${base}.txt`, `${finalUrl}\n\n${text(html)}`);
   const links = [...html.matchAll(/href=["']([^"'#]+)["']/gi)].map((m) => { try { return new URL(m[1], finalUrl).href; } catch { return null; } })
@@ -58,6 +64,7 @@ for (const site of urls) {
       const host = new URL(site).host.replace(/^www\./, '');
       for (const l of r.links) {
         const sameSite = new URL(l).host.replace(/^www\./, '') === host;
+        if (/\.(ico|woff2?|css|js|svg)($|\?)|\/dynamic\/(image|proxy)\//i.test(l)) continue; // geen pictogrammen en lettertypes
         if (!seen.has(l) && KEY.test(l) && (sameSite || /\.pdf($|\?)/i.test(l))) queue.push(l);
       }
       report.push(`ok   ${u}`);

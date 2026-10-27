@@ -106,6 +106,15 @@ npm test         # tests voor tekstherkenning en handicapberekening
 | `js/vendor/anthropic-sdk.js` | Gebundelde `@anthropic-ai/sdk` 0.135.0 (MIT, zie LICENSE-bestand) |
 | `sw.js`, `manifest.webmanifest` | Offline gebruik en installeren als app |
 
+### Banen in de regio
+
+Hooge Graven (grote baan en par 3), De Hoek, De Gelpenberg (18 en par 3), Driene, Lochem, Prinses
+Wilhelmina, De Scherpenbergh (Zwaluwen-Dassen en Berkenbaan), De Hildenberg, Twentse Golf Park en
+Dutch Golf Hattem (kleine lus) staan erin volgens de scorekaart en handicaptabellen van de club zelf
+(opgehaald met de workflow *Bronnen ophalen*, `tools/fetch-sources.mjs`). Zwolle, De Koepel,
+Martensplek en de Twentsche komen (deels) uit openbare bronnen en tonen een melding om ze te
+vergelijken met de scorekaart. In de baankeuze staan de andere banen op afstand van je thuisbaan.
+
 ### Tees en greens uit OpenStreetMap
 
 Voor Hooge Graven staan de greens (18) en de tees (12, waar de lengte klopt met de scorekaart) uit
