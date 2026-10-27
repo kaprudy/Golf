@@ -478,7 +478,7 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
         value = { ...(await osm(params)), fetchedAt: new Date().toISOString() };
       } catch (err) {
         console.error('OSM', err);
-        throw new HttpError(502, 'OpenStreetMap is nu niet bereikbaar, probeer het later opnieuw');
+        throw new HttpError(502, err.message.startsWith('OpenStreetMap') ? err.message : 'OpenStreetMap is nu niet bereikbaar, probeer het later opnieuw');
       }
       osmCache.set(cacheKey, { at: Date.now(), value });
       return send(res, 200, value);

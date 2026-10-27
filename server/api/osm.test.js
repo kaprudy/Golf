@@ -32,3 +32,17 @@ test('query is veilig', () => {
   assert.ok(!buildQuery({ name: 'x"];out;(' }).includes('"];out;('));
   assert.match(buildQuery({ lat: 52.5, lon: 6.4 }), /around:2500,52\.50000,6\.40000/);
 });
+
+test('valt terug op een reserveserver en noemt de reden', async () => {
+  const { fetchCourse } = await import('./osm.js');
+  const seen = [];
+  const fake = async (url) => {
+    seen.push(new URL(url).host);
+    if (url.includes('a.example')) return { ok: false, status: 429 };
+    return { ok: true, json: async () => ({ elements: [] }) };
+  };
+  const r = await fetchCourse({ name: 'x' }, { fetchImpl: fake, urls: ['https://a.example/i', 'https://b.example/i'] });
+  assert.deepEqual([seen, r.server], [['a.example', 'b.example'], 'b.example']);
+  const down = async () => { throw Object.assign(new Error('fetch failed'), { cause: { code: 'ENOTFOUND' } }); };
+  await assert.rejects(fetchCourse({ name: 'x' }, { fetchImpl: down, urls: ['https://a.example/i'] }), /a\.example: ENOTFOUND/);
+});

@@ -2,7 +2,9 @@
 // green (golf=hole, met ref = holenummer, par en handicap = stroke index); greens en tees zijn vlakken.
 // Puur deel (parseOverpass) is los te testen; fetchCourse doet het verzoek.
 
-const OVERPASS_URL = process.env.OVERPASS_URL ?? 'https://overpass-api.de/api/interpreter';
+// Hoofdserver plus reserves (de publieke Overpass-servers zijn soms overbelast).
+const OVERPASS_URLS = (process.env.OVERPASS_URL ?? 'https://overpass-api.de/api/interpreter,https://overpass.private.coffee/api/interpreter,https://maps.mail.ru/osm/tools/overpass/api/interpreter')
+  .split(',').map((s) => s.trim()).filter(Boolean);
 
 const rad = (d) => (d * Math.PI) / 180;
 export function distanceM(a, b) {
@@ -96,13 +98,27 @@ export function parseOverpass(json) {
   };
 }
 
-export async function fetchCourse(params, { fetchImpl = fetch } = {}) {
-  const res = await fetchImpl(OVERPASS_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Golfscore/1.0 (https://golf.kapital.nl)' },
-    body: `data=${encodeURIComponent(buildQuery(params))}`,
-    signal: AbortSignal.timeout(30000),
-  });
-  if (!res.ok) throw new Error(`OpenStreetMap (Overpass) antwoordde ${res.status}`);
-  return parseOverpass(await res.json());
+export async function fetchCourse(params, { fetchImpl = fetch, urls = OVERPASS_URLS } = {}) {
+  const body = `data=${encodeURIComponent(buildQuery(params))}`;
+  const problems = [];
+  for (const url of urls) {
+    const host = new URL(url).host;
+    try {
+      const res = await fetchImpl(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          Accept: 'application/json',
+          'User-Agent': 'Golfscore/1.0 (https://golf.kapital.nl)',
+        },
+        body,
+        signal: AbortSignal.timeout(30000),
+      });
+      if (res.ok) return { ...parseOverpass(await res.json()), server: host };
+      problems.push(`${host}: ${res.status}`);
+    } catch (err) {
+      problems.push(`${host}: ${err.cause?.code ?? err.name ?? err.message}`);
+    }
+  }
+  throw new Error(`OpenStreetMap niet bereikbaar (${problems.join('; ')})`);
 }
