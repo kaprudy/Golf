@@ -2,6 +2,7 @@ import { pickBest, matchPlayer, simplify } from './parser.js';
 import { decideSync, mergeStates, toCloud, fromCloud } from './sync.js';
 import { API_URL } from './config.js';
 import { createBuggy, buggySupported } from './buggy.js';
+import { teeAt, toGreen, geoProgress } from './gps.js';
 import { analysePlayer, handicapIndexFromDifferentials, scoreName } from './handicap.js';
 
 // ---------- Opslag ----------
@@ -171,6 +172,7 @@ function save({ fromCloud: fromRemote = false } = {}) {
 // ---------- Bediening (knoppen in de app en het buggy-scherm) ----------
 
 function moveHole(delta) {
+  gps.editing = false;
   const holes = roundHoles();
   const idx = holes.indexOf(state.round.currentHole);
   state.round.currentHole = holes[(idx + delta + holes.length) % holes.length];
@@ -190,6 +192,122 @@ function adjustScore(playerIndex, delta) {
   setLive(p.name, h, next >= 1);
   save();
   render();
+}
+
+// ---------- GPS ----------
+// De locatie blijft op de telefoon. Alleen de tees en greens die je zelf vastlegt worden bij de
+// baan bewaard (en gaan mee naar de server).
+
+const gps = { watchId: null, pos: null, error: null, lastTee: null, suggest: null, editing: false };
+
+function gpsPref(key, fallback) {
+  try { const v = localStorage.getItem(key); return v == null ? fallback : v === '1'; } catch { return fallback; }
+}
+function setGpsPref(key, on) {
+  try { localStorage.setItem(key, on ? '1' : '0'); } catch { /* alleen voor deze sessie */ }
+}
+const gpsOn = () => gpsPref('golfscore-gps', false);
+const gpsAuto = () => gpsPref('golfscore-gps-auto', true);
+const gpsSupported = () => 'geolocation' in navigator;
+
+function startGps() {
+  if (!gpsSupported() || gps.watchId != null) return;
+  gps.error = null;
+  gps.watchId = navigator.geolocation.watchPosition(onPosition, onGpsError, {
+    enableHighAccuracy: true, maximumAge: 5000, timeout: 30000,
+  });
+}
+
+function stopGps() {
+  if (gps.watchId != null) navigator.geolocation.clearWatch(gps.watchId);
+  Object.assign(gps, { watchId: null, pos: null, error: null, lastTee: null, suggest: null });
+}
+
+function onPosition(p) {
+  gps.pos = { lat: p.coords.latitude, lon: p.coords.longitude, accuracy: p.coords.accuracy };
+  gps.error = null;
+  // Alleen reageren als je een (andere) tee op loopt, niet zolang je er blijft staan.
+  const tee = teeAt(gps.pos, course().geo, roundHoles());
+  if (tee !== gps.lastTee) {
+    gps.lastTee = tee;
+    gps.suggest = null;
+    if (tee && tee !== state.round.currentHole) {
+      const counting = state.round.live?.hole === state.round.currentHole && state.round.live.names.length > 0;
+      if (gpsAuto() && !counting) {
+        state.round.currentHole = tee;
+        save();
+        render();
+        toast(`Je staat op de tee van hole ${tee}`);
+        return;
+      }
+      gps.suggest = tee; // bezig met tellen: niet zomaar wisselen, wel voorstellen
+    }
+  }
+  renderGps();
+}
+
+function onGpsError(err) {
+  gps.error = err.code === 1
+    ? 'Geen toegang tot je locatie. Sta dit toe in de instellingen van je browser.'
+    : 'Locatie is nu niet beschikbaar.';
+  renderGps();
+}
+
+function renderGps() {
+  const el = $('#gps-line');
+  if (!el) return;
+  el.hidden = !gpsOn();
+  if (!gpsOn()) return;
+  const h = state.round.currentHole;
+  const points = course().geo?.[h] ?? {};
+  if (gps.suggest === h) gps.suggest = null;
+  if (gps.error) { el.innerHTML = `<p class="gps-msg">${esc(gps.error)}</p>`; return; }
+  if (!gps.pos) { el.innerHTML = '<p class="gps-msg">GPS zoekt je positie…</p>'; return; }
+  const dist = toGreen(gps.pos, course().geo, h);
+  el.innerHTML = `
+    ${dist != null
+      ? `<p class="gps-dist"><span class="gps-num">${dist}</span> m <span class="muted">tot de green</span></p>`
+      : '<p class="gps-msg">Leg de green van deze hole vast om de afstand te zien.</p>'}
+    <p class="muted small gps-acc">GPS ±${Math.round(gps.pos.accuracy)} m</p>
+    ${gps.suggest ? `<button class="link" data-action="gps-go" data-hole="${gps.suggest}">Je staat op de tee van hole ${gps.suggest}: ga naar hole ${gps.suggest}</button>` : ''}
+    ${points.tee && points.green && !gps.editing
+      ? '<button class="link small" data-action="gps-edit">Tee of green opnieuw vastleggen</button>'
+      : `<div class="gps-actions">
+      <button class="chip-btn" data-action="gps-mark" data-point="tee">${points.tee ? 'Tee opnieuw vastleggen' : 'Ik sta op de tee'}</button>
+      <button class="chip-btn" data-action="gps-mark" data-point="green">${points.green ? 'Green opnieuw vastleggen' : 'Ik sta op de green'}</button>
+    </div>`}`;
+}
+
+function markPoint(point) {
+  const h = state.round.currentHole;
+  const name = point === 'tee' ? 'de tee' : 'het midden van de green';
+  if (!gps.pos) { toast('Nog geen GPS-positie. Wacht even.'); return; }
+  const existing = course().geo?.[h]?.[point];
+  if (existing && !confirm(`De ${point} van hole ${h} is al vastgelegd. Vervangen door je huidige positie?`)) return;
+  if (gps.pos.accuracy > 25 && !confirm(`De GPS is nu maar ±${Math.round(gps.pos.accuracy)} m nauwkeurig. Toch vastleggen?`)) return;
+  const c = course();
+  c.geo ??= {};
+  c.geo[h] = { ...c.geo[h], [point]: { lat: +gps.pos.lat.toFixed(6), lon: +gps.pos.lon.toFixed(6) } };
+  save();
+  renderGps();
+  renderGpsSettings();
+  toast(`Positie van ${name} van hole ${h} vastgelegd.`);
+}
+
+function renderGpsSettings() {
+  const el = $('#gps-settings');
+  if (!el) return;
+  if (!gpsSupported()) {
+    el.innerHTML = '<p class="small muted">Deze browser kan je locatie niet gebruiken.</p>';
+    return;
+  }
+  const p = geoProgress(course().geo, roundHoles());
+  el.innerHTML = `
+    <label class="check"><input type="checkbox" id="gps-on" ${gpsOn() ? 'checked' : ''}> GPS gebruiken tijdens de ronde</label>
+    <label class="check"><input type="checkbox" id="gps-auto" ${gpsAuto() ? 'checked' : ''} ${gpsOn() ? '' : 'disabled'}> Automatisch naar de hole van de tee waar je staat</label>
+    <p class="small">Vastgelegd voor ${esc(course().name)}: <b>${p.tees}</b> van ${p.total} tees, <b>${p.greens}</b> van ${p.total} greens.</p>
+    <p class="small muted">Leg tijdens een ronde per hole één keer de tee en het midden van de green vast (knoppen bij het holenummer). Daarna ziet de app de afstand tot de green en op welke tee je staat. Je locatie blijft op je telefoon; alleen deze punten worden bij de baan bewaard. GPS werkt alleen met de app open en kost wat extra batterij.</p>
+    ${p.tees + p.greens ? '<button class="link small danger" data-action="gps-clear">GPS-punten van deze baan wissen</button>' : ''}`;
 }
 
 // ---------- Buggy-scherm (Bluetooth) ----------
@@ -757,6 +875,8 @@ function render() {
   renderSettings();
   renderCloud();
   renderBuggy();
+  renderGps();
+  renderGpsSettings();
 }
 
 function renderQuickEntry() {
@@ -998,6 +1118,19 @@ document.addEventListener('click', (e) => {
       navigator.vibrate?.(btn.dataset.action === 'plus' ? 25 : [15, 40, 15]); // voelbaar zonder te kijken
       break;
     case 'buggy-connect': connectBuggy(); break;
+    case 'gps-mark': gps.editing = false; markPoint(btn.dataset.point); break;
+    case 'gps-edit': gps.editing = true; renderGps(); break;
+    case 'gps-go':
+      state.round.currentHole = Number(btn.dataset.hole);
+      gps.suggest = null;
+      save(); render();
+      break;
+    case 'gps-clear':
+      if (confirm(`Alle vastgelegde tees en greens van ${course().name} wissen?`)) {
+        delete course().geo;
+        save(); render();
+      }
+      break;
     case 'buggy-disconnect': buggy.disconnect(); break;
     case 'undo': undo(); break;
     case 'show-map': {
@@ -1145,6 +1278,15 @@ document.addEventListener('change', (e) => {
     course()[t.dataset.course][Number(t.dataset.h)] = Number(t.value);
   } else if (t.id === 'course-name') {
     course().name = t.value.trim() || DEFAULT_COURSES.find((c) => c.id === course().id)?.name || 'Baan';
+  } else if (t.id === 'gps-on') {
+    setGpsPref('golfscore-gps', t.checked);
+    if (t.checked) startGps(); else stopGps();
+    render();
+    return;
+  } else if (t.id === 'gps-auto') {
+    setGpsPref('golfscore-gps-auto', t.checked);
+    render();
+    return;
   } else if (t.id === 'api-key') {
     state.apiKey = t.value.trim();
   } else if (t.id === 'round-course') {
@@ -1172,6 +1314,7 @@ document.addEventListener('submit', (e) => {
 
 render();
 initCloud();
+if (gpsOn()) startGps();
 
 if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
   navigator.serviceWorker.register('sw.js').catch(() => {});

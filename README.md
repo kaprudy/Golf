@@ -33,6 +33,10 @@ handicapberekening** volgens het World Handicap System (WHS) dat de NGF gebruikt
 - **Analyse** per speler: bruto, tegen par, Stableford, verdeling birdies/pars/bogeys, beste en lastigste hole,
   score differential en handicap(-indicatie) – met uitleg hoe het berekend is.
 - **Historie**: sla rondes op; na 3 rondes berekent de app een handicap index volgens de WHS-tabel (beste 8 van de laatste 20).
+- **GPS op de baan** (Instellingen → GPS op de baan): leg per hole één keer de tee en het midden van de
+  green vast; daarna toont de app de **afstand tot de green** en springt hij naar de hole van de tee waar
+  je staat (niet als je nog slagen aan het tellen bent; dan stelt hij het voor). Je locatie blijft op je
+  telefoon; alleen de vastgelegde punten worden bij de baan bewaard.
 - **Werkt offline** op de baan (behalve de AI) en is te installeren als app op je beginscherm.
 - **AI (optioneel)**: met een Claude API-sleutel worden lastige zinnen alsnog begrepen en schrijft Claude een
   analyse met tips per speler, en controleert hij of alles wat je hebt ingesproken overeenkomt met de scorekaart.

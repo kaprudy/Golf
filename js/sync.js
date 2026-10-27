@@ -42,6 +42,13 @@ function mergeRounds(local, remote) {
   return { ...local, scores, log };
 }
 
+// GPS-punten per hole van beide kanten behouden; bij hetzelfde punt wint dit toestel.
+function mergeGeo(remote = {}, local = {}) {
+  const out = { ...remote };
+  for (const [hole, points] of Object.entries(local)) out[hole] = { ...out[hole], ...points };
+  return out;
+}
+
 // Beide kanten zijn gewijzigd: alles behouden wat er aan beide kanten is.
 export function mergeStates(local, remote) {
   return {
@@ -52,7 +59,10 @@ export function mergeStates(local, remote) {
       ...l,
       aliases: [...new Set([...(r.aliases ?? []), ...(l.aliases ?? [])])],
     })),
-    courses: unionBy(local.courses, remote.courses, 'id', (l, r) => ((r.dataVersion ?? 1) > (l.dataVersion ?? 1) ? r : l)),
+    courses: unionBy(local.courses, remote.courses, 'id', (l, r) => ({
+      ...((r.dataVersion ?? 1) > (l.dataVersion ?? 1) ? r : l),
+      geo: mergeGeo(r.geo, l.geo),
+    })),
     history: unionBy(local.history, remote.history, 'id', (l) => l).sort((a, b) => (a.date < b.date ? -1 : 1)),
     round: mergeRounds(local.round, remote.round),
     apiKey: local.apiKey, // de API-sleutel blijft altijd op dit toestel

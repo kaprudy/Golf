@@ -308,3 +308,14 @@ details summary { cursor: pointer; color: var(--link); font-weight: 600; }
 .alert strong { display: block; font-family: var(--serif); font-size: 1.2rem; color: var(--bogey-fg); }
 .alert p { margin: 4px 0 2px; color: var(--text); }
 .alert .link { color: var(--bogey-fg); }
+
+/* GPS in het holeblok */
+.gps-line { width: 100%; border-top: 1px solid var(--border); padding-top: 10px; display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; }
+.gps-line p { margin: 0; }
+.gps-dist { font-size: 1rem; }
+.gps-num { font-family: var(--serif); font-size: 2.4rem; line-height: 1; color: var(--accent-ink); }
+.gps-msg { color: var(--muted); font-size: .9rem; }
+.gps-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 4px; }
+.chip-btn { min-height: 40px; padding: 6px 14px; font-size: .85rem; background: var(--bg); }
+label.check { display: flex; align-items: center; gap: 10px; color: var(--text); font-size: .95rem; margin: 8px 0; }
+label.check input { width: 22px; height: 22px; min-height: 0; margin: 0; accent-color: var(--accent); }

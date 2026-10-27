@@ -39,6 +39,17 @@ test('samenvoegen behoudt alles van beide kanten', () => {
   assert.equal(m.round.log.length, 2);
 });
 
+test('GPS-punten van beide telefoons blijven bewaard', () => {
+  const m = mergeStates(
+    { players: [], history: [], round: null, courses: [{ id: 'hg', geo: { 1: { tee: { lat: 1, lon: 1 } }, 2: { green: { lat: 2, lon: 2 } } } }] },
+    { players: [], history: [], round: null, courses: [{ id: 'hg', geo: { 1: { green: { lat: 3, lon: 3 } }, 2: { green: { lat: 9, lon: 9 } } } }] },
+  );
+  assert.deepEqual(m.courses[0].geo, {
+    1: { tee: { lat: 1, lon: 1 }, green: { lat: 3, lon: 3 } },
+    2: { green: { lat: 2, lon: 2 } },
+  });
+});
+
 test('lege ronde verliest van een ronde met scores', () => {
   const m = mergeStates(
     { players: [], courses: [], history: [], round: { id: 9, date: '2026-10-09', scores: {}, log: [] } },
