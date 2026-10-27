@@ -27,14 +27,11 @@ export function tokenize(text) {
     .replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
 }
 
-/**
- * @param {{user:number, sample:object}[]} rows
- * @param {{minCount?:number, minUsers?:number, minShare?:number}} opts
- * @returns {{numbers:Object<string,number>, holeWords:string[], samples:number}}
- */
-export function learnVocabulary(rows, { minCount = 3, minUsers = 1, minShare = 0.8 } = {}) {
-  const numbers = new Map(); // woord -> {values: Map<waarde, aantal>, users: Set}
-  const holes = new Map(); // woord -> {count, users}
+// Telt per onbekend woord hoe vaak het voorkwam, bij hoeveel gebruikers en met welke betekenis.
+// Gebruikt door learnVocabulary en door het beheeroverzicht (kandidaten die nog niet genoeg tellen).
+export function wordStats(rows) {
+  const numbers = new Map(); // woord -> {count, users: Set, values: Map<waarde, aantal>}
+  const holes = new Map();
   const bump = (map, key, user, value) => {
     const e = map.get(key) ?? { count: 0, users: new Set(), values: new Map() };
     e.count++;
@@ -70,13 +67,27 @@ export function learnVocabulary(rows, { minCount = 3, minUsers = 1, minShare = 0
     });
   }
 
-  const outNumbers = {};
+  const list = [];
   for (const [word, e] of numbers) {
     const [value, n] = [...e.values].sort((a, b) => b[1] - a[1])[0];
-    if (e.count >= minCount && e.users.size >= minUsers && n / e.count >= minShare && value >= 1 && value <= 20) {
-      outNumbers[word] = value;
-    }
+    list.push({ word, kind: 'number', count: e.count, users: e.users.size, value, share: n / e.count });
   }
-  const outHoles = [...holes].filter(([, e]) => e.count >= minCount && e.users.size >= minUsers).map(([w]) => w);
-  return { numbers: outNumbers, holeWords: outHoles.sort(), samples: rows.length };
+  for (const [word, e] of holes) list.push({ word, kind: 'hole', count: e.count, users: e.users.size, value: null, share: 1 });
+  return list.sort((a, b) => b.count - a.count || a.word.localeCompare(b.word));
+}
+
+/**
+ * @param {{user:number, sample:object}[]} rows
+ * @param {{minCount?:number, minUsers?:number, minShare?:number}} opts
+ * @returns {{numbers:Object<string,number>, holeWords:string[], samples:number}}
+ */
+export function learnVocabulary(rows, { minCount = 3, minUsers = 1, minShare = 0.8 } = {}) {
+  const enough = (w) => w.count >= minCount && w.users >= minUsers;
+  const numbers = {};
+  const holeWords = [];
+  for (const w of wordStats(rows)) {
+    if (w.kind === 'number' && enough(w) && w.share >= minShare && w.value >= 1 && w.value <= 20) numbers[w.word] = w.value;
+    if (w.kind === 'hole' && enough(w)) holeWords.push(w.word);
+  }
+  return { numbers, holeWords: holeWords.sort(), samples: rows.length };
 }

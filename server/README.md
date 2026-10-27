@@ -94,6 +94,17 @@ De infopagina toont rechtsboven *"Opslagdienst werkt"*.
 Zet in `js/config.js` van de app `API_URL = 'https://golf.kapital.nl'` en publiceer de app
 (of vraag het aan Claude). In de app verschijnt dan bij Instellingen **Account en cloud**.
 
+## Beheeroverzicht
+
+Op https://golf.kapital.nl/admin.html zie je registraties, actieve gebruikers, gedeelde spraak en
+welke woorden de app leert. Inloggen met je gewone Golfscore-account; alleen adressen in
+`ADMIN_EMAILS` hebben toegang. Zet die in `server/.env` (staat niet in git):
+
+```bash
+echo 'ADMIN_EMAILS=jouw@email.nl' >> /opt/golf/server/.env
+echo 'NPM_NETWORK=shared_network' >> /opt/golf/server/.env   # alleen bij variant 3c
+```
+
 ## Beheer
 
 | Wat | Opdracht (in `/opt/golf/server`) |

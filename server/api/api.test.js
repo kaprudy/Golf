@@ -154,3 +154,30 @@ test('bestaande database krijgt de nieuwe kolom', async () => {
   migrated.close();
   fs.rmSync(path.replace(/\/oud\.db$/, ''), { recursive: true });
 });
+
+test('beheeroverzicht alleen voor beheerders', async () => {
+  const adminServer = createServer(openDatabase(':memory:'), { adminEmails: ['baas@example.nl'] });
+  await new Promise((r) => adminServer.listen(0, r));
+  const url = `http://127.0.0.1:${adminServer.address().port}`;
+  const post = async (path, body, token) => (await fetch(url + path, {
+    method: 'POST', headers: { 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}) }, body: JSON.stringify(body),
+  })).json();
+  const get = (path, token) => fetch(url + path, { headers: { Authorization: `Bearer ${token}` } });
+  try {
+    const baas = (await post('/api/register', { email: 'baas@example.nl', password: 'wachtwoordB' })).token;
+    const dev = (await post('/api/device', { secret: 'y'.repeat(40) })).token;
+    await post('/api/samples', { samples: [{ v: 1, hole: 1, par: 4, texts: ['s1 fijf'], parsed: {}, final: { s1: 5 } }] }, dev);
+    assert.equal((await get('/api/admin/overview', dev)).status, 403);
+    const res = await get('/api/admin/overview', baas);
+    assert.equal(res.status, 200);
+    const o = await res.json();
+    assert.deepEqual([o.users.total, o.users.anonymous, o.users.email], [2, 1, 1]);
+    assert.equal(o.samples.total, 1);
+    assert.equal(o.samples.firstTimeRight, 0);
+    assert.deepEqual(o.candidates.map((c) => [c.word, c.value, c.learned]), [['fijf', 5, false]]);
+    assert.equal(o.recentUsers.find((u) => u.email == null).samples, 1);
+    assert.equal(JSON.stringify(o).includes('pw_hash'), false);
+  } finally {
+    adminServer.close();
+  }
+});

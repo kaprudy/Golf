@@ -14,17 +14,20 @@
 //   GET    /api/samples/stats                   -> {count}
 //   DELETE /api/samples                         -> eigen voorbeelden verwijderen
 //   GET    /api/vocab                           -> geleerde woorden (voor iedereen, zonder inloggen)
+//   GET    /api/admin/overview                  -> overzicht voor beheerders (ADMIN_EMAILS)
 //   GET    /api/health                          -> {ok:true}
 
 import http from 'node:http';
 import crypto from 'node:crypto';
 import { DatabaseSync } from 'node:sqlite';
-import { learnVocabulary } from './learn.js';
+import { learnVocabulary, wordStats } from './learn.js';
 
 const PORT = Number(process.env.PORT ?? 3000);
 const DB_PATH = process.env.DB_PATH ?? '/data/golf.db';
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS ?? 'https://kaprudy.github.io,https://golf.kapital.nl')
   .split(',').map((s) => s.trim()).filter(Boolean);
+// Beheerders: e-mailadressen (komma-gescheiden) die het overzicht op /admin.html mogen zien.
+const ADMIN_EMAILS = (process.env.ADMIN_EMAILS ?? '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
 const MAX_BODY = 2 * 1024 * 1024; // ruim genoeg voor jaren aan rondes
 const TOKEN_DAYS = 180;
 const MAX_SAMPLES_PER_CALL = 200;
@@ -156,7 +159,7 @@ const validSecret = (s) => typeof s === 'string' && s.length >= 32 && s.length <
 
 // ---------- Server ----------
 
-export function createServer(db) {
+export function createServer(db, { adminEmails = ADMIN_EMAILS } = {}) {
   const q = {
     userByEmail: db.prepare('SELECT * FROM users WHERE email = ?'),
     insertUser: db.prepare('INSERT INTO users (email, pw_hash, created_at) VALUES (?, ?, ?)'),
@@ -189,6 +192,65 @@ export function createServer(db) {
     const value = { ...learnVocabulary(rows), generatedAt: new Date().toISOString() };
     vocabCache = { at: Date.now(), value };
     return value;
+  }
+
+  // Overzicht voor de beheerder: aantallen en e-mailadressen, nooit de scores of rondes zelf.
+  function adminOverview() {
+    const now = Date.now();
+    const ago = (days) => new Date(now - days * 864e5).toISOString();
+    const one = (sql, ...args) => db.prepare(sql).get(...args);
+    const anon = "instr(email, '@') = 0";
+    const users = {
+      total: one('SELECT COUNT(*) n FROM users').n,
+      anonymous: one(`SELECT COUNT(*) n FROM users WHERE ${anon}`).n,
+      last7: one('SELECT COUNT(*) n FROM users WHERE created_at > ?', ago(7)).n,
+      last30: one('SELECT COUNT(*) n FROM users WHERE created_at > ?', ago(30)).n,
+    };
+    users.email = users.total - users.anonymous;
+    const active = {
+      d1: one('SELECT COUNT(*) n FROM golf_state WHERE updated_at > ?', ago(1)).n,
+      d7: one('SELECT COUNT(*) n FROM golf_state WHERE updated_at > ?', ago(7)).n,
+      d30: one('SELECT COUNT(*) n FROM golf_state WHERE updated_at > ?', ago(30)).n,
+    };
+    const registrations = db.prepare(`SELECT substr(created_at, 1, 10) day,
+        SUM(CASE WHEN ${anon} THEN 1 ELSE 0 END) anonymous, SUM(CASE WHEN ${anon} THEN 0 ELSE 1 END) email
+        FROM users WHERE created_at > ? GROUP BY day ORDER BY day`).all(ago(30));
+    const recentUsers = db.prepare(`SELECT u.id, u.email, u.created_at, g.updated_at last_sync, g.data,
+        (SELECT COUNT(*) FROM speech_samples s WHERE s.user_id = u.id) samples
+        FROM users u LEFT JOIN golf_state g ON g.user_id = u.id ORDER BY u.id DESC LIMIT 100`).all().map((r) => {
+      let rounds = null;
+      let players = null;
+      try { const d = JSON.parse(r.data); rounds = d.history?.length ?? 0; players = d.players?.length ?? 0; } catch { /* nog niets opgeslagen */ }
+      return { id: r.id, email: r.email.includes('@') ? r.email : null, createdAt: r.created_at, lastSync: r.last_sync, rounds, players, samples: r.samples };
+    });
+
+    const rows = q.allSamples.all().map((r) => {
+      try { return { user: r.user_id, sample: JSON.parse(r.payload) }; } catch { return null; }
+    }).filter(Boolean);
+    // Hoe vaak klopte wat de app verstond meteen met de eindscore op de kaart?
+    let judged = 0;
+    let right = 0;
+    for (const { sample } of rows) {
+      const final = sample?.final ?? {};
+      if (!Object.keys(final).length) continue;
+      judged++;
+      if (Object.entries(final).every(([k, v]) => sample.parsed?.[k] === v)) right++;
+    }
+    const samples = {
+      total: rows.length,
+      users: one('SELECT COUNT(DISTINCT user_id) n FROM speech_samples').n,
+      last7: one('SELECT COUNT(*) n FROM speech_samples WHERE created_at > ?', ago(7)).n,
+      firstTimeRight: judged ? right / judged : null,
+      perDay: db.prepare(`SELECT substr(created_at, 1, 10) day, COUNT(*) count FROM speech_samples
+        WHERE created_at > ? GROUP BY day ORDER BY day`).all(ago(30)),
+    };
+    const recentSamples = db.prepare('SELECT created_at, payload FROM speech_samples ORDER BY id DESC LIMIT 40').all().map((r) => {
+      try { const p = JSON.parse(r.payload); return { createdAt: r.created_at, hole: p.hole, par: p.par, texts: p.texts, parsed: p.parsed, final: p.final, ai: p.ai }; } catch { return null; }
+    }).filter(Boolean);
+    const vocab = vocabulary();
+    const learned = new Set([...Object.keys(vocab.numbers), ...vocab.holeWords]);
+    const candidates = wordStats(rows).slice(0, 60).map((w) => ({ ...w, learned: learned.has(w.word) }));
+    return { generatedAt: new Date().toISOString(), users, active, registrations, recentUsers, samples, recentSamples, vocab, candidates };
   }
 
   function newSession(user) {
@@ -267,6 +329,10 @@ export function createServer(db) {
     }
 
     if (key === 'GET /api/me') return send(res, 200, { user: publicUser(user) });
+    if (key === 'GET /api/admin/overview') {
+      if (!adminEmails.includes(user.email)) throw new HttpError(403, 'Alleen voor beheerders');
+      return send(res, 200, adminOverview());
+    }
     if (key === 'POST /api/logout') {
       q.deleteSession.run(tokenHash);
       return send(res, 204);
