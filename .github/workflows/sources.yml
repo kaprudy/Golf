@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: sudo apt-get install -y -qq poppler-utils >/dev/null
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils >/dev/null
       - name: Ophalen
         run: node tools/fetch-sources.mjs tools/sources.txt /tmp/bronnen
       - name: Op branch 'bronnen' zetten
