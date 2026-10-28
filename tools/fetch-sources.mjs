@@ -56,8 +56,13 @@ async function save(url, dir) {
   }
   const html = buf.toString('utf8');
   fs.writeFileSync(`${base}.txt`, `${finalUrl}\n\n${text(html)}`);
-  const links = [...html.matchAll(/href=["']([^"'#]+)["']/gi)].map((m) => { try { return new URL(m[1], finalUrl).href; } catch { return null; } })
-    .filter((h) => h && /^https?:/.test(h));
+  const abs = (u) => { try { return new URL(u, finalUrl).href; } catch { return null; } };
+  const links = [...html.matchAll(/href=["']([^"'#]+)["']/gi)].map((m) => abs(m[1])).filter((h) => h && /^https?:/.test(h));
+  // Ingesloten afbeeldingen met een scorekaart of handicaptabel (die staan vaak alleen als plaatje online)
+  for (const m of html.matchAll(/<img[^>]+(?:data-src|src)=["']([^"']+)["']/gi)) {
+    const u = abs(m[1]);
+    if (u && /scorekaart|scorecard|handicap|playing|rating|slope|tabel|phcp/i.test(u)) links.push(u);
+  }
   return { url, kind: 'html', links };
 }
 
@@ -79,7 +84,8 @@ for (const site of urls) {
       for (const l of r.links) {
         const sameSite = new URL(l).host.replace(/^www\./, '') === host;
         if (/\.(ico|woff2?|css|js|svg)($|\?)|\/dynamic\/(image|proxy)\//i.test(l)) continue; // geen pictogrammen en lettertypes
-        if (!seen.has(l) && KEY.test(l) && (sameSite || /\.pdf($|\?)/i.test(l))) queue.push(l);
+        const image = /\.(png|jpe?g|webp)($|\?)/i.test(l);
+        if (!seen.has(l) && (KEY.test(l) || image) && (sameSite || image || /\.pdf($|\?)/i.test(l))) queue.push(l);
       }
       report.push(`ok   ${u}`);
     } catch (err) {
