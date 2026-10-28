@@ -49,11 +49,16 @@ section { margin: 48px 0; scroll-margin-top: 70px; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
 ul, ol { padding-left: 1.2em; } li { margin: 6px 0; }
 
-/* schermafbeeldingen */
-.shots { display: flex; gap: 14px; overflow-x: auto; padding: 6px 2px 14px; scroll-snap-type: x mandatory; }
-.shots figure { margin: 0; flex: 0 0 200px; scroll-snap-align: start; }
-.shots img { width: 200px; height: auto; border-radius: 22px; border: 1px solid var(--border); box-shadow: 0 8px 24px rgba(0,0,0,.08); display: block; }
+/* schermafbeeldingen: op brede schermen vier kolommen, op de telefoon vegen (zonder schuifbalk) */
+.shots { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; padding: 6px 0 4px; }
+.shots figure { margin: 0; min-width: 0; }
+.shots img { width: 100%; height: auto; border-radius: 22px; border: 1px solid var(--border); box-shadow: 0 8px 24px rgba(0,0,0,.08); display: block; }
 .shots figcaption { font-size: .85rem; color: var(--muted); margin-top: 8px; }
+@media (max-width: 720px) {
+  .shots { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin: 0 -16px; padding: 6px 16px 4px; }
+  .shots::-webkit-scrollbar { display: none; }
+  .shots figure { flex: 0 0 62%; scroll-snap-align: start; }
+}
 
 /* stappen */
 .steps { counter-reset: s; list-style: none; padding: 0; display: grid; gap: 12px; }
