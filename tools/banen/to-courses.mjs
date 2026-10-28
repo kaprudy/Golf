@@ -169,6 +169,30 @@ for (const c of DATA) {
     if (course) out.push({ course, distance: c.distance_km_from_dedemsvaart ?? 999 });
   }
 }
+// Gecontroleerd met de eigen bronnen van de clubs (data/banen/verified.json): stroke index,
+// ratings (ook per negen), lengtes en extra tees. Gaat boven wat courses.json zegt.
+const VERIFIED = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/banen/verified.json'), 'utf8'));
+for (const { course: c } of out) {
+  const v = VERIFIED[c.id];
+  if (!v) continue;
+  if (v.si) {
+    if (v.si.length !== c.holeCount || [...v.si].sort((a, b) => a - b).some((x, i) => x !== i + 1)) throw new Error(`verified ${c.id}: ongeldige stroke index`);
+    c.si = v.si;
+    delete c.siUnknown;
+  }
+  for (const [name, fields] of Object.entries(v.tees ?? {})) {
+    const t = c.tees.find((x) => x.name === name);
+    if (!t) { problems.push(`verified ${c.id}: tee ${name} niet gevonden`); continue; }
+    Object.assign(t, fields);
+    if (fields.rating) delete t.ratingUnknown;
+  }
+  for (const add of v.addTees ?? []) {
+    const id = `${c.id}-${add.name.split(' ')[0].toLowerCase()}-${add.gender}`;
+    if (!c.tees.some((x) => x.id === id)) c.tees.push({ id, ...add, ...(add.rating9 ? {} : { rating9: null, slope9: null }) });
+  }
+  c.dataVersion = (c.dataVersion ?? 1) + 1; // opgeslagen banen op de telefoons bijwerken
+}
+
 out.sort((a, b) => a.distance - b.distance);
 const ids = out.map((o) => o.course.id);
 const dup = ids.filter((id, i) => ids.indexOf(id) !== i);

@@ -1,0 +1,1450 @@
+{
+ "_uitleg": "Gecontroleerd met de eigen scorekaarten en handicaptabellen van de clubs (opgehaald met de workflow Bronnen ophalen, oktober 2026). tools/banen/to-courses.mjs past dit toe na het omzetten van courses.json. Per baan: si (stroke index per hole), tees (per tee-naam: rating, slope, rating9/slope9 = holes 1–9 of eerste lus, rating9Back/slope9Back = holes 10–18 of tweede lus, lengths), addTees (extra tees), source en date.",
+ "countrygolf-ees": {
+  "source": "countrygolfees_nl_wp_content_uploads_2025_11_Scorekaart_Country_Golf_Ees_1_pdf.txt: par, index, meters (UIT 667, IN 727, TOT 1394); countrygolfees_nl_wp_content_uploads_2025_09_Country_Golf_Ees_18_holes_pdf.txt: Geel heren CR 47,3 SR 64; Rood dames CR 48,9 SR 66; countrygolfees_nl_wp_content_uploads_2025_09_Country_Golf_Ees_2e_9_holes_pdf.txt: 2e 9 holes Geel heren CR 23,7 SR 65; Rood dames CR 24,",
+  "date": "scorekaart 2025-11; tabellen 24-09-2025",
+  "tees": {
+   "Geel (heren)": {
+    "rating9Back": 23.7,
+    "slope9Back": 65
+   },
+   "Rood (dames)": {
+    "rating9Back": 24.5,
+    "slope9Back": 65
+   }
+  }
+ },
+ "emstal-lingen": {
+  "source": "www_gc_emstal_de_fileadmin_user_upload_Course_Handicaps_1_18_2025_PDF.txt: 18h Gelb 71,5/134, Blau 68,8/127, Rot 73,1/133, Orange 69,2/127 (plus Junioren/Juniorinnen grün 59,7/100 en 61,6/105, par 66); www_gc_emstal_de_fileadmin_user_upload_Course_Handicaps_1_9_9L_2025_PDF.txt: 1-9 (9L) Gelb 35,4/132, Blau 34,2/125, Rot 36,2/132, Orange 34,2/126; www_gc_emstal_de_fileadmin_user_upload_scorekarte_s",
+  "date": "tabellen 2025 (PDF 21-07-2025); scorekaart 2017",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 35.4,
+    "slope9": 132
+   },
+   "Blauw (heren)": {
+    "rating9": 34.2,
+    "slope9": 125
+   },
+   "Rood (dames)": {
+    "rating9": 36.2,
+    "slope9": 132
+   },
+   "Oranje (dames)": {
+    "rating9": 34.2,
+    "slope9": 126
+   }
+  }
+ },
+ "westerwolde-vlagtwedde": {
+  "source": "www_gcwesterwolde_nl_images_tabel_scorekaart_Westerwolde_WHS_tabel_Heren_18_png.png: Geel 67,8/124, Rood 66,4/118, Oranje 62,5/105 (par 70); www_gcwesterwolde_nl_images_tabel_scorekaart_Westerwolde_WHS_tabel_Dames_18_png.png: Geel 72,4/127, Rood 71,5/126, Oranje 64,9/108 (par 72); www_gcwesterwolde_nl_images_tabel_scorekaart_Westerwolde_WHS_tabel_Heren_9_png.png: 9h Geel 33,9/124, Rood 33,2/118, O",
+  "date": "WHS-tabellen 19-01-2021; afstandtabel (PDF gewijzigd 01-07-2025); scorekaart 2022",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 33.9,
+    "slope9": 124
+   },
+   "Rood (heren)": {
+    "rating9": 33.2,
+    "slope9": 118
+   },
+   "Oranje (heren)": {
+    "rating9": 31.3,
+    "slope9": 105
+   }
+  }
+ },
+ "golfclub-zeewolde-aak-botter": {
+  "source": "www_golfclub_zeewolde_nl_assets_files_zeewolde_18_holes_aak_botter_2026_heren_pdf.txt: Wit 74,4/145, Geel 72,7/133, Blauw 69,8/118, Rood 69,2/114, Oranje 65,3/115; www_golfclub_zeewolde_nl_assets_files_zeewolde_18_holes_aak_botter_2026_dames_pdf.txt: Geel 79,0/142, Blauw 74,8/134, Rood 73,9/133, Oranje 70,4/114; www_golfclub_zeewolde_nl_assets_files_zeewolde_aak_2024_dames_9h_pdf.txt (07-10-2025):",
+  "date": "15-04-2026",
+  "tees": {
+   "Geel (dames)": {
+    "rating9": 39.7,
+    "slope9": 139
+   },
+   "Blauw (dames)": {
+    "rating9": 37.2,
+    "slope9": 133
+   },
+   "Rood (dames)": {
+    "rating9": 36.9,
+    "slope9": 131
+   },
+   "Oranje (dames)": {
+    "rating9": 35.0,
+    "slope9": 113
+   }
+  }
+ },
+ "golfclub-zeewolde-pluut-aak": {
+  "source": "www_golfclub_zeewolde_nl_assets_files_zeewolde_18_holes_pluut_aak_heren_1_pdf.txt: Wit 73,8/140, Geel 72,1/131, Blauw 69,3/118, Rood 68,3/113, Oranje 64,7/114; www_golfclub_zeewolde_nl_assets_files_zeewolde_18_holes_pluut_aak_dames_1_pdf.txt: Geel 78,3/141, Blauw 74,3/133, Rood 73,2/130, Oranje 69,5/114; www_golfclub_zeewolde_nl_assets_files_zeewolde_aak_2024_dames_9h_pdf.txt (07-10-2025): 9h Aak ",
+  "date": "14-04-2025",
+  "tees": {
+   "Geel (dames)": {
+    "rating9Back": 39.7,
+    "slope9Back": 139
+   },
+   "Blauw (dames)": {
+    "rating9Back": 37.2,
+    "slope9Back": 133
+   },
+   "Rood (dames)": {
+    "rating9Back": 36.9,
+    "slope9Back": 131
+   },
+   "Oranje (dames)": {
+    "rating9Back": 35.0,
+    "slope9Back": 113
+   }
+  }
+ },
+ "leeuwarder-golfclub-de-groene-ster": {
+  "source": "www_leeuwardergolfclub_nl_app_uploads_2024_12_Website_scorecard_2025_1_pdf.txt: par, s.i., meters 5 tees (6188/5890/5287/4989/4181); www_leeuwardergolfclub_nl_app_uploads_2024_12_Groene_Ster_WHS_tabel_Heren_1_pdf.txt: 18h + 1e 9 West + 2e 9 Oost; www_leeuwardergolfclub_nl_app_uploads_2024_12_Groene_Ster_WHS_tabel_Dames_1_pdf.txt: 18h + 1e 9 West + 2e 9 Oost",
+  "date": "scorekaart 2025 (PDF 17-12-2024); tabellen 06-01-2021",
+  "tees": {
+   "Wit (heren)": {
+    "rating9": 37.4,
+    "slope9": 146,
+    "rating9Back": 36.5,
+    "slope9Back": 147
+   },
+   "Geel (heren)": {
+    "rating9": 36.8,
+    "slope9": 133,
+    "rating9Back": 35.7,
+    "slope9Back": 140
+   },
+   "Blauw (heren)": {
+    "rating9": 34.7,
+    "slope9": 121,
+    "rating9Back": 34.5,
+    "slope9Back": 138
+   },
+   "Rood (heren)": {
+    "rating9": 34.4,
+    "slope9": 117,
+    "rating9Back": 33.5,
+    "slope9Back": 125
+   },
+   "Oranje (heren)": {
+    "rating9": 32.8,
+    "slope9": 109,
+    "rating9Back": 32.3,
+    "slope9Back": 109
+   },
+   "Geel (dames)": {
+    "rating9": 39.8,
+    "slope9": 148,
+    "rating9Back": 38.9,
+    "slope9Back": 140
+   },
+   "Blauw (dames)": {
+    "rating9": 37.5,
+    "slope9": 143,
+    "rating9Back": 37.6,
+    "slope9Back": 135
+   },
+   "Rood (dames)": {
+    "rating9": 37.2,
+    "slope9": 139,
+    "rating9Back": 36.3,
+    "slope9Back": 131
+   },
+   "Oranje (dames)": {
+    "rating9": 34.9,
+    "slope9": 114,
+    "rating9Back": 33.4,
+    "slope9Back": 116
+   }
+  }
+ },
+ "weleveld-golf-zenderen": {
+  "source": "www_weleveldgolf_nl_wp_content_uploads_2024_08_Scorekaart_Faltblatt_22_07_24_CS6final_pdf.txt: par, stroke, meters Geel/Rood (5284/4578); www_weleveldgolf_nl_wp_content_uploads_2024_08_Weleveld_WHS_tabel_Heren_pdf.txt: 18h Geel 69,4/130, Rood 66,0/110; 9h Geel 34,7/130, Rood 33,0/110; www_weleveldgolf_nl_wp_content_uploads_2024_08_Weleveld_WHS_tabel_Dames_pdf.txt: 18h Geel 75,4/147, Rood 70,7/129;",
+  "date": "scorekaart 22-07-2024; tabellen 2021 (PDF 19-01-2021)",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 34.7,
+    "slope9": 130
+   },
+   "Rood (heren)": {
+    "rating9": 33.0,
+    "slope9": 110
+   },
+   "Geel (dames)": {
+    "rating9": 37.7,
+    "slope9": 147
+   },
+   "Rood (dames)": {
+    "rating9": 35.4,
+    "slope9": 129
+   }
+  }
+ },
+ "gc-muensterland-burgsteinfurt": {
+  "source": "gc_muensterland_de/www_gc_muensterland_de_golfplatz_.txt: Scorecard Loch/Par/HCP/Länge Herren/Länge Damen (Out 36, 2710 / 2423); gc_muensterland_de/*.pdf (Platz_A_9_Loch..., Platz_1_9_18_Loch...): het zijn HTML-pagina's, geen PDF's; de ratings zijn niet gedownload",
+  "date": "pagina golfplatz (zonder datum)",
+  "tees": {
+   "Standaard (dames)": {
+    "lengths": [
+     299,
+     309,
+     412,
+     149,
+     114,
+     375,
+     204,
+     287,
+     282
+    ]
+   }
+  }
+ },
+ "t-zelle-hengelo-gld-bosrijk-waterrijk": {
+  "source": "gczelle_nl/cdn_i_pulse_nl_gczelle_userfiles_scorekaarten_en_handicaptabellen_scorekaart_bosrijk_waterrijk_pdf: par, SI, meters geel/blauw/rood (6028/5490/5027); kolomkleuren gecontroleerd op de afbeelding; gczelle_nl/cdn_i_pulse_nl_gczelle_userfiles_scorekaarten_en_handicaptabellen_heren_18_holes_bosrijk_waterrrijk_pdf: geel 73,2/135, blauw 70,6/125, rood 68,5/118; gczelle_nl/cdn_i_pulse_nl_gczell",
+  "date": "tabellen 17-09-2024; scorekaart zonder datum",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 36.5,
+    "slope9": 130,
+    "rating9Back": 36.8,
+    "slope9Back": 138
+   },
+   "Blauw (heren)": {
+    "rating9": 35.3,
+    "slope9": 121,
+    "rating9Back": 35.4,
+    "slope9Back": 130
+   },
+   "Rood (heren)": {
+    "rating9": 34.0,
+    "slope9": 115,
+    "rating9Back": 34.5,
+    "slope9Back": 122
+   }
+  }
+ },
+ "de-koepel": {
+  "source": "golfclubdekoepel_nl/wp_content_uploads_2025_06_2025_Handicaptabellen_De_Koepel_Heren_pdf: 18/1e 9/2e 9 holes geel/blauw/rood/oranje; golfclubdekoepel_nl/wp_content_uploads_2025_06_2025_Handicaptabellen_De_Koepel_Dames_pdf: idem dames; golfclubdekoepel_nl/www_golfclubdekoepel_nl_golfbaan_.txt: oudere CR/SR-tabel op de website (komt overeen met de app) + lengtes per 9 (geel 2696/2880, rood 2278/2446",
+  "date": "handicaptabellen 12-06-2025",
+  "tees": {
+   "Geel (heren)": {
+    "slope": 128,
+    "rating9": 34.5,
+    "slope9": 128,
+    "rating9Back": 35.5,
+    "slope9Back": 128
+   },
+   "Rood (heren)": {
+    "rating": 65.8,
+    "slope": 111,
+    "rating9": 32.5,
+    "slope9": 108,
+    "rating9Back": 33.3,
+    "slope9Back": 113
+   },
+   "Oranje (heren)": {
+    "rating": 61.9,
+    "slope": 96,
+    "rating9": 30.8,
+    "slope9": 97,
+    "rating9Back": 31.1,
+    "slope9Back": 96
+   },
+   "Geel (dames)": {
+    "rating": 76.2,
+    "rating9": 37.5,
+    "slope9": 132,
+    "rating9Back": 38.8,
+    "slope9Back": 140
+   },
+   "Rood (dames)": {
+    "rating": 70.5,
+    "rating9": 34.7,
+    "slope9": 127,
+    "rating9Back": 35.9,
+    "slope9Back": 129
+   },
+   "Oranje (dames)": {
+    "rating": 64.1,
+    "slope": 103,
+    "rating9": 32.1,
+    "slope9": 102,
+    "rating9Back": 32.1,
+    "slope9Back": 105
+   }
+  },
+  "addTees": [
+   {
+    "name": "Blauw (heren)",
+    "gender": "h",
+    "rating": 67.5,
+    "slope": 122,
+    "rating9": 33.3,
+    "slope9": 117,
+    "rating9Back": 34.2,
+    "slope9Back": 128
+   },
+   {
+    "name": "Blauw (dames)",
+    "gender": "d",
+    "rating": 73.3,
+    "slope": 131,
+    "rating9": 35.9,
+    "slope9": 129,
+    "rating9Back": 37.4,
+    "slope9Back": 132
+   }
+  ]
+ },
+ "golfclub-havelte": {
+  "source": "golfclubhavelte_nl/portal_everyoffice_nl_userfiles_1557_files_scorekaart_nieuwste_versie_website_pdf (pagina 2-3, gedraaid): par, Index, meters per tee 64/61/55/52/44 (6363/6057/5462/5154/4397); golfclubhavelte_nl/card_handicap_tabel_heren_18_holes_20260407142441_jpg.jpg (09-12-2025): 64 WIT 73,3/129, 61 GEEL 72,0/122, 55 BLAUW 68,8/119, 52 ROOD 67,4/111, 44 ORANJE 63,2/104; golfclubhavelte_nl/car",
+  "date": "tabellen 09-12-2025; scorekaart 'nieuwste versie' (zonder datum)",
+  "tees": {
+   "Wit (heren)": {
+    "rating9": 36.3,
+    "slope9": 124,
+    "rating9Back": 37.1,
+    "slope9Back": 133
+   },
+   "Geel (heren)": {
+    "rating9": 35.5,
+    "slope9": 118,
+    "rating9Back": 36.6,
+    "slope9Back": 125
+   },
+   "Blauw (heren)": {
+    "rating9": 34.1,
+    "slope9": 122,
+    "rating9Back": 34.8,
+    "slope9Back": 117
+   },
+   "Rood (heren)": {
+    "rating9": 33.3,
+    "slope9": 113,
+    "rating9Back": 34.1,
+    "slope9Back": 110
+   },
+   "Oranje (heren)": {
+    "rating9": 31.4,
+    "slope9": 108,
+    "rating9Back": 31.8,
+    "slope9Back": 101
+   },
+   "Geel (dames)": {
+    "rating9": 38.6,
+    "slope9": 134,
+    "rating9Back": 39.9,
+    "slope9Back": 143
+   },
+   "Blauw (dames)": {
+    "rating9": 37.0,
+    "slope9": 125,
+    "rating9Back": 37.6,
+    "slope9Back": 128
+   },
+   "Rood (dames)": {
+    "rating9": 36.0,
+    "slope9": 121,
+    "rating9Back": 36.9,
+    "slope9Back": 124
+   },
+   "Oranje (dames)": {
+    "rating9": 33.9,
+    "slope9": 112,
+    "rating9Back": 34.0,
+    "slope9Back": 111
+   }
+  },
+  "si": [
+   5,
+   17,
+   7,
+   9,
+   13,
+   3,
+   11,
+   15,
+   1,
+   16,
+   10,
+   4,
+   2,
+   12,
+   14,
+   8,
+   18,
+   6
+  ]
+ },
+ "het-rijk-van-sybrook-enschede-noord-zuid": {
+  "source": "golfenophetrijk_nl/Sybrook_handicaptabel_heren/dames_noord_26052026_pdf (01-04-2026): 9 holes Noord; golfenophetrijk_nl/Sybrook_handicaptabel_heren/dames_oost_26052026_pdf (01-04-2026): 9 holes Oost; golfenophetrijk_nl/www_golfenophetrijk_nl_sybrook_baandetails_html.txt: 18-holes CR/SR en lengte heren/dames per combinatie;   (baandetails: Noord & Zuid heren 5919 m 72,5/133, dames 5045 m 73,4/127)",
+  "date": "9-holes tabellen 01-04-2026; webpagina baandetails",
+  "tees": {
+   "Wit (heren)": {
+    "rating9": 36.6,
+    "slope9": 142
+   },
+   "Geel (heren)": {
+    "rating9": 36.1,
+    "slope9": 138
+   },
+   "Blauw (heren)": {
+    "rating9": 34.1,
+    "slope9": 125
+   },
+   "Rood (heren)": {
+    "rating9": 33.9,
+    "slope9": 119
+   },
+   "Oranje (heren)": {
+    "rating9": 31.8,
+    "slope9": 112
+   },
+   "Geel (dames)": {
+    "rating9": 39.5,
+    "slope9": 141
+   },
+   "Blauw (dames)": {
+    "rating9": 36.9,
+    "slope9": 132
+   },
+   "Rood (dames)": {
+    "rating9": 36.5,
+    "slope9": 131
+   },
+   "Oranje (dames)": {
+    "rating9": 33.8,
+    "slope9": 103
+   }
+  }
+ },
+ "het-rijk-van-sybrook-enschede-oost-noord": {
+  "source": "golfenophetrijk_nl/Sybrook_handicaptabel_heren/dames_noord_26052026_pdf (01-04-2026): 9 holes Noord; golfenophetrijk_nl/Sybrook_handicaptabel_heren/dames_oost_26052026_pdf (01-04-2026): 9 holes Oost; golfenophetrijk_nl/www_golfenophetrijk_nl_sybrook_baandetails_html.txt: 18-holes CR/SR en lengte heren/dames per combinatie;   (baandetails: Oost & Noord heren 5843 m 71,6/135, dames 5034 m 73,0/124)",
+  "date": "9-holes tabellen 01-04-2026; webpagina baandetails",
+  "tees": {
+   "Wit (heren)": {
+    "rating9": 36.9,
+    "slope9": 125,
+    "rating9Back": 36.6,
+    "slope9Back": 142
+   },
+   "Geel (heren)": {
+    "rating9": 35.6,
+    "slope9": 132,
+    "rating9Back": 36.1,
+    "slope9Back": 138
+   },
+   "Blauw (heren)": {
+    "rating9": 34.1,
+    "slope9": 114,
+    "rating9Back": 34.1,
+    "slope9Back": 125
+   },
+   "Rood (heren)": {
+    "rating9": 33.7,
+    "slope9": 110,
+    "rating9Back": 33.9,
+    "slope9Back": 119
+   },
+   "Oranje (heren)": {
+    "rating9": 31.9,
+    "slope9": 102,
+    "rating9Back": 31.8,
+    "slope9Back": 112
+   },
+   "Geel (dames)": {
+    "rating9": 38.9,
+    "slope9": 137,
+    "rating9Back": 39.5,
+    "slope9Back": 141
+   },
+   "Blauw (dames)": {
+    "rating9": 36.9,
+    "slope9": 118,
+    "rating9Back": 36.9,
+    "slope9Back": 132
+   },
+   "Rood (dames)": {
+    "rating9": 36.5,
+    "slope9": 117,
+    "rating9Back": 36.5,
+    "slope9Back": 131
+   },
+   "Oranje (dames)": {
+    "rating9": 33.6,
+    "slope9": 110,
+    "rating9Back": 33.8,
+    "slope9Back": 103
+   }
+  }
+ },
+ "het-rijk-van-sybrook-enschede-zuid-oost": {
+  "source": "golfenophetrijk_nl/Sybrook_handicaptabel_heren/dames_noord_26052026_pdf (01-04-2026): 9 holes Noord; golfenophetrijk_nl/Sybrook_handicaptabel_heren/dames_oost_26052026_pdf (01-04-2026): 9 holes Oost; golfenophetrijk_nl/www_golfenophetrijk_nl_sybrook_baandetails_html.txt: 18-holes CR/SR en lengte heren/dames per combinatie;   (baandetails: Zuid & Oost heren 5862 m 72,0/130, dames 4993 m 73,4/120)",
+  "date": "9-holes tabellen 01-04-2026; webpagina baandetails",
+  "tees": {
+   "Wit (heren)": {
+    "rating9Back": 36.9,
+    "slope9Back": 125
+   },
+   "Geel (heren)": {
+    "rating9Back": 35.6,
+    "slope9Back": 132
+   },
+   "Blauw (heren)": {
+    "rating9Back": 34.1,
+    "slope9Back": 114
+   },
+   "Rood (heren)": {
+    "rating9Back": 33.7,
+    "slope9Back": 110
+   },
+   "Oranje (heren)": {
+    "rating9Back": 31.9,
+    "slope9Back": 102
+   },
+   "Geel (dames)": {
+    "rating9Back": 38.9,
+    "slope9Back": 137
+   },
+   "Blauw (dames)": {
+    "rating9Back": 36.9,
+    "slope9Back": 118
+   },
+   "Rood (dames)": {
+    "rating9Back": 36.5,
+    "slope9Back": 117
+   },
+   "Oranje (dames)": {
+    "rating9Back": 33.6,
+    "slope9Back": 110
+   }
+  }
+ },
+ "golf4all-harderwijk": {
+  "source": "harderwold_nl/wp_content_uploads_2025_04_Plattegrond_Harderwold_pdf (afbeelding): scorecard holes 1-18 meters en par (1 tee); harderwold_nl/wp_content_uploads_2025_03_Harderwold_heren_samengevoegd_1_pdf: GEEL 18 holes h 57,0/88, d 60,1/95; 1e 9 h 28,6/89, d 30,2/95; 2e 9 h 28,4/88, d 29,9/96; par-3 baan oranje",
+  "date": "tabellen 17-10-2023; plattegrond 2025-04",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 28.6,
+    "slope9": 89,
+    "rating9Back": 28.4,
+    "slope9Back": 88
+   },
+   "Geel (dames)": {
+    "rating9": 30.2,
+    "slope9": 95,
+    "rating9Back": 29.9,
+    "slope9Back": 96
+   }
+  }
+ },
+ "golf4all-harderwijk-par-3-baan": {
+  "source": "harderwold_nl/Harderwold_heren_samengevoegd_1_pdf: 18 holes par-3 (oranje) h 47,0/57, d 48,1/61; 9 holes par-3 (oranje) h 23,5/57, d 24,1/61",
+  "date": "tabellen 17-10-2023",
+  "tees": {
+   "Oranje (heren)": {
+    "rating9": 23.5,
+    "slope9": 57
+   },
+   "Oranje (dames)": {
+    "rating9": 24.1,
+    "slope9": 61
+   }
+  }
+ },
+ "openbare-golfclub-dronten": {
+  "source": "openbaregolfclubdronten_nl/gallery_Baangids_202026_20v1_pdf (pagina 1, scorekaart): par, SI, meters geel/rood/oranje (5027/4429/3539); openbaregolfclubdronten_nl/gallery_Openbare_20GC_20Dronten_20Heren_pdf + Dames_pdf (13-11-2025): 18/1e 9/2e 9 CR/SR",
+  "date": "tabellen 13-11-2025; baangids 2026 v1",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 34.0,
+    "slope9": 122,
+    "rating9Back": 33.7,
+    "slope9Back": 115
+   },
+   "Rood (heren)": {
+    "rating9": 32.4,
+    "slope9": 107,
+    "rating9Back": 32.6,
+    "slope9Back": 109
+   },
+   "Oranje (heren)": {
+    "rating9": 31.2,
+    "slope9": 96,
+    "rating9Back": 30.9,
+    "slope9Back": 94
+   },
+   "Geel (dames)": {
+    "rating9": 36.7,
+    "slope9": 129,
+    "rating9Back": 36.1,
+    "slope9Back": 134
+   },
+   "Rood (dames)": {
+    "rating9": 34.5,
+    "slope9": 122,
+    "rating9Back": 34.6,
+    "slope9Back": 119
+   },
+   "Oranje (dames)": {
+    "rating9": 32.4,
+    "slope9": 100,
+    "rating9Back": 32.1,
+    "slope9Back": 101
+   }
+  }
+ },
+ "pitch-putt-heerde": {
+  "source": "pitchenputtheerde_nl/www_pitchenputtheerde_nl_golfsoorten_pitch_putt_halve_baan_.txt: tabel holes 01-18 met naam, S.I. en lengte",
+  "date": "webpagina (zonder datum)",
+  "tees": {
+   "Standaard (heren)": {
+    "lengths": [
+     50,
+     34,
+     45,
+     62,
+     90,
+     59,
+     47,
+     82,
+     42,
+     63,
+     48,
+     56,
+     36,
+     40,
+     54,
+     30,
+     66,
+     50
+    ]
+   },
+   "Standaard (dames)": {
+    "lengths": [
+     50,
+     34,
+     45,
+     62,
+     90,
+     59,
+     47,
+     82,
+     42,
+     63,
+     48,
+     56,
+     36,
+     40,
+     54,
+     30,
+     66,
+     50
+    ]
+   }
+  },
+  "si": [
+   15,
+   17,
+   16,
+   5,
+   1,
+   13,
+   6,
+   3,
+   4,
+   8,
+   7,
+   11,
+   18,
+   14,
+   12,
+   10,
+   9,
+   2
+  ]
+ },
+ "rosendaelsche-golfclub-arnhem": {
+  "source": "rosendaelsche_nl/wp_content_uploads_2026_04_rosendaelsche_golfclub_scorecard_2_scaled_jpg.jpg: par, SI, meters tees 65/60/55/51/46 (wit/geel/blauw/rood/oranje stip; 6451/6034/5515/5120/4624); rosendaelsche_nl/2021_06_22_RG_HC_tabellen_heren_22062021_pdf: tees 65/60/55/51/46, 18 holes + 1e/2e 9 holes; rosendaelsche_nl/2021_06_22_RG_HC_tabellen_dames_22062021_pdf: tees 60/55/51/46, 18 holes + 1e/2e ",
+  "date": "scorekaart 2026-04; tabellen 22-06-2021",
+  "tees": {
+   "Wit (heren)": {
+    "rating9": 37.5,
+    "slope9": 134,
+    "rating9Back": 37.1,
+    "slope9Back": 133
+   },
+   "Geel (heren)": {
+    "rating9": 36.2,
+    "slope9": 131,
+    "rating9Back": 36.5,
+    "slope9Back": 125
+   },
+   "Blauw (heren)": {
+    "rating9": 35.1,
+    "slope9": 124,
+    "rating9Back": 34.8,
+    "slope9Back": 125
+   },
+   "Rood (heren)": {
+    "rating9": 33.8,
+    "slope9": 117,
+    "rating9Back": 34.1,
+    "slope9Back": 112
+   },
+   "Oranje (heren)": {
+    "rating9": 32.6,
+    "slope9": 101,
+    "rating9Back": 33.1,
+    "slope9Back": 109
+   },
+   "Geel (dames)": {
+    "rating9": 39.5,
+    "slope9": 137,
+    "rating9Back": 39.2,
+    "slope9Back": 137
+   },
+   "Blauw (dames)": {
+    "rating9": 37.9,
+    "slope9": 129,
+    "rating9Back": 37.3,
+    "slope9Back": 130
+   },
+   "Rood (dames)": {
+    "rating9": 36.5,
+    "slope9": 123,
+    "rating9Back": 36.3,
+    "slope9Back": 130
+   },
+   "Oranje (dames)": {
+    "rating9": 34.6,
+    "slope9": 114,
+    "rating9Back": 35.5,
+    "slope9Back": 123
+   }
+  }
+ },
+ "drentsche-golf-country-club-zeijerveen-rood-geel": {
+  "source": "dgcc_nl_storage_media_library_2026_04_3825_GEEL_ROOD_WIT_ZOMER_2025_AZv4_pdf.txt: scorekaart lussen Rood/Geel/Wit, par, S.I. 1e/2e 9, meters tees 60/56/52/50; dgcc_nl_storage_media_library_2026_04_3790/3791/3792_Drentsche_18_holes_*_Heren_pdf.txt (gedrukt 21-06-2022): 18h CR/SR heren 63/60/56(57)/52/50; dgcc_nl_storage_media_library_2025_11_3639/3640/3641_Drentsche_18_holes_*_Dames_pdf.txt (21-06-",
+  "date": "tabellen gedrukt 21-06-2022 (upload 2025-11/2026-04); scorekaart zomer 2025 (upload 2026-04)",
+  "tees": {
+   "Zwart 63 (heren)": {
+    "rating9": 37.5,
+    "slope9": 137,
+    "rating9Back": 35.6,
+    "slope9Back": 135
+   },
+   "Wit 60 (heren)": {
+    "rating9": 36.6,
+    "slope9": 131,
+    "rating9Back": 34.7,
+    "slope9Back": 135
+   },
+   "Geel 56 (heren)": {
+    "rating9": 35.8,
+    "slope9": 130,
+    "rating9Back": 33.9,
+    "slope9Back": 121
+   },
+   "Blauw 52 (heren)": {
+    "rating9": 34.8,
+    "slope9": 121,
+    "rating9Back": 32.9,
+    "slope9Back": 115
+   },
+   "Rood 50 (heren)": {
+    "rating9": 34.3,
+    "slope9": 114,
+    "rating9Back": 32.5,
+    "slope9Back": 110
+   },
+   "Geel 56 (dames)": {
+    "rating9": 38.7,
+    "slope9": 141,
+    "rating9Back": 36.5,
+    "slope9Back": 133
+   },
+   "Blauw 52 (dames)": {
+    "rating9": 37.4,
+    "slope9": 141,
+    "rating9Back": 35.4,
+    "slope9Back": 128
+   },
+   "Rood 50 (dames)": {
+    "rating9": 37.0,
+    "slope9": 134,
+    "rating9Back": 34.9,
+    "slope9Back": 125
+   }
+  }
+ },
+ "drentsche-golf-country-club-zeijerveen-wit-rood": {
+  "source": "dgcc_nl_storage_media_library_2026_04_3825_GEEL_ROOD_WIT_ZOMER_2025_AZv4_pdf.txt: scorekaart lussen Rood/Geel/Wit, par, S.I. 1e/2e 9, meters tees 60/56/52/50; dgcc_nl_storage_media_library_2026_04_3790/3791/3792_Drentsche_18_holes_*_Heren_pdf.txt (gedrukt 21-06-2022): 18h CR/SR heren 63/60/56(57)/52/50; dgcc_nl_storage_media_library_2025_11_3639/3640/3641_Drentsche_18_holes_*_Dames_pdf.txt (21-06-",
+  "date": "idem DGCC",
+  "tees": {
+   "Zwart 63 (heren)": {
+    "rating9": 36.8,
+    "slope9": 156,
+    "rating9Back": 37.5,
+    "slope9Back": 137
+   },
+   "Wit 60 (heren)": {
+    "rating9": 36.4,
+    "slope9": 143,
+    "rating9Back": 36.6,
+    "slope9Back": 131
+   },
+   "Geel 57 (heren)": {
+    "rating9": 35.1,
+    "slope9": 138,
+    "rating9Back": 35.8,
+    "slope9Back": 130
+   },
+   "Blauw 52 (heren)": {
+    "rating9": 34.1,
+    "slope9": 127,
+    "rating9Back": 34.8,
+    "slope9Back": 121
+   },
+   "Rood 50 (heren)": {
+    "rating9": 33.8,
+    "slope9": 122,
+    "rating9Back": 34.3,
+    "slope9Back": 114
+   },
+   "Geel 56 (dames)": {
+    "rating9Back": 38.7,
+    "slope9Back": 141
+   },
+   "Blauw 52 (dames)": {
+    "rating9Back": 37.4,
+    "slope9Back": 141
+   },
+   "Rood 50 (dames)": {
+    "rating9Back": 37.0,
+    "slope9Back": 134
+   }
+  }
+ },
+ "drentsche-golf-country-club-zeijerveen-geel-wit": {
+  "source": "dgcc_nl_storage_media_library_2026_04_3825_GEEL_ROOD_WIT_ZOMER_2025_AZv4_pdf.txt: scorekaart lussen Rood/Geel/Wit, par, S.I. 1e/2e 9, meters tees 60/56/52/50; dgcc_nl_storage_media_library_2026_04_3790/3791/3792_Drentsche_18_holes_*_Heren_pdf.txt (gedrukt 21-06-2022): 18h CR/SR heren 63/60/56(57)/52/50; dgcc_nl_storage_media_library_2025_11_3639/3640/3641_Drentsche_18_holes_*_Dames_pdf.txt (21-06-",
+  "date": "idem DGCC",
+  "tees": {
+   "Zwart 63 (heren)": {
+    "rating9": 35.6,
+    "slope9": 135,
+    "rating9Back": 36.8,
+    "slope9Back": 156
+   },
+   "Wit 60 (heren)": {
+    "rating9": 34.7,
+    "slope9": 135,
+    "rating9Back": 36.4,
+    "slope9Back": 143
+   },
+   "Geel 56 (heren)": {
+    "rating9": 33.9,
+    "slope9": 121,
+    "rating9Back": 35.1,
+    "slope9Back": 138
+   },
+   "Blauw 52 (heren)": {
+    "rating9": 32.9,
+    "slope9": 115,
+    "rating9Back": 34.1,
+    "slope9Back": 127
+   },
+   "Rood 50 (heren)": {
+    "rating9": 32.5,
+    "slope9": 110,
+    "rating9Back": 33.8,
+    "slope9Back": 122
+   },
+   "Geel 56 (dames)": {
+    "rating9": 36.5,
+    "slope9": 133
+   },
+   "Blauw 52 (dames)": {
+    "rating9": 35.4,
+    "slope9": 128
+   },
+   "Rood 50 (dames)": {
+    "rating9": 34.9,
+    "slope9": 125
+   }
+  }
+ },
+ "de-compagnie-veendam": {
+  "source": "www_gcdecompagnie_nl_storage_media_library_2024_07_1429_Scorekaart_18H_2023_pdf.pdf (gerenderd p2): meters 5 tees, par, stroke, CR/SR-tabel; www_gcdecompagnie_nl_storage_media_library_2024_07_1406_Compagnie_WHS_tabel_Heren_pdf.txt: 18h/1e 9/2e 9 heren; www_gcdecompagnie_nl_storage_media_library_2024_07_1405_Compagnie_WHS_tabel_Dames_pdf.txt: 18h/1e 9/2e 9 dames",
+  "date": "WHS-tabellen 05-01-2021 (upload 2024-07); scorekaart 2023",
+  "tees": {
+   "Wit (heren)": {
+    "rating9": 37.1,
+    "slope9": 140,
+    "rating9Back": 37.2,
+    "slope9Back": 139
+   },
+   "Geel (heren)": {
+    "rating9": 36.5,
+    "slope9": 131,
+    "rating9Back": 36.2,
+    "slope9Back": 140
+   },
+   "Blauw (heren)": {
+    "rating9": 34.9,
+    "slope9": 126,
+    "rating9Back": 34.6,
+    "slope9Back": 125
+   },
+   "Rood (heren)": {
+    "rating9": 34.5,
+    "slope9": 117,
+    "rating9Back": 34.1,
+    "slope9Back": 114
+   },
+   "Oranje (heren)": {
+    "rating9": 32.7,
+    "slope9": 111,
+    "rating9Back": 31.8,
+    "slope9Back": 116
+   },
+   "Geel (dames)": {
+    "rating9": 39.4,
+    "slope9": 143,
+    "rating9Back": 39.3,
+    "slope9Back": 148
+   },
+   "Blauw (dames)": {
+    "rating9": 37.5,
+    "slope9": 135,
+    "rating9Back": 37.1,
+    "slope9Back": 135
+   },
+   "Rood (dames)": {
+    "rating9": 36.9,
+    "slope9": 133,
+    "rating9Back": 36.5,
+    "slope9Back": 138
+   },
+   "Oranje (dames)": {
+    "rating9": 34.7,
+    "slope9": 112,
+    "rating9Back": 34.4,
+    "slope9Back": 112
+   }
+  }
+ },
+ "de-compagnie-veendam-par-3-baan": {
+  "source": "www_gcdecompagnie_nl_storage_media_library_2024_07_1407_Compagnie_WHS_tabel_Par_3_Baan_Dames_en_Heren_pdf.txt: 18h Geel heren 47,4/64, Rood dames 48,3/65; 9h 23,7/64 en 24,2/65; www_gcdecompagnie_nl_storage_media_library_2024_07_1430_Scorekaart_PAR3_2023_pdf.pdf (gerenderd p2): Rood meters 116,113,80,84,99,100,67,41,70 (770/1540), stroke 5,9,3,13,11,1,7,17,15 / 6,10,4,14,12,2,8,18,16, CR/SR 48,3/6",
+  "date": "WHS-tabel 05-01-2021 (upload 2024-07); scorekaart 2023",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 23.7,
+    "slope9": 64,
+    "rating9Back": 23.7,
+    "slope9Back": 64
+   },
+   "Rood (dames)": {
+    "rating9": 24.2,
+    "slope9": 65,
+    "rating9Back": 24.2,
+    "slope9Back": 65
+   }
+  }
+ },
+ "de-voortwisch-winterswijk": {
+  "source": "www_golfclubwinterswijk_nl_wp_content_uploads_2026_08_Golfbaan_De_Voortwisch_scorekaart_juli_2026_002_pdf.txt: meters 5 tees, par, SI; www_golfclubwinterswijk_nl_wp_content_uploads_2026_07_Winterswijk_Heren_2026_pdf.txt: 18h/1e 9/2e 9 heren; www_golfclubwinterswijk_nl_wp_content_uploads_2026_07_Winterswijk_Dames_2026_pdf.txt: 18h/1e 9/2e 9 dames",
+  "date": "tabellen 16-07-2026; scorekaart juli 2026",
+  "tees": {
+   "Wit (heren)": {
+    "rating9": 35.5,
+    "slope9": 126,
+    "rating9Back": 36.1,
+    "slope9Back": 128
+   },
+   "Geel (heren)": {
+    "rating9": 34.9,
+    "slope9": 129,
+    "rating9Back": 35.3,
+    "slope9Back": 127
+   },
+   "Blauw (heren)": {
+    "rating9": 33.7,
+    "slope9": 115,
+    "rating9Back": 34.1,
+    "slope9Back": 109
+   },
+   "Rood (heren)": {
+    "rating9": 33.4,
+    "slope9": 109,
+    "rating9Back": 33.5,
+    "slope9Back": 110
+   },
+   "Oranje (heren)": {
+    "rating9": 31.5,
+    "slope9": 111,
+    "rating9Back": 31.6,
+    "slope9Back": 109
+   },
+   "Geel (dames)": {
+    "rating9": 37.8,
+    "slope9": 143,
+    "rating9Back": 38.5,
+    "slope9Back": 130
+   },
+   "Blauw (dames)": {
+    "rating9": 35.9,
+    "slope9": 129,
+    "rating9Back": 36.6,
+    "slope9Back": 130
+   },
+   "Rood (dames)": {
+    "rating9": 35.7,
+    "slope9": 126,
+    "rating9Back": 36.5,
+    "slope9Back": 116
+   },
+   "Oranje (dames)": {
+    "rating9": 33.2,
+    "slope9": 106,
+    "rating9Back": 33.4,
+    "slope9Back": 106
+   }
+  }
+ },
+ "golfparc-sandur-emmen": {
+  "source": "www_golfparcsandur_nl_wp_content_uploads_2024_09_HCP_tabellen_Sandur_Heren_9_en_18_holes_2024_pdf.txt: 18h + 9h heren; www_golfparcsandur_nl_wp_content_uploads_2024_09_HCP_tabellen_Sandur_Dames_9_en_18_holes_2024_pdf.txt: 18h + 9h dames; www_golfparcsandur_nl_2022_02_01_kom_genieten_van_onze_uitdagende_baan_.txt: par 68, totaal heren 4830 m, dames 4072 m",
+  "date": "tabellen 12-09-2024",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 33.1,
+    "slope9": 116,
+    "rating9Back": 33.1,
+    "slope9Back": 116
+   },
+   "Rood (heren)": {
+    "rating9": 31.8,
+    "slope9": 98,
+    "rating9Back": 31.8,
+    "slope9Back": 98
+   },
+   "Oranje (heren)": {
+    "rating9": 30.1,
+    "slope9": 100,
+    "rating9Back": 30.1,
+    "slope9Back": 100
+   },
+   "Geel (dames)": {
+    "rating9": 35.7,
+    "slope9": 131,
+    "rating9Back": 35.7,
+    "slope9Back": 131
+   },
+   "Rood (dames)": {
+    "rating9": 33.7,
+    "slope9": 108,
+    "rating9Back": 33.7,
+    "slope9Back": 108
+   },
+   "Oranje (dames)": {
+    "rating9": 31.7,
+    "slope9": 99,
+    "rating9Back": 31.7,
+    "slope9Back": 99
+   }
+  }
+ },
+ "golf-residentie-dronten": {
+  "source": "golfresidentie_nl_wp_content_uploads_2024_11_scorekaart_2021_website_18h_grd_pdf.txt: meters 5 tees, par, index, CR/SR (komt volledig overeen met app); golfresidentie_nl_nieuwe_handicaptabellen_en_scorekaarten_vanaf_28_oktober_.txt: SI hole 7 18->12, hole 5 12->18, nieuwe (lagere) ratings per 28-10-2026",
+  "date": "scorekaart/ratings jan 2021 (upload 2024-11); nieuwsbericht 25-10-2026: nieuwe SI/ratings per 28-10-2026",
+  "tees": {},
+  "si": [
+   8,
+   6,
+   16,
+   2,
+   18,
+   10,
+   12,
+   4,
+   14,
+   3,
+   9,
+   5,
+   15,
+   1,
+   17,
+   13,
+   11,
+   7
+  ]
+ },
+ "t-kruisselt-de-lutte": {
+  "source": "www_kruisselt_nl_wp_content_uploads_2026_08_GCC_t_Kruisselt_Dames_en_Heren_2026_pdf.txt: 18h Geel heren 47,0/68, Rood dames 48,5/69; 9h 23,5/68 en 24,3/69; www_kruisselt_nl_golf_.txt: 9 holes par 3, holes 55-110 m",
+  "date": "tabel 02-07-2026",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 23.5,
+    "slope9": 68,
+    "rating9Back": 23.5,
+    "slope9Back": 68
+   },
+   "Rood (dames)": {
+    "rating9": 24.3,
+    "slope9": 69,
+    "rating9Back": 24.3,
+    "slope9Back": 69
+   }
+  }
+ },
+ "kasteel-engelenburg-brummen": {
+  "source": "engelenburg_com_wp_content_uploads_2026_05_Scorekaart_Golf_Kasteel_Engelenburg_pdf.txt: par, SI, meters geel/blauw/rood/oranje (totaal 5852/5248/4978/4712); engelenburg_com_wp_content_uploads_2023_11_Playing_Handicap_Heren_9_18_holes_pdf.txt: CR/SR heren 18 en 9 holes; engelenburg_com_wp_content_uploads_2023_11_Playing_Handicap_Dames_9_18_holes_pdf.txt: CR/SR dames 18 en 9 holes",
+  "date": "scorekaart 2026-05; handicaptabellen 15-07-2021",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 36.0,
+    "slope9": 131,
+    "rating9Back": 36.0,
+    "slope9Back": 131
+   },
+   "Blauw (heren)": {
+    "rating9": 34.5,
+    "slope9": 123,
+    "rating9Back": 34.5,
+    "slope9Back": 123
+   },
+   "Rood (heren)": {
+    "rating9": 34.0,
+    "slope9": 112,
+    "rating9Back": 34.0,
+    "slope9Back": 112
+   },
+   "Oranje (heren)": {
+    "rating9": 33.4,
+    "slope9": 104,
+    "rating9Back": 33.4,
+    "slope9Back": 104
+   },
+   "Geel (dames)": {
+    "rating9": 39.2,
+    "slope9": 147,
+    "rating9Back": 39.2,
+    "slope9Back": 147
+   },
+   "Blauw (dames)": {
+    "rating9": 37.2,
+    "slope9": 132,
+    "rating9Back": 37.2,
+    "slope9Back": 132
+   },
+   "Rood (dames)": {
+    "rating9": 36.6,
+    "slope9": 127,
+    "rating9Back": 36.6,
+    "slope9Back": 127
+   },
+   "Oranje (dames)": {
+    "rating9": 35.9,
+    "slope9": 125,
+    "rating9Back": 35.9,
+    "slope9Back": 125
+   }
+  }
+ },
+ "golfclub-flevoland-groen": {
+  "source": "www_gcflevoland_nl_wp_content_uploads_2024_07_scorekaart_918_holes_2_jpg.jpg: Groene lus 9/18, par/index/meters geel+rood (5956/5046); www_gcflevoland_nl_wp_content_uploads_2024_08_scorekaart_2_zijden_scaled_jpg.jpg: zelfde waarden groen 1-9/10-18 + blauwe 12-holes lus; www_gcflevoland_nl_wp_content_uploads_2024_07_flevoland_12_9_18_holes_heren_merged_1_pdf.txt: CR/SR heren 18, 9 en 12 holes; www_",
+  "date": "handicaptabellen 13-06-2024; scorekaart 2024-07/2024-08",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 36.7,
+    "slope9": 137,
+    "rating9Back": 36.7,
+    "slope9Back": 137
+   },
+   "Rood (heren)": {
+    "rating9": 34.5,
+    "slope9": 116,
+    "rating9Back": 34.5,
+    "slope9Back": 116
+   },
+   "Geel (dames)": {
+    "rating9": 39.6,
+    "slope9": 148,
+    "rating9Back": 39.6,
+    "slope9Back": 148
+   },
+   "Rood (dames)": {
+    "rating9": 37.0,
+    "slope9": 131,
+    "rating9Back": 37.0,
+    "slope9Back": 131
+   }
+  }
+ },
+ "hattemse-golf-country-club": {
+  "source": "www_golfclub_hattem_nl_custom_hcpcalc_18holes_php.txt: par, S.I., meters geel/blauw/rood/oranje holes 1-18 (5268/4893/4501/4147); www_golfclub_hattem_nl_custom_hcpcalc_Hattemse_20heren_20whs_pdf.txt: CR/SR heren 18 en 9 holes; www_golfclub_hattem_nl_custom_hcpcalc_Hattemse_20dames_20whs_pdf.txt: CR/SR dames 18 en 9 holes",
+  "date": "handicaptabellen 07-09-2023",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 34.6,
+    "slope9": 131
+   },
+   "Blauw (heren)": {
+    "rating9": 33.4,
+    "slope9": 122
+   },
+   "Rood (heren)": {
+    "rating9": 32.3,
+    "slope9": 121
+   },
+   "Oranje (heren)": {
+    "rating9": 31.6,
+    "slope9": 112
+   },
+   "Geel (dames)": {
+    "rating9": 37.2,
+    "slope9": 138
+   },
+   "Blauw (dames)": {
+    "rating9": 36.1,
+    "slope9": 130
+   },
+   "Rood (dames)": {
+    "rating9": 34.8,
+    "slope9": 122
+   },
+   "Oranje (dames)": {
+    "rating9": 33.4,
+    "slope9": 120
+   }
+  }
+ },
+ "duurswold-steendam": {
+  "source": "golfclubduurswold_nl_wp_content_uploads_2025_01_Duurswold_WHS_tabel_Heren_18h_webp.webp: CR/SR heren 18 holes; golfclubduurswold_nl_wp_content_uploads_2025_01_Duurswold_WHS_tabel_Dames_18h_webp.webp: CR/SR dames 18 holes; golfclubduurswold_nl_wp_content_uploads_2025_01_Duurswold_WHS_tabel_Heren_9h_webp.webp: CR/SR heren 9 holes (PAR=37); golfclubduurswold_nl_wp_content_uploads_2025_01_Duurswold_WH",
+  "date": "handicaptabellen 06-01-2021 (upload 2025-01)",
+  "tees": {
+   "Wit (heren)": {
+    "rating9": 38.3,
+    "slope9": 148,
+    "rating9Back": 38.3,
+    "slope9Back": 148
+   },
+   "Geel (heren)": {
+    "rating9": 37.7,
+    "slope9": 139,
+    "rating9Back": 37.7,
+    "slope9Back": 139
+   },
+   "Blauw (heren)": {
+    "rating9": 35.8,
+    "slope9": 134,
+    "rating9Back": 35.8,
+    "slope9Back": 134
+   },
+   "Rood (heren)": {
+    "rating9": 34.8,
+    "slope9": 129,
+    "rating9Back": 34.8,
+    "slope9Back": 129
+   },
+   "Oranje (heren)": {
+    "rating9": 33.0,
+    "slope9": 115,
+    "rating9Back": 33.0,
+    "slope9Back": 115
+   },
+   "Geel (dames)": {
+    "rating9": 41.0,
+    "slope9": 156,
+    "rating9Back": 41.0,
+    "slope9Back": 156
+   },
+   "Blauw (dames)": {
+    "rating9": 39.3,
+    "slope9": 149,
+    "rating9Back": 39.3,
+    "slope9Back": 149
+   },
+   "Rood (dames)": {
+    "rating9": 38.2,
+    "slope9": 139,
+    "rating9Back": 38.2,
+    "slope9Back": 139
+   },
+   "Oranje (dames)": {
+    "rating9": 35.7,
+    "slope9": 131,
+    "rating9Back": 35.7,
+    "slope9Back": 131
+   }
+  }
+ },
+ "golftuin-zwolle-par-3-baan": {
+  "source": "www_golftuinzwolle_nl_wp_content_uploads_2025_07_Golftuin_Zwolle_Dames_Heren_pdf.txt: CR/SR 18 holes, 1e 9 en 2e 9 holes (Geel heren, Rood dames); www_golftuinzwolle_nl_golfbaan_.txt: 9 holes par 3 met 18 afslagen; holes 1-9 totaal 850 m, holes 10-18 totaal 947 m",
+  "date": "handicaptabel 26-06-2025",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 24.4,
+    "slope9": 63,
+    "rating9Back": 24.9,
+    "slope9Back": 67
+   },
+   "Rood (dames)": {
+    "rating9": 25.4,
+    "slope9": 68,
+    "rating9Back": 26.1,
+    "slope9Back": 71
+   }
+  }
+ },
+ "de-breuninkhof-bussloo": {
+  "source": "www_hollandschegolfclub_nl_wp_content_uploads_2026_02_Breuninkhof_Scorekaart_18holes_MRT_2026_1_pdf.pdf: par, SI (geel/rood en apart oranje), meters geel/rood/oranje, CR/SR (gerenderd); www_hollandschegolfclub_nl_wp_content_uploads_2026_02_Golfpark_De_Breuninkhof_handicaptabellen_pdf.txt: CR/SR 18 holes, 1e 9-holes, 2e 9-holes",
+  "date": "scorekaart MRT 2026; handicaptabellen 30-05-2022 (upload 2026-02)",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 36.5,
+    "slope9": 137,
+    "rating9Back": 36.9,
+    "slope9Back": 133
+   },
+   "Rood (heren)": {
+    "rating9": 34.5,
+    "slope9": 128,
+    "rating9Back": 35.0,
+    "slope9Back": 120
+   },
+   "Oranje (heren)": {
+    "rating9": 32.8,
+    "slope9": 118,
+    "rating9Back": 32.8,
+    "slope9Back": 114
+   },
+   "Geel (dames)": {
+    "rating9": 39.6,
+    "slope9": 150,
+    "rating9Back": 39.9,
+    "slope9Back": 151
+   },
+   "Rood (dames)": {
+    "rating9": 37.4,
+    "slope9": 135,
+    "rating9Back": 37.4,
+    "slope9Back": 139
+   },
+   "Oranje (dames)": {
+    "rating9": 35.3,
+    "slope9": 123,
+    "rating9Back": 35.4,
+    "slope9Back": 123
+   }
+  }
+ },
+ "semslanden-gasselte": {
+  "source": "semslanden_nl_wp_content_uploads_2026_04_Nieuwe_scorekaart_2026_pdf.pdf: Hondsrug 1-9 / Boerveen 1-9 par, SI, meters wit/geel/blauw/rood/oranje, CR/SR (gerenderd); semslanden_nl_wp_content_uploads_2023_08_Semslanden_WHS_tabel_Hondsrug_Boerveen_Heren_Aug_2022_pdf.pdf: CR/SR heren 18 holes, 9-holes Hondsrug, 9-holes Boerveen; semslanden_nl_wp_content_uploads_2023_08_Semslanden_WHS_tabel_Hondsrug_Boe",
+  "date": "scorekaart 2026-04; handicaptabellen 18-01-2021 (upload 2023-08)",
+  "tees": {
+   "Wit (heren)": {
+    "rating9": 37.3,
+    "slope9": 140,
+    "rating9Back": 36.4,
+    "slope9Back": 145
+   },
+   "Geel (heren)": {
+    "rating9": 36.0,
+    "slope9": 137,
+    "rating9Back": 35.8,
+    "slope9Back": 137
+   },
+   "Blauw (heren)": {
+    "rating9": 34.8,
+    "slope9": 126,
+    "rating9Back": 34.4,
+    "slope9Back": 124
+   },
+   "Rood (heren)": {
+    "rating9": 34.3,
+    "slope9": 113,
+    "rating9Back": 33.6,
+    "slope9Back": 112
+   },
+   "Oranje (heren)": {
+    "rating9": 33.3,
+    "slope9": 108,
+    "rating9Back": 32.5,
+    "slope9Back": 105
+   },
+   "Geel (dames)": {
+    "rating9": 39.4,
+    "slope9": 143,
+    "rating9Back": 39.1,
+    "slope9Back": 144
+   },
+   "Blauw (dames)": {
+    "rating9": 37.5,
+    "slope9": 143,
+    "rating9Back": 37.4,
+    "slope9Back": 139
+   },
+   "Rood (dames)": {
+    "rating9": 36.2,
+    "slope9": 131,
+    "rating9Back": 35.7,
+    "slope9Back": 137
+   },
+   "Oranje (dames)": {
+    "rating9": 35.2,
+    "slope9": 117,
+    "rating9Back": 34.0,
+    "slope9Back": 127
+   }
+  }
+ },
+ "semslanden-gasselte-drieveld-par-3": {
+  "source": "semslanden_nl_wp_content_uploads_2024_07_Par_3_scorekaarten_2021_pdf.txt: Witte lus 1-9 en Gele lus 10-18, par, meters, SI (769 + 616 = 1385); semslanden_nl_wp_content_uploads_2023_09_Semslanden_WHS_tabel_Drieveld_Par_3_Dames_en_Heren_002_pdf.txt: CR/SR 18 holes, 1e 9 en 2e 9 holes",
+  "date": "scorekaart 2021 (upload 2024-07); handicaptabel 18-01-2021",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 24.0,
+    "slope9": 65,
+    "rating9Back": 23.1,
+    "slope9Back": 56
+   },
+   "Rood (dames)": {
+    "rating9": 24.9,
+    "slope9": 69,
+    "rating9Back": 23.7,
+    "slope9Back": 59
+   }
+  }
+ },
+ "semslanden-gasselte-par-3-variant": {
+  "source": "semslanden_nl_wp_content_uploads_2024_09_Par_3_grote_baan_scorekaart_2024_pdf.pdf: Par 3 Hondsrug/Boerveen 2024, par, SI, meters geel/rood (2782/2066) (gerenderd); semslanden_nl_wp_content_uploads_2023_06_Semslanden_WHS_tabel_Par_3_Hondsrug_Boerveen_dames_en_Heren_pdf.txt: CR/SR 18 holes, 1e 9 en 2e 9 holes",
+  "date": "scorekaart 2024 (upload 2024-09); handicaptabel 18-01-2021",
+  "tees": {
+   "Geel (heren)": {
+    "rating9": 27.2,
+    "slope9": 86,
+    "rating9Back": 27.5,
+    "slope9Back": 83
+   },
+   "Rood (heren)": {
+    "rating9": 25.3,
+    "slope9": 72,
+    "rating9Back": 25.3,
+    "slope9Back": 72
+   },
+   "Geel (dames)": {
+    "rating9": 28.5,
+    "slope9": 92,
+    "rating9Back": 28.9,
+    "slope9Back": 94
+   },
+   "Rood (dames)": {
+    "rating9": 26.3,
+    "slope9": 73,
+    "rating9Back": 26.3,
+    "slope9Back": 78
+   }
+  }
+ }
+}
