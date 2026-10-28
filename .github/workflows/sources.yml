@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: 22
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils >/dev/null
+      - name: Bereikbaarheid
+        continue-on-error: true
+        run: grep -v '^#' tools/sources.txt | while read -r u; do [ -n "$u" ] && curl -sS -o /dev/null -m 30 -w "%{http_code} %{remote_ip} $u\n" "$u" || true; done
       - name: Ophalen
         run: node tools/fetch-sources.mjs tools/sources.txt /tmp/bronnen
       - name: Op branch 'bronnen' zetten

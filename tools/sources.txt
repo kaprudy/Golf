@@ -1,7 +1,5 @@
 # Websites van golfclubs voor .github/workflows/sources.yml (één per regel)
-# Controle Zwolle en Twentsche: scorekaart (afbeelding) en handicaptabellen
+# Controle Zwolle: scorekaart en handicaptabellen
 https://www.golfclubzwolle.nl/playinghandicap/
 https://www.golfclubzwolle.nl/alle-18-holes/
 https://www.golfclubzwolle.nl/baaninformatie/
-https://twentschegolfclub.nl/golfbaan/baaninformatie/scorekaart
-https://twentschegolfclub.nl/golfbaan/baaninformatie/handicaptabellen

@@ -17,8 +17,22 @@ const text = (html) => html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(
   .replace(/<(br|\/p|\/tr|\/li|\/h\d|\/div)>/gi, '\n').replace(/<\/t[dh]>/gi, ' | ').replace(/<[^>]+>/g, ' ')
   .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&#\d+;/g, ' ').replace(/[ \t]+/g, ' ').replace(/\n\s*\n+/g, '\n').trim();
 
+// Sommige clubsites weigeren de verbinding van Node (bijv. door hun TLS-instellingen); dan curl.
+function curlGet(url) {
+  const buf = execFileSync('curl', ['-sSL', '--max-time', '30', '-A', UA['User-Agent'], '-w', '\n%{content_type}\n%{url_effective}', url], { maxBuffer: 40e6 });
+  const text = buf.toString('latin1');
+  const end = text.lastIndexOf('\n', text.lastIndexOf('\n') - 1);
+  const [type, finalUrl] = text.slice(end + 1).split('\n');
+  return { type, buf: buf.subarray(0, end), finalUrl };
+}
+
 async function get(url) {
-  const res = await fetch(url, { headers: UA, redirect: 'follow', signal: AbortSignal.timeout(25000) });
+  let res;
+  try {
+    res = await fetch(url, { headers: UA, redirect: 'follow', signal: AbortSignal.timeout(25000) });
+  } catch {
+    return curlGet(url);
+  }
   if (!res.ok) throw new Error(`${res.status}`);
   const size = Number(res.headers.get('content-length') ?? 0);
   if (size > MAX_BYTES) { res.body?.cancel(); throw new Error(`te groot (${Math.round(size / 1e6)} MB)`); }
