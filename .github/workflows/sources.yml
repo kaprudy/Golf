@@ -4,6 +4,8 @@ name: Bronnen ophalen
 # branch 'bronnen', zodat de scorekaarten uit de bron gelezen kunnen worden.
 on:
   workflow_dispatch:
+    inputs:
+      max_mb: { description: 'Grootste bestand in MB', required: false, default: '15' }
 
 permissions:
   contents: write
@@ -21,6 +23,8 @@ jobs:
         continue-on-error: true
         run: grep -v '^#' tools/sources.txt | while read -r u; do [ -n "$u" ] && curl -sS -o /dev/null -m 30 -w "%{http_code} %{remote_ip} $u\n" "$u" || true; done
       - name: Ophalen
+        env:
+          MAX_MB: ${{ inputs.max_mb }}
         run: node tools/fetch-sources.mjs tools/sources.txt /tmp/bronnen
       - name: Op branch 'bronnen' zetten
         run: |
