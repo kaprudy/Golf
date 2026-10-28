@@ -772,11 +772,13 @@ function startPrompt() {
   }
 }
 
+// De par 3-baan heeft 9 holes; 18 holes is twee keer rond.
+const startOptions = (c) => (c.holeCount === 9 ? [['front', 'Hole 1', '9 holes']]
+  : c.id === 'par3' ? [['front', '9 holes', 'één keer rond'], ['all', '18 holes', 'twee keer rond']]
+  : START_OPTIONS_18);
+
 function startButtons(c) {
-  // De par 3-baan heeft 9 holes; 18 holes is twee keer rond.
-  const options = c.holeCount === 9 ? [['front', 'Hole 1', '9 holes']]
-    : c.id === 'par3' ? [['front', '9 holes', 'één keer rond'], ['all', '18 holes', 'twee keer rond']]
-    : START_OPTIONS_18;
+  const options = startOptions(c);
   return `<div class="start-grid">${options.map(([choice, first, len]) => `<button data-action="start-round" data-course="${esc(c.id)}" data-holes="${choice}">
     <b>${first}</b><span>${len}</span></button>`).join('')}</div>`;
 }
@@ -812,7 +814,7 @@ async function locateForPicker(ask = false) {
     if (!pickerPos && ask) toast('Je locatie is niet beschikbaar. Kies de baan zelf.');
   }
   // Nog steeds de baankeuze in beeld? Dan opnieuw tonen met de suggestie bovenaan.
-  if (pickerPos && !$('#after-round').hidden && $('#after-round-body [data-action=start-round]')) showCoursePicker();
+  if (pickerPos && !$('#after-round').hidden && $('#after-round-body [data-action=pick-course]')) showCoursePicker();
 }
 
 function showCoursePicker() {
@@ -827,17 +829,33 @@ function showCoursePicker() {
   // Andere banen: dichtstbijzijnde eerst (vanaf waar je bent, anders vanaf de thuisbaan).
   const from = pickerPos ?? locOf(home);
   const others = state.courses.filter((c) => !club.includes(c) && !atClub.includes(c)).sort((a, b) => km(a, from) - km(b, from));
-  const heading = (c, dist) => `<h3 class="start-course">${c === home ? '★ ' : ''}${esc(c.name)}${dist ? ` <span class="muted small">${dist}</span>` : ''}</h3>${startButtons(c)}`;
+  // Stap 1: alleen de banen. De starthole kies je daarna (stap 2, showStartOptions).
+  const holesText = (c) => (/holes/.test(c.name) ? '' : c.id === 'par3' ? '9 holes' : `${c.holeCount} holes`);
+  const heading = (c, dist) => `<button class="course-row" data-action="pick-course" data-course="${esc(c.id)}">
+    <span class="course-row-name">${c === home ? '★ ' : ''}${esc(c.name)}</span>
+    <span class="course-row-meta">${[holesText(c), dist].filter(Boolean).join(' · ')}</span></button>`;
   const kmText = (c) => (Number.isFinite(km(c, from)) ? `${Math.round(km(c, from))} km` : '');
   const locate = !pickerPos && 'geolocation' in navigator
     ? '<button class="link small" data-action="picker-locate">📍 Zoek baan met GPS</button>' : '';
   showSheet(`<h2>Waar speel je vandaag?</h2>
     ${atClub.length ? `<div class="start-here"><p class="small"><b>📍 Je bent bij ${esc(atClub[0].name.replace(/\s*\(.*\)$/, ''))}</b></p>
       ${atClub.map((c) => heading(c)).join('')}</div>` : locate}
-    ${club.map((c) => heading(c, atClub.length ? kmText(c) : '')).join('')}
-    ${others.length ? `<details class="start-others"><summary>Andere baan</summary>
-      ${others.map((c) => heading(c, kmText(c))).join('')}</details>` : ''}`, 'Baan kiezen');
+    <div class="course-list">${club.map((c) => heading(c, atClub.length ? kmText(c) : '')).join('')}</div>
+    ${others.length ? `<details class="start-others"><summary>Andere banen (${others.length})</summary>
+      <div class="course-list">${others.map((c) => heading(c, kmText(c))).join('')}</div></details>` : ''}`, 'Baan kiezen');
   if (!pickerPos) locateForPicker();
+}
+
+// Stap 2: waar begin je op deze baan? Bij maar één mogelijkheid meteen starten.
+function showStartOptions(courseId) {
+  const c = state.courses.find((x) => x.id === courseId);
+  if (!c) return;
+  const options = startOptions(c);
+  if (options.length === 1) { startRound(c.id, options[0][0]); return; }
+  showSheet(`<button class="link small" data-action="picker-back">‹ Andere baan</button>
+    <h2>${esc(c.name)}</h2>
+    <p class="small muted">Waar begin je?</p>
+    ${startButtons(c)}`, 'Starthole kiezen');
 }
 
 function showResumeQuestion() {
@@ -1612,6 +1630,8 @@ document.addEventListener('click', (e) => {
     case 'speech-install': installLocalSpeech(); break;
     case 'picker-locate': locateForPicker(true); break;
     case 'start-round': startRound(btn.dataset.course, btn.dataset.holes); break;
+    case 'pick-course': showStartOptions(btn.dataset.course); break;
+    case 'picker-back': showCoursePicker(); break;
     case 'resume-new': showCoursePicker(); break;
     case 'resume-continue': state.round.lastActivity = new Date().toISOString(); save(); closeAfterRound(); break;
     case 'register-never': setMeta({ never: true }); closeAfterRound(); break;
