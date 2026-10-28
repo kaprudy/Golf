@@ -28,3 +28,16 @@ python tools/banen/capture_scorecards.py     # screenshot + PDF van elke scoreka
 ```
 
 Screenshots komen in `<slug>/screenshots/` en blijven buiten git (zie `.gitignore`).
+
+## In de app
+
+```
+node tools/banen/to-courses.mjs            # zet de banen in js/courses.js (tussen <banen-regio>)
+node tools/banen/to-courses.mjs --check    # alleen tonen wat er zou komen
+```
+
+Elke lus (of 18-holes combinatie) wordt een baan in `DEFAULT_COURSES`. Banen die al met de hand in
+`js/courses.js` staan (Hooge Graven, De Hoek, Gelpenberg, Driene, Lochem, …) worden overgeslagen; zie
+`SKIP`, `REPLACE` en `LABEL` in het script. Niet overgenomen: lussen van 12 holes (de app kent 9 of 18),
+banen zonder holegegevens die geen par 3-baan zijn, en tees waarvan de par afwijkt van die van de baan.
+Verhoog na een wijziging ook `CACHE` in `sw.js`.
