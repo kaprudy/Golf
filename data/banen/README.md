@@ -40,4 +40,4 @@ Elke lus (of 18-holes combinatie) wordt een baan in `DEFAULT_COURSES`. Banen die
 `js/courses.js` staan (Hooge Graven, De Hoek, Gelpenberg, Driene, Lochem, …) worden overgeslagen; zie
 `SKIP`, `REPLACE` en `LABEL` in het script. Niet overgenomen: lussen van 12 holes (de app kent 9 of 18),
 banen zonder holegegevens die geen par 3-baan zijn, en tees waarvan de par afwijkt van die van de baan.
-Verhoog na een wijziging ook `CACHE` in `sw.js`.
+De cacheversie in `sw.js` hoeft niet meer met de hand omhoog: de deploy zet er de commit in.
