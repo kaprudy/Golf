@@ -1,26 +1,7 @@
 # Websites van golfclubs voor .github/workflows/sources.yml (één per regel)
-https://www.golftuinzwolle.nl/
-https://www.dutchgolf.nl/
-https://www.golfclub-hattem.nl/
-https://www.martensplek.nl/
-https://golfpleziertwente.nl/
-https://www.golfclubhavelte.nl/
-https://www.golfbaandelagemors.nl/
-https://golfclubzuiddrenthe.nl/
-https://www.golfclubdriene.nl/
-https://www.golfparcsandur.nl/
-https://debreuninkhof.nl/
-https://www.lochemsegolfclub.nl/
-https://www.spielehof.nl/
-https://www.kruisselt.nl/
-https://www.pwgolf.nl/
-https://www.golfenophetrijk.nl/sybrook.html
-https://www.golfenophetrijk.nl/nunspeet.html
-https://golfparkdehildenberg.nl/
-https://www.twentsegolfpark.nl/
-https://www.descherpenbergh.nl/
+# Controle Zwolle en Twentsche: scorekaart (afbeelding) en handicaptabellen
+https://www.golfclubzwolle.nl/playinghandicap/
+https://www.golfclubzwolle.nl/alle-18-holes/
 https://www.golfclubzwolle.nl/baaninformatie/
 https://twentschegolfclub.nl/golfbaan/baaninformatie/scorekaart
-https://dgcdegelpenberg.nl/de-baan/scorekaarten/
-https://dgcdegelpenberg.nl/de-baan/handicaptabellen/
-https://www.golfclubdekoepel.nl/golfbaan/18-holes/
+https://twentschegolfclub.nl/golfbaan/baaninformatie/handicaptabellen
