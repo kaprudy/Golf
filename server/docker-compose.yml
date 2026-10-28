@@ -15,7 +15,8 @@ services:
     environment:
       DB_PATH: /data/golf.db
       ALLOWED_ORIGINS: https://kaprudy.github.io,https://golf.kapital.nl
-      ADMIN_EMAILS: ${ADMIN_EMAILS:-}   # beheerders voor /admin.html; zet dit in server/.env
+      ADMIN_USER_IDS: ${ADMIN_USER_IDS:-}   # beheerders voor /admin.html (account-id's); zet dit in server/.env
+      ADMIN_EMAILS: ${ADMIN_EMAILS:-}       # vervallen; alleen voor een waarschuwing in het logboek
     volumes:
       - golf-data:/data
     ports:

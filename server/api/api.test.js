@@ -156,7 +156,7 @@ test('bestaande database krijgt de nieuwe kolom', async () => {
 });
 
 test('beheeroverzicht alleen voor beheerders', async () => {
-  const adminServer = createServer(openDatabase(':memory:'), { adminEmails: ['baas@example.nl'] });
+  const adminServer = createServer(openDatabase(':memory:'), { adminIds: [1] });
   await new Promise((r) => adminServer.listen(0, r));
   const url = `http://127.0.0.1:${adminServer.address().port}`;
   const post = async (path, body, token) => (await fetch(url + path, {
@@ -239,4 +239,49 @@ test('opslaan alleen als de cloudversie niet tussendoor gewijzigd is', async () 
   assert.deepEqual([stale.status, stale.body.updated_at], [409, first.body.updated_at]);
   assert.equal((await call('PUT', '/api/state', { token, body: { data: { v: 3 }, baseUpdatedAt: first.body.updated_at } })).status, 200);
   assert.deepEqual((await call('GET', '/api/state', { token })).body.data, { v: 3 });
+});
+
+test('beheerder op account-id, niet op e-mailadres', async () => {
+  // Account 2 registreert zich met het adres van de beheerder van een andere installatie: geen toegang.
+  const srv = createServer(openDatabase(':memory:'), { adminIds: [1] });
+  await new Promise((r) => srv.listen(0, r));
+  const url = `http://127.0.0.1:${srv.address().port}`;
+  const register = async (email) => (await (await fetch(`${url}/api/register`, { method: 'POST', body: JSON.stringify({ email, password: 'wachtwoord1' }) })).json()).token;
+  const overview = (token) => fetch(`${url}/api/admin/overview`, { headers: { Authorization: `Bearer ${token}` } });
+  try {
+    const first = await register('eerste@example.nl');
+    const imposter = await register('rudy@kapital.nl');
+    assert.equal((await overview(first)).status, 200);
+    assert.equal((await overview(imposter)).status, 403);
+  } finally {
+    srv.close();
+  }
+});
+
+test('grenzen: nieuwe telefoons per adres, voorbeelden en gebeurtenissen per account', async () => {
+  const srv = createServer(openDatabase(':memory:'), { limits: { newDevicesPerDay: 2, samplesPerUser: 3, eventsPerUser: 2 } });
+  await new Promise((r) => srv.listen(0, r));
+  const url = `http://127.0.0.1:${srv.address().port}`;
+  const post = (path, body, token) => fetch(url + path, {
+    method: 'POST', headers: { 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}) }, body: JSON.stringify(body),
+  });
+  try {
+    const a = await post('/api/device', { secret: 'a'.repeat(40) });
+    assert.equal(a.status, 201);
+    assert.equal((await post('/api/device', { secret: 'b'.repeat(40) })).status, 201);
+    assert.equal((await post('/api/device', { secret: 'c'.repeat(40) })).status, 429); // derde nieuwe vanaf dit adres
+    assert.equal((await post('/api/device', { secret: 'a'.repeat(40) })).status, 200); // bestaande telefoon mag altijd
+    const { token } = await a.json();
+
+    const sample = { v: 1, hole: 1, par: 4, texts: ['s1 vijf'], final: { s1: 5 } };
+    assert.equal((await (await post('/api/samples', { samples: [sample, sample] }, token)).json()).stored, 2);
+    assert.equal((await (await post('/api/samples', { samples: [sample, sample] }, token)).json()).stored, 1);
+    assert.equal((await (await post('/api/samples', { samples: [sample] }, token)).json()).stored, 0);
+
+    const open = { kind: 'open' };
+    assert.equal((await (await post('/api/events', { events: [open, open, open] }, token)).json()).stored, 2);
+    assert.equal((await (await post('/api/events', { events: [open] }, token)).json()).stored, 0);
+  } finally {
+    srv.close();
+  }
 });
