@@ -16,6 +16,7 @@
 //   GET    /api/vocab                           -> geleerde woorden (voor iedereen, zonder inloggen)
 //   POST   /api/events     {events:[...]}      -> {stored}   gebruik: app geopend, ronde gestart/opgeslagen
 //   GET    /api/osm/course?name=…|lat=…&lon=…   -> holes (tee, green, par) uit OpenStreetMap
+//   POST   /api/admin/perms {userId, perm, on}   -> rechten toekennen (bijv. 'gps-mark')
 //   GET    /api/admin/overview                  -> overzicht voor beheerders (ADMIN_EMAILS)
 //   GET    /api/health                          -> {ok:true}
 
@@ -83,6 +84,10 @@ export function openDatabase(path = DB_PATH) {
     db.exec('ALTER TABLE users ADD COLUMN device_hash TEXT');
   }
   db.exec('CREATE UNIQUE INDEX IF NOT EXISTS users_device ON users(device_hash)');
+  // Extra rechten per account (komma-gescheiden), bijv. 'gps-mark' = tees en greens vastleggen.
+  if (!db.prepare('PRAGMA table_info(users)').all().some((c) => c.name === 'perms')) {
+    db.exec("ALTER TABLE users ADD COLUMN perms TEXT NOT NULL DEFAULT ''");
+  }
   return db;
 }
 
@@ -168,12 +173,17 @@ const validEmail = (e) => typeof e === 'string' && e.length <= 254 && /^[^\s@]+@
 // Anonieme accounts krijgen intern een e-mailveld zonder @ (kan dus nooit inloggen met een wachtwoord).
 const isAnonymous = (u) => !u.email.includes('@');
 const publicUser = (u) => ({ id: u.id, email: isAnonymous(u) ? null : u.email, anonymous: isAnonymous(u) });
+const PERMS = new Set(['gps-mark']);
+const permsOf = (u) => String(u.perms ?? '').split(',').filter((p) => PERMS.has(p));
 const validSecret = (s) => typeof s === 'string' && s.length >= 32 && s.length <= 200;
 
 // ---------- Server ----------
 
 export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse } = {}) {
   const osmCache = new Map(); // query -> {at, value}
+  const isAdmin = (u) => adminEmails.includes(u.email);
+  // Wat de app over de gebruiker weet: beheerders mogen alles.
+  const userView = (u) => ({ ...publicUser(u), admin: isAdmin(u), perms: isAdmin(u) ? [...PERMS] : permsOf(u) });
   const q = {
     userByEmail: db.prepare('SELECT * FROM users WHERE email = ?'),
     insertUser: db.prepare('INSERT INTO users (email, pw_hash, created_at) VALUES (?, ?, ?)'),
@@ -217,7 +227,10 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
   function courseGeo() {
     const points = new Map(); // "baan|hole|soort" -> [{lat, lon}]
     const names = {};
-    for (const { data } of db.prepare('SELECT data FROM golf_state').all()) {
+    const mappers = new Set(db.prepare('SELECT id, email, perms FROM users').all()
+      .filter((u) => isAdmin(u) || permsOf(u).includes('gps-mark')).map((u) => u.id));
+    for (const { user_id: uid, data } of db.prepare('SELECT user_id, data FROM golf_state').all()) {
+      if (!mappers.has(uid)) continue; // alleen punten van wie ze mag vastleggen
       let state;
       try { state = JSON.parse(data); } catch { continue; }
       for (const c of state.courses ?? []) {
@@ -272,13 +285,14 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
     const registrations = db.prepare(`SELECT substr(created_at, 1, 10) day,
         SUM(CASE WHEN ${anon} THEN 1 ELSE 0 END) anonymous, SUM(CASE WHEN ${anon} THEN 0 ELSE 1 END) email
         FROM users WHERE created_at > ? GROUP BY day ORDER BY day`).all(ago(30));
-    const recentUsers = db.prepare(`SELECT u.id, u.email, u.created_at, g.updated_at last_sync, g.data,
+    const recentUsers = db.prepare(`SELECT u.id, u.email, u.perms, u.created_at, g.updated_at last_sync, g.data,
         (SELECT COUNT(*) FROM speech_samples s WHERE s.user_id = u.id) samples
         FROM users u LEFT JOIN golf_state g ON g.user_id = u.id ORDER BY u.id DESC LIMIT 100`).all().map((r) => {
       let rounds = null;
       let players = null;
       try { const d = JSON.parse(r.data); rounds = d.history?.length ?? 0; players = d.players?.length ?? 0; } catch { /* nog niets opgeslagen */ }
-      return { id: r.id, email: r.email.includes('@') ? r.email : null, createdAt: r.created_at, lastSync: r.last_sync, rounds, players, samples: r.samples };
+      return { id: r.id, email: r.email.includes('@') ? r.email : null, createdAt: r.created_at, lastSync: r.last_sync, rounds, players, samples: r.samples,
+        admin: isAdmin(r), perms: permsOf(r) };
     });
 
     const rows = q.allSamples.all().map((r) => {
@@ -341,7 +355,7 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
     const token = crypto.randomBytes(32).toString('base64url');
     const expires = new Date(Date.now() + TOKEN_DAYS * 864e5).toISOString();
     q.insertSession.run(sha256(token), user.id, expires);
-    return { token, user: publicUser(user) };
+    return { token, user: userView(user) };
   }
 
   function authUser(req) {
@@ -409,12 +423,23 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
       if (q.userByEmail.get(email)) throw new HttpError(409, 'Er bestaat al een account met dit e-mailadres');
       // Vanaf nu alleen nog met e-mail en wachtwoord; de apparaatcode geeft geen toegang meer.
       q.upgradeUser.run(email, hashPassword(password), user.id);
-      return send(res, 200, { user: publicUser(q.userById.get(user.id)) });
+      return send(res, 200, { user: userView(q.userById.get(user.id)) });
     }
 
-    if (key === 'GET /api/me') return send(res, 200, { user: publicUser(user) });
+    if (key === 'GET /api/me') return send(res, 200, { user: userView(user) });
+    if (key === 'POST /api/admin/perms') {
+      if (!isAdmin(user)) throw new HttpError(403, 'Alleen voor beheerders');
+      const { userId, perm, on } = await readJson(req);
+      const target = q.userById.get(Number(userId));
+      if (!target) throw new HttpError(404, 'Account niet gevonden');
+      if (!PERMS.has(perm)) throw new HttpError(400, 'Onbekend recht');
+      const next = new Set(permsOf(target));
+      if (on) next.add(perm); else next.delete(perm);
+      db.prepare('UPDATE users SET perms = ? WHERE id = ?').run([...next].join(','), target.id);
+      return send(res, 200, { user: userView(q.userById.get(target.id)) });
+    }
     if (key === 'GET /api/admin/overview') {
-      if (!adminEmails.includes(user.email)) throw new HttpError(403, 'Alleen voor beheerders');
+      if (!isAdmin(user)) throw new HttpError(403, 'Alleen voor beheerders');
       return send(res, 200, adminOverview());
     }
     if (key === 'POST /api/logout') {

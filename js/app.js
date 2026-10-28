@@ -85,7 +85,8 @@ function load() {
     if (saved) return migrate(saved);
   } catch { /* lege of kapotte opslag: opnieuw beginnen */ }
   return {
-    players: [{ name: 'Rudy', index: null, tee: 'geel' }, { name: 'Peter', index: null, tee: 'geel' }],
+    players: [], // wie er meespelen kies je bij het starten van een ronde
+    playerPool: [],
     courses: structuredClone(DEFAULT_COURSES),
     homeCourseId: 'hooge-graven',
     round: { ...newRound('front', 'hooge-graven'), startedAt: null }, // eerst baan kiezen
@@ -98,6 +99,8 @@ function load() {
 let state = load();
 state.sync ??= { localChangedAt: null, syncedAt: null };
 state.learning ??= { consent: null };
+// Spelers van eerdere rondes die nu niet meespelen (met hun handicap, tee en bijnamen).
+state.playerPool = (state.playerPool ?? []).filter((p) => !state.players.some((x) => x.name === p.name));
 
 // Lokaal opslaan; een wijziging door de gebruiker wordt daarna ook naar de cloud gestuurd.
 function save({ fromCloud: fromRemote = false } = {}) {
@@ -208,10 +211,11 @@ function renderGps() {
   el.innerHTML = `
     ${dist != null
       ? `<p class="gps-dist"><span class="gps-num">${dist}</span> m <span class="muted">tot de green</span></p>`
-      : '<p class="gps-msg">Leg de green van deze hole vast om de afstand te zien.</p>'}
+      : `<p class="gps-msg">${canMark() ? 'Leg de green van deze hole vast om de afstand te zien.' : 'Voor deze hole is de afstand tot de green nog niet bekend.'}</p>`}
     <p class="muted small gps-acc">GPS ±${Math.round(gps.pos.accuracy)} m</p>
     ${gps.suggest ? `<button class="link" data-action="gps-go" data-hole="${gps.suggest}">Je staat op de tee van hole ${gps.suggest}: ga naar hole ${gps.suggest}</button>` : ''}
-    ${points.tee && points.green && !gps.editing
+    ${!canMark() ? ''
+      : points.tee && points.green && !gps.editing
       ? '<button class="link small" data-action="gps-edit">Tee of green opnieuw vastleggen</button>'
       : `<div class="gps-actions">
       <button class="chip-btn" data-action="gps-mark" data-point="tee">${points.tee ? 'Tee opnieuw vastleggen' : 'Ik sta op de tee'}</button>
@@ -219,7 +223,12 @@ function renderGps() {
     </div>`}`;
 }
 
+// Tees en greens vastleggen mag alleen wie dat recht heeft (beheerder, of toegewezen in het
+// beheeroverzicht). De afstanden zelf zijn voor iedereen.
+const canMark = () => Boolean(cloud.user?.perms?.includes('gps-mark'));
+
 function markPoint(point) {
+  if (!canMark()) return;
   const h = state.round.currentHole;
   const name = point === 'tee' ? 'de tee' : 'het midden van de green';
   if (!gps.pos) { toast('Nog geen GPS-positie. Wacht even.'); return; }
@@ -249,8 +258,11 @@ function renderGpsSettings() {
     <label class="check"><input type="checkbox" id="gps-on" ${gpsOn() ? 'checked' : ''}> GPS gebruiken tijdens de ronde</label>
     <label class="check"><input type="checkbox" id="gps-auto" ${gpsAuto() ? 'checked' : ''} ${gpsOn() ? '' : 'disabled'}> Automatisch naar de hole van de tee waar je staat</label>
     <p class="small">Bekend voor ${esc(course().name)}: <b>${p.tees}</b> van ${p.total} tees, <b>${p.greens}</b> van ${p.total} greens${fromOsm ? ` (uit OpenStreetMap © OpenStreetMap-bijdragers, aangevuld met ${own.tees + own.greens} eigen punten)` : ''}.</p>
-    <p class="small muted">Leg tijdens een ronde per hole één keer de tee en het midden van de green vast (knoppen bij het holenummer). Daarna ziet de app de afstand tot de green en op welke tee je staat. Je locatie blijft op je telefoon; alleen deze punten worden bij de baan bewaard. GPS werkt alleen met de app open en kost wat extra batterij.</p>
-    ${own.tees + own.greens ? `<button class="link small danger" data-action="gps-clear">Eigen GPS-punten van deze baan wissen</button>` : ''}`;
+    <p class="small muted">${canMark()
+      ? 'Je mag tees en greens vastleggen: doe dat tijdens een ronde per hole één keer (knoppen bij het holenummer). Daarna zien alle spelers de afstand tot de green en op welke tee ze staan.'
+      : 'De app toont de afstand tot de green en springt naar de juiste hole als je op de tee staat, op de holes waarvan de tees en greens bekend zijn.'}
+    Je locatie blijft op je telefoon. GPS werkt alleen met de app open en kost wat extra batterij.</p>
+    ${canMark() && own.tees + own.greens ? `<button class="link small danger" data-action="gps-clear">Eigen GPS-punten van deze baan wissen</button>` : ''}`;
 }
 
 // ---------- Buggy-scherm (Bluetooth) ----------
@@ -846,12 +858,74 @@ function showCoursePicker() {
   if (!pickerPos) locateForPicker();
 }
 
-// Stap 2: waar begin je op deze baan? Bij maar één mogelijkheid meteen starten.
+// Stap 3: wie spelen er mee? Spelers van eerdere rondes staan klaar om aan te vinken.
+let pendingStart = null;
+
+function applyPlayerPicks() {
+  for (const box of document.querySelectorAll('#after-round-body [data-pick-player]')) {
+    const name = box.dataset.pickPlayer;
+    const inRound = state.players.find((p) => p.name === name);
+    const inPool = state.playerPool.find((p) => p.name === name);
+    if (box.checked && inPool) {
+      state.playerPool = state.playerPool.filter((p) => p !== inPool);
+      state.players.push(inPool);
+    } else if (!box.checked && inRound) {
+      state.players = state.players.filter((p) => p !== inRound);
+      state.playerPool.push(inRound);
+    }
+  }
+}
+
+function showPlayersStep(courseId, holesChoice) {
+  pendingStart = { courseId, holesChoice };
+  const known = [...state.players.map((p) => ({ p, on: true })), ...state.playerPool.map((p) => ({ p, on: false }))];
+  showSheet(`<button class="link small" data-action="players-back">‹ Terug</button>
+    <h2>Wie spelen er?</h2>
+    ${known.length ? `<div class="player-pick">${known.map(({ p, on }) => `<label class="player-chip">
+      <input type="checkbox" data-pick-player="${esc(p.name)}" ${on ? 'checked' : ''}>
+      <span>${esc(p.name)}${p.index != null ? ` <span class="muted small">hcp ${fmt(p.index)}</span>` : ''}</span></label>`).join('')}</div>`
+    : '<p class="small muted">Vul je eigen naam in, en die van wie er meespelen. Speel je alleen, dan is je eigen naam genoeg.</p>'}
+    <form data-form="add-player" class="add-player-row">
+      <input id="new-player-name" type="text" placeholder="${known.length ? 'Naam' : 'Je naam'}" autocomplete="off" aria-label="Naam" required>
+      <input id="new-player-hcp" type="number" inputmode="decimal" step="0.1" min="-10" max="54" placeholder="hcp" aria-label="Handicap index (optioneel)">
+      <button type="submit">Toevoegen</button>
+    </form>
+    <button class="primary start-btn" data-action="players-start">Start ronde</button>`, 'Spelers kiezen');
+  if (!known.length) setTimeout(() => $('#new-player-name')?.focus(), 50);
+}
+
+function addPlayerFromPicker() {
+  applyPlayerPicks();
+  const name = $('#new-player-name').value.trim();
+  const hcp = $('#new-player-hcp').value;
+  if (!name) return;
+  const lower = name.toLowerCase();
+  const pooled = state.playerPool.find((p) => p.name.toLowerCase() === lower);
+  if (pooled) {
+    state.playerPool = state.playerPool.filter((p) => p !== pooled);
+    state.players.push(pooled);
+  } else if (!state.players.some((p) => p.name.toLowerCase() === lower)) {
+    state.players.push({ name, index: hcp === '' ? null : Math.max(-10, Math.min(54, Number(hcp))), tee: 'geel' });
+  }
+  save();
+  showPlayersStep(pendingStart.courseId, pendingStart.holesChoice);
+  setTimeout(() => $('#new-player-name')?.focus(), 50);
+}
+
+function startWithPlayers() {
+  applyPlayerPicks();
+  const typed = $('#new-player-name')?.value.trim();
+  if (typed) { addPlayerFromPicker(); applyPlayerPicks(); }
+  if (!state.players.length) { toast('Voeg minstens één speler toe.'); $('#new-player-name')?.focus(); return; }
+  startRound(pendingStart.courseId, pendingStart.holesChoice);
+}
+
+// Stap 2: waar begin je op deze baan? Bij maar één mogelijkheid meteen door naar de spelers.
 function showStartOptions(courseId) {
   const c = state.courses.find((x) => x.id === courseId);
   if (!c) return;
   const options = startOptions(c);
-  if (options.length === 1) { startRound(c.id, options[0][0]); return; }
+  if (options.length === 1) { showPlayersStep(c.id, options[0][0]); return; }
   showSheet(`<button class="link small" data-action="picker-back">‹ Andere baan</button>
     <h2>${esc(c.name)}</h2>
     <p class="small muted">Waar begin je?</p>
@@ -1629,7 +1703,14 @@ document.addEventListener('click', (e) => {
     case 'close-after-round': closeAfterRound(); break;
     case 'speech-install': installLocalSpeech(); break;
     case 'picker-locate': locateForPicker(true); break;
-    case 'start-round': startRound(btn.dataset.course, btn.dataset.holes); break;
+    case 'start-round': showPlayersStep(btn.dataset.course, btn.dataset.holes); break;
+    case 'players-start': startWithPlayers(); break;
+    case 'players-back': {
+      applyPlayerPicks();
+      const c = state.courses.find((x) => x.id === pendingStart?.courseId);
+      if (c && startOptions(c).length > 1) showStartOptions(c.id); else showCoursePicker();
+      break;
+    }
     case 'pick-course': showStartOptions(btn.dataset.course); break;
     case 'picker-back': showCoursePicker(); break;
     case 'resume-new': showCoursePicker(); break;
@@ -1768,6 +1849,7 @@ document.addEventListener('submit', (e) => {
   const form = e.target.closest('[data-form]');
   if (!form) return;
   e.preventDefault();
+  if (form.dataset.form === 'add-player') { addPlayerFromPicker(); return; }
   cloudAction(form.dataset.form, e.submitter);
 });
 

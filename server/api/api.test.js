@@ -128,7 +128,7 @@ test('anoniem account per telefoon, later omzetten naar e-mail', async () => {
   assert.equal((await call('POST', '/api/account', { token, body: { email: 'rudy@example.nl', password: 'geheim1234' } })).status, 409);
   const up = await call('POST', '/api/account', { token, body: { email: 'Anoniem@Example.nl', password: 'geheim1234' } });
   assert.equal(up.status, 200);
-  assert.deepEqual(up.body.user, { id: first.body.user.id, email: 'anoniem@example.nl', anonymous: false });
+  assert.deepEqual(up.body.user, { id: first.body.user.id, email: 'anoniem@example.nl', anonymous: false, admin: false, perms: [] });
   assert.equal((await call('POST', '/api/account', { token, body: { email: 'z@example.nl', password: 'geheim1234' } })).status, 400);
 
   // Gegevens blijven, inloggen met e-mail werkt, de apparaatcode geeft geen toegang meer tot dit account.
@@ -192,10 +192,21 @@ test('beheeroverzicht alleen voor beheerders', async () => {
       body: JSON.stringify({ data: { courses: [{ id: 'par3', geo: { 1: { tee: { lat: 52.5002, lon: 6.4 } } } }] } }) });
     const o2 = await (await get('/api/admin/overview', baas)).json();
     assert.deepEqual([o2.sessions.last7, o2.sessions.users7, o2.sessions.gpsUsers, o2.sessions.installed], [2, 1, 1, 1]);
-    assert.deepEqual(o2.rounds, [{ course: 'par3', started: 1, saved: 0, users: 1, name: 'Par 3' }]);
-    const tee = o2.geo[0].points.find((p) => p.kind === 'tee');
+    // Alleen punten van wie ze mag vastleggen tellen mee: eerst alleen de beheerder
+    assert.equal(o2.geo[0].points.find((p) => p.kind === 'tee').n, 1);
+    // Recht toekennen (alleen door een beheerder)
+    const devId = o2.recentUsers.find((u) => u.email == null).id;
+    assert.equal((await fetch(`${url}/api/admin/perms`, { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${dev}` }, body: JSON.stringify({ userId: devId, perm: 'gps-mark', on: true }) })).status, 403);
+    const granted = await post('/api/admin/perms', { userId: devId, perm: 'gps-mark', on: true }, baas);
+    assert.deepEqual(granted.user.perms, ['gps-mark']);
+    assert.deepEqual((await (await get('/api/me', dev)).json()).user.perms, ['gps-mark']);
+    assert.deepEqual((await (await get('/api/me', baas)).json()).user, { id: 1, email: 'baas@example.nl', anonymous: false, admin: true, perms: ['gps-mark'] });
+    const o3 = await (await get('/api/admin/overview', baas)).json();
+    assert.deepEqual(o3.rounds, [{ course: 'par3', started: 1, saved: 0, users: 1, name: 'Par 3' }]);
+    const tee = o3.geo[0].points.find((p) => p.kind === 'tee');
     assert.equal(tee.n, 2);
     assert.ok(tee.spreadM >= 10 && tee.spreadM <= 12, String(tee.spreadM));
+    assert.deepEqual(o3.recentUsers.find((u) => u.id === devId).perms, ['gps-mark']);
   } finally {
     adminServer.close();
   }

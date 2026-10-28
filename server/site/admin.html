@@ -238,11 +238,12 @@ function render(o) {
     </div>
 
     <div class="card"><h2>Accounts</h2>
-      <p class="muted small">De nieuwste 100. Scores en rondes zelf zijn hier niet te zien, alleen aantallen.</p>
+      <p class="muted small">De nieuwste 100. Scores en rondes zelf zijn hier niet te zien, alleen aantallen. Wie GPS-punten mag vastleggen, ziet in de app de knoppen “Ik sta op de tee/green”; alleen hun punten tellen mee in het overzicht hierboven.</p>
       <div class="scroll"><table>
-        <tr><th class="num">#</th><th>Account</th><th>Aangemaakt</th><th>Laatst gesynchroniseerd</th><th class="num">Rondes</th><th class="num">Spelers</th><th class="num">Zinnen gedeeld</th></tr>
+        <tr><th class="num">#</th><th>Account</th><th>Aangemaakt</th><th>Laatst gesynchroniseerd</th><th class="num">Rondes</th><th class="num">Spelers</th><th class="num">Zinnen gedeeld</th><th>GPS-punten vastleggen</th></tr>
         ${o.recentUsers.map((u) => `<tr><td class="num">${u.id}</td><td>${u.email ? esc(u.email) : '<span class="muted">anoniem (telefoon)</span>'}</td>
-          <td>${dateTime(u.createdAt)}</td><td>${dateTime(u.lastSync)}</td><td class="num">${u.rounds ?? '–'}</td><td class="num">${u.players ?? '–'}</td><td class="num">${u.samples}</td></tr>`).join('')}
+          <td>${dateTime(u.createdAt)}</td><td>${dateTime(u.lastSync)}</td><td class="num">${u.rounds ?? '–'}</td><td class="num">${u.players ?? '–'}</td><td class="num">${u.samples}</td>
+          <td>${u.admin ? '<span class="pill ok">beheerder</span>' : `<label class="small"><input type="checkbox" data-perm="gps-mark" data-user="${u.id}" ${u.perms?.includes('gps-mark') ? 'checked' : ''}> mag</label>`}</td></tr>`).join('')}
       </table></div>
     </div>`;
 
@@ -347,6 +348,21 @@ $('#login-form').addEventListener('submit', async (e) => {
   }
 });
 $('#refresh').addEventListener('click', load);
+
+// Rechten per account (bijv. tees en greens vastleggen met GPS)
+document.addEventListener('change', async (e) => {
+  const box = e.target.closest('[data-perm]');
+  if (!box) return;
+  box.disabled = true;
+  try {
+    await api('POST', '/api/admin/perms', { userId: Number(box.dataset.user), perm: box.dataset.perm, on: box.checked });
+  } catch (err) {
+    box.checked = !box.checked;
+    alert(`Opslaan lukte niet: ${err.message}`);
+  } finally {
+    box.disabled = false;
+  }
+});
 $('#logout').addEventListener('click', async () => {
   try { await api('POST', '/api/logout'); } catch { /* toch uitloggen */ }
   token = null;
