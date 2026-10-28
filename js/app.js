@@ -1829,6 +1829,44 @@ startPrompt();
 initCloud();
 if (gpsOn()) startGps();
 
+// Nieuwe versie van de app: de nieuwe service worker neemt het meteen over (skipWaiting en
+// clients.claim in sw.js). Dan één keer herladen, zodat ook app.js en de rest nieuw zijn, maar
+// niet midden in typen, inspreken of het bevestigen van een score; de stand staat al in localStorage.
+const busyForReload = () => recognition !== null || pending !== null
+  || ['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName);
+function reloadForUpdate() {
+  if (busyForReload() && document.visibilityState === 'visible') {
+    // Straks opnieuw proberen: na het typen of als de app naar de achtergrond gaat.
+    document.addEventListener('focusout', () => setTimeout(reloadForUpdate, 300), { once: true });
+    document.addEventListener('visibilitychange', reloadForUpdate, { once: true });
+    setTimeout(reloadForUpdate, 30000);
+    return;
+  }
+  if (reloadForUpdate.done) return;
+  reloadForUpdate.done = true;
+  try { sessionStorage.setItem('golfscore-updated', '1'); } catch { /* geen opslag: dan zonder melding */ }
+  location.reload();
+}
+
 if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
+  // De eerste keer dat een service worker de pagina overneemt (eerste installatie) is er niets te
+  // verversen; elke volgende keer is het een nieuwe versie.
+  let controlled = Boolean(navigator.serviceWorker.controller);
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (controlled) reloadForUpdate();
+    controlled = true;
+  });
+  navigator.serviceWorker.register('sw.js').then((reg) => {
+    // Een geopende app (op het beginscherm) laadt niet opnieuw bij terugkomen: dan zelf kijken of er
+    // een nieuwe versie is. Dat is één klein verzoek (sw.js).
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') reg.update().catch(() => {});
+    });
+  }).catch(() => {});
+  try {
+    if (sessionStorage.getItem('golfscore-updated')) {
+      sessionStorage.removeItem('golfscore-updated');
+      toast('Nieuwe versie van de app geladen.');
+    }
+  } catch { /* geen opslag */ }
 }

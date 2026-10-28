@@ -13,6 +13,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -36,6 +37,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      # Elke deploy een eigen cachenaam: telefoons halen de nieuwe versie op en de app herlaadt zichzelf.
+      - run: sed -i "s/const CACHE = 'golfscore-[^']*';/const CACHE = 'golfscore-${GITHUB_SHA::7}';/" sw.js && grep -n "const CACHE" sw.js
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
