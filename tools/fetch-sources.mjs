@@ -7,7 +7,12 @@ import { execFileSync } from 'node:child_process';
 
 const [list, outDir] = process.argv.slice(2);
 fs.mkdirSync(outDir, { recursive: true });
-const urls = fs.readFileSync(list, 'utf8').split('\n').map((s) => s.trim()).filter((s) => s && !s.startsWith('#'));
+// Eén regel per site: "url", of "map url1 url2 …" (een club met meerdere startpagina's in één map).
+const sites = fs.readFileSync(list, 'utf8').split('\n').map((s) => s.trim()).filter((s) => s && !s.startsWith('#'))
+  .map((line) => {
+    const parts = line.split(/\s+/);
+    return /^https?:/.test(parts[0]) ? { dir: null, seeds: parts } : { dir: parts[0], seeds: parts.slice(1) };
+  });
 const KEY = /scorekaart|scorecard|score-card|baaninfo|baan-info|onze-baan|de-baan|golfbaan|baan|course|holes?|hole-|slope|rating|\.pdf/i;
 const MAX_BYTES = Number(process.env.MAX_MB ?? 15) * 1e6; // grote brochures overslaan (MAX_MB om te verhogen)
 const UA = { 'User-Agent': 'Mozilla/5.0 (Golfscore scorekaart-onderzoek; https://golf.kapital.nl)' };
@@ -67,13 +72,14 @@ async function save(url, dir) {
 }
 
 const report = [];
-for (const site of urls) {
-  const dir = path.join(outDir, slug(site));
+for (const { dir: name, seeds } of sites) {
+  const site = seeds[0];
+  const dir = path.join(outDir, name ?? slug(site));
   fs.mkdirSync(dir, { recursive: true });
   const seen = new Set();
-  const queue = [site];
+  const queue = [...seeds];
   let pages = 0;
-  while (queue.length && pages < 18) {
+  while (queue.length && pages < Number(process.env.MAX_PAGES ?? 18)) {
     const u = queue.shift();
     if (seen.has(u)) continue;
     seen.add(u);
@@ -96,5 +102,5 @@ for (const site of urls) {
     await new Promise((r) => setTimeout(r, 700));
   }
 }
-fs.writeFileSync(path.join(outDir, 'rapport.txt'), report.join('\n'));
+fs.writeFileSync(path.join(outDir, "rapport.txt"), report.join("\n"));
 console.log(report.join('\n'));
