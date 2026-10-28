@@ -1,0 +1,242 @@
+{
+  "slug": "de-blanckenborg-groenlo",
+  "name": "Pitch & Putt Golf Groenlo (De Blanckenborg)",
+  "club_name": "Pitch & Putt De Blanckenborg",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Oude Winterswijkseweg 45a",
+    "postal_code": "7141 DE",
+    "city": "Groenlo",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.03313,
+    "lon": 6.63813,
+    "source": "golfkaart.com (OSM: 52.0328, 6.6388)"
+  },
+  "distance_km_from_dedemsvaart": 64.3,
+  "phone": "+31 544 464 142",
+  "email": "info@deblanckenborg.nl",
+  "website": "https://www.pitch-putt.nl/locaties/groenlo/",
+  "booking_url": "https://www.pitch-putt.nl/locaties/groenlo/groenlo-pitch-putt-golf/",
+  "founded": null,
+  "architect": null,
+  "landscape": "Achterhoeks coulissenlandschap, uitzicht vanaf panoramaterras",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "clubhuis met horeca en panoramaterras",
+    "voetgolf",
+    "padel",
+    "tennis",
+    "e-chopperverhuur",
+    "vergaderzalen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen handicap of GVB nodig; vanaf 10 jaar; reserveren (aanvraag). Vanaf EUR 17,50 p.p. Gesloten november t/m februari.",
+  "description_nl": "Laagdrempelige 18-holes pitch & putt-baan (par 54) bij sportcomplex De Blanckenborg aan de rand van Groenlo, vlak bij Marveld Recreatie. Alle holes zijn korte par 3's, geschikt voor beginners en golfers die hun korte spel willen slijpen. Vanaf het hooggelegen terras kijk je uit over de hele baan.",
+  "loops": [
+    {
+      "name": "18 holes pitch & putt",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": null,
+          "length_m": 1106,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 51
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 61
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 68
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 63
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 50
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 65
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 72
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 60
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 60
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 52
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 73
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 54
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 66
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 75
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 48
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 61
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 60
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 67
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfify.io/courses/pitch-putt-golf-groenlo",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/golfpass-scorecard.html",
+      "scorecard/hole19.html",
+      "scorecard/official-pitch-putt-groenlo.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen officiele scorekaart online. Lengtes (m) en SI van Golfify (totaal 1106 m, wit); lengtes komen overeen met GolfPass (1211 yards), SI komt overeen met Hole19. Let op: GolfPass geeft afwijkende SI's (18,10,12,2,14,4,8,16,6 / 1,11,13,3,15,5,9,17,7) en Hole19 kortere lengtes (totaal 1013). Geen CR/slope bekend."
+  },
+  "sources": [
+    "https://www.pitch-putt.nl/locaties/groenlo/",
+    "https://www.pitch-putt.nl/locaties/groenlo/groenlo-pitch-putt-golf/",
+    "https://www.golfify.io/courses/pitch-putt-golf-groenlo",
+    "https://www.golfpass.com/travel-advisor/courses/36547-pitch-putt-de-blanckenborg/scorecard-and-layout",
+    "https://www.hole19golf.com/courses/pitch-putt-golf-groenlo"
+  ]
+}

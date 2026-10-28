@@ -1,0 +1,236 @@
+{
+  "slug": "pitch-putt-twente-diepenheim",
+  "name": "Pitch & Putt Twente",
+  "club_name": "Pitch & Putt Twente",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Hengevelderweg 3",
+    "postal_code": "7478 PE",
+    "city": "Diepenheim",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.19813,
+    "lon": 6.59089,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 45.7,
+  "phone": "0547-351990",
+  "email": "diepenheim@pitch-putt-twente.nl",
+  "website": "https://pitch-putt-twente.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "voormalig boerenerf in Twents coulisselandschap, met glooiingen, bunkers en water",
+  "facilities": [
+    "terras/horeca",
+    "buffet- en barbecuearrangementen",
+    "voetgolf",
+    "escaperooms",
+    "lumberjack games",
+    "golflessen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen handicap vereist (recreatieve pitch & putt); reserveren aanbevolen",
+  "description_nl": "Recreatieve 18-holes pitch & putt baan op een voormalig boerenerf bij Diepenheim. De holes van 41 tot 60 meter liggen tussen glooiingen, bunkers en waterpartijen en vragen precisie, ook van ervaren golfers. De locatie richt zich daarnaast op groepsuitjes met voetgolf en andere activiteiten.",
+  "loops": [
+    {
+      "name": "Pitch & Putt baan",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "baan",
+          "color": null,
+          "gender": null,
+          "length_m": 920,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 47
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 52
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 44
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 49
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 55
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 47
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 55
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 50
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 60
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 55
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 42
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 53
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 59
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 50
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 45
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 58
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 58
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 41
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://pitch-putt-twente.nl/golfbaan/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/pp-golfbaan.png"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Website vermeldt lengte per hole (40-70 m, alle par 3). Geen stroke index, geen CR/SR (niet-qualifying). Onderdeel van cooperatie Pitch & Putt (pitch-putt.nl/locaties/diepenheim/)."
+  },
+  "sources": [
+    "https://pitch-putt-twente.nl/golfbaan/",
+    "https://pitch-putt.nl/locaties/diepenheim/",
+    "https://golfkaart.com/diepenheim/pitch-putt"
+  ]
+}

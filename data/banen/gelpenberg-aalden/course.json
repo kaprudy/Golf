@@ -1,0 +1,508 @@
+{
+  "slug": "gelpenberg-aalden",
+  "name": "Drentse Golfclub De Gelpenberg",
+  "club_name": "Drentse Golfclub De Gelpenberg",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Gebbeveenweg 1",
+    "postal_code": "7854 TD",
+    "city": "Aalden",
+    "province": "Drenthe",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.80084,
+    "lon": 6.69671,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 27.4,
+  "phone": "+31 591 371929",
+  "email": "info@dgcdegelpenberg.nl",
+  "website": "https://dgcdegelpenberg.nl/",
+  "booking_url": "https://dgcdegelpenberg.golfdashboard.com/",
+  "founded": 1970,
+  "architect": "Frank Pennink (1972, eerste 9 holes); Donald Steel (1992, uitbreiding naar 18); Frank Pont (renovatie 2011)",
+  "landscape": "bos, heide en zandverstuiving op zandgrond",
+  "facilities": [
+    "18-holes championship course",
+    "9-holes par-3 baan",
+    "driving range",
+    "putting green",
+    "chipping green",
+    "golfacademy/golfles",
+    "golfshop",
+    "brasserie/clubhuis",
+    "camperplaatsen",
+    "laadpalen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Greenfeespelers welkom; voor 13:00 uur alleen 3-ballen met max. gezamenlijke handicap 90.0, na 14:00 uur ook hogere gezamenlijke handicap mogelijk. Par-3 baan tegen dagtarief.",
+  "description_nl": "De Gelpenberg ligt bij Aalden op zandgrond en is daardoor het hele jaar goed bespeelbaar. De voorste negen holes lopen door open, golvend terrein, terwijl de tweede negen door bos voeren en op hole 18 eindigen bij een grote natuurlijke zandverstuiving. Naast de 18-holes baan is er een par-3 baan van 9 holes, wat de club geschikt maakt voor zowel ervaren spelers als beginners.",
+  "loops": [
+    {
+      "name": "Championship Course (18 holes)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6321,
+          "course_rating": 74.2,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 6031,
+          "course_rating": 73.1,
+          "slope": 139,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5513,
+          "course_rating": 70.5,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5194,
+          "course_rating": 69.4,
+          "slope": 117,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4568,
+          "course_rating": 66.8,
+          "slope": 107,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 6031,
+          "course_rating": 79.6,
+          "slope": 140,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5513,
+          "course_rating": 76.0,
+          "slope": 137,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5194,
+          "course_rating": 73.7,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4568,
+          "course_rating": 70.9,
+          "slope": 117,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 506,
+            "geel": 489,
+            "blauw": 432,
+            "rood": 409,
+            "oranje": 369
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 197,
+            "geel": 174,
+            "blauw": 165,
+            "rood": 147,
+            "oranje": 138
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 366,
+            "geel": 338,
+            "blauw": 307,
+            "rood": 292,
+            "oranje": 253
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 458,
+            "geel": 443,
+            "blauw": 412,
+            "rood": 403,
+            "oranje": 363
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 423,
+            "geel": 400,
+            "blauw": 360,
+            "rood": 328,
+            "oranje": 283
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 301,
+            "geel": 274,
+            "blauw": 263,
+            "rood": 237,
+            "oranje": 200
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 398,
+            "geel": 373,
+            "blauw": 336,
+            "rood": 316,
+            "oranje": 274
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 148,
+            "geel": 139,
+            "blauw": 131,
+            "rood": 108,
+            "oranje": 98
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 369,
+            "geel": 340,
+            "blauw": 319,
+            "rood": 300,
+            "oranje": 233
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 343,
+            "geel": 337,
+            "blauw": 313,
+            "rood": 304,
+            "oranje": 259
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 388,
+            "geel": 377,
+            "blauw": 351,
+            "rood": 328,
+            "oranje": 288
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 150,
+            "geel": 127,
+            "blauw": 120,
+            "rood": 109,
+            "oranje": 100
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 481,
+            "geel": 477,
+            "blauw": 441,
+            "rood": 420,
+            "oranje": 365
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 393,
+            "geel": 381,
+            "blauw": 342,
+            "rood": 334,
+            "oranje": 302
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 385,
+            "geel": 373,
+            "blauw": 342,
+            "rood": 312,
+            "oranje": 281
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 446,
+            "geel": 441,
+            "blauw": 390,
+            "rood": 380,
+            "oranje": 350
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 184,
+            "geel": 174,
+            "blauw": 159,
+            "rood": 150,
+            "oranje": 134
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 385,
+            "geel": 374,
+            "blauw": 330,
+            "rood": 317,
+            "oranje": 278
+          }
+        }
+      ]
+    },
+    {
+      "name": "Par 3 baan (9 holes)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 814,
+          "course_rating": 48.5,
+          "slope": 65,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 814,
+          "course_rating": 50.0,
+          "slope": 68,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 84,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 88,
+            "rood": 88
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 79,
+            "rood": 79
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 103,
+            "rood": 103
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135,
+            "rood": 135
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 62,
+            "rood": 62
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 114,
+            "rood": 114
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 54,
+            "rood": 54
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://dgcdegelpenberg.nl/de-baan/scorekaarten/",
+    "files": [
+      "scorecard/DGC-Scorekaart-2026-LR-1.jpg",
+      "scorecard/DGC-Scorekaart-2026-LR51-2.jpg",
+      "scorecard/DGC-de-Gelpenberg-PAR-3-Scorekaart-A5-2026-LR-1.jpg",
+      "scorecard/DGC-de-Gelpenberg-PAR-3-Scorekaart-A5-2026-LR44-2.jpg",
+      "scorecard/hcp-Heren-9-en-18-holes.pdf",
+      "scorecard/hcp-Dames-9-en-18-holes.pdf",
+      "scorecard/hcp-Par-3-baan.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Lengtes, par en SI uit scorekaart 2026. CR/slope uit officiele baanhandicaptabellen van 30-09-2021 (par-3: 12-10-2021); deze kunnen inmiddels herzien zijn. Par-3 baan: 9 holes, CR/slope gelden voor 18 holes (2x rond, par 54); tweede ronde heeft SI 10,8,14,6,2,12,18,4,16. Scorekaart toont geen aparte dames-SI. Par-3 baan heeft een enkele afstandskolom (geel en rood gelijk)."
+  },
+  "sources": [
+    "https://dgcdegelpenberg.nl/de-baan/",
+    "https://dgcdegelpenberg.nl/de-baan/scorekaarten/",
+    "https://dgcdegelpenberg.nl/de-baan/handicaptabellen/",
+    "https://dgcdegelpenberg.nl/gasten/greenfee-tarieven/",
+    "https://golfkaart.com/api/kaart.json"
+  ]
+}

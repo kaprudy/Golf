@@ -1,3 +1,9 @@
 node_modules/
 .DS_Store
 .env
+
+# Baangegevens: scorekaarten staan op de branch scorekaarten, screenshots blijven lokaal
+data/banen/*/scorecard/
+data/banen/*/screenshots/
+__pycache__/
+*.pyc

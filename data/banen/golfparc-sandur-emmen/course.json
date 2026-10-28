@@ -1,0 +1,328 @@
+{
+  "slug": "golfparc-sandur-emmen",
+  "name": "Golfparc Sandur",
+  "club_name": "Golfparc Sandur",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Golfparkdreef 1",
+    "postal_code": "7828 AL",
+    "city": "Emmen",
+    "province": "Drenthe",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.7290162,
+    "lon": 6.9134684,
+    "source": "nominatim (OSM node 'Golfclub Sandur')"
+  },
+  "distance_km_from_dedemsvaart": 33.8,
+  "phone": "+31 591 303054",
+  "email": "info@golfparcsandur.nl",
+  "website": "https://www.golfparcsandur.nl/",
+  "booking_url": null,
+  "founded": 2005,
+  "architect": "Frank Pont",
+  "landscape": "bos, water en heuvels met zwerfkeien uit de ijstijd",
+  "facilities": [
+    "9-holes baan",
+    "verlichte driving range",
+    "oefengreen",
+    "clubhuis/brasserie (Paviljoen) met terras",
+    "golfles",
+    "handicarts/buggy's"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Minimaal handicap 54. Reserveren telefonisch of via reserveringen@golfparcsandur.nl.",
+  "description_nl": "Golfparc Sandur ligt aan de zuidkant van Emmen, naast het Center Parcs-park Sandur, en werd in 2005 door Frank Pont ontworpen op voormalig bos- en landbouwgebied. De 9 holes (par 34) combineren water, bos en glooiingen; grote zwerfkeien uit de ijstijd markeren het terrein. Er is een verlichte driving range en een brasserie met terras aan de baan. Voorheen stond de baan bekend als BurgGolf Emmen.",
+  "loops": [
+    {
+      "name": "9 holes (2x gespeeld = 18 holes)",
+      "holes": 18,
+      "par": 68,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 4830,
+          "course_rating": 66.2,
+          "slope": 116,
+          "par": 68
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4072,
+          "course_rating": 63.6,
+          "slope": 98,
+          "par": 68
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3144,
+          "course_rating": 60.2,
+          "slope": 100,
+          "par": 68
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 4830,
+          "course_rating": 71.3,
+          "slope": 131,
+          "par": 68
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4072,
+          "course_rating": 67.3,
+          "slope": 108,
+          "par": 68
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3144,
+          "course_rating": 63.3,
+          "slope": 99,
+          "par": 68
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 445,
+            "rood": 380,
+            "oranje": 341
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 158,
+            "rood": 142,
+            "oranje": 122
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 348,
+            "rood": 289,
+            "oranje": 186
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 441,
+            "rood": 372,
+            "oranje": 290
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 174,
+            "rood": 146,
+            "oranje": 100
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 290,
+            "rood": 250,
+            "oranje": 184
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 291,
+            "rood": 245,
+            "oranje": 188
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 100,
+            "oranje": 72
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 148,
+            "rood": 112,
+            "oranje": 89
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 445,
+            "rood": 380,
+            "oranje": 341
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 158,
+            "rood": 142,
+            "oranje": 122
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 348,
+            "rood": 289,
+            "oranje": 186
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 441,
+            "rood": 372,
+            "oranje": 290
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 174,
+            "rood": 146,
+            "oranje": 100
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 290,
+            "rood": 250,
+            "oranje": 184
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 291,
+            "rood": 245,
+            "oranje": 188
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 100,
+            "oranje": 72
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 148,
+            "rood": 112,
+            "oranje": 89
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfparcsandur.nl/golfparc-sandur/baan-layout/",
+    "files": [
+      "scorecard/hole-1-10.jpg",
+      "scorecard/hole-2-11.jpg",
+      "scorecard/hole-3-12.jpg",
+      "scorecard/hole-4-13.jpg",
+      "scorecard/hole-5-14.jpg",
+      "scorecard/hole-6-15.png",
+      "scorecard/hole-7-16.jpg",
+      "scorecard/hole-8-17.jpg",
+      "scorecard/hole-9-18.jpg",
+      "scorecard/hole-golfbaan.png",
+      "scorecard/HCP-tabellen-Sandur-Heren-9-en-18-holes-2024.pdf",
+      "scorecard/HCP-tabellen-Sandur-Dames-9-en-18-holes-2024.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Geen klassieke scorekaart online; par, SI (oneven=1e ronde, even=2e ronde) en lengtes per tee komen uit de officiele hole-by-hole kaarten op de baan-layoutpagina. Holes 10-18 zijn dezelfde holes met dezelfde afslagen. CR/slope uit NGF-handicaptabellen 12-09-2024 (pagina https://www.golfparcsandur.nl/golfparc-sandur/playing-handicap/); 9-holes: heren geel 33.1/116, rood 31.8/98, oranje 30.1/100; dames geel 35.7/131, rood 33.7/108, oranje 31.7/99. golfkaart.com plaatst de baan in Erica; officieel adres is Emmen."
+  },
+  "sources": [
+    "https://www.golfparcsandur.nl/golfparc-sandur/baan-layout/",
+    "https://www.golfparcsandur.nl/golfparc-sandur/playing-handicap/",
+    "https://www.golfparcsandur.nl/gasten/",
+    "https://nominatim.openstreetmap.org/search?format=json&q=Golfparkdreef+1+Emmen"
+  ]
+}

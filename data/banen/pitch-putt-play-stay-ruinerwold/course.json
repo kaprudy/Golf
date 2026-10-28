@@ -1,0 +1,63 @@
+{
+  "slug": "pitch-putt-play-stay-ruinerwold",
+  "name": "Pitch & Putt Play & Stay (Buitengoed Weerwille)",
+  "club_name": "Play & Stay Ruinerwold",
+  "holes_total": 9,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Weerwille 16A",
+    "postal_code": "7961 LV",
+    "city": "Ruinerwold",
+    "province": "Drenthe",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.71536,
+    "lon": 6.3063,
+    "source": "golfkaart (caller); OSM 52.7142, 6.3029"
+  },
+  "phone": "+31 6 20804123",
+  "email": "info@playstay.nl",
+  "website": "https://playstay.nl/",
+  "booking_url": "https://playstay.nl/#reservation",
+  "founded": 1998,
+  "architect": null,
+  "landscape": "Drents coulisselandschap",
+  "facilities": [
+    "9 holes pitch & putt (18 holes = 2 rondes)",
+    "footgolf",
+    "terras en restaurant",
+    "zaalverhuur / vergaderen",
+    "BBQ- en groepsarrangementen",
+    "materiaal en instructie inbegrepen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen ervaring of GVB nodig.",
+  "description_nl": "Play & Stay aan de Weerwille in Ruinerwold, voorheen bekend als Buitengoed Weerwille, heeft een pitch & putt-baan die volgens eerdere informatie in 1998 als een van de eerste van Nederland werd aangelegd. Je speelt 9 of 18 holes (twee rondes) met gehuurd materiaal en een korte uitleg, zonder dat je een golfvaardigheidsbewijs nodig hebt. Daarnaast zijn er footgolf, een terras en arrangementen voor groepen.",
+  "loops": [
+    {
+      "name": "Pitch & Putt",
+      "holes": 9,
+      "par": null,
+      "tees": [],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://playstay.nl/activiteiten/9-holes-pitch-putt/",
+    "files": [],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen scorekaart online; scorekaart wordt ter plaatse uitgereikt. Founded 1998 volgens verkoopbrochure Buitengoed Weerwille (fundainbusiness); de huidige exploitant Play & Stay spreekt over 9 holes (18 = 2x9), oudere bronnen noemen een 18-holes baan."
+  },
+  "sources": [
+    "https://playstay.nl/",
+    "https://playstay.nl/activiteiten/9-holes-pitch-putt/",
+    "https://playstay.nl/activiteiten/18-holes-pitch-putt/",
+    "https://playstay.nl/veelgestelde-vragen/",
+    "https://www.fijnuit.nl/6820/play-stay-ruinerwold",
+    "https://www.fundainbusiness.nl/horeca/ruinerwold/object-42338276-weerwille-16/brochure/download"
+  ],
+  "distance_km_from_dedemsvaart": 16.4
+}

@@ -1,0 +1,109 @@
+{
+  "slug": "golftuin-zwolle",
+  "name": "Golftuin Zwolle",
+  "club_name": "Golftuin Zwolle",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Harculose Esweg 2",
+    "postal_code": "8015 RH",
+    "city": "Zwolle (Hoog Zuthem/Windesheim)",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.4655147,
+    "lon": 6.1265124,
+    "source": "nominatim (OSM node Orangerie Golftuin Zwolle)"
+  },
+  "distance_km_from_dedemsvaart": 27.1,
+  "phone": "0529 46 63 04",
+  "email": "info@golftuinzwolle.nl",
+  "website": "https://www.golftuinzwolle.nl",
+  "booking_url": "https://www.golftuinzwolle.nl/reserveren/",
+  "founded": null,
+  "architect": null,
+  "landscape": null,
+  "facilities": [
+    "par 3-baan 9 holes (18 afslagplaatsen)",
+    "pitching area",
+    "chipping area",
+    "putting green",
+    "drivingnet",
+    "golflessen/clinics"
+  ],
+  "greenfee_welcome": false,
+  "requirements": "Sinds 1-8-2026 ledenbaan: geen greenfeespelers meer, reserveren verplicht; lidmaatschap zonder GVB mogelijk",
+  "description_nl": "Kleinschalige par 3-baan aan de zuidkant van Zwolle met 9 holes en dubbele afslagplaatsen, zodat een 18-holes ronde mogelijk is. De baan is laagdrempelig opgezet met oefenfaciliteiten en lessen voor beginners en gevorderden. Sinds augustus 2026 is het een ledenbaan en is de orangerie gesloten.",
+  "loops": [
+    {
+      "name": "Par 3-baan 18 holes (9 greens, 18 afslagen)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 49.2,
+          "slope": 65,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 51.5,
+          "slope": 70,
+          "par": 54
+        }
+      ],
+      "hole_data": []
+    },
+    {
+      "name": "1e 9 holes (holes 1-9)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 24.4,
+          "slope": 63,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 25.4,
+          "slope": 68,
+          "par": 27
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golftuinzwolle.nl/plaatselijke-regels/",
+    "files": [
+      "scorecard/Golftuin-Zwolle-Dames-Heren.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Gepubliceerd is alleen de baanhandicaptabel (26-06-2025) met CR/SR; geen hole-voor-hole par/SI/lengtes. Site noemt holes 1-9 totaal 850 m en holes 10-18 totaal 947 m (tee-kleur niet vermeld). Par 54 (18 x par 3). Geen greenfeespelers meer sinds 1-8-2026."
+  },
+  "sources": [
+    "https://www.golftuinzwolle.nl/",
+    "https://www.golftuinzwolle.nl/golfbaan/",
+    "https://www.golftuinzwolle.nl/plaatselijke-regels/",
+    "https://golfkaart.com/zwolle/golftuin-zwolle"
+  ]
+}

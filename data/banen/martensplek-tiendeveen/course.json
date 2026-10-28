@@ -1,0 +1,351 @@
+{
+  "slug": "martensplek-tiendeveen",
+  "name": "Golfbaan Martensplek",
+  "club_name": "Golfclub Martensplek",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Haarweg 22-22A",
+    "postal_code": "7936 TP",
+    "city": "Tiendeveen",
+    "province": "Drenthe",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.76151,
+    "lon": 6.56427,
+    "source": "golfkaart (caller, Martensplek clubhuis/hotel); OSM course 52.7594, 6.5588"
+  },
+  "phone": "+31 528 331 558",
+  "email": "receptie@martensplek.nl",
+  "website": "https://www.martensplek.nl/",
+  "booking_url": "https://martensplek.golfer.intogolf.nl/#/teetimes",
+  "founded": 1991,
+  "architect": null,
+  "landscape": "parkachtig, omgeven door natuurgebied De Goudplevier, veel waterpartijen",
+  "facilities": [
+    "18 holes baan (A-status)",
+    "par 3- / pitch & putt-baan (9 holes)",
+    "driving range (dubbele vloer)",
+    "clubhuis met restaurant",
+    "hotel",
+    "golfpro / lessen",
+    "handicart",
+    "huurmateriaal"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Gasten met minimaal handicap 54 welkom; starttijd reserveren verplicht.",
+  "description_nl": "Golfbaan Martensplek bij Tiendeveen, tussen Hoogeveen en Beilen, wordt sinds 1991 bespeeld en ligt tegen natuurgebied De Goudplevier. De parkachtige 18 holes baan met veel water lijkt eenvoudig, maar beloont vooral nauwkeurig spel. De club is laagdrempelig, zonder ballotage of participatie, en heeft een eigen hotel, restaurant en oefenfaciliteiten.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6037,
+          "course_rating": 71.9,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5903,
+          "course_rating": 71.4,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5440,
+          "course_rating": 69.1,
+          "slope": 122,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5309,
+          "course_rating": 68.3,
+          "slope": 117,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5903,
+          "course_rating": 78.2,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5440,
+          "course_rating": 74.3,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5309,
+          "course_rating": 73.7,
+          "slope": 126,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 430,
+            "geel": 423,
+            "blauw": 406,
+            "rood": 395
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 351,
+            "geel": 343,
+            "blauw": 327,
+            "rood": 319
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 364,
+            "geel": 357,
+            "blauw": 342,
+            "rood": 335
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 254,
+            "geel": 247,
+            "blauw": 234,
+            "rood": 228
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 294,
+            "geel": 288,
+            "blauw": 273,
+            "rood": 268
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 152,
+            "geel": 146,
+            "blauw": 137,
+            "rood": 130
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 364,
+            "geel": 355,
+            "blauw": 340,
+            "rood": 333
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 190,
+            "geel": 184,
+            "blauw": 171,
+            "rood": 164
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 435,
+            "geel": 428,
+            "blauw": 411,
+            "rood": 403
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 508,
+            "geel": 504,
+            "blauw": 458,
+            "rood": 453
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 187,
+            "geel": 177,
+            "blauw": 165,
+            "rood": 156
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 345,
+            "geel": 337,
+            "blauw": 314,
+            "rood": 305
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 397,
+            "geel": 387,
+            "blauw": 328,
+            "rood": 321
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 347,
+            "geel": 340,
+            "blauw": 306,
+            "rood": 299
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 366,
+            "geel": 357,
+            "blauw": 317,
+            "rood": 310
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 368,
+            "geel": 357,
+            "blauw": 318,
+            "rood": 311
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 471,
+            "geel": 464,
+            "blauw": 400,
+            "rood": 393
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 159,
+            "geel": 154,
+            "blauw": 139,
+            "rood": 133
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.martensplek.nl/gastspelers/scorekaart",
+    "files": [
+      "scorecard/scorekaart.jpg",
+      "scorecard/whs-handicaptabellen-heren.pdf",
+      "scorecard/whs-handicaptabellen-dames.pdf",
+      "scorecard/certificaat-cr-slope-heren.pdf",
+      "scorecard/certificaat-cr-slope-dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Tees wit/geel/blauw/rood. CR/slope uit WHS-tabellen 21-06-2023 (rating-pagina https://www.martensplek.nl/baan/rating-en-whs-handicaptabellen). length_m = totaal zoals gedrukt op de kaart; let op: de holelengtes van de eerste negen tellen op tot 5982/5848/5386/5256 (out 2834/2771/2641/2575) terwijl de kaart out 2889/2826/2695/2628 vermeldt (verschil 53-55 m, waarschijnlijk hole 4 ingekort zonder totaal aan te passen). Geen aparte dames-SI. Certificaat-PDF's bevatten geen tekstlaag."
+  },
+  "sources": [
+    "https://www.martensplek.nl/gastspelers/scorekaart",
+    "https://www.martensplek.nl/baan",
+    "https://www.martensplek.nl/baan/rating-en-whs-handicaptabellen",
+    "https://www.martensplek.nl/gastspelers",
+    "https://www.martensplek.nl/tarieven/greenfee-2026"
+  ],
+  "distance_km_from_dedemsvaart": 19.2
+}

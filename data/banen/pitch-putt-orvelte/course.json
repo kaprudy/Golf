@@ -1,0 +1,235 @@
+{
+  "slug": "pitch-putt-orvelte",
+  "name": "Pitch & Putt Golf Orvelte",
+  "club_name": "Pitch & Putt Golf Orvelte (bij Landal Orveltermarke)",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Mr. J.B. Kanweg 3",
+    "postal_code": "9439 TD",
+    "city": "Witteveen",
+    "province": "Drenthe",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.83447,
+    "lon": 6.66678,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 29.5,
+  "phone": "+31 593 564103",
+  "email": null,
+  "website": "https://www.landal.nl/parken/orveltermarke",
+  "booking_url": null,
+  "founded": 2010,
+  "architect": null,
+  "landscape": "landelijk Drents terrein naast vakantiepark",
+  "facilities": [
+    "18-holes pitch & putt",
+    "huurmateriaal inbegrepen (club, ballen, tees, scorekaart)",
+    "horeca in de buurt (restaurant op het park)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen GVB/handicap nodig; geschikt voor iedereen.",
+  "description_nl": "Deze pitch & putt-baan ligt naast vakantiepark Landal Orveltermarke bij Witteveen, vlak bij het museumdorp Orvelte. De 18 korte par-3 holes zijn ongeveer 35 tot 75 meter lang en zonder golfervaring of handicap te spelen. Materiaal is te huur, waardoor de baan vooral geschikt is voor gezinnen, vakantiegasten en groepjes die golf willen uitproberen.",
+  "loops": [
+    {
+      "name": "18 holes pitch & putt",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": null,
+          "length_m": 927,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 54
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 67
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 48
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 40
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 49
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 74
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 62
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 49
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 68
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 55
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 37
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 37
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 38
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 46
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 56
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 49
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 74
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 38
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfpass.com/travel-advisor/courses/36542-pitch-putt-golf-orvelte/scorecard-and-layout",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/landal-orveltermarke.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen officiele website of scorekaart gevonden; Landal-pagina bevestigt de 18-holes pitch & putt (geen GVB nodig). Holegegevens van GolfPass: som van de holelengtes is 941, terwijl de tee-lengte als 927 m wordt opgegeven; eenheid van de holelengtes is daar niet expliciet, aangenomen meters. Geen CR/slope. Geen scorekaartbestand (PDF/afbeelding) beschikbaar."
+  },
+  "sources": [
+    "https://www.golfpass.com/travel-advisor/courses/36542-pitch-putt-golf-orvelte/scorecard-and-layout",
+    "https://www.landal.nl/parken/orveltermarke",
+    "https://www.dagjeweg.nl/tip/4447/Pitch%26Putt-Golf-Orveltermarke",
+    "https://shotnavi.jp/world/528/1/gc_14.htm",
+    "https://golfkaart.com/api/kaart.json"
+  ]
+}

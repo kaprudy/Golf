@@ -1,0 +1,466 @@
+{
+  "slug": "spielehof-boekelo",
+  "name": "Golfbaan Spielehof",
+  "club_name": "Golfclub Spielehof",
+  "holes_total": 27,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Spieleweg 24",
+    "postal_code": "7548 RR",
+    "city": "Boekelo (Enschede)",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.20171,
+    "lon": 6.7849,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 49.6,
+  "phone": "053-4281363",
+  "email": "info@spielehof.nl",
+  "website": "https://www.spielehof.nl/",
+  "booking_url": "https://www.spielehof.nl/golfbaan/chronogolf/",
+  "founded": null,
+  "architect": null,
+  "landscape": "open parkbaan met waterpartijen en houtwallen",
+  "facilities": [
+    "driving range (24 afslagplaatsen, 14 overdekt, verlicht)",
+    "putting green",
+    "chipping green",
+    "indoor golf (2 Trackman iO)",
+    "indoor puttinggreen",
+    "golfschool",
+    "golfshop",
+    "clubhuis/horeca",
+    "lockers",
+    "kleedkamers"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Grobbebaan: minimaal handicap 54 en GVB-pas tonen; Shortgolfbaan: geen handicap of ervaring vereist",
+  "description_nl": "Laagdrempelig golfcomplex in Boekelo tussen Enschede, Hengelo en Haaksbergen. Er is een 9-holes Grobbebaan (par 29, holes van 93 tot 347 meter) en een 18-holes shortgolfbaan met holes van 30 tot 76 meter die zonder handicap te spelen is. Daarnaast een verlichte driving range en indoor golfsimulatoren.",
+  "loops": [
+    {
+      "name": "Grobbebaan (2x9 holes)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 3062,
+          "course_rating": 56.5,
+          "slope": 100,
+          "par": 58
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 3062,
+          "course_rating": 59.7,
+          "slope": 106,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2780,
+          "course_rating": 54.6,
+          "slope": 94,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2780,
+          "course_rating": 57.6,
+          "slope": 105,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 139,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 99
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 139
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 308,
+            "rood": 272
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 130
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 104,
+            "rood": 91
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 347,
+            "rood": 311
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 138
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 93,
+            "rood": 93
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 139,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 99
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 139
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 308,
+            "rood": 272
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 130
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 104,
+            "rood": 91
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 347,
+            "rood": 311
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 138
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 93,
+            "rood": 93
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shortgolfbaan",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "baan",
+          "color": null,
+          "gender": null,
+          "length_m": 1019,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 65
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 57
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 61
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 54
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 48
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 47
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 63
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 50
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 73
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 60
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 52
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 57
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 76
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 30
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 49
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 48
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 62
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 67
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.spielehof.nl/golfbaan/baaninformatie/",
+    "files": [
+      "scorecard/scorekaart-grobbebaan.jpg",
+      "scorecard/scorekaart-shortgolfbaan-1.jpg",
+      "scorecard/playing-handicaptabellen-grobbebaan-juli-2021.pdf",
+      "scorecard/baanplattegrond-spielehof.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Grobbebaan: 9 holes, 2x gespeeld (par 29/58), CR/SR van scorekaart. Shortgolfbaan: 18 holes par 3, een afslag, geen CR/SR (niet qualifying). Handicaptabel-PDF (13-07-2021) is een afbeelding zonder tekstlaag."
+  },
+  "sources": [
+    "https://www.spielehof.nl/golfbaan/baaninformatie/",
+    "https://www.spielehof.nl/golfbaan/greenfee/"
+  ]
+}

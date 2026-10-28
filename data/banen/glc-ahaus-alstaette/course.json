@@ -1,0 +1,1591 @@
+{
+  "slug": "glc-ahaus-alstaette",
+  "name": "Golf- und Landclub Ahaus",
+  "club_name": "Golf- und Landclub Ahaus e.V.",
+  "holes_total": 36,
+  "course_type": "27-holes",
+  "address": {
+    "street": "Schmäinghook 36",
+    "postal_code": "48683",
+    "city": "Ahaus-Alstätte",
+    "province": "Nordrhein-Westfalen",
+    "country": "DE"
+  },
+  "gps": {
+    "lat": 52.1115,
+    "lon": 6.9257,
+    "source": "nominatim (Golf- und Landclub Ahaus e.V., Schmäinghook 36)"
+  },
+  "distance_km_from_dedemsvaart": 63.0,
+  "phone": "+49 2567 405",
+  "email": "info@glc-ahaus.de",
+  "website": "https://www.glc-ahaus.de/",
+  "booking_url": "https://ahaus.albatros9.net/a9online/#/",
+  "founded": 1987,
+  "architect": null,
+  "landscape": null,
+  "facilities": [
+    "clubhuis",
+    "golfhotel (Ahauser Land- & Golfhotel)",
+    "bistro/restaurant",
+    "golfschool",
+    "driving range",
+    "e-carts",
+    "trolleys",
+    "camperplaatsen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Normaal greenfee met geldige DGV-kaart met gouden hologram (NL: NGF-kaart van een gewone club); vrije golfers (bv. VcG) welkom tegen hoger tarief",
+  "description_nl": "Grote golfanlage in Alstätte, vlak over de grens bij Enschede en Haaksbergen, met vier 9-holeslussen (Süd, Ost, West en Nord) die in zes 18-holescombinaties gespeeld kunnen worden. De club werd in 1987 opgericht; de Nord-lus kwam er in 2019 bij. Op het terrein liggen ook een golfhotel, een bistro en een driving range.",
+  "loops": [
+    {
+      "name": "Ost/Nord",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "gelb",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5510,
+          "course_rating": 70.6,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4947,
+          "course_rating": 67.7,
+          "slope": 115,
+          "par": 72
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 63.9,
+          "slope": 110,
+          "par": 69
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 59.2,
+          "slope": 96,
+          "par": 63
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4947,
+          "course_rating": 72.7,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 68.8,
+          "slope": 119,
+          "par": 69
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 61.7,
+          "slope": 107,
+          "par": 63
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 294,
+            "rot": 275
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 438,
+            "rot": 424
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 306,
+            "rot": 260
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 126,
+            "rot": 115
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 365,
+            "rot": 325
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 354,
+            "rot": 318
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 358,
+            "rot": 313
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 125,
+            "rot": 110
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 483,
+            "rot": 420
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 324,
+            "rot": 290
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 452,
+            "rot": 428
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 244,
+            "rot": 229
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 275,
+            "rot": 240
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 278,
+            "rot": 250
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 85,
+            "rot": 70
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 292,
+            "rot": 255
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 200,
+            "rot": 185
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 511,
+            "rot": 440
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ost/West",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "gelb",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5480,
+          "course_rating": 69.6,
+          "slope": 128,
+          "par": 71
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4910,
+          "course_rating": 66.5,
+          "slope": 119,
+          "par": 70
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 63.0,
+          "slope": 106,
+          "par": 68
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 57.8,
+          "slope": 95,
+          "par": 61
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4910,
+          "course_rating": 71.6,
+          "slope": 133,
+          "par": 71
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 67.1,
+          "slope": 120,
+          "par": 68
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 60.2,
+          "slope": 104,
+          "par": 61
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 294,
+            "rot": 275
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 438,
+            "rot": 424
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 306,
+            "rot": 260
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 126,
+            "rot": 115
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 365,
+            "rot": 325
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 354,
+            "rot": 318
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 358,
+            "rot": 313
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 125,
+            "rot": 110
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 483,
+            "rot": 420
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 287,
+            "rot": 258
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 125,
+            "rot": 116
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 378,
+            "rot": 337
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 285,
+            "rot": 264
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 472,
+            "rot": 405
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 127,
+            "rot": 112
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 323,
+            "rot": 296
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 336,
+            "rot": 297
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 298,
+            "rot": 265
+          }
+        }
+      ]
+    },
+    {
+      "name": "Süd/Ost",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "gelb",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5692,
+          "course_rating": 71.1,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5037,
+          "course_rating": 67.7,
+          "slope": 115,
+          "par": 72
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 64.2,
+          "slope": 110,
+          "par": 69
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 58.5,
+          "slope": 94,
+          "par": 63
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5037,
+          "course_rating": 72.7,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 69.3,
+          "slope": 117,
+          "par": 69
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 60.5,
+          "slope": 103,
+          "par": 63
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 340,
+            "rot": 299
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 153,
+            "rot": 93
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 400,
+            "rot": 360
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 314,
+            "rot": 284
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 448,
+            "rot": 395
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 363,
+            "rot": 325
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 166,
+            "rot": 152
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 322,
+            "rot": 280
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 337,
+            "rot": 289
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 294,
+            "rot": 275
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 438,
+            "rot": 424
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 306,
+            "rot": 260
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 126,
+            "rot": 115
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 365,
+            "rot": 325
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 354,
+            "rot": 318
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 358,
+            "rot": 313
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 125,
+            "rot": 110
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 483,
+            "rot": 420
+          }
+        }
+      ]
+    },
+    {
+      "name": "Süd/Nord",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "gelb",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5504,
+          "course_rating": 70.5,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4864,
+          "course_rating": 67.2,
+          "slope": 114,
+          "par": 72
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 64.7,
+          "slope": 111,
+          "par": 70
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 58.3,
+          "slope": 92,
+          "par": 62
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4864,
+          "course_rating": 72.2,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 69.5,
+          "slope": 120,
+          "par": 70
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 60.2,
+          "slope": 104,
+          "par": 62
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 340,
+            "rot": 299
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 153,
+            "rot": 93
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 400,
+            "rot": 360
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 314,
+            "rot": 284
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 448,
+            "rot": 395
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 363,
+            "rot": 325
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 166,
+            "rot": 152
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 322,
+            "rot": 280
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 337,
+            "rot": 289
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 324,
+            "rot": 290
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 452,
+            "rot": 428
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 244,
+            "rot": 229
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 275,
+            "rot": 240
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 278,
+            "rot": 250
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 85,
+            "rot": 70
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 292,
+            "rot": 255
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 200,
+            "rot": 185
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 511,
+            "rot": 440
+          }
+        }
+      ]
+    },
+    {
+      "name": "West/Nord",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "gelb",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5292,
+          "course_rating": 69.0,
+          "slope": 129,
+          "par": 71
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4737,
+          "course_rating": 66.0,
+          "slope": 119,
+          "par": 70
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 63.5,
+          "slope": 107,
+          "par": 69
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 57.6,
+          "slope": 93,
+          "par": 60
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4737,
+          "course_rating": 71.1,
+          "slope": 133,
+          "par": 71
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 67.3,
+          "slope": 123,
+          "par": 69
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 59.9,
+          "slope": 104,
+          "par": 60
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 287,
+            "rot": 258
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 125,
+            "rot": 116
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 378,
+            "rot": 337
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 285,
+            "rot": 264
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 472,
+            "rot": 405
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 127,
+            "rot": 112
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 323,
+            "rot": 296
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 336,
+            "rot": 297
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 298,
+            "rot": 265
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 324,
+            "rot": 290
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 452,
+            "rot": 428
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 244,
+            "rot": 229
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 275,
+            "rot": 240
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 278,
+            "rot": 250
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 85,
+            "rot": 70
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 292,
+            "rot": 255
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 200,
+            "rot": 185
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 511,
+            "rot": 440
+          }
+        }
+      ]
+    },
+    {
+      "name": "West/Süd",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "gelb",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5474,
+          "course_rating": 69.5,
+          "slope": 129,
+          "par": 71
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4827,
+          "course_rating": 66.0,
+          "slope": 118,
+          "par": 70
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 63.8,
+          "slope": 107,
+          "par": 69
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 56.9,
+          "slope": 91,
+          "par": 60
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4827,
+          "course_rating": 71.1,
+          "slope": 132,
+          "par": 71
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 67.8,
+          "slope": 120,
+          "par": 69
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 58.7,
+          "slope": 100,
+          "par": 60
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 287,
+            "rot": 258
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 125,
+            "rot": 116
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 378,
+            "rot": 337
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 285,
+            "rot": 264
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 472,
+            "rot": 405
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 127,
+            "rot": 112
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 323,
+            "rot": 296
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 336,
+            "rot": 297
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 298,
+            "rot": 265
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 340,
+            "rot": 299
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 153,
+            "rot": 93
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 400,
+            "rot": 360
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 314,
+            "rot": 284
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 448,
+            "rot": 395
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 363,
+            "rot": 325
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 166,
+            "rot": 152
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 322,
+            "rot": 280
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 337,
+            "rot": 289
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.glc-ahaus.de/scorekarten-vorgaben/",
+    "files": [
+      "scorecard/ahaus_scard_ost_nord.pdf",
+      "scorecard/Ost-Nord-Course.pdf",
+      "scorecard/ahaus_scard_ost_west.pdf",
+      "scorecard/Ost-West-Course.pdf",
+      "scorecard/ahaus_scard_ost_sued.pdf",
+      "scorecard/Sued-Ost-Tabelle.pdf",
+      "scorecard/ahaus_scard_sued_nord.pdf",
+      "scorecard/Sued-Nord-Course.pdf",
+      "scorecard/ahaus_scard_west_nord.pdf",
+      "scorecard/West-Nord-Course.pdf",
+      "scorecard/ahaus_scard_west_sued.pdf",
+      "scorecard/West-Sued-Tabelle.pdf",
+      "scorecard/Nord-Course_9-Loch.pdf",
+      "scorecard/Ost-Course_9-Loch.pdf",
+      "scorecard/Sued-Course_9-Loch.pdf",
+      "scorecard/West-Course_9-Loch.pdf",
+      "scorecard/ahaus-nord-booklet.pdf",
+      "scorecard/ahaus-ost-booklet.pdf",
+      "scorecard/ahaus-sued-booklet.pdf",
+      "scorecard/ahaus-west-booklet.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "36 holes = 4 lussen van 9 (course_type '27-holes' is het dichtstbijzijnde schematype; holes_total=36). Holelengtes (gelb/rot), par en HCP per combinatie van de officiële scorekaarten (2020/2022); HCP verschilt per combinatie. CR/slope/par per tee uit Course-Handicap-tabellen 11/2025 (Herren gelb/rot/orange/grün, Damen rot/orange/grün); lengtes oranje/groene tees niet gepubliceerd. Herren rot gebruikt de rode lengtes. 9-holes ratings 2025 (Herren gelb; Damen rot): Nord 35,0/129 en 36,1/132 (par 36); Ost 35,6/126 en 36,6/131 (par 36); Süd 35,5/128 en 36,1/129 (par 36); West 34,0/130 en 35,0/134 (par 35)."
+  },
+  "sources": [
+    "https://www.glc-ahaus.de/scorekarten-vorgaben/",
+    "https://www.glc-ahaus.de/golfbahnen-golfplatz-ahaus/",
+    "https://www.glc-ahaus.de/greenfee/",
+    "https://www.glc-ahaus.de/chronik/",
+    "https://www.glc-ahaus.de/kontakt/"
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "slug": "t-zelle-hengelo-gld",
+  "name": "Golfclub 't Zelle",
+  "club_name": "Golfclub 't Zelle",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Varsselseweg 45",
+    "postal_code": "7255 NR",
+    "city": "Hengelo (Gld)",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.0547,
+    "lon": 6.38784,
+    "source": "golfkaart.com (OSM-baanpolygoon centrum 52.0613, 6.3913)"
+  },
+  "distance_km_from_dedemsvaart": 60.9,
+  "phone": "+31 575 467 533",
+  "email": "info@gczelle.nl",
+  "website": "https://www.gczelle.nl",
+  "booking_url": "https://www.gczelle.nl/baan/starttijd-reserveren",
+  "founded": null,
+  "architect": null,
+  "landscape": "Bos- en waterrijke Achterhoekse baan (lussen Bosrijk en Waterrijk) plus open par-3-baan Veldrijk",
+  "facilities": [
+    "driving range",
+    "2 golfsimulatoren (Simbays)",
+    "putting greens",
+    "chipping green",
+    "par-3-baan Veldrijk (9 holes)",
+    "golfschool",
+    "golfshop",
+    "horeca/clubhuis",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Wedstrijdbaan Bosrijk-Waterrijk: handicap 54; par-3-baan Veldrijk: baanpermissie. Starttijd reserveren telefonisch. Greenfee zomer 2026: 18 holes EUR 75, 9 holes EUR 45; Veldrijk dagkaart EUR 25.",
+  "description_nl": "Achterhoekse golfclub bij Hengelo (Gld) met een 18-holes wedstrijdbaan van par 73, opgebouwd uit de lussen Bosrijk (holes 1-9) en Waterrijk (holes 10-18). Daarnaast ligt er de 9-holes par-3-baan Veldrijk, die veel waardering krijgt. Met oefenfaciliteiten, golfsimulatoren en een clubhuis is het een complete accommodatie voor zowel ervaren als beginnende golfers.",
+  "loops": [
+    {
+      "name": "Bosrijk + Waterrijk (wedstrijdbaan)",
+      "holes": 18,
+      "par": 73,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 6028,
+          "course_rating": 73.2,
+          "slope": 135,
+          "par": 73
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 6028,
+          "course_rating": 79.2,
+          "slope": 142,
+          "par": 73
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5490,
+          "course_rating": 70.6,
+          "slope": 125,
+          "par": 73
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5490,
+          "course_rating": 75.9,
+          "slope": 137,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5027,
+          "course_rating": 68.5,
+          "slope": 118,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5027,
+          "course_rating": 73.6,
+          "slope": 131,
+          "par": 73
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 296,
+            "blauw": 296,
+            "rood": 251
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 447,
+            "blauw": 367,
+            "rood": 367
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 267,
+            "blauw": 267,
+            "rood": 212
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 510,
+            "blauw": 421,
+            "rood": 421
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 201,
+            "blauw": 170,
+            "rood": 170
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 369,
+            "blauw": 369,
+            "rood": 307
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 406,
+            "blauw": 331,
+            "rood": 331
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 151,
+            "blauw": 151,
+            "rood": 138
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 355,
+            "blauw": 355,
+            "rood": 304
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 264,
+            "blauw": 264,
+            "rood": 229
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 480,
+            "blauw": 370,
+            "rood": 370
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 406,
+            "blauw": 340,
+            "rood": 340
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 372,
+            "blauw": 372,
+            "rood": 313
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 511,
+            "blauw": 424,
+            "rood": 424
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "blauw": 150,
+            "rood": 134
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 299,
+            "blauw": 299,
+            "rood": 252
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 240,
+            "blauw": 240,
+            "rood": 211
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 304,
+            "blauw": 304,
+            "rood": 253
+          }
+        }
+      ]
+    },
+    {
+      "name": "Veldrijk (par-3-baan, 9 holes 2x gespeeld)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1708,
+          "course_rating": 48.6,
+          "slope": 63,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1708,
+          "course_rating": 50.2,
+          "slope": 68,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 69,
+            "rood": 69
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 107,
+            "rood": 107
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 113,
+            "rood": 113
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 82,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 138,
+            "rood": 138
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 69,
+            "rood": 69
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 107,
+            "rood": 107
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 113,
+            "rood": 113
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 82,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 138,
+            "rood": 138
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.gczelle.nl/baan/de-baan-en-oefenfaciliteiten",
+    "files": [
+      "scorecard/scorekaart-bosrijk-waterrijk.pdf",
+      "scorecard/scorekaart-par-3-2026.pdf",
+      "scorecard/heren--18-holes--bosrijk-waterrrijk.pdf",
+      "scorecard/dames--18-holes--bosrijk-waterrijk.pdf",
+      "scorecard/dames-en-heren--18-holes--veldrijk.pdf",
+      "scorecard/dames-en-heren--9-holes--veldrijk.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Wedstrijdbaan: tee-volgorde geel/blauw/rood afgeleid uit totalen (6028/5490/5027) en hcp-tabellen d.d. 17-09-2024; één SI voor dames en heren. Aparte 9-holes hcp-tabellen voor Bosrijk en Waterrijk bestaan (niet opgenomen). Veldrijk: 9 holes die 2x gespeeld worden (SI 1-18), rood en geel even lang; CR/slope 18 holes uit tabel 19-01-2021 (9 holes: heren geel 24,3/63, dames rood 25,1/68)."
+  },
+  "sources": [
+    "https://www.gczelle.nl/baan/de-baan-en-oefenfaciliteiten",
+    "https://www.gczelle.nl/baan/greenfeetarieven-en-hospitality",
+    "https://www.gczelle.nl/baan/starttijd-reserveren"
+  ]
+}

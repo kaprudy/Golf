@@ -1,0 +1,236 @@
+{
+  "slug": "pitch-putt-papendal",
+  "name": "Pitch & Putt Papendal",
+  "club_name": "Pitch & Putt Golf Papendal",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Papendallaan 3",
+    "postal_code": "6816 VD",
+    "city": "Arnhem",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.0101693,
+    "lon": 5.8245704,
+    "source": "nominatim (Pitch&Putt Papendal)"
+  },
+  "distance_km_from_dedemsvaart": 78.6,
+  "phone": "+31 6 82300303",
+  "email": "papendal@pitch-putt.nl",
+  "website": "https://www.pitch-putt.nl/locaties/papendal/",
+  "booking_url": "https://portal.nostium.com/reservering/1g13h5fcwwmv/pitch-en-putt-papendal",
+  "founded": 2006,
+  "architect": null,
+  "landscape": "bos (Veluwe)",
+  "facilities": [
+    "bar en terras (Hotel Papendal)",
+    "voetgolf",
+    "materiaalverhuur"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen GVB nodig; aanbevolen vanaf 8 jaar; maximaal 3 clubs waarvan een putter.",
+  "description_nl": "Pitch & putt-baan bij Hotel Papendal in de bossen tussen Arnhem en Ede, volgens de vakfederatie FIPPA in 2006 geopend als eerste pitch & putt van Nederland. Alle holes zijn korte par-3's, te spelen als 9 of 18 holes zonder golfvaardigheidsbewijs. Er is ook voetgolf en de horeca van het hotel ligt ernaast.",
+  "loops": [
+    {
+      "name": "Pitch & Putt 18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": null,
+          "length_m": 914,
+          "course_rating": 48.0,
+          "slope": 85,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 50
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 35
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 39
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 39
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 40
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 67
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 38
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 68
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 57
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 42
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 56
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 52
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 41
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 65
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 54
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 64
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 53
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 54
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://www.golfpass.com/courses/36543-pitch-putt-golf-papendal/scorecard-and-layout",
+    "files": [
+      "scorecard/golfpass_scorecard.html",
+      "scorecard/hole19.html",
+      "scorecard/page.html"
+    ],
+    "source": "third-party",
+    "complete": false,
+    "notes": "Geen officiele scorekaart online. Par/SI identiek bij GolfPass en Hole19; lengtes (m) en CR 48.0/slope 85 uit Hole19 (niet officieel bevestigd; tee daar 'meters' genoemd, hier 'wit' naar GolfPass 'White'). GolfPass geeft andere lengtes (totaal 1094, eenheid onduidelijk; tee White 1008 m, CR/slope N/A). Officiele site noemt een 25-holes pitch & putt-baan, gespeeld als 9 of 18 holes; FIPPA (2006) sprak van 27 holes. Openingsjaar 2006 volgens fippa.org."
+  },
+  "sources": [
+    "https://www.pitch-putt.nl/locaties/papendal/",
+    "https://www.pitch-putt.nl/locaties/papendal/papendal-pitch-putt-golf/",
+    "https://www.golfpass.com/courses/36543-pitch-putt-golf-papendal/scorecard-and-layout",
+    "https://www.hole19golf.com/courses/pitch-putt-golf-papendal",
+    "https://fippa.org/courses/papendal_netherlands"
+  ]
+}

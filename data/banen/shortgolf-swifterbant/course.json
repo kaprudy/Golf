@@ -1,0 +1,275 @@
+{
+  "slug": "shortgolf-swifterbant",
+  "name": "Shortgolf Swifterbant",
+  "club_name": "Shortgolf Swifterbant / Shortgolf Vereniging Flevoland (SGVF)",
+  "holes_total": 18,
+  "course_type": "par-3",
+  "address": {
+    "street": "Rivierduinweg 9",
+    "postal_code": "8255 PJ",
+    "city": "Swifterbant",
+    "province": "Flevoland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.5816975,
+    "lon": 5.6262493,
+    "source": "nominatim (adres Rivierduinweg 9)"
+  },
+  "distance_km_from_dedemsvaart": 56.3,
+  "phone": "+31 321 324 403",
+  "email": "info@shortgolf.nl",
+  "website": "https://shortgolf.nl/",
+  "booking_url": null,
+  "founded": 2007,
+  "architect": null,
+  "landscape": "polder, water en beplanting",
+  "facilities": [
+    "driving range",
+    "oefengreens",
+    "indoor golf",
+    "grand café",
+    "vergaderzalen",
+    "clubverhuur",
+    "golfles/GVB-cursus"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen GVB of lidmaatschap nodig. Qualifying ronden alleen over 18 holes vanaf geel.",
+  "description_nl": "Laagdrempelige 18-holes par-3 baan in Swifterbant, in 2007 aangelegd op voormalige landbouwgrond. Een ronde duurt ongeveer anderhalf uur en je hebt geen GVB nodig, waardoor de baan populair is bij beginners, gezinnen en groepen. Naast de baan zijn er een driving range, oefengreens, indoor golf en een grand café.",
+  "loops": [
+    {
+      "name": "18 holes par 3",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1460,
+          "course_rating": 46.7,
+          "slope": 54,
+          "par": 54
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 1460,
+          "course_rating": 47.8,
+          "slope": 56,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": null,
+          "length_m": 1278,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 12,
+          "si_women": 12,
+          "lengths_m": {
+            "geel": 59,
+            "rood": 59
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 8,
+          "si_women": 8,
+          "lengths_m": {
+            "geel": 78,
+            "rood": 78
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 10,
+          "si_women": 10,
+          "lengths_m": {
+            "geel": 65,
+            "rood": 65
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 2,
+          "si_women": 2,
+          "lengths_m": {
+            "geel": 125,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 4,
+          "si_women": 4,
+          "lengths_m": {
+            "geel": 99,
+            "rood": 99
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 18,
+          "si_women": 18,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 6,
+          "si_women": 6,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 16,
+          "si_women": 16,
+          "lengths_m": {
+            "geel": 61,
+            "rood": 61
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 14,
+          "si_women": 14,
+          "lengths_m": {
+            "geel": 50,
+            "rood": 50
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 17,
+          "si_women": 1,
+          "lengths_m": {
+            "geel": 71,
+            "rood": 71
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 5,
+          "si_women": 17,
+          "lengths_m": {
+            "geel": 107,
+            "rood": 71
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 7,
+          "si_women": 5,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 78
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 15,
+          "si_women": 7,
+          "lengths_m": {
+            "geel": 87,
+            "rood": 59
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 1,
+          "si_women": 3,
+          "lengths_m": {
+            "geel": 143,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 3,
+          "si_women": 15,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 69
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 13,
+          "si_women": 13,
+          "lengths_m": {
+            "geel": 55,
+            "rood": 55
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 9,
+          "si_women": 9,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 11,
+          "si_women": 11,
+          "lengths_m": {
+            "geel": 58,
+            "rood": 58
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://shortgolf.nl/golfen/golfbaan/",
+    "files": [
+      "scorecard/playing-handicap-tabellen-shortgolf-01-07-2024.pdf",
+      "scorecard/baaninfo.webp",
+      "scorecard/page.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Officiële site toont alleen baankaart (baaninfo.webp) en baanhandicaptabel 01-07-2024 (geel heren CR 46,7/SR 54, dames 47,8/56; oranje niet-qualifying). Hole-voor-hole par/SI/lengtes komen van GolfPass (yards, omgerekend naar meters; totalen 1460 m geel / 1278 m rood) en kunnen verouderd zijn: officieel heet de tweede tee nu 'oranje'. Dames-SI (si_women) volgens GolfPass; holes 10-18 lijkt daar verschoven en is onzeker. Postcode op site zowel 8255 PJ als 8255 PD."
+  },
+  "sources": [
+    "https://shortgolf.nl/golfen/golfbaan/",
+    "https://shortgolf.nl/contact/",
+    "https://shortgolf.nl/over-shortgolf-swifterbant/",
+    "https://www.golfpass.com/travel-advisor/courses/36532-shortgolf-swifterbant/scorecard-and-layout"
+  ]
+}

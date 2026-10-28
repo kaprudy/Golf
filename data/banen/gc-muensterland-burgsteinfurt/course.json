@@ -1,0 +1,173 @@
+{
+  "slug": "gc-muensterland-burgsteinfurt",
+  "name": "Golfclub Münsterland",
+  "club_name": "Golfclub Münsterland e.V.",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Hollich 156a",
+    "postal_code": "48565",
+    "city": "Steinfurt (Burgsteinfurt)",
+    "province": "Nordrhein-Westfalen",
+    "country": "DE"
+  },
+  "gps": {
+    "lat": 52.1408,
+    "lon": 7.355,
+    "source": "nominatim (Hollich 156a, Steinfurt - clubhuis/restaurant Nossa Terra)"
+  },
+  "distance_km_from_dedemsvaart": 79.5,
+  "phone": "+49 2551 833550",
+  "email": "info@gc-muensterland.de",
+  "website": "https://www.gc-muensterland.de/",
+  "booking_url": null,
+  "founded": 1950,
+  "architect": null,
+  "landscape": "historisch landschapspark (Bagno) met oude bomen, bos en water",
+  "facilities": [
+    "driving range",
+    "e-carts",
+    "trolleys",
+    "restaurant (Nossa Terra)",
+    "golfakademie"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Spelers van een DGV-club of vergelijkbare buitenlandse bond, ook VcG-spelers; dagkaart, geen starttijden",
+  "description_nl": "Historische 9-holesbaan uit 1950 in het Bagno, het voormalige vorstelijke landschapspark naast Schloss Steinfurt. De baan ligt tussen oude solitaire bomen en bos langs de Steinfurter Aa en vraagt vooral rechte slagen. Over twee rondes wordt par 72 gespeeld; er zijn geen starttijden en het restaurant zit in de oude wachtpost van het park.",
+  "loops": [
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 36,
+      "tees": [
+        {
+          "name": "Herren",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2710,
+          "course_rating": null,
+          "slope": null,
+          "par": 36
+        },
+        {
+          "name": "Damen",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2423,
+          "course_rating": null,
+          "slope": null,
+          "par": 36
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "Herren": 327,
+            "Damen": 299
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "Herren": 365,
+            "Damen": 309
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "Herren": 435,
+            "Damen": 412
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "Herren": 165,
+            "Damen": 149
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "Herren": 135,
+            "Damen": 114
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "Herren": 430,
+            "Damen": 375
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "Herren": 243,
+            "Damen": 204
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "Herren": 305,
+            "Damen": 287
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "Herren": 305,
+            "Damen": 282
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.gc-muensterland.de/golfplatz/",
+    "files": [
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Scorekaart staat als HTML-tabel op de officiële pagina /golfplatz/ (geen PDF). HCP officieel als '3/4' enz. (1e/2e ronde bij 18 holes); si = waarde 1e ronde, 2e ronde = si+1. Damen-lengtes per hole tellen op tot 2431 terwijl totaal 2423 vermeld staat; golfingrecord.com geeft hole 5 = 126 en hole 8 = 267 (som 2423) - officiële waarden (114/287) overgenomen. CR/slope ontbreken: de Course-Handicap-PDF's op /golfplatz/course-handicaps/ geven nu de homepage terug. 1golf.eu (third-party, niet geverifieerd, via zoekresultaat) vermeldt 18 holes: gelb CR 69,2 / slope 123 (5420 m), rot CR 70,9 / slope 120 (4822 m). Teekleuren geel/rood volgens third-party bronnen; officieel alleen 'Herren'/'Damen'."
+  },
+  "sources": [
+    "https://www.gc-muensterland.de/golfplatz/",
+    "https://www.gc-muensterland.de/gaeste/",
+    "https://www.gc-muensterland.de/service/kontakt-anfahrt/",
+    "https://www.gc-muensterland.de/ueber-den-golfclub-muensterland-e-v/",
+    "https://www.golfingrecord.com/golf-scorecard/45e44b00-bfb3-43d4-abaa-f8836a0617c9"
+  ]
+}

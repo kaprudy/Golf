@@ -1,0 +1,356 @@
+{
+  "slug": "hattemse-golf-country-club",
+  "name": "De Hattemse Golf & Country Club",
+  "club_name": "De Hattemse Golf & Country Club",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Veenwal 11",
+    "postal_code": "8051 AS",
+    "city": "Hattem",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.45466,
+    "lon": 6.07493,
+    "source": "OpenStreetMap way 6320965 (centroid baan)"
+  },
+  "distance_km_from_dedemsvaart": 30.7,
+  "phone": "038 444 19 09",
+  "email": "secretariaat@golfclub-hattem.nl",
+  "website": "https://www.golfclub-hattem.nl",
+  "booking_url": "https://hattemse.baan.intogolf.nl/calendar",
+  "founded": 1930,
+  "architect": null,
+  "landscape": "bos/park, glooiend (ijstijd-zandruggen)",
+  "facilities": [
+    "clubhuis",
+    "horeca (De Hattemse Eik)",
+    "golflessen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Handicap 45 of lager en geldige NGF-pas verplicht; starttijd reserveren op werkdagen",
+  "description_nl": "Historische 9 holesbaan uit 1930 in de bosrijke omgeving van Hattem, een van de weinige vooroorlogse banen in Nederland. Vier holes liggen in het bos en vijf in het open IJssellandschap, met kleine, vaak verhoogde greens en veel bunkers. De korte lengte wordt gecompenseerd door smalle fairways en reliëf; hole 6/15 met de karakteristieke eik is de signature hole.",
+  "loops": [
+    {
+      "name": "9 holes (2x gespeeld = 18 holes)",
+      "holes": 18,
+      "par": 68,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "course_rating": 69.2,
+          "slope": 131,
+          "length_m": 5268,
+          "par": 68
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "course_rating": 66.7,
+          "slope": 122,
+          "length_m": 4893,
+          "par": 68
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "course_rating": 64.5,
+          "slope": 121,
+          "length_m": 4501,
+          "par": 68
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "course_rating": 63.2,
+          "slope": 112,
+          "length_m": 4147,
+          "par": 68
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5268,
+          "course_rating": 74.4,
+          "slope": 138,
+          "par": 68
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 4893,
+          "course_rating": 72.1,
+          "slope": 130,
+          "par": 68
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4501,
+          "course_rating": 69.6,
+          "slope": 122,
+          "par": 68
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4147,
+          "course_rating": 66.7,
+          "slope": 120,
+          "par": 68
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 325,
+            "blauw": 312,
+            "rood": 293,
+            "oranje": 293
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 330,
+            "blauw": 317,
+            "rood": 290,
+            "oranje": 260
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 144,
+            "blauw": 132,
+            "rood": 120,
+            "oranje": 100
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 373,
+            "blauw": 353,
+            "rood": 320,
+            "oranje": 300
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 340,
+            "blauw": 310,
+            "rood": 293,
+            "oranje": 263
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 387,
+            "blauw": 365,
+            "rood": 312,
+            "oranje": 285
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 249,
+            "blauw": 239,
+            "rood": 212,
+            "oranje": 190
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "blauw": 117,
+            "rood": 108,
+            "oranje": 108
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 369,
+            "blauw": 310,
+            "rood": 300,
+            "oranje": 272
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 325,
+            "blauw": 312,
+            "rood": 298,
+            "oranje": 298
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 330,
+            "blauw": 317,
+            "rood": 290,
+            "oranje": 260
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 144,
+            "blauw": 132,
+            "rood": 120,
+            "oranje": 100
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 373,
+            "blauw": 353,
+            "rood": 320,
+            "oranje": 300
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 340,
+            "blauw": 293,
+            "rood": 293,
+            "oranje": 263
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 387,
+            "blauw": 365,
+            "rood": 312,
+            "oranje": 285
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 249,
+            "blauw": 239,
+            "rood": 212,
+            "oranje": 190
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "blauw": 117,
+            "rood": 108,
+            "oranje": 108
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 369,
+            "blauw": 310,
+            "rood": 300,
+            "oranje": 272
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclub-hattem.nl/index.php/baan/6-de-baan",
+    "files": [
+      "scorecard/scorekaart-18holes.html",
+      "scorecard/scorekaart-9holes.html",
+      "scorecard/Hattemse-heren-whs.pdf",
+      "scorecard/Hattemse-dames-whs.pdf",
+      "scorecard/hcpcalc.html",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart staat als HTML-iframe (custom/hcpcalc/18holes.php). Fysiek 9 holes, 2e ronde met eigen SI en enkele afwijkende lengtes (hole 10 rood/oranje 298, hole 14 blauw 293). Par 68 over 18. CR/SR WHS-tabellen d.d. 07-09-2023; 9-holes: heren geel 34,6/131, blauw 33,4/122, rood 32,3/121, oranje 31,6/112; dames geel 37,2/138, blauw 36,1/130, rood 34,8/122, oranje 33,4/120. Hole 3 volgens site eerste ontwerp van Alan Rijks (jaren 80); oorspronkelijke architect onbekend."
+  },
+  "sources": [
+    "https://www.golfclub-hattem.nl/index.php/baan/6-de-baan",
+    "https://www.golfclub-hattem.nl/custom/hcpcalc/18holes.php",
+    "https://www.golfclub-hattem.nl/custom/hcpcalc/index.php",
+    "https://www.golfclub-hattem.nl/index.php/gasten",
+    "https://www.golfclub-hattem.nl/"
+  ]
+}

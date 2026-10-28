@@ -1,0 +1,226 @@
+{
+  "slug": "golfclub-putten",
+  "name": "Golfclub Putten",
+  "club_name": "Golfclub Putten (voorheen Dutch Golf Putten)",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Nijkerkerstraat 99a",
+    "postal_code": "3882 PE",
+    "city": "Putten",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2371687,
+    "lon": 5.5131396,
+    "source": "nominatim (Nijkerkerstraat 99A, Putten); komt overeen met golfkaart"
+  },
+  "phone": "+31 33 246 3758",
+  "email": "info@golfclubputten.nl",
+  "website": "https://www.golfclubputten.com/",
+  "booking_url": "https://www.nexxchange.com/search/teetimes/golfclub-putten",
+  "founded": null,
+  "architect": null,
+  "landscape": "parkbaan met bosranden",
+  "facilities": [
+    "clubhuis",
+    "driving range",
+    "2 puttinggreens",
+    "kunstgrasgreen",
+    "golfschool",
+    "golfsimulator",
+    "golfshop",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Compacte 9-holesbaan (par 32) aan de zuidkant van Putten, niet ver van Amersfoort en Nijkerk. Met korte par-3's en par-4's is de baan geschikt voor beginners en voor een snelle qualifying-ronde. Er zijn een driving range, putting greens, een golfsimulator en een clubhuis met eenvoudige horeca; starttijden boek je online.",
+  "loops": [
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 32,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1800,
+          "course_rating": 29.9,
+          "slope": 94,
+          "par": 32
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 1800,
+          "course_rating": 31.3,
+          "slope": 114,
+          "par": 32
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 1656,
+          "course_rating": 29.0,
+          "slope": 94,
+          "par": 32
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1656,
+          "course_rating": 30.7,
+          "slope": 105,
+          "par": 32
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 1551,
+          "course_rating": 28.7,
+          "slope": 89,
+          "par": 32
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 1551,
+          "course_rating": 30.0,
+          "slope": 104,
+          "par": 32
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 278,
+            "rood": 264,
+            "oranje": 223
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 130,
+            "oranje": 130
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 123,
+            "rood": 95,
+            "oranje": 95
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 267,
+            "rood": 236,
+            "oranje": 172
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 91,
+            "rood": 91,
+            "oranje": 91
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 251,
+            "rood": 228,
+            "oranje": 228
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 119,
+            "rood": 119,
+            "oranje": 119
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 259,
+            "rood": 241,
+            "oranje": 241
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 272,
+            "rood": 252,
+            "oranje": 252
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclubputten.com/golfbaan/scorekaart",
+    "files": [
+      "scorecard/Scorekaart.png",
+      "scorecard/Scorekaartvoorkant.png",
+      "scorecard/Scorekaartregels.png",
+      "scorecard/whs-heren-9.jpg",
+      "scorecard/whs-dames-9.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart als afbeelding; holes 10-18 identiek aan 1-9 (zelfde SI), 18 holes par 64 (geel 3600/rood 3312/oranje 3102 m). CR/slope 9 holes uit WHS-tabellen d.d. 06-01-2021 (pagina /golfbaan/courserating, opgeslagen als courserating.html)."
+  },
+  "sources": [
+    "https://www.golfclubputten.com/golfbaan/scorekaart",
+    "https://www.golfclubputten.com/golfbaan/courserating",
+    "https://www.golfclubputten.com/heren-9-holes",
+    "https://www.golfclubputten.com/dames-9-holes",
+    "https://www.golfclubputten.com/tarieven/greenfee",
+    "https://www.golfclubputten.com/starttijden"
+  ],
+  "distance_km_from_dedemsvaart": 75.8
+}

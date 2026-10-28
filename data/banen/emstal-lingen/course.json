@@ -1,0 +1,341 @@
+{
+  "slug": "emstal-lingen",
+  "name": "Golfclub Emstal",
+  "club_name": "Golfclub Emstal e.V.",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Beversundern 3",
+    "postal_code": "49808",
+    "city": "Lingen (Ems)",
+    "province": "Niedersachsen",
+    "country": "DE"
+  },
+  "gps": {
+    "lat": 52.5375,
+    "lon": 7.2722,
+    "source": "nominatim (Golfclub Emstal e.V., Beversundern 3)"
+  },
+  "distance_km_from_dedemsvaart": 55.4,
+  "phone": "+49 591 63837",
+  "email": "info@gc-emstal.de",
+  "website": "https://www.gc-emstal.de/",
+  "booking_url": "https://www.pccaddie.net/clubs/0493319/app.php?cat=tt_timetable_course",
+  "founded": 1977,
+  "architect": null,
+  "landscape": "vlak rivierlandschap langs de Eems, oude Eemsarmen en bos",
+  "facilities": [
+    "clubhuis",
+    "restaurant",
+    "golfshop",
+    "golfakademie",
+    "driving range",
+    "golfcarts",
+    "e-laadpaal"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Aanmelding verplicht; DGV- of lidmaatschapskaart met handicap (min. -54) en thuisclub; in weekend/feestdagen beperkt; maandag gesloten (greenkeepersdag)",
+  "description_nl": "Vlakke 18-holesbaan aan de Eems bij Lingen-Altenlingen, opgericht in 1977 en sinds 1998 volledig 18 holes. De oude negen holes slingeren tussen oude Eemsarmen en bosstroken, de nieuwere negen hebben brede sloten, biotopen en grote bunkers. Op enkele holes speel je direct langs de rivier. De club heeft het DGV-certificaat Golf & Natur in goud.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "gelb",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5980,
+          "course_rating": 71.5,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "blau",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5498,
+          "course_rating": 68.8,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5198,
+          "course_rating": 73.1,
+          "slope": 133,
+          "par": 72
+        },
+        {
+          "name": "orange",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4630,
+          "course_rating": 69.2,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 59.7,
+          "slope": 100,
+          "par": 66
+        },
+        {
+          "name": "grün",
+          "color": "green",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 61.6,
+          "slope": 105,
+          "par": 66
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 445,
+            "blau": 431,
+            "rot": 409,
+            "orange": 373
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 143,
+            "blau": 127,
+            "rot": 127,
+            "orange": 111
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 342,
+            "blau": 342,
+            "rot": 272,
+            "orange": 272
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 329,
+            "blau": 305,
+            "rot": 305,
+            "orange": 254
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 186,
+            "blau": 154,
+            "rot": 154,
+            "orange": 108
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 446,
+            "blau": 446,
+            "rot": 401,
+            "orange": 392
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 334,
+            "blau": 300,
+            "rot": 300,
+            "orange": 251
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 402,
+            "blau": 348,
+            "rot": 348,
+            "orange": 307
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 274,
+            "blau": 240,
+            "rot": 240,
+            "orange": 203
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 171,
+            "blau": 143,
+            "rot": 143,
+            "orange": 102
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 513,
+            "blau": 447,
+            "rot": 447,
+            "orange": 385
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 370,
+            "blau": 326,
+            "rot": 326,
+            "orange": 244
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 418,
+            "blau": 365,
+            "rot": 365,
+            "orange": 335
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 331,
+            "blau": 296,
+            "rot": 296,
+            "orange": 266
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 311,
+            "blau": 293,
+            "rot": 260,
+            "orange": 245
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 466,
+            "blau": 436,
+            "rot": 393,
+            "orange": 370
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 338,
+            "blau": 338,
+            "rot": 266,
+            "orange": 266
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 161,
+            "blau": 161,
+            "rot": 146,
+            "orange": 146
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.gc-emstal.de/platz/scorekarte",
+    "files": [
+      "scorecard/scorekarte_2017.pdf",
+      "scorecard/Course_Handicaps_-__1-18__2025_.PDF",
+      "scorecard/Course_Handicaps_-__1-9__9L__2025.PDF",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Holelengtes/par/HCP van officiële scorekaart (scorekarte_2017.pdf). CR/slope uit Course-Handicap-tabellen 2025 (stand 21.07.2025); op de kaart van 2017 staan oudere ratings (Herren gelb 71,3/134, blau 68,9/126, Damen rot 72,8/129, orange 69,3/122). Lengtes groene (junioren)tee onbekend. Let op: golfingrecord.com toont voor rood enkele afwijkende lengtes (bv. hole 3: 319, hole 17: 329) - mogelijk zijn lengtes sinds 2017 gewijzigd. 9-holes ratings (1-9, 2025): Herren gelb 35,4/132, blau 34,2/125, Junioren grün 29,9/102 (par 33); Damen rot 36,2/132, orange 34,2/126, grün 30,9/105."
+  },
+  "sources": [
+    "https://www.gc-emstal.de/platz/scorekarte",
+    "https://www.gc-emstal.de/platz/spielvorgabe",
+    "https://www.gc-emstal.de/club/ueber-uns",
+    "https://www.gc-emstal.de/kontakt",
+    "https://www.gc-emstal.de/gaeste",
+    "https://www.golfingrecord.com/golf-scorecard/200b96bf-eada-4acc-ae36-ad87374ebf6e"
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "slug": "openbare-golfclub-dronten",
+  "name": "Openbare Golfclub Dronten",
+  "club_name": "Openbare Golfclub Dronten (OGD)",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "De Pan 2",
+    "postal_code": "8252 LG",
+    "city": "Dronten",
+    "province": "Flevoland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.4975186,
+    "lon": 5.7089908,
+    "source": "nominatim (OSM node 'Openbare Golfclub Dronten')"
+  },
+  "distance_km_from_dedemsvaart": 52.0,
+  "phone": "+31 6 11369626",
+  "email": "info@openbaregolfclubdronten.nl",
+  "website": "https://www.openbaregolfclubdronten.nl/",
+  "booking_url": "https://www.nexxchange.com/golfclub/openbare-golfclub-dronten",
+  "founded": 2009,
+  "architect": null,
+  "landscape": "glooiend, bosrijk (voormalige vuilstort), waterpartij",
+  "facilities": [
+    "driving range",
+    "oefenfaciliteiten",
+    "golfschool (Golfschool Dronten / Flevo Golf Academie)",
+    "horeca (alleen alcoholvrij)",
+    "honden toegestaan (aangelijnd)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Openbare 9-holes baan uit 2009, aangelegd op de voormalige vuilstort van Dronten, met glooiende fairways, bomensingels en een grote waterpartij. Dankzij extra afslagplaatsen speel je sinds kort twee verschillende lussen: holes 1-9 (par 36) en 10-18 (par 35), samen par 71. De club staat bekend om haar goede prijs-kwaliteitverhouding en ontvangt graag greenfeespelers.",
+  "loops": [
+    {
+      "name": "OGD 18 holes (2x 9, lus 1-9 par 36, lus 10-18 par 35)",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5027,
+          "course_rating": 67.7,
+          "slope": 118,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5027,
+          "course_rating": 72.8,
+          "slope": 131,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4429,
+          "course_rating": 64.9,
+          "slope": 108,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4429,
+          "course_rating": 69.1,
+          "slope": 120,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3539,
+          "course_rating": 62.0,
+          "slope": 95,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3539,
+          "course_rating": 64.5,
+          "slope": 100,
+          "par": 71
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 396,
+            "rood": 337,
+            "oranje": 294
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 170,
+            "rood": 153,
+            "oranje": 105
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 276,
+            "rood": 250,
+            "oranje": 202
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 247,
+            "rood": 216,
+            "oranje": 153
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 113,
+            "rood": 98,
+            "oranje": 94
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 321,
+            "rood": 280,
+            "oranje": 222
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 340,
+            "rood": 249,
+            "oranje": 225
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 416,
+            "rood": 375,
+            "oranje": 305
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 268,
+            "rood": 254,
+            "oranje": 207
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 337,
+            "rood": 294,
+            "oranje": 219
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 170,
+            "rood": 153,
+            "oranje": 105
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 276,
+            "rood": 250,
+            "oranje": 202
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 280,
+            "rood": 247,
+            "oranje": 153
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 113,
+            "rood": 98,
+            "oranje": 94
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 321,
+            "rood": 280,
+            "oranje": 222
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 249,
+            "rood": 225,
+            "oranje": 225
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 466,
+            "rood": 416,
+            "oranje": 305
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 268,
+            "rood": 254,
+            "oranje": 207
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.openbaregolfclubdronten.nl/Scorekaart-en-handicap",
+    "files": [
+      "scorecard/OGD-scorekaart.png",
+      "scorecard/OGD-baangids-2026.pdf",
+      "scorecard/OGD-handicaptabel-heren.pdf",
+      "scorecard/OGD-handicaptabel-dames.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Fysiek 9 holes; holes 1/10, 4/13, 7/16 en 8/17 hebben eigen afslagplaatsen. Hole data uit scorekaart-afbeelding (één SI-kolom). CR/slope uit WHS-baanhandicaptabellen d.d. 13-11-2025."
+  },
+  "sources": [
+    "https://www.openbaregolfclubdronten.nl/Scorekaart-en-handicap",
+    "https://www.openbaregolfclubdronten.nl/Golfbaan",
+    "https://www.openbaregolfclubdronten.nl/Contact",
+    "https://www.openbaregolfclubdronten.nl/Gasten/Greenfee"
+  ]
+}
