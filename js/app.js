@@ -804,6 +804,10 @@ function locOf(c) {
 }
 
 const NEAR_KM = 2.5; // binnen deze afstand "ben je bij" een baan
+
+// Pitch & putt, par 3- en shortgolfbanen: in de baankeuze in een aparte groep.
+const isShortCourse = (c) => /pitch|\bputt\b|par[ -]?3|short ?golf|golftuin|country ?golf/i.test(c.name)
+  || (c.holeCount === 9 ? c.parTotal < 30 : c.parTotal < 60);
 let pickerPos = null;
 
 // Locatie voor de baankeuze: alleen vanzelf als de locatie al is toegestaan (of GPS aan staat),
@@ -840,7 +844,9 @@ function showCoursePicker() {
   const club = state.courses.filter((c) => !atClub.includes(c) && (c === home || (home.id === 'hooge-graven' && c.id === 'par3')));
   // Andere banen: dichtstbijzijnde eerst (vanaf waar je bent, anders vanaf de thuisbaan).
   const from = pickerPos ?? locOf(home);
-  const others = state.courses.filter((c) => !club.includes(c) && !atClub.includes(c)).sort((a, b) => km(a, from) - km(b, from));
+  const rest = state.courses.filter((c) => !club.includes(c) && !atClub.includes(c)).sort((a, b) => km(a, from) - km(b, from));
+  const others = rest.filter((c) => !isShortCourse(c));
+  const short = rest.filter(isShortCourse);
   // Stap 1: alleen de banen. De starthole kies je daarna (stap 2, showStartOptions).
   const holesText = (c) => (/holes/.test(c.name) ? '' : c.id === 'par3' ? '9 holes' : `${c.holeCount} holes`);
   const heading = (c, dist) => `<button class="course-row" data-action="pick-course" data-course="${esc(c.id)}">
@@ -854,7 +860,9 @@ function showCoursePicker() {
       ${atClub.map((c) => heading(c)).join('')}</div>` : locate}
     <div class="course-list">${club.map((c) => heading(c, atClub.length ? kmText(c) : '')).join('')}</div>
     ${others.length ? `<details class="start-others"><summary>Andere banen (${others.length})</summary>
-      <div class="course-list">${others.map((c) => heading(c, kmText(c))).join('')}</div></details>` : ''}`, 'Baan kiezen');
+      <div class="course-list">${others.map((c) => heading(c, kmText(c))).join('')}</div></details>` : ''}
+    ${short.length ? `<details class="start-others"><summary>Pitch & putt en par 3-banen (${short.length})</summary>
+      <div class="course-list">${short.map((c) => heading(c, kmText(c))).join('')}</div></details>` : ''}`, 'Baan kiezen');
   if (!pickerPos) locateForPicker();
 }
 
