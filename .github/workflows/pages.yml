@@ -18,7 +18,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+      - run: npm ci
       - run: npm test
+      # De app in een echte browser: ronde starten (baan, holes, spelers). Faalt dit, dan geen deploy.
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
 
   deploy:
     # Publiceer vanaf de standaardbranch van de repository (wat die ook is).
