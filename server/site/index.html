@@ -4,85 +4,116 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Golfscore</title>
-  <meta name="description" content="Golfscore: golfscores inspreken tijdens je ronde, met handicapberekening en een buggy-scherm.">
+  <meta name="description" content="Golfscore: golfscores inspreken tijdens je ronde, met GPS-afstanden en handicapberekening. Installeren op Android en iPhone.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
-  <style>
-    :root {
-      --accent: #1E4D36; --accent-ink: #1E4D36; --on-accent: #FBF8F1;
-      --bg: #F4EEE2; --card: #FBF8F1; --sand: #E9DFCB; --border: #E2D7C1;
-      --text: #1F2A22; --muted: #5C5A4E;
-      --serif: 'Fraunces', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif;
-      color-scheme: light dark;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root:not([data-theme="light"]) {
-        --accent: #2E6B4C; --accent-ink: #9CCDB0; --on-accent: #F4EEE2;
-        --bg: #171A15; --card: #20241D; --sand: #2A2E25; --border: #353A2F;
-        --text: #EFE9DC; --muted: #B3AC98;
-      }
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 var(--sans); }
-    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
-    h1, h2 { font-family: var(--serif); font-weight: 600; color: var(--accent-ink); line-height: 1.15; }
-    h1 { font-size: clamp(2.4rem, 8vw, 3.6rem); margin: 8px 0 12px; }
-    h2 { font-size: 1.5rem; margin: 0 0 10px; }
-    .overline { font-size: .75rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
-    .lead { font-size: 1.15rem; color: var(--muted); max-width: 36em; }
-    .cta { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 26px;
-           background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; margin: 12px 0 8px; }
-    .status { display: inline-flex; align-items: center; gap: 8px; font-size: .9rem; color: var(--muted); margin-left: 12px; }
-    .dot { width: 9px; height: 9px; border-radius: 5px; background: var(--muted); }
-    .dot.ok { background: #3C8D5A; } .dot.bad { background: #B4532A; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 28px 0; }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 22px; padding: 18px; }
-    .card h3 { font-family: var(--serif); font-weight: 600; font-size: 1.15rem; margin: 0 0 6px; }
-    .card p { margin: 0; color: var(--muted); font-size: .95rem; }
-    section { margin: 36px 0; }
-    .sand { background: var(--sand); border-radius: 22px; padding: 20px; }
-    ul { padding-left: 1.2em; } li { margin: 4px 0; }
-    a { color: var(--accent-ink); text-underline-offset: 3px; }
-    footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--border); padding-top: 16px; margin-top: 40px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <div class="overline">Hooge Graven · Ommen</div>
-  <h1>Golfscore</h1>
-  <p class="lead">Spreek je slagen in terwijl je loopt – “Hole 4, Rudy 5, Peter 4” – en krijg na de ronde direct je stand en handicapberekening.</p>
-  <a class="cta" href="https://kaprudy.github.io/Golf/">Open de app</a>
-  <span class="status" aria-live="polite"><span class="dot" id="dot" aria-hidden="true"></span><span id="status">Opslagdienst controleren…</span></span>
-
-  <div class="grid">
-    <div class="card"><h3>Inspreken</h3><p>Nederlandse spraakherkenning die golftermen en verhaspelde namen begrijpt, en leert van je correcties.</p></div>
-    <div class="card"><h3>Tellen per slag</h3><p>Tik op een speler voor elke slag; de telefoon trilt zodat je niet hoeft te kijken.</p></div>
-    <div class="card"><h3>Handicap</h3><p>Score differential en handicap index volgens het World Handicap System, met uitleg.</p></div>
-    <div class="card"><h3>GPS op de baan</h3><p>Afstand tot de green en vanzelf de juiste hole als je op de tee staat.</p></div>
+<nav class="nav" aria-label="Hoofdmenu">
+  <div class="nav-in">
+    <a class="brand" href="./">Golfscore</a>
+    <a class="hide-sm" href="#hoe-werkt-het">Hoe werkt het</a>
+    <a class="hide-sm" href="#installeren">Installeren</a>
+    <a href="banen.html">Banen</a>
+    <a class="cta" href="https://kaprudy.github.io/Golf/">Open de app</a>
   </div>
+</nav>
+<main>
+  <section class="hero">
+    <div class="overline">Hooge Graven · Ommen en omgeving</div>
+    <h1>Golfscore</h1>
+    <p class="lead">Spreek je slagen in terwijl je loopt – “Hole 4, Rudy 5, Peter 4” – zie de afstand tot de green en krijg na de ronde direct je stand en handicapberekening.</p>
+    <a class="cta" href="https://kaprudy.github.io/Golf/">Open de app</a>
+    <span class="status" aria-live="polite"><span class="dot" id="dot" aria-hidden="true"></span><span id="status">Opslagdienst controleren…</span></span>
+    <div class="shots" style="margin-top:28px" aria-label="Schermafbeeldingen van de app">
+      <figure><img src="img/kies-baan.webp" alt="Baan en starthole kiezen" loading="lazy" width="200" height="400"><figcaption>Baan en starthole kiezen</figcaption></figure>
+      <figure><img src="img/ronde.webp" alt="Hole-scherm met afstand tot de green" loading="lazy" width="200" height="400"><figcaption>Afstand tot de green</figcaption></figure>
+      <figure><img src="img/scorekaart.webp" alt="Scorekaart met alle spelers" loading="lazy" width="200" height="400"><figcaption>Scorekaart</figcaption></figure>
+      <figure><img src="img/analyse.webp" alt="Analyse met differential en handicap" loading="lazy" width="200" height="400"><figcaption>Analyse na de ronde</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="hoe-werkt-het">
+    <h2>Hoe werkt het?</h2>
+    <ol class="steps">
+      <li><h3>Kies je baan</h3>Bij het openen kies je de baan en waar je begint: hole 1 of hole 10, 9 of 18 holes. Ga je na een paar uur weer verder, dan vraagt de app of je een nieuwe ronde wilt starten.</li>
+      <li><h3>Spreek je score in</h3>Tik op de microfoon en zeg bijvoorbeeld <span class="say">“Hole 4, Rudy 5, Peter 4”</span>. Speel je alleen, dan is <span class="say">“Hole 4, 5 slagen”</span> genoeg. Ook golftermen werken: <span class="say">“Rudy par, Peter bogey”</span>. Zegt de app iets niet goed te begrijpen, dan vraagt hij het even na.</li>
+      <li><h3>Of tik per slag</h3>Liever niet praten? Tik bij elke slag op de naam van de speler; de telefoon trilt kort zodat je niet hoeft te kijken.</li>
+      <li><h3>Afstand tot de green</h3>Zet GPS aan en de app toont de afstand tot het midden van de green, en springt vanzelf naar de juiste hole als je op de tee staat. Voor Hooge Graven staan de greens al klaar; op andere banen leg je ze één keer vast.</li>
+      <li><h3>Na de ronde</h3>Je ziet per speler bruto, stableford, score differential en een handicapindicatie, berekend volgens het World Handicap System, met uitleg hoe het berekend is.</li>
+    </ol>
+    <p class="small muted" style="margin-top:12px">Slecht bereik op de baan? Geen probleem: de app werkt zonder internet verder en bewaart alles op je telefoon. Zodra er weer verbinding is, wordt alles vanzelf gesynchroniseerd.</p>
+  </section>
+
+  <section id="installeren">
+    <h2>Installeren</h2>
+    <p>Golfscore is een web-app: je zet hem vanuit de browser op je beginscherm. Daarna opent hij als een gewone app, zonder adresbalk, en werkt hij ook zonder bereik.</p>
+    <div class="tabs" role="tablist" aria-label="Kies je telefoon">
+      <button role="tab" id="tab-android" aria-controls="pane-android" aria-selected="true">Android</button>
+      <button role="tab" id="tab-iphone" aria-controls="pane-iphone" aria-selected="false">iPhone</button>
+    </div>
+    <div id="pane-android" role="tabpanel" aria-labelledby="tab-android" class="card">
+      <ol>
+        <li>Open <a href="https://kaprudy.github.io/Golf/">kaprudy.github.io/Golf</a> in <b>Chrome</b>.</li>
+        <li>Tik rechtsboven op het menu <span class="key">⋮</span>.</li>
+        <li>Kies <b>App installeren</b> (of <b>Toevoegen aan startscherm</b>) en bevestig met <b>Installeren</b>.</li>
+        <li>Open Golfscore vanaf je startscherm. Sta de microfoon toe bij de eerste keer inspreken, en de locatie als je GPS wilt gebruiken.</li>
+      </ol>
+    </div>
+    <div id="pane-iphone" role="tabpanel" aria-labelledby="tab-iphone" class="card" hidden>
+      <ol>
+        <li>Open <a href="https://kaprudy.github.io/Golf/">kaprudy.github.io/Golf</a> in <b>Safari</b> (niet in Chrome of een andere app).</li>
+        <li>Tik onderin op de deelknop <span class="key">⎋ Deel</span> (het vierkantje met de pijl omhoog).</li>
+        <li>Scroll naar beneden en kies <b>Zet op beginscherm</b>, en tik op <b>Voeg toe</b>.</li>
+        <li>Open Golfscore vanaf je beginscherm. Sta de microfoon en spraakherkenning toe bij de eerste keer inspreken, en de locatie als je GPS wilt gebruiken.</li>
+      </ol>
+    </div>
+    <p class="small muted" style="margin-top:12px">Een account is niet nodig: je gegevens worden bewaard en gekoppeld aan je telefoon. Wil je ze ook op een nieuwe telefoon terugzien, maak dan na een ronde een account met je e-mailadres.</p>
+  </section>
+
+  <section>
+    <h2>Banen</h2>
+    <p>De app kent <b id="course-count">de banen</b> in de regio, met par, stroke index, lengtes en de officiële course rating en slope van de clubs.</p>
+    <p><a href="banen.html">Bekijk alle banen per provincie →</a></p>
+  </section>
 
   <section>
     <h2>Je gegevens</h2>
     <div class="sand">
-      <p>Met een account bewaart de app je spelers, banen, rondes en geleerde woorden op deze server, zodat je ze op een nieuwe telefoon terugkrijgt.</p>
       <ul>
-        <li>We bewaren alleen: je e-mailadres, een versleutelde vorm van je wachtwoord (scrypt) en je app-gegevens.</li>
-        <li>Je wachtwoord zelf en je eventuele Claude API-sleutel komen nooit op de server.</li>
+        <li>We bewaren alleen wat nodig is: je spelers, banen en rondes, en – als je een account maakt – je e-mailadres met een versleutelde vorm van je wachtwoord (scrypt).</li>
+        <li>Je eventuele Claude API-sleutel komt nooit op de server. Je locatie tijdens de ronde blijft op je telefoon.</li>
         <li>Alles gaat via een beveiligde verbinding (HTTPS). Iedere gebruiker ziet alleen zijn eigen gegevens.</li>
-        <li>De beheerder ziet alleen aantallen (accounts, rondes, gedeelde zinnen) en e-mailadressen, niet je scores. Gedeelde spraak is zonder namen.</li>
+        <li>De beheerder ziet alleen aantallen (accounts, rondes, gedeelde zinnen) en e-mailadressen, niet je scores. Gedeelde spraak is zonder namen en alleen met je toestemming.</li>
         <li>Je kunt je account en al je gegevens verwijderen via de app: <em>Instellingen → Account en cloud</em>.</li>
       </ul>
     </div>
   </section>
 
-  <footer>Golfscore · een persoonlijk project · gehost op kapital.nl</footer>
+  <footer>Golfscore · een persoonlijk project · gehost op kapital.nl · baangegevens van de clubs, kaartgegevens © OpenStreetMap-bijdragers</footer>
 </main>
-<script>
+<script type="module">
   fetch('/api/health', { cache: 'no-store' })
     .then((r) => r.ok ? r.json() : Promise.reject())
     .then(() => { document.getElementById('dot').className = 'dot ok'; document.getElementById('status').textContent = 'Opslagdienst werkt'; })
     .catch(() => { document.getElementById('dot').className = 'dot bad'; document.getElementById('status').textContent = 'Opslagdienst niet bereikbaar'; });
+
+  // Android/iPhone-tabs; vooraf de juiste kiezen op basis van de telefoon
+  const tabs = [...document.querySelectorAll('[role=tab]')];
+  const select = (tab) => tabs.forEach((t) => {
+    const on = t === tab;
+    t.setAttribute('aria-selected', String(on));
+    document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+  });
+  tabs.forEach((t) => t.addEventListener('click', () => select(t)));
+  if (/iPhone|iPad|iPod/.test(navigator.userAgent)) select(document.getElementById('tab-iphone'));
+
+  try {
+    const { DEFAULT_COURSES } = await import('/data/courses.js');
+    document.getElementById('course-count').textContent = `${DEFAULT_COURSES.length} banen`;
+  } catch { /* lijst niet beschikbaar: tekst blijft algemeen */ }
 </script>
 </body>
 </html>

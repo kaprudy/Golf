@@ -1,0 +1,88 @@
+/* Golfscore – gedeelde stijl voor golf.kapital.nl (Clubhouse-thema, gelijk aan de app) */
+:root {
+  --accent: #1E4D36; --accent-ink: #1E4D36; --on-accent: #FBF8F1;
+  --bg: #F4EEE2; --card: #FBF8F1; --sand: #E9DFCB; --border: #E2D7C1; --line: #E9E1D0;
+  --text: #1F2A22; --muted: #5C5A4E; --ok: #2F7A4E; --warn: #9A6A12;
+  --serif: 'Fraunces', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --accent: #2E6B4C; --accent-ink: #9CCDB0; --on-accent: #F4EEE2;
+    --bg: #171A15; --card: #20241D; --sand: #2A2E25; --border: #353A2F; --line: #2C3127;
+    --text: #EFE9DC; --muted: #B3AC98; --ok: #7FC79B; --warn: #E2B45C;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 var(--sans); }
+main { max-width: 860px; margin: 0 auto; padding: 0 16px 48px; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; color: var(--accent-ink); line-height: 1.15; }
+h1 { font-size: clamp(2.4rem, 8vw, 3.6rem); margin: 8px 0 12px; }
+h2 { font-size: 1.6rem; margin: 0 0 12px; }
+h3 { font-size: 1.15rem; margin: 0 0 6px; }
+a { color: var(--accent-ink); text-underline-offset: 3px; }
+p { margin: 0 0 10px; }
+.overline { font-size: .75rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+.lead { font-size: 1.15rem; color: var(--muted); max-width: 36em; }
+.muted { color: var(--muted); } .small { font-size: .9rem; }
+
+/* navigatie */
+.nav { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+.nav-in { max-width: 860px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center; gap: 16px; }
+.nav .brand { font-family: var(--serif); font-weight: 600; font-size: 1.2rem; color: var(--accent-ink); text-decoration: none; margin-right: auto; }
+.nav a:not(.brand):not(.cta) { color: var(--text); text-decoration: none; font-size: .95rem; }
+.nav a[aria-current="page"] { color: var(--accent-ink); font-weight: 600; }
+@media (max-width: 560px) { .nav .hide-sm { display: none; } }
+
+.cta { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; border-radius: 24px;
+  background: var(--accent); color: var(--on-accent) !important; text-decoration: none; font-weight: 600; }
+.nav .cta { min-height: 38px; padding: 0 16px; font-size: .9rem; }
+.status { display: inline-flex; align-items: center; gap: 8px; font-size: .9rem; color: var(--muted); margin-left: 12px; }
+.dot { width: 9px; height: 9px; border-radius: 5px; background: var(--muted); }
+.dot.ok { background: #3C8D5A; } .dot.bad { background: #B4532A; }
+
+section { margin: 48px 0; scroll-margin-top: 70px; }
+.hero { margin-top: 32px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 22px; padding: 18px; }
+.sand { background: var(--sand); border-radius: 22px; padding: 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+ul, ol { padding-left: 1.2em; } li { margin: 6px 0; }
+
+/* schermafbeeldingen */
+.shots { display: flex; gap: 14px; overflow-x: auto; padding: 6px 2px 14px; scroll-snap-type: x mandatory; }
+.shots figure { margin: 0; flex: 0 0 200px; scroll-snap-align: start; }
+.shots img { width: 200px; height: auto; border-radius: 22px; border: 1px solid var(--border); box-shadow: 0 8px 24px rgba(0,0,0,.08); display: block; }
+.shots figcaption { font-size: .85rem; color: var(--muted); margin-top: 8px; }
+
+/* stappen */
+.steps { counter-reset: s; list-style: none; padding: 0; display: grid; gap: 12px; }
+.steps li { counter-increment: s; background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 14px 16px 14px 58px; position: relative; margin: 0; }
+.steps li::before { content: counter(s); position: absolute; left: 16px; top: 14px; width: 28px; height: 28px; border-radius: 14px; background: var(--accent); color: var(--on-accent); font-weight: 600; display: grid; place-items: center; font-size: .9rem; }
+.say { font-family: var(--serif); font-style: italic; color: var(--accent-ink); }
+
+/* installeren: tabs */
+.tabs { display: inline-flex; background: var(--sand); border-radius: 999px; padding: 4px; gap: 4px; margin-bottom: 14px; }
+.tabs button { font: inherit; border: 0; background: none; color: var(--text); padding: 8px 18px; border-radius: 999px; cursor: pointer; min-height: 40px; }
+.tabs button[aria-selected="true"] { background: var(--card); color: var(--accent-ink); font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.key { display: inline-block; border: 1px solid var(--border); background: var(--card); border-radius: 8px; padding: 0 7px; font-size: .9em; white-space: nowrap; }
+
+/* banen */
+.summary { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 8px; }
+.pill { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); background: var(--card); border-radius: 999px; padding: 4px 12px; font-size: .9rem; text-decoration: none; color: var(--text); }
+.pill b { color: var(--accent-ink); }
+.province { margin: 36px 0; scroll-margin-top: 70px; }
+.province h2 { display: flex; align-items: baseline; gap: 10px; }
+.province h2 span { font-family: var(--sans); font-size: .95rem; font-weight: 500; color: var(--muted); }
+.courses { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.course { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.course h3 { margin: 0; }
+.course .meta { font-size: .9rem; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.badge { font-size: .75rem; padding: 2px 9px; border-radius: 10px; background: var(--sand); color: var(--text); }
+.badge.ok { background: var(--accent); color: var(--on-accent); }
+.badge.warn { border: 1px solid var(--warn); background: none; color: var(--warn); }
+.course a { font-size: .9rem; margin-top: auto; }
+.legend { font-size: .9rem; color: var(--muted); display: grid; gap: 6px; }
+
+footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--border); padding-top: 16px; margin-top: 40px; }

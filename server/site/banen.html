@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golfbanen in Golfscore</title>
+  <meta name="description" content="Overzicht van de golfbanen in de Golfscore-app, per provincie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav" aria-label="Hoofdmenu">
+  <div class="nav-in">
+    <a class="brand" href="./">Golfscore</a>
+    <a class="hide-sm" href="./#hoe-werkt-het">Hoe werkt het</a>
+    <a class="hide-sm" href="./#installeren">Installeren</a>
+    <a href="banen.html" aria-current="page">Banen</a>
+    <a class="cta" href="https://kaprudy.github.io/Golf/">Open de app</a>
+  </div>
+</nav>
+<main>
+  <section class="hero">
+    <div class="overline">Golfscore</div>
+    <h1>Banen</h1>
+    <p class="lead">Deze banen staan in de app, met par en stroke index per hole, lengtes per tee en de course rating en slope voor heren en dames.</p>
+    <div class="summary" id="summary"></div>
+  </section>
+
+  <div id="list"><p class="muted">Banen laden…</p></div>
+
+  <section>
+    <div class="sand legend">
+      <div><span class="badge ok">Scorekaart van de club</span> par, stroke index en ratings komen van de scorekaart en handicaptabellen van de club zelf.</div>
+      <div><span class="badge warn">Nog te controleren</span> gegevens uit openbare bronnen; de app vraagt om ze te vergelijken met de scorekaart.</div>
+      <div><span class="badge">GPS-afstanden</span> tees en greens staan al klaar (uit OpenStreetMap), dus de afstand tot de green werkt direct.</div>
+      <div>Staat je baan er niet bij? In de app voeg je zelf een baan toe via <em>Instellingen → Baan toevoegen</em>.</div>
+    </div>
+  </section>
+
+  <footer>Golfscore · baangegevens van de clubs · kaartgegevens © OpenStreetMap-bijdragers</footer>
+</main>
+<script type="module">
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const list = document.getElementById('list');
+  try {
+    const { DEFAULT_COURSES, BASE_GEO } = await import('/data/courses.js');
+    const byProvince = new Map();
+    for (const c of DEFAULT_COURSES) {
+      const p = c.province ?? 'Overig';
+      if (!byProvince.has(p)) byProvince.set(p, []);
+      byProvince.get(p).push(c);
+    }
+    const provinces = [...byProvince].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+    const slug = (s) => s.toLowerCase().replace(/[^a-z]+/g, '-');
+
+    document.getElementById('summary').innerHTML = `<span class="pill"><b>${DEFAULT_COURSES.length}</b> banen</span>`
+      + provinces.map(([p, cs]) => `<a class="pill" href="#${slug(p)}">${esc(p)} <b>${cs.length}</b></a>`).join('');
+
+    // De naam bevat vaak al de plaats tussen haakjes; die tonen we apart.
+    const title = (c) => c.name.replace(/\s*\([^)]*\)\s*$/, '');
+    const card = (c) => {
+      const holes = c.id === 'par3' ? 9 : c.holeCount; // par 3 Hooge Graven: 9 holes, 18 = twee keer rond
+      const tees = new Set(c.tees.map((t) => t.name.split(' ')[0])).size;
+      const official = c.confirmed && !c.fromSources && !c.tees.some((t) => t.ratingUnknown);
+      const badges = [
+        official ? '<span class="badge ok">Scorekaart van de club</span>' : '<span class="badge warn">Nog te controleren</span>',
+        BASE_GEO[c.id] ? '<span class="badge">GPS-afstanden</span>' : '',
+        c.countsForIndex === false ? '<span class="badge">Telt niet voor handicap</span>' : '',
+      ].join('');
+      return `<article class="course">
+        <h3>${esc(title(c))}</h3>
+        <div class="meta">${esc(c.town ?? '')} · ${holes} holes · par ${c.id === 'par3' ? 27 : c.parTotal} · ${tees} ${tees === 1 ? 'tee' : 'tees'}</div>
+        <div class="badges">${badges}</div>
+        ${c.website ? `<a href="${esc(c.website)}" rel="noopener" target="_blank">Website van de club</a>` : ''}
+      </article>`;
+    };
+    list.innerHTML = provinces.map(([p, cs]) => `<section class="province" id="${slug(p)}">
+      <h2>${esc(p)} <span>${cs.length} ${cs.length === 1 ? 'baan' : 'banen'}</span></h2>
+      <div class="courses">${cs.sort((a, b) => (a.town ?? '').localeCompare(b.town ?? '') || a.name.localeCompare(b.name)).map(card).join('')}</div>
+    </section>`).join('');
+  } catch {
+    list.innerHTML = '<p class="muted">De banenlijst kon niet geladen worden. Probeer het later opnieuw.</p>';
+  }
+</script>
+</body>
+</html>

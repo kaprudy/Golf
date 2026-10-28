@@ -10,6 +10,7 @@ services:
     volumes:
       - ./web-npm.conf:/etc/nginx/conf.d/default.conf:ro
       - ./site:/srv/site:ro
+      - ../js/courses.js:/srv/app/courses.js:ro   # banenlijst van de app (voor banen.html)
     networks: [default, npm]
     depends_on: [api]
 
