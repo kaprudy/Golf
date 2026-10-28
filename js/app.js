@@ -76,6 +76,9 @@ function migrate(saved) {
   }
   saved.round.courseId ??= 'hooge-graven';
   saved.homeCourseId ??= 'hooge-graven';
+  // Ook voor gegevens uit de cloud (bij synchroniseren): een oudere versie van de app kende geen playerPool.
+  saved.players ??= [];
+  saved.playerPool = (saved.playerPool ?? []).filter((p) => !saved.players.some((x) => x.name === p.name));
   return saved;
 }
 
@@ -99,8 +102,8 @@ let state = load();
 state.sync ??= { localChangedAt: null, syncedAt: null };
 state.learning ??= { consent: null };
 delete state.apiKey; // de koppeling met de Claude API is eruit; een bewaarde sleutel niet laten staan
-// Spelers van eerdere rondes die nu niet meespelen (met hun handicap, tee en bijnamen).
-state.playerPool = (state.playerPool ?? []).filter((p) => !state.players.some((x) => x.name === p.name));
+// state.playerPool: spelers van eerdere rondes die nu niet meespelen (met hun handicap, tee en
+// bijnamen); migrate() zorgt dat de lijst er altijd is, ook na synchroniseren.
 
 // Lokaal opslaan; een wijziging door de gebruiker wordt daarna ook naar de cloud gestuurd.
 function save({ fromCloud: fromRemote = false } = {}) {
