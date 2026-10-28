@@ -1,0 +1,82 @@
+{
+  "slug": "t-kruisselt-de-lutte",
+  "name": "Golf & Country Club 't Kruisselt",
+  "club_name": "Golfclub 't Kruisselt",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Kruisseltlaan 3",
+    "postal_code": "7587 NM",
+    "city": "De Lutte",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.31916,
+    "lon": 6.96638,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 46.5,
+  "phone": "0541-551567",
+  "email": "info@kruisselt.nl",
+  "website": "https://www.kruisselt.nl/golf/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "par-3 baan rondom het hotel in bosrijk landgoedgebied",
+  "facilities": [
+    "golfhotel",
+    "clubhuis/bar",
+    "golfprofessional/lessen",
+    "oefenfaciliteiten",
+    "leenclubs voor leden-in-opleiding"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen starttijden; greenfee per dag. Handicapeis niet vermeld op de site.",
+  "description_nl": "Korte 9-holes par-3 baan die rondom Golfhotel 't Kruisselt bij De Lutte ligt; de holes meten ongeveer 55 tot 110 meter. De club richt zich nadrukkelijk op beginnende golfers en werkt zonder starttijden. Hotelgasten kunnen direct vanuit het hotel de baan op.",
+  "loops": [
+    {
+      "name": "Par-3 baan (2x9 holes)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 47.0,
+          "slope": 68,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 48.5,
+          "slope": 69,
+          "par": 54
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.kruisselt.nl/golfclub-t-kruisselt/",
+    "files": [
+      "scorecard/GCC-t-Kruisselt-Dames-en-Heren-2026.pdf",
+      "scorecard/golfpass-scorecard.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen scorekaart met par/SI/lengte per hole gepubliceerd. Alleen officiele baanhandicaptabel 02-07-2026 (18 holes: geel heren CR 47,0/SR 68, rood dames 48,5/69; 9 holes: CR 23,5 resp. 24,3, par 27). GolfPass (verouderd, derde partij) noemt 689 m totaal over 9 holes. Holes 55-110 m volgens clubsite."
+  },
+  "sources": [
+    "https://www.kruisselt.nl/golf/",
+    "https://www.kruisselt.nl/golfclub-t-kruisselt/",
+    "https://www.golfpass.com/courses/39064-kruisselt-golf-club/scorecard-and-layout",
+    "https://www.leadingcourses.com/clubs/europe%2Bthe-netherlands%2Boverijssel/golfclub-t-kruisselt"
+  ]
+}

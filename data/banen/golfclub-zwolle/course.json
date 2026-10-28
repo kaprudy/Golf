@@ -1,0 +1,442 @@
+{
+  "slug": "golfclub-zwolle",
+  "name": "Golfclub Zwolle",
+  "club_name": "Golfclub Zwolle",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Zalnéweg 75",
+    "postal_code": "8026 PZ",
+    "city": "Zwolle",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.4978161,
+    "lon": 6.1436147,
+    "source": "Google Maps-link op golfclubzwolle.nl/bezoek-ons"
+  },
+  "distance_km_from_dedemsvaart": 24.2,
+  "phone": "038 453 42 70",
+  "email": "receptie@golfclubzwolle.nl",
+  "website": "https://www.golfclubzwolle.nl",
+  "booking_url": "https://www.golfclubzwolle.nl/starttijd-boeken-2/",
+  "founded": 1985,
+  "architect": "Alan Rijks",
+  "landscape": "parkland/bos (landgoederen, weilanden, waterpartijen, ijstijdreliëf)",
+  "facilities": [
+    "driving range (deels overdekt, InRange)",
+    "par 3-baan",
+    "chipping area",
+    "oefenbunkers",
+    "putting green",
+    "clubhuis",
+    "Brasserie De Afslag",
+    "Golf Academy"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Minimaal NGF-clubhandicap 54 voor de 18 holes; NGF-pas meenemen",
+  "description_nl": "Golfclub Zwolle ligt aan de oostrand van Zwolle bij de Wijthmenerplas en speelt sinds 1995 op deze locatie. De 18 holes (lussen Veldwijk en Boschwijk) lopen door een afwisselend landschap van bosjes, weilanden en waterpartijen met lichte hoogteverschillen. Naast de grote baan zijn er een par 3-baan, een deels overdekte range en een brasserie met terras.",
+  "loops": [
+    {
+      "name": "Veldwijk (holes 1-9)",
+      "holes": 9,
+      "par": 36,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2945,
+          "par": 36,
+          "course_rating": null,
+          "slope": null
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": null,
+          "length_m": 2739,
+          "par": 36,
+          "course_rating": null,
+          "slope": null
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": null,
+          "length_m": 2518,
+          "par": 36,
+          "course_rating": null,
+          "slope": null
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": null,
+          "length_m": 2126,
+          "par": 36,
+          "course_rating": null,
+          "slope": null
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 306,
+            "blauw": 298,
+            "rood": 259,
+            "oranje": 207
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 491,
+            "blauw": 442,
+            "rood": 432,
+            "oranje": 377
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 177,
+            "blauw": 157,
+            "rood": 149,
+            "oranje": 118
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 472,
+            "blauw": 430,
+            "rood": 394,
+            "oranje": 335
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 405,
+            "blauw": 398,
+            "rood": 341,
+            "oranje": 294
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 372,
+            "blauw": 319,
+            "rood": 315,
+            "oranje": 252
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 316,
+            "blauw": 309,
+            "rood": 264,
+            "oranje": 225
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "blauw": 127,
+            "rood": 116,
+            "oranje": 105
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 269,
+            "blauw": 259,
+            "rood": 248,
+            "oranje": 213
+          }
+        }
+      ]
+    },
+    {
+      "name": "Boschwijk (holes 10-18)",
+      "holes": 9,
+      "par": 35,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2825,
+          "par": 35,
+          "course_rating": null,
+          "slope": null
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": null,
+          "length_m": 2569,
+          "par": 35,
+          "course_rating": null,
+          "slope": null
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": null,
+          "length_m": 2379,
+          "par": 35,
+          "course_rating": null,
+          "slope": null
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": null,
+          "length_m": 2090,
+          "par": 35,
+          "course_rating": null,
+          "slope": null
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 390,
+            "blauw": 331,
+            "rood": 323,
+            "oranje": 267
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "blauw": 131,
+            "rood": 126,
+            "oranje": 115
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 393,
+            "blauw": 339,
+            "rood": 331,
+            "oranje": 279
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 167,
+            "blauw": 167,
+            "rood": 167,
+            "oranje": 167
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 341,
+            "blauw": 333,
+            "rood": 283,
+            "oranje": 239
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 466,
+            "blauw": 398,
+            "rood": 380,
+            "oranje": 347
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "blauw": 134,
+            "rood": 112,
+            "oranje": 107
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 319,
+            "blauw": 309,
+            "rood": 264,
+            "oranje": 222
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 467,
+            "blauw": 427,
+            "rood": 393,
+            "oranje": 347
+          }
+        }
+      ]
+    },
+    {
+      "name": "18 holes Veldwijk-Boschwijk (ratings, tijdelijk 10-09-2026)",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5770,
+          "course_rating": 71.0,
+          "slope": 130,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5308,
+          "course_rating": 68.7,
+          "slope": 121,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4897,
+          "course_rating": 66.6,
+          "slope": 110,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4216,
+          "course_rating": 63.5,
+          "slope": 105,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5308,
+          "course_rating": 74.4,
+          "slope": 131,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4897,
+          "course_rating": 72.0,
+          "slope": 127,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4216,
+          "course_rating": 67.9,
+          "slope": 110,
+          "par": 71
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclubzwolle.nl/playinghandicap/",
+    "files": [
+      "scorecard/Scorekaart-02-2026.png",
+      "scorecard/handicaptabel-18h-Heren--scaled.jpg",
+      "scorecard/handicaptabel-18h-Dames-scaled.jpg",
+      "scorecard/Baanboekje-GCZ-2026-02.pdf",
+      "scorecard/page.html",
+      "scorecard/page-alle-18-holes.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 02-2026: twee lussen Veldwijk (par 36) + Boschwijk (par 35) = 18 holes par 71. Ratings zijn als 'tijdelijk' gemarkeerd (handicaptabel 10-09-2026). Aparte 9-holes tabellen Veldwijk/Boschwijk staan op de pagina. Geen aparte dames-SI. Par 3-baan bestaat maar er is geen scorekaart van gepubliceerd."
+  },
+  "sources": [
+    "https://www.golfclubzwolle.nl/playinghandicap/",
+    "https://www.golfclubzwolle.nl/alle-18-holes/",
+    "https://www.golfclubzwolle.nl/bezoek-ons/",
+    "https://www.golfclubzwolle.nl/club/geschiedenis/",
+    "https://www.golfclubzwolle.nl/golfen/greenfee/",
+    "https://www.golfclubzwolle.nl/baan/oefenfaciliteiten/"
+  ]
+}

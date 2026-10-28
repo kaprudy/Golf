@@ -1,0 +1,443 @@
+{
+  "slug": "de-breuninkhof-bussloo",
+  "name": "Golfpark De Breuninkhof",
+  "club_name": "Hollandsche Golfclub - Golfpark De Breuninkhof",
+  "holes_total": 18,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Bussloselaan 6",
+    "postal_code": "7383 RP",
+    "city": "Voorst",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1990305,
+    "lon": 6.1245203,
+    "source": "nominatim (Bussloselaan 6, Voorst)"
+  },
+  "distance_km_from_dedemsvaart": 50.1,
+  "phone": "0571-261955",
+  "email": "info@debreuninkhof.nl",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/de-breuninkhof/",
+  "booking_url": "https://www.hollandschegolfclub.nl/golfpark/de-breuninkhof/boek-een-starttijd-golfpark-de-breuninkhof/",
+  "founded": null,
+  "architect": null,
+  "landscape": "parkbaan met bos- en parkholes, waterpartijen en oude bomen",
+  "facilities": [
+    "driving range",
+    "gratis oefenfaciliteiten",
+    "9-holes shortgolfbaan (par 3)",
+    "brasserie",
+    "golfschool",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Hoofdbaan (gele lus, 9/18 holes): handicap 54 of baanpermissie van de Hollandsche Golfclub. Kleine par-3 baan: geen handicap of baanpermissie nodig.",
+  "description_nl": "Publiek golfpark van de Hollandsche Golfclub bij het recreatiegebied Bussloo, tussen Apeldoorn, Deventer en Zutphen. De 9-holesbaan (gele lus) heeft dubbele afslagplaatsen en wordt zo ook als 18 holes par 72 gespeeld, met water en volwassen bomen langs brede fairways. Daarnaast is er een korte 9-holes par-3 baan die geschikt is voor beginners.",
+  "loops": [
+    {
+      "name": "18 holes (2x gele lus)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5960,
+          "course_rating": 73.3,
+          "slope": 135,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5960,
+          "course_rating": 79.4,
+          "slope": 151,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5222,
+          "course_rating": 69.4,
+          "slope": 124,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5222,
+          "course_rating": 74.8,
+          "slope": 137,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4446,
+          "course_rating": 65.6,
+          "slope": 116,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4446,
+          "course_rating": 70.7,
+          "slope": 123,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 346,
+            "rood": 317,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 154,
+            "rood": 133,
+            "oranje": 122
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 314,
+            "rood": 303,
+            "oranje": 214
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 105,
+            "rood": 92,
+            "oranje": 83
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 441,
+            "rood": 380,
+            "oranje": 342
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 371,
+            "rood": 317,
+            "oranje": 285
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 421,
+            "rood": 357,
+            "oranje": 292
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 446,
+            "rood": 384,
+            "oranje": 336
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 344,
+            "rood": 313,
+            "oranje": 293
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 320,
+            "rood": 286,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 172,
+            "rood": 154,
+            "oranje": 122
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 303,
+            "rood": 272,
+            "oranje": 214
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 121,
+            "rood": 105,
+            "oranje": 83
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 456,
+            "rood": 394,
+            "oranje": 342
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 408,
+            "rood": 343,
+            "oranje": 285
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 384,
+            "rood": 324,
+            "oranje": 292
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 459,
+            "rood": 404,
+            "oranje": 336
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 396,
+            "rood": 344,
+            "oranje": 293
+          }
+        }
+      ]
+    },
+    {
+      "name": "9 holes kleine baan (shortgolf par 3)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 962,
+          "course_rating": 49.1,
+          "slope": 67,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 962,
+          "course_rating": 51.1,
+          "slope": 73,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": 126
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 70,
+            "rood": 70
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125,
+            "rood": 125
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 103,
+            "rood": 103
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 76,
+            "rood": 76
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135,
+            "rood": 135
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 103,
+            "rood": 103
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 116,
+            "rood": 116
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hollandschegolfclub.nl/golfpark/de-breuninkhof/course/18-holes-baan-breuninkhof/",
+    "files": [
+      "scorecard/Breuninkhof_Scorekaart_18holes-MRT-2026-1.pdf",
+      "scorecard/Golfpark-De-Breuninkhof-handicaptabellen.pdf",
+      "scorecard/Breuninkhof_9-18holesBaanboekje2026.pdf",
+      "scorecard/Breuninkhof_Scorekaart_9holes-MRT-2026.pdf",
+      "scorecard/Breuninkhof-Par-54-baan-Dames-Heren.pdf",
+      "scorecard/page.html",
+      "scorecard/page-9-holes-gele-lus.html",
+      "scorecard/page-9-holes-kleine-baan.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Fysiek 9 holes (gele lus) met dubbele tees, gespeeld als 18 holes; holes 10-18 = tweede ronde over dezelfde 9 holes vanaf andere tees. SI in hole_data geldt voor geel en rood; oranje heeft een afwijkende SI op holes 1-9: 8,10,12,18,14,6,4,16,2 (holes 10-18 gelijk). Kleine baan: CR/slope (geel heren 49,1/67, rood dames 51,1/73) gelden voor 18 holes par 54 (2x de 9-holes kleine baan); geel en rood hebben dezelfde lengtes. Let op: geel holes 10-18 tellen op tot 3019 m, terwijl de kaart IN 3018 / totaal 5960 vermeldt (totaal van de kaart aangehouden). Geen aparte 9-holes CR voor de gele lus opgenomen."
+  },
+  "sources": [
+    "https://www.hollandschegolfclub.nl/golfpark/de-breuninkhof/",
+    "https://www.hollandschegolfclub.nl/golfpark/de-breuninkhof/course/18-holes-baan-breuninkhof/",
+    "https://www.hollandschegolfclub.nl/golfpark/de-breuninkhof/course/de-breuninkhof-9-holes-kleine-baan/",
+    "https://www.hollandschegolfclub.nl/wp-content/uploads/2026/02/Breuninkhof_Scorekaart_18holes-MRT-2026-1.pdf",
+    "https://www.hollandschegolfclub.nl/wp-content/uploads/2026/01/Breuninkhof_Scorekaart_9holes-MRT-2026.pdf",
+    "https://golfkaart.com/voorst/de-breuninkhof"
+  ]
+}

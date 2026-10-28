@@ -1,0 +1,337 @@
+{
+  "slug": "golfplezier-twente-hoge-hexel",
+  "name": "Golfplezier Twente",
+  "club_name": "Golfplezier Twente",
+  "holes_total": 18,
+  "course_type": "par-3",
+  "address": {
+    "street": "Bekkenhaarsweg 28",
+    "postal_code": "7645 AJ",
+    "city": "Hoge Hexel",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.40817,
+    "lon": 6.57135,
+    "source": "OpenStreetMap way 55285638 (centroid baan)"
+  },
+  "distance_km_from_dedemsvaart": 22.7,
+  "phone": "+31 546 697 265",
+  "email": "info@golfpleziertwente.nl",
+  "website": "https://golfpleziertwente.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "agrarisch/open (Twents boerenland)",
+  "facilities": [
+    "par 3-baan 18 holes (9 holes qualifying op ma/di)",
+    "overdekte driving range",
+    "putting green",
+    "pitching/chipping green",
+    "paviljoen met terrassen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Par 3-baan bij Hoge Hexel, tussen Nijverdal en Wierden, met 18 korte holes in het Twentse boerenland. Volgens Hole19 is er op maandag en dinsdag een 9 holes qualifyinglus en op andere dagen de volledige 18 holes. De officiële website is momenteel in aanbouw; controleer de actuele situatie bij de baan.",
+  "loops": [
+    {
+      "name": "18 holes par 3 (Hole19)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": null,
+          "length_m": 1016,
+          "par": 54,
+          "course_rating": null,
+          "slope": null
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 71
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 44
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 55
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 56
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 49
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 92
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 69
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 69
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 58
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 55
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 40
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 34
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 39
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 65
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 66
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 58
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 46
+          }
+        }
+      ]
+    },
+    {
+      "name": "9 holes qualifying (Hole19)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": null,
+          "length_m": 818,
+          "par": 27,
+          "course_rating": null,
+          "slope": null
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 125
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 56
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 153
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 69
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 86
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 77
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 69
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 124
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 59
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/golfplezier-twente",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-qualifying.html",
+      "scorecard/official-home.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen officiële scorekaart: golfpleziertwente.nl toont alleen 'website onder constructie' (lijkt nu vooral leslocatie). Hole-data uit Hole19 (18 holes 1016 m, par 54; qualifying 9 holes 818 m, par 27); tee-kleur, CR en slope onbekend. Status van de baan onzeker, telefoon uit 1golf.eu-vermelding."
+  },
+  "sources": [
+    "https://www.hole19golf.com/courses/golfplezier-twente",
+    "https://www.hole19golf.com/courses/golfplezier-twente-qualifying",
+    "https://golfpleziertwente.nl/",
+    "https://www.1golf.eu/club/golfplezier-twente/",
+    "https://www.openstreetmap.org/way/55285638"
+  ]
+}

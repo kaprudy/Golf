@@ -1,0 +1,226 @@
+{
+  "slug": "pitch-putt-strand-horst-ermelo",
+  "name": "Pitch & Putt Golf Strand Horst",
+  "club_name": "Pitch & Putt Golf Strand Horst",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Palmbosweg 4",
+    "postal_code": "3853 LB",
+    "city": "Ermelo",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.30221,
+    "lon": 5.55438,
+    "source": "golfkaart; OSM reverse geocode geeft 'Pitch&Putt Golf Strand Horst' op deze positie"
+  },
+  "phone": "+31 341 552 431",
+  "email": null,
+  "website": null,
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "recreatiegebied aan het Wolderwijd (water, bomen, eilandgreens/-tees)",
+  "facilities": [],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Pitch & putt-baan van 18 par-3 holes bij recreatiegebied Strand Horst aan het Wolderwijd, ten noordwesten van Ermelo. De holes zijn kort maar technisch, met eiland-tees en -greens, bunkers en veel rough; op de tweede negen speelt water een grotere rol. De baan wordt ook gebruikt voor internationale pitch & putt-toernooien.",
+  "loops": [
+    {
+      "name": "18 holes pitch & putt",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": null,
+          "length_m": 964,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": null
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfpass.com/courses/36544-pitch-putt-strand-horst/scorecard-and-layout",
+    "files": [],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen officiele website (strandhorst.nl is een te koop staand domein) en geen scorekaartbestand gevonden. Par/SI per hole van GolfPass. Holelengtes op GolfPass staan in yards (standaardeenheid): 1:54, 2:39, 3:55, 4:44, 5:68, 6:63, 7:73, 8:47, 9:52, 10:64, 11:76, 12:51, 13:49, 14:60, 15:49, 16:74, 17:61, 18:67 (totaal 1046 yd); GolfPass noemt elders 964 m, FIPPA 912 m - daarom lengths_m null. Geen CR/slope. Adres Palmbosweg 4 volgens FIPPA/GolfPass (Nominatim plaatst dat nummer bij een bungalowpark); GPS van golfkaart. FIPPA-kalender 2025 vermeldt hier de International Gelders Open, dus baan is actief. page.html = GolfPass-pagina; fippa.html = FIPPA-baanprofiel."
+  },
+  "sources": [
+    "https://www.golfpass.com/courses/36544-pitch-putt-strand-horst/scorecard-and-layout",
+    "https://fippa.org/courses/strand_horst",
+    "https://www.leadingcourses.com/clubs/europe+the-netherlands+gelderland/pitch-putt-golf-strand-horst"
+  ],
+  "distance_km_from_dedemsvaart": 69.7
+}

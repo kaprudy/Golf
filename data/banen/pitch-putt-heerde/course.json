@@ -1,0 +1,239 @@
+{
+  "slug": "pitch-putt-heerde",
+  "name": "Pitch & Putt Heerde",
+  "club_name": "Pitch & Putt Heerde (Heerderstrand)",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Ossenbergweg",
+    "postal_code": "8181 CS",
+    "city": "Heerde",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.39725,
+    "lon": 6.0113,
+    "source": "OpenStreetMap relation 1027462 (centroid baan)"
+  },
+  "distance_km_from_dedemsvaart": 37.8,
+  "phone": "0578 623 764",
+  "email": "info@pitchenputtheerde.nl",
+  "website": "https://www.pitchenputtheerde.nl",
+  "booking_url": "https://www.pitchenputtheerde.nl/reserveren/",
+  "founded": null,
+  "architect": null,
+  "landscape": "bosrijk (recreatiegebied Heerderstrand)",
+  "facilities": [
+    "pitch & putt 18 holes",
+    "footgolf",
+    "bosfootgolf",
+    "minigolf",
+    "paviljoen Bij 't Strand",
+    "e-chopperverhuur",
+    "arrangementen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen GVB nodig (recreatieve pitch & putt)",
+  "description_nl": "Recreatieve pitch & putt-baan van 18 holes op een bosrijk terrein van circa 5 hectare bij het Heerderstrand. De holes zijn ongeveer 30 tot 90 meter lang; je kunt 9 of 18 holes spelen zonder golfvaardigheidsbewijs. Er zijn ook minigolf, footgolf en horeca.",
+  "loops": [
+    {
+      "name": "Pitch & Putt 18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "meters",
+          "color": null,
+          "gender": null,
+          "length_m": 912,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 53
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 34
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 45
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 50
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 55
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 55
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 46
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 63
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 36
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 55
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 53
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 52
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 35
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 48
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 53
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 54
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 70
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 55
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.pitchenputtheerde.nl/over-pitch-en-putt/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/hole19.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen officiële scorekaart; officiële site vermeldt 18 holes van 30-90 m op 5 ha. Par en lengtes uit Hole19 (totaal 912, label 'meters'; Hole19 toont ook 'yds', eenheid niet 100% zeker). Geen SI/CR/slope."
+  },
+  "sources": [
+    "https://www.pitchenputtheerde.nl/over-pitch-en-putt/",
+    "https://www.pitchenputtheerde.nl/golfsoorten/",
+    "https://www.pitchenputtheerde.nl/contact/",
+    "https://www.openstreetmap.org/relation/1027462",
+    "https://www.hole19golf.com/courses/pitch-putt-golf-heerde"
+  ]
+}

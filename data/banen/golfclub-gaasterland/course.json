@@ -1,0 +1,341 @@
+{
+  "slug": "golfclub-gaasterland",
+  "name": "Golfclub Gaasterland",
+  "club_name": "Golfclub Gaasterland",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Sminkewei 10",
+    "postal_code": "8567 HB",
+    "city": "Oudemirdum",
+    "province": "Friesland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.86211,
+    "lon": 5.54447,
+    "source": "golfkaart (opgegeven referentie)"
+  },
+  "distance_km_from_dedemsvaart": 68.1,
+  "phone": "0514 604236",
+  "email": "gcgaasterland@gmail.com",
+  "website": "https://golfclubgaasterland.nl/",
+  "booking_url": "https://golfclubgaasterland.nl/greenfee/starttijden",
+  "founded": 1987,
+  "architect": "Alan Rijks",
+  "landscape": "natuurbaan in bos- en weidegebied",
+  "facilities": [
+    "clubhuis",
+    "terras",
+    "horeca (kleine kaart)",
+    "kleedkamers met lockers",
+    "golfshop/receptie",
+    "driving range met oefenbunker",
+    "putting green",
+    "par-3 oefenbaan (6 holes)",
+    "golfschool/pro",
+    "handicarts (afhankelijk van baanstatus)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "NGF-pas/QR-code tonen; starttijd reserveren (via receptie of e-mail). Handicapeis (GVB/hcp 54) niet expliciet vermeld op de officiele site; par-3 oefenbaan met dagkaart (EUR 10). Greenfee 2026: 9 holes EUR 35, 18 holes EUR 60 (ook in het weekend).",
+  "description_nl": "Natuurgolfbaan van 9 holes aan de Sminkewei in Oudemirdum, aangelegd op een terrein van ruim 40 hectare waarvan het grootste deel als natuurgebied is ingericht. De baan werd in 2003 in gebruik genomen en was de eerste in Europa met een Groenlabel. Naast de 9 holes (par 35) zijn er een driving range, putting green en sinds oktober 2025 zes par-3 oefenholes. Reeen en andere dieren zijn regelmatig op de baan te zien.",
+  "loops": [
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 35,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5626,
+          "course_rating": 71.0,
+          "slope": 130,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4836,
+          "course_rating": 67.0,
+          "slope": 117,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4116,
+          "course_rating": 62.9,
+          "slope": 117,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5626,
+          "course_rating": 76.5,
+          "slope": 145,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4836,
+          "course_rating": 71.4,
+          "slope": 127,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4116,
+          "course_rating": 66.6,
+          "slope": 117,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 353,
+            "rood": 291,
+            "oranje": 248
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 114,
+            "oranje": 97
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 358,
+            "rood": 301,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 139,
+            "rood": 124,
+            "oranje": 102
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 335,
+            "rood": 317,
+            "oranje": 276
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 458,
+            "rood": 385,
+            "oranje": 327
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 345,
+            "rood": 298,
+            "oranje": 253
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 338,
+            "rood": 291,
+            "oranje": 247
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 351,
+            "rood": 297,
+            "oranje": 252
+          }
+        }
+      ]
+    },
+    {
+      "name": "Par-3 Paarse Baan (9 holes vanaf paarse tees)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "paars",
+          "color": "purple",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 26.3,
+          "slope": 84,
+          "par": 27
+        },
+        {
+          "name": "paars",
+          "color": "purple",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 27.5,
+          "slope": 86,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "paars": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "paars": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "paars": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "paars": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "paars": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "paars": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "paars": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "paars": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "paars": null
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclubgaasterland.nl/golfbaan-friesland/hole-sponsors",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/hcp-tabellen.html",
+      "scorecard/hcp-heren-2023.pdf",
+      "scorecard/hcp-dames-2023.pdf",
+      "scorecard/hcp-par3-9h.pdf",
+      "scorecard/hcp-par3-18h.pdf",
+      "scorecard/golfify-scorecard.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen scorekaart-PDF/afbeelding op de officiele site; hole-pagina geeft par, lengte (geel) en SI per hole. SI officieel als 11/12 enz. (eerste/tweede ronde bij 18 holes); hier de eerste-ronde-waarde. Lengtes rood/oranje van Golfify (derde partij, totalen 2418/2058 m; Golfify noemt afwijkende oude SI-waarden en 9-holes CR/slope). CR/slope uit officiele HCP-tabellen d.d. 14-09-2023 gelden voor 18 holes (2x9, par 70); tee-lengtes daarom 2x de 9-holes lengte. Paarse par-3 variant: officiele HCP-tabel 9 holes par 27 (CR/slope heren 26,3/84, dames 27,5/86; 18 holes par 54: 52,6/84 en 55,0/86); aangenomen wordt dat dit de 9 holes vanaf paarse tees is, holelengtes niet gepubliceerd. De 6 par-3 oefenholes (433 m, sinds okt. 2025) hebben geen gepubliceerde scorekaart. Architect Alan Rijks volgens 1golf.eu (niet op officiele site bevestigd); founded = oprichting vereniging mei 1987, baan open 2003."
+  },
+  "sources": [
+    "https://golfclubgaasterland.nl/",
+    "https://golfclubgaasterland.nl/golfbaan-friesland/hole-sponsors",
+    "https://golfclubgaasterland.nl/baan/hcp-tabellen",
+    "https://golfclubgaasterland.nl/golfclub/ontstaan",
+    "https://golfclubgaasterland.nl/baan/oefenfaciliteiten",
+    "https://golfclubgaasterland.nl/greenfee/greenfee-tarieven",
+    "https://golfclubgaasterland.nl/greenfee/starttijden",
+    "https://www.golfify.io/courses/golfclub-gaasterland",
+    "https://www.1golf.eu/club/golfclub-gaasterland/"
+  ]
+}

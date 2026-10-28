@@ -1,0 +1,60 @@
+{
+  "slug": "pitch-putt-martensplek-tiendeveen",
+  "name": "Pitch & Putt Martensplek",
+  "club_name": "Golfbaan Martensplek",
+  "holes_total": 9,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Haarweg 22",
+    "postal_code": "7936 TP",
+    "city": "Tiendeveen",
+    "province": "Drenthe",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.76151,
+    "lon": 6.56427,
+    "source": "golfkaart (caller); OSM 52.7610, 6.5628"
+  },
+  "phone": "+31 528 331 558",
+  "email": "receptie@martensplek.nl",
+  "website": "https://www.pitchenputtmartensplek.nl/",
+  "booking_url": "https://www.pitchenputtmartensplek.nl/pitch-putt-reserveren",
+  "founded": null,
+  "architect": null,
+  "landscape": "natuurgebied naast de 18 holes baan",
+  "facilities": [
+    "9 holes pitch & putt (verlicht, moonlight-rondes)",
+    "driving range",
+    "huurmateriaal inbegrepen",
+    "restaurant/hotel Martensplek",
+    "jeu de boules"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen golfervaring of handicap nodig; materiaal en korte instructie inbegrepen.",
+  "description_nl": "De 9 holes pitch & putt-baan van Martensplek in Tiendeveen ligt naast de 18 holes golfbaan en is bedoeld voor iedereen, ook zonder golfervaring. Materiaal, een korte instructie en het gebruik van de driving range zitten bij de prijs inbegrepen. De baan is verlicht, zodat er in herfst en winter ook moonlight-rondes voor groepen mogelijk zijn.",
+  "loops": [
+    {
+      "name": "Pitch & Putt",
+      "holes": 9,
+      "par": null,
+      "tees": [],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.pitchenputtmartensplek.nl/informatie",
+    "files": [],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen scorekaart (par/lengtes) online gevonden op de officiele site of bij derden; alleen informatiepagina opgeslagen als page.html. GolfPass vermeldt 9 holes pitch&putt (1991) zonder par/lengte."
+  },
+  "sources": [
+    "https://www.pitchenputtmartensplek.nl/",
+    "https://www.pitchenputtmartensplek.nl/informatie",
+    "https://www.pitchenputtmartensplek.nl/contact-1",
+    "https://www.golfpass.com/travel-advisor/courses/23062-martensplek-golf-club-par-3-course"
+  ],
+  "distance_km_from_dedemsvaart": 19.2
+}

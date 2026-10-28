@@ -1,0 +1,176 @@
+{
+  "slug": "ullerberg-ermelo",
+  "name": "Landgoed Ullerberg (golfbaan)",
+  "club_name": "Golfclub Ullerberg",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Jonkheer Doctor C.J. Sandbergweg 97A",
+    "postal_code": "3852 PT",
+    "city": "Leuvenum (Ermelo)",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2999908,
+    "lon": 5.7058992,
+    "source": "nominatim (adres Sandbergweg 97A); golfkaart-hint 52.29217,5.65805 ligt ~3 km westelijker"
+  },
+  "distance_km_from_dedemsvaart": 61.0,
+  "phone": "+31 577 407 603",
+  "email": "golf@ullerberg.nl",
+  "website": "https://golfullerberg.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "heide",
+  "facilities": [],
+  "greenfee_welcome": false,
+  "requirements": "Privé-heidebaan op Landgoed Ullerberg. Vereniging Golfclub Ullerberg neemt momenteel alleen registratieleden (handicapregistratie, EUR 60,50/jaar); speelrecht op de baan is (nog) niet beschikbaar.",
+  "description_nl": "Kleine negen-holes heidebaan op het particuliere Landgoed Ullerberg bij Leuvenum, vlak naast The Links Valley. De baan is privé en niet vrij te boeken; het landgoed is onder meer bekend als gastheer van de International Dutch Hickory Open. De bijbehorende vereniging richt zich voorlopig vooral op handicapregistratie.",
+  "loops": [
+    {
+      "name": "Landgoed Ullerberg",
+      "holes": 9,
+      "par": 35,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2565,
+          "course_rating": 67.2,
+          "slope": 113,
+          "par": 35
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2565,
+          "course_rating": 67.2,
+          "slope": 115,
+          "par": 35
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2307,
+          "course_rating": 64.0,
+          "slope": 107,
+          "par": 35
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2307,
+          "course_rating": 65.0,
+          "slope": 109,
+          "par": 35
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 320
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 225
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 354
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 350
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 275
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 423
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 106
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 387
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://www.hole19golf.com/courses/landgoed-ullerberg",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/hole19_calc.html"
+    ],
+    "source": "third-party",
+    "complete": false,
+    "notes": "Geen officiele scorekaart online (clubsite golfullerberg.nl en ullerberg.nl bevatten geen baandata). Data uit Hole19: par/SI/lengtes alleen voor geel; rood alleen totale lengte (2307). Hole19 labelt lengtes als 'yds' maar 18-holes totaal 5130 = 2x2565 m volgens Hole19-tekst, dus vermoedelijk meters. CR/slope (67.2/113 etc.) bij par 35 lijken 18-holes waarden (2x9) te zijn; niet officieel geverifieerd."
+  },
+  "sources": [
+    "https://golfullerberg.nl/",
+    "https://golfullerberg.nl/lidmaatschap",
+    "https://www.ullerberg.nl/",
+    "https://www.hole19golf.com/courses/landgoed-ullerberg"
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "slug": "kasteel-engelenburg-brummen",
+  "name": "Golfbaan Kasteel Engelenburg",
+  "club_name": "Engelenburg Golf & Country Club",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Eerbeekseweg 6",
+    "postal_code": "6971 LB",
+    "city": "Brummen",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.090482,
+    "lon": 6.1345987,
+    "source": "nominatim (Kasteel Engelenburg, Eerbeekseweg 6); komt overeen met golfkaart"
+  },
+  "phone": "+31 575 569 999",
+  "email": "golf@engelenburg.com",
+  "website": "https://engelenburg.com/golf/",
+  "booking_url": "https://engelenburg.golfer.intogolf.nl/#/teetimes",
+  "founded": 1988,
+  "architect": "Donald Steel",
+  "landscape": "parkbaan op historisch landgoed (oude eiken, vijvers)",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "golfschool (Wanna Golf Academy)",
+    "hotel",
+    "restaurant",
+    "trolley- en clubverhuur",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Golfvaardigheidsbewijs (clubhandicap 54) of baanpermissie",
+  "description_nl": "Negen holes op het landgoed rond Kasteel Engelenburg bij Brummen, aangelegd in 1988 naar een ontwerp van Donald Steel. De baan slingert tussen eeuwenoude eiken en waterpartijen; de tee van hole 2 ligt zelfs bij een oude ijskelder. Een 18-holesronde gaat twee keer rond met andere stroke-indexen. Het kasteel zelf is een hotel met restaurant.",
+  "loops": [
+    {
+      "name": "9 holes (2x gespeeld)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5852,
+          "course_rating": 72.0,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5852,
+          "course_rating": 78.3,
+          "slope": 147,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5248,
+          "course_rating": 69.0,
+          "slope": 123,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5248,
+          "course_rating": 74.3,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4978,
+          "course_rating": 68.0,
+          "slope": 112,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4978,
+          "course_rating": 73.2,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4712,
+          "course_rating": 66.7,
+          "slope": 104,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4712,
+          "course_rating": 71.7,
+          "slope": 125,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 371,
+            "blauw": 348,
+            "rood": 305,
+            "oranje": 290
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 323,
+            "blauw": 310,
+            "rood": 278,
+            "oranje": 260
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 311,
+            "blauw": 300,
+            "rood": 266,
+            "oranje": 250
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 483,
+            "blauw": 412,
+            "rood": 403,
+            "oranje": 388
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 172,
+            "blauw": 155,
+            "rood": 147,
+            "oranje": 138
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 395,
+            "blauw": 339,
+            "rood": 339,
+            "oranje": 318
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 451,
+            "blauw": 382,
+            "rood": 382,
+            "oranje": 375
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 156,
+            "blauw": 145,
+            "rood": 136,
+            "oranje": 127
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 264,
+            "blauw": 233,
+            "rood": 233,
+            "oranje": 210
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 371,
+            "blauw": 348,
+            "rood": 305,
+            "oranje": 290
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 323,
+            "blauw": 310,
+            "rood": 278,
+            "oranje": 260
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 311,
+            "blauw": 300,
+            "rood": 266,
+            "oranje": 250
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 483,
+            "blauw": 412,
+            "rood": 403,
+            "oranje": 388
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 172,
+            "blauw": 155,
+            "rood": 147,
+            "oranje": 138
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 395,
+            "blauw": 339,
+            "rood": 339,
+            "oranje": 318
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 451,
+            "blauw": 382,
+            "rood": 382,
+            "oranje": 375
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 156,
+            "blauw": 145,
+            "rood": 136,
+            "oranje": 127
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 264,
+            "blauw": 233,
+            "rood": 233,
+            "oranje": 210
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://engelenburg.com/golf/golfbaan/",
+    "files": [
+      "scorecard/Scorekaart-Golf-Kasteel-Engelenburg.pdf",
+      "scorecard/Playing-Handicap-Heren-9-18-holes.pdf",
+      "scorecard/Playing-Handicap-Dames-9-18-holes.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart (upload mei 2026): 9 holes, holes 10-18 zelfde lengtes met even SI. CR/slope 18 holes uit baanhandicaptabellen d.d. 15-07-2021; kunnen ouder zijn dan de huidige lengtes."
+  },
+  "sources": [
+    "https://engelenburg.com/golf/golfbaan/",
+    "https://engelenburg.com/golf/gasten-golf/",
+    "https://engelenburg.com/golf/"
+  ],
+  "distance_km_from_dedemsvaart": 60.9
+}

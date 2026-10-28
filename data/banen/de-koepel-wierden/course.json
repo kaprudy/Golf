@@ -1,0 +1,346 @@
+{
+  "slug": "de-koepel-wierden",
+  "name": "Golfclub De Koepel",
+  "club_name": "Golfclub De Koepel",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Rijssensestraat 142a",
+    "postal_code": "7642 NN",
+    "city": "Wierden",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.34218,
+    "lon": 6.56839,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 29.7,
+  "phone": "0546-574070",
+  "email": "info@golfclubdekoepel.nl",
+  "website": "https://www.golfclubdekoepel.nl/",
+  "booking_url": "https://www.golfclubdekoepel.nl/starttijd-reserveren/",
+  "founded": null,
+  "architect": null,
+  "landscape": "bos/heide (voormalige Wierdense duinen, zandgrond)",
+  "facilities": [
+    "driving range",
+    "oefenfaciliteiten",
+    "restaurant/clubhuis",
+    "golfprofessional/lessen",
+    "handicarts",
+    "laadpalen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geldige WHS-handicap; starttijd reserveren verplicht",
+  "description_nl": "Afwisselende 18-holes par-70 baan tussen Rijssen en Wierden, aangelegd op het terrein van de vroegere Wierdense duinen. Jeneverbessen, oude inheemse bomen en een heideveld met schaapskooi bepalen het karakter. Dankzij de zandige bodem is de baan vrijwel het hele jaar goed bespeelbaar.",
+  "loops": [
+    {
+      "name": "Koepel Course",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5576,
+          "course_rating": 70.0,
+          "slope": 129,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5576,
+          "course_rating": 75.7,
+          "slope": 137,
+          "par": 70
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": null,
+          "length_m": 5135,
+          "course_rating": null,
+          "slope": null,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4724,
+          "course_rating": 66.2,
+          "slope": 112,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4724,
+          "course_rating": 70.8,
+          "slope": 128,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3567,
+          "course_rating": 61.8,
+          "slope": 100,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3567,
+          "course_rating": 64.2,
+          "slope": 102,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 303,
+            "blauw": 303,
+            "rood": 257,
+            "oranje": 204
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 465,
+            "blauw": 395,
+            "rood": 395,
+            "oranje": 341
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134,
+            "blauw": 127,
+            "rood": 118,
+            "oranje": 52
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 339,
+            "blauw": 325,
+            "rood": 289,
+            "oranje": 248
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 459,
+            "blauw": 390,
+            "rood": 390,
+            "oranje": 324
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 166,
+            "blauw": 159,
+            "rood": 152,
+            "oranje": 71
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 320,
+            "blauw": 320,
+            "rood": 262,
+            "oranje": 200
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 342,
+            "blauw": 310,
+            "rood": 302,
+            "oranje": 228
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 168,
+            "blauw": 140,
+            "rood": 113,
+            "oranje": 69
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 433,
+            "blauw": 366,
+            "rood": 366,
+            "oranje": 304
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 149,
+            "blauw": 140,
+            "rood": 130,
+            "oranje": 54
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 399,
+            "blauw": 360,
+            "rood": 325,
+            "oranje": 284
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 347,
+            "blauw": 347,
+            "rood": 300,
+            "oranje": 206
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 379,
+            "blauw": 333,
+            "rood": 315,
+            "oranje": 249
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 282,
+            "blauw": 282,
+            "rood": 238,
+            "oranje": 148
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 391,
+            "blauw": 350,
+            "rood": 315,
+            "oranje": 276
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 340,
+            "blauw": 328,
+            "rood": 318,
+            "oranje": 225
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160,
+            "blauw": 160,
+            "rood": 139,
+            "oranje": 84
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclubdekoepel.nl/golfbaan/",
+    "files": [
+      "scorecard/Screen-Shot-12-23-25-at-02.53-PM.jpg",
+      "scorecard/Screen-Shot-12-23-25-at-02.53-PM-001.jpg",
+      "scorecard/Screen-Shot-02-16-22-at-05.08-PM.png"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart (scan 07-2025) met par, stroke index en lengtes voor geel/blauw/rood/oranje. CR/slope uit tabel op de baangegevens-pagina; blauwe tee heeft geen gepubliceerde CR/slope."
+  },
+  "sources": [
+    "https://www.golfclubdekoepel.nl/golfbaan/",
+    "https://www.golfclubdekoepel.nl/golfbaan/18-holes/",
+    "https://www.golfclubdekoepel.nl/gasten/",
+    "https://www.golfclubdekoepel.nl/algemene-informatie/"
+  ]
+}

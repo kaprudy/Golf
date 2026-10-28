@@ -1,0 +1,341 @@
+{
+  "slug": "westerwolde-vlagtwedde",
+  "name": "Golfclub Westerwolde",
+  "club_name": "Golfclub Westerwolde",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Laan van Westerwolde 8",
+    "postal_code": "9541 ZA",
+    "city": "Vlagtwedde",
+    "province": "Groningen",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 53.03695,
+    "lon": 7.10743,
+    "source": "golfkaart (Nominatim Laan van Westerwolde 8: 53.0370, 7.1076)"
+  },
+  "distance_km_from_dedemsvaart": 65.2,
+  "phone": null,
+  "email": "secretaris@gcwesterwolde.nl",
+  "website": "https://www.gcwesterwolde.nl/",
+  "booking_url": "https://www.nexxchange.com/golfclub/golfclub-westerwolde",
+  "founded": 1997,
+  "architect": null,
+  "landscape": "Bosrand/parkbaan tegen de bossen van De Barlage, naast Parc Emslandermeer",
+  "facilities": [
+    "9 holes (B-status NGF)",
+    "driving range met ballenautomaat",
+    "kleedkamers en toiletten (onbemand clubhuis)",
+    "lockers",
+    "handicarts",
+    "restaurant Nuver naast de baan"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfclub Westerwolde werd in 1997 opgericht en opende in 2003 haar eigen 9-holes Westerwoldebaan, grotendeels aangelegd door vrijwilligers. De baan ligt tegen de bossen van De Barlage naast Parc Emslandermeer bij Vlagtwedde. Het is een kleinschalige verenigingsbaan met een onbemand clubhuis; greenfeespelers boeken online en kunnen terecht in het naastgelegen restaurant.",
+  "loops": [
+    {
+      "name": "Westerwoldebaan (9 holes, 2x gespeeld)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 4936,
+          "course_rating": 67.8,
+          "slope": 124,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4696,
+          "course_rating": 66.4,
+          "slope": 118,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3846,
+          "course_rating": 62.5,
+          "slope": 105,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 4936,
+          "course_rating": 72.4,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4696,
+          "course_rating": 71.6,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3846,
+          "course_rating": 64.9,
+          "slope": 108,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 5,
+          "si_women": 5,
+          "lengths_m": {
+            "geel": 306,
+            "rood": 300,
+            "oranje": 254
+          },
+          "par_women": 4
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 3,
+          "si_women": 3,
+          "lengths_m": {
+            "geel": 397,
+            "rood": 386,
+            "oranje": 326
+          },
+          "par_women": 5
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 13,
+          "si_women": 13,
+          "lengths_m": {
+            "geel": 236,
+            "rood": 225,
+            "oranje": 180
+          },
+          "par_women": 4
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": 17,
+          "lengths_m": {
+            "geel": 84,
+            "rood": 84,
+            "oranje": 84
+          },
+          "par_women": 3
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 11,
+          "si_women": 11,
+          "lengths_m": {
+            "geel": 409,
+            "rood": 398,
+            "oranje": 349
+          },
+          "par_women": 5
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": 1,
+          "lengths_m": {
+            "geel": 355,
+            "rood": 321,
+            "oranje": 263
+          },
+          "par_women": 4
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 7,
+          "si_women": 7,
+          "lengths_m": {
+            "geel": 423,
+            "rood": 390,
+            "oranje": 305
+          },
+          "par_women": 5
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 15,
+          "si_women": 15,
+          "lengths_m": {
+            "geel": 101,
+            "rood": 87,
+            "oranje": 55
+          },
+          "par_women": 3
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": 9,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 157,
+            "oranje": 107
+          },
+          "par_women": 3
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 6,
+          "si_women": 6,
+          "lengths_m": {
+            "geel": 306,
+            "rood": 300,
+            "oranje": 254
+          },
+          "par_women": 4
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 4,
+          "si_women": 4,
+          "lengths_m": {
+            "geel": 397,
+            "rood": 386,
+            "oranje": 326
+          },
+          "par_women": 5
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 14,
+          "si_women": 14,
+          "lengths_m": {
+            "geel": 236,
+            "rood": 225,
+            "oranje": 180
+          },
+          "par_women": 4
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": 18,
+          "lengths_m": {
+            "geel": 84,
+            "rood": 84,
+            "oranje": 84
+          },
+          "par_women": 3
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 12,
+          "si_women": 12,
+          "lengths_m": {
+            "geel": 409,
+            "rood": 398,
+            "oranje": 349
+          },
+          "par_women": 5
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": 2,
+          "lengths_m": {
+            "geel": 355,
+            "rood": 321,
+            "oranje": 263
+          },
+          "par_women": 4
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 8,
+          "si_women": 8,
+          "lengths_m": {
+            "geel": 423,
+            "rood": 390,
+            "oranje": 305
+          },
+          "par_women": 5
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": 16,
+          "lengths_m": {
+            "geel": 101,
+            "rood": 87,
+            "oranje": 55
+          },
+          "par_women": 3
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 10,
+          "si_women": 10,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 157,
+            "oranje": 107
+          },
+          "par_women": 3
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.gcwesterwolde.nl/index.php/de-baan/handicap-tabel-en-scorekaart",
+    "files": [
+      "scorecard/Scorekaart.pdf",
+      "scorecard/Westerwolde-afstand-tabel.pdf",
+      "scorecard/Westerwolde-WHS-tabel-Heren-18.png",
+      "scorecard/Westerwolde-WHS-tabel-Dames-18.png",
+      "scorecard/Westerwolde-WHS-tabel-Heren-9.png",
+      "scorecard/Westerwolde-WHS-tabel-Dames-9.png"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Heren par 70, dames par 72 (hole 2/11 is par 5 voor dames; extra veld par_women). Rood hole 5/14: scorekaart-PDF toont 396, afstandentabel 398; 398 gebruikt (sluit aan op totaal 2348/4696). CR/SR van scorekaart = WHS-tabel (19-01-2021). Telefoon niet gepubliceerd; huisnummer adres via OSM/derden (club vermeldt geen adres)."
+  },
+  "sources": [
+    "https://www.gcwesterwolde.nl/index.php/de-baan/handicap-tabel-en-scorekaart",
+    "https://www.gcwesterwolde.nl/index.php/golfclub-westerwolde/de-club",
+    "https://www.gcwesterwolde.nl/index.php/greenfee",
+    "https://www.gcwesterwolde.nl/index.php/golfclub-westerwolde/faciliteiten",
+    "https://nominatim.openstreetmap.org/"
+  ]
+}

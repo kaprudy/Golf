@@ -1,0 +1,225 @@
+{
+  "slug": "golfclub-heidemeer",
+  "name": "Golfclub Heidemeer",
+  "club_name": "Golfclub Heidemeer",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Heidemeer 2",
+    "postal_code": "8445 SB",
+    "city": "Heerenveen",
+    "province": "Friesland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.93761,
+    "lon": 5.93926,
+    "source": "nominatim (Heidemeer 2, Heerenveen); gelijk aan golfkaart Golfschool Heerenveen"
+  },
+  "distance_km_from_dedemsvaart": 51.3,
+  "phone": "+31 513 636 519",
+  "email": "info@golfclubheidemeer.nl",
+  "website": "https://golfclubheidemeer.nl/",
+  "booking_url": null,
+  "founded": 1994,
+  "architect": null,
+  "landscape": "parklandschap met bebouwing, heidebos en holes langs het Heidemeer",
+  "facilities": [
+    "driving range (deels overdekt)",
+    "putting green",
+    "oefenhole met bunker",
+    "clubhuis/golfbar Mulligan",
+    "kleedkamers",
+    "golfschool (Golfschool Heerenveen)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Greenfeespelers welkom van 1 maart tot 1 december (niet in de winter); starttijd telefonisch reserveren. Handicapeis niet op de clubsite vermeld (1golf.eu noemt max. handicap 54).",
+  "description_nl": "Compacte 9-holes baan aan de zuidkant van Heerenveen, gespeeld als par 35 (twee rondes par 70). Vier holes lopen door een bebouwd parklandschap, twee door het heidebos en drie langs het water van het Heidemeer. De baan vraagt vooral om precisie en slim baanmanagement; op het terrein geeft Golfschool Heerenveen les.",
+  "loops": [
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 35,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2615,
+          "course_rating": 34.4,
+          "slope": 124,
+          "par": 35
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2324,
+          "course_rating": 33.1,
+          "slope": 114,
+          "par": 35
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 1862,
+          "course_rating": 31.3,
+          "slope": 102,
+          "par": 35
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2615,
+          "course_rating": 37.1,
+          "slope": 131,
+          "par": 35
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2324,
+          "course_rating": 35.3,
+          "slope": 124,
+          "par": 35
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 1862,
+          "course_rating": 32.6,
+          "slope": 105,
+          "par": 35
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 250,
+            "rood": 231,
+            "oranje": 181
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 461,
+            "rood": 436,
+            "oranje": 369
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 324,
+            "rood": 279,
+            "oranje": 213
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 321,
+            "rood": 276,
+            "oranje": 218
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 164,
+            "rood": 144,
+            "oranje": 92
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 394,
+            "rood": 329,
+            "oranje": 287
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 131,
+            "oranje": 87
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 315,
+            "rood": 287,
+            "oranje": 245
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 234,
+            "rood": 211,
+            "oranje": 170
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclubheidemeer.nl/layout/scorekaart-local-rules/",
+    "files": [
+      "scorecard/scorekaart-9-holes-2024.pdf",
+      "scorecard/scorekaart-18-holes-2024.pdf",
+      "scorecard/Heidemeer-Heren.pdf",
+      "scorecard/Heidemeer-Dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart (juni 2024): 9 holes, 2x gespeeld voor 18 holes; SI tweede ronde = SI eerste ronde + 1 (holes 10-18: 18,6,4,12,10,2,14,8,16). Drie lengtekolommen zonder tekstlabel in PDF; teekleuren geel/rood/oranje toegekend volgens volgorde in handicaptabellen en baanpagina. 18-holes ratings (par 70): heren geel 68.7/124, rood 66.1/114, oranje 62.6/102; dames geel 74.1/131, rood 70.5/124, oranje 65.1/105. Golfschool Heerenveen (Tineke van der Wal, PGA) zit op hetzelfde adres (Heidemeer 2) en is geen aparte baan."
+  },
+  "sources": [
+    "https://golfclubheidemeer.nl/layout/scorekaart-local-rules/",
+    "https://golfclubheidemeer.nl/layout/",
+    "https://golfclubheidemeer.nl/layout/playing-handicap-tabellen/",
+    "https://golfclubheidemeer.nl/gasten/greenfees-en-tarieven/",
+    "https://golfclubheidemeer.nl/contact/",
+    "https://golfclubheidemeer.nl/de-club/",
+    "https://golfschoolheerenveen.nl/",
+    "https://www.1golf.eu/club/golfclub-heidemeer/"
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "slug": "golfpark-exloo",
+  "name": "Golfpark Exloo",
+  "club_name": "Stichting Golfpark Exloo",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Valtherweg 27b",
+    "postal_code": "7875 TA",
+    "city": "Exloo",
+    "province": "Drenthe",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.87565,
+    "lon": 6.88073,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 41.7,
+  "phone": "+31 591 769133",
+  "email": "secretariaat@golfparkexloo.nl",
+  "website": "https://www.golfparkexloo.nl/",
+  "booking_url": "https://www.golfparkexloo.nl/hoe-reserveer-ik-een-starttijd/",
+  "founded": null,
+  "architect": null,
+  "landscape": "parkachtig met waterpartijen, bosranden en agrarisch omland",
+  "facilities": [
+    "18-holes baan (lussen Noord en Zuid)",
+    "deels overdekte verlichte driving range",
+    "putting green",
+    "chipping area met oefenbunker",
+    "golfschool/golfles",
+    "restaurant met terras",
+    "kleedkamers met douches",
+    "lockers",
+    "verhuur buggy, trolley en golfset",
+    "footgolf"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Openbare baan. Lus Noord (holes 1-9) zonder GVB/handicap 54-verplichting (wel enige golfervaring en eigen tas); lus Zuid en 18 holes vanaf handicap 54. Reserveren via Nexxchange.",
+  "description_nl": "Golfpark Exloo is een openbare, vrijwilligersgerunde golfbaan aan de rand van Exloo in de gemeente Borger-Odoorn. De 18 holes bestaan uit de korte lus Noord, waar ook spelers zonder baanpermissie terecht kunnen, en de langere lus Zuid met meer water en par-4 en par-5 holes. Met een verlichte, deels overdekte driving range en een laagdrempelige sfeer is de baan aantrekkelijk voor starters en recreatieve golfers.",
+  "loops": [
+    {
+      "name": "18 holes Noord-Zuid",
+      "holes": 18,
+      "par": 64,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 4125,
+          "course_rating": 62.8,
+          "slope": 105,
+          "par": 64
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 3891,
+          "course_rating": 62.1,
+          "slope": 100,
+          "par": 64
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3414,
+          "course_rating": 60.4,
+          "slope": 99,
+          "par": 64
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 4125,
+          "course_rating": 65.6,
+          "slope": 122,
+          "par": 64
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 3891,
+          "course_rating": 65.1,
+          "slope": 112,
+          "par": 64
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3414,
+          "course_rating": 63.2,
+          "slope": 104,
+          "par": 64
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 111,
+            "rood": 111,
+            "oranje": 91
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 159,
+            "rood": 159,
+            "oranje": 100
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 157,
+            "oranje": 135
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 303,
+            "rood": 270,
+            "oranje": 244
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 150,
+            "oranje": 131
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 120,
+            "oranje": 106
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 128,
+            "rood": 128,
+            "oranje": 113
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 219,
+            "rood": 219,
+            "oranje": 191
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 110,
+            "oranje": 98
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 307,
+            "rood": 298,
+            "oranje": 245
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 252,
+            "oranje": 237
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 185,
+            "rood": 185,
+            "oranje": 170
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 290,
+            "rood": 263,
+            "oranje": 219
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 188,
+            "rood": 165,
+            "oranje": 140
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 382,
+            "rood": 360,
+            "oranje": 321
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 248,
+            "rood": 227,
+            "oranje": 204
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 461,
+            "rood": 444,
+            "oranje": 420
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 305,
+            "rood": 273,
+            "oranje": 249
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfparkexloo.nl/scorekaarten/",
+    "files": [
+      "scorecard/Scorekaart18Holes_2025_Binnenkant-scaled.jpg",
+      "scorecard/Scorekaart18Holes_2025_Buitenkant-scaled.jpg",
+      "scorecard/Handicaptabel-18-holes-Noord-Zuid-Heren-2022.jpg",
+      "scorecard/Handicaptabel-18-holes-Noord-Zuid-Dames-2022.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Holes 1-9 = lus Noord (par 29), holes 10-18 = lus Zuid (par 35); beide ook los als 9 holes speelbaar (aparte 9-holes handicaptabellen op https://www.golfparkexloo.nl/handicaptabellen/, niet overgenomen). Greenfeespelers die 18 holes spelen starten op hole 10. Lengtes/par/SI uit scorekaart 2025; CR/slope uit NGF-baanhandicaptabellen van 13-07-2022. Geen aparte dames-SI."
+  },
+  "sources": [
+    "https://www.golfparkexloo.nl/scorekaarten/",
+    "https://www.golfparkexloo.nl/handicaptabellen/",
+    "https://www.golfparkexloo.nl/greenfeetarieven/",
+    "https://www.golfparkexloo.nl/over-de-club/",
+    "https://golfkaart.com/api/kaart.json"
+  ]
+}

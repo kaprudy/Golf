@@ -1,0 +1,281 @@
+{
+  "slug": "weleveld-golf-zenderen",
+  "name": "Weleveld Golf",
+  "club_name": "Weleveld Golf",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Bekkingvelderweg 8",
+    "postal_code": "7625 RM",
+    "city": "Zenderen",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.33481,
+    "lon": 6.73154,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 34.9,
+  "phone": "074-2661743",
+  "email": "info@weleveldgolf.nl",
+  "website": "https://www.weleveldgolf.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Michiel van de Vaart (Spogard & Van de Vaart)",
+  "landscape": "open landschapsbaan met waterhindernissen",
+  "facilities": [
+    "oefenfaciliteiten",
+    "golfprofessionals/lessen",
+    "brasserie (Fier)",
+    "golfshop",
+    "clubfitting"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Moderne 9-holes baan met NGF A-status in Zenderen bij Borne, ontworpen door Michiel van de Vaart. Over 2x9 holes is het een par-72 baan met meerdere waterhindernissen die bij verschillende holes in het spel komen. Naast de baan zijn er een brasserie, golfshop en clubfitting.",
+  "loops": [
+    {
+      "name": "18 holes (2x9)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5284,
+          "course_rating": 69.4,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5284,
+          "course_rating": 75.4,
+          "slope": 147,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4578,
+          "course_rating": 66.0,
+          "slope": 110,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4578,
+          "course_rating": 70.7,
+          "slope": 129,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 345,
+            "rood": 307
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 433,
+            "rood": 360
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 260,
+            "rood": 255
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 285,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 338,
+            "rood": 265
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 104,
+            "rood": 99
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 312,
+            "rood": 277
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 425,
+            "rood": 386
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 345,
+            "rood": 307
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 433,
+            "rood": 360
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 260,
+            "rood": 255
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 285,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 338,
+            "rood": 265
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 104,
+            "rood": 99
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 312,
+            "rood": 277
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 425,
+            "rood": 386
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.weleveldgolf.nl/gasten/",
+    "files": [
+      "scorecard/Scorekaart_Faltblatt_22.07_24_CS6final.pdf",
+      "scorecard/Weleveld-WHS-tabel-Heren.pdf",
+      "scorecard/Weleveld-WHS-tabel-Dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart juli 2024. Op de kaart staat IN-totaal geel 2672, maar de holelengtes tellen op tot 2642 (totaal 5284 klopt met 2x2642). CR/SR uit WHS-tabellen 19-01-2021. Greenfee-handicapeis niet vermeld."
+  },
+  "sources": [
+    "https://www.weleveldgolf.nl/",
+    "https://www.weleveldgolf.nl/gasten/",
+    "https://www.weleveldgolf.nl/contact/"
+  ]
+}

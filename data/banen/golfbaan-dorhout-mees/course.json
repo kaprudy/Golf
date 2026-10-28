@@ -1,0 +1,103 @@
+{
+  "slug": "golfbaan-dorhout-mees",
+  "name": "Golfbaan Dorhout Mees",
+  "club_name": "Golfclub Dorhout Mees",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Strandgaperweg 30",
+    "postal_code": "8256 PZ",
+    "city": "Biddinghuizen",
+    "province": "Flevoland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.4098599,
+    "lon": 5.67777,
+    "source": "nominatim (adres Strandgaperweg 30)"
+  },
+  "distance_km_from_dedemsvaart": 57.0,
+  "phone": "+31 321 331 138",
+  "email": null,
+  "website": "https://www.dorhoutmeesgolf.nl/",
+  "booking_url": "https://www.nexxchange.com/search/teetimes/golfclub-dorhout-mees",
+  "founded": null,
+  "architect": null,
+  "landscape": "links (polder, randmeer/Veluwemeer)",
+  "facilities": [
+    "driving range",
+    "par-3 baan",
+    "sportsbar & brasserie",
+    "golfhotel",
+    "golfschool/GVB-cursussen",
+    "buggyverhuur",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Gastspelers vanaf handicap 54, 7 dagen per week.",
+  "description_nl": "Linksachtige baan op het terrein van evenementenlocatie Dorhout Mees bij Biddinghuizen, vlak bij het Veluwemeer. De negen holes hebben elk twee afslagposities, zodat een ronde van 18 holes (par 71) twee verschillende negens oplevert; waterpartijen, ophogingen en een eilandgreen op hole 9 maken het gevarieerd. Er is ook een par-3 baan, een hotel en een brasserie.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes met 18 tee-posities)",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 68.5,
+          "slope": 114,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 73.2,
+          "slope": 127,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 64.2,
+          "slope": 103,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 69.6,
+          "slope": 117,
+          "par": 71
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.dorhoutmeesgolf.nl/golfbaan-flevoland/over-de-baan/",
+    "files": [
+      "scorecard/Dorhout-Mees-Heren-Playing-Handicaps-1.pdf",
+      "scorecard/Dorhout-Mees-Dames-Playing-handicaps-1.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen officiële hole-voor-hole scorekaart online gevonden (holes-pagina toont alleen foto's). Wel CR/slope/par uit officiële WHS-tabellen d.d. 02-09-2021 (geel/rood, par 71). Ontbreekt: per-hole par, SI en lengtes, totale lengtes, par-3 baan gegevens. Derde-partij-kaarten (golfingrecord.com: Rood/Wit, Oranje, Mees/Groen) horen bij de oude 2x18-holes indeling en zijn niet gebruikt. Telefoonnummer uit derde-partij-bron (leadingcourses/1golf). page.html = over-de-baan-pagina (met handicaptabellen), holes.html = holes-pagina."
+  },
+  "sources": [
+    "https://www.dorhoutmeesgolf.nl/",
+    "https://www.dorhoutmeesgolf.nl/golfbaan-flevoland/over-de-baan/",
+    "https://www.dorhoutmeesgolf.nl/golfbaan-flevoland/greenfee/",
+    "https://www.leadingcourses.com/clubs/europe+the-netherlands+flevoland/golfclub-dorhout-mees"
+  ]
+}

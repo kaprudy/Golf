@@ -1,0 +1,513 @@
+{
+  "slug": "zuid-drenthe-erica",
+  "name": "Golfbaan Zuid-Drenthe",
+  "club_name": "Golfclub Zuid Drenthe",
+  "holes_total": 21,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Amsterdamscheveldlaan 30",
+    "postal_code": "7887 VD",
+    "city": "Erica",
+    "province": "Drenthe",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.68404,
+    "lon": 6.93341,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 33.3,
+  "phone": "+31 6 27129726",
+  "email": "secretariaat@golfclubzuiddrenthe.nl",
+  "website": "https://www.golfclubzuiddrenthe.nl/",
+  "booking_url": "https://zuiddrenthe.teetime.e-golf4u.nl/app/booking/teetime",
+  "founded": null,
+  "architect": null,
+  "landscape": "inland links: open, heuvelachtig terrein met water en nauwelijks bomen",
+  "facilities": [
+    "9-holes championship course (18 afslagpunten)",
+    "12-holes par-3 baan",
+    "golfles (golfpro)",
+    "online starttijden reserveren"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Championship course alleen met baanpermissie/handicap; par-3 baan ook zonder baanpermissie te spelen.",
+  "description_nl": "Golfbaan Zuid-Drenthe bij Erica is een inland-linksbaan: een open, glooiend landschap met water en vrijwel geen bomen, waar de wind vaak meespeelt. De championship course telt 9 holes met aparte afslagen voor de tweede ronde, zodat 18 holes als een volwaardige par-70 ronde speelt. Daarnaast ligt er een heuvelachtige par-3 baan van 12 holes die ook zonder baanpermissie toegankelijk is. De baan wordt door vrijwilligers en greenkeepers zo natuurlijk mogelijk beheerd.",
+  "loops": [
+    {
+      "name": "Championship course (9 holes, 2x gespeeld)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 5749,
+          "course_rating": 71.2,
+          "slope": 131,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5349,
+          "course_rating": 68.7,
+          "slope": 128,
+          "par": 70
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5143,
+          "course_rating": 67.5,
+          "slope": 123,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4811,
+          "course_rating": 65.8,
+          "slope": 117,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4324,
+          "course_rating": 63.3,
+          "slope": 109,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5349,
+          "course_rating": 74.8,
+          "slope": 137,
+          "par": 70
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5143,
+          "course_rating": 73.3,
+          "slope": 135,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4811,
+          "course_rating": 71.1,
+          "slope": 125,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4324,
+          "course_rating": 68.2,
+          "slope": 114,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 350,
+            "geel": 320,
+            "blauw": 308,
+            "rood": 287,
+            "oranje": 258
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 155,
+            "geel": 145,
+            "blauw": 140,
+            "rood": 105,
+            "oranje": 97
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 340,
+            "geel": 332,
+            "blauw": 332,
+            "rood": 304,
+            "oranje": 276
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 499,
+            "geel": 490,
+            "blauw": 490,
+            "rood": 456,
+            "oranje": 411
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 380,
+            "geel": 329,
+            "blauw": 322,
+            "rood": 307,
+            "oranje": 299
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 531,
+            "geel": 502,
+            "blauw": 491,
+            "rood": 472,
+            "oranje": 445
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 164,
+            "geel": 136,
+            "blauw": 132,
+            "rood": 125,
+            "oranje": 61
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 332,
+            "geel": 311,
+            "blauw": 305,
+            "rood": 286,
+            "oranje": 253
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 134,
+            "geel": 126,
+            "blauw": 103,
+            "rood": 98,
+            "oranje": 84
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 350,
+            "geel": 320,
+            "blauw": 308,
+            "rood": 287,
+            "oranje": 258
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 155,
+            "geel": 145,
+            "blauw": 140,
+            "rood": 105,
+            "oranje": 97
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 340,
+            "geel": 332,
+            "blauw": 332,
+            "rood": 304,
+            "oranje": 276
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 478,
+            "geel": 457,
+            "blauw": 387,
+            "rood": 387,
+            "oranje": 367
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 380,
+            "geel": 329,
+            "blauw": 322,
+            "rood": 307,
+            "oranje": 299
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 531,
+            "geel": 502,
+            "blauw": 491,
+            "rood": 472,
+            "oranje": 445
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 164,
+            "geel": 136,
+            "blauw": 132,
+            "rood": 125,
+            "oranje": 61
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 332,
+            "geel": 311,
+            "blauw": 305,
+            "rood": 286,
+            "oranje": 253
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 134,
+            "geel": 126,
+            "blauw": 103,
+            "rood": 98,
+            "oranje": 84
+          }
+        }
+      ]
+    },
+    {
+      "name": "Par 3 baan (12 holes)",
+      "holes": 12,
+      "par": 36,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": null,
+          "length_m": 967,
+          "course_rating": null,
+          "slope": null,
+          "par": 36
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 97
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 68
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 64
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 59
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 76
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 85
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 100
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 105
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 66
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 80
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 81
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 86
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclubzuiddrenthe.nl/scorekaarten/",
+    "files": [
+      "scorecard/scorekaart-1.jpg",
+      "scorecard/scorekaart-2.jpg",
+      "scorecard/scorekaart-3.jpg",
+      "scorecard/scorekaart-4.jpg",
+      "scorecard/hcp-1.jpg",
+      "scorecard/hcp-2.jpg",
+      "scorecard/hcp-3.jpg",
+      "scorecard/hcp-4.jpg",
+      "scorecard/hcp-5.jpg",
+      "scorecard/hcp-6.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Championship course is een 9-holes lus met andere afslagen voor holes 10-18 (alleen hole 13 wijkt af in lengte t.o.v. hole 4). CR/slope uit NGF-handicaptabellen 24-04-2025 (hcp-*.jpg, ook 9-holes waarden voor 1e/2e negen). Par-3 baan: 12 holes, 967 m, geen CR/slope. Adres op scorekaart: Amsterdamscheveldlaan 9-10; website: Amsterdamscheveldlaan 30."
+  },
+  "sources": [
+    "https://www.golfclubzuiddrenthe.nl/golfbaan/",
+    "https://www.golfclubzuiddrenthe.nl/scorekaarten/",
+    "https://www.golfclubzuiddrenthe.nl/handicaptabellen/",
+    "https://golfkaart.com/api/kaart.json"
+  ]
+}

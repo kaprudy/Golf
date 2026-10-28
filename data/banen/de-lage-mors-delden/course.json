@@ -1,0 +1,512 @@
+{
+  "slug": "de-lage-mors-delden",
+  "name": "Golfbaan De Lage Mors",
+  "club_name": "Golfclub De Lage Mors",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Sportlaan 7",
+    "postal_code": "7491 DG",
+    "city": "Delden",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.25645,
+    "lon": 6.73013,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 42.5,
+  "phone": "074-3777600",
+  "email": "info@golfbaandelagemors.nl",
+  "website": "https://www.golfbaandelagemors.nl/",
+  "booking_url": "https://lagemors.teetime.e-golf4u.nl/app/booking/teetime",
+  "founded": 2008,
+  "architect": "Frank Pont",
+  "landscape": "Twickels coulisselandschap met houtwallen, eiken en waterpartijen",
+  "facilities": [
+    "oefengreen",
+    "golfschool/lessen",
+    "buggy's",
+    "handicarts",
+    "lockers",
+    "hotel (Aparthotel Delden)",
+    "restaurant/bar",
+    "wellness"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Minimaal handicap 54; greenfee met starttijd ophalen bij hotelreceptie",
+  "description_nl": "Moderne 9-holes par-70 baan naast Aparthotel Delden, ontworpen door Frank Pont en geopend in 2008. De baan ligt in het coulisselandschap van Twickel met oude houtwallen, glooiende fairways en geonduleerde greens. Met aparte korte tees is er ook de Twickelbaan (par 29) voor beginners.",
+  "loops": [
+    {
+      "name": "De Lage Mors (2x9 holes)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 4743,
+          "course_rating": 66.5,
+          "slope": 118,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 4743,
+          "course_rating": 71.1,
+          "slope": 128,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4205,
+          "course_rating": 64.0,
+          "slope": 114,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4205,
+          "course_rating": 68.7,
+          "slope": 118,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3680,
+          "course_rating": 62.1,
+          "slope": 98,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3680,
+          "course_rating": 64.1,
+          "slope": 114,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77,
+            "oranje": 56
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 229,
+            "rood": 200,
+            "oranje": 166
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 281,
+            "rood": 240,
+            "oranje": 218
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 173,
+            "rood": 145,
+            "oranje": 121
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 465,
+            "rood": 404,
+            "oranje": 370
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 115,
+            "oranje": 93
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 231,
+            "rood": 199,
+            "oranje": 130
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 492,
+            "rood": 469,
+            "oranje": 452
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 294,
+            "rood": 256,
+            "oranje": 234
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77,
+            "oranje": 56
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 207,
+            "rood": 193,
+            "oranje": 166
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 281,
+            "rood": 240,
+            "oranje": 218
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 225,
+            "rood": 216,
+            "oranje": 121
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 465,
+            "rood": 404,
+            "oranje": 370
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 115,
+            "oranje": 93
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 199,
+            "rood": 167,
+            "oranje": 130
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 469,
+            "rood": 432,
+            "oranje": 452
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 294,
+            "rood": 256,
+            "oranje": 234
+          }
+        }
+      ]
+    },
+    {
+      "name": "Twickelbaan (2x9 holes, korte tees)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "zwart/wit",
+          "color": "black/white",
+          "gender": "men",
+          "length_m": 2548,
+          "course_rating": 53.1,
+          "slope": 87,
+          "par": 58
+        },
+        {
+          "name": "zwart/wit",
+          "color": "black/white",
+          "gender": "women",
+          "length_m": 2548,
+          "course_rating": 55.7,
+          "slope": 96,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 52
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 101
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 121
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 122
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 237
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 89
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 126
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 265
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 161
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 52
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 101
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 121
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 122
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 237
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 89
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 126
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 265
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "zwart/wit": 161
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfbaandelagemors.nl/golfbaan-info/",
+    "files": [
+      "scorecard/1777464288--FILE--2025-09-26-scorekaart-de-lage-mors.pdf",
+      "scorecard/1727878483--FILE--baanhandicap-lage-mors-heren---versie-2024.pdf",
+      "scorecard/1727878432--FILE--baanhandicap-lage-mors-dames---versie-2024.pdf",
+      "scorecard/1756721577--FILE--lage-mors-twickelbaan-dames---heren-2025.pdf",
+      "scorecard/2025-09-26-plattegrond-golfbaan-1044x733.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 26-09-2025. Teekleuren van de drie lengtekolommen (geel/rood/oranje) afgeleid uit totaallengte 4743 m (geel volgens site) en volgorde in handicaptabellen. Twickelbaan: 9 korte holes (par 29) op dezelfde baan met eigen tees; CR geel heren / rood dames vanaf zwart/witte tee."
+  },
+  "sources": [
+    "https://www.golfbaandelagemors.nl/golfbaan-info/",
+    "https://www.golfbaandelagemors.nl/golfbaan-faciliteiten/",
+    "https://www.golfbaandelagemors.nl/golfen/gasten/greenfeespelers/",
+    "https://www.golfbaandelagemors.nl/contact/"
+  ]
+}

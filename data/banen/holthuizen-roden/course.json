@@ -1,0 +1,517 @@
+{
+  "slug": "holthuizen-roden",
+  "name": "Golfclub Holthuizen",
+  "club_name": "Golfclub Holthuizen",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Oosteinde 7a",
+    "postal_code": "9301 ZP",
+    "city": "Roden",
+    "province": "Drenthe",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 53.14377,
+    "lon": 6.4482,
+    "source": "golfkaart (bevestigd via Nominatim: Oosteinde 7a = 53.1440, 6.4480)"
+  },
+  "distance_km_from_dedemsvaart": 60.4,
+  "phone": "050-5015103",
+  "email": "info@golfclubholthuizen.nl",
+  "website": "https://golfclubholthuizen.nl/",
+  "booking_url": "https://www.nexxchange.com/login",
+  "founded": 1985,
+  "architect": "Alan Rijks",
+  "landscape": "Parkbaan in Drents coulisselandschap",
+  "facilities": [
+    "9 holes hoofdbaan (18 afslagen)",
+    "9 holes qualifying par-3 baan 'Kleintje Holthuizen'",
+    "deels overdekte en verlichte driving range",
+    "oefengreens",
+    "chipping green",
+    "oefenbunker",
+    "handicarts",
+    "brasserie",
+    "golfschool",
+    "golfshop"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Gastspelers minimaal handicap 54; baanpermissie van een andere baan is niet geldig.",
+  "description_nl": "Golfclub Holthuizen ligt aan de oostrand van Roden en speelt een 9-holes baan met dubbele afslagen, waardoor een ronde van 18 holes par 73 ontstaat. Zowel de hoofdbaan als de qualifying par-3 baan 'Kleintje Holthuizen' (sinds 2017) zijn ontworpen door Alan Rijks. De club werd in 1985 opgericht en heeft haar secretariaat, kleedkamers en brasserie in een karakteristieke boerderij.",
+  "loops": [
+    {
+      "name": "Hoofdbaan (9 holes, 2x gespeeld met aparte afslagen)",
+      "holes": 18,
+      "par": 73,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5852,
+          "course_rating": 71.2,
+          "slope": 124,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5190,
+          "course_rating": 67.8,
+          "slope": 113,
+          "par": 73
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4506,
+          "course_rating": 64.5,
+          "slope": 103,
+          "par": 73
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5852,
+          "course_rating": 77.3,
+          "slope": 136,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5190,
+          "course_rating": 73.0,
+          "slope": 126,
+          "par": 73
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4506,
+          "course_rating": 69.0,
+          "slope": 119,
+          "par": 73
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 423,
+            "rood": 374,
+            "oranje": 308
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 358,
+            "rood": 310,
+            "oranje": 254
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 286,
+            "rood": 246,
+            "oranje": 241
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 492,
+            "rood": 454,
+            "oranje": 355
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 268,
+            "rood": 244,
+            "oranje": 206
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 128,
+            "oranje": 128
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 473,
+            "rood": 410,
+            "oranje": 375
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 186,
+            "rood": 147,
+            "oranje": 130
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 362,
+            "rood": 315,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 359,
+            "rood": 344,
+            "oranje": 308
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 351,
+            "rood": 291,
+            "oranje": 254
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 329,
+            "rood": 282,
+            "oranje": 241
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 469,
+            "rood": 431,
+            "oranje": 355
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 234,
+            "rood": 218,
+            "oranje": 206
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 183,
+            "rood": 165,
+            "oranje": 128
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 414,
+            "rood": 386,
+            "oranje": 375
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 135,
+            "oranje": 130
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 366,
+            "rood": 310,
+            "oranje": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "Par 3 baan 'Kleintje Holthuizen' (9 holes, 2x gespeeld)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1826,
+          "course_rating": 48.5,
+          "slope": 61,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1826,
+          "course_rating": 50.0,
+          "slope": 67,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 87
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 130
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 117
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 86
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 161
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 100
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 75
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 77
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 80
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 87
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 130
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 117
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 86
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 161
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 100
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 75
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 77
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "lengte": 80
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclubholthuizen.nl/baan/baaninformatie/scorekaarten/",
+    "files": [
+      "scorecard/scorekaart-hoofdbaan-2023.png",
+      "scorecard/scorekaart-par3.png",
+      "scorecard/hcp-Holthuizen-Heren-1.jpg",
+      "scorecard/hcp-Holthuizen-Dames-1.jpg",
+      "scorecard/hcp-Holthuizen-Par-3-baan-1.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Fysiek 9 holes; scorekaart toont 18 holes (holes 10-18 = tweede ronde met andere afslagen/par). CR/slope uit officiele baanhandicaptabellen d.d. 06-09-2022; de scorekaart is van 2023 en de site noemt elders 'slope 128' (1golf.eu: geel 71,9/128, 6005 m) - ratings mogelijk verouderd. Eén index-kolom (geen aparte dames-SI). Par-3 scorekaart geeft één lengte per hole (key 'lengte'); CR/SR geel heren en rood dames uit handicaptabel."
+  },
+  "sources": [
+    "https://golfclubholthuizen.nl/baan/baaninformatie/scorekaarten/",
+    "https://golfclubholthuizen.nl/baan/baaninformatie/handicap-tabellen/",
+    "https://golfclubholthuizen.nl/baan/over/",
+    "https://golfclubholthuizen.nl/baan/over/architectuur/",
+    "https://golfclubholthuizen.nl/club/historie/",
+    "https://golfclubholthuizen.nl/baan/tarieven-2/tarieven/",
+    "https://www.1golf.eu/club/golfclub-holthuizen/"
+  ]
+}
