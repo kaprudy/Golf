@@ -34,7 +34,7 @@ services:
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - ./site:/srv/site:ro
-      - ../js/courses.js:/srv/app/courses.js:ro
+      - ../js:/srv/app:ro   # hele map: een los gekoppeld bestand blijft oud na git checkout
       - caddy-data:/data
       - caddy-config:/config
     depends_on:
