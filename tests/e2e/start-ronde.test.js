@@ -67,6 +67,8 @@ async function openApp({ local, remote }) {
   }, [local, Boolean(remote)]);
   const page = await context.newPage();
   page.on('pageerror', (e) => errors.push(e.message));
+  // Wat de Content-Security-Policy (index.html) tegenhoudt, telt ook als fout.
+  page.on('console', (m) => { if (/Content Security Policy|Refused to/.test(m.text())) errors.push(m.text()); });
   await page.goto(`${base}/index.html`);
   return { page, context, errors };
 }
