@@ -147,6 +147,16 @@ export async function pushState(_userId, data, baseUpdatedAt) {
 
 export const sessionToken = () => session?.token ?? null;
 
+// Wachtwoord wijzigen; andere toestellen worden daarbij uitgelogd, dit toestel blijft ingelogd.
+export async function changePassword(password, newPassword) {
+  await api('POST', '/api/password', { password, newPassword });
+}
+
+// Alle andere toestellen uitloggen (bijv. een kwijtgeraakte telefoon). Geeft het aantal terug.
+export async function logoutOthers() {
+  return (await api('POST', '/api/logout-others')).loggedOut;
+}
+
 // Verwijdert account én gegevens op de server.
 export async function deleteState() {
   await api('DELETE', '/api/state');
@@ -198,6 +208,7 @@ export function describeCloudError(err) {
     };
   }
   if (status === 401) return { title: 'Inloggen mislukt', detail: err.message };
+  if (status === 403) return { title: 'Niet gelukt', detail: err.message };
   if (status === 409) return { title: 'Account bestaat al', detail: 'Er is al een account met dit e-mailadres. Tik op Inloggen.' };
   if (status === 400) return { title: 'Controleer je invoer', detail: err.message };
   if (status === 429) return { title: 'Even wachten', detail: err.message };

@@ -52,6 +52,8 @@ async function openApp() {
   const page = await context.newPage();
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
+  // Wat de Content-Security-Policy (index.html) tegenhoudt, telt ook als fout.
+  page.on('console', (m) => { if (/Content Security Policy|Refused to/.test(m.text())) errors.push(m.text()); });
   await page.goto(`${base}/index.html`);
   // Eerste installatie: de service worker neemt de pagina over zonder te herladen.
   await page.waitForFunction(() => navigator.serviceWorker.controller !== null, null, { timeout: 20000 });

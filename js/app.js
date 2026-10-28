@@ -506,10 +506,21 @@ function renderCloud() {
   } else if (cloud.user) {
     el.innerHTML = `<p class="small">Ingelogd als <b>${esc(cloud.user.email ?? '')}</b>.<br>
       <span class="muted">${esc(cloud.status || 'Je gegevens worden automatisch bewaard op de server.')}</span></p>
+      ${cloudErrorBox()}
       <div class="button-row">
         <button data-action="cloud-sync">Nu synchroniseren</button>
         <button data-action="cloud-logout">Uitloggen</button>
       </div>
+      <details class="cloud-security">
+        <summary class="small">Wachtwoord en toestellen</summary>
+        <form class="cloud-form" data-form="cloud-password">
+          <label>Huidig wachtwoord <input id="cloud-old-password" type="password" autocomplete="current-password" required></label>
+          <label>Nieuw wachtwoord <input id="cloud-new-password" type="password" autocomplete="new-password" minlength="8" placeholder="minstens 8 tekens" required></label>
+          <div class="button-row"><button type="submit">Wachtwoord wijzigen</button></div>
+          <p class="small muted">Andere telefoons en computers worden daarbij uitgelogd.</p>
+        </form>
+        <button class="link small" data-action="cloud-logout-others">Alle andere toestellen uitloggen</button>
+      </details>
       <button class="link small danger" data-action="cloud-delete">Mijn account en gegevens op de server verwijderen</button>`;
   } else {
     el.innerHTML = `<p class="small muted">Log in om je spelers, banen en rondes op de server te bewaren. Op een nieuwe telefoon log je in en staat alles er weer.</p>
@@ -565,6 +576,12 @@ async function cloudAction(action, submitter) {
       syncNow();
     } else if (action === 'cloud-sync') {
       syncNow();
+    } else if (action === 'cloud-password') {
+      await api.changePassword($('#cloud-old-password').value, $('#cloud-new-password').value);
+      cloud.status = 'Wachtwoord gewijzigd. Andere toestellen zijn uitgelogd.';
+    } else if (action === 'cloud-logout-others') {
+      const n = await api.logoutOthers();
+      cloud.status = n ? `${n} ${n === 1 ? 'ander toestel' : 'andere toestellen'} uitgelogd.` : 'Er waren geen andere toestellen ingelogd.';
     } else if (action === 'cloud-logout') {
       await api.signOut();
       cloud.user = null;
@@ -1698,6 +1715,7 @@ document.addEventListener('click', (e) => {
     case 'cloud-device':
     case 'cloud-sync':
     case 'cloud-logout':
+    case 'cloud-logout-others':
     case 'cloud-delete':
     case 'cloud-test':
       cloudAction(btn.dataset.action);

@@ -285,3 +285,71 @@ test('grenzen: nieuwe telefoons per adres, voorbeelden en gebeurtenissen per acc
     srv.close();
   }
 });
+
+test('inlogpogingen: een ander IP-adres blokkeert jouw account niet', async () => {
+  const srv = createServer(openDatabase(':memory:'));
+  await new Promise((r) => srv.listen(0, r));
+  const url = `http://127.0.0.1:${srv.address().port}`;
+  const login = (password, ip) => fetch(`${url}/api/login`, { method: 'POST', headers: { 'X-Forwarded-For': ip }, body: JSON.stringify({ email: 'doel@example.nl', password }) });
+  try {
+    await fetch(`${url}/api/register`, { method: 'POST', headers: { 'X-Forwarded-For': '10.0.0.9' }, body: JSON.stringify({ email: 'doel@example.nl', password: 'goedwachtwoord' }) });
+    for (let i = 0; i < 10; i++) assert.equal((await login('foutfoutfout', '10.0.0.66')).status, 401);
+    assert.equal((await login('foutfoutfout', '10.0.0.66')).status, 429); // de aanvaller zit vast
+    assert.equal((await login('goedwachtwoord', '10.0.0.9')).status, 200); // de eigenaar niet
+  } finally {
+    srv.close();
+  }
+});
+
+test('wachtwoord wijzigen en andere toestellen uitloggen', async () => {
+  const srv = createServer(openDatabase(':memory:'));
+  await new Promise((r) => srv.listen(0, r));
+  const url = `http://127.0.0.1:${srv.address().port}`;
+  const req = async (method, path, { body, token } = {}) => {
+    const res = await fetch(url + path, { method, headers: token ? { Authorization: `Bearer ${token}` } : {}, body: body ? JSON.stringify(body) : undefined });
+    const text = await res.text();
+    return { status: res.status, body: text ? JSON.parse(text) : null };
+  };
+  const login = async (password = 'oudwachtwoord') => req('POST', '/api/login', { body: { email: 'wissel@example.nl', password } });
+  try {
+    const telefoon = (await req('POST', '/api/register', { body: { email: 'wissel@example.nl', password: 'oudwachtwoord' } })).body.token;
+    await login();
+    const tablet = (await login()).body.token;
+
+    assert.deepEqual((await req('POST', '/api/logout-others', { token: tablet })).body, { loggedOut: 2 });
+    assert.equal((await req('GET', '/api/me', { token: telefoon })).status, 401);
+    assert.equal((await req('GET', '/api/me', { token: tablet })).status, 200);
+
+    const relog = (await login()).body.token;
+    assert.equal((await req('POST', '/api/password', { token: tablet, body: { password: 'fout1234', newPassword: 'nieuwwachtwoord' } })).status, 403);
+    assert.equal((await req('POST', '/api/password', { token: tablet, body: { password: 'oudwachtwoord', newPassword: 'kort' } })).status, 400);
+    assert.equal((await req('POST', '/api/password', { token: tablet, body: { password: 'oudwachtwoord', newPassword: 'nieuwwachtwoord' } })).status, 200);
+    assert.equal((await req('GET', '/api/me', { token: relog })).status, 401); // ander toestel uitgelogd
+    assert.equal((await req('GET', '/api/me', { token: tablet })).status, 200); // dit toestel blijft ingelogd
+    assert.equal((await login('oudwachtwoord')).status, 401);
+    assert.equal((await login('nieuwwachtwoord')).status, 200);
+
+    const anon = (await req('POST', '/api/device', { body: { secret: 'p'.repeat(40) } })).body.token;
+    assert.equal((await req('POST', '/api/password', { token: anon, body: { password: 'x', newPassword: 'nieuwwachtwoord' } })).status, 400);
+  } finally {
+    srv.close();
+  }
+});
+
+test('OpenStreetMap: grens per IP-adres, ook met steeds een nieuw anoniem account', async () => {
+  let calls = 0;
+  const srv = createServer(openDatabase(':memory:'), { osm: async () => { calls++; return { holes: [] }; }, limits: { osmPerIpPerHour: 2 } });
+  await new Promise((r) => srv.listen(0, r));
+  const url = `http://127.0.0.1:${srv.address().port}`;
+  const token = async (n) => (await (await fetch(`${url}/api/device`, { method: 'POST', body: JSON.stringify({ secret: String(n).repeat(40) }) })).json()).token;
+  const ask = async (t, name) => (await fetch(`${url}/api/osm/course?name=${name}`, { headers: { Authorization: `Bearer ${t}` } })).status;
+  try {
+    assert.equal(await ask(await token(1), 'Een'), 200);
+    assert.equal(await ask(await token(2), 'Twee'), 200);
+    assert.equal(await ask(await token(3), 'Drie'), 429); // derde nieuwe zoekvraag vanaf dit adres
+    assert.equal(await ask(await token(4), 'Een'), 200); // uit de cache: telt niet
+    assert.equal(calls, 2);
+  } finally {
+    srv.close();
+  }
+});

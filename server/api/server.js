@@ -6,6 +6,8 @@
 //   POST   /api/device     {secret}           -> {token, user}   anoniem account voor deze telefoon
 //   POST   /api/account    {email, password}  -> {user}          anoniem account omzetten naar e-mail
 //   POST   /api/logout                          (Authorization: Bearer <token>)
+//   POST   /api/logout-others                  -> {loggedOut}    alle andere toestellen uitloggen
+//   POST   /api/password   {password, newPassword} -> {}       wachtwoord wijzigen (andere toestellen uitgelogd)
 //   GET    /api/me                              -> {user}
 //   GET    /api/state                           -> {data, updated_at} | null
 //   PUT    /api/state      {data}              -> {updated_at}
@@ -39,6 +41,8 @@ const LIMITS = {
   newDevicesPerDay: 20, // nieuwe anonieme accounts per IP-adres per 24 uur (bestaande telefoons tellen niet)
   samplesPerUser: 5000, // spraakvoorbeelden per account
   eventsPerUser: 20000, // gebeurtenissen (app geopend, ronde gestart …) per account
+  osmPerIpPerHour: 30, // nieuwe OSM-zoekvragen per IP-adres per uur (anonieme accounts zijn gratis)
+  osmPerHour: 300, // nieuwe OSM-zoekvragen voor de hele server per uur (Overpass niet overbelasten)
 };
 const OSM_CACHE_MAX = 500;
 const TOKEN_DAYS = 180;
@@ -212,6 +216,8 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
     session: db.prepare(`SELECT u.* FROM sessions s JOIN users u ON u.id = s.user_id
                          WHERE s.token_hash = ? AND s.expires_at > ?`),
     deleteSession: db.prepare('DELETE FROM sessions WHERE token_hash = ?'),
+    deleteOtherSessions: db.prepare('DELETE FROM sessions WHERE user_id = ? AND token_hash <> ?'),
+    setPassword: db.prepare('UPDATE users SET pw_hash = ? WHERE id = ?'),
     pruneSessions: db.prepare('DELETE FROM sessions WHERE expires_at <= ?'),
     getState: db.prepare('SELECT data, updated_at FROM golf_state WHERE user_id = ?'),
     putState: db.prepare(`INSERT INTO golf_state (user_id, data, updated_at) VALUES (?, ?, ?)
@@ -374,6 +380,7 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
   }
 
   function newSession(user) {
+    q.pruneSessions.run(new Date().toISOString()); // verlopen sessies opruimen
     const token = crypto.randomBytes(32).toString('base64url');
     const expires = new Date(Date.now() + TOKEN_DAYS * 864e5).toISOString();
     q.insertSession.run(sha256(token), user.id, expires);
@@ -397,6 +404,7 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
 
     if (key === 'POST /api/register' || key === 'POST /api/login') {
       if (tooMany(`ip:${ip}`, 30)) throw new HttpError(429, 'Te veel pogingen, probeer het later opnieuw');
+      if (key === 'POST /api/register' && tooMany(`register:${ip}`, 10, 3600e3)) throw new HttpError(429, 'Te veel nieuwe accounts vanaf dit adres, probeer het later opnieuw');
       const { email: rawEmail, password } = await readJson(req);
       const email = String(rawEmail ?? '').trim().toLowerCase();
       if (!validEmail(email)) throw new HttpError(400, 'Vul een geldig e-mailadres in');
@@ -408,13 +416,16 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
         q.insertUser.run(email, hashPassword(password), new Date().toISOString());
         return send(res, 201, newSession(q.userByEmail.get(email)));
       }
-      if (tooMany(`login:${email}`, 10)) throw new HttpError(429, 'Te veel pogingen, probeer het later opnieuw');
+      // Per adres én IP: iemand anders kan zo niet met foute wachtwoorden jouw account blokkeren.
+      // Daarnaast een ruime grens per adres tegen raden vanaf veel IP-adressen tegelijk.
+      if (tooMany(`login:${email}|${ip}`, 10) || tooMany(`login:${email}`, 100, 3600e3)) {
+        throw new HttpError(429, 'Te veel pogingen, probeer het later opnieuw');
+      }
       const user = q.userByEmail.get(email);
       // Ook bij een onbekend adres een hash berekenen, zodat de responstijd niets verraadt.
       const ok = user ? verifyPassword(password, user.pw_hash) : (hashPassword(password), false);
       if (!ok) throw new HttpError(401, 'E-mailadres of wachtwoord klopt niet');
-      tooMany.reset(`login:${email}`);
-      q.pruneSessions.run(new Date().toISOString());
+      tooMany.reset(`login:${email}|${ip}`);
       return send(res, 200, newSession(user));
     }
 
@@ -468,6 +479,21 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
     if (key === 'POST /api/logout') {
       q.deleteSession.run(tokenHash);
       return send(res, 204);
+    }
+    if (key === 'POST /api/logout-others') {
+      return send(res, 200, { loggedOut: Number(q.deleteOtherSessions.run(user.id, tokenHash).changes) });
+    }
+    if (key === 'POST /api/password') {
+      if (isAnonymous(user)) throw new HttpError(400, 'Dit account heeft geen wachtwoord');
+      if (tooMany(`password:${user.id}`, 10)) throw new HttpError(429, 'Te veel pogingen, probeer het later opnieuw');
+      const { password, newPassword } = await readJson(req);
+      if (typeof password !== 'string' || !verifyPassword(password, user.pw_hash)) throw new HttpError(403, 'Het huidige wachtwoord klopt niet');
+      if (typeof newPassword !== 'string' || newPassword.length < 8 || newPassword.length > 200) {
+        throw new HttpError(400, 'Het nieuwe wachtwoord moet minstens 8 tekens hebben');
+      }
+      q.setPassword.run(hashPassword(newPassword), user.id);
+      q.deleteOtherSessions.run(user.id, tokenHash); // wie je oude wachtwoord kende, is er nu uit
+      return send(res, 200, {});
     }
     if (key === 'GET /api/state') {
       const row = q.getState.get(user.id);
@@ -531,7 +557,10 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
       const cacheKey = JSON.stringify(params);
       const hit = osmCache.get(cacheKey);
       if (hit && Date.now() - hit.at < 24 * 3600e3) return send(res, 200, hit.value);
-      if (tooMany(`osm:${user.id}`, 20, 3600e3)) throw new HttpError(429, 'Te veel verzoeken, probeer het later opnieuw');
+      if (tooMany(`osm:${user.id}`, 20, 3600e3) || tooMany(`osm-ip:${ip}`, limit.osmPerIpPerHour, 3600e3)
+        || tooMany('osm-all', limit.osmPerHour, 3600e3)) {
+        throw new HttpError(429, 'Te veel verzoeken, probeer het later opnieuw');
+      }
       let value;
       try {
         value = { ...(await osm(params)), fetchedAt: new Date().toISOString() };
