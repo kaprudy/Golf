@@ -1,0 +1,813 @@
+
+<!DOCTYPE html>
+<html lang="nl-NL" class="no-js no-svg">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.5",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),this},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||!t.src||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e=window){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="//gmpg.org/xfn/11">
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Scorekaart -</title>
+<link data-rocket-preload as="style" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A200%2C200italic%2C300%2C300italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%2Citalic%2Cregular%2C600%2Cregular%2C700%7CAmiri%3Aregular%2C700%2C200%2C800%7CRoboto%3A500&#038;display=swap" rel="preload">
+<link href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A200%2C200italic%2C300%2C300italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%2Citalic%2Cregular%2C600%2Cregular%2C700%7CAmiri%3Aregular%2C700%2C200%2C800%7CRoboto%3A500&#038;display=swap" media="print" onload="this.media=&#039;all&#039;" rel="stylesheet">
+<noscript data-wpr-hosted-gf-parameters=""><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A200%2C200italic%2C300%2C300italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%2Citalic%2Cregular%2C600%2Cregular%2C700%7CAmiri%3Aregular%2C700%2C200%2C800%7CRoboto%3A500&#038;display=swap"></noscript>
+	<link rel="canonical" href="https://www.edesegcpapendal.nl/baan/baaninformatie/scorekaart/" />
+	<meta property="og:locale" content="nl_NL" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Scorekaart -" />
+	<meta property="og:url" content="https://www.edesegcpapendal.nl/baan/baaninformatie/scorekaart/" />
+	<meta property="article:publisher" content="https://www.facebook.com/EGCPapendal/" />
+	<meta property="article:modified_time" content="2026-05-20T14:34:51+00:00" />
+	<meta property="og:image" content="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2021/02/logo-egcp-naam-wit-retina-gold-letters.png" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="240" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Geschatte leestijd" />
+	<meta name="twitter:data1" content="1 minuut" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/www.edesegcpapendal.nl\/baan\/baaninformatie\/scorekaart\/","url":"https:\/\/www.edesegcpapendal.nl\/baan\/baaninformatie\/scorekaart\/","name":"Scorekaart -","isPartOf":{"@id":"https:\/\/www.edesegcpapendal.nl\/#website"},"datePublished":"2022-03-02T13:39:28+00:00","dateModified":"2026-05-20T14:34:51+00:00","breadcrumb":{"@id":"https:\/\/www.edesegcpapendal.nl\/baan\/baaninformatie\/scorekaart\/#breadcrumb"},"inLanguage":"nl-NL","potentialAction":[{"@type":"ReadAction","target":["https:\/\/www.edesegcpapendal.nl\/baan\/baaninformatie\/scorekaart\/"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/www.edesegcpapendal.nl\/baan\/baaninformatie\/scorekaart\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/www.edesegcpapendal.nl\/"},{"@type":"ListItem","position":2,"name":"Baan","item":"https:\/\/www.edesegcpapendal.nl\/baan\/"},{"@type":"ListItem","position":3,"name":"Baaninformatie","item":"https:\/\/www.edesegcpapendal.nl\/baan\/baaninformatie\/"},{"@type":"ListItem","position":4,"name":"Scorekaart"}]},{"@type":"WebSite","@id":"https:\/\/www.edesegcpapendal.nl\/#website","url":"https:\/\/www.edesegcpapendal.nl\/","name":"","description":"","publisher":{"@id":"https:\/\/www.edesegcpapendal.nl\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.edesegcpapendal.nl\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"nl-NL"},{"@type":"Organization","@id":"https:\/\/www.edesegcpapendal.nl\/#organization","name":"Edese GC Papendal","url":"https:\/\/www.edesegcpapendal.nl\/","logo":{"@type":"ImageObject","inLanguage":"nl-NL","@id":"https:\/\/www.edesegcpapendal.nl\/#\/schema\/logo\/image\/","url":"https:\/\/edesegcpapendal.nl\/wp-content\/uploads\/2021\/02\/logo-egcp-naam-wit-retina-gold-letters.png","contentUrl":"https:\/\/edesegcpapendal.nl\/wp-content\/uploads\/2021\/02\/logo-egcp-naam-wit-retina-gold-letters.png","width":400,"height":240,"caption":"Edese GC Papendal"},"image":{"@id":"https:\/\/www.edesegcpapendal.nl\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/EGCPapendal\/","https:\/\/www.instagram.com\/edesegcpapendal\/"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//g3c3k9f7.delivery.rocketcdn.me' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link href='https://g3c3k9f7.delivery.rocketcdn.me' rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; feed" href="https://www.edesegcpapendal.nl/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; reacties feed" href="https://www.edesegcpapendal.nl/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.edesegcpapendal.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.edesegcpapendal.nl%2Fbaan%2Fbaaninformatie%2Fscorekaart%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.edesegcpapendal.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.edesegcpapendal.nl%2Fbaan%2Fbaaninformatie%2Fscorekaart%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="font-awesome-svg-styles-default-inline-css">
+.svg-inline--fa {
+  display: inline-block;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+}
+/*# sourceURL=font-awesome-svg-styles-default-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='font-awesome-svg-styles-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/uploads/font-awesome/v5.15.2/css/svg-with-js.css?ver=1792653361' media='all' />
+<style id="font-awesome-svg-styles-inline-css">
+   .wp-block-font-awesome-icon svg::before,
+   .wp-rich-text-font-awesome-icon svg::before {content: unset;}
+/*# sourceURL=font-awesome-svg-styles-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='font-awesome-official-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/min/1/releases/v5.15.2/css/all.css?ver=1792653361' media='all' crossorigin="anonymous" />
+<link data-minify="1" rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/min/1/releases/v5.15.2/css/v4-shims.css?ver=1792653361' media='all' crossorigin="anonymous" />
+<style id="font-awesome-official-v4shim-inline-css">
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+/*# sourceURL=font-awesome-official-v4shim-inline-css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='cookie-notice-front-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/cookie-notice/css/front.min.css?ver=3.1.17' media='all' />
+<link data-minify="1" rel='stylesheet' id='golfdashboard-bootstrap-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/min/1/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css?ver=1792653361' media='all' />
+<style id="golfdashboard-bootstrap-inline-css">
+
+        :root {
+            --primaryHighlight: #092100;
+            --secondaryHighlight: #D5B665;
+        }
+        .logo {
+            display: block;
+            margin: 10px auto;
+        }
+        h1 {
+            color: var(--secondaryHighlight);
+        }
+        .btn-custom {
+            background-color: var(--secondaryHighlight);
+            color: var(--primaryHighlight);
+            border: 1px solid var(--secondaryHighlight);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: var(--primaryHighlight);
+            color: var(--secondaryHighlight);
+        }
+    
+/*# sourceURL=golfdashboard-bootstrap-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='js_composer_front-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/background-css/1/g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=1792653361&wpr_t=1793172938' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/libraries/bootstrap/css/bootstrap.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='thsn-all-style-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/background-css/1/g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/css/all.min.css?ver=7.1.3&wpr_t=1793172938' media='all' />
+<link data-minify="1" rel='stylesheet' id='magnific-popup-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/themes/grulf/libraries/magnific-popup/magnific-popup.css?ver=1792653361' media='all' />
+<link data-minify="1" rel='stylesheet' id='thsn-base-icons-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/themes/grulf/libraries/themesion-base-icons/css/themesion-base-icons.css?ver=1792653361' media='all' />
+<link rel='stylesheet' id='balloon-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/libraries/balloon/balloon.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='thsn-dynamic-style-css' href='https://www.edesegcpapendal.nl/wp-admin/admin-ajax.php?action=thsn_grulf_addons_auto_css&#038;ver=7.1.3' media='all' />
+<style id="thsn-dynamic-style-inline-css">
+@media (max-width:767px){.thsn-row.thsn-responsive-custom-88373347{padding-bottom:70px!important}}
+/*# sourceURL=thsn-dynamic-style-inline-css */
+</style>
+<link rel='stylesheet' id='thsn-responsive-style-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/css/responsive.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='teecontrol-api-style-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/teecontrol/ccs/teecontrol-api-style.css?ver=1.0.0' media='all' />
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-aedb6071-364e-4ba6-9fce-74951f8f8b70) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+<script type="text/rocketlazyloadscript" id="cookie-notice-front-js-before">
+var cnArgs = {"ajaxUrl":"https:\/\/www.edesegcpapendal.nl\/wp-admin\/admin-ajax.php","nonce":"ff969057ee","hideEffect":"fade","position":"bottom","onScroll":false,"onScrollOffset":100,"onClick":false,"cookieName":"cookie_notice_accepted","cookieTime":2592000,"cookieTimeRejected":2592000,"globalCookie":false,"redirection":false,"cache":true,"revokeCookies":false,"revokeCookiesOpt":"automatic"};
+
+//# sourceURL=cookie-notice-front-js-before
+</script>
+<script type="text/rocketlazyloadscript" id="cookie-notice-front-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/cookie-notice/js/front.min.js?ver=3.1.17" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" id="jquery-core-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script type="text/rocketlazyloadscript" id="jquery-migrate-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="grulf-addons-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/plugins/grulf-addons/js/addon-scripts.js?ver=1792653361" data-rocket-defer defer></script>
+
+<!-- Google tag (gtag.js) snippet toegevoegd door Site Kit -->
+<!-- Google Analytics snippet toegevoegd door Site Kit -->
+<script type="text/rocketlazyloadscript" id="google_gtagjs-js" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=GT-TWMCNP86" async></script>
+<script type="text/rocketlazyloadscript" id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["www.edesegcpapendal.nl"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-TWMCNP86");
+//# sourceURL=google_gtagjs-js-after
+</script>
+<script type="text/rocketlazyloadscript" id="magnific-popup-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/libraries/magnific-popup/jquery.magnific-popup.min.js?ver=7.1.3" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" id="jquery-sticky-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/libraries/sticky-toolkit/jquery.sticky-kit.min.js?ver=7.1.3" data-rocket-defer defer></script>
+<script id="thsn-core-script-js-extra">
+var thsn_js_variables = {"responsive":"1200"};
+//# sourceURL=thsn-core-script-js-extra
+</script>
+<script type="text/rocketlazyloadscript" id="thsn-core-script-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/js/core.min.js?ver=7.1.3" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript"></script><link rel="https://api.w.org/" href="https://www.edesegcpapendal.nl/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.edesegcpapendal.nl/wp-json/wp/v2/pages/15442" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.edesegcpapendal.nl/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<link rel='shortlink' href='https://www.edesegcpapendal.nl/?p=15442' />
+<meta name="generator" content="Site Kit by Google 1.190.0" /><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 6.6.10 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2021/02/cropped-favicon-edese-gc-papendal-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2021/02/cropped-favicon-edese-gc-papendal-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2021/02/cropped-favicon-edese-gc-papendal-180x180.png" />
+<meta name="msapplication-TileImage" content="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2021/02/cropped-favicon-edese-gc-papendal-270x270.png" />
+<script type="text/rocketlazyloadscript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+<style id="wp-custom-css">
+li:not(.menu-item) a,
+li:not(.menu-item) a:hover,
+li:not(.menu-item) a:focus,
+p a,
+p a:hover,
+p a:focus,
+table a,
+table a:hover,
+table a:focus {
+	text-decoration: underline;
+}
+
+
+@media (min-width: 1201px) {
+	.mobile-only-new, .mobile-only-new a  {
+		display: none!important;
+	}
+}
+
+
+.thsn-header-style-3 .thsn-navbar div > ul > li > a {
+	margin: 0 10px!important;
+}
+
+.vc_tta-panel-heading .vc_tta-title-text {
+	padding-left: 30px;
+	display: inline-block;
+	
+}
+
+.current_page_item a,
+.item-leden-menu:hover a {
+    color: #bfa151;
+}
+
+.current_page_item a::before,
+.item-leden-menu:hover a::before{
+    background-color: #bfa151;
+}
+
+
+#post-11 > div > div.vc_row.wpb_row.vc_row-fluid.vc_custom_1585218910386.thsn-row.thsn-bg-color-yes.thsn-bg-color-white.thsn-zindex-zero.thsn-responsive-custom-88373347.vc_row-has-fill > div > div > div > div:nth-child(1) > div:nth-child(1) > div > div > div.wpb_text_column.wpb_content_element > div > div > div {
+	max-width: 100% !important;
+	flex-basis: 100% !important;
+	word-break: keep-all !important;
+	overflow-wrap: normal !important;	
+}
+
+
+#egolf4u_login_form > div:nth-child(1) > div {
+	max-width: 80% !important;
+}
+
+#egolf4u_login_form > div:nth-child(2) > div {
+	max-width: 80% !important;
+}
+
+/* Egolf4u login or logout switching */
+
+body:not(.logged-in-egolf4u) .members-only, body.logged-in-egolf4u .guests-only {
+	display:none !important;
+}
+
+body:not(.logging-in-egolf4u) .egolf4u-logging-in, body.logging-in-egolf4u #egolf4u-login, body.logged-in-egolf4u .egolf4u-logging-in {
+	display:none !important;
+}
+
+/* Hide sections with class hide-for-egolf4u when member is logged on */
+
+body.logged-in-egolf4u .hide-for-egolf4u {
+	display:none !important;
+}
+
+/*.ede-uitlog a {color:#000 !important;}
+
+.ede-inlog a {color:#000 !important;}
+*/
+
+#main-nav-mobile .ede-inlog a {color:#000 !important;}
+
+#main-nav-mobile .ede-uitlog a {color:#000 !important;}
+
+#egolf4u_login_message {
+color: red;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.fa-spinner {
+  color:#134a56;
+}
+
+/* Gravity Forms */
+
+body #gform_wrapper_1 .gform_footer input[type=submit] {background-color: #DABE78}
+
+body #gform_wrapper_1 .gform_body .gform_fields .gfield .gfield_label .gfield_required {color: #DABE78}
+
+body #gform_wrapper_1 .validation_error {border: 1px solid #DABE78}
+
+body #gform_wrapper_1 .gform_body .gform_fields .gfield_error {border: 1px solid #DABE78}
+
+body #gform_wrapper_1 .gform_body .gform_fields .gfield_error .gfield_label {color: #DABE78}
+
+body #gform_wrapper_1 .gform_body .gform_fields .gfield_error .validation_message {color: white}
+
+.item-leden-menu 	::before{
+	Background:#134a56; 
+}
+
+.item-leden-menu .a ::before {
+	color:#d5b665;
+}
+
+.logo-link-text {
+	display:none!important;
+}
+
+iframe#scaled-frame {
+    zoom: 1;
+    -moz-transform: scale(1);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(1);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(1);
+    -webkit-transform-origin: 0 0;
+	  width: 600px;
+    height: 500px;
+
+}
+
+
+/* plugin temp css laad niet */
+
+
+/* Basis styling voor de TeeControl API Plugin binnen de container */
+.teecontrol-api-container {
+    clear: both; /* Zorgt dat de plugin-content onder eventuele gefloate elementen komt */
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+	  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+/* Styling voor de hoofdcontainer van de baanstatus */
+.teecontrol-api-container .teecontrol-course-status {
+  margin: 20px 0;
+	border: 1px solid #e6e6e6;
+	padding: 15px;
+	border-radius: 8px;
+}
+
+/* Styling voor de titel van de baanstatus */
+.teecontrol-api-container .teecontrol-course-status h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Styling voor de rijen in de layout van de baanstatus */
+.teecontrol-api-container .course-status-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+	border-radius: 8px;
+}
+
+.teecontrol-api-container .course-status-row:nth-child(even) {
+	background-color: #e6e6e6;
+}
+
+/* Algemene styling voor elke cel binnen de baanstatus layout */
+.teecontrol-api-container .course-status-cell {
+    flex: 1;
+    padding: 8px;
+}
+
+/* Specifieke styling voor de Naam-cel in de baanstatus */
+.teecontrol-api-container .course-status-name {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Specifieke styling voor de Content-cel in de baanstatus */
+.teecontrol-api-container .course-status-content {
+    color: #2c3e50;
+}
+
+/* Styling voor de update datum in de baanstatus */
+.teecontrol-api-container .course-status-updated {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Styling voor de hoofdcontainer van de aankondigingen */
+.teecontrol-api-container .teecontrol-announcement {
+    margin: 20px 0;
+    padding: 15px;
+  	background-color: #d5b665;
+  	border: 1px solid #e6e6e6;
+    border-radius: 8px;
+}
+
+/* Styling voor de titel van de aankondigingen */
+.teecontrol-api-container .teecontrol-announcement h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #FFF;
+    padding: 10px;
+}
+
+/* Styling voor de content van de aankondigingen */
+.teecontrol-api-container .announcement-content {
+    color: #FFF;
+    padding: 10px;
+}
+
+/* Styling voor de datums van de aankondigingen */
+.teecontrol-api-container .announcement-dates {
+    font-size: 0.9em;
+    color: #FFF;
+    margin-top: 5px;
+}
+
+
+</style>
+<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+<link data-minify="1" rel='stylesheet' id='rs-plugin-settings-css' href='https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/background-css/1/g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=1792653361&wpr_t=1793172939' media='all' />
+<style id="rs-plugin-settings-inline-css">
+#rs-demo-id {}
+/*# sourceURL=rs-plugin-settings-inline-css */
+</style>
+
+<style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.wpb_address_book i.icon,option.wpb_address_book{--wpr-bg-89cdfa42-caaa-4a1a-ae77-89de1c1222be: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/address-book.png');}.wpb_alarm_clock i.icon,option.wpb_alarm_clock{--wpr-bg-2b1d5188-07b2-4579-8530-e667b9589bde: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/alarm-clock.png');}.wpb_anchor i.icon,option.wpb_anchor{--wpr-bg-e0c129fb-fe73-44cf-b33d-4fa35589e20c: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/anchor.png');}.wpb_application_image i.icon,option.wpb_application_image{--wpr-bg-c7ebaa75-7d35-449a-81b0-a695ba1ddedd: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/application-image.png');}.wpb_arrow i.icon,option.wpb_arrow{--wpr-bg-89f6d13e-4961-4622-b17b-dc05016c8a46: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/arrow.png');}.wpb_asterisk i.icon,option.wpb_asterisk{--wpr-bg-4645d52c-66de-4b81-8e54-cfe2599e0738: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/asterisk.png');}.wpb_hammer i.icon,option.wpb_hammer{--wpr-bg-aa335e1c-8535-4b5f-b66b-3edaaa0e7cd6: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/auction-hammer.png');}.wpb_balloon i.icon,option.wpb_balloon{--wpr-bg-5687bf25-647d-44f7-9f53-8c277283f97d: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/balloon.png');}.wpb_balloon_buzz i.icon,option.wpb_balloon_buzz{--wpr-bg-ff6bb3db-9190-42a1-9608-d7df20a56109: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/balloon-buzz.png');}.wpb_balloon_facebook i.icon,option.wpb_balloon_facebook{--wpr-bg-cf8dcf68-53f9-4116-aee7-8924a6b0ed71: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/balloon-facebook.png');}.wpb_balloon_twitter i.icon,option.wpb_balloon_twitter{--wpr-bg-e740361f-d289-49c5-98bd-3c38d8f478c2: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/balloon-twitter.png');}.wpb_battery i.icon,option.wpb_battery{--wpr-bg-7d5e46ee-3327-4b4d-b203-ba1a141af6e0: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/battery-full.png');}.wpb_binocular i.icon,option.wpb_binocular{--wpr-bg-8c80fdb5-2371-4846-98bc-11a4eb0e48d3: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/binocular.png');}.wpb_document_excel i.icon,option.wpb_document_excel{--wpr-bg-f2458e62-c54a-48e6-adf4-b90632874f0a: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-excel.png');}.wpb_document_image i.icon,option.wpb_document_image{--wpr-bg-9e5d854f-13a8-43c6-ba2e-fb905bd0f939: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-image.png');}.wpb_document_music i.icon,option.wpb_document_music{--wpr-bg-791e3c7c-1305-460b-b354-fca24f032e59: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-music.png');}.wpb_document_office i.icon,option.wpb_document_office{--wpr-bg-6170ad5c-79e4-435c-9d6a-595ed0759ffd: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-office.png');}.wpb_document_pdf i.icon,option.wpb_document_pdf{--wpr-bg-c29f9c53-f8bd-4e24-a2ba-3247f5a59978: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-pdf.png');}.wpb_document_powerpoint i.icon,option.wpb_document_powerpoint{--wpr-bg-34913477-499c-494f-a4ae-791ce614d959: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-powerpoint.png');}.wpb_document_word i.icon,option.wpb_document_word{--wpr-bg-a2333f21-a066-43b2-9619-0e5668154ec7: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-word.png');}.wpb_bookmark i.icon,option.wpb_bookmark{--wpr-bg-296fb2f4-17b1-4c80-bca3-662c745bcb19: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/bookmark.png');}.wpb_camcorder i.icon,option.wpb_camcorder{--wpr-bg-60859b7e-c6fd-4f2f-9dd0-3182b6705102: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/camcorder.png');}.wpb_camera i.icon,option.wpb_camera{--wpr-bg-29cd4408-90a2-45e5-88f4-fc7098ed5bc8: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/camera.png');}.wpb_chart i.icon,option.wpb_chart{--wpr-bg-36d9b60f-8e9b-4a58-9028-bc442912c8a8: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/chart.png');}.wpb_chart_pie i.icon,option.wpb_chart_pie{--wpr-bg-7eca76d9-2c07-4565-8a2b-d31b2b823b8d: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/chart-pie.png');}.wpb_clock i.icon,option.wpb_clock{--wpr-bg-6d462a2b-1afa-4b42-86d3-b644277aff36: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/clock.png');}.wpb_play i.icon,option.wpb_play{--wpr-bg-c05684c5-1c03-4de1-8a54-59926fa82321: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/control.png');}.wpb_fire i.icon,option.wpb_fire{--wpr-bg-c9a3939e-2132-4230-a89a-d52e9dc9970c: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/fire.png');}.wpb_heart i.icon,option.wpb_heart{--wpr-bg-3e3ce59d-59d2-4dbc-8050-0de3a97a2dc8: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/heart.png');}.wpb_mail i.icon,option.wpb_mail{--wpr-bg-acfe4267-b778-45bf-b91e-53ea5a913b0e: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/mail.png');}.wpb_shield i.icon,option.wpb_shield{--wpr-bg-631bb181-e6ce-4d61-aaf7-9c6fc1cebccf: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/plus-shield.png');}.wpb_video i.icon,option.wpb_video{--wpr-bg-64ab0dfa-2c59-4535-923e-5d46a8360979: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/video.png');}.vc-spinner::before{--wpr-bg-55ef2459-10de-43bf-ae8c-b5cddeec863a: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/spinner.gif');}.vc_pixel_icon-alert{--wpr-bg-37db94d4-862f-4293-9f2e-57fa62b5ab56: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/vc/alert.png');}.vc_pixel_icon-info{--wpr-bg-d9a2a1f8-f19e-4a88-90ea-d8e6676e55c9: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/vc/info.png');}.vc_pixel_icon-tick{--wpr-bg-ef0fe95e-3795-4a54-98b8-ea1d8363e471: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/vc/tick.png');}.vc_pixel_icon-explanation{--wpr-bg-076e8b95-c2a4-4c94-bf69-b5ab4e0a1581: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/vc/exclamation.png');}.vc_pixel_icon-address_book{--wpr-bg-6deaf6f0-85a4-4998-9794-d42ddeaf90c1: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/address-book.png');}.vc_pixel_icon-alarm_clock{--wpr-bg-97298857-0f23-4c8e-9cdb-9f180f33472e: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/alarm-clock.png');}.vc_pixel_icon-anchor{--wpr-bg-236850df-db62-43c0-894e-5a052f8d33aa: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/anchor.png');}.vc_pixel_icon-application_image{--wpr-bg-b1120fd9-7775-4d76-abe3-9f9bda926ce0: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/application-image.png');}.vc_pixel_icon-arrow{--wpr-bg-a4981494-aa0e-465a-b385-ff1e4fc3b057: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/arrow.png');}.vc_pixel_icon-asterisk{--wpr-bg-b1aa488b-7a63-4b29-a297-689f627f2925: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/asterisk.png');}.vc_pixel_icon-hammer{--wpr-bg-f94ef710-e8d2-4a1b-af4c-f8b84c1de9fd: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/auction-hammer.png');}.vc_pixel_icon-balloon{--wpr-bg-0ec43ac2-6191-4814-b5d2-6571c5abae87: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/balloon.png');}.vc_pixel_icon-balloon_buzz{--wpr-bg-bcf63ced-58a8-4e9f-9886-a704d1a8895b: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/balloon-buzz.png');}.vc_pixel_icon-balloon_facebook{--wpr-bg-e5df3a4f-8251-421a-a774-1a5231b197a0: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/balloon-facebook.png');}.vc_pixel_icon-balloon_twitter{--wpr-bg-44b3c567-e78a-4c31-9b37-48e475422797: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/balloon-twitter.png');}.vc_pixel_icon-battery{--wpr-bg-7a7be290-3c25-456b-a86c-d9688b4da8cb: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/battery-full.png');}.vc_pixel_icon-binocular{--wpr-bg-4434425d-c1c0-414c-9f22-e742e976aea3: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/binocular.png');}.vc_pixel_icon-document_excel{--wpr-bg-d1b441d7-c4c3-4349-b555-6a5f4ee5d7c4: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-excel.png');}.vc_pixel_icon-document_image{--wpr-bg-7c78b3ab-c657-4dfe-aaa3-2a68f21ec9bd: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-image.png');}.vc_pixel_icon-document_music{--wpr-bg-fba41031-3071-4a4c-89d3-ae988e6d08d9: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-music.png');}.vc_pixel_icon-document_office{--wpr-bg-c219f92c-1648-4a6f-9c1d-426bb44ccf2b: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-office.png');}.vc_pixel_icon-document_pdf{--wpr-bg-9cb62820-a7ac-429d-a38b-9ecda2617dbe: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-pdf.png');}.vc_pixel_icon-document_powerpoint{--wpr-bg-d7954cda-172b-4c93-96b1-799f140d8b5b: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-powerpoint.png');}.vc_pixel_icon-document_word{--wpr-bg-e0cd7f37-9d90-42e9-b71b-bffb030199b0: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/blue-document-word.png');}.vc_pixel_icon-bookmark{--wpr-bg-867e9f25-f773-492e-aede-0cb2dc1a3248: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/bookmark.png');}.vc_pixel_icon-camcorder{--wpr-bg-cb294ed3-8220-46f5-b298-7b1abab47518: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/camcorder.png');}.vc_pixel_icon-camera{--wpr-bg-980c6a11-c72b-47b2-80c2-0c04ae2ab866: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/camera.png');}.vc_pixel_icon-chart{--wpr-bg-1104ba21-6181-4d8f-9b6d-a6e9fdf57c28: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/chart.png');}.vc_pixel_icon-chart_pie{--wpr-bg-0e5d32ba-18f3-424e-a38f-1afe062940dd: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/chart-pie.png');}.vc_pixel_icon-clock{--wpr-bg-49de046f-956b-49ca-9e48-3ce8acc2c26a: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/clock.png');}.vc_pixel_icon-play{--wpr-bg-f0b07e01-5a63-48f5-8178-dfbd82a9f49a: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/control.png');}.vc_pixel_icon-fire{--wpr-bg-a9842d6f-368b-4a8c-9fe7-36353c228304: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/fire.png');}.vc_pixel_icon-heart{--wpr-bg-59b9ddc8-d4bf-4339-9915-cb23ee4792e3: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/heart.png');}.vc_pixel_icon-mail{--wpr-bg-3493d9db-ae34-4628-b96c-9733e2da39c6: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/mail.png');}.vc_pixel_icon-shield{--wpr-bg-57a6270c-eccf-4fb7-81d8-7e193732003d: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/plus-shield.png');}.vc_pixel_icon-video{--wpr-bg-24ad98c0-221f-47e0-ba6a-7eb49ece7ab6: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/icons/video.png');}.wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon,.wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon{--wpr-bg-311470be-9a28-42aa-8095-4a43c9281795: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/toggle_open.png');}.wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon{--wpr-bg-b2d09c6f-d60c-49e8-a28b-bcab7408d3da: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/toggle_close.png');}.wpb_flickr_widget p.flickr_stream_wrap a{--wpr-bg-27403d64-606b-451a-90a6-57ad775f8da8: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/images/flickr.png');}.vc-spinner.vc-spinner-complete::before{--wpr-bg-1372727b-f395-4195-8092-80f58888df0c: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/vc/tick.png');}.vc-spinner.vc-spinner-failed::before{--wpr-bg-ca1b6722-1ab7-4a8f-b3c2-faaee9acc00b: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/vc/remove.png');}.thsn-element-team-style-1 .thsn-tbox-left:after{--wpr-bg-4e4bacea-a3e1-4683-8243-8c1ffc61b912: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/images/thsn-pattern-2-left.png');}.thsn-rotate-circle-left:after{--wpr-bg-ef782e2d-061d-4562-a10b-02c4d648faf5: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/images/rotate-image-small.png');}.thsn-rotate-circle-right:after{--wpr-bg-900d53ca-53e3-41bf-8d7f-9a496a78f999: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/images/rotate-image.png');}.thsn-rotate-circle-image .vc_single_image-wrapper:after{--wpr-bg-adfa545a-b81d-4513-a6a9-68c7a0b04acd: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/themes/grulf/images/rotate-image-small.png');}rs-dotted.twoxtwo{--wpr-bg-ed1b5c0a-dbcc-4245-83b9-1a7d89729140: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/revslider/public/assets/assets/gridtile.png');}rs-dotted.twoxtwowhite{--wpr-bg-346d25c9-8d19-4d6e-a578-715e9d826656: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/revslider/public/assets/assets/gridtile_white.png');}rs-dotted.threexthree{--wpr-bg-12d41764-e2f1-4c29-a62e-2aac44af977f: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/revslider/public/assets/assets/gridtile_3x3.png');}rs-dotted.threexthreewhite{--wpr-bg-3a4f5983-7a02-47fc-a92f-75e28e5dd16b: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/revslider/public/assets/assets/gridtile_3x3_white.png');}.rs-layer.slidelink a div{--wpr-bg-69918535-c496-4d3e-a806-65ca0fcd944e: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/revslider/public/assets/assets/coloredbg.png');}.rs-layer.slidelink a span{--wpr-bg-20a26f2a-e1c0-4446-8602-af1b25f74380: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/revslider/public/assets/assets/coloredbg.png');}rs-loader.spinner0{--wpr-bg-667558e6-a377-44ff-9e01-ff16038bb71d: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/revslider/public/assets/assets/loader.gif');}rs-loader.spinner5{--wpr-bg-1dddf97d-5723-4a27-acd2-1462516a4e99: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/revslider/public/assets/assets/loader.gif');}.rll-youtube-player .play{--wpr-bg-aedb6071-364e-4ba6-9fce-74951f8f8b70: url('https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".wpb_address_book i.icon,option.wpb_address_book","style":".wpb_address_book i.icon,option.wpb_address_book{--wpr-bg-89cdfa42-caaa-4a1a-ae77-89de1c1222be: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/address-book.png');}","hash":"89cdfa42-caaa-4a1a-ae77-89de1c1222be","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/address-book.png"},{"selector":".wpb_alarm_clock i.icon,option.wpb_alarm_clock","style":".wpb_alarm_clock i.icon,option.wpb_alarm_clock{--wpr-bg-2b1d5188-07b2-4579-8530-e667b9589bde: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/alarm-clock.png');}","hash":"2b1d5188-07b2-4579-8530-e667b9589bde","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/alarm-clock.png"},{"selector":".wpb_anchor i.icon,option.wpb_anchor","style":".wpb_anchor i.icon,option.wpb_anchor{--wpr-bg-e0c129fb-fe73-44cf-b33d-4fa35589e20c: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/anchor.png');}","hash":"e0c129fb-fe73-44cf-b33d-4fa35589e20c","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/anchor.png"},{"selector":".wpb_application_image i.icon,option.wpb_application_image","style":".wpb_application_image i.icon,option.wpb_application_image{--wpr-bg-c7ebaa75-7d35-449a-81b0-a695ba1ddedd: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/application-image.png');}","hash":"c7ebaa75-7d35-449a-81b0-a695ba1ddedd","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/application-image.png"},{"selector":".wpb_arrow i.icon,option.wpb_arrow","style":".wpb_arrow i.icon,option.wpb_arrow{--wpr-bg-89f6d13e-4961-4622-b17b-dc05016c8a46: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/arrow.png');}","hash":"89f6d13e-4961-4622-b17b-dc05016c8a46","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/arrow.png"},{"selector":".wpb_asterisk i.icon,option.wpb_asterisk","style":".wpb_asterisk i.icon,option.wpb_asterisk{--wpr-bg-4645d52c-66de-4b81-8e54-cfe2599e0738: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/asterisk.png');}","hash":"4645d52c-66de-4b81-8e54-cfe2599e0738","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/asterisk.png"},{"selector":".wpb_hammer i.icon,option.wpb_hammer","style":".wpb_hammer i.icon,option.wpb_hammer{--wpr-bg-aa335e1c-8535-4b5f-b66b-3edaaa0e7cd6: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/auction-hammer.png');}","hash":"aa335e1c-8535-4b5f-b66b-3edaaa0e7cd6","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/auction-hammer.png"},{"selector":".wpb_balloon i.icon,option.wpb_balloon","style":".wpb_balloon i.icon,option.wpb_balloon{--wpr-bg-5687bf25-647d-44f7-9f53-8c277283f97d: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon.png');}","hash":"5687bf25-647d-44f7-9f53-8c277283f97d","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon.png"},{"selector":".wpb_balloon_buzz i.icon,option.wpb_balloon_buzz","style":".wpb_balloon_buzz i.icon,option.wpb_balloon_buzz{--wpr-bg-ff6bb3db-9190-42a1-9608-d7df20a56109: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-buzz.png');}","hash":"ff6bb3db-9190-42a1-9608-d7df20a56109","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-buzz.png"},{"selector":".wpb_balloon_facebook i.icon,option.wpb_balloon_facebook","style":".wpb_balloon_facebook i.icon,option.wpb_balloon_facebook{--wpr-bg-cf8dcf68-53f9-4116-aee7-8924a6b0ed71: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-facebook.png');}","hash":"cf8dcf68-53f9-4116-aee7-8924a6b0ed71","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-facebook.png"},{"selector":".wpb_balloon_twitter i.icon,option.wpb_balloon_twitter","style":".wpb_balloon_twitter i.icon,option.wpb_balloon_twitter{--wpr-bg-e740361f-d289-49c5-98bd-3c38d8f478c2: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-twitter.png');}","hash":"e740361f-d289-49c5-98bd-3c38d8f478c2","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-twitter.png"},{"selector":".wpb_battery i.icon,option.wpb_battery","style":".wpb_battery i.icon,option.wpb_battery{--wpr-bg-7d5e46ee-3327-4b4d-b203-ba1a141af6e0: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/battery-full.png');}","hash":"7d5e46ee-3327-4b4d-b203-ba1a141af6e0","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/battery-full.png"},{"selector":".wpb_binocular i.icon,option.wpb_binocular","style":".wpb_binocular i.icon,option.wpb_binocular{--wpr-bg-8c80fdb5-2371-4846-98bc-11a4eb0e48d3: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/binocular.png');}","hash":"8c80fdb5-2371-4846-98bc-11a4eb0e48d3","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/binocular.png"},{"selector":".wpb_document_excel i.icon,option.wpb_document_excel","style":".wpb_document_excel i.icon,option.wpb_document_excel{--wpr-bg-f2458e62-c54a-48e6-adf4-b90632874f0a: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-excel.png');}","hash":"f2458e62-c54a-48e6-adf4-b90632874f0a","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-excel.png"},{"selector":".wpb_document_image i.icon,option.wpb_document_image","style":".wpb_document_image i.icon,option.wpb_document_image{--wpr-bg-9e5d854f-13a8-43c6-ba2e-fb905bd0f939: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-image.png');}","hash":"9e5d854f-13a8-43c6-ba2e-fb905bd0f939","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-image.png"},{"selector":".wpb_document_music i.icon,option.wpb_document_music","style":".wpb_document_music i.icon,option.wpb_document_music{--wpr-bg-791e3c7c-1305-460b-b354-fca24f032e59: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-music.png');}","hash":"791e3c7c-1305-460b-b354-fca24f032e59","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-music.png"},{"selector":".wpb_document_office i.icon,option.wpb_document_office","style":".wpb_document_office i.icon,option.wpb_document_office{--wpr-bg-6170ad5c-79e4-435c-9d6a-595ed0759ffd: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-office.png');}","hash":"6170ad5c-79e4-435c-9d6a-595ed0759ffd","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-office.png"},{"selector":".wpb_document_pdf i.icon,option.wpb_document_pdf","style":".wpb_document_pdf i.icon,option.wpb_document_pdf{--wpr-bg-c29f9c53-f8bd-4e24-a2ba-3247f5a59978: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-pdf.png');}","hash":"c29f9c53-f8bd-4e24-a2ba-3247f5a59978","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-pdf.png"},{"selector":".wpb_document_powerpoint i.icon,option.wpb_document_powerpoint","style":".wpb_document_powerpoint i.icon,option.wpb_document_powerpoint{--wpr-bg-34913477-499c-494f-a4ae-791ce614d959: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-powerpoint.png');}","hash":"34913477-499c-494f-a4ae-791ce614d959","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-powerpoint.png"},{"selector":".wpb_document_word i.icon,option.wpb_document_word","style":".wpb_document_word i.icon,option.wpb_document_word{--wpr-bg-a2333f21-a066-43b2-9619-0e5668154ec7: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-word.png');}","hash":"a2333f21-a066-43b2-9619-0e5668154ec7","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-word.png"},{"selector":".wpb_bookmark i.icon,option.wpb_bookmark","style":".wpb_bookmark i.icon,option.wpb_bookmark{--wpr-bg-296fb2f4-17b1-4c80-bca3-662c745bcb19: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/bookmark.png');}","hash":"296fb2f4-17b1-4c80-bca3-662c745bcb19","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/bookmark.png"},{"selector":".wpb_camcorder i.icon,option.wpb_camcorder","style":".wpb_camcorder i.icon,option.wpb_camcorder{--wpr-bg-60859b7e-c6fd-4f2f-9dd0-3182b6705102: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/camcorder.png');}","hash":"60859b7e-c6fd-4f2f-9dd0-3182b6705102","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/camcorder.png"},{"selector":".wpb_camera i.icon,option.wpb_camera","style":".wpb_camera i.icon,option.wpb_camera{--wpr-bg-29cd4408-90a2-45e5-88f4-fc7098ed5bc8: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/camera.png');}","hash":"29cd4408-90a2-45e5-88f4-fc7098ed5bc8","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/camera.png"},{"selector":".wpb_chart i.icon,option.wpb_chart","style":".wpb_chart i.icon,option.wpb_chart{--wpr-bg-36d9b60f-8e9b-4a58-9028-bc442912c8a8: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/chart.png');}","hash":"36d9b60f-8e9b-4a58-9028-bc442912c8a8","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/chart.png"},{"selector":".wpb_chart_pie i.icon,option.wpb_chart_pie","style":".wpb_chart_pie i.icon,option.wpb_chart_pie{--wpr-bg-7eca76d9-2c07-4565-8a2b-d31b2b823b8d: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/chart-pie.png');}","hash":"7eca76d9-2c07-4565-8a2b-d31b2b823b8d","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/chart-pie.png"},{"selector":".wpb_clock i.icon,option.wpb_clock","style":".wpb_clock i.icon,option.wpb_clock{--wpr-bg-6d462a2b-1afa-4b42-86d3-b644277aff36: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/clock.png');}","hash":"6d462a2b-1afa-4b42-86d3-b644277aff36","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/clock.png"},{"selector":".wpb_play i.icon,option.wpb_play","style":".wpb_play i.icon,option.wpb_play{--wpr-bg-c05684c5-1c03-4de1-8a54-59926fa82321: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/control.png');}","hash":"c05684c5-1c03-4de1-8a54-59926fa82321","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/control.png"},{"selector":".wpb_fire i.icon,option.wpb_fire","style":".wpb_fire i.icon,option.wpb_fire{--wpr-bg-c9a3939e-2132-4230-a89a-d52e9dc9970c: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/fire.png');}","hash":"c9a3939e-2132-4230-a89a-d52e9dc9970c","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/fire.png"},{"selector":".wpb_heart i.icon,option.wpb_heart","style":".wpb_heart i.icon,option.wpb_heart{--wpr-bg-3e3ce59d-59d2-4dbc-8050-0de3a97a2dc8: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/heart.png');}","hash":"3e3ce59d-59d2-4dbc-8050-0de3a97a2dc8","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/heart.png"},{"selector":".wpb_mail i.icon,option.wpb_mail","style":".wpb_mail i.icon,option.wpb_mail{--wpr-bg-acfe4267-b778-45bf-b91e-53ea5a913b0e: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/mail.png');}","hash":"acfe4267-b778-45bf-b91e-53ea5a913b0e","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/mail.png"},{"selector":".wpb_shield i.icon,option.wpb_shield","style":".wpb_shield i.icon,option.wpb_shield{--wpr-bg-631bb181-e6ce-4d61-aaf7-9c6fc1cebccf: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/plus-shield.png');}","hash":"631bb181-e6ce-4d61-aaf7-9c6fc1cebccf","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/plus-shield.png"},{"selector":".wpb_video i.icon,option.wpb_video","style":".wpb_video i.icon,option.wpb_video{--wpr-bg-64ab0dfa-2c59-4535-923e-5d46a8360979: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/video.png');}","hash":"64ab0dfa-2c59-4535-923e-5d46a8360979","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/video.png"},{"selector":".vc-spinner","style":".vc-spinner::before{--wpr-bg-55ef2459-10de-43bf-ae8c-b5cddeec863a: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/spinner.gif');}","hash":"55ef2459-10de-43bf-ae8c-b5cddeec863a","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/spinner.gif"},{"selector":".vc_pixel_icon-alert","style":".vc_pixel_icon-alert{--wpr-bg-37db94d4-862f-4293-9f2e-57fa62b5ab56: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/alert.png');}","hash":"37db94d4-862f-4293-9f2e-57fa62b5ab56","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/alert.png"},{"selector":".vc_pixel_icon-info","style":".vc_pixel_icon-info{--wpr-bg-d9a2a1f8-f19e-4a88-90ea-d8e6676e55c9: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/info.png');}","hash":"d9a2a1f8-f19e-4a88-90ea-d8e6676e55c9","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/info.png"},{"selector":".vc_pixel_icon-tick","style":".vc_pixel_icon-tick{--wpr-bg-ef0fe95e-3795-4a54-98b8-ea1d8363e471: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/tick.png');}","hash":"ef0fe95e-3795-4a54-98b8-ea1d8363e471","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/tick.png"},{"selector":".vc_pixel_icon-explanation","style":".vc_pixel_icon-explanation{--wpr-bg-076e8b95-c2a4-4c94-bf69-b5ab4e0a1581: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/exclamation.png');}","hash":"076e8b95-c2a4-4c94-bf69-b5ab4e0a1581","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/exclamation.png"},{"selector":".vc_pixel_icon-address_book","style":".vc_pixel_icon-address_book{--wpr-bg-6deaf6f0-85a4-4998-9794-d42ddeaf90c1: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/address-book.png');}","hash":"6deaf6f0-85a4-4998-9794-d42ddeaf90c1","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/address-book.png"},{"selector":".vc_pixel_icon-alarm_clock","style":".vc_pixel_icon-alarm_clock{--wpr-bg-97298857-0f23-4c8e-9cdb-9f180f33472e: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/alarm-clock.png');}","hash":"97298857-0f23-4c8e-9cdb-9f180f33472e","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/alarm-clock.png"},{"selector":".vc_pixel_icon-anchor","style":".vc_pixel_icon-anchor{--wpr-bg-236850df-db62-43c0-894e-5a052f8d33aa: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/anchor.png');}","hash":"236850df-db62-43c0-894e-5a052f8d33aa","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/anchor.png"},{"selector":".vc_pixel_icon-application_image","style":".vc_pixel_icon-application_image{--wpr-bg-b1120fd9-7775-4d76-abe3-9f9bda926ce0: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/application-image.png');}","hash":"b1120fd9-7775-4d76-abe3-9f9bda926ce0","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/application-image.png"},{"selector":".vc_pixel_icon-arrow","style":".vc_pixel_icon-arrow{--wpr-bg-a4981494-aa0e-465a-b385-ff1e4fc3b057: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/arrow.png');}","hash":"a4981494-aa0e-465a-b385-ff1e4fc3b057","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/arrow.png"},{"selector":".vc_pixel_icon-asterisk","style":".vc_pixel_icon-asterisk{--wpr-bg-b1aa488b-7a63-4b29-a297-689f627f2925: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/asterisk.png');}","hash":"b1aa488b-7a63-4b29-a297-689f627f2925","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/asterisk.png"},{"selector":".vc_pixel_icon-hammer","style":".vc_pixel_icon-hammer{--wpr-bg-f94ef710-e8d2-4a1b-af4c-f8b84c1de9fd: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/auction-hammer.png');}","hash":"f94ef710-e8d2-4a1b-af4c-f8b84c1de9fd","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/auction-hammer.png"},{"selector":".vc_pixel_icon-balloon","style":".vc_pixel_icon-balloon{--wpr-bg-0ec43ac2-6191-4814-b5d2-6571c5abae87: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon.png');}","hash":"0ec43ac2-6191-4814-b5d2-6571c5abae87","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon.png"},{"selector":".vc_pixel_icon-balloon_buzz","style":".vc_pixel_icon-balloon_buzz{--wpr-bg-bcf63ced-58a8-4e9f-9886-a704d1a8895b: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-buzz.png');}","hash":"bcf63ced-58a8-4e9f-9886-a704d1a8895b","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-buzz.png"},{"selector":".vc_pixel_icon-balloon_facebook","style":".vc_pixel_icon-balloon_facebook{--wpr-bg-e5df3a4f-8251-421a-a774-1a5231b197a0: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-facebook.png');}","hash":"e5df3a4f-8251-421a-a774-1a5231b197a0","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-facebook.png"},{"selector":".vc_pixel_icon-balloon_twitter","style":".vc_pixel_icon-balloon_twitter{--wpr-bg-44b3c567-e78a-4c31-9b37-48e475422797: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-twitter.png');}","hash":"44b3c567-e78a-4c31-9b37-48e475422797","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/balloon-twitter.png"},{"selector":".vc_pixel_icon-battery","style":".vc_pixel_icon-battery{--wpr-bg-7a7be290-3c25-456b-a86c-d9688b4da8cb: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/battery-full.png');}","hash":"7a7be290-3c25-456b-a86c-d9688b4da8cb","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/battery-full.png"},{"selector":".vc_pixel_icon-binocular","style":".vc_pixel_icon-binocular{--wpr-bg-4434425d-c1c0-414c-9f22-e742e976aea3: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/binocular.png');}","hash":"4434425d-c1c0-414c-9f22-e742e976aea3","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/binocular.png"},{"selector":".vc_pixel_icon-document_excel","style":".vc_pixel_icon-document_excel{--wpr-bg-d1b441d7-c4c3-4349-b555-6a5f4ee5d7c4: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-excel.png');}","hash":"d1b441d7-c4c3-4349-b555-6a5f4ee5d7c4","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-excel.png"},{"selector":".vc_pixel_icon-document_image","style":".vc_pixel_icon-document_image{--wpr-bg-7c78b3ab-c657-4dfe-aaa3-2a68f21ec9bd: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-image.png');}","hash":"7c78b3ab-c657-4dfe-aaa3-2a68f21ec9bd","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-image.png"},{"selector":".vc_pixel_icon-document_music","style":".vc_pixel_icon-document_music{--wpr-bg-fba41031-3071-4a4c-89d3-ae988e6d08d9: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-music.png');}","hash":"fba41031-3071-4a4c-89d3-ae988e6d08d9","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-music.png"},{"selector":".vc_pixel_icon-document_office","style":".vc_pixel_icon-document_office{--wpr-bg-c219f92c-1648-4a6f-9c1d-426bb44ccf2b: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-office.png');}","hash":"c219f92c-1648-4a6f-9c1d-426bb44ccf2b","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-office.png"},{"selector":".vc_pixel_icon-document_pdf","style":".vc_pixel_icon-document_pdf{--wpr-bg-9cb62820-a7ac-429d-a38b-9ecda2617dbe: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-pdf.png');}","hash":"9cb62820-a7ac-429d-a38b-9ecda2617dbe","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-pdf.png"},{"selector":".vc_pixel_icon-document_powerpoint","style":".vc_pixel_icon-document_powerpoint{--wpr-bg-d7954cda-172b-4c93-96b1-799f140d8b5b: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-powerpoint.png');}","hash":"d7954cda-172b-4c93-96b1-799f140d8b5b","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-powerpoint.png"},{"selector":".vc_pixel_icon-document_word","style":".vc_pixel_icon-document_word{--wpr-bg-e0cd7f37-9d90-42e9-b71b-bffb030199b0: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-word.png');}","hash":"e0cd7f37-9d90-42e9-b71b-bffb030199b0","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/blue-document-word.png"},{"selector":".vc_pixel_icon-bookmark","style":".vc_pixel_icon-bookmark{--wpr-bg-867e9f25-f773-492e-aede-0cb2dc1a3248: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/bookmark.png');}","hash":"867e9f25-f773-492e-aede-0cb2dc1a3248","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/bookmark.png"},{"selector":".vc_pixel_icon-camcorder","style":".vc_pixel_icon-camcorder{--wpr-bg-cb294ed3-8220-46f5-b298-7b1abab47518: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/camcorder.png');}","hash":"cb294ed3-8220-46f5-b298-7b1abab47518","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/camcorder.png"},{"selector":".vc_pixel_icon-camera","style":".vc_pixel_icon-camera{--wpr-bg-980c6a11-c72b-47b2-80c2-0c04ae2ab866: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/camera.png');}","hash":"980c6a11-c72b-47b2-80c2-0c04ae2ab866","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/camera.png"},{"selector":".vc_pixel_icon-chart","style":".vc_pixel_icon-chart{--wpr-bg-1104ba21-6181-4d8f-9b6d-a6e9fdf57c28: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/chart.png');}","hash":"1104ba21-6181-4d8f-9b6d-a6e9fdf57c28","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/chart.png"},{"selector":".vc_pixel_icon-chart_pie","style":".vc_pixel_icon-chart_pie{--wpr-bg-0e5d32ba-18f3-424e-a38f-1afe062940dd: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/chart-pie.png');}","hash":"0e5d32ba-18f3-424e-a38f-1afe062940dd","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/chart-pie.png"},{"selector":".vc_pixel_icon-clock","style":".vc_pixel_icon-clock{--wpr-bg-49de046f-956b-49ca-9e48-3ce8acc2c26a: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/clock.png');}","hash":"49de046f-956b-49ca-9e48-3ce8acc2c26a","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/clock.png"},{"selector":".vc_pixel_icon-play","style":".vc_pixel_icon-play{--wpr-bg-f0b07e01-5a63-48f5-8178-dfbd82a9f49a: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/control.png');}","hash":"f0b07e01-5a63-48f5-8178-dfbd82a9f49a","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/control.png"},{"selector":".vc_pixel_icon-fire","style":".vc_pixel_icon-fire{--wpr-bg-a9842d6f-368b-4a8c-9fe7-36353c228304: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/fire.png');}","hash":"a9842d6f-368b-4a8c-9fe7-36353c228304","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/fire.png"},{"selector":".vc_pixel_icon-heart","style":".vc_pixel_icon-heart{--wpr-bg-59b9ddc8-d4bf-4339-9915-cb23ee4792e3: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/heart.png');}","hash":"59b9ddc8-d4bf-4339-9915-cb23ee4792e3","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/heart.png"},{"selector":".vc_pixel_icon-mail","style":".vc_pixel_icon-mail{--wpr-bg-3493d9db-ae34-4628-b96c-9733e2da39c6: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/mail.png');}","hash":"3493d9db-ae34-4628-b96c-9733e2da39c6","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/mail.png"},{"selector":".vc_pixel_icon-shield","style":".vc_pixel_icon-shield{--wpr-bg-57a6270c-eccf-4fb7-81d8-7e193732003d: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/plus-shield.png');}","hash":"57a6270c-eccf-4fb7-81d8-7e193732003d","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/plus-shield.png"},{"selector":".vc_pixel_icon-video","style":".vc_pixel_icon-video{--wpr-bg-24ad98c0-221f-47e0-ba6a-7eb49ece7ab6: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/video.png');}","hash":"24ad98c0-221f-47e0-ba6a-7eb49ece7ab6","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/icons\/video.png"},{"selector":".wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon,.wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon","style":".wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon,.wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon{--wpr-bg-311470be-9a28-42aa-8095-4a43c9281795: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/toggle_open.png');}","hash":"311470be-9a28-42aa-8095-4a43c9281795","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/toggle_open.png"},{"selector":".wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon","style":".wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon{--wpr-bg-b2d09c6f-d60c-49e8-a28b-bcab7408d3da: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/toggle_close.png');}","hash":"b2d09c6f-d60c-49e8-a28b-bcab7408d3da","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/toggle_close.png"},{"selector":".wpb_flickr_widget p.flickr_stream_wrap a","style":".wpb_flickr_widget p.flickr_stream_wrap a{--wpr-bg-27403d64-606b-451a-90a6-57ad775f8da8: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/flickr.png');}","hash":"27403d64-606b-451a-90a6-57ad775f8da8","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/images\/flickr.png"},{"selector":".vc-spinner.vc-spinner-complete","style":".vc-spinner.vc-spinner-complete::before{--wpr-bg-1372727b-f395-4195-8092-80f58888df0c: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/tick.png');}","hash":"1372727b-f395-4195-8092-80f58888df0c","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/tick.png"},{"selector":".vc-spinner.vc-spinner-failed","style":".vc-spinner.vc-spinner-failed::before{--wpr-bg-ca1b6722-1ab7-4a8f-b3c2-faaee9acc00b: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/remove.png');}","hash":"ca1b6722-1ab7-4a8f-b3c2-faaee9acc00b","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/js_composer\/assets\/vc\/remove.png"},{"selector":".thsn-element-team-style-1 .thsn-tbox-left","style":".thsn-element-team-style-1 .thsn-tbox-left:after{--wpr-bg-4e4bacea-a3e1-4683-8243-8c1ffc61b912: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/themes\/grulf\/images\/thsn-pattern-2-left.png');}","hash":"4e4bacea-a3e1-4683-8243-8c1ffc61b912","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/themes\/grulf\/images\/thsn-pattern-2-left.png"},{"selector":".thsn-rotate-circle-left","style":".thsn-rotate-circle-left:after{--wpr-bg-ef782e2d-061d-4562-a10b-02c4d648faf5: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/themes\/grulf\/images\/rotate-image-small.png');}","hash":"ef782e2d-061d-4562-a10b-02c4d648faf5","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/themes\/grulf\/images\/rotate-image-small.png"},{"selector":".thsn-rotate-circle-right","style":".thsn-rotate-circle-right:after{--wpr-bg-900d53ca-53e3-41bf-8d7f-9a496a78f999: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/themes\/grulf\/images\/rotate-image.png');}","hash":"900d53ca-53e3-41bf-8d7f-9a496a78f999","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/themes\/grulf\/images\/rotate-image.png"},{"selector":".thsn-rotate-circle-image .vc_single_image-wrapper","style":".thsn-rotate-circle-image .vc_single_image-wrapper:after{--wpr-bg-adfa545a-b81d-4513-a6a9-68c7a0b04acd: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/themes\/grulf\/images\/rotate-image-small.png');}","hash":"adfa545a-b81d-4513-a6a9-68c7a0b04acd","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/themes\/grulf\/images\/rotate-image-small.png"},{"selector":"rs-dotted.twoxtwo","style":"rs-dotted.twoxtwo{--wpr-bg-ed1b5c0a-dbcc-4245-83b9-1a7d89729140: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile.png');}","hash":"ed1b5c0a-dbcc-4245-83b9-1a7d89729140","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile.png"},{"selector":"rs-dotted.twoxtwowhite","style":"rs-dotted.twoxtwowhite{--wpr-bg-346d25c9-8d19-4d6e-a578-715e9d826656: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_white.png');}","hash":"346d25c9-8d19-4d6e-a578-715e9d826656","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_white.png"},{"selector":"rs-dotted.threexthree","style":"rs-dotted.threexthree{--wpr-bg-12d41764-e2f1-4c29-a62e-2aac44af977f: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_3x3.png');}","hash":"12d41764-e2f1-4c29-a62e-2aac44af977f","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_3x3.png"},{"selector":"rs-dotted.threexthreewhite","style":"rs-dotted.threexthreewhite{--wpr-bg-3a4f5983-7a02-47fc-a92f-75e28e5dd16b: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_3x3_white.png');}","hash":"3a4f5983-7a02-47fc-a92f-75e28e5dd16b","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_3x3_white.png"},{"selector":".rs-layer.slidelink a div","style":".rs-layer.slidelink a div{--wpr-bg-69918535-c496-4d3e-a806-65ca0fcd944e: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/coloredbg.png');}","hash":"69918535-c496-4d3e-a806-65ca0fcd944e","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/coloredbg.png"},{"selector":".rs-layer.slidelink a span","style":".rs-layer.slidelink a span{--wpr-bg-20a26f2a-e1c0-4446-8602-af1b25f74380: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/coloredbg.png');}","hash":"20a26f2a-e1c0-4446-8602-af1b25f74380","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/coloredbg.png"},{"selector":"rs-loader.spinner0","style":"rs-loader.spinner0{--wpr-bg-667558e6-a377-44ff-9e01-ff16038bb71d: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/loader.gif');}","hash":"667558e6-a377-44ff-9e01-ff16038bb71d","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/loader.gif"},{"selector":"rs-loader.spinner5","style":"rs-loader.spinner5{--wpr-bg-1dddf97d-5723-4a27-acd2-1462516a4e99: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/loader.gif');}","hash":"1dddf97d-5723-4a27-acd2-1462516a4e99","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/revslider\/public\/assets\/assets\/loader.gif"},{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-aedb6071-364e-4ba6-9fce-74951f8f8b70: url('https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"aedb6071-364e-4ba6-9fce-74951f8f8b70","url":"https:\/\/g3c3k9f7.delivery.rocketcdn.me\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.23.5.1" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_image_dimensions wpr_minify_css wpr_cdn wpr_preload_links" /></head>
+<body class="wp-singular page-template-default page page-id-15442 page-child parent-pageid-15424 wp-theme-grulf wp-child-theme-grulf-child cookies-not-set visitor-is-logged-out thsn-sidebar-no wpb-js-composer js-comp-ver-7.9 vc_responsive">
+<div data-rocket-location-hash="6790597c97ceabe440875186bda184cc" id="page" class="site thsn-parent-header-style-3">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header data-rocket-location-hash="0ccb14365396a1fe99a89373057223e5" id="masthead" class="site-header thsn-header-style-3">
+		<div data-rocket-location-hash="2318eebd00d1fb6fc5a464ffad6dc149" class="thsn-header-overlay">
+		<div class="thsn-pre-header-wrapper  thsn-bg-color-transparent thsn-color-white">
+		<div class="container">
+			<div class="d-flex justify-content-between">
+									<div class="thsn-pre-header-left"><ul class="thsn-contact-info"><li><i class="thsn-base-icon-phone-volume-solid"></i> <a style="color:white" href="tel:+31264821985">026 - 482 19 85</a></li><li><i class="thsn-base-icon-map-marker-alt-solid"></i> <a style="color:white" href="https://g.page/Edesegolfclubpapendal">Papendallaan 22 6816 VD Arnhem</li></ul></div><!-- .thsn-pre-header-left -->
+													<div class="thsn-pre-header-right"><ul class="thsn-social-links"><li class="thsn-social-li thsn-social-facebook "><a href="https://www.facebook.com/EGCPapendal/" target="_blank"><span><i class="thsn-base-icon-facebook-squared"></i></span></a></li><li class="thsn-social-li thsn-social-instagram "><a href="https://www.instagram.com/edesegcpapendal/" target="_blank"><span><i class="thsn-base-icon-instagram"></i></span></a></li></ul></div><!-- .thsn-pre-header-right -->
+							</div><!-- .justify-content-between -->
+		</div><!-- .container -->
+	</div><!-- .thsn-pre-header-wrapper -->
+	<div class="thsn-header-height-wrapper" style="min-height:100px;">
+		<div class="thsn-header-wrapper thsn-sticky-logo-yes thsn-responsive-logo-no thsn-responsive-header-bgcolor-white  thsn-header-sticky-yes thsn-sticky-type- thsn-sticky-bg-color-white">
+			<div class="container">
+				<div class="d-flex justify-content-between align-items-center">
+					<div class="thsn-logo-menuarea thsn-header-wrapper thsn-bg-color-white">
+						<div class="site-branding thsn-logo-area">
+							<div class="wrap">
+								<div class="site-title"><span class="logo-link-text"> - </span><a href="https://www.edesegcpapendal.nl/" rel="home"><img width="140" height="70" class="thsn-main-logo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2070'%3E%3C/svg%3E" alt="" title="" data-lazy-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/06/Logo-Edese-GC-Papendal-2022-140x70-1.jpeg" /><noscript><img width="140" height="70" class="thsn-main-logo" src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/06/Logo-Edese-GC-Papendal-2022-140x70-1.jpeg" alt="" title="" /></noscript><img width="140" height="70" class="thsn-sticky-logo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2070'%3E%3C/svg%3E" alt="" title="" data-lazy-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/06/Logo-Edese-GC-Papendal-2022-140x70-1.jpeg" /><noscript><img width="140" height="70" class="thsn-sticky-logo" src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/06/Logo-Edese-GC-Papendal-2022-140x70-1.jpeg" alt="" title="" /></noscript></a></div>							</div><!-- .wrap -->
+						</div><!-- .site-branding -->			
+						<div class="thsn-mobile-search">
+									<div class="thsn-header-search-btn"><a href="#"><i class="thsn-base-icon-search-1"></i></a></div>
+								</div>			
+						<button id="menu-toggle" class="nav-menu-toggle">								
+							<i class="thsn-base-icon-menu-1"></i>						
+						</button>	
+						<!-- Top Navigation Menu -->
+						<div class="navigation-top">
+							<div class="wrap">
+								<nav id="site-navigation" class="main-navigation thsn-navbar  thsn-main-active-color-globalcolor thsn-dropdown-active-color-globalcolor" aria-label="Top Menu">
+									<div class="menu-main-menu-optie-1-container"><ul id="thsn-top-menu" class="menu"><li id="menu-item-15206" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15206"><a href="#">Club</a>
+<ul class="sub-menu">
+	<li id="menu-item-15233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15233"><a href="https://www.edesegcpapendal.nl/club/organisatie-historie/">Bestuur &#038; Historie</a></li>
+	<li id="menu-item-15318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15318"><a href="https://www.edesegcpapendal.nl/club/organisatie-historie/commissies-contactpersonen/">Commissies &#038; Contactpersonen</a></li>
+	<li id="menu-item-15372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15372"><a href="https://www.edesegcpapendal.nl/club/onze-sponsoren/">Onze sponsoren</a></li>
+	<li id="menu-item-15204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15204"><a href="https://www.edesegcpapendal.nl/club/lidmaatschap/">Lidmaatschap</a></li>
+	<li id="menu-item-17434" class="guests-only menu-item menu-item-type-post_type menu-item-object-page menu-item-17434"><a href="https://www.edesegcpapendal.nl/openbaar-nieuws/">Nieuws</a></li>
+	<li id="menu-item-15403" class="members-only menu-item menu-item-type-custom menu-item-object-custom menu-item-15403"><a href="/club/nieuws">Nieuws</a></li>
+</ul>
+</li>
+<li id="menu-item-15100" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-15100"><a href="#">Baan</a>
+<ul class="sub-menu">
+	<li id="menu-item-15493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15493"><a href="https://www.edesegcpapendal.nl/baan/baanstatus/">Baanstatus</a></li>
+	<li id="menu-item-15109" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-15109"><a href="#">Baaninformatie ></a>
+	<ul class="sub-menu">
+		<li id="menu-item-15489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15489"><a href="https://www.edesegcpapendal.nl/baan/baaninformatie/baanplattegrond/">Baanplattegrond</a></li>
+		<li id="menu-item-15491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15491"><a href="https://www.edesegcpapendal.nl/baan/baaninformatie/handicaptabellen/">Zomer Handicaptabellen</a></li>
+		<li id="menu-item-18185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18185"><a href="https://www.edesegcpapendal.nl/baan/baaninformatie/handicaptabellen-2/">Winter Handicaptabellen</a></li>
+		<li id="menu-item-15492" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15442 current_page_item menu-item-15492"><a href="https://www.edesegcpapendal.nl/baan/baaninformatie/scorekaart/" aria-current="page">Scorekaart</a></li>
+	</ul>
+</li>
+	<li id="menu-item-15490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15490"><a href="https://www.edesegcpapendal.nl/baan/baaninformatie/driving-range/">Driving Range</a></li>
+	<li id="menu-item-15114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15114"><a href="#">Rules ></a>
+	<ul class="sub-menu">
+		<li id="menu-item-15496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15496"><a href="https://www.edesegcpapendal.nl/rules/plaatselijke-regels/">Plaatselijke Regels</a></li>
+		<li id="menu-item-15495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15495"><a href="https://www.edesegcpapendal.nl/rules/baanreglement/">Baanreglement</a></li>
+		<li id="menu-item-15497" class="members-only menu-item menu-item-type-post_type menu-item-object-page menu-item-15497"><a href="https://www.edesegcpapendal.nl/rules/wedstrijdreglement/">Wedstrijdreglement</a></li>
+	</ul>
+</li>
+	<li id="menu-item-15498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15498"><a href="#">Duurzaamheid ></a>
+	<ul class="sub-menu">
+		<li id="menu-item-15494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15494"><a href="https://www.edesegcpapendal.nl/baan/duurzaamheid/geo-wildlife/">GEO &#038; Wildlife</a></li>
+		<li id="menu-item-15501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15501"><a href="https://www.edesegcpapendal.nl/baan/duurzaamheid/greenkeepers-de-enk/">Greenkeepers de Enk</a></li>
+	</ul>
+</li>
+	<li id="menu-item-17420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17420"><a href="https://www.edesegcpapendal.nl/medische-calamiteit-op-de-edese-golfclub/">Medische calamiteit</a></li>
+</ul>
+</li>
+<li id="menu-item-15663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15663"><a href="#">Gasten</a>
+<ul class="sub-menu">
+	<li id="menu-item-15576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15576"><a href="https://www.edesegcpapendal.nl/gasten/greenfee/">Greenfee</a></li>
+	<li id="menu-item-15567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15567"><a href="/gasten/greenfee/#hospitalitychain">Hospitality Chain</a></li>
+	<li id="menu-item-18406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18406"><a href="https://www.edesegcpapendal.nl/gasten/competitie-2026/">Competitie 2026</a></li>
+	<li id="menu-item-15574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15574"><a href="https://www.edesegcpapendal.nl/gasten/restaurant-de-hofmeester/">Restaurant De Hofmeester</a></li>
+</ul>
+</li>
+<li id="menu-item-15607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15607"><a href="#">Golfles</a>
+<ul class="sub-menu">
+	<li id="menu-item-17911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17911"><a href="https://www.edesegcpapendal.nl/golfles/golfschool-papendal/">Golfschool Papendal</a></li>
+	<li id="menu-item-15604" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15604"><a target="_blank" href="https://golfschoolpapendal.proagenda.com/#academy">Boek uw golfles (ProAgenda)</a></li>
+	<li id="menu-item-17692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17692"><a href="https://www.edesegcpapendal.nl/golfles/leren-golfen/">Maak kennis met golf</a></li>
+	<li id="menu-item-19822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19822"><a href="https://www.edesegcpapendal.nl/golfles/jeugdgolf/">Jeugdgolf</a></li>
+</ul>
+</li>
+<li id="menu-item-15126" class="guests-only ede-uitlog menu-item menu-item-type-post_type menu-item-object-page menu-item-15126"><a href="https://www.edesegcpapendal.nl/login/">Inloggen</a></li>
+<li id="menu-item-18489" class="members-only menu-item menu-item-type-post_type menu-item-object-page menu-item-18489"><a href="https://www.edesegcpapendal.nl/leden/">Ledenportaal</a></li>
+<li id="menu-item-20397" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20397"><a target="_blank" href="https://egcp.golfdashboard.com/dashboard">Golfdashboard</a></li>
+<li id="menu-item-15608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15608"><a href="https://www.edesegcpapendal.nl/contact/">Contact</a></li>
+<li id="menu-item-20430" class="guests-only mobile-only-new menu-item menu-item-type-custom menu-item-object-custom menu-item-20430"><a target="_blank" href="https://egcp.teecontrol.com/">Boek Starttijd</a></li>
+</ul></div>								</nav><!-- #site-navigation -->
+							</div><!-- .wrap -->
+						</div><!-- .navigation-top -->
+						<div class="thsn-search-cart-box">
+																<div class="thsn-header-search-btn"><a href="#"><i class="thsn-base-icon-search-1"></i></a></div>
+								</div>
+					</div>
+										<div class="thsn-header-button">
+				<a href="https://egcp.teecontrol.com/">Boek starttijd</a>
+					</div>
+								</div><!-- .justify-content-between -->
+			</div><!-- .container -->
+		</div><!-- .thsn-header-wrapper -->
+	</div><!-- .thsn-header-height-wrapper -->
+</div>
+					<div data-rocket-location-hash="071e28e36901cdf2b8698a706f4b7ce9" class="thsn-title-bar-wrapper  thsn-bg-color-custom thsn-bg-image-yes">
+		<div class="container">
+			<div class="thsn-title-bar-content">
+				<div class="thsn-title-bar-content-inner">
+					<div class="thsn-tbar"><div class="thsn-tbar-inner container"><h1 class="thsn-tbar-title"> Scorekaart</h1></div></div>					<div class="thsn-breadcrumb"><div class="thsn-breadcrumb-inner"><span><a title="Ga naar ." href="https://www.edesegcpapendal.nl" class="home"><span></span></a></span> &gt; <span><a title="Ga naar Baan." href="https://www.edesegcpapendal.nl/baan/" class="post post-page"><span>Baan</span></a></span> &gt; <span><a title="Ga naar Baaninformatie." href="https://www.edesegcpapendal.nl/baan/baaninformatie/" class="post post-page"><span>Baaninformatie</span></a></span> &gt; <span><span class="post post-page current-item">Scorekaart</span></span></div></div>				</div>
+			</div><!-- .thsn-title-bar-content -->
+		</div><!-- .container -->
+	</div><!-- .thsn-title-bar-wrapper -->
+	</header><!-- #masthead -->
+	<div data-rocket-location-hash="9624a1133caa25134a44584aad9c3756" class="site-content-contain ">
+		<div data-rocket-location-hash="5db533218b83c6cb73295d509b28d67a" class="site-content-wrap">
+			<div id="content" class="site-content container">
+												<div class="thsn-header-search-form-wrapper">
+					<div class="thsn-search-close"><i class="thsn-base-icon-cancel"></i></div>
+										<form role="search" method="get" class="search-form" action="https://www.edesegcpapendal.nl/">
+						<label for="search-form-6ae1a5ca549c4">
+							<span class="screen-reader-text">Search for:</span>
+						</label>
+						<input type="search" id="search-form-6ae1a5ca549c4" class="search-field" placeholder="Voor uw zoekopdracht in en druk op &#039;Enter&#039;" value="" name="s" />
+						<button type="submit" class="search-submit">Zoeken</button>
+					</form>
+				</div><div id="primary" class="content-area ">
+	<main id="main" class="site-main thsn-page-content-wrapper">
+					<div id="post-15442" class="post-15442 page type-page status-publish hentry">
+				<div class="entry-content">
+					<div class="wpb-content-wrapper"><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid thsn-row thsn-bg-color-yes thsn-bg-color-white thsn-zindex-zero thsn-responsive-custom-88373347">
+			<div class="wpb_column vc_column_container vc_col-sm-12 thsn-column thsn-bg-color-yes thsn-bg-color-transparent thsn-zindex-zero">
+	<div class="vc_column-inner ">
+			<div class="wpb_wrapper">
+			<div class="vc_row wpb_row vc_inner vc_row-fluid thsn-row-inner thsn-bg-color-yes thsn-bg-color-transparent thsn-zindex-zero thsn-responsive-custom-62906715 thsn-break-col-991">
+	<div class="wpb_column vc_column_container vc_col-sm-6 thsn-column-inner thsn-bg-color-yes thsn-bg-color-transparent thsn-zindex-zero"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="thsn-ihbox thsn-ihbox-style-hsbox  "><div class="thsn-ihbox-box">
+	<div class="thsn-ihbox-headingicon">
+				<div class="thsn-ihbox-contents">
+			<div class="thsn-ihbox-subheading"><h4 class="vc_custom_heading vc_do_custom_heading">Alles wat u nodig heeft in de baan</h4></div>			<div class="thsn-ihbox-heading"><h2 class="vc_custom_heading vc_do_custom_heading">Scorekaart</h2></div>				
+											</div><!-- .thsn-ihbox-contents -->
+	</div>
+</div></div>
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<p>Scorekaarten zijn gratis op te halen bij het secretariaat of beneden voor de entree van de kleedruimtes. Of klik op de afbeelding voor een vergroting.</p>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 thsn-column-inner thsn-bg-color-yes thsn-bg-color-transparent thsn-zindex-zero"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left wpb_content_element">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-477x1024.jpg" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey"><img decoding="async" width="140" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20300'%3E%3C/svg%3E" class="vc_single_image-img attachment-medium" alt="" title="Scorekaart 2022" data-lazy-srcset="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-140x300.jpg 140w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-scaled-416x893.jpg 416w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-477x1024.jpg 477w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-768x1649.jpg 768w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-715x1536.jpg 715w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-954x2048.jpg 954w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-770x1653.jpg 770w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-scaled.jpg 1192w" data-lazy-sizes="(max-width: 140px) 100vw, 140px" data-id="18046" data-lazy-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-140x300.jpg" /><noscript><img decoding="async" width="140" height="300" src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-140x300.jpg" class="vc_single_image-img attachment-medium" alt="" title="Scorekaart 2022" srcset="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-140x300.jpg 140w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-scaled-416x893.jpg 416w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-477x1024.jpg 477w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-768x1649.jpg 768w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-715x1536.jpg 715w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-954x2048.jpg 954w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-770x1653.jpg 770w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2022/11/Scorekaart-2022-scaled.jpg 1192w" sizes="(max-width: 140px) 100vw, 140px" data-id="18046" /></noscript></a>
+		</figure>
+	</div>
+</div></div></div></div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="vc_row-full-width vc_clearfix"></div>
+</div>					<h3 class="thsn-hide">Scorekaart</h3>
+				</div><!-- .entry-content -->
+			</div><!-- #post-## -->
+							</main><!-- #main -->
+</div><!-- #primary -->
+						</div><!-- #content -->
+		</div><!-- .site-content-main -->
+
+		<footer data-rocket-location-hash="752a5a88acff7d499fa19b7a36e8260b" id="colophon" class="site-footer  thsn-color-white thsn-bg-color-blackish thsn-footer-menu-no thsn-footer-widget-yes">
+									<div class="footer-wrap thsn-footer-widget-area  thsn-bg-color-transparent">
+				<div class="container">
+					<div class="row">
+														<div class="thsn-footer-widget thsn-footer-widget-col-1 col-md-4">
+									<aside id="grulf_contact_widget-1" class="widget-odd widget-last widget-first widget-1 widget grulf_contact_widget"><div class="thsn-contact-widget-lines"><div class="thsn-contact-widget-line thsn-contact-widget-address"><span>Onze Locatie</span><br />
+Papendallaan 22, 6816 VD Arnhem<br />
+<a href="https://www.google.com/maps/place/Edese+Golf+Club+Papendal/@52.009616,5.8255296,17z/data=!3m1!4b1!4m5!3m4!1s0x47c7af45c26663f3:0xb53aba63dc7eec3a!8m2!3d52.009616!4d5.8277183" target="_blank">Route via Google Maps</a></div><div class="thsn-contact-widget-line thsn-contact-widget-phone"><span>Email</span><br><a href="mailto:info@edesegcpapendal.nl">info@edesegcpapendal.nl</a></div><div class="thsn-contact-widget-line thsn-contact-widget-email"><span>Bel ons</span><br><a href="tel:+31264821985">026 - 482 1985</a></div></div></aside>								</div><!-- .thsn-footer-widget -->
+															<div class="thsn-footer-widget thsn-footer-widget-col-2 col-md-4">
+									<aside id="text-5" class="widget-odd widget-last widget-first widget-1 thsn-footer-logo-area widget widget_text">			<div class="textwidget"><p><img decoding="async" class="alignnone wp-image-14971 " src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20130%2078'%3E%3C/svg%3E" alt="" width="130" height="78" data-lazy-srcset="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2021/02/logo-egcp-naam-wit-retina-gold-letters-300x180.png 300w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2021/02/logo-egcp-naam-wit-retina-gold-letters.png 400w" data-lazy-sizes="(max-width: 130px) 100vw, 130px" data-lazy-src="https://edesegcpapendal.nl/wp-content/uploads/2021/02/logo-egcp-naam-wit-retina-gold-letters-300x180.png" /><noscript><img decoding="async" class="alignnone wp-image-14971 " src="https://edesegcpapendal.nl/wp-content/uploads/2021/02/logo-egcp-naam-wit-retina-gold-letters-300x180.png" alt="" width="130" height="78" srcset="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2021/02/logo-egcp-naam-wit-retina-gold-letters-300x180.png 300w, https://g3c3k9f7.delivery.rocketcdn.me/wp-content/uploads/2021/02/logo-egcp-naam-wit-retina-gold-letters.png 400w" sizes="(max-width: 130px) 100vw, 130px" /></noscript><br />
+Open en vriendschappelijk.</p>
+</div>
+		</aside>								</div><!-- .thsn-footer-widget -->
+															<div class="thsn-footer-widget thsn-footer-widget-col-3 col-md-4">
+									<aside id="nav_menu-1" class="widget-odd widget-last widget-first widget-1 thsn-float-menu thsn-arrow-none widget widget_nav_menu"><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-15619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15619"><a href="https://www.edesegcpapendal.nl/baan/baanstatus/">Baanstatus</a></li>
+<li id="menu-item-15620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15620"><a href="https://www.edesegcpapendal.nl/club/lidmaatschap/">Lidmaatschap</a></li>
+<li id="menu-item-15621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15621"><a href="https://www.edesegcpapendal.nl/rules/plaatselijke-regels/">Plaatselijke Regels / Local Rules</a></li>
+<li id="menu-item-15622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15622"><a href="https://www.edesegcpapendal.nl/gasten/greenfee/">Greenfee</a></li>
+<li id="menu-item-15623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15623"><a href="https://www.edesegcpapendal.nl/baan/baaninformatie/handicaptabellen/">Zomer Handicaptabellen</a></li>
+<li id="menu-item-17915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17915"><a href="https://www.edesegcpapendal.nl/golfles/golfschool-papendal/">Golfschool Papendal</a></li>
+<li id="menu-item-15624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15624"><a href="https://www.edesegcpapendal.nl/gasten/restaurant-de-hofmeester/">Restaurant De Hofmeester</a></li>
+<li id="menu-item-15626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15626"><a href="https://www.edesegcpapendal.nl/club/organisatie-historie/">Organisatie &#038; Historie</a></li>
+<li id="menu-item-15627" class="guests-only menu-item menu-item-type-post_type menu-item-object-page menu-item-15627"><a href="https://www.edesegcpapendal.nl/login/">Login leden</a></li>
+<li id="menu-item-15891" class="members-only menu-item menu-item-type-post_type menu-item-object-page menu-item-15891"><a href="https://www.edesegcpapendal.nl/logout/">Uitloggen</a></li>
+</ul></div></aside>								</div><!-- .thsn-footer-widget -->
+												</div><!-- .row -->
+				</div>	
+			</div>
+						<div class="thsn-footer-text-area  thsn-bg-color-custom">
+				<div class="container">
+					<div class="thsn-footer-text-inner">
+						<div class="row">
+															<div class="thsn-footer-copyright col-md-6">
+															<div class="thsn-footer-copyright-text-area">
+									<p>Copyright © 2022 Alle rechten voorbehouden.</p>								</div>
+							</div>
+																								<div class="col-md-6"><ul class="thsn-social-links"><li class="thsn-social-li thsn-social-facebook "><a  href="https://www.facebook.com/EGCPapendal/" target="_blank"><span><i class="thsn-base-icon-facebook-squared"></i></span></a></li><li class="thsn-social-li thsn-social-instagram "><a  href="https://www.instagram.com/edesegcpapendal/" target="_blank"><span><i class="thsn-base-icon-instagram"></i></span></a></li></ul></div>
+																					</div>
+					</div>	
+				</div>
+			</div>
+		</footer><!-- #colophon -->
+	</div><!-- .site-content-contain -->
+</div><!-- #page -->
+<a href="#" class="scroll-to-top"><i class="thsn-base-icon-up-open-big"></i></a>
+
+		<script type="text/rocketlazyloadscript">
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = false;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/grulf-child/*","/wp-content/themes/grulf/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/html" id="wpb-modifications"> window.wpbCustomElement = 1; </script><script type="text/rocketlazyloadscript" async id="tp-tools-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.10"></script>
+<script type="text/rocketlazyloadscript" async id="revmin-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.10"></script>
+<script type="text/rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/leden/|/golfles/inschrijven-ngf-regelexamen-ideal/|/club/lidmaatschap/inschrijven/|/club/lidmaatschap/aanvullende-vragen-lidmaatschap/|/contact/|/club/organisatie-historie/commissies-contactpersonen/|/baan/baanstatus/|/|/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://www.edesegcpapendal.nl","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script type="text/rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,a,c){function l(t,e){if(!a[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(u)return u(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=a[t]={exports:{}},n[t][0].call(r.exports,function(e){return l(n[t][1][e]||e)},r,r.exports,o,n,a,c)}return a[t].exports}for(var u="function"==typeof require&&require,e=0;e<c.length;e++)l(c[e]);return l}({1:[function(e,t,r){{let r="undefined"==typeof rocket_pairs?[]:rocket_pairs,o=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var a=rocket_lazyload_css_data.threshold||300;let n=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&r.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,o.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{n.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:a+"px"});function c(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&r.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(n.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}c(),(()=>{let r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}})()(document.querySelector("body"),c)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+</script>
+<script id="gforms_recaptcha_recaptcha-js-extra">
+var gforms_recaptcha_recaptcha_strings = {"nonce":"f3c00b19ed","disconnect":"Disconnecting","change_connection_type":"Resetting","spinner":"https://www.edesegcpapendal.nl/wp-content/plugins/gravityforms/images/spinner.svg","connection_type":"classic","disable_badge":"1","change_connection_type_title":"Change Connection Type","change_connection_type_message":"Changing the connection type will delete your current settings.  Do you want to proceed?","disconnect_title":"Disconnect","disconnect_message":"Disconnecting from reCAPTCHA will delete your current settings.  Do you want to proceed?","site_key":"6Le7dmQfAAAAAD3EnaZ3jkYyM4g9hSyvgiFzo9n8"};
+//# sourceURL=gforms_recaptcha_recaptcha-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="gforms_recaptcha_recaptcha-js" src="https://www.google.com/recaptcha/api.js?render=6Le7dmQfAAAAAD3EnaZ3jkYyM4g9hSyvgiFzo9n8&#038;ver=2.2.2"></script>
+<script data-wp-strategy="defer" defer id="gforms_recaptcha_frontend-js" src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/gravityformsrecaptcha/js/frontend.min.js?ver=2.2.2"></script>
+<script type="text/rocketlazyloadscript" id="isotope-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/isotope-layout/dist/isotope.pkgd.min.js?ver=7.9" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" id="wpb_composer_front_js-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=7.9" data-rocket-defer defer></script>
+<script id="teecontrol-api-script-js-extra">
+var teecontrol_ajax_obj = {"ajaxurl":"https://www.edesegcpapendal.nl/wp-admin/admin-ajax.php"};
+//# sourceURL=teecontrol-api-script-js-extra
+</script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="teecontrol-api-script-js" data-rocket-src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/plugins/teecontrol/js/teecontrol-api-refresh.js?ver=1792653361" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript"></script>
+		<!-- Cookie Compliance for WordPress (formerly Compliance by Hu-manity.co) plugin v3.1.17 https://cookie-compliance.co/ -->
+		<div data-rocket-location-hash="c9e5c3928fe4212e26cd669385251ac4" id="cookie-notice" role="dialog" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Compliance" style="background-color: rgba(50,50,58,0.94);"><div data-rocket-location-hash="9b80aa5e5b361c98a0aa5fe753acb524" class="cookie-notice-container" style="color: #fff"><span id="cn-notice-text" class="cn-text-container">We gebruiken cookies om ervoor te zorgen dat onze site zo soepel mogelijk draait. Als je doorgaat met het gebruiken van deze site, gaan we er vanuit dat je ermee instemt.</span><span id="cn-notice-buttons" class="cn-buttons-container"><button id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Ok" style="background-color: #d6b664">Ok</button><button data-link-url="https://www.edesegcpapendal.nl/club/privacyverklaring/" data-link-target="_blank" id="cn-more-info" class="cn-more-info cn-button" aria-label="Privacybeleid" style="background-color: #d6b664">Privacybeleid</button></span><button type="button" id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" aria-label="Liever niet" tabindex="0"></button></div>
+			
+		</div>
+		<!-- / Cookie Compliance for WordPress plugin --><script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://g3c3k9f7.delivery.rocketcdn.me/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadImg(id,l){var s='https://i.ytimg.com/vi/ID/hqdefault.jpg'.replace("ID",id),img=document.createElement("img");if(true&&!l&&false){img.setAttribute("loading","lazy");img.setAttribute("src",s);}else if(true&&!l&&!false){img.setAttribute("data-lazy-src",s);}else{img.setAttribute("src",s);}img.setAttribute("width","480");img.setAttribute("height","360");return img;}function lazyLoadThumb(id,alt,l){if(!/^[A-Za-z0-9_-]{11}$/.test(id)){return null;}var frag=document.createDocumentFragment(),img=lazyLoadImg(id,l);img.setAttribute("alt",alt);frag.appendChild(img);var btn=document.createElement("button");btn.setAttribute("class","play");btn.setAttribute("aria-label","Play Youtube video");frag.appendChild(btn);return frag;}function lazyLoadYoutubeIframe(){var src=this.parentNode.dataset.src,url;try{url=new URL(src,"https://www.youtube.com");}catch(err){return;}if("https:"!==url.protocol&&"http:"!==url.protocol){return;}if(["youtube.com","www.youtube.com","youtube-nocookie.com","www.youtube-nocookie.com"].indexOf(url.hostname)===-1){return;}if(url.username||url.password||url.port){return;}if(!/^\/embed\/[A-Za-z0-9_-]{11}\/?$/.test(url.pathname)){return;}url=new URL("https://"+url.hostname+url.pathname.replace(/\/$/,""));var query=this.parentNode.dataset.query||"";new URLSearchParams(query).forEach(function(v,k){url.searchParams.set(k,v);});url.searchParams.set("autoplay","1");var e=document.createElement("iframe");e.setAttribute("src",url.href);e.setAttribute("frameborder","0");e.setAttribute("allowfullscreen","1");e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");this.parentNode.parentNode.replaceChild(e,this.parentNode);}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,frag,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++){u='https://i.ytimg.com/vi/ID/hqdefault.jpg'.replace("ID",a[t].dataset.id);l=exclusions.some(function(exclusion){return u.indexOf(exclusion)!==-1;});e=document.createElement("div");e.setAttribute("data-id",a[t].dataset.id);e.setAttribute("data-query",a[t].dataset.query);e.setAttribute("data-src",a[t].dataset.src);frag=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l);if(!frag){continue;}e.appendChild(frag);a[t].appendChild(e);e.querySelector(".play").onclick=lazyLoadYoutubeIframe;}});</script><script>var rocket_beacon_data = {"ajax_url":"https:\/\/www.edesegcpapendal.nl\/wp-admin\/admin-ajax.php","nonce":"314d53b9ea","url":"https:\/\/www.edesegcpapendal.nl\/baan\/baaninformatie\/scorekaart","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true,"preconnect_external_domain":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800,"preconnect_external_domain_elements":["link","script","iframe"],"preconnect_external_domain_exclusions":["static.cloudflareinsights.com","rel=\"profile\"","rel=\"preconnect\"","rel=\"dns-prefetch\"","rel=\"icon\""]}</script><script data-name="wpr-wpr-beacon" src='https://www.edesegcpapendal.nl/wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

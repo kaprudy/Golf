@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<script type="text/javascript">
+	window._spDefer = {
+		queue: [],
+		ready: false,
+		add: function(fn) {
+			if (this.ready) { fn(); }
+			else { this.queue.push(fn); }
+		},
+		done: function() {
+			this.ready = true;
+			var fns = this.queue;
+			this.queue = [];
+			for (var i = 0; i < fns.length; i++) { fns[i](); }
+		}
+	};
+	</script>
+			<script>window._spDefer.add(function() {
+		(function(d) {
+			var ciCollectedCookies = [];
+			var cookieDesc =
+				Object.getOwnPropertyDescriptor(Document.prototype, 'cookie') ||
+				Object.getOwnPropertyDescriptor(HTMLDocument.prototype, 'cookie');
+
+			var storage = null;
+			function checkStorage() {
+				if (storage === null) {
+					var whitelist = ['__cookie_law__', 'PHPSESSID'];
+					var cookies = JSON.parse(localStorage.getItem('allowedCookies') || '[]');
+					cookies = cookies.map(cookie => {
+						if (cookie.indexOf('*') >= 0) {
+							return new RegExp(cookie.replace('*', '.+'));
+						}
+						return cookie;
+					});
+					storage = [].concat.apply(whitelist, cookies);
+				}
+				return storage;
+			}
+			d.cookieIsAllowed = function (c) {
+				var cookie_law = document.cookie.match(/(?:^|;\ *)__cookie_law__=(\d+)/);
+				if (cookie_law !== null) {
+					cookie_law = parseInt(cookie_law[1]);
+				}
+				// Only if cookie accept enabled
+				if (cookie_law == 2) {
+					var all = checkStorage();
+					for (var idx in all) {
+						if (all[idx] instanceof RegExp && all[idx].test(c)) return true;
+						if (all[idx] === c) return true;
+					}
+				}
+				return false;
+			}
+
+			if (cookieDesc && cookieDesc.configurable) {
+				Object.defineProperty(d, 'cookie', {
+					get: function() {
+						return cookieDesc.get.call(d);
+					},
+					set: function(val) {
+						if (val.indexOf('__cookie_law__') >= 0) {
+							cookieDesc.set.call(d, val);
+							return;
+						}
+
+						var cookie_law = document.cookie.match(/(?:^|;\ *)__cookie_law__=(\d+)/);
+						if (cookie_law !== null) {
+							cookie_law = parseInt(cookie_law[1]);
+						}
+
+						// Only if cookie accept enabled
+						if (cookie_law == 2) {
+							var c = val.split('=')[0];
+							// cookie marked for removal
+							if (val[0] === '!') cookieDesc.set.call(d, val.slice(1));
+							else if (d.cookieIsAllowed(c)) cookieDesc.set.call(d, val);
+						}
+						else if (cookie_law === null && ciCollectedCookies.indexOf(val) < 0) {
+							ciCollectedCookies.push(val);
+						}
+					}
+				});
+
+				var savedFormData = localStorage.getItem('cookieConsentFormDataTmp');
+				if (savedFormData) {
+					localStorage.removeItem('cookieConsentFormDataTmp')
+					savedFormData = JSON.parse(savedFormData);
+					if (savedFormData) {
+						function fillFormsFromData(data) {
+							document.addEventListener("DOMContentLoaded", function() {
+								Object.keys(data).forEach(formId => {
+									var form = document.querySelector('form#' + formId);
+									if (!form) return;
+
+									Object.keys(data[formId]).forEach(name => {
+										var value = data[formId][name];
+
+										form.querySelectorAll('[name="'+CSS.escape(name) + '"]:not([type="hidden"])').forEach(el => {
+											if (el.type === 'checkbox') {
+												if (Array.isArray(value)) el.checked = value.includes(el.value);
+												else el.checked = Boolean(value);
+											} else if (el.type === 'radio') {
+												el.checked = el.value === value;
+											} else el.value = (value === null || value === undefined) ? '' : value;
+										});
+									});
+								});
+							});
+						}
+
+						fillFormsFromData(savedFormData);
+					}
+				}
+			}
+			d.cookieChangedCategories = function (cookieLaw, allowedCookies = []) {
+				if (window.gtag) {
+					var opts = {
+						'ad_storage': !!cookieLaw && (!Array.isArray(allowedCookies) || allowedCookies.indexOf('gtag:ad_storage') >= 0) ? 'granted' : 'denied',
+						'ad_user_data': !!cookieLaw && (!Array.isArray(allowedCookies) || allowedCookies.indexOf('gtag:ad_user_data') >= 0) ? 'granted' : 'denied',
+						'ad_personalization': !!cookieLaw && (!Array.isArray(allowedCookies) || allowedCookies.indexOf('gtag:ad_personalization') >= 0) ? 'granted' : 'denied',
+						'analytics_storage': !!cookieLaw && (!Array.isArray(allowedCookies) || allowedCookies.indexOf('gtag:analytics_storage') >= 0) ? 'granted' : 'denied',
+					};
+					gtag('consent', 'update', opts);
+					if (!!cookieLaw && Array.isArray(allowedCookies) && Object.values(opts).indexOf('granted') >= 0) {
+						allowedCookies = allowedCookies.concat(['DSID','test_cookie','ar_debug','IDE','FPLC','_ga','_gac_*','_gid','_gat*','__utma','__utmb','__utmc','__utmt','__utmz','__utmv','AMP_TOKEN','FPID','GA_OPT_OUT','_ga_*','_dc_gtm_*','_gaexp','_gaexp_rc','_opt_awcid','_opt_awmid','_opt_awgid','_opt_awkid','_opt_utmc']);
+					}
+				}
+				if (Array.isArray(allowedCookies)) {
+					localStorage.setItem('allowedCookies', JSON.stringify(allowedCookies));
+				}
+
+				document.cookie = '__cookie_law__=' + (2) + '; path=/; expires=Thu, 14 Oct 2027 17:06:45 GMT';
+
+				var items = ciCollectedCookies;
+				ciCollectedCookies = [];
+				items.forEach(function (item) {
+					d.cookie = item;
+				})
+			}
+
+			d.consentChanged = function () {
+				function collectAllFormsData() {
+					var result = {};
+
+					document.querySelectorAll('form.wb_form').forEach((form) => {
+						var formId = form.id;
+						result[formId] = {};
+
+						form.querySelectorAll('input:not([type="hidden"]), textarea, select').forEach(el => {
+							if (!el.name) return;
+
+							if (el.type === 'checkbox') {
+								if (!result[formId][el.name]) result[formId][el.name] = [];
+								if (el.checked) result[formId][el.name].push(el.value || true);
+								if (!el.checked && result[formId][el.name].length === 0) result[formId][el.name] = false;
+							} else if (el.type === 'radio') {
+								if (el.checked) result[formId][el.name] = el.value;
+								else if (!(el.name in result[formId])) result[formId][el.name] = null;
+							} else {
+								if (result[formId][el.name]) {
+									if (!Array.isArray(result[formId][el.name])) result[formId][el.name] = [result[formId][el.name]];
+									result[formId][el.name].push(el.value);
+								} else result[formId][el.name] = el.value;
+							}
+						});
+					});
+
+					return result;
+				}
+
+				localStorage.setItem('cookieConsentFormDataTmp', JSON.stringify(collectAllFormsData()));
+
+				document.location.reload();
+			}
+		})(document);
+	});</script>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Scorekaart en handicap</title>
+	<base href="https://www.openbaregolfclubdronten.nl/" />
+	<link rel="canonical" href="https://www.openbaregolfclubdronten.nl/Scorekaart-en-handicap" />
+	
+	
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+					<meta name="description" content="Openbare Golfclub Dronten is een gastvrije en uitdagende 9 holes golfbaan in de Flevopolder" />
+			<meta name="keywords" content="Golfen in Dronten,Openbare Golfclub Dronten,9 holes golfbaan,greenfee,Flevoland,uitdagende golfbaan,Scorekaart en handicap" />
+			
+	<!-- Facebook Open Graph -->
+		<meta property="og:title" content="Scorekaart en handicap" />
+			<meta property="og:description" content="Openbare Golfclub Dronten is een gastvrije en uitdagende 9 holes golfbaan in de Flevopolder" />
+			<meta property="og:image" content="" />
+			<meta property="og:type" content="article" />
+			<meta property="og:url" content="https://www.openbaregolfclubdronten.nl/Scorekaart-en-handicap" />
+		<!-- Facebook Open Graph end -->
+
+		<meta name="generator" content="Site.pro" />
+			<link href="css/common-bundle.css?ts=20261019170644" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700,700i,400i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,latin" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin,latin-ext" rel="stylesheet" type="text/css" />
+	<link href="css/a18a224e74fd08496fd1265ddd4e7fdd-bundle.css?ts=20261019170644" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link rel="icon" href="/gallery/resources-23b267d20c57a3-0db10c305e.PNG" type="image/png" />
+	<script>window._spDefer.add(function() {
+	window.useTrailingSlashes = false;
+	window.disableRightClick = false;
+	window.currLang = 'nl';
+});</script>
+		
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+		<script type="text/javascript">
+		window._spDefer.add(function() {
+			if (window.gtag) {
+				window.gtag('consent', 'default', {
+					'ad_storage': document.cookieIsAllowed('gtag:ad_storage') ? 'granted' : 'denied',
+					'ad_user_data': document.cookieIsAllowed('gtag:ad_user_data') ? 'granted' : 'denied',
+					'ad_personalization': document.cookieIsAllowed('gtag:ad_personalization') ? 'granted' : 'denied',
+					'analytics_storage': document.cookieIsAllowed('gtag:analytics_storage') ? 'granted' : 'denied',
+					'wait_for_update': 500
+				});
+			}
+
+			
+			var cookie_law = document.cookie.match(/(?:^|;\ *)__cookie_law__=(\d+)/);
+			if (cookie_law !== null) {
+				cookie_law = parseInt(cookie_law[1]);
+			}
+			if (cookie_law !== 2 || 0) {
+				var block = $('<div>')
+					.addClass('wb_cookie_policy')
+					.css({
+						backgroundColor: "#000000",
+						minHeight: "0%"					});
+				let policyMessage = $('<div class="policy-message">')
+						.html("<p>Bij akkoord geeft u Openbare Golfclub Dronten toestemming voor het gebruik van cookies <a href=\"https:\/\/cookiesandyou.com\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Learn more<\/a><\/p>\n")
+						.css({
+							color: "#ffffff",
+							fontFamily: "Helvetica,Arial,sans-serif",
+							fontSize: 16						});
+				var btnWrapper = $('<div class="policy-button">');
+
+									policyMessage.appendTo(block);
+					btnWrapper.appendTo(block);
+				
+				var cookiePolicyButtonText = "Allow cookies";
+				var cookiePolicyRejectButtonText = "Afwijzen";
+				var cookiePolicyCustomizeButtonText = "Customize";
+				var cookiePolicyList = [];
+				if (window.gtag) {
+					cookiePolicyList = cookiePolicyList.concat([{"displayName":"Google advertentieopslag","name":"gtag:ad_storage","description":"Staat opslag toe, zoals cookies (web) of apparaat-ID's (apps), gerelateerd aan reclame.","necessary":false},{"displayName":"Google gebruikersgegevens","name":"gtag:ad_user_data","description":"Stelt toestemming in voor het versturen van gebruikersgegevens naar Google voor online advertentiedoeleinden.","necessary":false},{"displayName":"Google-personalisatie","name":"gtag:ad_personalization","description":"Stelt toestemming in voor gepersonaliseerde advertenties.","necessary":false},{"displayName":"Google Analytics opslag","name":"gtag:analytics_storage","description":"Maakt opslag mogelijk, zoals cookies (web) of apparaat-ID\u2019s (apps), die gerelateerd zijn aan analyse, bijvoorbeeld bezoeksduur.","necessary":false}]);
+				}
+				if (cookiePolicyList && cookiePolicyList.length) {
+					var modalHeader = $('<div>').addClass('modal-header')
+						.append(
+							$('<button>').addClass('close').attr('data-dismiss', 'modal').append(
+								$('<i class="ti ti-x wb-close-icon"></i>')
+							)
+						).append(
+							$('<h4>').text(cookiePolicyCustomizeButtonText)
+						);
+					var modalContent = $('<div>').addClass('modal-body').css({maxHeight: '80vh', overflow: 'auto'});
+
+					cookiePolicyList.map(function (cookie) {
+							modalContent.append(
+								$('<div>')
+									.attr('data-cookies', cookie.name)
+									.addClass('checkbox material-switch')
+									.append(
+										$('<input>')
+											.attr('id', 'cookie' + cookie.name)
+											.attr('type', 'checkbox')
+											.attr('value', 1)
+											.attr('checked', true)
+											.attr('name', cookie.name)
+											.attr('disabled', cookie.necessary ? true : null)
+									)
+									.append($('<label>')
+										.attr('for', 'cookie' + cookie.name)
+									)
+									.append(
+										$('<div>')
+											.addClass('text-left material-switch-label')
+											.append(
+												$('<div>')
+													.css({display: 'inline-block', textAlign: 'left'})
+													.append(cookie.name ?
+														$('<b>')
+															.text(cookie.displayName ? cookie.displayName : cookie.name)
+															.append(cookie.necessary ? '<span style="color:red;margin-left:0.5em;font-size:0.7em;vertical-align:super" aria-hidden="true">*</span>' : '')
+														: ''
+													)
+													.append(cookie.description ? $('<p>').addClass('small').html(cookie.description) : '')
+											)
+									)
+							);
+					});
+					var modalFooter = $('<div>').addClass('modal-footer').append(
+						$('<button type="submit" class="btn btn-primary"></button>')
+							.text(cookiePolicyButtonText)
+					);
+					var modal = $('<div>').addClass('modal cookie-policy-modal fade').attr('role', 'dialog').append(
+						$('<div>').addClass('modal-dialog modal-md').attr('role', 'document').append(
+							$('<form id="customCookiesForm">').addClass('modal-content form-horizontal')
+								.append(modalHeader)
+								.append(modalContent)
+								.append(modalFooter)
+								.submit(function (e) {
+									e.preventDefault();
+
+									var names = cookiePolicyList.filter(cookie => cookie.necessary).map(function (field) {
+										return field.name.split(',').map(function (item) { return item.trim(); });
+									}).flat();
+
+									var selectedNames = $(e.target).serializeArray().map(function (field) {
+										if (typeof field.name === 'string') {
+											return field.name.split(',').map(function (item) { return item.trim(); });
+										}
+										return field.name;
+									}).flat();
+
+									if (document.cookieChangedCategories) {
+										document.cookieChangedCategories(1, names.concat(selectedNames));
+									}
+
+									modal.modal('hide');
+									modal.on('hidden.bs.modal', function () {
+										block.remove();
+									});
+
+									document.consentChanged();
+									return false;
+								})
+						)
+					).appendTo('body');
+				}
+
+				if (cookiePolicyRejectButtonText) {
+				$('<button>')
+						.attr({type: 'button'})
+						.css({
+							backgroundColor: "#cccccc",
+							color: "#ffffff",
+							fontFamily: "Helvetica,Arial,sans-serif",
+							fontSize: 16,
+							marginRight: '5px',
+							marginLeft: '5px'
+						})
+						.text(cookiePolicyRejectButtonText)
+						.on('click', function() {
+							if (cookiePolicyList && cookiePolicyList.length && cookiePolicyCustomizeButtonText) {
+								var names = cookiePolicyList.filter(cookie => cookie.necessary).map(function (field) {
+									return field.name.split(',').map(function (item) { return item.trim(); });
+								}).flat();
+								// Save only required cookies
+								if (document.cookieChangedCategories) document.cookieChangedCategories(1, names);
+							} else {
+								// Save no cookies
+								if (document.cookieChangedCategories) document.cookieChangedCategories(0, []);
+							}
+
+							block.remove();
+							document.consentChanged();
+						})
+						.appendTo(btnWrapper);
+				}
+
+				if (cookiePolicyList && cookiePolicyList.length && cookiePolicyCustomizeButtonText) {
+					$('<button>')
+						.attr({type: 'button'})
+						.css({
+							backgroundColor: "#000000",
+							color: "#ffffff",
+							fontFamily: "Helvetica,Arial,sans-serif",
+							fontSize: 16,
+							marginRight: '5px',
+							marginLeft: '5px'
+						})
+						.text(cookiePolicyCustomizeButtonText)
+						.on('click', function () {
+							modal.modal('toggle');
+						})
+						.appendTo(btnWrapper);
+				}
+
+				if (cookiePolicyButtonText) {
+					$('<button>')
+						.attr({type: 'button'})
+						.css({
+							backgroundColor: "#000000",
+							color: "#ffffff",
+							fontFamily: "Helvetica,Arial,sans-serif",
+							fontSize: 16,
+							marginRight: '5px',
+							marginLeft: '5px'
+						})
+						.text(cookiePolicyButtonText)
+						.on('click', function () {
+							if ($('#customCookiesForm').length) {
+								$('#customCookiesForm').submit();
+								return;
+							}
+
+							if (document.cookieChangedCategories) {
+								document.cookieChangedCategories(1, ['*']);
+							}
+
+							block.remove();
+							document.consentChanged();
+						})
+						.appendTo(btnWrapper);
+				}
+
+				$(document.body).append(block);
+
+                if (block.height() >= $(window).height() * 0.4) {
+                    block.addClass('center');
+                }
+			}
+		});
+	</script>
+		<script type="text/javascript">
+		window._spDefer.add(function() {
+});    </script>
+<link href="css/tabler-icons-all/tabler-icons-all-300.min.css" rel="stylesheet" type="text/css" /></head>
+
+
+<body class="site site-lang-nl " ><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18a224e74fd08496fd1265ddd4e7fdd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18a224e16315c878449d4176dff2439" class="wb_element wb-sticky wb-layout-element" data-plugin="LayoutElement" data-h-align="center" data-v-align="top"><div class="wb_content wb-layout-vertical"><div id="a1992e430e2f00dee99aedb45ef4410e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1992f6a410100d25f066cb9b3f07a2b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1992f6a410500d42aacbddae3ccb130" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1992f6a41070041d4b807f6d0066425" class="wb_element" data-plugin="Button"><a class="wb_button" href="https://www.nexxchange.com/golfclub/openbare-golfclub-dronten" target="_blank"><span>Boek hier uw starttijd</span></a></div><div id="a1992f6a410e007f62fd33c408662bfd" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><ul class="hmenu" dir="ltr"><li><a href="https://www.openbaregolfclubdronten.nl/">Welkom</a><ul><li><a href="Activiteiten-en-aanbiedingen">Activiteiten</a></li></ul></li><li><a href="Golfbaan">Golfbaan</a><ul><li><a href="Gasten/Greenfee">Gasten/Greenfee</a></li><li class="wb_this_page_menu_item active"><a href="Scorekaart-en-handicap">Scorekaart en handicap</a></li><li><a href="Baangids-en-local-rules">Baangids en local rules</a></li></ul></li><li><a href="Golfclub">Golfclub</a><ul><li><a href="Lidmaatschappen">Lidmaatschappen</a></li><li><a href="Vrienden-van-de-OGD">Vrienden van de OGD</a></li></ul></li><li><a href="Golfschool">Golfschool</a><ul><li><a>Tarieven en starten met golf</a></li><li><a>Groepstrainingen</a></li></ul></li><li><a href="Contact">Contact</a></li></ul><div class="clearfix"></div></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a18a224e74fd08496fd1265ddd4e7fdd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18a224e1631694f9015aa3ff5d5cba1" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18a224e16316a5f57d25b17c253927f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18a224e16316b3e8db1a2b3677c9275" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18a224e16316cd302be9a40567f4653" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/1ee699504a0d28b8e88d28963e4741f7_fit.png?ts=1792418805"><script>window._spDefer.add(function() {
+					$("#a18a224e16316cd302be9a40567f4653").on("click touchstart touchend touchmove", function(e) {
+						if (e.type === "touchstart") {
+							$(this).data("pswpDisabled", false);
+						} else if (e.type === "touchmove") {
+							$(this).data("pswpDisabled", true);
+						}
+						if ((e.type === "click" || e.type === "touchend") && !$(this).data("pswpDisabled")) {
+							if ($(this).data("clicked")) { return; }
+							$(this).data("clicked", true);
+							var img = new Image();
+							img.onload = function() {
+								var lightBox = new window.PhotoSwipeLightbox({
+									appendToEl: $('.wb_pswp').get(0),
+									bgOpacity: 1,
+									dataSource: [{
+										src: this.src,
+										width: this.width,
+										height: this.height,
+										msrc: this.src
+									}],
+									pswpModule: window.PhotoSwipe,
+									index: 0,
+								});
+								lightBox.init();
+								lightBox.loadAndOpen(0);
+								$("#a18a224e16316cd302be9a40567f4653").data("clicked", false);
+							};
+							img.src = "gallery\/Schermafbeelding 2025-11-23 om 17.22.37.png";
+						}
+					});
+				});</script></div></div></div></div></div><div id="a18a224e16316d7e025469bfbbc591c0" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"></div></div></div></div></div></div><div id="a18a224e16316faf2f9b1bd7ff25887f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18a224e163170b79f21b57418239ca2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18a224e16317136024a3f07f05c348e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18a224e1631729f7683a564e2c0a68e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-custom9" data-dnid="50409">Handicaptabellen</h2>
+
+<p class="wb-stl-custom31" data-dnid="50410"> </p>
+</div><div id="a1992f7657c900625e49ee4d2d55de89" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1992f7657c901a998b53268a0fa3a79" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1992e45381d00f06b256f043e905ee0" class="wb_element" data-plugin="Button"><a class="wb_button" href="gallery/Openbare GC Dronten Dames.pdf" title="Handicaptabellen Dames" target="_blank"><span>Dames</span></a></div></div></div><div id="a1992f7657c90214bb29f6f3ba3cefa4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1992e43ffe60089e4d1f2976b3e7728" class="wb_element" data-plugin="Button"><a class="wb_button" href="gallery/Openbare GC Dronten Heren.pdf" title="Handicaptabellen Heren" target="_blank"><span>Heren</span></a></div></div></div></div></div></div></div></div></div></div></div><div id="a1992ecea253003eae1344a68988a21b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19b984f87560032e8fe58c53ba246a7" class="wb_element" data-plugin="Button"><a class="wb_button" href="Baangids-en-local-rules"><span>Ga hier naar baangids 2026 en local rules</span></a></div></div></div><div id="a1992ed705c0004b8bd975cd1cfdf139" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper" style="overflow: visible; display: flex"><a href="Scorekaart-en-handicap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1793.982 1793.982" style="direction: ltr; color:#f19b47"><text x="129.501415" y="1537.02" font-size="1792" fill="currentColor" style='font-family: "FontAwesome"'></text></svg></a></div></div></div><div id="a1992ecea23400b88506722a57e12341" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1992ecea244009aac8453c24efd9b98" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div></div></div></div></div><div id="wb_footer_a18a224e74fd08496fd1265ddd4e7fdd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="a18a224e163175f6cdc2a116925e6c94" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="a18a224e1631766f504bd60fbeec5440" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+			$(function() {
+				var footer = $(".wb_footer");
+				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
+				if (!html) {
+					footer.parent().remove();
+					footer = $("#footer, #footer .wb_cont_inner");
+					footer.css({height: ""});
+				}
+			});
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261019170644" type="text/javascript" defer></script>
+	<script src="js/a18a224e74fd08496fd1265ddd4e7fdd-bundle.js?ts=20261019170644" type="text/javascript" defer></script>
+<div class="wb_pswp" tabindex="-1" role="dialog" aria-hidden="true">
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        window._spDefer.done();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+<html lang="nl-nl" dir="ltr">
+	<head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8">
+	<meta name="author" content="Super User">
+	<meta name="description" content="Welkom op de website van Golfclub Westerwolde. Onze 9 holes golfbaan ligt midden in het mooie Westerwolde nabij recreatiepark Emslandermeer.">
+	<meta name="generator" content="Helix Ultimate - The Most Popular Joomla! Template Framework.">
+	<title>Handicap tabel en scorekaart</title>
+	<link href="/images/Logo/Logo_GCW_site2.png" rel="icon" type="image/png">
+	<link href="https://www.gcwesterwolde.nl/index.php/component/search/?id=89&amp;Itemid=664&amp;format=opensearch" rel="search" title="Search Golfclub Westerwolde" type="application/opensearchdescription+xml">
+<link href="/modules/mod_latestnewsplusdate/tmpl/assets/style.min.css?136aef" rel="stylesheet">
+	<link href="/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.4.1" rel="stylesheet">
+	<link href="https://www.gcwesterwolde.nl/plugins/content/responsive-tables/responsive-tables.css" rel="stylesheet">
+	<link href="/plugins/system/cookiesck/assets/front.css?ver=3.7.1" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic&amp;display=swap" rel="stylesheet" media="none" onload="media=&quot;all&quot;">
+	<link href="/templates/shaper_helixultimate/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/plugins/system/helixultimate/assets/css/system-j4.min.css" rel="stylesheet">
+	<link href="/media/system/css/joomla-fontawesome.min.css?136aef" rel="stylesheet">
+	<link href="/templates/shaper_helixultimate/css/template.css" rel="stylesheet">
+	<link href="/templates/shaper_helixultimate/css/presets/default.css" rel="stylesheet">
+	<link href="/components/com_jevents/views/ext/assets/css/modstyle.css?v=3.6.102" rel="stylesheet">
+	<link href="/modules/mod_djimageslider/themes/default/css/djimageslider.css" rel="stylesheet">
+	<style>
+			#cookiesck {
+				position:absolute;
+				left:0;
+				right: 0;
+				top: 0;
+				z-index: 1000000;
+				min-height: 30px;
+				color: #eeeeee;
+				background: rgba(0,0,0,0.5);
+				text-align: center;
+				font-size: 14px;
+				line-height: 14px;
+			}
+			#cookiesck_text {
+				padding: 10px 0;
+				display: inline-block;
+			}
+			#cookiesck_buttons {
+				float: right;
+			}
+			.cookiesck_button,
+			#cookiesck_accept,
+			#cookiesck_decline,
+			#cookiesck_settings,
+			#cookiesck_readmore {
+				float:left;
+				padding:10px;
+				margin: 5px;
+				border-radius: 3px;
+				text-decoration: none;
+				cursor: pointer;
+				transition: all 0.2s ease;
+			}
+			#cookiesck_readmore {
+				float:right;
+			}
+			#cookiesck_accept {
+				background: #1176a6;
+				border: 2px solid #1176a6;
+				color: #f5f5f5;
+			}
+			#cookiesck_accept:hover {
+				background: transparent;
+				border: 2px solid darkturquoise;
+				color: darkturquoise;
+			}
+			#cookiesck_decline {
+				background: #000;
+				border: 2px solid #000;
+				color: #f5f5f5;
+			}
+			#cookiesck_decline:hover {
+				background: transparent;
+				border: 2px solid #fff;
+				color: #fff;
+			}
+			#cookiesck_settings {
+				background: #fff;
+				border: 2px solid #fff;
+				color: #000;
+			}
+			#cookiesck_settings:hover {
+				background: transparent;
+				border: 2px solid #fff;
+				color: #fff;
+			}
+			#cookiesck_options {
+				display: none;
+				width: 30px;
+				height: 30px;
+				border-radius: 15px;
+				box-sizing: border-box;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				margin: 10px;
+				border: 1px solid #ccc;
+				cursor: pointer;
+				background: rgba(255,255,255,1) url(/plugins/system/cookiesck/assets/cookies-icon.svg) center center no-repeat;
+				background-size: 80% auto;
+				z-index: 1000000;
+			}
+			#cookiesck_options > .inner {
+				display: none;
+				width: max-content;
+				margin-top: -40px;
+				background: rgba(0,0,0,0.7);
+				position: absolute;
+				font-size: 14px;
+				color: #fff;
+				padding: 4px 7px;
+				border-radius: 3px;
+			}
+			#cookiesck_options:hover > .inner {
+				display: block;
+			}
+			#cookiesck > div {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				flex-direction: column;
+			}
+			
+			
+			.cookiesck-iframe-wrap-text {
+				position: absolute;
+				width: 100%;
+				padding: 10px;
+				color: #fff;
+				top: 50%;
+				transform: translate(0,-60%);
+				text-align: center;
+			}
+			.cookiesck-iframe-wrap:hover .cookiesck-iframe-wrap-text {
+				color: #333;
+			}
+			.cookiesck-iframe-wrap-allowed .cookiesck-iframe-wrap-text {
+				display: none;
+			}
+
+		</style>
+	<style>body{font-family: 'Open Sans', sans-serif;font-size: 14px;text-decoration: none;}
+</style>
+	<style>h1{font-family: 'Open Sans', sans-serif;font-size: 14px;font-weight: 500;color: #1e8302;text-decoration: none;}
+</style>
+	<style>h2{font-family: 'Open Sans', sans-serif;font-size: 14px;text-decoration: none;}
+</style>
+	<style>h3{font-family: 'Open Sans', sans-serif;font-size: 14px;font-weight: 500;text-decoration: none;text-align: left;}
+</style>
+	<style>.sp-megamenu-parent > li > a, .sp-megamenu-parent > li > span, .sp-megamenu-parent .sp-dropdown li.sp-menu-item > a{font-family: 'Open Sans', sans-serif;font-weight: 500;text-decoration: none;text-align: left;}
+</style>
+	<style>.menu.nav-pills > li > a, .menu.nav-pills > li > span, .menu.nav-pills .sp-dropdown li.sp-menu-item > a{font-family: 'Open Sans', sans-serif;font-weight: 500;text-decoration: none;text-align: left;}
+</style>
+	<style>.logo-image {height:80px;}.logo-image-phone {height:80px;}</style>
+	<style>@media(max-width: 992px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}</style>
+	<style>@media(max-width: 576px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}</style>
+<script src="/media/vendor/jquery/js/jquery.min.js?3.7.1"></script>
+	<script src="/media/legacy/js/jquery-noconflict.min.js?504da4"></script>
+	<script src="/media/mod_menu/js/menu.min.js?136aef" type="module"></script>
+	<script type="application/json" class="joomla-script-options new">{"data":{"breakpoints":{"tablet":991,"mobile":480},"header":{"stickyOffset":"100"}},"joomla.jtext":{"ERROR":"Fout","MESSAGE":"Bericht","NOTICE":"Attentie","WARNING":"Waarschuwing","JCLOSE":"Sluiten","JOK":"Ok","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https:\/\/www.gcwesterwolde.nl\/","base":"","baseFull":"https:\/\/www.gcwesterwolde.nl\/"},"csrf.token":"1658342f52c15152b1c2b92305fa60fc"}</script>
+	<script src="/media/system/js/core.min.js?a3d8f8"></script>
+	<script src="/media/vendor/bootstrap/js/alert.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/button.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/carousel.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/collapse.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/dropdown.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/modal.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/offcanvas.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/popover.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/scrollspy.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/tab.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/toast.min.js?5.3.8" type="module"></script>
+	<script src="/media/system/js/showon.min.js?e51227" type="module"></script>
+	<script src="/media/system/js/messages.min.js?9a4811" type="module"></script>
+	<script src="/plugins/system/cookiesck/assets/front.js?ver=3.7.1"></script>
+	<script src="/templates/shaper_helixultimate/js/inert.min.js"></script>
+	<script src="/templates/shaper_helixultimate/js/main.js"></script>
+	<script src="/modules/mod_jevents_cal/tmpl/default/assets/js/calnav.min.js?v=3.6.102"></script>
+	<script src="/media/djextensions/jquery-easing-1.4.1/jquery.easing.min.js"></script>
+	<script src="/modules/mod_djimageslider/assets/js/slider.js?v=4.6.4"></script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.gcwesterwolde.nl/#/schema/Organization/base","name":"Golfclub Westerwolde","url":"https://www.gcwesterwolde.nl/"},{"@type":"WebSite","@id":"https://www.gcwesterwolde.nl/#/schema/WebSite/base","url":"https://www.gcwesterwolde.nl/","name":"Golfclub Westerwolde","publisher":{"@id":"https://www.gcwesterwolde.nl/#/schema/Organization/base"}},{"@type":"WebPage","@id":"https://www.gcwesterwolde.nl/#/schema/WebPage/base","url":"https://www.gcwesterwolde.nl/index.php/de-baan/handicap-tabel-en-scorekaart","name":"Handicap tabel en scorekaart","description":"Welkom op de website van Golfclub Westerwolde. Onze 9 holes golfbaan ligt midden in het mooie Westerwolde nabij recreatiepark Emslandermeer.","isPartOf":{"@id":"https://www.gcwesterwolde.nl/#/schema/WebSite/base"},"about":{"@id":"https://www.gcwesterwolde.nl/#/schema/Organization/base"},"inLanguage":"nl-NL"},{"@type":"Article","@id":"https://www.gcwesterwolde.nl/#/schema/com_content/article/89","name":"Handicap tabel en scorekaart","headline":"Handicap tabel en scorekaart","inLanguage":"nl-NL","isPartOf":{"@id":"https://www.gcwesterwolde.nl/#/schema/WebPage/base"}}]}</script>
+	<script>
+var COOKIESCK = {
+	ALLOWED : ["cookiesck","cookiesckiframes","cookiesckuniquekey","jform_captchacookie","ba37f85ea8dd974eb712bdcab706cf64"]
+	, VALUE : 'yes'
+	, UNIQUE_KEY : '88b5605b1d5db40d85a03e4f02aa256b'
+	, LOG : '0'
+	, LIST : '{}'
+	, LIFETIME : '365'
+	, DEBUG : '0'
+	, TEXT : {
+		INFO : 'By visiting our website you agree that we are using cookies to ensure you to get the best experience.'
+		, ACCEPT_ALL : 'Accept all'
+		, ACCEPT_ALL : 'Accept all'
+		, DECLINE_ALL : 'Decline all'
+		, SETTINGS : 'Customize'
+		, OPTIONS : 'Cookies options'
+		, CONFIRM_IFRAMES : 'Please confirm that you want to enable the iframes'
+	}
+};
+console.log("COOKIES CK MESSAGE : The list of cookies is empty. Please check the documentation");jQuery(document).ready(function(){ckInitCookiesckIframes();});</script>
+	<script>template="shaper_helixultimate";</script>
+	<script>function setupSpecificNavigation()
+{
+	setupMiniCalTouchInteractions(".extcal_weekdays", true);
+}</script>
+			</head>
+	<body class="site helix-ultimate hu com_content com-content view-article layout-default task-none itemid-664 nl-nl ltr sticky-header layout-fluid offcanvas-init offcanvs-position-right">
+
+		
+		
+		<div class="body-wrapper">
+			<div class="body-innerwrapper">
+				
+	<div class="sticky-header-placeholder"></div>
+
+<div id="sp-top-bar">
+	<div class="container">
+		<div class="container-inner">
+			<div class="row">
+				<div id="sp-top1" class="col-lg-6">
+					<div class="sp-column text-center text-lg-start">
+													<ul class="social-icons"><li class="social-icon-facebook"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100090542033153" aria-label="Facebook"><span class="fab fa-facebook" aria-hidden="true"></span></a></li><li class="social-icon-instagram"><a target="_blank" rel="noopener noreferrer" href="https://instagram.com/golfclubwesterwolde?igshid=YmMyMTA2M2Y=" aria-label="Instagram"><span class="fab fa-instagram" aria-hidden="true"></span></a></li></ul>						
+												
+					</div>
+				</div>
+
+				<div id="sp-top2" class="col-lg-6">
+					<div class="sp-column text-center text-lg-end">
+						
+													<ul class="sp-contact-info"><li class="sp-contact-email"><span class="far fa-envelope" aria-hidden="true"></span> <a href="mailto:secretaris@gcwesterwolde.nl">secretaris@gcwesterwolde.nl</a></li></ul>												
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header id="sp-header">
+	<div class="container">
+		<div class="container-inner">
+			<div class="row align-items-center">
+
+				<!-- Left toggler if left/offcanvas -->
+				
+				<!-- Logo -->
+				<div id="sp-logo" class="col-auto">
+					<div class="sp-column">
+						<div class="logo"><a href="/">
+				<img class='logo-image  d-none d-lg-inline-block'
+					srcset='https://www.gcwesterwolde.nl/images/Logo/Logo_GCW_site.png 1x, https://www.gcwesterwolde.nl/images/Logo/Logo_GCW_site2.png 2x'
+					src='https://www.gcwesterwolde.nl/images/Logo/Logo_GCW_site.png'
+					height='80'
+					alt='Golfclub Westerwolde'
+				/>
+				<img class="logo-image-phone d-inline-block d-lg-none" src="https://www.gcwesterwolde.nl/images/Logo/Logo_GCW_site2.png" alt="Golfclub Westerwolde" /></a></div>						
+					</div>
+				</div>
+
+				<!-- Menu -->
+				<div id="sp-menu" class="col-auto flex-auto">
+					<div class="sp-column d-flex justify-content-end align-items-center">
+						<nav class="sp-megamenu-wrapper d-flex" role="navigation" aria-label="Main Navigation"><ul class="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li class="sp-menu-item sp-has-child"><a   href="/index.php"  >Golfclub Westerwolde</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item sp-has-child"><a   href="/index.php/golfclub-westerwolde/de-club"  >De club</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a   href="/index.php/golfclub-westerwolde/de-club/bestuur"  >Bestuur</a></li><li class="sp-menu-item"><a   href="/index.php/golfclub-westerwolde/de-club/commissies"  >Commissies</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a   href="/index.php/golfclub-westerwolde/kennis-maken-met-golf"  >Kennis maken met golf</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a   href="/index.php/golfclub-westerwolde/kennis-maken-met-golf/golfclinic-arrangementen"  >Golfclinic arrangementen</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a   href="/index.php/golfclub-westerwolde/faciliteiten"  >Faciliteiten</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a   href="/index.php/golfclub-westerwolde/faciliteiten/handicarts"  >Handicarts</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a   href="/index.php/golfclub-westerwolde/lidmaatschap"  >Lidmaatschap</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a   href="/index.php/golfclub-westerwolde/lidmaatschap/aanmeldformulier"  >Aanmeldformulier</a></li></ul></div></div></li></ul></div></div></li><li class="sp-menu-item sp-has-child active"><a   href="/index.php/de-baan"  >De baan</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a   href="/index.php/de-baan/baanstatus"  >Baanstatus</a></li><li class="sp-menu-item current-item active"><a aria-current="page"  href="/index.php/de-baan/handicap-tabel-en-scorekaart"  >Handicap tabel en scorekaart</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a   href="/index.php/golfpro"  >Golfpro</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a   href="/index.php/golfpro/golfles"  >Golfles</a></li><li class="sp-menu-item"><a   href="/index.php/golfpro/tarieven-golflessen"  >Tarieven golflessen</a></li><li class="sp-menu-item"><a   href="/index.php/golfpro/les-boeken"  >Les boeken</a></li><li class="sp-menu-item"><a   href="/index.php/golfpro/groepslessen"  >Groepslessen</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a   href="/index.php/greenfee"  >Greenfee</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a   href="/index.php/greenfee/hospitality"  >Hospitality</a></li></ul></div></div></li><li class="sp-menu-item"><a   href="/index.php/zakelijk"  >Zakelijk</a></li><li class="sp-menu-item sp-has-child"><a   href="/index.php/login"  >Login</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a  rel="noopener noreferrer" href="https://www.nexxchange.com/golfclub/golfclub-westerwolde" target="_blank"  >Login NexxChange</a></li><li class="sp-menu-item"><a   href="/index.php/login/handleiding-nexxchange"  >Handleiding NexxChange</a></li></ul></div></div></li><li class="sp-menu-item"><a   href="/index.php/leden"  >Leden</a></li></ul></nav>						
+
+						<!-- Related Modules -->
+						<div class="d-none d-lg-flex header-modules align-items-center">
+							
+													</div>
+
+						<!-- Right toggler  -->
+													
+  <a id="offcanvas-toggler"
+     class="offcanvas-toggler-secondary offcanvas-toggler-right d-flex align-items-center"
+     href="#"
+     aria-label="Menu"
+     title="Menu">
+     <div class="burger-icon" aria-hidden="true"><span></span><span></span><span></span></div>
+  </a>											</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+				<main id="sp-main">
+					
+<section id="sp-section-1" >
+
+				
+	
+<div class="row">
+	<div id="sp-title" class="col-lg-12 "><div class="sp-column "></div></div></div>
+				
+	</section>
+
+<section id="sp-main-body" >
+
+										<div class="container">
+					<div class="container-inner">
+						
+	
+<div class="row">
+	
+<div id="sp-component" class="col-lg-8 ">
+	<div class="sp-column ">
+		<div id="system-message-container" aria-live="polite"></div>
+
+
+		
+		<div class="article-details " itemscope itemtype="https://schema.org/Article">
+    <meta itemprop="inLanguage" content="nl-NL">
+
+    
+    
+    
+    
+            <div class="article-header">
+                            <h1 itemprop="headline">
+                    Handicap tabel en scorekaart                </h1>
+            
+            
+            
+                    </div>
+    
+    <div class="article-can-edit d-flex flex-wrap justify-content-between">
+                
+            </div>
+
+    
+        
+                
+    
+        
+        
+        
+        <div itemprop="articleBody">
+            <p><span style="font-size: 12pt;"><img src="/images/foto/Overzicht_baan.jpg" alt="" width="548" height="411" loading="lazy" data-path="local-images:/foto/Overzicht_baan.jpg" /></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;">Hieronder vindt u de handicaptabellen, afstandentabel voor de Westerwoldebaan en de scorekaart.</span></p>
+<p><span style="font-size: 12pt;"><strong>Handicap tabellen</strong></span></p>
+<p><span style="font-size: 12pt;"><a href="/images/tabel_scorekaart/Westerwolde-WHS-tabel-Dames-9.png" target="_blank" title="Handicap tabel dames 9 holes">Handicaptabel dames 9 holes</a></span></p>
+<p><span style="font-size: 12pt;"><a href="/images/tabel_scorekaart/Westerwolde-WHS-tabel-Dames-18.png" target="_blank" title="Handicap tabel dames 18 holes">Handicaptabel dames 18 holes</a></span></p>
+<p><span style="font-size: 12pt;"><a href="/images/tabel_scorekaart/Westerwolde-WHS-tabel-Heren-9.png" target="_blank" title="Handicap tabel heren 9 holes">Handicaptabel heren 9 holes</a></span></p>
+<p><span style="font-size: 12pt;"><a href="/images/tabel_scorekaart/Westerwolde-WHS-tabel-Heren-18.png" target="_blank" title="Handicap tabel heren 18 holes">Handicaptabel heren 18 holes</a></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"><strong>Afstand tabel</strong></span></p>
+<p><span style="font-size: 12pt;"><a href="/images/tabel_scorekaart/Westerwolde-afstand-tabel.pdf" target="_blank" title="Afstand tabel">Afstandtabel</a></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"><strong>Scorekaart</strong></span></p>
+<p><span style="font-size: 12pt;"><a href="/images/tabel_scorekaart/Scorekaart.pdf" target="_blank" title="Scorekaart">Scorekaart</a></span></p>         </div>
+
+        
+        
+        
+    
+
+        
+    
+
+   
+                </div>
+
+
+
+			</div>
+</div>
+<aside id="sp-right" class="col-lg-4 "><div class="sp-column "><div class="sp-module "><h3 class="sp-module-title">Laatste nieuws</h3><div class="sp-module-content"><ul class="lnpd_item_wrapper">
+			<li class="lnpd_item_without_intro" itemscope itemtype="https://schema.org/Article">
+			<span class="lnpd_item_date">
+							</span>
+			<a href="/index.php/de-baan/handicap-tabel-en-scorekaart?view=article&amp;id=311:theo-panneman-nuver-golfer-van-het-jaar-2026&amp;catid=89" itemprop="url" class="lnpd_item_title"><span itemprop="name">Theo Panneman Nuver Golfer van het Jaar 2026</span></a>	
+			</li>
+
+					<li class="lnpd_item_without_intro" itemscope itemtype="https://schema.org/Article">
+			<span class="lnpd_item_date">
+							</span>
+			<a href="/index.php/de-baan/handicap-tabel-en-scorekaart?view=article&amp;id=310:jan-bults-en-harry-kroeze-winnaars-maandbeker-2026&amp;catid=89" itemprop="url" class="lnpd_item_title"><span itemprop="name">Jan Bults en Harry Kroeze winnaars maandbeker 2026</span></a>	
+			</li>
+
+					<li class="lnpd_item_without_intro" itemscope itemtype="https://schema.org/Article">
+			<span class="lnpd_item_date">
+							</span>
+			<a href="/index.php/de-baan/handicap-tabel-en-scorekaart?view=article&amp;id=304:gerke-panneman-prolongeert-titel-strokeplay&amp;catid=89" itemprop="url" class="lnpd_item_title"><span itemprop="name">Gerke Panneman prolongeert titel strokeplay</span></a>	
+			</li>
+
+					<li class="lnpd_item_without_intro" itemscope itemtype="https://schema.org/Article">
+			<span class="lnpd_item_date">
+							</span>
+			<a href="/index.php/de-baan/handicap-tabel-en-scorekaart?view=article&amp;id=291:nuver-golfer-van-het-jaar-2026&amp;catid=89" itemprop="url" class="lnpd_item_title"><span itemprop="name">Nuver Golfer van het Jaar 2026</span></a>	
+			</li>
+
+		</ul>
+</div></div><div class="sp-module "><h3 class="sp-module-title">Kalender</h3><div class="sp-module-content"><div style="margin:0px;padding:0px;border-width:0px;"><span id='testspan143' style='display:none'></span>
+<div id="extcal_minical">
+	<table cellspacing="1" cellpadding="0" style="width:100%; text-align:center;border: 1px solid rgb(190, 194, 195); background-color: rgb(255, 255, 255);">
+		<tr>
+			<td style="vertical-align: top;">
+				<table style="width:100%;" cellspacing="0" cellpadding="2" border="0" class="extcal_navbar">
+					<tr>
+						<td valign="middle" height="18" align="center">
+							<img border="0" title="Vorige maand" alt="Vorige maand" class="mod_events_link" src="/components/com_jevents/views/ext/assets/images/mini_arrowleft.gif" onmousedown="callNavigation('https://www.gcwesterwolde.nl/index.php?option=com_jevents&amp;task=modcal.ajax&amp;day=1&amp;month=9&amp;year=2026&amp;modid=143&amp;tmpl=component');" ontouchstart="callNavigation('https://www.gcwesterwolde.nl/index.php?option=com_jevents&amp;task=modcal.ajax&amp;day=1&amp;month=9&amp;year=2026&amp;modid=143&amp;tmpl=component');" />
+                		</td>
+		                <td width="98%" valign="middle" nowrap="nowrap" height="18" align="center" class="extcal_month_label">
+							<a href="/index.php/component/jevents/maandkalender/2026/10/-?Itemid=564" style = "text-decoration:none;color:inherit;">Oktober 2026</a>
+		                </td>
+						<td valign="middle" height="18" align="center" style="margin: 0 auto; min-width: 4px;">
+		                    <img border="0" title="Volgende maand" alt="Volgende maand" class="mod_events_link" src="/components/com_jevents/views/ext/assets/images/mini_arrowright.gif" onmousedown="callNavigation('https://www.gcwesterwolde.nl/index.php?option=com_jevents&amp;task=modcal.ajax&amp;day=1&amp;month=11&amp;year=2026&amp;modid=143&amp;tmpl=component');"  ontouchstart="callNavigation('https://www.gcwesterwolde.nl/index.php?option=com_jevents&amp;task=modcal.ajax&amp;day=1&amp;month=11&amp;year=2026&amp;modid=143&amp;tmpl=component');"/>
+                		</td>
+					</tr>
+				</table>				<table style="width:100%;height:auto; " class="extcal_weekdays"><tr>
+<td/>
+<td  class='extcal_weekdays'>M</td>
+<td  class='extcal_weekdays'>D</td>
+<td  class='extcal_weekdays'>W</td>
+<td  class='extcal_weekdays'>D</td>
+<td  class='extcal_weekdays'>V</td>
+<td  class='extcal_weekdays'><span class="saturday">Z</span></td>
+<td  class='extcal_weekdays'><span class="sunday">Z</span></td>
+</tr>
+<tr style='height:auto;'>
+<td class="extcal_weekcell"><a href="/index.php/component/jevents/evenementenperweek/2026/9/28/-?Itemid=564"><img width='5' height='20' border='0' alt='week 40' src='/components/com_jevents/views/ext/assets/images/icon-mini-week.gif'/></a></td>
+<td class='extcal_othermonth'/>
+<td class='extcal_othermonth'/>
+<td class='extcal_othermonth'/>
+<td class='extcal_daycell'>
+1</td>
+<td class='extcal_daycell'>
+2</td>
+<td class='extcal_daycell'>
+3</td>
+<td class='extcal_sundaycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/4/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">4</a></td>
+</tr>
+<tr style='height:auto;'>
+<td class="extcal_weekcell"><a href="/index.php/component/jevents/evenementenperweek/2026/10/5/-?Itemid=564"><img width='5' height='20' border='0' alt='week 41' src='/components/com_jevents/views/ext/assets/images/icon-mini-week.gif'/></a></td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/5/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">5</a></td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/6/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">6</a></td>
+<td class='extcal_daycell'>
+7</td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/8/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">8</a></td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/9/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">9</a></td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/10/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">10</a></td>
+<td class='extcal_sundaycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/11/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">11</a></td>
+</tr>
+<tr style='height:auto;'>
+<td class="extcal_weekcell"><a href="/index.php/component/jevents/evenementenperweek/2026/10/12/-?Itemid=564"><img width='5' height='20' border='0' alt='week 42' src='/components/com_jevents/views/ext/assets/images/icon-mini-week.gif'/></a></td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/12/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">12</a></td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/13/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">13</a></td>
+<td class='extcal_daycell'>
+14</td>
+<td class='extcal_daycell'>
+15</td>
+<td class='extcal_daycell'>
+16</td>
+<td class='extcal_daycell'>
+17</td>
+<td class='extcal_sundaycell'>
+18</td>
+</tr>
+<tr style='height:auto;'>
+<td class="extcal_weekcell"><a href="/index.php/component/jevents/evenementenperweek/2026/10/19/-?Itemid=564"><img width='5' height='20' border='0' alt='week 43' src='/components/com_jevents/views/ext/assets/images/icon-mini-week.gif'/></a></td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/19/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">19</a></td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/20/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">20</a></td>
+<td class='extcal_daycell'>
+21</td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/22/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">22</a></td>
+<td class='extcal_daycell'>
+23</td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/24/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">24</a></td>
+<td class='extcal_sundaycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/25/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">25</a></td>
+</tr>
+<tr style='height:auto;'>
+<td class="extcal_weekcell"><a href="/index.php/component/jevents/evenementenperweek/2026/10/26/-?Itemid=564"><img width='5' height='20' border='0' alt='week 44' src='/components/com_jevents/views/ext/assets/images/icon-mini-week.gif'/></a></td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/26/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">26</a></td>
+<td class='extcal_daycell'>
+<a href="/index.php/component/jevents/evenementenperdag/2026/10/27/-?Itemid=564" class = "extcal_busylink" title = "Ga naar kalender - vandaag">27</a></td>
+<td class='extcal_todaycell'>
+28</td>
+<td class='extcal_daycell'>
+29</td>
+<td class='extcal_daycell'>
+30</td>
+<td class='extcal_daycell'>
+31</td>
+<td class='extcal_othermonth'/>
+</tr>
+</table>
+</td></tr></table></div>
+<script style='text/javascript'>xyz=1;linkprevious = 'https://www.gcwesterwolde.nl/index.php?option=com_jevents&amp;task=modcal.ajax&amp;day=1&amp;month=9&amp;year=2026&amp;modid=143&amp;tmpl=component';
+linknext = 'https://www.gcwesterwolde.nl/index.php?option=com_jevents&amp;task=modcal.ajax&amp;day=1&amp;month=11&amp;year=2026&amp;modid=143&amp;tmpl=component';
+zyx=1;</script></div></div></div><div class="sp-module "><h3 class="sp-module-title">Sponsoren</h3><div class="sp-module-content">
+
+<div style="border: 0px !important;">
+    <div id="djslider-loader150" class="djslider-loader djslider-loader-default" data-animation='{"auto":"1","looponce":"0","transition":"linear","css3transition":"linear","duration":"1000","delay":4000}' data-djslider='{"id":150,"slider_type":"0","slide_size":330,"visible_slides":"1","direction":"left","show_buttons":"0","show_arrows":"0","preload":"800","css3":"1"}' tabindex="0">
+        <div id="djslider150" class="djslider djslider-default" style="height: 240px; width: 320px; max-width: 320px !important;">
+            <div id="slider-container150" class="slider-container" >
+                <ul id="slider150" class="djslider-in">
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="http://www.zijlstraschilders.nl/" target="_blank">
+                                                                <img class="dj-image" src="/images/sponsoren/Dick_Zijlstra_Meesterschilders.jpg" alt="Zijlstra meesterschilders"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="https://www.mssbetonvloeren.nl/" target="_blank">
+                                                                <img class="dj-image" src="/images/sponsoren/MSS betonvloeren.jpg#joomlaImage://local-images/sponsoren/MSS betonvloeren.jpg?width=4429&height=1772" alt="MSS betonvloeren"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="https://bakkeragri-works.nl/" target="_blank">
+                                                                <img class="dj-image" src="/images/sponsoren/Bakker_Agri-Works_logo.png#joomlaImage://local-images/sponsoren/Bakker_Agri-Works_logo.png?width=300&height=130" alt="Bakker Agri-Works"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="https://www.fit20.com/nl/studios/winschoten/contact" target="_blank">
+                                                                <img class="dj-image" src="/images/sponsoren/Beeldend%20Media%20-%20Golfclub%20Westerwolde%20-%20fit20%20Winschoten.jpg#joomlaImage://local-images/sponsoren/Beeldend Media - Golfclub Westerwolde - fit20 Winschoten.jpg?width=2126&height=850" alt="Fit20"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="http://www.beeldendmedia.nl" target="_blank">
+                                                                <img class="dj-image" src="/images/banners/beeldend media.png" alt="Beeldend Media"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="https://www.slagerijwiebrands.nl" target="_blank">
+                                                                <img class="dj-image" src="/images/banners/slagerij wiebrands.png" alt="Slagerij Wiebrands"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="https://autohuis-bouwsema.nl/" target="_blank">
+                                                                <img class="dj-image" src="/images/sponsoren/bouwsema_veendam_delfzijl.png" alt="Volvo Bouwsema Veendam Delfzijl"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="https://www.sportplazavlagtwedde.nl/" target="_blank">
+                                                                <img class="dj-image" src="/images/sponsoren/Logo%20PistaPadel.png#joomlaImage://local-images/sponsoren/Logo PistaPadel.png?width=3379&height=2053" alt="Pista Padel"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="http://www.bijthijs.com" target="_blank">
+                                                                <img class="dj-image" src="/images/sponsoren/BijThijs.jpg" alt="BijThijs uw drankenspeciaalzaak"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="https://www.ecothermvloerverwarming.nl" target="_blank">
+                                                                <img class="dj-image" src="/images/banners/Ecotherm_Vloerverwarming.png" alt="Ecotherm Vloerverwarming"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a  href="https://www.dijkhoveniers.nl" target="_blank">
+                                                                <img class="dj-image" src="/images/sponsoren/dijk_hoveniersbedrijf.png" alt="Dijk hoveniersbedrijf"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                            <li style="margin: 0 10px 0px 0 !important; height: 240px; width: 320px;">
+                                                                                                <a rel="bookmark" href="https://winkels.hema.nl/hema-winschoten-a5665185436f" target="_blank">
+                                                                <img class="dj-image" src="/images/sponsoren/HEMA_Winschoten.jpg" alt="Hema Winschoten"  style="width: 100%; height: auto;"/>
+                                                                    </a>
+                                                                                        
+                        </li>
+                                    </ul>
+            </div>
+                                </div>
+    </div>
+</div>
+<div class="djslider-end" style="clear: both" tabindex="0"></div></div></div></div></aside></div>
+											</div>
+				</div>
+						
+	</section>
+
+<footer id="sp-footer" >
+
+						<div class="container">
+				<div class="container-inner">
+			
+	
+<div class="row">
+	<div id="sp-footer1" class="col-lg-12 "><div class="sp-column "><span class="sp-copyright">© 2026 Golfclub Westerwolde - <A href=https://gcwesterwolde.nl/images/algemeen/privacy/Privacyverklaring_GCWesterwolde_2026.pdf>privacy</a> -</span></div></div></div>
+							</div>
+			</div>
+			
+	</footer>
+				</main>
+			</div>
+		</div>
+
+		<!-- Off Canvas Menu -->
+		<div class="offcanvas-overlay"></div>
+		<!-- Rendering the offcanvas style -->
+		<!-- If canvas style selected then render the style -->
+		<!-- otherwise (for old templates) attach the offcanvas module position -->
+					<div class="offcanvas-menu left-1 offcanvas-arrow-right" tabindex="-1" inert>
+	<div class="d-flex align-items-center justify-content-between p-3 pt-4">
+				<a href="#" class="close-offcanvas" role="button" aria-label="Close Off-canvas">
+			<div class="burger-icon" aria-hidden="true">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</a>
+	</div>
+	
+	<div class="offcanvas-inner">
+		<div class="d-flex header-modules mb-3">
+			
+					</div>
+		
+					<div class="sp-module "><h3 class="sp-module-title">Search</h3><div class="sp-module-content"><div class="search">
+	<form action="/index.php/de-baan/handicap-tabel-en-scorekaart" method="post">
+		<label for="mod-search-searchword35" class="hide-label">Search ...</label> <input name="searchword" id="mod-search-searchword35" class="form-control" type="search" placeholder="Search ...">		<input type="hidden" name="task" value="search">
+		<input type="hidden" name="option" value="com_search">
+		<input type="hidden" name="Itemid" value="664">
+	</form>
+</div>
+</div></div><div class="sp-module "><div class="sp-module-content"><ul class="mod-menu mod-list menu">
+<li class="item-564 default menu-deeper menu-parent"><a href="/index.php" >Golfclub Westerwolde</a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-640 menu-deeper menu-parent"><a href="/index.php/golfclub-westerwolde/de-club" >De club</a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-661"><a href="/index.php/golfclub-westerwolde/de-club/bestuur" >Bestuur</a></li><li class="item-662"><a href="/index.php/golfclub-westerwolde/de-club/commissies" >Commissies</a></li></ul></li><li class="item-665 menu-deeper menu-parent"><a href="/index.php/golfclub-westerwolde/kennis-maken-met-golf" >Kennis maken met golf</a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-1690"><a href="/index.php/golfclub-westerwolde/kennis-maken-met-golf/golfclinic-arrangementen" >Golfclinic arrangementen</a></li></ul></li><li class="item-660 menu-deeper menu-parent"><a href="/index.php/golfclub-westerwolde/faciliteiten" >Faciliteiten</a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-921"><a href="/index.php/golfclub-westerwolde/faciliteiten/handicarts" >Handicarts</a></li></ul></li><li class="item-638 menu-deeper menu-parent"><a href="/index.php/golfclub-westerwolde/lidmaatschap" >Lidmaatschap</a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-639"><a href="/index.php/golfclub-westerwolde/lidmaatschap/aanmeldformulier" >Aanmeldformulier</a></li></ul></li></ul></li><li class="item-641 active menu-deeper menu-parent"><a href="/index.php/de-baan" >De baan</a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-642"><a href="/index.php/de-baan/baanstatus" >Baanstatus</a></li><li class="item-664 current active"><a href="/index.php/de-baan/handicap-tabel-en-scorekaart" aria-current="page">Handicap tabel en scorekaart</a></li></ul></li><li class="item-666 menu-deeper menu-parent"><a href="/index.php/golfpro" >Golfpro</a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-1791"><a href="/index.php/golfpro/golfles" >Golfles</a></li><li class="item-667"><a href="/index.php/golfpro/tarieven-golflessen" >Tarieven golflessen</a></li><li class="item-690"><a href="/index.php/golfpro/les-boeken" >Les boeken</a></li><li class="item-1738"><a href="/index.php/golfpro/groepslessen" >Groepslessen</a></li></ul></li><li class="item-703 menu-deeper menu-parent"><a href="/index.php/greenfee" >Greenfee</a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-1739"><a href="/index.php/greenfee/hospitality" >Hospitality</a></li></ul></li><li class="item-1740"><a href="/index.php/zakelijk" >Zakelijk</a></li><li class="item-843 menu-deeper menu-parent"><a href="/index.php/login" >Login</a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-842"><a href="https://www.nexxchange.com/golfclub/golfclub-westerwolde" target="_blank" rel="noopener noreferrer">Login NexxChange</a></li><li class="item-1372"><a href="/index.php/login/handleiding-nexxchange" >Handleiding NexxChange</a></li></ul></li><li class="item-624 menu-deeper"><a href="/index.php/leden" >Leden</a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-1691"><a href="/index.php/leden/nieuws-van-het-bestuur/alv-2025" >ALV 2025</a></li><li class="item-1953"><a href="/index.php/leden/nieuws-van-het-bestuur/alv-2026" >ALV 2026</a></li><li class="item-899"><a href="/index.php/leden/uitslagen/herenmiddag" >Herenmiddag</a></li><li class="item-900"><a href="/index.php/leden/uitslagen/mededelingen" >Mededelingen Herenmiddag</a></li></ul></li></ul></li></ul>
+</div></div>
+		
+		
+		
+		
+				
+		<!-- custom module position -->
+		
+	</div>
+</div>		
+
+		
+		
+
+		<!-- Go to top -->
+					<a href="#" class="sp-scroll-up" aria-label="Scroll to top"><span class="fas fa-angle-up" aria-hidden="true"></span></a>
+					<div id="cookiesck_interface"></div></body>
+</html>

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.5",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),this},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||!t.src||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e=window){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();
+</script>
+	
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.golfparcsandur.nl/xmlrpc.php" />
+
+	<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	
+	<title>Baan layout | Golfparc Sandur</title>
+<link data-rocket-prefetch href="https://www.gstatic.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://fonts.googleapis.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://www.googletagmanager.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://www.leadingcourses.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://widgets.leadingcourses.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://www.google.com" rel="dns-prefetch">
+<link data-rocket-preload as="style" href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C500%7CFira%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=cyrillic%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Clatin%2Clatin-ext%2Cvietnamese%2Cdevanagari&#038;display=swap" rel="preload">
+<link href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C500%7CFira%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=cyrillic%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Clatin%2Clatin-ext%2Cvietnamese%2Cdevanagari&#038;display=swap" media="print" onload="this.media=&#039;all&#039;" rel="stylesheet">
+<noscript data-wpr-hosted-gf-parameters=""><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C500%7CFira%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=cyrillic%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Clatin%2Clatin-ext%2Cvietnamese%2Cdevanagari&#038;display=swap"></noscript><link rel="preload" data-rocket-preload as="image" href="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/golfbaan.png" fetchpriority="high">
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Golfparc Sandur &raquo; feed" href="https://www.golfparcsandur.nl/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Golfparc Sandur &raquo; reacties feed" href="https://www.golfparcsandur.nl/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.golfparcsandur.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfparcsandur.nl%2Fgolfparc-sandur%2Fbaan-layout%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.golfparcsandur.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfparcsandur.nl%2Fgolfparc-sandur%2Fbaan-layout%2F&#038;format=xml" />
+<meta content="Divi v.4.23.1" name="generator"/><style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link data-minify="1" rel='stylesheet' id='dmpro_general_style-css' href='https://www.golfparcsandur.nl/wp-content/cache/min/1/wp-content/plugins/divi-modules-pro/public/css/general.css?ver=1782298863' type='text/css' media='all' />
+<style id='dmpro_general_style-inline-css' type='text/css'>
+@media (min-width: 981px) {#dmpro-mediaquery-state { z-index:1; }}@media (max-width: 980px) and (min-width: 769px){#dmpro-mediaquery-state { z-index:2; }}@media (max-width: 768px) and (min-width: 401px){#dmpro-mediaquery-state { z-index:2; }}@media (max-width: 400px){#dmpro-mediaquery-state { z-index:3; }}
+/*# sourceURL=dmpro_general_style-inline-css */
+</style>
+
+<link data-minify="1" rel='stylesheet' id='cf7-material-design-css' href='https://www.golfparcsandur.nl/wp-content/cache/min/1/wp-content/plugins/material-design-for-contact-form-7-premium/assets/css/cf7-material-design.css?ver=1782298863' type='text/css' media='all' />
+<style id='cf7-material-design-inline-css' type='text/css'>
+#cf7md-form .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label,
+				#cf7md-form .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-text-field__input::placeholder,
+				#cf7md-form .mdc-select:not(.mdc-select--disabled) .mdc-select__native-control:focus ~ .mdc-floating-label,
+				#cf7md-form .mdc-select:not(.mdc-select--disabled).mdc-select--focused .mdc-floating-label { color: #00976f; }#cf7md-form .mdc-text-field .mdc-text-field__input { caret-color: #00976f; }#cf7md-form .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__path,
+				#cf7md-form .mdc-select--outlined:not(.mdc-select--disabled) .mdc-select__native-control:focus ~ .mdc-notched-outline .mdc-notched-outline__path { stroke: #00976f; }#cf7md-form .mdc-text-field .mdc-line-ripple,
+				#cf7md-form .mdc-select:not(.mdc-select--disabled) .mdc-select__native-control:focus ~ .mdc-line-ripple,
+				#cf7md-form .mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background,
+				#cf7md-form .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background,
+				#cf7md-form .mdc-checkbox::before,
+				#cf7md-form .mdc-checkbox::after,
+				#cf7md-form .mdc-radio::before,
+				#cf7md-form .mdc-radio::after,
+				#cf7md-form .mdc-switch.mdc-switch--checked .mdc-switch__track,
+				#cf7md-form .mdc-switch.mdc-switch--checked .mdc-switch__thumb,
+				#cf7md-form .mdc-switch.mdc-switch--checked .mdc-switch__thumb-underlay::before,
+				#cf7md-form .mdc-switch.mdc-switch--checked .mdc-switch__thumb-underlay::after,
+				#cf7md-form .mdc-switch.mdc-switch--checked .mdc-switch__thumb,
+				#cf7md-form .mdc-switch.mdc-switch--checked .mdc-switch__thumb-underlay::before,
+				#cf7md-form .mdc-switch.mdc-switch--checked .mdc-switch__thumb-underlay::after,
+				#cf7md-form .mdc-switch:not(.mdc-switch--checked) .mdc-switch__thumb-underlay::before,
+				#cf7md-form .mdc-switch:not(.mdc-switch--checked) .mdc-switch__thumb-underlay::after { background-color: #00976f; }#cf7md-form .mdc-text-field--textarea.mdc-text-field--focused:not(.mdc-text-field--disabled),
+				#cf7md-form .mdc-text-field--textarea.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-text-field__input:focus,
+				#cf7md-form .mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background,
+				#cf7md-form .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background,
+				#cf7md-form .mdc-radio .mdc-radio__native-control:enabled:checked + .mdc-radio__background .mdc-radio__outer-circle,
+				#cf7md-form .mdc-radio .mdc-radio__native-control:enabled + .mdc-radio__background .mdc-radio__inner-circle,
+				#cf7md-form .mdc-switch.mdc-switch--checked .mdc-switch__track,
+				#cf7md-form .mdc-switch.mdc-switch--checked .mdc-switch__thumb,
+				#cf7md-form .mdc-switch.mdc-switch--checked .mdc-switch__thumb,
+				#cf7md-form .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
+				#cf7md-form .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
+				#cf7md-form .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing,
+				#cf7md-form .mdc-select--outlined:not(.mdc-select--disabled).mdc-select--focused .mdc-notched-outline .mdc-notched-outline__leading,
+				#cf7md-form .mdc-select--outlined:not(.mdc-select--disabled).mdc-select--focused .mdc-notched-outline .mdc-notched-outline__notch,
+				#cf7md-form .mdc-select--outlined:not(.mdc-select--disabled).mdc-select--focused .mdc-notched-outline .mdc-notched-outline__trailing,
+				#cf7md-form .mdc-text-field--textarea:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
+				#cf7md-form .mdc-text-field--textarea:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
+				#cf7md-form .mdc-text-field--textarea:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing { border-color: #00976f; }#cf7md-form .cf7md-item,
+				#cf7md-form input,
+				#cf7md-form label,
+				#cf7md-form textarea,
+				#cf7md-form p,
+				#cf7md-form .mdc-select,
+				#cf7md-form.cf7md-form + .wpcf7-response-output,
+				#cf7md-form .wpcf7-not-valid-tip,
+				#cf7md-form .cf7md-card-title,
+				#cf7md-form .cf7md-card-subtitle,
+				#cf7md-form .mdc-button,
+				#cf7md-form .mdc-floating-label,
+				#cf7md-form .mdc-text-field-helper-text,
+				#cf7md-form .mdc-text-field__input,
+				#cf7md-form .mdc-select__native-control,
+				#cf7md-form .mdc-form-field { font-family: "Fira Sans", Helvetica, Arial, Lucida, sans-serif; }
+/*# sourceURL=cf7-material-design-inline-css */
+</style>
+<link rel='stylesheet' id='cf7md-material-icons-css' href='//fonts.googleapis.com/icon?family=Material+Icons' type='text/css' media='all' />
+<link rel='stylesheet' id='dp-owl-carousel-pro-styles-css' href='https://www.golfparcsandur.nl/wp-content/plugins/dp-owl-carousel-pro/styles/style.min.css?ver=2.4.8' type='text/css' media='all' />
+
+<link data-minify="1" rel='stylesheet' id='divi-style-css' href='https://www.golfparcsandur.nl/wp-content/cache/min/1/wp-content/themes/Divi/style-static.min.css?ver=1782298864' type='text/css' media='all' />
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer defer></script>
+
+<!-- Google tag (gtag.js) snippet toegevoegd door Site Kit -->
+<!-- Google Analytics snippet toegevoegd door Site Kit -->
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-MM6YY9GX4X" id="google_gtagjs-js" async></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["www.golfparcsandur.nl"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "G-MM6YY9GX4X");
+//# sourceURL=google_gtagjs-js-after
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://www.golfparcsandur.nl/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.golfparcsandur.nl/wp-json/wp/v2/pages/3586" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.golfparcsandur.nl/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.10" />
+<link rel="canonical" href="https://www.golfparcsandur.nl/golfparc-sandur/baan-layout/" />
+<link rel='shortlink' href='https://www.golfparcsandur.nl/?p=3586' />
+<meta name="generator" content="Site Kit by Google 1.189.0" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><script type="text/rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+(function($) { 
+    function setup_collapsible_submenus() {
+        // mobile menu
+        $('.mobile_nav .menu-item-has-children > a').after('<span class="menu-closed"></span>');
+        $('.mobile_nav .menu-item-has-children > a').each(function() {
+            $(this).next().next('.sub-menu').toggleClass('hide',1000);
+        });
+        $('.mobile_nav .menu-item-has-children > a + span').on('click', function(event) {
+            event.preventDefault();
+            $(this).toggleClass('menu-open');
+            $(this).next('.sub-menu').toggleClass('hide',1000);
+        });
+    }
+    $(window).load(function() {
+        setTimeout(function() {
+            setup_collapsible_submenus();
+        }, 700);
+    });
+})(jQuery);
+});</script><link rel="icon" href="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/cropped-favicon-270x270.png" />
+<style id="et-divi-customizer-global-cached-inline-styles">#et_search_icon:hover,.mobile_menu_bar:before,.mobile_menu_bar:after,.et_toggle_slide_menu:after,.et-social-icon a:hover,.et_pb_sum,.et_pb_pricing li a,.et_pb_pricing_table_button,.et_overlay:before,.entry-summary p.price ins,.et_pb_member_social_links a:hover,.et_pb_widget li a:hover,.et_pb_filterable_portfolio .et_pb_portfolio_filters li a.active,.et_pb_filterable_portfolio .et_pb_portofolio_pagination ul li a.active,.et_pb_gallery .et_pb_gallery_pagination ul li a.active,.wp-pagenavi span.current,.wp-pagenavi a:hover,.nav-single a,.tagged_as a,.posted_in a{color:#86bc24}.et_pb_contact_submit,.et_password_protected_form .et_submit_button,.et_pb_bg_layout_light .et_pb_newsletter_button,.comment-reply-link,.form-submit .et_pb_button,.et_pb_bg_layout_light .et_pb_promo_button,.et_pb_bg_layout_light .et_pb_more_button,.et_pb_contact p input[type="checkbox"]:checked+label i:before,.et_pb_bg_layout_light.et_pb_module.et_pb_button{color:#86bc24}.footer-widget h4{color:#86bc24}.et-search-form,.nav li ul,.et_mobile_menu,.footer-widget li:before,.et_pb_pricing li:before,blockquote{border-color:#86bc24}.et_pb_counter_amount,.et_pb_featured_table .et_pb_pricing_heading,.et_quote_content,.et_link_content,.et_audio_content,.et_pb_post_slider.et_pb_bg_layout_dark,.et_slide_in_menu_container,.et_pb_contact p input[type="radio"]:checked+label i:before{background-color:#86bc24}a{color:#86bc24}.et_secondary_nav_enabled #page-container #top-header{background-color:#86bc24!important}#et-secondary-nav li ul{background-color:#86bc24}#top-menu li a{font-size:15px}body.et_vertical_nav .container.et_search_form_container .et-search-form input{font-size:15px!important}#top-menu li a,.et_search_form_container input{font-weight:normal;font-style:normal;text-transform:uppercase;text-decoration:none}.et_search_form_container input::-moz-placeholder{font-weight:normal;font-style:normal;text-transform:uppercase;text-decoration:none}.et_search_form_container input::-webkit-input-placeholder{font-weight:normal;font-style:normal;text-transform:uppercase;text-decoration:none}.et_search_form_container input:-ms-input-placeholder{font-weight:normal;font-style:normal;text-transform:uppercase;text-decoration:none}#main-footer .footer-widget h4,#main-footer .widget_block h1,#main-footer .widget_block h2,#main-footer .widget_block h3,#main-footer .widget_block h4,#main-footer .widget_block h5,#main-footer .widget_block h6{color:#86bc24}.footer-widget li:before{border-color:#86bc24}@media only screen and (min-width:981px){.et_header_style_left #et-top-navigation,.et_header_style_split #et-top-navigation{padding:60px 0 0 0}.et_header_style_left #et-top-navigation nav>ul>li>a,.et_header_style_split #et-top-navigation nav>ul>li>a{padding-bottom:60px}.et_header_style_split .centered-inline-logo-wrap{width:120px;margin:-120px 0}.et_header_style_split .centered-inline-logo-wrap #logo{max-height:120px}.et_pb_svg_logo.et_header_style_split .centered-inline-logo-wrap #logo{height:120px}.et_header_style_centered #top-menu>li>a{padding-bottom:22px}.et_header_style_slide #et-top-navigation,.et_header_style_fullscreen #et-top-navigation{padding:51px 0 51px 0!important}.et_header_style_centered #main-header .logo_container{height:120px}.et_header_style_left .et-fixed-header #et-top-navigation,.et_header_style_split .et-fixed-header #et-top-navigation{padding:50px 0 0 0}.et_header_style_left .et-fixed-header #et-top-navigation nav>ul>li>a,.et_header_style_split .et-fixed-header #et-top-navigation nav>ul>li>a{padding-bottom:50px}.et_header_style_centered header#main-header.et-fixed-header .logo_container{height:100px}.et_header_style_split #main-header.et-fixed-header .centered-inline-logo-wrap{width:100px;margin:-100px 0}.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo{max-height:100px}.et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo{height:100px}.et_header_style_slide .et-fixed-header #et-top-navigation,.et_header_style_fullscreen .et-fixed-header #et-top-navigation{padding:41px 0 41px 0!important}.et_fixed_nav #page-container .et-fixed-header#top-header{background-color:#86bc24!important}.et_fixed_nav #page-container .et-fixed-header#top-header #et-secondary-nav li ul{background-color:#86bc24}}@media only screen and (min-width:1350px){.et_pb_row{padding:27px 0}.et_pb_section{padding:54px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:81px}.et_pb_fullwidth_section{padding:0}}	h1,h2,h3,h4,h5,h6{font-family:'Fira Sans',Helvetica,Arial,Lucida,sans-serif}body,input,textarea,select{font-family:'Fira Sans',Helvetica,Arial,Lucida,sans-serif}#main-header,#et-top-navigation{font-family:'Montserrat',Helvetica,Arial,Lucida,sans-serif}html,body{overflow-x:hidden}.show_mobile{display:none!important}@media screen and (max-width:980px){.show_mobile{display:block!important}}.btn-inline .et_pb_button_module_wrapper{display:inline-block}.btn-inline{text-align:center!important}.met_table tr:nth-child(odd){background-color:rgba(77,148,36,0.05);color:#000}.met_table tr:nth-child(even){background-color:fff;color:#000}.met_table .row-hover tr:hover td{background-color:#8cc260;color:#fff}.met_table table,.met_table tr,.met_table tbody td,.met_table thead th,.met_table tfoot th{border:solid 1px rgba(77,148,36,0.10)}@media screen and (max-width:640px){.met-table,td,tr{display:block}}#baanstatus{width:250px}#baanstatus .baanstatus_col_01{padding:10px;float:left;background:rgba(25,76,143,0.85);color:#fff;margin-right:5px;margin-bottom:5px;width:200px}#baanstatus .baanstatus_col_02{padding:10px;float:left;background:rgba(25,76,143,0.85);color:#fff;width:40px;text-align:center}#baanstatus .baanstatus_cols{padding:10px;float:left;background:rgba(25,76,143,0.85);color:#fff;margin-right:5px;margin-bottom:25px;width:245px}.dot{height:15px;width:15px;border-radius:50%;display:inline-block;background:#fff;vertical-align:middle}.Ja{background-color:#8cc260}.Nee{background-color:#c45848}input.wpcf7-submit{display:block;width:100%;border:none;border-radius:4px;background-color:#194c8f;color:#fff!important;padding:16px 28px;font-size:15px!important;font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif!important;font-weight:700!important;cursor:pointer;text-align:center;text-transform:uppercase;transition:all 1s 0s ease}input.wpcf7-submit:hover{background-color:#194c8f!important;color:#a7358c}#menu-hoofdmenu{}#menu-hoofdmenu li a{}#menu-hoofdmenu li a:hover,#menu-hoofdmenu li li a:hover{color:#4d9424!important}#menu-hoofdmenu li a:hover{}#menu-hoofdmenu li.current-menu-item>a{color:#4d9424!important}#menu-hoofdmenu .menu-item-has-children>a:first-child:after{}#menu-hoofdmenu li ul{padding:0px;width:300px}#menu-hoofdmenu li ul li{padding:0px;width:100%!important}#menu-hoofdmenu li ul li a{color:#000;padding:10px 30px!important;text-align:left!important;margin:0px;width:100%}#menu-hoofdmenu li ul li a:hover{background:#fff}.hyperlinks_white a,.hyperlinks_white a:link,.hyperlinks_white a:visited,.hyperlinks_white a:active{color:#fff;text-decoration:none}.hyperlinks_white a:hover{color:#fff;text-decoration:none}.hyperlinks_black a,.hyperlinks_black a:link,.hyperlinks_black a:visited,.hyperlinks_black a:active{color:#000;text-decoration:none}.hyperlinks_black a:hover{color:#000;text-decoration:none}.et-zoom-in.et_pb_image:hover img,.et-zoom-in .et_pb_image_wrap:hover img,.et-zoom-in a:hover img{transform:scale(1.2);transition:all 1s 0s ease}.et-zoom-in,.et-zoom-in a{overflow:hidden}.et-zoom-in.et_pb_image img,.et-zoom-in .et_pb_image_wrap img,.et-zoom-in a img{transition:all 1s 0s ease}.mobile_nav.opened .mobile_menu_bar:before{content:'\4d'}#page-container .mobile_nav li ul.hide{display:none!important}#page-container .mobile_nav .menu-item-has-children{position:relative}#page-container .mobile_nav .menu-item-has-children>a{background:transparent}#page-container .mobile_nav .menu-item-has-children>a+span{position:absolute;right:0;top:0;padding:10px 20px;font-size:20px;font-weight:700;cursor:pointer;z-index:3}#page-container span.menu-closed:before{content:"\33";display:block;color:#000;font-size:16px;font-family:ETmodules}#page-container span.menu-closed.menu-open:before{content:"\4d"}.et_mobile_menu{overflow:scroll!important;max-height:84vh;box-shadow:0px 0px 30px rgba(0,0,0,0.3)}.pa-vertical-menu .et_pb_menu__menu nav ul li{display:block;width:100%;margin:10px 0;font-size:16px}.pa-vertical-menu .et_pb_menu__menu nav ul li a{padding:20px!important;background:#cddbe6;border:2px solid #cddbe6;color:#003552}.pa-vertical-menu .et_pb_menu__menu nav ul li a:hover{opacity:1!important;color:#ffffff;background:#618ea9;border-color:#618ea9}.pa-vertical-menu .et_pb_menu__menu nav ul li.current-menu-item a{opacity:1!important;color:#ffffff;background:#618ea9;border-color:#618ea9}@media (max-width:980px){.et-db #et-boc .et-l .pa-vertical-menu .et_pb_menu__menu{display:flex}.et-db #et-boc .et-l .pa-vertical-menu .et_mobile_nav_menu{display:none}}@media screen and (max-width:980px){.reverse{display:flex;flex-direction:column-reverse}}.kb-zoomin .et_pb_slide .et_parallax_bg{animation:zoomin 10s forwards;-ms-animation:zoomin 10s forwards;-webkit-animation:zoomin 10s forwards;-0-animation:zoomin 10s forwards;-moz-animation:zoomin 10s forwards}.kb-zoomin .et_parallax_bg{animation:zoomin 17s forwards;-ms-animation:zoomin 17s forwards;-webkit-animation:zoomin 17s forwards;-0-animation:zoomin 17s forwards;-moz-animation:zoomin 17s forwards}@keyframes zoomin{0%{-ms-transform:scale3d(1.1,1.1,1.1) translate3d(0px,0px,0px);-webkit-transform:scale3d(1.1,1.1,1.1) translate3d(0px,0px,0px);-o-transform:scale3d(1.1,1.1,1.1) translate3d(0px,0px,0px);-moz-transform:scale3d(1.1,1.1,1.1) translate3d(0px,0px,0px);transform:scale3d(1.1,1.1,1.1) translate3d(0px,0px,0px);animation-timing-function:linear}100%{-ms-transform:scale3d(1.5,1.5,1.5) translate3d(-0px,0px,0px);-webkit-transform:scale3d(3.5,3.5,3.5) translate3d(0px,0px,0px);-o-transform:scale3d(1.5,1.5,1.5) translate3d(0px,0px,0px);-moz-transform:scale3d(1.5,1.5,1.5) translate3d(0px,0px,0px);transform:scale3d(1.5,1.5,1.5) translate3d(0px,0px,0px)}}</style><link data-minify="1" rel='stylesheet' id='dmpro-dmpro_image_hotspot-css' href='https://www.golfparcsandur.nl/wp-content/cache/min/1/wp-content/plugins/divi-modules-pro/includes/modules/HotSpot/style.css?ver=1782298864' type='text/css' media='all' />
+
+<meta name="generator" content="WP Rocket 3.23.1" data-wpr-features="wpr_delay_js wpr_defer_js wpr_preconnect_external_domains wpr_oci wpr_minify_css wpr_cdn wpr_preload_links wpr_desktop" /></head>
+<body class="wp-singular page-template-default page page-id-3586 page-child parent-pageid-3111 wp-theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db">
+	<div  id="page-container">
+<div  id="et-boc" class="et-boc">
+			
+		<header  class="et-l et-l--header">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0_tb_header et_pb_sticky_module et_section_regular et_pb_section--with-menu" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_header btn-inline et_pb_equal_columns et_pb_gutters1 et_pb_row--with-menu">
+				<div class="et_pb_column et_pb_column_2_3 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough et_pb_column--with-menu">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_menu et_pb_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_right et_dropdown_animation_fade et_pb_menu--with-logo et_pb_menu--style-left_aligned">
+					
+					
+					
+					
+					<div class="et_pb_menu_inner_container clearfix">
+						<div class="et_pb_menu__logo-wrap">
+			  <div class="et_pb_menu__logo">
+				<a href="https://www.golfparcsandur.nl/" ><img decoding="async" width="300" height="72" src="https://www.golfparcsandur.nl/wp-content/uploads/2022/01/logo-blue.png" alt="" class="wp-image-3006" /></a>
+			  </div>
+			</div>
+						<div class="et_pb_menu__wrap">
+							<div class="et_pb_menu__menu">
+								<nav class="et-menu-nav"><ul id="menu-hoofdmenu" class="et-menu nav"><li class="et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1794"><a href="https://www.golfparcsandur.nl/">Home</a></li>
+<li class="et_pb_menu_page_id-3111 menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3329"><a href="https://www.golfparcsandur.nl/golfparc-sandur/">Golfparc Sandur</a>
+<ul class="sub-menu">
+	<li class="et_pb_menu_page_id-3586 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3586 current_page_item menu-item-3629"><a href="https://www.golfparcsandur.nl/golfparc-sandur/baan-layout/" aria-current="page">Baan layout</a></li>
+	<li class="et_pb_menu_page_id-3799 menu-item menu-item-type-post_type menu-item-object-page menu-item-3803"><a href="https://www.golfparcsandur.nl/golfparc-sandur/playing-handicap/">Handicaptabellen</a></li>
+	<li class="et_pb_menu_page_id-3298 menu-item menu-item-type-post_type menu-item-object-page menu-item-3332"><a href="https://www.golfparcsandur.nl/golfparc-sandur/lidmaatschappen/">Lidmaatschappen</a></li>
+	<li class="et_pb_menu_page_id-3300 menu-item menu-item-type-post_type menu-item-object-page menu-item-3331"><a href="https://www.golfparcsandur.nl/golfparc-sandur/buggys-handicarts/">Handicarts</a></li>
+	<li class="et_pb_menu_page_id-4059 menu-item menu-item-type-post_type menu-item-object-page menu-item-4097"><a href="https://www.golfparcsandur.nl/golfparc-sandur/bedrijven-sponsoren/">Bedrijven &#038; sponsoren</a></li>
+</ul>
+</li>
+<li class="et_pb_menu_page_id-3306 menu-item menu-item-type-post_type menu-item-object-page menu-item-3337"><a href="https://www.golfparcsandur.nl/golflessen/">Golflessen</a></li>
+<li class="et_pb_menu_page_id-3308 menu-item menu-item-type-post_type menu-item-object-page menu-item-3336"><a href="https://www.golfparcsandur.nl/jeugd/">Jeugd</a></li>
+<li class="et_pb_menu_page_id-3304 menu-item menu-item-type-post_type menu-item-object-page menu-item-3333"><a href="https://www.golfparcsandur.nl/paviljoen/">Horeca</a></li>
+<li class="et_pb_menu_page_id-3311 menu-item menu-item-type-post_type menu-item-object-page menu-item-3335"><a href="https://www.golfparcsandur.nl/gasten/">Gasten</a></li>
+<li class="show_mobile et_pb_menu_page_id-3313 menu-item menu-item-type-post_type menu-item-object-page menu-item-4241"><a href="https://www.golfparcsandur.nl/contact/">Contact</a></li>
+<li class="show_mobile et_pb_menu_page_id-4243 menu-item menu-item-type-custom menu-item-object-custom menu-item-4243"><a href="https://www.nexxchange.com/search/teetimes/golfparc-sandur">Inloggen leden</a></li>
+</ul></nav>
+							</div>
+							
+							
+							<div class="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>
+						</div>
+						
+					</div>
+				</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_button_module_wrapper et_pb_button_0_tb_header_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_0_tb_header et_pb_bg_layout_light" href="https://forms.office.com/e/bdGFrxshRN" target="_blank" data-icon="&#xf007;"> Golfclincs 2026</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_1_tb_header_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_1_tb_header et_pb_bg_layout_light" href="https://www.nexxchange.com/search/teetimes/golfparc-sandur" target="_blank" data-icon="&#xf007;">leden login</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_2_tb_header_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_2_tb_header et_pb_bg_layout_light" href="https://www.golfparcsandur.nl/contact/" data-icon="&#x76;">contact</a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</header>
+	<div  id="et-main-area">
+	
+<div id="main-content">
+
+
+			
+				<article id="post-3586" class="post-3586 page type-page status-publish hentry">
+
+				
+					<div class="entry-content">
+					<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0 et_section_regular section_has_divider et_pb_bottom_divider" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h3>Golfparc Sandur Emmen</h3></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2><span>Onze baan is afwisselend en uitdagend</span></h2></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+			</div><div class="et_pb_section et_pb_section_1 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1>Baan layout</h1></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><strong>Afwisselend en uitdagend</strong><br />Gastspelers blijken aangenaam verrast door onze spannende, gevarieerde baan. Ook de trots van onze greenkeeper Henk: de perfecte greens, vallen gasten op.</p>
+<p>De vermaarde golf-architect Frank Pont (Koninklijke Haagsche, De Pan, Kennemer, enz.) heeft in 2005 bos- en landbouwgebied ten zuiden van Emmen herschapen in een all-round 9-holes baan. Water, bos, heuvels, het komt allemaal in het spel. De zwerfkeien door de baan zijn markeringen van de ijstijden die dit gebied gevormd hebben. Elke hole heeft zijn eigen karakter en uitdaging. Met twee par 5 holes komt de totale lengte van de par 68 baan voor heren op 4830 m. en voor dames op 4072 m.</p>
+<p>Een verlichte drivingrange en oefengreen en een gezellig clubhuis / brasserie completeren het park.</p>
+<p>&nbsp;</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_2 et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0">
+				
+				
+				
+				
+				<a href="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/golfbaan.png" class="et_pb_lightbox_image" title=""><span class="et_pb_image_wrap "><img fetchpriority="high" decoding="async" width="2560" height="1118" src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/golfbaan.png" alt="" title="golfbaan" class="wp-image-3601" /></span></a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_3">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_dp_oc_custom et_pb_dp_oc_custom_0  et_pb_bg_layout_light">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="owl-carousel" data-rotate="off" data-speed="5000" data-hover="off" data-arrow="on" data-control="on" data-items="1" data-items-tablet="1" data-items-phone="" data-margin="8|8|8" data-behaviour="loop" data-direction="rtl" data-center="off" data-items-per-dot="1" data-items-per-slide="1" data-arrow-size="4em" data-use-hash="off" data-auto-width="off" data-auto-height="off" data-module="et_pb_dp_oc_custom_0" data-animation-speed="500" data-arrows-speed="500" data-controls-speed="500" data-lazy="off" data-url-anchor="off" data-mousewheel="off" data-mousewheel-delay="160" data-drag="on|on|on" data-cloneoff="off" data-cloneoffalign="flex-start" data-items-found="9" data-cs="off"><div class="et_pb_module et_pb_dp_oc_custom_item et_pb_dp_oc_custom_item_0">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="dp_oc_item"  ><img decoding="async" class="dp_oc_image_thumb " src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/1-10.jpg" title="" alt=""></div>
+				</div>
+			</div><div class="et_pb_module et_pb_dp_oc_custom_item et_pb_dp_oc_custom_item_1">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="dp_oc_item"  ><img decoding="async" class="dp_oc_image_thumb " src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/2-11.jpg" title="2-11" alt=""></div>
+				</div>
+			</div><div class="et_pb_module et_pb_dp_oc_custom_item et_pb_dp_oc_custom_item_2">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="dp_oc_item"  ><img decoding="async" class="dp_oc_image_thumb " src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/3-12.jpg" title="" alt=""></div>
+				</div>
+			</div><div class="et_pb_module et_pb_dp_oc_custom_item et_pb_dp_oc_custom_item_3">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="dp_oc_item"  ><img decoding="async" class="dp_oc_image_thumb " src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/4-13.jpg" title="" alt=""></div>
+				</div>
+			</div><div class="et_pb_module et_pb_dp_oc_custom_item et_pb_dp_oc_custom_item_4">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="dp_oc_item"  ><img decoding="async" class="dp_oc_image_thumb " src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/5-14.jpg" title="" alt=""></div>
+				</div>
+			</div><div class="et_pb_module et_pb_dp_oc_custom_item et_pb_dp_oc_custom_item_5">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="dp_oc_item"  ><img decoding="async" class="dp_oc_image_thumb " src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/6-15.png" title="" alt=""></div>
+				</div>
+			</div><div class="et_pb_module et_pb_dp_oc_custom_item et_pb_dp_oc_custom_item_6">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="dp_oc_item"  ><img decoding="async" class="dp_oc_image_thumb " src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/7-16.jpg" title="" alt=""></div>
+				</div>
+			</div><div class="et_pb_module et_pb_dp_oc_custom_item et_pb_dp_oc_custom_item_7">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="dp_oc_item"  ><img decoding="async" class="dp_oc_image_thumb " src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/8-17.jpg" title="" alt=""></div>
+				</div>
+			</div><div class="et_pb_module et_pb_dp_oc_custom_item et_pb_dp_oc_custom_item_8">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="dp_oc_item"  ><img decoding="async" class="dp_oc_image_thumb " src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/9-18.jpg" title="" alt=""></div>
+				</div>
+			</div></div>
+				</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_4 et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_1">
+				
+				
+				
+				
+				<a href="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/pin-positie.jpg" class="et_pb_lightbox_image" title=""><span class="et_pb_image_wrap "><img decoding="async" width="458" height="652" src="https://www.golfparcsandur.nl/wp-content/uploads/2022/03/pin-positie.jpg" alt="" title="pin-positie" class="wp-image-3599" /></span></a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_5 et_pb_equal_columns">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1>Golfparc Sandur &#8211; Emmen</h1></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Sinds het jaar 2000 is er een groot achterstallig onderhoud van de bossen op  onze golfbaan. Bovendien werden de fijnsparren aangetast door de Letterzetter, een klein torretje dat alles kaalvreet. De Bos Groep Noor Oost Nederland heeft de aangetaste fijnsparren inmiddels verwijderd en afgevoerd.</p>
+<p>Doelen</p>
+<ul>
+<li>een toekomstbestendig bos voor de lange termijn gebaseerd op biodiversiteit</li>
+<li>het achterstallig onderhoud opheffen</li>
+<li>de fijnsparren (= Letterzetter) verwijderen</li>
+<li>het bos onderhoudsvriendelijk maken</li>
+<li>aandacht hebben voor aanzicht en doorzicht</li>
+<li>veiligheid voor spelers en wandelaars.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2 et_pb_with_background et_pb_fullwidth_section et_section_regular section_has_divider et_pb_bottom_divider" >
+				
+				
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+			</div>		</div>
+	</div>
+						</div>
+
+				
+				</article>
+
+			
+
+</div>
+
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer et_pb_equal_columns">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_button_module_wrapper et_pb_button_0_tb_footer_wrapper et_pb_button_alignment_left et_pb_button_alignment_tablet_center et_pb_button_alignment_phone_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_0_tb_footer et_pb_bg_layout_light" href="https://www.nexxchange.com/golfclub/golfparc-sandur" target="_blank">Inloggen leden</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_1_tb_footer_wrapper et_pb_button_alignment_left et_pb_button_alignment_tablet_center et_pb_button_alignment_phone_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_1_tb_footer et_pb_bg_layout_light" href="https://www.nexxchange.com/search/teetimes/golfparc-sandur" target="_blank">Starttijd reserveren</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_2_tb_footer_wrapper et_pb_button_alignment_left et_pb_button_alignment_tablet_center et_pb_button_alignment_phone_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_2_tb_footer et_pb_bg_layout_light" href="https://www.golfparcsandur.nl/golfparc-sandur/" target="_blank">Onze club</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_3_tb_footer_wrapper et_pb_button_alignment_left et_pb_button_alignment_tablet_center et_pb_button_alignment_phone_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_3_tb_footer et_pb_bg_layout_light" href="https://www.golfparcsandur.nl/golflessen/">Golflessen</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_4_tb_footer_wrapper et_pb_button_alignment_left et_pb_button_alignment_tablet_center et_pb_button_alignment_phone_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_4_tb_footer et_pb_bg_layout_light" href="https://www.golfparcsandur.nl/golfparc-sandur/lidmaatschappen/">Lid worden?</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_5_tb_footer_wrapper et_pb_button_alignment_left et_pb_button_alignment_tablet_center et_pb_button_alignment_phone_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_5_tb_footer et_pb_bg_layout_light" href="https://www.golfparcsandur.nl/wp-content/uploads/2023/01/Huishoudelijk-reglement-GPS.pdf" target="_blank">Huishoudelijk reglement</a>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="300" height="72" src="https://www.golfparcsandur.nl/wp-content/uploads/2022/01/logo-white.png" alt="" title="logo-white" class="wp-image-3022" /></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Golfparkdreef 1<br />7828 AL Emmen<br />T 0591 303054<br /><a href="mailto:info@golfparcsandur.nl">info@golfparcsandur.nl</a><br /><a href="mailto:reserveringen@golfparcsandur.nl">reserveringen@golfparcsandur.nl</a></p>
+<p><a href="https://www.golfparcsandur.nl/wp-content/uploads/2024/11/96350817-359A-438B-936C-436682284779.pdf">Privacy Policy</a></p>
+<p><a href="https://www.google.com/maps/uv?pb=!1s0x47b7ef64f7b0e711%3A0x80d715bff1d52bbc!3m1!7e115!4shttps%3A%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D_-q0qoTPfNUPEfxBtW_9sA%26cb_client%3Dsearch.gws-prod.gps%26yaw%3D326.03348%26pitch%3D0%26thumbfov%3D100%26w%3D520%26h%3D175!5selektrisch%20laden%20golfparc%20sandur%20-%20Google%20Zoeken!15sCgIgAQ&amp;imagekey=!1e2!2s_-q0qoTPfNUPEfxBtW_9sA&amp;hl=nl&amp;sa=X&amp;ved=2ahUKEwi0w7bssvf7AhVVhf0HHTc2CvYQ7ZgBKAB6BAgFEAI"><img loading="lazy" decoding="async" src="https://www.golfparcsandur.nl/wp-content/uploads/2022/04/elektrisch-ladenlogo.png" width="50" height="50" /></a> <a href="https://portal.mijnhandicart.nl/"> <img loading="lazy" decoding="async" src="https://www.golfparcsandur.nl/wp-content/uploads/2022/12/handicart-logo-1.jpg" width="50" height="50" /></a></p></div>
+			</div><div class="et_pb_module dmpro_image_hotspot dmpro_image_hotspot_0_tb_footer">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					
+				</div>
+			</div><ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_center-tablet et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li
+            class='et_pb_with_border et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook'><a
+              href='https://www.facebook.com/GolfSandur/'
+              class='icon et_pb_with_border'
+              title='Volg op Facebook'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Volgen</span></a></li><li
+            class='et_pb_with_border et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter'><a
+              href='#'
+              class='icon et_pb_with_border'
+              title='Volg op X'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Volgen</span></a></li><li
+            class='et_pb_with_border et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-instagram'><a
+              href='https://www.instagram.com/golfparc_sandur/'
+              class='icon et_pb_with_border'
+              title='Volg op Instagram'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Volgen</span></a></li><li
+            class='et_pb_with_border et_pb_social_media_follow_network_3_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-youtube'><a
+              href='#'
+              class='icon et_pb_with_border'
+              title='Volg op Youtube'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Volgen</span></a></li>
+			</ul>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_1_tb_footer et_pb_equal_columns">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_code et_pb_code_0_tb_footer">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><a class="lc-widget-badge"  data-id="236" data-origin="club-236" data-width="200" data-year="2022" href="https://en.leadingcourses.com/europe+the-netherlands+drenthe/golfparc-sandur/">Golfparc Sandur on Leadingcourses.com</a><script type="text/rocketlazyloadscript">(function(L,C){if(typeof L.lcWidget==="undefined"){L.lcWidget=true;var a=C.createElement("script");a.src="https://www.leadingcourses.com/widget/controller.js?cache-bust="+Date.now();a.async=true;C.getElementsByTagName("head")[0].appendChild(a)}})(window,document)</script></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+			<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/Divi/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/plugins/material-design-for-contact-form-7-premium/public/../assets/js/lib/autosize.min.js?ver=1.0" id="autosize-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/plugins/material-design-for-contact-form-7-premium/public/../assets/js/cf7-material-design-bundle.js?ver=2.6.5" id="cf7-material-design-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://www.golfparcsandur.nl","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+/* ]]> */
+</script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https://www.golfparcsandur.nl/wp-admin/admin-ajax.php","images_uri":"https://www.golfparcsandur.nl/wp-content/themes/Divi/images","builder_images_uri":"https://www.golfparcsandur.nl/wp-content/themes/Divi/includes/builder/images","et_frontend_nonce":"620b0049fc","subscription_failed":"Kijk dan de onderstaande velden in om ervoor te zorgen u de juiste informatie.","et_ab_log_nonce":"8ed8f8a108","fill_message":"Alsjeblieft, vul op de volgende gebieden:","contact_error_message":"Gelieve de volgende fouten te verbeteren:","invalid":"Ongeldig e-mail","captcha":"Captcha","prev":"Vorig","previous":"Vorige","next":"Volgende","wrong_captcha":"U heeft het verkeerde nummer in de captcha ingevoerd.","wrong_checkbox":"Selectievakje","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"3586","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https://www.golfparcsandur.nl/wp-content/themes/Divi/includes/builder/frontend-builder/assets/vendors","accent_color":"#86bc24","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+//# sourceURL=divi-custom-script-js-extra
+/* ]]> */
+</script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/themes/Divi/js/scripts.min.js?ver=4.23.1" id="divi-custom-script-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/themes/Divi/js/smoothscroll.js?ver=4.23.1" id="smoothscroll-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.23.1" id="fitvids-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-includes/js/comment-reply.min.js?ver=6.9.10" id="comment-reply-js" async="async" data-wp-strategy="async" fetchpriority="low"></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.23.1" id="jquery-mobile-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.23.1" id="magnific-popup-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.23.1" id="easypiechart-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.23.1" id="salvattore-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/plugins/divi-modules-pro/scripts/frontend-bundle.min.js?ver=1.2.9.5" id="divi-modules-pro-frontend-bundle-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/themes/Divi/core/admin/js/common.js?ver=4.23.1" id="et-core-common-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.google.com/recaptcha/api.js?render=6LfVqCwgAAAAAMq6Hre6qARqQh8gFBN2JYlr8P72&amp;ver=3.0" id="google-recaptcha-js"></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" id="wpcf7-recaptcha-js-before">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {
+    "sitekey": "6LfVqCwgAAAAAMq6Hre6qARqQh8gFBN2JYlr8P72",
+    "actions": {
+        "homepage": "homepage",
+        "contactform": "contactform"
+    }
+};
+//# sourceURL=wpcf7-recaptcha-js-before
+/* ]]> */
+</script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.1.6" id="wpcf7-recaptcha-js" data-rocket-defer defer></script>
+<script type="text/javascript" id="dp-owl-carousel-pro-frontend-bundle-js-extra">
+/* <![CDATA[ */
+var et_pb_dp_oc_custom_0 = {"ocp_init":[]};
+//# sourceURL=dp-owl-carousel-pro-frontend-bundle-js-extra
+/* ]]> */
+</script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/plugins/dp-owl-carousel-pro/scripts/frontend-bundle.min.js?ver=2.4.8" id="dp-owl-carousel-pro-frontend-bundle-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/plugins/divi-modules-pro/public/js/popper-v2.11.6.min.js?ver=2.11.6" id="dmpro_popperv2_script-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" id="dmpro_popperv2_script-js-after">
+/* <![CDATA[ */
+var dmp_diviglobalresponsivevalues = { min_width:981, max_width:980, tablet_width:768, phone_width:400 };
+var dmpCreateMediaQueryRef = (function () {var dmpMediaQueryState;if (!dmpMediaQueryState) {dmpMediaQueryState = document.createElement('div');dmpMediaQueryState.id = 'dmpro-mediaquery-state';dmpMediaQueryState.style.cssText = 'display:none;';document.body.insertBefore( dmpMediaQueryState, document.body.firstChild );}})();
+//# sourceURL=dmpro_popperv2_script-js-after
+/* ]]> */
+</script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/plugins/divi-modules-pro/includes/modules/HotSpot/custom.js?ver=1.2.9.5" id="dmpro-dmpro_image_hotspot-js" data-rocket-defer defer></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+//# sourceURL=et-builder-modules-script-motion-js-extra
+/* ]]> */
+</script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.23.1" id="et-builder-modules-script-motion-js" data-rocket-defer defer></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = {"et_pb_section_0_tb_header":{"id":"et_pb_section_0_tb_header","selector":".et_pb_section_0_tb_header","position":"top","topOffset":"0px","bottomOffset":"0px","topLimit":"none","bottomLimit":"none","offsetSurrounding":"on","transition":"on","styles":{"module_alignment":{"desktop":"","tablet":"","phone":""},"positioning":"relative"},"stickyStyles":{"position_origin_r":"top_left","horizontal_offset":"","vertical_offset":""}}};
+//# sourceURL=et-builder-modules-script-sticky-js-extra
+/* ]]> */
+</script>
+<script type="text/rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.golfparcsandur.nl/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.23.1" id="et-builder-modules-script-sticky-js" data-rocket-defer defer></script>
+<style id="et-builder-module-design-tb-2345-tb-506-3586-cached-inline-styles">.et_pb_section_0_tb_header{margin-top:0px;margin-bottom:0px;z-index:10;box-shadow:0px 12px 18px -6px RGBA(255,255,255,0);transition:box-shadow 300ms ease 0ms}.et_pb_section_0_tb_header.et_pb_section{padding-top:0px;padding-bottom:0px}.et_pb_sticky.et_pb_section_0_tb_header{box-shadow:0px 12px 18px -6px rgba(0,0,0,0.25)}.et_pb_row_0_tb_header.et_pb_row{padding-top:5px!important;padding-right:10px!important;padding-bottom:5px!important;padding-left:10px!important;margin-top:0px!important;margin-right:0px!important;margin-bottom:0px!important;margin-left:0px!important;padding-top:5px;padding-right:10px;padding-bottom:5px;padding-left:10px}.et_pb_row_0_tb_header,body #page-container .et-db #et-boc .et-l .et_pb_row_0_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_header.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_header.et_pb_row{width:100%;max-width:100%}.et_pb_menu_0_tb_header.et_pb_menu ul li a{font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;font-weight:500;font-size:15px;color:#194C8F!important}.et_pb_menu_0_tb_header.et_pb_menu{background-color:#ffffff}.et_pb_menu_0_tb_header.et_pb_menu .nav li ul{background-color:#ffffff!important;border-color:#FFFFFF}.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu{border-color:#FFFFFF}.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu ul{background-color:#ffffff!important}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot{width:270px;max-width:100%}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap .et_pb_menu__logo img,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot .et_pb_menu__logo-wrap img{height:auto;max-height:none}.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before{color:#194C8F}.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__close-search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__cart-button{color:#86bc24}body #page-container .et_pb_section .et_pb_button_0_tb_header,body #page-container .et_pb_section .et_pb_button_1_tb_header,body #page-container .et_pb_section .et_pb_button_2_tb_header{color:#FFFFFF!important;border-width:0px!important;border-color:#4D9424;border-radius:0px;font-size:15px;font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif!important;padding-right:0.7em;padding-left:2em;background-image:linear-gradient(90deg,#4d9424 0%,#8cc260 100%);background-color:RGBA(255,255,255,0)}body #page-container .et_pb_section .et_pb_button_0_tb_header:hover,body #page-container .et_pb_section .et_pb_button_1_tb_header:hover,body #page-container .et_pb_section .et_pb_button_2_tb_header:hover{color:#FFFFFF!important;background-image:initial;background-color:#194C8F}body #page-container .et_pb_section .et_pb_button_0_tb_header:after,body #page-container .et_pb_section .et_pb_button_1_tb_header:after,body #page-container .et_pb_section .et_pb_button_2_tb_header:after{display:none}body #page-container .et_pb_section .et_pb_button_0_tb_header:before,body #page-container .et_pb_section .et_pb_button_1_tb_header:before{content:attr(data-icon);font-family:FontAwesome!important;font-weight:900!important;line-height:inherit;font-size:inherit!important;opacity:1;margin-left:-1.3em;right:auto;display:inline-block;font-family:FontAwesome!important;font-weight:900!important}body #page-container .et_pb_section .et_pb_button_0_tb_header:hover:before,body #page-container .et_pb_section .et_pb_button_1_tb_header:hover:before,body #page-container .et_pb_section .et_pb_button_2_tb_header:hover:before{margin-left:.3em;right:auto;margin-left:-1.3em}.et_pb_button_0_tb_header,.et_pb_button_1_tb_header{transition:color 0ms ease 0ms,background-color 0ms ease 0ms;width:180px;margin-top:20px;margin-right:5px}.et_pb_button_0_tb_header,.et_pb_button_0_tb_header:after,.et_pb_button_1_tb_header,.et_pb_button_1_tb_header:after,.et_pb_button_2_tb_header,.et_pb_button_2_tb_header:after{transition:all 0ms ease 0ms}body #page-container .et_pb_section .et_pb_button_2_tb_header:before{content:attr(data-icon);font-family:ETmodules!important;font-weight:400!important;line-height:inherit;font-size:inherit!important;opacity:1;margin-left:-1.3em;right:auto;display:inline-block;font-family:ETmodules!important;font-weight:400!important}.et_pb_button_2_tb_header{transition:color 0ms ease 0ms,background-color 0ms ease 0ms;width:180px;margin-top:20px}@media only screen and (max-width:980px){.et_pb_row_0_tb_header.et_pb_row{padding-top:5px!important;padding-right:10px!important;padding-bottom:5px!important;padding-left:10px!important;padding-top:5px!important;padding-right:10px!important;padding-bottom:5px!important;padding-left:10px!important}.et_pb_menu_0_tb_header{margin-top:10px!important;margin-left:10px!important}body #page-container .et_pb_section .et_pb_button_0_tb_header:before,body #page-container .et_pb_section .et_pb_button_1_tb_header:before{line-height:inherit;font-size:inherit!important;margin-left:-1.3em;right:auto;display:inline-block;opacity:1;content:attr(data-icon);font-family:FontAwesome!important;font-weight:900!important}body #page-container .et_pb_section .et_pb_button_0_tb_header:after,body #page-container .et_pb_section .et_pb_button_1_tb_header:after,body #page-container .et_pb_section .et_pb_button_2_tb_header:after{display:none}body #page-container .et_pb_section .et_pb_button_0_tb_header:hover:before,body #page-container .et_pb_section .et_pb_button_1_tb_header:hover:before,body #page-container .et_pb_section .et_pb_button_2_tb_header:hover:before{margin-left:.3em;right:auto;margin-left:-1.3em}body #page-container .et_pb_section .et_pb_button_2_tb_header:before{line-height:inherit;font-size:inherit!important;margin-left:-1.3em;right:auto;display:inline-block;opacity:1;content:attr(data-icon);font-family:ETmodules!important;font-weight:400!important}}@media only screen and (max-width:767px){.et_pb_row_0_tb_header.et_pb_row{padding-top:5px!important;padding-right:10px!important;padding-bottom:10px!important;padding-left:10px!important;padding-top:5px!important;padding-right:10px!important;padding-bottom:10px!important;padding-left:10px!important}.et_pb_menu_0_tb_header{margin-top:10px!important;margin-left:10px!important}body #page-container .et_pb_section .et_pb_button_0_tb_header,body #page-container .et_pb_section .et_pb_button_1_tb_header,body #page-container .et_pb_section .et_pb_button_2_tb_header{font-size:10px!important}body #page-container .et_pb_section .et_pb_button_0_tb_header:before,body #page-container .et_pb_section .et_pb_button_1_tb_header:before{line-height:inherit;font-size:inherit!important;margin-left:-1.3em;right:auto;display:inline-block;opacity:1;content:attr(data-icon);font-family:FontAwesome!important;font-weight:900!important}body #page-container .et_pb_section .et_pb_button_0_tb_header:after,body #page-container .et_pb_section .et_pb_button_1_tb_header:after,body #page-container .et_pb_section .et_pb_button_2_tb_header:after{display:none}body #page-container .et_pb_section .et_pb_button_0_tb_header:hover:before,body #page-container .et_pb_section .et_pb_button_1_tb_header:hover:before,body #page-container .et_pb_section .et_pb_button_2_tb_header:hover:before{margin-left:.3em;right:auto;margin-left:-1.3em}.et_pb_button_0_tb_header,.et_pb_button_1_tb_header,.et_pb_button_2_tb_header{width:110px;margin-top:10px;margin-right:5px}body #page-container .et_pb_section .et_pb_button_2_tb_header:before{line-height:inherit;font-size:inherit!important;margin-left:-1.3em;right:auto;display:inline-block;opacity:1;content:attr(data-icon);font-family:ETmodules!important;font-weight:400!important}}.et_pb_section_0_tb_footer.et_pb_section{background-color:#194C8F!important}.et_pb_row_0_tb_footer.et_pb_row{padding-right:0px!important;margin-bottom:30px!important;padding-right:0px}body #page-container .et_pb_section .et_pb_button_0_tb_footer,body #page-container .et_pb_section .et_pb_button_1_tb_footer,body #page-container .et_pb_section .et_pb_button_2_tb_footer,body #page-container .et_pb_section .et_pb_button_3_tb_footer,body #page-container .et_pb_section .et_pb_button_4_tb_footer,body #page-container .et_pb_section .et_pb_button_5_tb_footer{color:#194C8F!important;border-color:#FFFFFF;border-radius:0px;font-size:16px;font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif!important;font-weight:700!important;background-color:#FFFFFF}body #page-container .et_pb_section .et_pb_button_0_tb_footer:hover,body #page-container .et_pb_section .et_pb_button_1_tb_footer:hover,body #page-container .et_pb_section .et_pb_button_2_tb_footer:hover,body #page-container .et_pb_section .et_pb_button_3_tb_footer:hover,body #page-container .et_pb_section .et_pb_button_4_tb_footer:hover,body #page-container .et_pb_section .et_pb_button_5_tb_footer:hover{color:#FFFFFF!important;border-color:#4D9424!important;background-image:linear-gradient(180deg,#4d9424 0%,#8cc260 100%);background-color:#FFFFFF}body #page-container .et_pb_section .et_pb_button_0_tb_footer,body #page-container .et_pb_section .et_pb_button_0_tb_footer:hover,body #page-container .et_pb_section .et_pb_button_1_tb_footer,body #page-container .et_pb_section .et_pb_button_1_tb_footer:hover,body #page-container .et_pb_section .et_pb_button_2_tb_footer,body #page-container .et_pb_section .et_pb_button_2_tb_footer:hover,body #page-container .et_pb_section .et_pb_button_3_tb_footer,body #page-container .et_pb_section .et_pb_button_3_tb_footer:hover,body #page-container .et_pb_section .et_pb_button_4_tb_footer,body #page-container .et_pb_section .et_pb_button_4_tb_footer:hover,body #page-container .et_pb_section .et_pb_button_5_tb_footer,body #page-container .et_pb_section .et_pb_button_5_tb_footer:hover{padding:0.3em 1em!important}body #page-container .et_pb_section .et_pb_button_0_tb_footer:before,body #page-container .et_pb_section .et_pb_button_0_tb_footer:after,body #page-container .et_pb_section .et_pb_button_1_tb_footer:before,body #page-container .et_pb_section .et_pb_button_1_tb_footer:after,body #page-container .et_pb_section .et_pb_button_2_tb_footer:before,body #page-container .et_pb_section .et_pb_button_2_tb_footer:after,body #page-container .et_pb_section .et_pb_button_3_tb_footer:before,body #page-container .et_pb_section .et_pb_button_3_tb_footer:after,body #page-container .et_pb_section .et_pb_button_4_tb_footer:before,body #page-container .et_pb_section .et_pb_button_4_tb_footer:after,body #page-container .et_pb_section .et_pb_button_5_tb_footer:before,body #page-container .et_pb_section .et_pb_button_5_tb_footer:after{display:none!important}.et_pb_button_0_tb_footer,.et_pb_button_1_tb_footer,.et_pb_button_2_tb_footer,.et_pb_button_3_tb_footer,.et_pb_button_4_tb_footer,.et_pb_button_5_tb_footer{transition:color 0ms ease 0ms,background-color 0ms ease 0ms,border 0ms ease 0ms;width:250px;text-align:center}.et_pb_button_0_tb_footer,.et_pb_button_0_tb_footer:after,.et_pb_button_1_tb_footer,.et_pb_button_1_tb_footer:after,.et_pb_button_2_tb_footer,.et_pb_button_2_tb_footer:after,.et_pb_button_3_tb_footer,.et_pb_button_3_tb_footer:after,.et_pb_button_4_tb_footer,.et_pb_button_4_tb_footer:after,.et_pb_button_5_tb_footer,.et_pb_button_5_tb_footer:after{transition:all 0ms ease 0ms}.et_pb_image_0_tb_footer{text-align:left;margin-left:0}.et_pb_text_0_tb_footer.et_pb_text{color:#FFFFFF!important}.et_pb_text_0_tb_footer{line-height:1.8em;font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;font-weight:500;font-size:16px;line-height:1.8em;min-height:200px;margin-left:26px!important;width:100%}ul.et_pb_social_media_follow_0_tb_footer{margin-left:85px!important}.et_pb_social_media_follow_0_tb_footer{width:95.3%}.et_pb_row_1_tb_footer.et_pb_row{margin-bottom:30px!important}.et_pb_social_media_follow_network_0_tb_footer a.icon,.et_pb_social_media_follow_network_1_tb_footer a.icon,.et_pb_social_media_follow_network_2_tb_footer a.icon,.et_pb_social_media_follow_network_3_tb_footer a.icon{background-image:linear-gradient(120deg,#4d9424 0%,#8cc260 100%)!important}.et_pb_social_media_follow_network_0_tb_footer.et_pb_social_icon a.icon,.et_pb_social_media_follow_network_1_tb_footer.et_pb_social_icon a.icon,.et_pb_social_media_follow_network_2_tb_footer.et_pb_social_icon a.icon,.et_pb_social_media_follow_network_3_tb_footer.et_pb_social_icon a.icon{border-radius:0px 0px 0px 0px;border-color:#86BC24}@media only screen and (min-width:981px){.et_pb_row_0_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,.et_pb_row_1_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_1_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1_tb_footer.et_pb_row{width:890px}}@media only screen and (max-width:980px){.et_pb_row_0_tb_footer.et_pb_row,.et_pb_row_1_tb_footer.et_pb_row{padding-right:75px!important;padding-left:75px!important;padding-right:75px!important;padding-left:75px!important}.et_pb_row_0_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,.et_pb_row_1_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_1_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1_tb_footer.et_pb_row{width:100%}.et_pb_image_0_tb_footer{text-align:center;margin-left:auto;margin-right:auto}.et_pb_image_0_tb_footer .et_pb_image_wrap img{width:auto}.et_pb_text_0_tb_footer{margin-left:0px!important}ul.et_pb_social_media_follow_0_tb_footer{margin-right:-1px!important;margin-left:0px!important}.et_pb_column_0_tb_footer{padding-bottom:60px}}@media only screen and (max-width:767px){.et_pb_row_0_tb_footer.et_pb_row,.et_pb_row_1_tb_footer.et_pb_row{padding-right:30px!important;padding-left:30px!important;padding-right:30px!important;padding-left:30px!important}.et_pb_image_0_tb_footer .et_pb_image_wrap img{width:auto}.et_pb_text_0_tb_footer{margin-left:0px!important}ul.et_pb_social_media_follow_0_tb_footer{margin-right:-1px!important;margin-left:0px!important}.et_pb_column_0_tb_footer{padding-bottom:60px}}div.et_pb_section.et_pb_section_0{background-image:linear-gradient(90deg,#84bc25 0%,#009f5c 100%)!important}.et_pb_section_0.et_pb_section{padding-top:50px;padding-bottom:100px}.et_pb_section_0.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0zMjAgMjhjMzIwIDAgMzIwIDg0IDY0MCA4NCAxNjAgMCAyNDAtMjEgMzIwLTQydjcwSDBWNzBjODAtMjEgMTYwLTQyIDMyMC00MnoiLz48L2c+PC9zdmc+);background-size:100% 100px;bottom:0;height:100px;z-index:1;transform:scale(-1,1)}.et_pb_text_0.et_pb_text,.et_pb_text_1.et_pb_text,.et_pb_text_4.et_pb_text,.et_pb_text_5.et_pb_text{color:#FFFFFF!important}.et_pb_text_0{line-height:1.2em;font-size:60px;line-height:1.2em;margin-bottom:0px!important}.et_pb_text_0 h1,.et_pb_text_1 h1{font-weight:800}.et_pb_text_0 h2{font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;font-weight:700;font-size:30px;color:#FFFFFF!important;line-height:1.4em}.et_pb_text_0 h3{font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;font-size:20px;color:#FFFFFF!important;line-height:1.4em}.et_pb_text_1{line-height:1.2em;font-size:60px;line-height:1.2em}.et_pb_text_1 h2{font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;font-weight:700;font-size:34px;color:#FFFFFF!important;line-height:1.4em}.et_pb_text_1 h3{font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;font-size:18px;color:#84BC25!important;line-height:1.4em}.et_pb_section_1.et_pb_section{padding-top:0px}.et_pb_text_2 h1{font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;font-weight:700;color:#000000!important;line-height:1.4em}.et_pb_text_3.et_pb_text{color:#000000!important}.et_pb_text_3,.et_pb_text_5{line-height:1.6em;font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;font-weight:500;font-size:16px;line-height:1.6em}.et_pb_row_2.et_pb_row,.et_pb_row_4.et_pb_row{margin-bottom:30px!important}.et_pb_image_0{text-align:left;margin-left:0}.et_pb_dp_oc_custom_0{padding-right:30px}.et_pb_dp_oc_custom_0 .owl-carousel .owl-dots .owl-dot{margin-top:40px}.et_pb_dp_oc_custom_0.et_pb_dp_oc_custom .owl-carousel .owl-nav{color:#194C8F}.et_pb_dp_oc_custom_0.et_pb_dp_oc_custom .owl-carousel .owl-dots .owl-dot{background-color:#4D9424;width:16px;height:16px}.et_pb_dp_oc_custom_0.et_pb_dp_oc_custom .owl-carousel .owl-prev:before{content:"\34";font-family:ETmodules!important;font-weight:400!important}.et_pb_dp_oc_custom_0.et_pb_dp_oc_custom .owl-carousel .owl-next:before{content:"\35";font-family:ETmodules!important;font-weight:400!important}.et_pb_image_1{text-align:center}.et_pb_row_5{background-image:linear-gradient(90deg,#4d9424 0%,#8cc260 100%);background-color:#4D9424}.et_pb_row_5.et_pb_row{padding-top:60px!important;padding-right:120px!important;padding-bottom:60px!important;padding-left:120px!important;margin-bottom:30px!important;padding-top:60px;padding-right:120px;padding-bottom:60px;padding-left:120px}.et_pb_text_4 h1{font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;font-weight:700;color:#FFFFFF!important;line-height:1.4em}div.et_pb_section.et_pb_section_2{background-image:url(https://www.golfparcsandur.nl/wp-content/uploads/2022/03/P5140067-scaled.jpg)!important}.et_pb_section_2{height:700px}.et_pb_section_2.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiMxOTRDOEYiPjxwYXRoIGQ9Ik0zMjAgMjhDMTYwIDI4IDgwIDQ5IDAgNzBWMGgxMjgwdjcwYy04MCAyMS0xNjAgNDItMzIwIDQyLTMyMCAwLTMyMC04NC02NDAtODR6Ii8+PC9nPjwvc3ZnPg==);background-size:100% 100px;bottom:0;height:100px;z-index:10;transform:scale(1,-1)}@media only screen and (min-width:981px){.et_pb_row_0,body #page-container .et-db #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,.et_pb_row_1,body #page-container .et-db #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,.et_pb_row_3,body #page-container .et-db #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_3.et_pb_row{width:640px}.et_pb_row_2,body #page-container .et-db #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,.et_pb_row_4,body #page-container .et-db #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,.et_pb_row_5,body #page-container .et-db #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_5.et_pb_row{width:890px}}@media only screen and (max-width:980px){.et_pb_section_0.et_pb_section{padding-top:50px;padding-bottom:50px}.et_pb_section_0.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTMyMCAyOGMzMjAgMCAzMjAgODQgNjQwIDg0IDE2MCAwIDI0MC0yMSAzMjAtNDJ2NzBIMFY3MGM4MC0yMSAxNjAtNDIgMzIwLTQyeiIvPjwvZz48L3N2Zz4=);background-size:100% 50px;bottom:0;height:50px;z-index:1;transform:scale(-1,1)}.et_pb_section_1.et_pb_section{padding-top:0px}.et_pb_row_2.et_pb_row,.et_pb_row_4.et_pb_row,.et_pb_row_5.et_pb_row{padding-right:75px!important;padding-left:75px!important;padding-right:75px!important;padding-left:75px!important}.et_pb_row_2,body #page-container .et-db #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,.et_pb_row_4,body #page-container .et-db #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,.et_pb_row_5,body #page-container .et-db #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_5.et_pb_row{width:100%}.et_pb_image_0 .et_pb_image_wrap img,.et_pb_image_1 .et_pb_image_wrap img{width:auto}.et_pb_section_2.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzE5NEM4RiI+PHBhdGggZD0iTTMyMCAyOEMxNjAgMjggODAgNDkgMCA3MFYwaDEyODB2NzBjLTgwIDIxLTE2MCA0Mi0zMjAgNDItMzIwIDAtMzIwLTg0LTY0MC04NHoiLz48L2c+PC9zdmc+);background-size:100% 50px;bottom:0;height:50px;z-index:10;transform:scale(1,-1)}}@media only screen and (max-width:767px){.et_pb_section_0.et_pb_section{padding-top:20px;padding-bottom:20px}.et_pb_row_0,body #page-container .et-db #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,.et_pb_row_1,body #page-container .et-db #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,.et_pb_row_3,body #page-container .et-db #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_3.et_pb_row{width:80%}.et_pb_text_1 h2{font-size:30px}.et_pb_section_1.et_pb_section{padding-top:0px}.et_pb_row_2.et_pb_row,.et_pb_row_4.et_pb_row,.et_pb_row_5.et_pb_row{padding-right:30px!important;padding-left:30px!important;padding-right:30px!important;padding-left:30px!important}.et_pb_image_0 .et_pb_image_wrap img,.et_pb_image_1 .et_pb_image_wrap img{width:auto}}</style>	
+			<span class="et_pb_scroll_top et-pb-icon"></span>
+	</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1793159176 -->
