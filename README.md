@@ -9,7 +9,7 @@ Aan het eind krijg je een analyse per speler met de **score differential en
 handicapberekening** volgens het World Handicap System (WHS) dat de NGF gebruikt.
 
 🌐 **Website:** [golf.kapital.nl](https://golf.kapital.nl) – uitleg, installeren op Android en iPhone,
-en [alle banen per provincie](https://golf.kapital.nl/banen.html) · 📱 **App:** [kaprudy.github.io/Golf](https://kaprudy.github.io/Golf/)
+en [alle banen per provincie](https://golf.kapital.nl/banen.html) · 📱 **App:** [kaprudy.github.io/Golf](https://kaprudy.github.io/Golf/) · 🧭 **Architectuur:** [systeemcontext (C1)](docs/architectuur.md)
 
 ## Wat kan de app?
 

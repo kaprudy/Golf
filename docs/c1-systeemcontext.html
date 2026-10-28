@@ -1,0 +1,168 @@
+<title>Golfscore systeemcontext</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
+<style>
+  /* Layout: één kolom, diagram bovenaan op volle breedte, daaronder de relaties als lijst */
+  :root {
+    --bg: #F4EEE2; --card: #FBF8F1; --ink: #1F2A22; --muted: #5C5A4E; --line: #8C8672;
+    --person: #1E4D36; --system: #2F6B4C; --on-dark: #FBF8F1; --ext: #E2D7C1; --ext-ink: #1F2A22;
+    --serif: 'Fraunces', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #171A15; --card: #20241D; --ink: #EFE9DC; --muted: #B3AC98; --line: #8A8573;
+    --person: #2E6B4C; --system: #3D7F5C; --on-dark: #F4EEE2; --ext: #353A2F; --ext-ink: #EFE9DC; color-scheme: dark } }
+  :root[data-theme="dark"] {
+    --bg: #171A15; --card: #20241D; --ink: #EFE9DC; --muted: #B3AC98; --line: #8A8573;
+    --person: #2E6B4C; --system: #3D7F5C; --on-dark: #F4EEE2; --ext: #353A2F; --ext-ink: #EFE9DC; color-scheme: dark }
+  body { background: var(--bg); color: var(--ink); font: 16px/1.55 var(--sans); }
+  main { max-width: 1000px; margin: 0 auto; padding-block: 28px 48px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  h1, h2 { font-family: var(--serif); font-weight: 600; text-wrap: balance; margin: 0 0 8px; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); }
+  h2 { font-size: 1.25rem; margin-top: 32px; }
+  .over { font-size: .75rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+  .lead { color: var(--muted); max-width: 40em; }
+  .diagram { overflow-x: auto; margin-top: 20px; background: var(--card); border-radius: 20px; padding: 12px; }
+  .diagram svg { display: block; min-width: 720px; width: 100%; height: auto; }
+  svg text { font-family: var(--sans); }
+  .t-name { font-family: var(--serif); font-weight: 600; font-size: 17px; }
+  .t-kind { font-size: 11px; letter-spacing: .08em; }
+  .t-desc { font-size: 12.5px; }
+  .t-rel { font-size: 12px; fill: var(--muted); paint-order: stroke; stroke: var(--card); stroke-width: 5px; stroke-linejoin: round; }
+  .rels { display: grid; gap: 8px; padding: 0; list-style: none; }
+  .rels li { display: grid; grid-template-columns: minmax(0, 13em) minmax(0, 1fr); gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--ext); }
+  .rels b { font-weight: 600; }
+  @media (max-width: 560px) { .rels li { grid-template-columns: 1fr; gap: 2px; } }
+  .muted { color: var(--muted); font-size: .92rem; }
+</style>
+
+<main>
+  <div class="over">C4-model · niveau 1 · systeemcontext</div>
+  <h1>Golfscore</h1>
+  <p class="lead">Wie gebruikt Golfscore, en met welke systemen buiten de app praat het? De binnenkant (app, API, database, website) komt pas in een C2-containerdiagram.</p>
+
+  <div class="diagram" role="img" aria-label="Systeemcontextdiagram van Golfscore">
+    <svg viewBox="0 0 980 700" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="pijl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="var(--line)"/>
+        </marker>
+      </defs>
+
+      <!-- relaties (eerst, zodat de vakken erover liggen) -->
+      <g stroke="var(--line)" stroke-width="1.6" fill="none" marker-end="url(#pijl)">
+        <line x1="190" y1="150" x2="370" y2="288"/>
+        <line x1="490" y1="150" x2="490" y2="288"/>
+        <line x1="790" y1="150" x2="610" y2="288"/>
+        <line x1="390" y1="432" x2="150" y2="552"/>
+        <line x1="460" y1="432" x2="380" y2="552"/>
+        <line x1="610" y1="552" x2="530" y2="432" stroke-dasharray="5 4"/>
+        <line x1="590" y1="432" x2="840" y2="552"/>
+      </g>
+      <g class="t-rel" text-anchor="middle">
+        <text x="250" y="206">Speelt een ronde: kiest baan</text>
+        <text x="250" y="221">en spelers, spreekt of tikt</text>
+        <text x="250" y="236">scores, ziet afstand en handicap</text>
+        <text x="490" y="210">Bekijkt registraties, sessies</text>
+        <text x="490" y="225">en GPS; geeft GPS-rechten</text>
+        <text x="730" y="206">Leest banen per provincie,</text>
+        <text x="730" y="221">uitleg en installatie</text>
+        <text x="730" y="236">(ook zoekmachines en AI)</text>
+        <text x="235" y="482">Spraak naar tekst,</text>
+        <text x="235" y="497">locatie op de baan</text>
+        <text x="390" y="512">Holes, tees en greens</text>
+        <text x="390" y="527">(Overpass), kaarttegels</text>
+        <text x="600" y="482">Host de app, test</text>
+        <text x="600" y="497">en rolt uit naar de server</text>
+        <text x="760" y="512">Haalt scorekaarten, course</text>
+        <text x="760" y="527">rating en slope op</text>
+      </g>
+
+      <!-- personen -->
+      <g>
+        <g transform="translate(100 30)">
+          <circle cx="90" cy="16" r="16" fill="var(--person)"/>
+          <rect x="0" y="36" width="180" height="96" rx="20" fill="var(--person)"/>
+          <text x="90" y="64" text-anchor="middle" class="t-name" fill="var(--on-dark)">Golfer</text>
+          <text x="90" y="82" text-anchor="middle" class="t-kind" fill="var(--on-dark)">[PERSOON]</text>
+          <text x="90" y="104" text-anchor="middle" class="t-desc" fill="var(--on-dark)">Speelt met de app op</text>
+          <text x="90" y="120" text-anchor="middle" class="t-desc" fill="var(--on-dark)">de telefoon</text>
+        </g>
+        <g transform="translate(400 30)">
+          <circle cx="90" cy="16" r="16" fill="var(--person)"/>
+          <rect x="0" y="36" width="180" height="96" rx="20" fill="var(--person)"/>
+          <text x="90" y="64" text-anchor="middle" class="t-name" fill="var(--on-dark)">Beheerder</text>
+          <text x="90" y="82" text-anchor="middle" class="t-kind" fill="var(--on-dark)">[PERSOON]</text>
+          <text x="90" y="104" text-anchor="middle" class="t-desc" fill="var(--on-dark)">Beheert gebruikers</text>
+          <text x="90" y="120" text-anchor="middle" class="t-desc" fill="var(--on-dark)">en baangegevens</text>
+        </g>
+        <g transform="translate(700 30)">
+          <circle cx="90" cy="16" r="16" fill="var(--person)"/>
+          <rect x="0" y="36" width="180" height="96" rx="20" fill="var(--person)"/>
+          <text x="90" y="64" text-anchor="middle" class="t-name" fill="var(--on-dark)">Bezoeker</text>
+          <text x="90" y="82" text-anchor="middle" class="t-kind" fill="var(--on-dark)">[PERSOON]</text>
+          <text x="90" y="104" text-anchor="middle" class="t-desc" fill="var(--on-dark)">Zoekt een baan of</text>
+          <text x="90" y="120" text-anchor="middle" class="t-desc" fill="var(--on-dark)">wil de app installeren</text>
+        </g>
+      </g>
+
+      <!-- het systeem -->
+      <g transform="translate(290 290)">
+        <rect width="400" height="140" rx="22" fill="var(--system)"/>
+        <text x="200" y="36" text-anchor="middle" class="t-name" fill="var(--on-dark)" style="font-size:22px">Golfscore</text>
+        <text x="200" y="56" text-anchor="middle" class="t-kind" fill="var(--on-dark)">[SOFTWARESYSTEEM]</text>
+        <text x="200" y="84" text-anchor="middle" class="t-desc" fill="var(--on-dark)">Web-app die ook zonder bereik werkt, met opslag en</text>
+        <text x="200" y="101" text-anchor="middle" class="t-desc" fill="var(--on-dark)">synchronisatie op golf.kapital.nl, beheerpagina en</text>
+        <text x="200" y="118" text-anchor="middle" class="t-desc" fill="var(--on-dark)">website met meer dan 100 banen</text>
+      </g>
+
+      <!-- externe systemen -->
+      <g>
+        <g transform="translate(25 554)">
+          <rect width="210" height="116" rx="18" fill="var(--ext)"/>
+          <text x="105" y="32" text-anchor="middle" class="t-name" fill="var(--ext-ink)">Telefoon en browser</text>
+          <text x="105" y="50" text-anchor="middle" class="t-kind" fill="var(--ext-ink)">[EXTERN SYSTEEM]</text>
+          <text x="105" y="74" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">GPS en spraakherkenning</text>
+          <text x="105" y="91" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">(Google in Chrome,</text>
+          <text x="105" y="108" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">Apple in Safari)</text>
+        </g>
+        <g transform="translate(265 554)">
+          <rect width="210" height="116" rx="18" fill="var(--ext)"/>
+          <text x="105" y="32" text-anchor="middle" class="t-name" fill="var(--ext-ink)">OpenStreetMap</text>
+          <text x="105" y="50" text-anchor="middle" class="t-kind" fill="var(--ext-ink)">[EXTERN SYSTEEM]</text>
+          <text x="105" y="74" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">Overpass-API en</text>
+          <text x="105" y="91" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">kaarttegels voor de</text>
+          <text x="105" y="108" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">baanplattegronden</text>
+        </g>
+        <g transform="translate(505 554)">
+          <rect width="210" height="116" rx="18" fill="var(--ext)"/>
+          <text x="105" y="32" text-anchor="middle" class="t-name" fill="var(--ext-ink)">GitHub</text>
+          <text x="105" y="50" text-anchor="middle" class="t-kind" fill="var(--ext-ink)">[EXTERN SYSTEEM]</text>
+          <text x="105" y="74" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">Broncode, Pages (de app)</text>
+          <text x="105" y="91" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">en Actions: tests, uitrol,</text>
+          <text x="105" y="108" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">data ophalen</text>
+        </g>
+        <g transform="translate(745 554)">
+          <rect width="210" height="116" rx="18" fill="var(--ext)"/>
+          <text x="105" y="32" text-anchor="middle" class="t-name" fill="var(--ext-ink)">Websites van clubs</text>
+          <text x="105" y="50" text-anchor="middle" class="t-kind" fill="var(--ext-ink)">[EXTERN SYSTEEM]</text>
+          <text x="105" y="74" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">Scorekaarten en tabellen</text>
+          <text x="105" y="91" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">(HTML, PDF, afbeeldingen)</text>
+          <text x="105" y="108" text-anchor="middle" class="t-desc" fill="var(--ext-ink)">van ruim 70 golfclubs</text>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <p class="muted">Doorgetrokken pijl: Golfscore of de persoon start het contact. Gestippelde pijl: GitHub start het contact (uitrol via SSH).</p>
+
+  <h2>Relaties</h2>
+  <ul class="rels">
+    <li><b>Golfer → Golfscore</b><span>Kiest de baan (met GPS-voorstel), het aantal holes en de spelers, spreekt of tikt de scores in en ziet stableford, differential en handicap. Werkt zonder internet en synchroniseert later.</span></li>
+    <li><b>Beheerder → Golfscore</b><span>Bekijkt via de beheerpagina registraties, sessies, rondes, gedeelde spraak en GPS-punten, en geeft gebruikers het recht om GPS-punten vast te leggen.</span></li>
+    <li><b>Bezoeker → Golfscore</b><span>Leest op golf.kapital.nl de banen per provincie, de uitleg en de installatie-instructies. Zoekmachines en AI-assistenten lezen dezelfde pagina's, sitemap en llms.txt.</span></li>
+    <li><b>Golfscore → Telefoon en browser</b><span>Vraagt de locatie op voor afstand tot de green en baankeuze, en zet ingesproken tekst om via de spraakherkenning van de browser.</span></li>
+    <li><b>Golfscore → OpenStreetMap</b><span>Haalt holes, tees en greens op via Overpass (via de server en GitHub Actions) en toont kaarttegels op de beheerpagina.</span></li>
+    <li><b>GitHub → Golfscore</b><span>Host de app op GitHub Pages, draait de tests en rolt de server uit via SSH met een sleutel die alleen deploy.sh mag starten.</span></li>
+    <li><b>Golfscore → Websites van clubs</b><span>Haalt scorekaarten, course rating en slope op (met GitHub Actions); de waarden gaan na controle in de banenlijst.</span></li>
+  </ul>
+</main>
