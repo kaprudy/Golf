@@ -84,7 +84,9 @@ for (const site of urls) {
       for (const l of r.links) {
         const sameSite = new URL(l).host.replace(/^www\./, '') === host;
         if (/\.(ico|woff2?|css|js|svg)($|\?)|\/dynamic\/(image|proxy)\//i.test(l)) continue; // geen pictogrammen en lettertypes
+        // Afbeeldingen alleen als ze op een scorekaart of handicaptabel lijken
         const image = /\.(png|jpe?g|webp)($|\?)/i.test(l);
+        if (image && !/scorekaart|scorecard|handicap|playing|rating|slope|tabel|phcp/i.test(l)) continue;
         if (!seen.has(l) && (KEY.test(l) || image) && (sameSite || image || /\.pdf($|\?)/i.test(l))) queue.push(l);
       }
       report.push(`ok   ${u}`);
