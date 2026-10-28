@@ -1,6 +1,7 @@
 import { pickBest, matchPlayer, simplify, setLearnedVocab } from './parser.js';
 import { recordEntry, loadQueue, saveQueue, finalizeRound } from './learning.js';
 import { DEFAULT_COURSES, BASE_GEO, standardCourse } from './courses.js';
+import { queuePush, bgGet, bgDelete } from './bgsync.js';
 import { decideSync, mergeStates, toCloud, fromCloud } from './sync.js';
 import { API_URL } from './config.js';
 import { createBuggy, buggySupported } from './buggy.js';
@@ -344,7 +345,9 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
 // ---------- Cloud (eigen server, zie server/) ----------
 
 const cloudConfigured = Boolean(API_URL);
-const cloud = { api: null, user: null, status: '', error: null, busy: false, again: false, timer: null };
+const cloud = { api: null, user: null, status: '', error: null, busy: false, again: false, timer: null, retryMs: 0, pending: false };
+const RETRY_MIN_MS = 15000;
+const RETRY_MAX_MS = 5 * 60 * 1000;
 
 async function cloudApi() {
   if (!cloudConfigured) return null;
@@ -356,14 +359,41 @@ function scheduleSync(delay = 4000) {
   if (!cloud.user) return;
   clearTimeout(cloud.timer);
   cloud.timer = setTimeout(syncNow, delay);
+  queueBackground();
+}
+
+// Laatste versie klaarzetten voor de service worker: die verstuurt hem zodra er bereik is,
+// ook als de app intussen dicht is (Android). Alleen als er niets tussendoor gewijzigd is
+// in de cloud; anders voegt de app het bij de volgende keer openen samen.
+async function queueBackground() {
+  const api = await cloudApi();
+  const token = api?.sessionToken();
+  if (!token || !state.sync.localChangedAt) return;
+  queuePush({ url: API_URL, token, data: toCloud(state), baseUpdatedAt: state.sync.syncedAt ?? null, localChangedAt: state.sync.localChangedAt });
+}
+
+// Wat de service worker op de achtergrond verstuurde, verwerken.
+async function applyBackgroundResult() {
+  try {
+    const r = await bgGet('result');
+    if (!r) return;
+    await bgDelete('result');
+    if (r.localChangedAt === state.sync.localChangedAt) {
+      state.sync.syncedAt = r.updatedAt;
+      state.sync.localChangedAt = r.updatedAt;
+      save({ fromCloud: true });
+    }
+  } catch { /* geen IndexedDB */ }
 }
 
 async function syncNow() {
   const api = await cloudApi();
-  if (!api || !cloud.user || !navigator.onLine) return;
+  if (!api || !cloud.user) return;
+  if (!navigator.onLine) { cloud.pending = true; return; } // de 'online'-gebeurtenis start hem weer
   if (cloud.busy) { cloud.again = true; return; }
   cloud.busy = true;
   try {
+    await applyBackgroundResult();
     const remote = await api.fetchState(cloud.user.id);
     const action = decideSync({ ...state.sync, remoteUpdatedAt: remote?.updated_at ?? null });
     if (action === 'pull') {
@@ -371,16 +401,28 @@ async function syncNow() {
       state.sync.syncedAt = remote.updated_at;
     } else if (action === 'push' || action === 'merge') {
       if (action === 'merge') state = mergeStates(state, migrate(fromCloud(remote.data, state)));
-      state.sync.syncedAt = await api.pushState(cloud.user.id, toCloud(state));
+      state.sync.syncedAt = await api.pushState(cloud.user.id, toCloud(state), remote?.updated_at ?? null);
       state.sync.localChangedAt = state.sync.syncedAt;
     }
     uploadSamples();
     flushEvents();
     cloud.status = `Gesynchroniseerd om ${new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`;
+    cloud.retryMs = 0;
+    cloud.pending = false;
     save({ fromCloud: true });
+    bgDelete('pending').catch(() => {});
   } catch (err) {
-    const e = api.describeCloudError(err);
-    cloud.status = `${e.title}: synchroniseren lukte niet, de app probeert het later opnieuw.`;
+    if (err.status === 409) {
+      cloud.again = true; // tussendoor gewijzigd op een ander toestel: meteen opnieuw, dan wordt er samengevoegd
+    } else {
+      // Slecht of geen bereik: alles staat veilig op de telefoon. Later opnieuw, steeds wat langer wachten.
+      const e = api.describeCloudError(err);
+      cloud.pending = true;
+      cloud.retryMs = Math.min(RETRY_MAX_MS, cloud.retryMs ? cloud.retryMs * 2 : RETRY_MIN_MS);
+      clearTimeout(cloud.timer);
+      cloud.timer = setTimeout(syncNow, cloud.retryMs);
+      cloud.status = `${e.title}. Alles staat op je telefoon; de app synchroniseert vanzelf zodra er bereik is.`;
+    }
   } finally {
     cloud.busy = false;
     render();
@@ -405,8 +447,12 @@ async function initCloud() {
   render();
   if (cloud.user) syncNow();
   refreshVocab(api);
-  window.addEventListener('online', () => syncNow());
-  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') syncNow(); });
+  window.addEventListener('online', () => { cloud.retryMs = 0; syncNow(); });
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') syncNow();
+    else if (cloud.pending || (state.sync.localChangedAt && state.sync.localChangedAt !== state.sync.syncedAt)) queueBackground();
+  });
+  navigator.serviceWorker?.addEventListener('message', (e) => { if (e.data?.type === 'golf-synced') applyBackgroundResult(); });
 }
 
 // Geleerde woorden van de server (voor iedereen hetzelfde), ook offline bruikbaar via de cache.
@@ -1034,6 +1080,47 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 const MAX_ALTERNATIVES = 5;
 let recognition = null;
 
+// Spraak zonder internet: nieuwere Chrome-versies kunnen Nederlands op het toestel herkennen
+// (taalpakket eenmalig downloaden). Standaard gaat spraak via internet; valt het bereik weg,
+// dan schakelt de app over als het taalpakket er is.
+const LOCAL_SPEECH = { langs: ['nl-NL'], processLocally: true };
+const localSpeechSupported = () => Boolean(SpeechRecognition && typeof SpeechRecognition.available === 'function');
+let speechLocal = false;
+try { speechLocal = localStorage.getItem('golfscore-speech-local') === '1'; } catch { /* geen opslag */ }
+
+async function localSpeechStatus() {
+  if (!localSpeechSupported()) return 'unsupported';
+  try { return await SpeechRecognition.available(LOCAL_SPEECH); } catch { return 'unsupported'; }
+}
+
+async function installLocalSpeech() {
+  try {
+    toast('Nederlands taalpakket wordt gedownload…', 6000);
+    const ok = await SpeechRecognition.install(LOCAL_SPEECH);
+    if (ok) {
+      speechLocal = true;
+      try { localStorage.setItem('golfscore-speech-local', '1'); } catch { /* geen opslag */ }
+      toast('Klaar: inspreken werkt nu ook zonder internet.');
+    } else toast('Downloaden lukte niet. Probeer het met wifi of goed bereik.');
+  } catch {
+    toast('Downloaden lukte niet. Probeer het met wifi of goed bereik.');
+  }
+  renderSpeechOffline();
+}
+
+async function renderSpeechOffline() {
+  const el = $('#speech-offline');
+  if (!el) return;
+  const status = await localSpeechStatus();
+  el.innerHTML = status === 'available'
+    ? `<p class="small">✓ Inspreken werkt ook zonder internet (Nederlands op dit toestel).</p>
+       <label class="check"><input type="checkbox" id="speech-local" ${speechLocal ? 'checked' : ''}> Altijd op het toestel herkennen (ook met bereik)</label>`
+    : status === 'downloadable' || status === 'downloading'
+      ? `<p class="small">Op de baan is het bereik vaak slecht. Download het Nederlandse taalpakket (eenmalig, met wifi), dan werkt inspreken ook zonder internet.</p>
+         <button data-action="speech-install">Spraak zonder internet downloaden</button>`
+      : '<p class="small muted">Inspreken gebruikt internet. Zonder bereik kun je per slag tikken of de score typen; alles blijft bewaard.</p>';
+}
+
 function toggleMic() {
   if (!SpeechRecognition) {
     showFeedback('<div class="feedback error">Spraakherkenning werkt niet in deze browser. Gebruik Chrome (Android) of Safari (iPhone), of typ de scores.</div>');
@@ -1047,6 +1134,8 @@ function toggleMic() {
   recognition.interimResults = true;
   recognition.continuous = false;
   recognition.maxAlternatives = MAX_ALTERNATIVES;
+  const local = (speechLocal || !navigator.onLine) && 'processLocally' in recognition;
+  if (local) recognition.processLocally = true;
   let finals = []; // per stuk tekst: lijst met alternatieven
 
   const live = $('#live');
@@ -1068,6 +1157,17 @@ function toggleMic() {
   };
   recognition.onerror = (e) => {
     if (e.error === 'not-allowed') showFeedback('<div class="feedback error">Geen toegang tot de microfoon. Sta dit toe in je browser.</div>');
+    else if (e.error === 'network' || (local && e.error === 'language-not-supported')) {
+      // Geen (goed) bereik: op het toestel herkennen als dat kan, anders tikken of typen.
+      localSpeechStatus().then((status) => {
+        if (status === 'available' && !local) {
+          speechLocal = true;
+          showFeedback('<div class="feedback info">📶 Geen goed bereik: de app herkent spraak nu op je telefoon. Tik nog een keer op de microfoon.</div>');
+        } else {
+          showFeedback(`<div class="feedback error">📶 Geen internet voor spraakherkenning. Tik per slag op de speler of typ de score; alles blijft bewaard.${status === 'downloadable' ? '<br><button class="link" data-action="speech-install">Spraak zonder internet downloaden (eenmalig, met wifi)</button>' : ''}</div>`);
+        }
+      });
+    }
     else if (e.error !== 'no-speech' && e.error !== 'aborted') showFeedback(`<div class="feedback error">Spraakfout: ${esc(e.error)}</div>`);
   };
   recognition.onend = () => {
@@ -1364,6 +1464,7 @@ function saveRound() {
 // ---------- Gebeurtenissen ----------
 
 function switchTab(name) {
+  if (name === 'instellingen') renderSpeechOffline();
   document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('active', t.id === `tab-${name}`));
   document.querySelectorAll('.tabs button').forEach((b) => b.classList.toggle('active', b.dataset.tab === name));
   window.scrollTo(0, 0);
@@ -1463,6 +1564,7 @@ document.addEventListener('click', (e) => {
     case 'learn-no': disableLearning(); closeAfterRound(); render(); break;
     case 'learn-delete': deleteSharedSpeech(); break;
     case 'close-after-round': closeAfterRound(); break;
+    case 'speech-install': installLocalSpeech(); break;
     case 'start-round': startRound(btn.dataset.course, btn.dataset.holes); break;
     case 'resume-new': showCoursePicker(); break;
     case 'resume-continue': state.round.lastActivity = new Date().toISOString(); save(); closeAfterRound(); break;
@@ -1565,6 +1667,10 @@ document.addEventListener('change', (e) => {
     setGpsPref('golfscore-gps', t.checked);
     if (t.checked) startGps(); else stopGps();
     render();
+    return;
+  } else if (t.id === 'speech-local') {
+    speechLocal = t.checked;
+    try { localStorage.setItem('golfscore-speech-local', t.checked ? '1' : '0'); } catch { /* geen opslag */ }
     return;
   } else if (t.id === 'learn-on') {
     if (t.checked) { enableLearning(); uploadSamples(); } else disableLearning();

@@ -30,12 +30,15 @@ class CloudError extends Error {
 async function diagnose() {
   if (typeof navigator !== 'undefined' && navigator.onLine === false) return 'offline';
   try {
-    await fetch(`${API_URL}/api/health`, { mode: 'no-cors', cache: 'no-store' });
+    await fetch(`${API_URL}/api/health`, { mode: 'no-cors', cache: 'no-store', signal: AbortSignal.timeout(5000) });
     return 'blocked';
   } catch {
     return 'unreachable';
   }
 }
+
+// Op de baan is het bereik vaak slecht: nooit eindeloos wachten.
+const TIMEOUT_MS = 15000;
 
 async function api(method, path, body) {
   let res;
@@ -47,8 +50,10 @@ async function api(method, path, body) {
         ...(session?.token ? { Authorization: `Bearer ${session.token}` } : {}),
       },
       body: body ? JSON.stringify(body) : undefined,
+      signal: AbortSignal.timeout(TIMEOUT_MS),
     });
   } catch (err) {
+    if (err?.name === 'TimeoutError') throw new CloudError(0, 'De server reageert te traag.', 'slow');
     const reason = await diagnose();
     console.warn('Golfscore: server niet bereikt', API_URL + path, reason, err);
     throw new CloudError(0, 'Geen verbinding met de server.', reason);
@@ -134,9 +139,13 @@ export async function fetchState() {
   return api('GET', '/api/state'); // null als er nog niets op de server staat
 }
 
-export async function pushState(_userId, data) {
-  return (await api('PUT', '/api/state', { data })).updated_at;
+// baseUpdatedAt: de cloudversie waarop deze gegevens gebaseerd zijn. Is die intussen gewijzigd
+// (ander toestel), dan weigert de server met 409 en moet er eerst samengevoegd worden.
+export async function pushState(_userId, data, baseUpdatedAt) {
+  return (await api('PUT', '/api/state', { data, baseUpdatedAt })).updated_at;
 }
+
+export const sessionToken = () => session?.token ?? null;
 
 // Verwijdert account én gegevens op de server.
 export async function deleteState() {
@@ -171,6 +180,9 @@ export function describeCloudError(err) {
   const host = API_URL.replace(/^https?:\/\//, '');
   const status = err?.status;
   if (status === 0) {
+    if (err.reason === 'slow') {
+      return { title: 'Traag bereik', detail: 'De verbinding is nu te traag. Je gegevens blijven op de telefoon staan en worden vanzelf gesynchroniseerd zodra het bereik beter is.' };
+    }
     if (err.reason === 'offline') {
       return { title: 'Geen internet', detail: 'Je telefoon heeft nu geen verbinding met internet. Je gegevens blijven op de telefoon staan; probeer het opnieuw als je bereik hebt.' };
     }

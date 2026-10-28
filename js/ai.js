@@ -6,7 +6,8 @@ import Anthropic from './vendor/anthropic-sdk.js';
 const MODEL = 'claude-opus-5-5';
 
 function client(apiKey) {
-  return new Anthropic({ apiKey, dangerouslyAllowBrowser: true });
+  // Op de baan is het bereik vaak slecht: niet lang blijven wachten.
+  return new Anthropic({ apiKey, dangerouslyAllowBrowser: true, timeout: 20000, maxRetries: 1 });
 }
 
 async function askJson(apiKey, { system, prompt, schema, effort, maxTokens }) {

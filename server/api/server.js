@@ -426,8 +426,14 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
       return send(res, 200, row ? { data: JSON.parse(row.data), updated_at: row.updated_at } : null);
     }
     if (key === 'PUT /api/state') {
-      const { data } = await readJson(req);
+      const { data, baseUpdatedAt } = await readJson(req);
       if (!data || typeof data !== 'object' || Array.isArray(data)) throw new HttpError(400, 'Geen geldige gegevens');
+      // Optioneel: alleen opslaan als de cloudversie sinds baseUpdatedAt niet door een ander
+      // toestel is gewijzigd (anders eerst samenvoegen). Zo kan synchroniseren veilig op de achtergrond.
+      if (baseUpdatedAt !== undefined) {
+        const current = q.getState.get(user.id)?.updated_at ?? null;
+        if (current !== baseUpdatedAt) return send(res, 409, { error: 'Gewijzigd op een ander toestel', updated_at: current });
+      }
       const updatedAt = new Date().toISOString();
       q.putState.run(user.id, JSON.stringify(data), updatedAt);
       return send(res, 200, { updated_at: updatedAt });

@@ -218,3 +218,14 @@ test('OpenStreetMap-baan ophalen (met cache, alleen ingelogd)', async () => {
     osmServer.close();
   }
 });
+
+test('opslaan alleen als de cloudversie niet tussendoor gewijzigd is', async () => {
+  const { token } = (await call('POST', '/api/register', { body: { email: 'twee@example.nl', password: 'wachtwoordT' } })).body;
+  const first = await call('PUT', '/api/state', { token, body: { data: { v: 1 }, baseUpdatedAt: null } });
+  assert.equal(first.status, 200);
+  assert.equal((await call('PUT', '/api/state', { token, body: { data: { v: 2 }, baseUpdatedAt: null } })).status, 409);
+  const stale = await call('PUT', '/api/state', { token, body: { data: { v: 2 }, baseUpdatedAt: '2000-01-01T00:00:00.000Z' } });
+  assert.deepEqual([stale.status, stale.body.updated_at], [409, first.body.updated_at]);
+  assert.equal((await call('PUT', '/api/state', { token, body: { data: { v: 3 }, baseUpdatedAt: first.body.updated_at } })).status, 200);
+  assert.deepEqual((await call('GET', '/api/state', { token })).body.data, { v: 3 });
+});
