@@ -3,20 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Golfscore</title>
-  <meta name="description" content="Golfscore: golfscores inspreken tijdens je ronde, met GPS-afstanden en handicapberekening. Installeren op Android en iPhone.">
+  <title>Golfscore – golfscores inspreken, GPS-afstand tot de green en handicap berekenen</title>
+  <meta name="description" content="Golfscore: spreek je golfscore in tijdens de ronde, zie met GPS de afstand tot de green en krijg je stableford, score differential en handicap volgens het WHS. Werkt ook zonder bereik. Installeren op Android en iPhone.">
+  <link rel="canonical" href="https://golf.kapital.nl/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Golfscore">
+  <meta property="og:title" content="Golfscore – golfscores inspreken en handicap berekenen">
+  <meta property="og:description" content="Spreek je golfscore in, zie de afstand tot de green en je handicap volgens het WHS. Werkt ook zonder bereik.">
+  <meta property="og:url" content="https://golf.kapital.nl/">
+  <meta property="og:image" content="https://golf.kapital.nl/img/ronde.webp">
+  <meta property="og:locale" content="nl_NL">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Golfscore", "url": "https://kaprudy.github.io/Golf/", "applicationCategory": "SportsApplication", "operatingSystem": "Android, iOS, web", "inLanguage": "nl", "description": "Golfscores inspreken of tikken tijdens de ronde, GPS-afstand tot de green, en stableford, score differential en handicapindicatie volgens het World Handicap System. Werkt ook zonder bereik.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "featureList": ["Scores inspreken in het Nederlands", "Tikken per slag", "GPS-afstand tot de green", "Handicap berekenen volgens het WHS", "Werkt zonder internet", "Course rating en slope van meer dan 100 banen"], "sameAs": ["https://github.com/kaprudy/Golf"]}</script>
 </head>
 <body>
 <nav class="nav" aria-label="Hoofdmenu">
   <div class="nav-in">
-    <a class="brand" href="./">Golfscore</a>
-    <a class="hide-sm" href="#hoe-werkt-het">Hoe werkt het</a>
+    <a class="brand" href="/">Golfscore</a>
     <a class="hide-sm" href="#installeren">Installeren</a>
-    <a href="banen.html">Banen</a>
+    <a href="/banen.html">Banen</a>
+    <a class="hide-sm" href="/handicap-berekenen.html">Handicap</a>
+    <a class="hide-sm" href="/veelgestelde-vragen.html">Vragen</a>
     <a class="cta" href="https://kaprudy.github.io/Golf/">Open de app</a>
   </div>
 </nav>
@@ -76,7 +86,7 @@
   <section>
     <h2>Banen</h2>
     <p>De app kent <b id="course-count">de banen</b> in de regio, met par, stroke index, lengtes en de officiële course rating en slope van de clubs.</p>
-    <p><a href="banen.html">Bekijk alle banen per provincie →</a></p>
+    <p><a href="/banen.html">Bekijk alle banen per provincie →</a> · <a href="/handicap-berekenen.html">Zo wordt je handicap berekend</a> · <a href="/veelgestelde-vragen.html">Veelgestelde vragen</a></p>
   </section>
 
   <section>
@@ -84,7 +94,7 @@
     <div class="sand">
       <ul>
         <li>We bewaren alleen wat nodig is: je spelers, banen en rondes, en – als je een account maakt – je e-mailadres met een versleutelde vorm van je wachtwoord (scrypt).</li>
-        <li>Je eventuele Claude API-sleutel komt nooit op de server. Je locatie tijdens de ronde blijft op je telefoon.</li>
+        <li>Je locatie tijdens de ronde blijft op je telefoon.</li>
         <li>Alles gaat via een beveiligde verbinding (HTTPS). Iedere gebruiker ziet alleen zijn eigen gegevens.</li>
         <li>De beheerder ziet alleen aantallen (accounts, rondes, gedeelde zinnen) en e-mailadressen, niet je scores. Gedeelde spraak is zonder namen en alleen met je toestemming.</li>
         <li>Je kunt je account en al je gegevens verwijderen via de app: <em>Instellingen → Account en cloud</em>.</li>
@@ -92,8 +102,14 @@
     </div>
   </section>
 
-  <footer>Golfscore · een persoonlijk project · gehost op kapital.nl · baangegevens van de clubs, kaartgegevens © OpenStreetMap-bijdragers</footer>
 </main>
+<footer class="site-footer">
+  <div class="footer-in">
+    <div><b>Golfscore</b> · golfscores inspreken, GPS-afstanden en handicap volgens WHS</div>
+    <div class="footer-links"><a href="/">Home</a> <a href="/banen.html">Banen</a> <a href="/handicap-berekenen.html">Handicap berekenen</a> <a href="/veelgestelde-vragen.html">Veelgestelde vragen</a> <a href="https://github.com/kaprudy/Golf">Broncode op GitHub</a></div>
+    <div class="muted small">Een persoonlijk project · gehost op kapital.nl · baangegevens van de clubs · kaartgegevens © OpenStreetMap-bijdragers</div>
+  </div>
+</footer>
 <script type="module">
   fetch('/api/health', { cache: 'no-store' })
     .then((r) => r.ok ? r.json() : Promise.reject())

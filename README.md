@@ -8,6 +8,9 @@ Druk op de microfoon en zeg bijvoorbeeld:
 Aan het eind krijg je een analyse per speler met de **score differential en
 handicapberekening** volgens het World Handicap System (WHS) dat de NGF gebruikt.
 
+🌐 **Website:** [golf.kapital.nl](https://golf.kapital.nl) – uitleg, installeren op Android en iPhone,
+en [alle banen per provincie](https://golf.kapital.nl/banen.html) · 📱 **App:** [kaprudy.github.io/Golf](https://kaprudy.github.io/Golf/)
+
 ## Wat kan de app?
 
 - **Inspreken** (Nederlands) of typen. Herkent o.a.:
@@ -25,7 +28,6 @@ handicapberekening** volgens het World Handicap System (WHS) dat de NGF gebruikt
     De app vergelijkt meerdere varianten van wat de spraakherkenning hoorde en kiest de beste.
   - Een onbekende naam wordt nooit zomaar een nieuwe speler: de app vraagt eerst of het een
     bestaande speler is, een nieuwe speler, of genegeerd moet worden.
-  - Twijfelt de app en heb je een API-sleutel ingesteld, dan kijkt de AI mee.
 - **Ongedaan maken** direct na elke invoer, plus **+/−-knoppen** per speler.
 - **Tellen tijdens het lopen**: tik op een speler voor elke slag (de telefoon trilt kort). Zolang je op
   die hole bent staat de score op *bezig*; naar de volgende hole gaan of de score inspreken rondt hem af.
@@ -37,9 +39,7 @@ handicapberekening** volgens het World Handicap System (WHS) dat de NGF gebruikt
   green vast; daarna toont de app de **afstand tot de green** en springt hij naar de hole van de tee waar
   je staat (niet als je nog slagen aan het tellen bent; dan stelt hij het voor). Je locatie blijft op je
   telefoon; alleen de vastgelegde punten worden bij de baan bewaard.
-- **Werkt offline** op de baan (behalve de AI) en is te installeren als app op je beginscherm.
-- **AI (optioneel)**: met een Claude API-sleutel worden lastige zinnen alsnog begrepen en schrijft Claude een
-  analyse met tips per speler, en controleert hij of alles wat je hebt ingesproken overeenkomt met de scorekaart.
+- **Werkt offline** op de baan en is te installeren als app op je beginscherm.
 
 ## Handicapberekening (WHS)
 
@@ -72,7 +72,6 @@ Open **Instellingen**:
 4. **Baan voor de ronde**: de grote baan (18 holes) of de **par 3-baan** (9 holes, par 27; CR heren 24,4 / slope 68,
    dames 25,2 / slope 70). Op de grote baan kies je ook: eerste 9, laatste 9 of 18 holes.
    Rondes op de par 3-baan tellen niet mee voor de handicap index (te kort voor een WHS-qualifying ronde).
-5. Optioneel: **Claude API-sleutel** (maak er een op <https://console.anthropic.com>). De sleutel blijft alleen op je telefoon.
 
 ## Op je telefoon zetten
 
@@ -102,8 +101,6 @@ npm test         # tests voor tekstherkenning en handicapberekening
 | `js/app.js` | Schermen, opslag (localStorage), spraak |
 | `js/parser.js` | Herkenning van ingesproken tekst (werkt zonder internet) |
 | `js/handicap.js` | WHS-handicapberekening |
-| `js/ai.js` | Claude API: tekstherkenning als vangnet en eindanalyse |
-| `js/vendor/anthropic-sdk.js` | Gebundelde `@anthropic-ai/sdk` 0.135.0 (MIT, zie LICENSE-bestand) |
 | `sw.js`, `manifest.webmanifest` | Offline gebruik en installeren als app |
 
 ### Banen in de regio
@@ -130,7 +127,7 @@ Een account is niet nodig: bij de eerste keer openen krijgt de telefoon een anon
 geheime apparaatcode, geen e-mail). Een e-mailadres en wachtwoord zijn optioneel; daar vraagt de app
 pas om als je de app een paar keer gebruikt hebt, en alleen direct na het opslaan van een ronde (niet
 ervoor of tijdens). Met e-mail log je op een nieuwe telefoon in en staat alles er weer. De app blijft
-offline werken en synchroniseert zodra er internet is. De Claude API-sleutel blijft altijd alleen op de telefoon.
+offline werken en synchroniseert zodra er internet is.
 
 ### Leren van ingesproken tekst
 

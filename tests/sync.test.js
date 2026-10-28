@@ -71,5 +71,5 @@ test('API-sleutel gaat nooit naar de cloud', () => {
   assert.equal('apiKey' in cloud, false);
   assert.equal('sync' in cloud, false);
   const back = fromCloud({ players: [1] }, { apiKey: 'sk-lokaal', sync: { a: 1 } });
-  assert.equal(back.apiKey, 'sk-lokaal');
+  assert.equal('apiKey' in back, false); // koppeling met de Claude API is verwijderd
 });

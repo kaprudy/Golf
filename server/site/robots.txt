@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /api/
+
+Sitemap: https://golf.kapital.nl/sitemap.xml

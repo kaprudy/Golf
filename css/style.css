@@ -370,3 +370,13 @@ label.check input { width: 22px; height: 22px; min-height: 0; margin: 0; accent-
 .add-player-row { display: grid; grid-template-columns: 1fr 80px auto; gap: 8px; margin: 8px 0 14px; }
 .add-player-row input { min-height: 44px; }
 .start-btn { width: 100%; min-height: 52px; font-size: 1.05rem; }
+
+/* Baankeuze stap 2: holes en starthole, één grote knop per keuze */
+.start-question { font-family: var(--serif); font-size: 1.15rem; margin: 4px 0 12px; }
+.start-stack { display: grid; gap: 10px; }
+.start-big {
+  width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left;
+  border-radius: 18px; padding: 14px 18px; min-height: 70px;
+}
+.start-big b { font-family: var(--serif); font-size: 1.35rem; color: var(--accent-ink); }
+.start-big span { font-size: .9rem; color: var(--muted); }

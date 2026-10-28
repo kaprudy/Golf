@@ -2,6 +2,10 @@
 // Puur gegevens, zonder afhankelijkheden.
 
 // 18-holes baan waarvan we alleen de totale par en de tee-ratings kennen.
+// Pitch & putt, par 3- en shortgolfbanen (in de app en op de website een aparte groep).
+export const isShortCourse = (c) => /pitch|\bputt\b|par[ -]?3|short ?golf|golftuin|country ?golf/i.test(c.name)
+  || (c.holeCount === 9 ? c.parTotal < 30 : c.parTotal < 60);
+
 export function standardCourse(id, name, parTotal, tees, holeCount = 18) {
   return {
     id,

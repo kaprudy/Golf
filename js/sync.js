@@ -65,17 +65,17 @@ export function mergeStates(local, remote) {
     })),
     history: unionBy(local.history, remote.history, 'id', (l) => l).sort((a, b) => (a.date < b.date ? -1 : 1)),
     round: mergeRounds(local.round, remote.round),
-    apiKey: local.apiKey, // de API-sleutel blijft altijd op dit toestel
   };
 }
 
 // Wat er naar de cloud gaat: alles behalve de API-sleutel en de sync-boekhouding.
 export function toCloud(state) {
-  const { apiKey, sync, ...rest } = state;
+  const { apiKey: _oud, sync, ...rest } = state; // apiKey: oude opslag, nooit naar de server
   return rest;
 }
 
 // Cloudgegevens toepassen op dit toestel, met behoud van de lokale API-sleutel.
 export function fromCloud(data, local) {
-  return { ...data, apiKey: local.apiKey ?? '', sync: local.sync };
+  const { apiKey: _oud, ...clean } = data;
+  return { ...clean, sync: local.sync };
 }

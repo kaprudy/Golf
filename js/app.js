@@ -1,6 +1,6 @@
 import { pickBest, matchPlayer, simplify, setLearnedVocab } from './parser.js';
 import { recordEntry, loadQueue, saveQueue, finalizeRound } from './learning.js';
-import { DEFAULT_COURSES, BASE_GEO, standardCourse } from './courses.js';
+import { DEFAULT_COURSES, BASE_GEO, standardCourse, isShortCourse } from './courses.js';
 import { queuePush, bgGet, bgDelete } from './bgsync.js';
 import { decideSync, mergeStates, toCloud, fromCloud } from './sync.js';
 import { API_URL } from './config.js';
@@ -91,7 +91,6 @@ function load() {
     homeCourseId: 'hooge-graven',
     round: { ...newRound('front', 'hooge-graven'), startedAt: null }, // eerst baan kiezen
     history: [],
-    apiKey: '',
     sync: { localChangedAt: null, syncedAt: null },
   };
 }
@@ -99,6 +98,7 @@ function load() {
 let state = load();
 state.sync ??= { localChangedAt: null, syncedAt: null };
 state.learning ??= { consent: null };
+delete state.apiKey; // de koppeling met de Claude API is eruit; een bewaarde sleutel niet laten staan
 // Spelers van eerdere rondes die nu niet meespelen (met hun handicap, tee en bijnamen).
 state.playerPool = (state.playerPool ?? []).filter((p) => !state.players.some((x) => x.name === p.name));
 
@@ -805,9 +805,7 @@ function locOf(c) {
 
 const NEAR_KM = 2.5; // binnen deze afstand "ben je bij" een baan
 
-// Pitch & putt, par 3- en shortgolfbanen: in de baankeuze in een aparte groep.
-const isShortCourse = (c) => /pitch|\bputt\b|par[ -]?3|short ?golf|golftuin|country ?golf/i.test(c.name)
-  || (c.holeCount === 9 ? c.parTotal < 30 : c.parTotal < 60);
+
 let pickerPos = null;
 
 // Locatie voor de baankeuze: alleen vanzelf als de locatie al is toegestaan (of GPS aan staat),
@@ -929,15 +927,40 @@ function startWithPlayers() {
 }
 
 // Stap 2: waar begin je op deze baan? Bij maar één mogelijkheid meteen door naar de spelers.
-function showStartOptions(courseId) {
+// Grote baan: eerst hoeveel holes (18 of 9), daarna waar je begint. Zo kan 9 of 18 niet
+// verwisseld worden. De par 3-baan kent alleen 9 of 18 (twee keer rond).
+function showStartOptions(courseId, holes = null) {
   const c = state.courses.find((x) => x.id === courseId);
   if (!c) return;
   const options = startOptions(c);
   if (options.length === 1) { showPlayersStep(c.id, options[0][0]); return; }
-  showSheet(`<button class="link small" data-action="picker-back">‹ Andere baan</button>
+  const big = (action, attrs, title, sub) => `<button class="start-big" data-action="${action}" ${attrs}><b>${title}</b><span>${sub}</span></button>`;
+  const head = (back, question) => `<button class="link small" data-action="${back}" data-course="${esc(c.id)}">‹ ${back === 'picker-back' ? 'Andere baan' : 'Aantal holes'}</button>
     <h2>${esc(c.name)}</h2>
-    <p class="small muted">Waar begin je?</p>
-    ${startButtons(c)}`, 'Starthole kiezen');
+    <p class="start-question">${question}</p>`;
+  if (c.id === 'par3') {
+    showSheet(`${head('picker-back', 'Hoeveel holes speel je?')}
+      <div class="start-stack">
+        ${big('start-round', `data-course="${esc(c.id)}" data-holes="front"`, '9 holes', 'één keer rond')}
+        ${big('start-round', `data-course="${esc(c.id)}" data-holes="all"`, '18 holes', 'twee keer rond')}
+      </div>`, 'Aantal holes kiezen');
+    return;
+  }
+  if (!holes) {
+    showSheet(`${head('picker-back', 'Hoeveel holes speel je?')}
+      <div class="start-stack">
+        ${big('pick-holes', `data-course="${esc(c.id)}" data-holes="18"`, '18 holes', 'de hele baan')}
+        ${big('pick-holes', `data-course="${esc(c.id)}" data-holes="9"`, '9 holes', 'de voorste of achterste negen')}
+      </div>`, 'Aantal holes kiezen');
+    return;
+  }
+  const choices = holes === 18
+    ? [['all', 'Start op hole 1', 'hole 1 t/m 18'], ['all10', 'Start op hole 10', 'hole 10 t/m 18, dan 1 t/m 9']]
+    : [['front', 'Voorste negen', 'hole 1 t/m 9'], ['back', 'Achterste negen', 'hole 10 t/m 18']];
+  showSheet(`${head('pick-course', `${holes} holes · waar begin je?`)}
+    <div class="start-stack">
+      ${choices.map(([choice, title, sub]) => big('start-round', `data-course="${esc(c.id)}" data-holes="${choice}"`, title, sub)).join('')}
+    </div>`, 'Starthole kiezen');
 }
 
 function showResumeQuestion() {
@@ -956,7 +979,6 @@ function startRound(courseId, holesChoice) {
   lastUndo = null;
   pending = null;
   showFeedback('');
-  $('#ai-result').innerHTML = '';
   closeAfterRound();
   save(); render(); switchTab('ronde');
   const holes = roundHoles();
@@ -1059,46 +1081,14 @@ async function handleInput(texts) {
   const names = state.players.map((p) => p.name);
   const best = pickBest(texts, parseOpts());
   const text = best.text;
-  let result = best.result;
-  let viaAi = false;
-  let aiNote = '';
-
-  // Niet zeker? Laat de AI meekijken (als die is ingesteld).
-  if (!result.certain && state.apiKey) {
-    showFeedback('<div class="feedback info">🤖 AI kijkt mee…</div>');
-    try {
-      const { aiParseEntry, describeError } = await import('./ai.js');
-      try {
-        const ai = await aiParseEntry(state.apiKey, texts, {
-          players: names, aliases: aliasMap(), currentHole: inputHole(), pars: course().pars,
-        });
-        const scores = [];
-        const unknownNames = [];
-        let bareScore = null;
-        for (const s of ai.scores) {
-          const known = s.name ? matchPlayer(s.name, names, aliasMap()) : null;
-          if (known) scores.push({ name: known, strokes: s.strokes });
-          else if (s.name) unknownNames.push({ name: s.name, strokes: s.strokes });
-          else if (names.length === 1) scores.push({ name: names[0], strokes: s.strokes });
-          else bareScore = s.strokes;
-        }
-        if (scores.length || unknownNames.length || bareScore != null) {
-          result = { hole: ai.hole ?? state.round.currentHole, scores, unknownNames, bareScore, leftovers: [], certain: !unknownNames.length && bareScore == null };
-          viaAi = true;
-        }
-      } catch (err) {
-        aiNote = `<br><small>AI: ${esc(describeError(err))}</small>`;
-      }
-    } catch {
-      aiNote = '<br><small>AI niet bereikbaar (geen internet?).</small>';
-    }
-  }
+  const result = best.result;
+  const viaAi = false;
 
   const nothing = !result.scores.length && !result.unknownNames.length && result.bareScore == null;
   const alternatives = [text, ...texts.filter((t) => t !== text)];
   if (nothing) {
     recordSample(inputHole(), alternatives, [], viaAi);
-    showFeedback(`<div class="feedback error">Niet begrepen: “${esc(text)}”.<br>Probeer: “Hole 3, Rudy 5, Peter 4”${state.players.length === 1 ? ' of “Hole 3, 5 slagen”' : ''}.${aiNote}</div>`);
+    showFeedback(`<div class="feedback error">Niet begrepen: “${esc(text)}”.<br>Probeer: “Hole 3, Rudy 5, Peter 4”${state.players.length === 1 ? ' of “Hole 3, 5 slagen”' : ''}.</div>`);
     return;
   }
   if (!roundHoles().includes(result.hole)) {
@@ -1129,7 +1119,7 @@ async function handleInput(texts) {
   const summary = result.scores.map((s) => `<b>${esc(s.name)}</b> ${s.strokes} ${termTag(s.strokes, parOf(result.hole))}`).join('<br>');
   const doubt = !result.certain && !pending && result.leftovers?.length
     ? `<br><small>⚠️ Niet alles begrepen in “${esc(text)}”. Klopt dit?</small>` : '';
-  showFeedback(`${summary ? `<div class="feedback ok">✅ <b>Hole ${result.hole}</b> (par ${parOf(result.hole)})<br>${summary}${viaAi ? ' <span class="badge">AI</span>' : ''}${doubt}${aiNote}
+  showFeedback(`${summary ? `<div class="feedback ok">✅ <b>Hole ${result.hole}</b> (par ${parOf(result.hole)})<br>${summary}${doubt}
     <button class="link" data-action="undo">Ongedaan maken</button></div>` : ''}<div id="pending"></div>`);
   renderPending();
 }
@@ -1545,39 +1535,10 @@ function renderSettings() {
   $('#course-table').innerHTML = `<tr><th>Hole</th>${course().pars.map((_, i) => `<th>${i + 1}</th>`).join('')}<th>Tot.</th></tr>
     <tr><td>Par</td>${course().pars.map((p, i) => `<td><input class="cell" type="number" inputmode="numeric" min="3" max="6" value="${p}" data-course="pars" data-h="${i}"></td>`).join('')}<td>${course().pars.reduce((a, b) => a + b, 0)}</td></tr>
     <tr><td>SI</td>${course().si.map((s, i) => `<td><input class="cell" type="number" inputmode="numeric" min="1" max="18" value="${s}" data-course="si" data-h="${i}"></td>`).join('')}<td></td></tr>`;
-  if (document.activeElement?.id !== 'api-key') $('#api-key').value = state.apiKey;
-  $('#ai-btn').disabled = !state.apiKey;
-  $('#ai-btn').title = state.apiKey ? '' : 'Vul eerst een API-sleutel in bij Instellingen';
   renderHistory();
 }
 
-// ---------- AI-analyse en opslaan ----------
-
-async function runAiAnalysis() {
-  const results = computeResults();
-  if (!results.length) { toast('Nog geen scores om te analyseren.'); return; }
-  const out = $('#ai-result');
-  out.innerHTML = '<div class="feedback info">🤖 Claude analyseert de ronde…</div>';
-  let ai;
-  try {
-    ai = await import('./ai.js');
-  } catch {
-    out.innerHTML = '<div class="feedback error">AI niet bereikbaar (geen internet?).</div>';
-    return;
-  }
-  try {
-    const roundCourse = courseForPlayer(state.players[0] ?? { tee: 'geel' });
-    const transcripts = state.round.log.slice().reverse().map((l) => `hole ${l.hole}: ${l.text}`);
-    const a = await ai.aiAnalyseRound(state.apiKey, { course: roundCourse, results, transcripts });
-    out.innerHTML = `<div class="ai-box">
-      <p>${esc(a.samenvatting)}</p>
-      ${a.spelers.map((s) => `<h3>${esc(s.naam)}</h3><p>${esc(s.analyse)}</p><p>💡 <i>${esc(s.tip)}</i></p>`).join('')}
-      ${a.controle.length ? `<h3>Controle</h3><ul>${a.controle.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>` : '<p class="muted small">✔️ Ingesproken teksten en scorekaart komen overeen.</p>'}
-    </div>`;
-  } catch (err) {
-    out.innerHTML = `<div class="feedback error">${esc(ai.describeError(err))}</div>`;
-  }
-}
+// ---------- Opslaan ----------
 
 // Ronde bij de opgeslagen rondes zetten (zonder vragen). Geeft false als er niets te bewaren is.
 function archiveRound() {
@@ -1677,8 +1638,7 @@ document.addEventListener('click', (e) => {
         lastUndo = null;
         pending = null;
         showFeedback('');
-        $('#ai-result').innerHTML = '';
-        save(); render(); switchTab('ronde');
+              save(); render(); switchTab('ronde');
       }
       break;
     case 'confirm-course': course().confirmed = true; save(); render(); break;
@@ -1696,10 +1656,9 @@ document.addEventListener('click', (e) => {
       save(); render();
       break;
     }
-    case 'ai-analyse': runAiAnalysis(); break;
     case 'save-round': saveRound(); break;
     case 'export': {
-      const blob = new Blob([JSON.stringify({ ...state, apiKey: undefined }, null, 2)], { type: 'application/json' });
+      const blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
       const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `golfscore-${new Date().toISOString().slice(0, 10)}.json` });
       a.click();
       URL.revokeObjectURL(a.href);
@@ -1716,10 +1675,13 @@ document.addEventListener('click', (e) => {
     case 'players-back': {
       applyPlayerPicks();
       const c = state.courses.find((x) => x.id === pendingStart?.courseId);
-      if (c && startOptions(c).length > 1) showStartOptions(c.id); else showCoursePicker();
+      const holesChoice = pendingStart?.holesChoice;
+      if (c && startOptions(c).length > 1) showStartOptions(c.id, c.id === 'par3' ? null : ['all', 'all10'].includes(holesChoice) ? 18 : 9);
+      else showCoursePicker();
       break;
     }
     case 'pick-course': showStartOptions(btn.dataset.course); break;
+    case 'pick-holes': showStartOptions(btn.dataset.course, Number(btn.dataset.holes)); break;
     case 'picker-back': showCoursePicker(); break;
     case 'resume-new': showCoursePicker(); break;
     case 'resume-continue': state.round.lastActivity = new Date().toISOString(); save(); closeAfterRound(); break;
@@ -1835,8 +1797,6 @@ document.addEventListener('change', (e) => {
     setGpsPref('golfscore-gps-auto', t.checked);
     render();
     return;
-  } else if (t.id === 'api-key') {
-    state.apiKey = t.value.trim();
   } else if (t.id === 'round-course') {
     const empty = Object.values(state.round.scores).every((s) => !Object.keys(s).length);
     if (empty) state.round = newRound(state.round.holesChoice, t.value);
