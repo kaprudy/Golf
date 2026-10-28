@@ -781,18 +781,63 @@ function startButtons(c) {
     <b>${first}</b><span>${len}</span></button>`).join('')}</div>`;
 }
 
+// Waar ligt een baan? Uit de baangegevens, anders het midden van de bekende tees en greens.
+function locOf(c) {
+  const loc = c.location ?? DEFAULT_COURSES.find((d) => d.id === c.id)?.location;
+  if (loc) return loc;
+  const pts = Object.values(geoOf(c)).flatMap((h) => [h.tee, h.green]).filter(Boolean);
+  return pts.length ? { lat: pts.reduce((a, p) => a + p.lat, 0) / pts.length, lon: pts.reduce((a, p) => a + p.lon, 0) / pts.length } : null;
+}
+
+const NEAR_KM = 2.5; // binnen deze afstand "ben je bij" een baan
+let pickerPos = null;
+
+// Locatie voor de baankeuze: alleen vanzelf als de locatie al is toegestaan (of GPS aan staat),
+// anders pas na een tik op "Zoek baan met GPS".
+async function locateForPicker(ask = false) {
+  if (!('geolocation' in navigator)) return;
+  if (gps.pos) pickerPos = gps.pos;
+  if (!pickerPos && !ask && !gpsOn()) {
+    try {
+      const perm = await navigator.permissions?.query({ name: 'geolocation' });
+      if (perm?.state !== 'granted') return;
+    } catch { return; }
+  }
+  if (!pickerPos) {
+    pickerPos = await new Promise((resolve) => navigator.geolocation.getCurrentPosition(
+      (p) => resolve({ lat: p.coords.latitude, lon: p.coords.longitude, accuracy: p.coords.accuracy }),
+      () => resolve(null),
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 10 * 60 * 1000 },
+    ));
+    if (!pickerPos && ask) toast('Je locatie is niet beschikbaar. Kies de baan zelf.');
+  }
+  // Nog steeds de baankeuze in beeld? Dan opnieuw tonen met de suggestie bovenaan.
+  if (pickerPos && !$('#after-round').hidden && $('#after-round-body [data-action=start-round]')) showCoursePicker();
+}
+
 function showCoursePicker() {
   const home = state.courses.find((c) => c.id === state.homeCourseId) ?? state.courses[0];
-  // Thuisclub bovenaan: de thuisbaan en de banen die erbij horen (zoals de par 3-baan).
-  const club = state.courses.filter((c) => c === home || (home.id === 'hooge-graven' && c.id === 'par3'));
-  // Andere banen: dichtstbijzijnde eerst (vanaf de thuisbaan), met de afstand erbij.
-  const from = home.location ?? DEFAULT_COURSES[0].location;
-  const km = (c) => (c.location && from ? distanceM(from, c.location) / 1000 : Infinity);
-  const others = state.courses.filter((c) => !club.includes(c)).sort((a, b) => km(a) - km(b));
+  const km = (c, from) => { const l = locOf(c); return l && from ? distanceM(from, l) / 1000 : Infinity; };
+  // Op de baan? Die (en de banen van dezelfde club ernaast) als suggestie bovenaan.
+  const near = pickerPos ? state.courses.filter((c) => km(c, pickerPos) <= NEAR_KM).sort((a, b) => km(a, pickerPos) - km(b, pickerPos)) : [];
+  const atClub = near.length ? near.filter((c) => km(c, locOf(near[0])) <= 1.5)
+    .sort((a, b) => (b === home) - (a === home) || (a.holeCount === 18 && a.parTotal >= 60 ? -1 : 0) - (b.holeCount === 18 && b.parTotal >= 60 ? -1 : 0)) : [];
+  // Thuisclub: de thuisbaan en de banen die erbij horen (zoals de par 3-baan).
+  const club = state.courses.filter((c) => !atClub.includes(c) && (c === home || (home.id === 'hooge-graven' && c.id === 'par3')));
+  // Andere banen: dichtstbijzijnde eerst (vanaf waar je bent, anders vanaf de thuisbaan).
+  const from = pickerPos ?? locOf(home);
+  const others = state.courses.filter((c) => !club.includes(c) && !atClub.includes(c)).sort((a, b) => km(a, from) - km(b, from));
+  const heading = (c, dist) => `<h3 class="start-course">${c === home ? '★ ' : ''}${esc(c.name)}${dist ? ` <span class="muted small">${dist}</span>` : ''}</h3>${startButtons(c)}`;
+  const kmText = (c) => (Number.isFinite(km(c, from)) ? `${Math.round(km(c, from))} km` : '');
+  const locate = !pickerPos && 'geolocation' in navigator
+    ? '<button class="link small" data-action="picker-locate">📍 Zoek baan met GPS</button>' : '';
   showSheet(`<h2>Waar speel je vandaag?</h2>
-    ${club.map((c) => `<h3 class="start-course">${c === home ? '★ ' : ''}${esc(c.name)}</h3>${startButtons(c)}`).join('')}
+    ${atClub.length ? `<div class="start-here"><p class="small"><b>📍 Je bent bij ${esc(atClub[0].name.replace(/\s*\(.*\)$/, ''))}</b></p>
+      ${atClub.map((c) => heading(c)).join('')}</div>` : locate}
+    ${club.map((c) => heading(c, atClub.length ? kmText(c) : '')).join('')}
     ${others.length ? `<details class="start-others"><summary>Andere baan</summary>
-      ${others.map((c) => `<h3 class="start-course">${esc(c.name)}${Number.isFinite(km(c)) ? ` <span class="muted small">${Math.round(km(c))} km</span>` : ''}</h3>${startButtons(c)}`).join('')}</details>` : ''}`, 'Baan kiezen');
+      ${others.map((c) => heading(c, kmText(c))).join('')}</details>` : ''}`, 'Baan kiezen');
+  if (!pickerPos) locateForPicker();
 }
 
 function showResumeQuestion() {
@@ -1565,6 +1610,7 @@ document.addEventListener('click', (e) => {
     case 'learn-delete': deleteSharedSpeech(); break;
     case 'close-after-round': closeAfterRound(); break;
     case 'speech-install': installLocalSpeech(); break;
+    case 'picker-locate': locateForPicker(true); break;
     case 'start-round': startRound(btn.dataset.course, btn.dataset.holes); break;
     case 'resume-new': showCoursePicker(); break;
     case 'resume-continue': state.round.lastActivity = new Date().toISOString(); save(); closeAfterRound(); break;
