@@ -17,7 +17,7 @@
 //   POST   /api/events     {events:[...]}      -> {stored}   gebruik: app geopend, ronde gestart/opgeslagen
 //   GET    /api/osm/course?name=…|lat=…&lon=…   -> holes (tee, green, par) uit OpenStreetMap
 //   POST   /api/admin/perms {userId, perm, on}   -> rechten toekennen (bijv. 'gps-mark')
-//   GET    /api/admin/overview                  -> overzicht voor beheerders (ADMIN_EMAILS)
+//   GET    /api/admin/overview                  -> overzicht voor beheerders (ADMIN_USER_IDS)
 //   GET    /api/health                          -> {ok:true}
 
 import http from 'node:http';
@@ -30,9 +30,17 @@ const PORT = Number(process.env.PORT ?? 3000);
 const DB_PATH = process.env.DB_PATH ?? '/data/golf.db';
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS ?? 'https://kaprudy.github.io,https://golf.kapital.nl')
   .split(',').map((s) => s.trim()).filter(Boolean);
-// Beheerders: e-mailadressen (komma-gescheiden) die het overzicht op /admin.html mogen zien.
-const ADMIN_EMAILS = (process.env.ADMIN_EMAILS ?? '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
+// Beheerders: account-id's (komma-gescheiden) die het overzicht op /admin.html mogen zien. Niet op
+// e-mailadres: dat wordt bij registreren niet gecontroleerd, dus iedereen kan zich met elk adres aanmelden.
+const ADMIN_USER_IDS = (process.env.ADMIN_USER_IDS ?? '').split(',').map((s) => Number(s.trim())).filter((n) => Number.isInteger(n) && n > 0);
 const MAX_BODY = 2 * 1024 * 1024; // ruim genoeg voor jaren aan rondes
+// Grenzen tegen volschrijven van de schijf (standaard; in de tests kleiner te zetten).
+const LIMITS = {
+  newDevicesPerDay: 20, // nieuwe anonieme accounts per IP-adres per 24 uur (bestaande telefoons tellen niet)
+  samplesPerUser: 5000, // spraakvoorbeelden per account
+  eventsPerUser: 20000, // gebeurtenissen (app geopend, ronde gestart …) per account
+};
+const OSM_CACHE_MAX = 500;
 const TOKEN_DAYS = 180;
 const MAX_SAMPLES_PER_CALL = 200;
 const MAX_SAMPLE_BYTES = 4000;
@@ -112,16 +120,27 @@ const sha256 = (s) => crypto.createHash('sha256').update(s).digest('hex');
 
 // ---------- Beperking op pogingen (in het geheugen) ----------
 
-const attempts = new Map(); // sleutel -> {count, resetAt}
-function tooMany(key, limit = 10, windowMs = 15 * 60 * 1000) {
-  const now = Date.now();
-  const a = attempts.get(key);
-  if (!a || a.resetAt < now) {
-    attempts.set(key, { count: 1, resetAt: now + windowMs });
-    return false;
-  }
-  a.count++;
-  return a.count > limit;
+// Per server een eigen teller; verlopen sleutels worden af en toe opgeruimd, zodat de lijst niet
+// eindeloos groeit (bijv. bij inlogpogingen met steeds een ander e-mailadres).
+function rateLimiter() {
+  const attempts = new Map(); // sleutel -> {count, resetAt}
+  let calls = 0;
+  const tooMany = (key, limit = 10, windowMs = 15 * 60 * 1000) => {
+    const now = Date.now();
+    if (++calls % 1000 === 0 || attempts.size > 50000) {
+      for (const [k, a] of attempts) if (a.resetAt < now) attempts.delete(k);
+    }
+    const a = attempts.get(key);
+    if (!a || a.resetAt < now) {
+      attempts.set(key, { count: 1, resetAt: now + windowMs });
+      return false;
+    }
+    a.count++;
+    return a.count > limit;
+  };
+  tooMany.reset = (key) => attempts.delete(key);
+  tooMany.size = () => attempts.size;
+  return tooMany;
 }
 
 // ---------- HTTP-hulpjes ----------
@@ -179,9 +198,11 @@ const validSecret = (s) => typeof s === 'string' && s.length >= 32 && s.length <
 
 // ---------- Server ----------
 
-export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse } = {}) {
-  const osmCache = new Map(); // query -> {at, value}
-  const isAdmin = (u) => adminEmails.includes(u.email);
+export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse, limits = {} } = {}) {
+  const limit = { ...LIMITS, ...limits };
+  const tooMany = rateLimiter();
+  const osmCache = new Map(); // query -> {at, value}; de oudste eruit boven OSM_CACHE_MAX
+  const isAdmin = (u) => adminIds.includes(u.id);
   // Wat de app over de gebruiker weet: beheerders mogen alles.
   const userView = (u) => ({ ...publicUser(u), admin: isAdmin(u), perms: isAdmin(u) ? [...PERMS] : permsOf(u) });
   const q = {
@@ -202,6 +223,7 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
     userById: db.prepare('SELECT * FROM users WHERE id = ?'),
     insertSample: db.prepare('INSERT INTO speech_samples (user_id, created_at, payload) VALUES (?, ?, ?)'),
     countSamples: db.prepare('SELECT COUNT(*) AS n FROM speech_samples WHERE user_id = ?'),
+    countEvents: db.prepare('SELECT COUNT(*) AS n FROM app_events WHERE user_id = ?'),
     deleteSamples: db.prepare('DELETE FROM speech_samples WHERE user_id = ?'),
     insertEvent: db.prepare('INSERT INTO app_events (user_id, kind, created_at, data) VALUES (?, ?, ?, ?)'),
     allSamples: db.prepare('SELECT user_id, payload FROM speech_samples ORDER BY id DESC LIMIT 20000'),
@@ -391,7 +413,7 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
       // Ook bij een onbekend adres een hash berekenen, zodat de responstijd niets verraadt.
       const ok = user ? verifyPassword(password, user.pw_hash) : (hashPassword(password), false);
       if (!ok) throw new HttpError(401, 'E-mailadres of wachtwoord klopt niet');
-      attempts.delete(`login:${email}`);
+      tooMany.reset(`login:${email}`);
       q.pruneSessions.run(new Date().toISOString());
       return send(res, 200, newSession(user));
     }
@@ -404,6 +426,7 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
       let user = q.userByDevice.get(deviceHash);
       const created = !user;
       if (created) {
+        if (tooMany(`device-new:${ip}`, limit.newDevicesPerDay, 24 * 3600e3)) throw new HttpError(429, 'Te veel nieuwe accounts vanaf dit adres, probeer het morgen opnieuw');
         q.insertDeviceUser.run(`anon-${crypto.randomBytes(12).toString('hex')}`, '!', new Date().toISOString(), deviceHash);
         user = q.userByDevice.get(deviceHash);
       }
@@ -467,10 +490,12 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
       const { samples } = await readJson(req);
       if (!Array.isArray(samples) || samples.length > MAX_SAMPLES_PER_CALL) throw new HttpError(400, 'Geen geldige voorbeelden');
       const now = new Date().toISOString();
+      let room = limit.samplesPerUser - q.countSamples.get(user.id).n;
       let stored = 0;
       for (const sample of samples) {
         const json = JSON.stringify(sample);
         if (!sample || typeof sample !== 'object' || json.length > MAX_SAMPLE_BYTES) continue;
+        if (room-- <= 0) break; // vol: de rest niet bewaren
         q.insertSample.run(user.id, now, json);
         stored++;
       }
@@ -481,15 +506,18 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
       const { events } = await readJson(req);
       if (!Array.isArray(events) || events.length > MAX_EVENTS_PER_CALL) throw new HttpError(400, 'Geen geldige gebeurtenissen');
       const now = Date.now();
+      let room = limit.eventsPerUser - q.countEvents.get(user.id).n;
       let stored = 0;
       for (const e of events) {
         if (!e || !EVENT_KINDS.has(e.kind)) continue;
+        if (room <= 0) break;
         // Offline verzameld: de tijd van de telefoon, maar niet in de toekomst en hooguit 30 dagen terug.
         const t = Date.parse(e.at);
         const at = new Date(Number.isFinite(t) && t <= now && t > now - 30 * 864e5 ? t : now).toISOString();
         const data = e.data && typeof e.data === 'object' ? JSON.stringify(e.data) : null;
         if (data && data.length > 500) continue;
         q.insertEvent.run(user.id, e.kind, at, data);
+        room--;
         stored++;
       }
       return send(res, 200, { stored });
@@ -512,6 +540,7 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
         throw new HttpError(502, err.message.startsWith('OpenStreetMap') ? err.message : 'OpenStreetMap is nu niet bereikbaar, probeer het later opnieuw');
       }
       osmCache.set(cacheKey, { at: Date.now(), value });
+      while (osmCache.size > OSM_CACHE_MAX) osmCache.delete(osmCache.keys().next().value);
       return send(res, 200, value);
     }
     if (key === 'GET /api/samples/stats') return send(res, 200, { count: q.countSamples.get(user.id).n });
@@ -545,7 +574,10 @@ export function createServer(db, { adminEmails = ADMIN_EMAILS, osm = fetchCourse
 // Direct gestart (niet geïmporteerd door de tests)
 if (import.meta.url === `file://${process.argv[1]}`) {
   const server = createServer(openDatabase());
-  server.listen(PORT, () => console.log(`Golfscore API luistert op poort ${PORT}`));
+  if (process.env.ADMIN_EMAILS && !ADMIN_USER_IDS.length) {
+    console.warn('ADMIN_EMAILS wordt niet meer gebruikt: zet ADMIN_USER_IDS (account-ids) in server/.env. Je id staat op /admin.html na inloggen.');
+  }
+  server.listen(PORT, () => console.log(`Golfscore API luistert op poort ${PORT} (beheerders: ${ADMIN_USER_IDS.join(', ') || 'geen'})`));
   const stop = () => server.close(() => process.exit(0));
   process.on('SIGTERM', stop);
   process.on('SIGINT', stop);

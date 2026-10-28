@@ -125,11 +125,13 @@ De sleutel intrekken: haal de regel met `golf-deploy` weg uit `/root/.ssh/author
 ## Beheeroverzicht
 
 Op https://golf.kapital.nl/admin.html zie je registraties, actieve gebruikers, gedeelde spraak en
-welke woorden de app leert. Inloggen met je gewone Golfscore-account; alleen adressen in
-`ADMIN_EMAILS` hebben toegang. Zet die in `server/.env` (staat niet in git):
+welke woorden de app leert. Inloggen met je gewone Golfscore-account; alleen de account-id's in
+`ADMIN_USER_IDS` hebben toegang (komma-gescheiden). Niet op e-mailadres: dat wordt bij registreren niet
+gecontroleerd. Je id zie je op admin.html na inloggen ("Dit account (id …) is geen beheerder").
+Zet het in `server/.env` (staat niet in git) en rol opnieuw uit:
 
 ```bash
-echo 'ADMIN_EMAILS=jouw@email.nl' >> /opt/golf/server/.env
+echo 'ADMIN_USER_IDS=1' >> /opt/golf/server/.env
 echo 'NPM_NETWORK=shared_network' >> /opt/golf/server/.env   # alleen bij variant 3c
 ```
 
