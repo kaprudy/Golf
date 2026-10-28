@@ -250,15 +250,15 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'zwolle', province: 'Overijssel', town: 'Zwolle', dataVersion: 3, name: 'Golfclub Zwolle', holeCount: 18, parTotal: 71, pars: [4, 5, 3, 5, 4, 4, 4, 3, 4, 4, 3, 4, 3, 4, 5, 3, 4, 5], si: [11, 1, 15, 5, 3, 13, 9, 17, 7, 2, 16, 6, 10, 14, 12, 18, 8, 4], confirmed: true, location: { lat: 52.49782, lon: 6.14361 }, website: 'https://www.golfclubzwolle.nl',
+    id: 'zwolle', province: 'Overijssel', town: 'Zwolle', dataVersion: 4, name: 'Golfclub Zwolle', holeCount: 18, parTotal: 71, pars: [4, 5, 3, 5, 4, 4, 4, 3, 4, 4, 3, 4, 3, 4, 5, 3, 4, 5], si: [11, 1, 15, 5, 3, 13, 9, 17, 7, 2, 16, 6, 10, 14, 12, 18, 8, 4], confirmed: true, location: { lat: 52.49782, lon: 6.14361 }, website: 'https://www.golfclubzwolle.nl',
     tees: [
-      { id: 'zwolle-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71, slope: 130, rating9: null, slope9: null, lengths: [306, 491, 177, 472, 405, 372, 316, 137, 269, 390, 137, 393, 167, 341, 466, 145, 319, 467] },
-      { id: 'zwolle-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 68.7, slope: 121, rating9: null, slope9: null, lengths: [298, 442, 157, 430, 398, 319, 309, 127, 259, 331, 131, 339, 167, 333, 398, 134, 309, 427] },
-      { id: 'zwolle-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.6, slope: 110, rating9: null, slope9: null, lengths: [259, 432, 149, 394, 341, 315, 264, 116, 248, 323, 126, 331, 167, 283, 380, 112, 264, 393] },
-      { id: 'zwolle-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 63.5, slope: 105, rating9: null, slope9: null, lengths: [207, 377, 118, 335, 294, 252, 225, 105, 213, 267, 115, 279, 167, 239, 347, 107, 222, 347] },
-      { id: 'zwolle-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 74.4, slope: 131, rating9: null, slope9: null, lengths: [298, 442, 157, 430, 398, 319, 309, 127, 259, 331, 131, 339, 167, 333, 398, 134, 309, 427] },
-      { id: 'zwolle-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72, slope: 127, rating9: null, slope9: null, lengths: [259, 432, 149, 394, 341, 315, 264, 116, 248, 323, 126, 331, 167, 283, 380, 112, 264, 393] },
-      { id: 'zwolle-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 67.9, slope: 110, rating9: null, slope9: null, lengths: [207, 377, 118, 335, 294, 252, 225, 105, 213, 267, 115, 279, 167, 239, 347, 107, 222, 347] },
+      { id: 'zwolle-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71, slope: 130, rating9: 35.9, slope9: 131, rating9Back: 35.2, slope9Back: 129, lengths: [306, 491, 177, 472, 405, 372, 316, 137, 269, 390, 137, 393, 167, 341, 466, 145, 319, 467] },
+      { id: 'zwolle-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 68.7, slope: 121, rating9: 34.9, slope9: 123, rating9Back: 33.9, slope9Back: 120, lengths: [298, 442, 157, 430, 398, 319, 309, 127, 259, 331, 131, 339, 167, 333, 398, 134, 309, 427] },
+      { id: 'zwolle-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.6, slope: 110, rating9: 34.0, slope9: 105, rating9Back: 32.7, slope9Back: 115, lengths: [259, 432, 149, 394, 341, 315, 264, 116, 248, 323, 126, 331, 167, 283, 380, 112, 264, 393] },
+      { id: 'zwolle-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 63.5, slope: 105, rating9: 32.2, slope9: 105, rating9Back: 31.3, slope9Back: 107, lengths: [207, 377, 118, 335, 294, 252, 225, 105, 213, 267, 115, 279, 167, 239, 347, 107, 222, 347] },
+      { id: 'zwolle-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 74.4, slope: 131, rating9: 37.7, slope9: 140, rating9Back: 36.7, slope9Back: 124, lengths: [298, 442, 157, 430, 398, 319, 309, 127, 259, 331, 131, 339, 167, 333, 398, 134, 309, 427] },
+      { id: 'zwolle-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72, slope: 127, rating9: 36.5, slope9: 131, rating9Back: 35.5, slope9Back: 123, lengths: [259, 432, 149, 394, 341, 315, 264, 116, 248, 323, 126, 331, 167, 283, 380, 112, 264, 393] },
+      { id: 'zwolle-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 67.9, slope: 110, rating9: 34.5, slope9: 105, rating9Back: 33.4, slope9Back: 114, lengths: [207, 377, 118, 335, 294, 252, 225, 105, 213, 267, 115, 279, 167, 239, 347, 107, 222, 347] },
     ],
   },
   {
