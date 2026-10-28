@@ -1,0 +1,348 @@
+{
+  "slug": "de-utrechtse-houten",
+  "name": "De Utrechtse",
+  "club_name": "De Utrechtse (v/h The Mondial) / De Nieuwegeinse Golfclub",
+  "holes_total": 18,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Heemsteedseweg 32a",
+    "postal_code": "3992 LS",
+    "city": "Houten",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.0301077,
+    "lon": 5.1254285,
+    "source": "nominatim (Heemsteedseweg 32a, Houten)"
+  },
+  "distance_km_from_dedemsvaart": 110.7,
+  "phone": "+31 30 636 9233",
+  "email": "secretariaat@deutrechtse.nl",
+  "website": "https://www.deutrechtse.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "parkbaan met water, bunkers en waste areas bij Kasteel Heemstede",
+  "facilities": [
+    "brasserie (The Green)",
+    "driving range",
+    "oefenfaciliteiten",
+    "par 3-baan (9 holes)",
+    "indoor golfsimulator",
+    "golfschool",
+    "lockers"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfcomplex naast Kasteel Heemstede tussen Houten en Nieuwegein, voorheen bekend als The Mondial. Er ligt een 9-holes wedstrijdbaan (par 35) met veel water, bunkers en waste areas, plus een aparte 9-holes par 3-baan met holes van ongeveer 50 tot 160 meter. De vereniging ter plaatse is De Nieuwegeinse Golfclub.",
+  "loops": [
+    {
+      "name": "Wedstrijdbaan 18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5490,
+          "course_rating": 69.6,
+          "slope": 126,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5490,
+          "course_rating": 75.1,
+          "slope": 138,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 66.8,
+          "slope": 112,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 71.6,
+          "slope": 131,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 64.6,
+          "slope": 108,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 69.1,
+          "slope": 120,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 392,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 169,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 481,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 449,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 273,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 133,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 290,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 154,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 404,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 392,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 169,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 481,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 449,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 273,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 133,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 290,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 154,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 404,
+            "rood": null,
+            "oranje": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Par 3-baan 18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 46.8,
+          "slope": 59,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 48.1,
+          "slope": 61,
+          "par": 54
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.deutrechtse.nl/golfbaan/hcp-tabellen/",
+    "files": [
+      "scorecard/de-utrechtse-18-holes-par-3-baan-dames-en-heren.pdf",
+      "scorecard/de-utrechtse-wedstrijdbaan-18-holes-dames.pdf",
+      "scorecard/de-utrechtse-wedstrijdbaan-heren-18-holes.pdf",
+      "scorecard/hole19.html",
+      "scorecard/page.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "CR/slope officieel (handicaptabellen 26-09-2023). Par, S.I. en lengtes (alleen geel) van de wedstrijdbaan uit hole19golf.com (nieuwegeinse-golfclub); hole19 labelt de lengtes als \"yds\" maar het totaal (5490) past bij meters gezien CR 69,6 - eenheid niet officieel bevestigd. Lengtes rood/oranje en holegegevens van de par 3-baan niet gevonden."
+  },
+  "sources": [
+    "https://www.deutrechtse.nl/golfbaan/wedstrijdbaan/",
+    "https://www.deutrechtse.nl/golfbaan/par-3-baan/",
+    "https://www.deutrechtse.nl/golfbaan/hcp-tabellen/",
+    "https://www.hole19golf.com/courses/nieuwegeinse-golfclub"
+  ]
+}

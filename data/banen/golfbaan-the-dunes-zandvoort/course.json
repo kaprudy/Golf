@@ -1,0 +1,202 @@
+{
+  "slug": "golfbaan-the-dunes-zandvoort",
+  "name": "Golfbaan The Dunes",
+  "club_name": "Golfbaan The Dunes / Golfclub De Zandvoortse",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Duintjesveldweg 3",
+    "postal_code": "2041 TZ",
+    "city": "Zandvoort",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.3833028,
+    "lon": 4.5485775,
+    "source": "nominatim.openstreetmap.org (adres)"
+  },
+  "distance_km_from_dedemsvaart": 131.6,
+  "phone": "+31 23 571 5743",
+  "email": "info@thedunes.nl",
+  "website": "https://thedunes.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "duinen (linksbaan) aan de rand van Zandvoort",
+  "facilities": [
+    "9-holes linksbaan (par 29)",
+    "driving range",
+    "putting green",
+    "restaurant/brasserie",
+    "GVB-cursussen",
+    "abonnementen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "The Dunes is een openbare 9-holes linksbaan in de oude duinen van Zandvoort, vlak bij strand en dorp. De compacte holes (zeven par 3's en twee par 4's) liggen tussen duinruggen met flinke hoogteverschillen en vragen om precisie. Op de baan speelt ook Golfclub De Zandvoortse; spelen kan met greenfee of abonnement.",
+  "loops": [
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 29,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 1544,
+          "course_rating": 29.5,
+          "slope": 100,
+          "par": 29
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1439,
+          "course_rating": 28.9,
+          "slope": 101,
+          "par": 29
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 1375,
+          "course_rating": 28.5,
+          "slope": 97,
+          "par": 29
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 1439,
+          "course_rating": 30.5,
+          "slope": 108,
+          "par": 29
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1375,
+          "course_rating": 30.0,
+          "slope": 104,
+          "par": 29
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "blauw": 157
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 301,
+            "blauw": 301
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 105,
+            "blauw": 105
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 155,
+            "blauw": 155
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 179,
+            "blauw": 179
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 94,
+            "blauw": 94
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "blauw": 77
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 252,
+            "blauw": 252
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 119,
+            "blauw": 119
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://thedunes.nl/de-baan/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/hole19.html",
+      "scorecard/golfingrecord.html"
+    ],
+    "source": "third-party",
+    "complete": false,
+    "notes": "De club publiceert geen scorekaart of handicaptabel (alleen hole-video's). Par, S.I., lengtes (geel heren = blauw dames, 1439 m) en CR/slope komen van Hole19 (third-party; eenheid op de site 'yds' maar totalen komen overeen met GolfPass 1544 m wit, dus vermoedelijk meters). Holelengtes voor wit en rood onbekend. Hole19 18 holes: wit 58,9/100, geel 57,8/101, rood heren 56,9/97, blauw dames 60,9/108, rood dames 59,9/104. 1golf.eu (via zoekresultaat; site blokkeert met Cloudflare) geeft afwijkende ratings (geel 58,5/97). GolfingRecord geeft dezelfde par/S.I.-volgorde niet (S.I. 11,1,15,7,3,13,17,5,9)."
+  },
+  "sources": [
+    "https://thedunes.nl/",
+    "https://thedunes.nl/de-baan/",
+    "https://www.hole19golf.com/courses/golfbaan-the-dunes",
+    "https://www.golfingrecord.com/golf-scorecard/91cdacee-561b-f91e-db47-5d066b19741a"
+  ]
+}

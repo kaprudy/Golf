@@ -1,0 +1,232 @@
+{
+  "slug": "golfclub-losdorp",
+  "name": "Golfclub Losdorp",
+  "club_name": "Golf & Country Losdorp (bij Restaurant Eemshaven)",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Schafferweg 29",
+    "postal_code": "9907 TA",
+    "city": "Losdorp",
+    "province": "Groningen",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 53.37251,
+    "lon": 6.84215,
+    "source": "Google Maps-link op restauranteemshaven.nl (Schafferweg 29)"
+  },
+  "distance_km_from_dedemsvaart": 89.6,
+  "phone": "0596 591408",
+  "email": null,
+  "website": "https://restauranteemshaven.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "open polder/kustlandschap",
+  "facilities": [
+    "restaurant (Restaurant Eemshaven)",
+    "camperplaatsen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Volgens Hole19 geen toegangseisen en geen kledingvoorschriften (niet officieel bevestigd).",
+  "description_nl": "Kleine, laagdrempelige par 3-baan bij Restaurant Eemshaven in het open Groninger kustland tussen Delfzijl en de Eemshaven. De 9 holes zijn kort (circa 55 tot 160 meter), zodat het spel vooral om de greens draait; de wind van de nabije zee speelt vaak mee. Geschikt voor beginners en om het korte spel te oefenen.",
+  "loops": [
+    {
+      "name": "Par 3-baan (9 holes, 2x voor 18)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": null,
+          "length_m": 1738,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 58
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 56
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 66
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 80
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 58
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 56
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 66
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 80
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/golfclub-losdorp",
+    "files": [
+      "scorecard/page.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Holegegevens uit Hole19 (18 holes = 2x de 9 holes, par 3 elk, SI 2e negen = SI 1e negen + 1; tee geel, totaal 1738). Hole19 zet de eenheid als yds; of dit meters zijn is niet zeker, daarom complete=false. Geen course rating/slope gevonden. STATUS ONZEKER: de clubsite golfclublosdorp.nl is inmiddels een ongerelateerde nieuwssite en de pagina /golfactiviteiten op restauranteemshaven.nl geeft 404 (menulink staat er nog). Niet bevestigd dat er nog gegolfd wordt; Hole19 noemt e-mail info@golfclublosdorp.nl, maar dat domein is niet meer van de club; daarom email=null. Golf.nl kent de baan niet (geen NGF-club)."
+  },
+  "sources": [
+    "https://www.hole19golf.com/courses/golfclub-losdorp",
+    "https://restauranteemshaven.nl/",
+    "https://golfkaart.com/losdorp/golf-country-losdorp",
+    "https://golfkaart.com/api/kaart.json"
+  ]
+}

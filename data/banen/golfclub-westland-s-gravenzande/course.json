@@ -1,0 +1,165 @@
+{
+  "slug": "golfclub-westland-s-gravenzande",
+  "name": "Golfclub Westland (par 3-baan)",
+  "club_name": "Stichting Golfclub Westland",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Koningin Julianaweg 156a",
+    "postal_code": "2691 GH",
+    "city": "'s-Gravenzande",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.9924179,
+    "lon": 4.174008,
+    "source": "Nominatim (OpenStreetMap), adres Koningin Julianaweg 156A"
+  },
+  "distance_km_from_dedemsvaart": 169.5,
+  "phone": "06 120 202 32",
+  "email": "info@golfclubwestland.nl",
+  "website": "https://golfclubwestland.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "par 3-baan op voormalige voetbalvelden",
+  "facilities": [
+    "oefenfaciliteiten",
+    "golfpro's en lessen",
+    "oefengreen (Hole 10, voor jaarkaarthouders)",
+    "shop"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfclub Westland in 's-Gravenzande begon bijna twintig jaar geleden als trainingscentrum op een paar voetbalvelden en groeide uit tot een volwaardige 9-holes par 3-baan met NGF-accreditatie. De holes zijn kort (ongeveer 70 tot 105 meter) en de club richt zich sterk op lessen en beginners. Het is de enige golfclub in het Westland.",
+  "loops": [
+    {
+      "name": "Par 3-baan 9 holes",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "baan",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 791,
+          "course_rating": 24.0,
+          "slope": 65,
+          "par": 27
+        },
+        {
+          "name": "baan",
+          "color": "red",
+          "gender": "women",
+          "length_m": 791,
+          "course_rating": 24.8,
+          "slope": 69,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 86
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 94
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 93
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 101
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 75
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 71
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 106
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 87
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 78
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclubwestland.nl/golfclubwestland/regels-handicap/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/handicap-tabel-9-holes.pdf",
+      "scorecard/handicap-tabel-18-holes.pdf",
+      "scorecard/hole19-scorecard.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Clubsite publiceert geen scorekaart; par, S.I. en lengtes per hole van hole19golf.com (tee 'heren', totaal 791, eenheid niet vermeld, vermoedelijk meters; Hole19 noemt voor dames dezelfde lengte). CR/slope officieel uit de baanhandicaptabellen d.d. 13-06-2022: 9 holes geel heren 24,0/65, rood dames 24,8/69; 18 holes 48,0/65 en 49,6/69 (lus 2x)."
+  },
+  "sources": [
+    "https://golfclubwestland.nl/golfclubwestland/",
+    "https://golfclubwestland.nl/golfclubwestland/regels-handicap/",
+    "https://golfclubwestland.nl/contact/",
+    "https://www.hole19golf.com/netherlands/golfclub-westland"
+  ]
+}

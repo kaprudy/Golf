@@ -1,0 +1,230 @@
+{
+  "slug": "crayestein-pitch-putt-dordrecht",
+  "name": "Crayestein Pitch & Putt",
+  "club_name": "Crayestein Golf",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Baanhoekweg 50",
+    "postal_code": "3313 LP",
+    "city": "Dordrecht",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.8171479,
+    "lon": 4.7458374,
+    "source": "Nominatim (OpenStreetMap), adres Baanhoekweg 50 (golfshop/clubhuis)"
+  },
+  "distance_km_from_dedemsvaart": 145.7,
+  "phone": "078 621 12 21",
+  "email": "info@crayesteingolf.nl",
+  "website": "https://crayesteingolf.nl/pitch-putt/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "bosrijk terrein met beek en bunkers",
+  "facilities": [
+    "clubverhuur in golfshop",
+    "Jack's Steakhouse"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen handicap nodig",
+  "description_nl": "De pitch & putt-baan van Crayestein telt 18 korte holes op negen greens met elk twee afslagplaatsen, tussen 43 en 69 meter lang. Er wordt afgeslagen vanaf kunstgrasmatten en met twee of drie clubs gespeeld; een handicap is niet nodig. Een ronde duurt een tot twee uur.",
+  "loops": [
+    {
+      "name": "Pitch & Putt 18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "baan",
+          "color": null,
+          "gender": null,
+          "length_m": 963,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 43
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 48
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 63
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 46
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 45
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 53
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 59
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 63
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 43
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 50
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 55
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 49
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 43
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 65
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 59
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 53
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 57
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 69
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://crayesteingolf.nl/pitch-putt/baanoverzicht/",
+    "files": [
+      "scorecard/pen-cray-score.png",
+      "scorecard/PENP-kaart-met-afstanden.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Lengtes (meters) van de baankaart met afstanden (463 + 500 = 963 m). Scorekaart bevat geen par of S.I.; par 3 per hole aangenomen omdat het een pitch & putt-baan is (niet expliciet vermeld). Bestanden via WebFetch opgehaald (curl krijgt 403)."
+  },
+  "sources": [
+    "https://crayesteingolf.nl/pitch-putt/baanoverzicht/"
+  ]
+}

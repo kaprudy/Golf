@@ -1,0 +1,324 @@
+{
+  "slug": "golfclub-landgoed-nieuwkerk-goirle",
+  "name": "Golfclub Landgoed Nieuwkerk",
+  "club_name": "Golfclub Landgoed Nieuwkerk",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Nieuwkerksedijk Zuid 50",
+    "postal_code": "5051 DW",
+    "city": "Goirle",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.4939,
+    "lon": 5.0353,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 156.9,
+  "phone": "013 534 20 29",
+  "email": null,
+  "website": "https://golfclublandgoednieuwkerk.nl/",
+  "booking_url": null,
+  "founded": 1992,
+  "architect": "renovatie 2024-2025 onder begeleiding van Michiel van der Vaart",
+  "landscape": "landgoed met waterpartijen en bosranden",
+  "facilities": [
+    "driving range",
+    "golfacademy",
+    "horeca",
+    "GEO-gecertificeerd"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfclub Landgoed Nieuwkerk ligt op een landgoed bij Goirle, net ten zuiden van Tilburg. De 9-holesbaan uit 1992 wordt voor 18 holes twee keer gespeeld, met per ronde andere afslagen en stroke indexen. Van eind 2024 tot oktober 2025 is de baan volledig gerenoveerd onder begeleiding van architect Michiel van der Vaart.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5489,
+          "course_rating": 69.5,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5064,
+          "course_rating": 66.6,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4636,
+          "course_rating": 64.1,
+          "slope": 119,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5489,
+          "course_rating": 75.9,
+          "slope": 141,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5064,
+          "course_rating": 73.4,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4636,
+          "course_rating": 69.9,
+          "slope": 128,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 278,
+            "rood": 248,
+            "oranje": 248
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 76,
+            "oranje": 76
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 435,
+            "rood": 409,
+            "oranje": 333
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 273,
+            "rood": 264,
+            "oranje": 264
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 442,
+            "rood": 414,
+            "oranje": 364
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 181,
+            "rood": 157,
+            "oranje": 112
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 360,
+            "rood": 313,
+            "oranje": 313
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 325,
+            "rood": 301,
+            "oranje": 301
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 344,
+            "rood": 307,
+            "oranje": 307
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 289,
+            "rood": 278,
+            "oranje": 248
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112,
+            "rood": 104,
+            "oranje": 76
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 366,
+            "rood": 355,
+            "oranje": 333
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 309,
+            "rood": 300,
+            "oranje": 264
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 419,
+            "rood": 364,
+            "oranje": 364
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134,
+            "rood": 129,
+            "oranje": 112
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 393,
+            "rood": 360,
+            "oranje": 313
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 330,
+            "rood": 307,
+            "oranje": 301
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 414,
+            "rood": 378,
+            "oranje": 307
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclublandgoednieuwkerk.nl/holes/",
+    "files": [
+      "scorecard/Landgoed-Nieuwkerk-Heren-Tabel.pdf",
+      "scorecard/Landgoed-Nieuwkerk-Dames-Tabel.pdf",
+      "scorecard/page.html",
+      "scorecard/Hole-1.10-3.png",
+      "scorecard/Hole-2.11.png",
+      "scorecard/Hole-3.12.png",
+      "scorecard/Hole-4.13.png",
+      "scorecard/Hole-5.14.png",
+      "scorecard/Hole-6.15.png",
+      "scorecard/Hole-7.16.png",
+      "scorecard/Hole-8.17.png",
+      "scorecard/Hole-9.18.png"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Par, S.I. en lengtes (geel/rood/oranje) van de holeplattegronden op de clubsite (bestanden in uploads/2019/01, deels vervangen); er is geen scorekaart-PDF en geen totaal om tegen te controleren, dus lengtes zijn de som van de holes. Omdat de baan in 2024-2025 is gerenoveerd, kunnen de holeplattegronden verouderd zijn. CR/slope uit tabellen 18-09-2025 (na de renovatie).",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://golfclublandgoednieuwkerk.nl/golfbaan/",
+    "https://golfclublandgoednieuwkerk.nl/holes/"
+  ]
+}

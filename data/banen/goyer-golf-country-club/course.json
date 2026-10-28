@@ -1,0 +1,343 @@
+{
+  "slug": "goyer-golf-country-club",
+  "name": "Goyer Golf & Country Club",
+  "club_name": "Goyer Golf & Country Club (North Course)",
+  "holes_total": 24,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Beukenlaan 1-2",
+    "postal_code": "3755 MP",
+    "city": "Eemnes",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2400155,
+    "lon": 5.2383491,
+    "source": "nominatim (Beukenlaan 1, Eemnes)"
+  },
+  "distance_km_from_dedemsvaart": 92.0,
+  "phone": "+31 35 539 3111",
+  "email": "info@goyer.nl",
+  "website": "https://www.goyer.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Bruno Steensels",
+  "landscape": "baan met zandverstuivingen en bentgrass-greens",
+  "facilities": [
+    "clubhuis",
+    "South Course (6 oefenholes)",
+    "oefenfaciliteiten"
+  ],
+  "greenfee_welcome": null,
+  "requirements": null,
+  "description_nl": "Private golf- en countryclub in Eemnes, aan de rand van het Gooi. De 18-holes North Course van Bruno Steensels (ca. 6200 m voor heren) valt op door zandverstuivingen en snelle bentgrass-greens; daarnaast is er een South Course met zes korte oefenholes. De afslagen zijn genummerd naar lengte (62, 59, 53 en 50).",
+  "loops": [
+    {
+      "name": "North Course 18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "62",
+          "color": null,
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 75.0,
+          "slope": 143,
+          "par": 72
+        },
+        {
+          "name": "59",
+          "color": null,
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 73.1,
+          "slope": 140,
+          "par": 72
+        },
+        {
+          "name": "59",
+          "color": null,
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 78.8,
+          "slope": 150,
+          "par": 72
+        },
+        {
+          "name": "53",
+          "color": null,
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 70.1,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "53",
+          "color": null,
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 75.6,
+          "slope": 141,
+          "par": 72
+        },
+        {
+          "name": "50",
+          "color": null,
+          "gender": "men",
+          "length_m": 4882,
+          "course_rating": 68.2,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "50",
+          "color": null,
+          "gender": "women",
+          "length_m": 4882,
+          "course_rating": 73.4,
+          "slope": 136,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": null,
+          "si_women": 16,
+          "lengths_m": {
+            "50": 237,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": 10,
+          "lengths_m": {
+            "50": 130,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": null,
+          "si_women": 6,
+          "lengths_m": {
+            "50": 291,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": null,
+          "si_women": 2,
+          "lengths_m": {
+            "50": 371,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": 18,
+          "lengths_m": {
+            "50": 114,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": null,
+          "si_women": 14,
+          "lengths_m": {
+            "50": 279,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": null,
+          "si_women": 4,
+          "lengths_m": {
+            "50": 425,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": null,
+          "si_women": 8,
+          "lengths_m": {
+            "50": 326,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": null,
+          "si_women": 12,
+          "lengths_m": {
+            "50": 276,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": null,
+          "si_women": 17,
+          "lengths_m": {
+            "50": 248,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": 13,
+          "lengths_m": {
+            "50": 135,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": null,
+          "si_women": 5,
+          "lengths_m": {
+            "50": 261,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": null,
+          "si_women": 1,
+          "lengths_m": {
+            "50": 409,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": 15,
+          "lengths_m": {
+            "50": 125,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": null,
+          "si_women": 11,
+          "lengths_m": {
+            "50": 249,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": null,
+          "si_women": 7,
+          "lengths_m": {
+            "50": 297,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": null,
+          "si_women": 3,
+          "lengths_m": {
+            "50": 409,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": null,
+          "si_women": 9,
+          "lengths_m": {
+            "50": 300,
+            "62": null,
+            "59": null,
+            "53": null
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.goyer.nl/nl/de-baan/north-course-18-holes-",
+    "files": [
+      "scorecard/2024_Baanhandicaptabel_dames.pdf",
+      "scorecard/2024_Baanhandicaptabel_heren.pdf",
+      "scorecard/hole19.html",
+      "scorecard/page.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "CR/slope officieel (baanhandicaptabellen 2024; tees aangeduid als 62/59/53/50, toewijzing aan kolommen afgeleid uit de PDF-tekst). Par, S.I. en lengtes alleen voor tee 50 (dames) uit hole19golf.com; S.I. daar getoond bij de damestee en daarom als si_women opgenomen. Hole19 labelt \"yds\", maar totaal 4882 past bij tee \"50\" in meters - eenheid niet officieel bevestigd. Geen officiële scorekaart online gevonden. South Course (6 holes) niet opgenomen (geen kaart)."
+  },
+  "sources": [
+    "https://www.goyer.nl/nl/de-baan/north-course-18-holes-",
+    "https://www.goyer.nl/nl/de-baan/south-course-6-holes-",
+    "https://www.hole19golf.com/courses/goyer-golf-country-club-north"
+  ]
+}

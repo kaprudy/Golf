@@ -1,0 +1,415 @@
+{
+  "slug": "golfcentrum-eindhoven",
+  "name": "Golfcentrum Eindhoven",
+  "club_name": "Stichting Golfcentrum Eindhoven",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "J.C. Dirkxpad 1A",
+    "postal_code": "5631 BZ",
+    "city": "Eindhoven",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.4561346,
+    "lon": 5.4910186,
+    "source": "nominatim.openstreetmap.org (Golfcentrum Eindhoven)"
+  },
+  "distance_km_from_dedemsvaart": 143.5,
+  "phone": "040 – 3690751",
+  "email": "golf@golfcentrumeindhoven.nl",
+  "website": "https://golfcentrumeindhoven.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "stadspark (vlak bij het centrum van Eindhoven)",
+  "facilities": [
+    "driving range",
+    "golfschool (o.a. handicap 54-cursus)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfcentrum Eindhoven ligt in Woensel-Zuid, op korte afstand van het stadscentrum, en richt zich op laagdrempelig golf zonder kledingvoorschriften. Naast een driving range is er een qualifying 9-holes par 3-baan met holes van 49 tot 129 meter. De baan wordt afwisselend met de range gebruikt.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1608,
+          "course_rating": 47.2,
+          "slope": 57,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 1434,
+          "course_rating": 46.3,
+          "slope": 55,
+          "par": 54
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 1608,
+          "course_rating": 48.9,
+          "slope": 58,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1434,
+          "course_rating": 47.8,
+          "slope": 56,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 62,
+            "rood": 56
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 80,
+            "rood": 80
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 106,
+            "rood": 94
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 49,
+            "rood": 49
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 113,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 94,
+            "rood": 67
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 62,
+            "rood": 56
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 80,
+            "rood": 80
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 106,
+            "rood": 94
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 49,
+            "rood": 49
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 113,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 94,
+            "rood": 67
+          }
+        }
+      ]
+    },
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 804,
+          "course_rating": 23.6,
+          "slope": 57,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 717,
+          "course_rating": 23.2,
+          "slope": 55,
+          "par": 27
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 804,
+          "course_rating": 24.5,
+          "slope": 58,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 717,
+          "course_rating": 23.9,
+          "slope": 56,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 62,
+            "rood": 56
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 80,
+            "rood": 80
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 106,
+            "rood": 94
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 49,
+            "rood": 49
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 113,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 94,
+            "rood": 67
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfcentrumeindhoven.nl/informatie/plattegrond-9-holes-baan/",
+    "files": [
+      "scorecard/Golfcentrum-Eindhoven-18-holes-Dames-Heren.pdf",
+      "scorecard/Golfcentrum-Eindhoven-9-holes-Dames-Heren.pdf",
+      "scorecard/page.html",
+      "scorecard/scorekaart-achterkant.png",
+      "scorecard/scorekaart-voorkant.png"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Holetabel op de plattegrondpagina (S.I. als \"7/8\" = 1e/2e ronde); scorekaart voor- en achterkant (PNG, 2022) meegeleverd. CR/slope uit WHS-tabellen 03-06-2025. 9-holes loop met S.I. in 18-holes stijl (oneven). Holes lopen en driving range wisselen elkaar af volgens rooster."
+  },
+  "sources": [
+    "https://golfcentrumeindhoven.nl/informatie/plattegrond-9-holes-baan/",
+    "https://golfcentrumeindhoven.nl/contact/",
+    "https://golfcentrumeindhoven.nl/"
+  ]
+}

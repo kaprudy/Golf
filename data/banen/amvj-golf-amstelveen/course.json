@@ -1,0 +1,543 @@
+{
+  "slug": "amvj-golf-amstelveen",
+  "name": "AMVJ Golf",
+  "club_name": "Golfvereniging AMVJ",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Aanloop 3",
+    "postal_code": "1183 SZ",
+    "city": "Amstelveen",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.3190524,
+    "lon": 4.8838079,
+    "source": "nominatim.openstreetmap.org (adres Aanloop 3, 1183 SZ Amstelveen)"
+  },
+  "distance_km_from_dedemsvaart": 111.3,
+  "phone": "020 647 55 13",
+  "email": "secretariaat@amvj-golf.nl",
+  "website": "https://www.amvj-golf.nl/",
+  "booking_url": null,
+  "founded": 2003,
+  "architect": null,
+  "landscape": "waterrijk polderlandschap langs de Amstel, op de grens van Amsterdam en Amstelveen; de eerste 9 holes liggen deels over sportvelden (cricket) van Sportpark Het Loopveld",
+  "facilities": [
+    "18 holes par 55 (Veldenbaan holes 1-9 + Polderbaan holes 10-18)",
+    "driving range 180 m (beperkte openingstijden)",
+    "putting green",
+    "chipping green",
+    "clubhuis met terras (gedeeld met ACC Cricket)",
+    "golfles door clubprofessional",
+    "handicarts",
+    "clubverhuur (halve set)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Gasten reserveren vooraf een starttijd via de GOLF.NL-app (greenfee aan de bar); dinsdag en donderdagmiddag vrijwel altijd gesloten voor gasten i.v.m. clubwedstrijden; holes 1-9 in weekenden vaak niet bespeelbaar door andere sporten. Handicapeis niet vermeld op de site.",
+  "description_nl": "AMVJ Golf is een vereniging uit 2003 op Sportpark Het Loopveld aan de Amstel, op de grens van Amsterdam en Amstelveen. De korte 18-holesbaan (par 55, bijna allemaal par 3's) bestaat uit de Veldenbaan, die deels over de cricketvelden loopt, en de Polderbaan in het waterrijke polderland. Veel water en lastig gelegen greens maken het spel tactischer dan de lengte doet vermoeden, en de greenfee is laag.",
+  "loops": [
+    {
+      "name": "Veldenbaan + Polderbaan (18 holes)",
+      "holes": 18,
+      "par": 55,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2684,
+          "course_rating": 54.3,
+          "slope": 87,
+          "par": 55
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2429,
+          "course_rating": 53.0,
+          "slope": 84,
+          "par": 55
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2684,
+          "course_rating": 56.9,
+          "slope": 87,
+          "par": 55
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2429,
+          "course_rating": 55.1,
+          "slope": 84,
+          "par": 55
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 180,
+            "rood": 180
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "rood": 137
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 173,
+            "rood": 173
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 185,
+            "rood": 185
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 200,
+            "rood": 200
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 190,
+            "rood": 190
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 179,
+            "rood": 179
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 186,
+            "rood": 119
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 105
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 155,
+            "rood": 109
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 72
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 89
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 215,
+            "rood": 192
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 90,
+            "rood": 90
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 63,
+            "rood": 63
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 159,
+            "rood": 106
+          }
+        }
+      ]
+    },
+    {
+      "name": "Veldenbaan (holes 1-9)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1484,
+          "course_rating": 27.9,
+          "slope": 79,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1484,
+          "course_rating": 29.4,
+          "slope": 84,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 180,
+            "rood": 180
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "rood": 137
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 173,
+            "rood": 173
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 185,
+            "rood": 185
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 200,
+            "rood": 200
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 190,
+            "rood": 190
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 179,
+            "rood": 179
+          }
+        }
+      ]
+    },
+    {
+      "name": "Polderbaan (holes 10-18)",
+      "holes": 9,
+      "par": 28,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1200,
+          "course_rating": 26.5,
+          "slope": 86,
+          "par": 28
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 945,
+          "course_rating": 25.3,
+          "slope": 80,
+          "par": 28
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 1200,
+          "course_rating": 27.3,
+          "slope": 87,
+          "par": 28
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 945,
+          "course_rating": 25.7,
+          "slope": 80,
+          "par": 28
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 186,
+            "rood": 119
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 105
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 155,
+            "rood": 109
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 72
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 89
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 215,
+            "rood": 192
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 90,
+            "rood": 90
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 63,
+            "rood": 63
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 159,
+            "rood": 106
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.amvj-golf.nl/home/index.php/de-baan/holes-en-scorekaart",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/scorekaart-23.jpg",
+      "scorecard/plattegrond.jpg",
+      "scorecard/hcp-velden-polder-18.pdf",
+      "scorecard/hcp-veldenbaan-9.pdf",
+      "scorecard/hcp-polderbaan-9.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Holegegevens uit de officiele scorekaart (Scorekaart-23.jpg; kolommen Geel, Rood, een S.I.-kolom). Sommen kloppen met de kaart: geel 1484+1200=2684, rood 1484+945=2429, par 27+28=55. Op de Veldenbaan zijn geel en rood gelijk. S.I. 18-holesstijl: Veldenbaan even (2-18), Polderbaan oneven (1-17); in de 9-holeslussen staan dezelfde S.I.-waarden en holenummers 10-18 voor de Polderbaan. CR/SR 18 holes uit NGF-tabel d.d. 19-09-2024; 9 holes Veldenbaan d.d. 31-10-2023 (alleen geel heren en rood dames gepubliceerd); 9 holes Polderbaan d.d. 26-09-2023. De site noemt de baan 'par 55/59'; de '59' wordt nergens verklaard (scorekaart en alle ratings: par 55). 17 par 3's en 1 par 4 (hole 15). Contactmail op de site is secretariaat@amvj-golf.nl (golf.nl noemt info@amvj-golf.nl). Greenfee volgens site EUR 15 (EUR 10 met lid of van bevriende clubs Ookmeer/Sloten)."
+  },
+  "sources": [
+    "https://www.amvj-golf.nl/home/index.php/de-baan/holes-en-scorekaart",
+    "https://www.amvj-golf.nl/home/index.php/de-baan/de-baan-algemeen",
+    "https://www.amvj-golf.nl/home/index.php/de-baan/whs-handicap",
+    "https://www.amvj-golf.nl/home/index.php/de-baan/gastspelers",
+    "https://www.amvj-golf.nl/home/index.php/de-club/over-de-club",
+    "https://www.amvj-golf.nl/home/index.php/de-club/clubhuis",
+    "https://nominatim.openstreetmap.org/"
+  ]
+}

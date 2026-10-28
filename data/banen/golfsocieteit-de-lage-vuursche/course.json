@@ -1,0 +1,347 @@
+{
+  "slug": "golfsocieteit-de-lage-vuursche",
+  "name": "Golfsociëteit De Lage Vuursche",
+  "club_name": "Golfsociëteit De Lage Vuursche",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Dolderseweg 262",
+    "postal_code": "3734 BS",
+    "city": "Den Dolder",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1530043,
+    "lon": 5.2399012,
+    "source": "nominatim (Dolderseweg 262, Den Dolder)"
+  },
+  "distance_km_from_dedemsvaart": 96.6,
+  "phone": "+31 30 229 2594",
+  "email": "info@golflagevuursche.nl",
+  "website": "https://www.golflagevuursche.nl/",
+  "booking_url": null,
+  "founded": 2000,
+  "architect": "Kyle Phillips",
+  "landscape": "bos- en heidebaan op 56 hectare",
+  "facilities": [
+    "clubhuis",
+    "restaurant",
+    "driving range met grastees",
+    "golfshop",
+    "fitness",
+    "wellness",
+    "vergaderruimte"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "minimaal handicap 54; greenfee alleen ma t/m do, max. 3 dagen vooruit telefonisch reserveren",
+  "description_nl": "Exclusieve sociëteit bij Den Dolder, in 2000 geopend na vijftien jaar voorbereiding. De par 71-baan van de Amerikaanse architect Kyle Phillips ligt compact tussen bos en heide en is met lange, strategische holes een van de zwaarste banen van het land. Greenfeespelers met handicap 54 zijn van maandag tot en met donderdag welkom.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6287,
+          "course_rating": 75.2,
+          "slope": 145,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 6038,
+          "course_rating": 74.3,
+          "slope": 146,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 6038,
+          "course_rating": 80.1,
+          "slope": 156,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5640,
+          "course_rating": 71.4,
+          "slope": 139,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5640,
+          "course_rating": 77.7,
+          "slope": 148,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4983,
+          "course_rating": 67.8,
+          "slope": 131,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4983,
+          "course_rating": 73.4,
+          "slope": 138,
+          "par": 71
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 404,
+            "geel": 388,
+            "blauw": 363,
+            "rood": 319
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 402,
+            "geel": 384,
+            "blauw": 366,
+            "rood": 277
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 288,
+            "geel": 270,
+            "blauw": 263,
+            "rood": 232
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 196,
+            "geel": 187,
+            "blauw": 157,
+            "rood": 123
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 315,
+            "geel": 306,
+            "blauw": 284,
+            "rood": 253
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 127,
+            "geel": 120,
+            "blauw": 114,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 411,
+            "geel": 397,
+            "blauw": 368,
+            "rood": 334
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 546,
+            "geel": 521,
+            "blauw": 508,
+            "rood": 473
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 389,
+            "geel": 376,
+            "blauw": 337,
+            "rood": 316
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 353,
+            "geel": 328,
+            "blauw": 316,
+            "rood": 285
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 409,
+            "geel": 398,
+            "blauw": 368,
+            "rood": 325
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 500,
+            "geel": 477,
+            "blauw": 462,
+            "rood": 396
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 337,
+            "geel": 328,
+            "blauw": 301,
+            "rood": 286
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 186,
+            "geel": 175,
+            "blauw": 153,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 383,
+            "geel": 370,
+            "blauw": 336,
+            "rood": 300
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 491,
+            "geel": 485,
+            "blauw": 465,
+            "rood": 428
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 161,
+            "geel": 150,
+            "blauw": 132,
+            "rood": 107
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 389,
+            "geel": 378,
+            "blauw": 347,
+            "rood": 317
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golflagevuursche.nl/golfcourse/scorecard/",
+    "files": [
+      "scorecard/2023-Lage-Vuursche-Dames.pdf",
+      "scorecard/2023-Lage-Vuursche-Heren.pdf",
+      "scorecard/DLV-Scorekaart-Online.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart (online versie 2023) + baanhandicaptabellen 10-10-2022. Afslagkleuren niet als tekst op de kaart; volgorde wit/geel/blauw/rood afgeleid uit de ratings op de kaart en de tabellen. Er zijn ook aparte wintertee-tabellen. Holes hebben namen (Karpaten t/m Taiwan)."
+  },
+  "sources": [
+    "https://www.golflagevuursche.nl/golfcourse/scorecard/",
+    "https://www.golflagevuursche.nl/societeit/gasten/",
+    "https://www.golflagevuursche.nl/golfcourse/architect/"
+  ]
+}

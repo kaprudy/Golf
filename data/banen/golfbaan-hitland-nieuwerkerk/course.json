@@ -1,0 +1,234 @@
+{
+  "slug": "golfbaan-hitland-nieuwerkerk",
+  "name": "Golfbaan Hitland",
+  "club_name": "Golfpark Hitland",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Blaardorpseweg 1",
+    "postal_code": "2911 BC",
+    "city": "Nieuwerkerk aan den IJssel",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.9474,
+    "lon": 4.6130396,
+    "source": "nominatim.openstreetmap.org (adres Blaardorpseweg 1; restaurant/clubhuis)"
+  },
+  "distance_km_from_dedemsvaart": 145.1,
+  "phone": "0180 31 71 88",
+  "email": "info@hitland.nl",
+  "website": "https://hitland.nl",
+  "booking_url": null,
+  "founded": 1995,
+  "architect": "Gerard Jol",
+  "landscape": "polderbaan met veel water, in recreatiegebied Park Hitland",
+  "facilities": [
+    "driving range",
+    "9-holes par 3-baan (qualifying)",
+    "oefengreens",
+    "clubhuis met restaurant"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Minimaal NGF-baanpermissie voor de 18 holes; par 3-baan met baanpermissie par 3 of onder begeleiding",
+  "description_nl": "Golfbaan Hitland is een openbare golfbaan in het recreatiegebied Park Hitland tussen Nieuwerkerk aan den IJssel en Capelle aan den IJssel. De eerste negen holes van Gerard Jol openden in 1995 en sinds 2000 is het een volwaardige par 71-baan, met veel water en een rijk vogelleven. Daarnaast is er een qualifying 9-holes par 3-baan.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5819,
+          "course_rating": null,
+          "slope": null,
+          "par": 71
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 347
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 471
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 386
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 175
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 294
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 370
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 169
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 461
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 128
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 324
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 163
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 382
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 472
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 350
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 133
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 453
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 366
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 375
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfingrecord.com/golf-scorecard/08dab058-1b01-6c77-cd4f-bd250d0af494",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/golfingrecord-scorecard.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen scorekaart of handicaptabel op hitland.nl gevonden. Par, S.I. en lengtes (tee 'Yellow', totaal 5819 m) van golfingrecord.com; site noemt lengtes van 4.520 tot 5.819 m en par 71 (consistent). Andere tees en CR/SR niet uit een controleerbare bron (zoekresultaat noemde 1golf.eu: geel heren 70,5/124, rood dames 71/125, 5012 m – 1golf.eu gaf 403, niet geverifieerd, niet overgenomen). Par 3-baan niet als aparte baan opgenomen (geen holegegevens). Postcode 2911 BC uit derden."
+  },
+  "sources": [
+    "https://hitland.nl/de-baan/baaninformatie/",
+    "https://hitland.nl/",
+    "https://www.golfingrecord.com/golf-scorecard/08dab058-1b01-6c77-cd4f-bd250d0af494"
+  ]
+}

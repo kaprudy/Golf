@@ -1,0 +1,592 @@
+{
+  "slug": "old-course-loenen",
+  "name": "Old Course Loenen",
+  "club_name": "Golfclub Old Course Loenen",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Rijksstraatweg 171",
+    "postal_code": "3632 AC",
+    "city": "Loenen aan de Vecht",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2121857,
+    "lon": 5.0087294,
+    "source": "nominatim (Rijksstraatweg 171, Loenen aan de Vecht)"
+  },
+  "distance_km_from_dedemsvaart": 107.5,
+  "phone": "+31 294 237 600",
+  "email": "info@oldcourseloenen.nl",
+  "website": "https://oldcourseloenen.nl/",
+  "booking_url": "https://www.nexxchange.com/golfclub/old-course-loenen",
+  "founded": 2007,
+  "architect": null,
+  "landscape": "parkbaan langs de Vecht",
+  "facilities": [
+    "clubhuis",
+    "brasserie",
+    "driving range",
+    "handicarts",
+    "buggy (op aanvraag)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "greenfee alleen na reservering vooraf; niet op vrijdagmiddag 12-16 uur en zondagochtend",
+  "description_nl": "Negen-holesbaan van een vereniging uit 2007 aan de Rijksstraatweg in Loenen aan de Vecht. Met vijf afslagkleuren en een aparte combinatiebaan (andere afslagen op de tweede negen) speel je 18 holes met afwisseling. Gasten zijn welkom na telefonische reservering; er is een brasserie op het terrein.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6012,
+          "course_rating": 73.3,
+          "slope": 135,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5452,
+          "course_rating": 70.2,
+          "slope": 124,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5452,
+          "course_rating": 76.0,
+          "slope": 140,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5054,
+          "course_rating": 68.3,
+          "slope": 120,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5054,
+          "course_rating": 73.6,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4550,
+          "course_rating": 65.0,
+          "slope": 118,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4550,
+          "course_rating": 70.1,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4032,
+          "course_rating": 63.6,
+          "slope": 110,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4032,
+          "course_rating": 66.9,
+          "slope": 118,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 335,
+            "geel": 317,
+            "blauw": 262,
+            "rood": 262,
+            "oranje": 232
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 330,
+            "geel": 277,
+            "blauw": 259,
+            "rood": 234,
+            "oranje": 212
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 357,
+            "geel": 316,
+            "blauw": 295,
+            "rood": 250,
+            "oranje": 218
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 150,
+            "geel": 126,
+            "blauw": 126,
+            "rood": 108,
+            "oranje": 108
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 167,
+            "geel": 150,
+            "blauw": 150,
+            "rood": 132,
+            "oranje": 114
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 394,
+            "geel": 352,
+            "blauw": 328,
+            "rood": 291,
+            "oranje": 251
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 481,
+            "geel": 433,
+            "blauw": 395,
+            "rood": 357,
+            "oranje": 314
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 467,
+            "geel": 447,
+            "blauw": 435,
+            "rood": 380,
+            "oranje": 340
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 325,
+            "geel": 308,
+            "blauw": 277,
+            "rood": 261,
+            "oranje": 227
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 335,
+            "geel": 317,
+            "blauw": 262,
+            "rood": 262,
+            "oranje": 232
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 330,
+            "geel": 277,
+            "blauw": 259,
+            "rood": 234,
+            "oranje": 212
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 357,
+            "geel": 316,
+            "blauw": 295,
+            "rood": 250,
+            "oranje": 218
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 150,
+            "geel": 126,
+            "blauw": 126,
+            "rood": 108,
+            "oranje": 108
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 167,
+            "geel": 150,
+            "blauw": 150,
+            "rood": 132,
+            "oranje": 114
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 394,
+            "geel": 352,
+            "blauw": 328,
+            "rood": 291,
+            "oranje": 251
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 481,
+            "geel": 433,
+            "blauw": 395,
+            "rood": 357,
+            "oranje": 314
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 467,
+            "geel": 447,
+            "blauw": 435,
+            "rood": 380,
+            "oranje": 340
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 325,
+            "geel": 308,
+            "blauw": 277,
+            "rood": 261,
+            "oranje": 227
+          }
+        }
+      ]
+    },
+    {
+      "name": "18 holes combinatiebaan",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel combi",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5732,
+          "course_rating": 71.7,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "rood combi",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4802,
+          "course_rating": 71.9,
+          "slope": 130,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 317,
+            "rood combi": 262
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 330,
+            "rood combi": 259
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 316,
+            "rood combi": 250
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 150,
+            "rood combi": 126
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 150,
+            "rood combi": 132
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 394,
+            "rood combi": 328
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 433,
+            "rood combi": 357
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 467,
+            "rood combi": 435
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 308,
+            "rood combi": 261
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 335,
+            "rood combi": 262
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 277,
+            "rood combi": 234
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 357,
+            "rood combi": 295
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 126,
+            "rood combi": 108
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 167,
+            "rood combi": 150
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 352,
+            "rood combi": 291
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 481,
+            "rood combi": 395
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 447,
+            "rood combi": 380
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel combi": 325,
+            "rood combi": 277
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://oldcourseloenen.nl/de-baan/scorekaart-en-handicap/",
+    "files": [
+      "scorecard/OCL_WHS_Scorekaart_2022-05-07.pdf",
+      "scorecard/OCL_WHS_tabel_2021-07-15_Dames_18-holes.pdf",
+      "scorecard/OCL_WHS_tabel_2021-07-15_Dames_9-holes.pdf",
+      "scorecard/OCL_WHS_tabel_2021-07-15_Dames_Combinatiebaan.pdf",
+      "scorecard/OCL_WHS_tabel_2021-07-15_Heren_18-holes.pdf",
+      "scorecard/OCL_WHS_tabel_2021-07-15_Heren_9-holes.pdf",
+      "scorecard/OCL_WHS_tabel_2021-07-15_Heren_Combinatiebaan.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 07-05-2022, WHS-tabellen 15-07-2021 (combinatiebaan 20-07-2021). 9 holes die 2x gespeeld worden met eigen S.I. voor 10-18. Combinatiebaan: heren mix van wit/geel afslagen, dames mix van blauw/rood. Aparte 9-holes ratings staan in de PDF's."
+  },
+  "sources": [
+    "https://oldcourseloenen.nl/de-baan/scorekaart-en-handicap/",
+    "https://oldcourseloenen.nl/greenfee/",
+    "https://oldcourseloenen.nl/"
+  ]
+}

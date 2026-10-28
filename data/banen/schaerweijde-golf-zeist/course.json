@@ -1,0 +1,281 @@
+{
+  "slug": "schaerweijde-golf-zeist",
+  "name": "Schaerweijde Golf",
+  "club_name": "Schaerweijde Golf",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Hein Bottingalaan 1",
+    "postal_code": "3707 NX",
+    "city": "Zeist",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1049,
+    "lon": 5.2683,
+    "source": "OpenStreetMap (leisure=golf_course, centrum baan); adres-geocode wees naar padelhal op hetzelfde complex"
+  },
+  "distance_km_from_dedemsvaart": 97.9,
+  "phone": "+31 30 692 0272",
+  "email": null,
+  "website": "https://schaerweijde-golf.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Alan Rijks (renovatie 2020)",
+  "landscape": "parkbaan rond de hockeyvelden van sportpark Schaerweijde",
+  "facilities": [
+    "clubhuis",
+    "driving range",
+    "golfschool"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "greenfee tot 3 dagen vooruit reserveren",
+  "description_nl": "Qualifying 9-holesbaan van een vereniging met C-status, aangelegd rond de hockeyvelden van Schaerweijde in Zeist. Na een renovatie naar ontwerp van Alan Rijks (2020) telt de baan acht par 3's en één par 4, met voor de tweede negen deels langere afslagen. Er is een driving range met golfschool en een clubhuis.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 56,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2819,
+          "course_rating": 55.1,
+          "slope": 85,
+          "par": 56
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2819,
+          "course_rating": 57.7,
+          "slope": 98,
+          "par": 56
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2506,
+          "course_rating": 53.3,
+          "slope": 82,
+          "par": 56
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2506,
+          "course_rating": 55.8,
+          "slope": 90,
+          "par": 56
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 146,
+            "rood": 133
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 177,
+            "rood": 140
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 144,
+            "rood": 137
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 144,
+            "rood": 134
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 69,
+            "rood": 69
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 133
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 96,
+            "rood": 96
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 185,
+            "rood": 155
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 294,
+            "rood": 257
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 133,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 189,
+            "rood": 177
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "rood": 123
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 187,
+            "rood": 144
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 69,
+            "rood": 69
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 133,
+            "rood": 111
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 96,
+            "rood": 96
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 213,
+            "rood": 185
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 267,
+            "rood": 235
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://schaerweijde-golf.nl/de-baan/",
+    "files": [
+      "scorecard/Schaerweijde-WHS-tabel-Dames-Zomergreens.pdf",
+      "scorecard/Schaerweijde-WHS-tabel-Heren-Zomergreens.pdf",
+      "scorecard/Scorekaart-2020-nieuwe-baan.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 2020 (nieuwe baan) + WHS-tabellen zomergreens 15-02-2021; S.I. van holes 11, 16 en 17 ontbrak in de PDF-tekst en is overgenomen van de holepagina's op de site (2/4, 15/16, 1/2). De tekst op de site noemt de geel-totalen per negen omgekeerd (1424/1395) t.o.v. de kaart. Er zijn ook wintertee-tabellen."
+  },
+  "sources": [
+    "https://schaerweijde-golf.nl/de-baan/",
+    "https://schaerweijde-golf.nl/handicap-tabellen/",
+    "https://schaerweijde-golf.nl/de-baan-hole-2/",
+    "https://schaerweijde-golf.nl/de-baan-hole-8/"
+  ]
+}

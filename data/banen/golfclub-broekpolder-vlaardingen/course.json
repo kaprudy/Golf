@@ -1,0 +1,389 @@
+{
+  "slug": "golfclub-broekpolder-vlaardingen",
+  "name": "Golfclub Broekpolder",
+  "club_name": "Golfclub Broekpolder",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Watersportweg 100",
+    "postal_code": "3138 HD",
+    "city": "Vlaardingen",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.9364828,
+    "lon": 4.3154059,
+    "source": "Nominatim (OpenStreetMap), adres Watersportweg 100"
+  },
+  "distance_km_from_dedemsvaart": 163.5,
+  "phone": "010 249 5554",
+  "email": "secretariaat@golfclubbroekpolder.nl",
+  "website": "https://golfclubbroekpolder.nl",
+  "booking_url": null,
+  "founded": 1932,
+  "architect": "J.J. Frank Pennink (renovatie Gerard Jol)",
+  "landscape": "park-/polderbaan op opgespoten slib, open fairways, rietomzoomde waterpartijen",
+  "facilities": [
+    "driving range",
+    "shortgame practice area",
+    "putting green",
+    "clubhuis",
+    "restaurant",
+    "golfshop (RS Golfshop)",
+    "golfprofessionals"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "NGF-pas tonen; greenfeespelers van NGF-clubs en buitenlandse clubs maximaal handicap 28; introductie max. 4x per jaar met GVB",
+  "description_nl": "Broekpolder is de baan van de vereniging die in 1932 als Rotterdamsche Golfclub in Kralingen begon en in 1981 naar Vlaardingen verhuisde. Frank Pennink ontwierp hier op opgespoten havenslib een lange park- en polderbaan met ruime fairways en rietkragen langs het water; Gerard Jol heeft later een aantal holes vernieuwd. De baan ontving onder meer het Deloitte Ladies Open en draagt het GEO-certificaat voor duurzaam beheer.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6301,
+          "course_rating": 74.4,
+          "slope": 139,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5852,
+          "course_rating": 71.9,
+          "slope": 135,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5423,
+          "course_rating": 69.5,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5044,
+          "course_rating": 67.7,
+          "slope": 118,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4567,
+          "course_rating": 65.3,
+          "slope": 111,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5852,
+          "course_rating": 78.9,
+          "slope": 145,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5423,
+          "course_rating": 75.9,
+          "slope": 138,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5044,
+          "course_rating": 73.3,
+          "slope": 133,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4567,
+          "course_rating": 70.3,
+          "slope": 123,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 472,
+            "geel": 455,
+            "blauw": 435,
+            "rood": 373,
+            "oranje": 369
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 423,
+            "geel": 374,
+            "blauw": 344,
+            "rood": 330,
+            "oranje": 327
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 347,
+            "geel": 327,
+            "blauw": 324,
+            "rood": 281,
+            "oranje": 274
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 530,
+            "geel": 467,
+            "blauw": 424,
+            "rood": 394,
+            "oranje": 389
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 179,
+            "geel": 164,
+            "blauw": 141,
+            "rood": 135,
+            "oranje": 111
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 382,
+            "geel": 367,
+            "blauw": 350,
+            "rood": 332,
+            "oranje": 312
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 390,
+            "geel": 366,
+            "blauw": 335,
+            "rood": 329,
+            "oranje": 295
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 154,
+            "geel": 132,
+            "blauw": 125,
+            "rood": 106,
+            "oranje": 100
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 297,
+            "geel": 280,
+            "blauw": 250,
+            "rood": 230,
+            "oranje": 204
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 433,
+            "geel": 373,
+            "blauw": 367,
+            "rood": 333,
+            "oranje": 276
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 373,
+            "geel": 356,
+            "blauw": 337,
+            "rood": 311,
+            "oranje": 308
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 378,
+            "geel": 357,
+            "blauw": 317,
+            "rood": 311,
+            "oranje": 236
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 167,
+            "geel": 160,
+            "blauw": 132,
+            "rood": 127,
+            "oranje": 105
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 495,
+            "geel": 457,
+            "blauw": 427,
+            "rood": 420,
+            "oranje": 388
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 364,
+            "geel": 356,
+            "blauw": 339,
+            "rood": 304,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 154,
+            "geel": 141,
+            "blauw": 141,
+            "rood": 118,
+            "oranje": 90
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 268,
+            "geel": 263,
+            "blauw": 251,
+            "rood": 246,
+            "oranje": 169
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 495,
+            "geel": 457,
+            "blauw": 384,
+            "rood": 364,
+            "oranje": 358
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclubbroekpolder.nl/baan/scorekaarten/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-handicaptabellen.html",
+      "scorecard/Scorekaart-2-paginas.pdf",
+      "scorecard/Scorekaart-2025-pag-1.png",
+      "scorecard/Scorekaart-2025-pag-2.png",
+      "scorecard/Broekpolder-Heren-2025.pdf",
+      "scorecard/Broekpolder-Dames-2025.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 2025; CR/slope uit baanhandicaptabellen d.d. 17-07-2025. Oprichtingsjaar 1932 = Rotterdamsche Golfclub (rechtsvoorganger); de baan in de Broekpolder werd in 1981 opgeleverd."
+  },
+  "sources": [
+    "https://golfclubbroekpolder.nl/baan/scorekaarten/",
+    "https://golfclubbroekpolder.nl/baan/handicaptabellen/",
+    "https://golfclubbroekpolder.nl/baan/",
+    "https://golfclubbroekpolder.nl/club/historie/",
+    "https://golfclubbroekpolder.nl/bezoekers/openingstijden-en-greenfee/",
+    "https://golfclubbroekpolder.nl/contact/"
+  ]
+}

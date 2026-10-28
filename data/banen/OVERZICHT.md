@@ -1,6 +1,6 @@
-# Golfbanen rond Dedemsvaart (≤ 80 km)
+# Golfbanen in Nederland (en net over de grens)
 
-Gegenereerd door `tools/banen/build_course_index.py` uit `data/banen/<slug>/course.json`. Afstand hemelsbreed vanaf Dedemsvaart (52.6008, 6.4594). De scorekaartbestanden (`<slug>/scorecard/...`) staan op de branch `scorekaarten`, onder dezelfde paden.
+Gegenereerd door `tools/banen/build_course_index.py` uit `data/banen/<slug>/course.json`. Gesorteerd op afstand hemelsbreed vanaf Dedemsvaart (52.6008, 6.4594). De scorekaartbestanden (`<slug>/scorecard/...`) staan op de branch `scorekaarten`, onder dezelfde paden.
 
 | # | Baan | Plaats | km | Holes | Scorekaart |
 |---|---|---|---|---|---|
@@ -14,76 +14,270 @@ Gegenereerd door `tools/banen/build_course_index.py` uit `data/banen/<slug>/cour
 | 8 | [Golf Club Havelte](#golfclub-havelte) | Havelte | 24.4 | 18 | compleet |
 | 9 | [Golftuin Zwolle](#golftuin-zwolle) | Zwolle (Hoog Zuthem/Windesheim) | 27.1 | 9 | deels |
 | 10 | [Drentse Golfclub De Gelpenberg](#gelpenberg-aalden) | Aalden | 27.4 | 27 | compleet |
-| 11 | [Pitch & Putt Golf Orvelte](#pitch-putt-orvelte) | Witteveen | 29.5 | 18 | deels |
-| 12 | [Golfclub De Koepel](#de-koepel-wierden) | Wierden | 29.7 | 18 | compleet |
-| 13 | [Dutch Golf Hattem](#dutch-golf-hattem) | Hattem | 30.6 | 9 | compleet |
-| 14 | [De Hattemse Golf & Country Club](#hattemse-golf-country-club) | Hattem | 30.7 | 9 | compleet |
-| 15 | [Shortgolf Twente](#shortgolf-twente-tubbergen) | Tubbergen | 31.6 | 18 | deels |
-| 16 | [Golfbaan Zuid-Drenthe](#zuid-drenthe-erica) | Erica | 33.3 | 21 | compleet |
-| 17 | [Golfparc Sandur](#golfparc-sandur-emmen) | Emmen | 33.8 | 9 | compleet |
-| 18 | [Weleveld Golf](#weleveld-golf-zenderen) | Zenderen | 34.9 | 9 | compleet |
-| 19 | [Twentsche Golfclub](#twentsche-golfclub-delden) | Ambt Delden | 37.6 | 18 | compleet |
-| 20 | [Pitch & Putt Heerde](#pitch-putt-heerde) | Heerde | 37.8 | 18 | deels |
-| 21 | [Golfpark De Hildenberg](#golfpark-de-hildenberg) | Appelscha | 38.6 | 9 | compleet |
-| 22 | [Sallandsche Golfclub 'de Hoek'](#sallandsche-de-hoek-diepenveen) | Diepenveen | 39.3 | 18 | compleet |
-| 23 | [Country Golf Ees](#countrygolf-ees) | Ees | 41.5 | 18 | compleet |
-| 24 | [Golfpark Exloo](#golfpark-exloo) | Exloo | 41.7 | 18 | compleet |
-| 25 | [Golfbaan De Lage Mors](#de-lage-mors-delden) | Delden | 42.5 | 9 | compleet |
-| 26 | [Pitch & Putt Twente](#pitch-putt-twente-diepenheim) | Diepenheim | 45.7 | 18 | deels |
-| 27 | [Golfclub Driene](#golfclub-driene-hengelo) | Hengelo | 46.1 | 9 | compleet |
-| 28 | [Golf & Country Club 't Kruisselt](#t-kruisselt-de-lutte) | De Lutte | 46.5 | 9 | deels |
-| 29 | [Drentsche Golf & Country Club](#drentsche-golf-country-club-zeijerveen) | Zeijerveen (Assen) | 46.6 | 27 | compleet |
-| 30 | [Golfclub Emmeloord](#golfclub-emmeloord) | Emmeloord | 48.3 | 18 | compleet |
-| 31 | [Golfbaan Het Rijk van Sybrook](#het-rijk-van-sybrook-enschede) | Enschede | 48.5 | 27 | compleet |
-| 32 | [Golfclub de Semslanden](#semslanden-gasselte) | Gasselternijveen | 48.8 | 18 | compleet |
-| 33 | [Golfbaan Spielehof](#spielehof-boekelo) | Boekelo (Enschede) | 49.6 | 27 | compleet |
-| 34 | [Golfclub Prinses Wilhelmina (PW Golf)](#golfclub-prinses-wilhelmina-enschede) | Enschede | 49.8 | 9 | compleet |
-| 35 | [Golfpark De Breuninkhof](#de-breuninkhof-bussloo) | Voorst | 50.1 | 18 | compleet |
-| 36 | [Pitch & Putt Bussloo](#pitch-putt-bussloo) | Wilp | 50.9 | 27 | deels |
-| 37 | [Golfclub Heidemeer](#golfclub-heidemeer) | Heerenveen | 51.3 | 9 | compleet |
-| 38 | [Golfbaan Het Rijk van Nunspeet](#rijk-van-nunspeet) | Nunspeet | 51.7 | 27 | compleet |
-| 39 | [Lochemse Golf & Country Club De Graafschap](#lochemse-de-graafschap-lochem) | Lochem | 51.8 | 18 | compleet |
-| 40 | [Golf Residentie Dronten](#golf-residentie-dronten) | Dronten | 51.9 | 18 | compleet |
-| 41 | [Openbare Golfclub Dronten](#openbare-golfclub-dronten) | Dronten | 52.0 | 9 | compleet |
-| 42 | [Golfclub Gut Düneburg](#gut-dueneburg-haren) | Haren (Ems) | 54.2 | 18 | compleet |
-| 43 | [Twentse Golf Park](#twentse-golf-park-haaksbergen) | Haaksbergen | 54.4 | 9 | deels |
-| 44 | [Golfclub Emstal](#emstal-lingen) | Lingen (Ems) | 55.4 | 18 | compleet |
-| 45 | [Shortgolf Swifterbant](#shortgolf-swifterbant) | Swifterbant | 56.3 | 18 | deels |
-| 46 | [Golf & Country Club Lauswolt](#golf-country-club-lauswolt) | Beetsterzwaag | 56.7 | 18 | compleet |
-| 47 | [Golfbaan Dorhout Mees](#golfbaan-dorhout-mees) | Biddinghuizen | 57.0 | 9 | deels |
-| 48 | [Veluwse Golfclub](#veluwse-golfclub-hoog-soeren) | Hoog Soeren | 58.4 | 9 | compleet |
-| 49 | [Golfclub De Scherpenbergh](#de-scherpenbergh-lieren) | Lieren | 58.5 | 27 | compleet |
-| 50 | [Noord-Nederlandse Golf & Country Club](#noord-nederlandse-glimmen) | Glimmen | 59.0 | 18 | compleet |
-| 51 | [Golfclub Euregio Bad Bentheim](#euregio-bad-bentheim) | Bad Bentheim | 59.3 | 18 | compleet |
-| 52 | [Golfclub Holthuizen](#holthuizen-roden) | Roden | 60.4 | 9 | compleet |
-| 53 | [Golfbaan Kasteel Engelenburg](#kasteel-engelenburg-brummen) | Brummen | 60.9 | 9 | compleet |
-| 54 | [Golfclub 't Zelle](#t-zelle-hengelo-gld) | Hengelo (Gld) | 60.9 | 27 | compleet |
-| 55 | [Landgoed Ullerberg (golfbaan)](#ullerberg-ermelo) | Leuvenum (Ermelo) | 61.0 | 9 | deels |
-| 56 | [The Links Valley](#the-links-valley-ermelo) | Ermelo | 61.8 | 9 | compleet |
-| 57 | [Golfpark Sint Nyk](#golfpark-sint-nyk) | Legemeer (Sint Nicolaasga) | 61.9 | 18 | compleet |
-| 58 | [Golfclub Landgoed De Compagnie](#de-compagnie-veendam) | Veendam | 62.8 | 18 | compleet |
-| 59 | [Golf- und Landclub Ahaus](#glc-ahaus-alstaette) | Ahaus-Alstätte | 63.0 | 36 | compleet |
-| 60 | [Harderwold Golf & Events](#golf4all-harderwijk) | Zeewolde | 63.0 | 9 | deels |
-| 61 | [Pitch & Putt Golf Groenlo (De Blanckenborg)](#de-blanckenborg-groenlo) | Groenlo | 64.3 | 18 | deels |
-| 62 | [Golfclub Westerwolde](#westerwolde-vlagtwedde) | Vlagtwedde | 65.2 | 9 | compleet |
-| 63 | [Golfclub Gaasterland](#golfclub-gaasterland) | Oudemirdum | 68.1 | 9 | deels |
-| 64 | [Golfclub Flevoland](#golfclub-flevoland) | Lelystad | 68.2 | 12 | compleet |
-| 65 | [Keppelse Golfclub](#keppelse-golfclub-hoog-keppel) | Hoog-Keppel | 68.4 | 18 | compleet |
-| 66 | [Pitch & Putt Golf Strand Horst](#pitch-putt-strand-horst-ermelo) | Ermelo | 69.7 | 18 | deels |
-| 67 | [Golfclub Zeewolde](#golfclub-zeewolde) | Zeewolde | 71.5 | 36 | compleet |
-| 68 | [Golfbaan De Voortwisch](#de-voortwisch-winterswijk) | Winterswijk | 71.6 | 18 | compleet |
-| 69 | [Pitch & Putt Groningen](#pitch-putt-groningen-kardinge) | Groningen | 71.8 | 18 | deels |
-| 70 | [Pitch & Putt Golf Doetinchem](#pitch-putt-doetinchem) | Doetinchem | 71.9 | 18 | deels |
-| 71 | [Rosendaelsche Golfclub](#rosendaelsche-golfclub-arnhem) | Arnhem | 74.1 | 18 | compleet |
-| 72 | [Golfclub Putten](#golfclub-putten) | Putten | 75.8 | 9 | compleet |
-| 73 | [Pitch & Putt Golf Koudum](#pitch-putt-golf-koudum) | Koudum | 76.0 | 18 | deels |
-| 74 | [Het Buiten-Land Pitch & Putt Golf Leeuwarden](#het-buiten-land-pitch-putt-leeuwarden) | Leeuwarden | 76.5 | 18 | deels |
-| 75 | [Huninga's Heem Pitch & Putt](#huningas-heem-oostwold) | Oostwold | 77.1 | 18 | deels |
-| 76 | [Leeuwarder Golfclub De Groene Ster](#leeuwarder-golfclub-de-groene-ster) | Leeuwarden | 77.7 | 18 | compleet |
-| 77 | [Groningse Golfclub Duurswold](#duurswold-steendam) | Steendam | 77.9 | 9 | compleet |
-| 78 | [Edese Golf Club Papendal](#edese-golfclub-papendal) | Arnhem | 78.5 | 18 | compleet |
-| 79 | [Pitch & Putt Papendal](#pitch-putt-papendal) | Arnhem | 78.6 | 18 | deels |
-| 80 | [Golfclub Münsterland](#gc-muensterland-burgsteinfurt) | Steinfurt (Burgsteinfurt) | 79.5 | 9 | deels |
+| 11 | [Golfclub Almelo](#golfclub-almelo) | Almelo | 28.1 | 9 | compleet |
+| 12 | [Pitch & Putt Golf Orvelte](#pitch-putt-orvelte) | Witteveen | 29.5 | 18 | deels |
+| 13 | [Golfclub De Koepel](#de-koepel-wierden) | Wierden | 29.7 | 18 | compleet |
+| 14 | [Dutch Golf Hattem](#dutch-golf-hattem) | Hattem | 30.6 | 9 | compleet |
+| 15 | [De Hattemse Golf & Country Club](#hattemse-golf-country-club) | Hattem | 30.7 | 9 | compleet |
+| 16 | [Shortgolf Twente](#shortgolf-twente-tubbergen) | Tubbergen | 31.6 | 18 | deels |
+| 17 | [Golfbaan Zuid-Drenthe](#zuid-drenthe-erica) | Erica | 33.3 | 21 | compleet |
+| 18 | [Golfparc Sandur](#golfparc-sandur-emmen) | Emmen | 33.8 | 9 | compleet |
+| 19 | [Weleveld Golf](#weleveld-golf-zenderen) | Zenderen | 34.9 | 9 | compleet |
+| 20 | [Twentsche Golfclub](#twentsche-golfclub-delden) | Ambt Delden | 37.6 | 18 | compleet |
+| 21 | [Pitch & Putt Heerde](#pitch-putt-heerde) | Heerde | 37.8 | 18 | deels |
+| 22 | [Golfpark De Hildenberg](#golfpark-de-hildenberg) | Appelscha | 38.6 | 9 | compleet |
+| 23 | [Sallandsche Golfclub 'de Hoek'](#sallandsche-de-hoek-diepenveen) | Diepenveen | 39.3 | 18 | compleet |
+| 24 | [Country Golf Ees](#countrygolf-ees) | Ees | 41.5 | 18 | compleet |
+| 25 | [Golfpark Exloo](#golfpark-exloo) | Exloo | 41.7 | 18 | compleet |
+| 26 | [Golfbaan De Lage Mors](#de-lage-mors-delden) | Delden | 42.5 | 9 | compleet |
+| 27 | [Twentse Golf Academy](#twentse-golf-academy-bentelo) | Bentelo | 43.1 | 9 | compleet |
+| 28 | [Pitch & Putt Twente](#pitch-putt-twente-diepenheim) | Diepenheim | 45.7 | 18 | deels |
+| 29 | [Golfclub Driene](#golfclub-driene-hengelo) | Hengelo | 46.1 | 9 | compleet |
+| 30 | [Golf & Country Club 't Kruisselt](#t-kruisselt-de-lutte) | De Lutte | 46.5 | 9 | deels |
+| 31 | [Drentsche Golf & Country Club](#drentsche-golf-country-club-zeijerveen) | Zeijerveen (Assen) | 46.6 | 27 | compleet |
+| 32 | [Golfclub Emmeloord](#golfclub-emmeloord) | Emmeloord | 48.3 | 18 | compleet |
+| 33 | [Golfbaan Het Rijk van Sybrook](#het-rijk-van-sybrook-enschede) | Enschede | 48.5 | 27 | compleet |
+| 34 | [Golfclub de Semslanden](#semslanden-gasselte) | Gasselternijveen | 48.8 | 18 | compleet |
+| 35 | [Golfbaan Spielehof](#spielehof-boekelo) | Boekelo (Enschede) | 49.6 | 27 | compleet |
+| 36 | [Golfclub Prinses Wilhelmina (PW Golf)](#golfclub-prinses-wilhelmina-enschede) | Enschede | 49.8 | 9 | compleet |
+| 37 | [Golfpark De Breuninkhof](#de-breuninkhof-bussloo) | Voorst | 50.1 | 18 | compleet |
+| 38 | [Pitch & Putt Bussloo](#pitch-putt-bussloo) | Wilp | 50.9 | 27 | deels |
+| 39 | [Golfclub Heidemeer](#golfclub-heidemeer) | Heerenveen | 51.3 | 9 | compleet |
+| 40 | [Golfbaan Het Rijk van Nunspeet](#rijk-van-nunspeet) | Nunspeet | 51.7 | 27 | compleet |
+| 41 | [Lochemse Golf & Country Club De Graafschap](#lochemse-de-graafschap-lochem) | Lochem | 51.8 | 18 | compleet |
+| 42 | [Golf Residentie Dronten](#golf-residentie-dronten) | Dronten | 51.9 | 18 | compleet |
+| 43 | [Openbare Golfclub Dronten](#openbare-golfclub-dronten) | Dronten | 52.0 | 9 | compleet |
+| 44 | [Golfclub Gut Düneburg](#gut-dueneburg-haren) | Haren (Ems) | 54.2 | 18 | compleet |
+| 45 | [Twentse Golf Park](#twentse-golf-park-haaksbergen) | Haaksbergen | 54.4 | 9 | deels |
+| 46 | [Golfclub Emstal](#emstal-lingen) | Lingen (Ems) | 55.4 | 18 | compleet |
+| 47 | [Shortgolf Swifterbant](#shortgolf-swifterbant) | Swifterbant | 56.3 | 18 | deels |
+| 48 | [Golf & Country Club Lauswolt](#golf-country-club-lauswolt) | Beetsterzwaag | 56.7 | 18 | compleet |
+| 49 | [Golfbaan Dorhout Mees](#golfbaan-dorhout-mees) | Biddinghuizen | 57.0 | 9 | deels |
+| 50 | [Veluwse Golfclub](#veluwse-golfclub-hoog-soeren) | Hoog Soeren | 58.4 | 9 | compleet |
+| 51 | [Golfclub De Scherpenbergh](#de-scherpenbergh-lieren) | Lieren | 58.5 | 27 | compleet |
+| 52 | [Noord-Nederlandse Golf & Country Club](#noord-nederlandse-glimmen) | Glimmen | 59.0 | 18 | compleet |
+| 53 | [Golfclub Euregio Bad Bentheim](#euregio-bad-bentheim) | Bad Bentheim | 59.3 | 18 | compleet |
+| 54 | [Golfclub Holthuizen](#holthuizen-roden) | Roden | 60.4 | 9 | compleet |
+| 55 | [Golfbaan Kasteel Engelenburg](#kasteel-engelenburg-brummen) | Brummen | 60.9 | 9 | compleet |
+| 56 | [Golfclub 't Zelle](#t-zelle-hengelo-gld) | Hengelo (Gld) | 60.9 | 27 | compleet |
+| 57 | [Landgoed Ullerberg (golfbaan)](#ullerberg-ermelo) | Leuvenum (Ermelo) | 61.0 | 9 | deels |
+| 58 | [The Links Valley](#the-links-valley-ermelo) | Ermelo | 61.8 | 9 | compleet |
+| 59 | [Golfpark Sint Nyk](#golfpark-sint-nyk) | Legemeer (Sint Nicolaasga) | 61.9 | 18 | compleet |
+| 60 | [Golfclub Landgoed De Compagnie](#de-compagnie-veendam) | Veendam | 62.8 | 18 | compleet |
+| 61 | [Golf- und Landclub Ahaus](#glc-ahaus-alstaette) | Ahaus-Alstätte | 63.0 | 36 | compleet |
+| 62 | [Harderwold Golf & Events](#golf4all-harderwijk) | Zeewolde | 63.0 | 9 | deels |
+| 63 | [Pitch & Putt Golf Groenlo (De Blanckenborg)](#de-blanckenborg-groenlo) | Groenlo | 64.3 | 18 | deels |
+| 64 | [Golfclub Westerwolde](#westerwolde-vlagtwedde) | Vlagtwedde | 65.2 | 9 | compleet |
+| 65 | [Golfclub Gaasterland](#golfclub-gaasterland) | Oudemirdum | 68.1 | 9 | deels |
+| 66 | [Golfclub Flevoland](#golfclub-flevoland) | Lelystad | 68.2 | 12 | compleet |
+| 67 | [Keppelse Golfclub](#keppelse-golfclub-hoog-keppel) | Hoog-Keppel | 68.4 | 18 | compleet |
+| 68 | [Pitch & Putt Golf Strand Horst](#pitch-putt-strand-horst-ermelo) | Ermelo | 69.7 | 18 | deels |
+| 69 | [Golfclub Zeewolde](#golfclub-zeewolde) | Zeewolde | 71.5 | 36 | compleet |
+| 70 | [Golfbaan De Voortwisch](#de-voortwisch-winterswijk) | Winterswijk | 71.6 | 18 | compleet |
+| 71 | [Pitch & Putt Groningen](#pitch-putt-groningen-kardinge) | Groningen | 71.8 | 18 | deels |
+| 72 | [Pitch & Putt Golf Doetinchem](#pitch-putt-doetinchem) | Doetinchem | 71.9 | 18 | deels |
+| 73 | [Rosendaelsche Golfclub](#rosendaelsche-golfclub-arnhem) | Arnhem | 74.1 | 18 | compleet |
+| 74 | [ShortGolf Zeumeren](#shortgolf-zeumeren-voorthuizen) | Voorthuizen | 74.3 | 9 | compleet |
+| 75 | [Golfclub Putten](#golfclub-putten) | Putten | 75.8 | 9 | compleet |
+| 76 | [Pitch & Putt Golf Koudum](#pitch-putt-golf-koudum) | Koudum | 76.0 | 18 | deels |
+| 77 | [Het Buiten-Land Pitch & Putt Golf Leeuwarden](#het-buiten-land-pitch-putt-leeuwarden) | Leeuwarden | 76.5 | 18 | deels |
+| 78 | [Huninga's Heem Pitch & Putt](#huningas-heem-oostwold) | Oostwold | 77.1 | 18 | deels |
+| 79 | [Leeuwarder Golfclub De Groene Ster](#leeuwarder-golfclub-de-groene-ster) | Leeuwarden | 77.7 | 18 | compleet |
+| 80 | [Groningse Golfclub Duurswold](#duurswold-steendam) | Steendam | 77.9 | 9 | compleet |
+| 81 | [Edese Golf Club Papendal](#edese-golfclub-papendal) | Arnhem | 78.5 | 18 | compleet |
+| 82 | [Pitch & Putt Papendal](#pitch-putt-papendal) | Arnhem | 78.6 | 18 | deels |
+| 83 | [Golfclub Münsterland](#gc-muensterland-burgsteinfurt) | Steinfurt (Burgsteinfurt) | 79.5 | 9 | deels |
+| 84 | [Golfclub 't Lohr](#golfclub-t-lohr-voorst) | Voorst (Oude IJsselstreek) | 81.4 | 9 | compleet |
+| 85 | [Golfclub Heelsum](#golfclub-heelsum) | Heelsum | 83.2 | 27 | compleet |
+| 86 | [Golfclub Almeerderhout](#almeerderhout-almere) | Almere | 84.2 | 36 | compleet |
+| 87 | [Golfbaan Landgoed Welderen](#golfbaan-landgoed-welderen) | Elst (Gld) | 84.8 | 27 | compleet |
+| 88 | [Wageningse Golfclub](#wageningse-golfclub) | Wageningen | 86.6 | 9 | compleet |
+| 89 | [Golfclub Hoogland Amersfoort](#golfclub-hoogland-amersfoort) | Hoogland (Amersfoort) | 87.2 | 9 | compleet |
+| 90 | [Pitch & Putt Esonstad](#pitch-putt-esonstad-anjum) | Anjum | 88.5 | 18 | deels |
+| 91 | [Golfbaan Westwoud](#westfriese-golfclub-westwoud) | Westwoud | 88.8 | 18 | compleet |
+| 92 | [Golfclub Losdorp](#golfclub-losdorp) | Losdorp | 89.6 | 9 | deels |
+| 93 | [Golfclub De Hoge Kleij](#golfclub-de-hoge-kleij) | Leusden | 91.0 | 18 | compleet |
+| 94 | [Goyer Golf & Country Club](#goyer-golf-country-club) | Eemnes | 92.0 | 24 | deels |
+| 95 | [Golfbaan De Vlietlanden](#golfbaan-de-vlietlanden-wervershoof) | Wervershoof | 92.3 | 18 | deels |
+| 96 | [Golfclub Anderstein](#golfclub-anderstein) | Maarsbergen | 93.7 | 27 | compleet |
+| 97 | [Golfpark Soestduinen](#golfpark-soestduinen) | Soest | 94.3 | 9 | compleet |
+| 98 | [Golfpark Spandersbosch](#golfpark-spandersbosch-hilversum) | Hilversum | 95.4 | 18 | compleet |
+| 99 | [Hilversumsche Golf Club](#hilversumsche-golf-club-hilversum) | Hilversum | 95.5 | 27 | compleet |
+| 100 | [Golfsociëteit De Lage Vuursche](#golfsocieteit-de-lage-vuursche) | Den Dolder | 96.6 | 18 | compleet |
+| 101 | [Golfbaan Het Rijk van Nijmegen](#golfbaan-het-rijk-van-nijmegen) | Groesbeek | 97.3 | 45 | deels |
+| 102 | [Schaerweijde Golf](#schaerweijde-golf-zeist) | Zeist | 97.9 | 9 | compleet |
+| 103 | [Golfclub 't Jagerspaadje](#golfclub-t-jagerspaadje-hilversum) | Hilversum | 98.5 | 9 | deels |
+| 104 | [Doornse Golfclub](#doornse-golfclub) | Doorn | 98.9 | 9 | compleet |
+| 105 | [Golfpark De Biltse Duinen](#golfpark-de-biltse-duinen) | Bilthoven | 99.2 | 9 | compleet |
+| 106 | [Golfpark De Berendonck](#golfpark-de-berendonck-wijchen) | Wijchen | 99.7 | 27 | compleet |
+| 107 | [Golfpark De Purmer](#golfpark-de-purmer-purmerend) | Purmerend | 99.7 | 36 | compleet |
+| 108 | [Utrechtse Golfclub 'De Pan'](#utrechtse-golfclub-de-pan) | Bosch en Duin | 99.8 | 18 | compleet |
+| 109 | [Gooise Golfclub](#gooise-golfclub-loosdrecht) | Loosdrecht | 100.0 | 9 | compleet |
+| 110 | [Pitch & Putt Golf Molenhoek](#pitch-putt-molenhoek) | Molenhoek | 100.0 | 18 | compleet |
+| 111 | [Golfbaan Hoenderdaal](#golfbaan-hoenderdaal) | Driebergen-Rijsenburg | 101.6 | 9 | compleet |
+| 112 | [Golfbaan Weesp (UP Events)](#golfbaan-weesp) | Weesp | 102.7 | 9 | deels |
+| 113 | [Golfcentrum De Batouwe](#golfcentrum-de-batouwe) | Zoelen (Tiel) | 102.9 | 36 | compleet |
+| 114 | [Golfbaan Kromme Rijn](#golfbaan-kromme-rijn) | Bunnik | 103.4 | 9 | compleet |
+| 115 | [Golfbaan Spierdijk](#golfbaan-spierdijk) | Spierdijk | 103.6 | 9 | deels |
+| 116 | [Golfbaan Kavel 2](#kavel-2-beemster-middenbeemster) | Middenbeemster | 104.3 | 9 | compleet |
+| 117 | [Golfbaan Waterland Amsterdam](#golfbaan-waterland-amsterdam) | Amsterdam | 104.9 | 27 | deels |
+| 118 | [Golfbaan Regthuys](#golfbaan-regthuys-winkel) | Winkel | 105.9 | 27 | compleet |
+| 119 | [Utrechtse Golfclub Amelisweerd](#utrechtse-golfclub-amelisweerd) | Utrecht | 107.1 | 27 | compleet |
+| 120 | [Golfcentrum De Hoge Dijk](#golfcentrum-de-hoge-dijk-amsterdam) | Amsterdam | 107.5 | 27 | deels |
+| 121 | [Old Course Loenen](#old-course-loenen) | Loenen aan de Vecht | 107.5 | 9 | compleet |
+| 122 | [Amsterdam Old Course](#amsterdam-old-course-duivendrecht) | Amsterdam-Duivendrecht | 107.8 | 9 | compleet |
+| 123 | [Golfbaan Ameland](#golfbaan-ameland-hollum) | Hollum (Ameland) | 108.9 | 18 | compleet |
+| 124 | [Golfbaan De Zaanse](#golfbaan-de-zaanse-wijdewormer) | Wijdewormer | 108.9 | 18 | compleet |
+| 125 | [Golfbaan Molenslag](#golfbaan-molenslag-barsingerhorn) | Barsingerhorn | 109.1 | 9 | deels |
+| 126 | [Golfbaan Landgoed Bleijenbeek](#landgoed-bleijenbeek-afferden) | Afferden | 110.6 | 27 | compleet |
+| 127 | [De Utrechtse](#de-utrechtse-houten) | Houten | 110.7 | 18 | deels |
+| 128 | [AMVJ Golf](#amvj-golf-amstelveen) | Amstelveen | 111.3 | 18 | compleet |
+| 129 | [Golf Amsteldijk](#golf-amsteldijk-amstelveen) | Amstelveen | 113.1 | 9 | deels |
+| 130 | [Golfclub De Haar](#golfclub-de-haar) | Haarzuilens (Utrecht) | 113.6 | 18 | deels |
+| 131 | [Golfbaan Dirkshorn](#golfbaan-dirkshorn) | Dirkshorn | 114.1 | 18 | compleet |
+| 132 | [Golfclub Ookmeer](#golfclub-ookmeer-amsterdam) | Amsterdam | 115.4 | 18 | deels |
+| 133 | [Openbare Golfbaan Sloten](#golfbaan-sloten-amsterdam) | Amsterdam | 115.7 | 9 | compleet |
+| 134 | [The Duke (Championship Course)](#the-duke-golf-nistelrode) | Nistelrode | 115.8 | 18 | deels |
+| 135 | [Golfbaan Sluispolder](#sluispolder-noordhollandse-golfclub-alkmaar) | Alkmaar | 116.2 | 27 | deels |
+| 136 | [The International](#the-international-badhoevedorp) | Badhoevedorp | 116.2 | 18 | compleet |
+| 137 | [Golfpark Wilnis](#golfpark-wilnis) | Wilnis | 116.7 | 27 | compleet |
+| 138 | [Golfbaan De Kroonprins](#golfbaan-de-kroonprins-vianen) | Vianen | 116.9 | 27 | compleet |
+| 139 | [Pitch & Putt Kameryck](#pitch-putt-kameryck-kamerik) | Kamerik | 117.7 | 18 | compleet |
+| 140 | [Golfbaan Heiloo](#golf-countryclub-heiloo) | Heiloo | 118.0 | 9 | compleet |
+| 141 | [Amsterdamse Golf Club](#amsterdamse-golf-club-amsterdam) | Amsterdam | 118.1 | 18 | compleet |
+| 142 | [Golfpark De Bonte Bij (voorheen De Leemskuilen)](#golfpark-de-bonte-bij-uden) | Uden | 118.1 | 9 | deels |
+| 143 | [Heemskerkse Golfclub](#heemskerkse-golfclub-heemskerk) | Heemskerk | 118.8 | 27 | deels |
+| 144 | [Golfbaan Overloon](#golfbaan-overloon) | Overloon | 119.0 | 9 | compleet |
+| 145 | [Marine Golfclub Nieuwediep](#marine-golfclub-nieuwediep-den-helder) | Den Helder | 119.2 | 9 | compleet |
+| 146 | [Golfcenter Uithoorn](#golfcenter-uithoorn) | Uithoorn | 119.3 | 9 | compleet |
+| 147 | [Golfclub Houtrak](#golfclub-houtrak-halfweg) | Halfweg | 119.3 | 18 | compleet |
+| 148 | [Golfclub De Dorpswaard](#golfclub-de-dorpswaard-kerkdriel) | Kerkdriel | 119.4 | 9 | compleet |
+| 149 | [Golfbaan Spaarnwoude](#golfbaan-spaarnwoude-velsen-zuid) | Velsen-Zuid | 120.6 | 54 | compleet |
+| 150 | [Golfbaan Ooghduyne](#golfbaan-ooghduyne-julianadorp) | Julianadorp | 120.7 | 9 | compleet |
+| 151 | [Golf- en Countryclub Geijsteren](#golf-countryclub-geijsteren) | Geijsteren | 121.5 | 18 | compleet |
+| 152 | [Golfbaan De Texelse](#de-texelse-de-cocksdorp) | De Cocksdorp | 123.6 | 27 | compleet |
+| 153 | [Golf Maasduinen](#golf-maasduinen-arcen) | Arcen | 123.9 | 9 | deels |
+| 154 | [Golfclub Landgoed Coudewater](#golfclub-landgoed-coudewater-rosmalen) | Rosmalen | 124.3 | 9 | compleet |
+| 155 | [Golf & Country Club Liemeer – Torenbaan](#golf-country-club-liemeer) | Nieuwveen | 125.1 | 18 | compleet |
+| 156 | [Golf & Country Club Liemeer – Bovenlandenbaan](#liemeer-bovenlandenbaan) | Nieuwveen | 125.1 | 9 | compleet |
+| 157 | [Haarlemmermeersche Golfclub](#haarlemmermeersche-golfclub-cruquius) | Cruquius | 125.5 | 36 | deels |
+| 158 | [Golfpark De Haverleij](#golfpark-de-haverleij-den-bosch) | 's-Hertogenbosch | 127.4 | 18 | compleet |
+| 159 | [Golf Parc De Pettelaar](#golf-parc-de-pettelaar-den-bosch) | 's-Hertogenbosch | 128.0 | 9 | deels |
+| 160 | [The Dutch](#the-dutch-spijk) | Spijk (West Betuwe) | 128.8 | 18 | compleet |
+| 161 | [Golfbaan Stippelberg](#golfbaan-stippelberg-bakel) | Bakel (Gemert-Bakel) | 130.0 | 27 | compleet |
+| 162 | [Golfclub Mariënweide](#golfclub-marienweide-aerdenhout) | Aerdenhout | 130.0 | 9 | compleet |
+| 163 | [Golfclub Zeegersloot (Griend/Heuvel)](#golfclub-zeegersloot-alphen) | Alphen aan den Rijn | 130.0 | 18 | compleet |
+| 164 | [Golfclub Zeegersloot – Parkbaan (par 3)](#golfclub-zeegersloot-parkbaan) | Alphen aan den Rijn | 130.0 | 9 | compleet |
+| 165 | [Golfbaan 9par3 Noordeloos](#golfbaan-noordeloos) | Noordeloos | 130.3 | 9 | deels |
+| 166 | [Golfbaan The Dunes](#golfbaan-the-dunes-zandvoort) | Zandvoort | 131.6 | 9 | deels |
+| 167 | [Kennemer Golf & Country Club](#kennemer-golf-country-club-zandvoort) | Zandvoort | 131.6 | 27 | compleet |
+| 168 | [Golfclub d'n Heikant](#golfclub-dn-heikant-aarle-rixtel) | Aarle-Rixtel | 132.2 | 9 | compleet |
+| 169 | [Golfclub De Dommel](#golfclub-de-dommel-sint-michielsgestel) | Sint-Michielsgestel | 132.7 | 18 | compleet |
+| 170 | [Levant Golf (voorheen Golfbaan De Schoot)](#levant-golf-sint-oedenrode) | Sint-Oedenrode | 132.7 | 9 | compleet |
+| 171 | [Bernardus Golf](#bernardus-golf-cromvoirt) | Cromvoirt | 133.7 | 18 | compleet |
+| 172 | [Golfbaan de Golfhorst](#golfhorst-america) | America | 134.8 | 27 | compleet |
+| 173 | [Helmondse Golfclub 'Overbrug'](#helmondse-golfclub-overbrug) | Helmond | 134.8 | 9 | compleet |
+| 174 | [Golfclub Vught (par 3-baan)](#golfclub-vught) | Vught | 135.1 | 9 | compleet |
+| 175 | [Golfbaan Ter Specke](#golfbaan-ter-specke-lisse) | Lisse | 135.6 | 9 | compleet |
+| 176 | [Golfbaan Tespelduyn (Bloembollenbaan)](#golfbaan-tespelduyn-noordwijkerhout) | Noordwijkerhout | 135.7 | 9 | compleet |
+| 177 | [Golfclub Son](#golfclub-son) | Son en Breugel | 136.9 | 9 | deels |
+| 178 | [Golfpark Almkreek](#golfpark-almkreek-almkerk) | Almkerk | 137.0 | 32 | deels |
+| 179 | [De Peelse Golf](#de-peelse-golf-evertsoord) | Evertsoord | 139.5 | 27 | compleet |
+| 180 | [Noordwijkse Golfclub](#noordwijkse-golfclub) | Noordwijk | 139.8 | 18 | compleet |
+| 181 | [Golfclub Kagerzoom](#golfclub-kagerzoom-warmond) | Warmond | 140.5 | 9 | compleet |
+| 182 | [Golfbaan Bentwoud](#golfbaan-bentwoud-benthuizen) | Benthuizen | 141.0 | 27 | compleet |
+| 183 | [Golfbaan Bentwoud – Noordwoud (par 3/4-baan)](#golfbaan-bentwoud-noordwoud) | Benthuizen | 141.0 | 9 | compleet |
+| 184 | [Golf De Gulbergen](#golf-de-gulbergen-mierlo) | Mierlo | 141.3 | 27 | compleet |
+| 185 | [Golf Centrum Noordwijk](#golfcentrum-noordwijk) | Noordwijk | 141.4 | 9 | deels |
+| 186 | [Golf- en wijndomein Kapelkeshof](#kapelkeshof-grashoek) | Grashoek | 141.9 | 21 | compleet |
+| 187 | [Golfclub de Berckt](#golfclub-de-berckt-baarlo) | Baarlo | 142.0 | 9 | compleet |
+| 188 | [Best Golf](#best-golf-country-club) | Best | 142.6 | 18 | compleet |
+| 189 | [Oegstgeester Golfclub](#oegstgeester-golfclub) | Oegstgeest | 143.1 | 9 | compleet |
+| 190 | [Golfcentrum Eindhoven](#golfcentrum-eindhoven) | Eindhoven | 143.5 | 9 | compleet |
+| 191 | [ESTEC Golf Club](#estec-golf-club-noordwijk) | Noordwijk | 144.5 | 9 | compleet |
+| 192 | [Golfpark De Loonsche Duynen](#golfpark-de-loonsche-duynen-de-moer) | De Moer | 144.7 | 27 | compleet |
+| 193 | [Golfpark De Kurenpolder](#golfpark-de-kurenpolder-hank) | Hank | 144.8 | 18 | compleet |
+| 194 | [Golfbaan Het Woold](#golfbaan-het-woold-asten) | Asten-Heusden | 145.1 | 27 | compleet |
+| 195 | [Golfbaan Hitland](#golfbaan-hitland-nieuwerkerk) | Nieuwerkerk aan den IJssel | 145.1 | 18 | deels |
+| 196 | [Golfclub Riel](#golfclub-riel-geldrop) | Geldrop | 145.5 | 9 | compleet |
+| 197 | [Sportfondsen Golfbaan Het Wedde](#golfbaan-het-wedde-voorschoten) | Voorschoten | 145.6 | 9 | compleet |
+| 198 | [Crayestein Golf](#crayestein-golf-dordrecht) | Dordrecht | 145.7 | 18 | deels |
+| 199 | [Crayestein Pitch & Putt](#crayestein-pitch-putt-dordrecht) | Dordrecht | 145.7 | 18 | deels |
+| 200 | [Golfbaan Eyckenduyn](#eyckenduyn-helden) | Helden | 146.0 | 9 | compleet |
+| 201 | [Golfclub Capelle](#golfclub-capelle-capelle-aan-den-ijssel) | Capelle aan den IJssel | 146.7 | 18 | compleet |
+| 202 | [Golfbaan De Swinkelsche](#golfbaan-de-swinkelsche-someren) | Someren | 146.8 | 27 | compleet |
+| 203 | [Golfbaan Crimpenerhout](#golfbaan-crimpenerhout-krimpen-aan-de-lek) | Krimpen aan de Lek | 147.5 | 9 | compleet |
+| 204 | [Golf- en Countryclub De Tongelreep](#golf-countryclub-de-tongelreep-eindhoven) | Eindhoven | 148.8 | 9 | deels |
+| 205 | [Wassenaarse Golfclub Rozenstein](#rozenstein-wassenaar) | Wassenaar | 148.8 | 18 | compleet |
+| 206 | [Golfbaan De Hooge Rotterdamsche](#de-hooge-rotterdamsche-bergschenhoek) | Bergschenhoek | 149.1 | 18 | compleet |
+| 207 | [Golf De Kieviten](#de-kieviten-golf-wassenaar) | Wassenaar | 149.1 | 9 | deels |
+| 208 | [Golfpark Westerpark](#golfpark-westerpark-zoetermeer) | Zoetermeer | 150.2 | 18 | compleet |
+| 209 | [Golf & Recreatiepark 't Caves](#golfpark-t-caves-wintelre) | Wintelre | 150.6 | 18 | deels |
+| 210 | [Golfbaan Kralingen](#golfbaan-kralingen-rotterdam) | Rotterdam | 150.9 | 9 | deels |
+| 211 | [Koninklijke Haagsche Golf & Country Club](#koninklijke-haagsche-wassenaar) | Wassenaar | 151.4 | 18 | compleet |
+| 212 | [Golfcentrum Dongen](#golfcentrum-dongen) | Dongen | 151.9 | 9 | deels |
+| 213 | [Eindhovensche Golf](#eindhovensche-golf-valkenswaard) | Valkenswaard | 152.5 | 18 | deels |
+| 214 | [Leender Golfclub Haviksoord](#leender-golfclub-haviksoord) | Leende | 153.0 | 18 | compleet |
+| 215 | [Haagsche Country Club Groen-Geel (golf)](#hcc-groen-geel-golf-wassenaar) | Wassenaar | 153.5 | 9 | compleet |
+| 216 | [Valkenswaardse Golfclub](#valkenswaardse-golfclub) | Valkenswaard | 153.5 | 9 | compleet |
+| 217 | [Brabant Golf](#brabant-golf-rijen) | Rijen | 153.8 | 9 | deels |
+| 218 | [De Oosterhoutse Golfclub](#oosterhoutse-golfclub) | Oosterhout | 153.8 | 27 | compleet |
+| 219 | [Golf Duinzicht](#golf-duinzicht-wassenaar) | Wassenaar | 153.9 | 9 | compleet |
+| 220 | [Golfpark Gendersteyn](#golfpark-gendersteyn-veldhoven) | Veldhoven | 153.9 | 25 | compleet |
+| 221 | [Prise d'Eau Golf](#prise-deau-golf-tilburg) | Tilburg | 153.9 | 36 | deels |
+| 222 | [Wassenaarse Golf Groendael](#wassenaarse-golf-groendael) | Wassenaar | 154.2 | 9 | compleet |
+| 223 | [Golfcenter Seve Par 3-baan](#golfcenter-seve-rotterdam) | Rotterdam | 154.3 | 9 | deels |
+| 224 | [Golfbaan Leeuwenbergh](#leeuwenbergh-den-haag) | Den Haag | 154.7 | 18 | deels |
+| 225 | [DSV Concordia Golf (par 3-baan)](#dsv-concordia-golf-delft) | Delft | 155.4 | 9 | deels |
+| 226 | [Golfpark De Haenen](#golfpark-de-haenen-teteringen) | Teteringen | 155.9 | 18 | compleet |
+| 227 | [Noord-Brabantsche Golfclub Toxandria](#toxandria-molenschot) | Molenschot | 156.1 | 18 | compleet |
+| 228 | [Golfbaan Landgoed Bergvliet](#landgoed-bergvliet-oosterhout) | Oosterhout | 156.3 | 27 | deels |
+| 229 | [Rijswijkse Golfclub](#rijswijkse-golfclub) | Rijswijk | 156.6 | 18 | compleet |
+| 230 | [Golfbaan Midden-Brabant](#golfbaan-midden-brabant-esbeek) | Esbeek | 156.9 | 27 | compleet |
+| 231 | [Golfclub Landgoed Nieuwkerk](#golfclub-landgoed-nieuwkerk-goirle) | Goirle | 156.9 | 9 | compleet |
+| 232 | [Golfpark Weilenseind](#golfpark-weilenseind-gilze) | Gilze | 157.4 | 9 | compleet |
+| 233 | [Golfpark Rotterdam](#golfpark-rotterdam) | Rotterdam | 157.6 | 18 | deels |
+| 234 | [Golfclub Princenbosch](#golfclub-princenbosch-molenschot) | Molenschot | 159.5 | 36 | compleet |
+| 235 | [De Strijensche Golfclub](#de-strijensche-golfclub-strijen) | Strijen | 160.0 | 9 | compleet |
+| 236 | [Rhoon Golfcenter (18 holes)](#rhoon-golfcenter) | Rhoon | 160.5 | 18 | compleet |
+| 237 | [Rhoon Golfcenter Beverbaan (par 3)](#rhoon-golfcenter-beverbaan) | Rhoon | 160.5 | 18 | compleet |
+| 238 | [Golfbaan Delfland Par 3 Challenge Course](#golfbaan-delfland-par-3-schipluiden) | Schipluiden | 160.6 | 9 | compleet |
+| 239 | [Golfbaan Delfland (Championship Course)](#golfbaan-delfland-schipluiden) | Schipluiden | 160.6 | 27 | compleet |
+| 240 | [De Herkenbosche](#de-herkenbosche-herkenbosch) | Herkenbosch | 161.3 | 27 | deels |
+| 241 | [Golfvereniging Albatross](#golfvereniging-albatross-prinsenbeek) | Prinsenbeek | 162.5 | 9 | compleet |
+| 242 | [Golfbaan Crossmoor](#crossmoor-weert) | Weert | 163.1 | 27 | deels |
+| 243 | [Golfpark Land van Thorn](#golfpark-land-van-thorn-hunsel) | Hunsel | 163.2 | 9 | compleet |
+| 244 | [Golfbaan De Achterste Hoef](#golfbaan-de-achterste-hoef-bladel) | Bladel | 163.3 | 9 | deels |
+| 245 | [Golfclub Broekpolder](#golfclub-broekpolder-vlaardingen) | Vlaardingen | 163.5 | 18 | compleet |
+| 246 | [Golf Ockenburgh](#golf-ockenburgh-den-haag) | Den Haag | 163.9 | 9 | deels |
+| 247 | [Golfbaan Schinkelshoek](#golfbaan-schinkelshoek-vlaardingen) | Vlaardingen | 165.7 | 27 | deels |
+| 248 | [Golfpark De Turfvaert](#golfpark-de-turfvaert-rijsbergen) | Rijsbergen | 169.2 | 18 | compleet |
+| 249 | [Golfclub Westland (par 3-baan)](#golfclub-westland-s-gravenzande) | 's-Gravenzande | 169.5 | 9 | compleet |
+| 250 | [Golfclub Cromstrijen Challenge Course](#golfclub-cromstrijen-challenge-course-numansdorp) | Numansdorp | 170.3 | 9 | compleet |
+| 251 | [Golfclub Cromstrijen Championship Course](#golfclub-cromstrijen-numansdorp) | Numansdorp | 170.3 | 18 | compleet |
+| 252 | [Golfclub Kleiburg](#golfclub-kleiburg-brielle) | Brielle | 173.5 | 18 | compleet |
+| 253 | [Golfbaan Echt-Susteren](#golfbaan-echt-susteren) | Susteren | 174.6 | 9 | compleet |
+| 254 | [Golfcentrum Roosendaal (Golfbaan De Stok)](#golfcentrum-roosendaal-de-stok) | Roosendaal | 181.9 | 9 | compleet |
+| 255 | [Akkermans Golf De Heen](#akkermans-golf-de-heen) | De Heen | 187.3 | 9 | deels |
+| 256 | [Golf-Resort Brunssummerheide](#golf-resort-brunssummerheide) | Brunssum | 187.8 | 45 | deels |
+| 257 | [Golfbaan Catharinenburg (18 holes)](#golfbaan-catharinenburg-melissant) | Melissant | 187.8 | 18 | compleet |
+| 258 | [Golfbaan Catharinenburg Par 3-baan](#golfbaan-catharinenburg-par-3-melissant) | Melissant | 187.8 | 18 | compleet |
+| 259 | [Golfclub Wouwse Plantage](#golfclub-wouwse-plantage-bergen-op-zoom) | Bergen op Zoom | 190.3 | 18 | compleet |
+| 260 | [Golfclub Grevelingenhout](#golfclub-grevelingenhout-bruinisse) | Bruinisse | 193.6 | 27 | compleet |
+| 261 | [Golf & Country Club Hoenshuis](#golf-country-club-hoenshuis-voerendaal) | Voerendaal | 194.4 | 18 | compleet |
+| 262 | [Golfclub Meerssen](#golfclub-meerssen-bunde) | Bunde (Meerssen) | 195.8 | 9 | compleet |
+| 263 | [Golfbaan Het Rijk van Margraten](#het-rijk-van-margraten-cadier-en-keer) | Cadier en Keer | 201.8 | 18 | compleet |
+| 264 | [International Golf Maastricht](#international-golf-maastricht) | Maastricht | 202.1 | 27 | deels |
+| 265 | [Golfpark Reymerswael](#golfvereniging-reymerswael-rilland) | Rilland | 203.1 | 18 | compleet |
+| 266 | [De Zuid Limburgse Golf & Country Club Wittem](#zuid-limburgse-golf-country-club-wittem) | Mechelen (Gulpen-Wittem) | 205.1 | 18 | compleet |
+| 267 | [Golfclub Hoog Vaals](#golfclub-hoog-vaals) | Vaals | 206.1 | 9 | compleet |
+| 268 | [De Goese Golf](#de-goese-golf-goes) | Goes | 211.5 | 27 | compleet |
+| 269 | [Golfbaan Molenberg](#golfbaan-molenberg-burgh-haamstede) | Burgh-Haamstede | 212.7 | 18 | compleet |
+| 270 | [Golfbaan De Zeeuwsche](#de-zeeuwsche-middelburg) | Middelburg | 229.1 | 18 | compleet |
+| 271 | [Golfbaan De Woeste Kop](#de-woeste-kop-axel) | Axel | 230.5 | 18 | compleet |
+| 272 | [Domburgsche Golfclub](#domburgsche-golfclub-domburg) | Domburg | 233.5 | 9 | compleet |
+| 273 | [Golfclub Oostburg – Domein De Brugse Vaart](#golfclub-oostburg-brugse-vaart) | Oostburg | 249.5 | 18 | deels |
+| 274 | [GREENZ Cadzand-Bad (Shortgolf Cadzand-Bad)](#greenz-shortgolf-cadzand-bad) | Cadzand-Bad | 249.7 | 9 | deels |
 
 <a id="hooge-graven-ommen"></a>
 ## Hooge Graven Golfclub Ommen
@@ -623,6 +817,87 @@ De Gelpenberg ligt bij Aalden op zandgrond en is daardoor het hele jaar goed bes
 - **Scorekaartpagina:** https://dgcdegelpenberg.nl/de-baan/scorekaarten/
 - **Bestanden:** [scorecard/DGC-Scorekaart-2026-LR-1.jpg](gelpenberg-aalden/scorecard/DGC-Scorekaart-2026-LR-1.jpg), [scorecard/DGC-Scorekaart-2026-LR51-2.jpg](gelpenberg-aalden/scorecard/DGC-Scorekaart-2026-LR51-2.jpg), [scorecard/DGC-de-Gelpenberg-PAR-3-Scorekaart-A5-2026-LR-1.jpg](gelpenberg-aalden/scorecard/DGC-de-Gelpenberg-PAR-3-Scorekaart-A5-2026-LR-1.jpg), [scorecard/DGC-de-Gelpenberg-PAR-3-Scorekaart-A5-2026-LR44-2.jpg](gelpenberg-aalden/scorecard/DGC-de-Gelpenberg-PAR-3-Scorekaart-A5-2026-LR44-2.jpg), [scorecard/hcp-Heren-9-en-18-holes.pdf](gelpenberg-aalden/scorecard/hcp-Heren-9-en-18-holes.pdf), [scorecard/hcp-Dames-9-en-18-holes.pdf](gelpenberg-aalden/scorecard/hcp-Dames-9-en-18-holes.pdf), [scorecard/hcp-Par-3-baan.pdf](gelpenberg-aalden/scorecard/hcp-Par-3-baan.pdf)
 - **Opmerking:** Lengtes, par en SI uit scorekaart 2026. CR/slope uit officiele baanhandicaptabellen van 30-09-2021 (par-3: 12-10-2021); deze kunnen inmiddels herzien zijn. Par-3 baan: 9 holes, CR/slope gelden voor 18 holes (2x rond, par 54); tweede ronde heeft SI 10,8,14,6,2,12,18,4,16. Scorekaart toont geen aparte dames-SI. Par-3 baan heeft een enkele afstandskolom (geel en rood gelijk).
+
+<a id="golfclub-almelo"></a>
+## Golfclub Almelo
+
+Kleine verenigingsbaan in de groene wijk Schelfhorst aan de rand van Almelo, opgezet en onderhouden door vrijwilligers. De 9 holes zijn te spelen als korte Veenlus (rode afslagen, par 28) of als Landlus (gele afslagen, par 30), waarbij holes 7 en 8 dan par 4 worden. De baan is vernieuwd naar een ontwerp van Jurrian van der Vaart en heeft een driving range en oefengreens.
+
+- **Club:** Golfclub Almelo
+- **Adres:** Veenelandenweg 34, 7608 HB Almelo, Overijssel, NL
+- **GPS:** 52.38339, 6.67098
+- **Afstand:** 28.1 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkachtig
+- **Opgericht:** 2002
+- **Architect:** Jurrian van der Vaart (nieuw ontwerp)
+- **Telefoon:** 0546-568276
+- **E-mail:** info@golfinalmelo.nl
+- **Website:** https://www.golfinalmelo.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Baanpermissie / WHS-handicap 55 of lager; greenfee in het clubhuis of vooraf via WhatsApp/e-mail.
+- **Faciliteiten:** driving range, oefengreens, oefenbunker, clubhuis, golflessen/clinics
+
+**Lus Veenlus (rode tee, 9 holes 2x)** — 18 holes, par 56
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| rood (men) | 2318 | 51.7 | 76 | 56 |
+| rood (women) | 2318 | 54.2 | 83 | 56 |
+
+| Hole | Par | SI | rood |
+|---|---|---|---|
+| 1 | 3 | 13 | 75 |
+| 2 | 3 | 5 | 117 |
+| 3 | 3 | 9 | 112 |
+| 4 | 3 | 11 | 150 |
+| 5 | 3 | 15 | 150 |
+| 6 | 4 | 1 | 200 |
+| 7 | 3 | 3 | 160 |
+| 8 | 3 | 17 | 74 |
+| 9 | 3 | 7 | 121 |
+| 10 | 3 | 14 | 75 |
+| 11 | 3 | 6 | 117 |
+| 12 | 3 | 10 | 112 |
+| 13 | 3 | 12 | 150 |
+| 14 | 3 | 16 | 150 |
+| 15 | 4 | 2 | 200 |
+| 16 | 3 | 4 | 160 |
+| 17 | 3 | 18 | 74 |
+| 18 | 3 | 8 | 121 |
+
+**Lus Landlus (gele tee, 9 holes 2x)** — 18 holes, par 60
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2754 | 54.9 | 80 | 60 |
+| geel (women) | 2754 | 57.5 | 90 | 60 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 3 | 15 | 75 |
+| 2 | 3 | 5 | 117 |
+| 3 | 3 | 11 | 112 |
+| 4 | 3 | 13 | 150 |
+| 5 | 3 | 17 | 150 |
+| 6 | 4 | 1 | 200 |
+| 7 | 4 | 3 | 232 |
+| 8 | 4 | 9 | 220 |
+| 9 | 3 | 7 | 121 |
+| 10 | 3 | 16 | 75 |
+| 11 | 3 | 6 | 117 |
+| 12 | 3 | 12 | 112 |
+| 13 | 3 | 14 | 150 |
+| 14 | 3 | 18 | 150 |
+| 15 | 4 | 2 | 200 |
+| 16 | 4 | 4 | 232 |
+| 17 | 4 | 10 | 220 |
+| 18 | 3 | 8 | 121 |
+
+- **Scorekaartpagina:** https://www.golfinalmelo.nl/holes-en-handicaptabellen/
+- **Bestanden:** [scorecard/GC-Almelo-18-holes-Dames-Heren-Landlus-Gele-tee.pdf](golfclub-almelo/scorecard/GC-Almelo-18-holes-Dames-Heren-Landlus-Gele-tee.pdf), [scorecard/GC-Almelo-18-holes-Dames-Heren-Veenlus-Rode-tee.pdf](golfclub-almelo/scorecard/GC-Almelo-18-holes-Dames-Heren-Veenlus-Rode-tee.pdf), [scorecard/GC-Almelo-9-holes-Dames-Heren-Landlus-Gele-tee.pdf](golfclub-almelo/scorecard/GC-Almelo-9-holes-Dames-Heren-Landlus-Gele-tee.pdf), [scorecard/GC-Almelo-9-holes-Dames-Heren-Veenlus-Rode-tee.pdf](golfclub-almelo/scorecard/GC-Almelo-9-holes-Dames-Heren-Veenlus-Rode-tee.pdf), [scorecard/Holes-par-lengte-totaal.pdf](golfclub-almelo/scorecard/Holes-par-lengte-totaal.pdf), [scorecard/Scorekaart-GCA0825-wikkel-A6.pdf](golfclub-almelo/scorecard/Scorekaart-GCA0825-wikkel-A6.pdf), [scorecard/page.html](golfclub-almelo/scorecard/page.html)
+- **Opmerking:** Scorekaart GCA 08-2025 met par, SI en lengte voor Veenlus (rood) en Landlus (geel), holes 10-18 = 1-9 met eigen SI. Totalen 1159/2318 (Veenlus) en 1377/2754 (Landlus) kloppen met de som. CR/slope uit baanhandicaptabellen 06-10-2025 (18 holes); 9 holes: Veenlus heren 25,9/76, dames 27,1/83; Landlus heren 27,5/80, dames 28,8/90. Geen aparte dames-SI. Bij rijp wordt alleen de Veenlus gespeeld. Oprichtingsjaar 2002 = start vrijwilligersinitiatief volgens de site.
 
 <a id="pitch-putt-orvelte"></a>
 ## Pitch & Putt Golf Orvelte
@@ -1519,6 +1794,46 @@ Moderne 9-holes par-70 baan naast Aparthotel Delden, ontworpen door Frank Pont e
 - **Scorekaartpagina:** https://www.golfbaandelagemors.nl/golfbaan-info/
 - **Bestanden:** [scorecard/1777464288--FILE--2025-09-26-scorekaart-de-lage-mors.pdf](de-lage-mors-delden/scorecard/1777464288--FILE--2025-09-26-scorekaart-de-lage-mors.pdf), [scorecard/1727878483--FILE--baanhandicap-lage-mors-heren---versie-2024.pdf](de-lage-mors-delden/scorecard/1727878483--FILE--baanhandicap-lage-mors-heren---versie-2024.pdf), [scorecard/1727878432--FILE--baanhandicap-lage-mors-dames---versie-2024.pdf](de-lage-mors-delden/scorecard/1727878432--FILE--baanhandicap-lage-mors-dames---versie-2024.pdf), [scorecard/1756721577--FILE--lage-mors-twickelbaan-dames---heren-2025.pdf](de-lage-mors-delden/scorecard/1756721577--FILE--lage-mors-twickelbaan-dames---heren-2025.pdf), [scorecard/2025-09-26-plattegrond-golfbaan-1044x733.jpg](de-lage-mors-delden/scorecard/2025-09-26-plattegrond-golfbaan-1044x733.jpg)
 - **Opmerking:** Scorekaart 26-09-2025. Teekleuren van de drie lengtekolommen (geel/rood/oranje) afgeleid uit totaallengte 4743 m (geel volgens site) en volgorde in handicaptabellen. Twickelbaan: 9 korte holes (par 29) op dezelfde baan met eigen tees; CR geel heren / rood dames vanaf zwart/witte tee.
+
+<a id="twentse-golf-academy-bentelo"></a>
+## Twentse Golf Academy
+
+Kleinschalige golfaccommodatie in het buitengebied van Bentelo (Hof van Twente), een zusterbaan van het Twentse Golf Park in Haaksbergen. De 9 holes zijn allemaal par 3 en kort (circa 35 tot 115 meter), wat de baan geschikt maakt voor beginners en het oefenen van het korte spel. Er is een driving range en het accent ligt op lessen.
+
+- **Club:** Twentse Golf Academy
+- **Adres:** Bentelosestraat 54a, Bentelo, Overijssel, NL
+- **GPS:** 52.2404, 6.695
+- **Afstand:** 43.1 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** landelijk/agrarisch (Twents coulisselandschap)
+- **Telefoon:** +31 6 16860123
+- **E-mail:** info@twentsegolfacademy.nl
+- **Website:** https://twentsegolfacademy.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, oefenfaciliteiten korte spel, clubhuis, golflessen (lesabonnement)
+
+**Lus Par 3-baan 9 holes** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| meters | 631 |  |  | 27 |
+
+| Hole | Par | SI | meters |
+|---|---|---|---|
+| 1 | 3 | 2 | 95 |
+| 2 | 3 | 4 | 66 |
+| 3 | 3 | 8 | 43 |
+| 4 | 3 | 7 | 71 |
+| 5 | 3 | 1 | 113 |
+| 6 | 3 | 6 | 78 |
+| 7 | 3 | 3 | 61 |
+| 8 | 3 | 5 | 70 |
+| 9 | 3 | 9 | 34 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/twentse-golf-academy
+- **Bestanden:** [scorecard/page.html](twentse-golf-academy-bentelo/scorecard/page.html)
+- **Opmerking:** Holegegevens (par, SI 1-9, lengte) uit Hole19; tee heet daar "meters" (totaal 631, Hole19 labelt het als yds). Geen CR/slope gevonden. Officiële site twentsegolfacademy.nl toont alleen een lege serverpagina (geen inhoud) - status/actualiteit niet officieel te controleren; de club staat wel in de golf.nl-banenzoeker (beschreven als 9 holes par 3 met driving range). Postcode onbekend (Hole19 vermeldt "7597MR", vermoedelijk 7497 MR). Telefoon uit golf.nl, e-mail uit Hole19.
 
 <a id="pitch-putt-twente-diepenheim"></a>
 ## Pitch & Putt Twente
@@ -4937,6 +5252,48 @@ Een van de oudste golfclubs van Nederland, in 1895 opgericht en sinds 1908 geves
 - **Bestanden:** [scorecard/rosendaelsche-golfclub-scorecard-2-scaled.jpg](rosendaelsche-golfclub-arnhem/scorecard/rosendaelsche-golfclub-scorecard-2-scaled.jpg), [scorecard/rosendaelsche-golfclub-scorecard-plattegrond.jpg](rosendaelsche-golfclub-arnhem/scorecard/rosendaelsche-golfclub-scorecard-plattegrond.jpg), [scorecard/2021-06-22-RG-HC-tabellen-heren-22062021.pdf](rosendaelsche-golfclub-arnhem/scorecard/2021-06-22-RG-HC-tabellen-heren-22062021.pdf), [scorecard/2021-06-22-RG-HC-tabellen-dames-22062021.pdf](rosendaelsche-golfclub-arnhem/scorecard/2021-06-22-RG-HC-tabellen-dames-22062021.pdf), [scorecard/page.html](rosendaelsche-golfclub-arnhem/scorecard/page.html)
 - **Opmerking:** Tees op de kaart heten 65/60/55/51/46 (witte/gele/blauwe/rode/oranje stip). Lengtes van scorekaart (upload 2026-04); CR/slope uit officiele handicaptabellen d.d. 22-06-2021 (ook 9-holes waarden in de PDF's). Eén SI-kolom (geen aparte dames-SI). Greenfee o.a. EUR 170 (18 holes, Q-baan); niet-clubgebonden spelers + EUR 30. Geen online boekingslink; reserveren via secretariaat.
 
+<a id="shortgolf-zeumeren-voorthuizen"></a>
+## ShortGolf Zeumeren
+
+Kleine 9-holes par 3-baan bij Voorthuizen waar ook mensen zonder golfervaring terechtkunnen. De holes zijn 43 tot 123 meter lang (totaal 710 m) en de baan heeft een NGF-rating, zodat je er ook handicap 54 kunt halen. Er worden lessen, cursussen en groepsuitjes georganiseerd.
+
+- **Club:** ShortGolf Zeumeren (v/h Pitch & Putt Zeumeren)
+- **Adres:** Stroetweg, 3781 PR Voorthuizen, Gelderland, NL
+- **GPS:** 52.175, 5.6152
+- **Afstand:** 74.3 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** korte par 3-baan bij recreatiegebied Zeumeren
+- **Telefoon:** +31 6 1092 3277
+- **E-mail:** info@shortgolfen.nl
+- **Website:** https://shortgolfen.nl/
+- **Greenfee welkom:** True
+- **Eisen:** geen golfervaring vereist; vooraf reserveren
+- **Faciliteiten:** golflessen, groepsarrangementen, BBQ/borrel
+
+**Lus 9 holes** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 710 | 23.7 | 67 | 27 |
+| rood (women) | 710 | 24.5 | 71 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 3 | 95 | 95 |
+| 2 | 3 | 5 | 91 | 91 |
+| 3 | 3 | 6 | 73 | 73 |
+| 4 | 3 | 9 | 43 | 43 |
+| 5 | 3 | 2 | 103 | 103 |
+| 6 | 3 | 7 | 61 | 61 |
+| 7 | 3 | 4 | 69 | 69 |
+| 8 | 3 | 1 | 123 | 123 |
+| 9 | 3 | 8 | 52 | 52 |
+
+- **Scorekaartpagina:** https://shortgolfen.nl/courserating-2/
+- **Bestanden:** [scorecard/Courserating18.jpg](shortgolf-zeumeren-voorthuizen/scorecard/Courserating18.jpg), [scorecard/Scorekaart2026.pdf.jpg](shortgolf-zeumeren-voorthuizen/scorecard/Scorekaart2026.pdf.jpg), [scorecard/page.html](shortgolf-zeumeren-voorthuizen/scorecard/page.html), [scorecard/tabel-9-holes.jpg](shortgolf-zeumeren-voorthuizen/scorecard/tabel-9-holes.jpg)
+- **Opmerking:** Scorekaart 2026 (9 holes, één lengte per hole) + baanhandicaptabellen 12-02-2026; 9-holes CR/SR in de loop; 18 holes (9 holes 2x): geel heren 47,4/67, rood dames 49,0/71 (par 54). Geen S.I. voor holes 10-18 gepubliceerd. Huisnummer niet gevonden; GPS uit OSM.
+
 <a id="golfclub-putten"></a>
 ## Golfclub Putten
 
@@ -5410,4 +5767,14088 @@ Historische 9-holesbaan uit 1950 in het Bagno, het voormalige vorstelijke landsc
 - **Scorekaartpagina:** https://www.gc-muensterland.de/golfplatz/
 - **Bestanden:** [scorecard/page.html](gc-muensterland-burgsteinfurt/scorecard/page.html)
 - **Opmerking:** Scorekaart staat als HTML-tabel op de officiële pagina /golfplatz/ (geen PDF). HCP officieel als '3/4' enz. (1e/2e ronde bij 18 holes); si = waarde 1e ronde, 2e ronde = si+1. Damen-lengtes per hole tellen op tot 2431 terwijl totaal 2423 vermeld staat; golfingrecord.com geeft hole 5 = 126 en hole 8 = 267 (som 2423) - officiële waarden (114/287) overgenomen. CR/slope ontbreken: de Course-Handicap-PDF's op /golfplatz/course-handicaps/ geven nu de homepage terug. 1golf.eu (third-party, niet geverifieerd, via zoekresultaat) vermeldt 18 holes: gelb CR 69,2 / slope 123 (5420 m), rot CR 70,9 / slope 120 (4822 m). Teekleuren geel/rood volgens third-party bronnen; officieel alleen 'Herren'/'Damen'.
+
+<a id="golfclub-t-lohr-voorst"></a>
+## Golfclub 't Lohr
+
+Pitch & puttbaan van een familiebedrijf in Voorst bij Gendringen, aangeprezen als de korte golfbaan van de Achterhoek. De negen par 3-holes zijn 44 tot 123 meter lang en worden voor een volle ronde twee keer gespeeld. Naast golf zijn er voetgolf, adventure minigolf en arrangementen met horeca.
+
+- **Club:** Golfclub 't Lohr
+- **Adres:** Lohrpad 2, 7083 AX Voorst (Oude IJsselstreek), Gelderland, NL
+- **GPS:** 51.8696099, 6.4165109
+- **Afstand:** 81.4 km
+- **Type:** pitch-putt
+- **Holes:** 9
+- **Landschap:** korte golfbaan in het Achterhoekse coulisselandschap
+- **Telefoon:** +31 315 631 697
+- **Website:** https://golfinvoorst.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** horeca/terras, voetgolf, adventure minigolf, arrangementen
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| heren (men) | 1420 |  |  | 54 |
+
+| Hole | Par | SI | heren |
+|---|---|---|---|
+| 1 | 3 | 13 | 44 |
+| 2 | 3 | 17 | 59 |
+| 3 | 3 | 9 | 73 |
+| 4 | 3 | 11 | 70 |
+| 5 | 3 | 5 | 69 |
+| 6 | 3 | 7 | 95 |
+| 7 | 3 | 1 | 123 |
+| 8 | 3 | 3 | 106 |
+| 9 | 3 | 15 | 71 |
+| 10 | 3 | 14 | 44 |
+| 11 | 3 | 18 | 59 |
+| 12 | 3 | 10 | 73 |
+| 13 | 3 | 12 | 70 |
+| 14 | 3 | 6 | 69 |
+| 15 | 3 | 8 | 95 |
+| 16 | 3 | 2 | 123 |
+| 17 | 3 | 4 | 106 |
+| 18 | 3 | 16 | 71 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/golfclub-t-lohr
+- **Bestanden:** [scorecard/hole19.html](golfclub-t-lohr-voorst/scorecard/hole19.html), [scorecard/page.html](golfclub-t-lohr-voorst/scorecard/page.html)
+- **Opmerking:** Geen officiële scorekaart online gevonden; par, S.I. en lengtes (afslag "heren", 9 holes 2x) uit hole19golf.com (label "yds", waarden lijken meters). Geen CR/slope bekend.
+
+<a id="golfclub-heelsum"></a>
+## Golfclub Heelsum
+
+27-holesbaan bij Heelsum aan de rand van de Ginkelse Heide, met de lussen Airborne, Helsum en Sandr. De droogdalen uit de ijstijd zijn in het ontwerp verwerkt, wat zorgt voor hoogteverschillen op de zandgrond. Elke combinatie van twee lussen vormt een 18-holesbaan van par 71 of 72; gasten kunnen tot zeven dagen vooruit reserveren.
+
+- **Club:** Golfclub Heelsum
+- **Adres:** Ginkelseweg 14, 6866 DZ Heelsum, Gelderland, NL
+- **GPS:** 51.9878938, 5.7563771
+- **Afstand:** 83.2 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** heide- en bosbaan met droogdalen uit de ijstijd
+- **Telefoon:** +31 317 313 136
+- **E-mail:** receptie@gcheelsum.nl
+- **Website:** https://gcheelsum.nl/
+- **Greenfee welkom:** True
+- **Eisen:** gasten reserveren max. 7 dagen vooruit
+- **Faciliteiten:** clubhuis, driving range, oefenfaciliteiten
+
+**Lus Airborne-Helsum** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6008 | 73.0 | 133 | 71 |
+| geel (men) | 5621 | 70.9 | 128 | 71 |
+| geel (women) | 5621 | 77.2 | 140 | 71 |
+| blauw (men) | 5310 | 69.5 | 128 | 71 |
+| blauw (women) | 5310 | 74.6 | 134 | 71 |
+| rood (men) | 4834 | 66.9 | 117 | 71 |
+| rood (women) | 4834 | 71.8 | 128 | 71 |
+| oranje (men) | 4741 | 66.4 | 115 | 71 |
+| oranje (women) | 4741 | 71.0 | 125 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 13 | 354 | 324 | 307 | 272 | 256 |
+| 2 | 4 | 5 | 420 | 377 | 355 | 321 | 321 |
+| 3 | 5 | 7 | 472 | 464 | 418 | 384 | 371 |
+| 4 | 4 | 11 | 380 | 354 | 332 | 291 | 280 |
+| 5 | 3 | 15 | 172 | 149 | 149 | 123 | 123 |
+| 6 | 5 | 1 | 492 | 477 | 431 | 408 | 400 |
+| 7 | 4 | 3 | 380 | 367 | 351 | 298 | 281 |
+| 8 | 3 | 17 | 168 | 147 | 138 | 109 | 109 |
+| 9 | 4 | 9 | 351 | 315 | 315 | 277 | 277 |
+| 10 | 4 | 14 | 261 | 257 | 257 | 227 | 227 |
+| 11 | 3 | 18 | 169 | 135 | 135 | 117 | 117 |
+| 12 | 4 | 8 | 301 | 277 | 277 | 267 | 267 |
+| 13 | 5 | 4 | 474 | 459 | 400 | 386 | 386 |
+| 14 | 4 | 10 | 329 | 318 | 318 | 287 | 287 |
+| 15 | 3 | 16 | 121 | 117 | 117 | 109 | 109 |
+| 16 | 4 | 6 | 372 | 342 | 328 | 321 | 321 |
+| 17 | 4 | 12 | 379 | 360 | 313 | 313 | 304 |
+| 18 | 4 | 2 | 413 | 382 | 369 | 324 | 305 |
+
+**Lus Helsum-Sandr** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5888 | 72.9 | 135 | 71 |
+| geel (men) | 5546 | 71.0 | 129 | 71 |
+| geel (women) | 5546 | 77.0 | 142 | 71 |
+| blauw (men) | 5140 | 69.1 | 126 | 71 |
+| blauw (women) | 5140 | 74.3 | 134 | 71 |
+| rood (men) | 4857 | 67.4 | 118 | 71 |
+| rood (women) | 4857 | 72.3 | 128 | 71 |
+| oranje (men) | 4772 | 66.9 | 117 | 71 |
+| oranje (women) | 4772 | 71.7 | 129 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 13 | 261 | 257 | 257 | 227 | 227 |
+| 2 | 3 | 17 | 169 | 135 | 135 | 117 | 117 |
+| 3 | 4 | 7 | 301 | 277 | 277 | 267 | 267 |
+| 4 | 5 | 3 | 474 | 459 | 400 | 386 | 386 |
+| 5 | 4 | 9 | 329 | 318 | 318 | 287 | 287 |
+| 6 | 3 | 15 | 121 | 117 | 117 | 109 | 109 |
+| 7 | 4 | 5 | 372 | 342 | 328 | 321 | 321 |
+| 8 | 4 | 11 | 379 | 360 | 313 | 313 | 304 |
+| 9 | 4 | 1 | 413 | 382 | 369 | 324 | 305 |
+| 10 | 4 | 2 | 395 | 386 | 331 | 317 | 302 |
+| 11 | 3 | 16 | 181 | 161 | 161 | 146 | 138 |
+| 12 | 4 | 10 | 332 | 325 | 325 | 280 | 280 |
+| 13 | 4 | 8 | 369 | 343 | 316 | 309 | 309 |
+| 14 | 3 | 18 | 131 | 125 | 125 | 116 | 116 |
+| 15 | 5 | 6 | 487 | 478 | 403 | 403 | 385 |
+| 16 | 4 | 14 | 336 | 274 | 274 | 265 | 265 |
+| 17 | 4 | 12 | 357 | 346 | 291 | 291 | 283 |
+| 18 | 5 | 4 | 481 | 461 | 400 | 379 | 371 |
+
+**Lus Sandr-Airborne** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6258 | 74.5 | 142 | 72 |
+| geel (men) | 5873 | 72.1 | 135 | 72 |
+| geel (women) | 5873 | 79.0 | 142 | 72 |
+| blauw (men) | 5422 | 70.0 | 132 | 72 |
+| blauw (women) | 5422 | 75.8 | 134 | 72 |
+| rood (men) | 4989 | 67.9 | 121 | 72 |
+| rood (women) | 4989 | 73.0 | 132 | 72 |
+| oranje (men) | 4867 | 67.4 | 117 | 72 |
+| oranje (women) | 4867 | 72.0 | 131 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 1 | 395 | 386 | 331 | 317 | 302 |
+| 2 | 3 | 15 | 181 | 161 | 161 | 146 | 138 |
+| 3 | 4 | 9 | 332 | 325 | 325 | 280 | 280 |
+| 4 | 4 | 7 | 369 | 343 | 316 | 309 | 309 |
+| 5 | 3 | 17 | 131 | 125 | 125 | 116 | 116 |
+| 6 | 5 | 5 | 487 | 478 | 403 | 403 | 385 |
+| 7 | 4 | 13 | 336 | 274 | 274 | 265 | 265 |
+| 8 | 4 | 11 | 357 | 346 | 291 | 291 | 283 |
+| 9 | 5 | 3 | 481 | 461 | 400 | 379 | 371 |
+| 10 | 4 | 14 | 354 | 324 | 307 | 272 | 256 |
+| 11 | 4 | 6 | 420 | 377 | 355 | 321 | 321 |
+| 12 | 5 | 8 | 472 | 464 | 418 | 384 | 371 |
+| 13 | 4 | 12 | 380 | 354 | 332 | 291 | 280 |
+| 14 | 3 | 16 | 172 | 149 | 149 | 123 | 123 |
+| 15 | 5 | 2 | 492 | 477 | 431 | 408 | 400 |
+| 16 | 4 | 4 | 380 | 367 | 351 | 298 | 281 |
+| 17 | 3 | 18 | 168 | 147 | 138 | 109 | 109 |
+| 18 | 4 | 10 | 351 | 315 | 315 | 277 | 277 |
+
+- **Scorekaartpagina:** https://gcheelsum.nl/golfbaan/layout/
+- **Bestanden:** [scorecard/Airborne-Helsum-Dames-21.jpg](golfclub-heelsum/scorecard/Airborne-Helsum-Dames-21.jpg), [scorecard/Airborne-Helsum-Heren-21.jpg](golfclub-heelsum/scorecard/Airborne-Helsum-Heren-21.jpg), [scorecard/COURSE-SLOPERATING-per-6-jan-2021a.jpg](golfclub-heelsum/scorecard/COURSE-SLOPERATING-per-6-jan-2021a.jpg), [scorecard/Scorecard-Heelsum.png](golfclub-heelsum/scorecard/Scorecard-Heelsum.png), [scorecard/page.html](golfclub-heelsum/scorecard/page.html)
+- **Opmerking:** Scorekaart (afbeelding 2026) met drie lussen en S.I. per positie (eerste/tweede negen); CR/slope uit het overzicht "Course en Slope ratings per 06-01-2021" (dames geel Airborne-Helsum daar 72,2, gecorrigeerd naar 77,2 volgens de baanhandicaptabel 06-01-2021). Er zijn ook 18-holes ratings voor dezelfde lus 2x (A-A, H-H, S-S) en par 3-baantabellen (niet opgenomen).
+
+<a id="almeerderhout-almere"></a>
+## Golfclub Almeerderhout
+
+Grote verenigingsbaan in het bos van Almere-Hout, vlak over de brug vanaf het Gooi. De 27 holes zijn verdeeld over drie lussen van par 36 (Gooimeer, Markermeer en IJmeer) die in elke combinatie als 18 holes gespeeld kunnen worden. Doglegs, veel bunkers, waterpartijen en de wind uit de polder maken de baan pittig; daarnaast is er een 9 holes par 3-baan voor beginners en het korte spel.
+
+- **Club:** Golfclub Almeerderhout
+- **Adres:** Watersnipweg 19-21, 1341 AA Almere, Flevoland, NL
+- **GPS:** 52.34662, 5.28761
+- **Afstand:** 84.2 km
+- **Type:** 27-holes
+- **Holes:** 36
+- **Landschap:** bos/parkland (geonduleerd polderbos)
+- **Telefoon:** 036-5219160
+- **E-mail:** receptie@almeerderhout.nl
+- **Website:** https://www.almeerderhout.nl/
+- **Greenfee welkom:** True
+- **Eisen:** NGF-handicapbewijs; doordeweeks max. handicap 54, in het weekend max. 36 op de 27-holesbaan; reserveren via receptie (e-mail/WhatsApp), GSN-nummer opgeven.
+- **Faciliteiten:** driving range (grotendeels overdekt), oefenbunkers, chipping greens, putting green, par 3-baan 9 holes, clubhuis, restaurant/horeca, golfacademy (lessen)
+
+**Lus Gooimeer-IJmeer (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6227 | 72.7 | 132 | 72 |
+| geel (men) | 5971 | 72.2 | 132 | 72 |
+| blauw (men) | 5418 | 68.7 | 119 | 72 |
+| rood (men) | 5086 | 67.3 | 109 | 72 |
+| oranje (men) | 4472 | 64.4 | 104 | 72 |
+| geel (women) | 5971 | 78.1 | 139 | 72 |
+| blauw (women) | 5418 | 74.8 | 133 | 72 |
+| rood (women) | 5086 | 73.2 | 133 | 72 |
+| oranje (women) | 4472 | 68.9 | 117 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 11 | 502 | 496 | 432 | 432 | 362 |
+| 2 | 4 | 5 | 339 | 321 | 303 | 290 | 225 |
+| 3 | 4 | 7 | 378 | 361 | 315 | 315 | 246 |
+| 4 | 4 | 1 | 405 | 383 | 365 | 335 | 270 |
+| 5 | 4 | 3 | 368 | 347 | 330 | 252 | 227 |
+| 6 | 3 | 13 | 198 | 186 | 158 | 138 | 138 |
+| 7 | 5 | 15 | 445 | 445 | 445 | 374 | 374 |
+| 8 | 3 | 17 | 152 | 133 | 123 | 123 | 123 |
+| 9 | 4 | 9 | 326 | 326 | 273 | 273 | 226 |
+| 10 | 4 | 6 | 396 | 382 | 310 | 310 | 280 |
+| 11 | 4 | 18 | 345 | 301 | 301 | 263 | 256 |
+| 12 | 5 | 14 | 508 | 501 | 435 | 435 | 389 |
+| 13 | 3 | 16 | 154 | 134 | 134 | 116 | 116 |
+| 14 | 5 | 12 | 470 | 453 | 453 | 389 | 360 |
+| 15 | 4 | 2 | 394 | 376 | 318 | 318 | 258 |
+| 16 | 3 | 10 | 165 | 165 | 135 | 135 | 135 |
+| 17 | 4 | 8 | 320 | 312 | 275 | 275 | 219 |
+| 18 | 4 | 4 | 362 | 349 | 313 | 313 | 268 |
+
+**Lus Gooimeer-Markermeer (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6329 | 74.1 | 139 | 72 |
+| geel (men) | 5986 | 72.6 | 138 | 72 |
+| blauw (men) | 5453 | 69.7 | 122 | 72 |
+| rood (men) | 5134 | 68.6 | 113 | 72 |
+| oranje (men) | 4391 | 65.2 | 107 | 72 |
+| geel (women) | 5986 | 78.9 | 149 | 72 |
+| blauw (women) | 5453 | 75.6 | 138 | 72 |
+| rood (women) | 5134 | 73.6 | 137 | 72 |
+| oranje (women) | 4391 | 69.4 | 117 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 11 | 502 | 496 | 432 | 432 | 362 |
+| 2 | 4 | 5 | 339 | 321 | 303 | 290 | 225 |
+| 3 | 4 | 7 | 378 | 361 | 315 | 315 | 246 |
+| 4 | 4 | 1 | 405 | 383 | 365 | 335 | 270 |
+| 5 | 4 | 3 | 368 | 347 | 330 | 252 | 227 |
+| 6 | 3 | 13 | 198 | 186 | 158 | 138 | 138 |
+| 7 | 5 | 15 | 445 | 445 | 445 | 374 | 374 |
+| 8 | 3 | 17 | 152 | 133 | 123 | 123 | 123 |
+| 9 | 4 | 9 | 326 | 326 | 273 | 273 | 226 |
+| 10 | 4 | 10 | 375 | 353 | 311 | 304 | 240 |
+| 11 | 5 | 16 | 522 | 484 | 408 | 408 | 360 |
+| 12 | 3 | 18 | 142 | 136 | 101 | 101 | 101 |
+| 13 | 4 | 2 | 421 | 359 | 349 | 339 | 300 |
+| 14 | 5 | 12 | 508 | 476 | 476 | 423 | 360 |
+| 15 | 4 | 6 | 383 | 353 | 309 | 309 | 243 |
+| 16 | 3 | 14 | 167 | 162 | 138 | 135 | 135 |
+| 17 | 4 | 8 | 386 | 356 | 319 | 319 | 243 |
+| 18 | 4 | 4 | 312 | 309 | 298 | 264 | 218 |
+
+**Lus Markermeer-IJmeer (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6330 | 73.4 | 138 | 72 |
+| geel (men) | 5961 | 72.3 | 136 | 72 |
+| blauw (men) | 5383 | 68.7 | 122 | 72 |
+| rood (men) | 5156 | 67.7 | 113 | 72 |
+| oranje (men) | 4481 | 64.3 | 107 | 72 |
+| geel (women) | 5961 | 78.1 | 144 | 72 |
+| blauw (women) | 5383 | 74.5 | 135 | 72 |
+| rood (women) | 5156 | 73.8 | 131 | 72 |
+| oranje (women) | 4481 | 69.0 | 118 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 375 | 353 | 311 | 304 | 240 |
+| 2 | 5 | 15 | 522 | 484 | 408 | 408 | 360 |
+| 3 | 3 | 17 | 142 | 136 | 101 | 101 | 101 |
+| 4 | 4 | 1 | 421 | 359 | 349 | 339 | 300 |
+| 5 | 5 | 11 | 508 | 476 | 476 | 423 | 360 |
+| 6 | 4 | 5 | 383 | 353 | 309 | 309 | 243 |
+| 7 | 3 | 13 | 167 | 162 | 138 | 135 | 135 |
+| 8 | 4 | 7 | 386 | 356 | 319 | 319 | 243 |
+| 9 | 4 | 3 | 312 | 309 | 298 | 264 | 218 |
+| 10 | 4 | 6 | 396 | 382 | 310 | 310 | 280 |
+| 11 | 4 | 18 | 345 | 301 | 301 | 263 | 256 |
+| 12 | 5 | 14 | 508 | 501 | 435 | 435 | 389 |
+| 13 | 3 | 16 | 154 | 134 | 134 | 116 | 116 |
+| 14 | 5 | 12 | 470 | 453 | 453 | 389 | 360 |
+| 15 | 4 | 2 | 394 | 376 | 318 | 318 | 258 |
+| 16 | 3 | 10 | 165 | 165 | 135 | 135 | 135 |
+| 17 | 4 | 8 | 320 | 312 | 275 | 275 | 219 |
+| 18 | 4 | 4 | 362 | 349 | 313 | 313 | 268 |
+
+**Lus Par 3-baan (9 holes, 2x voor 18)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2108 | 51.9 | 80 | 54 |
+| rood (women) | 2108 | 53.9 | 87 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 13 | 102 | 102 |
+| 2 | 3 | 7 | 128 | 128 |
+| 3 | 3 | 11 | 120 | 120 |
+| 4 | 3 | 3 | 131 | 131 |
+| 5 | 3 | 9 | 118 | 118 |
+| 6 | 3 | 1 | 154 | 154 |
+| 7 | 3 | 17 | 90 | 90 |
+| 8 | 3 | 15 | 92 | 92 |
+| 9 | 3 | 5 | 119 | 119 |
+| 10 | 3 | 14 | 102 | 102 |
+| 11 | 3 | 8 | 128 | 128 |
+| 12 | 3 | 12 | 120 | 120 |
+| 13 | 3 | 4 | 131 | 131 |
+| 14 | 3 | 10 | 118 | 118 |
+| 15 | 3 | 2 | 154 | 154 |
+| 16 | 3 | 18 | 90 | 90 |
+| 17 | 3 | 16 | 92 | 92 |
+| 18 | 3 | 6 | 119 | 119 |
+
+- **Scorekaartpagina:** https://www.almeerderhout.nl/scorekaarten-almeerderhout/
+- **Bestanden:** [scorecard/Almeerderhout_Gooimeer-IJmeer_Dames.pdf](almeerderhout-almere/scorecard/Almeerderhout_Gooimeer-IJmeer_Dames.pdf), [scorecard/Almeerderhout_Gooimeer-IJmeer_Heren.pdf](almeerderhout-almere/scorecard/Almeerderhout_Gooimeer-IJmeer_Heren.pdf), [scorecard/Almeerderhout_Gooimeer-Markermeer_Dames.pdf](almeerderhout-almere/scorecard/Almeerderhout_Gooimeer-Markermeer_Dames.pdf), [scorecard/Almeerderhout_Gooimeer-Markermeer_Heren.pdf](almeerderhout-almere/scorecard/Almeerderhout_Gooimeer-Markermeer_Heren.pdf), [scorecard/Almeerderhout_Markermeer-IJmeer_Dames.pdf](almeerderhout-almere/scorecard/Almeerderhout_Markermeer-IJmeer_Dames.pdf), [scorecard/Almeerderhout_Markermeer-IJmeer_Heren.pdf](almeerderhout-almere/scorecard/Almeerderhout_Markermeer-IJmeer_Heren.pdf), [scorecard/Almeerderhout_Par-3-baan_18-holes_Dames-en-Heren_Zomer-en-Winter.pdf](almeerderhout-almere/scorecard/Almeerderhout_Par-3-baan_18-holes_Dames-en-Heren_Zomer-en-Winter.pdf), [scorecard/Almeerderhout_Par-3-baan_Dames-en-Heren_Zomer-en-Winter.pdf](almeerderhout-almere/scorecard/Almeerderhout_Par-3-baan_Dames-en-Heren_Zomer-en-Winter.pdf), [scorecard/baanhandicap-zomertees.html](almeerderhout-almere/scorecard/baanhandicap-zomertees.html), [scorecard/page.html](almeerderhout-almere/scorecard/page.html), [scorecard/scorekaart-2026.png](almeerderhout-almere/scorecard/scorekaart-2026.png), [scorecard/scorekaart-par3-2026.png](almeerderhout-almere/scorecard/scorekaart-par3-2026.png)
+- **Opmerking:** Scorekaart 2026 (PNG) met per lus lengtes voor wit/geel/blauw/rood/oranje, par en SI voor uit (1e negen, oneven) en in (2e negen, even); per combinatie verwerkt met de eerstgenoemde lus als holes 1-9. Lustotalen op de kaart kloppen met de som van de holes. CR/slope uit baanhandicaptabellen zomertees d.d. 17-09-2025 (heren 5 tees, dames geel/blauw/rood/oranje); aparte 9-holes tabellen en wintertees staan ook op de site. Geen aparte dames-SI op de kaart. Par 3-baan: kaart heeft één lengtekolom; ratingtabel noemt geel (heren) en rood (dames), daarom dezelfde lengtes onder beide sleutels. 9-holes par-3 rating: heren CR 26,0/SR 80, dames CR 27,0/SR 87. Volgens de site bestaat de club ruim 40 jaar (oprichtingsjaar niet gecontroleerd).
+
+<a id="golfbaan-landgoed-welderen"></a>
+## Golfbaan Landgoed Welderen
+
+Openbaar golfcomplex op Landgoed Welderen bij Elst, midden in de Betuwe tussen Arnhem en Nijmegen. De Championship Course is een 18-holesbaan van par 72 met vijf afslagkleuren; daarnaast zijn er een 9-holes par 3/4-baan (par 29) en een pitch & puttbaan. Greenfeespelers kunnen online een starttijd reserveren.
+
+- **Club:** Golfbaan Landgoed Welderen
+- **Adres:** Grote Molenstraat 173, 6661 NH Elst (Gld), Gelderland, NL
+- **GPS:** 51.9424157, 5.8298873
+- **Afstand:** 84.8 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** Betuwse landgoedbaan met water en houtwallen
+- **Telefoon:** +31 481 376 591
+- **E-mail:** info@welderen.nl
+- **Website:** https://welderen.nl/golfen/
+- **Greenfee welkom:** True
+- **Faciliteiten:** clubhuis, horeca, driving range (The Dr!ve), par 3/4-baan (9 holes), pitch & puttbaan, oefengreens, overnachten
+
+**Lus Championship Course 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6141 | 72.4 | 132 | 72 |
+| geel (men) | 5918 | 71.3 | 130 | 72 |
+| geel (women) | 5918 | 78.1 | 139 | 72 |
+| blauw (men) | 5302 | 68.0 | 119 | 72 |
+| blauw (women) | 5302 | 74.2 | 126 | 72 |
+| rood (men) | 5115 | 66.9 | 117 | 72 |
+| rood (women) | 5115 | 72.7 | 124 | 72 |
+| oranje (men) | 4600 | 63.9 | 110 | 72 |
+| oranje (women) | 4600 | 69.4 | 123 | 72 |
+
+| Hole | Par | SI | wit | blauw | geel | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 11 | 466 | 389 | 457 | 385 | 346 |
+| 2 | 4 | 7 | 362 | 296 | 340 | 289 | 260 |
+| 3 | 5 | 17 | 476 | 401 | 469 | 397 | 357 |
+| 4 | 3 | 13 | 137 | 128 | 133 | 122 | 110 |
+| 5 | 4 | 15 | 305 | 296 | 301 | 287 | 258 |
+| 6 | 4 | 3 | 388 | 322 | 379 | 318 | 286 |
+| 7 | 3 | 9 | 154 | 139 | 150 | 132 | 119 |
+| 8 | 4 | 1 | 395 | 315 | 388 | 315 | 283 |
+| 9 | 4 | 5 | 327 | 315 | 324 | 307 | 276 |
+| 10 | 4 | 14 | 337 | 302 | 337 | 290 | 261 |
+| 11 | 3 | 6 | 190 | 170 | 180 | 146 | 131 |
+| 12 | 4 | 2 | 373 | 311 | 367 | 307 | 276 |
+| 13 | 3 | 16 | 155 | 123 | 150 | 122 | 110 |
+| 14 | 5 | 18 | 458 | 382 | 446 | 378 | 340 |
+| 15 | 5 | 12 | 494 | 406 | 479 | 406 | 365 |
+| 16 | 4 | 10 | 313 | 303 | 309 | 296 | 266 |
+| 17 | 4 | 8 | 409 | 362 | 362 | 308 | 277 |
+| 18 | 4 | 4 | 402 | 342 | 347 | 310 | 279 |
+
+**Lus Par 3/4-baan (9 holes 2x)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2438 | 53.3 | 85 | 58 |
+| geel (women) | 2438 | 55.6 | 84 | 58 |
+| rood (men) | 2332 | 52.8 | 84 | 58 |
+| rood (women) | 2332 | 55.0 | 83 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 17 | 101 | 95 |
+| 2 | 4 | 7 | 237 | 230 |
+| 3 | 3 | 11 | 130 | 120 |
+| 4 | 3 | 13 | 110 | 102 |
+| 5 | 3 | 15 | 71 | 67 |
+| 6 | 3 | 1 | 158 | 154 |
+| 7 | 4 | 3 | 230 | 226 |
+| 8 | 3 | 5 | 80 | 76 |
+| 9 | 3 | 9 | 100 | 93 |
+| 10 | 3 | 18 | 101 | 95 |
+| 11 | 4 | 8 | 246 | 239 |
+| 12 | 3 | 12 | 121 | 111 |
+| 13 | 3 | 14 | 141 | 135 |
+| 14 | 3 | 16 | 73 | 68 |
+| 15 | 3 | 2 | 152 | 147 |
+| 16 | 4 | 4 | 234 | 230 |
+| 17 | 3 | 6 | 80 | 76 |
+| 18 | 3 | 10 | 73 | 68 |
+
+- **Scorekaartpagina:** https://welderen.nl/golfen/#baaninformatie
+- **Bestanden:** [scorecard/3721-welderen-scorepar3-4.pdf](golfbaan-landgoed-welderen/scorecard/3721-welderen-scorepar3-4.pdf), [scorecard/Welderen-Dames.pdf](golfbaan-landgoed-welderen/scorecard/Welderen-Dames.pdf), [scorecard/Welderen-Heren.pdf](golfbaan-landgoed-welderen/scorecard/Welderen-Heren.pdf), [scorecard/Welderen-Par-3-4-Baan-Dames-Heren.pdf](golfbaan-landgoed-welderen/scorecard/Welderen-Par-3-4-Baan-Dames-Heren.pdf), [scorecard/page.html](golfbaan-landgoed-welderen/scorecard/page.html), [scorecard/scorekaarten_wld_2025_cc.pdf](golfbaan-landgoed-welderen/scorecard/scorekaarten_wld_2025_cc.pdf)
+- **Opmerking:** Scorekaart Championship Course 2025: kolomvolgorde wit-blauw-geel-rood-oranje (blauw is korter dan geel, bevestigd door de totalen en ratings). CR/slope uit baanhandicaptabellen 09-2023 (de dameswaarden op de kaart zijn in de PDF-tekst verschoven; tabellen aangehouden). Par 3/4-kaart (2016) met afslagen geel/rood, ratings uit tabel 10-2023. Er bestaan ook een alternatieve baan en wintertabellen (niet opgenomen).
+
+<a id="wageningse-golfclub"></a>
+## Wageningse Golfclub
+
+Kleine verenigingsbaan van negen holes op Sportpark De Zoom in Wageningen, met zes par 3's en drie korte par 4's (par 30). De NGF-goedgekeurde baan is bedoeld om te leren golfen en handicap 54 te halen, maar telt ook mee voor qualifying. De club heeft ongeveer 400 leden.
+
+- **Club:** Wageningse Golfclub
+- **Adres:** Zoomweg 10, 6704 PE Wageningen, Gelderland, NL
+- **GPS:** 51.9789343, 5.6924401
+- **Afstand:** 86.6 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** korte baan op Sportpark De Zoom
+- **Telefoon:** +31 317 428 775
+- **E-mail:** info@wageningsegolfclub.nl
+- **Website:** https://wageningsegolfclub.nl/
+- **Faciliteiten:** clubhuis, driving range, golfclinics
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 60
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2782 | 56.0 | 86 | 60 |
+| rood (women) | 2782 | 58.7 | 96 | 60 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 3 | 125 | 125 |
+| 2 | 4 | 13 | 235 | 235 |
+| 3 | 4 | 15 | 212 | 212 |
+| 4 | 3 | 9 | 100 | 100 |
+| 5 | 3 | 1 | 136 | 136 |
+| 6 | 3 | 17 | 145 | 145 |
+| 7 | 3 | 5 | 102 | 102 |
+| 8 | 4 | 11 | 220 | 220 |
+| 9 | 3 | 7 | 116 | 116 |
+| 10 | 3 | 4 | 125 | 125 |
+| 11 | 4 | 14 | 235 | 235 |
+| 12 | 4 | 16 | 212 | 212 |
+| 13 | 3 | 10 | 100 | 100 |
+| 14 | 3 | 2 | 136 | 136 |
+| 15 | 3 | 18 | 145 | 145 |
+| 16 | 3 | 6 | 102 | 102 |
+| 17 | 4 | 12 | 220 | 220 |
+| 18 | 3 | 8 | 116 | 116 |
+
+- **Scorekaartpagina:** https://wageningsegolfclub.nl/scorekaart/
+- **Bestanden:** [scorecard/Scorekaart_2025.pdf](wageningse-golfclub/scorecard/Scorekaart_2025.pdf), [scorecard/Wageninse-GC-18-holes-Dames-Heren.pdf](wageningse-golfclub/scorecard/Wageninse-GC-18-holes-Dames-Heren.pdf), [scorecard/page.html](wageningse-golfclub/scorecard/page.html)
+- **Opmerking:** Scorekaart V7 7-2026 (één lengte per hole) + baanhandicaptabel 18 holes 17-06-2026 (geel heren, rood dames; zelfde lengtes aangenomen). Er is ook een 9-holes tabel.
+
+<a id="golfclub-hoogland-amersfoort"></a>
+## Golfclub Hoogland Amersfoort
+
+Negen-holesbaan met A-status aan de noordkant van Amersfoort, aangelegd in het bestaande kavelpatroon van Hoogland. Houtwallen, vrijstaande oude bomen en de Malewetering, die je twee keer per negen holes oversteekt, bepalen het spel. De baan is gemaakt voor 18 holes met andere afslagen op enkele holes van de tweede negen, en er is ook een footgolfbaan.
+
+- **Club:** Golfclub Hoogland Amersfoort
+- **Adres:** Bunschoterstraat 23, 3828 NR Hoogland (Amersfoort), Utrecht, NL
+- **GPS:** 52.1870421, 5.3669444
+- **Afstand:** 87.2 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** polderbaan in het verkavelde Hooglandse landschap met houtwallen, oude bomen en de Malewetering
+- **Telefoon:** +31 33 888 8475
+- **E-mail:** info@gcha.nl
+- **Website:** https://www.gcha.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** brasserie, driving range, golfschool, handicarts, footgolf, indoor golf
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 68
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5234 | 68.2 | 123 | 68 |
+| geel (women) | 5234 | 72.9 | 129 | 68 |
+| blauw (men) | 4969 | 65.8 | 124 | 68 |
+| blauw (women) | 4969 | 71.2 | 124 | 68 |
+| rood (men) | 4416 | 62.9 | 112 | 68 |
+| rood (women) | 4416 | 68.2 | 117 | 68 |
+| oranje (men) | 4200 | 62.2 | 109 | 68 |
+| oranje (women) | 4200 | 66.0 | 114 | 68 |
+
+| Hole | Par | SI | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 13 | 321 | 266 | 264 | 260 |
+| 2 | 3 | 17 | 121 | 115 | 105 | 102 |
+| 3 | 4 | 1 | 404 | 393 | 320 | 315 |
+| 4 | 4 | 11 | 336 | 324 | 298 | 294 |
+| 5 | 4 | 3 | 361 | 357 | 301 | 297 |
+| 6 | 3 | 5 | 178 | 166 | 159 | 154 |
+| 7 | 4 | 15 | 278 | 270 | 221 | 214 |
+| 8 | 3 | 9 | 134 | 131 | 118 | 118 |
+| 9 | 5 | 7 | 484 | 468 | 422 | 352 |
+| 10 | 4 | 14 | 321 | 266 | 264 | 248 |
+| 11 | 3 | 18 | 121 | 115 | 105 | 102 |
+| 12 | 4 | 2 | 404 | 393 | 320 | 315 |
+| 13 | 4 | 12 | 336 | 324 | 298 | 294 |
+| 14 | 4 | 4 | 361 | 357 | 301 | 297 |
+| 15 | 3 | 6 | 178 | 166 | 159 | 154 |
+| 16 | 4 | 16 | 278 | 270 | 221 | 214 |
+| 17 | 3 | 10 | 134 | 120 | 118 | 118 |
+| 18 | 5 | 8 | 484 | 468 | 422 | 352 |
+
+- **Scorekaartpagina:** https://www.gcha.nl/baan/scorekaart
+- **Bestanden:** [scorecard/hcp-dames.pdf](golfclub-hoogland-amersfoort/scorecard/hcp-dames.pdf), [scorecard/hcp-heren.pdf](golfclub-hoogland-amersfoort/scorecard/hcp-heren.pdf), [scorecard/page.html](golfclub-hoogland-amersfoort/scorecard/page.html)
+- **Opmerking:** Scorekaart als HTML-tabel op de site (page.html); baanhandicaptabellen 29-08-2022. Op de tweede negen wijken blauw hole 17 (120 i.p.v. 131) en oranje hole 10 (248 i.p.v. 260) af, maar de site vermeldt voor "in" dezelfde totalen als "uit" (2490 resp. 2106). Controle: 18 holes (9 holes 2x) blauw: som holes 4969 vs kaart 4980 (verschil -11); 18 holes (9 holes 2x) oranje: som holes 4200 vs kaart 4212 (verschil -12).
+
+<a id="pitch-putt-esonstad-anjum"></a>
+## Pitch & Putt Esonstad
+
+Pitch & puttbaan op het terrein van vakantiepark Landal Esonstad aan het Lauwersmeer bij Anjum. De 18 holes zijn verdeeld over twee lussen, De Seedyk (1-9) en De Terpen (10-18), met holes van circa 35 tot 90 meter rond vijvers en sloten. Bedoeld voor iedereen, ook zonder golfervaring: materiaal en uitleg zijn bij de prijs inbegrepen.
+
+- **Club:** Pitch & Putt Esonstad (Esonstad Events, Landal Esonstad)
+- **Adres:** Skanserwei 28, 9133 DV Anjum, Friesland, NL
+- **GPS:** 53.37565, 6.15874
+- **Afstand:** 88.5 km
+- **Type:** pitch-putt
+- **Holes:** 18
+- **Landschap:** polder/kleigrond met waterpartijen (Lauwersmeer)
+- **Telefoon:** 0519 329555
+- **E-mail:** fe.esonstad@landal.com
+- **Website:** https://www.esonstadevents.nl/pitchenputt/
+- **Greenfee welkom:** True
+- **Eisen:** Geen GVB of ervaring nodig; vooraf reserveren noodzakelijk (e-mail of telefoon).
+- **Faciliteiten:** driving range, putting green, materiaalverhuur, horeca, footgolf, indoorspeelparadijs
+
+**Lus Pitch & Putt 18 holes (De Seedyk 1-9, De Terpen 10-18)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard | 1012 |  |  | 54 |
+| extra | 1138 |  |  | 54 |
+
+| Hole | Par | SI | standaard | extra |
+|---|---|---|---|---|
+| 1 | 3 |  | 48 | 48 |
+| 2 | 3 |  | 53 | 53 |
+| 3 | 3 |  | 59 | 59 |
+| 4 | 3 |  | 48 | 48 |
+| 5 | 3 |  | 67 | 83 |
+| 6 | 3 |  | 43 | 43 |
+| 7 | 3 |  | 54 | 54 |
+| 8 | 3 |  | 36 | 57 |
+| 9 | 3 |  | 52 | 52 |
+| 10 | 3 |  | 60 | 80 |
+| 11 | 3 |  | 76 | 76 |
+| 12 | 3 |  | 63 | 86 |
+| 13 | 3 |  | 58 | 58 |
+| 14 | 3 |  | 57 | 57 |
+| 15 | 3 |  | 58 | 88 |
+| 16 | 3 |  | 50 | 50 |
+| 17 | 3 |  | 59 | 75 |
+| 18 | 3 |  | 71 | 71 |
+
+- **Scorekaartpagina:** https://www.esonstadevents.nl/pitchenputt/
+- **Bestanden:** [scorecard/esonstad-plattegrond.jpg](pitch-putt-esonstad-anjum/scorecard/esonstad-plattegrond.jpg), [scorecard/hole19.html](pitch-putt-esonstad-anjum/scorecard/hole19.html), [scorecard/page.html](pitch-putt-esonstad-anjum/scorecard/page.html)
+- **Opmerking:** Lengtes per hole uit de officiële baanplattegrond (esonstad-plattegrond.jpg): standaardafslag plus extra afslagpunten (E) bij holes 5, 8, 10, 12, 15 en 17; voor de overige holes is de E-lengte gelijk aan de standaardafslag. Toewijzing van elke E aan de hole erboven in de lijst volgt Hole19 (e tee: in 641 = gelijk aan deze toewijzing). Par 3 per hole en par 54 alleen uit derden (Hole19, GolfPass); S.I. nergens gepubliceerd. Hole19 noemt hole 6 vanaf e-tee 46 m, plattegrond 43 m. Geen CR/slope. www.pitchenputt-esonstad.nl verwijst door naar esonstadevents.nl (site in herbouw).
+
+<a id="westfriese-golfclub-westwoud"></a>
+## Golfbaan Westwoud
+
+18-holesbaan (par 71) van de Westfriese Golfclub bij Hoorn. De oude negen uit 1985 liggen op een voormalige vuilnisbelt met hoogteverschillen en veel bomen; de in 2005 toegevoegde negen liggen open in het waterrijke West-Friese polderland. Dat contrast tussen parkland en weidse, linksachtige holes geeft de baan zijn karakter.
+
+- **Club:** Westfriese Golfclub
+- **Adres:** Zittend 19, 1617 KS Westwoud, Noord-Holland, NL
+- **GPS:** 52.6699913, 5.1485052
+- **Afstand:** 88.8 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** oude negen: glooiend en bebost (voormalige vuilnisbelt); nieuwe negen: open, waterrijk West-Fries polderlandschap
+- **Opgericht:** 1985
+- **Architect:** Gerard Jol (oorspronkelijke 9 holes, 1985)
+- **Telefoon:** +31 228 562 702
+- **E-mail:** caddiemaster@wfgc.nl
+- **Website:** https://golfbaanwestwoud.nl/
+- **Starttijden:** https://westwoud.teetime.e-golf4u.nl/app/booking/teetime
+- **Greenfee welkom:** True
+- **Faciliteiten:** TrackMan driving range, practice area, clubhuis/Brasserie Westwoud, golfshop, golfschool, handicarts
+
+**Lus 18 holes (par 71)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5941 | 72.6 | 135 | 71 |
+| geel (men) | 5728 | 71.4 | 135 | 71 |
+| blauw (men) | 5123 | 68.4 | 124 | 71 |
+| rood (men) | 4898 | 67.3 | 117 | 71 |
+| oranje (men) | 4396 | 64.9 | 109 | 71 |
+| geel (women) | 5728 | 77.4 | 146 | 71 |
+| blauw (women) | 5123 | 73.8 | 136 | 71 |
+| rood (women) | 4898 | 72.4 | 129 | 71 |
+| oranje (women) | 4396 | 69.1 | 120 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 13 | 304 | 298 | 260 | 255 | 237 |
+| 2 | 4 | 1 | 398 | 378 | 311 | 306 | 271 |
+| 3 | 4 | 5 | 363 | 355 | 305 | 300 | 271 |
+| 4 | 5 | 9 | 494 | 490 | 418 | 413 | 353 |
+| 5 | 4 | 3 | 394 | 387 | 376 | 332 | 296 |
+| 6 | 3 | 15 | 165 | 146 | 132 | 128 | 122 |
+| 7 | 4 | 7 | 366 | 357 | 309 | 301 | 266 |
+| 8 | 3 | 17 | 176 | 131 | 124 | 111 | 107 |
+| 9 | 5 | 11 | 474 | 467 | 395 | 390 | 341 |
+| 10 | 4 | 2 | 394 | 383 | 354 | 325 | 282 |
+| 11 | 5 | 14 | 441 | 433 | 368 | 363 | 333 |
+| 12 | 3 | 18 | 152 | 141 | 129 | 125 | 114 |
+| 13 | 3 | 12 | 189 | 171 | 171 | 149 | 130 |
+| 14 | 4 | 6 | 358 | 348 | 325 | 290 | 273 |
+| 15 | 5 | 4 | 510 | 505 | 485 | 465 | 423 |
+| 16 | 3 | 16 | 159 | 145 | 138 | 131 | 115 |
+| 17 | 4 | 8 | 322 | 314 | 272 | 267 | 240 |
+| 18 | 4 | 10 | 282 | 279 | 251 | 247 | 222 |
+
+- **Scorekaartpagina:** https://golfbaanwestwoud.nl/de-baan/course-slope-rating/
+- **Bestanden:** [scorecard/golfbaanwestwoud-scorekaart-april-2025.pdf](westfriese-golfclub-westwoud/scorecard/golfbaanwestwoud-scorekaart-april-2025.pdf), [scorecard/Westfriese-GC-Heren.pdf](westfriese-golfclub-westwoud/scorecard/Westfriese-GC-Heren.pdf), [scorecard/Westfriese-GC-Dames.pdf](westfriese-golfclub-westwoud/scorecard/Westfriese-GC-Dames.pdf), [scorecard/232241_scorekaart_vF.pdf](westfriese-golfclub-westwoud/scorecard/232241_scorekaart_vF.pdf), [scorecard/page.html](westfriese-golfclub-westwoud/scorecard/page.html)
+- **Opmerking:** Holegegevens uit scorekaart april 2025. CR/slope uit de nieuwere handicaptabellen 15-09-2025 (kaart vermeldt nog oudere waarden: H wit 72,2/132, geel 71/132, blauw 68/119, rood 66,9/117, oranje 64,9/106; D geel 77,1/143, blauw 73,5/136, rood 71,9/129, oranje 68,8/120). 9-holesratings per negen staan in de tabellen. 232241_scorekaart_vF.pdf is een oudere kaart (2024).
+
+<a id="golfclub-losdorp"></a>
+## Golfclub Losdorp
+
+Kleine, laagdrempelige par 3-baan bij Restaurant Eemshaven in het open Groninger kustland tussen Delfzijl en de Eemshaven. De 9 holes zijn kort (circa 55 tot 160 meter), zodat het spel vooral om de greens draait; de wind van de nabije zee speelt vaak mee. Geschikt voor beginners en om het korte spel te oefenen.
+
+- **Club:** Golf & Country Losdorp (bij Restaurant Eemshaven)
+- **Adres:** Schafferweg 29, 9907 TA Losdorp, Groningen, NL
+- **GPS:** 53.37251, 6.84215
+- **Afstand:** 89.6 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** open polder/kustlandschap
+- **Telefoon:** 0596 591408
+- **Website:** https://restauranteemshaven.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Volgens Hole19 geen toegangseisen en geen kledingvoorschriften (niet officieel bevestigd).
+- **Faciliteiten:** restaurant (Restaurant Eemshaven), camperplaatsen
+
+**Lus Par 3-baan (9 holes, 2x voor 18)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel | 1738 |  |  | 54 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 3 | 17 | 58 |
+| 2 | 3 | 11 | 134 |
+| 3 | 3 | 13 | 56 |
+| 4 | 3 | 1 | 160 |
+| 5 | 3 | 5 | 120 |
+| 6 | 3 | 3 | 110 |
+| 7 | 3 | 9 | 66 |
+| 8 | 3 | 7 | 85 |
+| 9 | 3 | 15 | 80 |
+| 10 | 3 | 18 | 58 |
+| 11 | 3 | 12 | 134 |
+| 12 | 3 | 14 | 56 |
+| 13 | 3 | 2 | 160 |
+| 14 | 3 | 6 | 120 |
+| 15 | 3 | 4 | 110 |
+| 16 | 3 | 10 | 66 |
+| 17 | 3 | 8 | 85 |
+| 18 | 3 | 16 | 80 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/golfclub-losdorp
+- **Bestanden:** [scorecard/page.html](golfclub-losdorp/scorecard/page.html)
+- **Opmerking:** Holegegevens uit Hole19 (18 holes = 2x de 9 holes, par 3 elk, SI 2e negen = SI 1e negen + 1; tee geel, totaal 1738). Hole19 zet de eenheid als yds; of dit meters zijn is niet zeker, daarom complete=false. Geen course rating/slope gevonden. STATUS ONZEKER: de clubsite golfclublosdorp.nl is inmiddels een ongerelateerde nieuwssite en de pagina /golfactiviteiten op restauranteemshaven.nl geeft 404 (menulink staat er nog). Niet bevestigd dat er nog gegolfd wordt; Hole19 noemt e-mail info@golfclublosdorp.nl, maar dat domein is niet meer van de club; daarom email=null. Golf.nl kent de baan niet (geen NGF-club).
+
+<a id="golfclub-de-hoge-kleij"></a>
+## Golfclub De Hoge Kleij
+
+Bos- en heidebaan bij Leusden op het landgoed Den Treek-Henschoten, ontworpen door Frank Pennink en na zijn overlijden afgemaakt door Donald Steel; de openingswedstrijd was in 1986. Smalle fairways langs de bosrand en strategisch geplaatste bunkers vragen om precisie, en de lange achterafslagen maken het een stevige par 72. Gasten hebben handicap 28 of lager nodig.
+
+- **Club:** Golfclub De Hoge Kleij
+- **Adres:** Loes van Overeemlaan 16, 3832 RZ Leusden, Utrecht, NL
+- **GPS:** 52.1305877, 5.3623757
+- **Afstand:** 91.0 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** bos- en heidebaan op landgoed Den Treek-Henschoten
+- **Opgericht:** 1986
+- **Architect:** Frank Pennink / Donald Steel; latere aanpassingen Frank Pont
+- **Telefoon:** +31 33 461 6944
+- **E-mail:** secretariaat@hogekleij.nl
+- **Website:** https://hogekleij.nl/
+- **Greenfee welkom:** True
+- **Eisen:** WHS-handicap 28,0 of lager; greenfee ma, di, do en in het weekend na 15.00 uur, reserveren via caddiemaster
+- **Faciliteiten:** clubhuis, driving range, oefenfaciliteiten
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6302 | 75.3 | 149 | 72 |
+| geel (men) | 5934 | 73.5 | 147 | 72 |
+| geel (women) | 5934 | 80.4 | 153 | 72 |
+| blauw (men) | 5426 | 70.7 | 135 | 72 |
+| blauw (women) | 5426 | 76.5 | 145 | 72 |
+| rood (men) | 5128 | 69.6 | 126 | 72 |
+| rood (women) | 5128 | 75.4 | 136 | 72 |
+| oranje (men) | 4061 | 64.8 | 115 | 72 |
+| oranje (women) | 4061 | 68.3 | 123 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 9 | 440 | 420 | 386 | 366 | 288 |
+| 2 | 3 | 17 | 134 | 128 | 107 | 99 | 86 |
+| 3 | 4 | 3 | 429 | 380 | 370 | 334 | 289 |
+| 4 | 4 | 1 | 408 | 390 | 354 | 336 | 278 |
+| 5 | 3 | 15 | 178 | 152 | 140 | 128 | 94 |
+| 6 | 4 | 13 | 322 | 307 | 300 | 286 | 207 |
+| 7 | 5 | 5 | 450 | 442 | 396 | 387 | 341 |
+| 8 | 3 | 11 | 191 | 169 | 143 | 138 | 101 |
+| 9 | 4 | 7 | 370 | 352 | 321 | 317 | 244 |
+| 10 | 4 | 4 | 379 | 363 | 345 | 328 | 241 |
+| 11 | 4 | 14 | 324 | 324 | 270 | 267 | 204 |
+| 12 | 5 | 8 | 552 | 512 | 472 | 454 | 385 |
+| 13 | 4 | 6 | 378 | 356 | 318 | 312 | 255 |
+| 14 | 3 | 16 | 159 | 150 | 133 | 128 | 80 |
+| 15 | 5 | 12 | 507 | 486 | 420 | 390 | 277 |
+| 16 | 4 | 10 | 376 | 351 | 333 | 292 | 256 |
+| 17 | 4 | 18 | 283 | 262 | 256 | 229 | 184 |
+| 18 | 4 | 2 | 422 | 390 | 362 | 337 | 251 |
+
+- **Scorekaartpagina:** https://hogekleij.nl/de-baan/handicaptabellen/
+- **Bestanden:** [scorecard/De-Hoge-Kleij-Dames-okt.-2024-1.pdf](golfclub-de-hoge-kleij/scorecard/De-Hoge-Kleij-Dames-okt.-2024-1.pdf), [scorecard/De-Hoge-Kleij-Heren-okt.-2024-1.pdf](golfclub-de-hoge-kleij/scorecard/De-Hoge-Kleij-Heren-okt.-2024-1.pdf), [scorecard/Scorekaart-Hoge-Kleij-niet-afgeronde-hoeken-2024.pdf](golfclub-de-hoge-kleij/scorecard/Scorekaart-Hoge-Kleij-niet-afgeronde-hoeken-2024.pdf), [scorecard/Stroke-index-per-1-november-2024.jpg](golfclub-de-hoge-kleij/scorecard/Stroke-index-per-1-november-2024.jpg), [scorecard/page.html](golfclub-de-hoge-kleij/scorecard/page.html)
+- **Opmerking:** Scorekaart 2024 (afslagen genummerd 63/59/54/51/40 = wit/geel/blauw/rood/oranje volgens de handicaptabellen 24-10-2024), S.I. per 1 november 2024. De heren-tabel noemt ook tee 64 (zwart) met CR 75,9 / SR 149, maar die staat niet op de scorekaart (lengtes onbekend) en is daarom niet als tee opgenomen.
+
+<a id="goyer-golf-country-club"></a>
+## Goyer Golf & Country Club
+
+Private golf- en countryclub in Eemnes, aan de rand van het Gooi. De 18-holes North Course van Bruno Steensels (ca. 6200 m voor heren) valt op door zandverstuivingen en snelle bentgrass-greens; daarnaast is er een South Course met zes korte oefenholes. De afslagen zijn genummerd naar lengte (62, 59, 53 en 50).
+
+- **Club:** Goyer Golf & Country Club (North Course)
+- **Adres:** Beukenlaan 1-2, 3755 MP Eemnes, Utrecht, NL
+- **GPS:** 52.2400155, 5.2383491
+- **Afstand:** 92.0 km
+- **Type:** 18-holes
+- **Holes:** 24
+- **Landschap:** baan met zandverstuivingen en bentgrass-greens
+- **Architect:** Bruno Steensels
+- **Telefoon:** +31 35 539 3111
+- **E-mail:** info@goyer.nl
+- **Website:** https://www.goyer.nl/
+- **Faciliteiten:** clubhuis, South Course (6 oefenholes), oefenfaciliteiten
+
+**Lus North Course 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| 62 (men) |  | 75.0 | 143 | 72 |
+| 59 (men) |  | 73.1 | 140 | 72 |
+| 59 (women) |  | 78.8 | 150 | 72 |
+| 53 (men) |  | 70.1 | 130 | 72 |
+| 53 (women) |  | 75.6 | 141 | 72 |
+| 50 (men) | 4882 | 68.2 | 127 | 72 |
+| 50 (women) | 4882 | 73.4 | 136 | 72 |
+
+| Hole | Par | SI | 50 | 62 | 59 | 53 |
+|---|---|---|---|---|---|---|
+| 1 | 4 |  | 237 |  |  |  |
+| 2 | 3 |  | 130 |  |  |  |
+| 3 | 4 |  | 291 |  |  |  |
+| 4 | 5 |  | 371 |  |  |  |
+| 5 | 3 |  | 114 |  |  |  |
+| 6 | 4 |  | 279 |  |  |  |
+| 7 | 5 |  | 425 |  |  |  |
+| 8 | 4 |  | 326 |  |  |  |
+| 9 | 4 |  | 276 |  |  |  |
+| 10 | 4 |  | 248 |  |  |  |
+| 11 | 3 |  | 135 |  |  |  |
+| 12 | 4 |  | 261 |  |  |  |
+| 13 | 5 |  | 409 |  |  |  |
+| 14 | 3 |  | 125 |  |  |  |
+| 15 | 4 |  | 249 |  |  |  |
+| 16 | 4 |  | 297 |  |  |  |
+| 17 | 5 |  | 409 |  |  |  |
+| 18 | 4 |  | 300 |  |  |  |
+
+- **Scorekaartpagina:** https://www.goyer.nl/nl/de-baan/north-course-18-holes-
+- **Bestanden:** [scorecard/2024_Baanhandicaptabel_dames.pdf](goyer-golf-country-club/scorecard/2024_Baanhandicaptabel_dames.pdf), [scorecard/2024_Baanhandicaptabel_heren.pdf](goyer-golf-country-club/scorecard/2024_Baanhandicaptabel_heren.pdf), [scorecard/hole19.html](goyer-golf-country-club/scorecard/hole19.html), [scorecard/page.html](goyer-golf-country-club/scorecard/page.html)
+- **Opmerking:** CR/slope officieel (baanhandicaptabellen 2024; tees aangeduid als 62/59/53/50, toewijzing aan kolommen afgeleid uit de PDF-tekst). Par, S.I. en lengtes alleen voor tee 50 (dames) uit hole19golf.com; S.I. daar getoond bij de damestee en daarom als si_women opgenomen. Hole19 labelt "yds", maar totaal 4882 past bij tee "50" in meters - eenheid niet officieel bevestigd. Geen officiële scorekaart online gevonden. South Course (6 holes) niet opgenomen (geen kaart).
+
+<a id="golfbaan-de-vlietlanden-wervershoof"></a>
+## Golfbaan De Vlietlanden
+
+Openbare 18-holesbaan (par 60) bij Wervershoof, vlak bij Medemblik. Het is een compacte parkbaan met vooral par 3-holes, enkele par 4's en één par 5, met hoogteverschillen en veel water. Iedereen mag spelen zonder handicap of lidmaatschap, wat de baan geschikt maakt voor starters.
+
+- **Club:** Golfbaan De Vlietlanden (openbaar)
+- **Adres:** Grutteweide 31, 1693 HR Wervershoof, Noord-Holland, NL
+- **GPS:** 52.7445747, 5.1107907
+- **Afstand:** 92.3 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** parkbaan met hoogteverschillen en waterpartijen in West-Fries landschap
+- **Telefoon:** +31 6 53851697
+- **E-mail:** info@golfbaandevlietlanden.nl
+- **Website:** https://golfbaandevlietlanden.nl/
+- **Starttijden:** https://vlietlanden.golfer.intogolf.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Openbare baan: geen baanpermissie, handicap 54 of lidmaatschap nodig
+- **Faciliteiten:** driving range, putting/chipping green, oefenhole, oefenbunkers, clubhuis/brasserie Bunker'95, golfshop, handicarts, flinggolf, golfclinics
+
+**Lus 18 holes (par 60)** — 18 holes, par 60
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 56.9 | 89 | 60 |
+| rood (men) |  | 55.6 | 90 | 60 |
+| geel (women) |  | 60.0 | 103 | 60 |
+| rood (women) |  | 58.9 | 101 | 60 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 12 |  |  |
+| 2 | 4 | 4 |  |  |
+| 3 | 3 | 14 |  |  |
+| 4 | 4 | 2 |  |  |
+| 5 | 3 | 6 |  |  |
+| 6 | 3 | 18 |  |  |
+| 7 | 3 | 16 |  |  |
+| 8 | 3 | 10 |  |  |
+| 9 | 3 | 8 |  |  |
+| 10 | 5 | 3 |  |  |
+| 11 | 3 | 17 |  |  |
+| 12 | 3 | 5 |  |  |
+| 13 | 4 | 1 |  |  |
+| 14 | 3 | 13 |  |  |
+| 15 | 3 | 11 |  |  |
+| 16 | 3 | 15 |  |  |
+| 17 | 3 | 7 |  |  |
+| 18 | 3 | 9 |  |  |
+
+- **Scorekaartpagina:** https://golfbaandevlietlanden.nl/handicaptabellen/
+- **Bestanden:** [scorecard/Vlietlanden-WHS-tabel-Heren.pdf](golfbaan-de-vlietlanden-wervershoof/scorecard/Vlietlanden-WHS-tabel-Heren.pdf), [scorecard/Vlietlanden-WHS-tabel-Dames.pdf](golfbaan-de-vlietlanden-wervershoof/scorecard/Vlietlanden-WHS-tabel-Dames.pdf), [scorecard/page.html](golfbaan-de-vlietlanden-wervershoof/scorecard/page.html), [scorecard/page-hole19.html](golfbaan-de-vlietlanden-wervershoof/scorecard/page-hole19.html)
+- **Opmerking:** Officiele site publiceert geen scorekaart, alleen WHS-tabellen (03-12-2024): 18 holes H geel 56,9/89, rood 55,6/90; D geel 60,0/103, rood 58,9/101; 1e negen H 28,6/94 & 28,0/94, D 30,3/107 & 29,8/106; 2e negen H 28,3/86 & 27,6/87, D 29,8/98 & 29,2/95 (geel/rood). Par en S.I. per hole van hole19golf.com (derden). Hole19 geeft rode tee in 'yds' (217..141, totaal 2865) - eenheid twijfelachtig, daarom lengtes null. GolfAdvisor noemt geel 2960 m.
+
+<a id="golfclub-anderstein"></a>
+## Golfclub Anderstein
+
+27-holescomplex bij Maarsbergen met drie lussen van negen: Vallei (A), Heuvelrug (B) en Heide (C), die elk een ander landschap van de Utrechtse Heuvelrug laten zien. Door de lussen te combineren ontstaan drie 18-holesbanen van par 72 of 73. Greenfeespelers met minimaal handicap 36 zijn welkom en er zijn oefenholes en een golfacademie.
+
+- **Club:** Golfclub Anderstein
+- **Adres:** Woudenbergseweg 13a, 3953 ME Maarsbergen, Utrecht, NL
+- **GPS:** 52.0634892, 5.3974484
+- **Afstand:** 93.7 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** bos-, heide- en valleibaan op de flank van de Utrechtse Heuvelrug
+- **Telefoon:** +31 343 431 330
+- **E-mail:** info@golfclubanderstein.nl
+- **Website:** https://www.golfclubanderstein.nl/
+- **Greenfee welkom:** True
+- **Eisen:** minimaal WHS-handicap 36
+- **Faciliteiten:** grand café, driving range, oefenholes, golfacademie
+
+**Lus Vallei-Heuvelrug (A+B)** — 18 holes, par 73
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6204 | 74.3 | 145 | 73 |
+| geel (men) | 5851 | 72.8 | 139 | 73 |
+| geel (women) | 5851 | 78.5 | 152 | 73 |
+| blauw (men) | 5554 | 71.5 | 135 | 73 |
+| blauw (women) | 5554 | 76.4 | 148 | 73 |
+| rood (men) | 5101 | 69.1 | 129 | 73 |
+| rood (women) | 5101 | 74.3 | 137 | 73 |
+| oranje (men) | 4008 | 63.6 | 117 | 73 |
+| oranje (women) | 4008 | 67.4 | 119 | 73 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 8 | 315 | 310 | 310 | 297 | 209 |
+| 2 | 4 | 10 | 374 | 322 | 322 | 312 | 144 |
+| 3 | 4 | 14 | 330 | 283 | 273 | 265 | 236 |
+| 4 | 4 | 2 | 415 | 382 | 354 | 324 | 247 |
+| 5 | 5 | 6 | 457 | 442 | 442 | 388 | 351 |
+| 6 | 3 | 18 | 120 | 110 | 110 | 98 | 98 |
+| 7 | 4 | 16 | 285 | 273 | 260 | 218 | 145 |
+| 8 | 3 | 12 | 181 | 170 | 153 | 127 | 57 |
+| 9 | 5 | 4 | 489 | 466 | 449 | 384 | 314 |
+| 10 | 4 | 7 | 348 | 325 | 280 | 275 | 240 |
+| 11 | 4 | 1 | 408 | 383 | 332 | 332 | 232 |
+| 12 | 5 | 9 | 464 | 452 | 452 | 394 | 324 |
+| 13 | 4 | 3 | 376 | 358 | 324 | 311 | 251 |
+| 14 | 3 | 17 | 177 | 161 | 161 | 140 | 140 |
+| 15 | 4 | 15 | 298 | 286 | 286 | 254 | 206 |
+| 16 | 5 | 5 | 507 | 491 | 484 | 434 | 349 |
+| 17 | 5 | 13 | 450 | 439 | 382 | 368 | 296 |
+| 18 | 3 | 11 | 210 | 198 | 180 | 180 | 169 |
+
+**Lus Heuvelrug-Heide (B+C)** — 18 holes, par 73
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6401 | 75.3 | 149 | 73 |
+| geel (men) | 6109 | 73.6 | 149 | 73 |
+| geel (women) | 6109 | 80.3 | 154 | 73 |
+| blauw (men) | 5594 | 71.2 | 135 | 73 |
+| blauw (women) | 5594 | 76.5 | 153 | 73 |
+| rood (men) | 5266 | 69.5 | 131 | 73 |
+| rood (women) | 5266 | 74.3 | 145 | 73 |
+| oranje (men) | 4352 | 64.7 | 120 | 73 |
+| oranje (women) | 4352 | 69.5 | 120 | 73 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 8 | 348 | 325 | 280 | 275 | 240 |
+| 2 | 4 | 2 | 408 | 383 | 332 | 332 | 232 |
+| 3 | 5 | 10 | 464 | 452 | 452 | 394 | 324 |
+| 4 | 4 | 4 | 376 | 358 | 324 | 311 | 251 |
+| 5 | 3 | 18 | 177 | 161 | 161 | 140 | 140 |
+| 6 | 4 | 16 | 298 | 286 | 286 | 254 | 206 |
+| 7 | 5 | 6 | 507 | 491 | 484 | 434 | 349 |
+| 8 | 5 | 14 | 450 | 439 | 382 | 368 | 296 |
+| 9 | 3 | 12 | 210 | 198 | 180 | 180 | 169 |
+| 10 | 3 | 17 | 145 | 133 | 133 | 118 | 109 |
+| 11 | 4 | 9 | 352 | 337 | 326 | 304 | 239 |
+| 12 | 4 | 11 | 305 | 297 | 284 | 261 | 198 |
+| 13 | 4 | 5 | 414 | 399 | 330 | 325 | 275 |
+| 14 | 5 | 7 | 514 | 502 | 436 | 433 | 369 |
+| 15 | 5 | 3 | 511 | 475 | 398 | 393 | 349 |
+| 16 | 4 | 1 | 422 | 396 | 334 | 330 | 270 |
+| 17 | 3 | 13 | 181 | 176 | 171 | 158 | 149 |
+| 18 | 4 | 15 | 319 | 301 | 301 | 256 | 187 |
+
+**Lus Heide-Vallei (C+A)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6129 | 73.8 | 146 | 72 |
+| geel (men) | 5774 | 72.0 | 142 | 72 |
+| geel (women) | 5774 | 78.1 | 149 | 72 |
+| blauw (men) | 5386 | 70.1 | 131 | 72 |
+| blauw (women) | 5386 | 75.0 | 148 | 72 |
+| rood (men) | 4991 | 68.1 | 123 | 72 |
+| rood (women) | 4991 | 73.2 | 136 | 72 |
+| oranje (men) | 3946 | 63.4 | 113 | 72 |
+| oranje (women) | 3946 | 67.0 | 114 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 3 | 17 | 145 | 133 | 133 | 118 | 109 |
+| 2 | 4 | 9 | 352 | 337 | 326 | 304 | 239 |
+| 3 | 4 | 11 | 305 | 297 | 284 | 261 | 198 |
+| 4 | 4 | 5 | 414 | 399 | 330 | 325 | 275 |
+| 5 | 5 | 7 | 514 | 502 | 436 | 433 | 369 |
+| 6 | 5 | 3 | 511 | 475 | 398 | 393 | 349 |
+| 7 | 4 | 1 | 422 | 396 | 334 | 330 | 270 |
+| 8 | 3 | 13 | 181 | 176 | 171 | 158 | 149 |
+| 9 | 4 | 15 | 319 | 301 | 301 | 256 | 187 |
+| 10 | 4 | 8 | 315 | 310 | 310 | 297 | 209 |
+| 11 | 4 | 10 | 374 | 322 | 322 | 312 | 144 |
+| 12 | 4 | 14 | 330 | 283 | 273 | 265 | 236 |
+| 13 | 4 | 2 | 415 | 382 | 354 | 324 | 247 |
+| 14 | 5 | 6 | 457 | 442 | 442 | 388 | 351 |
+| 15 | 3 | 18 | 120 | 110 | 110 | 98 | 98 |
+| 16 | 4 | 16 | 285 | 273 | 260 | 218 | 145 |
+| 17 | 3 | 12 | 181 | 170 | 153 | 127 | 57 |
+| 18 | 5 | 4 | 489 | 466 | 449 | 384 | 314 |
+
+- **Scorekaartpagina:** https://www.golfclubanderstein.nl/scorekaart/
+- **Bestanden:** [scorecard/anderstein-18-holes-heide-vallei-dames.pdf](golfclub-anderstein/scorecard/anderstein-18-holes-heide-vallei-dames.pdf), [scorecard/anderstein-18-holes-heide-vallei-heren.pdf](golfclub-anderstein/scorecard/anderstein-18-holes-heide-vallei-heren.pdf), [scorecard/anderstein-18-holes-heuvelrug-heide-dames.pdf](golfclub-anderstein/scorecard/anderstein-18-holes-heuvelrug-heide-dames.pdf), [scorecard/anderstein-18-holes-heuvelrug-heide-heren.pdf](golfclub-anderstein/scorecard/anderstein-18-holes-heuvelrug-heide-heren.pdf), [scorecard/anderstein-18-holes-vallei-heuvelrug-dames.pdf](golfclub-anderstein/scorecard/anderstein-18-holes-vallei-heuvelrug-dames.pdf), [scorecard/anderstein-18-holes-vallei-heuvelrug-heren.pdf](golfclub-anderstein/scorecard/anderstein-18-holes-vallei-heuvelrug-heren.pdf), [scorecard/page.html](golfclub-anderstein/scorecard/page.html), [scorecard/scorekaart-heide-c.png](golfclub-anderstein/scorecard/scorekaart-heide-c.png), [scorecard/scorekaart-heuvelrug-b.png](golfclub-anderstein/scorecard/scorekaart-heuvelrug-b.png), [scorecard/scorekaart-vallei-a.png](golfclub-anderstein/scorecard/scorekaart-vallei-a.png), [scorecard/scorekaart-vallei-heuvelrug-heide-abc-achterkant.png](golfclub-anderstein/scorecard/scorekaart-vallei-heuvelrug-heide-abc-achterkant.png)
+- **Opmerking:** Scorekaarten per lus (2026, PNG) met S.I.-kolommen per combinatie (achterkant); CR/slope uit baanhandicaptabellen per 18-holescombinatie (09-2024). Lustotalen: Vallei 36 (wit 2966), Heuvelrug 37 (wit 3238), Heide 36 (wit 3163). Losse 9-holes tabellen staan ook op de site.
+
+<a id="golfpark-soestduinen"></a>
+## Golfpark Soestduinen
+
+Par 3-baan in de bossen van Soestduinen met dubbele afslagplaatsen per hole, zodat een volledige 18-holesronde (par 54) met andere lengtes op de tweede negen mogelijk is. De holes zijn kort (circa 60 tot 110 meter) en licht glooiend, wat de baan geschikt maakt voor beginners en het korte spel. Er zijn twee driving ranges en een chipping area.
+
+- **Club:** Golfpark Soestduinen
+- **Adres:** Van Weerden Poelmanweg 8, 3768 MN Soest, Utrecht, NL
+- **GPS:** 52.1419196, 5.2917463
+- **Afstand:** 94.3 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** licht glooiende par 3-baan omsloten door bos
+- **Telefoon:** +31 35 588 0005
+- **E-mail:** info@golfparksoestduinen.nl
+- **Website:** https://www.golfparksoestduinen.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** clubhuis, korte en lange driving range, chipping area, putting green, golfschool
+
+**Lus 18 holes par 3 (voorste 9 paars, achterste 9 wit)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1429 | 47.4 | 62 | 54 |
+| rood (women) | 1429 | 48.7 | 63 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 2 | 106 | 106 |
+| 2 | 3 | 8 | 77 | 77 |
+| 3 | 3 | 10 | 74 | 74 |
+| 4 | 3 | 18 | 65 | 65 |
+| 5 | 3 | 12 | 69 | 69 |
+| 6 | 3 | 14 | 62 | 62 |
+| 7 | 3 | 6 | 81 | 81 |
+| 8 | 3 | 4 | 72 | 72 |
+| 9 | 3 | 16 | 83 | 83 |
+| 10 | 3 | 1 | 111 | 111 |
+| 11 | 3 | 13 | 82 | 82 |
+| 12 | 3 | 11 | 82 | 82 |
+| 13 | 3 | 17 | 73 | 73 |
+| 14 | 3 | 9 | 70 | 70 |
+| 15 | 3 | 15 | 65 | 65 |
+| 16 | 3 | 7 | 86 | 86 |
+| 17 | 3 | 5 | 77 | 77 |
+| 18 | 3 | 3 | 94 | 94 |
+
+- **Scorekaartpagina:** https://www.golfparksoestduinen.nl/golfbaan/baaninformatie/
+- **Bestanden:** [scorecard/7051-Golfpark-Soestduinen-scorekaart-2025_cPDF.pdf](golfpark-soestduinen/scorecard/7051-Golfpark-Soestduinen-scorekaart-2025_cPDF.pdf), [scorecard/GP-Soestduinen-Par-3-baan-Zomer-Dames-Heren.pdf](golfpark-soestduinen/scorecard/GP-Soestduinen-Par-3-baan-Zomer-Dames-Heren.pdf), [scorecard/page.html](golfpark-soestduinen/scorecard/page.html)
+- **Opmerking:** Scorekaart versie 2025 (front 9 = paarse afslagen, back 9 = witte afslagen, één lengte per hole) + baanhandicaptabel par 3-baan zomer 27-05-2025 (geel heren / rood dames; gelijke lengtes aangenomen). Er is ook een wintertabel.
+
+<a id="golfpark-spandersbosch-hilversum"></a>
+## Golfpark Spandersbosch
+
+Golfpark Spandersbosch ligt tussen Hilversum en Bussum in het natuurgebied Zanderij Crailoo, naast de bekende natuurbrug. Architect Gerard Jol ontwierp er de Boschbaan (par 32, met vijf par 4's) en de par 3-Crailoobaan, die los of samen als 18 holes te spelen zijn. Gasten zijn welkom; voor de Boschbaan is handicap 54 nodig.
+
+- **Club:** Golfvereniging Spandersbosch
+- **Adres:** Sportpark Crailoo 26, 1222 AA Hilversum, Noord-Holland, NL
+- **GPS:** 52.25435, 5.17136
+- **Afstand:** 95.4 km
+- **Type:** 9-holes
+- **Holes:** 18
+- **Landschap:** natuurgebied Zanderij Crailoo (Goois Natuurreservaat), heide en bos bij de natuurbrug
+- **Architect:** Gerard Jol
+- **Telefoon:** +31 35 685 7328
+- **E-mail:** info@golfparkspandersbosch.nl
+- **Website:** https://golfparkspandersbosch.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Boschbaan: minimaal handicap 54; Crailoobaan: baanpermissie volstaat. Vooraf reserveren verplicht, NGF-pas tonen.
+- **Faciliteiten:** 9-holes Boschbaan (par 32, NGF B-status), 9-holes par 3 Crailoobaan, driving range, golf academy met Trackman, golfshop, brasserie
+
+**Lus Combinatiebaan Boschbaan + Crailoobaan (18 holes)** — 18 holes, par 59
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3001 | 57.6 | 105 | 59 |
+| rood (men) | 2666 | 55.7 | 97 | 59 |
+| geel (women) | 3001 | 60.5 | 115 | 59 |
+| rood (women) | 2666 | 58.7 | 105 | 59 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 17 | 85 | 69 |
+| 2 | 3 | 11 | 155 | 128 |
+| 3 | 4 | 7 | 256 | 217 |
+| 4 | 4 | 5 | 282 | 238 |
+| 5 | 3 | 15 | 146 | 120 |
+| 6 | 4 | 3 | 350 | 287 |
+| 7 | 4 | 1 | 368 | 291 |
+| 8 | 3 | 13 | 169 | 154 |
+| 9 | 4 | 9 | 263 | 235 |
+| 10 | 3 | 12 | 109 | 109 |
+| 11 | 3 | 4 | 118 | 118 |
+| 12 | 3 | 18 | 75 | 75 |
+| 13 | 3 | 8 | 107 | 107 |
+| 14 | 3 | 10 | 97 | 97 |
+| 15 | 3 | 14 | 99 | 99 |
+| 16 | 3 | 16 | 92 | 92 |
+| 17 | 3 | 6 | 106 | 106 |
+| 18 | 3 | 2 | 124 | 124 |
+
+**Lus Boschbaan 9 holes** — 9 holes, par 32
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2074 | 32.6 | 130 | 32 |
+| rood (men) | 1739 | 30.7 | 111 | 32 |
+| oranje (men) | 1381 | 28.2 | 102 | 32 |
+| geel (women) | 2074 | 34.5 | 140 | 32 |
+| rood (women) | 1739 | 32.7 | 119 | 32 |
+| oranje (women) | 1381 | 29.6 | 106 | 32 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 17 | 85 | 69 | 69 |
+| 2 | 3 | 11 | 155 | 128 | 110 |
+| 3 | 4 | 7 | 256 | 217 | 138 |
+| 4 | 4 | 5 | 282 | 238 | 180 |
+| 5 | 3 | 15 | 146 | 120 | 106 |
+| 6 | 4 | 3 | 350 | 287 | 235 |
+| 7 | 4 | 1 | 368 | 291 | 250 |
+| 8 | 3 | 13 | 169 | 154 | 100 |
+| 9 | 4 | 9 | 263 | 235 | 193 |
+
+**Lus Crailoobaan 9 holes (par 3)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 927 | 25.0 | 76 | 27 |
+| rood (women) | 927 | 26.1 | 84 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 12 | 109 | 109 |
+| 2 | 3 | 4 | 118 | 118 |
+| 3 | 3 | 18 | 75 | 75 |
+| 4 | 3 | 8 | 107 | 107 |
+| 5 | 3 | 10 | 97 | 97 |
+| 6 | 3 | 14 | 99 | 99 |
+| 7 | 3 | 16 | 92 | 92 |
+| 8 | 3 | 6 | 106 | 106 |
+| 9 | 3 | 2 | 124 | 124 |
+
+- **Scorekaartpagina:** https://golfparkspandersbosch.nl/de-baan/
+- **Bestanden:** [scorecard/page.html](golfpark-spandersbosch-hilversum/scorecard/page.html), [scorecard/Spandersbosch-18-holes-Combinatiebaan-Heren.pdf](golfpark-spandersbosch-hilversum/scorecard/Spandersbosch-18-holes-Combinatiebaan-Heren.pdf), [scorecard/Spandersbosch-18-holes-Combinatiebaan-Dames.pdf](golfpark-spandersbosch-hilversum/scorecard/Spandersbosch-18-holes-Combinatiebaan-Dames.pdf), [scorecard/Spandersbosch-9-en-18-holes-Crailoobaan.pdf](golfpark-spandersbosch-hilversum/scorecard/Spandersbosch-9-en-18-holes-Crailoobaan.pdf), [scorecard/Spandersbosch-9-holes-Boschbaan-Heren.pdf](golfpark-spandersbosch-hilversum/scorecard/Spandersbosch-9-holes-Boschbaan-Heren.pdf), [scorecard/Spandersbosch-9-holes-Boschbaan-Dames.pdf](golfpark-spandersbosch-hilversum/scorecard/Spandersbosch-9-holes-Boschbaan-Dames.pdf), [scorecard/holes/b1.html](golfpark-spandersbosch-hilversum/scorecard/holes/b1.html), [scorecard/holes/b2.html](golfpark-spandersbosch-hilversum/scorecard/holes/b2.html), [scorecard/holes/b3.html](golfpark-spandersbosch-hilversum/scorecard/holes/b3.html), [scorecard/holes/b4.html](golfpark-spandersbosch-hilversum/scorecard/holes/b4.html), [scorecard/holes/b5.html](golfpark-spandersbosch-hilversum/scorecard/holes/b5.html), [scorecard/holes/b6.html](golfpark-spandersbosch-hilversum/scorecard/holes/b6.html), [scorecard/holes/b7.html](golfpark-spandersbosch-hilversum/scorecard/holes/b7.html), [scorecard/holes/b8.html](golfpark-spandersbosch-hilversum/scorecard/holes/b8.html), [scorecard/holes/b9.html](golfpark-spandersbosch-hilversum/scorecard/holes/b9.html), [scorecard/holes/c1.html](golfpark-spandersbosch-hilversum/scorecard/holes/c1.html), [scorecard/holes/c2.html](golfpark-spandersbosch-hilversum/scorecard/holes/c2.html), [scorecard/holes/c3.html](golfpark-spandersbosch-hilversum/scorecard/holes/c3.html), [scorecard/holes/c4.html](golfpark-spandersbosch-hilversum/scorecard/holes/c4.html), [scorecard/holes/c5.html](golfpark-spandersbosch-hilversum/scorecard/holes/c5.html), [scorecard/holes/c6.html](golfpark-spandersbosch-hilversum/scorecard/holes/c6.html), [scorecard/holes/c7.html](golfpark-spandersbosch-hilversum/scorecard/holes/c7.html), [scorecard/holes/c8.html](golfpark-spandersbosch-hilversum/scorecard/holes/c8.html), [scorecard/holes/c9.html](golfpark-spandersbosch-hilversum/scorecard/holes/c9.html)
+- **Opmerking:** Par, S.I. en lengtes (geel/rood/oranje) van de officiele holepagina's; CR/SR uit de NGF-tabellen (sept. 2025). Boschbaan heeft oneven S.I., Crailoobaan even S.I.; daarom in de combinatie de Boschbaan als holes 1-9 (de tabel heet 'Crailoo-Boschbaan'). Oranje heeft in de combinatie geen rating. Crailoobaan 18 holes: geel heren 50,0/76, rood dames 52,1/84. Crailoo-lengtes gelijk voor alle tees. Losse 9-holes S.I. in 18-holesstijl.
+
+<a id="hilversumsche-golf-club-hilversum"></a>
+## Hilversumsche Golf Club
+
+De Hilversumsche, opgericht in 1895, is een van de oudste en meest gerenommeerde clubs van Nederland en speelt sinds 1917 aan de Soestdijkerstraatweg. De 18-holes heide- en bosbaan kreeg in 1928 haar huidige vorm naar ontwerp van Harry Colt en werd later door Kyle Phillips gerenoveerd. Smalle fairways door bos en heide, strategische bunkers en geraffineerde greens maken haar tot een vaste gast in de toplijsten; het Dutch Open werd er vele malen gespeeld.
+
+- **Club:** Hilversumsche Golf Club
+- **Adres:** Soestdijkerstraatweg 172, 1213 XJ Hilversum, Noord-Holland, NL
+- **GPS:** 52.2060898, 5.2092329
+- **Afstand:** 95.5 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** heide- en bosbaan op zandgrond (heathland, 'links style')
+- **Opgericht:** 1895
+- **Architect:** Henry Burrows (9 holes), Harry S. Colt (18 holes, 1928); later aanpassingen door Guy Campbell en Kyle Phillips
+- **Telefoon:** +31 35 685 7060
+- **E-mail:** secretariaat@hilversumschegolfclub.nl
+- **Website:** https://www.hilversumschegolfclub.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Greenfeespelers welkom tegen dagcontributie (lager tarief voor NGF/EGA-leden van een baangebonden club); zie bezoekersregeling.
+- **Faciliteiten:** 18-holes baan, 9-holes Kievitbaan (par 30), oefenfaciliteiten, golfprofessionals, shop, Brasserie de Kievit / clubhuis
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6303 | 75.1 | 145 | 72 |
+| geel (men) | 5848 | 72.5 | 139 | 72 |
+| blauw (men) | 5391 | 70.3 | 132 | 72 |
+| rood (men) | 5061 | 68.6 | 128 | 72 |
+| oranje (men) | 4484 | 65.5 | 122 | 72 |
+| geel (women) | 5848 | 78.7 | 154 | 72 |
+| blauw (women) | 5391 | 75.6 | 148 | 72 |
+| rood (women) | 5061 | 73.6 | 138 | 72 |
+| oranje (women) | 4484 | 70.5 | 128 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 15 | 486 | 441 | 438 | 429 | 387 |
+| 2 | 4 | 7 | 314 | 309 | 301 | 274 | 202 |
+| 3 | 4 | 5 | 378 | 344 | 316 | 312 | 274 |
+| 4 | 4 | 3 | 412 | 371 | 316 | 314 | 262 |
+| 5 | 3 | 13 | 204 | 190 | 165 | 163 | 102 |
+| 6 | 4 | 1 | 413 | 391 | 344 | 313 | 310 |
+| 7 | 5 | 11 | 443 | 436 | 427 | 388 | 346 |
+| 8 | 3 | 17 | 162 | 125 | 123 | 113 | 103 |
+| 9 | 4 | 9 | 389 | 316 | 319 | 259 | 255 |
+| 10 | 3 | 16 | 166 | 148 | 141 | 112 | 109 |
+| 11 | 4 | 4 | 434 | 384 | 337 | 314 | 311 |
+| 12 | 4 | 8 | 320 | 318 | 316 | 272 | 211 |
+| 13 | 5 | 12 | 441 | 433 | 400 | 382 | 378 |
+| 14 | 3 | 18 | 114 | 109 | 97 | 95 | 93 |
+| 15 | 4 | 2 | 435 | 411 | 342 | 334 | 332 |
+| 16 | 4 | 6 | 380 | 332 | 306 | 304 | 236 |
+| 17 | 4 | 10 | 356 | 346 | 293 | 291 | 225 |
+| 18 | 5 | 14 | 456 | 444 | 410 | 392 | 348 |
+
+- **Scorekaartpagina:** https://www.hilversumschegolfclub.nl/wp/baanhandicap-tabellen/
+- **Bestanden:** [scorecard/page.html](hilversumsche-golf-club-hilversum/scorecard/page.html), [scorecard/page-spelersinformatie.html](hilversumsche-golf-club-hilversum/scorecard/page-spelersinformatie.html), [scorecard/Course-Guide-HGC-gecrompimeerd.pdf](hilversumsche-golf-club-hilversum/scorecard/Course-Guide-HGC-gecrompimeerd.pdf), [scorecard/2021-02-08-Hilversumsche-WHS-tabel-Heren.pdf](hilversumsche-golf-club-hilversum/scorecard/2021-02-08-Hilversumsche-WHS-tabel-Heren.pdf), [scorecard/2021-02-08-Hilversumsche-WHS-tabel-Dames.pdf](hilversumsche-golf-club-hilversum/scorecard/2021-02-08-Hilversumsche-WHS-tabel-Dames.pdf), [scorecard/2023-06-26-WHS-tabel-18-holes-Kievitbaan-Dames-Heren.pdf](hilversumsche-golf-club-hilversum/scorecard/2023-06-26-WHS-tabel-18-holes-Kievitbaan-Dames-Heren.pdf), [scorecard/2023-06-26-WHS-tabel-9-holes-Kievitbaan-Dames-Heren.pdf](hilversumsche-golf-club-hilversum/scorecard/2023-06-26-WHS-tabel-9-holes-Kievitbaan-Dames-Heren.pdf), [scorecard/hole19.html](hilversumsche-golf-club-hilversum/scorecard/hole19.html)
+- **Opmerking:** Par, S.I. en lengtes uit het officiele baanboekje 2026 (FINAL-VERSION-Baanboekje_Hilversumsche_18_hole_course.pdf, 65 MB, niet bewaard; tekst geparsed). Volgorde van de vijf lengtes per hole (wit, geel, blauw, rood, oranje) bevestigd via Hole19 (blauw per hole gelijk). CR/SR uit WHS-tabellen 08-02-2021 (zomer; er zijn ook wintertabellen). Holesom rood 5061 en oranje 4484; Hole19 noemt 5080 en 4554 (mogelijk oudere tees). Kievitbaan (9 holes, par 30; geel heren 27,5/94, rood dames 29,0/99; 18 holes 55,0/94 en 58,0/99) zonder holegegevens, niet als lus opgenomen. Geen scorekaart gepubliceerd (QR-code op de kaart).
+
+<a id="golfsocieteit-de-lage-vuursche"></a>
+## Golfsociëteit De Lage Vuursche
+
+Exclusieve sociëteit bij Den Dolder, in 2000 geopend na vijftien jaar voorbereiding. De par 71-baan van de Amerikaanse architect Kyle Phillips ligt compact tussen bos en heide en is met lange, strategische holes een van de zwaarste banen van het land. Greenfeespelers met handicap 54 zijn van maandag tot en met donderdag welkom.
+
+- **Club:** Golfsociëteit De Lage Vuursche
+- **Adres:** Dolderseweg 262, 3734 BS Den Dolder, Utrecht, NL
+- **GPS:** 52.1530043, 5.2399012
+- **Afstand:** 96.6 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** bos- en heidebaan op 56 hectare
+- **Opgericht:** 2000
+- **Architect:** Kyle Phillips
+- **Telefoon:** +31 30 229 2594
+- **E-mail:** info@golflagevuursche.nl
+- **Website:** https://www.golflagevuursche.nl/
+- **Greenfee welkom:** True
+- **Eisen:** minimaal handicap 54; greenfee alleen ma t/m do, max. 3 dagen vooruit telefonisch reserveren
+- **Faciliteiten:** clubhuis, restaurant, driving range met grastees, golfshop, fitness, wellness, vergaderruimte
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6287 | 75.2 | 145 | 71 |
+| geel (men) | 6038 | 74.3 | 146 | 71 |
+| geel (women) | 6038 | 80.1 | 156 | 71 |
+| blauw (men) | 5640 | 71.4 | 139 | 71 |
+| blauw (women) | 5640 | 77.7 | 148 | 71 |
+| rood (men) | 4983 | 67.8 | 131 | 71 |
+| rood (women) | 4983 | 73.4 | 138 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 404 | 388 | 363 | 319 |
+| 2 | 4 | 3 | 402 | 384 | 366 | 277 |
+| 3 | 4 | 15 | 288 | 270 | 263 | 232 |
+| 4 | 3 | 11 | 196 | 187 | 157 | 123 |
+| 5 | 4 | 13 | 315 | 306 | 284 | 253 |
+| 6 | 3 | 17 | 127 | 120 | 114 | 95 |
+| 7 | 4 | 1 | 411 | 397 | 368 | 334 |
+| 8 | 5 | 5 | 546 | 521 | 508 | 473 |
+| 9 | 4 | 7 | 389 | 376 | 337 | 316 |
+| 10 | 4 | 14 | 353 | 328 | 316 | 285 |
+| 11 | 4 | 2 | 409 | 398 | 368 | 325 |
+| 12 | 5 | 10 | 500 | 477 | 462 | 396 |
+| 13 | 4 | 18 | 337 | 328 | 301 | 286 |
+| 14 | 3 | 12 | 186 | 175 | 153 | 117 |
+| 15 | 4 | 4 | 383 | 370 | 336 | 300 |
+| 16 | 5 | 6 | 491 | 485 | 465 | 428 |
+| 17 | 3 | 16 | 161 | 150 | 132 | 107 |
+| 18 | 4 | 8 | 389 | 378 | 347 | 317 |
+
+- **Scorekaartpagina:** https://www.golflagevuursche.nl/golfcourse/scorecard/
+- **Bestanden:** [scorecard/2023-Lage-Vuursche-Dames.pdf](golfsocieteit-de-lage-vuursche/scorecard/2023-Lage-Vuursche-Dames.pdf), [scorecard/2023-Lage-Vuursche-Heren.pdf](golfsocieteit-de-lage-vuursche/scorecard/2023-Lage-Vuursche-Heren.pdf), [scorecard/DLV-Scorekaart-Online.pdf](golfsocieteit-de-lage-vuursche/scorecard/DLV-Scorekaart-Online.pdf), [scorecard/page.html](golfsocieteit-de-lage-vuursche/scorecard/page.html)
+- **Opmerking:** Scorekaart (online versie 2023) + baanhandicaptabellen 10-10-2022. Afslagkleuren niet als tekst op de kaart; volgorde wit/geel/blauw/rood afgeleid uit de ratings op de kaart en de tabellen. Er zijn ook aparte wintertee-tabellen. Holes hebben namen (Karpaten t/m Taiwan).
+
+<a id="golfbaan-het-rijk-van-nijmegen"></a>
+## Golfbaan Het Rijk van Nijmegen
+
+Groot golfcomplex met 45 holes op de stuwwal tussen Nijmegen en Groesbeek: een 18-holes Nijmeegse baan en de 27-holes Groesbeekse baan met de lussen Noord, Oost en Zuid. Grote hoogteverschillen, blinde holes, oude lanen en waste areas geven de baan karakter, met uitzicht tot over de Duitse grens. Door lussen te combineren zijn zes verschillende 18-holesrondes mogelijk.
+
+- **Club:** Golfbaan Het Rijk van Nijmegen
+- **Adres:** Postweg 17, 6561 KJ Groesbeek, Gelderland, NL
+- **GPS:** 51.7902888, 5.9224192
+- **Afstand:** 97.3 km
+- **Type:** 27-holes
+- **Holes:** 45
+- **Landschap:** heuvelachtige parkbaan met oude bomenlanen en waste areas
+- **Opgericht:** 1985
+- **Architect:** Baron P. Rolin
+- **Telefoon:** +31 24 397 6644
+- **E-mail:** info@golfbaanhetrijkvannijmegen.nl
+- **Website:** https://www.golfenophetrijk.nl/nijmegen.html
+- **Greenfee welkom:** True
+- **Faciliteiten:** clubhuis, restaurant, golfshop, driving range, oefenfaciliteiten, buggy's, handicarts, golfschool
+
+**Lus Nijmeegse baan 1-18** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) |  | 72.1 | 132 | 72 |
+| geel (men) |  | 71.8 | 130 | 72 |
+| geel (women) |  | 78.5 | 144 | 72 |
+| blauw (men) | 5484 | 69.1 | 126 | 72 |
+| blauw (women) | 5484 | 75.1 | 131 | 72 |
+| rood (men) |  | 68.2 | 123 | 72 |
+| rood (women) |  | 74.0 | 129 | 72 |
+| oranje (men) |  | 64.5 | 109 | 72 |
+| oranje (women) |  | 69.0 | 124 | 72 |
+
+| Hole | Par | SI | blauw | wit | geel | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 7 | 292 |  |  |  |  |
+| 2 | 4 | 13 | 289 |  |  |  |  |
+| 3 | 5 | 3 | 444 |  |  |  |  |
+| 4 | 4 | 1 | 358 |  |  |  |  |
+| 5 | 3 | 17 | 145 |  |  |  |  |
+| 6 | 5 | 5 | 430 |  |  |  |  |
+| 7 | 3 | 15 | 152 |  |  |  |  |
+| 8 | 4 | 9 | 337 |  |  |  |  |
+| 9 | 4 | 11 | 316 |  |  |  |  |
+| 10 | 4 | 12 | 301 |  |  |  |  |
+| 11 | 5 | 2 | 416 |  |  |  |  |
+| 12 | 3 | 14 | 154 |  |  |  |  |
+| 13 | 5 | 4 | 442 |  |  |  |  |
+| 14 | 4 | 18 | 313 |  |  |  |  |
+| 15 | 4 | 6 | 344 |  |  |  |  |
+| 16 | 3 | 16 | 116 |  |  |  |  |
+| 17 | 4 | 10 | 304 |  |  |  |  |
+| 18 | 4 | 8 | 331 |  |  |  |  |
+
+**Lus Groesbeekse baan Noord & Oost** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) |  | 69.1 | 128 | 71 |
+| geel (men) |  | 68.0 | 123 | 71 |
+| geel (women) |  | 73.3 | 137 | 71 |
+| blauw (men) |  | 66.8 | 119 | 71 |
+| blauw (women) |  | 71.4 | 131 | 71 |
+| rood (men) |  | 64.8 | 114 | 71 |
+| rood (women) |  | 69.5 | 123 | 71 |
+| oranje (men) |  | 63.1 | 110 | 71 |
+| oranje (women) |  | 67.0 | 115 | 71 |
+
+**Lus Groesbeekse baan Oost & Zuid** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) |  | 70.9 | 135 | 71 |
+| geel (men) |  | 69.9 | 132 | 71 |
+| geel (women) |  | 75.9 | 144 | 71 |
+| blauw (men) |  | 68.8 | 123 | 71 |
+| blauw (women) |  | 73.6 | 139 | 71 |
+| rood (men) |  | 67.5 | 117 | 71 |
+| rood (women) |  | 72.1 | 134 | 71 |
+| oranje (men) |  | 65.1 | 116 | 71 |
+| oranje (women) |  | 69.9 | 125 | 71 |
+
+**Lus Groesbeekse baan Zuid & Noord** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) |  | 71.6 | 131 | 72 |
+| geel (men) |  | 70.6 | 128 | 72 |
+| geel (women) |  | 76.5 | 142 | 72 |
+| blauw (men) |  | 69.1 | 122 | 72 |
+| blauw (women) |  | 74.4 | 134 | 72 |
+| rood (men) |  | 67.6 | 122 | 72 |
+| rood (women) |  | 73.3 | 134 | 72 |
+| oranje (men) |  | 65.4 | 118 | 72 |
+| oranje (women) |  | 70.7 | 123 | 72 |
+
+- **Scorekaartpagina:** https://www.golfenophetrijk.nl/nijmegen/baandetails.html
+- **Bestanden:** [scorecard/hole19.html](golfbaan-het-rijk-van-nijmegen/scorecard/hole19.html), [scorecard/nijmegen-handicaptabel-dames-GB-noord-oost-01032021.pdf](golfbaan-het-rijk-van-nijmegen/scorecard/nijmegen-handicaptabel-dames-GB-noord-oost-01032021.pdf), [scorecard/nijmegen-handicaptabel-dames-GB-oost-zuid-01032021.pdf](golfbaan-het-rijk-van-nijmegen/scorecard/nijmegen-handicaptabel-dames-GB-oost-zuid-01032021.pdf), [scorecard/nijmegen-handicaptabel-dames-GB-zuid-noord-01032021.pdf](golfbaan-het-rijk-van-nijmegen/scorecard/nijmegen-handicaptabel-dames-GB-zuid-noord-01032021.pdf), [scorecard/nijmegen-handicaptabel-dames-NB-1-18-01032021.pdf](golfbaan-het-rijk-van-nijmegen/scorecard/nijmegen-handicaptabel-dames-NB-1-18-01032021.pdf), [scorecard/nijmegen-handicaptabel-heren-GB-noord-oost-01032021.pdf](golfbaan-het-rijk-van-nijmegen/scorecard/nijmegen-handicaptabel-heren-GB-noord-oost-01032021.pdf), [scorecard/nijmegen-handicaptabel-heren-GB-oost-zuid-01032021.pdf](golfbaan-het-rijk-van-nijmegen/scorecard/nijmegen-handicaptabel-heren-GB-oost-zuid-01032021.pdf), [scorecard/nijmegen-handicaptabel-heren-GB-zuid-noord-01032021.pdf](golfbaan-het-rijk-van-nijmegen/scorecard/nijmegen-handicaptabel-heren-GB-zuid-noord-01032021.pdf), [scorecard/nijmegen-handicaptabel-heren-NB-1-18-01032021.pdf](golfbaan-het-rijk-van-nijmegen/scorecard/nijmegen-handicaptabel-heren-NB-1-18-01032021.pdf), [scorecard/page.html](golfbaan-het-rijk-van-nijmegen/scorecard/page.html)
+- **Opmerking:** CR/slope officieel (handicaptabellen 01-03-2021). Geen officiële scorekaart met holegegevens online gevonden. Nijmeegse baan: par, S.I. en lengtes (alleen blauw) uit hole19golf.com ("yds"-label, waarschijnlijk meters). Totale lengtes volgens de site (heren geel / dames rood): Nijmeegse 6002/5300 m, Noord&Oost 5238/4613, Oost&Zuid 5515/4908, Zuid&Noord 5697/5103 m. Gemengde combinaties met de Nijmeegse 1-9 of 10-18 (ook gerateerd) niet opgenomen.
+
+<a id="schaerweijde-golf-zeist"></a>
+## Schaerweijde Golf
+
+Qualifying 9-holesbaan van een vereniging met C-status, aangelegd rond de hockeyvelden van Schaerweijde in Zeist. Na een renovatie naar ontwerp van Alan Rijks (2020) telt de baan acht par 3's en één par 4, met voor de tweede negen deels langere afslagen. Er is een driving range met golfschool en een clubhuis.
+
+- **Club:** Schaerweijde Golf
+- **Adres:** Hein Bottingalaan 1, 3707 NX Zeist, Utrecht, NL
+- **GPS:** 52.1049, 5.2683
+- **Afstand:** 97.9 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkbaan rond de hockeyvelden van sportpark Schaerweijde
+- **Architect:** Alan Rijks (renovatie 2020)
+- **Telefoon:** +31 30 692 0272
+- **Website:** https://schaerweijde-golf.nl/
+- **Greenfee welkom:** True
+- **Eisen:** greenfee tot 3 dagen vooruit reserveren
+- **Faciliteiten:** clubhuis, driving range, golfschool
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 56
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2819 | 55.1 | 85 | 56 |
+| geel (women) | 2819 | 57.7 | 98 | 56 |
+| rood (men) | 2506 | 53.3 | 82 | 56 |
+| rood (women) | 2506 | 55.8 | 90 | 56 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 9 | 146 | 133 |
+| 2 | 3 | 3 | 177 | 140 |
+| 3 | 3 | 11 | 144 | 137 |
+| 4 | 3 | 5 | 144 | 134 |
+| 5 | 3 | 17 | 69 | 69 |
+| 6 | 3 | 13 | 140 | 133 |
+| 7 | 3 | 15 | 96 | 96 |
+| 8 | 3 | 1 | 185 | 155 |
+| 9 | 4 | 7 | 294 | 257 |
+| 10 | 3 | 10 | 133 | 112 |
+| 11 | 3 | 4 | 189 | 177 |
+| 12 | 3 | 12 | 137 | 123 |
+| 13 | 3 | 6 | 187 | 144 |
+| 14 | 3 | 18 | 69 | 69 |
+| 15 | 3 | 14 | 133 | 111 |
+| 16 | 3 | 16 | 96 | 96 |
+| 17 | 3 | 2 | 213 | 185 |
+| 18 | 4 | 8 | 267 | 235 |
+
+- **Scorekaartpagina:** https://schaerweijde-golf.nl/de-baan/
+- **Bestanden:** [scorecard/Schaerweijde-WHS-tabel-Dames-Zomergreens.pdf](schaerweijde-golf-zeist/scorecard/Schaerweijde-WHS-tabel-Dames-Zomergreens.pdf), [scorecard/Schaerweijde-WHS-tabel-Heren-Zomergreens.pdf](schaerweijde-golf-zeist/scorecard/Schaerweijde-WHS-tabel-Heren-Zomergreens.pdf), [scorecard/Scorekaart-2020-nieuwe-baan.pdf](schaerweijde-golf-zeist/scorecard/Scorekaart-2020-nieuwe-baan.pdf), [scorecard/page.html](schaerweijde-golf-zeist/scorecard/page.html)
+- **Opmerking:** Scorekaart 2020 (nieuwe baan) + WHS-tabellen zomergreens 15-02-2021; S.I. van holes 11, 16 en 17 ontbrak in de PDF-tekst en is overgenomen van de holepagina's op de site (2/4, 15/16, 1/2). De tekst op de site noemt de geel-totalen per negen omgekeerd (1424/1395) t.o.v. de kaart. Er zijn ook wintertee-tabellen.
+
+<a id="golfclub-t-jagerspaadje-hilversum"></a>
+## Golfclub 't Jagerspaadje
+
+'t Jagerspaadje is een kleine vrijwilligersclub uit 1981 met een 9-holesbaan in het Corversbos bij Hilversum, op grond van Natuurmonumenten. De baan telt zes par 3's en drie par 4's en is dankzij de beschutte ligging en zandgrond vrijwel het hele jaar op zomergreens bespeelbaar. Gasten kunnen alleen samen met een lid spelen.
+
+- **Club:** Golfclub 't Jagerspaadje
+- **Adres:** Beresteinseweg 150, 1217 TM Hilversum, Noord-Holland, NL
+- **GPS:** 52.22646, 5.1436
+- **Afstand:** 98.5 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** bosbaan op zandgrond in het Corversbos (Natuurmonumenten), naast de buitenplaatsen van 's-Graveland
+- **Opgericht:** 1981
+- **E-mail:** info@gcjagerspaadje.nl
+- **Website:** https://www.jagerspaadje.nl/
+- **Greenfee welkom:** False
+- **Eisen:** Besloten vereniging: greenfee alleen in combinatie met een lid.
+- **Faciliteiten:** 9-holes baan (par 30, NGF C-status, qualifying), clubhuis 'de Teeroom', golfles (twee teaching pro's)
+
+**Lus 18 holes (2x 9)** — 18 holes, par 60
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2785 | 55.0 | 91 | 60 |
+| rood (women) | 2785 | 57.5 | 102 | 60 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 3 | 5 | 110 |
+| 2 | 4 | 11 | 225 |
+| 3 | 4 | 7 | 230 |
+| 4 | 3 | 1 | 170 |
+| 5 | 3 | 13 | 119 |
+| 6 | 4 | 3 | 243 |
+| 7 | 3 | 9 | 116 |
+| 8 | 3 | 17 | 100 |
+| 9 | 3 | 15 | 87 |
+| 10 | 3 | 10 | 95 |
+| 11 | 4 | 12 | 225 |
+| 12 | 4 | 6 | 230 |
+| 13 | 3 | 2 | 170 |
+| 14 | 3 | 14 | 119 |
+| 15 | 4 | 4 | 243 |
+| 16 | 3 | 8 | 116 |
+| 17 | 3 | 18 | 100 |
+| 18 | 3 | 16 | 87 |
+
+- **Scorekaartpagina:** https://www.jagerspaadje.nl/
+- **Bestanden:** [scorecard/page.html](golfclub-t-jagerspaadje-hilversum/scorecard/page.html), [scorecard/WHS-1.jpg](golfclub-t-jagerspaadje-hilversum/scorecard/WHS-1.jpg), [scorecard/WHS-2.jpg](golfclub-t-jagerspaadje-hilversum/scorecard/WHS-2.jpg), [scorecard/hole19.html](golfclub-t-jagerspaadje-hilversum/scorecard/hole19.html)
+- **Opmerking:** Club publiceert alleen totaal (9 holes: 3x par 4, 6x par 3; 2785 m) en NGF-tabellen 11-01-2021 (18 holes geel heren 55,0/91, rood dames 57,5/102; 9 holes 27,5/91 en 28,8/102). Par, S.I. en lengtes per hole komen van Hole19 (third-party); holesom 2785 m klopt met de clubopgave, par 60 en de par 4-verdeling ook. Rode lengtes per hole niet bekend (totaal gelijk aan geel volgens tabel/Hole19), daarom complete=false.
+
+<a id="doornse-golfclub"></a>
+## Doornse Golfclub
+
+Kleine 9-holes par 3-baan naast Tenniscenter Heuvelrug in Doorn, met holes tussen ongeveer 60 en 125 meter en enkele waterpartijen. De baan is bedoeld voor zowel beginnende als geoefende golfers en greenfeespelers zijn welkom. Een ronde van 18 holes speel je door de negen holes twee keer te lopen.
+
+- **Club:** Doornse Golfclub
+- **Adres:** Mariniersweg 3, 3941 XK Doorn, Utrecht, NL
+- **GPS:** 52.0418426, 5.3281674
+- **Afstand:** 98.9 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** compacte par 3-baan met waterpartijen naast tenniscentrum Heuvelrug
+- **Telefoon:** +31 6 2743 6261
+- **E-mail:** secretariaat@doornsegolfclub.nl
+- **Website:** https://www.doornsegolfclub.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** putting green, terras, tennis (Tenniscenter Heuvelrug)
+
+**Lus Par 3-baan (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard (men) | 1598 | 49.2 | 76 | 54 |
+| standaard (women) | 1598 | 50.7 | 80 | 54 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 6 | 100 |
+| 2 | 3 | 8 | 111 |
+| 3 | 3 | 12 | 70 |
+| 4 | 3 | 4 | 114 |
+| 5 | 3 | 16 | 68 |
+| 6 | 3 | 18 | 58 |
+| 7 | 3 | 2 | 126 |
+| 8 | 3 | 14 | 66 |
+| 9 | 3 | 10 | 81 |
+| 10 | 3 | 5 | 110 |
+| 11 | 3 | 7 | 111 |
+| 12 | 3 | 11 | 70 |
+| 13 | 3 | 3 | 114 |
+| 14 | 3 | 15 | 68 |
+| 15 | 3 | 17 | 58 |
+| 16 | 3 | 1 | 126 |
+| 17 | 3 | 13 | 66 |
+| 18 | 3 | 9 | 81 |
+
+- **Scorekaartpagina:** https://www.doornsegolfclub.nl/golfen/score-kaart/
+- **Bestanden:** [scorecard/2021-11-scorecard-score-zijde.1920x1920.jpg](doornse-golfclub/scorecard/2021-11-scorecard-score-zijde.1920x1920.jpg), [scorecard/page.html](doornse-golfclub/scorecard/page.html)
+- **Opmerking:** Scorekaart november 2021 (één afslag; CR/SR heren 49,2/76, dames 50,7/80 op de kaart). Hole 10 is 110 m tegen 100 m voor hole 1.
+
+<a id="golfpark-de-biltse-duinen"></a>
+## Golfpark De Biltse Duinen
+
+Kleine par 3-baan van negen holes midden in de bossen van Bilthoven, op de plek van een voormalig natuurbad. De holes variëren van ongeveer 60 tot ruim 150 meter, en een grote driving range met deels overdekte afslagplaatsen hoort bij het park. Er zijn ook tennisbanen en een restaurant op het terrein.
+
+- **Club:** Golfpark De Biltse Duinen / Golfclub De Biltse Duinen
+- **Adres:** Burgemeester van der Borchlaan 6, 3722 GZ Bilthoven, Utrecht, NL
+- **GPS:** 52.1296565, 5.2178985
+- **Afstand:** 99.2 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** glooiende bosbaan op het terrein van een voormalig natuurbad
+- **Opgericht:** 1987
+- **Telefoon:** +31 30 228 0561
+- **E-mail:** kantoor@biltseduinen.nl
+- **Website:** https://www.biltseduinen.nl/
+- **Starttijden:** https://www.nexxchange.com/search/teetimes/golfpark-de-biltse-duinen
+- **Greenfee welkom:** True
+- **Faciliteiten:** restaurant, driving range (32 plekken, 16 overdekt), golfschool, tennisbanen, fitnessruimte
+
+**Lus Par 3-baan (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1926 | 50.1 | 63 | 54 |
+| rood (women) | 1926 | 51.7 | 67 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 9 | 113 | 113 |
+| 2 | 3 | 1 | 156 | 156 |
+| 3 | 3 | 11 | 105 | 105 |
+| 4 | 3 | 5 | 142 | 142 |
+| 5 | 3 | 15 | 61 | 61 |
+| 6 | 3 | 17 | 61 | 61 |
+| 7 | 3 | 13 | 63 | 63 |
+| 8 | 3 | 3 | 147 | 147 |
+| 9 | 3 | 7 | 115 | 115 |
+| 10 | 3 | 10 | 113 | 113 |
+| 11 | 3 | 2 | 156 | 156 |
+| 12 | 3 | 12 | 105 | 105 |
+| 13 | 3 | 6 | 142 | 142 |
+| 14 | 3 | 16 | 61 | 61 |
+| 15 | 3 | 18 | 61 | 61 |
+| 16 | 3 | 14 | 63 | 63 |
+| 17 | 3 | 4 | 147 | 147 |
+| 18 | 3 | 8 | 115 | 115 |
+
+- **Scorekaartpagina:** https://www.golfclubbiltseduinen.nl/golfbaan/
+- **Bestanden:** [scorecard/handicaptabellen2021.pdf](golfpark-de-biltse-duinen/scorecard/handicaptabellen2021.pdf), [scorecard/page.html](golfpark-de-biltse-duinen/scorecard/page.html), [scorecard/scorekaartversied6.pdf](golfpark-de-biltse-duinen/scorecard/scorekaartversied6.pdf)
+- **Opmerking:** Scorekaart (oudere versie, nog met EGA-ratings 52,5/59 heren en 54,6/82 dames) voor holes, par en S.I.; CR/slope uit de baanhandicaptabel 02-03-2021 (18 holes par 3). Heren en dames spelen van dezelfde afslag (geel/rood, gelijke lengtes).
+
+<a id="golfpark-de-berendonck-wijchen"></a>
+## Golfpark De Berendonck
+
+Openbaar golfpark in het recreatiegebied De Berendonck bij Wijchen, onderdeel van de Hollandsche Golfclub. De 18-holesbaan (par 71) bestaat uit een rode en een gele lus die ook los als 9 holes te spelen zijn, langs water, bosranden en enkele hoogteverschillen. Voor beginners is er een korte 9-holes par 3-baan van bijna 600 meter.
+
+- **Club:** Golfpark De Berendonck (Hollandsche Golfclub, v/h BurgGolf Wijchen)
+- **Adres:** Weg door de Berendonck 40, 6603 LP Wijchen, Gelderland, NL
+- **GPS:** 51.8102486, 5.7694113
+- **Afstand:** 99.7 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** parkbaan met waterpartijen, bosranden en natuurlijke hoogteverschillen
+- **Telefoon:** +31 24 642 0039
+- **E-mail:** info@golfparkdeberendonck.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/de-berendonck/
+- **Greenfee welkom:** True
+- **Eisen:** handicap 54 of baanpermissie van de Hollandsche Golfclub
+- **Faciliteiten:** brasserie, driving range, golfschool, kleine baan (9 holes par 3)
+
+**Lus 18 holes (rode lus + gele lus)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5879 | 72.0 | 132 | 71 |
+| geel (men) | 5594 | 70.5 | 131 | 71 |
+| geel (women) | 5594 | 76.9 | 140 | 71 |
+| blauw (men) | 5176 | 68.5 | 121 | 71 |
+| blauw (women) | 5176 | 73.8 | 135 | 71 |
+| rood (men) | 4872 | 67.2 | 114 | 71 |
+| rood (women) | 4872 | 72.0 | 131 | 71 |
+| oranje (men) | 4401 | 65.0 | 109 | 71 |
+| oranje (women) | 4401 | 69.2 | 121 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 5 | 467 | 427 | 370 | 360 | 305 |
+| 2 | 4 | 11 | 348 | 309 | 299 | 289 | 228 |
+| 3 | 4 | 9 | 330 | 324 | 318 | 285 | 264 |
+| 4 | 3 | 7 | 211 | 178 | 175 | 164 | 142 |
+| 5 | 5 | 1 | 545 | 509 | 417 | 407 | 393 |
+| 6 | 3 | 17 | 160 | 152 | 138 | 128 | 114 |
+| 7 | 4 | 15 | 302 | 289 | 285 | 274 | 260 |
+| 8 | 4 | 3 | 382 | 372 | 355 | 310 | 295 |
+| 9 | 4 | 13 | 370 | 358 | 350 | 284 | 273 |
+| 10 | 4 | 6 | 388 | 380 | 360 | 330 | 309 |
+| 11 | 3 | 16 | 141 | 132 | 129 | 123 | 118 |
+| 12 | 5 | 8 | 441 | 435 | 385 | 376 | 337 |
+| 13 | 4 | 14 | 275 | 266 | 260 | 255 | 186 |
+| 14 | 4 | 4 | 370 | 353 | 325 | 315 | 301 |
+| 15 | 3 | 18 | 144 | 141 | 134 | 126 | 112 |
+| 16 | 4 | 2 | 395 | 372 | 348 | 335 | 304 |
+| 17 | 3 | 12 | 152 | 146 | 138 | 133 | 120 |
+| 18 | 5 | 10 | 458 | 451 | 390 | 378 | 340 |
+
+**Lus Kleine baan (9 holes par 3)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard | 594 |  |  | 27 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 3 | 62 |
+| 2 | 3 | 1 | 98 |
+| 3 | 3 | 8 | 58 |
+| 4 | 3 | 4 | 62 |
+| 5 | 3 | 7 | 58 |
+| 6 | 3 | 9 | 66 |
+| 7 | 3 | 5 | 48 |
+| 8 | 3 | 6 | 54 |
+| 9 | 3 | 2 | 88 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/de-berendonck/course/de-berendonck-18-holes/
+- **Bestanden:** [scorecard/BER-SCOREKAART-18-HOLES-NOV-2026_web.pdf](golfpark-de-berendonck-wijchen/scorecard/BER-SCOREKAART-18-HOLES-NOV-2026_web.pdf), [scorecard/BER-SCOREKAART-9-HOLES-NOV-2026web.pdf](golfpark-de-berendonck-wijchen/scorecard/BER-SCOREKAART-9-HOLES-NOV-2026web.pdf), [scorecard/Golfpark-De-Berendonck-handicaptabellen.pdf](golfpark-de-berendonck-wijchen/scorecard/Golfpark-De-Berendonck-handicaptabellen.pdf), [scorecard/page.html](golfpark-de-berendonck-wijchen/scorecard/page.html)
+- **Opmerking:** Scorekaarten nov. 2026 (18 holes en kleine baan) + handicaptabellen. Kleuren van de vijf afslagkolommen staan niet als tekst op de kaart; volgorde wit-geel-blauw-rood-oranje aangenomen op basis van de tabellen (lengtes aflopend). Hole 7 rode lus: tijdelijke afslagplaats. Kleine baan: geen ratings gevonden. Aparte 9-holes ratings (rood/geel) staan in de tabellen.
+
+<a id="golfpark-de-purmer-purmerend"></a>
+## Golfpark De Purmer
+
+Publiek golfpark aan de rand van Purmerend met drie lussen van negen holes (rood, wit en geel) die in drie 18-holescombinaties worden gespeeld, plus een 9-holes shortgolfbaan. De baan ligt open in het polderlandschap met brede fairways en veel waterpartijen. Let op: de exploitant heeft aangekondigd dat het park na 31 december 2026 sluit.
+
+- **Club:** Hollandsche Golfclub (HGC)
+- **Adres:** Westerweg 60, 1445 AD Purmerend, Noord-Holland, NL
+- **GPS:** 52.5005543, 4.9935132
+- **Afstand:** 99.7 km
+- **Type:** 27-holes
+- **Holes:** 36
+- **Landschap:** open Noord-Hollands polderlandschap met brede fairways en veel water
+- **Telefoon:** +31 299 796 774
+- **E-mail:** info@golfparkdepurmer.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/de-purmer/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/de-purmer/boek-een-starttijd-golfpark-de-purmer/
+- **Greenfee welkom:** True
+- **Eisen:** Grote baan vanaf handicap 54 of baanpermissie van de Hollandsche Golfclub; shortgolfbaan zonder eisen
+- **Faciliteiten:** driving range, 9-holes shortgolfbaan (par 3), brasserie, golfschool, schuilhutten
+
+**Lus 18 holes gele lus + rode lus** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5587 | 71.5 | 131 | 71 |
+| geel (men) | 5302 | 70.1 | 128 | 71 |
+| blauw (men) | 4847 | 67.8 | 122 | 71 |
+| rood (men) | 4612 | 66.9 | 115 | 71 |
+| geel (women) | 5302 | 75.5 | 144 | 71 |
+| blauw (women) | 4847 | 72.7 | 132 | 71 |
+| rood (women) | 4612 | 71.5 | 126 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 254 | 245 | 221 | 213 |
+| 2 | 5 | 3 | 460 | 440 | 424 | 404 |
+| 3 | 3 | 13 | 147 | 139 | 113 | 113 |
+| 4 | 4 | 9 | 347 | 327 | 292 | 276 |
+| 5 | 4 | 17 | 274 | 251 | 229 | 205 |
+| 6 | 4 | 1 | 394 | 375 | 362 | 348 |
+| 7 | 3 | 15 | 126 | 124 | 116 | 102 |
+| 8 | 4 | 7 | 365 | 327 | 311 | 278 |
+| 9 | 5 | 5 | 530 | 500 | 451 | 451 |
+| 10 | 4 | 4 | 336 | 336 | 309 | 309 |
+| 11 | 4 | 14 | 278 | 266 | 244 | 224 |
+| 12 | 4 | 12 | 333 | 300 | 279 | 260 |
+| 13 | 3 | 18 | 139 | 131 | 121 | 109 |
+| 14 | 4 | 2 | 384 | 363 | 326 | 305 |
+| 15 | 3 | 10 | 163 | 154 | 146 | 132 |
+| 16 | 5 | 8 | 458 | 439 | 374 | 362 |
+| 17 | 3 | 16 | 163 | 149 | 141 | 133 |
+| 18 | 5 | 6 | 436 | 436 | 388 | 388 |
+
+**Lus 18 holes gele lus + witte lus** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6087 | 74.0 | 134 | 72 |
+| geel (men) | 5727 | 72.6 | 129 | 72 |
+| blauw (men) | 5242 | 69.9 | 129 | 72 |
+| rood (men) | 4976 | 68.8 | 126 | 72 |
+| geel (women) | 5727 | 78.0 | 153 | 72 |
+| blauw (women) | 5242 | 75.4 | 139 | 72 |
+| rood (women) | 4976 | 74.1 | 132 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 254 | 245 | 221 | 213 |
+| 2 | 5 | 3 | 460 | 440 | 424 | 404 |
+| 3 | 3 | 13 | 147 | 139 | 113 | 113 |
+| 4 | 4 | 9 | 347 | 327 | 292 | 276 |
+| 5 | 4 | 17 | 274 | 251 | 229 | 205 |
+| 6 | 4 | 1 | 394 | 375 | 362 | 348 |
+| 7 | 3 | 15 | 126 | 124 | 116 | 102 |
+| 8 | 4 | 7 | 365 | 327 | 311 | 278 |
+| 9 | 5 | 5 | 530 | 500 | 451 | 451 |
+| 10 | 4 | 12 | 372 | 364 | 343 | 335 |
+| 11 | 4 | 14 | 343 | 318 | 291 | 272 |
+| 12 | 5 | 4 | 524 | 494 | 429 | 411 |
+| 13 | 4 | 18 | 308 | 288 | 268 | 244 |
+| 14 | 5 | 2 | 490 | 462 | 413 | 396 |
+| 15 | 4 | 10 | 401 | 368 | 330 | 308 |
+| 16 | 3 | 16 | 220 | 193 | 181 | 164 |
+| 17 | 4 | 6 | 343 | 332 | 310 | 298 |
+| 18 | 3 | 8 | 189 | 180 | 158 | 158 |
+
+**Lus 18 holes witte lus + rode lus** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5880 | 73.1 | 134 | 71 |
+| geel (men) | 5573 | 71.4 | 133 | 71 |
+| blauw (men) | 5051 | 68.9 | 126 | 71 |
+| rood (men) | 4808 | 68.0 | 118 | 71 |
+| geel (women) | 5573 | 77.6 | 148 | 71 |
+| blauw (women) | 5051 | 73.8 | 142 | 71 |
+| rood (women) | 4808 | 72.5 | 135 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 372 | 364 | 343 | 335 |
+| 2 | 4 | 13 | 343 | 318 | 291 | 272 |
+| 3 | 5 | 3 | 524 | 494 | 429 | 411 |
+| 4 | 4 | 17 | 308 | 288 | 268 | 244 |
+| 5 | 5 | 1 | 490 | 462 | 413 | 396 |
+| 6 | 4 | 9 | 401 | 368 | 330 | 308 |
+| 7 | 3 | 15 | 220 | 193 | 181 | 164 |
+| 8 | 4 | 5 | 343 | 332 | 310 | 298 |
+| 9 | 3 | 7 | 189 | 180 | 158 | 158 |
+| 10 | 4 | 4 | 336 | 336 | 309 | 309 |
+| 11 | 4 | 14 | 278 | 266 | 244 | 224 |
+| 12 | 4 | 12 | 333 | 300 | 279 | 260 |
+| 13 | 3 | 18 | 139 | 131 | 121 | 109 |
+| 14 | 4 | 2 | 384 | 363 | 326 | 305 |
+| 15 | 3 | 10 | 163 | 154 | 146 | 132 |
+| 16 | 5 | 8 | 458 | 439 | 374 | 362 |
+| 17 | 3 | 16 | 163 | 149 | 141 | 133 |
+| 18 | 5 | 6 | 436 | 436 | 388 | 388 |
+
+**Lus Rode lus (9 holes)** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2690 | 35.3 | 131 | 35 |
+| geel (men) | 2574 | 34.5 | 132 | 35 |
+| blauw (men) | 2328 | 33.4 | 119 | 35 |
+| rood (men) | 2222 | 33.1 | 107 | 35 |
+| geel (women) | 2574 | 37.6 | 140 | 35 |
+| blauw (women) | 2328 | 35.6 | 134 | 35 |
+| rood (women) | 2222 | 35.0 | 128 | 35 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 3 | 336 | 336 | 309 | 309 |
+| 2 | 4 | 13 | 278 | 266 | 244 | 224 |
+| 3 | 4 | 11 | 333 | 300 | 279 | 260 |
+| 4 | 3 | 17 | 139 | 131 | 121 | 109 |
+| 5 | 4 | 1 | 384 | 363 | 326 | 305 |
+| 6 | 3 | 9 | 163 | 154 | 146 | 132 |
+| 7 | 5 | 7 | 458 | 439 | 374 | 362 |
+| 8 | 3 | 15 | 163 | 149 | 141 | 133 |
+| 9 | 5 | 5 | 436 | 436 | 388 | 388 |
+
+**Lus Witte lus (9 holes)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 3190 | 37.8 | 137 | 36 |
+| geel (men) | 2999 | 37.0 | 135 | 36 |
+| blauw (men) | 2723 | 35.5 | 133 | 36 |
+| rood (men) | 2586 | 35.0 | 129 | 36 |
+| geel (women) | 2999 | 40.1 | 157 | 36 |
+| blauw (women) | 2723 | 38.3 | 148 | 36 |
+| rood (women) | 2586 | 37.6 | 141 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 372 | 364 | 343 | 335 |
+| 2 | 4 | 13 | 343 | 318 | 291 | 272 |
+| 3 | 5 | 3 | 524 | 494 | 429 | 411 |
+| 4 | 4 | 17 | 308 | 288 | 268 | 244 |
+| 5 | 5 | 1 | 490 | 462 | 413 | 396 |
+| 6 | 4 | 9 | 401 | 368 | 330 | 308 |
+| 7 | 3 | 15 | 220 | 193 | 181 | 164 |
+| 8 | 4 | 5 | 343 | 332 | 310 | 298 |
+| 9 | 3 | 7 | 189 | 180 | 158 | 158 |
+
+**Lus Gele lus (9 holes)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2897 | 36.2 | 131 | 36 |
+| geel (men) | 2728 | 35.6 | 124 | 36 |
+| blauw (men) | 2519 | 34.4 | 124 | 36 |
+| rood (men) | 2390 | 33.8 | 123 | 36 |
+| geel (women) | 2728 | 38.0 | 148 | 36 |
+| blauw (women) | 2519 | 37.1 | 131 | 36 |
+| rood (women) | 2390 | 36.6 | 123 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 254 | 245 | 221 | 213 |
+| 2 | 5 | 3 | 460 | 440 | 424 | 404 |
+| 3 | 3 | 13 | 147 | 139 | 113 | 113 |
+| 4 | 4 | 9 | 347 | 327 | 292 | 276 |
+| 5 | 4 | 17 | 274 | 251 | 229 | 205 |
+| 6 | 4 | 1 | 394 | 375 | 362 | 348 |
+| 7 | 3 | 15 | 126 | 124 | 116 | 102 |
+| 8 | 4 | 7 | 365 | 327 | 311 | 278 |
+| 9 | 5 | 5 | 530 | 500 | 451 | 451 |
+
+**Lus Shortgolf (par 3, 9 holes)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard (men) | 713 | 24.1 | 64 | 27 |
+| standaard (women) | 713 | 24.8 | 65 | 27 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 17 | 54 |
+| 2 | 3 | 9 | 68 |
+| 3 | 3 | 1 | 93 |
+| 4 | 3 | 11 | 68 |
+| 5 | 3 | 13 | 57 |
+| 6 | 3 | 7 | 92 |
+| 7 | 3 | 15 | 73 |
+| 8 | 3 | 3 | 76 |
+| 9 | 3 | 5 | 132 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/de-purmer/course/de-purmer-9-holes-rode-lus/
+- **Bestanden:** [scorecard/De-Purmer-Scorekaart-27-holes-MRT-20226.pdf](golfpark-de-purmer-purmerend/scorecard/De-Purmer-Scorekaart-27-holes-MRT-20226.pdf), [scorecard/De-Purmer-Handicaptabellen-grote-baan.pdf](golfpark-de-purmer-purmerend/scorecard/De-Purmer-Handicaptabellen-grote-baan.pdf), [scorecard/De-Purmer-Scorekaart-9-holes-MRT-2026.pdf](golfpark-de-purmer-purmerend/scorecard/De-Purmer-Scorekaart-9-holes-MRT-2026.pdf), [scorecard/De-Purmer-Handicaptabellen-kleine-shortgolf-baan.pdf](golfpark-de-purmer-purmerend/scorecard/De-Purmer-Handicaptabellen-kleine-shortgolf-baan.pdf), [scorecard/page.html](golfpark-de-purmer-purmerend/scorecard/page.html), [scorecard/page-afscheid.html](golfpark-de-purmer-purmerend/scorecard/page-afscheid.html)
+- **Opmerking:** SLUIT NA 31-12-2026 (aangekondigd op afscheidspagina). Scorekaart 27 holes (mrt 2026): kolommen wit/geel/blauw/rood; elke lus heeft 'SI OUT' (oneven, als eerste negen) en 'SI IN' (even, als tweede negen). Bij de 9-holeslussen is SI OUT gebruikt (dus geen permutatie 1..9). In de 18-holescombinaties is de eerstgenoemde lus als eerste negen genomen (volgorde zoals in handicaptabel: Geel-Rood, Geel-Wit, Wit-Rood); omgekeerde volgorde is ook speelbaar. Ratings 04-03-2025; dames hebben geen witte tee. Shortgolf: 1 lengte per hole, S.I. alleen oneven (18-holesstijl), ratings geel heren 24,1/64, rood dames 24,8/65 (18 holes: 48,1/64 en 49,5/65).
+
+<a id="utrechtse-golfclub-de-pan"></a>
+## Utrechtse Golfclub 'De Pan'
+
+Een van de oudste golfclubs van Nederland (1894), sinds 1929 gevestigd in het Panbos bij Bosch en Duin op een baan van Harry Colt. De compacte heidebaan heeft relatief korte holes, maar golvende fairways tussen heide en bos maken scoren lastig. Bezoekers vragen vooraf een richttijd aan.
+
+- **Club:** U.G.C. 'De Pan'
+- **Adres:** Amersfoortseweg 1, 3735 LJ Bosch en Duin, Utrecht, NL
+- **GPS:** 52.1164632, 5.222487
+- **Afstand:** 99.8 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** heide- en bosbaan met ondulerende fairways
+- **Opgericht:** 1894
+- **Architect:** Harry S. Colt (baan geopend 1929)
+- **Telefoon:** +31 30 696 9120
+- **Website:** https://ugc-depan.nl/
+- **Greenfee welkom:** True
+- **Eisen:** richttijd aanvragen via de club
+- **Faciliteiten:** clubhuis, restaurant, golfschool, oefenfaciliteiten
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6097 | 73.5 | 149 | 72 |
+| geel (men) | 5716 | 71.3 | 142 | 72 |
+| geel (women) | 5716 | 77.9 | 151 | 72 |
+| blauw (men) | 5340 | 69.7 | 136 | 72 |
+| blauw (women) | 5340 | 75.3 | 148 | 72 |
+| rood (men) | 4934 | 67.3 | 125 | 72 |
+| rood (women) | 4934 | 72.5 | 139 | 72 |
+| oranje (men) | 4770 | 66.4 | 123 | 72 |
+| oranje (women) | 4770 | 71.7 | 133 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 15 | 443 | 438 | 426 | 376 | 376 |
+| 2 | 4 | 5 | 367 | 343 | 320 | 311 | 311 |
+| 3 | 3 | 17 | 158 | 153 | 136 | 119 | 119 |
+| 4 | 4 | 3 | 395 | 341 | 328 | 290 | 290 |
+| 5 | 5 | 11 | 485 | 454 | 433 | 390 | 390 |
+| 6 | 4 | 1 | 391 | 362 | 317 | 313 | 313 |
+| 7 | 4 | 9 | 304 | 280 | 273 | 244 | 244 |
+| 8 | 3 | 13 | 196 | 181 | 172 | 156 | 125 |
+| 9 | 4 | 7 | 390 | 346 | 306 | 291 | 291 |
+| 10 | 4 | 6 | 339 | 308 | 301 | 277 | 222 |
+| 11 | 5 | 10 | 459 | 452 | 392 | 384 | 384 |
+| 12 | 3 | 16 | 174 | 163 | 151 | 115 | 115 |
+| 13 | 4 | 2 | 409 | 372 | 348 | 320 | 320 |
+| 14 | 4 | 8 | 325 | 319 | 304 | 280 | 280 |
+| 15 | 3 | 18 | 161 | 146 | 141 | 127 | 127 |
+| 16 | 4 | 4 | 340 | 333 | 306 | 306 | 306 |
+| 17 | 4 | 14 | 291 | 276 | 268 | 245 | 205 |
+| 18 | 5 | 12 | 470 | 449 | 418 | 390 | 352 |
+
+- **Scorekaartpagina:** https://ugc-depan.nl/golfbaan/baangegevens
+- **Bestanden:** [scorecard/2025_Dames_18_holes.pdf](utrechtse-golfclub-de-pan/scorecard/2025_Dames_18_holes.pdf), [scorecard/2025_Heren_18_holes.pdf](utrechtse-golfclub-de-pan/scorecard/2025_Heren_18_holes.pdf), [scorecard/ScoreCard_De_Pan_2026_FINAL.pdf](utrechtse-golfclub-de-pan/scorecard/ScoreCard_De_Pan_2026_FINAL.pdf), [scorecard/page.html](utrechtse-golfclub-de-pan/scorecard/page.html)
+- **Opmerking:** Scorekaart editie januari 2026; CR/slope van de baangegevenspagina (komt overeen met handicaptabellen 2025). 9-holes ratings (1e/2e negen) staan op de site. Postcode volgens de club 3735 LJ (nominatim geeft 3732 HP).
+
+<a id="gooise-golfclub-loosdrecht"></a>
+## Gooise Golfclub
+
+De Gooise Golfclub in Loosdrecht is een kleine verenigingsbaan met negen par 3-holes van 60 tot 152 meter, die voor 18 holes twee keer worden gespeeld. Sloten, een vijver, bunkers en bosranden maken de korte holes verrassend lastig. De baan heeft NGF C-status en is alleen voor leden en hun introducés.
+
+- **Club:** Gooise Golfclub
+- **Adres:** 't Jagerspaadje 24a, 1231 KJ Loosdrecht, Noord-Holland, NL
+- **GPS:** 52.20968, 5.13166
+- **Afstand:** 100.0 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** kleinschalig, met bosranden, sloten, een vijver en bunkers; deels aan weerszijden van een weg
+- **E-mail:** secretariaat@gooisegolfclub.nl
+- **Website:** https://www.gooisegolfclub.nl/
+- **Greenfee welkom:** False
+- **Eisen:** Alleen toegankelijk voor leden en hun introducés.
+- **Faciliteiten:** 9-holes par 3-baan (NGF C-status), driving range, putting green, clubhuis met terras
+
+**Lus 18 holes (2x 9, par 3)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1870 | 50.6 | 78 | 54 |
+| rood (women) | 1870 | 52.4 | 80 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 1 | 152 | 152 |
+| 2 | 3 | 11 | 75 | 75 |
+| 3 | 3 | 3 | 147 | 147 |
+| 4 | 3 | 15 | 67 | 67 |
+| 5 | 3 | 13 | 94 | 94 |
+| 6 | 3 | 7 | 100 | 100 |
+| 7 | 3 | 17 | 60 | 60 |
+| 8 | 3 | 9 | 90 | 90 |
+| 9 | 3 | 5 | 150 | 150 |
+| 10 | 3 | 2 | 152 | 152 |
+| 11 | 3 | 12 | 75 | 75 |
+| 12 | 3 | 4 | 147 | 147 |
+| 13 | 3 | 16 | 67 | 67 |
+| 14 | 3 | 14 | 94 | 94 |
+| 15 | 3 | 8 | 100 | 100 |
+| 16 | 3 | 18 | 60 | 60 |
+| 17 | 3 | 10 | 90 | 90 |
+| 18 | 3 | 6 | 150 | 150 |
+
+- **Scorekaartpagina:** https://www.gooisegolfclub.nl/golfbaan/baan/
+- **Bestanden:** [scorecard/page.html](gooise-golfclub-loosdrecht/scorecard/page.html), [scorecard/Baan_Overzicht.jpg](gooise-golfclub-loosdrecht/scorecard/Baan_Overzicht.jpg), [scorecard/holes/hole-1.html](gooise-golfclub-loosdrecht/scorecard/holes/hole-1.html), [scorecard/holes/hole-2.html](gooise-golfclub-loosdrecht/scorecard/holes/hole-2.html), [scorecard/holes/hole-3.html](gooise-golfclub-loosdrecht/scorecard/holes/hole-3.html), [scorecard/holes/hole-4.html](gooise-golfclub-loosdrecht/scorecard/holes/hole-4.html), [scorecard/holes/hole-5.html](gooise-golfclub-loosdrecht/scorecard/holes/hole-5.html), [scorecard/holes/hole-6.html](gooise-golfclub-loosdrecht/scorecard/holes/hole-6.html), [scorecard/holes/hole-7.html](gooise-golfclub-loosdrecht/scorecard/holes/hole-7.html), [scorecard/holes/hole-8.html](gooise-golfclub-loosdrecht/scorecard/holes/hole-8.html), [scorecard/holes/hole-9.html](gooise-golfclub-loosdrecht/scorecard/holes/hole-9.html)
+- **Opmerking:** Geen scorekaartbestand; per hole lengte en S.I. (1e/2e ronde) van de holepagina's, CR/SR 18 holes van de baanpagina (heren 50,6/78, dames 52,4/80). Eén lengte per hole (afslagmatten); tee-kleuren geel (heren) en rood (dames) aangenomen. Totaal 935 m per 9 holes = 1870 m (klopt met clubopgave).
+
+<a id="pitch-putt-molenhoek"></a>
+## Pitch & Putt Golf Molenhoek
+
+Deze pitch & puttbaan ligt in Molenhoek (gemeente Mook en Middelaar), achter het sportcentrum aan de Lierweg, in een oude zandafgraving. De 18 holes zijn allemaal par 3 en meten ongeveer 40 tot 70 meter, geschikt voor beginners en voor het oefenen van het korte spel. Spelen gaat volgens derden op afspraak.
+
+- **Club:** Pitch & Putt Golf Molenhoek
+- **Adres:** Lierweg 2C, 6584 DC Molenhoek, Limburg, NL
+- **GPS:** 51.7754313, 5.8756136
+- **Afstand:** 100.0 km
+- **Type:** pitch-putt
+- **Holes:** 18
+- **Landschap:** voormalige zandafgraving ('The Pit') bij sportpark De Lyre
+- **Telefoon:** 024 388 0552
+- **Greenfee welkom:** True
+- **Faciliteiten:** voetgolf, kinderfeestjes
+
+**Lus Pitch & putt (18 holes)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard (men) | 979 | 45.0 | 85 | 54 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 12 | 50 |
+| 2 | 3 | 8 | 57 |
+| 3 | 3 | 16 | 45 |
+| 4 | 3 | 6 | 59 |
+| 5 | 3 | 13 | 49 |
+| 6 | 3 | 15 | 45 |
+| 7 | 3 | 2 | 67 |
+| 8 | 3 | 10 | 53 |
+| 9 | 3 | 3 | 66 |
+| 10 | 3 | 11 | 50 |
+| 11 | 3 | 18 | 39 |
+| 12 | 3 | 9 | 55 |
+| 13 | 3 | 1 | 70 |
+| 14 | 3 | 17 | 43 |
+| 15 | 3 | 14 | 46 |
+| 16 | 3 | 4 | 65 |
+| 17 | 3 | 5 | 63 |
+| 18 | 3 | 7 | 57 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/pitch-putt-golf-molenhoek
+- **Bestanden:** [scorecard/hole19-pitch-putt-golf-molenhoek.html](pitch-putt-molenhoek/scorecard/hole19-pitch-putt-golf-molenhoek.html), [scorecard/golfify-pitch-putt-golf-molenhoek.html](pitch-putt-molenhoek/scorecard/golfify-pitch-putt-golf-molenhoek.html)
+- **Opmerking:** Geen officiele website gevonden. Par, SI en lengtes (metrisch, 979 m) van hole19golf.com, CR 45.0/slope 85 ook van Hole19 (geslacht niet vermeld). Golfify geeft dezelfde SI met lengtes in vermoedelijk yards (totaal 1071). FIPPA (2012) noemt een andere SI-volgorde. Openingstijden volgens Kidsproof 'op afspraak'. Ligt in Limburg (Mook en Middelaar), niet in de opgegeven gemeentelijst.
+
+<a id="golfbaan-hoenderdaal"></a>
+## Golfbaan Hoenderdaal
+
+Korte 9-holesbaan (par 28, acht par 3's en één par 4) bij het sport- en gezondheidscentrum Hoenderdaal in Driebergen, sinds 1996 en ontworpen door Alan Rijks. De parkachtige baan met bunkers en water is toegankelijk voor iedereen met baanpermissie. Er is een overdekte TrackMan-driving range met verlichting.
+
+- **Club:** Health Center Hoenderdaal (golf)
+- **Adres:** Hoendersteeg 7, 3972 NA Driebergen-Rijsenburg, Utrecht, NL
+- **GPS:** 52.0544603, 5.2609041
+- **Afstand:** 101.6 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** parkachtige baan met bunkers en water
+- **Opgericht:** 1996
+- **Architect:** Alan Rijks
+- **Telefoon:** +31 343 529 333
+- **Website:** https://hoenderdaal.com/
+- **Greenfee welkom:** True
+- **Eisen:** minimaal NGF-baanpermissie
+- **Faciliteiten:** TrackMan driving range (32 overdekte plekken, verlicht), chipping green, putting green, oefenbunkers, sportshop, tennis, fitness/health center
+
+**Lus Par 3/4-baan (9 holes 2x)** — 18 holes, par 56
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard (men) | 1754 | 50.2 | 77 | 56 |
+| standaard (women) | 1754 | 51.6 | 80 | 56 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 13 | 85 |
+| 2 | 3 | 5 | 99 |
+| 3 | 3 | 17 | 61 |
+| 4 | 4 | 1 | 222 |
+| 5 | 3 | 11 | 45 |
+| 6 | 3 | 9 | 89 |
+| 7 | 3 | 15 | 65 |
+| 8 | 3 | 7 | 101 |
+| 9 | 3 | 3 | 110 |
+| 10 | 3 | 14 | 85 |
+| 11 | 3 | 6 | 99 |
+| 12 | 3 | 18 | 61 |
+| 13 | 4 | 2 | 222 |
+| 14 | 3 | 12 | 45 |
+| 15 | 3 | 10 | 89 |
+| 16 | 3 | 16 | 65 |
+| 17 | 3 | 8 | 101 |
+| 18 | 3 | 4 | 110 |
+
+- **Scorekaartpagina:** https://hoenderdaal.com/sportaanbod/golf-utrechtseheuvelrug/golfbaan
+- **Bestanden:** [scorecard/Handicaptabellendamesenheren2023.jpg](golfbaan-hoenderdaal/scorecard/Handicaptabellendamesenheren2023.jpg), [scorecard/Hole_lay_out_golfbaan_hoenderdaal.pdf](golfbaan-hoenderdaal/scorecard/Hole_lay_out_golfbaan_hoenderdaal.pdf), [scorecard/golfbaan_plattegrond_en_layout.pdf](golfbaan-hoenderdaal/scorecard/golfbaan_plattegrond_en_layout.pdf), [scorecard/page.html](golfbaan-hoenderdaal/scorecard/page.html)
+- **Opmerking:** Hole-lay-out (PDF) met par, lengte en S.I. per hole (1/10 t/m 9/18); één afslag. Baanhandicaptabel 2023 (18 holes par 56; 9 holes heren 25,1/77, dames 25,8/80).
+
+<a id="golfbaan-weesp"></a>
+## Golfbaan Weesp (UP Events)
+
+Golfbaan Weesp, tegenwoordig onderdeel van UP Events, is een informele 9-holes par 3-baan aan de rand van Weesp. De holes zijn tussen ongeveer 70 en 156 meter en de baan is qualifying, met een verlichte driving range ernaast. Spelen gaat met losse starttijden, rittenkaarten of abonnementen, zonder lidmaatschap.
+
+- **Club:** Golfbaan Weesp / UP Events
+- **Adres:** Basisweg 2, 1383 NC Weesp, Noord-Holland, NL
+- **GPS:** 52.29964, 5.0268
+- **Afstand:** 102.7 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** vlakke polderbaan met water, naast een evenementenlocatie
+- **Telefoon:** +31 20 244 7211
+- **Website:** https://upevents.nl/golf/
+- **Starttijden:** https://www.chronogolf.com/club/golfbaan-weesp
+- **Greenfee welkom:** True
+- **Faciliteiten:** 9-holes par 3-baan (qualifying), verlichte driving range, putting- en chippinggreen, horeca, footgolf (UP Events)
+
+**Lus 18 holes (2x 9, par 3)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2040 | 51.2 | 82 | 54 |
+| rood (women) | 2024 | 53.7 | 86 | 54 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 3 | 15 | 95 |
+| 2 | 3 | 7 | 140 |
+| 3 | 3 | 13 | 90 |
+| 4 | 3 | 3 | 122 |
+| 5 | 3 | 1 | 135 |
+| 6 | 3 | 11 | 110 |
+| 7 | 3 | 9 | 89 |
+| 8 | 3 | 17 | 82 |
+| 9 | 3 | 5 | 156 |
+| 10 | 3 | 18 | 95 |
+| 11 | 3 | 8 | 115 |
+| 12 | 3 | 12 | 108 |
+| 13 | 3 | 2 | 139 |
+| 14 | 3 | 4 | 135 |
+| 15 | 3 | 14 | 104 |
+| 16 | 3 | 10 | 121 |
+| 17 | 3 | 16 | 70 |
+| 18 | 3 | 6 | 134 |
+
+- **Scorekaartpagina:** https://upevents.nl/golf/
+- **Bestanden:** [scorecard/page.html](golfbaan-weesp/scorecard/page.html), [scorecard/hole19.html](golfbaan-weesp/scorecard/hole19.html)
+- **Opmerking:** Club (UP Events, golfweesp.nl verwijst door; golfweesp.nl gaf 403 op curl) publiceert geen scorekaart. Par, S.I., gele lengtes en CR/slope komen van Hole19 (third-party, eenheid aangenomen meters); Hole19 geeft voor de 2e negen deels andere lengtes (aparte tees). Rode lengtes per hole onbekend (totaal 2024). Adres bevestigd op upevents.nl. Golfkaart noemt ook 'Golfvereniging Weesp' en 'Golfcentrum Weesp' (zelfde locatie, geen aparte baan gevonden).
+
+<a id="golfcentrum-de-batouwe"></a>
+## Golfcentrum De Batouwe
+
+A-status golfcomplex in Zoelen bij Tiel met drie lussen van negen holes, genoemd naar Betuwse boomgaarden: Perengaard, Appelgaard en Kersengaard. Gecombineerd leveren ze drie 18-holesbanen van par 71 of 72. Sinds 2021 ligt er binnen het complex ook een korte par 3/4-baan (Pruimengaard, par 29).
+
+- **Club:** Golfcentrum De Batouwe
+- **Adres:** Oost Kanaalweg 1, 4011 LA Zoelen (Tiel), Gelderland, NL
+- **GPS:** 51.9276424, 5.4226912
+- **Afstand:** 102.9 km
+- **Type:** 27-holes
+- **Holes:** 36
+- **Landschap:** Betuwse polderbaan tussen boomgaarden en water
+- **Telefoon:** +31 344 624 370
+- **E-mail:** info@golfcentrumdebatouwe.nl
+- **Website:** https://golfcentrumdebatouwe.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** clubhuis, restaurant, vergaderruimte, driving range, golfschool, par 3/4-baan Pruimengaard (9 holes)
+
+**Lus Perengaard + Appelgaard** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5780 | 70.9 | 128 | 71 |
+| geel (men) | 5587 | 70.1 | 124 | 71 |
+| geel (women) | 5587 | 76.2 | 138 | 71 |
+| blauw (men) | 4976 | 67.1 | 113 | 71 |
+| blauw (women) | 4976 | 72.6 | 131 | 71 |
+| rood (men) | 4799 | 66.4 | 109 | 71 |
+| rood (women) | 4799 | 71.6 | 127 | 71 |
+| oranje (men) | 4225 | 64.3 | 104 | 71 |
+| oranje (women) | 4225 | 68.2 | 113 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 337 | 328 | 298 | 281 | 241 |
+| 2 | 4 | 3 | 377 | 367 | 354 | 316 | 264 |
+| 3 | 3 | 15 | 182 | 162 | 150 | 150 | 113 |
+| 4 | 4 | 13 | 305 | 291 | 256 | 251 | 217 |
+| 5 | 5 | 7 | 457 | 448 | 376 | 376 | 307 |
+| 6 | 5 | 9 | 478 | 465 | 397 | 397 | 323 |
+| 7 | 3 | 17 | 165 | 150 | 136 | 136 | 136 |
+| 8 | 4 | 1 | 309 | 309 | 261 | 261 | 261 |
+| 9 | 4 | 5 | 368 | 357 | 311 | 311 | 311 |
+| 10 | 4 | 14 | 285 | 277 | 273 | 261 | 208 |
+| 11 | 4 | 6 | 286 | 276 | 247 | 233 | 194 |
+| 12 | 3 | 18 | 175 | 167 | 150 | 150 | 134 |
+| 13 | 5 | 10 | 456 | 447 | 382 | 375 | 340 |
+| 14 | 4 | 2 | 385 | 378 | 325 | 313 | 269 |
+| 15 | 4 | 12 | 314 | 309 | 260 | 256 | 235 |
+| 16 | 4 | 8 | 389 | 368 | 331 | 309 | 280 |
+| 17 | 3 | 16 | 138 | 124 | 122 | 117 | 117 |
+| 18 | 4 | 4 | 374 | 364 | 347 | 306 | 275 |
+
+**Lus Appelgaard + Kersengaard** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5612 | 70.1 | 123 | 71 |
+| geel (men) | 5450 | 69.8 | 119 | 71 |
+| geel (women) | 5450 | 75.1 | 136 | 71 |
+| blauw (men) | 4813 | 66.7 | 110 | 71 |
+| blauw (women) | 4813 | 71.4 | 125 | 71 |
+| rood (men) | 4638 | 66.0 | 107 | 71 |
+| rood (women) | 4638 | 70.5 | 124 | 71 |
+| oranje (men) | 4138 | 64.2 | 101 | 71 |
+| oranje (women) | 4138 | 67.0 | 113 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 13 | 285 | 277 | 273 | 261 | 208 |
+| 2 | 4 | 5 | 286 | 276 | 247 | 233 | 194 |
+| 3 | 3 | 17 | 175 | 167 | 150 | 150 | 134 |
+| 4 | 5 | 9 | 456 | 447 | 382 | 375 | 340 |
+| 5 | 4 | 1 | 385 | 378 | 325 | 313 | 269 |
+| 6 | 4 | 11 | 314 | 309 | 260 | 256 | 235 |
+| 7 | 4 | 7 | 389 | 368 | 331 | 309 | 280 |
+| 8 | 3 | 15 | 138 | 124 | 122 | 117 | 117 |
+| 9 | 4 | 3 | 374 | 364 | 347 | 306 | 275 |
+| 10 | 5 | 12 | 437 | 429 | 384 | 378 | 338 |
+| 11 | 4 | 8 | 338 | 334 | 294 | 288 | 269 |
+| 12 | 3 | 18 | 164 | 156 | 133 | 124 | 111 |
+| 13 | 4 | 10 | 378 | 366 | 308 | 304 | 272 |
+| 14 | 4 | 4 | 283 | 279 | 229 | 223 | 199 |
+| 15 | 4 | 16 | 304 | 290 | 245 | 243 | 217 |
+| 16 | 5 | 2 | 443 | 436 | 377 | 373 | 336 |
+| 17 | 3 | 14 | 142 | 135 | 126 | 117 | 105 |
+| 18 | 4 | 6 | 321 | 315 | 280 | 268 | 239 |
+
+**Lus Kersengaard + Perengaard** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5788 | 71.3 | 132 | 72 |
+| geel (men) | 5617 | 70.9 | 127 | 72 |
+| geel (women) | 5617 | 76.4 | 139 | 72 |
+| blauw (men) | 4915 | 67.0 | 116 | 72 |
+| blauw (women) | 4915 | 72.7 | 128 | 72 |
+| rood (men) | 4797 | 66.4 | 114 | 72 |
+| rood (women) | 4797 | 71.9 | 128 | 72 |
+| oranje (men) | 4259 | 64.3 | 108 | 72 |
+| oranje (women) | 4259 | 68.2 | 118 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 12 | 437 | 429 | 384 | 378 | 338 |
+| 2 | 4 | 8 | 338 | 334 | 294 | 288 | 269 |
+| 3 | 3 | 18 | 164 | 156 | 133 | 124 | 111 |
+| 4 | 4 | 10 | 378 | 366 | 308 | 304 | 272 |
+| 5 | 4 | 4 | 283 | 279 | 229 | 223 | 199 |
+| 6 | 4 | 16 | 304 | 290 | 245 | 243 | 217 |
+| 7 | 5 | 2 | 443 | 436 | 377 | 373 | 336 |
+| 8 | 3 | 14 | 142 | 135 | 126 | 117 | 105 |
+| 9 | 4 | 6 | 321 | 315 | 280 | 268 | 239 |
+| 10 | 4 | 11 | 337 | 328 | 298 | 281 | 241 |
+| 11 | 4 | 3 | 377 | 367 | 354 | 316 | 264 |
+| 12 | 3 | 15 | 182 | 162 | 150 | 150 | 113 |
+| 13 | 4 | 13 | 305 | 291 | 256 | 251 | 217 |
+| 14 | 5 | 7 | 457 | 448 | 376 | 376 | 307 |
+| 15 | 5 | 9 | 478 | 465 | 397 | 397 | 323 |
+| 16 | 3 | 17 | 165 | 150 | 136 | 136 | 136 |
+| 17 | 4 | 1 | 309 | 309 | 261 | 261 | 261 |
+| 18 | 4 | 5 | 368 | 357 | 311 | 311 | 311 |
+
+**Lus Pruimengaard par 3/4 (9 holes 2x)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2282 | 52.0 | 77 | 58 |
+| rood (women) | 2282 | 54.4 | 83 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 4 | 221 | 221 |
+| 2 | 3 | 6 | 123 | 123 |
+| 3 | 3 | 12 | 101 | 101 |
+| 4 | 3 | 8 | 142 | 142 |
+| 5 | 3 | 16 | 79 | 79 |
+| 6 | 3 | 18 | 84 | 84 |
+| 7 | 4 | 2 | 225 | 225 |
+| 8 | 3 | 14 | 66 | 66 |
+| 9 | 3 | 10 | 100 | 100 |
+| 10 | 4 | 3 | 221 | 221 |
+| 11 | 3 | 17 | 123 | 123 |
+| 12 | 3 | 11 | 101 | 101 |
+| 13 | 3 | 15 | 142 | 142 |
+| 14 | 3 | 5 | 79 | 79 |
+| 15 | 3 | 13 | 84 | 84 |
+| 16 | 4 | 1 | 225 | 225 |
+| 17 | 3 | 9 | 66 | 66 |
+| 18 | 3 | 7 | 100 | 100 |
+
+- **Scorekaartpagina:** https://golfcentrumdebatouwe.nl/downloads/
+- **Bestanden:** [scorecard/100633_Baanboekje_februari_2022.pdf](golfcentrum-de-batouwe/scorecard/100633_Baanboekje_februari_2022.pdf), [scorecard/1238-Batouwe_scorekaart_binnenzijde.pdf](golfcentrum-de-batouwe/scorecard/1238-Batouwe_scorekaart_binnenzijde.pdf), [scorecard/Batouwe-18-holes-Appel-Kers-Dames.pdf](golfcentrum-de-batouwe/scorecard/Batouwe-18-holes-Appel-Kers-Dames.pdf), [scorecard/Batouwe-18-holes-Appel-Kers-Heren.pdf](golfcentrum-de-batouwe/scorecard/Batouwe-18-holes-Appel-Kers-Heren.pdf), [scorecard/Batouwe-18-holes-Kers-Peer-Dames.pdf](golfcentrum-de-batouwe/scorecard/Batouwe-18-holes-Kers-Peer-Dames.pdf), [scorecard/Batouwe-18-holes-Kers-Peer-Heren.pdf](golfcentrum-de-batouwe/scorecard/Batouwe-18-holes-Kers-Peer-Heren.pdf), [scorecard/Batouwe-18-holes-Peer-Appel-Dames.pdf](golfcentrum-de-batouwe/scorecard/Batouwe-18-holes-Peer-Appel-Dames.pdf), [scorecard/Batouwe-18-holes-Peer-Appel-Heren.pdf](golfcentrum-de-batouwe/scorecard/Batouwe-18-holes-Peer-Appel-Heren.pdf), [scorecard/Batouwe-Pruim-DamesHeren.pdf](golfcentrum-de-batouwe/scorecard/Batouwe-Pruim-DamesHeren.pdf), [scorecard/batouwe-kleineBaanKaart-binnenzijde-feb-23_1.pdf](golfcentrum-de-batouwe/scorecard/batouwe-kleineBaanKaart-binnenzijde-feb-23_1.pdf), [scorecard/page.html](golfcentrum-de-batouwe/scorecard/page.html)
+- **Opmerking:** Scorekaart (binnenzijde) met de drie lussen en S.I. per combinatie (Appelgaard heeft aparte S.I. na Perengaard resp. vóór Kersengaard); baanhandicaptabellen per combinatie; kaart Pruimengaard (feb. 2023) met één afstand per hole (geel heren/rood dames). Baanboekje feb. 2022 ook opgeslagen. Losse 9-holes tabellen staan op de downloadpagina.
+
+<a id="golfbaan-kromme-rijn"></a>
+## Golfbaan Kromme Rijn
+
+Negen-holesbaan (par 35) uit 1998 tussen Bunnik en Zeist, in het groene gebied van De Brakel langs de Kromme Rijn. Gerard Jol legde de baan aan en tussen 2020 en 2024 is hij gerenoveerd, met hoogteverschillen, water en veel beplanting. Met vijf afslagkleuren en twee combinatiebanen kun je 18 holes met wisselende lengtes spelen; de verlichte driving range is ook 's avonds open.
+
+- **Club:** Golfbaan Kromme Rijn / Golfclub Kromme Rijn
+- **Adres:** Sportlaan 6, 3981 HP Bunnik, Utrecht, NL
+- **GPS:** 52.0679508, 5.2115014
+- **Afstand:** 103.4 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkbaan met hoogteverschillen en water op landgoed De Brakel
+- **Opgericht:** 1998
+- **Architect:** Gerard Jol (1998); renovatie 2020-2024 met Michiel van der Vaart
+- **Telefoon:** +31 30 656 2051
+- **E-mail:** info@krommerijn.nl
+- **Website:** https://www.krommerijn.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** clubhuis, brasserie, driving range (17 plekken, deels overdekt, verlicht), 3 oefengreens, oefenbunker
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6010 | 73.2 | 137 | 70 |
+| geel (men) | 5611 | 70.6 | 138 | 70 |
+| geel (women) | 5611 | 76.8 | 143 | 70 |
+| blauw (men) | 5102 | 67.7 | 130 | 70 |
+| blauw (women) | 5102 | 73.6 | 133 | 70 |
+| rood (men) | 4658 | 66.1 | 110 | 70 |
+| rood (women) | 4658 | 70.3 | 127 | 70 |
+| oranje (men) | 2928 | 59.0 | 102 | 70 |
+| oranje (women) | 2928 | 61.7 | 111 | 70 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 3 | 378 | 339 | 339 | 310 | 180 |
+| 2 | 4 | 11 | 345 | 345 | 345 | 285 | 170 |
+| 3 | 3 | 13 | 155 | 145 | 125 | 115 | 80 |
+| 4 | 4 | 7 | 371 | 371 | 329 | 308 | 185 |
+| 5 | 5 | 9 | 506 | 468 | 418 | 389 | 230 |
+| 6 | 3 | 15 | 146 | 103 | 95 | 80 | 69 |
+| 7 | 4 | 1 | 388 | 388 | 332 | 332 | 200 |
+| 8 | 3 | 17 | 175 | 154 | 128 | 110 | 110 |
+| 9 | 5 | 5 | 541 | 484 | 440 | 400 | 240 |
+| 10 | 4 | 4 | 378 | 339 | 339 | 310 | 180 |
+| 11 | 4 | 12 | 345 | 345 | 345 | 285 | 170 |
+| 12 | 3 | 16 | 155 | 145 | 125 | 115 | 80 |
+| 13 | 4 | 8 | 371 | 371 | 329 | 308 | 185 |
+| 14 | 5 | 10 | 506 | 468 | 418 | 389 | 230 |
+| 15 | 3 | 14 | 146 | 146 | 95 | 80 | 69 |
+| 16 | 4 | 2 | 388 | 388 | 332 | 332 | 200 |
+| 17 | 3 | 18 | 175 | 128 | 128 | 110 | 110 |
+| 18 | 5 | 6 | 541 | 484 | 440 | 400 | 240 |
+
+**Lus Combinatiebaan geel/rood (1e 9 geel + 2e 9 rood)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel/rood (men) | 5126 | 68.3 | 123 | 70 |
+| geel/rood (women) | 5126 | 73.5 | 136 | 70 |
+
+| Hole | Par | SI | geel/rood |
+|---|---|---|---|
+| 1 | 4 | 3 | 339 |
+| 2 | 4 | 11 | 345 |
+| 3 | 3 | 13 | 145 |
+| 4 | 4 | 7 | 371 |
+| 5 | 5 | 9 | 468 |
+| 6 | 3 | 15 | 103 |
+| 7 | 4 | 1 | 388 |
+| 8 | 3 | 17 | 154 |
+| 9 | 5 | 5 | 484 |
+| 10 | 4 | 4 | 310 |
+| 11 | 4 | 12 | 285 |
+| 12 | 3 | 14 | 115 |
+| 13 | 4 | 8 | 308 |
+| 14 | 5 | 10 | 389 |
+| 15 | 3 | 16 | 80 |
+| 16 | 4 | 2 | 332 |
+| 17 | 3 | 18 | 110 |
+| 18 | 5 | 6 | 400 |
+
+**Lus Combinatiebaan wit/blauw (1e 9 wit + 2e 9 blauw)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit/blauw (men) | 5556 | 70.4 | 133 | 70 |
+
+| Hole | Par | SI | wit/blauw |
+|---|---|---|---|
+| 1 | 4 | 3 | 378 |
+| 2 | 4 | 11 | 345 |
+| 3 | 3 | 13 | 155 |
+| 4 | 4 | 7 | 371 |
+| 5 | 5 | 9 | 506 |
+| 6 | 3 | 15 | 146 |
+| 7 | 4 | 1 | 388 |
+| 8 | 3 | 17 | 175 |
+| 9 | 5 | 5 | 541 |
+| 10 | 4 | 4 | 339 |
+| 11 | 4 | 12 | 345 |
+| 12 | 3 | 14 | 125 |
+| 13 | 4 | 8 | 329 |
+| 14 | 5 | 10 | 418 |
+| 15 | 3 | 16 | 95 |
+| 16 | 4 | 2 | 332 |
+| 17 | 3 | 18 | 128 |
+| 18 | 5 | 6 | 440 |
+
+- **Scorekaartpagina:** https://www.krommerijn.nl/golfbaan/
+- **Bestanden:** [scorecard/Dames-18-holes-1.jpg](golfbaan-kromme-rijn/scorecard/Dames-18-holes-1.jpg), [scorecard/GC-Kromme-Rijn-18-holes-Combibaan-Geel-Rood-Dames.jpg](golfbaan-kromme-rijn/scorecard/GC-Kromme-Rijn-18-holes-Combibaan-Geel-Rood-Dames.jpg), [scorecard/GC-Kromme-Rijn-18-holes-Combibaan-Geel-Rood-Heren.jpg](golfbaan-kromme-rijn/scorecard/GC-Kromme-Rijn-18-holes-Combibaan-Geel-Rood-Heren.jpg), [scorecard/GC-Kromme-Rijn-18-holes-Combibaan-Wit-Blauw-Heren.jpg](golfbaan-kromme-rijn/scorecard/GC-Kromme-Rijn-18-holes-Combibaan-Wit-Blauw-Heren.jpg), [scorecard/Heren-18-holes-1.jpg](golfbaan-kromme-rijn/scorecard/Heren-18-holes-1.jpg), [scorecard/Scorekaart_2025.jpg](golfbaan-kromme-rijn/scorecard/Scorekaart_2025.jpg), [scorecard/page.html](golfbaan-kromme-rijn/scorecard/page.html)
+- **Opmerking:** Scorekaart 2025 en baanhandicaptabellen 03-07-2025 (afbeeldingen). 9 holes 2x met eigen S.I. voor 10-18; geel heeft op holes 6/15 en 8/17 andere lengtes per negen. Combibaan-tabellen: geel/rood heren onder kop "rood" (68,3/123), wit/blauw heren onder kop "geel" (70,4/133). Afzonderlijke 9-holes tabellen niet overgenomen.
+
+<a id="golfbaan-spierdijk"></a>
+## Golfbaan Spierdijk
+
+Open 9-holesbaan in de polder bij Spierdijk, ontworpen door Gerard Jol en Michiel van der Vaart en geopend in 2009. Het linksachtige ontwerp met veel ruimte en wind wordt gepromoot als 'Schotse polderbaan'; tweemaal rond geeft 18 holes par 72. Het moderne clubhuis kijkt uit over de negende hole.
+
+- **Club:** Golfbaan Spierdijk / GC De Koggen
+- **Adres:** Wogmeer 86a, 1643 NH Spierdijk, Noord-Holland, NL
+- **GPS:** 52.6576693, 4.9277887
+- **Afstand:** 103.6 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** open, linksachtige polderbaan ('Schotse polderbaan') met zicht op de kerk van Spierdijk
+- **Opgericht:** 2009
+- **Architect:** Gerard Jol en Michiel van der Vaart
+- **Telefoon:** +31 229 561 050
+- **E-mail:** info@golfbaanspierdijk.nl
+- **Website:** https://www.golfbaanspierdijk.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, clubhuis/brasserie met serre en terras, golfschool, golfsimulator, voetgolf, par 3-baan in aanleg (opening 2027)
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6000 | 73.4 | 145 | 72 |
+| geel (men) | 5584 | 71.0 | 135 | 72 |
+| blauw (men) | 5222 | 68.7 | 133 | 72 |
+| rood (men) | 4654 | 65.9 | 124 | 72 |
+| oranje (men) | 4154 | 64.2 | 111 | 72 |
+| geel (women) | 5584 | 77.4 | 146 | 72 |
+| blauw (women) | 5222 | 74.8 | 143 | 72 |
+| rood (women) | 4654 | 71.3 | 135 | 72 |
+| oranje (women) | 4154 | 67.7 | 120 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 316 | 307 | 307 | 253 | 235 |
+| 2 | 3 | 5 | 186 | 164 | 164 | 131 | 131 |
+| 3 | 5 | 3 | 490 | 441 | 381 | 378 | 338 |
+| 4 | 4 | 15 | 303 | 288 | 303 | 231 | 231 |
+| 5 | 3 | 7 | 173 | 142 | 142 | 128 | 74 |
+| 6 | 5 | 13 | 451 | 445 | 371 | 366 | 350 |
+| 7 | 4 | 1 | 411 | 375 | 313 | 308 | 272 |
+| 8 | 4 | 17 | 338 | 311 | 311 | 256 | 209 |
+| 9 | 4 | 9 | 332 | 319 | 319 | 276 | 237 |
+| 10 | 4 | 12 | 316 | 307 | 307 | 253 | 235 |
+| 11 | 3 | 6 | 186 | 164 | 164 | 131 | 131 |
+| 12 | 5 | 4 | 490 | 441 | 381 | 378 | 338 |
+| 13 | 4 | 16 | 303 | 288 | 303 | 231 | 231 |
+| 14 | 3 | 8 | 173 | 142 | 142 | 128 | 74 |
+| 15 | 5 | 14 | 451 | 445 | 371 | 366 | 350 |
+| 16 | 4 | 2 | 411 | 375 | 313 | 308 | 272 |
+| 17 | 4 | 18 | 338 | 311 | 311 | 256 | 209 |
+| 18 | 4 | 10 | 332 | 319 | 319 | 276 | 237 |
+
+- **Scorekaartpagina:** https://www.golfbaanspierdijk.nl/scorekaart/
+- **Bestanden:** [scorecard/scorekaart-2020.jpg](golfbaan-spierdijk/scorecard/scorekaart-2020.jpg), [scorecard/page.html](golfbaan-spierdijk/scorecard/page.html), [scorecard/page-cr-heren.html](golfbaan-spierdijk/scorecard/page-cr-heren.html), [scorecard/page-cr-dames.html](golfbaan-spierdijk/scorecard/page-cr-dames.html), [scorecard/page-aanpassingen.html](golfbaan-spierdijk/scorecard/page-aanpassingen.html)
+- **Opmerking:** Holegegevens van scorekaart 2020 (9 holes, 2x gespeeld met dezelfde lengtes, aparte S.I. 10-18). LET OP: club meldt dat hole 1 wordt ingekort tot par 3 (~150 m) en hole 2 een par 4 wordt (nieuwe tee 240 geel/250 wit); voorlopig begint de ronde met twee par 3's. Kaart dus deels verouderd -> complete=false. CR/slope 18 holes van de ratingpagina's (geen datum); de 9-holeswaarden op die pagina's zijn kennelijk foutief gekopieerd (zelfde CR als 18 holes) en niet overgenomen. Nieuwe par 3-baan opent naar verwachting in 2027.
+
+<a id="kavel-2-beemster-middenbeemster"></a>
+## Golfbaan Kavel 2
+
+Negen holes met A-status in de Beemsterpolder, onderdeel van een familiebedrijf met hotel en restaurant. Door de bouwbeperkingen in het UNESCO-gebied is de baan vlak, maar sloten, een eilandgreen op hole 7 en water rond de laatste hole zorgen voor uitdaging. Greenfeespelers zijn welkom.
+
+- **Club:** Golfclub Kavel 2 (Kavel II Beemster)
+- **Adres:** Volgerweg 42, 1462 HR Middenbeemster, Noord-Holland, NL
+- **GPS:** 52.5255837, 4.9210146
+- **Afstand:** 104.3 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** vlakke polderbaan in de Beemster (UNESCO-werelderfgoed) met sloten en waterpartijen; baan max. 1,5 m hoog
+- **Opgericht:** 2004
+- **Architect:** Hans Oskam (ontwerp 2000)
+- **Telefoon:** +31 299 416 665
+- **E-mail:** info@kavel2.nl
+- **Website:** https://kavel2.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Geen lidmaatschap nodig (greenfee)
+- **Faciliteiten:** hotel, restaurant, golfschool, golfshop, golfsimulator, footgolf, par 3-baan (in course), buggyverhuur, lockers
+
+**Lus 9 holes (par 32)** — 9 holes, par 32
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel | 2107 |  |  | 32 |
+| rood | 1915 |  |  | 32 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 13 | 155 | 136 |
+| 2 | 4 | 9 | 302 | 277 |
+| 3 | 4 | 7 | 269 | 248 |
+| 4 | 3 | 15 | 126 | 106 |
+| 5 | 4 | 5 | 368 | 338 |
+| 6 | 3 | 17 | 76 | 70 |
+| 7 | 4 | 3 | 306 | 279 |
+| 8 | 3 | 11 | 194 | 176 |
+| 9 | 4 | 1 | 311 | 285 |
+
+- **Scorekaartpagina:** https://kavel2.nl/golfbaan/baanlayout/
+- **Bestanden:** [scorecard/page.html](kavel-2-beemster-middenbeemster/scorecard/page.html), [scorecard/page-hole-1.html](kavel-2-beemster-middenbeemster/scorecard/page-hole-1.html), [scorecard/page-hole-2.html](kavel-2-beemster-middenbeemster/scorecard/page-hole-2.html), [scorecard/page-hole-3.html](kavel-2-beemster-middenbeemster/scorecard/page-hole-3.html), [scorecard/page-hole-4.html](kavel-2-beemster-middenbeemster/scorecard/page-hole-4.html), [scorecard/page-hole-5.html](kavel-2-beemster-middenbeemster/scorecard/page-hole-5.html), [scorecard/page-hole-6.html](kavel-2-beemster-middenbeemster/scorecard/page-hole-6.html), [scorecard/page-hole-7.html](kavel-2-beemster-middenbeemster/scorecard/page-hole-7.html), [scorecard/page-hole-8.html](kavel-2-beemster-middenbeemster/scorecard/page-hole-8.html), [scorecard/page-hole-9.html](kavel-2-beemster-middenbeemster/scorecard/page-hole-9.html)
+- **Opmerking:** Geen scorekaart-PDF; par, S.I. en lengtes per teebox van de 9 holepagina's (tee-kleur afgeleid van icoonkleur: rood #ef2929, geel #fff130). S.I. alleen oneven (18-holesstijl), geen even S.I. voor een tweede ronde gepubliceerd. Totaal geel 2107 m, rood 1915 m (berekend). Geen course/slope rating gevonden op de site. Er wordt ook een 'in course' par 3-baan (9 holes) genoemd, zonder holegegevens.
+
+<a id="golfbaan-waterland-amsterdam"></a>
+## Golfbaan Waterland Amsterdam
+
+18-holes Championship Course (par 71, A-status) in landelijk Amsterdam-Noord, op tien minuten van het centrum. De holes slingeren langs watergangen en natuurgebied, met veel water in het spel. Daarnaast zijn er een 9-holes par 3-baan en een kortere par 3/4-lus binnen de grote baan.
+
+- **Club:** Golf Waterland (Club Golf Waterland)
+- **Adres:** Buikslotermeerdijk 141, 1027 AC Amsterdam, Noord-Holland, NL
+- **GPS:** 52.4093905, 4.9422258
+- **Afstand:** 104.9 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** landelijk Amsterdam-Noord (Waterland), holes langs watergangen en natuurgebied
+- **Telefoon:** +31 20 636 1010
+- **Website:** https://www.golfbaanwaterlandamsterdam.nl/
+- **Starttijden:** https://www.chronogolf.co.nl/club/golfbaan-waterland
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, 9-holes par 3-baan, par 3/4-lus binnen de grote baan, clubhuis/restaurant, golfshop, academy/clinics, buggy's
+
+**Lus Championship Course (18 holes)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5351 | 69.0 | 125 | 71 |
+| rood (men) | 4800 | 66.4 | 112 | 71 |
+| geel (women) | 5351 | 75.1 | 134 | 71 |
+| rood (women) | 4800 | 71.7 | 124 | 71 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 16 | 133 | 133 |
+| 2 | 4 | 14 | 222 | 208 |
+| 3 | 4 | 10 | 330 | 303 |
+| 4 | 3 | 12 | 134 | 116 |
+| 5 | 5 | 4 | 482 | 429 |
+| 6 | 4 | 6 | 340 | 285 |
+| 7 | 4 | 2 | 377 | 365 |
+| 8 | 3 | 18 | 137 | 112 |
+| 9 | 5 | 8 | 478 | 452 |
+| 10 | 4 | 7 | 339 | 323 |
+| 11 | 3 | 13 | 140 | 122 |
+| 12 | 5 | 5 | 447 | 410 |
+| 13 | 4 | 1 | 367 | 312 |
+| 14 | 4 | 17 | 257 | 230 |
+| 15 | 5 | 9 | 448 | 400 |
+| 16 | 3 | 15 | 135 | 99 |
+| 17 | 3 | 11 | 150 | 134 |
+| 18 | 5 | 3 | 435 | 367 |
+
+- **Scorekaartpagina:** https://www.golfbaanwaterlandamsterdam.nl/
+- **Bestanden:** [scorecard/Golfbaan-Waterland-18-holes-baan-Dames-Heren-aug-2022.pdf](golfbaan-waterland-amsterdam/scorecard/Golfbaan-Waterland-18-holes-baan-Dames-Heren-aug-2022.pdf), [scorecard/Golfbaan-Waterland-9-holes-baan-Dames-Heren-aug-2022.pdf](golfbaan-waterland-amsterdam/scorecard/Golfbaan-Waterland-9-holes-baan-Dames-Heren-aug-2022.pdf), [scorecard/Golfbaan-Waterland-Par-3-4-Baan-binnen-de-grote-baan-Dames-Heren-aug-2022.pdf](golfbaan-waterland-amsterdam/scorecard/Golfbaan-Waterland-Par-3-4-Baan-binnen-de-grote-baan-Dames-Heren-aug-2022.pdf), [scorecard/Golfbaan-Waterland-Par-3-baan-Dames-Heren-aug-2022.pdf](golfbaan-waterland-amsterdam/scorecard/Golfbaan-Waterland-Par-3-baan-Dames-Heren-aug-2022.pdf), [scorecard/page.html](golfbaan-waterland-amsterdam/scorecard/page.html), [scorecard/page-golfpass.html](golfbaan-waterland-amsterdam/scorecard/page-golfpass.html)
+- **Opmerking:** Officiele site publiceert alleen handicaptabellen (04-08-2022): 18 holes H geel 69,0/125, rood 66,4/112; D geel 75,1/134, rood 71,7/124; 1e negen par 35, 2e negen par 36 (9-holesratings in PDF). Par, S.I. en lengtes per hole van golfpass.com (derden), daar in yards; omgerekend naar meters (x0,9144, afgerond) -> totaal geel 5351 m en rood 4800 m, gelijk aan golfpass-totalen. Par per negen klopt met officiele tabellen. Par 3-baan (9 holes, CR geel H 24,4/63, rood D 25,3/68) en par 3/4-lus 'Groen' (18 holes par 65: H 59,4/99, D 63,6/103) zonder holegegevens niet als loop opgenomen. Grens regio: Amsterdam-Noord (Waterland) op verzoek meegenomen.
+
+<a id="golfbaan-regthuys-winkel"></a>
+## Golfbaan Regthuys
+
+Publieke golfbaan in Winkel met twee negens (Tulpenlus en Dijklus, samen par 71) en een korte par 3-lus. Opvallend zijn de hole met een green binnen de Westfriese Omringdijk en de hole in de vorm van een tulp. De baan groeide tussen 2006 en 2013 stap voor stap uit tot 27 holes en staat bekend om een gastvrije, ongedwongen sfeer.
+
+- **Club:** Golfvereniging Regthuys
+- **Adres:** Limmerschouw 49B, 1731 RM Winkel, Noord-Holland, NL
+- **GPS:** 52.754016, 4.9086498
+- **Afstand:** 105.9 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** Westfries polderlandschap met waterpartijen, o.a. een green binnen de Westfriese Omringdijk en een tulpvormige hole
+- **Opgericht:** 2006
+- **Telefoon:** +31 224 540 216
+- **E-mail:** contact@regthuysgolf.nl
+- **Website:** https://www.regthuysgolf.nl/
+- **Starttijden:** https://www.regthuysgolf.nl/reserveren
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range (Trackman), 9-holes par 3-baan (korte lus), putting green, clubhuis/horeca, golfshop, golflessen, buggy's/handicarts, footgolf, partygolf
+
+**Lus Tulpenlus + Dijklus (18 holes)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5408 | 69.4 | 123 | 71 |
+| geel (men) | 5201 | 68.3 | 124 | 71 |
+| rood (men) | 4535 | 65.5 | 108 | 71 |
+| geel (women) | 5201 | 73.5 | 136 | 71 |
+| rood (women) | 4535 | 69.8 | 125 | 71 |
+
+| Hole | Par | SI | wit | geel | rood |
+|---|---|---|---|---|---|
+| 1 | 4 | 8 | 300 | 289 | 248 |
+| 2 | 4 | 14 | 312 | 292 | 222 |
+| 3 | 5 | 2 | 448 | 442 | 407 |
+| 4 | 4 | 12 | 320 | 311 | 277 |
+| 5 | 4 | 4 | 288 | 283 | 260 |
+| 6 | 4 | 16 | 248 | 243 | 226 |
+| 7 | 3 | 10 | 150 | 145 | 135 |
+| 8 | 3 | 18 | 142 | 136 | 112 |
+| 9 | 4 | 6 | 301 | 296 | 246 |
+| 10 | 4 | 9 | 373 | 337 | 293 |
+| 11 | 3 | 17 | 186 | 160 | 130 |
+| 12 | 4 | 3 | 333 | 330 | 262 |
+| 13 | 4 | 13 | 341 | 336 | 309 |
+| 14 | 5 | 1 | 527 | 494 | 430 |
+| 15 | 5 | 7 | 435 | 430 | 388 |
+| 16 | 3 | 15 | 131 | 118 | 103 |
+| 17 | 4 | 5 | 322 | 317 | 262 |
+| 18 | 4 | 11 | 251 | 242 | 225 |
+
+**Lus Tulpenlus** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2509 | 33.5 | 120 | 35 |
+| geel (men) | 2437 | 33.0 | 118 | 35 |
+| rood (men) | 2133 | 32.3 | 102 | 35 |
+| geel (women) | 2437 | 35.9 | 130 | 35 |
+| rood (women) | 2133 | 33.9 | 126 | 35 |
+
+| Hole | Par | SI | wit | geel | rood |
+|---|---|---|---|---|---|
+| 1 | 4 | 8 | 300 | 289 | 248 |
+| 2 | 4 | 14 | 312 | 292 | 222 |
+| 3 | 5 | 2 | 448 | 442 | 407 |
+| 4 | 4 | 12 | 320 | 311 | 277 |
+| 5 | 4 | 4 | 288 | 283 | 260 |
+| 6 | 4 | 16 | 248 | 243 | 226 |
+| 7 | 3 | 10 | 150 | 145 | 135 |
+| 8 | 3 | 18 | 142 | 136 | 112 |
+| 9 | 4 | 6 | 301 | 296 | 246 |
+
+**Lus Dijklus** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2899 | 35.9 | 126 | 36 |
+| geel (men) | 2764 | 35.3 | 131 | 36 |
+| rood (men) | 2402 | 33.3 | 115 | 36 |
+| geel (women) | 2764 | 37.7 | 142 | 36 |
+| rood (women) | 2402 | 35.9 | 124 | 36 |
+
+| Hole | Par | SI | wit | geel | rood |
+|---|---|---|---|---|---|
+| 1 | 4 | 9 | 373 | 337 | 293 |
+| 2 | 3 | 17 | 186 | 160 | 130 |
+| 3 | 4 | 3 | 333 | 330 | 262 |
+| 4 | 4 | 13 | 341 | 336 | 309 |
+| 5 | 5 | 1 | 527 | 494 | 430 |
+| 6 | 5 | 7 | 435 | 430 | 388 |
+| 7 | 3 | 15 | 131 | 118 | 103 |
+| 8 | 4 | 5 | 322 | 317 | 262 |
+| 9 | 4 | 11 | 251 | 242 | 225 |
+
+**Lus Korte lus (par 3)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 728 | 23.7 | 58 | 27 |
+| rood (women) | 728 | 24.4 | 61 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 15 | 68 | 68 |
+| 2 | 3 | 11 | 78 | 78 |
+| 3 | 3 | 5 | 93 | 93 |
+| 4 | 3 | 7 | 72 | 72 |
+| 5 | 3 | 3 | 127 | 127 |
+| 6 | 3 | 1 | 89 | 89 |
+| 7 | 3 | 9 | 71 | 71 |
+| 8 | 3 | 17 | 61 | 61 |
+| 9 | 3 | 13 | 69 | 69 |
+
+- **Scorekaartpagina:** https://www.regthuysgolf.nl/onze-banen/handicaptabel-scorekaart
+- **Bestanden:** [scorecard/REG22-Scorekaart-binnen.jpg](golfbaan-regthuys-winkel/scorecard/REG22-Scorekaart-binnen.jpg), [scorecard/REG22-Scorekaart-CR-SR.jpg](golfbaan-regthuys-winkel/scorecard/REG22-Scorekaart-CR-SR.jpg), [scorecard/Hcptabel-heren.pdf](golfbaan-regthuys-winkel/scorecard/Hcptabel-heren.pdf), [scorecard/Hcptabel-dames.pdf](golfbaan-regthuys-winkel/scorecard/Hcptabel-dames.pdf), [scorecard/Hcptabel-par3-dames-heren.pdf](golfbaan-regthuys-winkel/scorecard/Hcptabel-par3-dames-heren.pdf), [scorecard/dijklus-hole1.jpg](golfbaan-regthuys-winkel/scorecard/dijklus-hole1.jpg), [scorecard/kortelus-hole1.jpg](golfbaan-regthuys-winkel/scorecard/kortelus-hole1.jpg), [scorecard/kortelus-hole2.jpg](golfbaan-regthuys-winkel/scorecard/kortelus-hole2.jpg), [scorecard/kortelus-hole3.jpg](golfbaan-regthuys-winkel/scorecard/kortelus-hole3.jpg), [scorecard/kortelus-hole4.jpg](golfbaan-regthuys-winkel/scorecard/kortelus-hole4.jpg), [scorecard/kortelus-hole5.jpg](golfbaan-regthuys-winkel/scorecard/kortelus-hole5.jpg), [scorecard/kortelus-hole6.jpg](golfbaan-regthuys-winkel/scorecard/kortelus-hole6.jpg), [scorecard/kortelus-hole7.jpg](golfbaan-regthuys-winkel/scorecard/kortelus-hole7.jpg), [scorecard/kortelus-hole8.jpg](golfbaan-regthuys-winkel/scorecard/kortelus-hole8.jpg), [scorecard/kortelus-hole9.jpg](golfbaan-regthuys-winkel/scorecard/kortelus-hole9.jpg), [scorecard/page.html](golfbaan-regthuys-winkel/scorecard/page.html)
+- **Opmerking:** Scorekaart 2022: Tulpenlus (out, par 35) + Dijklus (in, par 36) = par 71. S.I. in 18-holesstijl: Tulpenlus alleen even, Dijklus alleen oneven (9-holeslussen dus geen permutatie 1..9). Dijklus hole 1 rood: kaart slecht leesbaar (293/298), holepagina zegt 239 m; 293 gekozen omdat dat de lustotaal 2402 m van de kaart sluit. Ratings uit handicaptabellen 09-09-2021. Korte lus: par, S.I. (oneven, 18-holesstijl) en lengte uit de holepagina's (geel=rood); ratings 9 holes geel heren 23,7/58, rood dames 24,4/61; 18 holes 47,3/58 en 48,7/61.
+
+<a id="utrechtse-golfclub-amelisweerd"></a>
+## Utrechtse Golfclub Amelisweerd
+
+18-holesbaan van par 70 aan de oostrand van Utrecht, naast het landgoed Amelisweerd en vlak bij de A12/A27. Gerard Jol verdeelde de baan in drie kamers die door oude meidoornhagen worden gescheiden, met veel bomen en drie grote waterpartijen. Daarnaast is er een korte 9-holes par 3-baan en een verlichte driving range.
+
+- **Club:** Utrechtse Golfclub Amelisweerd
+- **Adres:** Mereveldseweg 7, 3585 LH Utrecht, Utrecht, NL
+- **GPS:** 52.0630525, 5.1508361
+- **Afstand:** 107.1 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** parkbaan in drie "kamers" gescheiden door meidoornhagen, met bomen en drie grote waterpartijen
+- **Architect:** Gerard Jol
+- **Telefoon:** +31 30 254 6648
+- **E-mail:** receptie@amelisweerd.nl
+- **Website:** https://amelisweerd.nl/
+- **Greenfee welkom:** True
+- **Eisen:** 18 holes: minimaal handicap 54; par 3-baan: baanpermissie (Amelisweerd/Kromme Rijn) of hcp 54
+- **Faciliteiten:** clubhuis, horeca, golfshop, driving range (verlicht), TrackMan-range, putting greens, par 3-baan (9 holes)
+
+**Lus 18 holes** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6046 | 72.4 | 135 | 70 |
+| geel (men) | 5732 | 70.4 | 138 | 70 |
+| geel (women) | 5732 | 77.0 | 142 | 70 |
+| blauw (men) | 5190 | 67.5 | 122 | 70 |
+| blauw (women) | 5190 | 73.4 | 135 | 70 |
+| rood (men) | 4848 | 65.9 | 114 | 70 |
+| rood (women) | 4848 | 71.0 | 131 | 70 |
+| oranje (men) | 4036 | 62.6 | 103 | 70 |
+| oranje (women) | 4036 | 66.1 | 111 | 70 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 12 | 337 | 308 | 268 | 268 | 241 |
+| 2 | 3 | 16 | 151 | 151 | 132 | 125 | 93 |
+| 3 | 4 | 6 | 374 | 354 | 297 | 297 | 244 |
+| 4 | 4 | 10 | 359 | 338 | 329 | 288 | 266 |
+| 5 | 3 | 18 | 174 | 158 | 151 | 135 | 92 |
+| 6 | 4 | 2 | 399 | 387 | 336 | 336 | 306 |
+| 7 | 3 | 14 | 187 | 172 | 164 | 148 | 113 |
+| 8 | 5 | 8 | 493 | 466 | 456 | 388 | 308 |
+| 9 | 4 | 4 | 384 | 373 | 320 | 315 | 265 |
+| 10 | 5 | 13 | 461 | 451 | 374 | 374 | 312 |
+| 11 | 4 | 11 | 333 | 312 | 304 | 263 | 201 |
+| 12 | 4 | 3 | 373 | 362 | 310 | 304 | 228 |
+| 13 | 3 | 15 | 206 | 158 | 158 | 137 | 113 |
+| 14 | 4 | 5 | 367 | 357 | 304 | 304 | 253 |
+| 15 | 4 | 9 | 372 | 350 | 340 | 291 | 242 |
+| 16 | 3 | 17 | 154 | 144 | 130 | 124 | 101 |
+| 17 | 4 | 1 | 408 | 387 | 380 | 320 | 275 |
+| 18 | 5 | 7 | 514 | 504 | 437 | 431 | 383 |
+
+**Lus Par 3-baan (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard (men) | 1442 | 47.3 | 61 | 54 |
+| standaard (women) | 1442 | 48.8 | 63 | 54 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 5 | 76 |
+| 2 | 3 | 7 | 83 |
+| 3 | 3 | 13 | 66 |
+| 4 | 3 | 11 | 76 |
+| 5 | 3 | 3 | 96 |
+| 6 | 3 | 1 | 104 |
+| 7 | 3 | 15 | 65 |
+| 8 | 3 | 9 | 91 |
+| 9 | 3 | 17 | 64 |
+| 10 | 3 | 6 | 76 |
+| 11 | 3 | 8 | 83 |
+| 12 | 3 | 14 | 66 |
+| 13 | 3 | 12 | 76 |
+| 14 | 3 | 4 | 96 |
+| 15 | 3 | 2 | 104 |
+| 16 | 3 | 16 | 65 |
+| 17 | 3 | 10 | 91 |
+| 18 | 3 | 18 | 64 |
+
+- **Scorekaartpagina:** https://amelisweerd.nl/golfbaan-en-faciliteiten/
+- **Bestanden:** [scorecard/Amelisweerd-WHS-tabel-Dames.pdf](utrechtse-golfclub-amelisweerd/scorecard/Amelisweerd-WHS-tabel-Dames.pdf), [scorecard/Amelisweerd-WHS-tabel-Heren.pdf](utrechtse-golfclub-amelisweerd/scorecard/Amelisweerd-WHS-tabel-Heren.pdf), [scorecard/Amelisweerd-WHS-tabel-Par-3-Baan-Dames-Heren.pdf](utrechtse-golfclub-amelisweerd/scorecard/Amelisweerd-WHS-tabel-Par-3-Baan-Dames-Heren.pdf), [scorecard/page.html](utrechtse-golfclub-amelisweerd/scorecard/page.html), [scorecard/scorekaart-18-holes.pdf](utrechtse-golfclub-amelisweerd/scorecard/scorekaart-18-holes.pdf), [scorecard/scorekaart-par-3.pdf](utrechtse-golfclub-amelisweerd/scorecard/scorekaart-par-3.pdf)
+- **Opmerking:** Scorekaart 18 holes (2023) + WHS-tabellen 02-10-2025 (CR/slope uit de nieuwste tabellen; de oudere scorekaart noemt afwijkende waarden en ook wit dames 78,5/146). Par 3-baan: één afslag, lengtes tot midden green.
+
+<a id="golfcentrum-de-hoge-dijk-amsterdam"></a>
+## Golfcentrum De Hoge Dijk
+
+De Hoge Dijk aan de zuidoostrand van Amsterdam is een openbaar golfcentrum met 27 holes, ook de thuisbasis van Golfclub Olympus. De Bullewijk-lus ligt licht glooiend en bosrijk op een voormalige vuilstort, de Holendrecht-lus is open polder met wind en water; samen vormen ze een 18-holes A-statusbaan van par 71. De kortere Abcoude-lus (par 31) is geschikt voor beginners maar biedt ook risk-reward-holes.
+
+- **Club:** Golfcentrum De Hoge Dijk / Golfclub Olympus
+- **Adres:** Abcouderstraatweg 46, 1105 AA Amsterdam, Noord-Holland, NL
+- **GPS:** 52.2871053, 4.9597621
+- **Afstand:** 107.5 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** licht glooiend op voormalige stortplaats (Bullewijk) en open polder met water (Holendrecht, Abcoude)
+- **Telefoon:** +31 294 281 241
+- **E-mail:** receptie@dehogedijk.nl
+- **Website:** https://dehogedijk.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Wedstrijdbaan: clubhandicap 54 (GVB) vereist.
+- **Faciliteiten:** 18-holes wedstrijdbaan (A-status, par 71), 9-holes Abcoude-lus (par 31), driving range (verlicht, tot 22:00), Golflounge/academy, golfshop, Brasserie, zalen
+
+**Lus Bullewijk/Holendrecht (18 holes)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6000 | 73.2 | 132 | 71 |
+| geel (men) | 5663 | 70.8 | 135 | 71 |
+| blauw (men) | 5120 | 67.9 | 128 | 71 |
+| rood (men) | 4803 | 66.9 | 116 | 71 |
+| geel (women) | 5663 | 77.4 | 140 | 71 |
+| blauw (women) | 5120 | 73.6 | 132 | 71 |
+| rood (women) | 4803 | 71.3 | 128 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 17 | 264 | 251 | 251 | 223 |
+| 2 | 4 | 9 | 357 | 340 | 293 | 293 |
+| 3 | 3 | 15 | 142 | 136 | 136 | 122 |
+| 4 | 5 | 3 | 495 | 472 | 390 | 390 |
+| 5 | 3 | 11 | 157 | 142 | 142 | 120 |
+| 6 | 4 | 1 | 405 | 382 | 334 | 334 |
+| 7 | 3 | 13 | 209 | 173 | 173 | 145 |
+| 8 | 5 | 5 | 545 | 500 | 497 | 390 |
+| 9 | 4 | 7 | 392 | 370 | 300 | 300 |
+| 10 | 4 | 16 | 298 | 294 | 294 | 264 |
+| 11 | 5 | 8 | 488 | 464 | 424 | 414 |
+| 12 | 4 | 4 | 363 | 356 | 315 | 315 |
+| 13 | 3 | 14 | 180 | 170 | 155 | 147 |
+| 14 | 4 | 2 | 424 | 398 | 342 | 342 |
+| 15 | 3 | 18 | 109 | 91 | 91 | 82 |
+| 16 | 4 | 12 | 329 | 318 | 289 | 235 |
+| 17 | 4 | 6 | 389 | 362 | 302 | 302 |
+| 18 | 5 | 10 | 454 | 444 | 392 | 385 |
+
+**Lus Abcoude 18 holes (2x 9)** — 18 holes, par 62
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3582 | 58.8 | 95 | 62 |
+| rood (men) | 3132 | 56.6 | 87 | 62 |
+| oranje (men) | 2792 | 54.7 | 85 | 62 |
+| geel (women) | 3582 | 62.5 | 103 | 62 |
+| rood (women) | 3132 | 59.7 | 97 | 62 |
+| oranje (women) | 2792 | 57.8 | 89 | 62 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 15 | 117 | 117 | 117 |
+| 2 | 4 | 3 | 318 | 280 | 229 |
+| 3 | 4 | 7 | 284 | 240 | 189 |
+| 4 | 4 | 5 | 257 | 201 | 201 |
+| 5 | 3 | 9 | 150 | 139 | 135 |
+| 6 | 3 | 13 | 132 | 117 | 110 |
+| 7 | 3 | 17 | 112 | 112 | 85 |
+| 8 | 4 | 1 | 302 | 253 | 230 |
+| 9 | 3 | 11 | 122 | 110 | 103 |
+| 10 | 3 | 16 | 111 | 111 | 111 |
+| 11 | 4 | 4 | 318 | 280 | 229 |
+| 12 | 4 | 8 | 284 | 240 | 189 |
+| 13 | 4 | 6 | 257 | 201 | 201 |
+| 14 | 3 | 10 | 150 | 139 | 135 |
+| 15 | 3 | 14 | 132 | 117 | 110 |
+| 16 | 3 | 18 | 112 | 112 | 85 |
+| 17 | 4 | 2 | 302 | 253 | 230 |
+| 18 | 3 | 12 | 122 | 110 | 103 |
+
+**Lus Abcoude 9 holes** — 9 holes, par 31
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1794 | 29.4 | 95 | 31 |
+| rood (men) | 1569 | 28.3 | 87 | 31 |
+| oranje (men) | 1399 | 27.4 | 85 | 31 |
+| geel (women) | 1794 | 31.3 | 103 | 31 |
+| rood (women) | 1569 | 29.9 | 97 | 31 |
+| oranje (women) | 1399 | 28.9 | 89 | 31 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 15 | 117 | 117 | 117 |
+| 2 | 4 | 3 | 318 | 280 | 229 |
+| 3 | 4 | 7 | 284 | 240 | 189 |
+| 4 | 4 | 5 | 257 | 201 | 201 |
+| 5 | 3 | 9 | 150 | 139 | 135 |
+| 6 | 3 | 13 | 132 | 117 | 110 |
+| 7 | 3 | 17 | 112 | 112 | 85 |
+| 8 | 4 | 1 | 302 | 253 | 230 |
+| 9 | 3 | 11 | 122 | 110 | 103 |
+
+**Lus Abcoude/Bullewijk (18 holes)** — 18 holes, par 66
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 4560 | 64.5 | 115 | 66 |
+| rood (men) | 3886 | 62.1 | 104 | 66 |
+| geel (women) | 4560 | 69.7 | 123 | 66 |
+| rood (women) | 3886 | 65.2 | 112 | 66 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 |  | 117 | 117 |
+| 2 | 4 |  | 318 | 280 |
+| 3 | 4 |  | 284 | 240 |
+| 4 | 4 |  | 257 | 201 |
+| 5 | 3 |  | 150 | 139 |
+| 6 | 3 |  | 132 | 117 |
+| 7 | 3 |  | 112 | 112 |
+| 8 | 4 |  | 302 | 253 |
+| 9 | 3 |  | 122 | 110 |
+| 10 | 4 |  | 251 | 223 |
+| 11 | 4 |  | 340 | 293 |
+| 12 | 3 |  | 136 | 122 |
+| 13 | 5 |  | 472 | 390 |
+| 14 | 3 |  | 142 | 120 |
+| 15 | 4 |  | 382 | 334 |
+| 16 | 3 |  | 173 | 145 |
+| 17 | 5 |  | 500 | 390 |
+| 18 | 4 |  | 370 | 300 |
+
+**Lus Abcoude/Holendrecht (18 holes)** — 18 holes, par 67
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 4691 | 65.1 | 114 | 67 |
+| rood (men) | 4055 | 62.9 | 102 | 67 |
+| geel (women) | 4691 | 70.2 | 120 | 67 |
+| rood (women) | 4055 | 65.9 | 113 | 67 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 |  | 117 | 117 |
+| 2 | 4 |  | 318 | 280 |
+| 3 | 4 |  | 284 | 240 |
+| 4 | 4 |  | 257 | 201 |
+| 5 | 3 |  | 150 | 139 |
+| 6 | 3 |  | 132 | 117 |
+| 7 | 3 |  | 112 | 112 |
+| 8 | 4 |  | 302 | 253 |
+| 9 | 3 |  | 122 | 110 |
+| 10 | 4 |  | 294 | 264 |
+| 11 | 5 |  | 464 | 414 |
+| 12 | 4 |  | 356 | 315 |
+| 13 | 3 |  | 170 | 147 |
+| 14 | 4 |  | 398 | 342 |
+| 15 | 3 |  | 91 | 82 |
+| 16 | 4 |  | 318 | 235 |
+| 17 | 4 |  | 362 | 302 |
+| 18 | 5 |  | 444 | 385 |
+
+- **Scorekaartpagina:** https://dehogedijk.nl/course-slope-rating/
+- **Bestanden:** [scorecard/page.html](golfcentrum-de-hoge-dijk-amsterdam/scorecard/page.html), [scorecard/page-baan-layout.html](golfcentrum-de-hoge-dijk-amsterdam/scorecard/page-baan-layout.html), [scorecard/230253-SCOREKAART-HOGE-DIJK-HR-02-05-2023.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/230253-SCOREKAART-HOGE-DIJK-HR-02-05-2023.pdf), [scorecard/210302-MULLER-OLYMPUS-SCOREKAART-ABCOUDE-HR.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/210302-MULLER-OLYMPUS-SCOREKAART-ABCOUDE-HR.pdf), [scorecard/De-Hoge-Dijk-Bullewijk-Holendrecht-Heren-9-en-18-holes.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/De-Hoge-Dijk-Bullewijk-Holendrecht-Heren-9-en-18-holes.pdf), [scorecard/De-Hoge-Dijk-Bullewijk-Holendrecht-Dames-9-en-18-holes.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/De-Hoge-Dijk-Bullewijk-Holendrecht-Dames-9-en-18-holes.pdf), [scorecard/De-Hoge-Dijk-18-holes-Abcoudebaan-Heren.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/De-Hoge-Dijk-18-holes-Abcoudebaan-Heren.pdf), [scorecard/De-Hoge-Dijk-18-holes-Abcoudebaan-Dames.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/De-Hoge-Dijk-18-holes-Abcoudebaan-Dames.pdf), [scorecard/De-Hoge-Dijk-9-holes-Abcoudebaan-Heren.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/De-Hoge-Dijk-9-holes-Abcoudebaan-Heren.pdf), [scorecard/De-Hoge-Dijk-9-holes-Abcoudebaan-Dames.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/De-Hoge-Dijk-9-holes-Abcoudebaan-Dames.pdf), [scorecard/De-Hoge-Dijk-18-holes-Abcoude-Bullewijkbaan-Heren.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/De-Hoge-Dijk-18-holes-Abcoude-Bullewijkbaan-Heren.pdf), [scorecard/De-Hoge-Dijk-18-holes-Abcoude-Bullewijkbaan-Dames.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/De-Hoge-Dijk-18-holes-Abcoude-Bullewijkbaan-Dames.pdf), [scorecard/De-Hoge-Dijk-18-holes-Abcoude-Holendrechtbaan-Heren.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/De-Hoge-Dijk-18-holes-Abcoude-Holendrechtbaan-Heren.pdf), [scorecard/De-Hoge-Dijk-18-holes-Abcoude-Holendrechtbaan-Dames.pdf](golfcentrum-de-hoge-dijk-amsterdam/scorecard/De-Hoge-Dijk-18-holes-Abcoude-Holendrechtbaan-Dames.pdf)
+- **Opmerking:** Scorekaart Bullewijk/Holendrecht 02-05-2023 (tees 60/57/51/48 = wit/geel/blauw/rood); sinds jan. 2023 is Bullewijk de eerste negen. CR/SR heren en dames staan op de kaart en in de WHS-tabellen. Oranje tee (B/H heren 64,5/107, dames 68,5/117; Abcoude-combinaties heren 60,9/100 en 61,2/98, dames 63,7/106 en 63,7/103) zonder lengtes voor Bullewijk/Holendrecht, daarom alleen bij de Abcoude-lus opgenomen. Abcoude-kaart (2021): hole 10 is 111 m, hole 1 117 m; overige holes gelijk. Combinaties Abcoude/Bullewijk en Abcoude/Holendrecht: ratings officieel, maar geen S.I. gepubliceerd en volgorde (Abcoude eerst) aangenomen, daarom complete=false. Alle totalen van de kaart kloppen met de holesom.
+
+<a id="old-course-loenen"></a>
+## Old Course Loenen
+
+Negen-holesbaan van een vereniging uit 2007 aan de Rijksstraatweg in Loenen aan de Vecht. Met vijf afslagkleuren en een aparte combinatiebaan (andere afslagen op de tweede negen) speel je 18 holes met afwisseling. Gasten zijn welkom na telefonische reservering; er is een brasserie op het terrein.
+
+- **Club:** Golfclub Old Course Loenen
+- **Adres:** Rijksstraatweg 171, 3632 AC Loenen aan de Vecht, Utrecht, NL
+- **GPS:** 52.2121857, 5.0087294
+- **Afstand:** 107.5 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkbaan langs de Vecht
+- **Opgericht:** 2007
+- **Telefoon:** +31 294 237 600
+- **E-mail:** info@oldcourseloenen.nl
+- **Website:** https://oldcourseloenen.nl/
+- **Starttijden:** https://www.nexxchange.com/golfclub/old-course-loenen
+- **Greenfee welkom:** True
+- **Eisen:** greenfee alleen na reservering vooraf; niet op vrijdagmiddag 12-16 uur en zondagochtend
+- **Faciliteiten:** clubhuis, brasserie, driving range, handicarts, buggy (op aanvraag)
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6012 | 73.3 | 135 | 72 |
+| geel (men) | 5452 | 70.2 | 124 | 72 |
+| geel (women) | 5452 | 76.0 | 140 | 72 |
+| blauw (men) | 5054 | 68.3 | 120 | 72 |
+| blauw (women) | 5054 | 73.6 | 132 | 72 |
+| rood (men) | 4550 | 65.0 | 118 | 72 |
+| rood (women) | 4550 | 70.1 | 129 | 72 |
+| oranje (men) | 4032 | 63.6 | 110 | 72 |
+| oranje (women) | 4032 | 66.9 | 118 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 335 | 317 | 262 | 262 | 232 |
+| 2 | 4 | 5 | 330 | 277 | 259 | 234 | 212 |
+| 3 | 4 | 9 | 357 | 316 | 295 | 250 | 218 |
+| 4 | 3 | 17 | 150 | 126 | 126 | 108 | 108 |
+| 5 | 3 | 15 | 167 | 150 | 150 | 132 | 114 |
+| 6 | 4 | 1 | 394 | 352 | 328 | 291 | 251 |
+| 7 | 5 | 7 | 481 | 433 | 395 | 357 | 314 |
+| 8 | 5 | 3 | 467 | 447 | 435 | 380 | 340 |
+| 9 | 4 | 13 | 325 | 308 | 277 | 261 | 227 |
+| 10 | 4 | 12 | 335 | 317 | 262 | 262 | 232 |
+| 11 | 4 | 6 | 330 | 277 | 259 | 234 | 212 |
+| 12 | 4 | 10 | 357 | 316 | 295 | 250 | 218 |
+| 13 | 3 | 18 | 150 | 126 | 126 | 108 | 108 |
+| 14 | 3 | 16 | 167 | 150 | 150 | 132 | 114 |
+| 15 | 4 | 2 | 394 | 352 | 328 | 291 | 251 |
+| 16 | 5 | 8 | 481 | 433 | 395 | 357 | 314 |
+| 17 | 5 | 4 | 467 | 447 | 435 | 380 | 340 |
+| 18 | 4 | 14 | 325 | 308 | 277 | 261 | 227 |
+
+**Lus 18 holes combinatiebaan** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel combi (men) | 5732 | 71.7 | 130 | 72 |
+| rood combi (women) | 4802 | 71.9 | 130 | 72 |
+
+| Hole | Par | SI | geel combi | rood combi |
+|---|---|---|---|---|
+| 1 | 4 | 13 | 317 | 262 |
+| 2 | 4 | 5 | 330 | 259 |
+| 3 | 4 | 9 | 316 | 250 |
+| 4 | 3 | 17 | 150 | 126 |
+| 5 | 3 | 15 | 150 | 132 |
+| 6 | 4 | 1 | 394 | 328 |
+| 7 | 5 | 7 | 433 | 357 |
+| 8 | 5 | 3 | 467 | 435 |
+| 9 | 4 | 11 | 308 | 261 |
+| 10 | 4 | 12 | 335 | 262 |
+| 11 | 4 | 14 | 277 | 234 |
+| 12 | 4 | 2 | 357 | 295 |
+| 13 | 3 | 18 | 126 | 108 |
+| 14 | 3 | 16 | 167 | 150 |
+| 15 | 4 | 8 | 352 | 291 |
+| 16 | 5 | 4 | 481 | 395 |
+| 17 | 5 | 6 | 447 | 380 |
+| 18 | 4 | 10 | 325 | 277 |
+
+- **Scorekaartpagina:** https://oldcourseloenen.nl/de-baan/scorekaart-en-handicap/
+- **Bestanden:** [scorecard/OCL_WHS_Scorekaart_2022-05-07.pdf](old-course-loenen/scorecard/OCL_WHS_Scorekaart_2022-05-07.pdf), [scorecard/OCL_WHS_tabel_2021-07-15_Dames_18-holes.pdf](old-course-loenen/scorecard/OCL_WHS_tabel_2021-07-15_Dames_18-holes.pdf), [scorecard/OCL_WHS_tabel_2021-07-15_Dames_9-holes.pdf](old-course-loenen/scorecard/OCL_WHS_tabel_2021-07-15_Dames_9-holes.pdf), [scorecard/OCL_WHS_tabel_2021-07-15_Dames_Combinatiebaan.pdf](old-course-loenen/scorecard/OCL_WHS_tabel_2021-07-15_Dames_Combinatiebaan.pdf), [scorecard/OCL_WHS_tabel_2021-07-15_Heren_18-holes.pdf](old-course-loenen/scorecard/OCL_WHS_tabel_2021-07-15_Heren_18-holes.pdf), [scorecard/OCL_WHS_tabel_2021-07-15_Heren_9-holes.pdf](old-course-loenen/scorecard/OCL_WHS_tabel_2021-07-15_Heren_9-holes.pdf), [scorecard/OCL_WHS_tabel_2021-07-15_Heren_Combinatiebaan.pdf](old-course-loenen/scorecard/OCL_WHS_tabel_2021-07-15_Heren_Combinatiebaan.pdf), [scorecard/page.html](old-course-loenen/scorecard/page.html)
+- **Opmerking:** Scorekaart 07-05-2022, WHS-tabellen 15-07-2021 (combinatiebaan 20-07-2021). 9 holes die 2x gespeeld worden met eigen S.I. voor 10-18. Combinatiebaan: heren mix van wit/geel afslagen, dames mix van blauw/rood. Aparte 9-holes ratings staan in de PDF's.
+
+<a id="amsterdam-old-course-duivendrecht"></a>
+## Amsterdam Old Course
+
+Amsterdam Old Course in Duivendrecht is de oudste golfbaan van Amsterdam: de baan en het clubhuis van architect Warners openden in 1935, met een ontwerp van het bureau Colt, Alison & Morrison. Door de aanleg van spoorlijnen bleven er negen holes over, die tussen bomenrijen en water in de polder liggen. Per tee verschilt soms de par van een hole, zodat de baan met wisselende tees als 18 holes kan worden gespeeld.
+
+- **Club:** Golfclub Amsterdam Old Course
+- **Adres:** Zwarte Laantje 4, 1114 BA Amsterdam-Duivendrecht, Noord-Holland, NL
+- **GPS:** 52.31854, 4.93669
+- **Afstand:** 107.8 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** polderbaan in de Duivendrechtse polder met bomenrijen, sloten en water, ingeklemd tussen spoorlijnen
+- **Opgericht:** 1935
+- **Architect:** Colt, Alison & Morrison (1935); sindsdien meermaals gewijzigd
+- **Telefoon:** +31 20 694 3650
+- **E-mail:** info@amsterdamoldcourse.nl
+- **Website:** https://www.amsterdamoldcourse.nl/
+- **Starttijden:** https://www.amsterdamoldcourse.nl/de-baan/starttijd-reserveren-teetime-reservation/
+- **Greenfee welkom:** True
+- **Eisen:** Geldige NGF-pas/WHS; greenfee ma-do 09:00-13:30, vr/za beperkt, niet op zon- en feestdagen; weekend max. handicap 36.
+- **Faciliteiten:** 9-holes baan (met verschillende tees als 18 holes te spelen), driving range, golf academy, historisch clubhuis (1935) met restaurant
+
+**Lus 18 holes geel/rood (2x 9)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5186 | 69.0 | 131 | 72 |
+| rood (men) | 4656 | 66.6 | 117 | 72 |
+| geel (women) | 5186 | 74.5 | 141 | 72 |
+| rood (women) | 4656 | 71.4 | 130 | 72 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 5 | 15 | 419 | 404 |
+| 2 | 4 | 5 | 393 | 341 |
+| 3 | 4 | 1 | 289 | 278 |
+| 4 | 3 | 11 | 103 | 103 |
+| 5 | 4 | 7 | 310 | 268 |
+| 6 | 4 | 17 | 250 | 213 |
+| 7 | 3 | 9 | 115 | 105 |
+| 8 | 4 | 13 | 253 | 196 |
+| 9 | 5 | 3 | 461 | 420 |
+| 10 | 5 | 8 | 419 | 404 |
+| 11 | 4 | 10 | 393 | 341 |
+| 12 | 4 | 2 | 289 | 278 |
+| 13 | 3 | 16 | 103 | 103 |
+| 14 | 4 | 6 | 310 | 268 |
+| 15 | 4 | 18 | 250 | 213 |
+| 16 | 3 | 14 | 115 | 105 |
+| 17 | 4 | 12 | 253 | 196 |
+| 18 | 5 | 4 | 461 | 420 |
+
+**Lus 18 holes wit (2x 9)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5314 | 69.4 | 132 | 70 |
+
+| Hole | Par | SI | wit |
+|---|---|---|---|
+| 1 | 4 | 15 | 404 |
+| 2 | 5 | 5 | 450 |
+| 3 | 4 | 1 | 317 |
+| 4 | 3 | 11 | 103 |
+| 5 | 4 | 7 | 340 |
+| 6 | 4 | 17 | 250 |
+| 7 | 3 | 9 | 115 |
+| 8 | 3 | 13 | 196 |
+| 9 | 5 | 3 | 482 |
+| 10 | 4 | 8 | 404 |
+| 11 | 5 | 10 | 450 |
+| 12 | 4 | 2 | 317 |
+| 13 | 3 | 16 | 103 |
+| 14 | 4 | 6 | 340 |
+| 15 | 4 | 18 | 250 |
+| 16 | 3 | 14 | 115 |
+| 17 | 3 | 12 | 196 |
+| 18 | 5 | 4 | 482 |
+
+**Lus 18 holes blauw (2x 9)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| blauw (men) | 5064 | 68.2 | 128 | 72 |
+| blauw (women) | 5064 | 73.8 | 141 | 72 |
+
+| Hole | Par | SI | blauw |
+|---|---|---|---|
+| 1 | 4 | 15 | 358 |
+| 2 | 5 | 5 | 433 |
+| 3 | 4 | 1 | 317 |
+| 4 | 3 | 11 | 103 |
+| 5 | 4 | 7 | 293 |
+| 6 | 4 | 17 | 250 |
+| 7 | 3 | 9 | 105 |
+| 8 | 4 | 13 | 253 |
+| 9 | 5 | 3 | 420 |
+| 10 | 4 | 8 | 358 |
+| 11 | 5 | 10 | 433 |
+| 12 | 4 | 2 | 317 |
+| 13 | 3 | 16 | 103 |
+| 14 | 4 | 6 | 293 |
+| 15 | 4 | 18 | 250 |
+| 16 | 3 | 14 | 105 |
+| 17 | 4 | 12 | 253 |
+| 18 | 5 | 4 | 420 |
+
+**Lus 18 holes routing geel-wit** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel-wit (men) | 5250 | 69.2 | 131 | 71 |
+| geel-wit (women) | 5250 | 75.0 | 140 | 71 |
+
+| Hole | Par | SI | geel-wit |
+|---|---|---|---|
+| 1 | 5 | 15 | 419 |
+| 2 | 4 | 5 | 393 |
+| 3 | 4 | 1 | 289 |
+| 4 | 3 | 11 | 103 |
+| 5 | 4 | 7 | 310 |
+| 6 | 4 | 17 | 250 |
+| 7 | 3 | 9 | 115 |
+| 8 | 4 | 13 | 253 |
+| 9 | 5 | 3 | 461 |
+| 10 | 4 | 8 | 404 |
+| 11 | 5 | 10 | 450 |
+| 12 | 4 | 2 | 317 |
+| 13 | 3 | 16 | 103 |
+| 14 | 4 | 6 | 340 |
+| 15 | 4 | 18 | 250 |
+| 16 | 3 | 14 | 115 |
+| 17 | 3 | 12 | 196 |
+| 18 | 5 | 4 | 482 |
+
+**Lus 18 holes routing rood-blauw** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| rood-blauw (men) | 4860 | 67.5 | 122 | 72 |
+| rood-blauw (women) | 4860 | 72.6 | 135 | 72 |
+
+| Hole | Par | SI | rood-blauw |
+|---|---|---|---|
+| 1 | 5 | 15 | 404 |
+| 2 | 4 | 5 | 341 |
+| 3 | 4 | 1 | 278 |
+| 4 | 3 | 11 | 103 |
+| 5 | 4 | 7 | 268 |
+| 6 | 4 | 17 | 213 |
+| 7 | 3 | 9 | 105 |
+| 8 | 4 | 13 | 196 |
+| 9 | 5 | 3 | 420 |
+| 10 | 4 | 8 | 358 |
+| 11 | 5 | 10 | 433 |
+| 12 | 4 | 2 | 317 |
+| 13 | 3 | 16 | 103 |
+| 14 | 4 | 6 | 293 |
+| 15 | 4 | 18 | 250 |
+| 16 | 3 | 14 | 105 |
+| 17 | 4 | 12 | 253 |
+| 18 | 5 | 4 | 420 |
+
+- **Scorekaartpagina:** https://www.amsterdamoldcourse.nl/de-baan/scorekaart/
+- **Bestanden:** [scorecard/page.html](amsterdam-old-course-duivendrecht/scorecard/page.html), [scorecard/aoc-scorecard-binnenzijde-def-a6-aug2019-v1-3mmafloop.pdf](amsterdam-old-course-duivendrecht/scorecard/aoc-scorecard-binnenzijde-def-a6-aug2019-v1-3mmafloop.pdf), [scorecard/scorekaart-screenshot-2019.png](amsterdam-old-course-duivendrecht/scorecard/scorekaart-screenshot-2019.png), [scorecard/scorekaart-screenshot-2021.png](amsterdam-old-course-duivendrecht/scorecard/scorekaart-screenshot-2021.png), [scorecard/aoc-whs-tabel-18-holes-heren.pdf](amsterdam-old-course-duivendrecht/scorecard/aoc-whs-tabel-18-holes-heren.pdf), [scorecard/aoc-whs-tabel-18-holes-dames.pdf](amsterdam-old-course-duivendrecht/scorecard/aoc-whs-tabel-18-holes-dames.pdf), [scorecard/aoc-whs-tabel-18-holes-routing-heren.pdf](amsterdam-old-course-duivendrecht/scorecard/aoc-whs-tabel-18-holes-routing-heren.pdf), [scorecard/aoc-whs-tabel-18-holes-routing-dames.pdf](amsterdam-old-course-duivendrecht/scorecard/aoc-whs-tabel-18-holes-routing-dames.pdf), [scorecard/aoc-whs-tabel-9-holes-heren.pdf](amsterdam-old-course-duivendrecht/scorecard/aoc-whs-tabel-9-holes-heren.pdf), [scorecard/aoc-whs-tabel-9-holes-dames.pdf](amsterdam-old-course-duivendrecht/scorecard/aoc-whs-tabel-9-holes-dames.pdf)
+- **Opmerking:** Scorekaart aug. 2019 (één kaart per teekleur, par per hole verschilt per tee: wit par 35, geel/rood/blauw par 36); S.I. OUT/IN gelijk voor alle tees. CR/slope uit WHS-tabellen 05-01-2021 (18 holes = 2x9, plus routings Geel-Wit en Rood-Blauw; aangenomen dat de eerste kleur de eerste negen is). Kaarttotalen wijken af van de holesom: geel kaart 2565 / som 2593, rood 2363 / 2328, blauw 2542 / 2532; wit klopt (2657). 9-holes ratings: heren wit 34,7/132, geel 34,5/131, blauw 34,1/128, rood 33,3/117; dames geel 37,3/141, blauw 36,9/141, rood 35,7/130.
+
+<a id="golfbaan-ameland-hollum"></a>
+## Golfbaan Ameland
+
+Eilandbaan aan de duinrand bij Hollum op de westpunt van Ameland. De 9 holes van de Dûnbaan hebben een linkskarakter met natuurlijke glooiingen en veel wind van zee; met aparte S.I. voor de tweede ronde wordt 18 holes gespeeld. Naast de grote baan ligt de Wadbaan, een 9 holes par 3-baan waar ook beginners zonder handicap terechtkunnen.
+
+- **Club:** Golfvereniging Ameland
+- **Adres:** Oosterhiemweg 20, 9161 CZ Hollum (Ameland), Friesland, NL
+- **GPS:** 53.44864, 5.643
+- **Afstand:** 108.9 km
+- **Type:** 9-holes
+- **Holes:** 18
+- **Landschap:** duinen/links
+- **Telefoon:** 0519 554219
+- **E-mail:** info@golfbaanameland.nl
+- **Website:** https://golfbaanameland.nl/
+- **Starttijden:** https://golfbaanameland.teecontrol.com/
+- **Greenfee welkom:** True
+- **Eisen:** Dûnbaan (9 holes): baanpermissie (handicap 54) vereist; Wadbaan (par 3): vrij toegankelijk, geen handicap nodig.
+- **Faciliteiten:** driving range, oefenfaciliteiten, par 3-baan 9 holes (Wadbaan), clubhuis, restaurant De Bunker, golfshop, golfschool, materiaalverhuur
+
+**Lus Dûnbaan (9 holes, 2x voor 18)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6160 | 73.3 | 128 | 72 |
+| geel (men) | 5826 | 71.4 | 130 | 72 |
+| blauw (men) | 5130 | 68.6 | 112 | 72 |
+| rood (men) | 4908 | 67.7 | 106 | 72 |
+| oranje (men) | 4056 | 63.4 | 99 | 72 |
+| geel (women) | 5826 | 77.9 | 136 | 72 |
+| blauw (women) | 5130 | 73.7 | 128 | 72 |
+| rood (women) | 4908 | 72.9 | 127 | 72 |
+| oranje (women) | 4056 | 66.6 | 110 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 17 | 298 | 294 | 257 | 225 | 200 |
+| 2 | 5 | 13 | 461 | 440 | 432 | 399 | 319 |
+| 3 | 4 | 5 | 383 | 351 | 340 | 330 | 272 |
+| 4 | 3 | 15 | 155 | 148 | 144 | 137 | 121 |
+| 5 | 4 | 3 | 330 | 318 | 276 | 271 | 207 |
+| 6 | 4 | 7 | 366 | 345 | 281 | 279 | 248 |
+| 7 | 4 | 1 | 412 | 382 | 341 | 333 | 246 |
+| 8 | 5 | 11 | 496 | 469 | 356 | 347 | 311 |
+| 9 | 3 | 9 | 179 | 166 | 138 | 133 | 104 |
+| 10 | 4 | 18 | 298 | 294 | 257 | 225 | 200 |
+| 11 | 5 | 14 | 461 | 440 | 432 | 399 | 319 |
+| 12 | 4 | 6 | 383 | 351 | 340 | 330 | 272 |
+| 13 | 3 | 16 | 155 | 148 | 144 | 137 | 121 |
+| 14 | 4 | 4 | 330 | 318 | 276 | 271 | 207 |
+| 15 | 4 | 8 | 366 | 345 | 281 | 279 | 248 |
+| 16 | 4 | 2 | 412 | 382 | 341 | 333 | 246 |
+| 17 | 5 | 12 | 496 | 469 | 356 | 347 | 311 |
+| 18 | 3 | 10 | 179 | 166 | 138 | 133 | 104 |
+
+**Lus Wadbaan par 3 (9 holes, 2x voor 18)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1828 | 49.7 | 74 | 54 |
+| rood (women) | 1828 | 50.9 | 72 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 15 | 98 | 98 |
+| 2 | 3 | 9 | 97 | 97 |
+| 3 | 3 | 17 | 85 | 85 |
+| 4 | 3 | 3 | 130 | 130 |
+| 5 | 3 | 7 | 87 | 87 |
+| 6 | 3 | 1 | 120 | 120 |
+| 7 | 3 | 13 | 100 | 100 |
+| 8 | 3 | 11 | 97 | 97 |
+| 9 | 3 | 5 | 100 | 100 |
+| 10 | 3 | 16 | 98 | 98 |
+| 11 | 3 | 10 | 97 | 97 |
+| 12 | 3 | 18 | 85 | 85 |
+| 13 | 3 | 4 | 130 | 130 |
+| 14 | 3 | 8 | 87 | 87 |
+| 15 | 3 | 2 | 120 | 120 |
+| 16 | 3 | 14 | 100 | 100 |
+| 17 | 3 | 12 | 97 | 97 |
+| 18 | 3 | 6 | 100 | 100 |
+
+- **Scorekaartpagina:** https://golfbaanameland.nl/praktisch/handicap-tabellen/
+- **Bestanden:** [scorecard/Ameland-Par-3-Baan-Dames-en-Heren.pdf](golfbaan-ameland-hollum/scorecard/Ameland-Par-3-Baan-Dames-en-Heren.pdf), [scorecard/Dames-18-holes-2021.pdf](golfbaan-ameland-hollum/scorecard/Dames-18-holes-2021.pdf), [scorecard/Heren-18-holes-2021-1.pdf](golfbaan-ameland-hollum/scorecard/Heren-18-holes-2021-1.pdf), [scorecard/binnenzijde-scorekaart-Grote-Baan.pdf](golfbaan-ameland-hollum/scorecard/binnenzijde-scorekaart-Grote-Baan.pdf), [scorecard/binnenzijde-scorekaart-PAR-3.pdf](golfbaan-ameland-hollum/scorecard/binnenzijde-scorekaart-PAR-3.pdf)
+- **Opmerking:** Scorekaart grote baan (PDF, 2026-05) met lengtes per tee wit/geel/blauw/rood/oranje, par en SI voor holes 1-9 en 10-18 (zelfde holes, eigen SI). Som holes = out 3080/2913/2565/2454/2028. CR/slope uit NGF-baanhandicaptabellen 18 holes d.d. 05-01-2021 (heren 5 tees, dames geel/blauw/rood/oranje); 9-holes tabellen ook op de site. Wadbaan: kaart heeft één lengtekolom (geel/rood-tees, ratingtabel noemt geel heren en rood dames) plus kortere A-tees (groen, zonder SI/rating): 70,74,45,65,67,70,67,70,83 = 611 m per 9. SI hole 18 staat op de kaart als 5 (zelfde als hole 9, 6 ontbreekt); hier als 6 overgenomen (Hole19 "Pitch & Putt Golf Ameland" = deze Wadbaan geeft ook SI 6). Website blokkeert curl (403); bestanden via WebFetch opgehaald, page.html kon daardoor niet worden opgeslagen. Project gestart in 1995 (oprichtingsjaar baan niet expliciet).
+
+<a id="golfbaan-de-zaanse-wijdewormer"></a>
+## Golfbaan De Zaanse
+
+18-holes polderbaan (par 71, A-status) in de Wijde Wormer tussen Zaandam en Purmerend, thuisbasis van de Zaanse Golf Club. De club opende hier in 1991 negen holes op een voormalig zwembadterrein; in 2008 volgde de uitbreiding naar 18 holes. Gasten zijn zonder lidmaatschap welkom en er is een TrackMan-range.
+
+- **Club:** Zaanse Golf Club
+- **Adres:** Zuiderweg 68, 1456 NH Wijdewormer, Noord-Holland, NL
+- **GPS:** 52.4716067, 4.8634835
+- **Afstand:** 108.9 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** polderbaan in de Wijde Wormer (voormalig zwembadterrein), veel water
+- **Opgericht:** 1991
+- **Telefoon:** +31 299 438 199
+- **E-mail:** info@dezaanse.nl
+- **Website:** https://dezaanse.nl/
+- **Starttijden:** https://dezaanse.nl/boek-nu
+- **Greenfee welkom:** True
+- **Faciliteiten:** TrackMan driving range, 4 par 3-oefenholes, practice areas, restaurant/bar, golfacademy, lockers
+
+**Lus 18 holes (par 71)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5752 | 72.0 | 135 | 71 |
+| geel (men) | 5505 | 70.2 | 132 | 71 |
+| blauw (men) | 5084 | 68.3 | 129 | 71 |
+| rood (men) | 4704 | 66.4 | 124 | 71 |
+| oranje (men) | 3862 | 62.7 | 108 | 71 |
+| geel (women) | 5505 | 76.9 | 146 | 71 |
+| blauw (women) | 5084 | 74.2 | 132 | 71 |
+| rood (women) | 4704 | 71.3 | 126 | 71 |
+| oranje (women) | 3862 | 65.5 | 119 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 293 | 287 | 280 | 255 | 200 |
+| 2 | 3 | 11 | 146 | 139 | 139 | 126 | 80 |
+| 3 | 5 | 13 | 446 | 434 | 366 | 354 | 350 |
+| 4 | 4 | 17 | 301 | 287 | 287 | 245 | 202 |
+| 5 | 4 | 7 | 328 | 318 | 308 | 263 | 198 |
+| 6 | 4 | 5 | 363 | 349 | 338 | 290 | 217 |
+| 7 | 5 | 3 | 495 | 480 | 473 | 396 | 363 |
+| 8 | 3 | 15 | 164 | 144 | 144 | 126 | 99 |
+| 9 | 4 | 1 | 423 | 364 | 356 | 298 | 236 |
+| 10 | 4 | 8 | 385 | 364 | 314 | 308 | 257 |
+| 11 | 3 | 18 | 136 | 132 | 121 | 114 | 65 |
+| 12 | 5 | 12 | 450 | 450 | 379 | 371 | 347 |
+| 13 | 4 | 6 | 350 | 342 | 293 | 293 | 233 |
+| 14 | 3 | 14 | 163 | 158 | 146 | 146 | 103 |
+| 15 | 5 | 2 | 522 | 491 | 416 | 416 | 356 |
+| 16 | 4 | 10 | 312 | 303 | 266 | 262 | 196 |
+| 17 | 3 | 16 | 139 | 131 | 131 | 118 | 90 |
+| 18 | 4 | 4 | 336 | 332 | 327 | 323 | 270 |
+
+- **Scorekaartpagina:** https://dezaanse.nl/golf/baaninformatie
+- **Bestanden:** [scorecard/2025_de_zaanse_scorekaart_vs03_def_lr.pdf](golfbaan-de-zaanse-wijdewormer/scorecard/2025_de_zaanse_scorekaart_vs03_def_lr.pdf), [scorecard/handicap_tabel.pdf](golfbaan-de-zaanse-wijdewormer/scorecard/handicap_tabel.pdf), [scorecard/page.html](golfbaan-de-zaanse-wijdewormer/scorecard/page.html)
+- **Opmerking:** Scorekaart 2025 (lengtes in meters, 5 tees). CR/slope op kaart = handicaptabel 19-01-2021. 9-holesratings 1e/2e negen in handicap_tabel.pdf; daarnaast wintertee-ratings (23-11-2023): heren 67,5/124, dames 72,8/128 (par 71). Vier par 3-oefenholes zonder scorekaart niet opgenomen.
+
+<a id="golfbaan-molenslag-barsingerhorn"></a>
+## Golfbaan Molenslag
+
+Laagdrempelige, korte 9-holesbaan (par 30) in de polder bij Barsingerhorn, gemeente Hollands Kroon. De baan bestaat vooral uit par 3-holes met drie par 4's en is zonder GVB met een greenfee te spelen. Ontworpen en geëxploiteerd door de eigenaar.
+
+- **Club:** Golfbaan Molenslag (v.o.f.)
+- **Adres:** Heerenweg 75, 1768 BL Barsingerhorn, Noord-Holland, NL
+- **GPS:** 52.7869172, 4.8692944
+- **Afstand:** 109.1 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** vlak polderland met sloten, kleine waterpartijen
+- **Architect:** G. Schoorl (eigenaar)
+- **Telefoon:** +31 6 22111723
+- **Website:** https://www.molenslag.nl/
+- **Starttijden:** https://www.molenslag.nl/online-store/Greenfee-9-of-18-holes-p116057331
+- **Greenfee welkom:** True
+- **Eisen:** Geen GVB of lidmaatschap vereist
+- **Faciliteiten:** driving range (deels overdekt), putting green, clubhuis, golfles/GVB-cursus
+
+**Lus 9 holes (par 3/4)** — 9 holes, par 30
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1432 | 28.2 | 89 | 30 |
+| rood (women) | 1432 | 29.5 | 98 | 30 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 |  | 214 | 214 |
+| 2 | 4 |  | 341 | 341 |
+| 3 | 3 |  | 106 | 106 |
+| 4 | 3 |  | 170 | 170 |
+| 5 | 3 |  | 136 | 136 |
+| 6 | 3 |  | 72 | 72 |
+| 7 | 4 |  | 232 | 232 |
+| 8 | 3 |  | 102 | 102 |
+| 9 | 3 |  | 59 | 59 |
+
+- **Scorekaartpagina:** https://www.molenslag.nl/baan-status
+- **Bestanden:** [scorecard/ff43d8_48c66a2f82f244879a0b75cf3cec6c21_mv2.jpg](golfbaan-molenslag-barsingerhorn/scorecard/ff43d8_48c66a2f82f244879a0b75cf3cec6c21_mv2.jpg), [scorecard/ff43d8_cfc128103bd546d3a8259eb7a059617d_mv2.png](golfbaan-molenslag-barsingerhorn/scorecard/ff43d8_cfc128103bd546d3a8259eb7a059617d_mv2.png), [scorecard/ff43d8_6fe90c2402b34630bad5e09c50ba6a79_mv2.png](golfbaan-molenslag-barsingerhorn/scorecard/ff43d8_6fe90c2402b34630bad5e09c50ba6a79_mv2.png), [scorecard/ff43d8_704387363b324f98b7d8503eba3346a7_mv2.jpg](golfbaan-molenslag-barsingerhorn/scorecard/ff43d8_704387363b324f98b7d8503eba3346a7_mv2.jpg), [scorecard/page.html](golfbaan-molenslag-barsingerhorn/scorecard/page.html)
+- **Opmerking:** Par en lengte per hole uit de baanplattegrond (01-12-2022, totaal 1432 m, par 30); slechts 1 lengte per hole, ingevuld voor beide tees. Geen S.I. op de officiele site (derden golfpass/golfify geven onderling tegenstrijdige S.I. en lengtes, daarom null). Ratings NGF 21-06-2023: 9 holes geel heren CR 28,2/SR 89, rood dames CR 29,5/SR 98; 18 holes (2x) geel heren 56,3/89, rood dames 59,0/98 (par 60). Bestand ...704387...jpg = lokale regels.
+
+<a id="landgoed-bleijenbeek-afferden"></a>
+## Golfbaan Landgoed Bleijenbeek
+
+Landgoed Bleijenbeek bij Afferden ligt midden in Nationaal Park De Maasduinen en werd in 2005 geopend. De Championship Course van Gerard Jol (par 73) loopt langs oude lanen, een beek en de ruine van kasteel Bleijenbeek, met flinke hoogteverschillen en water. Daarnaast zijn er een 9-holes par 3-4 baan en een pitch & puttbaan.
+
+- **Club:** Golfbaan Landgoed Bleijenbeek
+- **Adres:** Bleijenbeek 14, 5851 EE Afferden, Limburg, NL
+- **GPS:** 51.6364389, 6.0624044
+- **Afstand:** 110.6 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** bos, water en hoogteverschillen in Nationaal Park De Maasduinen, bij een kasteelruine
+- **Opgericht:** 2005
+- **Architect:** Gerard Jol
+- **Telefoon:** 0485 53 00 84
+- **E-mail:** info@bleijenbeek.nl
+- **Website:** https://bleijenbeek.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Championship Course: handicap (GVB) verplicht; par 3-4 baan: baanpermissie; pitch & putt: geen eisen
+- **Faciliteiten:** driving range, oefengreens en -bunkers, oefenholes, par 3-4 baan (9 holes), pitch & putt (9 holes), restaurant
+
+**Lus Championship Course (18 holes)** — 18 holes, par 73
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6370 | 74.2 | 136 | 73 |
+| geel (men) | 6048 | 71.9 | 139 | 73 |
+| blauw (men) | 5470 | 69.2 | 125 | 73 |
+| rood (men) | 5127 | 67.4 | 119 | 73 |
+| oranje (men) | 4483 | 64.5 | 108 | 73 |
+| geel (women) | 6048 | 78.9 | 141 | 73 |
+| blauw (women) | 5470 | 75.2 | 139 | 73 |
+| rood (women) | 5127 | 72.8 | 133 | 73 |
+| oranje (women) | 4483 | 69.1 | 120 | 73 |
+
+| Hole | Par | SI | wit | blauw | geel | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 366 | 309 | 358 | 305 | 255 |
+| 2 | 5 | 13 | 475 | 398 | 453 | 391 | 340 |
+| 3 | 4 | 7 | 392 | 350 | 357 | 301 | 270 |
+| 4 | 3 | 17 | 175 | 146 | 169 | 142 | 142 |
+| 5 | 4 | 1 | 358 | 289 | 341 | 289 | 259 |
+| 6 | 4 | 3 | 332 | 332 | 332 | 287 | 237 |
+| 7 | 3 | 15 | 191 | 173 | 173 | 154 | 124 |
+| 8 | 4 | 11 | 380 | 352 | 359 | 294 | 263 |
+| 9 | 4 | 9 | 375 | 315 | 367 | 310 | 263 |
+| 10 | 5 | 2 | 507 | 391 | 466 | 383 | 323 |
+| 11 | 4 | 14 | 310 | 261 | 303 | 255 | 262 |
+| 12 | 4 | 10 | 383 | 297 | 351 | 291 | 230 |
+| 13 | 3 | 18 | 155 | 138 | 142 | 123 | 70 |
+| 14 | 5 | 12 | 461 | 425 | 430 | 367 | 325 |
+| 15 | 4 | 6 | 371 | 298 | 349 | 292 | 263 |
+| 16 | 3 | 16 | 178 | 152 | 173 | 152 | 152 |
+| 17 | 5 | 4 | 490 | 462 | 467 | 417 | 377 |
+| 18 | 5 | 8 | 471 | 382 | 458 | 374 | 328 |
+
+**Lus Combinatiebaan (CC holes 1-9 + par 3-4 baan)** — 18 holes, par 64
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 4321 | 63.4 | 113 | 64 |
+| rood (men) | 3885 | 61.8 | 105 | 64 |
+| geel (women) | 4321 | 67.8 | 117 | 64 |
+| rood (women) | 3885 | 64.6 | 115 | 64 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 5 | 358 | 305 |
+| 2 | 5 | 13 | 453 | 391 |
+| 3 | 4 | 7 | 357 | 301 |
+| 4 | 3 | 17 | 169 | 142 |
+| 5 | 4 | 1 | 341 | 289 |
+| 6 | 4 | 3 | 332 | 287 |
+| 7 | 3 | 15 | 173 | 154 |
+| 8 | 4 | 11 | 359 | 294 |
+| 9 | 4 | 9 | 367 | 310 |
+| 10 | 3 | 8 | 144 | 144 |
+| 11 | 3 | 14 | 131 | 131 |
+| 12 | 3 | 2 | 168 | 168 |
+| 13 | 3 | 10 | 102 | 102 |
+| 14 | 3 | 18 | 108 | 108 |
+| 15 | 4 | 6 | 248 | 248 |
+| 16 | 3 | 16 | 132 | 132 |
+| 17 | 4 | 4 | 264 | 264 |
+| 18 | 3 | 12 | 115 | 115 |
+
+**Lus Par 3-4 baan (9 holes, 2x gespeeld)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2824 | 55.5 | 85 | 58 |
+| rood (women) | 2824 | 57.7 | 97 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 7 | 144 | 144 |
+| 2 | 3 | 13 | 131 | 131 |
+| 3 | 3 | 3 | 168 | 168 |
+| 4 | 3 | 9 | 102 | 102 |
+| 5 | 3 | 17 | 108 | 108 |
+| 6 | 4 | 5 | 248 | 248 |
+| 7 | 3 | 15 | 132 | 132 |
+| 8 | 4 | 1 | 264 | 264 |
+| 9 | 3 | 11 | 115 | 115 |
+| 10 | 3 | 8 | 144 | 144 |
+| 11 | 3 | 14 | 131 | 131 |
+| 12 | 3 | 4 | 168 | 168 |
+| 13 | 3 | 10 | 102 | 102 |
+| 14 | 3 | 18 | 108 | 108 |
+| 15 | 4 | 6 | 248 | 248 |
+| 16 | 3 | 16 | 132 | 132 |
+| 17 | 4 | 2 | 264 | 264 |
+| 18 | 3 | 12 | 115 | 115 |
+
+- **Scorekaartpagina:** https://bleijenbeek.nl/golfen/
+- **Bestanden:** [scorecard/page.html](landgoed-bleijenbeek-afferden/scorecard/page.html), [scorecard/LowRes_B50_022441.pdf](landgoed-bleijenbeek-afferden/scorecard/LowRes_B50_022441.pdf), [scorecard/DEFscorekaarten_blb_2025_COMBI.pdf](landgoed-bleijenbeek-afferden/scorecard/DEFscorekaarten_blb_2025_COMBI.pdf), [scorecard/DEFscorekaarten_blb_2025_PAR3.pdf](landgoed-bleijenbeek-afferden/scorecard/DEFscorekaarten_blb_2025_PAR3.pdf), [scorecard/Landgoed-Bleijenbeek-CC-Heren.pdf](landgoed-bleijenbeek-afferden/scorecard/Landgoed-Bleijenbeek-CC-Heren.pdf), [scorecard/Landgoed-Bleijenbeek-CC-Dames.pdf](landgoed-bleijenbeek-afferden/scorecard/Landgoed-Bleijenbeek-CC-Dames.pdf), [scorecard/Landgoed-Bleijenbeek-18-holes-Combibaan-Heren.pdf](landgoed-bleijenbeek-afferden/scorecard/Landgoed-Bleijenbeek-18-holes-Combibaan-Heren.pdf), [scorecard/Landgoed-Bleijenbeek-18-holes-Combibaan-Dames.pdf](landgoed-bleijenbeek-afferden/scorecard/Landgoed-Bleijenbeek-18-holes-Combibaan-Dames.pdf), [scorecard/Landgoed-Bleijenbeek-18-holes-Par-3-4-Dames-en-Heren.pdf](landgoed-bleijenbeek-afferden/scorecard/Landgoed-Bleijenbeek-18-holes-Par-3-4-Dames-en-Heren.pdf), [scorecard/Landgoed-Bleijenbeek-9-holes-Par-3-4-Dames-en-Heren.pdf](landgoed-bleijenbeek-afferden/scorecard/Landgoed-Bleijenbeek-9-holes-Par-3-4-Dames-en-Heren.pdf)
+- **Opmerking:** Alle gegevens van de officiele scorekaarten (Championship 2026, Combinatie- en par 3-4 baan 2025) en baanhandicaptabellen van 09-07-2025. Volgorde tees op de kaart: wit, blauw, geel, rood, oranje (blauw is korter dan geel). Par 3-4 baan: geel en rood hebben dezelfde lengtes; non-qualifying oranje tees (9 holes, par 28, 1019 m) niet opgenomen. Pitch & puttbaan heeft geen gepubliceerde kaart.
+
+<a id="de-utrechtse-houten"></a>
+## De Utrechtse
+
+Golfcomplex naast Kasteel Heemstede tussen Houten en Nieuwegein, voorheen bekend als The Mondial. Er ligt een 9-holes wedstrijdbaan (par 35) met veel water, bunkers en waste areas, plus een aparte 9-holes par 3-baan met holes van ongeveer 50 tot 160 meter. De vereniging ter plaatse is De Nieuwegeinse Golfclub.
+
+- **Club:** De Utrechtse (v/h The Mondial) / De Nieuwegeinse Golfclub
+- **Adres:** Heemsteedseweg 32a, 3992 LS Houten, Utrecht, NL
+- **GPS:** 52.0301077, 5.1254285
+- **Afstand:** 110.7 km
+- **Type:** 9-holes
+- **Holes:** 18
+- **Landschap:** parkbaan met water, bunkers en waste areas bij Kasteel Heemstede
+- **Telefoon:** +31 30 636 9233
+- **E-mail:** secretariaat@deutrechtse.nl
+- **Website:** https://www.deutrechtse.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** brasserie (The Green), driving range, oefenfaciliteiten, par 3-baan (9 holes), indoor golfsimulator, golfschool, lockers
+
+**Lus Wedstrijdbaan 18 holes (9 holes 2x)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5490 | 69.6 | 126 | 70 |
+| geel (women) | 5490 | 75.1 | 138 | 70 |
+| rood (men) |  | 66.8 | 112 | 70 |
+| rood (women) |  | 71.6 | 131 | 70 |
+| oranje (men) |  | 64.6 | 108 | 70 |
+| oranje (women) |  | 69.1 | 120 | 70 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 3 | 392 |  |  |
+| 2 | 3 | 13 | 169 |  |  |
+| 3 | 5 | 7 | 481 |  |  |
+| 4 | 5 | 5 | 449 |  |  |
+| 5 | 4 | 9 | 273 |  |  |
+| 6 | 3 | 17 | 133 |  |  |
+| 7 | 4 | 11 | 290 |  |  |
+| 8 | 3 | 15 | 154 |  |  |
+| 9 | 4 | 1 | 404 |  |  |
+| 10 | 4 | 4 | 392 |  |  |
+| 11 | 3 | 14 | 169 |  |  |
+| 12 | 5 | 8 | 481 |  |  |
+| 13 | 5 | 6 | 449 |  |  |
+| 14 | 4 | 10 | 273 |  |  |
+| 15 | 3 | 18 | 133 |  |  |
+| 16 | 4 | 12 | 290 |  |  |
+| 17 | 3 | 16 | 154 |  |  |
+| 18 | 4 | 2 | 404 |  |  |
+
+**Lus Par 3-baan 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 46.8 | 59 | 54 |
+| rood (women) |  | 48.1 | 61 | 54 |
+
+- **Scorekaartpagina:** https://www.deutrechtse.nl/golfbaan/hcp-tabellen/
+- **Bestanden:** [scorecard/de-utrechtse-18-holes-par-3-baan-dames-en-heren.pdf](de-utrechtse-houten/scorecard/de-utrechtse-18-holes-par-3-baan-dames-en-heren.pdf), [scorecard/de-utrechtse-wedstrijdbaan-18-holes-dames.pdf](de-utrechtse-houten/scorecard/de-utrechtse-wedstrijdbaan-18-holes-dames.pdf), [scorecard/de-utrechtse-wedstrijdbaan-heren-18-holes.pdf](de-utrechtse-houten/scorecard/de-utrechtse-wedstrijdbaan-heren-18-holes.pdf), [scorecard/hole19.html](de-utrechtse-houten/scorecard/hole19.html), [scorecard/page.html](de-utrechtse-houten/scorecard/page.html)
+- **Opmerking:** CR/slope officieel (handicaptabellen 26-09-2023). Par, S.I. en lengtes (alleen geel) van de wedstrijdbaan uit hole19golf.com (nieuwegeinse-golfclub); hole19 labelt de lengtes als "yds" maar het totaal (5490) past bij meters gezien CR 69,6 - eenheid niet officieel bevestigd. Lengtes rood/oranje en holegegevens van de par 3-baan niet gevonden.
+
+<a id="amvj-golf-amstelveen"></a>
+## AMVJ Golf
+
+AMVJ Golf is een vereniging uit 2003 op Sportpark Het Loopveld aan de Amstel, op de grens van Amsterdam en Amstelveen. De korte 18-holesbaan (par 55, bijna allemaal par 3's) bestaat uit de Veldenbaan, die deels over de cricketvelden loopt, en de Polderbaan in het waterrijke polderland. Veel water en lastig gelegen greens maken het spel tactischer dan de lengte doet vermoeden, en de greenfee is laag.
+
+- **Club:** Golfvereniging AMVJ
+- **Adres:** Aanloop 3, 1183 SZ Amstelveen, Noord-Holland, NL
+- **GPS:** 52.3190524, 4.8838079
+- **Afstand:** 111.3 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** waterrijk polderlandschap langs de Amstel, op de grens van Amsterdam en Amstelveen; de eerste 9 holes liggen deels over sportvelden (cricket) van Sportpark Het Loopveld
+- **Opgericht:** 2003
+- **Telefoon:** 020 647 55 13
+- **E-mail:** secretariaat@amvj-golf.nl
+- **Website:** https://www.amvj-golf.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Gasten reserveren vooraf een starttijd via de GOLF.NL-app (greenfee aan de bar); dinsdag en donderdagmiddag vrijwel altijd gesloten voor gasten i.v.m. clubwedstrijden; holes 1-9 in weekenden vaak niet bespeelbaar door andere sporten. Handicapeis niet vermeld op de site.
+- **Faciliteiten:** 18 holes par 55 (Veldenbaan holes 1-9 + Polderbaan holes 10-18), driving range 180 m (beperkte openingstijden), putting green, chipping green, clubhuis met terras (gedeeld met ACC Cricket), golfles door clubprofessional, handicarts, clubverhuur (halve set)
+
+**Lus Veldenbaan + Polderbaan (18 holes)** — 18 holes, par 55
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2684 | 54.3 | 87 | 55 |
+| rood (men) | 2429 | 53.0 | 84 | 55 |
+| geel (women) | 2684 | 56.9 | 87 | 55 |
+| rood (women) | 2429 | 55.1 | 84 | 55 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 8 | 180 | 180 |
+| 2 | 3 | 14 | 95 | 95 |
+| 3 | 3 | 18 | 137 | 137 |
+| 4 | 3 | 12 | 173 | 173 |
+| 5 | 3 | 6 | 185 | 185 |
+| 6 | 3 | 16 | 145 | 145 |
+| 7 | 3 | 4 | 200 | 200 |
+| 8 | 3 | 2 | 190 | 190 |
+| 9 | 3 | 10 | 179 | 179 |
+| 10 | 3 | 5 | 186 | 119 |
+| 11 | 3 | 7 | 150 | 105 |
+| 12 | 3 | 3 | 155 | 109 |
+| 13 | 3 | 11 | 85 | 72 |
+| 14 | 3 | 13 | 97 | 89 |
+| 15 | 4 | 1 | 215 | 192 |
+| 16 | 3 | 15 | 90 | 90 |
+| 17 | 3 | 17 | 63 | 63 |
+| 18 | 3 | 9 | 159 | 106 |
+
+**Lus Veldenbaan (holes 1-9)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1484 | 27.9 | 79 | 27 |
+| rood (women) | 1484 | 29.4 | 84 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 8 | 180 | 180 |
+| 2 | 3 | 14 | 95 | 95 |
+| 3 | 3 | 18 | 137 | 137 |
+| 4 | 3 | 12 | 173 | 173 |
+| 5 | 3 | 6 | 185 | 185 |
+| 6 | 3 | 16 | 145 | 145 |
+| 7 | 3 | 4 | 200 | 200 |
+| 8 | 3 | 2 | 190 | 190 |
+| 9 | 3 | 10 | 179 | 179 |
+
+**Lus Polderbaan (holes 10-18)** — 9 holes, par 28
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1200 | 26.5 | 86 | 28 |
+| rood (men) | 945 | 25.3 | 80 | 28 |
+| geel (women) | 1200 | 27.3 | 87 | 28 |
+| rood (women) | 945 | 25.7 | 80 | 28 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 10 | 3 | 5 | 186 | 119 |
+| 11 | 3 | 7 | 150 | 105 |
+| 12 | 3 | 3 | 155 | 109 |
+| 13 | 3 | 11 | 85 | 72 |
+| 14 | 3 | 13 | 97 | 89 |
+| 15 | 4 | 1 | 215 | 192 |
+| 16 | 3 | 15 | 90 | 90 |
+| 17 | 3 | 17 | 63 | 63 |
+| 18 | 3 | 9 | 159 | 106 |
+
+- **Scorekaartpagina:** https://www.amvj-golf.nl/home/index.php/de-baan/holes-en-scorekaart
+- **Bestanden:** [scorecard/page.html](amvj-golf-amstelveen/scorecard/page.html), [scorecard/scorekaart-23.jpg](amvj-golf-amstelveen/scorecard/scorekaart-23.jpg), [scorecard/plattegrond.jpg](amvj-golf-amstelveen/scorecard/plattegrond.jpg), [scorecard/hcp-velden-polder-18.pdf](amvj-golf-amstelveen/scorecard/hcp-velden-polder-18.pdf), [scorecard/hcp-veldenbaan-9.pdf](amvj-golf-amstelveen/scorecard/hcp-veldenbaan-9.pdf), [scorecard/hcp-polderbaan-9.pdf](amvj-golf-amstelveen/scorecard/hcp-polderbaan-9.pdf)
+- **Opmerking:** Holegegevens uit de officiele scorekaart (Scorekaart-23.jpg; kolommen Geel, Rood, een S.I.-kolom). Sommen kloppen met de kaart: geel 1484+1200=2684, rood 1484+945=2429, par 27+28=55. Op de Veldenbaan zijn geel en rood gelijk. S.I. 18-holesstijl: Veldenbaan even (2-18), Polderbaan oneven (1-17); in de 9-holeslussen staan dezelfde S.I.-waarden en holenummers 10-18 voor de Polderbaan. CR/SR 18 holes uit NGF-tabel d.d. 19-09-2024; 9 holes Veldenbaan d.d. 31-10-2023 (alleen geel heren en rood dames gepubliceerd); 9 holes Polderbaan d.d. 26-09-2023. De site noemt de baan 'par 55/59'; de '59' wordt nergens verklaard (scorekaart en alle ratings: par 55). 17 par 3's en 1 par 4 (hole 15). Contactmail op de site is secretariaat@amvj-golf.nl (golf.nl noemt info@amvj-golf.nl). Greenfee volgens site EUR 15 (EUR 10 met lid of van bevriende clubs Ookmeer/Sloten).
+
+<a id="golf-amsteldijk-amstelveen"></a>
+## Golf Amsteldijk
+
+Golf Amsteldijk in Amstelveen combineert een van de grootste oefencentra van Nederland met een 9-holes A-statusbaan van Alan Rijks. De baan (par 34, tot ruim 2.600 meter van de achterste tee) ligt tussen de Amstel en de Nesserlaan en heeft twee par 5's en veel water. Daarnaast is er een korte par 3-baan voor wie snel even wil spelen zonder handicap.
+
+- **Club:** Golf Amsteldijk
+- **Adres:** De Afslag 1, 1186 VG Amstelveen, Noord-Holland, NL
+- **GPS:** 52.2807056, 4.876173
+- **Afstand:** 113.1 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** polderlandschap langs de Amstel en de Nesserlaan, met sloten en water
+- **Architect:** Alan Rijks
+- **Telefoon:** +31 20 303 0510
+- **E-mail:** info@amsteldijk.nl
+- **Website:** https://www.amsteldijk.nl/
+- **Starttijden:** https://dagkaart.amsteldijk.nl/
+- **Greenfee welkom:** True
+- **Eisen:** A-statusbaan: golfvaardigheidsbewijs (handicap 54) vereist; par 3-baan zonder GVB en zonder reserveren (dagkaart).
+- **Faciliteiten:** 9-holes A-statusbaan (par 34), 9-holes par 3-baan (holes tot 81 m), groot oefencentrum '9 Werelden van Golf', overdekte afslagplekken met TopTracer, Brasserie 10
+
+**Lus A-statusbaan 9 holes** — 9 holes, par 34
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2612 |  |  | 34 |
+| geel (men) | 2434 |  |  | 34 |
+| rood (men) | 2213 |  |  | 34 |
+| geel (women) | 2434 |  |  | 34 |
+| rood (women) | 2213 |  |  | 34 |
+
+| Hole | Par | SI | wit | geel | rood |
+|---|---|---|---|---|---|
+| 1 | 3 | 9 | 132 | 120 | 105 |
+| 2 | 4 | 1 | 324 | 304 | 281 |
+| 3 | 5 | 2 | 487 | 462 | 431 |
+| 4 | 3 | 6 | 180 | 160 | 154 |
+| 5 | 5 | 7 | 484 | 455 | 415 |
+| 6 | 4 | 4 | 340 | 321 | 283 |
+| 7 | 3 | 5 | 168 | 151 | 127 |
+| 8 | 4 | 3 | 360 | 340 | 313 |
+| 9 | 3 | 8 | 137 | 121 | 104 |
+
+**Lus A-statusbaan 18 holes (2x 9)** — 18 holes, par 68
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5224 | 67.5 | 125 | 68 |
+| geel (men) | 4868 | 65.9 | 119 | 68 |
+| rood (men) | 4426 | 63.3 | 112 | 68 |
+| geel (women) | 4868 | 70.7 | 126 | 68 |
+| rood (women) | 4426 | 68.3 | 120 | 68 |
+
+| Hole | Par | SI | wit | geel | rood |
+|---|---|---|---|---|---|
+| 1 | 3 |  | 132 | 120 | 105 |
+| 2 | 4 |  | 324 | 304 | 281 |
+| 3 | 5 |  | 487 | 462 | 431 |
+| 4 | 3 |  | 180 | 160 | 154 |
+| 5 | 5 |  | 484 | 455 | 415 |
+| 6 | 4 |  | 340 | 321 | 283 |
+| 7 | 3 |  | 168 | 151 | 127 |
+| 8 | 4 |  | 360 | 340 | 313 |
+| 9 | 3 |  | 137 | 121 | 104 |
+| 10 | 3 |  | 132 | 120 | 105 |
+| 11 | 4 |  | 324 | 304 | 281 |
+| 12 | 5 |  | 487 | 462 | 431 |
+| 13 | 3 |  | 180 | 160 | 154 |
+| 14 | 5 |  | 484 | 455 | 415 |
+| 15 | 4 |  | 340 | 321 | 283 |
+| 16 | 3 |  | 168 | 151 | 127 |
+| 17 | 4 |  | 360 | 340 | 313 |
+| 18 | 3 |  | 137 | 121 | 104 |
+
+- **Scorekaartpagina:** https://www.amsteldijk.nl/faciliteiten/9-holes-a-status
+- **Bestanden:** [scorecard/page.html](golf-amsteldijk-amstelveen/scorecard/page.html), [scorecard/Course-rating-heren.pdf](golf-amsteldijk-amstelveen/scorecard/Course-rating-heren.pdf), [scorecard/Course-rating-dames.pdf](golf-amsteldijk-amstelveen/scorecard/Course-rating-dames.pdf), [scorecard/hole19.html](golf-amsteldijk-amstelveen/scorecard/hole19.html), [scorecard/hole-1.png](golf-amsteldijk-amstelveen/scorecard/hole-1.png), [scorecard/hole-2.png](golf-amsteldijk-amstelveen/scorecard/hole-2.png), [scorecard/hole-3.png](golf-amsteldijk-amstelveen/scorecard/hole-3.png), [scorecard/hole-4.png](golf-amsteldijk-amstelveen/scorecard/hole-4.png), [scorecard/hole-5.png](golf-amsteldijk-amstelveen/scorecard/hole-5.png), [scorecard/hole-6.png](golf-amsteldijk-amstelveen/scorecard/hole-6.png), [scorecard/hole-7.png](golf-amsteldijk-amstelveen/scorecard/hole-7.png), [scorecard/hole-8.png](golf-amsteldijk-amstelveen/scorecard/hole-8.png), [scorecard/hole-9.png](golf-amsteldijk-amstelveen/scorecard/hole-9.png)
+- **Opmerking:** Lengtes per tee uit de officiele holeplattegronden (tees '52'=wit, '49'=geel, '45'=rood; nummer = 18-holeslengte in hm). Par per hole: clubteksten noemen holes 1,4,7,9 par 3, 5 par 5, 6 en 8 par 4; holes 2 (par 4) en 3 (par 5) volgen uit de officiele baanpar 68 (2x34) en Hole19. S.I. 9 holes van Hole19 (third-party); S.I. voor 18 holes onbekend. CR/slope 18 holes uit de NGF-tabellen 11-09-2023; oranje tee (heren 60,3/99, dames 63,0/104) niet opgenomen want geen lengtes. Geen 9-holes ratings gepubliceerd. Clubtekst noemt hole 6 de kortste par 4 terwijl hole 2 korter is; mogelijk verouderde tekst.
+
+<a id="golfclub-de-haar"></a>
+## Golfclub De Haar
+
+Verenigingsbaan in het historische Zuiderpark van Kasteel de Haar bij Haarzuilens. De oorspronkelijke 9 holes uit 1974 zijn in 2021 volledig vernieuwd en uitgebreid tot een 18-holesbaan van par 71 door Bruno Steensels. Smalle fairways, veel water en oude bomen maken plaatsing belangrijker dan lengte; op de slotholes kijk je uit op het kasteel.
+
+- **Club:** Golfclub De Haar
+- **Adres:** Parkweg 5, 3455 RH Haarzuilens (Utrecht), Utrecht, NL
+- **GPS:** 52.1181891, 4.9849364
+- **Afstand:** 113.6 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** parkbaan in het Zuiderpark van Kasteel de Haar, met bos en vijvers
+- **Opgericht:** 1974
+- **Architect:** Frank Pennink (1974, 9 holes); Bruno Steensels (uitbreiding 18 holes, 2021)
+- **Telefoon:** +31 30 677 2860
+- **E-mail:** info@gcdehaar.nl
+- **Website:** https://www.gcdehaar.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** clubhuis, restaurant, driving range, golfschool
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) |  | 71.8 | 141 | 71 |
+| geel (men) |  | 69.8 | 134 | 71 |
+| geel (women) |  | 75.9 | 139 | 71 |
+| blauw (men) |  | 67.7 | 125 | 71 |
+| blauw (women) |  | 73.5 | 134 | 71 |
+| rood (men) |  | 64.8 | 114 | 71 |
+| rood (women) |  | 69.3 | 126 | 71 |
+| oranje (men) |  | 61.1 | 105 | 71 |
+| oranje (women) |  | 64.3 | 105 | 71 |
+
+- **Scorekaartpagina:** https://www.gcdehaar.nl/de-baan/handicap-tabellen-heren/
+- **Bestanden:** [scorecard/De-Haar-Dames.pdf](golfclub-de-haar/scorecard/De-Haar-Dames.pdf), [scorecard/De-Haar-Heren.pdf](golfclub-de-haar/scorecard/De-Haar-Heren.pdf), [scorecard/page.html](golfclub-de-haar/scorecard/page.html)
+- **Opmerking:** Alleen CR/slope (baanhandicaptabellen 15-08-2024) gevonden. De site heeft een interactief baanboekje met lengtes per afslag (symbolen, geen kleuren) maar geen par/S.I. per hole; derden (golfify, golfpass) tonen nog de oude 9-holesbaan (par 72), dus niet gebruikt. Holegegevens ontbreken.
+
+<a id="golfbaan-dirkshorn"></a>
+## Golfbaan Dirkshorn
+
+Open polderbaan van 18 holes (par 72) langs de N245 tussen Alkmaar en Schagen, ontworpen door Alan Rijks. Veel waterpartijen, golvende fairways en een eilandgreen op hole 17 bepalen het spel; bomen zijn er nauwelijks. De baan heeft de NGF A-status en een GEO-ecolabel.
+
+- **Club:** Stichting Golfbaan Dirkshorn
+- **Adres:** Groenvelderweg 3, 1746 EE Dirkshorn, Noord-Holland, NL
+- **GPS:** 52.7560698, 4.7869704
+- **Afstand:** 114.1 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** polder-/weidebaan met 'inner links'-karakter, veel water, weinig bomen (55 ha)
+- **Architect:** Alan Rijks
+- **Telefoon:** +31 224 274 050
+- **E-mail:** receptie@golfbaandirkshorn.nl
+- **Website:** https://golfbaandirkshorn.nl/
+- **Starttijden:** https://dirkshorn.teecontrol.com/
+- **Greenfee welkom:** True
+- **Eisen:** NGF-pas/handicap vereist voor 18-holesbaan (greenfee online of telefonisch reserveren)
+- **Faciliteiten:** driving range, par 3-baan (incourse), restaurant, vergaderruimte, golfacademy, buggyverhuur
+
+**Lus 18 holes (par 72)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6225 | 73.2 | 141 | 72 |
+| geel (men) | 5724 | 70.8 | 129 | 72 |
+| blauw (men) | 5342 | 68.8 | 123 | 72 |
+| rood (men) | 4805 | 65.7 | 116 | 72 |
+| oranje (men) | 4337 | 63.6 | 109 | 72 |
+| geel (women) | 5724 | 76.8 | 144 | 72 |
+| blauw (women) | 5342 | 74.4 | 140 | 72 |
+| rood (women) | 4805 | 71.5 | 127 | 72 |
+| oranje (women) | 4337 | 68.7 | 115 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 375 | 325 | 308 | 277 | 223 |
+| 2 | 5 | 13 | 460 | 436 | 390 | 364 | 364 |
+| 3 | 4 | 1 | 411 | 364 | 329 | 305 | 267 |
+| 4 | 4 | 7 | 380 | 350 | 315 | 302 | 257 |
+| 5 | 4 | 3 | 356 | 335 | 332 | 280 | 245 |
+| 6 | 5 | 11 | 450 | 426 | 406 | 354 | 354 |
+| 7 | 3 | 17 | 139 | 126 | 114 | 107 | 107 |
+| 8 | 4 | 5 | 382 | 349 | 326 | 284 | 245 |
+| 9 | 3 | 15 | 155 | 140 | 128 | 123 | 123 |
+| 10 | 5 | 4 | 515 | 472 | 427 | 397 | 397 |
+| 11 | 3 | 16 | 154 | 142 | 133 | 113 | 113 |
+| 12 | 4 | 10 | 402 | 369 | 360 | 310 | 250 |
+| 13 | 4 | 2 | 347 | 321 | 315 | 278 | 231 |
+| 14 | 3 | 18 | 154 | 140 | 135 | 121 | 121 |
+| 15 | 4 | 8 | 375 | 349 | 314 | 289 | 231 |
+| 16 | 4 | 14 | 332 | 304 | 292 | 251 | 204 |
+| 17 | 4 | 6 | 337 | 315 | 295 | 265 | 220 |
+| 18 | 5 | 12 | 501 | 461 | 423 | 385 | 385 |
+
+- **Scorekaartpagina:** https://golfbaandirkshorn.nl/de-baan/layout/
+- **Bestanden:** [scorecard/page.html](golfbaan-dirkshorn/scorecard/page.html), [scorecard/page-heren-18-holes.html](golfbaan-dirkshorn/scorecard/page-heren-18-holes.html), [scorecard/page-dames-18-holes.html](golfbaan-dirkshorn/scorecard/page-dames-18-holes.html), [scorecard/page-incourse-par-3.html](golfbaan-dirkshorn/scorecard/page-incourse-par-3.html), [scorecard/golfbaan-dirkshorn-plategrond-hole-1-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-1-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-2-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-2-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-3-3.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-3-3.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-4-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-4-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-5-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-5-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-6-q.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-6-q.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-7-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-7-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-8-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-8-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-9-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-9-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-10-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-10-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-11-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-11-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-12-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-12-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-13-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-13-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-14-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-14-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-15-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-15-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-16-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-16-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-17-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-17-min.jpg), [scorecard/golfbaan-dirkshorn-plategrond-hole-18-min.jpg](golfbaan-dirkshorn/scorecard/golfbaan-dirkshorn-plategrond-hole-18-min.jpg)
+- **Opmerking:** Geen scorekaart-PDF; par, S.I. en lengtes per tee (wit/geel/blauw/rood/oranje) afgelezen van de 18 holeplattegronden (2022) op de layoutpagina. Totalen berekend uit holelengtes (staan niet op de site). CR/slope van de pagina's Heren/Dames 18 holes. Er is ook een 'incourse' par 3-baan (18 holes par 54; heren CR 51,4/SR 72, dames CR 53,7/SR 78; 9-holes ratings 25,6/71 en 25,9/72 heren, 26,7/75 en 27,0/80 dames) maar zonder gepubliceerde holegegevens; niet als loop opgenomen.
+
+<a id="golfclub-ookmeer-amsterdam"></a>
+## Golfclub Ookmeer
+
+Ookmeer is een laagdrempelige verenigingsbaan in sportpark Ookmeer in Amsterdam-Osdorp. De 9-holes baan (par 31) met par 3's en korte par 4's is qualifying en wordt voor 18 holes twee keer gespeeld met eigen S.I. Daarnaast is er een kleine shortgolfbaan met holes van 30 tot 75 meter en een golfschool.
+
+- **Club:** Golfclub Ookmeer
+- **Adres:** Abe Lenstralaan 8, 1067 MV Amsterdam, Noord-Holland, NL
+- **GPS:** 52.3723841, 4.7972952
+- **Afstand:** 115.4 km
+- **Type:** 9-holes
+- **Holes:** 18
+- **Landschap:** stedelijk sportpark (Sportpark Ookmeer) met water en kunstgrasvelden
+- **Telefoon:** +31 20 411 1118
+- **E-mail:** info@golfclubookmeer.nl
+- **Website:** https://golfclubookmeer.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** 9-holes baan (par 31), 9-holes shortgolfbaan (par 27), driving range, golfschool, clubhuis, buggyverhuur, lockers
+
+**Lus Grote baan 18 holes (2x 9)** — 18 holes, par 62
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3466 | 60.5 | 104 | 62 |
+| rood (women) | 3466 | 63.3 | 104 | 62 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 11 | 129 | 129 |
+| 2 | 4 | 1 | 240 | 240 |
+| 3 | 3 | 5 | 159 | 159 |
+| 4 | 4 | 9 | 257 | 257 |
+| 5 | 4 | 7 | 259 | 259 |
+| 6 | 4 | 15 | 224 | 224 |
+| 7 | 3 | 17 | 125 | 125 |
+| 8 | 3 | 13 | 161 | 161 |
+| 9 | 3 | 3 | 179 | 179 |
+| 10 | 3 | 12 | 129 | 129 |
+| 11 | 4 | 2 | 240 | 240 |
+| 12 | 3 | 6 | 159 | 159 |
+| 13 | 4 | 10 | 257 | 257 |
+| 14 | 4 | 8 | 259 | 259 |
+| 15 | 4 | 16 | 224 | 224 |
+| 16 | 3 | 18 | 125 | 125 |
+| 17 | 3 | 14 | 161 | 161 |
+| 18 | 3 | 4 | 179 | 179 |
+
+**Lus Grote baan 9 holes** — 9 holes, par 31
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1733 | 30.3 | 104 | 31 |
+| rood (women) | 1733 | 31.7 | 104 | 31 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 11 | 129 | 129 |
+| 2 | 4 | 1 | 240 | 240 |
+| 3 | 3 | 5 | 159 | 159 |
+| 4 | 4 | 9 | 257 | 257 |
+| 5 | 4 | 7 | 259 | 259 |
+| 6 | 4 | 15 | 224 | 224 |
+| 7 | 3 | 17 | 125 | 125 |
+| 8 | 3 | 13 | 161 | 161 |
+| 9 | 3 | 3 | 179 | 179 |
+
+**Lus Shortgolfbaan 9 holes** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard (men) | 410 |  |  | 27 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 |  | 35 |
+| 2 | 3 |  | 50 |
+| 3 | 3 |  | 50 |
+| 4 | 3 |  | 45 |
+| 5 | 3 |  | 75 |
+| 6 | 3 |  | 30 |
+| 7 | 3 |  | 50 |
+| 8 | 3 |  | 35 |
+| 9 | 3 |  | 40 |
+
+- **Scorekaartpagina:** https://golfclubookmeer.nl/scorekaart/
+- **Bestanden:** [scorecard/page.html](golfclub-ookmeer-amsterdam/scorecard/page.html), [scorecard/Grote-baan-achterkant.jpg](golfclub-ookmeer-amsterdam/scorecard/Grote-baan-achterkant.jpg), [scorecard/2026-4-Ookmeer-SCRKRT-shortholes-achter.jpg](golfclub-ookmeer-amsterdam/scorecard/2026-4-Ookmeer-SCRKRT-shortholes-achter.jpg), [scorecard/WHS-Heren-18-holes.jpg](golfclub-ookmeer-amsterdam/scorecard/WHS-Heren-18-holes.jpg), [scorecard/WHS-Dames-18-holes.jpg](golfclub-ookmeer-amsterdam/scorecard/WHS-Dames-18-holes.jpg), [scorecard/WHS-Heren-9-holes.jpg](golfclub-ookmeer-amsterdam/scorecard/WHS-Heren-9-holes.jpg), [scorecard/WHS-Dames-9-holes.jpg](golfclub-ookmeer-amsterdam/scorecard/WHS-Dames-9-holes.jpg)
+- **Opmerking:** Grote baan: één lengte per hole (gele kolom); CR/SR 18 holes op de kaart (heren 60,5/104, dames 63,3/104), 9 holes uit de WHS-tabellen (geel heren 30,3/104, rood dames 31,7/104, 12-01-2021); dames spelen volgens de WHS-tabel van 'rood', met dezelfde lengtes. 9-holes S.I. = oneven S.I. van de kaart (18-holesstijl). Shortgolfbaan (par 27, 410 m) heeft geen S.I. en geen rating, daarom complete=false. Totalen kloppen.
+
+<a id="golfbaan-sloten-amsterdam"></a>
+## Openbare Golfbaan Sloten
+
+Openbare Golfbaan Sloten ligt op Sportpark Sloten aan de zuidwestkant van Amsterdam. De negen holes (zeven par 3's en twee par 4's) slingeren tussen bomen en sloten, met smalle fairways en kleine greens die precisie vragen. De baan is openbaar, qualifying en dankzij goede drainage bijna het hele jaar bespeelbaar.
+
+- **Club:** Golfclub Sloten
+- **Adres:** Sloterweg 1045, 1066 CD Amsterdam, Noord-Holland, NL
+- **GPS:** 52.3398019, 4.8062431
+- **Afstand:** 115.7 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkachtig sportpark met bomen en sloten (Sportpark Sloten)
+- **Telefoon:** +31 20 614 2402
+- **E-mail:** info@golfbaansloten.nl
+- **Website:** https://www.golfbaansloten.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** 9-holes baan (par 29), driving range, golfschool, clubhuis
+
+**Lus 18 holes (2x 9)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2742 | 56.2 | 98 | 58 |
+| rood (women) | 2742 | 59.1 | 110 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 13 | 143 | 143 |
+| 2 | 3 | 7 | 129 | 129 |
+| 3 | 3 | 11 | 167 | 167 |
+| 4 | 3 | 17 | 136 | 136 |
+| 5 | 3 | 3 | 142 | 142 |
+| 6 | 4 | 5 | 158 | 158 |
+| 7 | 4 | 9 | 208 | 208 |
+| 8 | 3 | 15 | 134 | 134 |
+| 9 | 3 | 1 | 154 | 154 |
+| 10 | 3 | 14 | 143 | 143 |
+| 11 | 3 | 8 | 129 | 129 |
+| 12 | 3 | 12 | 167 | 167 |
+| 13 | 3 | 18 | 136 | 136 |
+| 14 | 3 | 4 | 142 | 142 |
+| 15 | 4 | 6 | 158 | 158 |
+| 16 | 4 | 10 | 208 | 208 |
+| 17 | 3 | 16 | 134 | 134 |
+| 18 | 3 | 2 | 154 | 154 |
+
+- **Scorekaartpagina:** https://www.golfbaansloten.nl/over-golfbaan-sloten/de-baan/scorecard
+- **Bestanden:** [scorecard/page.html](golfbaan-sloten-amsterdam/scorecard/page.html), [scorecard/OGS-ScoreCard01.jpg](golfbaan-sloten-amsterdam/scorecard/OGS-ScoreCard01.jpg), [scorecard/OGDS-ScoreCard02.jpg](golfbaan-sloten-amsterdam/scorecard/OGDS-ScoreCard02.jpg)
+- **Opmerking:** Scorekaart met één lengte per hole (gele kolom) en CR/SR voor 18 holes (heren 56,2/98, dames 59,1/110); tee-kleur heren/dames afgeleid van de kleurvlakken op de kaart. Hole19 geeft afwijkend alle holes par 3 (par 27); de officiele kaart (par 29) is gevolgd. Totalen kloppen. Geen 9-holes rating op de kaart (EGA-tabel op site is een zeer grote scan, niet gebruikt).
+
+<a id="the-duke-golf-nistelrode"></a>
+## The Duke (Championship Course)
+
+The Duke ligt in een oud bos- en heidegebied tussen Nistelrode en Vorstenbosch. De club begon in 1991 met negen holes en groeide uit tot een 18-holes Championship Course van par 72 met snelle greens en smalle, door bomen omzoomde fairways. Bij de baan horen een luxe clubhuis met restaurant en suites.
+
+- **Club:** The Duke Golf Club
+- **Adres:** Slotenseweg 11, 5388 RC Nistelrode, Noord-Brabant, NL
+- **GPS:** 51.7175277, 5.5609073
+- **Afstand:** 115.8 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** bos en heide
+- **Opgericht:** 1991
+- **Telefoon:** +31 412 611992
+- **E-mail:** receptie@theduke.nl
+- **Website:** https://theduke.nl
+- **Eisen:** Besloten (leden)club; spelen voor niet-leden o.a. via golfarrangementen/business-lidmaatschap - voorwaarden niet op de site vermeld
+- **Faciliteiten:** academy, clubhuis, restaurant The Charles, suites (overnachten), businessclub, on course service
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) |  | 71.3 | 137 | 72 |
+| geel (men) |  | 69.5 | 128 | 72 |
+| blauw (men) |  | 67.9 | 124 | 72 |
+| rood (men) |  | 65.5 | 121 | 72 |
+| oranje (men) |  | 63.6 | 108 | 72 |
+| geel (women) |  | 75.9 | 141 | 72 |
+| blauw (women) |  | 73.5 | 137 | 72 |
+| rood (women) |  | 71.5 | 126 | 72 |
+| oranje (women) |  | 67.3 | 127 | 72 |
+
+- **Scorekaartpagina:** https://theduke.nl/golf/championship-course/
+- **Bestanden:** [scorecard/Baanhandicap-Rating-The-Duke-2025.pdf](the-duke-golf-nistelrode/scorecard/Baanhandicap-Rating-The-Duke-2025.pdf), [scorecard/Plattegrond-de-baan-1.png](the-duke-golf-nistelrode/scorecard/Plattegrond-de-baan-1.png), [scorecard/page-golfify.html](the-duke-golf-nistelrode/scorecard/page-golfify.html), [scorecard/page.html](the-duke-golf-nistelrode/scorecard/page.html)
+- **Opmerking:** Geen scorekaart gepubliceerd (alleen plattegrond en baanhandicaptabellen d.d. 10-10-2024, ook per 1e/2e 9 holes, beide par 36). Golfify.io heeft een holetabel (wit 6278/geel 5964/blauw 5650/rood 5134/oranje 4214 m) maar met par 37 uit / 35 in, wat niet strookt met de officiële par 36/36 - daarom niet overgenomen (page-golfify.html bewaard).
+
+<a id="sluispolder-noordhollandse-golfclub-alkmaar"></a>
+## Golfbaan Sluispolder
+
+Particuliere golfbaan aan de zuidwestrand van Alkmaar en thuisbasis van De Noordhollandse Golfclub. De 18-holes wedstrijdbaan (par 72) is in fases aangelegd vanaf 1983 en kenmerkt zich door veel waterpartijen en houtwallen; daarnaast is er een 9-holes par 3-baan. Bezoekers met handicap 54 zijn welkom.
+
+- **Club:** De Noordhollandse Golfclub
+- **Adres:** Sluispolderweg 7, 1817 BM Alkmaar, Noord-Holland, NL
+- **GPS:** 52.6575573, 4.7396779
+- **Afstand:** 116.2 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** parkachtige polderbaan met veel water en bomensingels aan de rand van Alkmaar
+- **Opgericht:** 1983
+- **Telefoon:** +31 72 511 1555
+- **E-mail:** info@sluispolder.nl
+- **Website:** https://sluispolder.nl/
+- **Starttijden:** https://sluispolder.nl/reserveren/golfen
+- **Greenfee welkom:** True
+- **Eisen:** Grote baan vanaf handicap 54; par 3-baan zonder ervaring/GVB
+- **Faciliteiten:** driving range (Inrange), 9-holes par 3-baan, putting area, chip-/bunkerarea, clubhuis met restaurant, padelbanen, golfles/clinics, buggy's
+
+**Lus 18 holes (par 72)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) |  | 73.2 | 134 | 72 |
+| geel (men) | 5865 | 71.7 | 128 | 72 |
+| blauw (men) |  | 69.3 | 116 | 72 |
+| rood (men) |  | 67.9 | 114 | 72 |
+| oranje (men) |  | 65.6 | 106 | 72 |
+| geel (women) | 5865 | 78.0 | 143 | 72 |
+| blauw (women) |  | 74.3 | 129 | 72 |
+| rood (women) |  | 72.6 | 130 | 72 |
+| oranje (women) |  | 70.2 | 117 | 72 |
+
+| Hole | Par | SI | geel | wit | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 6 | 480 |  |  |  |  |
+| 2 | 4 | 12 | 325 |  |  |  |  |
+| 3 | 4 | 2 | 389 |  |  |  |  |
+| 4 | 4 | 8 | 355 |  |  |  |  |
+| 5 | 3 | 18 | 143 |  |  |  |  |
+| 6 | 5 | 14 | 449 |  |  |  |  |
+| 7 | 4 | 16 | 273 |  |  |  |  |
+| 8 | 3 | 10 | 151 |  |  |  |  |
+| 9 | 4 | 4 | 302 |  |  |  |  |
+| 10 | 3 | 17 | 161 |  |  |  |  |
+| 11 | 5 | 11 | 470 |  |  |  |  |
+| 12 | 4 | 1 | 394 |  |  |  |  |
+| 13 | 4 | 9 | 365 |  |  |  |  |
+| 14 | 5 | 5 | 468 |  |  |  |  |
+| 15 | 3 | 15 | 129 |  |  |  |  |
+| 16 | 4 | 3 | 390 |  |  |  |  |
+| 17 | 4 | 13 | 317 |  |  |  |  |
+| 18 | 4 | 7 | 304 |  |  |  |  |
+
+- **Scorekaartpagina:** https://sluispolder.nl/baaninformatie
+- **Bestanden:** [scorecard/Sluispolder_scorekaart_2026_03_1.jpg](sluispolder-noordhollandse-golfclub-alkmaar/scorecard/Sluispolder_scorekaart_2026_03_1.jpg), [scorecard/Noordhollandse-WHS-tabel-Heren.pdf](sluispolder-noordhollandse-golfclub-alkmaar/scorecard/Noordhollandse-WHS-tabel-Heren.pdf), [scorecard/Noordhollandse-WHS-tabel-Dames.pdf](sluispolder-noordhollandse-golfclub-alkmaar/scorecard/Noordhollandse-WHS-tabel-Dames.pdf), [scorecard/page.html](sluispolder-noordhollandse-golfclub-alkmaar/scorecard/page.html), [scorecard/page-golfingrecord.html](sluispolder-noordhollandse-golfclub-alkmaar/scorecard/page-golfingrecord.html)
+- **Opmerking:** Officiele 'scorekaart' 2026 is alleen een baanplattegrond zonder holegegevens. Par, S.I. en gele lengtes (totaal 5865 m) van golfingrecord.com (derden, ongedateerd; vermeldt CR 70,7/SR 125, wijkt af van officieel); S.I. holes 1-9 bevestigd door hole19golf.com. Lengtes overige tees onbekend. CR/slope per tee uit officiele WHS-tabellen De Noordhollandse Golfclub 12-01-2021 (ook 9-holesratings 1e/2e negen beschikbaar). Par 3-baan (9 holes) zonder gepubliceerde holegegevens niet opgenomen. 1golf.eu blokkeerde (Cloudflare).
+
+<a id="the-international-badhoevedorp"></a>
+## The International
+
+The International bij Badhoevedorp is een exclusieve ledenclub met een 18-holesbaan ontworpen door Ian Woosnam en Mastergolf. Kunstmatig aangelegde heuvels met tot 14 meter hoogteverschil, veel water en grote, sterk geonduleerde greens maken het een veeleisende baan. De baan is alleen toegankelijk voor leden en hun introducés en was gastheer van het KLM Open.
+
+- **Club:** The International
+- **Adres:** Oude Haagseweg 200, 1171 PE Badhoevedorp, Noord-Holland, NL
+- **GPS:** 52.3302884, 4.8020098
+- **Afstand:** 116.2 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** sterk geaccidenteerd (hoogteverschillen tot 14 m) met waterpartijen, nabij Schiphol
+- **Architect:** Ian Woosnam i.s.m. Mastergolf
+- **Telefoon:** +31 20 303 4444
+- **E-mail:** info@theinternational.nl
+- **Website:** https://www.theinternational.nl/
+- **Greenfee welkom:** False
+- **Eisen:** Besloten club: alleen leden en hun gasten (op uitnodiging).
+- **Faciliteiten:** 18-holes baan, driving range, golfschool, restaurant, vergaderruimtes, fitness club, bag drop
+
+**Lus 18 holes** — 18 holes, par 73
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| zwart (men) | 6662 | 76.4 | 146 | 73 |
+| wit (men) | 6479 | 75.2 | 141 | 73 |
+| geel (men) | 6115 | 73.2 | 137 | 73 |
+| blauw (men) | 5914 | 72.0 | 136 | 73 |
+| rood (men) | 5116 | 67.7 | 127 | 73 |
+| geel (women) | 6115 | 80.0 | 152 | 73 |
+| blauw (women) | 5914 | 78.9 | 150 | 73 |
+| rood (women) | 5116 | 73.8 | 136 | 73 |
+
+| Hole | Par | SI | zwart | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 17 | 451 | 466 | 451 | 444 | 390 |
+| 2 | 4 | 13 | 361 | 345 | 323 | 323 | 280 |
+| 3 | 5 | 7 | 516 | 512 | 480 | 459 | 407 |
+| 4 | 3 | 11 | 155 | 128 | 109 | 109 | 88 |
+| 5 | 4 | 15 | 312 | 312 | 291 | 291 | 247 |
+| 6 | 4 | 9 | 363 | 363 | 343 | 343 | 294 |
+| 7 | 3 | 3 | 209 | 193 | 183 | 178 | 152 |
+| 8 | 5 | 5 | 539 | 512 | 487 | 469 | 430 |
+| 9 | 4 | 1 | 434 | 409 | 382 | 359 | 306 |
+| 10 | 4 | 6 | 401 | 381 | 358 | 351 | 277 |
+| 11 | 4 | 18 | 323 | 323 | 307 | 307 | 284 |
+| 12 | 4 | 4 | 437 | 420 | 397 | 395 | 332 |
+| 13 | 3 | 16 | 177 | 177 | 161 | 153 | 139 |
+| 14 | 4 | 14 | 379 | 379 | 359 | 334 | 287 |
+| 15 | 5 | 2 | 530 | 506 | 487 | 485 | 403 |
+| 16 | 4 | 8 | 380 | 377 | 342 | 316 | 273 |
+| 17 | 3 | 12 | 213 | 197 | 192 | 174 | 147 |
+| 18 | 5 | 10 | 482 | 479 | 463 | 424 | 380 |
+
+- **Scorekaartpagina:** https://www.theinternational.nl/holes/hole-1/
+- **Bestanden:** [scorecard/page.html](the-international-badhoevedorp/scorecard/page.html), [scorecard/page-handicap-heren.html](the-international-badhoevedorp/scorecard/page-handicap-heren.html), [scorecard/page-handicap-dames.html](the-international-badhoevedorp/scorecard/page-handicap-dames.html), [scorecard/holes/hole-1.html](the-international-badhoevedorp/scorecard/holes/hole-1.html), [scorecard/holes/hole-2.html](the-international-badhoevedorp/scorecard/holes/hole-2.html), [scorecard/holes/hole-3.html](the-international-badhoevedorp/scorecard/holes/hole-3.html), [scorecard/holes/hole-4.html](the-international-badhoevedorp/scorecard/holes/hole-4.html), [scorecard/holes/hole-5.html](the-international-badhoevedorp/scorecard/holes/hole-5.html), [scorecard/holes/hole-6.html](the-international-badhoevedorp/scorecard/holes/hole-6.html), [scorecard/holes/hole-7.html](the-international-badhoevedorp/scorecard/holes/hole-7.html), [scorecard/holes/hole-8.html](the-international-badhoevedorp/scorecard/holes/hole-8.html), [scorecard/holes/hole-9.html](the-international-badhoevedorp/scorecard/holes/hole-9.html), [scorecard/holes/hole-10.html](the-international-badhoevedorp/scorecard/holes/hole-10.html), [scorecard/holes/hole-11.html](the-international-badhoevedorp/scorecard/holes/hole-11.html), [scorecard/holes/hole-12.html](the-international-badhoevedorp/scorecard/holes/hole-12.html), [scorecard/holes/hole-13.html](the-international-badhoevedorp/scorecard/holes/hole-13.html), [scorecard/holes/hole-14.html](the-international-badhoevedorp/scorecard/holes/hole-14.html), [scorecard/holes/hole-15.html](the-international-badhoevedorp/scorecard/holes/hole-15.html), [scorecard/holes/hole-16.html](the-international-badhoevedorp/scorecard/holes/hole-16.html), [scorecard/holes/hole-17.html](the-international-badhoevedorp/scorecard/holes/hole-17.html), [scorecard/holes/hole-18.html](the-international-badhoevedorp/scorecard/holes/hole-18.html)
+- **Opmerking:** Geen scorekaartbestand gepubliceerd; par, S.I. en lengtes per tee komen van de 18 holepagina's op de clubsite, CR/slope van de handicaptabelpagina's. De club benoemt tees met nummers 67/65/61/59/51 (zwart/wit/geel/blauw/rood, ~totale lengte in hm). Hole 1: zwart 451 m is korter dan wit 466 m volgens de site, zo overgenomen. Ook 9-holes ratings (voor/achter) staan op de site. Onbekend of de holes 1-9 de 'front nine' met par 37 zijn: dat volgt uit de holepagina's (voor 37, achter 36).
+
+<a id="golfpark-wilnis"></a>
+## Golfpark Wilnis
+
+Familiebedrijf in de polder bij Wilnis met een 18-holesbaan (par 72) en een aparte 9-holes par 3-baan. De baan groeide in de loop der jaren uit van 9 naar 18 holes en kent veel water en lange par-5's. De vereniging die hier speelt heet Golfclub Veldzijde; greenfeespelers kunnen tot vijf dagen vooruit boeken.
+
+- **Club:** Golfpark Wilnis / Golfclub Veldzijde
+- **Adres:** Bovendijk 16a, 3648 NM Wilnis, Utrecht, NL
+- **GPS:** 52.1807202, 4.883495
+- **Afstand:** 116.7 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** polderbaan met waterpartijen
+- **Telefoon:** +31 297 281 143
+- **E-mail:** golf@golfparkwilnis.nl
+- **Website:** https://golfparkwilnis.nl/
+- **Starttijden:** https://golfparkwilnis.nl/de-golfbaan/starttijd-reserveren/
+- **Greenfee welkom:** True
+- **Eisen:** NGF-pas tonen; par 3-baan met baanpermissie
+- **Faciliteiten:** clubhuis, restaurant, driving range, par 3-baan (9 holes), golfschool, golfshop, buggy's, handicarts, jeu de boules
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5916 | 73.1 | 144 | 72 |
+| geel (men) | 5677 | 72.1 | 139 | 72 |
+| geel (women) | 5677 | 77.7 | 148 | 72 |
+| blauw (men) | 5020 | 68.1 | 128 | 72 |
+| blauw (women) | 5020 | 73.5 | 136 | 72 |
+| rood (men) | 4789 | 67.0 | 124 | 72 |
+| rood (women) | 4789 | 72.3 | 132 | 72 |
+| oranje (men) | 3786 | 62.6 | 112 | 72 |
+| oranje (women) | 3786 | 65.9 | 109 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 15 | 442 | 431 | 399 | 372 | 306 |
+| 2 | 3 | 9 | 166 | 166 | 138 | 138 | 82 |
+| 3 | 4 | 1 | 366 | 356 | 356 | 316 | 237 |
+| 4 | 3 | 7 | 173 | 142 | 126 | 126 | 83 |
+| 5 | 4 | 5 | 393 | 355 | 355 | 294 | 231 |
+| 6 | 3 | 17 | 163 | 133 | 133 | 113 | 70 |
+| 7 | 4 | 3 | 329 | 320 | 279 | 272 | 206 |
+| 8 | 5 | 11 | 494 | 484 | 403 | 403 | 386 |
+| 9 | 5 | 13 | 447 | 432 | 345 | 345 | 305 |
+| 10 | 3 | 16 | 152 | 147 | 147 | 123 | 73 |
+| 11 | 4 | 10 | 316 | 309 | 275 | 268 | 191 |
+| 12 | 5 | 4 | 515 | 482 | 413 | 408 | 333 |
+| 13 | 4 | 2 | 407 | 407 | 347 | 347 | 292 |
+| 14 | 4 | 14 | 311 | 311 | 254 | 254 | 189 |
+| 15 | 3 | 12 | 167 | 140 | 140 | 107 | 66 |
+| 16 | 5 | 8 | 470 | 459 | 400 | 400 | 335 |
+| 17 | 3 | 18 | 124 | 124 | 108 | 108 | 64 |
+| 18 | 5 | 6 | 481 | 479 | 402 | 395 | 337 |
+
+**Lus Par 3-baan (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1688 | 49.2 | 69 | 54 |
+| rood (women) | 1688 | 50.9 | 78 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 2 | 149 | 149 |
+| 2 | 3 | 14 | 95 | 95 |
+| 3 | 3 | 4 | 109 | 109 |
+| 4 | 3 | 10 | 94 | 94 |
+| 5 | 3 | 8 | 110 | 110 |
+| 6 | 3 | 6 | 108 | 108 |
+| 7 | 3 | 18 | 37 | 37 |
+| 8 | 3 | 12 | 79 | 79 |
+| 9 | 3 | 16 | 63 | 63 |
+| 10 | 3 | 1 | 149 | 149 |
+| 11 | 3 | 13 | 95 | 95 |
+| 12 | 3 | 3 | 109 | 109 |
+| 13 | 3 | 9 | 94 | 94 |
+| 14 | 3 | 7 | 110 | 110 |
+| 15 | 3 | 5 | 108 | 108 |
+| 16 | 3 | 17 | 37 | 37 |
+| 17 | 3 | 11 | 79 | 79 |
+| 18 | 3 | 15 | 63 | 63 |
+
+- **Scorekaartpagina:** https://golfparkwilnis.nl/de-golfbaan/scorecards-en-handicaptabellen/
+- **Bestanden:** [scorecard/Dames-18holes.pdf](golfpark-wilnis/scorecard/Dames-18holes.pdf), [scorecard/Dames-9holes-a.pdf](golfpark-wilnis/scorecard/Dames-9holes-a.pdf), [scorecard/Dames-9holes-b.pdf](golfpark-wilnis/scorecard/Dames-9holes-b.pdf), [scorecard/Digitaal_Par3-scorekaart-20252-scaled.jpg](golfpark-wilnis/scorecard/Digitaal_Par3-scorekaart-20252-scaled.jpg), [scorecard/GC-Veldzijde-Par-3-baan-Dames-Heren-2.pdf](golfpark-wilnis/scorecard/GC-Veldzijde-Par-3-baan-Dames-Heren-2.pdf), [scorecard/Heren-18holes.pdf](golfpark-wilnis/scorecard/Heren-18holes.pdf), [scorecard/Heren-9holes-a.pdf](golfpark-wilnis/scorecard/Heren-9holes-a.pdf), [scorecard/Heren-9holes-b.pdf](golfpark-wilnis/scorecard/Heren-9holes-b.pdf), [scorecard/Scorekaart-Wilnis_2024.jpg](golfpark-wilnis/scorecard/Scorekaart-Wilnis_2024.jpg), [scorecard/page.html](golfpark-wilnis/scorecard/page.html)
+- **Opmerking:** Baanhandicaptabellen 18 holes d.d. 04-12-2023, par 3-baan d.d. 16-10-2025. Par 3-baan: één afslag (geel heren/rood dames) met dezelfde lengtes; 9 holes die 2x gespeeld worden met eigen S.I. voor 10-18. Aparte 9-holes ratings (1e/2e negen) staan in de PDF's.
+
+<a id="golfbaan-de-kroonprins-vianen"></a>
+## Golfbaan De Kroonprins
+
+Open polderbaan in linksstijl aan de Merwedekade bij Vianen, met een 18-holesbaan van par 71 en een 9-holes par 3-baan. Weinig bomen en veel wind maken de baan lastiger dan de lengte doet vermoeden. Er zijn ruime oefenfaciliteiten en een clubhuis met terras; de vereniging ter plaatse is Golfclub De Lingewaelsche.
+
+- **Club:** Golfbaan De Kroonprins Vianen / Golfclub De Lingewaelsche
+- **Adres:** Merwedekade 8, 4131 NZ Vianen, Utrecht, NL
+- **GPS:** 51.9718474, 5.0813178
+- **Afstand:** 116.9 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** polder-linksbaan
+- **Architect:** Jol Golf Design (par 3-baan)
+- **Telefoon:** +31 347 345 160
+- **E-mail:** info@de-kroonprins.nl
+- **Website:** https://golfbaandekroonprins.nl/
+- **Starttijden:** https://golfbaandekroonprins.nl/de-golfbaan/starttijd-reserveren/
+- **Greenfee welkom:** True
+- **Faciliteiten:** clubhuis, restaurant, terras, driving range, putting green, chipping green, par 3-baan (9 holes), golfschool, golfshop, buggy's, handicarts, lockers, kleedkamers
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5727 | 71.2 | 135 | 71 |
+| geel (men) | 5374 | 69.4 | 130 | 71 |
+| geel (women) | 5374 | 75.3 | 145 | 71 |
+| blauw (men) | 4818 | 66.7 | 118 | 71 |
+| blauw (women) | 4818 | 71.5 | 134 | 71 |
+| rood (men) | 4587 | 65.4 | 114 | 71 |
+| rood (women) | 4587 | 70.2 | 134 | 71 |
+| oranje (men) | 3789 | 62.8 | 101 | 71 |
+| oranje (women) | 3789 | 65.0 | 113 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 8 | 344 | 325 | 301 | 301 | 253 |
+| 2 | 4 | 14 | 315 | 308 | 276 | 269 | 193 |
+| 3 | 4 | 10 | 315 | 305 | 302 | 267 | 223 |
+| 4 | 3 | 16 | 138 | 127 | 127 | 89 | 83 |
+| 5 | 4 | 2 | 367 | 360 | 310 | 302 | 256 |
+| 6 | 5 | 4 | 534 | 473 | 399 | 395 | 305 |
+| 7 | 4 | 12 | 353 | 312 | 312 | 252 | 209 |
+| 8 | 4 | 6 | 340 | 336 | 282 | 282 | 222 |
+| 9 | 3 | 18 | 106 | 106 | 96 | 96 | 87 |
+| 10 | 4 | 11 | 339 | 297 | 262 | 260 | 258 |
+| 11 | 4 | 9 | 368 | 304 | 304 | 266 | 220 |
+| 12 | 4 | 13 | 335 | 327 | 280 | 274 | 227 |
+| 13 | 3 | 15 | 130 | 130 | 109 | 109 | 96 |
+| 14 | 5 | 3 | 486 | 454 | 386 | 383 | 309 |
+| 15 | 3 | 7 | 180 | 175 | 145 | 139 | 101 |
+| 16 | 4 | 1 | 392 | 350 | 288 | 288 | 232 |
+| 17 | 4 | 17 | 239 | 239 | 231 | 207 | 195 |
+| 18 | 5 | 5 | 446 | 446 | 408 | 408 | 320 |
+
+**Lus Par 3-baan (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1762 | 49.2 | 67 | 54 |
+| geel (women) | 1762 | 50.7 | 65 | 54 |
+| rood (men) | 1469 | 47.7 | 63 | 54 |
+| rood (women) | 1469 | 48.9 | 61 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 7 | 106 | 70 |
+| 2 | 3 | 17 | 63 | 60 |
+| 3 | 3 | 1 | 148 | 113 |
+| 4 | 3 | 5 | 107 | 84 |
+| 5 | 3 | 15 | 79 | 67 |
+| 6 | 3 | 3 | 118 | 104 |
+| 7 | 3 | 13 | 65 | 60 |
+| 8 | 3 | 11 | 88 | 82 |
+| 9 | 3 | 9 | 107 | 94 |
+| 10 | 3 | 8 | 106 | 70 |
+| 11 | 3 | 18 | 63 | 60 |
+| 12 | 3 | 2 | 148 | 113 |
+| 13 | 3 | 6 | 107 | 84 |
+| 14 | 3 | 16 | 79 | 67 |
+| 15 | 3 | 4 | 118 | 105 |
+| 16 | 3 | 14 | 65 | 60 |
+| 17 | 3 | 12 | 88 | 82 |
+| 18 | 3 | 10 | 107 | 94 |
+
+- **Scorekaartpagina:** https://golfbaandekroonprins.nl/de-golfbaan/scorecards-en-handicaptabellen/
+- **Bestanden:** [scorecard/18-Holes-Baan-Scorekaart-De-Kroonprins-Vianen.pdf](golfbaan-de-kroonprins-vianen/scorecard/18-Holes-Baan-Scorekaart-De-Kroonprins-Vianen.pdf), [scorecard/18-holes-par3.png](golfbaan-de-kroonprins-vianen/scorecard/18-holes-par3.png), [scorecard/Hancicaptabel-Heren-De-Kroonprins-Vianen.pdf](golfbaan-de-kroonprins-vianen/scorecard/Hancicaptabel-Heren-De-Kroonprins-Vianen.pdf), [scorecard/Handicaptabel-Dames-De-Kroonprins-Vianen.pdf](golfbaan-de-kroonprins-vianen/scorecard/Handicaptabel-Dames-De-Kroonprins-Vianen.pdf), [scorecard/Par-3-Baan-Scorekaart-De-Kroonprins-Vianen.pdf](golfbaan-de-kroonprins-vianen/scorecard/Par-3-Baan-Scorekaart-De-Kroonprins-Vianen.pdf), [scorecard/page.html](golfbaan-de-kroonprins-vianen/scorecard/page.html)
+- **Opmerking:** Scorekaarten 2024, handicaptabellen 18 holes 04-12-2023, par 3-baan 18 holes 11-02-2021. Par 3-baan: kaart vermeldt per negen 907 m geel, maar de holes tellen op tot 881 m (aangehouden: holelengtes). Rood hole 6 staat op de kaart als 104 m en hole 15 als 105 m (beide negens totaal 735 m volgens kaart). Controle: Par 3-baan (9 holes 2x) geel: som holes 1762 vs kaart 1814 (verschil -52); Par 3-baan (9 holes 2x) rood: som holes 1469 vs kaart 1470 (verschil -1).
+
+<a id="pitch-putt-kameryck-kamerik"></a>
+## Pitch & Putt Kameryck
+
+Achttien-holes pitch & puttbaan bij recreatieboerderij Kameryck in de polder bij Kamerik. De holes zijn kort (circa 25 tot 70 meter) en je speelt met een pitch- en een putterclub, zonder golfvaardigheidsbewijs. De baan wordt veel gebruikt voor familie-uitjes en bedrijfsuitjes, gecombineerd met het restaurant ter plaatse.
+
+- **Club:** Pitch & Putt Kameryck
+- **Adres:** Oortjespad 3, 3471 HD Kamerik, Utrecht, NL
+- **GPS:** 52.130472, 4.9071178
+- **Afstand:** 117.7 km
+- **Type:** pitch-putt
+- **Holes:** 18
+- **Landschap:** pitch & puttbaan in het polderlandschap van het Groene Hart
+- **Telefoon:** +31 348 400 771
+- **E-mail:** info@kameryck.nl
+- **Website:** https://pitch-putt.nl/locaties/kameryck/
+- **Greenfee welkom:** True
+- **Eisen:** geen golfvaardigheidsbewijs nodig
+- **Faciliteiten:** restaurant, blotevoetenpad, groepsarrangementen
+
+**Lus 18 holes** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard | 904 |  |  | 54 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 12 | 60 |
+| 2 | 3 | 6 | 51 |
+| 3 | 3 | 18 | 26 |
+| 4 | 3 | 16 | 38 |
+| 5 | 3 | 1 | 53 |
+| 6 | 3 | 8 | 63 |
+| 7 | 3 | 4 | 67 |
+| 8 | 3 | 10 | 56 |
+| 9 | 3 | 11 | 50 |
+| 10 | 3 | 13 | 35 |
+| 11 | 3 | 3 | 55 |
+| 12 | 3 | 9 | 40 |
+| 13 | 3 | 5 | 50 |
+| 14 | 3 | 7 | 45 |
+| 15 | 3 | 15 | 58 |
+| 16 | 3 | 2 | 70 |
+| 17 | 3 | 17 | 52 |
+| 18 | 3 | 14 | 35 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/pitch-putt-kameryck
+- **Bestanden:** [scorecard/hole19.html](pitch-putt-kameryck-kamerik/scorecard/hole19.html), [scorecard/page.html](pitch-putt-kameryck-kamerik/scorecard/page.html)
+- **Opmerking:** Geen officiële scorekaart online; par, S.I. en lengtes uit hole19golf.com (tee "meters"). Officiële site noemt 18 holes met maximale lengte 70 m. Geen CR/slope.
+
+<a id="golf-countryclub-heiloo"></a>
+## Golfbaan Heiloo
+
+Negen holes met NGF A-status (sinds 2005) aan de Lagelaan in Heiloo, ontworpen door Alan Rijks. De baan ligt open in het landelijke gebied, waardoor de wind vaak bepalend is; met aparte afslagen voor de tweede ronde speel je 18 holes par 69. Naast de baan ligt een korte oefenlus van negen holes.
+
+- **Club:** Golf- & Countryclub Heiloo
+- **Adres:** Lagelaan 8, 1851 PC Heiloo, Noord-Holland, NL
+- **GPS:** 52.5834829, 4.7131433
+- **Afstand:** 118.0 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** open, landelijke polderbaan (wind speelt vaak mee)
+- **Architect:** Alan Rijks
+- **Telefoon:** +31 72 505 4540
+- **Website:** https://www.golfclubheiloo.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, Korte 3 (3x3 korte holes), clubhuis met Brasserie In 't Groen, golfshop, Golf Academy, buggy's/handicarts/trolleys
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 69
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5513 | 69.3 | 132 | 69 |
+| geel (men) | 5240 | 69.0 | 119 | 69 |
+| blauw (men) | 4949 | 67.3 | 111 | 69 |
+| rood (men) | 4434 | 64.8 | 107 | 69 |
+| oranje (men) | 3859 | 62.5 | 102 | 69 |
+| geel (women) | 5240 | 74.0 | 130 | 69 |
+| blauw (women) | 4949 | 71.7 | 131 | 69 |
+| rood (women) | 4434 | 69.5 | 117 | 69 |
+| oranje (women) | 3859 | 65.4 | 113 | 69 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 339 | 322 | 314 | 273 | 230 |
+| 2 | 4 | 11 | 331 | 310 | 297 | 273 | 234 |
+| 3 | 3 | 13 | 159 | 153 | 141 | 130 | 127 |
+| 4 | 5 | 9 | 456 | 430 | 420 | 371 | 309 |
+| 5 | 4 | 3 | 386 | 375 | 313 | 307 | 266 |
+| 6 | 3 | 15 | 139 | 129 | 125 | 108 | 103 |
+| 7 | 4 | 1 | 362 | 354 | 325 | 282 | 278 |
+| 8 | 3 | 17 | 159 | 148 | 144 | 128 | 118 |
+| 9 | 4 | 7 | 382 | 354 | 343 | 294 | 245 |
+| 10 | 4 | 4 | 339 | 322 | 314 | 273 | 230 |
+| 11 | 4 | 12 | 331 | 310 | 297 | 273 | 234 |
+| 12 | 3 | 14 | 159 | 153 | 141 | 130 | 127 |
+| 13 | 5 | 10 | 456 | 430 | 420 | 371 | 309 |
+| 14 | 4 | 2 | 386 | 375 | 313 | 307 | 261 |
+| 15 | 3 | 16 | 144 | 139 | 139 | 130 | 103 |
+| 16 | 5 | 8 | 444 | 434 | 416 | 362 | 322 |
+| 17 | 3 | 18 | 159 | 148 | 144 | 128 | 118 |
+| 18 | 4 | 6 | 382 | 354 | 343 | 294 | 245 |
+
+**Lus Korte 3 (9 korte holes, non-qualifying)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard | 635 |  |  | 27 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 3 | 100 |
+| 2 | 3 | 7 | 65 |
+| 3 | 3 | 6 | 50 |
+| 4 | 3 | 5 | 86 |
+| 5 | 3 | 2 | 56 |
+| 6 | 3 | 8 | 73 |
+| 7 | 3 | 1 | 65 |
+| 8 | 3 | 9 | 79 |
+| 9 | 3 | 4 | 61 |
+
+- **Scorekaartpagina:** https://www.golfclubheiloo.nl/baan/course-rating/scorecard
+- **Bestanden:** [scorecard/Scorecard_binnenzijde.jpg](golf-countryclub-heiloo/scorecard/Scorecard_binnenzijde.jpg), [scorecard/Heiloo_WHS_tabel_18_Heren_2021.pdf](golf-countryclub-heiloo/scorecard/Heiloo_WHS_tabel_18_Heren_2021.pdf), [scorecard/Heiloo_WHS_tabel_9_Heren_2021.pdf](golf-countryclub-heiloo/scorecard/Heiloo_WHS_tabel_9_Heren_2021.pdf), [scorecard/Heiloo_HS_tabel_18_Dames_2021.pdf](golf-countryclub-heiloo/scorecard/Heiloo_HS_tabel_18_Dames_2021.pdf), [scorecard/Heiloo_HS_tabel_9_Dames_2021.pdf](golf-countryclub-heiloo/scorecard/Heiloo_HS_tabel_9_Dames_2021.pdf), [scorecard/Scorekaart_K3.jpg](golf-countryclub-heiloo/scorecard/Scorekaart_K3.jpg), [scorecard/hdp_tabel_K3.jpg](golf-countryclub-heiloo/scorecard/hdp_tabel_K3.jpg), [scorecard/page.html](golf-countryclub-heiloo/scorecard/page.html), [scorecard/page-korte-3.html](golf-countryclub-heiloo/scorecard/page-korte-3.html)
+- **Opmerking:** Scorekaart: 9-holesbaan met aparte afslagen voor holes 10-18 (hole 16 is par 5 i.p.v. par 4). Ratings WHS-tabellen 21-01-2021; 9-holesratings 1e negen (par 34) en 2e negen (par 35) ook beschikbaar. Korte 3 (editie 2024): 9 holes van 50-100 m, totaal 635 m, S.I. 'indicatief', geen course rating (alleen indicatieve baanhandicaptabel 24-04-2024).
+
+<a id="amsterdamse-golf-club-amsterdam"></a>
+## Amsterdamse Golf Club
+
+De Amsterdamse Golf Club, opgericht in 1934, speelt aan de westrand van Amsterdam in het groene gebied tussen Halfweg en Spaarnwoude. De 18-holesbaan van ruim 6.200 meter (wit) heeft een parkachtig karakter met bomenrijen en water. Achter de driving range ligt een vernieuwde par 3-baan met zes greens die op drie manieren gespeeld worden.
+
+- **Club:** Amsterdamse Golf Club
+- **Adres:** Bauduinlaan 35, 1047 HK Amsterdam, Noord-Holland, NL
+- **GPS:** 52.3998286, 4.74634
+- **Afstand:** 118.1 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** parkachtig met bomenrijen en water, in recreatiegebied Spaarnwoude bij Halfweg
+- **Opgericht:** 1934
+- **Telefoon:** +31 20 497 7866
+- **E-mail:** secretariaat@amsterdamsegolfclub.nl
+- **Website:** https://amsterdamsegolfclub.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Greenfeespelers welkom, niet op feest- en weekenddagen; met of zonder NGF-registratie (verschillend tarief).
+- **Faciliteiten:** 18-holes baan, par 3-baan (6 greens, 18 holes), driving range, clubhuis met restaurant, shop, clubverhuur
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6217 | 73.6 | 132 | 72 |
+| geel (men) | 5918 | 72.0 | 131 | 72 |
+| blauw (men) | 5372 | 69.5 | 124 | 72 |
+| rood (men) | 4989 | 67.1 | 119 | 72 |
+| oranje (men) | 4002 | 63.2 | 102 | 72 |
+| geel (women) | 5918 | 78.3 | 142 | 72 |
+| blauw (women) | 5372 | 74.9 | 135 | 72 |
+| rood (women) | 4989 | 72.6 | 129 | 72 |
+| oranje (women) | 4002 | 66.1 | 112 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 8 | 354 | 342 | 331 | 269 | 223 |
+| 2 | 3 | 16 | 185 | 165 | 141 | 125 | 123 |
+| 3 | 5 | 6 | 507 | 473 | 413 | 404 | 314 |
+| 4 | 4 | 2 | 389 | 374 | 326 | 316 | 241 |
+| 5 | 5 | 10 | 481 | 462 | 406 | 398 | 318 |
+| 6 | 3 | 18 | 153 | 132 | 130 | 114 | 81 |
+| 7 | 4 | 12 | 362 | 336 | 314 | 278 | 223 |
+| 8 | 4 | 4 | 322 | 313 | 303 | 264 | 211 |
+| 9 | 4 | 14 | 296 | 290 | 282 | 244 | 175 |
+| 10 | 4 | 3 | 332 | 326 | 317 | 290 | 233 |
+| 11 | 3 | 11 | 197 | 177 | 150 | 130 | 124 |
+| 12 | 4 | 13 | 361 | 334 | 287 | 278 | 223 |
+| 13 | 4 | 1 | 401 | 392 | 342 | 331 | 272 |
+| 14 | 5 | 9 | 488 | 480 | 415 | 407 | 319 |
+| 15 | 3 | 17 | 161 | 157 | 159 | 137 | 108 |
+| 16 | 4 | 5 | 393 | 364 | 317 | 309 | 243 |
+| 17 | 4 | 7 | 384 | 359 | 309 | 302 | 242 |
+| 18 | 5 | 15 | 451 | 442 | 430 | 393 | 329 |
+
+**Lus Par 3-baan (18 holes op 6 greens)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard (men) | 1310 |  |  | 54 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 4 | 80 |
+| 2 | 3 | 18 | 40 |
+| 3 | 3 | 2 | 100 |
+| 4 | 3 | 16 | 50 |
+| 5 | 3 | 6 | 80 |
+| 6 | 3 | 8 | 75 |
+| 7 | 3 | 10 | 70 |
+| 8 | 3 | 14 | 55 |
+| 9 | 3 | 12 | 65 |
+| 10 | 3 | 7 | 75 |
+| 11 | 3 | 13 | 70 |
+| 12 | 3 | 1 | 125 |
+| 13 | 3 | 9 | 80 |
+| 14 | 3 | 17 | 40 |
+| 15 | 3 | 3 | 100 |
+| 16 | 3 | 15 | 50 |
+| 17 | 3 | 5 | 80 |
+| 18 | 3 | 11 | 75 |
+
+- **Scorekaartpagina:** https://amsterdamsegolfclub.nl/scorekaart-2013/
+- **Bestanden:** [scorecard/page.html](amsterdamse-golf-club-amsterdam/scorecard/page.html), [scorecard/20240101-Scorekaart.pdf](amsterdamse-golf-club-amsterdam/scorecard/20240101-Scorekaart.pdf), [scorecard/20250701-Infovel-scorekaart.pdf](amsterdamse-golf-club-amsterdam/scorecard/20250701-Infovel-scorekaart.pdf), [scorecard/scorekaart-par-3-baan.png](amsterdamse-golf-club-amsterdam/scorecard/scorekaart-par-3-baan.png)
+- **Opmerking:** Scorekaart 1-1-2024 (holes, par, S.I., lengtes W/Y/B/R/O); CR/SR van de infovel-scorekaart 1-7-2025. Hole 15: blauw (159) staat op de kaart langer dan geel (157), zo overgenomen. Par 3-baan: één lengte per hole, geen CR/slope; holes 13-18 zijn holes 1-6 opnieuw. Alle totalen kloppen met de holesom.
+
+<a id="golfpark-de-bonte-bij-uden"></a>
+## Golfpark De Bonte Bij (voorheen De Leemskuilen)
+
+Golfpark De Bonte Bij, voorheen De Leemskuilen, ligt aan de rand van Uden en heeft een qualifying 9-holes par 3-baan. De holes variëren van ruim 70 tot bijna 170 meter en spelen langs bos en over water, met goed verdedigde greens. Er zijn uitgebreide oefenfaciliteiten en jaarlijks wordt het Brabants Open Par-3 gespeeld.
+
+- **Club:** Golfpark De Bonte Bij
+- **Adres:** Doelenweg 1, 5406 XK Uden, Noord-Brabant, NL
+- **GPS:** 51.6789024, 5.5990665
+- **Afstand:** 118.1 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** bosrand met waterpartijen
+- **Telefoon:** 0413-257701
+- **E-mail:** info@golfparkdebontebij.nl
+- **Website:** https://golfparkdebontebij.nl
+- **Greenfee welkom:** True
+- **Eisen:** Minimaal NGF-handicap 54 of baanpermissie van Golfpark De Bonte Bij; NGF-pas tonen
+- **Faciliteiten:** driving range, pitch & putt, oefenfaciliteiten, clubgebouw met bar, golfclinics
+
+**Lus 9 holes par 3** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1085 |  |  | 27 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 3 |  | 119 |
+| 2 | 3 |  | 73 |
+| 3 | 3 |  | 132 |
+| 4 | 3 |  | 88 |
+| 5 | 3 |  | 163 |
+| 6 | 3 |  | 100 |
+| 7 | 3 |  | 135 |
+| 8 | 3 |  | 107 |
+| 9 | 3 |  | 168 |
+
+- **Scorekaartpagina:** https://golfparkdebontebij.nl/golfpark/lay-out-golfbaan/
+- **Bestanden:** [scorecard/holes-leemskuilen-plattegrond-klein.jpg](golfpark-de-bonte-bij-uden/scorecard/holes-leemskuilen-plattegrond-klein.jpg), [scorecard/page.html](golfpark-de-bonte-bij-uden/scorecard/page.html)
+- **Opmerking:** Par 3-baan (9 holes, par 27); holelengtes uit de holebeschrijvingen op de site, één lengte per hole zonder teekleur (hier "geel"; de pagina handicaptabellen noemt "Heren en Dames Geel"). Geen scorekaart, S.I. of CR/slope online gevonden (handicaptabel niet als bestand vindbaar).
+
+<a id="heemskerkse-golfclub-heemskerk"></a>
+## Heemskerkse Golfclub
+
+Parkbaan van 18 holes (par 72) bij Heemskerk, ontworpen door Gerard Jol, met veel bomen, water en natuur. De holes liggen in een binnen- en een buitenring rond het clubhuis. Naast de grote baan ligt de Weidelus, een 9-holes par 3-baan omringd door water met twee wisselende parcoursen.
+
+- **Club:** Heemskerkse Golfclub
+- **Adres:** Communicatieweg 18, 1967 PR Heemskerk, Noord-Holland, NL
+- **GPS:** 52.4965, 4.7105
+- **Afstand:** 118.8 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** parkbaan in Kennemerland met veel groen en water; binnen- en buitenring van holes
+- **Opgericht:** 1988
+- **Architect:** Gerard Jol
+- **Telefoon:** +31 251 250 088
+- **Website:** https://www.heemskerksegolfclub.nl/
+- **Starttijden:** https://www.heemskerksegolfclub.nl/starttijd-reserveren/
+- **Greenfee welkom:** True
+- **Faciliteiten:** 9-holes par 3-baan (Weidelus), golfschool, clubhuis/Brasserie de Negentiende
+
+**Lus 18 holes (par 72)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) |  | 74.1 | 136 | 72 |
+| geel (men) |  | 73.1 | 133 | 72 |
+| blauw (men) |  | 69.7 | 125 | 72 |
+| rood (men) |  | 68.2 | 122 | 72 |
+| oranje (men) |  | 66.0 | 110 | 72 |
+| geel (women) |  | 79.5 | 143 | 72 |
+| blauw (women) |  | 75.0 | 133 | 72 |
+| rood (women) |  | 73.5 | 128 | 72 |
+| oranje (women) |  | 70.3 | 123 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 14 |  |  |  |  |  |
+| 2 | 4 | 6 |  |  |  |  |  |
+| 3 | 5 | 8 |  |  |  |  |  |
+| 4 | 4 | 12 |  |  |  |  |  |
+| 5 | 3 | 16 |  |  |  |  |  |
+| 6 | 5 | 4 |  |  |  |  |  |
+| 7 | 4 | 2 |  |  |  |  |  |
+| 8 | 3 | 18 |  |  |  |  |  |
+| 9 | 4 | 10 |  |  |  |  |  |
+| 10 | 4 | 3 |  |  |  |  |  |
+| 11 | 4 | 9 |  |  |  |  |  |
+| 12 | 4 | 13 |  |  |  |  |  |
+| 13 | 3 | 15 |  |  |  |  |  |
+| 14 | 4 | 7 |  |  |  |  |  |
+| 15 | 5 | 1 |  |  |  |  |  |
+| 16 | 3 | 17 |  |  |  |  |  |
+| 17 | 4 | 5 |  |  |  |  |  |
+| 18 | 5 | 11 |  |  |  |  |  |
+
+**Lus Weidelus par 3 (parcours A holes 1-9 + parcours B holes 10-18)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| parcours (men) | 2159 | 50.5 | 68 | 54 |
+| parcours (women) | 2159 | 52.7 | 76 | 54 |
+
+| Hole | Par | SI | parcours |
+|---|---|---|---|
+| 1 | 3 | 15 | 98 |
+| 2 | 3 | 3 | 125 |
+| 3 | 3 | 5 | 122 |
+| 4 | 3 | 1 | 166 |
+| 5 | 3 | 9 | 120 |
+| 6 | 3 | 17 | 97 |
+| 7 | 3 | 7 | 120 |
+| 8 | 3 | 11 | 119 |
+| 9 | 3 | 13 | 114 |
+| 10 | 3 | 6 | 135 |
+| 11 | 3 | 2 | 156 |
+| 12 | 3 | 14 | 107 |
+| 13 | 3 | 8 | 129 |
+| 14 | 3 | 10 | 109 |
+| 15 | 3 | 18 | 88 |
+| 16 | 3 | 12 | 109 |
+| 17 | 3 | 4 | 138 |
+| 18 | 3 | 16 | 107 |
+
+- **Scorekaartpagina:** https://www.heemskerksegolfclub.nl/banen/baaninformatie-18-holes/
+- **Bestanden:** [scorecard/Heemskerkse-WHS-tabel-18-holes-heren.pdf](heemskerkse-golfclub-heemskerk/scorecard/Heemskerkse-WHS-tabel-18-holes-heren.pdf), [scorecard/Heemskerkse-WHS-tabel-18-holes-dames.pdf](heemskerkse-golfclub-heemskerk/scorecard/Heemskerkse-WHS-tabel-18-holes-dames.pdf), [scorecard/Heemskerkse-WHS-tabel-18-holes-Par-3-Baan-A-B-Parcours-Dames-en-Heren.pdf](heemskerkse-golfclub-heemskerk/scorecard/Heemskerkse-WHS-tabel-18-holes-Par-3-Baan-A-B-Parcours-Dames-en-Heren.pdf)
+- **Opmerking:** Site blokkeert curl (403); pagina's gelezen via WebFetch, PDF's via WebFetch-cache opgeslagen; geen page.html bewaard. Par en S.I. per hole van de officiele baaninformatiepagina; geen scorekaart met lengtes gepubliceerd (pagina noemt alleen losse lengtes, o.a. hole 3 462/453 m wit/geel, hole 6 475 m wit tot 388 m rood). GolfPass (derden) noemt totaal 6352 m (zwart/wit?) en 6126 m geel - niet overgenomen. Ratings: heren 24-02-2021, dames 26-01-2021; er bestaan ook wintertabellen. Weidelus: parcours A (geel, even dagen) en B (wit, oneven dagen) elk 9 holes; als 18 holes A+B rating geel heren 50,5/68, rood dames 52,7/76 (08-02-2021). Lengte B = 1078 m (klopt met site), A = 1081 m. Grensgeval regio: Heemskerk (IJmond/Midden-Kennemerland).
+
+<a id="golfbaan-overloon"></a>
+## Golfbaan Overloon
+
+Golfbaan Overloon is een kleinschalige 9-holes par 3/4-baan in het buitengebied van Overloon, in het Land van Cuijk. De baan telt zeven korte par 3's en twee par 4's, met water bij een aantal holes, en is daardoor ook geschikt voor beginnende golfers. Er zijn oefenfaciliteiten en clinics.
+
+- **Club:** Golfbaan Overloon
+- **Adres:** Kuluutweg 8, 5825 BC Overloon, Noord-Brabant, NL
+- **GPS:** 51.5766993, 5.9531214
+- **Afstand:** 119.0 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** landelijk, met waterpartijen (o.a. bij holes 6, 7 en 9)
+- **Telefoon:** 06 - 57 13 88 93
+- **E-mail:** info@golfbaanoverloon.nl
+- **Website:** https://www.golfbaanoverloon.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, putting green, chipping green, golfclinics, golfprofessionals, horeca, overnachten
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 60
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3128 | 58.6 | 84 | 60 |
+| rood (men) | 2828 | 57.3 | 82 | 60 |
+| geel (women) | 3128 | 60.0 | 98 | 60 |
+| rood (women) | 2828 | 60.6 | 93 | 60 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 1 | 302 | 265 |
+| 2 | 3 | 3 | 158 | 122 |
+| 3 | 4 | 9 | 280 | 240 |
+| 4 | 3 | 13 | 102 | 102 |
+| 5 | 3 | 15 | 95 | 95 |
+| 6 | 3 | 17 | 82 | 82 |
+| 7 | 3 | 7 | 147 | 147 |
+| 8 | 4 | 5 | 290 | 253 |
+| 9 | 3 | 11 | 108 | 108 |
+| 10 | 4 | 2 | 302 | 265 |
+| 11 | 3 | 4 | 158 | 122 |
+| 12 | 4 | 10 | 280 | 240 |
+| 13 | 3 | 14 | 102 | 102 |
+| 14 | 3 | 16 | 95 | 95 |
+| 15 | 3 | 18 | 82 | 82 |
+| 16 | 3 | 8 | 147 | 147 |
+| 17 | 4 | 6 | 290 | 253 |
+| 18 | 3 | 12 | 108 | 108 |
+
+**Lus 9 holes** — 9 holes, par 30
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1564 | 29.3 | 84 | 30 |
+| rood (men) | 1414 | 28.7 | 82 | 30 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 1 | 302 | 265 |
+| 2 | 3 | 3 | 158 | 122 |
+| 3 | 4 | 9 | 280 | 240 |
+| 4 | 3 | 13 | 102 | 102 |
+| 5 | 3 | 15 | 95 | 95 |
+| 6 | 3 | 17 | 82 | 82 |
+| 7 | 3 | 7 | 147 | 147 |
+| 8 | 4 | 5 | 290 | 253 |
+| 9 | 3 | 11 | 108 | 108 |
+
+- **Scorekaartpagina:** https://www.golfbaanoverloon.nl/golfbaan-overloon/baaninfo/
+- **Bestanden:** [scorecard/overloon-whs-tabellen-aangepast-web-dames.pdf](golfbaan-overloon/scorecard/overloon-whs-tabellen-aangepast-web-dames.pdf), [scorecard/overloon-whs-tabellen-aangepast-web-heren.pdf](golfbaan-overloon/scorecard/overloon-whs-tabellen-aangepast-web-heren.pdf), [scorecard/page.html](golfbaan-overloon/scorecard/page.html), [scorecard/scorekaart_binnenzijde-proef.pdf](golfbaan-overloon/scorecard/scorekaart_binnenzijde-proef.pdf), [scorecard/tee-borden-2018.pdf](golfbaan-overloon/scorecard/tee-borden-2018.pdf)
+- **Opmerking:** Scorekaart "binnenzijde-proef" (PDF): twee lengtekolommen zonder kleuraanduiding in de tekstlaag - als geel/rood aangenomen (handicaptabellen kennen alleen geel en rood). CR/slope uit WHS-tabellen 12-01-2021 (heren 9 en 18 holes, dames 18 holes; dames 9 holes niet goed leesbaar in de PDF en weggelaten). 9-holes S.I. in 18-holes stijl (oneven). Tee-borden 2018 (PDF, 10 MB) meegeleverd.
+
+<a id="marine-golfclub-nieuwediep-den-helder"></a>
+## Marine Golfclub Nieuwediep
+
+Kleine 9-holesbaan van een door leden gerunde personeelsvereniging, direct naast marinevliegveld De Kooy bij Den Helder. Het onderhoud wordt volledig door vrijwilligers gedaan. Met wisselende afslagen speel je 18 holes, par 70; bezoekers maken vooraf een afspraak.
+
+- **Club:** Marine Golfclub "Nieuwediep"
+- **Adres:** Kortevliet 1BB, 1786 PK Den Helder, Noord-Holland, NL
+- **GPS:** 52.9287314, 4.7729887
+- **Afstand:** 119.2 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** open polder-/kustbaan naast Maritiem Vliegkamp De Kooy
+- **Telefoon:** +31 223 697 258
+- **E-mail:** greenfee@marinegolfclub.nl
+- **Website:** https://www.marinegolfclub.nl/golf2/
+- **Greenfee welkom:** True
+- **Eisen:** Greenfee op afspraak via e-mail (enkele dagen vooraf) of via introductie door een lid; hek is afgesloten, gastheer laat bezoekers binnen
+- **Faciliteiten:** clubhuis met bar (geen restaurant), 2 slagkooien (geen driving range), putting green, chipping green, oefenbunker, buggyverhuur (beperkt)
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5460 | 69.0 | 120 | 70 |
+| blauw (men) | 5042 | 66.4 | 116 | 70 |
+| rood (men) | 4624 | 64.1 | 108 | 70 |
+| geel (women) | 5460 | 76.0 | 130 | 70 |
+| blauw (women) | 5042 | 72.6 | 126 | 70 |
+| rood (women) | 4624 | 68.9 | 122 | 70 |
+
+| Hole | Par | SI | geel | blauw | rood |
+|---|---|---|---|---|---|
+| 1 | 5 | 9 | 457 | 457 | 380 |
+| 2 | 3 | 17 | 169 | 142 | 142 |
+| 3 | 4 | 1 | 339 | 339 | 284 |
+| 4 | 4 | 3 | 366 | 307 | 307 |
+| 5 | 4 | 13 | 296 | 296 | 266 |
+| 6 | 4 | 5 | 364 | 315 | 315 |
+| 7 | 3 | 15 | 129 | 129 | 106 |
+| 8 | 4 | 11 | 309 | 254 | 254 |
+| 9 | 4 | 7 | 301 | 301 | 258 |
+| 10 | 5 | 12 | 457 | 380 | 380 |
+| 11 | 3 | 16 | 169 | 169 | 142 |
+| 12 | 4 | 4 | 339 | 284 | 284 |
+| 13 | 4 | 2 | 366 | 366 | 307 |
+| 14 | 4 | 14 | 296 | 266 | 266 |
+| 15 | 4 | 6 | 364 | 364 | 315 |
+| 16 | 3 | 18 | 129 | 106 | 106 |
+| 17 | 4 | 10 | 309 | 309 | 254 |
+| 18 | 4 | 8 | 301 | 258 | 258 |
+
+- **Scorekaartpagina:** https://www.marinegolfclub.nl/golf2/baaninfo/
+- **Bestanden:** [scorecard/Scorekaart-jan-2024-voorkant.pdf](marine-golfclub-nieuwediep-den-helder/scorecard/Scorekaart-jan-2024-voorkant.pdf), [scorecard/Baanboekje.pdf](marine-golfclub-nieuwediep-den-helder/scorecard/Baanboekje.pdf), [scorecard/page.html](marine-golfclub-nieuwediep-den-helder/scorecard/page.html)
+- **Opmerking:** Scorekaart jan 2024: 9-holesbaan, holes 10-18 met deels andere afslagen (blauw) en eigen S.I. 9-holes ratings: geel 69,0/120 (H) 76,0/130 (D); blauw 1e/2e negen H 66,4/66,5 SR 119/112, D 73,2/72,1 SR 127/126; rood 64,1/108 (H) 68,9/122 (D). Greenfee EUR 35 per dag.
+
+<a id="golfcenter-uithoorn"></a>
+## Golfcenter Uithoorn
+
+Golfcenter Uithoorn is een compacte oefenlocatie met een 9-holes par 3-baan van in totaal 764 meter en een driving range. De korte holes, tussen ruwweg 50 en 120 meter, zijn ideaal om aan het korte spel te werken of een handicap te halen of te verlagen. De baan is NGF-goedgekeurd en qualifying.
+
+- **Club:** Golfcenter Uithoorn
+- **Adres:** Noorddammerweg 30, 1424 NX Uithoorn, Noord-Holland, NL
+- **GPS:** 52.24534, 4.79968
+- **Afstand:** 119.3 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** vlak polderterrein naast een sportcomplex
+- **Telefoon:** +31 6 5189 0210
+- **E-mail:** info@golfcenteruithoorn.nl
+- **Website:** https://www.golfcenteruithoorn.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Starttijd reserveren verplicht (NexxChange voor leden, golf.nl voor niet-leden); minimaal aantoonbare baanpermissie of handicap 54.
+- **Faciliteiten:** 9-holes par 3-baan (NGF-goedgekeurd, qualifying), driving range met ballenautomaat, golflessen / GVB (handicap 54), golfshop
+
+**Lus 9 holes par 3** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 764 | 24.3 | 72 | 27 |
+| rood (women) | 764 | 25.2 | 76 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 8 | 82 | 82 |
+| 2 | 3 | 7 | 63 | 63 |
+| 3 | 3 | 1 | 119 | 119 |
+| 4 | 3 | 2 | 118 | 118 |
+| 5 | 3 | 5 | 90 | 90 |
+| 6 | 3 | 3 | 108 | 108 |
+| 7 | 3 | 9 | 53 | 53 |
+| 8 | 3 | 6 | 60 | 60 |
+| 9 | 3 | 4 | 71 | 71 |
+
+- **Scorekaartpagina:** https://www.golfcenteruithoorn.nl/baan-informatie/
+- **Bestanden:** [scorecard/page.html](golfcenter-uithoorn/scorecard/page.html), [scorecard/handicaptabel-1.png](golfcenter-uithoorn/scorecard/handicaptabel-1.png), [scorecard/handicaptabel-2.png](golfcenter-uithoorn/scorecard/handicaptabel-2.png), [scorecard/hole19.html](golfcenter-uithoorn/scorecard/hole19.html)
+- **Opmerking:** Club publiceert alleen de totale lengte (764 m) en de NGF-baanhandicaptabellen (3-9-2024: 9 holes geel heren 24,3/72, rood dames 25,2/76; 18 holes 48,5/72 en 50,3/76). Holelengtes en S.I. komen van Hole19 (third-party); de holesom 764 m komt overeen met het officiele totaal. Geen aparte lengtes per tee bekend: geel en rood gelijk gezet. Golfkaart noemt ook 'Golfvereniging Uithoorn' (9 holes) vlakbij; geen aparte baan gevonden, waarschijnlijk dezelfde locatie.
+
+<a id="golfclub-houtrak-halfweg"></a>
+## Golfclub Houtrak
+
+Houtrak bij Halfweg is een 18-holes championship course van architect Gerard Jol, gelegen tussen bos en polder in het recreatiegebied Spaarnwoude. Door de stervormige opzet komen veel holes bij het clubhuis samen, zodat ook kortere rondes goed te spelen zijn. Water, gevarieerde par 3's zoals de veertiende en goed onderhouden greens maken de baan uitdagend voor elk niveau.
+
+- **Club:** Golfclub Houtrak
+- **Adres:** Machineweg 1-b, 1165 NB Halfweg, Noord-Holland, NL
+- **GPS:** 52.3991349, 4.7280273
+- **Afstand:** 119.3 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** mix van bos en open polder, met vijvers en sloten; stervormige opzet rond het clubhuis
+- **Architect:** Gerard Jol
+- **Telefoon:** +31 23 513 2939
+- **E-mail:** secretariaat@houtrak.nl
+- **Website:** https://houtrak.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Handicap WHS 35,0 of beter; geldige NGF-pas/GSN-nummer; starttijd max. 3 dagen vooruit via de caddiemaster.
+- **Faciliteiten:** 18-holes championship course, driving range, oefengreens, par 3-oefenholes, bistro, handicarts (afhankelijk van baanstatus)
+
+**Lus Noord-Zuid (zomerlus)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| zwart (men) | 6502 | 75.1 | 145 | 72 |
+| wit (men) | 6250 | 74.0 | 139 | 72 |
+| geel (men) | 5968 | 72.1 | 138 | 72 |
+| blauw (men) | 5377 | 69.4 | 129 | 72 |
+| rood (men) | 5113 | 68.0 | 121 | 72 |
+| oranje (men) | 4285 | 64.3 | 115 | 72 |
+| geel (women) | 5968 | 78.6 | 147 | 72 |
+| blauw (women) | 5377 | 74.9 | 139 | 72 |
+| rood (women) | 5113 | 73.1 | 136 | 72 |
+| oranje (women) | 4285 | 68.5 | 120 | 72 |
+
+| Hole | Par | SI | zwart | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 4 | 12 | 405 | 360 | 347 | 347 | 292 | 232 |
+| 2 | 5 | 9 | 488 | 476 | 467 | 405 | 395 | 330 |
+| 3 | 4 | 1 | 381 | 373 | 373 | 314 | 314 | 270 |
+| 4 | 4 | 7 | 394 | 361 | 351 | 346 | 309 | 258 |
+| 5 | 3 | 16 | 173 | 169 | 163 | 155 | 147 | 147 |
+| 6 | 4 | 4 | 390 | 390 | 380 | 327 | 321 | 246 |
+| 7 | 3 | 18 | 187 | 163 | 157 | 139 | 139 | 98 |
+| 8 | 5 | 13 | 481 | 481 | 465 | 389 | 389 | 334 |
+| 9 | 4 | 5 | 400 | 390 | 346 | 336 | 293 | 262 |
+| 10 | 4 | 3 | 407 | 374 | 362 | 314 | 309 | 252 |
+| 11 | 3 | 15 | 162 | 153 | 143 | 134 | 124 | 87 |
+| 12 | 4 | 11 | 357 | 357 | 331 | 320 | 285 | 238 |
+| 13 | 5 | 10 | 476 | 476 | 447 | 383 | 378 | 334 |
+| 14 | 3 | 14 | 139 | 139 | 135 | 130 | 120 | 120 |
+| 15 | 4 | 2 | 406 | 372 | 349 | 317 | 317 | 289 |
+| 16 | 4 | 8 | 368 | 337 | 310 | 280 | 280 | 202 |
+| 17 | 4 | 6 | 406 | 397 | 390 | 338 | 332 | 260 |
+| 18 | 5 | 17 | 482 | 482 | 452 | 403 | 369 | 326 |
+
+- **Scorekaartpagina:** https://houtrak.nl/gasten/scorekaart/
+- **Bestanden:** [scorecard/page.html](golfclub-houtrak-halfweg/scorecard/page.html), [scorecard/NZ1.png](golfclub-houtrak-halfweg/scorecard/NZ1.png), [scorecard/NZ2.jpg](golfclub-houtrak-halfweg/scorecard/NZ2.jpg), [scorecard/NZ3.jpg](golfclub-houtrak-halfweg/scorecard/NZ3.jpg), [scorecard/NZ4.jpg](golfclub-houtrak-halfweg/scorecard/NZ4.jpg), [scorecard/NZ5.jpg](golfclub-houtrak-halfweg/scorecard/NZ5.jpg), [scorecard/Handicaptabel-NZ-heren-18-holes-tijdelijk-2023.pdf](golfclub-houtrak-halfweg/scorecard/Handicaptabel-NZ-heren-18-holes-tijdelijk-2023.pdf), [scorecard/Handicaptabel-NZ-dames-18-holes-tijdelijk-2023.pdf](golfclub-houtrak-halfweg/scorecard/Handicaptabel-NZ-dames-18-holes-tijdelijk-2023.pdf)
+- **Opmerking:** Scorekaart Noord-Zuid (zomercircuit, half maart - half november) met CR/SR op de kaart; de club noemt de bijbehorende handicaptabellen 'tijdelijk' (geldig vanaf 13-3-2023). In de winter wordt dezelfde baan als Buiten-Binnen gespeeld met andere volgorde en eigen tabellen (niet opgenomen; geen scorekaart gepubliceerd). Alle tee-totalen kloppen met de holesom.
+
+<a id="golfclub-de-dorpswaard-kerkdriel"></a>
+## Golfclub De Dorpswaard
+
+Negen-holesbaan in de uiterwaarden bij Kerkdriel in de Bommelerwaard, met een eigen clubhuis en brasserie. Gespeeld als 18 holes (par 73) met deels andere afslagen en pars op de tweede negen, zodat holes 6/15 en 9/18 lange par 5's worden. Water speelt onder meer mee op de holes bij het clubhuis.
+
+- **Club:** Golfvereniging De Dorpswaard
+- **Adres:** Piekenwaardweg 3, 5331 PD Kerkdriel, Gelderland, NL
+- **GPS:** 51.7800745, 5.3301576
+- **Afstand:** 119.4 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** uiterwaardenbaan langs de Maas met water en bomenrijen
+- **Telefoon:** +31 418 634 803
+- **E-mail:** info@dorpswaard.com
+- **Website:** https://dorpswaard.com/
+- **Greenfee welkom:** True
+- **Faciliteiten:** clubhuis/brasserie 't Waardje, driving range
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 73
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5926 | 72.7 | 134 | 73 |
+| geel (women) | 5926 | 78.7 | 145 | 73 |
+| rood (men) | 5031 | 67.6 | 121 | 73 |
+| rood (women) | 5031 | 73.1 | 134 | 73 |
+| oranje (men) | 4190 | 64.2 | 110 | 73 |
+| oranje (women) | 4190 | 68.0 | 126 | 73 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 5 | 11 | 453 | 375 | 304 |
+| 2 | 3 | 9 | 196 | 149 | 120 |
+| 3 | 4 | 7 | 317 | 269 | 233 |
+| 4 | 3 | 15 | 145 | 136 | 114 |
+| 5 | 4 | 3 | 343 | 291 | 245 |
+| 6 | 4 | 1 | 406 | 329 | 316 |
+| 7 | 4 | 5 | 313 | 264 | 210 |
+| 8 | 4 | 17 | 300 | 258 | 210 |
+| 9 | 5 | 13 | 439 | 398 | 343 |
+| 10 | 5 | 16 | 443 | 353 | 304 |
+| 11 | 3 | 8 | 205 | 159 | 120 |
+| 12 | 4 | 4 | 334 | 285 | 233 |
+| 13 | 3 | 12 | 155 | 145 | 114 |
+| 14 | 4 | 2 | 359 | 306 | 245 |
+| 15 | 5 | 18 | 446 | 374 | 316 |
+| 16 | 4 | 14 | 293 | 250 | 210 |
+| 17 | 4 | 10 | 319 | 276 | 210 |
+| 18 | 5 | 6 | 460 | 414 | 343 |
+
+- **Scorekaartpagina:** https://dorpswaard.com/
+- **Bestanden:** [scorecard/Playing-handicap-Dorpswaard_Dames.pdf](golfclub-de-dorpswaard-kerkdriel/scorecard/Playing-handicap-Dorpswaard_Dames.pdf), [scorecard/Playing-handicap-Dorpswaard_Heren.pdf](golfclub-de-dorpswaard-kerkdriel/scorecard/Playing-handicap-Dorpswaard_Heren.pdf), [scorecard/page.html](golfclub-de-dorpswaard-kerkdriel/scorecard/page.html), [scorecard/scorekaart2023.pdf](golfclub-de-dorpswaard-kerkdriel/scorecard/scorekaart2023.pdf)
+- **Opmerking:** Scorekaart versie 2023 + baanhandicaptabellen 07-09-2021. 9 holes 2x met eigen S.I. en deels andere afslagen voor 10-18; hole 15 is par 5 (hole 6 par 4).
+
+<a id="golfbaan-spaarnwoude-velsen-zuid"></a>
+## Golfbaan Spaarnwoude
+
+Spaarnwoude is een grote openbare golfbaan tussen Haarlem en Amsterdam met zes lussen van negen holes. De wedstrijdlussen C, D en E vormen samen de 18-holes combinaties, terwijl de korte A- en B-holes en de par 3-lus F geschikt zijn voor beginners en het korte spel. Doordat er geen lidmaatschap nodig is, is het een van de laagdrempeligste banen in de regio.
+
+- **Club:** Golfbaan Spaarnwoude (openbare golfbaan)
+- **Adres:** Het Hoge Land 2, 1981 LT Velsen-Zuid, Noord-Holland, NL
+- **GPS:** 52.4309159, 4.6989991
+- **Afstand:** 120.6 km
+- **Type:** 27-holes
+- **Holes:** 54
+- **Landschap:** open recreatiegebied Spaarnwoude met water, rietlanden en bosjes
+- **Telefoon:** +31 23 538 5599
+- **E-mail:** info@golfbaanspaarnwoude.nl
+- **Website:** https://golfbaanspaarnwoude.nl/
+- **Starttijden:** https://spaarnwoude.teecontrol.com
+- **Greenfee welkom:** True
+- **Eisen:** Openbare baan, geen lidmaatschap nodig. Wedstrijdlussen C, D en E: handicap 54 vereist; A-, B- en F-holes zonder handicap. Buggies en handicarts niet toegestaan (melding op site).
+- **Faciliteiten:** 54 holes in zes lussen (A-F), wedstrijdlussen C, D en E, compacte lussen A en B (par 29), par 3-lus F, driving range, golflessen, restaurant, rittenkaarten en abonnementen
+
+**Lus E/D** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5928 | 71.7 | 135 | 71 |
+| geel (men) | 5671 | 70.3 | 126 | 71 |
+| blauw (men) | 5093 | 67.6 | 120 | 71 |
+| rood (men) | 4906 | 66.9 | 116 | 71 |
+| geel (women) | 5671 | 76.6 | 139 | 71 |
+| blauw (women) | 5093 | 72.5 | 130 | 71 |
+| rood (women) | 4906 | 71.5 | 126 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 384 | 369 | 338 | 338 |
+| 2 | 5 | 3 | 483 | 456 | 445 | 439 |
+| 3 | 3 | 17 | 145 | 145 | 128 | 128 |
+| 4 | 5 | 11 | 496 | 449 | 396 | 383 |
+| 5 | 4 | 7 | 364 | 351 | 307 | 292 |
+| 6 | 3 | 15 | 163 | 153 | 135 | 131 |
+| 7 | 4 | 9 | 321 | 313 | 274 | 262 |
+| 8 | 3 | 13 | 171 | 157 | 139 | 139 |
+| 9 | 4 | 1 | 375 | 366 | 330 | 325 |
+| 10 | 4 | 4 | 307 | 298 | 284 | 271 |
+| 11 | 4 | 12 | 348 | 342 | 300 | 283 |
+| 12 | 3 | 18 | 130 | 121 | 116 | 104 |
+| 13 | 5 | 10 | 470 | 459 | 405 | 392 |
+| 14 | 3 | 14 | 182 | 174 | 161 | 146 |
+| 15 | 4 | 6 | 354 | 342 | 298 | 285 |
+| 16 | 4 | 2 | 415 | 410 | 345 | 328 |
+| 17 | 4 | 8 | 368 | 326 | 310 | 293 |
+| 18 | 5 | 16 | 452 | 440 | 382 | 367 |
+
+**Lus E/C** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6063 | 72.6 | 139 | 72 |
+| geel (men) | 5839 | 71.4 | 130 | 72 |
+| blauw (men) | 5217 | 68.8 | 120 | 72 |
+| rood (men) | 5066 | 68.3 | 116 | 72 |
+| geel (women) | 5839 | 77.7 | 141 | 72 |
+| blauw (women) | 5217 | 73.3 | 132 | 72 |
+| rood (women) | 5066 | 72.9 | 134 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 384 | 369 | 338 | 338 |
+| 2 | 5 | 3 | 483 | 456 | 445 | 439 |
+| 3 | 3 | 17 | 145 | 145 | 128 | 128 |
+| 4 | 5 | 11 | 496 | 449 | 396 | 383 |
+| 5 | 4 | 7 | 364 | 351 | 307 | 292 |
+| 6 | 3 | 15 | 163 | 153 | 135 | 131 |
+| 7 | 4 | 9 | 321 | 313 | 274 | 262 |
+| 8 | 3 | 13 | 171 | 157 | 139 | 139 |
+| 9 | 4 | 1 | 375 | 366 | 330 | 325 |
+| 10 | 4 | 18 | 305 | 289 | 279 | 274 |
+| 11 | 4 | 4 | 387 | 373 | 342 | 329 |
+| 12 | 4 | 8 | 356 | 348 | 301 | 287 |
+| 13 | 3 | 14 | 153 | 145 | 140 | 127 |
+| 14 | 5 | 6 | 478 | 471 | 403 | 391 |
+| 15 | 4 | 2 | 387 | 379 | 326 | 315 |
+| 16 | 5 | 12 | 462 | 455 | 388 | 375 |
+| 17 | 4 | 10 | 335 | 325 | 283 | 268 |
+| 18 | 4 | 16 | 298 | 295 | 263 | 263 |
+
+**Lus C/D** — 18 holes, par 73
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6187 | 73.0 | 135 | 73 |
+| geel (men) | 5992 | 71.9 | 133 | 73 |
+| blauw (men) | 5326 | 68.7 | 123 | 73 |
+| rood (men) | 5098 | 67.7 | 119 | 73 |
+| geel (women) | 5992 | 78.4 | 145 | 73 |
+| blauw (women) | 5326 | 73.9 | 132 | 73 |
+| rood (women) | 5098 | 72.1 | 128 | 73 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 17 | 305 | 289 | 279 | 274 |
+| 2 | 4 | 3 | 387 | 373 | 342 | 329 |
+| 3 | 4 | 7 | 356 | 348 | 301 | 287 |
+| 4 | 3 | 13 | 153 | 145 | 140 | 127 |
+| 5 | 5 | 5 | 478 | 471 | 403 | 391 |
+| 6 | 4 | 1 | 387 | 379 | 326 | 315 |
+| 7 | 5 | 11 | 462 | 455 | 388 | 375 |
+| 8 | 4 | 9 | 335 | 325 | 283 | 268 |
+| 9 | 4 | 15 | 298 | 295 | 263 | 263 |
+| 10 | 4 | 4 | 307 | 298 | 284 | 271 |
+| 11 | 4 | 12 | 348 | 342 | 300 | 283 |
+| 12 | 3 | 18 | 130 | 121 | 116 | 104 |
+| 13 | 5 | 10 | 470 | 459 | 405 | 392 |
+| 14 | 3 | 14 | 182 | 174 | 161 | 146 |
+| 15 | 4 | 6 | 354 | 342 | 298 | 285 |
+| 16 | 4 | 2 | 415 | 410 | 345 | 328 |
+| 17 | 4 | 8 | 368 | 326 | 310 | 293 |
+| 18 | 5 | 16 | 452 | 440 | 382 | 367 |
+
+**Lus A/B (compact, 18 holes)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2968 | 56.2 | 94 | 58 |
+| rood (women) | 2968 | 59.4 | 98 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 13 | 132 | 132 |
+| 2 | 4 | 5 | 274 | 274 |
+| 3 | 3 | 1 | 197 | 197 |
+| 4 | 3 | 9 | 161 | 161 |
+| 5 | 4 | 7 | 267 | 267 |
+| 6 | 3 | 15 | 136 | 136 |
+| 7 | 3 | 3 | 187 | 187 |
+| 8 | 3 | 11 | 140 | 140 |
+| 9 | 3 | 17 | 114 | 114 |
+| 10 | 3 | 18 | 119 | 119 |
+| 11 | 3 | 8 | 172 | 172 |
+| 12 | 3 | 10 | 122 | 122 |
+| 13 | 3 | 12 | 99 | 99 |
+| 14 | 3 | 14 | 103 | 103 |
+| 15 | 4 | 2 | 277 | 277 |
+| 16 | 3 | 4 | 137 | 137 |
+| 17 | 4 | 6 | 221 | 221 |
+| 18 | 3 | 16 | 110 | 110 |
+
+**Lus F (par 3, 9 holes)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 952 | 25.0 | 63 | 27 |
+| rood (women) | 952 | 25.7 | 67 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 3 | 132 | 132 |
+| 2 | 3 | 8 | 134 | 134 |
+| 3 | 3 | 5 | 96 | 96 |
+| 4 | 3 | 6 | 74 | 74 |
+| 5 | 3 | 7 | 72 | 72 |
+| 6 | 3 | 2 | 157 | 157 |
+| 7 | 3 | 4 | 101 | 101 |
+| 8 | 3 | 9 | 59 | 59 |
+| 9 | 3 | 1 | 127 | 127 |
+
+- **Scorekaartpagina:** https://golfbaanspaarnwoude.nl/baan/
+- **Bestanden:** [scorecard/Scorekaart-E-D-C-2024.png](golfbaan-spaarnwoude-velsen-zuid/scorecard/Scorekaart-E-D-C-2024.png), [scorecard/Scorekaart-executive-compact-course.pdf](golfbaan-spaarnwoude-velsen-zuid/scorecard/Scorekaart-executive-compact-course.pdf), [scorecard/Scorekaart-executive-compact-course.jpg](golfbaan-spaarnwoude-velsen-zuid/scorecard/Scorekaart-executive-compact-course.jpg), [scorecard/WHS-18-E-D-Heren.pdf](golfbaan-spaarnwoude-velsen-zuid/scorecard/WHS-18-E-D-Heren.pdf), [scorecard/WHS-18-E-D-Dames.pdf](golfbaan-spaarnwoude-velsen-zuid/scorecard/WHS-18-E-D-Dames.pdf), [scorecard/WHS-18-E-C-Heren.pdf](golfbaan-spaarnwoude-velsen-zuid/scorecard/WHS-18-E-C-Heren.pdf), [scorecard/WHS-18-E-C-Dames.pdf](golfbaan-spaarnwoude-velsen-zuid/scorecard/WHS-18-E-C-Dames.pdf), [scorecard/WHS-18-C-D-Heren.pdf](golfbaan-spaarnwoude-velsen-zuid/scorecard/WHS-18-C-D-Heren.pdf), [scorecard/WHS-18-C-D-Dames.pdf](golfbaan-spaarnwoude-velsen-zuid/scorecard/WHS-18-C-D-Dames.pdf), [scorecard/WHS-18-A-B.pdf](golfbaan-spaarnwoude-velsen-zuid/scorecard/WHS-18-A-B.pdf), [scorecard/WHS-Par-3-Baan.pdf](golfbaan-spaarnwoude-velsen-zuid/scorecard/WHS-Par-3-Baan.pdf)
+- **Opmerking:** Scorekaart E-D-C 2024 en scorekaart A-B-F (executive/compact) van de club; CR/slope uit de NGF-handicaptabellen (2023; A-B 2025). Site blokkeert curl (403): bestanden via WebFetch opgehaald, page.html niet opgeslagen. C-lus heeft twee S.I.-kolommen (als voorste negen in C/D, als achterste in E/C). A/B: S.I.-kolom 'AB' gebruikt; aparte 9-holes S.I. A: 7,3,1,5,4,8,2,6,9 en B: 9,4,5,6,7,1,2,3,8. Lengtes A/B/F: één lengte per hole (kaart: 'Meters'); par 3-baan 18-holes: geel heren 50,0/63, rood dames 51,4/67. Niet opgenomen: combinaties C/A, C/B, D/A en losse 9-holes tabellen. Website noemt voor C-holes 'rood 2692', de scorekaart 2629 (holesom 2629). Alle overige totalen kloppen.
+
+<a id="golfbaan-ooghduyne-julianadorp"></a>
+## Golfbaan Ooghduyne
+
+Negen holes met A-status op zandgrond vlak achter de duinen bij Julianadorp aan Zee, ontworpen door Gerard Jol. Door aparte afslagen voor de tweede ronde speel je 18 holes waarbij enkele holes van par wisselen. De baan is vrijwel het hele jaar bespeelbaar; ernaast ligt een familiebaan voor beginners.
+
+- **Club:** Golfclub Ooghduyne
+- **Adres:** Ooghduyne 520, 1787 PC Julianadorp, Noord-Holland, NL
+- **GPS:** 52.8952504, 4.7331982
+- **Afstand:** 120.7 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** duinrand/zandgrond met bomenrijen en waterpartijen, bij Landal Beach Resort Ooghduyne
+- **Opgericht:** 1992
+- **Architect:** Gerard Jol
+- **Telefoon:** +31 223 698 319
+- **E-mail:** info@golfbaanooghduyne.nl
+- **Website:** https://golfbaanooghduyne.nl/
+- **Starttijden:** https://ooghduyne.golfer.intogolf.nl/#/teetimes
+- **Greenfee welkom:** True
+- **Eisen:** GVB/handicap vereist op de 9-holesbaan; familiebaan zonder GVB
+- **Faciliteiten:** driving range (on water), oefenbunker, pitching green, putting green, par 3-/familiebaan, clubhuis Duinoogh, golfschool, buggy's
+
+**Lus 18 holes (2x 9, aparte afslagen)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5545 | 70.3 | 123 | 70 |
+| rood (men) | 4784 | 66.1 | 114 | 70 |
+| geel (women) | 5545 | 76.1 | 134 | 70 |
+| rood (women) | 4784 | 71.2 | 122 | 70 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 5 | 339 | 297 |
+| 2 | 4 | 3 | 340 | 298 |
+| 3 | 3 | 13 | 160 | 140 |
+| 4 | 5 | 9 | 448 | 378 |
+| 5 | 4 | 1 | 420 | 353 |
+| 6 | 4 | 11 | 319 | 283 |
+| 7 | 3 | 15 | 127 | 122 |
+| 8 | 5 | 7 | 465 | 386 |
+| 9 | 3 | 17 | 141 | 127 |
+| 10 | 4 | 4 | 342 | 297 |
+| 11 | 4 | 6 | 325 | 280 |
+| 12 | 3 | 10 | 186 | 163 |
+| 13 | 4 | 2 | 413 | 344 |
+| 14 | 5 | 14 | 441 | 379 |
+| 15 | 4 | 12 | 314 | 272 |
+| 16 | 3 | 18 | 139 | 136 |
+| 17 | 5 | 8 | 459 | 375 |
+| 18 | 3 | 16 | 167 | 154 |
+
+- **Scorekaartpagina:** https://golfbaanooghduyne.nl/banen/
+- **Bestanden:** [scorecard/Holes-Golfbaan-Ooghduynen.pdf](golfbaan-ooghduyne-julianadorp/scorecard/Holes-Golfbaan-Ooghduynen.pdf), [scorecard/Ooghduyne-Heren-nieuwe-handicap-tabellen.pdf](golfbaan-ooghduyne-julianadorp/scorecard/Ooghduyne-Heren-nieuwe-handicap-tabellen.pdf), [scorecard/Ooghduyne-Dames-nieuwe-handicaptabellen.pdf](golfbaan-ooghduyne-julianadorp/scorecard/Ooghduyne-Dames-nieuwe-handicaptabellen.pdf), [scorecard/page.html](golfbaan-ooghduyne-julianadorp/scorecard/page.html)
+- **Opmerking:** Geen losse scorekaart; holegegevens uit het holeboekje (PDF, 2023): par, lengte en index per tee geel en rood. Gele en rode tee hebben elk een eigen S.I.: 'si' = index gele tee, 'si_women' = index rode tee (geldt ook voor heren van rood). Ratings uit handicaptabellen 30-06-2022. Totaal geel 5545 m klopt met site; totaal rood (4784 m) berekend uit de holelengtes. Familiebaan (par 3) zonder gepubliceerde scorekaart niet opgenomen; voetgolf genegeerd.
+
+<a id="golf-countryclub-geijsteren"></a>
+## Golf- en Countryclub Geijsteren
+
+Deze club uit 1976 speelt op het Landgoed Geijsteren in de kop van Noord-Limburg, vlak bij de Maas. De eerste dertien holes liggen tussen de bomen; de slotholes zijn waterholes die een ander karakter aan de ronde geven. De club organiseert jaarlijks het Nationaal Open Matchplay-kampioenschap.
+
+- **Club:** Golf- en Countryclub Geijsteren
+- **Adres:** Het Spekt 2, 5862 AZ Geijsteren, Limburg, NL
+- **GPS:** 51.5371024, 6.0555552
+- **Afstand:** 121.5 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** bosbaan op Landgoed Geijsteren; laatste vijf holes met water
+- **Opgericht:** 1976
+- **Telefoon:** 0478 532 592
+- **E-mail:** info@golfclubgeijsteren.nl
+- **Website:** https://www.golfclubgeijsteren.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, oefenholes, putting green (9 holes), restaurant (Off Course), handicarts, buggy's, golfpro/lessen
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6090 | 72.0 | 137 | 72 |
+| geel (men) | 5893 | 71.6 | 136 | 72 |
+| blauw (men) | 5372 | 68.9 | 124 | 72 |
+| rood (men) | 5198 | 68.1 | 121 | 72 |
+| oranje (men) | 4098 | 63.2 | 113 | 72 |
+| geel (women) | 5893 | 78.3 | 145 | 72 |
+| blauw (women) | 5372 | 74.4 | 134 | 72 |
+| rood (women) | 5198 | 73.5 | 128 | 72 |
+| oranje (women) | 4098 | 67.5 | 113 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 6 | 362 | 344 | 319 | 310 | 237 |
+| 2 | 4 | 16 | 291 | 285 | 261 | 251 | 187 |
+| 3 | 4 | 2 | 388 | 379 | 335 | 326 | 268 |
+| 4 | 4 | 8 | 326 | 320 | 301 | 292 | 217 |
+| 5 | 4 | 14 | 345 | 336 | 283 | 273 | 218 |
+| 6 | 4 | 4 | 346 | 335 | 306 | 297 | 249 |
+| 7 | 3 | 12 | 178 | 164 | 153 | 144 | 138 |
+| 8 | 5 | 10 | 473 | 464 | 420 | 411 | 312 |
+| 9 | 3 | 18 | 172 | 163 | 151 | 142 | 89 |
+| 10 | 5 | 9 | 465 | 456 | 426 | 417 | 338 |
+| 11 | 4 | 1 | 356 | 340 | 290 | 281 | 206 |
+| 12 | 3 | 15 | 189 | 180 | 164 | 145 | 112 |
+| 13 | 4 | 3 | 374 | 365 | 318 | 310 | 277 |
+| 14 | 5 | 17 | 448 | 442 | 414 | 405 | 313 |
+| 15 | 3 | 13 | 155 | 137 | 124 | 115 | 92 |
+| 16 | 5 | 7 | 454 | 442 | 416 | 407 | 356 |
+| 17 | 4 | 11 | 379 | 370 | 336 | 327 | 238 |
+| 18 | 4 | 5 | 389 | 371 | 355 | 345 | 251 |
+
+- **Scorekaartpagina:** https://www.golfclubgeijsteren.nl/scorekaart-en-handicaps/
+- **Bestanden:** [scorecard/page.html](golf-countryclub-geijsteren/scorecard/page.html), [scorecard/scorekaart.pdf](golf-countryclub-geijsteren/scorecard/scorekaart.pdf), [scorecard/2022Geijsteren-Heren.pdf](golf-countryclub-geijsteren/scorecard/2022Geijsteren-Heren.pdf), [scorecard/2022Geijsteren-Dames.pdf](golf-countryclub-geijsteren/scorecard/2022Geijsteren-Dames.pdf)
+- **Opmerking:** Par, SI en lengtes van de officiele scorekaart; CR/slope uit de baanhandicaptabellen van 11-11-2021 (de kleine ratingtabel op de scorekaart wijkt iets af). Wintertee-tabellen niet opgenomen.
+
+<a id="de-texelse-de-cocksdorp"></a>
+## Golfbaan De Texelse
+
+Linksachtige 18-holesbaan op de noordpunt van Texel, naast vakantiepark De Krim. De eerste negen (1997) liggen op vrij vlak voormalig landbouwland, de tweede negen voeren door gemodelleerd duinlandschap met onder meer een hooggelegen afslag op hole 16 en een grote bielzenbunker op 18. Daarnaast is er een korte 9-holes par 3-baan.
+
+- **Club:** Golfclub De Texelse
+- **Adres:** Roggeslootweg 3, 1795 JX De Cocksdorp, Noord-Holland, NL
+- **GPS:** 53.146735, 4.8542825
+- **Afstand:** 123.6 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** links/duinachtig (eerste negen vlakker polderland, tweede negen duinlandschap), naast vakantiepark De Krim
+- **Opgericht:** 1997
+- **Architect:** Alan Rijks
+- **Telefoon:** +31 222 316 539
+- **E-mail:** info@texelse.nl
+- **Website:** https://texelse.nl/
+- **Starttijden:** https://texelse.nl/golfbaan/starttijd-boeken/
+- **Greenfee welkom:** True
+- **Eisen:** GVB verplicht op de 18-holesbaan; par 3-baan zonder GVB
+- **Faciliteiten:** driving range, oefenfaciliteiten, 9-holes par 3-baan, clubhuis/restaurant 't Hanenhuus, golfshop, golfschool, ClubCars/handicarts, trolley- en motocaddyverhuur
+
+**Lus 18 holes (par 72)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6008 | 73.8 | 141 | 72 |
+| geel (men) | 5698 | 71.9 | 141 | 72 |
+| blauw (men) | 4943 | 68.2 | 118 | 72 |
+| rood (men) | 4843 | 67.6 | 115 | 72 |
+| oranje (men) | 4150 | 64.5 | 103 | 72 |
+| geel (women) | 5698 | 78.6 | 142 | 72 |
+| blauw (women) | 4943 | 73.2 | 129 | 72 |
+| rood (women) | 4843 | 73.1 | 132 | 72 |
+| oranje (women) | 4150 | 68.0 | 119 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 10 | 307 | 289 | 243 | 236 | 215 |
+| 2 | 4 | 4 | 369 | 349 | 317 | 312 | 290 |
+| 3 | 4 | 14 | 331 | 326 | 277 | 271 | 234 |
+| 4 | 5 | 8 | 464 | 458 | 389 | 384 | 342 |
+| 5 | 4 | 6 | 322 | 316 | 275 | 270 | 233 |
+| 6 | 3 | 18 | 148 | 142 | 132 | 122 | 102 |
+| 7 | 5 | 12 | 483 | 455 | 407 | 403 | 318 |
+| 8 | 3 | 16 | 160 | 155 | 140 | 135 | 104 |
+| 9 | 4 | 2 | 361 | 354 | 305 | 301 | 256 |
+| 10 | 3 | 17 | 150 | 136 | 104 | 101 | 84 |
+| 11 | 4 | 11 | 320 | 304 | 267 | 267 | 225 |
+| 12 | 3 | 15 | 180 | 157 | 146 | 132 | 77 |
+| 13 | 5 | 5 | 483 | 458 | 391 | 388 | 349 |
+| 14 | 4 | 9 | 357 | 338 | 295 | 295 | 238 |
+| 15 | 5 | 1 | 503 | 479 | 404 | 404 | 372 |
+| 16 | 3 | 13 | 178 | 161 | 161 | 136 | 87 |
+| 17 | 4 | 7 | 379 | 341 | 287 | 287 | 261 |
+| 18 | 5 | 3 | 513 | 480 | 403 | 399 | 363 |
+
+**Lus Par 3-baan (9 holes, 2x gespeeld)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1342 | 48.0 | 62 | 54 |
+| rood (women) | 1342 | 49.3 | 68 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 17 | 60 | 60 |
+| 2 | 3 | 15 | 55 | 55 |
+| 3 | 3 | 7 | 86 | 86 |
+| 4 | 3 | 5 | 103 | 103 |
+| 5 | 3 | 13 | 65 | 65 |
+| 6 | 3 | 11 | 68 | 68 |
+| 7 | 3 | 9 | 73 | 73 |
+| 8 | 3 | 1 | 85 | 85 |
+| 9 | 3 | 3 | 76 | 76 |
+| 10 | 3 | 18 | 60 | 60 |
+| 11 | 3 | 16 | 55 | 55 |
+| 12 | 3 | 8 | 86 | 86 |
+| 13 | 3 | 6 | 103 | 103 |
+| 14 | 3 | 14 | 65 | 65 |
+| 15 | 3 | 12 | 68 | 68 |
+| 16 | 3 | 10 | 73 | 73 |
+| 17 | 3 | 2 | 85 | 85 |
+| 18 | 3 | 4 | 76 | 76 |
+
+- **Scorekaartpagina:** https://texelse.nl/golfbaan/baaninformatie/handicaps-scorecards/
+- **Bestanden:** [scorecard/15861016-Golfbaan_De_Texelse_Scorecard_par72.pdf](de-texelse-de-cocksdorp/scorecard/15861016-Golfbaan_De_Texelse_Scorecard_par72.pdf), [scorecard/15861017-Golfbaan_De_Texelse_Playing_handicap_heren.pdf](de-texelse-de-cocksdorp/scorecard/15861017-Golfbaan_De_Texelse_Playing_handicap_heren.pdf), [scorecard/15861018-Golfbaan_De_Texelse_Playing_handicap_dames.pdf](de-texelse-de-cocksdorp/scorecard/15861018-Golfbaan_De_Texelse_Playing_handicap_dames.pdf), [scorecard/15861019-Golfbaan_De_Texelse_Handicap_par3.pdf](de-texelse-de-cocksdorp/scorecard/15861019-Golfbaan_De_Texelse_Handicap_par3.pdf), [scorecard/18061023-Texelse_Scorecard_9_holes_par_3.pdf](de-texelse-de-cocksdorp/scorecard/18061023-Texelse_Scorecard_9_holes_par_3.pdf), [scorecard/page.html](de-texelse-de-cocksdorp/scorecard/page.html)
+- **Opmerking:** Scorekaart par 72 met 5 teekleuren (wit/geel/blauw/rood/oranje); CR/slope uit baanhandicaptabellen d.d. 14-06-2022 (dames: geen witte tee). Par 3-baan: 9 holes van 55-103 m, kaart geeft 1 afstand per hole en S.I. voor 18 holes (2x rond); ratings geel heren CR 48,0/SR 62 en rood dames CR 49,3/SR 68 (par 54). De ene kaartafstand is voor beide tees ingevuld. holes_total 27 = 18 + 9 par 3.
+
+<a id="golf-maasduinen-arcen"></a>
+## Golf Maasduinen
+
+Golf Maasduinen is een compacte 9-holesbaan tussen Arcen en Wellerlooi, vlak bij Nationaal Park De Maasduinen. De baan bestaat vooral uit par 3-holes met twee par 4's en heeft water, bunkers en bomen als hindernissen. Ze is gericht op beginners, senioren en golfers die hun korte spel willen slijpen; de oefenfaciliteiten zijn gratis te gebruiken.
+
+- **Club:** Stichting Golf Maasduinen
+- **Adres:** Verlengde Roobeekweg 4A, 5944 NR Arcen, Limburg, NL
+- **GPS:** 51.5001513, 6.1762018
+- **Afstand:** 123.9 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkachtig met water, bunkers en bomen tussen Maas en Nationaal Park De Maasduinen
+- **Telefoon:** 077 374 3073
+- **E-mail:** info@golfmaasduinen.nl
+- **Website:** https://golfmaasduinen.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, putting green, chipping green, oefenbunker, clubhuis met terras, golfschool, clubverhuur
+
+**Lus 9 holes par 3/4 (2x gespeeld = 18 holes)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2374 | 53.2 | 84 | 58 |
+| rood (women) |  | 55.3 | 89 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 7 | 117 |  |
+| 2 | 3 | 9 | 126 |  |
+| 3 | 3 | 15 | 75 |  |
+| 4 | 3 | 13 | 84 |  |
+| 5 | 3 | 17 | 62 |  |
+| 6 | 3 | 11 | 126 |  |
+| 7 | 3 | 5 | 126 |  |
+| 8 | 4 | 3 | 201 |  |
+| 9 | 4 | 1 | 270 |  |
+| 10 | 3 | 8 | 117 |  |
+| 11 | 3 | 10 | 126 |  |
+| 12 | 3 | 16 | 75 |  |
+| 13 | 3 | 14 | 84 |  |
+| 14 | 3 | 18 | 62 |  |
+| 15 | 3 | 12 | 126 |  |
+| 16 | 3 | 6 | 126 |  |
+| 17 | 4 | 4 | 201 |  |
+| 18 | 4 | 2 | 270 |  |
+
+- **Scorekaartpagina:** https://golfmaasduinen.nl/golfbaan/
+- **Bestanden:** [scorecard/page.html](golf-maasduinen-arcen/scorecard/page.html), [scorecard/page-baan-handicap-tabel.html](golf-maasduinen-arcen/scorecard/page-baan-handicap-tabel.html), [scorecard/Maasduinen-WHS-tabel-Par-3-Baan-Dames-en-Heren.pdf](golf-maasduinen-arcen/scorecard/Maasduinen-WHS-tabel-Par-3-Baan-Dames-en-Heren.pdf), [scorecard/hole19-golf-maasduinen.html](golf-maasduinen-arcen/scorecard/hole19-golf-maasduinen.html)
+- **Opmerking:** Club publiceert geen scorekaart. Par, SI en lengtes (geel, metrisch) van hole19golf.com; par 58 over 18 holes klopt met de officiele WHS-tabel (11-01-2021): geel heren CR 53.2/SR 84, rood dames CR 55.3/SR 89. Lengtes rode tee onbekend. GolfingRecord en Greenfee365 tonen een oudere versie (9x par 3, par 27, geel 959 m); niet gebruikt. Hole19 noemt CR 55.0/slope 68 (afwijkend).
+
+<a id="golfclub-landgoed-coudewater-rosmalen"></a>
+## Golfclub Landgoed Coudewater
+
+Deze 9-holesbaan ligt op het historische landgoed Coudewater aan de oostkant van Rosmalen. De baan van par 35 speelt tussen oude bomen en kent een paar lange par 4's en een par 5; voor 18 holes loop je de lus twee keer met een aparte strokeverdeling. Greenfeespelers zijn welkom in de avonduren en in het weekend.
+
+- **Club:** Golfclub Landgoed Coudewater
+- **Adres:** Peter de Gorterstraat 11, 5248 NS Rosmalen, Noord-Brabant, NL
+- **GPS:** 51.7026863, 5.3750562
+- **Afstand:** 124.3 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkachtig landgoed (Landgoed Coudewater) met oude bomen
+- **Telefoon:** 073 - 599 59 01
+- **E-mail:** info@golfclublandgoedcoudewater.nl
+- **Website:** https://www.glc2020.nl
+- **Starttijden:** https://glc2020.teecontrol.com/book
+- **Greenfee welkom:** True
+- **Eisen:** NGF-handicap t/m 54 of golfbaanpermissiepas van de club; greenfeespelers alleen ma-vr vanaf 16.00 uur en in het weekend
+- **Faciliteiten:** driving range, oefengreen, oefenbaan 3 holes par 3, clubhuis, handicarts, lockers
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5194 | 68.5 | 125 | 70 |
+| rood (men) | 4574 | 64.6 | 117 | 70 |
+| oranje (men) | 3796 | 61.4 | 104 | 70 |
+| geel (women) | 5194 | 74.1 | 134 | 70 |
+| rood (women) | 4574 | 69.9 | 126 | 70 |
+| oranje (women) | 3796 | 64.5 | 111 | 70 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 3 | 335 | 308 | 275 |
+| 2 | 4 | 13 | 338 | 281 | 234 |
+| 3 | 5 | 1 | 433 | 359 | 332 |
+| 4 | 4 | 15 | 251 | 212 | 161 |
+| 5 | 3 | 17 | 134 | 119 | 76 |
+| 6 | 4 | 9 | 308 | 275 | 211 |
+| 7 | 4 | 7 | 333 | 316 | 298 |
+| 8 | 4 | 5 | 274 | 264 | 190 |
+| 9 | 3 | 11 | 191 | 153 | 121 |
+| 10 | 4 | 4 | 335 | 308 | 275 |
+| 11 | 4 | 14 | 338 | 281 | 234 |
+| 12 | 5 | 2 | 433 | 359 | 332 |
+| 13 | 4 | 16 | 251 | 212 | 161 |
+| 14 | 3 | 18 | 134 | 119 | 76 |
+| 15 | 4 | 10 | 308 | 275 | 211 |
+| 16 | 4 | 8 | 333 | 316 | 298 |
+| 17 | 4 | 6 | 274 | 264 | 190 |
+| 18 | 3 | 12 | 191 | 153 | 121 |
+
+**Lus 9 holes** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2597 | 34.3 | 125 | 35 |
+| rood (men) | 2287 | 32.3 | 117 | 35 |
+| oranje (men) | 1898 | 30.7 | 104 | 35 |
+| geel (women) | 2597 | 37.1 | 134 | 35 |
+| rood (women) | 2287 | 35.0 | 126 | 35 |
+| oranje (women) | 1898 | 32.3 | 111 | 35 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 2 | 335 | 308 | 275 |
+| 2 | 4 | 7 | 338 | 281 | 234 |
+| 3 | 5 | 1 | 433 | 359 | 332 |
+| 4 | 4 | 8 | 251 | 212 | 161 |
+| 5 | 3 | 9 | 134 | 119 | 76 |
+| 6 | 4 | 5 | 308 | 275 | 211 |
+| 7 | 4 | 4 | 333 | 316 | 298 |
+| 8 | 4 | 3 | 274 | 264 | 190 |
+| 9 | 3 | 6 | 191 | 153 | 121 |
+
+- **Scorekaartpagina:** https://www.glc2020.nl/baaninfo/scorekaart_en_plattegrond
+- **Bestanden:** [scorecard/2026-09-02-Dames_18holes.jpg](golfclub-landgoed-coudewater-rosmalen/scorecard/2026-09-02-Dames_18holes.jpg), [scorecard/2026-09-02-Dames_9holes.jpg](golfclub-landgoed-coudewater-rosmalen/scorecard/2026-09-02-Dames_9holes.jpg), [scorecard/2026-09-02-Heren_18holes.jpg](golfclub-landgoed-coudewater-rosmalen/scorecard/2026-09-02-Heren_18holes.jpg), [scorecard/2026-09-02-Heren_9holes.jpg](golfclub-landgoed-coudewater-rosmalen/scorecard/2026-09-02-Heren_9holes.jpg), [scorecard/glc_scorekaart_18holes.jpg](golfclub-landgoed-coudewater-rosmalen/scorecard/glc_scorekaart_18holes.jpg), [scorecard/glc_scorekaart_9holes.jpg](golfclub-landgoed-coudewater-rosmalen/scorecard/glc_scorekaart_9holes.jpg), [scorecard/page.html](golfclub-landgoed-coudewater-rosmalen/scorecard/page.html), [scorecard/scorekaart-2021-07-13-buiten_crop.jpg](golfclub-landgoed-coudewater-rosmalen/scorecard/scorekaart-2021-07-13-buiten_crop.jpg)
+- **Opmerking:** Aparte scorekaarten voor 18 holes (9 holes 2x, eigen S.I.) en 9 holes (S.I. 1-9). CR/slope op de kaarten komen overeen met de handicaptabel heren 18 holes d.d. 09-07-2026. Daarnaast oefenbaan van 3 par 3-holes (geen kaart).
+
+<a id="golf-country-club-liemeer"></a>
+## Golf & Country Club Liemeer – Torenbaan
+
+Liemeer ligt in de polder bij Nieuwveen en werd in 2006 opgericht. De par 72-Torenbaan van Alan Rijks heeft een inland-linkskarakter met doglegs, strategische bunkers en vrijwel altijd wind, terwijl de goede drainage de baan ook bij nat weer bespeelbaar houdt. Naast de grote baan heeft de club de 9-holes Bovenlandenbaan.
+
+- **Club:** Golf & Country Club Liemeer
+- **Adres:** Golfpad 1, 2441 EW Nieuwveen, Zuid-Holland, NL
+- **GPS:** 52.1896037, 4.7436161
+- **Afstand:** 125.1 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** inland links in de polder
+- **Opgericht:** 2006
+- **Architect:** Alan Rijks
+- **Telefoon:** 0172 82 00 16
+- **E-mail:** info@golfclubliemeer.nl
+- **Website:** https://www.golfclubliemeer.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, 9-holes Bovenlandenbaan, clubhuis, handicarts/buggies, golf en overnachten
+
+**Lus Torenbaan 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6020 | 72.8 | 137 | 72 |
+| geel (men) | 5683 | 70.9 | 131 | 72 |
+| blauw (men) | 5360 | 69.2 | 128 | 72 |
+| rood (men) | 4806 | 66.5 | 115 | 72 |
+| oranje (men) | 4048 | 63.5 | 104 | 72 |
+| geel (women) | 5683 | 77.2 | 141 | 72 |
+| blauw (women) | 5360 | 75.6 | 135 | 72 |
+| rood (women) | 4806 | 71.5 | 136 | 72 |
+| oranje (women) | 4048 | 66.3 | 118 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 10 | 480 | 460 | 435 | 394 | 294 |
+| 2 | 3 | 16 | 166 | 156 | 156 | 143 | 110 |
+| 3 | 4 | 4 | 325 | 306 | 294 | 248 | 217 |
+| 4 | 4 | 14 | 292 | 276 | 276 | 215 | 215 |
+| 5 | 4 | 2 | 370 | 365 | 355 | 303 | 267 |
+| 6 | 5 | 8 | 482 | 459 | 423 | 386 | 326 |
+| 7 | 3 | 18 | 171 | 155 | 155 | 144 | 118 |
+| 8 | 4 | 12 | 320 | 305 | 297 | 278 | 224 |
+| 9 | 4 | 6 | 323 | 306 | 297 | 264 | 215 |
+| 10 | 4 | 1 | 401 | 383 | 369 | 320 | 274 |
+| 11 | 5 | 11 | 453 | 430 | 386 | 362 | 291 |
+| 12 | 4 | 15 | 316 | 293 | 276 | 251 | 203 |
+| 13 | 4 | 5 | 411 | 386 | 363 | 325 | 263 |
+| 14 | 3 | 17 | 120 | 110 | 105 | 95 | 95 |
+| 15 | 4 | 3 | 366 | 331 | 303 | 285 | 257 |
+| 16 | 5 | 7 | 486 | 462 | 432 | 388 | 355 |
+| 17 | 3 | 13 | 179 | 155 | 132 | 123 | 101 |
+| 18 | 4 | 9 | 359 | 345 | 306 | 282 | 223 |
+
+- **Scorekaartpagina:** https://www.golfclubliemeer.nl/nl/baan/baanhandicap-tabellen-scorekaarten/
+- **Bestanden:** [scorecard/page.html](golf-country-club-liemeer/scorecard/page.html), [scorecard/scorekaart-torenbaan-jan-2023-online.pdf](golf-country-club-liemeer/scorecard/scorekaart-torenbaan-jan-2023-online.pdf), [scorecard/liemeer-torenbaan-heren.pdf](golf-country-club-liemeer/scorecard/liemeer-torenbaan-heren.pdf), [scorecard/liemeer-torenbaan-dames.pdf](golf-country-club-liemeer/scorecard/liemeer-torenbaan-dames.pdf), [scorecard/tabel-baanhandicap-torenbaan-heren.pdf](golf-country-club-liemeer/scorecard/tabel-baanhandicap-torenbaan-heren.pdf)
+- **Opmerking:** Scorekaart Torenbaan januari 2023 (vijf teekolommen zonder kleurnaam in de tekstlaag; volgorde wit/geel/blauw/rood/oranje afgeleid uit de totalen en de handicaptabellen). CR/SR uit baanhandicaptabellen d.d. 24-09-2026; oudere tabel (11-01-2021) ook opgeslagen. Eén S.I.-kolom.
+
+<a id="liemeer-bovenlandenbaan"></a>
+## Golf & Country Club Liemeer – Bovenlandenbaan
+
+De Bovenlandenbaan is de korte 9-holesbaan van Liemeer, met vijf par 3's en vier par 4's (par 31) tot ruim 300 meter. De baan ligt rond de driving range en is qualifying, waardoor ook ervaren spelers er hun korte spel kunnen aanscherpen. Net als de Torenbaan is hij ontworpen door Alan Rijks.
+
+- **Club:** Golf & Country Club Liemeer
+- **Adres:** Golfpad 1, 2441 EW Nieuwveen, Zuid-Holland, NL
+- **GPS:** 52.1896037, 4.7436161
+- **Afstand:** 125.1 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** inland links in de polder
+- **Opgericht:** 2006
+- **Architect:** Alan Rijks
+- **Telefoon:** 0172 82 00 16
+- **E-mail:** info@golfclubliemeer.nl
+- **Website:** https://www.golfclubliemeer.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, 18-holes Torenbaan, clubhuis
+
+**Lus 18 holes (9 holes 2x gespeeld)** — 18 holes, par 62
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3292 | 57.1 | 96 | 62 |
+| rood (men) | 2928 | 55.8 | 81 | 62 |
+| oranje (men) | 2540 | 53.6 | 79 | 62 |
+| geel (women) | 3292 | 60.9 | 102 | 62 |
+| rood (women) | 2928 | 58.3 | 98 | 62 |
+| oranje (women) | 2540 | 56.1 | 83 | 62 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 13 | 99 | 99 | 62 |
+| 2 | 3 | 9 | 111 | 111 | 86 |
+| 3 | 3 | 11 | 98 | 98 | 70 |
+| 4 | 4 | 5 | 265 | 237 | 204 |
+| 5 | 4 | 1 | 261 | 213 | 188 |
+| 6 | 3 | 17 | 100 | 100 | 85 |
+| 7 | 3 | 15 | 131 | 105 | 90 |
+| 8 | 4 | 7 | 306 | 267 | 255 |
+| 9 | 4 | 3 | 275 | 234 | 230 |
+| 10 | 3 | 14 | 99 | 99 | 62 |
+| 11 | 3 | 10 | 111 | 111 | 86 |
+| 12 | 3 | 12 | 98 | 98 | 70 |
+| 13 | 4 | 6 | 265 | 237 | 204 |
+| 14 | 4 | 2 | 261 | 213 | 188 |
+| 15 | 3 | 18 | 100 | 100 | 85 |
+| 16 | 3 | 16 | 131 | 105 | 90 |
+| 17 | 4 | 8 | 306 | 267 | 255 |
+| 18 | 4 | 4 | 275 | 234 | 230 |
+
+- **Scorekaartpagina:** https://www.golfclubliemeer.nl/nl/baan/baanhandicap-tabellen-scorekaarten/
+- **Bestanden:** [scorecard/page.html](liemeer-bovenlandenbaan/scorecard/page.html), [scorecard/scorekaart-bovenlandenbaan-7-2026.pdf](liemeer-bovenlandenbaan/scorecard/scorekaart-bovenlandenbaan-7-2026.pdf), [scorecard/liemeer-bovenlandenbaan-heren.pdf](liemeer-bovenlandenbaan/scorecard/liemeer-bovenlandenbaan-heren.pdf), [scorecard/liemeer-bovenlandenbaan-dames.pdf](liemeer-bovenlandenbaan/scorecard/liemeer-bovenlandenbaan-dames.pdf)
+- **Opmerking:** Scorekaart Bovenlandenbaan juli 2026. De holepars op de kaart (3,3,3,4,4,3,3,4,4) tellen op tot 31 per negen, terwijl de totaalregel op de kaart '30' (en 60 voor 18) vermeldt; de site (5 par 3 + 4 par 4) en de baanhandicaptabellen d.d. 24-09-2026 (PAR=31/62) bevestigen par 31, dus de totaalregel op de kaart is een drukfout. Teekolommen zonder naam op de kaart; kleuren geel/rood/oranje volgens kleurvlakken en tabellen. 9 holes CR/SR: heren geel 28,6/96, rood 27,9/81, oranje 26,8/79; dames geel 30,5/102, rood 29,2/98, oranje 28,1/83.
+
+<a id="haarlemmermeersche-golfclub-cruquius"></a>
+## Haarlemmermeersche Golfclub
+
+De Haarlemmermeersche Golfclub ligt bij Cruquius, tussen Haarlem, Hoofddorp en Schiphol, en heeft 27 holes in drie lussen plus een verlichte par 3-baan. Leeghwater begint tussen de bollenvelden en gaat over in een bosrijk parkdeel, Lynden is de langste lus met drie par 5's, en Cruquius is korter maar heeft veel water. De Bolstra-baan werd in 2018-2019 vernieuwd en is ook 's avonds bespeelbaar.
+
+- **Club:** Haarlemmermeersche Golfclub
+- **Adres:** Spieringweg 745, 2142 ED Cruquius, Noord-Holland, NL
+- **GPS:** 52.3383062, 4.6575458
+- **Afstand:** 125.5 km
+- **Type:** 27-holes
+- **Holes:** 36
+- **Landschap:** polderlandschap met bollenvelden en parkachtige delen met bos en water (landgoed Wickevoort)
+- **Architect:** Alan Rijks (volgens GolfPass; niet bevestigd op clubsite)
+- **Telefoon:** +31 23 558 9000
+- **E-mail:** info@haarlemmermeerschegolfclub.nl
+- **Website:** https://www.hgcgolf.nl/
+- **Starttijden:** https://www.ikgagolfen.nl/asparagi/ikgagolfen/site2/teetimes/teetimes.asp?exclusiveCrsNr=69&noHelp=1
+- **Greenfee welkom:** True
+- **Eisen:** Starttijd reserveren; voor gasten geldt volgens 1golf.eu een handicapgrens van 28 (niet bevestigd op clubsite).
+- **Faciliteiten:** 27-holes wedstrijdbaan (lussen Leeghwater, Lynden, Cruquius), 9-holes par 3-baan Bolstra (LED-verlicht), driving range, golfacademie (HGAC), golfshop, handicarts en buggies, restaurant De Drie Gemalen, zalen
+
+**Lus Leeghwater/Lynden** — 18 holes, par 73
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5926 | 73.1 | 140 | 73 |
+| geel (men) | 5744 | 72.6 | 132 | 73 |
+| blauw (men) | 5422 | 70.5 | 126 | 73 |
+| rood (men) | 4948 | 68.0 | 122 | 73 |
+| oranje (men) | 4200 | 64.3 | 116 | 73 |
+| geel (women) | 5744 | 78.2 | 146 | 73 |
+| blauw (women) | 5422 | 76.1 | 142 | 73 |
+| rood (women) | 4948 | 73.9 | 131 | 73 |
+| oranje (women) | 4200 | 68.9 | 118 | 73 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 5 | 462 | 441 | 432 | 398 | 330 |
+| 2 | 4 | 11 | 338 | 327 | 315 | 275 | 230 |
+| 3 | 3 | 15 | 125 | 122 | 117 | 113 | 109 |
+| 4 | 4 | 13 | 306 | 296 | 286 | 270 | 224 |
+| 5 | 4 | 1 | 405 | 396 | 380 | 333 | 283 |
+| 6 | 4 | 3 | 412 | 402 | 370 | 334 | 284 |
+| 7 | 5 | 7 | 451 | 434 | 404 | 373 | 318 |
+| 8 | 3 | 17 | 133 | 128 | 123 | 117 | 102 |
+| 9 | 4 | 9 | 318 | 304 | 286 | 257 | 218 |
+| 10 | 4 | 8 | 340 | 330 | 292 | 285 | 244 |
+| 11 | 4 | 18 | 262 | 250 | 229 | 212 | 180 |
+| 12 | 3 | 10 | 150 | 140 | 130 | 123 | 102 |
+| 13 | 4 | 4 | 353 | 345 | 319 | 292 | 248 |
+| 14 | 5 | 16 | 432 | 422 | 396 | 348 | 293 |
+| 15 | 5 | 12 | 435 | 428 | 415 | 384 | 326 |
+| 16 | 4 | 2 | 397 | 386 | 355 | 321 | 275 |
+| 17 | 3 | 14 | 143 | 140 | 130 | 125 | 110 |
+| 18 | 5 | 6 | 464 | 453 | 443 | 388 | 324 |
+
+**Lus Leeghwater/Cruquius** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5608 | 71.4 | 132 | 71 |
+| geel (men) | 5401 | 70.4 | 130 | 71 |
+| blauw (men) | 5098 | 68.4 | 122 | 71 |
+| rood (men) | 4709 | 66.3 | 118 | 71 |
+| oranje (men) | 4020 | 63.2 | 111 | 71 |
+| geel (women) | 5401 | 76.0 | 136 | 71 |
+| blauw (women) | 5098 | 74.1 | 134 | 71 |
+| rood (women) | 4709 | 71.7 | 130 | 71 |
+| oranje (women) | 4020 | 67.0 | 116 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 5 | 462 | 441 | 432 | 398 | 330 |
+| 2 | 4 | 11 | 338 | 327 | 315 | 275 | 230 |
+| 3 | 3 | 15 | 125 | 122 | 117 | 113 | 109 |
+| 4 | 4 | 13 | 306 | 296 | 286 | 270 | 224 |
+| 5 | 4 | 1 | 405 | 396 | 380 | 333 | 283 |
+| 6 | 4 | 3 | 412 | 402 | 370 | 334 | 284 |
+| 7 | 5 | 7 | 451 | 434 | 404 | 373 | 318 |
+| 8 | 3 | 17 | 133 | 128 | 123 | 117 | 102 |
+| 9 | 4 | 9 | 318 | 304 | 286 | 257 | 218 |
+| 10 | 4 | 8 | 272 | 267 | 250 | 227 | 194 |
+| 11 | 4 | 12 | 268 | 256 | 242 | 236 | 201 |
+| 12 | 4 | 10 | 367 | 355 | 324 | 315 | 266 |
+| 13 | 5 | 6 | 470 | 459 | 447 | 407 | 346 |
+| 14 | 4 | 4 | 415 | 394 | 367 | 339 | 288 |
+| 15 | 3 | 18 | 130 | 120 | 108 | 96 | 82 |
+| 16 | 5 | 2 | 433 | 427 | 397 | 385 | 334 |
+| 17 | 3 | 14 | 155 | 148 | 135 | 125 | 118 |
+| 18 | 3 | 16 | 148 | 125 | 115 | 109 | 93 |
+
+**Lus Lynden/Cruquius** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5634 | 70.9 | 136 | 72 |
+| geel (men) | 5445 | 70.5 | 126 | 72 |
+| blauw (men) | 5094 | 68.4 | 117 | 72 |
+| rood (men) | 4717 | 66.4 | 113 | 72 |
+| oranje (men) | 4024 | 62.9 | 115 | 72 |
+| geel (women) | 5445 | 75.6 | 143 | 72 |
+| blauw (women) | 5094 | 73.6 | 140 | 72 |
+| rood (women) | 4717 | 71.8 | 128 | 72 |
+| oranje (women) | 4024 | 67.3 | 115 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 7 | 340 | 330 | 292 | 285 | 244 |
+| 2 | 4 | 17 | 262 | 250 | 229 | 212 | 180 |
+| 3 | 3 | 9 | 150 | 140 | 130 | 123 | 102 |
+| 4 | 4 | 3 | 353 | 345 | 319 | 292 | 248 |
+| 5 | 5 | 15 | 432 | 422 | 396 | 348 | 293 |
+| 6 | 5 | 11 | 435 | 428 | 415 | 384 | 326 |
+| 7 | 4 | 1 | 397 | 386 | 355 | 321 | 275 |
+| 8 | 3 | 13 | 143 | 140 | 130 | 125 | 110 |
+| 9 | 5 | 5 | 464 | 453 | 443 | 388 | 324 |
+| 10 | 4 | 8 | 272 | 267 | 250 | 227 | 194 |
+| 11 | 4 | 12 | 268 | 256 | 242 | 236 | 201 |
+| 12 | 4 | 10 | 367 | 355 | 324 | 315 | 266 |
+| 13 | 5 | 6 | 470 | 459 | 447 | 407 | 346 |
+| 14 | 4 | 4 | 415 | 394 | 367 | 339 | 288 |
+| 15 | 3 | 18 | 130 | 120 | 108 | 96 | 82 |
+| 16 | 5 | 2 | 433 | 427 | 397 | 385 | 334 |
+| 17 | 3 | 14 | 155 | 148 | 135 | 125 | 118 |
+| 18 | 3 | 16 | 148 | 125 | 115 | 109 | 93 |
+
+**Lus Bolstra (par 3, 9 holes)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 25.6 | 80 | 27 |
+| rood (men) |  | 24.6 | 75 | 27 |
+| geel (women) |  | 26.6 | 76 | 27 |
+| rood (women) |  | 25.3 | 71 | 27 |
+
+| Hole | Par | SI |  |
+|---|---|---|
+| 1 | 3 |  |  |
+| 2 | 3 |  |  |
+| 3 | 3 |  |  |
+| 4 | 3 |  |  |
+| 5 | 3 |  |  |
+| 6 | 3 |  |  |
+| 7 | 3 |  |  |
+| 8 | 3 |  |  |
+| 9 | 3 |  |  |
+
+- **Scorekaartpagina:** https://www.hgcgolf.nl/Golfbaan/Baangegevens/Handicaptabellen
+- **Bestanden:** [scorecard/page.html](haarlemmermeersche-golfclub-cruquius/scorecard/page.html), [scorecard/page-leeghwater.html](haarlemmermeersche-golfclub-cruquius/scorecard/page-leeghwater.html), [scorecard/golfpass-leeghwater-lynden.html](haarlemmermeersche-golfclub-cruquius/scorecard/golfpass-leeghwater-lynden.html), [scorecard/HGCLeeghwater-LyndenHeren.pdf](haarlemmermeersche-golfclub-cruquius/scorecard/HGCLeeghwater-LyndenHeren.pdf), [scorecard/HGCLeeghwater-LyndenDames.pdf](haarlemmermeersche-golfclub-cruquius/scorecard/HGCLeeghwater-LyndenDames.pdf), [scorecard/HGCLeeghwater-CruquiusHeren.pdf](haarlemmermeersche-golfclub-cruquius/scorecard/HGCLeeghwater-CruquiusHeren.pdf), [scorecard/HGCLeeghwater-CruquiusDames.pdf](haarlemmermeersche-golfclub-cruquius/scorecard/HGCLeeghwater-CruquiusDames.pdf), [scorecard/HGCCruquius-LyndenHeren.pdf](haarlemmermeersche-golfclub-cruquius/scorecard/HGCCruquius-LyndenHeren.pdf), [scorecard/HGCCruquius-LyndenDames.pdf](haarlemmermeersche-golfclub-cruquius/scorecard/HGCCruquius-LyndenDames.pdf), [scorecard/HGC-Bolstra-18.pdf](haarlemmermeersche-golfclub-cruquius/scorecard/HGC-Bolstra-18.pdf), [scorecard/HGC-Bolstra-9.pdf](haarlemmermeersche-golfclub-cruquius/scorecard/HGC-Bolstra-9.pdf), [scorecard/hgc-leeghwater-1.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-leeghwater-1.png), [scorecard/hgc-leeghwater-2.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-leeghwater-2.png), [scorecard/hgc-leeghwater-3.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-leeghwater-3.png), [scorecard/hgc-leeghwater-4.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-leeghwater-4.png), [scorecard/hgc-leeghwater-5.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-leeghwater-5.png), [scorecard/hgc-leeghwater-6.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-leeghwater-6.png), [scorecard/hgc-leeghwater-7.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-leeghwater-7.png), [scorecard/hgc-leeghwater-8.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-leeghwater-8.png), [scorecard/hgc-leeghwater-9.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-leeghwater-9.png), [scorecard/hgc-lynden-1.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-lynden-1.png), [scorecard/hgc-lynden-2.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-lynden-2.png), [scorecard/hgc-lynden-3.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-lynden-3.png), [scorecard/hgc-lynden-4.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-lynden-4.png), [scorecard/hgc-lynden-5.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-lynden-5.png), [scorecard/hgc-lynden-6.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-lynden-6.png), [scorecard/hgc-lynden-7.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-lynden-7.png), [scorecard/hgc-lynden-8.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-lynden-8.png), [scorecard/hgc-lynden-9.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-lynden-9.png), [scorecard/hgc-cruquius-1.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-cruquius-1.png), [scorecard/hgc-cruquius-2.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-cruquius-2.png), [scorecard/hgc-cruquius-3.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-cruquius-3.png), [scorecard/hgc-cruquius-4.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-cruquius-4.png), [scorecard/hgc-cruquius-5.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-cruquius-5.png), [scorecard/hgc-cruquius-6.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-cruquius-6.png), [scorecard/hgc-cruquius-7.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-cruquius-7.png), [scorecard/hgc-cruquius-8.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-cruquius-8.png), [scorecard/hgc-cruquius-9.png](haarlemmermeersche-golfclub-cruquius/scorecard/hgc-cruquius-9.png)
+- **Opmerking:** Par en lengtes per tee (wit/geel/blauw/rood/oranje) komen uit de officiele holekaarten per hole op hgcgolf.nl; CR/slope uit de officiele baanhandicaptabellen per combinatie. Er is geen scorekaart met S.I. gepubliceerd: de S.I. per combinatie komt van GolfPass (third-party, oudere lengtes in yards) en is niet officieel bevestigd (wel consistent met de clubtekst dat Leeghwater 5 stroke 1 is). Bolstra par 3-baan: alleen CR/slope (18-holes tabel: geel heren 51,2/80, rood heren 49,1/75, geel dames 53,2/76, rood dames 50,6/71); volgens de club totaal 1.008 m, geen holelengtes gepubliceerd. Losse 9-holes tabellen per lus bestaan ook.
+
+<a id="golfpark-de-haverleij-den-bosch"></a>
+## Golfpark De Haverleij
+
+Golfpark De Haverleij ligt in het open rivierenlandschap bij Engelen, tussen de moderne woonkastelen van de Haverleij aan de noordkant van Den Bosch. De 18 holes bestaan uit een rode en een gele lus met brede fairways, veel water en dijkjes, waardoor wind een rol speelt. Daarnaast is er een 9-holes shortgolfbaan voor beginners en het korte spel.
+
+- **Club:** Golfpark De Haverleij (Hollandsche Golfclub, voorheen BurgGolf)
+- **Adres:** Leunweg 40, 5221 BC 's-Hertogenbosch, Noord-Brabant, NL
+- **GPS:** 51.7245579, 5.2550748
+- **Afstand:** 127.4 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** open polderlandschap met water en dijken, zicht op de woonkastelen van de Haverleij
+- **Telefoon:** 073 - 63 90 101
+- **E-mail:** info@golfparkdehaverleij.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/de-haverleij/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/de-haverleij/course/18-holes-baan-de-haverleij/
+- **Greenfee welkom:** True
+- **Eisen:** 18/9 holes: handicap 54 of baanpermissie van de Hollandsche Golfclub; shortgolf voor elk spelniveau
+- **Faciliteiten:** driving range, 9-holes shortgolf (par 3), brasserie, golfschool, handicarts
+
+**Lus 18 holes (rode lus + gele lus)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5815 | 71.2 | 134 | 72 |
+| geel (men) | 5672 | 70.6 | 131 | 72 |
+| blauw (men) | 5231 | 68.1 | 122 | 72 |
+| rood (men) | 4828 | 66.8 | 109 | 72 |
+| oranje (men) | 4490 | 65.1 | 105 | 72 |
+| geel (women) | 5672 | 77.1 | 142 | 72 |
+| blauw (women) | 5231 | 74.0 | 134 | 72 |
+| rood (women) | 4828 | 71.2 | 127 | 72 |
+| oranje (women) | 4490 | 69.2 | 121 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 15 | 451 | 442 | 389 | 383 | 383 |
+| 2 | 4 | 1 | 416 | 405 | 366 | 359 | 299 |
+| 3 | 5 | 5 | 429 | 429 | 377 | 377 | 367 |
+| 4 | 3 | 17 | 141 | 141 | 113 | 103 | 94 |
+| 5 | 4 | 3 | 368 | 360 | 308 | 299 | 290 |
+| 6 | 4 | 9 | 334 | 326 | 319 | 283 | 276 |
+| 7 | 3 | 13 | 187 | 179 | 157 | 149 | 143 |
+| 8 | 4 | 11 | 289 | 289 | 279 | 250 | 240 |
+| 9 | 4 | 7 | 357 | 349 | 294 | 285 | 278 |
+| 10 | 4 | 12 | 307 | 307 | 303 | 263 | 254 |
+| 11 | 5 | 2 | 495 | 445 | 445 | 411 | 381 |
+| 12 | 4 | 8 | 333 | 325 | 301 | 272 | 252 |
+| 13 | 4 | 18 | 268 | 268 | 258 | 222 | 215 |
+| 14 | 3 | 14 | 168 | 162 | 146 | 140 | 110 |
+| 15 | 4 | 10 | 319 | 309 | 300 | 275 | 175 |
+| 16 | 4 | 4 | 366 | 358 | 322 | 268 | 264 |
+| 17 | 3 | 16 | 111 | 111 | 111 | 92 | 92 |
+| 18 | 5 | 6 | 476 | 467 | 443 | 397 | 377 |
+
+**Lus Rode lus (holes 1-9)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2972 | 36.1 | 132 | 36 |
+| geel (men) | 2920 | 35.9 | 131 | 36 |
+| blauw (men) | 2602 | 34.1 | 118 | 36 |
+| rood (men) | 2488 | 33.7 | 110 | 36 |
+| oranje (men) | 2370 | 33.1 | 109 | 36 |
+| geel (women) | 2920 | 39.1 | 141 | 36 |
+| blauw (women) | 2602 | 37.0 | 131 | 36 |
+| rood (women) | 2488 | 36.2 | 131 | 36 |
+| oranje (women) | 2370 | 35.5 | 124 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 15 | 451 | 442 | 389 | 383 | 383 |
+| 2 | 4 | 1 | 416 | 405 | 366 | 359 | 299 |
+| 3 | 5 | 5 | 429 | 429 | 377 | 377 | 367 |
+| 4 | 3 | 17 | 141 | 141 | 113 | 103 | 94 |
+| 5 | 4 | 3 | 368 | 360 | 308 | 299 | 290 |
+| 6 | 4 | 9 | 334 | 326 | 319 | 283 | 276 |
+| 7 | 3 | 13 | 187 | 179 | 157 | 149 | 143 |
+| 8 | 4 | 11 | 289 | 289 | 279 | 250 | 240 |
+| 9 | 4 | 7 | 357 | 349 | 294 | 285 | 278 |
+
+**Lus Gele lus (holes 10-18)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2843 | 35.2 | 136 | 36 |
+| geel (men) | 2752 | 34.8 | 131 | 36 |
+| blauw (men) | 2629 | 34.1 | 126 | 36 |
+| rood (men) | 2340 | 33.1 | 110 | 36 |
+| oranje (men) | 2120 | 32.2 | 102 | 36 |
+| geel (women) | 2752 | 38.1 | 142 | 36 |
+| blauw (women) | 2629 | 37.1 | 136 | 36 |
+| rood (women) | 2340 | 35.0 | 124 | 36 |
+| oranje (women) | 2120 | 33.8 | 119 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 10 | 4 | 12 | 307 | 307 | 303 | 263 | 254 |
+| 11 | 5 | 2 | 495 | 445 | 445 | 411 | 381 |
+| 12 | 4 | 8 | 333 | 325 | 301 | 272 | 252 |
+| 13 | 4 | 18 | 268 | 268 | 258 | 222 | 215 |
+| 14 | 3 | 14 | 168 | 162 | 146 | 140 | 110 |
+| 15 | 4 | 10 | 319 | 309 | 300 | 275 | 175 |
+| 16 | 4 | 4 | 366 | 358 | 322 | 268 | 264 |
+| 17 | 3 | 16 | 111 | 111 | 111 | 92 | 92 |
+| 18 | 5 | 6 | 476 | 467 | 443 | 397 | 377 |
+
+**Lus Shortgolf par 3 (9 holes)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 782 | 23.7 | 61 | 27 |
+| rood (men) | 721 | 23.4 | 60 | 27 |
+| geel (women) | 782 | 24.4 | 60 | 27 |
+| rood (women) | 721 | 24.0 | 59 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 3 | 101 | 90 |
+| 2 | 3 | 13 | 84 | 84 |
+| 3 | 3 | 7 | 98 | 86 |
+| 4 | 3 | 15 | 76 | 68 |
+| 5 | 3 | 9 | 85 | 75 |
+| 6 | 3 | 17 | 60 | 60 |
+| 7 | 3 | 5 | 90 | 80 |
+| 8 | 3 | 11 | 75 | 75 |
+| 9 | 3 | 1 | 113 | 103 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/de-haverleij/course/18-holes-baan-de-haverleij/
+- **Bestanden:** [scorecard/Golfpark-De-Haverleij-handicaptabellen.pdf](golfpark-de-haverleij-den-bosch/scorecard/Golfpark-De-Haverleij-handicaptabellen.pdf), [scorecard/Golfpark-De-Haverleij-shortgolf-handicaptabellen.pdf](golfpark-de-haverleij-den-bosch/scorecard/Golfpark-De-Haverleij-shortgolf-handicaptabellen.pdf), [scorecard/HAV-18-HOLES-OKT-2026.pdf](golfpark-de-haverleij-den-bosch/scorecard/HAV-18-HOLES-OKT-2026.pdf), [scorecard/HAV-9-HOLES-OKT-2026.pdf](golfpark-de-haverleij-den-bosch/scorecard/HAV-9-HOLES-OKT-2026.pdf), [scorecard/page-shortgolf.html](golfpark-de-haverleij-den-bosch/scorecard/page-shortgolf.html), [scorecard/page.html](golfpark-de-haverleij-den-bosch/scorecard/page.html)
+- **Opmerking:** Scorekaarten okt. 2026; tee-kleuren van de 5 meterkolommen (wit/geel/blauw/rood/oranje) afgeleid uit de volgorde in de handicaptabellen (19-03-2025). 9-holes lussen hebben S.I. in 18-holes stijl (rood oneven, geel even). Shortgolf S.I. op de kaart is oneven (1-17, 18-holes stijl); 18-holes par 3-ratings bestaan ook (CR 47,4/SR 61 geel heren e.a.).
+
+<a id="golf-parc-de-pettelaar-den-bosch"></a>
+## Golf Parc De Pettelaar
+
+Golf Parc De Pettelaar ligt in het Pettelaarse park aan de zuidoostkant van Den Bosch, met zicht op de Sint-Janskathedraal. De 9-holesbaan (par 29) is kort maar lastig door smalle fairways, hoogteverschillen, water en sterk glooiende greens. Er zijn uitgebreide oefenfaciliteiten, inclusief een pitch & putt.
+
+- **Club:** Golf Parc De Pettelaar (thuisbaan o.a. Golf Club Bois le Duc)
+- **Adres:** Meerendonkweg 2, 5216 TZ 's-Hertogenbosch, Noord-Brabant, NL
+- **GPS:** 51.6780764, 5.3377
+- **Afstand:** 128.0 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** stadspark met hoogteverschillen en waterpartijen, uitzicht op de skyline van Den Bosch
+- **Telefoon:** 073 – 613 66 30
+- **E-mail:** info@pettelaar-golf.nl
+- **Website:** https://www.golfparcdepettelaar.nl
+- **Greenfee welkom:** True
+- **Eisen:** NGF-baanpermissie of lokale baanpermissie (Pettelaar)
+- **Faciliteiten:** driving range, pitch & putt, putting green, approach green, oefenbunkers, clubhuis, golfschool, handicarts (4)
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3311 | 58.9 | 102 | 58 |
+| rood (women) | 2924 | 59.8 | 102 | 58 |
+
+| Hole | Par | SI |  |
+|---|---|---|
+| 1 | 3 | 5 |  |
+| 2 | 3 | 13 |  |
+| 3 | 3 | 11 |  |
+| 4 | 3 | 15 |  |
+| 5 | 4 | 3 |  |
+| 6 | 4 | 1 |  |
+| 7 | 3 | 7 |  |
+| 8 | 3 | 17 |  |
+| 9 | 3 | 9 |  |
+| 10 | 3 |  |  |
+| 11 | 3 |  |  |
+| 12 | 3 |  |  |
+| 13 | 3 |  |  |
+| 14 | 4 |  |  |
+| 15 | 4 |  |  |
+| 16 | 3 |  |  |
+| 17 | 3 |  |  |
+| 18 | 3 |  |  |
+
+- **Scorekaartpagina:** https://www.golfparcdepettelaar.nl/golfbaan/
+- **Bestanden:** [scorecard/page-golfpass.html](golf-parc-de-pettelaar-den-bosch/scorecard/page-golfpass.html), [scorecard/page.html](golf-parc-de-pettelaar-den-bosch/scorecard/page.html)
+- **Opmerking:** Officiële site geeft alleen: 9 holes par 29; heren 3311 m CR 58,9 SR 102; dames 2924 m CR 59,8 SR 102 (lengtes/ratings gelden voor 18 holes = 2x 9). Geen scorekaart gepubliceerd. Par en S.I. holes 1-9 van golfpass.com (derden); S.I. holes 10-18 onbekend. Golfpass geeft holelengtes alleen in yards (heren 148,172,177,164,318,362,175,145,141 = 1802 yd; dames 105,153,139,153,305,327,151,128,135 = 1596 yd; totaal 18 holes 3620/3199 yd) - niet omgerekend opgenomen. Tee-kleuren geel/rood volgens golfpass.
+
+<a id="the-dutch-spijk"></a>
+## The Dutch
+
+Private championshipbaan bij Spijk, vlak bij Gorinchem, in 2011 geopend en ontworpen onder leiding van Colin Montgomerie. De par 71-baan ligt in het rivierenlandschap met veel water en strategisch geplaatste bunkers, en heeft vier tees met namen in plaats van kleuren. De club richt zich op members en hun gasten en heeft een uitgebreide academy.
+
+- **Club:** The Dutch Golf
+- **Adres:** Haarweg 3, 4212 KJ Spijk (West Betuwe), Gelderland, NL
+- **GPS:** 51.8501949, 5.0199612
+- **Afstand:** 128.8 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** rivierlandschap/polder langs de Linge met veel water
+- **Opgericht:** 2011
+- **Architect:** Colin Montgomerie
+- **Telefoon:** +31 88 339 9120
+- **E-mail:** membershipservices@thedutch.nl
+- **Website:** https://thedutch.nl/
+- **Greenfee welkom:** False
+- **Eisen:** private club: spelen als member of gast van een member
+- **Faciliteiten:** clubhuis, restaurant, academy, putting studio, clubfitting, driving range, vergaderfaciliteiten
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| The Dutch Futures (men) | 6331 | 74.7 | 144 | 71 |
+| Made in Scotland (men) | 5817 | 72.0 | 143 | 71 |
+| Made in Scotland (women) | 5817 | 79.4 | 159 | 71 |
+| The Dutch (men) | 5326 | 69.9 | 131 | 71 |
+| The Dutch (women) | 5326 | 75.8 | 150 | 71 |
+| Tartan (men) | 5076 | 68.7 | 128 | 71 |
+| Tartan (women) | 5076 | 74.4 | 145 | 71 |
+
+| Hole | Par | SI | The Dutch Futures | Made in Scotland | The Dutch | Tartan |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 8 | 361 | 303 | 291 | 263 |
+| 2 | 4 | 2 | 404 | 370 | 340 | 340 |
+| 3 | 4 | 10 | 362 | 332 | 320 | 301 |
+| 4 | 3 | 18 | 147 | 125 | 113 | 102 |
+| 5 | 4 | 6 | 414 | 338 | 376 | 332 |
+| 6 | 5 | 16 | 448 | 442 | 431 | 362 |
+| 7 | 4 | 12 | 318 | 297 | 284 | 256 |
+| 8 | 3 | 14 | 169 | 148 | 136 | 117 |
+| 9 | 4 | 4 | 425 | 396 | 349 | 349 |
+| 10 | 3 | 15 | 168 | 158 | 136 | 136 |
+| 11 | 4 | 1 | 444 | 410 | 373 | 373 |
+| 12 | 4 | 3 | 376 | 342 | 303 | 303 |
+| 13 | 5 | 5 | 510 | 499 | 429 | 429 |
+| 14 | 3 | 17 | 194 | 164 | 154 | 122 |
+| 15 | 5 | 11 | 506 | 476 | 409 | 409 |
+| 16 | 3 | 13 | 160 | 150 | 119 | 119 |
+| 17 | 4 | 9 | 368 | 345 | 303 | 303 |
+| 18 | 5 | 7 | 557 | 522 | 460 | 460 |
+
+- **Scorekaartpagina:** https://thedutch.nl/tees-scorecard/
+- **Bestanden:** [scorecard/page.html](the-dutch-spijk/scorecard/page.html), [scorecard/tees_dutch@2x-e1617701110906.png](the-dutch-spijk/scorecard/tees_dutch@2x-e1617701110906.png)
+- **Opmerking:** Par, S.I. en lengtes per hole van de holepagina's (thedutch.nl/holes/hole-1 t/m 18, 4 lengtes in volgorde Futures/Made in Scotland/The Dutch/Tartan, volgorde afgeleid uit de totalen); CR/slope en totalen uit de tees-afbeelding. Hole 5 vermeldt 338 m voor Made in Scotland en 376 m voor The Dutch (mogelijk omgewisseld). Geen PDF-scorekaart online. Controle: 18 holes Made in Scotland: som holes 5817 vs kaart 5867 (verschil -50).
+
+<a id="golfbaan-stippelberg-bakel"></a>
+## Golfbaan Stippelberg
+
+Golfbaan Stippelberg ligt tussen Bakel, Milheeze en natuurgebied De Stippelberg, in een nieuw aangelegd waterrijk gebied rond de Bakelse Plassen. De 18-holes Championship Course (par 71) van JolGolfDesign slingert langs plassen, rietkragen en open zandige stukken; daarnaast is er een korte 9-holes Executive Course van par 31. De baan werd in 2010-2011 in gebruik genomen.
+
+- **Club:** Golfbaan Stippelberg
+- **Adres:** Hooizak 7, 5761 RZ Bakel (Gemert-Bakel), Noord-Brabant, NL
+- **GPS:** 51.5136717, 5.7590027
+- **Afstand:** 130.0 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** waterrijk natuurgebied bij de Bakelse Plassen (water, heide, bosranden)
+- **Opgericht:** 2006
+- **Architect:** JolGolfDesign
+- **Telefoon:** +31 492 82 00 20
+- **E-mail:** info@golfbaan-stippelberg.com
+- **Website:** https://golfbaan-stippelberg.com
+- **Starttijden:** https://golfbaan-stippelberg.com/starttijd-reserveren/
+- **Greenfee welkom:** True
+- **Eisen:** Maximale flighthandicap 108
+- **Faciliteiten:** Championship Course (18 holes), Executive Course (9 holes, par 31), driving range, brasserie, GEO-gecertificeerd
+
+**Lus Championship Course (18 holes)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6131 | 72.7 | 137 | 71 |
+| geel (men) | 5776 | 71.1 | 133 | 71 |
+| blauw (men) | 5250 | 68.0 | 127 | 71 |
+| rood (men) | 4771 | 65.3 | 120 | 71 |
+| oranje (men) | 3947 | 61.9 | 106 | 71 |
+| geel (women) | 5776 | 76.9 | 144 | 71 |
+| blauw (women) | 5250 | 73.3 | 135 | 71 |
+| rood (women) | 4771 | 70.9 | 127 | 71 |
+| oranje (women) | 3947 | 64.9 | 115 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 3 | 15 | 175 | 164 | 145 | 128 | 123 |
+| 2 | 5 | 5 | 493 | 475 | 412 | 383 | 317 |
+| 3 | 3 | 17 | 155 | 144 | 125 | 110 | 105 |
+| 4 | 4 | 7 | 346 | 330 | 300 | 280 | 265 |
+| 5 | 4 | 1 | 431 | 405 | 381 | 320 | 254 |
+| 6 | 4 | 11 | 362 | 334 | 303 | 273 | 230 |
+| 7 | 3 | 13 | 202 | 172 | 153 | 132 | 83 |
+| 8 | 5 | 3 | 536 | 503 | 473 | 430 | 342 |
+| 9 | 4 | 9 | 305 | 299 | 283 | 268 | 224 |
+| 10 | 4 | 2 | 421 | 385 | 347 | 298 | 235 |
+| 11 | 3 | 18 | 146 | 135 | 125 | 120 | 115 |
+| 12 | 4 | 4 | 420 | 380 | 340 | 315 | 272 |
+| 13 | 5 | 6 | 503 | 490 | 422 | 392 | 319 |
+| 14 | 3 | 14 | 160 | 155 | 149 | 132 | 127 |
+| 15 | 4 | 16 | 271 | 256 | 233 | 220 | 168 |
+| 16 | 4 | 12 | 375 | 341 | 313 | 290 | 218 |
+| 17 | 5 | 10 | 475 | 461 | 421 | 385 | 312 |
+| 18 | 4 | 8 | 355 | 347 | 325 | 295 | 238 |
+
+**Lus Executive Course 18 holes (9 holes 2x)** — 18 holes, par 62
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3770 | 59.6 | 97 | 62 |
+| rood (men) | 3242 | 56.6 | 85 | 62 |
+| oranje (men) | 2674 | 53.3 | 79 | 62 |
+| geel (women) | 3770 | 63.4 | 104 | 62 |
+| rood (women) | 3242 | 60.0 | 96 | 62 |
+| oranje (women) | 2674 | 56.5 | 85 | 62 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 11 | 155 | 130 | 126 |
+| 2 | 4 | 1 | 357 | 304 | 252 |
+| 3 | 3 | 15 | 114 | 100 | 96 |
+| 4 | 4 | 5 | 286 | 269 | 198 |
+| 5 | 4 | 3 | 311 | 262 | 188 |
+| 6 | 3 | 17 | 122 | 105 | 101 |
+| 7 | 4 | 9 | 277 | 233 | 189 |
+| 8 | 3 | 13 | 160 | 138 | 111 |
+| 9 | 3 | 7 | 103 | 80 | 76 |
+| 10 | 3 | 12 | 155 | 130 | 126 |
+| 11 | 4 | 2 | 357 | 304 | 252 |
+| 12 | 3 | 16 | 114 | 100 | 96 |
+| 13 | 4 | 6 | 286 | 269 | 198 |
+| 14 | 4 | 4 | 311 | 262 | 188 |
+| 15 | 3 | 18 | 122 | 105 | 101 |
+| 16 | 4 | 10 | 277 | 233 | 189 |
+| 17 | 3 | 14 | 160 | 138 | 111 |
+| 18 | 3 | 8 | 103 | 80 | 76 |
+
+**Lus Executive Course (9 holes)** — 9 holes, par 31
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1885 | 29.8 | 97 | 31 |
+| rood (men) | 1621 | 28.3 | 85 | 31 |
+| oranje (men) | 1337 | 26.7 | 79 | 31 |
+| geel (women) | 1885 | 31.7 | 104 | 31 |
+| rood (women) | 1621 | 30.0 | 96 | 31 |
+| oranje (women) | 1337 | 28.3 | 85 | 31 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 11 | 155 | 130 | 126 |
+| 2 | 4 | 1 | 357 | 304 | 252 |
+| 3 | 3 | 15 | 114 | 100 | 96 |
+| 4 | 4 | 5 | 286 | 269 | 198 |
+| 5 | 4 | 3 | 311 | 262 | 188 |
+| 6 | 3 | 17 | 122 | 105 | 101 |
+| 7 | 4 | 9 | 277 | 233 | 189 |
+| 8 | 3 | 13 | 160 | 138 | 111 |
+| 9 | 3 | 7 | 103 | 80 | 76 |
+
+- **Scorekaartpagina:** https://golfbaan-stippelberg.com/de-baan/informatie/scorekaarten/
+- **Bestanden:** [scorecard/Dames-CC-18-holes.pdf](golfbaan-stippelberg-bakel/scorecard/Dames-CC-18-holes.pdf), [scorecard/Dames-EX-18-holes.pdf](golfbaan-stippelberg-bakel/scorecard/Dames-EX-18-holes.pdf), [scorecard/Dames-EX-9-holes.pdf](golfbaan-stippelberg-bakel/scorecard/Dames-EX-9-holes.pdf), [scorecard/Def-Scorekaart-Championship.pdf](golfbaan-stippelberg-bakel/scorecard/Def-Scorekaart-Championship.pdf), [scorecard/Def-Stippelberg_Scorekaarten_Executive-gecomprimeerd.pdf](golfbaan-stippelberg-bakel/scorecard/Def-Stippelberg_Scorekaarten_Executive-gecomprimeerd.pdf), [scorecard/Def-Stippelberg_Scorekaarten_Mix-1.pdf](golfbaan-stippelberg-bakel/scorecard/Def-Stippelberg_Scorekaarten_Mix-1.pdf), [scorecard/Heren-CC-18-holes.pdf](golfbaan-stippelberg-bakel/scorecard/Heren-CC-18-holes.pdf), [scorecard/Heren-EX-18-holes.pdf](golfbaan-stippelberg-bakel/scorecard/Heren-EX-18-holes.pdf), [scorecard/Heren-EX-9-holes.pdf](golfbaan-stippelberg-bakel/scorecard/Heren-EX-9-holes.pdf), [scorecard/Stippelberg-WHS-tabel-18-holes-1e-9-CC-EC-Dames.pdf](golfbaan-stippelberg-bakel/scorecard/Stippelberg-WHS-tabel-18-holes-1e-9-CC-EC-Dames.pdf), [scorecard/Stippelberg-WHS-tabel-18-holes-1e-9-CC-EC-Heren.pdf](golfbaan-stippelberg-bakel/scorecard/Stippelberg-WHS-tabel-18-holes-1e-9-CC-EC-Heren.pdf), [scorecard/page-handicap.html](golfbaan-stippelberg-bakel/scorecard/page-handicap.html), [scorecard/page.html](golfbaan-stippelberg-bakel/scorecard/page.html)
+- **Opmerking:** Scorekaarten Championship en Executive (PDF met afbeelding, 2023); CR/slope uit handicaptabellen d.d. 18-01-2021 (ook 9-holes tabellen CC en combinatie 1e 9 CC + Executive, par 66: heren geel 64,9/114, rood 61,3/104, oranje 59,2/98; dames geel 69,7/121, rood 65,0/111, oranje 62,3/102 - "Mix"-kaart niet als loop uitgewerkt). Executive 9 holes: S.I. in 18-holes stijl (oneven).
+
+<a id="golfclub-marienweide-aerdenhout"></a>
+## Golfclub Mariënweide
+
+Mariënweide is een kleine verenigingsbaan in Aerdenhout, in 1985 aangelegd rond de velden van hockeyclub Rood-Wit. De negen par 3-holes variëren van zo'n 77 tot 167 meter en worden met water en bunkers verdedigd, ideaal om het korte spel te oefenen. De baan is qualifying en heeft zowel een 9- als 18-holes handicaptabel; gasten spelen alleen mee met een lid.
+
+- **Club:** Golfclub Mariënweide
+- **Adres:** Boekenroodeweg 52, 2111 HN Aerdenhout, Noord-Holland, NL
+- **GPS:** 52.3523441, 4.5836447
+- **Afstand:** 130.0 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** parkachtig, rond de hockeyvelden van Rood-Wit, met waterpartijen; grenst aan stiltegebied Naaldenveld
+- **Opgericht:** 1985
+- **Telefoon:** +31 23 524 6245
+- **Website:** https://www.marienweide.nl/
+- **Greenfee welkom:** False
+- **Eisen:** Bezoekers alleen in gezelschap van een clublid; NGF-lidmaatschap vereist; max. 5x per jaar als greenfeespeler.
+- **Faciliteiten:** 9-holes par 3-baan (NGF-status, qualifying), oefenfaciliteiten, golfpro / lessen, clubhuis met bar
+
+**Lus 18 holes (2x 9, par 3)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2044 | 51.9 | 84 | 54 |
+| rood (women) | 2044 | 54.1 | 85 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 11 | 77 | 77 |
+| 2 | 3 | 17 | 86 | 86 |
+| 3 | 3 | 7 | 122 | 122 |
+| 4 | 3 | 13 | 86 | 86 |
+| 5 | 3 | 15 | 84 | 84 |
+| 6 | 3 | 9 | 87 | 87 |
+| 7 | 3 | 5 | 162 | 162 |
+| 8 | 3 | 1 | 167 | 167 |
+| 9 | 3 | 3 | 153 | 153 |
+| 10 | 3 | 12 | 77 | 77 |
+| 11 | 3 | 18 | 86 | 86 |
+| 12 | 3 | 8 | 122 | 122 |
+| 13 | 3 | 14 | 86 | 86 |
+| 14 | 3 | 16 | 84 | 84 |
+| 15 | 3 | 10 | 83 | 83 |
+| 16 | 3 | 6 | 162 | 162 |
+| 17 | 3 | 2 | 167 | 167 |
+| 18 | 3 | 4 | 153 | 153 |
+
+**Lus 9 holes** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1022 | 26.0 | 84 | 27 |
+| rood (women) | 1022 | 27.1 | 85 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 11 | 77 | 77 |
+| 2 | 3 | 17 | 86 | 86 |
+| 3 | 3 | 7 | 122 | 122 |
+| 4 | 3 | 13 | 86 | 86 |
+| 5 | 3 | 15 | 84 | 84 |
+| 6 | 3 | 9 | 87 | 87 |
+| 7 | 3 | 5 | 162 | 162 |
+| 8 | 3 | 1 | 167 | 167 |
+| 9 | 3 | 3 | 153 | 153 |
+
+- **Scorekaartpagina:** https://www.marienweide.nl/de-baan/baaninformatie
+- **Bestanden:** [scorecard/Marienweide-Scorekaart-FC-2025.pdf](golfclub-marienweide-aerdenhout/scorecard/Marienweide-Scorekaart-FC-2025.pdf), [scorecard/Marienweide_WHS_tabel_18_holes.pdf](golfclub-marienweide-aerdenhout/scorecard/Marienweide_WHS_tabel_18_holes.pdf), [scorecard/Marienweide_WHS_tabel_9_holes.pdf](golfclub-marienweide-aerdenhout/scorecard/Marienweide_WHS_tabel_9_holes.pdf), [scorecard/page.html](golfclub-marienweide-aerdenhout/scorecard/page.html)
+- **Opmerking:** Scorekaart vermeldt één lengte per hole (geen aparte tee-kleuren); CR/slope uit de WHS-baanhandicaptabellen (geel heren, rood dames). Hole 6 is 87 m, hole 15 (zelfde hole, 2e ronde) 83 m; de kaart geeft OUT en IN beide 1022 m, terwijl de holesom 1024 (OUT) en 1020 (IN) is. 9-holes S.I. is de oneven S.I. van de kaart (18-holesstijl).
+
+<a id="golfclub-zeegersloot-alphen"></a>
+## Golfclub Zeegersloot (Griend/Heuvel)
+
+Zeegersloot ligt aan de oostkant van Alphen aan den Rijn en telt 27 holes. De 18-holesbaan combineert de Griend, een polderlus met water, bunkers en natuurvriendelijke oevers, met de Heuvel, waar sommige afslagen op een van de hoogste punten van het Groene Hart liggen en precisie belangrijker is dan lengte. Daarnaast is er de 9-holes par 3-Parkbaan.
+
+- **Club:** Golfclub Zeegersloot
+- **Adres:** Kromme Aarweg 5, 2403 NB Alphen aan den Rijn, Zuid-Holland, NL
+- **GPS:** 52.1439815, 4.6972412
+- **Afstand:** 130.0 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** polder (Griend) en heuvel/voormalige stortplaats (Heuvel, tees tot ca. 17 m boven NAP)
+- **Opgericht:** 1984
+- **Telefoon:** 0172 44 54 41
+- **E-mail:** secretariaat@zeegersloot.nl
+- **Website:** https://zeegersloot.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, oefencentrum, par 3-baan (Parkbaan), clubhuis, handicarts
+
+**Lus 18 holes Griend (1-9) + Heuvel (10-18)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5780 | 71.5 | 132 | 71 |
+| geel (men) | 5525 | 70.1 | 129 | 71 |
+| blauw (men) | 5023 | 67.8 | 118 | 71 |
+| rood (men) | 4836 | 66.4 | 114 | 71 |
+| oranje (men) | 4109 | 63.8 | 108 | 71 |
+| geel (women) | 5525 | 76.4 | 136 | 71 |
+| blauw (women) | 5023 | 72.7 | 128 | 71 |
+| rood (women) | 4836 | 71.1 | 127 | 71 |
+| oranje (women) | 4109 | 67.9 | 123 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 338 | 330 | 324 | 290 | 225 |
+| 2 | 4 | 1 | 426 | 359 | 359 | 351 | 287 |
+| 3 | 4 | 3 | 314 | 306 | 283 | 279 | 195 |
+| 4 | 5 | 7 | 471 | 459 | 398 | 390 | 334 |
+| 5 | 4 | 9 | 367 | 357 | 302 | 294 | 230 |
+| 6 | 3 | 15 | 171 | 162 | 153 | 153 | 99 |
+| 7 | 4 | 13 | 283 | 283 | 263 | 258 | 258 |
+| 8 | 3 | 17 | 168 | 131 | 131 | 126 | 105 |
+| 9 | 5 | 5 | 479 | 469 | 420 | 411 | 369 |
+| 10 | 4 | 2 | 369 | 361 | 325 | 317 | 272 |
+| 11 | 4 | 12 | 313 | 304 | 260 | 251 | 197 |
+| 12 | 3 | 16 | 148 | 140 | 122 | 122 | 122 |
+| 13 | 5 | 6 | 463 | 453 | 385 | 385 | 345 |
+| 14 | 4 | 10 | 343 | 311 | 311 | 276 | 224 |
+| 15 | 3 | 18 | 160 | 156 | 146 | 127 | 127 |
+| 16 | 4 | 8 | 347 | 339 | 302 | 280 | 211 |
+| 17 | 3 | 14 | 157 | 150 | 139 | 130 | 130 |
+| 18 | 5 | 4 | 463 | 455 | 400 | 396 | 379 |
+
+**Lus Griend (holes 1-9)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 3017 | 36.8 | 137 | 36 |
+| geel (men) | 2856 | 36.0 | 132 | 36 |
+| blauw (men) | 2633 | 35.1 | 121 | 36 |
+| rood (men) | 2552 | 34.3 | 117 | 36 |
+| oranje (men) | 2102 | 32.5 | 116 | 36 |
+| geel (women) | 2856 | 39.2 | 145 | 36 |
+| blauw (women) | 2633 | 37.5 | 137 | 36 |
+| rood (women) | 2552 | 36.6 | 134 | 36 |
+| oranje (women) | 2102 | 34.9 | 131 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 338 | 330 | 324 | 290 | 225 |
+| 2 | 4 | 1 | 426 | 359 | 359 | 351 | 287 |
+| 3 | 4 | 3 | 314 | 306 | 283 | 279 | 195 |
+| 4 | 5 | 7 | 471 | 459 | 398 | 390 | 334 |
+| 5 | 4 | 9 | 367 | 357 | 302 | 294 | 230 |
+| 6 | 3 | 15 | 171 | 162 | 153 | 153 | 99 |
+| 7 | 4 | 13 | 283 | 283 | 263 | 258 | 258 |
+| 8 | 3 | 17 | 168 | 131 | 131 | 126 | 105 |
+| 9 | 5 | 5 | 479 | 469 | 420 | 411 | 369 |
+
+**Lus Heuvel (holes 10-18)** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2763 | 34.8 | 128 | 35 |
+| geel (men) | 2669 | 34.2 | 126 | 35 |
+| blauw (men) | 2390 | 32.7 | 116 | 35 |
+| rood (men) | 2284 | 32.1 | 110 | 35 |
+| oranje (men) | 2007 | 31.3 | 101 | 35 |
+| geel (women) | 2669 | 37.2 | 128 | 35 |
+| blauw (women) | 2390 | 35.3 | 121 | 35 |
+| rood (women) | 2284 | 34.6 | 120 | 35 |
+| oranje (women) | 2007 | 33.1 | 116 | 35 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 10 | 4 | 2 | 369 | 361 | 325 | 317 | 272 |
+| 11 | 4 | 12 | 313 | 304 | 260 | 251 | 197 |
+| 12 | 3 | 16 | 148 | 140 | 122 | 122 | 122 |
+| 13 | 5 | 6 | 463 | 453 | 385 | 385 | 345 |
+| 14 | 4 | 10 | 343 | 311 | 311 | 276 | 224 |
+| 15 | 3 | 18 | 160 | 156 | 146 | 127 | 127 |
+| 16 | 4 | 8 | 347 | 339 | 302 | 280 | 211 |
+| 17 | 3 | 14 | 157 | 150 | 139 | 130 | 130 |
+| 18 | 5 | 4 | 463 | 455 | 400 | 396 | 379 |
+
+- **Scorekaartpagina:** https://zeegersloot.nl/praktischeinfo/
+- **Bestanden:** [scorecard/Scorekaart-Heuvel-Griend_2026.pdf](golfclub-zeegersloot-alphen/scorecard/Scorekaart-Heuvel-Griend_2026.pdf), [scorecard/Zeegersloot-Heren-Zomer-2024.pdf](golfclub-zeegersloot-alphen/scorecard/Zeegersloot-Heren-Zomer-2024.pdf), [scorecard/Zeegersloot-Dames-Zomer-2024.pdf](golfclub-zeegersloot-alphen/scorecard/Zeegersloot-Dames-Zomer-2024.pdf)
+- **Opmerking:** zeegersloot.nl geeft 403 op curl; pagina's en PDF's opgehaald via WebFetch (geen page.html opgeslagen). Scorekaart Griend/Heuvel 2026 (zomerkaart; er bestaan ook seizoenskaarten). Op de kaart staat onder Griend 'In 3017 2856 2633 2102 2102' – rood is daar een drukfout: de holes tellen op tot 2552, zoals ook in de Out-regel bij Heuvel. CR/SR uit handicaptabellen 'Zomer 2024' (14-03-2024); Oprichtingsjaar 1984 van het clublogo op de Parkbaan-scorekaart.
+
+<a id="golfclub-zeegersloot-parkbaan"></a>
+## Golfclub Zeegersloot – Parkbaan (par 3)
+
+De Parkbaan is de 9-holes par 3-baan van Golfclub Zeegersloot, gelegen tussen het clubhuis en de N207. De holes variëren van ruim 110 tot bijna 190 meter vanaf geel/rood en liggen tussen greppels en sloten. Beginners met baanpermissie spelen vanaf sterk verkorte oranje afslagen.
+
+- **Club:** Golfclub Zeegersloot
+- **Adres:** Kromme Aarweg 5, 2403 NB Alphen aan den Rijn, Zuid-Holland, NL
+- **GPS:** 52.1439815, 4.6972412
+- **Afstand:** 130.0 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** polder/park langs de N207
+- **Opgericht:** 1984
+- **Telefoon:** 0172 44 54 41
+- **E-mail:** secretariaat@zeegersloot.nl
+- **Website:** https://zeegersloot.nl
+- **Greenfee welkom:** True
+- **Eisen:** Spelers met baanpermissie spelen vanaf de oranje tees
+- **Faciliteiten:** driving range, oefencentrum, 18-holesbaan Griend/Heuvel, clubhuis
+
+**Lus 18 holes (9 holes 2x gespeeld)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel/rood (men) | 2504 | 54.3 | 75 | 54 |
+| geel/rood (women) | 2504 | 56.5 | 81 | 54 |
+| oranje (men) | 1040 |  |  | 54 |
+
+| Hole | Par | SI | geel/rood | oranje |
+|---|---|---|---|---|
+| 1 | 3 | 5 | 151 | 60 |
+| 2 | 3 | 11 | 116 | 40 |
+| 3 | 3 | 15 | 121 | 50 |
+| 4 | 3 | 7 | 150 | 80 |
+| 5 | 3 | 1 | 189 | 70 |
+| 6 | 3 | 9 | 132 | 50 |
+| 7 | 3 | 17 | 111 | 50 |
+| 8 | 3 | 13 | 122 | 50 |
+| 9 | 3 | 3 | 160 | 70 |
+| 10 | 3 | 6 | 151 | 60 |
+| 11 | 3 | 12 | 116 | 40 |
+| 12 | 3 | 16 | 121 | 50 |
+| 13 | 3 | 8 | 150 | 80 |
+| 14 | 3 | 2 | 189 | 70 |
+| 15 | 3 | 10 | 132 | 50 |
+| 16 | 3 | 18 | 111 | 50 |
+| 17 | 3 | 14 | 122 | 50 |
+| 18 | 3 | 4 | 160 | 70 |
+
+- **Scorekaartpagina:** https://zeegersloot.nl/praktischeinfo/
+- **Bestanden:** [scorecard/Scorekaart_PB-2020.pdf](golfclub-zeegersloot-parkbaan/scorecard/Scorekaart_PB-2020.pdf), [scorecard/Zeegersloot-WHS-tabel-Par-3-Baan.pdf](golfclub-zeegersloot-parkbaan/scorecard/Zeegersloot-WHS-tabel-Par-3-Baan.pdf)
+- **Opmerking:** zeegersloot.nl geeft 403 op curl; PDF's opgehaald via WebFetch. Scorekaart Parkbaan december 2020: één kolom 'Geel/Rood' (heren geel, dames rood, zelfde lengtes) en een oranje kolom voor baanpermissie (geen rating). CR/SR uit WHS-tabel Par-3 Baan d.d. 19-01-2021 (18 holes; 9 holes heren 27,2/75, dames 28,3/81).
+
+<a id="golfbaan-noordeloos"></a>
+## Golfbaan 9par3 Noordeloos
+
+Golfbaan Noordeloos ligt op het erf van de Maria Johanna Hoeve in de Alblasserwaard (gemeente Molenlanden). Het is een kleine, NGF-gecertificeerde 9-holes par 3-baan met korte holes tussen ongeveer 45 en 110 meter, een brasserie en mogelijkheden voor lessen en clinics.
+
+- **Club:** Golfbaan Noordeloos
+- **Adres:** Nieuwendijk 20, 4225 PE Noordeloos, Zuid-Holland, NL
+- **GPS:** 51.8980999, 4.9277511
+- **Afstand:** 130.3 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** landelijke par 3-baan bij een boerderij in de Alblasserwaard
+- **Telefoon:** 0183 58 9524
+- **E-mail:** info@golfbaannoordeloos.nl
+- **Website:** https://www.golfbaannoordeloos.nl
+- **Starttijden:** https://www.golfbaannoordeloos.nl/starttijden/
+- **Greenfee welkom:** True
+- **Faciliteiten:** oefenfaciliteiten, golfles, clinics, brasserie
+
+**Lus 9 holes par 3** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| home | 625 |  |  | 27 |
+| qualifying | 708 |  |  | 27 |
+
+| Hole | Par | SI | home |
+|---|---|---|---|
+| 1 | 3 | 8 | 49 |
+| 2 | 3 | 5 | 44 |
+| 3 | 3 | 2 | 81 |
+| 4 | 3 | 7 | 69 |
+| 5 | 3 | 1 | 66 |
+| 6 | 3 | 4 | 82 |
+| 7 | 3 | 3 | 108 |
+| 8 | 3 | 9 | 51 |
+| 9 | 3 | 6 | 75 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/golfbaan-9par3-noordeloos
+- **Bestanden:** [scorecard/hole19-scorecard.html](golfbaan-noordeloos/scorecard/hole19-scorecard.html)
+- **Opmerking:** Clubsite (golfbaannoordeloos.nl) geeft 403 voor curl en publiceert via WebFetch geen scorekaart. Par, S.I. en lengtes van Hole19 (tee 'home', totaal 625, eenheid niet vermeld). Hole19 noemt ook een 'qualifying'-tee van 708 zonder holelengtes; GolfPass/GolfAdvisor geven gele tee 708 m met CR 23,3 / slope 75 (niet officieel bevestigd, niet ingevuld). Hole19-ratings voor 'home' (49,8/47 en 51,5/66) zijn onwaarschijnlijk en niet overgenomen.
+
+<a id="golfbaan-the-dunes-zandvoort"></a>
+## Golfbaan The Dunes
+
+The Dunes is een openbare 9-holes linksbaan in de oude duinen van Zandvoort, vlak bij strand en dorp. De compacte holes (zeven par 3's en twee par 4's) liggen tussen duinruggen met flinke hoogteverschillen en vragen om precisie. Op de baan speelt ook Golfclub De Zandvoortse; spelen kan met greenfee of abonnement.
+
+- **Club:** Golfbaan The Dunes / Golfclub De Zandvoortse
+- **Adres:** Duintjesveldweg 3, 2041 TZ Zandvoort, Noord-Holland, NL
+- **GPS:** 52.3833028, 4.5485775
+- **Afstand:** 131.6 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** duinen (linksbaan) aan de rand van Zandvoort
+- **Telefoon:** +31 23 571 5743
+- **E-mail:** info@thedunes.nl
+- **Website:** https://thedunes.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** 9-holes linksbaan (par 29), driving range, putting green, restaurant/brasserie, GVB-cursussen, abonnementen
+
+**Lus 9 holes** — 9 holes, par 29
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 1544 | 29.5 | 100 | 29 |
+| geel (men) | 1439 | 28.9 | 101 | 29 |
+| rood (men) | 1375 | 28.5 | 97 | 29 |
+| blauw (women) | 1439 | 30.5 | 108 | 29 |
+| rood (women) | 1375 | 30.0 | 104 | 29 |
+
+| Hole | Par | SI | geel | blauw |
+|---|---|---|---|---|
+| 1 | 3 | 6 | 157 | 157 |
+| 2 | 4 | 1 | 301 | 301 |
+| 3 | 3 | 8 | 105 | 105 |
+| 4 | 3 | 4 | 155 | 155 |
+| 5 | 3 | 2 | 179 | 179 |
+| 6 | 3 | 7 | 94 | 94 |
+| 7 | 3 | 9 | 77 | 77 |
+| 8 | 4 | 3 | 252 | 252 |
+| 9 | 3 | 5 | 119 | 119 |
+
+- **Scorekaartpagina:** https://thedunes.nl/de-baan/
+- **Bestanden:** [scorecard/page.html](golfbaan-the-dunes-zandvoort/scorecard/page.html), [scorecard/hole19.html](golfbaan-the-dunes-zandvoort/scorecard/hole19.html), [scorecard/golfingrecord.html](golfbaan-the-dunes-zandvoort/scorecard/golfingrecord.html)
+- **Opmerking:** De club publiceert geen scorekaart of handicaptabel (alleen hole-video's). Par, S.I., lengtes (geel heren = blauw dames, 1439 m) en CR/slope komen van Hole19 (third-party; eenheid op de site 'yds' maar totalen komen overeen met GolfPass 1544 m wit, dus vermoedelijk meters). Holelengtes voor wit en rood onbekend. Hole19 18 holes: wit 58,9/100, geel 57,8/101, rood heren 56,9/97, blauw dames 60,9/108, rood dames 59,9/104. 1golf.eu (via zoekresultaat; site blokkeert met Cloudflare) geeft afwijkende ratings (geel 58,5/97). GolfingRecord geeft dezelfde par/S.I.-volgorde niet (S.I. 11,1,15,7,3,13,17,5,9).
+
+<a id="kennemer-golf-country-club-zandvoort"></a>
+## Kennemer Golf & Country Club
+
+De Kennemer is een van de oudste golfclubs van Nederland en speelt sinds 1928 in de duinen bij Zandvoort op een ontwerp van Harry Colt. De 27 holes zijn verdeeld over de Van Hengel-, Pennink- en Colt-lus, die in drie combinaties als 18 holes worden gespeeld. Wind, hoogteverschillen en zware rough maken het een uitdagende linksachtige baan, die ook regelmatig gastheer was van het Dutch Open.
+
+- **Club:** Kennemer Golf & Country Club
+- **Adres:** Kennemerweg 78, 2042 XT Zandvoort, Noord-Holland, NL
+- **GPS:** 52.3697, 4.55273
+- **Afstand:** 131.6 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** duinen (links-karakter), open en windgevoelig
+- **Opgericht:** 1910
+- **Architect:** Harry S. Colt (baan 1928); A-lus (Van Hengel Course) toegevoegd in 1985
+- **Telefoon:** +31 23 571 2836
+- **E-mail:** info@kennemergolf.nl
+- **Website:** https://kennemergolf.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Lidmaatschap NGF-club of erkende buitenlandse club, aantoonbaar exact handicap max. 24; bezoekers max. 3x per jaar, niet op zondag en niet bij wedstrijden/groepen.
+- **Faciliteiten:** 27 holes (3 lussen van 9), driving range / oefenterrein, golfacademy met pro's, shop, clubfitting, clubhuis met restaurant (1928), tennis
+
+**Lus A/B (Van Hengel + Pennink)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6239 | 74.1 | 137 | 72 |
+| geel (men) | 5799 | 71.8 | 133 | 72 |
+| blauw (men) | 5451 | 70.2 | 129 | 72 |
+| rood (men) | 5019 | 68.1 | 121 | 72 |
+| geel (women) | 5799 | 78.0 | 147 | 72 |
+| blauw (women) | 5451 | 76.2 | 138 | 72 |
+| rood (women) | 5019 | 73.2 | 134 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 398 | 364 | 334 | 315 |
+| 2 | 5 | 11 | 517 | 476 | 446 | 418 |
+| 3 | 3 | 17 | 139 | 132 | 132 | 121 |
+| 4 | 4 | 13 | 366 | 317 | 258 | 258 |
+| 5 | 4 | 7 | 386 | 354 | 335 | 306 |
+| 6 | 4 | 1 | 330 | 326 | 326 | 311 |
+| 7 | 5 | 9 | 513 | 477 | 456 | 389 |
+| 8 | 3 | 15 | 204 | 160 | 160 | 144 |
+| 9 | 4 | 3 | 380 | 345 | 345 | 308 |
+| 10 | 4 | 8 | 411 | 387 | 329 | 329 |
+| 11 | 3 | 18 | 144 | 126 | 126 | 109 |
+| 12 | 5 | 2 | 475 | 470 | 443 | 428 |
+| 13 | 4 | 12 | 301 | 292 | 292 | 266 |
+| 14 | 4 | 6 | 304 | 290 | 290 | 255 |
+| 15 | 5 | 16 | 476 | 427 | 379 | 370 |
+| 16 | 4 | 10 | 334 | 328 | 296 | 254 |
+| 17 | 3 | 14 | 178 | 154 | 154 | 135 |
+| 18 | 4 | 4 | 383 | 374 | 350 | 303 |
+
+**Lus A/C (Van Hengel + Colt)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6285 | 74.6 | 138 | 72 |
+| geel (men) | 5781 | 71.7 | 135 | 72 |
+| blauw (men) | 5520 | 70.6 | 132 | 72 |
+| rood (men) | 5045 | 68.3 | 125 | 72 |
+| geel (women) | 5781 | 78.4 | 148 | 72 |
+| blauw (women) | 5520 | 76.7 | 142 | 72 |
+| rood (women) | 5045 | 73.7 | 131 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 398 | 364 | 334 | 315 |
+| 2 | 5 | 11 | 517 | 476 | 446 | 418 |
+| 3 | 3 | 17 | 139 | 132 | 132 | 121 |
+| 4 | 4 | 13 | 366 | 317 | 258 | 258 |
+| 5 | 4 | 7 | 386 | 354 | 335 | 306 |
+| 6 | 4 | 1 | 330 | 326 | 326 | 311 |
+| 7 | 5 | 9 | 513 | 477 | 456 | 389 |
+| 8 | 3 | 15 | 204 | 160 | 160 | 144 |
+| 9 | 4 | 3 | 380 | 345 | 345 | 308 |
+| 10 | 4 | 14 | 328 | 305 | 286 | 242 |
+| 11 | 4 | 4 | 427 | 402 | 360 | 336 |
+| 12 | 5 | 10 | 497 | 464 | 464 | 410 |
+| 13 | 4 | 8 | 342 | 290 | 290 | 275 |
+| 14 | 4 | 2 | 351 | 331 | 308 | 282 |
+| 15 | 3 | 16 | 155 | 130 | 130 | 110 |
+| 16 | 5 | 18 | 434 | 426 | 426 | 404 |
+| 17 | 3 | 12 | 152 | 134 | 134 | 113 |
+| 18 | 4 | 6 | 366 | 348 | 330 | 303 |
+
+**Lus B/C (Pennink + Colt)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6058 | 73.1 | 137 | 72 |
+| geel (men) | 5678 | 71.1 | 131 | 72 |
+| blauw (men) | 5387 | 69.6 | 128 | 72 |
+| rood (men) | 4924 | 67.2 | 122 | 72 |
+| geel (women) | 5678 | 77.3 | 148 | 72 |
+| blauw (women) | 5387 | 75.5 | 144 | 72 |
+| rood (women) | 4924 | 72.7 | 132 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 7 | 411 | 387 | 329 | 329 |
+| 2 | 3 | 17 | 144 | 126 | 126 | 109 |
+| 3 | 5 | 1 | 475 | 470 | 443 | 428 |
+| 4 | 4 | 11 | 301 | 292 | 292 | 266 |
+| 5 | 4 | 5 | 304 | 290 | 290 | 255 |
+| 6 | 5 | 15 | 476 | 427 | 379 | 370 |
+| 7 | 4 | 9 | 334 | 328 | 296 | 254 |
+| 8 | 3 | 13 | 178 | 154 | 154 | 135 |
+| 9 | 4 | 3 | 383 | 374 | 350 | 303 |
+| 10 | 4 | 14 | 328 | 305 | 286 | 242 |
+| 11 | 4 | 4 | 427 | 402 | 360 | 336 |
+| 12 | 5 | 10 | 497 | 464 | 464 | 410 |
+| 13 | 4 | 8 | 342 | 290 | 290 | 275 |
+| 14 | 4 | 2 | 351 | 331 | 308 | 282 |
+| 15 | 3 | 16 | 155 | 130 | 130 | 110 |
+| 16 | 5 | 18 | 434 | 426 | 426 | 404 |
+| 17 | 3 | 12 | 152 | 134 | 134 | 113 |
+| 18 | 4 | 6 | 366 | 348 | 330 | 303 |
+
+- **Scorekaartpagina:** https://kennemergolf.nl/golfen/course-layout/
+- **Bestanden:** [scorecard/Scorekaart-website-juni-2025-1-scaled.jpg](kennemer-golf-country-club-zandvoort/scorecard/Scorekaart-website-juni-2025-1-scaled.jpg), [scorecard/Scorecard-buitenzijde-def-scaled.jpg](kennemer-golf-country-club-zandvoort/scorecard/Scorecard-buitenzijde-def-scaled.jpg), [scorecard/Kennemer-18-holes-A-B-Course-Heren.pdf](kennemer-golf-country-club-zandvoort/scorecard/Kennemer-18-holes-A-B-Course-Heren.pdf), [scorecard/Kennemer-18-holes-A-B-Course-Dames.pdf](kennemer-golf-country-club-zandvoort/scorecard/Kennemer-18-holes-A-B-Course-Dames.pdf), [scorecard/Kennemer-18-holes-A-C-Heren.pdf](kennemer-golf-country-club-zandvoort/scorecard/Kennemer-18-holes-A-C-Heren.pdf), [scorecard/Kennemer-18-holes-A-C-Dames.pdf](kennemer-golf-country-club-zandvoort/scorecard/Kennemer-18-holes-A-C-Dames.pdf), [scorecard/Kennemer-18-holes-B-C-Course-Heren.pdf](kennemer-golf-country-club-zandvoort/scorecard/Kennemer-18-holes-B-C-Course-Heren.pdf), [scorecard/Kennemer-18-holes-B-C-Course-Dames.pdf](kennemer-golf-country-club-zandvoort/scorecard/Kennemer-18-holes-B-C-Course-Dames.pdf), [scorecard/page.html](kennemer-golf-country-club-zandvoort/scorecard/page.html)
+- **Opmerking:** Scorekaart juni 2025; CR/slope uit de baanhandicaptabellen (WHS) per combinatie. B-lus heeft eigen S.I. als voorste negen (B/C) en als achterste negen (A/B); C wordt altijd als achterste negen gespeeld. Oranje tees staan in de handicaptabellen (heren A/B 65,8/112, A/C 65,5/114, B/C 64,1/117; dames A/B 70,1/124, A/C 70,1/120, B/C 69,4/123) maar zonder holelengtes op de scorekaart en zijn daarom niet opgenomen. Losse 9-holes tabellen en een Dutch Open-tabel bestaan ook. Alle tee-totalen kloppen met de holesom.
+
+<a id="golfclub-dn-heikant-aarle-rixtel"></a>
+## Golfclub d'n Heikant
+
+Golfclub d'n Heikant ligt op een landgoed aan de bosrand bij Aarle-Rixtel, vlak bij natuurgebied De Biezen. De 9-holes par 3-baan heeft holes van 60 tot 165 meter met bunkers, sloten en een waterpartij, en wordt voor 18 holes twee keer gespeeld. Bij de baan horen een driving range, oefenarea en een brasserie.
+
+- **Club:** Golfclub d'n Heikant
+- **Adres:** Asdonkseweg 6, 5735 SP Aarle-Rixtel, Noord-Brabant, NL
+- **GPS:** 51.512295, 5.6825006
+- **Afstand:** 132.2 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** landgoed aan de bosrand bij natuurgebied De Biezen en de Grotelse Heide, met water
+- **Telefoon:** 0492-550871
+- **Website:** https://golfclubdenheikant.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, oefenarea, clubhuis met terras, Brasserie Bravoure, golfschool/clinics
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1970 | 50.3 | 77 | 54 |
+| rood (women) | 1970 | 52.0 | 84 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 1 | 165 | 165 |
+| 2 | 3 | 15 | 95 | 95 |
+| 3 | 3 | 3 | 145 | 145 |
+| 4 | 3 | 17 | 60 | 60 |
+| 5 | 3 | 7 | 110 | 110 |
+| 6 | 3 | 13 | 75 | 75 |
+| 7 | 3 | 9 | 105 | 105 |
+| 8 | 3 | 11 | 85 | 85 |
+| 9 | 3 | 5 | 145 | 145 |
+| 10 | 3 | 2 | 165 | 165 |
+| 11 | 3 | 16 | 95 | 95 |
+| 12 | 3 | 4 | 145 | 145 |
+| 13 | 3 | 18 | 60 | 60 |
+| 14 | 3 | 8 | 110 | 110 |
+| 15 | 3 | 14 | 75 | 75 |
+| 16 | 3 | 10 | 105 | 105 |
+| 17 | 3 | 12 | 85 | 85 |
+| 18 | 3 | 6 | 145 | 145 |
+
+**Lus 9 holes** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 985 | 25.2 | 77 | 27 |
+| rood (women) | 985 | 26.0 | 84 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 1 | 165 | 165 |
+| 2 | 3 | 15 | 95 | 95 |
+| 3 | 3 | 3 | 145 | 145 |
+| 4 | 3 | 17 | 60 | 60 |
+| 5 | 3 | 7 | 110 | 110 |
+| 6 | 3 | 13 | 75 | 75 |
+| 7 | 3 | 9 | 105 | 105 |
+| 8 | 3 | 11 | 85 | 85 |
+| 9 | 3 | 5 | 145 | 145 |
+
+- **Scorekaartpagina:** https://golfclubdenheikant.nl/golfbaan/playing-hcp-lijsten/
+- **Bestanden:** [scorecard/Heikant-Par-3-Baan-Dames-en-Heren-2023.pdf](golfclub-dn-heikant-aarle-rixtel/scorecard/Heikant-Par-3-Baan-Dames-en-Heren-2023.pdf), [scorecard/page.html](golfclub-dn-heikant-aarle-rixtel/scorecard/page.html), [scorecard/scorekaart.pdf](golfclub-dn-heikant-aarle-rixtel/scorecard/scorekaart.pdf)
+- **Opmerking:** Scorekaart (PDF, 2020): één lengtekolom "D/H" voor dames en heren; ratings uit tabel 21-09-2023: geel heren en rood dames (de lengtes zijn voor beide gelijk opgegeven). 9-holes S.I. in 18-holes stijl (oneven).
+
+<a id="golfclub-de-dommel-sint-michielsgestel"></a>
+## Golfclub De Dommel
+
+De Dommel is een van de oudste clubs van Brabant en ligt op landgoed Zegenwerp ten zuiden van Sint-Michielsgestel, in het dal van de Dommel. De oorspronkelijke negen holes zijn van Harry Colt en slingeren door bos, heide en stuifzandglooiingen; later groeide de baan uit tot een korte maar uitdagende par 70. Het clubhuis uit 1930 hoort bij de oudste van het land.
+
+- **Club:** Golfclub De Dommel
+- **Adres:** Zegenwerp 12, 5271 NC Sint-Michielsgestel, Noord-Brabant, NL
+- **GPS:** 51.6256213, 5.3392352
+- **Afstand:** 132.7 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** bos/heide (beekdal van de Dommel, stuifzand, heide, eikenlanen; landgoed Zegenwerp)
+- **Opgericht:** 1928
+- **Architect:** H.S. Colt (holes 10-18, 1929); later J.F. Dudok van Heel (1984) e.a.
+- **Telefoon:** 073-551 9168
+- **E-mail:** info@gcdedommel.nl
+- **Website:** https://gcdedommel.nl
+- **Greenfee welkom:** True
+- **Eisen:** Besloten baan; greenfee alleen voor 18 holes (NGF-leden en overigen tegen verschillend tarief), betalen bij het secretariaat
+- **Faciliteiten:** driving range, oefenbaan, clubhuis (1930), restaurant, golfschool
+
+**Lus 18 holes** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5446 | 68.9 | 125 | 70 |
+| blauw (men) | 5068 | 66.8 | 118 | 70 |
+| rood (men) | 4638 | 64.8 | 110 | 70 |
+| oranje (men) | 4137 | 63.1 | 108 | 70 |
+| geel (women) | 5446 | 74.5 | 132 | 70 |
+| blauw (women) | 5068 | 71.9 | 127 | 70 |
+| rood (women) | 4638 | 70.0 | 121 | 70 |
+| oranje (women) | 4137 | 66.6 | 110 | 70 |
+
+| Hole | Par | SI | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|
+| 1 | 3 | 9 | 180 | 171 | 150 | 134 |
+| 2 | 4 | 13 | 293 | 283 | 257 | 216 |
+| 3 | 4 | 5 | 343 | 316 | 297 | 263 |
+| 4 | 4 | 7 | 374 | 341 | 324 | 292 |
+| 5 | 3 | 17 | 111 | 103 | 95 | 86 |
+| 6 | 5 | 3 | 450 | 432 | 396 | 356 |
+| 7 | 3 | 15 | 148 | 137 | 127 | 115 |
+| 8 | 4 | 1 | 401 | 373 | 336 | 295 |
+| 9 | 4 | 11 | 327 | 318 | 284 | 256 |
+| 10 | 5 | 12 | 448 | 428 | 374 | 335 |
+| 11 | 3 | 14 | 136 | 128 | 118 | 90 |
+| 12 | 4 | 4 | 295 | 260 | 249 | 223 |
+| 13 | 4 | 18 | 256 | 246 | 227 | 204 |
+| 14 | 4 | 2 | 366 | 338 | 303 | 267 |
+| 15 | 4 | 10 | 315 | 297 | 256 | 241 |
+| 16 | 5 | 8 | 458 | 400 | 386 | 346 |
+| 17 | 3 | 16 | 153 | 132 | 125 | 118 |
+| 18 | 4 | 6 | 392 | 365 | 334 | 300 |
+
+- **Scorekaartpagina:** https://gcdedommel.nl/de-baan/scorekaart/
+- **Bestanden:** [scorecard/DD-Scorecard-2026-augustus-voor-nieuwe-rating.pdf](golfclub-de-dommel-sint-michielsgestel/scorecard/DD-Scorecard-2026-augustus-voor-nieuwe-rating.pdf), [scorecard/Dommel-Dames-2022-1.jpg](golfclub-de-dommel-sint-michielsgestel/scorecard/Dommel-Dames-2022-1.jpg), [scorecard/Dommel-Heren-2022-1.jpg](golfclub-de-dommel-sint-michielsgestel/scorecard/Dommel-Heren-2022-1.jpg), [scorecard/page.html](golfclub-de-dommel-sint-michielsgestel/scorecard/page.html), [scorecard/scorekaart1.jpg](golfclub-de-dommel-sint-michielsgestel/scorecard/scorekaart1.jpg), [scorecard/scorekaart2.jpg](golfclub-de-dommel-sint-michielsgestel/scorecard/scorekaart2.jpg)
+- **Opmerking:** Hole-data en CR/slope (18 holes) van scorekaart2.jpg (sept. 2026). Op de kaart staan ook CR/slope per 9 holes (1-9 en 10-18), niet als aparte loop opgenomen. De PDF heet "voor nieuwe rating"; ratings kunnen wijzigen. Handicaptabellen 2022 (JPG) meegeleverd. Kaart heeft ook een S.I. voor 9 holes.
+
+<a id="levant-golf-sint-oedenrode"></a>
+## Levant Golf (voorheen Golfbaan De Schoot)
+
+Levant is de vernieuwde naam van de golfbaan De Schoot in het buitengebied van Sint-Oedenrode, tegen Schijndel aan. De 9-holesbaan van par 36 speelt met waterpartijen en goed geplaatste bunkers en kan met aparte tees en strokeverdeling als 18 holes worden gelopen. Daarnaast is er een kleine par 3-baan van zes holes voor beginners en het korte spel.
+
+- **Club:** Levant
+- **Adres:** Schootsedijk 18, 5491 TD Sint-Oedenrode, Noord-Brabant, NL
+- **GPS:** 51.5843626, 5.4408209
+- **Afstand:** 132.7 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkachtig met waterpartijen (buitengebied Olland)
+- **Telefoon:** +31 (0)413-473011
+- **E-mail:** reception@levant.nl
+- **Website:** https://www.levant.nl
+- **Greenfee welkom:** True
+- **Eisen:** 9/18 holes: GVB/baanpermissie (niet expliciet vermeld); Short Course zonder GVB of baanpermissie
+- **Faciliteiten:** driving range (deels overdekt), putting green, oefengreens, 6-holes par 3 Short Course, Golf Academy, restaurant
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5736 | 71.4 | 130 | 72 |
+| blauw (men) | 5384 | 69.5 | 115 | 72 |
+| rood (men) | 4936 | 67.2 | 114 | 72 |
+| oranje (men) | 4438 | 64.5 | 107 | 72 |
+| geel (women) | 5736 | 77.4 | 139 | 72 |
+| blauw (women) | 5384 | 74.5 | 136 | 72 |
+| rood (women) | 4936 | 73.1 | 134 | 72 |
+| oranje (women) | 4438 | 69.2 | 119 | 72 |
+
+| Hole | Par | SI | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 282 | 267 | 245 | 224 |
+| 2 | 4 | 7 | 336 | 312 | 294 | 264 |
+| 3 | 5 | 3 | 464 | 452 | 389 | 347 |
+| 4 | 3 | 17 | 121 | 115 | 99 | 89 |
+| 5 | 4 | 9 | 349 | 335 | 291 | 262 |
+| 6 | 5 | 1 | 479 | 436 | 424 | 386 |
+| 7 | 4 | 15 | 284 | 271 | 237 | 213 |
+| 8 | 3 | 13 | 177 | 145 | 152 | 135 |
+| 9 | 4 | 5 | 377 | 359 | 333 | 299 |
+| 10 | 4 | 12 | 282 | 267 | 245 | 224 |
+| 11 | 4 | 8 | 367 | 312 | 333 | 264 |
+| 12 | 5 | 2 | 484 | 452 | 402 | 347 |
+| 13 | 3 | 18 | 119 | 115 | 102 | 89 |
+| 14 | 4 | 10 | 354 | 335 | 298 | 262 |
+| 15 | 5 | 4 | 460 | 436 | 408 | 386 |
+| 16 | 4 | 14 | 284 | 271 | 237 | 213 |
+| 17 | 3 | 16 | 157 | 145 | 128 | 135 |
+| 18 | 4 | 6 | 360 | 359 | 319 | 299 |
+
+- **Scorekaartpagina:** https://www.levant.nl/golfbaan/
+- **Bestanden:** [scorecard/Handicap-tabel-dames.pdf](levant-golf-sint-oedenrode/scorecard/Handicap-tabel-dames.pdf), [scorecard/Handicap-tabel-heren.pdf](levant-golf-sint-oedenrode/scorecard/Handicap-tabel-heren.pdf), [scorecard/Levant-Golf_Scorekaart_18-holes.pdf](levant-golf-sint-oedenrode/scorecard/Levant-Golf_Scorekaart_18-holes.pdf), [scorecard/Levant-Golf_Scorekaart_9-holes.pdf](levant-golf-sint-oedenrode/scorecard/Levant-Golf_Scorekaart_9-holes.pdf), [scorecard/page.html](levant-golf-sint-oedenrode/scorecard/page.html)
+- **Opmerking:** Scorekaarten 9 en 18 holes (apr. 2026) hebben dezelfde inhoud: 9 holes 2x met eigen S.I. en voor geel/rood andere lengtes op 10-18. Kleuren geel/blauw/rood/oranje voor de 4 meterkolommen afgeleid uit de volgorde van de handicaptabellen (Golfclub De Schoot, 20-09-2022); opvallend: kolom 2 (blauw) is op hole 8 en 11 korter dan kolom 3 (rood) - zo gedrukt. CR/slope van de kaart; handicaptabel 2022 geeft heren blauw 69,6/119 i.p.v. 69,5/115. Ook 9-holes ratings per helft in de tabellen. 6-holes Short Course: geen kaart.
+
+<a id="bernardus-golf-cromvoirt"></a>
+## Bernardus Golf
+
+Bernardus Golf bij Cromvoirt, vlak onder Den Bosch, is een moderne kampioenschapsbaan van de Amerikaanse architect Kyle Phillips. De baan is in heidestijl aangelegd met veel bunkers, water, duintjes en brem, en ontving al het Dutch Open, het KLM Open en de Solheim Cup. Gasten spelen als dagleden en kunnen ook gebruikmaken van de lodge, restaurants en wellness.
+
+- **Club:** Bernardus Golf
+- **Adres:** Deutersestraat 39B, 5266 AW Cromvoirt, Noord-Brabant, NL
+- **GPS:** 51.6653213, 5.2297148
+- **Afstand:** 133.7 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** heide (heathland-stijl met duinen, heide, brem en waterpartijen)
+- **Opgericht:** 2018
+- **Architect:** Kyle Phillips
+- **Telefoon:** +31 (0)73 203 41 41
+- **E-mail:** info@bernardus.com
+- **Website:** https://bernardusgolf.com
+- **Starttijden:** https://bernardusgolf.com/book-day-membership/
+- **Greenfee welkom:** True
+- **Eisen:** Bezoekers spelen als "Day Member" (dagtarief vanaf € 195); handicapeis niet vermeld op de site
+- **Faciliteiten:** driving range, short game area, putting greens, academy, lodge (hotel), restaurant Nami, Bernardus Café, fitness, buitenzwembad, sauna/hammam, tennisbaan
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| 68 (men) | 6808 | 77.3 | 153 | 72 |
+| 64 (men) | 6440 | 75.5 | 147 | 72 |
+| 60 (men) | 5996 | 72.9 | 139 | 72 |
+| 56 (men) | 5585 | 70.9 | 136 | 72 |
+| 52 (men) | 5158 | 68.6 | 131 | 72 |
+| 47 (men) | 4700 | 66.5 | 121 | 72 |
+| 60 (women) | 5996 | 79.5 | 153 | 72 |
+| 56 (women) | 5585 | 77.2 | 148 | 72 |
+| 52 (women) | 5158 | 74.1 | 141 | 72 |
+| 47 (women) | 4700 | 71.4 | 130 | 72 |
+
+| Hole | Par | SI | 68 | 64 | 60 | 56 | 52 | 47 |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 4 | 7 | 418 | 379 | 360 | 334 | 282 | 282 |
+| 2 | 4 | 1 | 395 | 372 | 356 | 322 | 322 | 265 |
+| 3 | 4 | 17 | 343 | 320 | 290 | 270 | 270 | 228 |
+| 4 | 5 | 13 | 534 | 518 | 470 | 457 | 457 | 394 |
+| 5 | 4 | 5 | 424 | 405 | 367 | 347 | 285 | 285 |
+| 6 | 3 | 15 | 206 | 187 | 169 | 152 | 119 | 119 |
+| 7 | 5 | 3 | 530 | 508 | 473 | 454 | 454 | 405 |
+| 8 | 3 | 11 | 146 | 138 | 126 | 119 | 79 | 79 |
+| 9 | 4 | 9 | 410 | 383 | 359 | 347 | 283 | 283 |
+| 10 | 4 | 18 | 341 | 331 | 312 | 292 | 251 | 251 |
+| 11 | 4 | 4 | 415 | 404 | 377 | 343 | 343 | 302 |
+| 12 | 5 | 12 | 489 | 471 | 449 | 421 | 421 | 351 |
+| 13 | 3 | 16 | 196 | 176 | 154 | 137 | 94 | 94 |
+| 14 | 4 | 2 | 399 | 362 | 333 | 318 | 280 | 280 |
+| 15 | 4 | 10 | 432 | 411 | 401 | 350 | 350 | 295 |
+| 16 | 4 | 8 | 438 | 414 | 386 | 366 | 312 | 312 |
+| 17 | 3 | 14 | 167 | 149 | 137 | 117 | 117 | 84 |
+| 18 | 5 | 6 | 525 | 512 | 477 | 439 | 439 | 391 |
+
+- **Scorekaartpagina:** https://bernardusgolf.com/golf/
+- **Bestanden:** [scorecard/bernardus-golf-handicap-table-men.pdf](bernardus-golf-cromvoirt/scorecard/bernardus-golf-handicap-table-men.pdf), [scorecard/bernardus-golf-handicap-table-women.pdf](bernardus-golf-cromvoirt/scorecard/bernardus-golf-handicap-table-women.pdf), [scorecard/bernardusGolf_Scorecards_2507_merged.pdf](bernardus-golf-cromvoirt/scorecard/bernardusGolf_Scorecards_2507_merged.pdf), [scorecard/page.html](bernardus-golf-cromvoirt/scorecard/page.html)
+- **Opmerking:** Tees heten naar lengte (68/64/60/56/52/47 = ca. hectometers), geen kleuren; color=null. Scorekaart 2025-07 (2 kaarten: 60-47 en 68-64). CR/slope uit handicaptabellen d.d. 26-01-2021 (heren 68-47, dames 60-47); kunnen verouderd zijn.
+
+<a id="golfhorst-america"></a>
+## Golfbaan de Golfhorst
+
+De Golfhorst ligt bij America in Noord-Limburg, op een besloten terrein aan de rand van de Peel. De 18-holesbaan uit 1997 is relatief kort (par 70) maar opvallend heuvelachtig, waardoor afstanden en hoger gelegen greens de uitdaging bepalen. Naast de grote baan is er de Americabaan, een 9-holes par 3-baan.
+
+- **Club:** Golfvereniging Golfhorst
+- **Adres:** Raamweg 8, 5966 RM America, Limburg, NL
+- **GPS:** 51.4265026, 5.9682364
+- **Afstand:** 134.8 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** glooiend, open parkland met grote hoogteverschillen aan de rand van de Peel
+- **Opgericht:** 1997
+- **Telefoon:** 077 464 90 70
+- **E-mail:** info@golfbaandegolfhorst.nl
+- **Website:** https://www.golfbaandegolfhorst.nl/
+- **Greenfee welkom:** True
+- **Eisen:** NGF-pas tonen (baanpermissie/handicap vereist volgens greenfeevoorwaarden)
+- **Faciliteiten:** driving range, putting green, chipping green, golfschool, restaurant, buggyverhuur, par 3-baan (Americabaan), oefenbaan
+
+**Lus 18 holes (par 70)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5098 | 67.3 | 122 | 70 |
+| rood (men) | 4370 | 63.4 | 110 | 70 |
+| oranje (men) | 3836 | 61.8 | 103 | 70 |
+| geel (women) | 5098 | 72.9 | 126 | 70 |
+| rood (women) | 4370 | 68.1 | 119 | 70 |
+| oranje (women) | 3836 | 64.8 | 112 | 70 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 5 | 7 | 445 | 368 | 304 |
+| 2 | 5 | 5 | 416 | 367 | 324 |
+| 3 | 5 | 3 | 458 | 398 | 346 |
+| 4 | 3 | 17 | 101 | 94 | 92 |
+| 5 | 4 | 1 | 350 | 303 | 251 |
+| 6 | 4 | 11 | 295 | 271 | 249 |
+| 7 | 3 | 15 | 152 | 105 | 100 |
+| 8 | 3 | 13 | 157 | 143 | 143 |
+| 9 | 4 | 9 | 339 | 281 | 233 |
+| 10 | 3 | 14 | 152 | 134 | 118 |
+| 11 | 5 | 4 | 471 | 400 | 340 |
+| 12 | 4 | 2 | 341 | 306 | 278 |
+| 13 | 5 | 6 | 443 | 382 | 329 |
+| 14 | 3 | 12 | 115 | 103 | 103 |
+| 15 | 4 | 18 | 230 | 197 | 182 |
+| 16 | 3 | 10 | 182 | 127 | 89 |
+| 17 | 4 | 8 | 312 | 271 | 235 |
+| 18 | 3 | 16 | 139 | 120 | 120 |
+
+**Lus Americabaan par 3 (9 holes)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 888 |  |  | 27 |
+
+| Hole | Par | SI | wit |
+|---|---|---|---|
+| 1 | 3 | 13 | 91 |
+| 2 | 3 | 11 | 99 |
+| 3 | 3 | 3 | 137 |
+| 4 | 3 | 1 | 141 |
+| 5 | 3 | 5 | 121 |
+| 6 | 3 | 15 | 54 |
+| 7 | 3 | 17 | 61 |
+| 8 | 3 | 9 | 73 |
+| 9 | 3 | 7 | 111 |
+
+- **Scorekaartpagina:** https://www.golfbaandegolfhorst.nl/baaninformatie/
+- **Bestanden:** [scorecard/page.html](golfhorst-america/scorecard/page.html), [scorecard/826_Scorekaart_GroteBaan_A_HR.pdf](golfhorst-america/scorecard/826_Scorekaart_GroteBaan_A_HR.pdf), [scorecard/Golfhorst-WHS-tabel-Heren.pdf](golfhorst-america/scorecard/Golfhorst-WHS-tabel-Heren.pdf), [scorecard/Golfhorst-WHS-tabel-Dames.pdf](golfhorst-america/scorecard/Golfhorst-WHS-tabel-Dames.pdf), [scorecard/Golfhorst-WHS-tabel-Par-3-Baan-Dames-en-Heren.pdf](golfhorst-america/scorecard/Golfhorst-WHS-tabel-Par-3-Baan-Dames-en-Heren.pdf)
+- **Opmerking:** 18 holes: par, SI en lengtes (geel/rood/oranje) van de officiele scorekaart; CR/slope uit de WHS-tabellen van 06-01-2021. GolfingRecord toont afwijkende (mogelijk nieuwere) waarden: geel heren 66.5/116, rood heren 63.1/104, andere SI-volgorde en geel 5096 m; niet overgenomen. Americabaan: holegegevens (par, SI, lengte) van golfingrecord.com (derden, eenheid vermoedelijk meters, tee 'wit' is aanname van die site); officiele WHS-tabel par 3-baan (18 holes = 2x9): geel heren CR 49.3/SR 60, rood dames CR 50.5/SR 66, par 54. De pitch & putt-oefenbaan is niet opgenomen (geen holegegevens).
+
+<a id="helmondse-golfclub-overbrug"></a>
+## Helmondse Golfclub 'Overbrug'
+
+De Helmondse Golfclub 'Overbrug' heeft een 9-holesbaan aan de westkant van Helmond, in de wijk Overbrug bij de Warande. Over 18 holes is het een par 71 met afwisselend lange par 5's en korte par 3's; voor de tweede negen zijn twee holes anders ingericht. Gasten met GVB of handicap zijn welkom.
+
+- **Club:** Helmondse Golfclub 'Overbrug'
+- **Adres:** Verliefd Laantje 3a, 5707 LG Helmond, Noord-Brabant, NL
+- **GPS:** 51.4961685, 5.6477328
+- **Afstand:** 134.8 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Architect:** Frank Pont (vernieuwing 2016, volgens golfcoursearchitecture.net)
+- **Telefoon:** 0492 330899
+- **E-mail:** secretaris@hgc-overbrug.nl
+- **Website:** https://hgc-overbrug.nl
+- **Greenfee welkom:** True
+- **Eisen:** Clubhandicap 54 (GVB), EGA-handicap of baanpermissie van HGC Overbrug
+- **Faciliteiten:** clubhuis (Golfclubhuis Tien), golfschool
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5397 | 68.4 | 124 | 71 |
+| rood (men) | 4596 | 65.0 | 111 | 71 |
+| geel (women) | 5397 | 74.2 | 132 | 71 |
+| rood (women) | 4596 | 69.1 | 123 | 71 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 3 | 399 | 348 |
+| 2 | 5 | 7 | 461 | 413 |
+| 3 | 4 | 17 | 236 | 219 |
+| 4 | 4 | 11 | 262 | 226 |
+| 5 | 5 | 1 | 482 | 399 |
+| 6 | 3 | 15 | 109 | 93 |
+| 7 | 4 | 5 | 352 | 284 |
+| 8 | 3 | 13 | 175 | 123 |
+| 9 | 4 | 9 | 290 | 252 |
+| 10 | 4 | 4 | 399 | 348 |
+| 11 | 5 | 8 | 461 | 413 |
+| 12 | 4 | 18 | 236 | 219 |
+| 13 | 3 | 12 | 143 | 116 |
+| 14 | 5 | 2 | 482 | 399 |
+| 15 | 3 | 16 | 93 | 85 |
+| 16 | 4 | 6 | 352 | 284 |
+| 17 | 3 | 14 | 175 | 123 |
+| 18 | 4 | 10 | 290 | 252 |
+
+- **Scorekaartpagina:** https://hgc-overbrug.nl/scorekaart-handicap-tabellen/
+- **Bestanden:** [scorecard/Handicaplijst.png](helmondse-golfclub-overbrug/scorecard/Handicaplijst.png), [scorecard/MGS200845-HGC_Scorekaart_2021.jpg](helmondse-golfclub-overbrug/scorecard/MGS200845-HGC_Scorekaart_2021.jpg), [scorecard/MGS200845-HGC_Scorekaart_20212.jpg](helmondse-golfclub-overbrug/scorecard/MGS200845-HGC_Scorekaart_20212.jpg), [scorecard/page.html](helmondse-golfclub-overbrug/scorecard/page.html)
+- **Opmerking:** Scorekaart 2021 (JPG): 9 holes 2x; holes 13 (par 3, 143/116 m) en 15 (93/85 m) verschillen van holes 4 (par 4) en 6. CR/slope op de kaart (heren en dames, geel/rood). Handicaplijst.png (2021) meegeleverd. E-mailadres op de site is geobfusceerd weergegeven.
+
+<a id="golfclub-vught"></a>
+## Golfclub Vught (par 3-baan)
+
+Golfclub Vught speelt op een compacte 9-holes par 3-baan bij een sportpark aan de rand van Vught. De holes variëren van circa 70 tot 126 meter en liggen tussen bomenrijen en rond een vijver, wat de baan geschikt maakt om het korte spel te oefenen. Wie 18 holes wil lopen speelt de lus twee keer, met een eigen strokeverdeling voor de tweede negen.
+
+- **Club:** Golfclub Vught
+- **Adres:** De Bus 2, 5262 LV Vught, Noord-Brabant, NL
+- **GPS:** 51.6291098, 5.2713586
+- **Afstand:** 135.1 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** parkachtig, omzoomd door bomen, met vijver (naast sportpark)
+- **Architect:** Martin van der Stokker
+- **Telefoon:** 0411 602304
+- **Website:** https://www.golfclubvught.nl
+- **Greenfee welkom:** True
+- **Eisen:** Handicap 54 (NGF-pas tonen); uitzondering voor leerlingen van Absolute Golf met baanpermissie
+- **Faciliteiten:** driving range, putting green, chipping green, clubhuis, golfschool (Absolute Golf), monobuggy
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1830 | 49.4 | 74 | 54 |
+| rood (men) | 1748 | 48.8 | 73 | 54 |
+| geel (women) | 1830 | 51.3 | 75 | 54 |
+| rood (women) | 1748 | 50.4 | 74 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 5 | 120 | 120 |
+| 2 | 3 | 7 | 118 | 106 |
+| 3 | 3 | 17 | 69 | 69 |
+| 4 | 3 | 11 | 70 | 70 |
+| 5 | 3 | 1 | 126 | 114 |
+| 6 | 3 | 3 | 118 | 101 |
+| 7 | 3 | 13 | 101 | 101 |
+| 8 | 3 | 15 | 86 | 86 |
+| 9 | 3 | 9 | 107 | 107 |
+| 10 | 3 | 6 | 120 | 120 |
+| 11 | 3 | 8 | 118 | 106 |
+| 12 | 3 | 18 | 69 | 69 |
+| 13 | 3 | 12 | 70 | 70 |
+| 14 | 3 | 2 | 126 | 114 |
+| 15 | 3 | 4 | 118 | 101 |
+| 16 | 3 | 14 | 101 | 101 |
+| 17 | 3 | 16 | 86 | 86 |
+| 18 | 3 | 10 | 107 | 107 |
+
+- **Scorekaartpagina:** https://www.golfclubvught.nl/golfclub_vught/plattegrond_en_scorekaart
+- **Bestanden:** [scorecard/Plattegroend-en-Scorekaart-tbv-website3179.jpg](golfclub-vught/scorecard/Plattegroend-en-Scorekaart-tbv-website3179.jpg), [scorecard/Vught-WHS-tabel-18-holes-Dames-en-Heren.pdf](golfclub-vught/scorecard/Vught-WHS-tabel-18-holes-Dames-en-Heren.pdf), [scorecard/Vught-WHS-tabel-9-holes-Dames-en-Heren.pdf](golfclub-vught/scorecard/Vught-WHS-tabel-9-holes-Dames-en-Heren.pdf), [scorecard/page-handicap.html](golfclub-vught/scorecard/page-handicap.html), [scorecard/page.html](golfclub-vught/scorecard/page.html)
+- **Opmerking:** 9-holes par 3-baan, 2x gespeeld; holes 10-18 hebben eigen S.I. (even), lengtes gelijk. Kaart: kolommen H (geel) en D (rood). CR/slope uit WHS-tabel 18 holes d.d. 18-01-2021; er is ook een 9-holes tabel.
+
+<a id="golfbaan-ter-specke-lisse"></a>
+## Golfbaan Ter Specke
+
+Ter Specke is een 9-holes par 3-baan op en rond het sportpark van FC Lisse, in 2006 aangelegd op particulier initiatief en in 2015 door Gerard Jol vernieuwd. De holes van 84 tot 172 meter liggen in een rustige groene omgeving; hole 5 heeft een alternatieve, langere variant (5A). De greens zijn van kunstgras, waardoor er het hele jaar zonder wintergreens gespeeld kan worden.
+
+- **Club:** Golfclub Ter Specke
+- **Adres:** Spekkelaan 1, 2161 GH Lisse, Zuid-Holland, NL
+- **GPS:** 52.257243, 4.5404267
+- **Afstand:** 135.6 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** vlak sportpark
+- **Opgericht:** 2006
+- **Architect:** Gerard Jol (renovatie 2015)
+- **Telefoon:** 06 51 71 76 74
+- **E-mail:** info@golfbaanterspecke.nl
+- **Website:** https://golfbaanterspecke.nl
+- **Greenfee welkom:** True
+- **Eisen:** Melden bij de marshal; geen vooraf gereserveerde starttijden (volgorde van binnenkomst)
+- **Faciliteiten:** driving range (15 afslagplaatsen), putting green, golfschool, clubhuis
+
+**Lus 18 holes (9 holes 2x, met hole 5/14)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2262 | 54.6 | 90 | 54 |
+| rood (women) | 2262 | 56.9 | 87 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 7 | 132 | 132 |
+| 2 | 3 | 5 | 149 | 149 |
+| 3 | 3 | 17 | 84 | 84 |
+| 4 | 3 | 15 | 102 | 102 |
+| 5 | 3 | 11 | 117 | 117 |
+| 6 | 3 | 3 | 157 | 157 |
+| 7 | 3 | 9 | 120 | 120 |
+| 8 | 3 | 1 | 172 | 172 |
+| 9 | 3 | 13 | 98 | 98 |
+| 10 | 3 | 8 | 132 | 132 |
+| 11 | 3 | 6 | 149 | 149 |
+| 12 | 3 | 18 | 84 | 84 |
+| 13 | 3 | 16 | 102 | 102 |
+| 14 | 3 | 12 | 117 | 117 |
+| 15 | 3 | 4 | 157 | 157 |
+| 16 | 3 | 10 | 120 | 120 |
+| 17 | 3 | 2 | 172 | 172 |
+| 18 | 3 | 14 | 98 | 98 |
+
+**Lus 18 holes (9 holes 2x, met hole 5A/14A)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2306 | 54.8 | 92 | 54 |
+| rood (women) | 2306 | 57.4 | 89 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 7 | 132 | 132 |
+| 2 | 3 | 5 | 149 | 149 |
+| 3 | 3 | 17 | 84 | 84 |
+| 4 | 3 | 15 | 102 | 102 |
+| 5 | 3 | 11 | 139 | 139 |
+| 6 | 3 | 3 | 157 | 157 |
+| 7 | 3 | 9 | 120 | 120 |
+| 8 | 3 | 1 | 172 | 172 |
+| 9 | 3 | 13 | 98 | 98 |
+| 10 | 3 | 8 | 132 | 132 |
+| 11 | 3 | 6 | 149 | 149 |
+| 12 | 3 | 18 | 84 | 84 |
+| 13 | 3 | 16 | 102 | 102 |
+| 14 | 3 | 12 | 139 | 139 |
+| 15 | 3 | 4 | 157 | 157 |
+| 16 | 3 | 10 | 120 | 120 |
+| 17 | 3 | 2 | 172 | 172 |
+| 18 | 3 | 14 | 98 | 98 |
+
+- **Scorekaartpagina:** https://golfbaanterspecke.nl/de-baan/
+- **Bestanden:** [scorecard/page.html](golfbaan-ter-specke-lisse/scorecard/page.html), [scorecard/Scorekaart-18-holes-okt-2025.pdf](golfbaan-ter-specke-lisse/scorecard/Scorekaart-18-holes-okt-2025.pdf), [scorecard/Handicaptabel-samengevoegd.pdf](golfbaan-ter-specke-lisse/scorecard/Handicaptabel-samengevoegd.pdf)
+- **Opmerking:** Scorekaart oktober 2025: één lengtekolom (heren geel en dames rood spelen dezelfde afslag volgens de tabellen); hole 5/14 117 m of 5A/14A 139 m. CR/SR uit handicaptabellen d.d. 12-06-2023 ('18-holes Par-3 Baan' en '18-holes Baan 5A'); 9 holes: 27,3/90 en 28,5/87 resp. 27,4/92 en 28,7/89.
+
+<a id="golfbaan-tespelduyn-noordwijkerhout"></a>
+## Golfbaan Tespelduyn (Bloembollenbaan)
+
+De Bloembollenbaan van landgoed Tespelduyn is een openbare 9-holesbaan bij Noordwijkerhout, gebouwd rond een 23 meter hoge terp. Enkele holes slaan af van of spelen naar de top, met uitzicht over de Bollenstreek, en water en bunkers zorgen voor extra uitdaging. Door de zandgrond is de baan het hele jaar goed bespeelbaar.
+
+- **Club:** Landgoed & Golfbaan Tespelduyn
+- **Adres:** Tespellaan 53, 2211 VT Noordwijkerhout, Zuid-Holland, NL
+- **GPS:** 52.2833916, 4.5258492
+- **Afstand:** 135.7 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** zandgrond met 23 m hoge terp, tussen duinen en Keukenhof
+- **Telefoon:** 0252 24 13 33
+- **E-mail:** receptie@tespelduyn.nl
+- **Website:** https://golfbaantespelduyn.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range (Trackman), golfschool, restaurant, landgoed
+
+**Lus 18 holes (9 holes 2x, hole 4/13 met andere green)** — 18 holes, par 63
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3543 | 60.9 | 116 | 63 |
+| rood (men) | 3400 | 60.6 | 111 | 63 |
+| oranje (men) | 3265 | 59.9 | 108 | 63 |
+| geel (women) | 3543 | 64.5 | 114 | 63 |
+| rood (women) | 3400 | 63.4 | 116 | 63 |
+| oranje (women) | 3265 | 63.0 | 114 | 63 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 15 | 81 | 81 | 81 |
+| 2 | 3 | 9 | 108 | 108 | 108 |
+| 3 | 4 | 1 | 375 | 375 | 330 |
+| 4 | 4 | 3 | 319 | 311 | 266 |
+| 5 | 3 | 13 | 105 | 105 | 105 |
+| 6 | 3 | 17 | 76 | 76 | 76 |
+| 7 | 3 | 11 | 90 | 90 | 90 |
+| 8 | 4 | 5 | 280 | 265 | 265 |
+| 9 | 4 | 7 | 274 | 244 | 244 |
+| 10 | 3 | 16 | 81 | 81 | 81 |
+| 11 | 3 | 10 | 108 | 108 | 108 |
+| 12 | 4 | 4 | 375 | 375 | 330 |
+| 13 | 5 | 2 | 446 | 401 | 401 |
+| 14 | 3 | 14 | 105 | 105 | 105 |
+| 15 | 3 | 18 | 76 | 76 | 76 |
+| 16 | 3 | 12 | 90 | 90 | 90 |
+| 17 | 4 | 6 | 280 | 265 | 265 |
+| 18 | 4 | 8 | 274 | 244 | 244 |
+
+- **Scorekaartpagina:** https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/
+- **Bestanden:** [scorecard/page.html](golfbaan-tespelduyn-noordwijkerhout/scorecard/page.html), [scorecard/250622-Tespelduyn_scorekaart_9-en-18-holes-2.pdf](golfbaan-tespelduyn-noordwijkerhout/scorecard/250622-Tespelduyn_scorekaart_9-en-18-holes-2.pdf), [scorecard/250622-Tespelduyn_scorekaart_11-holes-2.pdf](golfbaan-tespelduyn-noordwijkerhout/scorecard/250622-Tespelduyn_scorekaart_11-holes-2.pdf), [scorecard/Tespelduyn-Heren.pdf](golfbaan-tespelduyn-noordwijkerhout/scorecard/Tespelduyn-Heren.pdf), [scorecard/Tespelduyn-Dames.pdf](golfbaan-tespelduyn-noordwijkerhout/scorecard/Tespelduyn-Dames.pdf)
+- **Opmerking:** Scorekaart v2506 (juni 2025). Hole 4 (par 4) wordt beneden uitgehold, hole 13 (par 5) boven op de terp; daardoor 1e negen par 31 en 2e negen par 32. CR/SR d.d. 12-06-2025; 1e negen heren 30,2/114, 30,0/109, 29,6/105, dames 31,8/112, 31,4/112, 31,1/111; 2e negen heren 30,8/117, 30,6/114, 30,4/110, dames 32,7/117, 32,0/120, 31,9/118. Er is ook een 11-holeskaart (par 37, geel 1884 m) – niet als loop opgenomen.
+
+<a id="golfclub-son"></a>
+## Golfclub Son
+
+Golfclub Son speelt op sportpark De Gentiaan aan de rand van Son. De negen holes, op één na par 3, zijn slim tussen de sportvelden aangelegd en hebben vlakke fairways maar gewelfde greens, met bunkers, water en boomgroepen als hindernissen. Op vaste dagdelen dient de baan als oefenaccommodatie met range en oefengreens.
+
+- **Club:** Golfclub Son
+- **Adres:** Rooijseweg 11, 5691 PA Son en Breugel, Noord-Brabant, NL
+- **GPS:** 51.5239114, 5.4884411
+- **Afstand:** 136.9 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** sportpark (vlakke fairways tussen sportvelden, bosranden, water)
+- **Telefoon:** 0499 - 842581
+- **E-mail:** clubhuis@golfson.nl
+- **Website:** https://golfson.nl
+- **Greenfee welkom:** True
+- **Eisen:** Minimaal NGF-golfbaanpermissie (NGF-pas tonen)
+- **Faciliteiten:** driving range (12 afslagplaatsen, 4 overdekt), oefengreens, oefenbunkers, pitch- en chipveld, clubhuis, handicarts
+
+**Lus 9 holes** — 9 holes, par 28
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  |  |  | 28 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  | 116 |
+| 6 |  |  | 102 |
+| 7 |  |  | 252 |
+| 8 |  |  | 136 |
+| 9 |  |  | 81 |
+
+- **Scorekaartpagina:** https://golfson.nl/courseplanner
+- **Bestanden:** [scorecard/page-golfify.html](golfclub-son/scorecard/page-golfify.html), [scorecard/page.html](golfclub-son/scorecard/page.html)
+- **Opmerking:** Officieel (de-baan + courseplanner): 9 holes, 8 par 3 en 1 par 4; lengtes alleen voor holes 5-9 (116, 102, 252, 136, 81 m; hole 7 is de langste, vermoedelijk de par 4). Teekleur van die lengtes niet vermeld (hier als "geel" opgeslagen). Geen scorekaart of CR/slope gepubliceerd. Golfify.io geeft par 27 (9x par 3), S.I. 5,15,9,11,3,7,1,13,17 en wit 183,105,98,94,147,102,262,111,81 = 1183 m - wijkt af van de clubsite en is niet overgenomen (page-golfify.html bewaard).
+
+<a id="golfpark-almkreek-almkerk"></a>
+## Golfpark Almkreek
+
+Golfpark Almkreek bij Almkerk ligt in de open polder van het Land van Heusden en Altena, tussen boerderijen en sloten. De 18-holes baan van par 72 is bijna 5,9 kilometer lang en het water speelt op meerdere holes mee. Daarnaast is er een kleine baan van 14 holes met par 3- en par 4-holes, waarvan holes 6-14 als qualifying 9-holesronde gelden.
+
+- **Club:** Hollandsche Golfclub – Golfpark Almkreek
+- **Adres:** Hoekje 7B, 4286 LN Almkerk, Noord-Brabant, NL
+- **GPS:** 51.7721, 4.9726
+- **Afstand:** 137.0 km
+- **Type:** 18-holes
+- **Holes:** 32
+- **Landschap:** weids polderlandschap met boerderijen, sloten en waterpartijen in het Land van Heusden en Altena
+- **Telefoon:** 0183 403 592
+- **E-mail:** info@golfpark-almkreek.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/almkreek/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/almkreek/boek-een-starttijd-golfpark-almkreek/
+- **Greenfee welkom:** True
+- **Eisen:** Vanaf baanpermissie van de Hollandsche Golfclub (18 holes en kleine baan).
+- **Faciliteiten:** 14-holes kleine baan (par 3/4), driving range, brasserie, golflessen
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5881 | 71.5 | 128 | 72 |
+| rood (men) | 5054 | 67.7 | 114 | 72 |
+| oranje (men) | 4417 | 64.8 | 103 | 72 |
+| geel (women) | 5881 | 78.5 | 142 | 72 |
+| rood (women) | 5054 | 72.9 | 131 | 72 |
+| oranje (women) | 4417 | 69.1 | 118 | 72 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 5 | 362 | 304 | 258 |
+| 2 | 4 | 13 | 377 | 314 | 263 |
+| 3 | 4 | 9 | 370 | 333 | 305 |
+| 4 | 5 | 1 | 515 | 420 | 362 |
+| 5 | 3 | 11 | 140 | 128 | 117 |
+| 6 | 4 | 15 | 347 | 302 | 267 |
+| 7 | 4 | 7 | 361 | 341 | 324 |
+| 8 | 3 | 17 | 129 | 114 | 99 |
+| 9 | 5 | 3 | 485 | 412 | 362 |
+| 10 | 4 | 16 | 303 | 259 | 223 |
+| 11 | 5 | 2 | 480 | 419 | 361 |
+| 12 | 4 | 12 | 292 | 271 | 241 |
+| 13 | 3 | 18 | 128 | 112 | 97 |
+| 14 | 4 | 4 | 361 | 298 | 246 |
+| 15 | 3 | 8 | 173 | 147 | 127 |
+| 16 | 5 | 6 | 422 | 342 | 297 |
+| 17 | 4 | 14 | 273 | 240 | 207 |
+| 18 | 4 | 10 | 363 | 298 | 261 |
+
+**Lus Kleine baan 14 holes** — 14 holes, par 44
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard | 1422 |  |  | 44 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 14 | 44 |
+| 2 | 3 | 8 | 95 |
+| 3 | 3 | 11 | 60 |
+| 4 | 3 | 9 | 69 |
+| 5 | 3 | 13 | 58 |
+| 6 | 3 | 7 | 87 |
+| 7 | 4 | 1 | 255 |
+| 8 | 3 | 10 | 68 |
+| 9 | 3 | 12 | 51 |
+| 10 | 4 | 3 | 209 |
+| 11 | 3 | 2 | 149 |
+| 12 | 3 | 4 | 106 |
+| 13 | 3 | 5 | 96 |
+| 14 | 3 | 6 | 75 |
+
+**Lus Kleine baan holes 6-14 (9 holes qualifying)** — 9 holes, par 29
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard (men) | 1096 | 26.0 | 81 | 29 |
+| standaard (women) | 1096 | 27.0 | 93 | 29 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 |  | 87 |
+| 2 | 4 |  | 255 |
+| 3 | 3 |  | 68 |
+| 4 | 3 |  | 51 |
+| 5 | 4 |  | 209 |
+| 6 | 3 |  | 149 |
+| 7 | 3 |  | 106 |
+| 8 | 3 |  | 96 |
+| 9 | 3 |  | 75 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/almkreek/course/18-holes-baan-almkreek/
+- **Bestanden:** [scorecard/ALMKREEK_SCOREKAART18-HOLES_2025WEB.pdf](golfpark-almkreek-almkerk/scorecard/ALMKREEK_SCOREKAART18-HOLES_2025WEB.pdf), [scorecard/Almkreek-Handicaptabellen-18-holes.pdf](golfpark-almkreek-almkerk/scorecard/Almkreek-Handicaptabellen-18-holes.pdf), [scorecard/ALMKREEK_SCOREKAART14HOLES_2025WEB.pdf](golfpark-almkreek-almkerk/scorecard/ALMKREEK_SCOREKAART14HOLES_2025WEB.pdf), [scorecard/Golfpark-Almkreek-kleine-baan-handicaptabel.pdf](golfpark-almkreek-almkerk/scorecard/Golfpark-Almkreek-kleine-baan-handicaptabel.pdf), [scorecard/page.html](golfpark-almkreek-almkerk/scorecard/page.html)
+- **Opmerking:** 18 holes: scorekaart 2025 (UIT 3086/2668/2357, IN 2795/2386/2060, TOT 5881/5054/4417 m; kolommen geel/rood/oranje); CR/slope uit tabellen 2026 (ook per negen beschikbaar). Kleine baan: scorekaart 2025, 14 holes par 44 (1422 m), één lengtekolom. Holes 6-14 vormen de qualifying 9-holesronde (par 29, 1096 m; ratings geel heren 26,0/81, rood dames 27,0/93 op die 1096 m toegepast); de kaart geeft alleen de S.I. voor 14 holes, dus de 9-holeslus heeft geen S.I. (daarom complete=false).
+
+<a id="de-peelse-golf-evertsoord"></a>
+## De Peelse Golf
+
+De Peelse Golf ligt bij Evertsoord, tussen Venlo en Helmond in de Noord-Limburgse Peel. De 18-holes championship course (par 72, ontwerp Alan Rijks) heeft sinds 1996 de NGF A-status; water speelt op veel holes mee en de greens zijn golvend. Voor korte rondes en beginners is er de 9-holes par 3 Broekbosbaan.
+
+- **Club:** Golfvereniging De Peelse Golf
+- **Adres:** Maasduinenweg 1, 5977 NP Evertsoord, Limburg, NL
+- **GPS:** 51.3842735, 5.9626562
+- **Afstand:** 139.5 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** parkland met veel water, Peelgebied
+- **Architect:** Alan Rijks
+- **Telefoon:** 077 467 80 30
+- **E-mail:** info@depeelsegolf.nl
+- **Website:** https://www.depeelsegolf.nl/
+- **Starttijden:** https://www.depeelsegolf.nl/teetime
+- **Greenfee welkom:** True
+- **Faciliteiten:** TrackMan driving range, par 3-baan (Broekbosbaan, 9 holes), restaurant (Hole 19), golfles, handicarts
+
+**Lus Championship Course (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6047 | 73.1 | 140 | 72 |
+| geel (men) | 5878 | 72.3 | 133 | 72 |
+| blauw (men) | 5091 | 68.6 | 118 | 72 |
+| rood (men) | 4986 | 67.5 | 122 | 72 |
+| oranje (men) | 4237 | 64.6 | 110 | 72 |
+| geel (women) | 5878 | 78.9 | 145 | 72 |
+| blauw (women) | 5091 | 74.0 | 139 | 72 |
+| rood (women) | 4986 | 73.4 | 135 | 72 |
+| oranje (women) | 4237 | 68.7 | 117 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 14 | 301 | 282 | 259 | 253 | 215 |
+| 2 | 3 | 18 | 151 | 142 | 129 | 123 | 105 |
+| 3 | 4 | 4 | 353 | 333 | 296 | 291 | 247 |
+| 4 | 5 | 10 | 456 | 443 | 389 | 383 | 326 |
+| 5 | 3 | 16 | 166 | 162 | 142 | 137 | 116 |
+| 6 | 4 | 8 | 322 | 314 | 283 | 272 | 231 |
+| 7 | 4 | 2 | 369 | 349 | 305 | 298 | 253 |
+| 8 | 5 | 12 | 446 | 435 | 375 | 371 | 315 |
+| 9 | 4 | 6 | 390 | 384 | 316 | 311 | 264 |
+| 10 | 4 | 9 | 397 | 392 | 334 | 326 | 277 |
+| 11 | 5 | 7 | 516 | 511 | 424 | 420 | 357 |
+| 12 | 3 | 15 | 166 | 166 | 147 | 142 | 121 |
+| 13 | 4 | 1 | 390 | 378 | 328 | 322 | 274 |
+| 14 | 4 | 5 | 391 | 375 | 333 | 326 | 277 |
+| 15 | 3 | 17 | 127 | 121 | 105 | 105 | 89 |
+| 16 | 4 | 3 | 328 | 322 | 273 | 267 | 227 |
+| 17 | 4 | 13 | 318 | 314 | 266 | 259 | 220 |
+| 18 | 5 | 11 | 460 | 455 | 387 | 380 | 323 |
+
+**Lus Broekbosbaan par 3 (9 holes, 2x gespeeld)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| baan | 1436 |  |  | 54 |
+
+| Hole | Par | SI | baan |
+|---|---|---|---|
+| 1 | 3 | 13 | 69 |
+| 2 | 3 | 1 | 114 |
+| 3 | 3 | 15 | 59 |
+| 4 | 3 | 7 | 78 |
+| 5 | 3 | 9 | 95 |
+| 6 | 3 | 3 | 100 |
+| 7 | 3 | 17 | 46 |
+| 8 | 3 | 11 | 92 |
+| 9 | 3 | 5 | 65 |
+| 10 | 3 | 14 | 69 |
+| 11 | 3 | 2 | 114 |
+| 12 | 3 | 16 | 59 |
+| 13 | 3 | 8 | 78 |
+| 14 | 3 | 10 | 95 |
+| 15 | 3 | 4 | 100 |
+| 16 | 3 | 18 | 46 |
+| 17 | 3 | 12 | 92 |
+| 18 | 3 | 6 | 65 |
+
+- **Scorekaartpagina:** https://www.depeelsegolf.nl/championship-course
+- **Bestanden:** [scorecard/layout-hole-1.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-1.webp), [scorecard/layout-hole-2.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-2.webp), [scorecard/layout-hole-3.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-3.webp), [scorecard/layout-hole-4.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-4.webp), [scorecard/layout-hole-5.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-5.webp), [scorecard/layout-hole-6.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-6.webp), [scorecard/layout-hole-7.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-7.webp), [scorecard/layout-hole-8.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-8.webp), [scorecard/layout-hole-9.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-9.webp), [scorecard/layout-hole-10.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-10.webp), [scorecard/layout-hole-11.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-11.webp), [scorecard/layout-hole-12.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-12.webp), [scorecard/layout-hole-13.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-13.webp), [scorecard/layout-hole-14.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-14.webp), [scorecard/layout-hole-15.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-15.webp), [scorecard/layout-hole-16.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-16.webp), [scorecard/layout-hole-17.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-17.webp), [scorecard/layout-hole-18.webp](de-peelse-golf-evertsoord/scorecard/layout-hole-18.webp), [scorecard/BaanhandicapPeelseGolfHeren_1.webp](de-peelse-golf-evertsoord/scorecard/BaanhandicapPeelseGolfHeren_1.webp), [scorecard/BaanhandicapPeelseGolfDames_1.webp](de-peelse-golf-evertsoord/scorecard/BaanhandicapPeelseGolfDames_1.webp)
+- **Opmerking:** Site blokkeert curl (403); pagina's via WebFetch gelezen, geen page.html opgeslagen. Par/SI/lengtes per tee van de officiele hole-layouts (hole-1 t/m hole-18). CR/slope uit de baanhandicaptabellen d.d. 30-05-2023 (heren: wit, geel, blauw, rood, oranje; dames: geel, blauw, rood, oranje). Golfify toont een oudere holevolgorde (lussen omgewisseld, andere SI) en blauw hole 18 = 287; niet gebruikt. Broekbosbaan: lengtes en SI (18-holesstijl, 2x9) van de officiele pagina /broekbosbaan-par3; tee-kleur en ratings niet uitgelezen (tabellen op /handicaptabellen-broekbosbaan).
+
+<a id="noordwijkse-golfclub"></a>
+## Noordwijkse Golfclub
+
+De Noordwijkse, opgericht in 1915, speelt sinds 1972 op een duinbaan ten noorden van Noordwijk, vlak achter de Noordzeekust. De baan volgt het golvende duinlandschap en is blootgesteld aan de zeewind; hij was negen keer gastheer van het Dutch Open. Tot mei 2027 wordt een deel van de baan gerenoveerd en geldt een tijdelijke par 68-indeling.
+
+- **Club:** Noordwijkse Golfclub
+- **Adres:** Randweg 25, 2204 AL Noordwijk, Zuid-Holland, NL
+- **GPS:** 52.2839245, 4.4633898
+- **Afstand:** 139.8 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** duinbaan/links aan de Noordzeekust
+- **Opgericht:** 1915
+- **Architect:** Paul de Jong, goedgekeurd door Ken Cotton; advies Frank Pennink (Cotton, Pennink, Lawrie & Co); huidige baan geopend 1972
+- **Telefoon:** 0252 37 37 63
+- **E-mail:** secretariaat@noordwijksegolfclub.nl
+- **Website:** https://www.noordwijksegolfclub.nl
+- **Greenfee welkom:** True
+- **Eisen:** Maximum handicap 24,0 (introducés van leden met hcp ≤ 24 mogen tot 54); reserveren via de caddiemaster met NGF-pas
+- **Faciliteiten:** oefenfaciliteiten, clubhuis, restaurant, shop, handicarts
+
+**Lus 18 holes – tijdelijke baan (sept 2026–mei 2027)** — 18 holes, par 68
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5481 | 70.2 | 126 | 68 |
+| geel (men) | 5049 | 68.1 | 122 | 68 |
+| blauw (men) | 4651 | 65.8 | 116 | 68 |
+| rood (men) | 4130 | 63.1 | 110 | 68 |
+| oranje (men) | 3733 | 61.6 | 107 | 68 |
+| geel (women) | 5049 | 73.3 | 128 | 68 |
+| blauw (women) | 4651 | 70.8 | 121 | 68 |
+| rood (women) | 4130 | 67.7 | 114 | 68 |
+| oranje (women) | 3733 | 65.0 | 109 | 68 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 13 | 284 | 284 | 284 | 221 | 221 |
+| 2 | 4 | 5 | 433 | 388 | 324 | 275 | 227 |
+| 3 | 3 | 17 | 125 | 125 | 125 | 113 | 113 |
+| 4 | 3 | 1 | 118 | 118 | 118 | 100 | 100 |
+| 5 | 4 | 3 | 294 | 271 | 271 | 206 | 123 |
+| 6 | 3 | 15 | 181 | 158 | 158 | 128 | 111 |
+| 7 | 4 | 7 | 237 | 237 | 237 | 192 | 160 |
+| 8 | 3 | 11 | 220 | 176 | 176 | 129 | 129 |
+| 9 | 4 | 9 | 384 | 384 | 294 | 294 | 246 |
+| 10 | 4 | 2 | 400 | 346 | 337 | 277 | 277 |
+| 11 | 5 | 16 | 457 | 442 | 401 | 401 | 334 |
+| 12 | 3 | 18 | 147 | 130 | 130 | 117 | 117 |
+| 13 | 4 | 6 | 403 | 335 | 289 | 289 | 236 |
+| 14 | 5 | 8 | 514 | 485 | 422 | 413 | 413 |
+| 15 | 4 | 14 | 340 | 335 | 320 | 278 | 278 |
+| 16 | 4 | 4 | 358 | 332 | 305 | 283 | 283 |
+| 17 | 3 | 12 | 186 | 163 | 136 | 126 | 77 |
+| 18 | 4 | 10 | 400 | 340 | 324 | 288 | 288 |
+
+- **Scorekaartpagina:** https://www.noordwijksegolfclub.nl/baan/
+- **Bestanden:** [scorecard/page.html](noordwijkse-golfclub/scorecard/page.html), [scorecard/scorekaart-sep-2026-mei-2027-voorkant.png](noordwijkse-golfclub/scorecard/scorekaart-sep-2026-mei-2027-voorkant.png), [scorecard/Noordwijk-18-holes-tijdelijksept-26-mei-27-Heren.pdf](noordwijkse-golfclub/scorecard/Noordwijk-18-holes-tijdelijksept-26-mei-27-Heren.pdf), [scorecard/Noordwijk-18-holes-tijdelijksept-26-mei-27-Dames.pdf](noordwijkse-golfclub/scorecard/Noordwijk-18-holes-tijdelijksept-26-mei-27-Dames.pdf), [scorecard/Noordwijk-9-holes-tijdelijkhole-10-18-sept-26-mei-27-Heren.pdf](noordwijkse-golfclub/scorecard/Noordwijk-9-holes-tijdelijkhole-10-18-sept-26-mei-27-Heren.pdf), [scorecard/Noordwijk-9-holes-tijdelijkhole-10-18-sept-26-mei-27-Dames.pdf](noordwijkse-golfclub/scorecard/Noordwijk-9-holes-tijdelijkhole-10-18-sept-26-mei-27-Dames.pdf)
+- **Opmerking:** LET OP: tijdelijke scorekaart en handicaptabellen tijdens renovatie (september 2026 t/m mei 2027), par 68; de reguliere baan (na renovatie) is hiermee niet vastgelegd. Op de kaart staan de subtotalen verwisseld/afwijkend: bovenste 'out' geeft wit 2285, geel 2150, blauw 1985, terwijl de holes 2276/2141/1987 optellen (zoals de onderste 'Out'-regel); 'In' = holes 10-18 (par 36), holes 1-9 par 32. Hole 3 met * (tijdelijke hole). CR/SR d.d. 07-09-2026; 9 holes (hole 10-18): heren wit 37,6/143, geel 36,1/135, blauw 34,7/124, rood 33,5/119, oranje 32,5/117; dames geel 39,3/140, blauw 37,6/134, rood 36,5/128, oranje 35,5/121.
+
+<a id="golfclub-kagerzoom-warmond"></a>
+## Golfclub Kagerzoom
+
+Kagerzoom is een 9-holesbaan in de Veerpolder bij Warmond, aan de rand van de Kagerplassen. Elke hole heeft twee afslagplaatsen, zodat een tweede ronde over de negen anders speelt; samen vormen ze een par 70-baan van Gerard Jol. Water speelt op veel holes mee en sinds 2025 is de baan volledig in handen van de vereniging.
+
+- **Club:** Vereniging Golfclub Kagerzoom
+- **Adres:** Veerpolder 20, 2361 KV Warmond, Zuid-Holland, NL
+- **GPS:** 52.1871505, 4.5022839
+- **Afstand:** 140.5 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** polderbaan langs de Kagerplassen met veel water
+- **Architect:** Gerard Jol
+- **Telefoon:** 071 301 35 90
+- **E-mail:** info@kagerzoom.nl
+- **Website:** https://www.kagerzoom.nl
+- **Greenfee welkom:** True
+- **Eisen:** Greenfeespelers en introducés welkom; starttijd twee dagen vooraf te reserveren
+- **Faciliteiten:** driving range, oefengreen, clubhuis, handicarts
+
+**Lus 18 holes (9 holes 2x, aparte tees 10-18)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5718 | 70.3 | 131 | 70 |
+| geel (men) | 5359 | 68.9 | 125 | 70 |
+| blauw (men) | 4978 | 66.8 | 117 | 70 |
+| rood (men) | 4593 | 64.9 | 109 | 70 |
+| oranje (men) | 4096 | 63.1 | 108 | 70 |
+| geel (women) | 5359 | 74.6 | 133 | 70 |
+| blauw (women) | 4978 | 71.8 | 130 | 70 |
+| rood (women) | 4593 | 69.7 | 125 | 70 |
+| oranje (women) | 4096 | 66.7 | 112 | 70 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 4 | 405 | 374 | 351 | 316 | 284 |
+| 2 | 3 | 16 | 126 | 123 | 106 | 97 | 87 |
+| 3 | 5 | 6 | 470 | 445 | 424 | 372 | 335 |
+| 4 | 3 | 14 | 154 | 154 | 136 | 136 | 118 |
+| 5 | 5 | 12 | 484 | 410 | 379 | 366 | 335 |
+| 6 | 4 | 8 | 346 | 342 | 313 | 294 | 256 |
+| 7 | 3 | 18 | 166 | 150 | 136 | 132 | 122 |
+| 8 | 4 | 10 | 322 | 314 | 302 | 268 | 232 |
+| 9 | 4 | 2 | 386 | 327 | 307 | 288 | 279 |
+| 10 | 4 | 3 | 405 | 395 | 374 | 334 | 284 |
+| 11 | 3 | 17 | 126 | 109 | 97 | 90 | 87 |
+| 12 | 5 | 5 | 470 | 463 | 445 | 386 | 335 |
+| 13 | 3 | 15 | 154 | 147 | 131 | 131 | 118 |
+| 14 | 5 | 11 | 484 | 457 | 412 | 386 | 335 |
+| 15 | 4 | 9 | 346 | 335 | 294 | 280 | 256 |
+| 16 | 3 | 13 | 166 | 161 | 150 | 147 | 122 |
+| 17 | 4 | 7 | 322 | 300 | 296 | 258 | 232 |
+| 18 | 4 | 1 | 386 | 353 | 325 | 312 | 279 |
+
+- **Scorekaartpagina:** https://www.kagerzoom.nl/golfbaan/scorekaart-kagerzoom
+- **Bestanden:** [scorecard/page.html](golfclub-kagerzoom-warmond/scorecard/page.html), [scorecard/2026_06_10_Scorekaart_1_KZ.png](golfclub-kagerzoom-warmond/scorecard/2026_06_10_Scorekaart_1_KZ.png), [scorecard/2026_06_10_Scorekaart_2_KZ.png](golfclub-kagerzoom-warmond/scorecard/2026_06_10_Scorekaart_2_KZ.png), [scorecard/whs-tabel-heren-2026-06-10.pdf](golfclub-kagerzoom-warmond/scorecard/whs-tabel-heren-2026-06-10.pdf), [scorecard/whs-tabel-dames-2026-06-10.pdf](golfclub-kagerzoom-warmond/scorecard/whs-tabel-dames-2026-06-10.pdf)
+- **Opmerking:** Scorekaart mei 2026 (afbeelding 800 px, klein; afgelezen na vergroten). Blauw hole 17 leest als 296/298; 296 aangehouden zodat de IN-som (2524) klopt met de kaart. CR/SR uit WHS-tabellen d.d. 10-06-2026; ook 9-holes waarden (1e negen heren geel 34,4/124, 2e negen 34,6/126 enz.) in de PDF's. Site noemt ca. 5480 m geel en 4660 m rood (oudere waarden).
+
+<a id="golfbaan-bentwoud-benthuizen"></a>
+## Golfbaan Bentwoud
+
+Golfbaan Bentwoud ligt in het jonge recreatiegebied tussen Zoetermeer en Alphen aan den Rijn en is een openbare baan met landgoedstatus. De wedstrijdbaan bestaat uit drie lussen van negen holes – Oostwoud, Zuidwoud en Westwoud – die onderling tot 18 holes worden gecombineerd, met daarnaast de korte Noordwoud-lus. Alle lussen zijn ontworpen door Jol Golf Design en spelen door een open, waterrijk landschap.
+
+- **Club:** Golfbaan Bentwoud
+- **Adres:** Boslaan 3, 2731 LD Benthuizen, Zuid-Holland, NL
+- **GPS:** 52.0734311, 4.5722349
+- **Afstand:** 141.0 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** polder/nieuw landschap (recreatiegebied Bentwoud), landgoedstatus
+- **Architect:** Jol Golf Design
+- **Telefoon:** 0172 58 30 10
+- **E-mail:** info@golfbaanbentwoud.nl
+- **Website:** https://www.golfbaanbentwoud.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range (verlicht), par 3/4-baan Noordwoud (9 holes, qualifying), oefenfaciliteiten, clubhuis/restaurant, golfles, croquet
+
+**Lus Oostwoud + Zuidwoud (A+B)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6009 | 73.8 | 137 | 71 |
+| geel (men) | 5709 | 72.0 | 134 | 71 |
+| blauw (men) | 5239 | 69.4 | 128 | 71 |
+| rood (men) | 4833 | 67.3 | 123 | 71 |
+| geel (women) | 5709 | 78.1 | 146 | 71 |
+| blauw (women) | 5239 | 75.2 | 139 | 71 |
+| rood (women) | 4833 | 73.0 | 131 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 14 | 369 | 348 | 322 | 306 |
+| 2 | 4 | 4 | 279 | 268 | 244 | 230 |
+| 3 | 4 | 12 | 350 | 337 | 305 | 286 |
+| 4 | 3 | 16 | 146 | 132 | 132 | 116 |
+| 5 | 4 | 6 | 369 | 354 | 329 | 308 |
+| 6 | 3 | 8 | 179 | 156 | 156 | 136 |
+| 7 | 4 | 18 | 285 | 269 | 250 | 236 |
+| 8 | 4 | 2 | 361 | 353 | 331 | 297 |
+| 9 | 5 | 10 | 472 | 458 | 413 | 384 |
+| 10 | 4 | 1 | 380 | 367 | 324 | 301 |
+| 11 | 4 | 11 | 342 | 319 | 290 | 265 |
+| 12 | 3 | 15 | 160 | 150 | 135 | 122 |
+| 13 | 4 | 7 | 394 | 371 | 343 | 319 |
+| 14 | 3 | 3 | 188 | 170 | 152 | 138 |
+| 15 | 5 | 17 | 462 | 442 | 403 | 376 |
+| 16 | 5 | 13 | 505 | 481 | 441 | 401 |
+| 17 | 4 | 9 | 394 | 376 | 343 | 317 |
+| 18 | 4 | 5 | 374 | 358 | 326 | 295 |
+
+**Lus Zuidwoud + Westwoud (B+C)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6088 | 74.2 | 138 | 71 |
+| geel (men) | 5738 | 72.4 | 133 | 71 |
+| blauw (men) | 5274 | 69.3 | 131 | 71 |
+| rood (men) | 4831 | 67.3 | 120 | 71 |
+| geel (women) | 5738 | 78.6 | 145 | 71 |
+| blauw (women) | 5274 | 75.2 | 140 | 71 |
+| rood (women) | 4831 | 72.8 | 128 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 1 | 380 | 367 | 324 | 301 |
+| 2 | 4 | 11 | 342 | 319 | 290 | 265 |
+| 3 | 3 | 15 | 160 | 150 | 135 | 122 |
+| 4 | 4 | 7 | 394 | 371 | 343 | 319 |
+| 5 | 3 | 3 | 188 | 170 | 152 | 138 |
+| 6 | 5 | 17 | 462 | 442 | 403 | 376 |
+| 7 | 5 | 13 | 505 | 481 | 441 | 401 |
+| 8 | 4 | 9 | 394 | 376 | 343 | 317 |
+| 9 | 4 | 5 | 374 | 358 | 326 | 295 |
+| 10 | 4 | 4 | 301 | 286 | 286 | 260 |
+| 11 | 4 | 8 | 365 | 349 | 321 | 298 |
+| 12 | 3 | 18 | 135 | 113 | 113 | 91 |
+| 13 | 4 | 6 | 364 | 346 | 316 | 289 |
+| 14 | 4 | 14 | 291 | 273 | 249 | 233 |
+| 15 | 4 | 10 | 368 | 337 | 314 | 292 |
+| 16 | 4 | 12 | 396 | 379 | 354 | 327 |
+| 17 | 3 | 2 | 180 | 150 | 134 | 108 |
+| 18 | 5 | 16 | 489 | 471 | 430 | 399 |
+
+**Lus Westwoud + Oostwoud (C+A)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5699 | 72.1 | 132 | 70 |
+| geel (men) | 5379 | 70.6 | 128 | 70 |
+| blauw (men) | 4999 | 68.5 | 125 | 70 |
+| rood (men) | 4596 | 66.5 | 118 | 70 |
+| geel (women) | 5379 | 76.4 | 139 | 70 |
+| blauw (women) | 4999 | 73.9 | 132 | 70 |
+| rood (women) | 4596 | 71.6 | 125 | 70 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 3 | 301 | 286 | 286 | 260 |
+| 2 | 4 | 7 | 365 | 349 | 321 | 298 |
+| 3 | 3 | 17 | 135 | 113 | 113 | 91 |
+| 4 | 4 | 5 | 364 | 346 | 316 | 289 |
+| 5 | 4 | 13 | 291 | 273 | 249 | 233 |
+| 6 | 4 | 9 | 368 | 337 | 314 | 292 |
+| 7 | 4 | 11 | 396 | 379 | 354 | 327 |
+| 8 | 3 | 1 | 180 | 150 | 134 | 108 |
+| 9 | 5 | 15 | 489 | 471 | 430 | 399 |
+| 10 | 4 | 14 | 369 | 348 | 322 | 306 |
+| 11 | 4 | 4 | 279 | 268 | 244 | 230 |
+| 12 | 4 | 12 | 350 | 337 | 305 | 286 |
+| 13 | 3 | 16 | 146 | 132 | 132 | 116 |
+| 14 | 4 | 6 | 369 | 354 | 329 | 308 |
+| 15 | 3 | 8 | 179 | 156 | 156 | 136 |
+| 16 | 4 | 18 | 285 | 269 | 250 | 236 |
+| 17 | 4 | 2 | 361 | 353 | 331 | 297 |
+| 18 | 5 | 10 | 472 | 458 | 413 | 384 |
+
+**Lus Oostwoud (A-lus)** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2810 | 35.9 | 131 | 35 |
+| geel (men) | 2675 | 35.1 | 129 | 35 |
+| blauw (men) | 2482 | 34.3 | 123 | 35 |
+| rood (men) | 2299 | 33.3 | 121 | 35 |
+| geel (women) | 2675 | 38.0 | 139 | 35 |
+| blauw (women) | 2482 | 37.0 | 132 | 35 |
+| rood (women) | 2299 | 35.9 | 128 | 35 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 14 | 369 | 348 | 322 | 306 |
+| 2 | 4 | 4 | 279 | 268 | 244 | 230 |
+| 3 | 4 | 12 | 350 | 337 | 305 | 286 |
+| 4 | 3 | 16 | 146 | 132 | 132 | 116 |
+| 5 | 4 | 6 | 369 | 354 | 329 | 308 |
+| 6 | 3 | 8 | 179 | 156 | 156 | 136 |
+| 7 | 4 | 18 | 285 | 269 | 250 | 236 |
+| 8 | 4 | 2 | 361 | 353 | 331 | 297 |
+| 9 | 5 | 10 | 472 | 458 | 413 | 384 |
+
+**Lus Zuidwoud (B-lus)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 3199 | 37.9 | 144 | 36 |
+| geel (men) | 3034 | 36.9 | 139 | 36 |
+| blauw (men) | 2757 | 35.1 | 133 | 36 |
+| rood (men) | 2534 | 34.1 | 125 | 36 |
+| geel (women) | 3034 | 40.2 | 153 | 36 |
+| blauw (women) | 2757 | 38.3 | 148 | 36 |
+| rood (women) | 2534 | 37.1 | 135 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 1 | 380 | 367 | 324 | 301 |
+| 2 | 4 | 11 | 342 | 319 | 290 | 265 |
+| 3 | 3 | 15 | 160 | 150 | 135 | 122 |
+| 4 | 4 | 7 | 394 | 371 | 343 | 319 |
+| 5 | 3 | 3 | 188 | 170 | 152 | 138 |
+| 6 | 5 | 17 | 462 | 442 | 403 | 376 |
+| 7 | 5 | 13 | 505 | 481 | 441 | 401 |
+| 8 | 4 | 9 | 394 | 376 | 343 | 317 |
+| 9 | 4 | 5 | 374 | 358 | 326 | 295 |
+
+**Lus Westwoud (C-lus)** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2889 | 36.3 | 133 | 35 |
+| geel (men) | 2704 | 35.5 | 126 | 35 |
+| blauw (men) | 2517 | 34.2 | 128 | 35 |
+| rood (men) | 2297 | 33.3 | 115 | 35 |
+| geel (women) | 2704 | 38.5 | 138 | 35 |
+| blauw (women) | 2517 | 37.0 | 132 | 35 |
+| rood (women) | 2297 | 35.7 | 122 | 35 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 3 | 301 | 286 | 286 | 260 |
+| 2 | 4 | 7 | 365 | 349 | 321 | 298 |
+| 3 | 3 | 17 | 135 | 113 | 113 | 91 |
+| 4 | 4 | 5 | 364 | 346 | 316 | 289 |
+| 5 | 4 | 13 | 291 | 273 | 249 | 233 |
+| 6 | 4 | 9 | 368 | 337 | 314 | 292 |
+| 7 | 4 | 11 | 396 | 379 | 354 | 327 |
+| 8 | 3 | 1 | 180 | 150 | 134 | 108 |
+| 9 | 5 | 15 | 489 | 471 | 430 | 399 |
+
+- **Scorekaartpagina:** https://www.golfbaanbentwoud.nl/site/course-rating
+- **Bestanden:** [scorecard/page.html](golfbaan-bentwoud-benthuizen/scorecard/page.html), [scorecard/GBB_Scorekaart_18_holes_maart_2026.pdf](golfbaan-bentwoud-benthuizen/scorecard/GBB_Scorekaart_18_holes_maart_2026.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-oostwoud-zuidwoud-heren.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-oostwoud-zuidwoud-heren.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-oostwoud-zuidwoud-dames.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-oostwoud-zuidwoud-dames.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-zuidwoud-westwoud-heren.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-zuidwoud-westwoud-heren.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-zuidwoud-westwoud-dames.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-zuidwoud-westwoud-dames.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-westwoud-oostwoud-heren.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-westwoud-oostwoud-heren.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-westwoud-oostwoud-dames.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-westwoud-oostwoud-dames.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-oostwoud-heren.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-oostwoud-heren.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-oostwoud-dames.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-oostwoud-dames.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-zuidwoud-heren.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-zuidwoud-heren.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-zuidwoud-dames.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-zuidwoud-dames.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-westwoud-heren.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-westwoud-heren.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-westwoud-dames.pdf](golfbaan-bentwoud-benthuizen/scorecard/handicaptabel-2024-golfbaan-bentwoud-9-holes-westwoud-dames.pdf)
+- **Opmerking:** Scorekaart maart 2026 (Oostwoud/Zuidwoud/Westwoud, tees wit/geel/blauw/rood). Westwoud heeft twee S.I.-kolommen: 'CA' (oneven, bij combinatie met Oostwoud) en 'BC' (even, na Zuidwoud); in de 9-holes Westwoud-loop staat de CA-kolom. In 9-holesloops staat de 18-holes S.I. (oneven/even). CR/SR uit handicaptabellen d.d. 28-09-2023 (bestanden '2024'). De tabellen bevatten ook een oranje tee (o.a. A+B heren 65,2/115, dames 70,0/122; B+C heren 65,2/110, dames 69,6/120; C+A heren 65,1/112, dames 69,0/117), maar de scorekaart geeft geen oranje lengtes; daarom niet als tee opgenomen. Volgorde van de negen in een combinatie volgt de naam van de handicaptabel. De par 3/4-lus Noordwoud staat als aparte baan (golfbaan-bentwoud-noordwoud).
+
+<a id="golfbaan-bentwoud-noordwoud"></a>
+## Golfbaan Bentwoud – Noordwoud (par 3/4-baan)
+
+Noordwoud is de korte qualifying lus van Golfbaan Bentwoud, met zeven par 3's en twee par 4's (par 29). De baan is bedoeld voor beginners en voor wie snel een korte ronde wil spelen, en mag onder begeleiding van een speler met handicap ook zonder handicapbewijs worden gespeeld. Twee holes lopen onder een hoogspanningslijn door.
+
+- **Club:** Golfbaan Bentwoud
+- **Adres:** Boslaan 3, 2731 LD Benthuizen, Zuid-Holland, NL
+- **GPS:** 52.0734311, 4.5722349
+- **Afstand:** 141.0 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** polder/nieuw landschap (Bentwoud)
+- **Architect:** Jol Golf Design
+- **Telefoon:** 0172 58 30 10
+- **E-mail:** info@golfbaanbentwoud.nl
+- **Website:** https://www.golfbaanbentwoud.nl
+- **Greenfee welkom:** True
+- **Eisen:** Enige golfervaring vereist; zonder handicap toegestaan mits een ervaren speler met handicap meespeelt; eigen golftas (huur mogelijk)
+- **Faciliteiten:** driving range, 27-holes wedstrijdbaan, clubhuis/restaurant, golfles
+
+**Lus 18 holes (Noordwoud 2x gespeeld)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2692 | 57.4 | 89 | 58 |
+| rood (men) | 2410 | 53.3 | 86 | 58 |
+| geel (women) | 2692 | 57.4 | 91 | 58 |
+| rood (women) | 2410 | 55.7 | 87 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 10 | 130 | 115 |
+| 2 | 4 | 4 | 246 | 236 |
+| 3 | 3 | 18 | 87 | 87 |
+| 4 | 4 | 2 | 300 | 259 |
+| 5 | 3 | 14 | 101 | 89 |
+| 6 | 3 | 16 | 96 | 83 |
+| 7 | 3 | 8 | 161 | 149 |
+| 8 | 3 | 12 | 130 | 114 |
+| 9 | 3 | 6 | 95 | 73 |
+| 10 | 3 | 9 | 130 | 115 |
+| 11 | 4 | 3 | 246 | 236 |
+| 12 | 3 | 17 | 87 | 87 |
+| 13 | 4 | 1 | 300 | 259 |
+| 14 | 3 | 13 | 101 | 89 |
+| 15 | 3 | 15 | 96 | 83 |
+| 16 | 3 | 7 | 161 | 149 |
+| 17 | 3 | 11 | 130 | 114 |
+| 18 | 3 | 5 | 95 | 73 |
+
+- **Scorekaartpagina:** https://www.golfbaanbentwoud.nl/site/course-rating
+- **Bestanden:** [scorecard/page.html](golfbaan-bentwoud-noordwoud/scorecard/page.html), [scorecard/scorekaart_gbb_PAR3-4_februari_2025_V2.pdf](golfbaan-bentwoud-noordwoud/scorecard/scorekaart_gbb_PAR3-4_februari_2025_V2.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-noordwoud-heren.pdf](golfbaan-bentwoud-noordwoud/scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-noordwoud-heren.pdf), [scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-noordwoud-dames.pdf](golfbaan-bentwoud-noordwoud/scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-noordwoud-dames.pdf)
+- **Opmerking:** Scorekaart Noordwoud februari 2025 V2: twee kaarthelften met S.I. even (10,4,18,...) en oneven (9,3,17,...); hier holes 1-9 = linker kaart, 10-18 = rechter kaart (volgorde niet expliciet op de kaart). Per 9 holes par 29, geel 1346 m, rood 1205 m. CR/SR 18 holes uit handicaptabellen d.d. 09-01-2024; heren geel staat daar als CR 57,4 (gelijk aan dames geel) – zo overgenomen. 9 holes: heren geel 27,4/89, rood 26,7/86; dames geel 28,7/91, rood 27,9/87.
+
+<a id="golf-de-gulbergen-mierlo"></a>
+## Golf De Gulbergen
+
+Golf De Gulbergen ligt tussen Eindhoven, Nuenen en Mierlo rond het "Dak van Brabant", het hoogste punt van de provincie. De Sprookjesbaan speelt over en langs de heuvels met wijdse uitzichten, de Libellenbaan kent veel water; samen vormen ze een 18-holesbaan van par 70. Daarnaast ligt er de kortere 9-holes Old Course.
+
+- **Club:** Golf De Gulbergen
+- **Adres:** Heiderschoor 26, 5731 RG Mierlo, Noord-Brabant, NL
+- **GPS:** 51.4503118, 5.5813519
+- **Afstand:** 141.3 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** heuvelachtig (voormalige vuilstort, "Dak van Brabant", hoogste punt van Noord-Brabant) met waterpartijen
+- **Telefoon:** 0492-592455
+- **Website:** https://www.golfdegulbergen.nl
+- **Starttijden:** https://www.golfdegulbergen.nl/ontdek/golfbaan/starttijd-reserveren
+- **Greenfee welkom:** True
+- **Faciliteiten:** oefenfaciliteiten, academy, horeca, Old Course (9 holes, kort)
+
+**Lus 18 holes Sprookjesbaan + Libellenbaan** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5655 | 70.5 | 129 | 70 |
+| blauw (men) | 5171 | 68.4 | 119 | 70 |
+| rood (men) | 4824 | 67.0 | 116 | 70 |
+| oranje (men) | 4139 | 63.5 | 113 | 70 |
+| geel (women) | 5655 | 76.8 | 137 | 70 |
+| blauw (women) | 5171 | 73.9 | 127 | 70 |
+| rood (women) | 4824 | 71.8 | 124 | 70 |
+| oranje (women) | 4139 | 67.7 | 114 | 70 |
+
+| Hole | Par | SI | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|
+| 1 | 5 | 5 | 475 | 475 | 400 | 352 |
+| 2 | 4 | 3 | 340 | 281 | 281 | 225 |
+| 3 | 4 | 7 | 378 | 329 | 329 | 282 |
+| 4 | 3 | 13 | 200 | 200 | 169 | 132 |
+| 5 | 3 | 17 | 148 | 148 | 130 | 114 |
+| 6 | 4 | 15 | 291 | 291 | 261 | 231 |
+| 7 | 3 | 11 | 192 | 160 | 160 | 141 |
+| 8 | 4 | 9 | 373 | 373 | 327 | 264 |
+| 9 | 4 | 1 | 343 | 298 | 298 | 233 |
+| 10 | 4 | 18 | 267 | 253 | 237 | 210 |
+| 11 | 3 | 16 | 157 | 157 | 137 | 120 |
+| 12 | 4 | 14 | 311 | 259 | 245 | 207 |
+| 13 | 4 | 6 | 345 | 301 | 301 | 265 |
+| 14 | 4 | 4 | 345 | 294 | 294 | 260 |
+| 15 | 5 | 2 | 458 | 401 | 377 | 330 |
+| 16 | 3 | 12 | 179 | 153 | 153 | 135 |
+| 17 | 4 | 10 | 371 | 371 | 316 | 278 |
+| 18 | 5 | 8 | 482 | 427 | 409 | 360 |
+
+**Lus Sprookjesbaan (9 holes)** — 9 holes, par 34
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2740 | 34.9 | 125 | 34 |
+| blauw (men) | 2555 | 33.8 | 121 | 34 |
+| rood (men) | 2355 | 33.1 | 115 | 34 |
+| oranje (men) | 1974 | 31.4 | 110 | 34 |
+| geel (women) | 2740 | 38.0 | 131 | 34 |
+| blauw (women) | 2555 | 36.8 | 126 | 34 |
+| rood (women) | 2355 | 35.5 | 123 | 34 |
+| oranje (women) | 1974 | 33.0 | 112 | 34 |
+
+| Hole | Par | SI | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|
+| 1 | 5 | 5 | 475 | 475 | 400 | 352 |
+| 2 | 4 | 3 | 340 | 281 | 281 | 225 |
+| 3 | 4 | 7 | 378 | 329 | 329 | 282 |
+| 4 | 3 | 13 | 200 | 200 | 169 | 132 |
+| 5 | 3 | 17 | 148 | 148 | 130 | 114 |
+| 6 | 4 | 15 | 291 | 291 | 261 | 231 |
+| 7 | 3 | 11 | 192 | 160 | 160 | 141 |
+| 8 | 4 | 9 | 373 | 373 | 327 | 264 |
+| 9 | 4 | 1 | 343 | 298 | 298 | 233 |
+
+**Lus Libellenbaan (9 holes)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2915 | 35.7 | 132 | 36 |
+| blauw (men) | 2616 | 34.7 | 117 | 36 |
+| rood (men) | 2469 | 34.0 | 117 | 36 |
+| oranje (men) | 2165 | 32.1 | 117 | 36 |
+| geel (women) | 2915 | 38.9 | 141 | 36 |
+| blauw (women) | 2616 | 37.2 | 128 | 36 |
+| rood (women) | 2469 | 36.3 | 125 | 36 |
+| oranje (women) | 2165 | 34.7 | 115 | 36 |
+
+| Hole | Par | SI | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|
+| 10 | 4 | 18 | 267 | 253 | 237 | 210 |
+| 11 | 3 | 16 | 157 | 157 | 137 | 120 |
+| 12 | 4 | 14 | 311 | 259 | 245 | 207 |
+| 13 | 4 | 6 | 345 | 301 | 301 | 265 |
+| 14 | 4 | 4 | 345 | 294 | 294 | 260 |
+| 15 | 5 | 2 | 458 | 401 | 377 | 330 |
+| 16 | 3 | 12 | 179 | 153 | 153 | 135 |
+| 17 | 4 | 10 | 371 | 371 | 316 | 278 |
+| 18 | 5 | 8 | 482 | 427 | 409 | 360 |
+
+**Lus Old Course 18 holes (9 holes 2x)** — 18 holes, par 64
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3520 | 60.0 | 105 | 64 |
+| rood (men) | 3212 | 58.6 | 98 | 64 |
+| geel (women) | 3520 | 64.0 | 106 | 64 |
+| rood (women) | 3212 | 62.0 | 107 | 64 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 9 | 159 | 118 |
+| 2 | 4 | 15 | 235 | 201 |
+| 3 | 4 | 11 | 259 | 236 |
+| 4 | 3 | 3 | 120 | 120 |
+| 5 | 4 | 7 | 224 | 213 |
+| 6 | 3 | 17 | 99 | 99 |
+| 7 | 4 | 13 | 211 | 211 |
+| 8 | 4 | 1 | 281 | 261 |
+| 9 | 3 | 5 | 172 | 147 |
+| 10 | 3 | 10 | 159 | 118 |
+| 11 | 4 | 16 | 235 | 201 |
+| 12 | 4 | 12 | 259 | 236 |
+| 13 | 3 | 4 | 120 | 120 |
+| 14 | 4 | 8 | 224 | 213 |
+| 15 | 3 | 18 | 99 | 99 |
+| 16 | 4 | 14 | 211 | 211 |
+| 17 | 4 | 2 | 281 | 261 |
+| 18 | 3 | 6 | 172 | 147 |
+
+**Lus Old Course (9 holes)** — 9 holes, par 32
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1760 | 30.0 | 105 | 32 |
+| rood (men) | 1606 | 29.3 | 98 | 32 |
+| geel (women) | 1760 | 32.0 | 106 | 32 |
+| rood (women) | 1606 | 31.0 | 107 | 32 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 9 | 159 | 118 |
+| 2 | 4 | 15 | 235 | 201 |
+| 3 | 4 | 11 | 259 | 236 |
+| 4 | 3 | 3 | 120 | 120 |
+| 5 | 4 | 7 | 224 | 213 |
+| 6 | 3 | 17 | 99 | 99 |
+| 7 | 4 | 13 | 211 | 211 |
+| 8 | 4 | 1 | 281 | 261 |
+| 9 | 3 | 5 | 172 | 147 |
+
+- **Scorekaartpagina:** https://www.golfdegulbergen.nl/ontdek/golfbaan/baanlay-out
+- **Bestanden:** [scorecard/gulbergen-whs-tabel-9-18-holes-old-course-dames-en-heren.pdf](golf-de-gulbergen-mierlo/scorecard/gulbergen-whs-tabel-9-18-holes-old-course-dames-en-heren.pdf), [scorecard/page.html](golf-de-gulbergen-mierlo/scorecard/page.html), [scorecard/playing-handicap-libellenbaan-9-18-heren-dames-golf-de-gulbergen.pdf](golf-de-gulbergen-mierlo/scorecard/playing-handicap-libellenbaan-9-18-heren-dames-golf-de-gulbergen.pdf), [scorecard/playing-handicap-sprookjesbaan-9-18-heren-dames-golf-de-gulbergen.pdf](golf-de-gulbergen-mierlo/scorecard/playing-handicap-sprookjesbaan-9-18-heren-dames-golf-de-gulbergen.pdf), [scorecard/scorekaart-old-course.JPG](golf-de-gulbergen-mierlo/scorecard/scorekaart-old-course.JPG), [scorecard/scorekaart-sprookjesbaan-libellebaan-golf-de-gulbergen.pdf](golf-de-gulbergen-mierlo/scorecard/scorekaart-sprookjesbaan-libellebaan-golf-de-gulbergen.pdf)
+- **Opmerking:** Scorekaart Sprookjes-/Libellenbaan d.d. 15-05-2024 (PDF met afbeelding); CR/slope uit handicaptabellen 17-02-2026 (18 holes en per lus). Old Course: scorekaart-JPG en WHS-tabel 14-09-2021. 9-holes lussen hebben S.I. in 18-holes stijl (Sprookjes oneven, Libellen even). Op de site wordt melding gemaakt van nieuwbouw ("nieuwe beleving" opent 2027). E-mailadres niet op de site gevonden (alleen contactformulier).
+
+<a id="golfcentrum-noordwijk"></a>
+## Golf Centrum Noordwijk
+
+Golf Centrum Noordwijk ligt in de bollenvelden tussen Noordwijk en Voorhout en heeft een 9-holes par 3-baan van Alan Rijks. Ondanks het kleine oppervlak hebben de holes karakter door wind en water, en een ronde duurt ongeveer een uur. De baan is geschikt voor beginners die hun baanpermissie halen en voor spelers die hun korte spel willen verbeteren.
+
+- **Club:** Golf Centrum Noordwijk
+- **Adres:** Van Berckelweg 38, 2203 LB Noordwijk, Zuid-Holland, NL
+- **GPS:** 52.2279127, 4.4657492
+- **Afstand:** 141.4 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** open polder met water (bollenstreek)
+- **Architect:** Alan Rijks
+- **Telefoon:** 071 364 65 43
+- **Website:** https://golfcentrumnoordwijk.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, golfschool/golfles, golfshop, restaurant, GVB-cursussen
+
+**Lus 18 holes (9 holes 2x gespeeld)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 49.2 | 75 | 54 |
+| rood (women) |  | 50.9 | 73 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 |  |  |  |
+| 2 | 3 |  |  |  |
+| 3 | 3 |  |  |  |
+| 4 | 3 |  |  |  |
+| 5 | 3 |  |  |  |
+| 6 | 3 |  |  |  |
+| 7 | 3 |  |  |  |
+| 8 | 3 |  |  |  |
+| 9 | 3 |  |  |  |
+| 10 | 3 |  |  |  |
+| 11 | 3 |  |  |  |
+| 12 | 3 |  |  |  |
+| 13 | 3 |  |  |  |
+| 14 | 3 |  |  |  |
+| 15 | 3 |  |  |  |
+| 16 | 3 |  |  |  |
+| 17 | 3 |  |  |  |
+| 18 | 3 |  |  |  |
+
+- **Scorekaartpagina:** https://golfcentrumnoordwijk.nl/baan-handicap-tabel/
+- **Bestanden:** [scorecard/page.html](golfcentrum-noordwijk/scorecard/page.html), [scorecard/GC-Noordwijk-Par-3-baan-tabel-0.jpg](golfcentrum-noordwijk/scorecard/GC-Noordwijk-Par-3-baan-tabel-0.jpg), [scorecard/GC-Noordwijk-Par-3-baan-tabel-1.jpg](golfcentrum-noordwijk/scorecard/GC-Noordwijk-Par-3-baan-tabel-1.jpg)
+- **Opmerking:** Officieel alleen baanhandicaptabellen (29-08-2024): 18 holes geel heren CR 49,2 SR 75, rood dames CR 50,9 SR 73, par 54; 9 holes heren 24,6/75, dames 25,5/73, par 27. Geen scorekaart op de site; S.I. en lengtes onbekend. Derden spreken elkaar tegen (golfingrecord.com: 794 m totaal met rating 24,8/68; golfpass-pagina met 862 is van een andere baan) – niet overgenomen.
+
+<a id="kapelkeshof-grashoek"></a>
+## Golf- en wijndomein Kapelkeshof
+
+Kapelkeshof in Grashoek combineert een wijndomein met een golfcomplex van 21 holes. De 18 holes par 3 Kapelkeshofbaan (holes van circa 40 tot 150 meter) is open voor iedereen en geschikt voor groepen en beginners. Voor geoefende golfers is er de 9-holes par 3/4 Solarisbaan met smalle fairways en een natuurlijke omgeving.
+
+- **Club:** Kapelkeshof (Pitch & Putt Peel en Maas)
+- **Adres:** Roomweg 85, 5985 NS Grashoek, Limburg, NL
+- **GPS:** 51.3653149, 5.9431894
+- **Afstand:** 141.9 km
+- **Type:** par-3
+- **Holes:** 21
+- **Landschap:** landelijk Peelrandgebied met water en natuurlijke biotoop
+- **Telefoon:** 077 308 2677
+- **E-mail:** info@kapelkeshof.nl
+- **Website:** https://www.kapelkeshof.nl/
+- **Starttijden:** https://kapelkeshof.teetime.e-golf4u.nl/app/booking/teetime
+- **Greenfee welkom:** True
+- **Eisen:** Kapelkeshofbaan: geen eisen (vanaf 10 jaar, onervaren spelers na korte instructie); Solarisbaan: baanpermissie of minimaal handicap 54
+- **Faciliteiten:** 18 holes par 3 (Kapelkeshofbaan, pitch & putt), 9 holes par 3/4 (Solarisbaan), golfclinics, horeca, wijngaard, overnachten (ParcPods)
+
+**Lus Kapelkeshofbaan (18 holes par 3)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| niveau 1 | 1121 |  |  | 54 |
+| niveau 2 | 1292 |  |  | 54 |
+| niveau 3 | 1307 |  |  | 54 |
+
+| Hole | Par | SI | niveau 1 | niveau 2 | niveau 3 |
+|---|---|---|---|---|---|
+| 1 | 3 | 5 | 40 | 70 | 70 |
+| 2 | 3 | 17 | 59 | 59 | 59 |
+| 3 | 3 | 13 | 68 | 68 | 68 |
+| 4 | 3 | 3 | 83 | 83 | 83 |
+| 5 | 3 | 7 | 40 | 71 | 71 |
+| 6 | 3 | 1 | 94 | 135 | 150 |
+| 7 | 3 | 15 | 66 | 66 | 66 |
+| 8 | 3 | 11 | 55 | 55 | 55 |
+| 9 | 3 | 9 | 51 | 73 | 73 |
+| 10 | 3 | 14 | 53 | 53 | 53 |
+| 11 | 3 | 6 | 87 | 87 | 87 |
+| 12 | 3 | 2 | 76 | 89 | 89 |
+| 13 | 3 | 16 | 52 | 52 | 52 |
+| 14 | 3 | 10 | 50 | 69 | 69 |
+| 15 | 3 | 12 | 55 | 70 | 70 |
+| 16 | 3 | 4 | 54 | 54 | 54 |
+| 17 | 3 | 8 | 85 | 85 | 85 |
+| 18 | 3 | 18 | 53 | 53 | 53 |
+
+**Lus Solarisbaan (9 holes par 3/4, 2x gespeeld)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2168 | 52.7 | 84 | 58 |
+| rood (men) | 1986 | 51.8 | 81 | 58 |
+| geel (women) | 2168 | 54.3 | 91 | 58 |
+| rood (women) | 1986 | 53.9 | 83 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 13 | 70 | 70 |
+| 2 | 3 | 17 | 59 | 59 |
+| 3 | 3 | 15 | 68 | 68 |
+| 4 | 3 | 9 | 83 | 83 |
+| 5 | 3 | 11 | 71 | 71 |
+| 6 | 3 | 5 | 150 | 135 |
+| 7 | 3 | 7 | 92 | 92 |
+| 8 | 4 | 3 | 246 | 210 |
+| 9 | 4 | 1 | 245 | 205 |
+| 10 | 3 | 14 | 70 | 70 |
+| 11 | 3 | 18 | 59 | 59 |
+| 12 | 3 | 16 | 68 | 68 |
+| 13 | 3 | 10 | 83 | 83 |
+| 14 | 3 | 12 | 71 | 71 |
+| 15 | 3 | 6 | 150 | 135 |
+| 16 | 3 | 8 | 92 | 92 |
+| 17 | 4 | 4 | 246 | 210 |
+| 18 | 4 | 2 | 245 | 205 |
+
+- **Scorekaartpagina:** https://www.kapelkeshof.nl/golf/layout-golfbaan/
+- **Bestanden:** [scorecard/page.html](kapelkeshof-grashoek/scorecard/page.html), [scorecard/page-golfbaan.html](kapelkeshof-grashoek/scorecard/page-golfbaan.html), [scorecard/Kapelkeshofbaan_scorekaart_A6-2023.jpg](kapelkeshof-grashoek/scorecard/Kapelkeshofbaan_scorekaart_A6-2023.jpg), [scorecard/Kapelkeshofbaan_scorekaart_A6-20232.jpg](kapelkeshof-grashoek/scorecard/Kapelkeshofbaan_scorekaart_A6-20232.jpg), [scorecard/Solarisbaan_scorekaart_A6-2022.jpg](kapelkeshof-grashoek/scorecard/Solarisbaan_scorekaart_A6-2022.jpg), [scorecard/Solarisbaan_scorekaart_A6-20222.jpg](kapelkeshof-grashoek/scorecard/Solarisbaan_scorekaart_A6-20222.jpg)
+- **Opmerking:** Officiele scorekaarten (afbeeldingen). Kapelkeshofbaan: lengtes per 'niveau' (geen teekleuren, geen ratings); lege vakjes bij niveau 2/3 = zelfde afslag als het lagere niveau (bevestigd door de 'in'-totalen 612/612). Kaarttotaal 'out' niveau 2/3 (656/685) wijkt af van de som van de holes (680/695). Solarisbaan: ratings van de kaart (heren geel 52.7/84, rood 51.8/81; dames geel 54.3/91, rood 53.9/83). De op de site genoemde 9 holes 'Peelrandbaan' heeft geen gepubliceerde kaart.
+
+<a id="golfclub-de-berckt-baarlo"></a>
+## Golfclub de Berckt
+
+Golfclub de Berckt ligt bij Baarlo, vlak onder Venlo, naast het landgoed van Kasteel de Berckt. De 9-holesbaan heeft par 32 maar vraagt door waterpartijen, bunkers en lastige greens om tactisch spel, met risk-and-reward par 4- en 5-holes en pittige par 3's. Er is ook een kleine pitch & chip-oefenbaan.
+
+- **Club:** Golfclub de Berckt
+- **Adres:** De Berckt 1, 5991 PD Baarlo, Limburg, NL
+- **GPS:** 51.342196, 6.1112203
+- **Afstand:** 142.0 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkbaan met meanderend water op het landgoed van Kasteel de Berckt
+- **Telefoon:** 06 39 12 91 29
+- **E-mail:** info@golfclubdeberckt.nl
+- **Website:** https://golfclubdeberckt.nl/
+- **Starttijden:** https://www.nexxchange.com/search/teetimes/golfclub-de-berckt
+- **Greenfee welkom:** True
+- **Eisen:** Baanpermissie vereist
+- **Faciliteiten:** driving range, putting green (6 holes), 6 holes pitch & chip oefenbaan, clubhuis, golflessen
+
+**Lus 9 holes (2x gespeeld = 18 holes)** — 18 holes, par 64
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3650 | 60.4 | 102 | 64 |
+| rood (men) | 3402 | 59.8 | 96 | 64 |
+| geel (women) | 3650 | 63.0 | 109 | 64 |
+| rood (women) | 3402 | 62.4 | 105 | 64 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 9 | 228 | 202 |
+| 2 | 3 | 7 | 163 | 149 |
+| 3 | 3 | 1 | 140 | 133 |
+| 4 | 5 | 5 | 460 | 436 |
+| 5 | 3 | 17 | 118 | 118 |
+| 6 | 4 | 15 | 266 | 254 |
+| 7 | 3 | 3 | 110 | 100 |
+| 8 | 3 | 13 | 88 | 88 |
+| 9 | 4 | 11 | 252 | 221 |
+| 10 | 4 | 10 | 228 | 202 |
+| 11 | 3 | 8 | 163 | 149 |
+| 12 | 3 | 2 | 140 | 133 |
+| 13 | 5 | 6 | 460 | 436 |
+| 14 | 3 | 18 | 118 | 118 |
+| 15 | 4 | 16 | 266 | 254 |
+| 16 | 3 | 4 | 110 | 100 |
+| 17 | 3 | 14 | 88 | 88 |
+| 18 | 4 | 12 | 252 | 221 |
+
+- **Scorekaartpagina:** https://golfclubdeberckt.nl/baan/
+- **Bestanden:** [scorecard/page.html](golfclub-de-berckt-baarlo/scorecard/page.html), [scorecard/scorekaart-2017-06-29-binnenkant.pdf](golfclub-de-berckt-baarlo/scorecard/scorekaart-2017-06-29-binnenkant.pdf)
+- **Opmerking:** Officiele scorekaart (versie 29-06-2017) met par, SI (18-holesstijl) en lengtes geel/rood en CR/SR (heren geel 60.4/102, rood 59.8/96; dames geel 63.0/109, rood 62.4/105). Ratings kunnen inmiddels herzien zijn. GolfingRecord toont afgeronde, afwijkende lengtes en SI; niet gebruikt. Telefoon: clubhuis; ook 06 10442516.
+
+<a id="best-golf-country-club"></a>
+## Best Golf
+
+Best Golf ligt in de bossen aan de zuidwestrand van Best, vlak bij Eindhoven. De 18-holesbaan van par 72 bestaat uit lange, smalle bosholes met hier en daar water, en heeft een A-status. Naast de grote baan is er een 9-holes par 3-baan die zonder GVB bespeeld mag worden.
+
+- **Club:** Best Golf (Best Golf & Country Club)
+- **Adres:** Golflaan 1, 5683 RZ Best, Noord-Brabant, NL
+- **GPS:** 51.4923467, 5.4103128
+- **Afstand:** 142.6 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** bosbaan (smalle, door bomen omzoomde fairways met enkele waterpartijen)
+- **Telefoon:** +31 (0)499 391 443
+- **E-mail:** info@bestgolf.nl
+- **Website:** https://bestgolf.nl
+- **Greenfee welkom:** True
+- **Eisen:** 18 holes: GVB/baanpermissie; pitch & putt zonder GVB
+- **Faciliteiten:** driving range (in aanbouw, t/m feb. 2027 beperkt), oefengreens, 9-holes par 3 / pitch & putt-baan, restaurant Dimples, vergaderlocatie
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6003 | 72.7 | 144 | 72 |
+| geel (men) | 5817 | 71.9 | 139 | 72 |
+| blauw (men) | 5305 | 70.3 | 126 | 72 |
+| rood (men) | 5009 | 68.5 | 121 | 72 |
+| oranje (men) | 4299 | 64.8 | 114 | 72 |
+| geel (women) | 5817 | 78.0 | 149 | 72 |
+| blauw (women) | 5305 | 75.4 | 142 | 72 |
+| rood (women) | 5009 | 73.4 | 134 | 72 |
+| oranje (women) | 4299 | 68.9 | 125 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 3 | 479 | 476 | 462 | 403 | 357 |
+| 2 | 4 | 13 | 312 | 309 | 292 | 275 | 264 |
+| 3 | 3 | 17 | 164 | 156 | 152 | 138 | 138 |
+| 4 | 4 | 11 | 347 | 342 | 329 | 276 | 216 |
+| 5 | 5 | 5 | 481 | 478 | 404 | 397 | 352 |
+| 6 | 4 | 9 | 336 | 324 | 324 | 290 | 290 |
+| 7 | 3 | 15 | 211 | 193 | 176 | 161 | 92 |
+| 8 | 5 | 7 | 434 | 424 | 413 | 378 | 373 |
+| 9 | 4 | 1 | 410 | 392 | 328 | 328 | 255 |
+| 10 | 4 | 12 | 357 | 352 | 298 | 298 | 255 |
+| 11 | 3 | 14 | 158 | 150 | 150 | 136 | 136 |
+| 12 | 4 | 8 | 317 | 317 | 304 | 295 | 202 |
+| 13 | 5 | 2 | 516 | 475 | 385 | 376 | 347 |
+| 14 | 4 | 16 | 281 | 270 | 270 | 255 | 243 |
+| 15 | 4 | 10 | 343 | 335 | 276 | 273 | 191 |
+| 16 | 4 | 6 | 380 | 356 | 325 | 318 | 258 |
+| 17 | 3 | 18 | 105 | 105 | 105 | 105 | 105 |
+| 18 | 4 | 4 | 372 | 363 | 312 | 307 | 225 |
+
+- **Scorekaartpagina:** https://bestgolf.nl/nl/golfbaan/baanlayout
+- **Bestanden:** [scorecard/Best-Golf-Dames_18-holes_kl-1-.jpg](best-golf-country-club/scorecard/Best-Golf-Dames_18-holes_kl-1-.jpg), [scorecard/Best-Golf-Heren_18-holes_kl-1-.jpg](best-golf-country-club/scorecard/Best-Golf-Heren_18-holes_kl-1-.jpg), [scorecard/page-handicap.html](best-golf-country-club/scorecard/page-handicap.html), [scorecard/page.html](best-golf-country-club/scorecard/page.html)
+- **Opmerking:** Geen downloadbare scorekaart. Par en S.I. uit de baanlayout-pagina; lengtes per tee afgelezen van de hole-tekeningen uit het "birdie boekje" (2024-04-07) op die pagina (niet opgeslagen i.v.m. omvang, ca. 55 MB; URLs in page.html). Totaal wit volgens tekeningen 6003 m; de site noemt 6.079 m (verschil 76 m). CR/slope uit handicaptabellen 08-08-2024 (ook tabellen per 9 holes op de site). Par 3-/pitch & putt-baan (9 holes): geen holegegevens.
+
+<a id="oegstgeester-golfclub"></a>
+## Oegstgeester Golfclub
+
+De Oegstgeester Golfclub werd in 1986 opgericht vanuit voetbalvereniging UDO en is een laagdrempelige vrijwilligersvereniging aan de rand van Oegstgeest. De korte 9-holesbaan (par 30, met twee par 4's) wordt overal van matten afgeslagen; daarnaast is er een nog kortere variant, de Korte Baan (par 28), die ook in de winter wordt gebruikt.
+
+- **Club:** Oegstgeester Golfclub (OGC)
+- **Adres:** Van Houdringelaan 15, 2341 BN Oegstgeest, Zuid-Holland, NL
+- **GPS:** 52.1869582, 4.4629996
+- **Afstand:** 143.1 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** vlak parkterrein met waterpartijen
+- **Opgericht:** 1986
+- **Telefoon:** 071 515 05 06
+- **Website:** https://www.oegstgeestergolfclub.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** clubhuis, golfprofessional, handicarts
+
+**Lus Standaardbaan 18 holes (9 holes 2x)** — 18 holes, par 60
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2816 | 56.1 | 92 | 60 |
+| rood (men) | 2646 | 55.3 | 93 | 60 |
+| geel (women) | 2816 | 58.3 | 104 | 60 |
+| rood (women) | 2646 | 57.8 | 95 | 60 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 11 | 124 | 124 |
+| 2 | 3 | 15 | 91 | 91 |
+| 3 | 4 | 9 | 230 | 190 |
+| 4 | 4 | 7 | 231 | 186 |
+| 5 | 3 | 1 | 137 | 137 |
+| 6 | 3 | 17 | 95 | 95 |
+| 7 | 4 | 5 | 229 | 229 |
+| 8 | 3 | 13 | 117 | 117 |
+| 9 | 3 | 3 | 154 | 154 |
+| 10 | 3 | 12 | 124 | 124 |
+| 11 | 3 | 16 | 91 | 91 |
+| 12 | 4 | 10 | 230 | 190 |
+| 13 | 4 | 8 | 231 | 186 |
+| 14 | 3 | 2 | 137 | 137 |
+| 15 | 3 | 18 | 95 | 95 |
+| 16 | 4 | 6 | 229 | 229 |
+| 17 | 3 | 14 | 117 | 117 |
+| 18 | 3 | 4 | 154 | 154 |
+
+**Lus Korte Baan 18 holes (9 holes 2x)** — 18 holes, par 56
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| rood (men) | 2134 | 51.7 | 81 | 56 |
+| rood (women) | 2134 | 54.1 | 78 | 56 |
+
+| Hole | Par | SI | rood |
+|---|---|---|---|
+| 1 | 3 | 9 | 124 |
+| 2 | 3 | 15 | 91 |
+| 3 | 4 | 5 | 190 |
+| 4 | 3 | 17 | 65 |
+| 5 | 3 | 13 | 95 |
+| 6 | 3 | 11 | 79 |
+| 7 | 3 | 3 | 152 |
+| 8 | 3 | 7 | 117 |
+| 9 | 3 | 1 | 154 |
+| 10 | 3 | 10 | 124 |
+| 11 | 3 | 16 | 91 |
+| 12 | 4 | 6 | 190 |
+| 13 | 3 | 18 | 65 |
+| 14 | 3 | 14 | 95 |
+| 15 | 3 | 12 | 79 |
+| 16 | 3 | 4 | 152 |
+| 17 | 3 | 8 | 117 |
+| 18 | 3 | 2 | 154 |
+
+- **Scorekaartpagina:** https://www.oegstgeestergolfclub.nl/baaninformatie/290-scorekaarten.html
+- **Bestanden:** [scorecard/page.html](oegstgeester-golfclub/scorecard/page.html), [scorecard/Scorekaart_standaard_baan_maart_2025.png](oegstgeester-golfclub/scorecard/Scorekaart_standaard_baan_maart_2025.png), [scorecard/scorekaart_kleine_baan-jan2026.png](oegstgeester-golfclub/scorecard/scorekaart_kleine_baan-jan2026.png)
+- **Opmerking:** Standaardbaan: scorekaart maart 2025 (geel/rood, CR/SR op de kaart: heren 56,1/55,3 – 92/93; dames 58,3/57,8 – 104/95). Korte Baan: scorekaart jan 2026 (alleen rood; holes K4–K7 en K13–K16 zijn de korte varianten; heren CR 51,7 SR 81, dames 54,1/78). Handicaptabellen als PDF op baaninformatie/356-playing-handicaps.html (niet gedownload). E-mail alleen voor ledenadministratie/bestuur gepubliceerd.
+
+<a id="golfcentrum-eindhoven"></a>
+## Golfcentrum Eindhoven
+
+Golfcentrum Eindhoven ligt in Woensel-Zuid, op korte afstand van het stadscentrum, en richt zich op laagdrempelig golf zonder kledingvoorschriften. Naast een driving range is er een qualifying 9-holes par 3-baan met holes van 49 tot 129 meter. De baan wordt afwisselend met de range gebruikt.
+
+- **Club:** Stichting Golfcentrum Eindhoven
+- **Adres:** J.C. Dirkxpad 1A, 5631 BZ Eindhoven, Noord-Brabant, NL
+- **GPS:** 51.4561346, 5.4910186
+- **Afstand:** 143.5 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** stadspark (vlak bij het centrum van Eindhoven)
+- **Telefoon:** 040 – 3690751
+- **E-mail:** golf@golfcentrumeindhoven.nl
+- **Website:** https://golfcentrumeindhoven.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, golfschool (o.a. handicap 54-cursus)
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1608 | 47.2 | 57 | 54 |
+| rood (men) | 1434 | 46.3 | 55 | 54 |
+| geel (women) | 1608 | 48.9 | 58 | 54 |
+| rood (women) | 1434 | 47.8 | 56 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 7 | 97 | 84 |
+| 2 | 3 | 15 | 62 | 56 |
+| 3 | 3 | 11 | 80 | 80 |
+| 4 | 3 | 5 | 106 | 94 |
+| 5 | 3 | 13 | 74 | 74 |
+| 6 | 3 | 17 | 49 | 49 |
+| 7 | 3 | 1 | 129 | 112 |
+| 8 | 3 | 3 | 113 | 101 |
+| 9 | 3 | 9 | 94 | 67 |
+| 10 | 3 | 8 | 97 | 84 |
+| 11 | 3 | 16 | 62 | 56 |
+| 12 | 3 | 12 | 80 | 80 |
+| 13 | 3 | 6 | 106 | 94 |
+| 14 | 3 | 14 | 74 | 74 |
+| 15 | 3 | 18 | 49 | 49 |
+| 16 | 3 | 2 | 129 | 112 |
+| 17 | 3 | 4 | 113 | 101 |
+| 18 | 3 | 10 | 94 | 67 |
+
+**Lus 9 holes** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 804 | 23.6 | 57 | 27 |
+| rood (men) | 717 | 23.2 | 55 | 27 |
+| geel (women) | 804 | 24.5 | 58 | 27 |
+| rood (women) | 717 | 23.9 | 56 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 7 | 97 | 84 |
+| 2 | 3 | 15 | 62 | 56 |
+| 3 | 3 | 11 | 80 | 80 |
+| 4 | 3 | 5 | 106 | 94 |
+| 5 | 3 | 13 | 74 | 74 |
+| 6 | 3 | 17 | 49 | 49 |
+| 7 | 3 | 1 | 129 | 112 |
+| 8 | 3 | 3 | 113 | 101 |
+| 9 | 3 | 9 | 94 | 67 |
+
+- **Scorekaartpagina:** https://golfcentrumeindhoven.nl/informatie/plattegrond-9-holes-baan/
+- **Bestanden:** [scorecard/Golfcentrum-Eindhoven-18-holes-Dames-Heren.pdf](golfcentrum-eindhoven/scorecard/Golfcentrum-Eindhoven-18-holes-Dames-Heren.pdf), [scorecard/Golfcentrum-Eindhoven-9-holes-Dames-Heren.pdf](golfcentrum-eindhoven/scorecard/Golfcentrum-Eindhoven-9-holes-Dames-Heren.pdf), [scorecard/page.html](golfcentrum-eindhoven/scorecard/page.html), [scorecard/scorekaart-achterkant.png](golfcentrum-eindhoven/scorecard/scorekaart-achterkant.png), [scorecard/scorekaart-voorkant.png](golfcentrum-eindhoven/scorecard/scorekaart-voorkant.png)
+- **Opmerking:** Holetabel op de plattegrondpagina (S.I. als "7/8" = 1e/2e ronde); scorekaart voor- en achterkant (PNG, 2022) meegeleverd. CR/slope uit WHS-tabellen 03-06-2025. 9-holes loop met S.I. in 18-holes stijl (oneven). Holes lopen en driving range wisselen elkaar af volgens rooster.
+
+<a id="estec-golf-club-noordwijk"></a>
+## ESTEC Golf Club
+
+De ESTEC Golf Club speelt op een besloten 9-holesbaan op het terrein van het Europese ruimtevaartcentrum ESTEC in Noordwijk. De baan telt zeven par 3's en twee par 4's, met vijvers, duinruggen, smalle fairways en kleine greens. Sinds 2024 zijn er ook oranje tees die samen een aparte par 54-baan vormen.
+
+- **Club:** ESTEC Golf Club (EGC)
+- **Adres:** Keplerlaan 1 (ESTEC-terrein), 2201 AZ Noordwijk, Zuid-Holland, NL
+- **GPS:** 52.2171, 4.4236
+- **Afstand:** 144.5 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** binnenduin met vijvers en duinruggen
+- **Website:** https://www.egcgolf.nl
+- **Greenfee welkom:** False
+- **Eisen:** Besloten baan op het ESTEC-terrein: alleen spelende leden, hun gasten (max. 3, met NGF-handicapkaart, aangemeld bij Site Security en begeleid door het lid) en door het bestuur toegelaten personen
+- **Faciliteiten:** driving range, Check Inn (registratiehut)
+
+**Lus Hoofdbaan 18 holes (9 holes 2x)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3230 | 58.2 | 101 | 58 |
+| rood (men) | 2916 | 56.2 | 100 | 58 |
+| geel (women) | 3230 | 61.5 | 110 | 58 |
+| rood (women) | 2916 | 59.2 | 105 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 15 | 126 | 120 |
+| 2 | 4 | 7 | 248 | 239 |
+| 3 | 4 | 1 | 297 | 269 |
+| 4 | 3 | 17 | 115 | 101 |
+| 5 | 3 | 13 | 132 | 127 |
+| 6 | 3 | 9 | 169 | 139 |
+| 7 | 3 | 3 | 198 | 174 |
+| 8 | 3 | 5 | 194 | 162 |
+| 9 | 3 | 11 | 136 | 127 |
+| 10 | 3 | 16 | 126 | 120 |
+| 11 | 4 | 8 | 248 | 239 |
+| 12 | 4 | 2 | 297 | 269 |
+| 13 | 3 | 18 | 115 | 101 |
+| 14 | 3 | 14 | 132 | 127 |
+| 15 | 3 | 10 | 169 | 139 |
+| 16 | 3 | 4 | 198 | 174 |
+| 17 | 3 | 6 | 194 | 162 |
+| 18 | 3 | 12 | 136 | 127 |
+
+**Lus Par 3-baan oranje tees 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| oranje (men) | 2388 | 53.1 | 91 | 54 |
+| oranje (women) | 2388 | 55.8 | 93 | 54 |
+
+| Hole | Par | SI | oranje |
+|---|---|---|---|
+| 1 | 3 | 13 | 120 |
+| 2 | 3 | 5 | 162 |
+| 3 | 3 | 7 | 131 |
+| 4 | 3 | 15 | 101 |
+| 5 | 3 | 9 | 127 |
+| 6 | 3 | 17 | 90 |
+| 7 | 3 | 1 | 174 |
+| 8 | 3 | 3 | 162 |
+| 9 | 3 | 11 | 127 |
+| 10 | 3 | 14 | 120 |
+| 11 | 3 | 6 | 162 |
+| 12 | 3 | 8 | 131 |
+| 13 | 3 | 16 | 101 |
+| 14 | 3 | 10 | 127 |
+| 15 | 3 | 18 | 90 |
+| 16 | 3 | 2 | 174 |
+| 17 | 3 | 4 | 162 |
+| 18 | 3 | 12 | 127 |
+
+- **Scorekaartpagina:** https://wp.egcgolf.nl/course/83-2/
+- **Bestanden:** [scorecard/page.html](estec-golf-club-noordwijk/scorecard/page.html), [scorecard/NewScoreCard2021.png](estec-golf-club-noordwijk/scorecard/NewScoreCard2021.png), [scorecard/New-Par-3-SI.png](estec-golf-club-noordwijk/scorecard/New-Par-3-SI.png), [scorecard/ESTEC-18-holes-Heren.pdf](estec-golf-club-noordwijk/scorecard/ESTEC-18-holes-Heren.pdf), [scorecard/ESTEC-18-holes-Dames.pdf](estec-golf-club-noordwijk/scorecard/ESTEC-18-holes-Dames.pdf), [scorecard/ESTEC-Par-3-baan-Heren-18-holes.pdf](estec-golf-club-noordwijk/scorecard/ESTEC-Par-3-baan-Heren-18-holes.pdf), [scorecard/ESTEC-Par-3-baan-Dames-18-holes.pdf](estec-golf-club-noordwijk/scorecard/ESTEC-Par-3-baan-Dames-18-holes.pdf)
+- **Opmerking:** Hoofdbaan: scorekaart (geel/rood standard) en handicaptabellen d.d. 27-09-2021. Par 3-baan (oranje tees, sinds 2024): scorekaart met eigen S.I. en CR/SR (tabellen 20-02-2024); de kaart van holes 10-18 heeft de kolomkop 'Yellow Standard' maar is oranje gekleurd met dezelfde lengtes – als oranje behandeld. Geen contactgegevens of adres van de club op de site; adres is dat van ESTEC.
+
+<a id="golfpark-de-loonsche-duynen-de-moer"></a>
+## Golfpark De Loonsche Duynen
+
+Golfpark De Loonsche Duynen bij De Moer ligt tussen de Loonse en Drunense Duinen en landgoed Huis ter Heide. De 18-holes baan van par 72 combineert waterpartijen, bunkers en bosranden met een aantal lange holes. Een 9-holes shortgolfbaan met par 3- en par 4-holes is er voor beginners en het korte spel.
+
+- **Club:** Hollandsche Golfclub – Golfpark De Loonsche Duynen
+- **Adres:** Veldstraat 6, 5176 NB De Moer, Noord-Brabant, NL
+- **GPS:** 51.6391, 5.0317
+- **Afstand:** 144.7 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** tussen de Loonse en Drunense Duinen en landgoed Huis ter Heide; water, bunkers en bos
+- **Telefoon:** 0416 749 800
+- **E-mail:** info@golfparkdeloonscheduynen.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/de-loonsche-duynen/
+- **Greenfee welkom:** True
+- **Eisen:** Vanaf baanpermissie van de Hollandsche Golfclub.
+- **Faciliteiten:** 9-holes shortgolfbaan (par 3/4), driving range, brasserie
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6269 | 74.0 | 132 | 72 |
+| geel (men) | 5931 | 71.7 | 133 | 72 |
+| blauw (men) | 5336 | 68.4 | 126 | 72 |
+| rood (men) | 5096 | 67.5 | 121 | 72 |
+| oranje (men) | 4814 | 65.8 | 118 | 72 |
+| geel (women) | 5931 | 78.0 | 142 | 72 |
+| blauw (women) | 5336 | 74.4 | 134 | 72 |
+| rood (women) | 5096 | 73.3 | 129 | 72 |
+| oranje (women) | 4814 | 71.4 | 122 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 408 | 373 | 345 | 315 | 294 |
+| 2 | 4 | 9 | 375 | 342 | 342 | 312 | 251 |
+| 3 | 5 | 1 | 489 | 468 | 399 | 392 | 392 |
+| 4 | 4 | 3 | 390 | 376 | 325 | 320 | 281 |
+| 5 | 4 | 15 | 330 | 278 | 261 | 241 | 241 |
+| 6 | 3 | 13 | 181 | 161 | 150 | 145 | 140 |
+| 7 | 5 | 7 | 505 | 486 | 428 | 415 | 399 |
+| 8 | 3 | 17 | 151 | 145 | 125 | 123 | 123 |
+| 9 | 4 | 5 | 388 | 383 | 333 | 326 | 289 |
+| 10 | 4 | 8 | 411 | 382 | 326 | 307 | 275 |
+| 11 | 4 | 4 | 380 | 359 | 330 | 311 | 290 |
+| 12 | 4 | 14 | 263 | 241 | 224 | 219 | 219 |
+| 13 | 3 | 16 | 185 | 180 | 165 | 160 | 160 |
+| 14 | 5 | 12 | 453 | 448 | 382 | 373 | 373 |
+| 15 | 4 | 2 | 363 | 335 | 293 | 289 | 289 |
+| 16 | 3 | 18 | 159 | 154 | 148 | 126 | 125 |
+| 17 | 5 | 10 | 480 | 467 | 467 | 431 | 382 |
+| 18 | 4 | 6 | 358 | 353 | 293 | 291 | 291 |
+
+**Lus Kleine baan 9 holes (shortgolf par 28)** — 9 holes, par 28
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1326 | 27.4 | 89 | 28 |
+| rood (men) | 1136 | 26.4 | 84 | 28 |
+| geel (women) | 1326 | 28.5 | 89 | 28 |
+| rood (women) | 1136 | 27.3 | 84 | 28 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 11 | 116 | 110 |
+| 2 | 3 | 5 | 161 | 136 |
+| 3 | 3 | 13 | 125 | 107 |
+| 4 | 4 | 1 | 239 | 218 |
+| 5 | 3 | 17 | 120 | 102 |
+| 6 | 3 | 15 | 106 | 86 |
+| 7 | 3 | 7 | 137 | 116 |
+| 8 | 3 | 3 | 186 | 150 |
+| 9 | 3 | 9 | 136 | 111 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/de-loonsche-duynen/course/18-holes-baan-de-loonsche-duynen/
+- **Bestanden:** [scorecard/DLD-Scorekaart-18-holes-15-OKT-2026_WEB.pdf](golfpark-de-loonsche-duynen-de-moer/scorecard/DLD-Scorekaart-18-holes-15-OKT-2026_WEB.pdf), [scorecard/De-Loonsche-Duynen-handicaptabellen-grote-baan.pdf](golfpark-de-loonsche-duynen-de-moer/scorecard/De-Loonsche-Duynen-handicaptabellen-grote-baan.pdf), [scorecard/Loonsche-Duynen-Scorekaart-9-holes-MRT-2026.pdf](golfpark-de-loonsche-duynen-de-moer/scorecard/Loonsche-Duynen-Scorekaart-9-holes-MRT-2026.pdf), [scorecard/De-Loonsche-HCP-Tabellen-Kleine-baan.pdf](golfpark-de-loonsche-duynen-de-moer/scorecard/De-Loonsche-HCP-Tabellen-Kleine-baan.pdf), [scorecard/page.html](golfpark-de-loonsche-duynen-de-moer/scorecard/page.html)
+- **Opmerking:** Scorekaart 18 holes 15-10-2026 (UIT 3217/3012/2708/2589/2410, IN 3052/2919/2628/2507/2404, TOT 6269/5931/5336/5096/4814; kolomvolgorde wit/geel/blauw/rood/oranje zoals de tabellen). CR/slope uit tabellen feb. 2026 (ook per negen beschikbaar). Kleine baan: kaart maart 2026, twee lengtekolommen (geel; rood/oranje gedeeld), par 28, S.I. 1-17 oneven; ratings 9 holes (18 holes: heren 54,7 geel / 52,8 rood, dames 56,9 / 54,6).
+
+<a id="golfpark-de-kurenpolder-hank"></a>
+## Golfpark De Kurenpolder
+
+Golfpark De Kurenpolder in Hank ligt aan de rand van Nationaal Park De Biesbosch, met uitzicht over de Bergsche Maas en het Kurenmeer. De 9-holes grote baan (par 34) wordt met extra afslagplaatsen ook als 18 holes gespeeld, tussen wilgen, kreken en waterpartijen. Een 9-holes shortgolfbaan van 700 meter is vrij toegankelijk voor beginners.
+
+- **Club:** Hollandsche Golfclub – Golfpark De Kurenpolder
+- **Adres:** Kurenpolderweg 31, 4273 LA Hank, Noord-Brabant, NL
+- **GPS:** 51.7238, 4.8908
+- **Afstand:** 144.8 km
+- **Type:** 9-holes
+- **Holes:** 18
+- **Landschap:** waterrijk Biesboschlandschap met wilgen en kreken langs de Bergsche Maas
+- **Telefoon:** 0162 402 820
+- **E-mail:** info@golfparkdekurenpolder.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/de-kurenpolder/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/de-kurenpolder/boek-een-starttijd-golfpark-de-kurenpolder/
+- **Greenfee welkom:** True
+- **Eisen:** Grote baan: vanaf handicap 54 of baanpermissie van de Hollandsche Golfclub. Shortgolfbaan: geen baanpermissie of handicap nodig.
+- **Faciliteiten:** 9-holes shortgolfbaan (par 3), driving range, brasserie met terras, golflessen
+
+**Lus 18 holes (gele lus 2x)** — 18 holes, par 68
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5292 | 70.3 | 133 | 68 |
+| rood (men) | 4572 | 65.9 | 128 | 68 |
+| oranje (men) | 3922 | 63.3 | 113 | 68 |
+| geel (women) | 5292 | 76.1 | 142 | 68 |
+| rood (women) | 4572 | 72.0 | 127 | 68 |
+| oranje (women) | 3922 | 67.0 | 116 | 68 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 11 | 302 | 255 | 230 |
+| 2 | 4 | 7 | 324 | 286 | 259 |
+| 3 | 5 | 5 | 478 | 408 | 367 |
+| 4 | 3 | 13 | 167 | 142 | 128 |
+| 5 | 4 | 9 | 330 | 272 | 245 |
+| 6 | 4 | 3 | 357 | 313 | 217 |
+| 7 | 3 | 15 | 196 | 169 | 152 |
+| 8 | 4 | 1 | 356 | 327 | 264 |
+| 9 | 3 | 17 | 136 | 114 | 99 |
+| 10 | 4 | 12 | 302 | 255 | 230 |
+| 11 | 4 | 8 | 324 | 286 | 259 |
+| 12 | 5 | 6 | 478 | 408 | 367 |
+| 13 | 3 | 14 | 167 | 142 | 128 |
+| 14 | 4 | 10 | 330 | 272 | 245 |
+| 15 | 4 | 4 | 357 | 313 | 217 |
+| 16 | 3 | 16 | 196 | 169 | 152 |
+| 17 | 4 | 2 | 356 | 327 | 264 |
+| 18 | 3 | 18 | 136 | 114 | 99 |
+
+**Lus Shortgolf 9 holes (par 3)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard (men) | 700 |  |  | 27 |
+| standaard (women) | 700 |  |  | 27 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 9 | 80 |
+| 2 | 3 | 13 | 69 |
+| 3 | 3 | 11 | 82 |
+| 4 | 3 | 15 | 70 |
+| 5 | 3 | 3 | 67 |
+| 6 | 3 | 1 | 105 |
+| 7 | 3 | 7 | 59 |
+| 8 | 3 | 17 | 57 |
+| 9 | 3 | 5 | 111 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/de-kurenpolder/course/de-kurenpolder-18-holes-2-x-gele-lus/
+- **Bestanden:** [scorecard/KP-SCOREKAART-18-HOLES-SEP-2026.pdf](golfpark-de-kurenpolder-hank/scorecard/KP-SCOREKAART-18-HOLES-SEP-2026.pdf), [scorecard/KUR_HCPtabellen_18HOLES.pdf](golfpark-de-kurenpolder-hank/scorecard/KUR_HCPtabellen_18HOLES.pdf), [scorecard/KURENPOLDER_SCOREKAART_9HOLES_2025WEB.pdf](golfpark-de-kurenpolder-hank/scorecard/KURENPOLDER_SCOREKAART_9HOLES_2025WEB.pdf), [scorecard/Golfpark-De-Kurenpolder-shortgolf-handicaptabel.pdf](golfpark-de-kurenpolder-hank/scorecard/Golfpark-De-Kurenpolder-shortgolf-handicaptabel.pdf), [scorecard/page.html](golfpark-de-kurenpolder-hank/scorecard/page.html)
+- **Opmerking:** Scorekaart 18 holes sept. 2026: holes 10-18 = 1-9 met even S.I.; drie kolommen (geel/rood/oranje, kleur van de kolom), 2646/2286/1961 per 9 holes. CR/slope uit tabellen 2026 (9 holes: heren 35,2/33,0/31,7, dames 38,1/36,0/33,5). Shortgolf: 700 m, par 27; ratings alleen als 18 holes par 54 (heren geel 46,9/53, dames rood 47,5/59) en 9 holes (23,5/53 resp. 23,8/59) — niet aan de 9-holeslus gekoppeld omdat de kaart één lengtekolom heeft.
+
+<a id="golfbaan-het-woold-asten"></a>
+## Golfbaan Het Woold
+
+Golfbaan Het Woold ligt in het buitengebied van Heusden bij Asten, in het Peellandschap richting de Groote Peel. De 18-holes Vier Eijckenbaan van Han Wessels (2011) is een strategische par 72 tussen bos, heide en water, aangelegd met het doel oude natuur te herstellen. De oorspronkelijke Gezandebaan uit 2000 is een 9-holes par 3-baan.
+
+- **Club:** Golfbaan Het Woold
+- **Adres:** Gezandebaan 46a, 5725 TN Asten-Heusden, Noord-Brabant, NL
+- **GPS:** 51.3670426, 5.7670927
+- **Afstand:** 145.1 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** Peellandschap met bos, heide en water
+- **Opgericht:** 2000
+- **Architect:** ir. Han Wessels (Vier Eijckenbaan)
+- **Telefoon:** 0493-56 04 62
+- **E-mail:** info@golfbaanhetwoold.nl
+- **Website:** https://golfbaanhetwoold.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** Vier Eijckenbaan (18 holes), Gezandebaan (9 holes par 3), oefenfaciliteiten, golfopleiding, golfshop, restaurant Volentieri
+
+**Lus Vier Eijckenbaan (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| 62 (men) | 6235 | 73.4 | 138 | 72 |
+| 58 (men) | 5834 | 71.4 | 137 | 72 |
+| 54 (men) | 5380 | 69.5 | 123 | 72 |
+| 50 (men) | 4978 | 68.2 | 110 | 72 |
+| 45 (men) | 4469 | 65.5 | 108 | 72 |
+| 58 (women) | 5834 | 77.8 | 147 | 72 |
+| 54 (women) | 5380 | 74.6 | 139 | 72 |
+| 50 (women) | 4978 | 72.2 | 129 | 72 |
+| 45 (women) | 4469 | 70.0 | 117 | 72 |
+
+| Hole | Par | SI | 62 | 58 | 54 | 50 | 45 |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 4 | 332 | 320 | 304 | 270 | 243 |
+| 2 | 4 | 2 | 403 | 365 | 331 | 305 | 274 |
+| 3 | 5 | 8 | 507 | 480 | 443 | 413 | 371 |
+| 4 | 4 | 6 | 385 | 355 | 341 | 310 | 278 |
+| 5 | 3 | 16 | 170 | 163 | 154 | 144 | 120 |
+| 6 | 4 | 14 | 350 | 325 | 315 | 285 | 255 |
+| 7 | 4 | 12 | 375 | 343 | 310 | 285 | 255 |
+| 8 | 3 | 18 | 151 | 138 | 122 | 110 | 89 |
+| 9 | 5 | 10 | 496 | 465 | 426 | 405 | 363 |
+| 10 | 4 | 1 | 401 | 375 | 331 | 320 | 288 |
+| 11 | 4 | 11 | 322 | 310 | 266 | 255 | 228 |
+| 12 | 5 | 5 | 526 | 495 | 442 | 420 | 378 |
+| 13 | 4 | 3 | 368 | 355 | 344 | 320 | 288 |
+| 14 | 3 | 15 | 160 | 130 | 130 | 110 | 105 |
+| 15 | 4 | 13 | 315 | 307 | 268 | 262 | 240 |
+| 16 | 4 | 17 | 295 | 280 | 265 | 230 | 207 |
+| 17 | 3 | 9 | 161 | 138 | 138 | 114 | 109 |
+| 18 | 5 | 7 | 518 | 490 | 450 | 420 | 378 |
+
+**Lus Gezandebaan par 3 (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1694 | 48.2 | 64 | 54 |
+| rood (men) | 1660 | 48.0 | 64 | 54 |
+| geel (women) | 1694 | 49.1 | 66 | 54 |
+| rood (women) | 1660 | 48.9 | 66 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 13 | 85 | 85 |
+| 2 | 3 | 9 | 98 | 98 |
+| 3 | 3 | 1 | 122 | 122 |
+| 4 | 3 | 5 | 72 | 55 |
+| 5 | 3 | 15 | 72 | 72 |
+| 6 | 3 | 17 | 77 | 77 |
+| 7 | 3 | 7 | 110 | 110 |
+| 8 | 3 | 11 | 71 | 71 |
+| 9 | 3 | 3 | 140 | 140 |
+| 10 | 3 | 14 | 85 | 85 |
+| 11 | 3 | 10 | 98 | 98 |
+| 12 | 3 | 2 | 122 | 122 |
+| 13 | 3 | 6 | 72 | 55 |
+| 14 | 3 | 16 | 72 | 72 |
+| 15 | 3 | 18 | 77 | 77 |
+| 16 | 3 | 8 | 110 | 110 |
+| 17 | 3 | 12 | 71 | 71 |
+| 18 | 3 | 4 | 140 | 140 |
+
+- **Scorekaartpagina:** https://golfbaanhetwoold.nl/vier-eijckenbaan/
+- **Bestanden:** [scorecard/02_4Eijcken_scorekrt_2024.pdf](golfbaan-het-woold-asten/scorecard/02_4Eijcken_scorekrt_2024.pdf), [scorecard/03_Gezandebaan_scorekrt_2022.pdf](golfbaan-het-woold-asten/scorecard/03_Gezandebaan_scorekrt_2022.pdf), [scorecard/20250218-HC-tabellen-dames.pdf](golfbaan-het-woold-asten/scorecard/20250218-HC-tabellen-dames.pdf), [scorecard/20251210-HC-tabellen-heren.pdf](golfbaan-het-woold-asten/scorecard/20251210-HC-tabellen-heren.pdf), [scorecard/page-gezandebaan.html](golfbaan-het-woold-asten/scorecard/page-gezandebaan.html), [scorecard/page.html](golfbaan-het-woold-asten/scorecard/page.html)
+- **Opmerking:** Vier Eijckenbaan: scorekaart 2024 (tees heten naar lengte 62/58/54/50/45, geen kleur; color=null); CR/slope op de kaart = handicaptabellen heren 10-12-2025 en dames 18-02-2025 (ook 9-holes tabellen). Gezandebaan: scorekaart 2022, 9 holes 2x met eigen S.I.; CR/slope van de kaart (rij-volgorde geel/rood aangenomen).
+
+<a id="golfbaan-hitland-nieuwerkerk"></a>
+## Golfbaan Hitland
+
+Golfbaan Hitland is een openbare golfbaan in het recreatiegebied Park Hitland tussen Nieuwerkerk aan den IJssel en Capelle aan den IJssel. De eerste negen holes van Gerard Jol openden in 1995 en sinds 2000 is het een volwaardige par 71-baan, met veel water en een rijk vogelleven. Daarnaast is er een qualifying 9-holes par 3-baan.
+
+- **Club:** Golfpark Hitland
+- **Adres:** Blaardorpseweg 1, 2911 BC Nieuwerkerk aan den IJssel, Zuid-Holland, NL
+- **GPS:** 51.9474, 4.6130396
+- **Afstand:** 145.1 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** polderbaan met veel water, in recreatiegebied Park Hitland
+- **Opgericht:** 1995
+- **Architect:** Gerard Jol
+- **Telefoon:** 0180 31 71 88
+- **E-mail:** info@hitland.nl
+- **Website:** https://hitland.nl
+- **Greenfee welkom:** True
+- **Eisen:** Minimaal NGF-baanpermissie voor de 18 holes; par 3-baan met baanpermissie par 3 of onder begeleiding
+- **Faciliteiten:** driving range, 9-holes par 3-baan (qualifying), oefengreens, clubhuis met restaurant
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5819 |  |  | 71 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 4 | 10 | 347 |
+| 2 | 5 | 6 | 471 |
+| 3 | 4 | 2 | 386 |
+| 4 | 3 | 14 | 175 |
+| 5 | 4 | 16 | 294 |
+| 6 | 4 | 4 | 370 |
+| 7 | 3 | 12 | 169 |
+| 8 | 5 | 8 | 461 |
+| 9 | 3 | 18 | 128 |
+| 10 | 4 | 7 | 324 |
+| 11 | 3 | 15 | 163 |
+| 12 | 4 | 1 | 382 |
+| 13 | 5 | 9 | 472 |
+| 14 | 4 | 3 | 350 |
+| 15 | 3 | 17 | 133 |
+| 16 | 5 | 13 | 453 |
+| 17 | 4 | 11 | 366 |
+| 18 | 4 | 5 | 375 |
+
+- **Scorekaartpagina:** https://www.golfingrecord.com/golf-scorecard/08dab058-1b01-6c77-cd4f-bd250d0af494
+- **Bestanden:** [scorecard/page.html](golfbaan-hitland-nieuwerkerk/scorecard/page.html), [scorecard/golfingrecord-scorecard.html](golfbaan-hitland-nieuwerkerk/scorecard/golfingrecord-scorecard.html)
+- **Opmerking:** Geen scorekaart of handicaptabel op hitland.nl gevonden. Par, S.I. en lengtes (tee 'Yellow', totaal 5819 m) van golfingrecord.com; site noemt lengtes van 4.520 tot 5.819 m en par 71 (consistent). Andere tees en CR/SR niet uit een controleerbare bron (zoekresultaat noemde 1golf.eu: geel heren 70,5/124, rood dames 71/125, 5012 m – 1golf.eu gaf 403, niet geverifieerd, niet overgenomen). Par 3-baan niet als aparte baan opgenomen (geen holegegevens). Postcode 2911 BC uit derden.
+
+<a id="golfclub-riel-geldrop"></a>
+## Golfclub Riel
+
+Golfclub Riel ligt in het buitengebied tussen Geldrop en Eindhoven. De 9-holesbaan (par 31) werd ontworpen en aangelegd door Berkelmans Greenkeeping en combineert enkele flinke holes, waaronder een par 5 van ruim 460 meter, met korte par 3's. Voor beginners is er een aparte pitch & putt-baan van zes holes.
+
+- **Club:** Golfclub Riel
+- **Adres:** Gijzenrooiseweg 23, 5661 MA Geldrop, Noord-Brabant, NL
+- **GPS:** 51.4227127, 5.5352573
+- **Afstand:** 145.5 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Architect:** Berkelmans Greenkeeping
+- **Telefoon:** 040 2028441
+- **E-mail:** secretaris@gcriel.nl
+- **Website:** https://gcriel.nl
+- **Greenfee welkom:** True
+- **Eisen:** Minimaal handicap 54 of baanpermissie van Golfschool Geldrop; pitch & putt: minstens 1 speler per flight met hcp 54/baanpermissie
+- **Faciliteiten:** 6-holes pitch & putt-baan "De Zes Gehuchten", clubhuis met horeca, golfschool (Golfschool Geldrop)
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 62
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3662 | 60.2 | 107 | 62 |
+| rood (men) | 3280 | 58.1 | 104 | 62 |
+| geel (women) | 3662 | 64.0 | 112 | 62 |
+| rood (women) | 3280 | 61.9 | 101 | 62 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 5 | 282 | 255 |
+| 2 | 3 | 15 | 80 | 80 |
+| 3 | 5 | 1 | 463 | 415 |
+| 4 | 3 | 13 | 58 | 58 |
+| 5 | 3 | 9 | 160 | 137 |
+| 6 | 3 | 7 | 188 | 158 |
+| 7 | 3 | 17 | 98 | 98 |
+| 8 | 4 | 3 | 348 | 304 |
+| 9 | 3 | 11 | 154 | 135 |
+| 10 | 4 | 6 | 282 | 255 |
+| 11 | 3 | 16 | 80 | 80 |
+| 12 | 5 | 2 | 463 | 415 |
+| 13 | 3 | 14 | 58 | 58 |
+| 14 | 3 | 10 | 160 | 137 |
+| 15 | 3 | 8 | 188 | 158 |
+| 16 | 3 | 18 | 98 | 98 |
+| 17 | 4 | 4 | 348 | 304 |
+| 18 | 3 | 12 | 154 | 135 |
+
+**Lus 9 holes** — 9 holes, par 31
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1831 | 30.1 | 107 | 31 |
+| rood (men) | 1640 | 29.1 | 104 | 31 |
+| geel (women) | 1831 | 32.0 | 112 | 31 |
+| rood (women) | 1640 | 31.0 | 101 | 31 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 5 | 282 | 255 |
+| 2 | 3 | 15 | 80 | 80 |
+| 3 | 5 | 1 | 463 | 415 |
+| 4 | 3 | 13 | 58 | 58 |
+| 5 | 3 | 9 | 160 | 137 |
+| 6 | 3 | 7 | 188 | 158 |
+| 7 | 3 | 17 | 98 | 98 |
+| 8 | 4 | 3 | 348 | 304 |
+| 9 | 3 | 11 | 154 | 135 |
+
+- **Scorekaartpagina:** https://gcriel.nl/golfbaan/handicap-conversies/
+- **Bestanden:** [scorecard/Riel-WHS-tabel-Dames.pdf](golfclub-riel-geldrop/scorecard/Riel-WHS-tabel-Dames.pdf), [scorecard/Riel-WHS-tabel-Heren.pdf](golfclub-riel-geldrop/scorecard/Riel-WHS-tabel-Heren.pdf), [scorecard/Scorekaart_18-holes_gcriel_2018-HR.pdf](golfclub-riel-geldrop/scorecard/Scorekaart_18-holes_gcriel_2018-HR.pdf), [scorecard/baaninfo.png](golfclub-riel-geldrop/scorecard/baaninfo.png), [scorecard/page.html](golfclub-riel-geldrop/scorecard/page.html)
+- **Opmerking:** Scorekaart 18 holes (versie 2018, v-11-2016 in de tekst) met lengtes geel/rood en S.I.; CR/slope uit WHS-tabellen d.d. 18-01-2021 (de oudere kaart vermeldt afwijkende ratings). 9-holes loop met S.I. in 18-holes stijl (oneven). Pitch & putt (6 holes) niet opgenomen.
+
+<a id="golfbaan-het-wedde-voorschoten"></a>
+## Sportfondsen Golfbaan Het Wedde
+
+Het Wedde is een openbare 9-holes par 3-baan in Voorschoten, naast het gelijknamige zwembad, en thuisbaan van de Voorschotense Golfclub. De korte holes liggen in een bosrijke omgeving met veel water, smalle fairways en goed geplaatste bunkers, wat de baan ook voor ervaren spelers interessant maakt. Er wordt van matten afgeslagen.
+
+- **Club:** Sportfondsen Golfbaan Het Wedde / Voorschotense Golfclub
+- **Adres:** Richard Wagnerlaan 85, 2253 CD Voorschoten, Zuid-Holland, NL
+- **GPS:** 52.1391341, 4.4519268
+- **Afstand:** 145.6 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** bosrijk park met waterpartijen
+- **Telefoon:** 071 561 48 48
+- **E-mail:** hetwedde@sportfondsen.nl
+- **Website:** https://golfbaanhetwedde.sportfondsen.nl
+- **Starttijden:** https://golfbaanhetwedde.sportfondsen.nl/starttijd/
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range (overdekt, verlicht, max. 30 m), putting green (verlicht), oefengreen met bunker, horeca, golfschool (Mountain Lion Golf Academy), golfshop
+
+**Lus 18 holes (9 holes 2x gespeeld)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1860 | 51.2 | 87 | 54 |
+| rood (women) | 1860 | 53.4 | 89 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 9 | 117 | 117 |
+| 2 | 3 | 11 | 101 | 101 |
+| 3 | 3 | 17 | 60 | 60 |
+| 4 | 3 | 15 | 65 | 65 |
+| 5 | 3 | 3 | 98 | 98 |
+| 6 | 3 | 7 | 131 | 131 |
+| 7 | 3 | 5 | 153 | 153 |
+| 8 | 3 | 1 | 122 | 122 |
+| 9 | 3 | 13 | 83 | 83 |
+| 10 | 3 | 10 | 117 | 117 |
+| 11 | 3 | 12 | 101 | 101 |
+| 12 | 3 | 18 | 60 | 60 |
+| 13 | 3 | 16 | 65 | 65 |
+| 14 | 3 | 4 | 98 | 98 |
+| 15 | 3 | 8 | 131 | 131 |
+| 16 | 3 | 6 | 153 | 153 |
+| 17 | 3 | 2 | 122 | 122 |
+| 18 | 3 | 14 | 83 | 83 |
+
+- **Scorekaartpagina:** https://golfbaanhetwedde.sportfondsen.nl/golfen/
+- **Bestanden:** [scorecard/page.html](golfbaan-het-wedde-voorschoten/scorecard/page.html), [scorecard/2025-scorekaart-Golfbaan-Het-Wedde.pdf](golfbaan-het-wedde-voorschoten/scorecard/2025-scorekaart-Golfbaan-Het-Wedde.pdf), [scorecard/Voorschotense-GC-slagentabel-27-11-2025.pdf](golfbaan-het-wedde-voorschoten/scorecard/Voorschotense-GC-slagentabel-27-11-2025.pdf), [scorecard/Voorschotense_WHS_tabel_Par-3.pdf](golfbaan-het-wedde-voorschoten/scorecard/Voorschotense_WHS_tabel_Par-3.pdf)
+- **Opmerking:** Scorekaart mei 2025 heeft één lengtekolom (MTR, uit 930 m per negen; afslaan van de mat verplicht); dezelfde lengtes zijn hier voor geel (heren) en rood (dames) gezet. De website noemt 1001 m. CR/SR uit slagentabel d.d. 23-10-2025 (18 holes; 9 holes heren 25,6/87, dames 26,7/89); oudere tabel (18-01-2021) ook opgeslagen.
+
+<a id="crayestein-golf-dordrecht"></a>
+## Crayestein Golf
+
+Crayestein ligt aan de oostkant van Dordrecht bij de Biesbosch en is de thuisbaan van Golfclub De Merwelanden. De eerste negen holes slingeren met smalle fairways door het bos, de tweede negen liggen opener in de polder met meer water; de baan eindigt met een par 4 van slechts 225 meter. Naast de 18 holes zijn er een pitch & putt-baan, een Trackman-range en een steakhouse.
+
+- **Club:** Crayestein Golf / Golfclub De Merwelanden
+- **Adres:** Baanhoekweg 50, 3313 LP Dordrecht, Zuid-Holland, NL
+- **GPS:** 51.8171479, 4.7458374
+- **Afstand:** 145.7 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** voorste negen door bos met smalle fairways, achterste negen in de polder met water
+- **Telefoon:** 078 621 12 21
+- **E-mail:** info@crayesteingolf.nl
+- **Website:** https://crayesteingolf.nl
+- **Starttijden:** https://crayesteingolf.nl/tarieven/online-starttijden-reserveren/
+- **Greenfee welkom:** True
+- **Eisen:** GVB/handicap 54 voor de 18-holesbaan (geen lidmaatschap nodig)
+- **Faciliteiten:** Trackman range, pitch & putt-baan (18 holes), golfacademy, golfshop, Jack's Steakhouse, camperplaatsen
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5853 | 72.1 | 129 | 71 |
+| geel (men) | 5639 | 71.0 | 128 | 71 |
+| blauw (men) | 5179 | 69.0 | 121 | 71 |
+| rood (men) | 4891 | 67.4 | 117 | 71 |
+| oranje (men) | 4575 | 66.0 | 116 | 71 |
+| geel (women) | 5639 | 77.5 | 147 | 71 |
+| blauw (women) | 5179 | 74.7 | 134 | 71 |
+| rood (women) | 4891 | 72.7 | 132 | 71 |
+| oranje (women) | 4575 | 71.3 | 125 | 71 |
+
+| Hole | Par | SI | blauw |
+|---|---|---|---|
+| 1 | 4 | 17 | 277 |
+| 2 | 4 | 5 | 330 |
+| 3 | 4 | 15 | 268 |
+| 4 | 4 | 9 | 304 |
+| 5 | 4 | 1 | 302 |
+| 6 | 5 | 11 | 452 |
+| 7 | 3 | 13 | 151 |
+| 8 | 4 | 3 | 304 |
+| 9 | 4 | 7 | 283 |
+| 10 | 5 | 2 | 444 |
+| 11 | 5 | 8 | 399 |
+| 12 | 4 | 12 | 297 |
+| 13 | 3 | 14 | 140 |
+| 14 | 4 | 4 | 344 |
+| 15 | 3 | 10 | 162 |
+| 16 | 4 | 6 | 365 |
+| 17 | 3 | 16 | 132 |
+| 18 | 4 | 18 | 225 |
+
+**Lus 1e 9 holes** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2982 | 36.3 | 137 | 36 |
+| geel (men) | 2876 | 35.7 | 132 | 36 |
+| blauw (men) | 2671 | 35.1 | 122 | 36 |
+| rood (men) | 2555 | 34.4 | 120 | 36 |
+| oranje (men) | 2398 | 33.6 | 120 | 36 |
+| geel (women) | 2876 | 39.0 | 149 | 36 |
+| blauw (women) | 2671 | 37.9 | 133 | 36 |
+| rood (women) | 2555 | 37.1 | 134 | 36 |
+| oranje (women) | 2398 | 36.5 | 128 | 36 |
+
+| Hole | Par | SI | blauw |
+|---|---|---|---|
+| 1 | 4 | 17 | 277 |
+| 2 | 4 | 5 | 330 |
+| 3 | 4 | 15 | 268 |
+| 4 | 4 | 9 | 304 |
+| 5 | 4 | 1 | 302 |
+| 6 | 5 | 11 | 452 |
+| 7 | 3 | 13 | 151 |
+| 8 | 4 | 3 | 304 |
+| 9 | 4 | 7 | 283 |
+
+**Lus 2e 9 holes** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2871 | 35.9 | 120 | 35 |
+| geel (men) | 2763 | 35.3 | 123 | 35 |
+| blauw (men) | 2508 | 34.0 | 118 | 35 |
+| rood (men) | 2336 | 33.1 | 114 | 35 |
+| oranje (men) | 2177 | 32.5 | 112 | 35 |
+| geel (women) | 2763 | 38.6 | 144 | 35 |
+| blauw (women) | 2508 | 36.9 | 134 | 35 |
+| rood (women) | 2336 | 35.7 | 130 | 35 |
+| oranje (women) | 2177 | 34.8 | 123 | 35 |
+
+| Hole | Par | SI | blauw |
+|---|---|---|---|
+| 1 | 5 | 2 | 444 |
+| 2 | 5 | 8 | 399 |
+| 3 | 4 | 12 | 297 |
+| 4 | 3 | 14 | 140 |
+| 5 | 4 | 4 | 344 |
+| 6 | 3 | 10 | 162 |
+| 7 | 4 | 6 | 365 |
+| 8 | 3 | 16 | 132 |
+| 9 | 4 | 18 | 225 |
+
+- **Scorekaartpagina:** https://crayesteingolf.nl/de-baan/playing-handicap/
+- **Bestanden:** [scorecard/Merwelanden-Heren.pdf](crayestein-golf-dordrecht/scorecard/Merwelanden-Heren.pdf), [scorecard/Merwelanden-Dames.pdf](crayestein-golf-dordrecht/scorecard/Merwelanden-Dames.pdf), [scorecard/hole19-scorecard.html](crayestein-golf-dordrecht/scorecard/hole19-scorecard.html)
+- **Opmerking:** Clubsite (crayesteingolf.nl) geeft 403 voor curl; handicaptabellen (NGF, 20-09-2021) via WebFetch opgehaald -> CR/slope en par officieel. Officiele scorekaart niet online. Par, S.I. en per-hole lengtes alleen van blauw via hole19golf.com (lengtes in meters: totaal 5179 = officiele/hole19-totaal, hole 18 = 225 m zoals de clubsite noemt). Totale lengtes per tee van Hole19; per-hole lengtes voor wit/geel/rood/oranje onbekend. Geen page.html opgeslagen (403).
+
+<a id="crayestein-pitch-putt-dordrecht"></a>
+## Crayestein Pitch & Putt
+
+De pitch & putt-baan van Crayestein telt 18 korte holes op negen greens met elk twee afslagplaatsen, tussen 43 en 69 meter lang. Er wordt afgeslagen vanaf kunstgrasmatten en met twee of drie clubs gespeeld; een handicap is niet nodig. Een ronde duurt een tot twee uur.
+
+- **Club:** Crayestein Golf
+- **Adres:** Baanhoekweg 50, 3313 LP Dordrecht, Zuid-Holland, NL
+- **GPS:** 51.8171479, 4.7458374
+- **Afstand:** 145.7 km
+- **Type:** pitch-putt
+- **Holes:** 18
+- **Landschap:** bosrijk terrein met beek en bunkers
+- **Telefoon:** 078 621 12 21
+- **E-mail:** info@crayesteingolf.nl
+- **Website:** https://crayesteingolf.nl/pitch-putt/
+- **Greenfee welkom:** True
+- **Eisen:** Geen handicap nodig
+- **Faciliteiten:** clubverhuur in golfshop, Jack's Steakhouse
+
+**Lus Pitch & Putt 18 holes** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| baan | 963 |  |  | 54 |
+
+| Hole | Par | SI | baan |
+|---|---|---|---|
+| 1 | 3 |  | 43 |
+| 2 | 3 |  | 48 |
+| 3 | 3 |  | 63 |
+| 4 | 3 |  | 46 |
+| 5 | 3 |  | 45 |
+| 6 | 3 |  | 53 |
+| 7 | 3 |  | 59 |
+| 8 | 3 |  | 63 |
+| 9 | 3 |  | 43 |
+| 10 | 3 |  | 50 |
+| 11 | 3 |  | 55 |
+| 12 | 3 |  | 49 |
+| 13 | 3 |  | 43 |
+| 14 | 3 |  | 65 |
+| 15 | 3 |  | 59 |
+| 16 | 3 |  | 53 |
+| 17 | 3 |  | 57 |
+| 18 | 3 |  | 69 |
+
+- **Scorekaartpagina:** https://crayesteingolf.nl/pitch-putt/baanoverzicht/
+- **Bestanden:** [scorecard/pen-cray-score.png](crayestein-pitch-putt-dordrecht/scorecard/pen-cray-score.png), [scorecard/PENP-kaart-met-afstanden.jpg](crayestein-pitch-putt-dordrecht/scorecard/PENP-kaart-met-afstanden.jpg)
+- **Opmerking:** Lengtes (meters) van de baankaart met afstanden (463 + 500 = 963 m). Scorekaart bevat geen par of S.I.; par 3 per hole aangenomen omdat het een pitch & putt-baan is (niet expliciet vermeld). Bestanden via WebFetch opgehaald (curl krijgt 403).
+
+<a id="eyckenduyn-helden"></a>
+## Golfbaan Eyckenduyn
+
+Eyckenduyn is een 9-holes parkbaan in Helden (Peel en Maas) op ongeveer tien hectare. De baan telt vooral par 3-holes en twee par 4's en loopt langs hoge bomen en vijvers. Ze heeft de NGF C-status en is het hele jaar bespeelbaar.
+
+- **Club:** Golfvereniging Eyckenduyn
+- **Adres:** Kesselseweg 9, 5988 CC Helden, Limburg, NL
+- **GPS:** 51.318116, 6.0048378
+- **Afstand:** 146.0 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkbaan met hoge bomen en vijvers (circa 10 ha)
+- **Telefoon:** 077 782 0219
+- **E-mail:** info@eyckenduyn.nl
+- **Website:** https://www.eyckenduyn.nl/
+- **Greenfee welkom:** True
+- **Eisen:** GVB/handicap verplicht (volgens scorekaart)
+- **Faciliteiten:** driving range, golfacademy, horeca (Gastrobar Negen), businessclub
+
+**Lus 9 holes par 3/4 (2x gespeeld = 18 holes)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2990 | 56.9 | 103 | 58 |
+| rood (men) | 2756 | 55.8 | 100 | 58 |
+| geel (women) | 2990 | 59.9 | 103 | 58 |
+| rood (women) | 2756 | 58.6 | 100 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 9 | 160 | 156 |
+| 2 | 3 | 11 | 120 | 111 |
+| 3 | 3 | 13 | 152 | 131 |
+| 4 | 3 | 7 | 151 | 106 |
+| 5 | 3 | 5 | 168 | 142 |
+| 6 | 3 | 17 | 108 | 100 |
+| 7 | 4 | 3 | 211 | 211 |
+| 8 | 4 | 1 | 264 | 264 |
+| 9 | 3 | 15 | 161 | 157 |
+| 10 | 3 | 10 | 160 | 156 |
+| 11 | 3 | 12 | 120 | 111 |
+| 12 | 3 | 14 | 152 | 131 |
+| 13 | 3 | 8 | 151 | 106 |
+| 14 | 3 | 6 | 168 | 142 |
+| 15 | 3 | 18 | 108 | 100 |
+| 16 | 4 | 4 | 211 | 211 |
+| 17 | 4 | 2 | 264 | 264 |
+| 18 | 3 | 16 | 161 | 157 |
+
+- **Scorekaartpagina:** https://www.eyckenduyn.nl/baanstatus
+- **Bestanden:** [scorecard/page.html](eyckenduyn-helden/scorecard/page.html), [scorecard/Eyckenduyn_scorekaart_1.jpg](eyckenduyn-helden/scorecard/Eyckenduyn_scorekaart_1.jpg), [scorecard/Eyckenduyn_18-holes_Heren.pdf](eyckenduyn-helden/scorecard/Eyckenduyn_18-holes_Heren.pdf), [scorecard/Eyckenduyn_18-holes_Dames.pdf](eyckenduyn-helden/scorecard/Eyckenduyn_18-holes_Dames.pdf)
+- **Opmerking:** Par, SI en lengtes van de officiele scorekaart (afbeelding). CR/slope uit de baanhandicaptabellen van 20-09-2023 (heren geel 56.9/103, rood 55.8/100; dames geel 59.9/103, rood 58.6/100). De scorekaart zelf noemt oudere waarden (heren 57.8/109, dames 60.4/102). 9-holestabellen niet gedownload.
+
+<a id="golfclub-capelle-capelle-aan-den-ijssel"></a>
+## Golfclub Capelle
+
+Golfclub Capelle ligt aan de 's-Gravenweg tussen Capelle aan den IJssel en Rotterdam-Kralingen. De vrij korte 18-holes parkbaan (par 69) heeft smalle holes langs sloten en vijvers. Er is een Trackman-range en een brasserie; greenfeespelers kunnen tot twaalf dagen vooruit reserveren.
+
+- **Club:** Golfclub Capelle (Golf & Country Club Capelle a/d IJssel)
+- **Adres:** 's-Gravenweg 311, 2905 LB Capelle aan den IJssel, Zuid-Holland, NL
+- **GPS:** 51.9405489, 4.5921986
+- **Afstand:** 146.7 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** parkbaan met sloten en vijvers
+- **Telefoon:** 010 44 22 337
+- **E-mail:** info@golfclubcapelle.nl
+- **Website:** https://golfclubcapelle.nl
+- **Starttijden:** https://golfclubcapelle.nl/starttijd-reserveren/
+- **Greenfee welkom:** True
+- **Faciliteiten:** Trackman driving range, golfschool, brasserie, vergaderruimte, GEO (duurzaam beheer)
+
+**Lus 18 holes** — 18 holes, par 69
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5155 | 67.9 | 125 | 69 |
+| rood (men) | 4385 | 64.7 | 109 | 69 |
+| oranje (men) | 3925 | 63.2 | 106 | 69 |
+| geel (women) | 5155 | 73.8 | 136 | 69 |
+| rood (women) | 4385 | 69.0 | 126 | 69 |
+| oranje (women) | 3925 | 66.9 | 113 | 69 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 4 | 346 | 285 | 256 |
+| 2 | 4 | 2 | 366 | 307 | 276 |
+| 3 | 3 | 14 | 160 | 138 | 119 |
+| 4 | 5 | 16 | 456 | 386 | 348 |
+| 5 | 3 | 8 | 140 | 125 | 110 |
+| 6 | 4 | 18 | 272 | 233 | 208 |
+| 7 | 3 | 10 | 155 | 136 | 116 |
+| 8 | 4 | 6 | 384 | 319 | 288 |
+| 9 | 5 | 12 | 464 | 399 | 360 |
+| 10 | 3 | 9 | 147 | 121 | 89 |
+| 11 | 4 | 7 | 393 | 333 | 302 |
+| 12 | 4 | 17 | 233 | 200 | 181 |
+| 13 | 4 | 15 | 260 | 214 | 193 |
+| 14 | 3 | 11 | 117 | 107 | 107 |
+| 15 | 4 | 3 | 326 | 286 | 256 |
+| 16 | 4 | 13 | 232 | 201 | 177 |
+| 17 | 3 | 5 | 205 | 177 | 159 |
+| 18 | 5 | 1 | 499 | 418 | 380 |
+
+**Lus 1e 9 holes** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2743 | 34.8 | 127 | 35 |
+| rood (men) | 2328 | 33.2 | 111 | 35 |
+| oranje (men) | 2081 | 32.2 | 105 | 35 |
+| geel (women) | 2743 | 37.8 | 141 | 35 |
+| rood (women) | 2328 | 35.3 | 128 | 35 |
+| oranje (women) | 2081 | 34.4 | 112 | 35 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 4 | 346 | 285 | 256 |
+| 2 | 4 | 2 | 366 | 307 | 276 |
+| 3 | 3 | 14 | 160 | 138 | 119 |
+| 4 | 5 | 16 | 456 | 386 | 348 |
+| 5 | 3 | 8 | 140 | 125 | 110 |
+| 6 | 4 | 18 | 272 | 233 | 208 |
+| 7 | 3 | 10 | 155 | 136 | 116 |
+| 8 | 4 | 6 | 384 | 319 | 288 |
+| 9 | 5 | 12 | 464 | 399 | 360 |
+
+**Lus 2e 9 holes** — 9 holes, par 34
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2412 | 33.2 | 123 | 34 |
+| rood (men) | 2057 | 31.8 | 108 | 34 |
+| oranje (men) | 1844 | 31.0 | 107 | 34 |
+| geel (women) | 2412 | 36.0 | 132 | 34 |
+| rood (women) | 2057 | 33.8 | 123 | 34 |
+| oranje (women) | 1844 | 32.7 | 114 | 34 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 9 | 147 | 121 | 89 |
+| 2 | 4 | 7 | 393 | 333 | 302 |
+| 3 | 4 | 17 | 233 | 200 | 181 |
+| 4 | 4 | 15 | 260 | 214 | 193 |
+| 5 | 3 | 11 | 117 | 107 | 107 |
+| 6 | 4 | 3 | 326 | 286 | 256 |
+| 7 | 4 | 13 | 232 | 201 | 177 |
+| 8 | 3 | 5 | 205 | 177 | 159 |
+| 9 | 5 | 1 | 499 | 418 | 380 |
+
+- **Scorekaartpagina:** https://golfclubcapelle.nl/baan/scorekaart-handicap-tabel/
+- **Bestanden:** [scorecard/page.html](golfclub-capelle-capelle-aan-den-ijssel/scorecard/page.html), [scorecard/Scorekaart-Golfclub-Capelle-nieuwe-pinposities.pdf](golfclub-capelle-capelle-aan-den-ijssel/scorecard/Scorekaart-Golfclub-Capelle-nieuwe-pinposities.pdf), [scorecard/Capelle-a-d-IJssel-Heren-18.pdf](golfclub-capelle-capelle-aan-den-ijssel/scorecard/Capelle-a-d-IJssel-Heren-18.pdf), [scorecard/Capelle-a-d-IJssel-Heren-9.pdf](golfclub-capelle-capelle-aan-den-ijssel/scorecard/Capelle-a-d-IJssel-Heren-9.pdf), [scorecard/Capelle-a-d-IJssel-Dames-18.pdf](golfclub-capelle-capelle-aan-den-ijssel/scorecard/Capelle-a-d-IJssel-Dames-18.pdf), [scorecard/Capelle-a-d-IJssel-Dames-9.pdf](golfclub-capelle-capelle-aan-den-ijssel/scorecard/Capelle-a-d-IJssel-Dames-9.pdf), [scorecard/Tabel-A5-afstanden-per-hole-tussen-de-winter-en-zomergreens.pdf](golfclub-capelle-capelle-aan-den-ijssel/scorecard/Tabel-A5-afstanden-per-hole-tussen-de-winter-en-zomergreens.pdf)
+- **Opmerking:** Scorekaart 'nieuwe pinposities' (2026). CR/slope uit baanhandicaptabellen d.d. 01-04-2021 (Golf & Country Club Capelle a/d IJssel). 9-holes lussen: S.I. in 18-holes-stijl (1e 9 even, 2e 9 oneven). Er is ook een tabel met afstanden tussen winter- en zomergreens.
+
+<a id="golfbaan-de-swinkelsche-someren"></a>
+## Golfbaan De Swinkelsche
+
+De Swinkelsche ligt tussen Someren en Maarheeze en is een 27-holes complex naar ontwerp van Frank Pont. De 18-holes Championship Course combineert brede fairways met grote, sterk glooiende greens en grillig gevormde bunkers, tussen bos, heide en grote waterpartijen. De 9-holes par 3 Peelrijtbaan rond de aquarange is bedoeld voor beginners en het korte spel.
+
+- **Club:** Golfbaan De Swinkelsche
+- **Adres:** Maarheezerdijk 12, 5712 PC Someren, Noord-Brabant, NL
+- **GPS:** 51.3738915, 5.6673129
+- **Afstand:** 146.8 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** bos, heide en water (o.a. beekje Peelrijt)
+- **Architect:** Frank Pont
+- **E-mail:** info@golfbaandeswinkelsche.nl
+- **Website:** https://www.golfbaandeswinkelsche.nl
+- **Greenfee welkom:** True
+- **Eisen:** Peelrijtbaan: minimaal baanpermissie of hcp 54; Championship Course: niet expliciet vermeld
+- **Faciliteiten:** aquarange (driving range), 4 oefengreens (putting, chipping, pitching), 9-holes par 3 Peelrijtbaan, golfschool, horeca, businessclub
+
+**Lus Championship Course (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| zwart (men) | 6401 | 75.3 | 145 | 72 |
+| wit (men) | 6125 | 73.0 | 138 | 72 |
+| geel (men) | 5835 | 72.1 | 132 | 72 |
+| blauw (men) | 5388 | 69.8 | 121 | 72 |
+| rood (men) | 5021 | 68.0 | 116 | 72 |
+| geel (women) | 5835 | 77.9 | 146 | 72 |
+| blauw (women) | 5388 | 75.1 | 137 | 72 |
+| rood (women) | 5021 | 73.5 | 132 | 72 |
+
+| Hole | Par | SI | zwart | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 17 | 390 | 373 | 354 | 323 | 303 |
+| 2 | 5 | 11 | 445 | 442 | 434 | 404 | 376 |
+| 3 | 4 | 13 | 275 | 271 | 264 | 251 | 238 |
+| 4 | 4 | 3 | 415 | 400 | 376 | 353 | 329 |
+| 5 | 3 | 5 | 215 | 199 | 182 | 167 | 154 |
+| 6 | 4 | 15 | 346 | 337 | 321 | 302 | 283 |
+| 7 | 5 | 7 | 476 | 456 | 436 | 395 | 356 |
+| 8 | 4 | 1 | 429 | 412 | 389 | 368 | 333 |
+| 9 | 3 | 9 | 174 | 158 | 145 | 120 | 105 |
+| 10 | 4 | 4 | 428 | 408 | 391 | 360 | 342 |
+| 11 | 4 | 16 | 305 | 290 | 274 | 261 | 259 |
+| 12 | 3 | 18 | 170 | 144 | 134 | 120 | 110 |
+| 13 | 4 | 8 | 360 | 350 | 335 | 314 | 282 |
+| 14 | 5 | 14 | 520 | 502 | 469 | 448 | 424 |
+| 15 | 4 | 10 | 354 | 337 | 332 | 323 | 305 |
+| 16 | 4 | 12 | 364 | 347 | 332 | 281 | 268 |
+| 17 | 3 | 6 | 182 | 174 | 163 | 148 | 133 |
+| 18 | 5 | 2 | 553 | 525 | 504 | 450 | 421 |
+
+- **Scorekaartpagina:** https://www.golfbaandeswinkelsche.nl/baanlayout/
+- **Bestanden:** [scorecard/Swinkelsche-Dames.pdf](golfbaan-de-swinkelsche-someren/scorecard/Swinkelsche-Dames.pdf), [scorecard/Swinkelsche-Heren.pdf](golfbaan-de-swinkelsche-someren/scorecard/Swinkelsche-Heren.pdf), [scorecard/Swinkelsche-Par-3-baan-18-holes-Dames-en-Heren.pdf](golfbaan-de-swinkelsche-someren/scorecard/Swinkelsche-Par-3-baan-18-holes-Dames-en-Heren.pdf), [scorecard/hole-1.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-1.jpg), [scorecard/hole-10.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-10.jpg), [scorecard/hole-11.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-11.jpg), [scorecard/hole-12.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-12.jpg), [scorecard/hole-13.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-13.jpg), [scorecard/hole-14.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-14.jpg), [scorecard/hole-15.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-15.jpg), [scorecard/hole-16.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-16.jpg), [scorecard/hole-17.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-17.jpg), [scorecard/hole-18.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-18.jpg), [scorecard/hole-2.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-2.jpg), [scorecard/hole-3.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-3.jpg), [scorecard/hole-4.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-4.jpg), [scorecard/hole-5.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-5.jpg), [scorecard/hole-6.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-6.jpg), [scorecard/hole-7.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-7.jpg), [scorecard/hole-8.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-8.jpg), [scorecard/hole-9.jpg](golfbaan-de-swinkelsche-someren/scorecard/hole-9.jpg), [scorecard/page-baaninformatie.html](golfbaan-de-swinkelsche-someren/scorecard/page-baaninformatie.html), [scorecard/page.html](golfbaan-de-swinkelsche-someren/scorecard/page.html)
+- **Opmerking:** Geen scorekaart-PDF; par, S.I. en lengtes per tee (zwart/wit/geel/blauw/rood) afgelezen van de hole-tekeningen op /baanlayout/ (2021). CR/slope uit handicaptabellen 27-11-2024 (ook per 9 holes). Peelrijtbaan (9 holes par 3): alleen ratings 18 holes (geel heren 47,3/56, rood heren 46,8/55, geel dames 48,6/60, rood dames 48,0/59), geen holegegevens - niet als loop opgenomen. Telefoonnummer niet eenduidig op de contactpagina gevonden.
+
+<a id="golfbaan-crimpenerhout-krimpen-aan-de-lek"></a>
+## Golfbaan Crimpenerhout
+
+Crimpenerhout is een openbare 9-holesbaan bij Krimpen aan de Lek, in de Krimpenerwaard tegenover Kinderdijk. De par 33-lus ligt tussen sloten en waterpartijen en heeft met hole 8 een flinke par 5 van ruim 500 meter. Voor 18 holes speel je de lus twee keer; er zijn een range, golfschool en brasserie.
+
+- **Club:** Golfbaan Crimpenerhout / Vereniging Golfpark Crimpenerhout
+- **Adres:** C.G. Roosweg 9, 2931 LK Krimpen aan de Lek, Zuid-Holland, NL
+- **GPS:** 51.9060078, 4.6135277
+- **Afstand:** 147.5 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** polderbaan langs de Lek met veel water en bosjes (Krimpenerwaard)
+- **Telefoon:** 0180 55 20 56
+- **E-mail:** info@golfbaancrimpenerhout.nl
+- **Website:** https://www.golfbaancrimpenerhout.nl
+- **Starttijden:** https://crimpenerhout.teecontrol.com/book
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, golfschool, golfshop, brasserie
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 66
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 4534 | 64.2 | 114 | 66 |
+| rood (men) | 3804 | 61.3 | 100 | 66 |
+| oranje (men) | 3118 | 58.6 | 96 | 66 |
+| geel (women) | 4534 | 68.8 | 124 | 66 |
+| rood (women) | 3804 | 63.9 | 112 | 66 |
+| oranje (women) | 3118 | 61.6 | 102 | 66 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 11 | 275 | 232 | 195 |
+| 2 | 3 | 17 | 134 | 89 | 89 |
+| 3 | 4 | 5 | 321 | 263 | 190 |
+| 4 | 3 | 9 | 171 | 144 | 110 |
+| 5 | 4 | 3 | 290 | 244 | 190 |
+| 6 | 3 | 15 | 135 | 135 | 90 |
+| 7 | 4 | 13 | 259 | 225 | 200 |
+| 8 | 5 | 1 | 508 | 425 | 385 |
+| 9 | 3 | 7 | 174 | 145 | 110 |
+| 10 | 4 | 12 | 275 | 232 | 195 |
+| 11 | 3 | 18 | 134 | 89 | 89 |
+| 12 | 4 | 6 | 321 | 263 | 190 |
+| 13 | 3 | 10 | 171 | 144 | 110 |
+| 14 | 4 | 4 | 290 | 244 | 190 |
+| 15 | 3 | 16 | 135 | 135 | 90 |
+| 16 | 4 | 14 | 259 | 225 | 200 |
+| 17 | 5 | 2 | 508 | 425 | 385 |
+| 18 | 3 | 8 | 174 | 145 | 110 |
+
+**Lus 9 holes** — 9 holes, par 33
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2267 | 32.1 | 114 | 33 |
+| rood (men) | 1902 | 30.7 | 100 | 33 |
+| oranje (men) | 1559 | 29.3 | 96 | 33 |
+| geel (women) | 2267 | 34.4 | 124 | 33 |
+| rood (women) | 1902 | 32.0 | 112 | 33 |
+| oranje (women) | 1559 | 30.8 | 102 | 33 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 11 | 275 | 232 | 195 |
+| 2 | 3 | 17 | 134 | 89 | 89 |
+| 3 | 4 | 5 | 321 | 263 | 190 |
+| 4 | 3 | 9 | 171 | 144 | 110 |
+| 5 | 4 | 3 | 290 | 244 | 190 |
+| 6 | 3 | 15 | 135 | 135 | 90 |
+| 7 | 4 | 13 | 259 | 225 | 200 |
+| 8 | 5 | 1 | 508 | 425 | 385 |
+| 9 | 3 | 7 | 174 | 145 | 110 |
+
+- **Scorekaartpagina:** https://www.golfbaancrimpenerhout.nl/golfbaan/baaninformatie/
+- **Bestanden:** [scorecard/page.html](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/page.html), [scorecard/Crimpenerhout-handicaptabel-Heren.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/Crimpenerhout-handicaptabel-Heren.pdf), [scorecard/Crimpenerhout-handicaptabel-Dames.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/Crimpenerhout-handicaptabel-Dames.pdf), [scorecard/Heren-9-holes-scaled.jpg](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/Heren-9-holes-scaled.jpg), [scorecard/Plattegrond-gehele-baan.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/Plattegrond-gehele-baan.pdf), [scorecard/HOLE-1-2013_1.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/HOLE-1-2013_1.pdf), [scorecard/hole-2-11-2013.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/hole-2-11-2013.pdf), [scorecard/HOLE-3-2013_1.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/HOLE-3-2013_1.pdf), [scorecard/HOLE-4-2013_2.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/HOLE-4-2013_2.pdf), [scorecard/HOLE-5-2013.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/HOLE-5-2013.pdf), [scorecard/HOLE-6-2013.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/HOLE-6-2013.pdf), [scorecard/HOLE-7-2013_1.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/HOLE-7-2013_1.pdf), [scorecard/HOLE-8-2013.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/HOLE-8-2013.pdf), [scorecard/HOLE-9-2013.pdf](golfbaan-crimpenerhout-krimpen-aan-de-lek/scorecard/HOLE-9-2013.pdf)
+- **Opmerking:** Par, S.I. (holes 1-9 / 10-18) en lengtes van de holeborden-PDF's op de site (2013); CR/slope uit de baanhandicaptabellen d.d. 10-07-2025 (de oudere tabel Heren 9 holes 05-01-2021 staat er ook). Holeborden kunnen ouder zijn dan de huidige ratings. 9-holes lus: S.I. in 18-holes-stijl (oneven). Ligt in gemeente Krimpenerwaard (niet Krimpen aan den IJssel).
+
+<a id="golf-countryclub-de-tongelreep-eindhoven"></a>
+## Golf- en Countryclub De Tongelreep
+
+De Tongelreep ligt aan de zuidkant van Eindhoven naast het zwembad- en sportcomplex van dezelfde naam. De 9-holes parkbaan is in 2026 vernieuwd tot een par 35 (par 70 over 18 holes) met smalle, licht glooiende fairways, kleine greens en verschillende waterpartijen. Naast de baan liggen een driving range en een kleine par 3-baan.
+
+- **Club:** Golf- en Countryclub De Tongelreep
+- **Adres:** Charles Roelslaan 15, 5644 HX Eindhoven, Noord-Brabant, NL
+- **GPS:** 51.4083651, 5.4738223
+- **Afstand:** 148.8 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkbaan met licht glooiende fairways en waterpartijen
+- **Telefoon:** 040 252 09 62
+- **E-mail:** info@golfdetongelreep.nl
+- **Website:** https://www.golfdetongelreep.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range (Golfcampus), par 3-baan (6 holes, deels in aanleg), Golf Academy, clubrestaurant Hole 19, buggyverhuur
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5430 | 68.5 | 123 | 70 |
+| rood (men) | 4668 | 64.8 | 109 | 70 |
+| oranje (men) |  | 60.2 | 108 | 70 |
+| geel (women) | 5430 | 74.1 | 131 | 70 |
+| rood (women) | 4668 | 70.1 | 122 | 70 |
+| oranje (women) |  | 63.6 | 103 | 70 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 |  | 335 | 270 |
+| 2 | 4 |  | 330 | 270 |
+| 3 | 4 |  | 374 | 335 |
+| 4 | 4 |  | 315 | 279 |
+| 5 | 3 |  | 135 | 125 |
+| 6 | 5 |  | 421 | 371 |
+| 7 | 3 |  | 164 | 137 |
+| 8 | 3 |  | 168 | 128 |
+| 9 | 5 |  | 473 | 419 |
+| 10 | 4 |  | 335 | 270 |
+| 11 | 4 |  | 330 | 270 |
+| 12 | 4 |  | 374 | 335 |
+| 13 | 4 |  | 315 | 279 |
+| 14 | 3 |  | 135 | 125 |
+| 15 | 5 |  | 421 | 371 |
+| 16 | 3 |  | 164 | 137 |
+| 17 | 3 |  | 168 | 128 |
+| 18 | 5 |  | 473 | 419 |
+
+- **Scorekaartpagina:** https://www.golfdetongelreep.nl/baan-layout-2026
+- **Bestanden:** [scorecard/handicaptabel-dames-18-tijdelijk-2026-07-28.pdf](golf-countryclub-de-tongelreep-eindhoven/scorecard/handicaptabel-dames-18-tijdelijk-2026-07-28.pdf), [scorecard/handicaptabel-heren-18-tijdelijk-2026-07-28.pdf](golf-countryclub-de-tongelreep-eindhoven/scorecard/handicaptabel-heren-18-tijdelijk-2026-07-28.pdf), [scorecard/hole-1.png](golf-countryclub-de-tongelreep-eindhoven/scorecard/hole-1.png), [scorecard/hole-2.png](golf-countryclub-de-tongelreep-eindhoven/scorecard/hole-2.png), [scorecard/hole-3.png](golf-countryclub-de-tongelreep-eindhoven/scorecard/hole-3.png), [scorecard/hole-4.png](golf-countryclub-de-tongelreep-eindhoven/scorecard/hole-4.png), [scorecard/hole-5.png](golf-countryclub-de-tongelreep-eindhoven/scorecard/hole-5.png), [scorecard/hole-6.png](golf-countryclub-de-tongelreep-eindhoven/scorecard/hole-6.png), [scorecard/hole-7.png](golf-countryclub-de-tongelreep-eindhoven/scorecard/hole-7.png), [scorecard/hole-8.png](golf-countryclub-de-tongelreep-eindhoven/scorecard/hole-8.png), [scorecard/hole-9.png](golf-countryclub-de-tongelreep-eindhoven/scorecard/hole-9.png), [scorecard/page.html](golf-countryclub-de-tongelreep-eindhoven/scorecard/page.html)
+- **Opmerking:** Vernieuwde baan (qualifying vanaf 23-08-2026). Par en lengtes geel/rood per hole van de hole-afbeeldingen op /baan-layout-2026 (hole 1/10 t/m 9/18); geen scorekaart met S.I. gepubliceerd, oranje lengtes onbekend. Op hole 3 komt een nieuwe gele tee (huidige geel wordt rood). CR/slope uit tijdelijke 18-holes handicaptabellen d.d. 28-07-2026. Par 3-baan (6 holes) niet opgenomen.
+
+<a id="rozenstein-wassenaar"></a>
+## Wassenaarse Golfclub Rozenstein
+
+Rozenstein ligt aan de oostkant van Wassenaar op voormalige landerijen van een boerderij waar ooit rozen voor parfum werden gekweekt. De 18 holes zijn verdeeld over een noord- en een zuiddeel, die via een tunnel met elkaar verbonden zijn, en waterpartijen spelen op veel holes een rol. Naast de grote baan heeft de club een par 3-baan en een driving range.
+
+- **Club:** Wassenaarse Golfclub Rozenstein
+- **Adres:** Dr. Mansveltkade 15, 2242 TZ Wassenaar, Zuid-Holland, NL
+- **GPS:** 52.1540115, 4.3926712
+- **Afstand:** 148.8 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** polderbaan met veel water (Noordbaan en Zuidbaan, verbonden door een tunnel)
+- **Opgericht:** 1984
+- **Telefoon:** 070 511 78 46
+- **E-mail:** secretariaat@rozenstein.nl
+- **Website:** https://rozenstein.nl
+- **Starttijden:** https://rozenstein.nl/bezoekers/greenfees-18-holes-en-twilight/
+- **Greenfee welkom:** True
+- **Eisen:** Greenfeespelers maandag t/m vrijdag na 14.00 (zomer) / 13.00 (winter); WHS-handicap 54 of lager (max. 90 per flight); NGF-pas tonen
+- **Faciliteiten:** driving range, par 3-baan, oefengreen, clubhuis, restaurant, Golf Academy, golfstore, handicarts
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5714 | 72.3 | 137 | 72 |
+| blauw (men) | 5074 | 68.5 | 129 | 72 |
+| rood (men) | 4591 | 66.9 | 118 | 72 |
+| oranje (men) | 4061 | 64.9 | 111 | 72 |
+| geel (women) | 5714 | 78.0 | 149 | 72 |
+| blauw (women) | 5074 | 74.3 | 140 | 72 |
+| rood (women) | 4591 | 71.4 | 138 | 72 |
+| oranje (women) | 4061 | 68.1 | 117 | 72 |
+
+| Hole | Par | SI | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 10 | 321 | 301 | 261 | 233 |
+| 2 | 4 | 14 | 326 | 312 | 283 | 250 |
+| 3 | 3 | 18 | 160 | 149 | 125 | 125 |
+| 4 | 4 | 2 | 354 | 321 | 297 | 238 |
+| 5 | 4 | 6 | 391 | 323 | 285 | 268 |
+| 6 | 3 | 16 | 170 | 144 | 131 | 131 |
+| 7 | 5 | 4 | 450 | 394 | 360 | 275 |
+| 8 | 4 | 12 | 306 | 263 | 245 | 233 |
+| 9 | 5 | 8 | 460 | 408 | 376 | 323 |
+| 10 | 4 | 3 | 350 | 282 | 237 | 215 |
+| 11 | 3 | 9 | 137 | 125 | 125 | 90 |
+| 12 | 4 | 15 | 345 | 307 | 280 | 238 |
+| 13 | 4 | 13 | 300 | 278 | 259 | 259 |
+| 14 | 3 | 17 | 131 | 120 | 111 | 108 |
+| 15 | 5 | 11 | 441 | 379 | 348 | 317 |
+| 16 | 4 | 1 | 318 | 300 | 270 | 230 |
+| 17 | 5 | 7 | 416 | 368 | 327 | 297 |
+| 18 | 4 | 5 | 338 | 300 | 271 | 231 |
+
+- **Scorekaartpagina:** https://rozenstein.nl/baan/baanhandicap-tabellen/
+- **Bestanden:** [scorecard/page.html](rozenstein-wassenaar/scorecard/page.html), [scorecard/scorekaart.png](rozenstein-wassenaar/scorecard/scorekaart.png), [scorecard/sloperating-heren-2026.pdf](rozenstein-wassenaar/scorecard/sloperating-heren-2026.pdf), [scorecard/sloperating-dames-2026.pdf](rozenstein-wassenaar/scorecard/sloperating-dames-2026.pdf)
+- **Opmerking:** Scorekaart (afbeelding, 2026) en baanhandicaptabellen d.d. 24-11-2025. Eén index-kolom (geen aparte S.I. dames). De par 3-baan van de club is niet opgenomen (geen scorekaart gevonden). Baanboekje 2026 (PDF) op rozenstein.nl/baan/baanboekje-2/ niet gedownload.
+
+<a id="de-hooge-rotterdamsche-bergschenhoek"></a>
+## Golfbaan De Hooge Rotterdamsche
+
+De Hooge Rotterdamsche is een openbare 18-holesbaan in het recreatiegebied Rottebergen bij Bergschenhoek, aan de noordrand van Rotterdam. De par 71-baan ligt op en rond kunstmatige heuvels, wordt doorsneden door openbare paden en kent veel water; hier sloeg tourspeler Joost Luiten zijn eerste golfballen. Er wordt van vijf teekleuren gespeeld.
+
+- **Club:** De Hooge Rotterdamsche (golfbaan & golfclub)
+- **Adres:** Rottebandreef 40, 2661 JK Bergschenhoek, Zuid-Holland, NL
+- **GPS:** 51.9706264, 4.5251458
+- **Afstand:** 149.1 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** heuvelachtig recreatiegebied (Rottebergen) met water
+- **Telefoon:** 010 522 00 52
+- **E-mail:** info@dehoogerotterdamsche.nl
+- **Website:** https://www.dehoogerotterdamsche.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, golfschool/professionals, brasserie, golfclub
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5656 | 71.8 | 135 | 71 |
+| geel (men) | 5331 | 69.8 | 128 | 71 |
+| blauw (men) | 5067 | 69.0 | 125 | 71 |
+| rood (men) | 4651 | 66.8 | 118 | 71 |
+| oranje (men) | 3722 | 63.0 | 116 | 71 |
+| geel (women) | 5331 | 75.6 | 139 | 71 |
+| blauw (women) | 5067 | 74.0 | 138 | 71 |
+| rood (women) | 4651 | 71.8 | 130 | 71 |
+| oranje (women) | 3722 | 66.5 | 111 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 8 | 377 | 336 | 336 | 314 | 194 |
+| 2 | 4 | 10 | 333 | 294 | 294 | 251 | 193 |
+| 3 | 4 | 14 | 279 | 269 | 237 | 232 | 167 |
+| 4 | 3 | 18 | 119 | 119 | 109 | 109 | 109 |
+| 5 | 5 | 12 | 463 | 449 | 390 | 384 | 321 |
+| 6 | 4 | 16 | 254 | 239 | 239 | 210 | 162 |
+| 7 | 4 | 2 | 380 | 355 | 355 | 316 | 250 |
+| 8 | 4 | 4 | 384 | 373 | 307 | 298 | 264 |
+| 9 | 4 | 6 | 362 | 323 | 323 | 273 | 247 |
+| 10 | 5 | 9 | 492 | 460 | 437 | 366 | 309 |
+| 11 | 3 | 17 | 103 | 103 | 103 | 103 | 103 |
+| 12 | 5 | 1 | 500 | 465 | 456 | 448 | 332 |
+| 13 | 3 | 15 | 157 | 146 | 141 | 134 | 92 |
+| 14 | 4 | 3 | 350 | 339 | 316 | 310 | 241 |
+| 15 | 3 | 11 | 157 | 144 | 144 | 133 | 73 |
+| 16 | 4 | 5 | 310 | 300 | 300 | 258 | 210 |
+| 17 | 4 | 13 | 320 | 312 | 312 | 249 | 249 |
+| 18 | 4 | 7 | 316 | 305 | 268 | 263 | 206 |
+
+- **Scorekaartpagina:** https://www.dehoogerotterdamsche.nl/baan/playing-handicap/
+- **Bestanden:** [scorecard/page.html](de-hooge-rotterdamsche-bergschenhoek/scorecard/page.html), [scorecard/scorekaart-v5.jpg](de-hooge-rotterdamsche-bergschenhoek/scorecard/scorekaart-v5.jpg), [scorecard/De-Hooge-Rotterdamsche-Heren-18-holes-26-1-2023.jpg](de-hooge-rotterdamsche-bergschenhoek/scorecard/De-Hooge-Rotterdamsche-Heren-18-holes-26-1-2023.jpg), [scorecard/De-Hooge-Rotterdamsche-Dames-18-holes-26-1-2023.jpg](de-hooge-rotterdamsche-bergschenhoek/scorecard/De-Hooge-Rotterdamsche-Dames-18-holes-26-1-2023.jpg)
+- **Opmerking:** Scorekaart v5 (afbeelding; teekolommen zonder naam, kleuren wit/geel/blauw/rood/oranje volgens kleurvlakken en handicaptabellen). CR/SR uit baanhandicaptabellen d.d. 26-01-2023; 9-holestabellen (1-9, 10-18) ook op de site. Contactgegevens via WebFetch van /contact/.
+
+<a id="de-kieviten-golf-wassenaar"></a>
+## Golf De Kieviten
+
+De Kieviten is een Wassenaarse omnisportvereniging (opgericht 1926) waarvan de golfafdeling sinds 1983 een eigen korte 9-holesbaan heeft op het sportpark aan de Dr. Mansveltkade, naast Rozenstein. De baan van par 29 telt zeven par 3's en twee korte par 4's en ligt ingeklemd tussen de hockey- en tennisvelden, zodat vooral nauwkeurig ijzerspel telt.
+
+- **Club:** De Kieviten (golfafdeling)
+- **Adres:** Dr. Mansveltkade 11, 2242 TZ Wassenaar, Zuid-Holland, NL
+- **GPS:** 52.1539871, 4.388145
+- **Afstand:** 149.1 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** compacte parkbaan op het sportpark van omnisportvereniging De Kieviten, tussen hockey- en tennisvelden, met bomen en water
+- **Opgericht:** 1983
+- **Website:** https://www.kieviten.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Volgens 1golf.eu (niet geverifieerd): reserveren nodig, clubpas met geregistreerde handicap; ma-vr handicap 36 vereist.
+- **Faciliteiten:** 9-holes executive baan (par 29), driving range, oefen-/puttinggreen, clubhuis met bar/restaurant, golfles
+
+**Lus 18 holes (9 holes 2x gespeeld)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2840 | 56.4 | 91 | 58 |
+| rood (women) |  | 59.1 | 99 | 58 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 3 | 7 | 160 |
+| 2 | 3 | 11 | 132 |
+| 3 | 3 | 17 | 71 |
+| 4 | 3 | 5 | 185 |
+| 5 | 4 | 9 | 235 |
+| 6 | 3 | 1 | 169 |
+| 7 | 4 | 13 | 228 |
+| 8 | 3 | 15 | 115 |
+| 9 | 3 | 3 | 125 |
+| 10 | 3 | 8 | 160 |
+| 11 | 3 | 12 | 132 |
+| 12 | 3 | 18 | 71 |
+| 13 | 3 | 6 | 185 |
+| 14 | 4 | 10 | 235 |
+| 15 | 3 | 2 | 169 |
+| 16 | 4 | 14 | 228 |
+| 17 | 3 | 16 | 115 |
+| 18 | 3 | 4 | 125 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/golf-de-kieviten
+- **Bestanden:** [scorecard/page.html](de-kieviten-golf-wassenaar/scorecard/page.html), [scorecard/golfpass.html](de-kieviten-golf-wassenaar/scorecard/golfpass.html), [scorecard/1golf.html](de-kieviten-golf-wassenaar/scorecard/1golf.html)
+- **Opmerking:** Officiele site kieviten.nl gaf 403 (CloudFront) voor curl en WebFetch; geen officiele scorekaart gezien. Par, S.I. (1-18, 9 holes 2x gespeeld: 1e ronde oneven, 2e ronde even) en lengtes (metrisch, per 9 holes 1420 m, totaal 2840 m) van Hole19 (tee 'men'); som pars 29+29=58 en som lengtes 2840 kloppen. CR/SR: Hole19 en GolfPass heren 56,4/91 en dames 59,1/99 (beide 2840 m); 1golf.eu geeft Geel heren 56,4/97 en Rood dames 59,6/102 - afwijkend, bron onzeker. Teenamen geel (heren) / rood (dames) volgens 1golf.eu; Hole19 noemt alleen 'men'/'ladies'. Lengtes dameste (rood) per hole onbekend (Hole19 noemt ook 2840 m totaal, mogelijk dezelfde afslagen). Telefoon niet eenduidig (+31 70 220 9005 bij 1golf/GolfPass, +31 70 511 4649 elders) en daarom null. 1golf noemt seizoen 9 januari - 31 augustus en greenfee EUR 30 (EUR 20 jeugd/introducees). Hole19 noemt de baan ten onrechte 18 holes. Wassenaarse Golf Groendael is een andere baan (Groenendaal 3).
+
+<a id="golfpark-westerpark-zoetermeer"></a>
+## Golfpark Westerpark
+
+Golfpark Westerpark ligt aan de westrand van Zoetermeer en maakt deel uit van de Hollandsche Golfclub. De 18 holes bestaan uit een blauwe en een gele lus die ook los als 9 holes te spelen zijn, met een mix van open polderholes, beschutte parkholes, water en enig reliëf. Een overdekte driving range met Toptracer maakt het complex ook geschikt om te oefenen.
+
+- **Club:** Golfpark Westerpark (Hollandsche Golfclub)
+- **Adres:** Heuvelweg 3, 2716 DZ Zoetermeer, Zuid-Holland, NL
+- **GPS:** 52.0534856, 4.4391476
+- **Afstand:** 150.2 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** polder/park met waterpartijen en lichte hoogteverschillen
+- **Telefoon:** 079 320 31 31
+- **E-mail:** info@golfparkwesterpark.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/westerpark/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/westerpark/boek-een-starttijd-golfpark-westerpark/
+- **Greenfee welkom:** True
+- **Eisen:** Handicap 54 of baanpermissie van de Hollandsche Golfclub
+- **Faciliteiten:** driving range (overdekt, Toptracer), oefenbanen, brasserie, golfles
+
+**Lus 18 holes (blauwe lus + gele lus)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5986 | 72.9 | 143 | 71 |
+| geel (men) | 5829 | 72.1 | 145 | 71 |
+| blauw (men) | 5132 | 68.7 | 131 | 71 |
+| rood (men) | 4979 | 67.8 | 128 | 71 |
+| oranje (men) | 4007 | 63.5 | 115 | 71 |
+| geel (women) | 5829 | 78.8 | 152 | 71 |
+| blauw (women) | 5132 | 73.9 | 137 | 71 |
+| rood (women) | 4979 | 72.9 | 139 | 71 |
+| oranje (women) | 4007 | 67.3 | 120 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 12 | 339 | 339 | 282 | 282 | 242 |
+| 2 | 5 | 6 | 494 | 482 | 420 | 405 | 335 |
+| 3 | 4 | 8 | 358 | 339 | 304 | 283 | 219 |
+| 4 | 3 | 14 | 190 | 177 | 157 | 143 | 90 |
+| 5 | 4 | 4 | 416 | 396 | 337 | 325 | 264 |
+| 6 | 3 | 16 | 193 | 175 | 175 | 158 | 152 |
+| 7 | 5 | 10 | 517 | 483 | 433 | 415 | 365 |
+| 8 | 4 | 18 | 236 | 236 | 217 | 217 | 137 |
+| 9 | 4 | 2 | 383 | 383 | 308 | 308 | 262 |
+| 10 | 4 | 11 | 297 | 297 | 288 | 288 | 200 |
+| 11 | 3 | 15 | 147 | 147 | 138 | 138 | 85 |
+| 12 | 4 | 9 | 350 | 350 | 298 | 298 | 248 |
+| 13 | 4 | 7 | 354 | 346 | 303 | 283 | 222 |
+| 14 | 4 | 1 | 413 | 396 | 364 | 348 | 253 |
+| 15 | 3 | 5 | 122 | 122 | 109 | 109 | 106 |
+| 16 | 4 | 13 | 362 | 362 | 299 | 299 | 249 |
+| 17 | 5 | 3 | 514 | 498 | 435 | 415 | 367 |
+| 18 | 4 | 17 | 301 | 301 | 265 | 265 | 211 |
+
+**Lus Blauwe lus (holes 1-9)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 3126 | 37.0 | 142 | 36 |
+| geel (men) | 3010 | 36.3 | 146 | 36 |
+| blauw (men) | 2633 | 34.8 | 129 | 36 |
+| rood (men) | 2536 | 34.1 | 126 | 36 |
+| oranje (men) | 2066 | 31.7 | 115 | 36 |
+| geel (women) | 3010 | 39.9 | 155 | 36 |
+| blauw (women) | 2633 | 37.3 | 135 | 36 |
+| rood (women) | 2536 | 36.8 | 134 | 36 |
+| oranje (women) | 2066 | 33.9 | 120 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 12 | 339 | 339 | 282 | 282 | 242 |
+| 2 | 5 | 6 | 494 | 482 | 420 | 405 | 335 |
+| 3 | 4 | 8 | 358 | 339 | 304 | 283 | 219 |
+| 4 | 3 | 14 | 190 | 177 | 157 | 143 | 90 |
+| 5 | 4 | 4 | 416 | 396 | 337 | 325 | 264 |
+| 6 | 3 | 16 | 193 | 175 | 175 | 158 | 152 |
+| 7 | 5 | 10 | 517 | 483 | 433 | 415 | 365 |
+| 8 | 4 | 18 | 236 | 236 | 217 | 217 | 137 |
+| 9 | 4 | 2 | 383 | 383 | 308 | 308 | 262 |
+
+**Lus Gele lus (holes 10-18)** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2860 | 36.0 | 144 | 35 |
+| geel (men) | 2819 | 35.9 | 144 | 35 |
+| blauw (men) | 2499 | 33.9 | 133 | 35 |
+| rood (men) | 2443 | 33.7 | 130 | 35 |
+| oranje (men) | 1941 | 31.8 | 115 | 35 |
+| geel (women) | 2819 | 39.0 | 150 | 35 |
+| blauw (women) | 2499 | 36.6 | 139 | 35 |
+| rood (women) | 2443 | 36.2 | 144 | 35 |
+| oranje (women) | 1941 | 33.4 | 121 | 35 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 10 | 4 | 11 | 297 | 297 | 288 | 288 | 200 |
+| 11 | 3 | 15 | 147 | 147 | 138 | 138 | 85 |
+| 12 | 4 | 9 | 350 | 350 | 298 | 298 | 248 |
+| 13 | 4 | 7 | 354 | 346 | 303 | 283 | 222 |
+| 14 | 4 | 1 | 413 | 396 | 364 | 348 | 253 |
+| 15 | 3 | 5 | 122 | 122 | 109 | 109 | 106 |
+| 16 | 4 | 13 | 362 | 362 | 299 | 299 | 249 |
+| 17 | 5 | 3 | 514 | 498 | 435 | 415 | 367 |
+| 18 | 4 | 17 | 301 | 301 | 265 | 265 | 211 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/westerpark/course/18-holes-baan-westerpark/
+- **Bestanden:** [scorecard/page.html](golfpark-westerpark-zoetermeer/scorecard/page.html), [scorecard/Westerpark-Scorekaart-18-holes-MRT-2026.pdf](golfpark-westerpark-zoetermeer/scorecard/Westerpark-Scorekaart-18-holes-MRT-2026.pdf), [scorecard/Golfpark-Westerpark-handicaptabellen.pdf](golfpark-westerpark-zoetermeer/scorecard/Golfpark-Westerpark-handicaptabellen.pdf)
+- **Opmerking:** Scorekaart maart 2026 (kolommen wit/geel/blauw/rood/oranje, één S.I.-kolom) en handicaptabellen 2026 (18 holes, 1e en 2e negen). In de 9-holeslussen staat de 18-holes S.I.: blauwe lus even, gele lus oneven.
+
+<a id="golfpark-t-caves-wintelre"></a>
+## Golf & Recreatiepark 't Caves
+
+Golf & Recreatiepark 't Caves ligt in het buitengebied van Wintelre, ten westen van Eindhoven, en combineert golf met een camping. De 9-holesbaan uit 2011 (par 32, met dubbele afslagen) heeft smalle fairways, taaie rough en grote glooiende greens met water dat steeds terugkomt. Daarnaast is er een 9-holes par 3-baan en een groot oefengedeelte.
+
+- **Club:** Golf & Recreatiepark 't Caves
+- **Adres:** Veneind 5, 5513 NE Wintelre, Noord-Brabant, NL
+- **GPS:** 51.436071, 5.3371508
+- **Afstand:** 150.6 km
+- **Type:** 9-holes
+- **Holes:** 18
+- **Landschap:** landelijk, omringd door zandpaden, met waterpartijen
+- **Opgericht:** 2011
+- **Telefoon:** 040-205 1805
+- **E-mail:** info@hetcaves.nl
+- **Website:** https://hetcaves.nl
+- **Greenfee welkom:** True
+- **Eisen:** 9-holesbaan: NGF-baanpermissie; geen kledingvoorschriften
+- **Faciliteiten:** 9-holes par 3-baan, uitgebreid oefengedeelte, golfschool, camping, restaurant
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 64
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 61.6 | 105 | 64 |
+| rood (men) |  | 58.9 | 98 | 64 |
+| geel (women) |  | 65.3 | 113 | 64 |
+| rood (women) |  | 62.4 | 104 | 64 |
+
+**Lus 9 holes** — 9 holes, par 32
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 30.8 | 105 | 32 |
+| rood (men) |  | 29.5 | 98 | 32 |
+| geel (women) |  | 32.7 | 113 | 32 |
+| rood (women) |  | 31.2 | 104 | 32 |
+
+**Lus Par 3-baan 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 47.1 | 62 | 54 |
+| rood (women) |  | 48.6 | 64 | 54 |
+
+**Lus Par 3-baan (9 holes)** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 23.6 | 62 | 27 |
+| rood (women) |  | 24.3 | 64 | 27 |
+
+- **Scorekaartpagina:** https://hetcaves.nl/playing-handicap-tabellen/
+- **Bestanden:** [scorecard/18-holes-par-3.pdf](golfpark-t-caves-wintelre/scorecard/18-holes-par-3.pdf), [scorecard/9-holes-par-3.pdf](golfpark-t-caves-wintelre/scorecard/9-holes-par-3.pdf), [scorecard/page.html](golfpark-t-caves-wintelre/scorecard/page.html), [scorecard/t-Caves-18-holes-Dames.pdf](golfpark-t-caves-wintelre/scorecard/t-Caves-18-holes-Dames.pdf), [scorecard/t-Caves-18-holes-Heren.pdf](golfpark-t-caves-wintelre/scorecard/t-Caves-18-holes-Heren.pdf), [scorecard/t-Caves-9-holes-Dames.pdf](golfpark-t-caves-wintelre/scorecard/t-Caves-9-holes-Dames.pdf), [scorecard/t-Caves-9-holes-Heren.pdf](golfpark-t-caves-wintelre/scorecard/t-Caves-9-holes-Heren.pdf)
+- **Opmerking:** Alleen playing-handicaptabellen d.d. 15-09-2026 gepubliceerd (9-holesbaan par 32 en par 3-baan par 27, elk ook als 18 holes). Geen scorekaart of holegegevens (par/S.I./lengtes) online gevonden; ook niet op golfify.
+
+<a id="golfbaan-kralingen-rotterdam"></a>
+## Golfbaan Kralingen
+
+Golfbaan Kralingen ligt sinds 1933 aan de rand van het Kralingse Bos, binnen de Rotterdamse stadsgrenzen. Op zo'n 16 hectare liggen negen compacte holes met smalle fairways en veel water, ooit ontworpen door Copijn en later aangepast door C.K. Cotton. Hole 5 kent twee varianten (5A en 5B); voor 18 holes wordt de lus twee keer gespeeld.
+
+- **Club:** Golfbaan Kralingen / Golfclub Kralingen
+- **Adres:** Kralingseweg 200, 3062 CG Rotterdam, Zuid-Holland, NL
+- **GPS:** 51.9281146, 4.5336601
+- **Afstand:** 150.9 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkbaan aan de rand van het Kralingse Bos, smalle fairways en veel water
+- **Opgericht:** 1933
+- **Architect:** H. Copijn & Zoon; later aangepast door C.K. Cotton
+- **Telefoon:** 010 45 22 475
+- **E-mail:** info@golfbaankralingen.nl
+- **Website:** https://www.golfbaankralingen.nl
+- **Starttijden:** https://kralingen.teecontrol.com/
+- **Greenfee welkom:** True
+- **Eisen:** Geldige NGF-pas; baanpermissie vereist voor jaar- en rittenkaart (eis voor losse greenfee niet expliciet vermeld)
+- **Faciliteiten:** driving range, putting green, golfschool, Restaurant Kralingen, vergaderruimte
+
+**Lus 18 holes (met hole 5A/14A)** — 18 holes, par 64
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 66.5 | 118 | 64 |
+| rood (men) |  | 62.8 | 121 | 64 |
+| oranje (men) |  | 59.5 | 103 | 64 |
+| geel (women) |  | 71.6 | 138 | 64 |
+| rood (women) |  | 68.4 | 125 | 64 |
+| oranje (women) |  | 63.2 | 106 | 64 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 1 | 212 | 188 | 125 |
+| 2 | 4 | 6 | 370 | 328 | 278 |
+| 3 | 3 | 15 | 120 | 108 | 108 |
+| 4 | 4 | 8 | 378 | 334 | 263 |
+| 5 | 3 | 13 | 197 | 171 | 104 |
+| 6 | 4 | 3 | 360 | 299 | 240 |
+| 7 | 3 | 10 | 151 | 125 | 78 |
+| 8 | 4 | 4 | 373 | 362 | 289 |
+| 9 | 4 | 17 | 264 | 238 | 152 |
+| 10 | 3 | 2 | 212 | 188 | 125 |
+| 11 | 4 | 7 | 370 | 328 | 278 |
+| 12 | 3 | 16 | 120 | 108 | 108 |
+| 13 | 4 | 9 | 378 | 334 | 263 |
+| 14 | 3 | 14 | 197 | 171 | 104 |
+| 15 | 4 |  |  |  |  |
+| 16 | 3 | 12 | 151 | 125 | 78 |
+| 17 | 4 | 5 | 373 | 321 | 289 |
+| 18 | 4 | 18 | 264 | 238 | 152 |
+
+**Lus 18 holes (met hole 5B/14B)** — 18 holes, par 64
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 65.5 | 118 | 64 |
+| rood (men) |  | 62.4 | 118 | 64 |
+| oranje (men) |  | 59.5 | 101 | 64 |
+| geel (women) |  | 70.3 | 137 | 64 |
+| rood (women) |  | 67.6 | 125 | 64 |
+| oranje (women) |  | 62.9 | 109 | 64 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 1 | 212 | 188 | 125 |
+| 2 | 4 | 6 | 370 | 328 | 278 |
+| 3 | 3 | 15 | 120 | 108 | 108 |
+| 4 | 4 | 8 | 378 | 334 | 263 |
+| 5 | 3 | 13 | 133 | 124 | 124 |
+| 6 | 4 | 3 | 360 | 299 | 240 |
+| 7 | 3 | 10 | 151 | 125 | 78 |
+| 8 | 4 | 4 | 373 | 362 | 289 |
+| 9 | 4 | 17 | 264 | 238 | 152 |
+| 10 | 3 | 2 | 212 | 188 | 125 |
+| 11 | 4 | 7 | 370 | 328 | 278 |
+| 12 | 3 | 16 | 120 | 108 | 108 |
+| 13 | 4 | 9 | 378 | 334 | 263 |
+| 14 | 3 | 14 | 133 | 124 | 124 |
+| 15 | 4 |  |  |  |  |
+| 16 | 3 | 12 | 151 | 125 | 78 |
+| 17 | 4 | 5 | 373 | 321 | 289 |
+| 18 | 4 | 18 | 264 | 238 | 152 |
+
+**Lus 9 holes (met hole 5A)** — 9 holes, par 32
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2425 | 33.3 | 118 | 32 |
+| rood (men) | 2153 | 31.4 | 121 | 32 |
+| oranje (men) | 1637 | 29.8 | 103 | 32 |
+| geel (women) | 2425 | 35.8 | 138 | 32 |
+| rood (women) | 2153 | 34.2 | 125 | 32 |
+| oranje (women) | 1637 | 31.6 | 106 | 32 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 1 | 212 | 188 | 125 |
+| 2 | 4 | 6 | 370 | 328 | 278 |
+| 3 | 3 | 15 | 120 | 108 | 108 |
+| 4 | 4 | 8 | 378 | 334 | 263 |
+| 5 | 3 | 13 | 197 | 171 | 104 |
+| 6 | 4 | 3 | 360 | 299 | 240 |
+| 7 | 3 | 10 | 151 | 125 | 78 |
+| 8 | 4 | 4 | 373 | 362 | 289 |
+| 9 | 4 | 17 | 264 | 238 | 152 |
+
+**Lus 9 holes (met hole 5B)** — 9 holes, par 32
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2361 | 32.8 | 118 | 32 |
+| rood (men) | 2106 | 31.2 | 118 | 32 |
+| oranje (men) | 1657 | 29.8 | 101 | 32 |
+| geel (women) | 2361 | 35.2 | 137 | 32 |
+| rood (women) | 2106 | 33.8 | 125 | 32 |
+| oranje (women) | 1657 | 31.5 | 109 | 32 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 1 | 212 | 188 | 125 |
+| 2 | 4 | 6 | 370 | 328 | 278 |
+| 3 | 3 | 15 | 120 | 108 | 108 |
+| 4 | 4 | 8 | 378 | 334 | 263 |
+| 5 | 3 | 13 | 133 | 124 | 124 |
+| 6 | 4 | 3 | 360 | 299 | 240 |
+| 7 | 3 | 10 | 151 | 125 | 78 |
+| 8 | 4 | 4 | 373 | 362 | 289 |
+| 9 | 4 | 17 | 264 | 238 | 152 |
+
+- **Scorekaartpagina:** https://www.golfbaankralingen.nl/golfbaan/de-golfbaan/
+- **Bestanden:** [scorecard/page.html](golfbaan-kralingen-rotterdam/scorecard/page.html), [scorecard/page-handicaptabel.html](golfbaan-kralingen-rotterdam/scorecard/page-handicaptabel.html), [scorecard/GBK-Hole-1-10-2.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-1-10-2.jpg), [scorecard/GBK-Hole-2-11-1.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-2-11-1.jpg), [scorecard/GBK-Hole-3-12-2.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-3-12-2.jpg), [scorecard/GBK-Hole-4-13-1.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-4-13-1.jpg), [scorecard/GBK-Hole-5a-14a-2.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-5a-14a-2.jpg), [scorecard/GBK-Hole-5b-14b-2.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-5b-14b-2.jpg), [scorecard/GBK-Hole-6-15-1.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-6-15-1.jpg), [scorecard/GBK-Hole-7-16-2.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-7-16-2.jpg), [scorecard/GBK-Hole-8-17-2.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-8-17-2.jpg), [scorecard/GBK-Hole-17.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-17.jpg), [scorecard/GBK-Hole-9-18-1.jpg](golfbaan-kralingen-rotterdam/scorecard/GBK-Hole-9-18-1.jpg), [scorecard/baan-overzicht-2023-wpcf_1200x304.jpg](golfbaan-kralingen-rotterdam/scorecard/baan-overzicht-2023-wpcf_1200x304.jpg), [scorecard/1F1902C0-A7B9-4464-99A0-525BC81EC8A2.jpeg](golfbaan-kralingen-rotterdam/scorecard/1F1902C0-A7B9-4464-99A0-525BC81EC8A2.jpeg), [scorecard/933B3794-0FD6-454C-92F2-C9BB14E3394A.jpeg](golfbaan-kralingen-rotterdam/scorecard/933B3794-0FD6-454C-92F2-C9BB14E3394A.jpeg), [scorecard/A3DDC60F-52CC-499E-BB80-CF6AF138F263.jpeg](golfbaan-kralingen-rotterdam/scorecard/A3DDC60F-52CC-499E-BB80-CF6AF138F263.jpeg), [scorecard/A9CCA88F-04A8-4B47-99B4-7F26C71F3474.jpeg](golfbaan-kralingen-rotterdam/scorecard/A9CCA88F-04A8-4B47-99B4-7F26C71F3474.jpeg), [scorecard/AA3C6BC8-0503-4DC5-9678-EE7576C4BBF3.jpeg](golfbaan-kralingen-rotterdam/scorecard/AA3C6BC8-0503-4DC5-9678-EE7576C4BBF3.jpeg), [scorecard/B1B13097-7D5B-4553-9AEF-071B9FF3138A.jpeg](golfbaan-kralingen-rotterdam/scorecard/B1B13097-7D5B-4553-9AEF-071B9FF3138A.jpeg), [scorecard/D477C856-149A-4BC9-B909-2851234C6FFA.jpeg](golfbaan-kralingen-rotterdam/scorecard/D477C856-149A-4BC9-B909-2851234C6FFA.jpeg), [scorecard/EEFCF3FB-A1D9-47F5-82FA-9A90DDD0A049.jpeg](golfbaan-kralingen-rotterdam/scorecard/EEFCF3FB-A1D9-47F5-82FA-9A90DDD0A049.jpeg)
+- **Opmerking:** Geen losse scorekaart online; par, lengtes (geel/rood/oranje) en S.I. komen van de hole-afbeeldingen op de site (geüpload 2018). S.I. verschilt per tee: 'si' = geel, 'si_women' = S.I. van rood en oranje. Hole 15 (tweede ronde van hole 6) ontbreekt op de site: lengtes en S.I. onbekend (par 4 afgeleid van par 32 per 9 en par 64 per 18 volgens de handicaptabellen; door eliminatie zou S.I. 11 (geel) / 10 (rood) zijn, niet ingevuld). Hole 17 heeft andere rood-lengte dan hole 8. CR/slope uit baanhandicaptabellen d.d. 15-06-2021 (Golfclub Kralingen), apart voor variant 5A en 5B. Hole-afbeeldingen kunnen ouder zijn dan de tabellen. In de 9-holes lussen staat de S.I. van holes 1-9 uit de 18-holes nummering (niet oneven/even, geen permutatie van 1-9).
+
+<a id="koninklijke-haagsche-wassenaar"></a>
+## Koninklijke Haagsche Golf & Country Club
+
+De Haagsche is de oudste golfclub van Nederland (1893) en speelt sinds 1947 op een duinbaan in Wassenaar. De baan uit 1938 ligt in het glooiende duingebied Meijendel en volgt het natuurlijke reliëf, waardoor vrijwel elke hole een eigen karakter heeft. De club geldt als een van de meest gerenommeerde banen van het continent en laat gasten beperkt toe.
+
+- **Club:** Koninklijke Haagsche Golf & Country Club (KHG&CC)
+- **Adres:** Groot Haesebroekseweg 22, 2243 EC Wassenaar, Zuid-Holland, NL
+- **GPS:** 52.134082, 4.3651004
+- **Afstand:** 151.4 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** duinbaan (Meijendel)
+- **Opgericht:** 1893
+- **Architect:** Colt, Alison & Morrison Ltd (baan aangelegd 1938)
+- **Telefoon:** 070 517 96 07
+- **E-mail:** secretariaat@khgcc.nl
+- **Website:** https://khgcc.nl
+- **Greenfee welkom:** True
+- **Eisen:** Gasten alleen doordeweeks (niet vrijdagmiddag na 11.00 en weekend); NGF-pas verplicht; maximaal exact handicap 24,0; geen vierballen; reserveren via de starter de dag ervoor vanaf 14.00 uur
+- **Faciliteiten:** clubhuis, restaurant, oefenfaciliteiten
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6251 | 76.0 | 149 | 72 |
+| geel (men) | 5657 | 72.9 | 148 | 72 |
+| blauw (men) | 5288 | 70.7 | 140 | 72 |
+| rood (men) | 5061 | 69.6 | 133 | 72 |
+| oranje (men) | 4495 | 66.8 | 124 | 72 |
+| geel (women) | 5657 | 79.3 | 150 | 72 |
+| blauw (women) | 5288 | 77.0 | 146 | 72 |
+| rood (women) | 5061 | 75.6 | 143 | 72 |
+| oranje (women) | 4495 | 72.3 | 128 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 13 | 461 | 443 | 443 | 431 | 374 |
+| 2 | 4 | 7 | 352 | 339 | 298 | 291 | 291 |
+| 3 | 4 | 5 | 348 | 317 | 299 | 299 | 184 |
+| 4 | 3 | 11 | 199 | 161 | 149 | 149 | 127 |
+| 5 | 5 | 15 | 448 | 432 | 402 | 375 | 372 |
+| 6 | 4 | 1 | 428 | 386 | 332 | 332 | 283 |
+| 7 | 4 | 9 | 351 | 293 | 293 | 280 | 247 |
+| 8 | 3 | 17 | 207 | 185 | 160 | 160 | 125 |
+| 9 | 4 | 3 | 329 | 319 | 284 | 255 | 255 |
+| 10 | 5 | 12 | 445 | 430 | 408 | 388 | 388 |
+| 11 | 4 | 6 | 377 | 350 | 330 | 299 | 247 |
+| 12 | 3 | 16 | 153 | 143 | 122 | 122 | 82 |
+| 13 | 4 | 2 | 378 | 343 | 312 | 303 | 239 |
+| 14 | 4 | 10 | 389 | 313 | 270 | 270 | 270 |
+| 15 | 4 | 4 | 387 | 340 | 340 | 319 | 236 |
+| 16 | 4 | 14 | 353 | 263 | 263 | 243 | 230 |
+| 17 | 3 | 18 | 147 | 138 | 138 | 119 | 119 |
+| 18 | 5 | 8 | 499 | 462 | 445 | 426 | 426 |
+
+- **Scorekaartpagina:** https://khgcc.nl/nl/de-baan/holes
+- **Bestanden:** [scorecard/page.html](koninklijke-haagsche-wassenaar/scorecard/page.html), [scorecard/handicaptabel-heren.pdf](koninklijke-haagsche-wassenaar/scorecard/handicaptabel-heren.pdf), [scorecard/handicaptabel-dames.pdf](koninklijke-haagsche-wassenaar/scorecard/handicaptabel-dames.pdf), [scorecard/baanboekje.pdf](koninklijke-haagsche-wassenaar/scorecard/baanboekje.pdf)
+- **Opmerking:** Par, S.I. en lengtes per hole van de holepagina's (khgcc.nl/holes/page/1..18); geen aparte S.I. dames gepubliceerd. CR/slope uit de baanhandicaptabellen d.d. 05-12-2023. Tee-totalen zijn de som van de holelengtes.
+
+<a id="golfcentrum-dongen"></a>
+## Golfcentrum Dongen
+
+Golfcentrum Dongen heeft een landelijk gelegen 9-holes baan van par 36 die opgaat in de Brabantse natuur. De baan is geschikt voor beginners en gevorderden en wordt voor 18 holes twee keer gespeeld. Bij het clubhuis is horeca met uitzicht over de baan.
+
+- **Club:** Golfcentrum Dongen / Golfvereniging Dongen
+- **Adres:** Zandeweg 2, 5107 NM Dongen, Noord-Brabant, NL
+- **GPS:** 51.617, 4.9154
+- **Afstand:** 151.9 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** landelijk Brabants landschap met waterpartijen
+- **Telefoon:** 0162 320 783
+- **E-mail:** info@golfdongen.nl
+- **Website:** https://www.golfcentrumdongen.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, horeca met uitzicht op de baan, golfschool
+
+**Lus 9 holes** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| heren (men) | 2758 |  |  | 36 |
+| dames (women) | 2458 |  |  | 36 |
+
+| Hole | Par | SI | heren | dames |
+|---|---|---|---|---|
+| 1 | 4 | 13 | 249 | 229 |
+| 2 | 5 | 3 | 525 | 458 |
+| 3 | 3 | 11 | 115 | 101 |
+| 4 | 5 | 7 | 436 | 384 |
+| 5 | 4 | 5 | 385 | 344 |
+| 6 | 4 | 1 | 411 | 375 |
+| 7 | 3 | 15 | 143 | 129 |
+| 8 | 4 | 9 | 274 | 238 |
+| 9 | 4 | 17 | 220 | 200 |
+
+- **Scorekaartpagina:** https://www.golfcentrumdongen.nl/plattegronden-hcptabel/
+- **Bestanden:** [scorecard/Dongen-Heren-Hcp-2022.pdf](golfcentrum-dongen/scorecard/Dongen-Heren-Hcp-2022.pdf), [scorecard/Dongen-Dames-Hcp-2022.pdf](golfcentrum-dongen/scorecard/Dongen-Dames-Hcp-2022.pdf), [scorecard/page.html](golfcentrum-dongen/scorecard/page.html), [scorecard/holes-montage.png](golfcentrum-dongen/scorecard/holes-montage.png), [scorecard/golfify-golfcentrum-dongen.html](golfcentrum-dongen/scorecard/golfify-golfcentrum-dongen.html)
+- **Opmerking:** De clubsite toont alleen uitsneden van holeplattegronden (zonder par/S.I.) en handicaptabellen. Par, S.I. en lengtes van golfify.io (tees "Mensen"/"Dames"); eenheid onzeker, vermoedelijk yards (de officiële plattegronden tonen kortere afstanden, bv. hole 1 230/219). Officiële ratings 18 holes (par 72, tabel 08-09-2022): heren geel 69,6/115, rood 66,9/105, oranje 64,1/98; dames geel 75,1/131, rood 71,2/124, oranje 67,2/112 — niet aan de 9-holeslus gekoppeld omdat de tee-indeling (geel/rood/oranje) niet overeenkomt met de holegegevens.
+
+<a id="eindhovensche-golf-valkenswaard"></a>
+## Eindhovensche Golf
+
+De Eindhovensche ligt tussen bos en heide ten noorden van Valkenswaard en werd eind jaren twintig ontworpen door Harry Colt. De baan geldt als een klassieke inland links met heuvelende fairways, heideranden en strategisch geplaatste bunkers, en ontving vele grote toernooien. Het karakteristieke clubhuis uit 1930 kijkt uit over het oude zwembad en enkele holes.
+
+- **Club:** Eindhovensche Golf
+- **Adres:** Eindhovenseweg 300, 5553 VB Valkenswaard, Noord-Brabant, NL
+- **GPS:** 51.3699012, 5.4760304
+- **Afstand:** 152.5 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** bos en heide (inland links)
+- **Opgericht:** 1930
+- **Architect:** H.S. Colt (1928), landschapsarchitect Copijn
+- **Telefoon:** 040 201 48 16
+- **E-mail:** info@eindhovenschegolf.nl
+- **Website:** https://www.eindhovenschegolf.nl
+- **Greenfee welkom:** True
+- **Eisen:** Greenfee voor NGF-leden en leden met speelrecht elders (zie greenfeeregeling/bezoekersregeling)
+- **Faciliteiten:** driving range, Eindhovensche Golf Academy, executive course (5 holes par 3), golfshop, clubhuis, restaurant De Gagel
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) |  | 73.9 | 136 | 72 |
+| geel (men) |  | 71.4 | 132 | 72 |
+| blauw (men) |  | 69.4 | 127 | 72 |
+| rood (men) |  | 67.5 | 122 | 72 |
+| oranje (men) |  | 64.1 | 118 | 72 |
+| geel (women) |  | 77.4 | 142 | 72 |
+| blauw (women) |  | 74.9 | 134 | 72 |
+| rood (women) |  | 72.4 | 128 | 72 |
+| oranje (women) |  | 68.9 | 121 | 72 |
+
+| Hole | Par | SI |  |
+|---|---|---|
+| 1 | 4 | 8 |  |
+| 2 | 4 | 16 |  |
+| 3 | 3 | 6 |  |
+| 4 | 5 | 12 |  |
+| 5 | 4 | 4 |  |
+| 6 | 4 | 14 |  |
+| 7 | 4 | 2 |  |
+| 8 | 3 | 18 |  |
+| 9 | 5 | 10 |  |
+| 10 | 4 | 1 |  |
+| 11 | 3 | 17 |  |
+| 12 | 4 | 9 |  |
+| 13 | 4 | 3 |  |
+| 14 | 4 | 11 |  |
+| 15 | 5 | 13 |  |
+| 16 | 3 | 15 |  |
+| 17 | 5 | 5 |  |
+| 18 | 4 | 7 |  |
+
+- **Scorekaartpagina:** https://www.eindhovenschegolf.nl/baan/courseguide
+- **Bestanden:** [scorecard/course-guide-eg-202110271024-2.jpg](eindhovensche-golf-valkenswaard/scorecard/course-guide-eg-202110271024-2.jpg), [scorecard/eindhovensche-dames-18-holes.pdf](eindhovensche-golf-valkenswaard/scorecard/eindhovensche-dames-18-holes.pdf), [scorecard/eindhovensche-dames-9-holes.pdf](eindhovensche-golf-valkenswaard/scorecard/eindhovensche-dames-9-holes.pdf), [scorecard/eindhovensche-heren-18-holes.pdf](eindhovensche-golf-valkenswaard/scorecard/eindhovensche-heren-18-holes.pdf), [scorecard/eindhovensche-heren-9-holes.pdf](eindhovensche-golf-valkenswaard/scorecard/eindhovensche-heren-9-holes.pdf), [scorecard/page-handicap.html](eindhovensche-golf-valkenswaard/scorecard/page-handicap.html), [scorecard/page.html](eindhovensche-golf-valkenswaard/scorecard/page.html)
+- **Opmerking:** Geen downloadbare scorekaart. Par en S.I. uit de officiële course guide (uitgave 2021, als losse JPG-pagina's op /baan/courseguide). Holelengtes staan wel in de guide maar zijn op de webafbeeldingen (564 px) niet betrouwbaar leesbaar; totale lengtes 2021: wit 6317, geel 5916, blauw 5456, rood 5079, oranje 4604 m (course-guide-...-2.jpg) - niet in tees gezet omdat de ratings in 2024 zijn herzien. CR/slope uit handicaptabellen 15-08-2024 (ook 9-holes tabellen aanwezig). Executive course (5 holes par 3) niet opgenomen.
+
+<a id="leender-golfclub-haviksoord"></a>
+## Leender Golfclub Haviksoord
+
+Haviksoord ligt in de bossen van de voormalige Zevenhuizensche Heide bij Leende, vlak langs de A2. De eerste negen holes stammen uit 1976; in 2006 kwamen er negen nieuwe bosholes bij. De baan loopt grotendeels tussen naaldbomen en rond een oude zandwinplas, en dankt haar naam aan een vliegtuigfabriek die hier ooit stond.
+
+- **Club:** Leender Golfclub Haviksoord
+- **Adres:** Maarheezerweg Noord 11, 5595 XG Leende, Noord-Brabant, NL
+- **GPS:** 51.3347782, 5.5838898
+- **Afstand:** 153.0 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** bos (voormalige heide "Zevenhuizensche Heide") met meer
+- **Telefoon:** +31 (0)40 2061818
+- **E-mail:** info@haviksoord.nl
+- **Website:** https://www.haviksoord.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** putting green, clubhuis
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6083 | 72.2 | 136 | 72 |
+| geel (men) | 5703 | 70.9 | 130 | 72 |
+| rood (men) | 5071 | 68.3 | 111 | 72 |
+| geel (women) | 5703 | 76.5 | 142 | 72 |
+| rood (women) | 5071 | 73.3 | 128 | 72 |
+
+| Hole | Par | SI | wit | geel | rood |
+|---|---|---|---|---|---|
+| 1 | 5 | 7 | 443 | 438 | 384 |
+| 2 | 5 | 5 | 497 | 454 | 428 |
+| 3 | 4 | 13 | 292 | 287 | 236 |
+| 4 | 3 | 15 | 160 | 132 | 110 |
+| 5 | 4 | 11 | 350 | 314 | 280 |
+| 6 | 4 | 1 | 383 | 349 | 307 |
+| 7 | 3 | 17 | 120 | 111 | 103 |
+| 8 | 4 | 3 | 341 | 341 | 309 |
+| 9 | 4 | 9 | 346 | 346 | 288 |
+| 10 | 3 | 16 | 163 | 163 | 144 |
+| 11 | 4 | 4 | 419 | 390 | 354 |
+| 12 | 5 | 2 | 510 | 468 | 437 |
+| 13 | 4 | 14 | 303 | 283 | 246 |
+| 14 | 4 | 12 | 379 | 340 | 285 |
+| 15 | 3 | 18 | 163 | 152 | 126 |
+| 16 | 5 | 10 | 484 | 453 | 402 |
+| 17 | 4 | 8 | 399 | 368 | 333 |
+| 18 | 4 | 6 | 331 | 314 | 299 |
+
+- **Scorekaartpagina:** https://www.haviksoord.nl/
+- **Bestanden:** [scorecard/Handicaptabel-Dames2023.pdf](leender-golfclub-haviksoord/scorecard/Handicaptabel-Dames2023.pdf), [scorecard/Handicaptabel-heren2023.pdf](leender-golfclub-haviksoord/scorecard/Handicaptabel-heren2023.pdf), [scorecard/Scorekaart.pdf](leender-golfclub-haviksoord/scorecard/Scorekaart.pdf), [scorecard/page.html](leender-golfclub-haviksoord/scorecard/page.html)
+- **Opmerking:** Scorekaart (PDF) met wit/geel/rood, S.I. en CR/slope; komt overeen met handicaptabellen d.d. 29-08-2022 (ook per 9 holes). Eerste 9 holes 1976, uitbreiding naar 18 in 2006.
+
+<a id="hcc-groen-geel-golf-wassenaar"></a>
+## Haagsche Country Club Groen-Geel (golf)
+
+Groen-Geel is een countryclub aan de Buurtweg in Wassenaar met naast andere sporten een eigen 9-holes golfbaan van par 31. De korte baan bestaat uit vijf par 3's en vier par 4's en ligt vlak bij de banen van Duinzicht en Groendael.
+
+- **Club:** H.C.C. Groen-Geel
+- **Adres:** Buurtweg 122, 2244 AJ Wassenaar, Zuid-Holland, NL
+- **GPS:** 52.1145227, 4.3434618
+- **Afstand:** 153.5 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Website:** https://www.groengeel.nl
+- **Faciliteiten:** driving range
+
+**Lus 9 holes** — 9 holes, par 31
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1778 | 29.9 | 98 | 31 |
+| rood (men) | 1714 | 29.6 | 97 | 31 |
+| geel (women) | 1778 | 31.7 | 97 | 31 |
+| rood (women) | 1714 | 31.3 | 95 | 31 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 5 | 275 | 251 |
+| 2 | 4 | 2 | 280 | 275 |
+| 3 | 3 | 8 | 125 | 125 |
+| 4 | 4 | 7 | 212 | 202 |
+| 5 | 4 | 1 | 286 | 273 |
+| 6 | 3 | 9 | 118 | 118 |
+| 7 | 3 | 3 | 185 | 173 |
+| 8 | 3 | 6 | 135 | 135 |
+| 9 | 3 | 4 | 162 | 162 |
+
+- **Scorekaartpagina:** https://www.golfify.io/courses/haagsche-countryclub-groen-geel
+- **Bestanden:** [scorecard/golfify-scorecard.html](hcc-groen-geel-golf-wassenaar/scorecard/golfify-scorecard.html), [scorecard/golfpass-scorecard.html](hcc-groen-geel-golf-wassenaar/scorecard/golfpass-scorecard.html)
+- **Opmerking:** Officiële site groengeel.nl gaf 403 (curl en WebFetch); geen officiële scorekaart bekeken. Holegegevens en CR/SR (9 holes) van golfify.io. GolfPass wijkt af: andere lengtes ('Green' 1751 m, waarden in yards), andere S.I. (11,5,17,7,1,15,3,9,13, 18-holesstijl) en andere ratings – bron dus onzeker, controle bij de club aanbevolen. Geen contactgegevens geverifieerd.
+
+<a id="valkenswaardse-golfclub"></a>
+## Valkenswaardse Golfclub
+
+De Valkenswaardse Golfclub speelt op een 9-holes par 29-baan op sportpark Den Dries aan de noordkant van Valkenswaard. De korte holes lopen tussen en langs de sportvelden; door het openbare karakter van het park mogen gasten alleen met een lid spelen. In de wintermaanden zijn er drie extra holes op het terrein van het buitenbad.
+
+- **Club:** Valkenswaardse Golfclub
+- **Adres:** Sportpark Den Dries (parkeren Pastoor Heerkensdreef), 5552 KA Valkenswaard, Noord-Brabant, NL
+- **GPS:** 51.3652, 5.4586
+- **Afstand:** 153.5 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** sportpark (open, tussen sportvelden)
+- **Website:** https://valkenswaardsegolfclub.nl
+- **Greenfee welkom:** True
+- **Eisen:** Greenfee alleen onder begeleiding van een VGC-lid; eerst introductieronde met marshal
+- **Faciliteiten:** driving range (130 m, 2 overdekte afslagplaatsen), oefengreen, oefenbunker, clubhuis, 3 extra winterholes op het buitenbadterrein
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2912 | 55.4 | 91 | 58 |
+| rood (men) | 2882 | 55.6 | 88 | 58 |
+| geel (women) | 2912 | 58.6 | 88 | 58 |
+| rood (women) | 2882 | 58.4 | 86 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 7 | 242 | 227 |
+| 2 | 3 | 13 | 114 | 114 |
+| 3 | 3 | 11 | 148 | 148 |
+| 4 | 3 | 9 | 152 | 152 |
+| 5 | 4 | 1 | 259 | 259 |
+| 6 | 3 | 5 | 152 | 152 |
+| 7 | 3 | 17 | 108 | 108 |
+| 8 | 3 | 3 | 179 | 179 |
+| 9 | 3 | 15 | 102 | 102 |
+| 10 | 4 | 8 | 242 | 227 |
+| 11 | 3 | 14 | 114 | 114 |
+| 12 | 3 | 12 | 148 | 148 |
+| 13 | 3 | 10 | 152 | 152 |
+| 14 | 4 | 2 | 259 | 259 |
+| 15 | 3 | 6 | 152 | 152 |
+| 16 | 3 | 18 | 108 | 108 |
+| 17 | 3 | 4 | 179 | 179 |
+| 18 | 3 | 16 | 102 | 102 |
+
+- **Scorekaartpagina:** https://valkenswaardsegolfclub.nl/scorekaart/
+- **Bestanden:** [scorecard/page.html](valkenswaardse-golfclub/scorecard/page.html), [scorecard/scorekaartX26-8a-2-pdf.jpg](valkenswaardse-golfclub/scorecard/scorekaartX26-8a-2-pdf.jpg), [scorecard/scorekaartX26-8b-1-pdf.jpg](valkenswaardse-golfclub/scorecard/scorekaartX26-8b-1-pdf.jpg)
+- **Opmerking:** Scorekaart d.d. 17-08-2026: 9 holes (par 29) 2x met eigen S.I. voor 10-18; CR/slope staan op de achterkant (heren rood CR 55,6 hoger dan geel 55,4 - zo gedrukt). Extra winterholes Z1-Z6 (Z1-Z3 2x; 116/150/86 m) zonder par op de kaart - niet opgenomen. Geen telefoon/e-mail op de site gevonden.
+
+<a id="brabant-golf-rijen"></a>
+## Brabant Golf
+
+Brabant Golf in Rijen is een kleinschalige vereniging met een korte 9-holesbaan, een driving range en een gezellig clubhuis met terras. De club richt zich nadrukkelijk op betaalbaar golf en leidt beginners op tot baanpermissie en handicap 54. Gasten met minimaal handicap 54 kunnen een greenfee betalen.
+
+- **Club:** Golfvereniging Brabant Golf
+- **Adres:** Statenlaan 18, 5121 HD Rijen, Noord-Brabant, NL
+- **GPS:** 51.5974, 4.9096
+- **Afstand:** 153.8 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Opgericht:** 1989
+- **Telefoon:** 0161 220076
+- **E-mail:** info@brabantgolf.nl
+- **Website:** https://www.brabantgolf.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Handicap 54 vereist (geen golfpaspoort).
+- **Faciliteiten:** driving range, oefencorner/pitching green, putting green, clubhuis met terras, golfpro's
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 57
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2799 | 57.8 | 95 | 57 |
+| rood (women) | 2799 | 59.7 | 95 | 57 |
+
+- **Scorekaartpagina:** https://www.brabantgolf.nl/?page_id=172
+- **Bestanden:** [scorecard/page.html](brabant-golf-rijen/scorecard/page.html), [scorecard/1golf-brabant-golf.html](brabant-golf-rijen/scorecard/1golf-brabant-golf.html)
+- **Opmerking:** Clubsite publiceert geen scorekaart (pagina Handicap Tabellen is leeg). Ratings en lengte uit 1golf.eu (par 57, 2799 m, geel heren CR 57,8/95, rood dames 59,7/95); de 1golf-scorekaartpagina gaf een Cloudflare-controle en is niet opgehaald. Geen holedata. Oprichtingsjaar 1989 volgens 1golf.eu.
+
+<a id="oosterhoutse-golfclub"></a>
+## De Oosterhoutse Golfclub
+
+De Oosterhoutse is een lange 18-holes parkbaan uit 1985 aan de oostkant van Oosterhout, met door de vele bomen soms het karakter van een bosbaan. In 2017 kwamen er vier nieuwe holes met water en bunkers bij, tegelijk met de aanleg van een 9-holes par 3 Academy Course. Die korte baan heeft eigen tees en ratings.
+
+- **Club:** Oosterhoutse Golfclub
+- **Adres:** Dukaatstraat 21, 4903 RN Oosterhout, Noord-Brabant, NL
+- **GPS:** 51.6212, 4.8694
+- **Afstand:** 153.8 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** parkbaan met veel bomen en bosrijke delen; nieuwere holes met water en bunkers
+- **Opgericht:** 1985
+- **Telefoon:** 0162 458 759
+- **Website:** https://www.oosterhoutse.nl/
+- **Starttijden:** https://www.oosterhoutse.nl/onze-club/info-bezoeker/greenfee.html
+- **Greenfee welkom:** True
+- **Faciliteiten:** par 3 academy course (9 holes), oefenfaciliteiten/driving range, clubhuis
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6144 | 73.3 | 139 | 72 |
+| geel (men) | 5722 | 71.8 | 129 | 72 |
+| blauw (men) | 5245 | 69.5 | 122 | 72 |
+| rood (men) | 4898 | 67.5 | 115 | 72 |
+| oranje (men) | 4166 | 64.1 | 107 | 72 |
+| geel (women) | 5722 | 77.3 | 145 | 72 |
+| blauw (women) | 5245 | 74.2 | 134 | 72 |
+| rood (women) | 4898 | 72.0 | 131 | 72 |
+| oranje (women) | 4166 | 67.4 | 123 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 3 | 369 | 361 | 316 | 306 | 261 |
+| 2 | 4 | 13 | 348 | 328 | 305 | 273 | 228 |
+| 3 | 3 | 17 | 117 | 104 | 104 | 91 | 91 |
+| 4 | 4 | 9 | 356 | 336 | 316 | 274 | 235 |
+| 5 | 4 | 15 | 239 | 229 | 215 | 215 | 149 |
+| 6 | 4 | 1 | 410 | 360 | 324 | 280 | 248 |
+| 7 | 5 | 11 | 496 | 451 | 419 | 385 | 348 |
+| 8 | 5 | 7 | 498 | 480 | 419 | 419 | 383 |
+| 9 | 4 | 5 | 364 | 329 | 281 | 265 | 212 |
+| 10 | 3 | 18 | 137 | 127 | 127 | 119 | 84 |
+| 11 | 5 | 10 | 507 | 460 | 450 | 385 | 352 |
+| 12 | 4 | 4 | 416 | 393 | 337 | 329 | 283 |
+| 13 | 4 | 12 | 309 | 273 | 273 | 259 | 207 |
+| 14 | 4 | 6 | 371 | 359 | 302 | 296 | 260 |
+| 15 | 3 | 14 | 168 | 151 | 141 | 114 | 109 |
+| 16 | 4 | 2 | 362 | 331 | 331 | 311 | 233 |
+| 17 | 3 | 16 | 162 | 152 | 152 | 144 | 90 |
+| 18 | 5 | 8 | 515 | 498 | 433 | 433 | 393 |
+
+**Lus Par 3 Academy Course 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2540 | 53.3 | 70 | 54 |
+| rood (men) | 2102 | 51.3 | 65 | 54 |
+| geel (women) | 2540 | 54.3 | 72 | 54 |
+| rood (women) | 2102 | 51.9 | 67 | 54 |
+| oranje | 1830 |  |  | 54 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 9 | 145 | 130 | 118 |
+| 2 | 3 | 17 | 95 | 78 | 78 |
+| 3 | 3 | 11 | 117 | 94 | 94 |
+| 4 | 3 | 3 | 178 | 145 | 97 |
+| 5 | 3 | 1 | 175 | 137 | 120 |
+| 6 | 3 | 7 | 158 | 136 | 136 |
+| 7 | 3 | 15 | 113 | 98 | 98 |
+| 8 | 3 | 13 | 114 | 88 | 88 |
+| 9 | 3 | 5 | 175 | 145 | 86 |
+| 10 | 3 | 10 | 145 | 130 | 118 |
+| 11 | 3 | 18 | 95 | 78 | 78 |
+| 12 | 3 | 12 | 117 | 94 | 94 |
+| 13 | 3 | 4 | 178 | 145 | 97 |
+| 14 | 3 | 2 | 175 | 137 | 120 |
+| 15 | 3 | 8 | 158 | 136 | 136 |
+| 16 | 3 | 16 | 113 | 98 | 98 |
+| 17 | 3 | 14 | 114 | 88 | 88 |
+| 18 | 3 | 6 | 175 | 145 | 86 |
+
+- **Scorekaartpagina:** https://www.oosterhoutse.nl/de-baan/18-holes-baan.html
+- **Bestanden:** [scorecard/ogc151v04-scorekaart-18-h-2-luik-2025-def.pdf](oosterhoutse-golfclub/scorecard/ogc151v04-scorekaart-18-h-2-luik-2025-def.pdf), [scorecard/ogc155-par3-scorekaart-2-luik-2025.pdf](oosterhoutse-golfclub/scorecard/ogc155-par3-scorekaart-2-luik-2025.pdf), [scorecard/2021-02-18-oosterhoutse-baanhandicap-whs-tabel-heren.pdf](oosterhoutse-golfclub/scorecard/2021-02-18-oosterhoutse-baanhandicap-whs-tabel-heren.pdf), [scorecard/2021-02-18-oosterhoutse-baanhandicap-whs-tabel-dames.pdf](oosterhoutse-golfclub/scorecard/2021-02-18-oosterhoutse-baanhandicap-whs-tabel-dames.pdf), [scorecard/2021-02-18-oosterhoutse-whs-tabel-par-3-baan-dames-en-heren.pdf](oosterhoutse-golfclub/scorecard/2021-02-18-oosterhoutse-whs-tabel-par-3-baan-dames-en-heren.pdf), [scorecard/page.html](oosterhoutse-golfclub/scorecard/page.html)
+- **Opmerking:** Scorekaarten 2025 (18 holes: OUT 3197/2978/2699/2508/2155, IN 2947/2744/2546/2390/2011, TOT 6144/5722/5245/4898/4166 m; par 3: 1270/1051/915 per 9 holes). CR/slope uit WHS-tabellen 18-02-2021 (kunnen ouder zijn dan de kaart). Par 3-tabel geeft ratings voor geel en rood (heren en dames); oranje heeft geen rating.
+
+<a id="golf-duinzicht-wassenaar"></a>
+## Golf Duinzicht
+
+Golf Duinzicht is een compacte 9-holesbaan op de grens van Den Haag en Wassenaar, met zeven par 3's en twee par 4's. Het binnenduinkarakter is terug te zien in golvende fairways en schrale rough, en smalle fairways, bunkers en vijvers maken de korte baan lastiger dan hij oogt. Bij een tweede ronde worden op holes 11 en 17 andere afslagplaatsen gebruikt.
+
+- **Club:** Golfvereniging Golf Duinzicht
+- **Adres:** Waalsdorperlaan 40, 2244 BN Wassenaar, Zuid-Holland, NL
+- **GPS:** 52.1089762, 4.3417781
+- **Afstand:** 153.9 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** binnenduin/park
+- **Architect:** deels Alan Rijks en Gerard Jol
+- **Telefoon:** 070 324 65 98
+- **E-mail:** info@golfduinzicht.nl
+- **Website:** https://golfduinzicht.nl
+- **Starttijden:** https://golfduinzicht.nl/greenfee-reserveren-niet-voor-leden/
+- **Greenfee welkom:** True
+- **Eisen:** GVB/NGF-pas verplicht; maximaal handicap 54; vierballen beperkt (doordeweeks pas 's middags), gezamenlijke handicap < 100
+- **Faciliteiten:** driving range, putting green, chipping green, oefenbunker, 3 oefenholes, clubhuis met bar, golflessen, handicarts
+
+**Lus 18 holes (9 holes 2x gespeeld)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2893 | 56.0 | 89 | 58 |
+| rood (men) | 2771 | 55.5 | 86 | 58 |
+| geel (women) | 2893 | 58.6 | 98 | 58 |
+| rood (women) | 2771 | 58.1 | 97 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 17 | 103 | 103 |
+| 2 | 3 | 7 | 141 | 135 |
+| 3 | 3 | 9 | 157 | 138 |
+| 4 | 3 | 15 | 147 | 128 |
+| 5 | 4 | 1 | 238 | 233 |
+| 6 | 3 | 5 | 122 | 122 |
+| 7 | 3 | 11 | 142 | 142 |
+| 8 | 4 | 3 | 275 | 260 |
+| 9 | 3 | 13 | 117 | 117 |
+| 10 | 3 | 18 | 103 | 103 |
+| 11 | 3 | 8 | 150 | 150 |
+| 12 | 3 | 10 | 157 | 138 |
+| 13 | 3 | 16 | 147 | 128 |
+| 14 | 4 | 2 | 238 | 233 |
+| 15 | 3 | 6 | 122 | 122 |
+| 16 | 3 | 12 | 142 | 142 |
+| 17 | 4 | 4 | 275 | 260 |
+| 18 | 3 | 14 | 117 | 117 |
+
+- **Scorekaartpagina:** https://golfduinzicht.nl/handicaptabellen-en-scorekaart/
+- **Bestanden:** [scorecard/page.html](golf-duinzicht-wassenaar/scorecard/page.html), [scorecard/scorekaart-binnenkant.jpg](golf-duinzicht-wassenaar/scorecard/scorekaart-binnenkant.jpg), [scorecard/scorekaart-buitenkant.jpg](golf-duinzicht-wassenaar/scorecard/scorekaart-buitenkant.jpg)
+- **Opmerking:** Scorekaart oktober 2026 (binnenkant). CR/SR op de kaart staan zonder aanduiding 9/18; gezien par 58 aangenomen voor 18 holes. Op de kaart staat bij IN-kolom 'UIT rood 1.328' terwijl de voorste negen 1.378 optelt (totaal 2.771 klopt met 1.378). Site noemt totale lengte 1434 m voor 9 holes. Slagentabellen (JPG, 2022) op aparte pagina's niet gebruikt.
+
+<a id="golfpark-gendersteyn-veldhoven"></a>
+## Golfpark Gendersteyn
+
+Golfpark Gendersteyn ligt aan de westrand van Veldhoven, tegen het buitengebied van Knegsel aan. Er zijn drie lussen: de gele en rode lus van negen holes vormen samen de 18-holesbaan, en een kortere blauwe lus van zeven holes biedt extra combinaties. De holes lopen afwisselend door bosrijke stukken en open terrein en zijn goed te belopen voor golfers van elk niveau.
+
+- **Club:** Golfpark Gendersteyn (Hollandsche Golfclub, voorheen BurgGolf)
+- **Adres:** Locht 140, 5504 RP Veldhoven, Noord-Brabant, NL
+- **GPS:** 51.3892237, 5.373033
+- **Afstand:** 153.9 km
+- **Type:** 27-holes
+- **Holes:** 25
+- **Landschap:** afwisselend bos en open terrein (Kempen)
+- **Telefoon:** 040 – 254 69 20
+- **E-mail:** info@golfparkgendersteyn.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/gendersteyn/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/gendersteyn/course/18-holes-golfbaan-gendersteyn/
+- **Greenfee welkom:** True
+- **Eisen:** Handicap 54 of baanpermissie van de Hollandsche Golfclub
+- **Faciliteiten:** driving range, putting green, chip- en oefenzones, brasserie, golfschool, handicarts
+
+**Lus 18 holes (gele lus + rode lus)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5892 | 71.5 | 130 | 71 |
+| geel (men) | 5739 | 71.2 | 130 | 71 |
+| blauw (men) | 5222 | 69.3 | 125 | 71 |
+| rood (men) | 4904 | 66.4 | 117 | 71 |
+| geel (women) | 5739 | 76.7 | 143 | 71 |
+| blauw (women) | 5222 | 73.7 | 132 | 71 |
+| rood (women) | 4904 | 72.1 | 126 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 5 | 5 | 495 | 483 | 455 | 448 |
+| 2 | 4 | 11 | 317 | 299 | 258 | 246 |
+| 3 | 5 | 15 | 466 | 454 | 392 | 387 |
+| 4 | 4 | 1 | 399 | 389 | 349 | 325 |
+| 5 | 4 | 7 | 356 | 347 | 301 | 289 |
+| 6 | 3 | 17 | 138 | 134 | 126 | 115 |
+| 7 | 4 | 9 | 362 | 348 | 304 | 288 |
+| 8 | 3 | 13 | 167 | 160 | 146 | 136 |
+| 9 | 4 | 3 | 334 | 327 | 284 | 275 |
+| 10 | 4 | 6 | 331 | 326 | 295 | 288 |
+| 11 | 4 | 4 | 382 | 377 | 331 | 329 |
+| 12 | 4 | 12 | 350 | 339 | 336 | 278 |
+| 13 | 3 | 18 | 154 | 146 | 144 | 130 |
+| 14 | 4 | 14 | 342 | 338 | 288 | 285 |
+| 15 | 4 | 10 | 357 | 346 | 343 | 297 |
+| 16 | 3 | 16 | 131 | 131 | 128 | 116 |
+| 17 | 4 | 2 | 348 | 340 | 292 | 287 |
+| 18 | 5 | 8 | 463 | 455 | 450 | 385 |
+
+**Lus Gele lus (9 holes)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 3034 | 36.1 | 132 | 36 |
+| geel (men) | 2941 | 35.9 | 132 | 36 |
+| blauw (men) | 2615 | 34.1 | 122 | 36 |
+| rood (men) | 2509 | 33.4 | 122 | 36 |
+| geel (women) | 2941 | 38.6 | 143 | 36 |
+| blauw (women) | 2615 | 36.8 | 130 | 36 |
+| rood (women) | 2509 | 36.5 | 123 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 5 | 5 | 495 | 483 | 455 | 448 |
+| 2 | 4 | 11 | 317 | 299 | 258 | 246 |
+| 3 | 5 | 15 | 466 | 454 | 392 | 387 |
+| 4 | 4 | 1 | 399 | 389 | 349 | 325 |
+| 5 | 4 | 7 | 356 | 347 | 301 | 289 |
+| 6 | 3 | 17 | 138 | 134 | 126 | 115 |
+| 7 | 4 | 9 | 362 | 348 | 304 | 288 |
+| 8 | 3 | 13 | 167 | 160 | 146 | 136 |
+| 9 | 4 | 3 | 334 | 327 | 284 | 275 |
+
+**Lus Rode lus (9 holes)** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2858 | 35.4 | 129 | 35 |
+| geel (men) | 2798 | 35.3 | 129 | 35 |
+| blauw (men) | 2607 | 34.4 | 116 | 35 |
+| rood (men) | 2395 | 33.0 | 113 | 35 |
+| geel (women) | 2798 | 38.1 | 143 | 35 |
+| blauw (women) | 2607 | 36.9 | 134 | 35 |
+| rood (women) | 2395 | 35.6 | 129 | 35 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 6 | 331 | 326 | 295 | 288 |
+| 2 | 4 | 4 | 382 | 377 | 331 | 329 |
+| 3 | 4 | 12 | 350 | 339 | 336 | 278 |
+| 4 | 3 | 18 | 154 | 146 | 144 | 130 |
+| 5 | 4 | 14 | 342 | 338 | 288 | 285 |
+| 6 | 4 | 10 | 357 | 346 | 343 | 297 |
+| 7 | 3 | 16 | 131 | 131 | 128 | 116 |
+| 8 | 4 | 2 | 348 | 340 | 292 | 287 |
+| 9 | 5 | 8 | 463 | 455 | 450 | 385 |
+
+**Lus Blauwe lus (7 holes)** — 7 holes, par 28
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2246 |  |  | 28 |
+| geel (men) | 2164 |  |  | 28 |
+| blauw (men) | 1913 |  |  | 28 |
+| rood (men) | 1791 |  |  | 28 |
+| geel (women) | 2164 |  |  | 28 |
+| blauw (women) | 1913 |  |  | 28 |
+| rood (women) | 1791 |  |  | 28 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 5 | 10 | 456 | 438 | 412 | 386 |
+| 2 | 4 | 4 | 354 | 347 | 295 | 288 |
+| 3 | 4 | 6 | 316 | 308 | 265 | 255 |
+| 4 | 3 | 14 | 141 | 138 | 118 | 113 |
+| 5 | 4 | 8 | 319 | 312 | 269 | 261 |
+| 6 | 5 | 2 | 505 | 472 | 430 | 372 |
+| 7 | 3 | 12 | 155 | 149 | 124 | 116 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/gendersteyn/course/18-holes-golfbaan-gendersteyn/
+- **Bestanden:** [scorecard/Gendersteyn-Handicaptabellen.pdf](golfpark-gendersteyn-veldhoven/scorecard/Gendersteyn-Handicaptabellen.pdf), [scorecard/gendersteyn-scorekaart-25-holes-mrt-2026.pdf](golfpark-gendersteyn-veldhoven/scorecard/gendersteyn-scorekaart-25-holes-mrt-2026.pdf), [scorecard/page.html](golfpark-gendersteyn-veldhoven/scorecard/page.html)
+- **Opmerking:** Scorekaart "25 holes" mrt. 2026: gele lus (9), rode lus (9), blauwe lus (7 holes; kaart noemt eventuele fictieve holes 8 en 9). Kolommen wit/geel/blauw/rood afgeleid uit de handicaptabellen (06-03-2025). CR/slope van geel-rood (18) en gele/rode lus uit die tabellen; tabellen voor geel-blauw (par 73) en rood-blauw (par 72) stammen uit de tijd dat de blauwe lus 9 holes had en zijn niet overgenomen; blauwe lus zonder rating. S.I. per lus in 18-holes stijl (geel oneven, rood/blauw even; blauwe lus 2-14 even).
+
+<a id="prise-deau-golf-tilburg"></a>
+## Prise d'Eau Golf
+
+Prise d'Eau aan de westkant van Tilburg heeft 27 holes in drie lussen (De Blaak, De Sijsten en De Leij) die in drie 18-holescombinaties worden gespeeld. Daarnaast ligt er de par 3-baan De Warande, die meermaals tot mooiste par 3-baan van Nederland is uitgeroepen. Het complex heeft ruime oefenfaciliteiten en een gasterij.
+
+- **Club:** Prise d'Eau Golf / Golfclub Prise d'Eau
+- **Adres:** Gilzerbaan 400, 5032 VC Tilburg, Noord-Brabant, NL
+- **GPS:** 51.5493, 4.9947
+- **Afstand:** 153.9 km
+- **Type:** 27-holes
+- **Holes:** 36
+- **Landschap:** bos- en parkbaan aan de westrand van Tilburg
+- **Telefoon:** +31 13 462 8200
+- **Website:** https://prisedeau-golf.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Geldig handicapbewijs, handicaplimiet 54 (volgens 1golf.eu).
+- **Faciliteiten:** par 3-baan De Warande (9 holes), driving range en oefenfaciliteiten, golfschool, De Gasterij (horeca), golfgames/footgolf-achtige fun-activiteiten
+
+**Lus Blaak + Sijsten** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6404 | 73.8 | 134 | 72 |
+| geel (men) | 6048 | 71.7 | 132 | 72 |
+| blauw (men) | 5521 | 69.4 | 123 | 72 |
+| rood (men) | 5162 | 67.4 | 119 | 72 |
+| geel (women) | 6048 | 78.4 | 137 | 72 |
+| blauw (women) | 5521 | 75.3 | 126 | 72 |
+| rood (women) | 5162 | 73.1 | 123 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 346 | 337 | 328 | 319 |
+| 2 | 3 | 17 | 154 | 146 | 137 | 128 |
+| 3 | 5 | 3 | 511 | 469 | 421 | 397 |
+| 4 | 4 | 13 | 381 | 346 | 326 | 283 |
+| 5 | 3 | 15 | 180 | 172 | 159 | 150 |
+| 6 | 5 | 5 | 519 | 506 | 457 | 450 |
+| 7 | 4 | 1 | 379 | 355 | 334 | 313 |
+| 8 | 4 | 11 | 333 | 323 | 285 | 275 |
+| 9 | 4 | 7 | 387 | 361 | 349 | 310 |
+| 10 | 4 | 12 | 352 | 343 | 311 | 286 |
+| 11 | 4 | 2 | 387 | 377 | 305 | 288 |
+| 12 | 4 | 14 | 355 | 339 | 328 | 289 |
+| 13 | 3 | 10 | 190 | 172 | 162 | 153 |
+| 14 | 4 | 4 | 448 | 396 | 386 | 348 |
+| 15 | 4 | 18 | 305 | 285 | 270 | 238 |
+| 16 | 5 | 6 | 507 | 471 | 405 | 394 |
+| 17 | 3 | 16 | 140 | 132 | 114 | 106 |
+| 18 | 5 | 8 | 530 | 518 | 444 | 435 |
+
+**Lus Leij + Sijsten** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6422 | 74.2 | 130 | 72 |
+| geel (men) | 6013 | 71.6 | 132 | 72 |
+| blauw (men) | 5475 | 69.1 | 123 | 72 |
+| rood (men) | 5071 | 66.9 | 118 | 72 |
+| geel (women) | 6013 | 78.6 | 135 | 72 |
+| blauw (women) | 5475 | 74.9 | 127 | 72 |
+| rood (women) | 5071 | 72.3 | 123 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 13 | 378 | 350 | 323 | 307 |
+| 2 | 4 | 7 | 367 | 342 | 307 | 289 |
+| 3 | 4 | 3 | 406 | 376 | 355 | 339 |
+| 4 | 3 | 9 | 188 | 172 | 165 | 153 |
+| 5 | 4 | 1 | 384 | 350 | 338 | 292 |
+| 6 | 5 | 15 | 477 | 447 | 391 | 371 |
+| 7 | 5 | 11 | 494 | 467 | 418 | 381 |
+| 8 | 3 | 17 | 159 | 142 | 127 | 111 |
+| 9 | 4 | 5 | 355 | 334 | 326 | 291 |
+| 10 | 4 | 12 | 352 | 343 | 311 | 286 |
+| 11 | 4 | 2 | 387 | 377 | 305 | 288 |
+| 12 | 4 | 14 | 355 | 339 | 328 | 289 |
+| 13 | 3 | 10 | 190 | 172 | 162 | 153 |
+| 14 | 4 | 4 | 448 | 396 | 386 | 348 |
+| 15 | 4 | 18 | 305 | 285 | 270 | 238 |
+| 16 | 5 | 6 | 507 | 471 | 405 | 394 |
+| 17 | 3 | 16 | 140 | 132 | 114 | 106 |
+| 18 | 5 | 8 | 530 | 518 | 444 | 435 |
+
+**Lus Blaak + Leij** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6398 | 74.0 | 130 | 72 |
+| geel (men) | 5995 | 71.5 | 131 | 72 |
+| blauw (men) | 5546 | 69.0 | 128 | 72 |
+| rood (men) | 5159 | 66.8 | 121 | 72 |
+| geel (women) | 5995 | 78.5 | 133 | 72 |
+| blauw (women) | 5546 | 75.3 | 127 | 72 |
+| rood (women) | 5159 | 72.7 | 125 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 346 | 337 | 328 | 319 |
+| 2 | 3 | 17 | 154 | 146 | 137 | 128 |
+| 3 | 5 | 3 | 511 | 469 | 421 | 397 |
+| 4 | 4 | 13 | 381 | 346 | 326 | 283 |
+| 5 | 3 | 15 | 180 | 172 | 159 | 150 |
+| 6 | 5 | 5 | 519 | 506 | 457 | 450 |
+| 7 | 4 | 1 | 379 | 355 | 334 | 313 |
+| 8 | 4 | 11 | 333 | 323 | 285 | 275 |
+| 9 | 4 | 7 | 387 | 361 | 349 | 310 |
+| 10 | 4 | 12 | 378 | 350 | 323 | 307 |
+| 11 | 4 | 2 | 367 | 342 | 307 | 289 |
+| 12 | 4 | 14 | 406 | 376 | 355 | 339 |
+| 13 | 3 | 6 | 188 | 172 | 165 | 153 |
+| 14 | 4 | 4 | 384 | 350 | 338 | 292 |
+| 15 | 5 | 16 | 477 | 447 | 391 | 371 |
+| 16 | 5 | 8 | 494 | 467 | 418 | 381 |
+| 17 | 3 | 18 | 159 | 142 | 127 | 111 |
+| 18 | 4 | 10 | 355 | 334 | 326 | 291 |
+
+**Lus Par 3-baan De Warande 18 holes** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 49.8 | 74 | 54 |
+| rood (women) |  | 51.5 | 76 | 54 |
+
+- **Scorekaartpagina:** https://prisedeau-golf.nl/de-baan/handicaptabel/
+- **Bestanden:** [scorecard/Prise-dEau-18-holes-De-Blaak-De-Sijsten-Heren.pdf](prise-deau-golf-tilburg/scorecard/Prise-dEau-18-holes-De-Blaak-De-Sijsten-Heren.pdf), [scorecard/Prise-dEau-18-holes-De-Blaak-De-Sijsten-Dames.pdf](prise-deau-golf-tilburg/scorecard/Prise-dEau-18-holes-De-Blaak-De-Sijsten-Dames.pdf), [scorecard/Prise-dEau-18-holes-De-Sijsten-De-Leij-Heren.pdf](prise-deau-golf-tilburg/scorecard/Prise-dEau-18-holes-De-Sijsten-De-Leij-Heren.pdf), [scorecard/Prise-dEau-18-holes-De-Sijsten-De-Leij-Dames.pdf](prise-deau-golf-tilburg/scorecard/Prise-dEau-18-holes-De-Sijsten-De-Leij-Dames.pdf), [scorecard/Prise-dEau-18-holes-De-Leij-De-Blaak-Heren.pdf](prise-deau-golf-tilburg/scorecard/Prise-dEau-18-holes-De-Leij-De-Blaak-Heren.pdf), [scorecard/Prise-dEau-18-holes-De-Leij-De-Blaak-Dames.pdf](prise-deau-golf-tilburg/scorecard/Prise-dEau-18-holes-De-Leij-De-Blaak-Dames.pdf), [scorecard/Prise-dEau-Par-3-Baan-Dames-Heren.pdf](prise-deau-golf-tilburg/scorecard/Prise-dEau-Par-3-Baan-Dames-Heren.pdf), [scorecard/page.html](prise-deau-golf-tilburg/scorecard/page.html), [scorecard/golfify-leij-sijsten.html](prise-deau-golf-tilburg/scorecard/golfify-leij-sijsten.html), [scorecard/golfify-blaak-leij.html](prise-deau-golf-tilburg/scorecard/golfify-blaak-leij.html), [scorecard/clubsite-handicaptabel.html](prise-deau-golf-tilburg/scorecard/clubsite-handicaptabel.html)
+- **Opmerking:** De clubsite publiceert geen scorekaart, alleen handicaptabellen (jan. 2024; daaruit komen de CR/slope-waarden, per combinatie, wit alleen heren). Holedata (par, S.I., lengtes) van golfify.io; de golfify-totalen (bv. 6404/6048/5521/5162 m) zijn niet met de clubsite te controleren. Golfify noemt de combinaties Blaak-Sijsten, Leij-Sijsten en Blaak-Leij (met die volgorde voor holes 1-9/10-18), terwijl de club Sijsten-De Leij en De Leij-De Blaak noemt; de S.I. per combinatie kan daardoor afwijken. Par 3-baan De Warande: alleen ratings (18 holes par 54), geen betrouwbare holedata (golfify vermeldt 300 m per hole). Daarom complete=false.
+
+<a id="wassenaarse-golf-groendael"></a>
+## Wassenaarse Golf Groendael
+
+Groendael is een besloten 9-holesbaan uit 2007 tussen Wassenaar en Den Haag, ontworpen door Bruno Steensels. De par 35-baan draait om plaatsing en coursemanagement: bunkers, vijvers en helmgras omringen snelle, golvende greens, met als blikvanger een par 5 van 500 meter naar een zeer grote green. Opvallend is de overdekte driving range waar over water wordt afgeslagen.
+
+- **Club:** Wassenaarse Golfclub Groendael (Golfpark Groendael B.V.)
+- **Adres:** Groenendaal 3, 2244 BK Wassenaar, Zuid-Holland, NL
+- **GPS:** 52.1090593, 4.3365689
+- **Afstand:** 154.2 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** binnenduin/park met waterpartijen
+- **Opgericht:** 2007
+- **Architect:** Bruno Steensels
+- **Telefoon:** 070 314 40 00
+- **E-mail:** info@wassenaarsegolf.nl
+- **Website:** https://groendael.nl
+- **Greenfee welkom:** True
+- **Eisen:** Greenfeespelers maandag t/m donderdag (niet op feestdagen), handicap 28 of lager; introducés handicap 54; NGF-pas tonen; max. 5x per jaar als gast
+- **Faciliteiten:** driving range (overdekt, over water met drijvende ballen), putting green, chip- & putt area, grass tee, clubhuis, restaurant, sauna en fitnessruimte, golfprofessional
+
+**Lus 18 holes (9 holes 2x gespeeld)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5290 | 71.2 | 140 | 70 |
+| zwart (men) | 5098 |  |  | 70 |
+| blauw (men) | 5010 | 69.4 | 137 | 70 |
+| rood (men) | 4400 | 66.6 | 126 | 70 |
+| geel (women) | 5290 | 76.8 | 157 | 70 |
+| blauw (women) | 5010 | 74.6 | 153 | 70 |
+| rood (women) | 4400 | 72.5 | 138 | 70 |
+
+| Hole | Par | SI | geel | zwart | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 4 | 13 | 305 | 305 | 305 | 259 |
+| 2 | 3 | 15 | 135 | 126 | 126 | 114 |
+| 3 | 4 | 7 | 351 | 320 | 310 | 265 |
+| 4 | 5 | 11 | 500 | 475 | 458 | 390 |
+| 5 | 4 | 3 | 306 | 283 | 283 | 259 |
+| 6 | 4 | 1 | 337 | 329 | 318 | 284 |
+| 7 | 3 | 17 | 101 | 101 | 95 | 95 |
+| 8 | 4 | 5 | 322 | 322 | 322 | 286 |
+| 9 | 4 | 9 | 288 | 288 | 288 | 248 |
+| 10 | 4 | 14 | 305 | 305 | 305 | 259 |
+| 11 | 3 | 16 | 135 | 126 | 126 | 114 |
+| 12 | 4 | 8 | 351 | 320 | 310 | 265 |
+| 13 | 5 | 12 | 500 | 475 | 458 | 390 |
+| 14 | 4 | 4 | 306 | 283 | 283 | 259 |
+| 15 | 4 | 2 | 337 | 329 | 318 | 284 |
+| 16 | 3 | 18 | 101 | 101 | 95 | 95 |
+| 17 | 4 | 6 | 322 | 322 | 322 | 286 |
+| 18 | 4 | 10 | 288 | 288 | 288 | 248 |
+
+- **Scorekaartpagina:** https://groendael.nl/golf/phcp-tabellen/
+- **Bestanden:** [scorecard/page.html](wassenaarse-golf-groendael/scorecard/page.html), [scorecard/caddieboekje.pdf](wassenaarse-golf-groendael/scorecard/caddieboekje.pdf), [scorecard/phcp-1.pdf](wassenaarse-golf-groendael/scorecard/phcp-1.pdf), [scorecard/phcp-2.pdf](wassenaarse-golf-groendael/scorecard/phcp-2.pdf), [scorecard/phcp-3.pdf](wassenaarse-golf-groendael/scorecard/phcp-3.pdf), [scorecard/phcp-4.pdf](wassenaarse-golf-groendael/scorecard/phcp-4.pdf)
+- **Opmerking:** Holegegevens uit de scorekaart in het caddieboekje (kolommen Geel, Zwart, Blauw, Rood; S.I. 1-9 / 10-18). In de holebeschrijving staat bij hole 8 'stroke index 5/4', de scorekaart geeft 5 en 6 (scorekaart aangehouden). CR/SR 18 holes uit baanhandicaptabellen d.d. 10-12-2024 (phcp-1 heren 18, phcp-4 dames 18); 9 holes: heren geel 35,6/140, blauw 34,7/137, rood 33,3/126; dames geel 38,4/157, blauw 37,3/153, rood 36,3/138 (par 35). Voor zwart geen rating gepubliceerd. Caddieboekje noemt medal 18 holes 5290 m.
+
+<a id="golfcenter-seve-rotterdam"></a>
+## Golfcenter Seve Par 3-baan
+
+Golfcenter Seve ligt aan de Kleiweg in Rotterdam-Noord en combineert een overdekte, verlichte Trackman-range met een 9-holes par 3-baan. De korte holes liggen tussen waterpartijen en bunkers en zijn bedoeld om het korte spel te oefenen. Wie 18 holes wil spelen loopt de lus twee keer, waarbij een paar holes vanaf een andere plek worden gespeeld.
+
+- **Club:** Golfcenter Seve
+- **Adres:** Kleiweg 480, 3045 PM Rotterdam, Zuid-Holland, NL
+- **GPS:** 51.9437969, 4.4616526
+- **Afstand:** 154.3 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** stadsparkbaan met waterpartijen en bunkers (Rotterdam-Noord, bij de A20)
+- **Telefoon:** 010 418 88 48
+- **E-mail:** info@seve.nl
+- **Website:** https://seve.nl
+- **Starttijden:** https://seve.nl/boek-starttijd/
+- **Greenfee welkom:** True
+- **Faciliteiten:** verlichte en verwarmde driving range met Trackman, golf academy, golfshop, restaurant
+
+**Lus Par 3-baan (2x9 holes)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| heren (men) | 1501 |  |  | 54 |
+
+| Hole | Par | SI | heren |
+|---|---|---|---|
+| 1 | 3 | 17 | 51 |
+| 2 | 3 | 11 | 70 |
+| 3 | 3 | 13 | 89 |
+| 4 | 3 | 15 | 86 |
+| 5 | 3 | 9 | 75 |
+| 6 | 3 | 3 | 120 |
+| 7 | 3 | 5 | 76 |
+| 8 | 3 | 7 | 107 |
+| 9 | 3 | 1 | 83 |
+| 10 | 3 | 16 | 71 |
+| 11 | 3 | 14 | 66 |
+| 12 | 3 | 6 | 82 |
+| 13 | 3 | 18 | 86 |
+| 14 | 3 | 12 | 75 |
+| 15 | 3 | 2 | 120 |
+| 16 | 3 | 8 | 76 |
+| 17 | 3 | 10 | 107 |
+| 18 | 3 | 4 | 61 |
+
+- **Scorekaartpagina:** https://seve.nl/golf/golf-par-3-golfbaan/
+- **Bestanden:** [scorecard/page.html](golfcenter-seve-rotterdam/scorecard/page.html), [scorecard/golfingrecord-scorecard.html](golfcenter-seve-rotterdam/scorecard/golfingrecord-scorecard.html), [scorecard/golfpass-scorecard.html](golfcenter-seve-rotterdam/scorecard/golfpass-scorecard.html)
+- **Opmerking:** Clubsite publiceert geen scorekaart. Holegegevens van golfingrecord.com (tee 'Heren', 18 holes = 2x9 met andere lengtes op holes 10-18, totaal 1501, eenheid niet vermeld; vermoedelijk meters, want 1golf.eu noemt 1497 m). Golfingrecord vermeldt een tweede tee zonder gegevens en CR 51,4 / slope 57; GolfPass geeft andere waarden (9 holes 903, totaal 1638 m, CR 60,2 / slope 105, andere S.I.). Door deze tegenstrijdigheid zijn CR/slope niet ingevuld; gegevens met voorzichtigheid gebruiken.
+
+<a id="leeuwenbergh-den-haag"></a>
+## Golfbaan Leeuwenbergh
+
+Leeuwenbergh ligt verscholen tussen de A4 en de Vliet aan de rand van Den Haag. De par 71-baan uit 1988 kreeg met grond uit de gegraven waterpartijen een glooiend karakter, en sinds 2014 zijn diverse holes vernieuwd. De eerste negen zijn duidelijk langer dan de tweede negen, die met kortere par 4's kansen biedt om slagen terug te winnen.
+
+- **Club:** Haagse Golfvereniging Leeuwenbergh
+- **Adres:** Elzenlaan 31, 2495 AZ Den Haag, Zuid-Holland, NL
+- **GPS:** 52.0574152, 4.3631529
+- **Afstand:** 154.7 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** polder/park met waterpartijen en aangebracht reliëf
+- **Opgericht:** 1988
+- **Architect:** Gerard Jol (aanleg 1988; holes aangepast sinds 2014)
+- **Telefoon:** 070 395 45 56
+- **E-mail:** info@leeuwenbergh.nl
+- **Website:** https://www.leeuwenbergh.nl
+- **Greenfee welkom:** True
+- **Eisen:** Handicap 54 of lager, of baanpermissie behaald bij Leeuwenbergh (andere baanpermissies niet geldig); gezamenlijke handicap per flight max. 108
+- **Faciliteiten:** driving range (verlicht, overdekt), chipping green, pitch area met oefenbunkers, putting green, clubhuis, horeca, golfshop, Golf Academy
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) |  | 71.4 | 138 | 71 |
+| geel (men) | 5534 | 70.4 | 132 | 71 |
+| blauw (men) |  | 68.6 | 122 | 71 |
+| rood (men) | 4676 | 66.6 | 115 | 71 |
+| oranje (men) |  | 64.1 | 112 | 71 |
+| geel (women) | 5534 | 76.3 | 148 | 71 |
+| blauw (women) |  | 73.4 | 140 | 71 |
+| rood (women) | 4676 | 71.5 | 130 | 71 |
+| oranje (women) |  | 69.1 | 119 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 3 | 17 |  | 146 |  | 126 |  |
+| 2 | 4 | 7 |  | 370 |  | 312 |  |
+| 3 | 4 | 11 |  | 374 |  | 298 |  |
+| 4 | 5 | 5 |  | 502 |  | 415 |  |
+| 5 | 5 | 3 |  | 459 |  | 394 |  |
+| 6 | 4 | 1 |  | 377 |  | 321 |  |
+| 7 | 3 | 15 |  | 178 |  | 149 |  |
+| 8 | 5 | 9 |  | 463 |  | 386 |  |
+| 9 | 3 | 13 |  | 140 |  | 123 |  |
+| 10 | 4 | 8 |  | 272 |  | 220 |  |
+| 11 | 4 | 10 |  | 306 |  | 276 |  |
+| 12 | 4 | 2 |  | 361 |  | 312 |  |
+| 13 | 3 | 18 |  | 136 |  | 115 |  |
+| 14 | 4 | 14 |  | 300 |  | 256 |  |
+| 15 | 3 | 16 |  | 152 |  | 127 |  |
+| 16 | 4 | 12 |  | 280 |  | 238 |  |
+| 17 | 4 | 6 |  | 289 |  | 249 |  |
+| 18 | 5 | 4 |  | 429 |  | 359 |  |
+
+- **Scorekaartpagina:** https://www.leeuwenbergh.nl/de-baan/18-holes/
+- **Bestanden:** [scorecard/page.html](leeuwenbergh-den-haag/scorecard/page.html), [scorecard/slagentabellen.html](leeuwenbergh-den-haag/scorecard/slagentabellen.html), [scorecard/2020-Scorekaart.jpg](leeuwenbergh-den-haag/scorecard/2020-Scorekaart.jpg), [scorecard/2025-08-28-slagentabel-heren-18h.jpg](leeuwenbergh-den-haag/scorecard/2025-08-28-slagentabel-heren-18h.jpg), [scorecard/2025-08-28-slagentabel-dames-18h.jpg](leeuwenbergh-den-haag/scorecard/2025-08-28-slagentabel-dames-18h.jpg)
+- **Opmerking:** Par, S.I. en lengtes geel/rood per hole van de holepagina (de-baan/18-holes). Lengtes van wit, blauw en oranje niet gepubliceerd (null). '2020-Scorekaart.jpg' is alleen een baankaart. CR/SR uit slagentabellen d.d. 21-08-2025; ook 9-holestabellen (1e/2e negen) staan op de site. Geel totaal 5534 m (som), site: eerste negen 484 m langer dan tweede negen (klopt: 3009 vs 2525).
+
+<a id="dsv-concordia-golf-delft"></a>
+## DSV Concordia Golf (par 3-baan)
+
+De golfafdeling van studentenvereniging D.S.V. Concordia heeft aan de Brasserskade in Delft een eigen 9-holes par 3-baan. De holes zijn tussen de 70 en 140 meter lang. Officiele baaninformatie is online niet te vinden; de gegevens hieronder komen van Hole19.
+
+- **Club:** D.S.V. Concordia Golf
+- **Adres:** Brasserskade 236, 2616 LA Delft, Zuid-Holland, NL
+- **GPS:** 52.0305864, 4.3724297
+- **Afstand:** 155.4 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** par 3-baan aan de rand van de Delftse Hout
+- **Faciliteiten:** driving range (volgens derden), golfschool (volgens derden)
+
+**Lus Par 3-baan 9 holes** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 991 | 25.6 | 84 | 27 |
+| rood (men) | 966 | 25.5 | 83 | 27 |
+| geel (women) | 991 | 26.6 | 89 | 27 |
+| rood (women) | 966 | 26.5 | 88 | 27 |
+
+| Hole | Par | SI | rood |
+|---|---|---|---|
+| 1 | 3 | 6 | 101 |
+| 2 | 3 | 1 | 138 |
+| 3 | 3 | 3 | 135 |
+| 4 | 3 | 9 | 70 |
+| 5 | 3 | 7 | 104 |
+| 6 | 3 | 2 | 104 |
+| 7 | 3 | 5 | 112 |
+| 8 | 3 | 8 | 69 |
+| 9 | 3 | 4 | 133 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/concordia-delft-golf
+- **Bestanden:** [scorecard/hole19-scorecard.html](dsv-concordia-golf-delft/scorecard/hole19-scorecard.html)
+- **Opmerking:** Geen officiele site met baangegevens gevonden (Hole19 verwijst naar concordiadelft.nl). Par, S.I. en per-hole lengtes van Hole19 voor tee rood (totaal 966); geel alleen totaal (991). CR/slope van Hole19 (niet officieel bevestigd); Hole19 vermeldt ook 18-holes ratings (lus 2x): heren geel 51,1/84, rood 50,9/83; dames geel 53,2/89, rood 52,9/88. GolfPass noemt afwijkende S.I. en totaal 1065. Telefoon volgens derden +31 15 212 6600 (niet bevestigd, niet ingevuld).
+
+<a id="golfpark-de-haenen-teteringen"></a>
+## Golfpark De Haenen
+
+Golfpark De Haenen ligt aan de rand van Breda bij Teteringen en combineert een 18-holes par-70-baan met een kunstpark vol beelden. De baan is parkachtig met waterreservoirs die op meerdere holes meespelen. Naast de grote baan is er een korte academy course van zes holes en zijn er uitgebreide oefenfaciliteiten.
+
+- **Club:** Golfpark De Haenen
+- **Adres:** Laan der Continenten 70, 4847 DG Teteringen, Noord-Brabant, NL
+- **GPS:** 51.616, 4.8343
+- **Afstand:** 155.9 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** parkbaan met waterreservoirs en een kunstpark
+- **Telefoon:** 076 578 39 50
+- **E-mail:** info@dehaenen.nl
+- **Website:** https://www.dehaenen.nl/
+- **Starttijden:** https://www.dehaenen.nl/greenfee-speler
+- **Greenfee welkom:** True
+- **Eisen:** Greenfeespelers elke dag welkom; voor de academy course (6 holes) is een GVB verplicht.
+- **Faciliteiten:** driving range, putting green, pitch & putting green, kunststof putting green, par 3-/academy course (6 holes), clubhuis, businessclub
+
+**Lus 18 holes** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit | 5733 |  |  | 70 |
+| geel | 5460 |  |  | 70 |
+| blauw | 5225 |  |  | 70 |
+| rood | 4659 |  |  | 70 |
+| oranje | 4094 |  |  | 70 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 7 | 365 | 349 | 328 | 320 | 261 |
+| 2 | 4 | 5 | 347 | 343 | 292 | 287 | 248 |
+| 3 | 5 | 9 | 485 | 483 | 483 | 404 | 376 |
+| 4 | 3 | 17 | 149 | 132 | 130 | 115 | 115 |
+| 5 | 5 | 11 | 472 | 465 | 381 | 377 | 335 |
+| 6 | 4 | 1 | 395 | 380 | 371 | 312 | 280 |
+| 7 | 3 | 15 | 153 | 141 | 139 | 125 | 125 |
+| 8 | 3 | 13 | 181 | 154 | 143 | 131 | 117 |
+| 9 | 4 | 3 | 372 | 358 | 321 | 316 | 257 |
+| 10 | 3 | 16 | 152 | 152 | 140 | 140 | 140 |
+| 11 | 4 | 18 | 277 | 272 | 272 | 247 | 202 |
+| 12 | 3 | 14 | 171 | 155 | 155 | 144 | 144 |
+| 13 | 5 | 2 | 474 | 461 | 460 | 380 | 335 |
+| 14 | 4 | 10 | 336 | 314 | 311 | 268 | 226 |
+| 15 | 4 | 4 | 384 | 366 | 360 | 297 | 266 |
+| 16 | 4 | 6 | 360 | 343 | 337 | 291 | 240 |
+| 17 | 4 | 12 | 339 | 290 | 308 | 244 | 209 |
+| 18 | 4 | 8 | 321 | 302 | 294 | 261 | 218 |
+
+- **Scorekaartpagina:** https://www.dehaenen.nl/onze-holes
+- **Bestanden:** [scorecard/dh_scorekaarten3-luikdef-2023.pdf](golfpark-de-haenen-teteringen/scorecard/dh_scorekaarten3-luikdef-2023.pdf), [scorecard/page.html](golfpark-de-haenen-teteringen/scorecard/page.html)
+- **Opmerking:** Scorekaart 2023 (UIT 2919/2805/2588/2387/2114, IN 2814/2655/2637/2272/1980, TOT 5733/5460/5225/4659/4094; klopt). Geen CR/slope gepubliceerd op de clubsite; golfify/golfingrecord noemen geel CR 69/slope 126 en wit slope 129, maar bij oudere lengtes (5729/5456 m) — niet overgenomen. De par 3-/academy course (6 holes) heeft geen gepubliceerde holedata.
+
+<a id="toxandria-molenschot"></a>
+## Noord-Brabantsche Golfclub Toxandria
+
+Toxandria in Molenschot werd in 1928 opgericht als eerste golfclub van Brabant en Limburg; de baan is ontworpen door de Britse architect Harry Colt. De bosrijke heidebaan was in 1950 en 1965 gastheer van het Dutch Open. In 1994 kwamen er twee nieuwe holes bij, zodat spelers de Veenstraat niet meer hoeven over te steken.
+
+- **Club:** Noord-Brabantsche Golfclub Toxandria
+- **Adres:** Veenstraat 89, 5124 NC Molenschot, Noord-Brabant, NL
+- **GPS:** 51.5822, 4.8875
+- **Afstand:** 156.1 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** bosrijk op voormalige heide- en zandgrond
+- **Opgericht:** 1928
+- **Architect:** Harry S. Colt (1928); uitbreiding holes 5 en 6 door J.F. Dudok van Heel (1994)
+- **Telefoon:** 0161 411 200
+- **E-mail:** secretariaat@toxandria.nl
+- **Website:** https://www.toxandria.nl/
+- **Starttijden:** https://www.toxandria.nl/tarieven-reserveren/
+- **Greenfee welkom:** True
+- **Faciliteiten:** oefenfaciliteiten, clubhuis met restaurant en terras
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6077 | 72.4 | 143 | 72 |
+| geel (men) | 5779 | 70.8 | 137 | 72 |
+| blauw (men) | 5433 | 69.2 | 130 | 72 |
+| rood (men) | 5024 | 67.1 | 123 | 72 |
+| oranje (men) | 4510 | 65.2 | 111 | 72 |
+| geel (women) | 5779 | 77.5 | 140 | 72 |
+| blauw (women) | 5433 | 74.9 | 138 | 72 |
+| rood (women) | 5024 | 72.4 | 131 | 72 |
+| oranje (women) | 4510 | 69.0 | 124 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 15 | 340 | 320 | 302 | 275 | 240 |
+| 2 | 5 | 13 | 453 | 453 | 383 | 372 | 356 |
+| 3 | 4 | 7 | 330 | 318 | 318 | 300 | 256 |
+| 4 | 3 | 17 | 129 | 115 | 115 | 107 | 90 |
+| 5 | 4 | 1 | 368 | 359 | 359 | 318 | 293 |
+| 6 | 4 | 11 | 341 | 316 | 316 | 289 | 271 |
+| 7 | 4 | 3 | 356 | 335 | 322 | 307 | 256 |
+| 8 | 5 | 5 | 503 | 468 | 438 | 423 | 398 |
+| 9 | 3 | 9 | 177 | 165 | 153 | 105 | 91 |
+| 10 | 4 | 6 | 402 | 386 | 350 | 311 | 258 |
+| 11 | 4 | 2 | 422 | 404 | 359 | 340 | 332 |
+| 12 | 4 | 4 | 380 | 341 | 330 | 291 | 273 |
+| 13 | 3 | 16 | 149 | 133 | 133 | 116 | 112 |
+| 14 | 5 | 8 | 465 | 457 | 430 | 387 | 315 |
+| 15 | 4 | 14 | 294 | 273 | 258 | 238 | 207 |
+| 16 | 3 | 18 | 180 | 168 | 150 | 140 | 124 |
+| 17 | 5 | 12 | 473 | 453 | 424 | 424 | 385 |
+| 18 | 4 | 10 | 315 | 315 | 293 | 281 | 253 |
+
+- **Scorekaartpagina:** https://www.toxandria.nl/scorekaart/
+- **Bestanden:** [scorecard/Scorekaart_Toxandria-2026.pdf](toxandria-molenschot/scorecard/Scorekaart_Toxandria-2026.pdf), [scorecard/Toxandria-Heren-2025.pdf](toxandria-molenschot/scorecard/Toxandria-Heren-2025.pdf), [scorecard/Toxandria-Dames-2025.pdf](toxandria-molenschot/scorecard/Toxandria-Dames-2025.pdf), [scorecard/page.html](toxandria-molenschot/scorecard/page.html)
+- **Opmerking:** Scorekaart 2026 (OUT 2997/2849/2706/2496/2251, IN 3080/2930/2727/2528/2259, TOT 6077/5779/5433/5024/4510; klopt). CR/slope uit tabellen 2025. De herentabel noemt ook een zwarte tee (CR 72,7/slope 140) die niet op de scorekaart staat; niet opgenomen. Blauw hole 3-6 gelijk aan geel volgens de kaart.
+
+<a id="landgoed-bergvliet-oosterhout"></a>
+## Golfbaan Landgoed Bergvliet
+
+Bergvliet ligt op een eeuwenoud landgoed tussen de Vrachelse Heide en de Oosterhoutse bossen, waar in 2007 een golfbaan werd aangelegd. De 18-holes par-71-baan van Gerard Jol en Michiel van der Vaart is glooiend en soms links-achtig, met bijna overal een bosrand als decor; de twee lussen kunnen ook los worden gespeeld. Daarnaast is er een 9-holes par 3-baan met holes van ongeveer honderd meter.
+
+- **Club:** Golfbaan Landgoed Bergvliet / Golfclub Bergvliet
+- **Adres:** Salesdreef 2, 4904 SW Oosterhout, Noord-Brabant, NL
+- **GPS:** 51.6355, 4.7948
+- **Afstand:** 156.3 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** glooiend, deels links-achtig, langs bosranden en waterpartijen op een historisch landgoed
+- **Opgericht:** 2007
+- **Architect:** Gerard Jol en Michiel van der Vaart
+- **Telefoon:** 076 57 95 666
+- **E-mail:** contact@landgoedbergvliet.nl
+- **Website:** https://www.landgoedbergvliet.nl/golf
+- **Starttijden:** https://www.landgoedbergvliet.nl/golf/starttijden
+- **Greenfee welkom:** True
+- **Eisen:** Par 3-baan alleen met baanpermissie of handicap.
+- **Faciliteiten:** par 3-baan (9 holes), driving range/oefenfaciliteiten, golfschool, Het Koetshuis (horeca/feestlocatie), lockers
+
+**Lus 18 holes (lus A + lus B)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5928 | 71.4 | 137 | 71 |
+| geel (men) | 5553 | 69.5 | 131 | 71 |
+| blauw (men) | 5063 | 67.6 | 121 | 71 |
+| rood (men) | 4694 | 65.8 | 110 | 71 |
+| oranje (men) | 4038 | 64.0 | 107 | 71 |
+| geel (women) | 5553 | 75.8 | 145 | 71 |
+| blauw (women) | 5063 | 72.6 | 136 | 71 |
+| rood (women) | 4694 | 70.3 | 128 | 71 |
+| oranje (women) | 4038 | 68.3 | 115 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 3 | 11 | 151 | 141 | 141 | 131 | 127 |
+| 2 | 4 | 13 | 332 | 300 | 291 | 256 | 208 |
+| 3 | 5 | 3 | 499 | 476 | 406 | 401 | 355 |
+| 4 | 3 | 15 | 200 | 171 | 171 | 148 | 123 |
+| 5 | 4 | 5 | 339 | 322 | 313 | 282 | 230 |
+| 6 | 3 | 17 | 166 | 138 | 129 | 119 | 108 |
+| 7 | 5 | 7 | 486 | 473 | 411 | 406 | 367 |
+| 8 | 4 | 9 | 376 | 355 | 350 | 303 | 248 |
+| 9 | 5 | 1 | 512 | 486 | 410 | 404 | 344 |
+| 10 | 4 | 12 | 306 | 285 | 290 | 231 | 220 |
+| 11 | 3 | 18 | 171 | 156 | 156 | 132 | 116 |
+| 12 | 4 | 4 | 360 | 332 | 286 | 281 | 242 |
+| 13 | 4 | 2 | 384 | 373 | 321 | 316 | 258 |
+| 14 | 5 | 8 | 515 | 491 | 414 | 406 | 380 |
+| 15 | 3 | 16 | 188 | 165 | 157 | 144 | 94 |
+| 16 | 5 | 14 | 479 | 458 | 386 | 380 | 354 |
+| 17 | 4 | 6 | 329 | 310 | 310 | 259 | 205 |
+| 18 | 3 | 10 | 135 | 121 | 121 | 95 | 59 |
+
+**Lus Par 3-baan 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 49.7 | 67 | 54 |
+| rood (women) |  | 51.3 | 70 | 54 |
+
+- **Scorekaartpagina:** https://www.landgoedbergvliet.nl/golf/golfbaan/18-holesbaan
+- **Bestanden:** [scorecard/bergvliet-heren-17feb24.pdf](landgoed-bergvliet-oosterhout/scorecard/bergvliet-heren-17feb24.pdf), [scorecard/bergvliet-dames-17feb24.pdf](landgoed-bergvliet-oosterhout/scorecard/bergvliet-dames-17feb24.pdf), [scorecard/bergvliet-whs-tabel-par-3-baan-dames-en-heren.pdf](landgoed-bergvliet-oosterhout/scorecard/bergvliet-whs-tabel-par-3-baan-dames-en-heren.pdf), [scorecard/page.html](landgoed-bergvliet-oosterhout/scorecard/page.html), [scorecard/hole-1.html](landgoed-bergvliet-oosterhout/scorecard/hole-1.html), [scorecard/hole-2.html](landgoed-bergvliet-oosterhout/scorecard/hole-2.html), [scorecard/hole-3.html](landgoed-bergvliet-oosterhout/scorecard/hole-3.html), [scorecard/hole-4.html](landgoed-bergvliet-oosterhout/scorecard/hole-4.html), [scorecard/hole-5.html](landgoed-bergvliet-oosterhout/scorecard/hole-5.html), [scorecard/hole-6.html](landgoed-bergvliet-oosterhout/scorecard/hole-6.html), [scorecard/hole-7.html](landgoed-bergvliet-oosterhout/scorecard/hole-7.html), [scorecard/hole-8.html](landgoed-bergvliet-oosterhout/scorecard/hole-8.html), [scorecard/hole-9.html](landgoed-bergvliet-oosterhout/scorecard/hole-9.html), [scorecard/hole-10.html](landgoed-bergvliet-oosterhout/scorecard/hole-10.html), [scorecard/hole-11.html](landgoed-bergvliet-oosterhout/scorecard/hole-11.html), [scorecard/hole-12.html](landgoed-bergvliet-oosterhout/scorecard/hole-12.html), [scorecard/hole-13.html](landgoed-bergvliet-oosterhout/scorecard/hole-13.html), [scorecard/hole-14.html](landgoed-bergvliet-oosterhout/scorecard/hole-14.html), [scorecard/hole-15.html](landgoed-bergvliet-oosterhout/scorecard/hole-15.html), [scorecard/hole-16.html](landgoed-bergvliet-oosterhout/scorecard/hole-16.html), [scorecard/hole-17.html](landgoed-bergvliet-oosterhout/scorecard/hole-17.html), [scorecard/hole-18.html](landgoed-bergvliet-oosterhout/scorecard/hole-18.html)
+- **Opmerking:** Par, S.I. en lengtes per tee van de officiële holepagina's (hole-1 t/m hole-18); geen scorekaart-PDF gevonden, dus totale lengtes zijn som van de holes. Let op: de overzichtspagina koppelt par/S.I. één hole verschoven; de holepagina's zijn aangehouden. Ratings 18 holes uit tabellen 13-02-2024. Par 3-baan: alleen ratings (tabel 05-01-2021, 18 holes par 54); geen holedata gepubliceerd, daarom complete=false.
+
+<a id="rijswijkse-golfclub"></a>
+## Rijswijkse Golfclub
+
+De Rijswijkse Golfclub ligt in het groen tussen Den Haag, Rijswijk en Delft. De oorspronkelijke polderbaan van Donald Steel is uitgegroeid tot een parkachtige 18-holesbaan met volwassen bomen en veel water, waarbij de holes dicht bij elkaar liggen. De baan is par 71 en heeft vijf teekleuren, van wit tot oranje.
+
+- **Club:** Rijswijkse Golfclub
+- **Adres:** Delftweg 59, 2289 AL Rijswijk, Zuid-Holland, NL
+- **GPS:** 52.0336566, 4.3508016
+- **Afstand:** 156.6 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** polder/parkbaan met veel water
+- **Architect:** Donald Steel
+- **Telefoon:** 070 395 48 64
+- **E-mail:** secretariaat@rijswijksegolf.nl
+- **Website:** https://www.rijswijksegolf.nl
+- **Starttijden:** https://www.rijswijksegolf.nl/bezoekers/starttijd-reserveren/
+- **Greenfee welkom:** True
+- **Eisen:** Handicap 54 of baanpermissie van een pro van de Rijswijkse Golf Academy
+- **Faciliteiten:** driving range, clubhuis, restaurant, golfshop, Rijswijkse Golf Academy
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6002 | 72.3 | 134 | 71 |
+| geel (men) | 5678 | 70.9 | 131 | 71 |
+| blauw (men) | 5325 | 69.3 | 121 | 71 |
+| rood (men) | 4993 | 67.6 | 118 | 71 |
+| oranje (men) | 3952 | 63.4 | 101 | 71 |
+| geel (women) | 5678 | 77.3 | 139 | 71 |
+| blauw (women) | 5325 | 75.2 | 133 | 71 |
+| rood (women) | 4993 | 73.2 | 130 | 71 |
+| oranje (women) | 3952 | 66.2 | 120 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 11 | 341 | 319 | 305 | 270 | 218 |
+| 2 | 4 | 13 | 338 | 310 | 287 | 275 | 208 |
+| 3 | 5 | 7 | 435 | 430 | 424 | 395 | 322 |
+| 4 | 4 | 1 | 370 | 354 | 346 | 305 | 258 |
+| 5 | 3 | 15 | 168 | 157 | 150 | 138 | 134 |
+| 6 | 4 | 9 | 349 | 337 | 331 | 321 | 207 |
+| 7 | 4 | 3 | 362 | 351 | 300 | 294 | 258 |
+| 8 | 4 | 5 | 359 | 335 | 335 | 297 | 239 |
+| 9 | 3 | 17 | 145 | 140 | 125 | 123 | 114 |
+| 10 | 4 | 18 | 276 | 271 | 264 | 253 | 203 |
+| 11 | 4 | 4 | 392 | 374 | 347 | 315 | 259 |
+| 12 | 3 | 16 | 138 | 134 | 120 | 120 | 107 |
+| 13 | 4 | 12 | 360 | 330 | 314 | 282 | 202 |
+| 14 | 4 | 2 | 392 | 377 | 330 | 314 | 271 |
+| 15 | 5 | 8 | 466 | 452 | 388 | 372 | 317 |
+| 16 | 3 | 14 | 176 | 174 | 168 | 156 | 120 |
+| 17 | 4 | 6 | 420 | 356 | 326 | 324 | 176 |
+| 18 | 5 | 10 | 515 | 477 | 465 | 439 | 339 |
+
+- **Scorekaartpagina:** https://www.rijswijksegolf.nl/baan/
+- **Bestanden:** [scorecard/page.html](rijswijkse-golfclub/scorecard/page.html), [scorecard/slagentabel.html](rijswijkse-golfclub/scorecard/slagentabel.html), [scorecard/RGC_scorekaart_2023.pdf](rijswijkse-golfclub/scorecard/RGC_scorekaart_2023.pdf), [scorecard/WHS-tabel-heren-2024.pdf](rijswijkse-golfclub/scorecard/WHS-tabel-heren-2024.pdf), [scorecard/WHS-tabel-dames-2024.pdf](rijswijkse-golfclub/scorecard/WHS-tabel-dames-2024.pdf)
+- **Opmerking:** Scorekaart 2023 (PDF) met lengtes W/G/B/R/O, S.I. en CR/SR; CR/SR gelijk aan de baanhandicaptabellen (gedateerd 18-01-2021, bestand 2024). Eén S.I.-kolom.
+
+<a id="golfbaan-midden-brabant-esbeek"></a>
+## Golfbaan Midden-Brabant
+
+Golfbaan Midden-Brabant ligt op landgoed De Utrecht bij Esbeek en werd in 2001 aangelegd. De gevarieerde 18-holes par-72-baan loopt langs bospartijen, lanen en waterpartijen, met onder meer een dubbelgreen voor de par 5-holes 3 en 6 en een par 3 over water. Naast de grote baan is er een vrij toegankelijke 9-holes pitch & putt-baan.
+
+- **Club:** Golfclub Midden-Brabant
+- **Adres:** Dunsedijk 1, 5085 ND Esbeek, Noord-Brabant, NL
+- **GPS:** 51.4439, 5.1466
+- **Afstand:** 156.9 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** Brabants coulisselandschap op landgoed De Utrecht, met solitaire bomen, lanen en waterpartijen
+- **Opgericht:** 2001
+- **Telefoon:** 013 516 9966
+- **E-mail:** receptie@golfmiddenbrabant.nl
+- **Website:** https://www.golfmiddenbrabant.nl/
+- **Starttijden:** https://www.golfmiddenbrabant.nl/gasten/starttijdentarieven
+- **Greenfee welkom:** True
+- **Faciliteiten:** 9-holes par 3 pitch & putt-baan (35-95 m, vrij toegankelijk), driving range, oefengreen, horeca in boerderij De Ekster, lockers, vergaderruimte
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5875 | 72.0 | 141 | 72 |
+| geel (men) | 5593 | 70.4 | 130 | 72 |
+| blauw (men) | 5362 | 69.7 | 126 | 72 |
+| rood (men) | 4926 | 67.0 | 120 | 72 |
+| oranje (men) | 4691 | 65.8 | 116 | 72 |
+| geel (women) | 5593 | 76.6 | 147 | 72 |
+| blauw (women) | 5362 | 75.7 | 139 | 72 |
+| rood (women) | 4926 | 72.8 | 132 | 72 |
+| oranje (women) | 4691 | 70.3 | 130 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 394 | 368 | 337 | 337 | 310 |
+| 2 | 4 | 15 | 238 | 227 | 216 | 188 | 178 |
+| 3 | 5 | 3 | 481 | 454 | 405 | 397 | 387 |
+| 4 | 3 | 17 | 144 | 135 | 135 | 118 | 118 |
+| 5 | 4 | 1 | 383 | 361 | 321 | 321 | 312 |
+| 6 | 5 | 9 | 478 | 460 | 460 | 403 | 380 |
+| 7 | 3 | 13 | 193 | 183 | 167 | 160 | 149 |
+| 8 | 4 | 11 | 327 | 306 | 306 | 272 | 255 |
+| 9 | 4 | 7 | 334 | 322 | 322 | 287 | 275 |
+| 10 | 4 | 10 | 326 | 312 | 312 | 276 | 269 |
+| 11 | 4 | 14 | 300 | 300 | 292 | 245 | 236 |
+| 12 | 5 | 8 | 463 | 440 | 383 | 383 | 371 |
+| 13 | 3 | 12 | 191 | 181 | 171 | 153 | 153 |
+| 14 | 5 | 6 | 464 | 440 | 440 | 378 | 363 |
+| 15 | 3 | 16 | 166 | 152 | 152 | 125 | 125 |
+| 16 | 4 | 18 | 303 | 303 | 294 | 294 | 247 |
+| 17 | 4 | 4 | 352 | 330 | 330 | 298 | 290 |
+| 18 | 4 | 2 | 338 | 319 | 319 | 291 | 273 |
+
+- **Scorekaartpagina:** https://www.golfmiddenbrabant.nl/de_baan/baanoverzicht
+- **Bestanden:** [scorecard/scorekaart-juli-2024.png](golfbaan-midden-brabant-esbeek/scorecard/scorekaart-juli-2024.png), [scorecard/Midden-Brabant-Heren-26-06-24.pdf](golfbaan-midden-brabant-esbeek/scorecard/Midden-Brabant-Heren-26-06-24.pdf), [scorecard/Midden-Brabant-Dames-26-06-24.pdf](golfbaan-midden-brabant-esbeek/scorecard/Midden-Brabant-Dames-26-06-24.pdf), [scorecard/par-3-lay-out-2025.png](golfbaan-midden-brabant-esbeek/scorecard/par-3-lay-out-2025.png), [scorecard/page.html](golfbaan-midden-brabant-esbeek/scorecard/page.html)
+- **Opmerking:** Scorekaart juli 2024 (afbeelding; Out 2972/2816/2669/2483/2364, In 2903/2777/2693/2443/2327, Tot 5875/5593/5362/4926/4691; klopt). CR/slope uit tabellen 26-06-2024. De 9-holes par 3 pitch & putt-baan (holes 35-95 m) heeft geen gepubliceerde holelengtes; alleen een plattegrond.
+
+<a id="golfclub-landgoed-nieuwkerk-goirle"></a>
+## Golfclub Landgoed Nieuwkerk
+
+Golfclub Landgoed Nieuwkerk ligt op een landgoed bij Goirle, net ten zuiden van Tilburg. De 9-holesbaan uit 1992 wordt voor 18 holes twee keer gespeeld, met per ronde andere afslagen en stroke indexen. Van eind 2024 tot oktober 2025 is de baan volledig gerenoveerd onder begeleiding van architect Michiel van der Vaart.
+
+- **Club:** Golfclub Landgoed Nieuwkerk
+- **Adres:** Nieuwkerksedijk Zuid 50, 5051 DW Goirle, Noord-Brabant, NL
+- **GPS:** 51.4939, 5.0353
+- **Afstand:** 156.9 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** landgoed met waterpartijen en bosranden
+- **Opgericht:** 1992
+- **Architect:** renovatie 2024-2025 onder begeleiding van Michiel van der Vaart
+- **Telefoon:** 013 534 20 29
+- **Website:** https://golfclublandgoednieuwkerk.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, golfacademy, horeca, GEO-gecertificeerd
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5489 | 69.5 | 129 | 72 |
+| rood (men) | 5064 | 66.6 | 126 | 72 |
+| oranje (men) | 4636 | 64.1 | 119 | 72 |
+| geel (women) | 5489 | 75.9 | 141 | 72 |
+| rood (women) | 5064 | 73.4 | 134 | 72 |
+| oranje (women) | 4636 | 69.9 | 128 | 72 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 12 | 278 | 248 | 248 |
+| 2 | 3 | 18 | 85 | 76 | 76 |
+| 3 | 5 | 2 | 435 | 409 | 333 |
+| 4 | 4 | 16 | 273 | 264 | 264 |
+| 5 | 5 | 4 | 442 | 414 | 364 |
+| 6 | 3 | 10 | 181 | 157 | 112 |
+| 7 | 4 | 8 | 360 | 313 | 313 |
+| 8 | 4 | 14 | 325 | 301 | 301 |
+| 9 | 4 | 6 | 344 | 307 | 307 |
+| 10 | 4 | 11 | 289 | 278 | 248 |
+| 11 | 3 | 17 | 112 | 104 | 76 |
+| 12 | 4 | 1 | 366 | 355 | 333 |
+| 13 | 4 | 9 | 309 | 300 | 264 |
+| 14 | 5 | 3 | 419 | 364 | 364 |
+| 15 | 3 | 15 | 134 | 129 | 112 |
+| 16 | 4 | 7 | 393 | 360 | 313 |
+| 17 | 4 | 13 | 330 | 307 | 301 |
+| 18 | 5 | 5 | 414 | 378 | 307 |
+
+- **Scorekaartpagina:** https://golfclublandgoednieuwkerk.nl/holes/
+- **Bestanden:** [scorecard/Landgoed-Nieuwkerk-Heren-Tabel.pdf](golfclub-landgoed-nieuwkerk-goirle/scorecard/Landgoed-Nieuwkerk-Heren-Tabel.pdf), [scorecard/Landgoed-Nieuwkerk-Dames-Tabel.pdf](golfclub-landgoed-nieuwkerk-goirle/scorecard/Landgoed-Nieuwkerk-Dames-Tabel.pdf), [scorecard/page.html](golfclub-landgoed-nieuwkerk-goirle/scorecard/page.html), [scorecard/Hole-1.10-3.png](golfclub-landgoed-nieuwkerk-goirle/scorecard/Hole-1.10-3.png), [scorecard/Hole-2.11.png](golfclub-landgoed-nieuwkerk-goirle/scorecard/Hole-2.11.png), [scorecard/Hole-3.12.png](golfclub-landgoed-nieuwkerk-goirle/scorecard/Hole-3.12.png), [scorecard/Hole-4.13.png](golfclub-landgoed-nieuwkerk-goirle/scorecard/Hole-4.13.png), [scorecard/Hole-5.14.png](golfclub-landgoed-nieuwkerk-goirle/scorecard/Hole-5.14.png), [scorecard/Hole-6.15.png](golfclub-landgoed-nieuwkerk-goirle/scorecard/Hole-6.15.png), [scorecard/Hole-7.16.png](golfclub-landgoed-nieuwkerk-goirle/scorecard/Hole-7.16.png), [scorecard/Hole-8.17.png](golfclub-landgoed-nieuwkerk-goirle/scorecard/Hole-8.17.png), [scorecard/Hole-9.18.png](golfclub-landgoed-nieuwkerk-goirle/scorecard/Hole-9.18.png)
+- **Opmerking:** Par, S.I. en lengtes (geel/rood/oranje) van de holeplattegronden op de clubsite (bestanden in uploads/2019/01, deels vervangen); er is geen scorekaart-PDF en geen totaal om tegen te controleren, dus lengtes zijn de som van de holes. Omdat de baan in 2024-2025 is gerenoveerd, kunnen de holeplattegronden verouderd zijn. CR/slope uit tabellen 18-09-2025 (na de renovatie).
+
+<a id="golfpark-weilenseind-gilze"></a>
+## Golfpark Weilenseind
+
+Golfpark Weilenseind in Gilze, tussen Breda en Tilburg, heeft een 9-holes par 3/4-baan die in 2001 werd aangelegd naar een ontwerp van Alan Rijks. Met bunkers, glooiende greens en waterpartijen biedt de korte baan alle facetten van het spel. Voor 18 holes wordt de baan twee keer gespeeld; vanaf de oranje tees geldt een aparte par 3-rating.
+
+- **Club:** Golfpark Weilenseind
+- **Adres:** Alphenseweg 14a, 5126 PN Gilze, Noord-Brabant, NL
+- **GPS:** 51.5342, 4.9443
+- **Afstand:** 157.4 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** Brabants landschap met bunkers, glooiende greens en waterpartijen
+- **Opgericht:** 2001
+- **Architect:** Alan Rijks
+- **Telefoon:** 0161 45 13 87
+- **Website:** https://golfparkweilenseind.nl/
+- **Starttijden:** https://golfparkweilenseind.nl/golfbaan/starttijd-reserveren/
+- **Greenfee welkom:** True
+- **Eisen:** Starttijd verplicht digitaal reserveren.
+- **Faciliteiten:** oefenfaciliteiten/driving range, golfschool, horeca, handicarts
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 60
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2924 | 55.8 | 86 | 60 |
+| rood (men) | 2812 | 55.3 | 85 | 60 |
+| geel (women) | 2924 | 58.8 | 91 | 60 |
+| rood (women) | 2812 | 58.2 | 90 | 60 |
+| oranje (men) | 2268 | 50.7 | 69 | 56 |
+| oranje (women) | 2268 | 52.9 | 81 | 56 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 7 | 158 | 158 | 136 |
+| 2 | 3 | 17 | 62 | 62 | 62 |
+| 3 | 4 | 5 | 260 | 241 | 218 |
+| 4 | 4 | 9 | 223 | 201 | 165 |
+| 5 | 3 | 15 | 100 | 100 | 100 |
+| 6 | 3 | 11 | 140 | 140 | 123 |
+| 7 | 3 | 13 | 134 | 134 | 110 |
+| 8 | 3 | 1 | 160 | 160 | 75 |
+| 9 | 4 | 3 | 225 | 210 | 145 |
+| 10 | 3 | 8 | 158 | 158 | 136 |
+| 11 | 3 | 18 | 62 | 62 | 62 |
+| 12 | 4 | 6 | 260 | 241 | 218 |
+| 13 | 4 | 10 | 223 | 201 | 165 |
+| 14 | 3 | 16 | 100 | 100 | 100 |
+| 15 | 3 | 12 | 140 | 140 | 123 |
+| 16 | 3 | 14 | 134 | 134 | 110 |
+| 17 | 3 | 2 | 160 | 160 | 75 |
+| 18 | 4 | 4 | 225 | 210 | 145 |
+
+- **Scorekaartpagina:** https://golfparkweilenseind.nl/golfbaan/scorekaart-2/
+- **Bestanden:** [scorecard/LR_Weilenseind_Scorekaart_2020-binnenkant.jpg](golfpark-weilenseind-gilze/scorecard/LR_Weilenseind_Scorekaart_2020-binnenkant.jpg), [scorecard/20250715_Playing-Handicap-Tabel_Weilenseind-18-holes-Heren-geel-rood.pdf](golfpark-weilenseind-gilze/scorecard/20250715_Playing-Handicap-Tabel_Weilenseind-18-holes-Heren-geel-rood.pdf), [scorecard/20250715_Playing-Handicap-Tabel_Weilenseind-18-holes-Dames-geel-rood.pdf](golfpark-weilenseind-gilze/scorecard/20250715_Playing-Handicap-Tabel_Weilenseind-18-holes-Dames-geel-rood.pdf), [scorecard/20250721_Playing-Handicap-Tabel_Weilenseind-18-holes-Par-3-baan-Heren-oranje.pdf](golfpark-weilenseind-gilze/scorecard/20250721_Playing-Handicap-Tabel_Weilenseind-18-holes-Par-3-baan-Heren-oranje.pdf), [scorecard/20250721_Playing-Handicap-Tabel_Weilenseind-18-holes-Par-3-baan-Dames-oranje.pdf](golfpark-weilenseind-gilze/scorecard/20250721_Playing-Handicap-Tabel_Weilenseind-18-holes-Par-3-baan-Dames-oranje.pdf), [scorecard/page.html](golfpark-weilenseind-gilze/scorecard/page.html)
+- **Opmerking:** Scorekaart 2020 (par 60; 1462/1406/1134 m per 9 holes; holes 10-18 = 1-9 met even S.I.). Ratings uit tabellen juli 2025 (18 holes geel/rood par 60). De oranje tee is in 2025 gerated als par 3-baan met par 56 (heren 50,7/69, dames 52,9/81); de kaart uit 2020 geeft per hole alleen één par-kolom (par 60), dus de par per hole vanaf oranje is niet gepubliceerd.
+
+<a id="golfpark-rotterdam"></a>
+## Golfpark Rotterdam
+
+Golfpark Rotterdam is een nieuw golfpark van de Hollandsche Golfclub in de polder bij Overschie, aan de Schie. Sinds eind augustus 2026 zijn een 9-holes shortgolfbaan (par 28) en de nieuwe rode lus van de grote baan (holes 10-18, par 36) bespeelbaar; de overige negen holes volgen later. Het landschap is open en glooiend met uitzicht op de skyline van Rotterdam.
+
+- **Club:** Golfpark Rotterdam (Hollandsche Golfclub)
+- **Adres:** Vareseweg 93, 3047 AT Rotterdam, Zuid-Holland, NL
+- **GPS:** 51.946948, 4.4034944
+- **Afstand:** 157.6 km
+- **Type:** 9-holes
+- **Holes:** 18
+- **Landschap:** open, glooiend polderlandschap aan de Schie met zicht op de Rotterdamse skyline
+- **Telefoon:** 010 600 3596
+- **E-mail:** info@golfparkrotterdam.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/rotterdam/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/rotterdam/boek-een-starttijd-golfpark-rotterdam/
+- **Greenfee welkom:** True
+- **Eisen:** Rode lus: handicap 54 of baanpermissie van de Hollandsche Golfclub; shortgolfbaan: geen eisen
+- **Faciliteiten:** driving range, putting green, chipping- en pitching green, bunkergreen, tijdelijk hoofdgebouw/brasserie, golflessen
+
+**Lus Rode lus (holes 10-18)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit | 3216 |  |  | 36 |
+| geel | 2929 |  |  | 36 |
+| blauw | 2830 |  |  | 36 |
+| rood | 2489 |  |  | 36 |
+| oranje | 2454 |  |  | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 10 | 4 | 12 | 339 | 304 | 296 | 265 | 258 |
+| 11 | 4 | 4 | 412 | 386 | 371 | 323 | 323 |
+| 12 | 3 | 14 | 158 | 142 | 134 | 114 | 111 |
+| 13 | 5 | 2 | 494 | 454 | 436 | 375 | 375 |
+| 14 | 4 | 10 | 344 | 322 | 316 | 276 | 272 |
+| 15 | 3 | 18 | 156 | 134 | 130 | 118 | 112 |
+| 16 | 4 | 8 | 421 | 388 | 368 | 335 | 329 |
+| 17 | 5 | 6 | 526 | 463 | 447 | 404 | 400 |
+| 18 | 4 | 16 | 366 | 336 | 332 | 279 | 274 |
+
+**Lus Shortgolf 9 holes (par 3|4)** — 9 holes, par 28
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1097 | 25.2 | 62 | 28 |
+| rood (men) |  | 24.5 | 58 | 28 |
+| geel (women) | 1097 | 26.2 | 69 | 28 |
+| rood (women) |  | 25.5 | 63 | 28 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/rotterdam/course/rotterdam-18-holes/
+- **Bestanden:** [scorecard/page.html](golfpark-rotterdam/scorecard/page.html), [scorecard/page-9-holes.html](golfpark-rotterdam/scorecard/page-9-holes.html), [scorecard/RTM-Hole-10-18-WEB.pdf](golfpark-rotterdam/scorecard/RTM-Hole-10-18-WEB.pdf), [scorecard/RTM-HCP-mededeling-18-holes-2026-Basis.pdf](golfpark-rotterdam/scorecard/RTM-HCP-mededeling-18-holes-2026-Basis.pdf), [scorecard/Golfpark-Rotterdam-handicaptabellen.pdf](golfpark-rotterdam/scorecard/Golfpark-Rotterdam-handicaptabellen.pdf), [scorecard/Rotterdam-Bord-2025-scaled.jpg](golfpark-rotterdam/scorecard/Rotterdam-Bord-2025-scaled.jpg)
+- **Opmerking:** Baan in aanleg. Rode lus: scorekaart '9 holes tijdelijk in plaats van 18 holes' met holes 10-18 (S.I. even, 18-holes-stijl); vijf lengtekolommen zonder namen, op kleur wit/geel/blauw/rood/oranje; CR/slope nog niet bekend (mededeling op de site). Shortgolfbaan: alleen par 28 en 1097 m op de site, geen holegegevens; CR/slope uit de tabel 'Golfpark Rotterdam 18-holes Par-3 Baan' d.d. 04-11-2025 (9 holes: heren geel 25,2/62, rood 24,5/58; dames geel 26,2/69, rood 25,5/63; 18 holes heren 50,4/62 en 49,0/58, dames 52,4/69 en 50,9/63). Holes 1-9 van de grote baan nog niet open.
+
+<a id="golfclub-princenbosch-molenschot"></a>
+## Golfclub Princenbosch
+
+Princenbosch in Molenschot, tussen Breda en Tilburg, heeft 27 holes in drie lussen (A, B en C) die in drie 18-holescombinaties worden gespeeld, elk met een eigen scorekaart en stroke index. De holes lopen door bos, heide en langs waterhindernissen. Bijzonder is de verlichte 9-holes par 3-baan, waar je ook na zonsondergang kunt spelen.
+
+- **Club:** Golfclub Princenbosch
+- **Adres:** Bavelseweg 153, 5124 PX Molenschot, Noord-Brabant, NL
+- **GPS:** 51.5481, 4.8736
+- **Afstand:** 159.5 km
+- **Type:** 27-holes
+- **Holes:** 36
+- **Landschap:** bos, heide en waterpartijen
+- **Opgericht:** 1991
+- **Telefoon:** 0161 431811
+- **E-mail:** golfclub@princenbosch.nl
+- **Website:** https://princenbosch.nl/
+- **Starttijden:** https://princenbosch.nl/gastspelers/
+- **Greenfee welkom:** True
+- **Eisen:** Greenfeespelers welkom (mrt-okt vanaf 13.00 uur, nov-feb vanaf 12.00 uur); flights van vier met gezamenlijke handicap max. 110.
+- **Faciliteiten:** verlichte 9-holes par 3-baan, golfschool/academy, driving range/practice area, brasserie, handicarts met GPS
+
+**Lus AB (A + B)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5534 | 69.8 | 125 | 70 |
+| geel (men) | 5236 | 68.1 | 125 | 70 |
+| blauw (men) | 4766 | 66.0 | 112 | 70 |
+| rood (men) | 4583 | 65.4 | 108 | 70 |
+| oranje (men) | 3757 | 62.6 | 102 | 70 |
+| geel (women) | 5236 | 73.5 | 133 | 70 |
+| blauw (women) | 4766 | 70.6 | 128 | 70 |
+| rood (women) | 4583 | 69.9 | 125 | 70 |
+| oranje (women) | 3757 | 65.4 | 103 | 70 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 350 | 340 | 302 | 292 | 248 |
+| 2 | 5 | 5 | 482 | 471 | 397 | 385 | 342 |
+| 3 | 3 | 11 | 206 | 158 | 158 | 143 | 102 |
+| 4 | 4 | 13 | 315 | 315 | 273 | 263 | 200 |
+| 5 | 5 | 1 | 489 | 439 | 439 | 421 | 368 |
+| 6 | 3 | 15 | 145 | 127 | 127 | 112 | 107 |
+| 7 | 3 | 17 | 122 | 122 | 108 | 108 | 103 |
+| 8 | 4 | 3 | 335 | 318 | 285 | 273 | 216 |
+| 9 | 4 | 7 | 359 | 334 | 301 | 289 | 218 |
+| 10 | 4 | 2 | 387 | 375 | 350 | 338 | 259 |
+| 11 | 3 | 10 | 172 | 156 | 149 | 149 | 133 |
+| 12 | 4 | 4 | 366 | 355 | 355 | 336 | 283 |
+| 13 | 4 | 6 | 313 | 302 | 265 | 253 | 206 |
+| 14 | 5 | 12 | 461 | 441 | 380 | 365 | 327 |
+| 15 | 4 | 18 | 276 | 267 | 232 | 224 | 149 |
+| 16 | 3 | 16 | 141 | 141 | 126 | 126 | 67 |
+| 17 | 3 | 14 | 158 | 158 | 143 | 143 | 105 |
+| 18 | 5 | 8 | 457 | 417 | 376 | 363 | 324 |
+
+**Lus BC (B + C)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5907 | 72.1 | 131 | 72 |
+| geel (men) | 5636 | 70.6 | 128 | 72 |
+| blauw (men) | 5128 | 68.1 | 116 | 72 |
+| rood (men) | 4915 | 67.1 | 114 | 72 |
+| oranje (men) | 4019 | 63.6 | 107 | 72 |
+| geel (women) | 5636 | 76.4 | 137 | 72 |
+| blauw (women) | 5128 | 73.5 | 133 | 72 |
+| rood (women) | 4915 | 72.7 | 131 | 72 |
+| oranje (women) | 4019 | 67.2 | 109 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 1 | 387 | 375 | 350 | 338 | 259 |
+| 2 | 3 | 9 | 172 | 156 | 149 | 149 | 133 |
+| 3 | 4 | 3 | 366 | 355 | 355 | 336 | 283 |
+| 4 | 4 | 5 | 313 | 302 | 265 | 253 | 206 |
+| 5 | 5 | 11 | 461 | 441 | 380 | 365 | 327 |
+| 6 | 4 | 17 | 276 | 267 | 232 | 224 | 149 |
+| 7 | 3 | 15 | 141 | 141 | 126 | 126 | 67 |
+| 8 | 3 | 13 | 158 | 158 | 143 | 143 | 105 |
+| 9 | 5 | 7 | 457 | 417 | 376 | 363 | 324 |
+| 10 | 5 | 16 | 486 | 448 | 437 | 385 | 329 |
+| 11 | 3 | 18 | 154 | 154 | 136 | 136 | 98 |
+| 12 | 5 | 8 | 469 | 460 | 391 | 383 | 349 |
+| 13 | 4 | 14 | 322 | 310 | 277 | 269 | 188 |
+| 14 | 3 | 12 | 155 | 155 | 132 | 132 | 92 |
+| 15 | 4 | 6 | 392 | 356 | 356 | 296 | 237 |
+| 16 | 4 | 4 | 357 | 351 | 308 | 308 | 264 |
+| 17 | 4 | 2 | 389 | 348 | 327 | 327 | 275 |
+| 18 | 5 | 10 | 452 | 442 | 388 | 382 | 334 |
+
+**Lus CA (C + A)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5979 | 72.3 | 128 | 72 |
+| geel (men) | 5648 | 70.5 | 128 | 72 |
+| blauw (men) | 5142 | 67.7 | 119 | 72 |
+| rood (men) | 4904 | 66.5 | 118 | 72 |
+| oranje (men) | 4070 | 63.2 | 107 | 72 |
+| geel (women) | 5648 | 76.6 | 139 | 72 |
+| blauw (women) | 5142 | 73.6 | 131 | 72 |
+| rood (women) | 4904 | 72.4 | 128 | 72 |
+| oranje (women) | 4070 | 66.8 | 113 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 15 | 486 | 448 | 437 | 385 | 329 |
+| 2 | 3 | 17 | 154 | 154 | 136 | 136 | 98 |
+| 3 | 5 | 7 | 469 | 460 | 391 | 383 | 349 |
+| 4 | 4 | 13 | 322 | 310 | 277 | 269 | 188 |
+| 5 | 3 | 11 | 155 | 155 | 132 | 132 | 92 |
+| 6 | 4 | 5 | 392 | 356 | 356 | 296 | 237 |
+| 7 | 4 | 3 | 357 | 351 | 308 | 308 | 264 |
+| 8 | 4 | 1 | 389 | 348 | 327 | 327 | 275 |
+| 9 | 5 | 9 | 452 | 442 | 388 | 382 | 334 |
+| 10 | 4 | 10 | 350 | 340 | 302 | 292 | 248 |
+| 11 | 5 | 6 | 482 | 471 | 397 | 385 | 342 |
+| 12 | 3 | 12 | 206 | 158 | 158 | 143 | 102 |
+| 13 | 4 | 14 | 315 | 315 | 273 | 263 | 200 |
+| 14 | 5 | 2 | 489 | 439 | 439 | 421 | 368 |
+| 15 | 3 | 16 | 145 | 127 | 127 | 112 | 107 |
+| 16 | 3 | 18 | 122 | 122 | 108 | 108 | 103 |
+| 17 | 4 | 4 | 335 | 318 | 285 | 273 | 216 |
+| 18 | 4 | 8 | 359 | 334 | 301 | 289 | 218 |
+
+**Lus Par 3-baan 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1858 | 49.9 | 73 | 54 |
+| rood (men) | 1644 | 48.8 | 70 | 54 |
+| geel (women) | 1858 | 51.3 | 71 | 54 |
+| rood (women) | 1644 | 50.0 | 68 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 15 | 77 | 77 |
+| 2 | 3 | 7 | 112 | 112 |
+| 3 | 3 | 3 | 129 | 88 |
+| 4 | 3 | 17 | 65 | 65 |
+| 5 | 3 | 11 | 86 | 86 |
+| 6 | 3 | 1 | 153 | 125 |
+| 7 | 3 | 5 | 116 | 78 |
+| 8 | 3 | 9 | 111 | 111 |
+| 9 | 3 | 13 | 80 | 80 |
+| 10 | 3 | 16 | 77 | 77 |
+| 11 | 3 | 8 | 112 | 112 |
+| 12 | 3 | 4 | 129 | 88 |
+| 13 | 3 | 18 | 65 | 65 |
+| 14 | 3 | 12 | 86 | 86 |
+| 15 | 3 | 2 | 153 | 125 |
+| 16 | 3 | 6 | 116 | 78 |
+| 17 | 3 | 10 | 111 | 111 |
+| 18 | 3 | 14 | 80 | 80 |
+
+- **Scorekaartpagina:** https://princenbosch.nl/onze-banen/scorekaarten/
+- **Bestanden:** [scorecard/DEF_PrbschScorekaart_2024-Augustus_HR-1-2.pdf](golfclub-princenbosch-molenschot/scorecard/DEF_PrbschScorekaart_2024-Augustus_HR-1-2.pdf), [scorecard/DEF_PrbschScorekaart_2024-Augustus_HR-3-4.pdf](golfclub-princenbosch-molenschot/scorecard/DEF_PrbschScorekaart_2024-Augustus_HR-3-4.pdf), [scorecard/DEF_PrbschScorekaart_2024-Augustus_HR-5-6.pdf](golfclub-princenbosch-molenschot/scorecard/DEF_PrbschScorekaart_2024-Augustus_HR-5-6.pdf), [scorecard/DEF_PrbschScorekaart_2024-Augustus_HR-7-8.pdf](golfclub-princenbosch-molenschot/scorecard/DEF_PrbschScorekaart_2024-Augustus_HR-7-8.pdf), [scorecard/DEF_PrbschScorekaart_2024-Augustus_HR-9-10.pdf](golfclub-princenbosch-molenschot/scorecard/DEF_PrbschScorekaart_2024-Augustus_HR-9-10.pdf), [scorecard/49_Princenbosch_18-holes_A-B_Course_Heren.pdf](golfclub-princenbosch-molenschot/scorecard/49_Princenbosch_18-holes_A-B_Course_Heren.pdf), [scorecard/49_Princenbosch_18-holes_B-C_Course_Heren.pdf](golfclub-princenbosch-molenschot/scorecard/49_Princenbosch_18-holes_B-C_Course_Heren.pdf), [scorecard/49_Princenbosch_18-holes_C-A_Course_Heren.pdf](golfclub-princenbosch-molenschot/scorecard/49_Princenbosch_18-holes_C-A_Course_Heren.pdf), [scorecard/49_Princenbosch_18-holes_A-B_Course_Dames.pdf](golfclub-princenbosch-molenschot/scorecard/49_Princenbosch_18-holes_A-B_Course_Dames.pdf), [scorecard/49_Princenbosch_18-holes_B-C_Course_Dames.pdf](golfclub-princenbosch-molenschot/scorecard/49_Princenbosch_18-holes_B-C_Course_Dames.pdf), [scorecard/49_Princenbosch_18-holes_C-A_Course_Dames.pdf](golfclub-princenbosch-molenschot/scorecard/49_Princenbosch_18-holes_C-A_Course_Dames.pdf), [scorecard/49_Par_3_baan_18_hole_DH_nov._2023.pdf](golfclub-princenbosch-molenschot/scorecard/49_Par_3_baan_18_hole_DH_nov._2023.pdf), [scorecard/page.html](golfclub-princenbosch-molenschot/scorecard/page.html)
+- **Opmerking:** Scorekaarten augustus 2024 per combinatie (AB par 70: 5534/5236/4766/4583/3757; BC par 72: 5907/5636/5128/4915/4019; CA par 72: 5979/5648/5142/4904/4070; sommen kloppen). S.I. verschilt per combinatie. CR/slope uit tabellen oktober 2024 (wit alleen heren). Par 3-baan: 9 holes 929 m (geel) / 822 m (rood), ratings 18 holes nov. 2023; S.I. 10-18 = S.I. 1-9 + 1 (bevestigd voor holes 13, 15 en 17 op de 18-holes par 3-kaart). Club 35 jaar in 2026, dus opgericht 1991.
+
+<a id="de-strijensche-golfclub-strijen"></a>
+## De Strijensche Golfclub
+
+De Strijensche Golfclub ligt aan de rand van Strijen in de Hoeksche Waard. De hoofdbaan telt negen holes (par 35) met een lange par 5 en een paar lastige par 3's over sloten; voor 18 holes wordt de lus twee keer gespeeld. Daarnaast zijn er een 6-holes par 3-baan en een footgolf- en pitch & putt-parcours.
+
+- **Club:** De Strijensche Golfclub
+- **Adres:** Molenwegje 2B, 3291 CG Strijen, Zuid-Holland, NL
+- **GPS:** 51.7591066, 4.5563664
+- **Afstand:** 160.0 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** polderbaan met sloten in de Hoeksche Waard
+- **Telefoon:** 078 674 4564
+- **E-mail:** info@dsgclub.nl
+- **Website:** https://destrijenschegolfclub.nl
+- **Starttijden:** https://destrijenschegolfclub.nl/de-baan/starttijden/
+- **Greenfee welkom:** True
+- **Faciliteiten:** 6-holes par 3-baan, footgolf / pitch & putt, golfles (PGA), clubhuis
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5474 | 70.8 | 139 | 70 |
+| rood (men) | 4930 | 68.7 | 120 | 70 |
+| oranje (men) | 3800 | 64.1 | 114 | 70 |
+| geel (women) | 5474 | 76.8 | 145 | 70 |
+| rood (women) | 4930 | 73.1 | 139 | 70 |
+| oranje (women) | 3800 | 67.7 | 109 | 70 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 13 | 324 | 275 | 200 |
+| 2 | 4 | 11 | 277 | 250 | 197 |
+| 3 | 3 | 17 | 204 | 174 | 134 |
+| 4 | 4 | 5 | 320 | 300 | 219 |
+| 5 | 3 | 9 | 159 | 136 | 93 |
+| 6 | 5 | 3 | 481 | 450 | 370 |
+| 7 | 4 | 7 | 304 | 276 | 203 |
+| 8 | 4 | 15 | 334 | 311 | 254 |
+| 9 | 4 | 1 | 334 | 293 | 230 |
+| 10 | 4 | 14 | 324 | 275 | 200 |
+| 11 | 4 | 12 | 277 | 250 | 197 |
+| 12 | 3 | 18 | 204 | 174 | 134 |
+| 13 | 4 | 6 | 320 | 300 | 219 |
+| 14 | 3 | 10 | 159 | 136 | 93 |
+| 15 | 5 | 4 | 481 | 450 | 370 |
+| 16 | 4 | 8 | 304 | 276 | 203 |
+| 17 | 4 | 16 | 334 | 311 | 254 |
+| 18 | 4 | 2 | 334 | 293 | 230 |
+
+**Lus 9 holes** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2737 | 35.4 | 139 | 35 |
+| rood (men) | 2465 | 34.4 | 120 | 35 |
+| oranje (men) | 1900 | 32.1 | 114 | 35 |
+| geel (women) | 2737 | 38.4 | 145 | 35 |
+| rood (women) | 2465 | 36.6 | 139 | 35 |
+| oranje (women) | 1900 | 33.9 | 109 | 35 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 13 | 324 | 275 | 200 |
+| 2 | 4 | 11 | 277 | 250 | 197 |
+| 3 | 3 | 17 | 204 | 174 | 134 |
+| 4 | 4 | 5 | 320 | 300 | 219 |
+| 5 | 3 | 9 | 159 | 136 | 93 |
+| 6 | 5 | 3 | 481 | 450 | 370 |
+| 7 | 4 | 7 | 304 | 276 | 203 |
+| 8 | 4 | 15 | 334 | 311 | 254 |
+| 9 | 4 | 1 | 334 | 293 | 230 |
+
+- **Scorekaartpagina:** https://destrijenschegolfclub.nl/de-baan/handicap-tabel-scorekaarten/
+- **Bestanden:** [scorecard/page.html](de-strijensche-golfclub-strijen/scorecard/page.html), [scorecard/Scorekaart-2021.pdf](de-strijensche-golfclub-strijen/scorecard/Scorekaart-2021.pdf), [scorecard/Baanhandicaptabel-HEREN.pdf](de-strijensche-golfclub-strijen/scorecard/Baanhandicaptabel-HEREN.pdf), [scorecard/Baanhandicap-tabel-DAMES.pdf](de-strijensche-golfclub-strijen/scorecard/Baanhandicap-tabel-DAMES.pdf)
+- **Opmerking:** Scorekaart 2021 (holes 10-18 = holes 1-9 met even S.I.); CR/slope uit baanhandicaptabellen d.d. 18-01-2021 (gelijk aan scorekaart). 9-holes lus: S.I. in 18-holes-stijl (oneven). De 6-holes par 3-baan heeft geen gepubliceerde scorekaart en is niet opgenomen.
+
+<a id="rhoon-golfcenter"></a>
+## Rhoon Golfcenter (18 holes)
+
+Rhoon Golfcenter ligt in de polder bij Rhoon, vlak bij de Oude Maas, en is de thuisbaan van Golfclub Oude Maas (opgericht 1975). De 18-holesbaan (par 71) kent vijf teesets en wordt aangevuld met een par 3-baan, een ruime oefenaccommodatie en een brasserie. Greenfeespelers met baanpermissie zijn welkom.
+
+- **Club:** Rhoon Golfcenter / Golfclub Oude Maas
+- **Adres:** Veerweg 2A, 3161 EX Rhoon, Zuid-Holland, NL
+- **GPS:** 51.836435, 4.4600748
+- **Afstand:** 160.5 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** polderbaan in de Rhoonse polder bij de Oude Maas
+- **Opgericht:** 1975
+- **Telefoon:** 010 501 80 58
+- **E-mail:** info@rhoongolfcenter.nl
+- **Website:** https://www.rhoongolfcenter.nl
+- **Starttijden:** https://www.rhoongolfcenter.nl/golfen/reserveren/
+- **Greenfee welkom:** True
+- **Eisen:** Minimaal baanpermissie/handicap 54 (bezoekers max. handicap 54)
+- **Faciliteiten:** driving range, putting greens, chipholes, oefenbunker, par 3-baan (Beverbaan), Trackman, golfwinkel, golfacademy, Brasserie Rhoonse Polder
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5748 | 71.1 | 133 | 71 |
+| geel (men) | 5481 | 70.1 | 128 | 71 |
+| blauw (men) | 5104 | 68.4 | 122 | 71 |
+| rood (men) | 4746 | 66.8 | 116 | 71 |
+| oranje (men) | 4554 | 65.8 | 114 | 71 |
+| geel (women) | 5481 | 75.7 | 141 | 71 |
+| blauw (women) | 5104 | 73.5 | 135 | 71 |
+| rood (women) | 4746 | 71.7 | 124 | 71 |
+| oranje (women) | 4554 | 70.4 | 121 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 8 | 316 | 305 | 269 | 264 | 259 |
+| 2 | 4 | 12 | 303 | 293 | 278 | 252 | 240 |
+| 3 | 5 | 16 | 447 | 429 | 422 | 368 | 362 |
+| 4 | 5 | 4 | 503 | 486 | 469 | 418 | 405 |
+| 5 | 3 | 14 | 194 | 174 | 174 | 158 | 151 |
+| 6 | 4 | 10 | 336 | 326 | 318 | 286 | 278 |
+| 7 | 4 | 2 | 360 | 350 | 341 | 299 | 290 |
+| 8 | 4 | 6 | 320 | 310 | 276 | 270 | 265 |
+| 9 | 3 | 18 | 125 | 121 | 117 | 112 | 107 |
+| 10 | 3 | 9 | 188 | 181 | 181 | 148 | 134 |
+| 11 | 4 | 15 | 288 | 275 | 250 | 239 | 235 |
+| 12 | 5 | 1 | 490 | 475 | 404 | 385 | 380 |
+| 13 | 4 | 5 | 356 | 335 | 321 | 292 | 277 |
+| 14 | 4 | 13 | 319 | 269 | 256 | 248 | 215 |
+| 15 | 3 | 11 | 158 | 158 | 151 | 151 | 147 |
+| 16 | 4 | 3 | 387 | 373 | 326 | 321 | 294 |
+| 17 | 3 | 7 | 200 | 180 | 169 | 162 | 155 |
+| 18 | 5 | 17 | 458 | 441 | 382 | 373 | 360 |
+
+**Lus 1e 9 holes** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2904 | 35.6 | 134 | 36 |
+| geel (men) | 2794 | 35.1 | 129 | 36 |
+| blauw (men) | 2664 | 34.5 | 123 | 36 |
+| rood (men) | 2427 | 33.5 | 115 | 36 |
+| oranje (men) | 2357 | 33.2 | 113 | 36 |
+| geel (women) | 2794 | 38.0 | 142 | 36 |
+| blauw (women) | 2664 | 37.1 | 139 | 36 |
+| rood (women) | 2427 | 35.9 | 124 | 36 |
+| oranje (women) | 2357 | 35.6 | 121 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 8 | 316 | 305 | 269 | 264 | 259 |
+| 2 | 4 | 12 | 303 | 293 | 278 | 252 | 240 |
+| 3 | 5 | 16 | 447 | 429 | 422 | 368 | 362 |
+| 4 | 5 | 4 | 503 | 486 | 469 | 418 | 405 |
+| 5 | 3 | 14 | 194 | 174 | 174 | 158 | 151 |
+| 6 | 4 | 10 | 336 | 326 | 318 | 286 | 278 |
+| 7 | 4 | 2 | 360 | 350 | 341 | 299 | 290 |
+| 8 | 4 | 6 | 320 | 310 | 276 | 270 | 265 |
+| 9 | 3 | 18 | 125 | 121 | 117 | 112 | 107 |
+
+**Lus 2e 9 holes** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2844 | 35.5 | 132 | 35 |
+| geel (men) | 2687 | 35.1 | 126 | 35 |
+| blauw (men) | 2440 | 34.0 | 121 | 35 |
+| rood (men) | 2319 | 33.3 | 116 | 35 |
+| oranje (men) | 2197 | 32.7 | 114 | 35 |
+| geel (women) | 2687 | 37.7 | 139 | 35 |
+| blauw (women) | 2440 | 36.5 | 131 | 35 |
+| rood (women) | 2319 | 35.8 | 123 | 35 |
+| oranje (women) | 2197 | 34.9 | 120 | 35 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 3 | 9 | 188 | 181 | 181 | 148 | 134 |
+| 2 | 4 | 15 | 288 | 275 | 250 | 239 | 235 |
+| 3 | 5 | 1 | 490 | 475 | 404 | 385 | 380 |
+| 4 | 4 | 5 | 356 | 335 | 321 | 292 | 277 |
+| 5 | 4 | 13 | 319 | 269 | 256 | 248 | 215 |
+| 6 | 3 | 11 | 158 | 158 | 151 | 151 | 147 |
+| 7 | 4 | 3 | 387 | 373 | 326 | 321 | 294 |
+| 8 | 3 | 7 | 200 | 180 | 169 | 162 | 155 |
+| 9 | 5 | 17 | 458 | 441 | 382 | 373 | 360 |
+
+- **Scorekaartpagina:** https://www.rhoongolfcenter.nl/golfbaan/handicapregistratie--tabel/
+- **Bestanden:** [scorecard/page.html](rhoon-golfcenter/scorecard/page.html), [scorecard/scorekaart-18-holes-baan.pdf](rhoon-golfcenter/scorecard/scorekaart-18-holes-baan.pdf), [scorecard/baanhandicap-tabel-heren.pdf](rhoon-golfcenter/scorecard/baanhandicap-tabel-heren.pdf), [scorecard/baanhandicap-tabel-dames.pdf](rhoon-golfcenter/scorecard/baanhandicap-tabel-dames.pdf)
+- **Opmerking:** Par, S.I. en lengtes van de scorekaart (rhoongolfcenter.nl). CR/slope uit de baanhandicaptabellen d.d. 12-05-2022; de scorekaart zelf vermeldt oudere ratings (bv. wit 70,2/124). Oprichtingsjaar 1975 = Golfclub Oude Maas (50-jarig jubileum in 2025). In de losse 9-holes lussen staat de S.I. in 18-holes-stijl (1e 9 even, 2e 9 oneven).
+
+<a id="rhoon-golfcenter-beverbaan"></a>
+## Rhoon Golfcenter Beverbaan (par 3)
+
+De Beverbaan is de par 3-baan van Rhoon Golfcenter. Volgens de scorekaart telt hij 18 korte holes van 91 tot 154 meter (par 54), ideaal om het korte spel te oefenen of als opstap naar de grote baan. De huidige website spreekt van een par 3-baan van zes holes.
+
+- **Club:** Rhoon Golfcenter / Golfclub Oude Maas
+- **Adres:** Veerweg 2A, 3161 EX Rhoon, Zuid-Holland, NL
+- **GPS:** 51.836435, 4.4600748
+- **Afstand:** 160.5 km
+- **Type:** par-3
+- **Holes:** 18
+- **Landschap:** polder
+- **Telefoon:** 010 501 80 58
+- **E-mail:** info@rhoongolfcenter.nl
+- **Website:** https://www.rhoongolfcenter.nl/golfbaan/par-3-baan/
+- **Starttijden:** https://www.rhoongolfcenter.nl/golfen/reserveren/
+- **Greenfee welkom:** True
+- **Eisen:** Volgens de site ook zonder handicap 54 te spelen (mini-holes)
+- **Faciliteiten:** driving range, putting greens, Brasserie Rhoonse Polder
+
+**Lus Beverbaan 18 holes** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| baan (men) | 2094 | 51.0 | 76 | 54 |
+| baan (women) | 2094 | 52.9 | 80 | 54 |
+
+| Hole | Par | SI | baan |
+|---|---|---|---|
+| 1 | 3 | 18 | 102 |
+| 2 | 3 | 16 | 98 |
+| 3 | 3 | 12 | 108 |
+| 4 | 3 | 4 | 120 |
+| 5 | 3 | 2 | 148 |
+| 6 | 3 | 6 | 105 |
+| 7 | 3 | 8 | 116 |
+| 8 | 3 | 14 | 110 |
+| 9 | 3 | 10 | 105 |
+| 10 | 3 | 5 | 133 |
+| 11 | 3 | 9 | 105 |
+| 12 | 3 | 13 | 113 |
+| 13 | 3 | 15 | 111 |
+| 14 | 3 | 17 | 91 |
+| 15 | 3 | 1 | 146 |
+| 16 | 3 | 7 | 120 |
+| 17 | 3 | 3 | 154 |
+| 18 | 3 | 11 | 109 |
+
+- **Scorekaartpagina:** https://www.rhoongolfcenter.nl/golfbaan/handicapregistratie--tabel/
+- **Bestanden:** [scorecard/page.html](rhoon-golfcenter-beverbaan/scorecard/page.html), [scorecard/scorekaart-beverbaan-rhoon-golfcenter.pdf](rhoon-golfcenter-beverbaan/scorecard/scorekaart-beverbaan-rhoon-golfcenter.pdf), [scorecard/handicap-tabel-par-3--6-holes_1708352715.pdf](rhoon-golfcenter-beverbaan/scorecard/handicap-tabel-par-3--6-holes_1708352715.pdf)
+- **Opmerking:** Scorekaart Beverbaan: 18 holes par 54, één lengtekolom (2094 m). CR/slope uit de tabel d.d. 12-05-2022 (geel heren 51,0/76, rood dames 52,9/80; 1e 9: 25,3/74 en 26,2/79; 2e 9: 25,8/77 en 26,8/82); in beide tees dezelfde lengtes. LET OP: de huidige site en de kop van het tabelbestand spreken van een PAR-3 baan van 6 holes; mogelijk is de baan ingekort en is de scorekaart verouderd.
+
+<a id="golfbaan-delfland-par-3-schipluiden"></a>
+## Golfbaan Delfland Par 3 Challenge Course
+
+De Par 3 Challenge Course is de verlichte korte baan van Golfbaan Delfland in Schipluiden. De negen par 3-holes van 70 tot 138 meter worden afgewisseld door bunkers en water en zijn ook 's avonds te spelen. Een goede baan om het korte spel te oefenen of snel een rondje te lopen.
+
+- **Club:** Golfbaan Delfland
+- **Adres:** Abtsrechtseweg 1, 2636 HZ Schipluiden, Zuid-Holland, NL
+- **GPS:** 51.9791483, 4.3281679
+- **Afstand:** 160.6 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** polder met waterpartijen en bunkers
+- **Telefoon:** 015 380 79 11
+- **E-mail:** info@delflandgolf.nl
+- **Website:** https://www.delflandgolf.nl
+- **Starttijden:** https://www.delflandgolf.nl/reserveer-starttijd/reserveren-starttijd/
+- **Greenfee welkom:** True
+- **Eisen:** Minimaal baanpermissie
+- **Faciliteiten:** verlichting (avondgolf), driving range, oefengreens, Brasserie Delfland
+
+**Lus Par 3 Challenge Course (2x9 holes)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| baan | 1872 |  |  | 54 |
+
+| Hole | Par | SI | baan |
+|---|---|---|---|
+| 1 | 3 | 15 | 90 |
+| 2 | 3 | 5 | 136 |
+| 3 | 3 | 9 | 70 |
+| 4 | 3 | 11 | 106 |
+| 5 | 3 | 17 | 91 |
+| 6 | 3 | 1 | 138 |
+| 7 | 3 | 7 | 115 |
+| 8 | 3 | 3 | 108 |
+| 9 | 3 | 13 | 82 |
+| 10 | 3 | 16 | 90 |
+| 11 | 3 | 6 | 136 |
+| 12 | 3 | 10 | 70 |
+| 13 | 3 | 12 | 106 |
+| 14 | 3 | 18 | 91 |
+| 15 | 3 | 2 | 138 |
+| 16 | 3 | 8 | 115 |
+| 17 | 3 | 4 | 108 |
+| 18 | 3 | 14 | 82 |
+
+- **Scorekaartpagina:** https://www.delflandgolf.nl/golfen/baaninformatie/
+- **Bestanden:** [scorecard/page.html](golfbaan-delfland-par-3-schipluiden/scorecard/page.html), [scorecard/delfland-score-kaart-par-3-challenge-course-1.pdf](golfbaan-delfland-par-3-schipluiden/scorecard/delfland-score-kaart-par-3-challenge-course-1.pdf)
+- **Opmerking:** Scorekaart met één lengtekolom ('meter', geen teekleur) en 9 holes die 2x worden gespeeld (holes 10-18 met even S.I.). De gelinkte 'tabel dames en heren' is hetzelfde bestand als de scorekaart; CR/slope dus onbekend.
+
+<a id="golfbaan-delfland-schipluiden"></a>
+## Golfbaan Delfland (Championship Course)
+
+Golfbaan Delfland is een grote openbare golfbaan in de polder van Midden-Delfland, tussen Delft, Schipluiden en Maassluis. De Championship Course telt drie lussen van negen holes (rood, geel en blauw) die onderling tot 18 holes worden gecombineerd, met brede fairways en veel water. Daarnaast liggen er een verlichte par 3-baan en een putting- en chippingbaan van kunstgras.
+
+- **Club:** Golfbaan Delfland
+- **Adres:** Abtsrechtseweg 1, 2636 HZ Schipluiden, Zuid-Holland, NL
+- **GPS:** 51.9791483, 4.3281679
+- **Afstand:** 160.6 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** open polderbaan met waterpartijen (Midden-Delfland)
+- **Telefoon:** 015 380 79 11
+- **E-mail:** info@delflandgolf.nl
+- **Website:** https://www.delflandgolf.nl
+- **Starttijden:** https://www.delflandgolf.nl/reserveer-starttijd/reserveren-starttijd/
+- **Greenfee welkom:** True
+- **Eisen:** Championship Course: minimaal handicap 54; Par 3 Challenge Course: minimaal baanpermissie (FAQ delflandgolf.nl)
+- **Faciliteiten:** driving range, oefengreens (putten, chippen/bunker), verlichte 9-holes par 3-baan (Par 3 Challenge Course), Joost Luiten Green Course (9-holes putting & chipping op kunstgras), golfshop, Brasserie Delfland, golfacademy, buggy's, trolleys
+
+**Lus Rode lus (A)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2964 | 35.1 | 120 | 36 |
+| geel (men) | 2821 | 34.8 | 123 | 36 |
+| blauw (men) | 2556 | 34.1 | 114 | 36 |
+| rood (men) | 2378 | 32.9 | 99 | 36 |
+| oranje (men) | 1973 | 32.0 | 100 | 36 |
+| geel (women) | 2821 | 37.6 | 128 | 36 |
+| blauw (women) | 2556 | 36.8 | 127 | 36 |
+| rood (women) | 2378 | 35.0 | 121 | 36 |
+| oranje (women) | 1973 | 33.9 | 109 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 15 | 286 | 277 | 267 | 227 | 182 |
+| 2 | 5 | 13 | 454 | 428 | 418 | 362 | 312 |
+| 3 | 4 | 5 | 358 | 347 | 300 | 292 | 247 |
+| 4 | 3 | 9 | 173 | 147 | 139 | 127 | 97 |
+| 5 | 4 | 3 | 398 | 388 | 331 | 323 | 268 |
+| 6 | 4 | 1 | 370 | 331 | 319 | 283 | 238 |
+| 7 | 3 | 17 | 149 | 142 | 127 | 123 | 93 |
+| 8 | 4 | 7 | 344 | 336 | 284 | 276 | 231 |
+| 9 | 5 | 11 | 432 | 425 | 371 | 365 | 305 |
+
+**Lus Gele lus (B)** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2952 | 35.6 | 133 | 36 |
+| geel (men) | 2788 | 34.9 | 120 | 36 |
+| blauw (men) | 2606 | 33.9 | 115 | 36 |
+| rood (men) | 2326 | 32.9 | 104 | 36 |
+| oranje (men) | 1964 | 31.3 | 108 | 36 |
+| geel (women) | 2788 | 37.7 | 143 | 36 |
+| blauw (women) | 2606 | 36.5 | 134 | 36 |
+| rood (women) | 2326 | 35.1 | 126 | 36 |
+| oranje (women) | 1964 | 33.3 | 106 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 6 | 350 | 342 | 295 | 286 | 241 |
+| 2 | 3 | 18 | 135 | 126 | 117 | 105 | 85 |
+| 3 | 4 | 2 | 378 | 360 | 351 | 305 | 260 |
+| 4 | 4 | 16 | 308 | 277 | 272 | 235 | 185 |
+| 5 | 4 | 10 | 363 | 344 | 336 | 274 | 237 |
+| 6 | 5 | 4 | 460 | 452 | 376 | 371 | 321 |
+| 7 | 3 | 14 | 157 | 129 | 123 | 116 | 86 |
+| 8 | 4 | 8 | 328 | 301 | 290 | 259 | 209 |
+| 9 | 5 | 12 | 473 | 457 | 446 | 375 | 340 |
+
+**Lus Blauwe lus (C)** — 9 holes, par 37
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2989 | 36.1 | 125 | 37 |
+| geel (men) | 2882 | 35.6 | 124 | 37 |
+| blauw (men) | 2614 | 33.8 | 119 | 37 |
+| rood (men) | 2462 | 33.1 | 115 | 37 |
+| oranje (men) | 2113 | 31.7 | 101 | 37 |
+| geel (women) | 2882 | 38.8 | 137 | 37 |
+| blauw (women) | 2614 | 37.0 | 131 | 37 |
+| rood (women) | 2462 | 36.1 | 119 | 37 |
+| oranje (women) | 2113 | 33.5 | 120 | 37 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 15 | 318 | 308 | 274 | 274 | 228 |
+| 2 | 5 | 9 | 450 | 442 | 368 | 368 | 333 |
+| 3 | 3 | 1 | 195 | 180 | 171 | 149 | 105 |
+| 4 | 4 | 13 | 308 | 308 | 308 | 267 | 212 |
+| 5 | 4 | 11 | 323 | 301 | 292 | 268 | 250 |
+| 6 | 4 | 7 | 279 | 279 | 255 | 255 | 215 |
+| 7 | 5 | 3 | 447 | 435 | 375 | 365 | 333 |
+| 8 | 4 | 5 | 375 | 345 | 336 | 286 | 219 |
+| 9 | 4 | 17 | 294 | 284 | 235 | 230 | 218 |
+
+**Lus Rode lus + Gele lus (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5916 | 71.1 | 127 | 72 |
+| geel (men) | 5609 | 69.6 | 122 | 72 |
+| blauw (men) | 5162 | 67.4 | 112 | 72 |
+| rood (men) | 4704 | 65.8 | 102 | 72 |
+| oranje (men) | 3937 | 62.7 | 105 | 72 |
+| geel (women) | 5609 | 75.3 | 135 | 72 |
+| blauw (women) | 5162 | 72.5 | 130 | 72 |
+| rood (women) | 4704 | 70.1 | 123 | 72 |
+| oranje (women) | 3937 | 66.2 | 102 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 15 | 286 | 277 | 267 | 227 | 182 |
+| 2 | 5 | 13 | 454 | 428 | 418 | 362 | 312 |
+| 3 | 4 | 5 | 358 | 347 | 300 | 292 | 247 |
+| 4 | 3 | 9 | 173 | 147 | 139 | 127 | 97 |
+| 5 | 4 | 3 | 398 | 388 | 331 | 323 | 268 |
+| 6 | 4 | 1 | 370 | 331 | 319 | 283 | 238 |
+| 7 | 3 | 17 | 149 | 142 | 127 | 123 | 93 |
+| 8 | 4 | 7 | 344 | 336 | 284 | 276 | 231 |
+| 9 | 5 | 11 | 432 | 425 | 371 | 365 | 305 |
+| 10 | 4 | 6 | 350 | 342 | 295 | 286 | 241 |
+| 11 | 3 | 18 | 135 | 126 | 117 | 105 | 85 |
+| 12 | 4 | 2 | 378 | 360 | 351 | 305 | 260 |
+| 13 | 4 | 16 | 308 | 277 | 272 | 235 | 185 |
+| 14 | 4 | 10 | 363 | 344 | 336 | 274 | 237 |
+| 15 | 5 | 4 | 460 | 452 | 376 | 371 | 321 |
+| 16 | 3 | 14 | 157 | 129 | 123 | 116 | 86 |
+| 17 | 4 | 8 | 328 | 301 | 290 | 259 | 209 |
+| 18 | 5 | 12 | 473 | 457 | 446 | 375 | 340 |
+
+**Lus Rode lus + Blauwe lus (18 holes)** — 18 holes, par 73
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5953 | 71.6 | 124 | 73 |
+| geel (men) | 5703 | 70.3 | 124 | 73 |
+| blauw (men) | 5170 | 67.2 | 114 | 73 |
+| rood (men) | 4840 | 66.0 | 107 | 73 |
+| oranje (men) | 4086 | 63.0 | 100 | 73 |
+| geel (women) | 5703 | 76.4 | 133 | 73 |
+| blauw (women) | 5170 | 72.9 | 128 | 73 |
+| rood (women) | 4840 | 71.1 | 120 | 73 |
+| oranje (women) | 4086 | 66.3 | 109 | 73 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 15 | 286 | 277 | 267 | 227 | 182 |
+| 2 | 5 | 13 | 454 | 428 | 418 | 362 | 312 |
+| 3 | 4 | 5 | 358 | 347 | 300 | 292 | 247 |
+| 4 | 3 | 9 | 173 | 147 | 139 | 127 | 97 |
+| 5 | 4 | 3 | 398 | 388 | 331 | 323 | 268 |
+| 6 | 4 | 1 | 370 | 331 | 319 | 283 | 238 |
+| 7 | 3 | 17 | 149 | 142 | 127 | 123 | 93 |
+| 8 | 4 | 7 | 344 | 336 | 284 | 276 | 231 |
+| 9 | 5 | 11 | 432 | 425 | 371 | 365 | 305 |
+| 10 | 4 | 16 | 318 | 308 | 274 | 274 | 228 |
+| 11 | 5 | 10 | 450 | 442 | 368 | 368 | 333 |
+| 12 | 3 | 2 | 195 | 180 | 171 | 149 | 105 |
+| 13 | 4 | 14 | 308 | 308 | 308 | 267 | 212 |
+| 14 | 4 | 12 | 323 | 301 | 292 | 268 | 250 |
+| 15 | 4 | 8 | 279 | 279 | 255 | 255 | 215 |
+| 16 | 5 | 4 | 447 | 435 | 375 | 365 | 333 |
+| 17 | 4 | 6 | 375 | 345 | 336 | 286 | 219 |
+| 18 | 4 | 18 | 294 | 284 | 235 | 230 | 218 |
+
+**Lus Gele lus + Blauwe lus (18 holes)** — 18 holes, par 73
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5941 | 71.6 | 130 | 73 |
+| geel (men) | 5670 | 70.4 | 123 | 73 |
+| blauw (men) | 5220 | 67.6 | 117 | 73 |
+| rood (men) | 4788 | 66.0 | 110 | 73 |
+| oranje (men) | 4077 | 63.0 | 104 | 73 |
+| geel (women) | 5670 | 76.4 | 139 | 73 |
+| blauw (women) | 5220 | 73.5 | 133 | 73 |
+| rood (women) | 4788 | 71.2 | 122 | 73 |
+| oranje (women) | 4077 | 66.7 | 113 | 73 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 6 | 350 | 342 | 295 | 286 | 241 |
+| 2 | 3 | 18 | 135 | 126 | 117 | 105 | 85 |
+| 3 | 4 | 2 | 378 | 360 | 351 | 305 | 260 |
+| 4 | 4 | 16 | 308 | 277 | 272 | 235 | 185 |
+| 5 | 4 | 10 | 363 | 344 | 336 | 274 | 237 |
+| 6 | 5 | 4 | 460 | 452 | 376 | 371 | 321 |
+| 7 | 3 | 14 | 157 | 129 | 123 | 116 | 86 |
+| 8 | 4 | 8 | 328 | 301 | 290 | 259 | 209 |
+| 9 | 5 | 12 | 473 | 457 | 446 | 375 | 340 |
+| 10 | 4 | 15 | 318 | 308 | 274 | 274 | 228 |
+| 11 | 5 | 9 | 450 | 442 | 368 | 368 | 333 |
+| 12 | 3 | 1 | 195 | 180 | 171 | 149 | 105 |
+| 13 | 4 | 13 | 308 | 308 | 308 | 267 | 212 |
+| 14 | 4 | 11 | 323 | 301 | 292 | 268 | 250 |
+| 15 | 4 | 7 | 279 | 279 | 255 | 255 | 215 |
+| 16 | 5 | 3 | 447 | 435 | 375 | 365 | 333 |
+| 17 | 4 | 5 | 375 | 345 | 336 | 286 | 219 |
+| 18 | 4 | 17 | 294 | 284 | 235 | 230 | 218 |
+
+- **Scorekaartpagina:** https://www.delflandgolf.nl/golfen/baaninformatie/
+- **Bestanden:** [scorecard/page.html](golfbaan-delfland-schipluiden/scorecard/page.html), [scorecard/gd-scorekaart-140x340-1.pdf](golfbaan-delfland-schipluiden/scorecard/gd-scorekaart-140x340-1.pdf), [scorecard/delfland-whs-tabel-18-holes-rood-geel-heren.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-whs-tabel-18-holes-rood-geel-heren.pdf), [scorecard/delfland-whs-tabel-18-holes-rood-geel-dames.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-whs-tabel-18-holes-rood-geel-dames.pdf), [scorecard/delfland-18-holes-rood-blauw-heren.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-18-holes-rood-blauw-heren.pdf), [scorecard/delfland-18-holes-rood-blauw-dames.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-18-holes-rood-blauw-dames.pdf), [scorecard/delfland-18-holes-geel-blauw-heren.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-18-holes-geel-blauw-heren.pdf), [scorecard/delfland-18-holes-geel-blauw-dames.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-18-holes-geel-blauw-dames.pdf), [scorecard/delfland-whs-tabel-9-holes-rood-heren.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-whs-tabel-9-holes-rood-heren.pdf), [scorecard/delfland-whs-tabel-9-holes-rood-dames.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-whs-tabel-9-holes-rood-dames.pdf), [scorecard/delfland-whs-tabel-9-holes-geel-heren.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-whs-tabel-9-holes-geel-heren.pdf), [scorecard/delfland-whs-tabel-9-holes-geel-dames.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-whs-tabel-9-holes-geel-dames.pdf), [scorecard/delfland-blauw-heren-1.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-blauw-heren-1.pdf), [scorecard/delfland-blauw-dames-1.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-blauw-dames-1.pdf), [scorecard/delfland-score-kaart-par-3-challenge-course-1.pdf](golfbaan-delfland-schipluiden/scorecard/delfland-score-kaart-par-3-challenge-course-1.pdf), [scorecard/local-rules.pdf](golfbaan-delfland-schipluiden/scorecard/local-rules.pdf)
+- **Opmerking:** Lengtes, par en S.I. van de scorekaart (gd-scorekaart-140x340-1.pdf); CR/slope uit de baanhandicaptabellen (rood/geel 05-01-2021, blauw en combinaties met blauw 22-11-2021). S.I. per lus in 18-holes-stijl: rood oneven, geel even; de blauwe lus heeft twee S.I.-reeksen (oneven als hij met geel wordt gecombineerd, even met rood). In de losse 9-holes lus 'Blauwe lus' staat de oneven reeks. Combinaties zijn genoteerd als eerste lus holes 1-9, tweede lus holes 10-18. Oranje = kortste tee (-125 m drivers). Par 3-baan staat apart als golfbaan-delfland-par-3-schipluiden.
+
+<a id="de-herkenbosche-herkenbosch"></a>
+## De Herkenbosche
+
+De Herkenbosche ligt in Herkenbosch (Roerdalen), aan de rand van Nationaal Park De Meinweg. De 18-holes wedstrijdbaan slingert door een bosrijk terrein met stuifduinen, naaldbomen en veel rododendrons. Naast de grote baan is er een 9-holes par 3-baan.
+
+- **Club:** Golf & Country Club Herkenbosch (De Herkenbosche)
+- **Adres:** Stationsweg 100, 6075 CD Herkenbosch, Limburg, NL
+- **GPS:** 51.1709899, 6.062035
+- **Afstand:** 161.3 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** bosbaan met stuifduinen, naaldbomen en rododendrons aan de rand van het Meinweggebied
+- **Telefoon:** 0475 529 529
+- **E-mail:** info@deherkenbosche.nl
+- **Website:** https://deherkenbosche.nl/
+- **Starttijden:** https://deherkenbosche.nl/NL/banen-en-land/18-holes-baan/starttijd-reserveren
+- **Greenfee welkom:** True
+- **Faciliteiten:** par 3-baan (9 holes), driving range, golfschool, restaurant, hotelarrangementen
+
+**Lus 18 holes wedstrijdbaan** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6141 | 72.8 | 143 | 72 |
+| geel (men) | 5758 | 71.1 | 135 | 72 |
+| blauw (men) | 5093 | 68.4 | 122 | 72 |
+| rood (men) | 4981 | 68.0 | 120 | 72 |
+| oranje (men) | 4196 | 64.4 | 110 | 72 |
+| geel (women) | 5758 | 77.5 | 146 | 72 |
+| blauw (women) | 5093 | 73.1 | 133 | 72 |
+| rood (women) | 4981 | 72.6 | 128 | 72 |
+| oranje (women) | 4196 | 68.2 | 117 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 10 | 339 | 327 | 286 | 270 | 216 |
+| 2 | 4 | 16 | 304 | 288 | 258 | 250 | 196 |
+| 3 | 5 | 14 | 487 | 449 | 405 | 392 | 360 |
+| 4 | 3 | 12 | 220 | 187 | 162 | 156 | 113 |
+| 5 | 4 | 2 | 422 | 392 | 347 | 334 | 251 |
+| 6 | 4 | 6 | 326 | 314 | 287 | 282 | 227 |
+| 7 | 3 | 18 | 136 | 136 | 121 | 121 | 111 |
+| 8 | 4 | 4 | 376 | 349 | 308 | 304 | 241 |
+| 9 | 5 | 8 | 472 | 435 | 367 | 367 | 360 |
+| 10 | 4 | 9 | 362 | 345 | 296 | 291 | 239 |
+| 11 | 3 | 11 | 156 | 140 | 131 | 131 | 80 |
+| 12 | 5 | 5 | 483 | 468 | 431 | 424 | 360 |
+| 13 | 4 | 17 | 285 | 269 | 251 | 245 | 220 |
+| 14 | 4 | 7 | 388 | 354 | 305 | 298 | 226 |
+| 15 | 3 | 15 | 163 | 149 | 139 | 139 | 119 |
+| 16 | 4 | 3 | 400 | 373 | 330 | 324 | 282 |
+| 17 | 4 | 1 | 348 | 337 | 294 | 286 | 235 |
+| 18 | 5 | 13 | 474 | 446 | 375 | 367 | 360 |
+
+**Lus Par 3-baan (9 holes, 2x gespeeld)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 44.9 | 72 | 54 |
+| geel (women) |  | 46.1 | 66 | 54 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 3 |  |  |
+| 2 | 3 |  |  |
+| 3 | 3 |  |  |
+| 4 | 3 |  |  |
+| 5 | 3 |  |  |
+| 6 | 3 |  |  |
+| 7 | 3 |  |  |
+| 8 | 3 |  |  |
+| 9 | 3 |  |  |
+| 10 | 3 |  |  |
+| 11 | 3 |  |  |
+| 12 | 3 |  |  |
+| 13 | 3 |  |  |
+| 14 | 3 |  |  |
+| 15 | 3 |  |  |
+| 16 | 3 |  |  |
+| 17 | 3 |  |  |
+| 18 | 3 |  |  |
+
+- **Scorekaartpagina:** https://deherkenbosche.nl/nl/plattegrond-baan-info-pro/
+- **Bestanden:** [scorecard/page.html](de-herkenbosche-herkenbosch/scorecard/page.html), [scorecard/page-handicaptabel-par-3.html](de-herkenbosche-herkenbosch/scorecard/page-handicaptabel-par-3.html), [scorecard/page-hole-1.html](de-herkenbosche-herkenbosch/scorecard/page-hole-1.html), [scorecard/page-hole-2.html](de-herkenbosche-herkenbosch/scorecard/page-hole-2.html), [scorecard/page-hole-3.html](de-herkenbosche-herkenbosch/scorecard/page-hole-3.html), [scorecard/page-hole-4.html](de-herkenbosche-herkenbosch/scorecard/page-hole-4.html), [scorecard/page-hole-5.html](de-herkenbosche-herkenbosch/scorecard/page-hole-5.html), [scorecard/page-hole-6.html](de-herkenbosche-herkenbosch/scorecard/page-hole-6.html), [scorecard/page-hole-7.html](de-herkenbosche-herkenbosch/scorecard/page-hole-7.html), [scorecard/page-hole-8.html](de-herkenbosche-herkenbosch/scorecard/page-hole-8.html), [scorecard/page-hole-9.html](de-herkenbosche-herkenbosch/scorecard/page-hole-9.html), [scorecard/page-hole-10.html](de-herkenbosche-herkenbosch/scorecard/page-hole-10.html), [scorecard/page-hole-11.html](de-herkenbosche-herkenbosch/scorecard/page-hole-11.html), [scorecard/page-hole-12.html](de-herkenbosche-herkenbosch/scorecard/page-hole-12.html), [scorecard/page-hole-13.html](de-herkenbosche-herkenbosch/scorecard/page-hole-13.html), [scorecard/page-hole-14.html](de-herkenbosche-herkenbosch/scorecard/page-hole-14.html), [scorecard/page-hole-15.html](de-herkenbosche-herkenbosch/scorecard/page-hole-15.html), [scorecard/page-hole-16.html](de-herkenbosche-herkenbosch/scorecard/page-hole-16.html), [scorecard/page-hole-17.html](de-herkenbosche-herkenbosch/scorecard/page-hole-17.html), [scorecard/page-hole-18.html](de-herkenbosche-herkenbosch/scorecard/page-hole-18.html), [scorecard/Handicaptabel-zomercourse-18-holes-HEREN.pdf](de-herkenbosche-herkenbosch/scorecard/Handicaptabel-zomercourse-18-holes-HEREN.pdf), [scorecard/Handicaptabel-zomercourse-18-holes-DAMES.pdf](de-herkenbosche-herkenbosch/scorecard/Handicaptabel-zomercourse-18-holes-DAMES.pdf), [scorecard/Handicaptabel-Par-3-baan-18-holes-HEREN.pdf](de-herkenbosche-herkenbosch/scorecard/Handicaptabel-Par-3-baan-18-holes-HEREN.pdf), [scorecard/Handicaptabel-Par-3-baan-18-holes-DAMES.pdf](de-herkenbosche-herkenbosch/scorecard/Handicaptabel-Par-3-baan-18-holes-DAMES.pdf)
+- **Opmerking:** 18 holes compleet: par en lengtes (wit/geel/blauw/rood/oranje) uit de officiele hole-pagina's; SI = de 'nieuwe stroke index' die per hole als N.B. vermeld staat (plattegronden en GolfingRecord tonen nog de oude SI). CR/slope zomercourse uit de handicaptabellen van 09-10-2024. Par 3-baan: geen holegegevens gepubliceerd (GolfingRecord heeft alleen placeholders); ratings uit tabellen van 2012 (geel heren 44.9/72, geel dames 46.1/66, par 54 over 18 holes); teekleur geel is afgeleid uit de kolompositie in de tabel. Wintercourse-tabellen niet opgenomen.
+
+<a id="golfvereniging-albatross-prinsenbeek"></a>
+## Golfvereniging Albatross
+
+Albatross is een Bredase golfvereniging uit 1987 die speelt op een 9-holes baan van Alan Rijks bij Prinsenbeek, op het terrein van een voormalig hockeycomplex. De baan werd in fasen aangelegd en was in 1992 compleet. Het clubhuis met brasserie ligt als een klaverblad midden in de baan.
+
+- **Club:** Golfvereniging Albatross
+- **Adres:** Weimersedreef 19, 4841 KG Prinsenbeek, Noord-Brabant, NL
+- **GPS:** 51.6181, 4.6987
+- **Afstand:** 162.5 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** parkbaan op een oud landgoed (voormalig hockeycomplex) bij Breda
+- **Opgericht:** 1987
+- **Architect:** Alan Rijks
+- **Telefoon:** 076 5419449
+- **E-mail:** info@albatrossgolf.nl
+- **Website:** https://www.albatrossgolf.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** clubhuis met Brasserie Boschdal, golfpro/lessen, handicarts
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5455 | 70.3 | 127 | 70 |
+| rood (men) | 4828 | 67.6 | 112 | 70 |
+| oranje (men) | 4314 | 65.3 | 115 | 70 |
+| geel (women) | 5455 | 75.1 | 147 | 70 |
+| rood (women) | 4828 | 72.2 | 128 | 70 |
+| oranje (women) | 4314 | 70.4 | 111 | 70 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 9 | 295 | 270 | 238 |
+| 2 | 3 | 17 | 110 | 95 | 95 |
+| 3 | 4 | 15 | 258 | 234 | 209 |
+| 4 | 3 | 13 | 167 | 145 | 128 |
+| 5 | 4 | 5 | 379 | 335 | 295 |
+| 6 | 4 | 3 | 361 | 308 | 268 |
+| 7 | 5 | 11 | 442 | 376 | 352 |
+| 8 | 4 | 7 | 334 | 307 | 267 |
+| 9 | 4 | 1 | 404 | 359 | 305 |
+| 10 | 4 | 10 | 295 | 270 | 238 |
+| 11 | 3 | 18 | 110 | 95 | 95 |
+| 12 | 4 | 16 | 258 | 234 | 209 |
+| 13 | 3 | 14 | 167 | 145 | 128 |
+| 14 | 4 | 4 | 379 | 335 | 295 |
+| 15 | 4 | 2 | 361 | 308 | 268 |
+| 16 | 5 | 12 | 442 | 376 | 352 |
+| 17 | 4 | 8 | 334 | 307 | 267 |
+| 18 | 4 | 6 | 359 | 329 | 305 |
+
+- **Scorekaartpagina:** https://www.albatrossgolf.nl/de-baan/scorekaart/
+- **Bestanden:** [scorecard/Scorekaart.jpg](golfvereniging-albatross-prinsenbeek/scorecard/Scorekaart.jpg), [scorecard/Albatross-Heren-handicap-tabel-15-9-2022.pdf](golfvereniging-albatross-prinsenbeek/scorecard/Albatross-Heren-handicap-tabel-15-9-2022.pdf), [scorecard/Albatross-Dames-handicap-tabel-15-9-2022.pdf](golfvereniging-albatross-prinsenbeek/scorecard/Albatross-Dames-handicap-tabel-15-9-2022.pdf), [scorecard/page.html](golfvereniging-albatross-prinsenbeek/scorecard/page.html)
+- **Opmerking:** Scorekaart als kleine afbeelding (500 px) op de site; cijfers gecontroleerd met OUT 2750/2429/2157 en IN 2705/2399/2157 (hole 18 korter dan hole 9). CR/slope uit handicaptabellen 15-09-2022; de scorekaart zelf toont oudere ratings (o.a. geel heren 69,6/134). 9-holesratings heren geel 35,3/129, rood 33,9/111, oranje 32,7/114; dames geel 37,7/147, rood 36,1/131, oranje 35,2/111.
+
+<a id="crossmoor-weert"></a>
+## Golfbaan Crossmoor
+
+Crossmoor ligt in de Laurabossen bij Weert, begrensd door bos en de meanderende Tungelroysche beek. De Championship Course combineert open en door bomen omzoomde holes met waterpartijen; de eerste negen zijn van Joan Dudok van Heel, de tweede negen van Hans Hertzberger (1988). Er is daarnaast een 9-holes par 3-baan, en hotel en brasserie van Domein Laurabos liggen naast de baan.
+
+- **Club:** Golf- en Country Club Crossmoor
+- **Adres:** Laurabosweg 8, 6006 VR Weert, Limburg, NL
+- **GPS:** 51.2225922, 5.6441135
+- **Afstand:** 163.1 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** bos en heide in de Laurabossen, langs de Tungelroysche beek, met waterpartijen
+- **Architect:** Joan Dudok van Heel (eerste 9 holes) en Hans Hertzberger (tweede 9 holes, 1988)
+- **Telefoon:** 0495 518 438
+- **E-mail:** info@domeinlaurabos.com
+- **Website:** https://www.domeinlaurabos.com/golfbaan-crossmoor/
+- **Starttijden:** https://domeinlaurabos.smarteventmanager.com/book/?CompanyCode=DLB&StandardReservationGroupCode=golfbaan
+- **Greenfee welkom:** True
+- **Eisen:** NGF-handicapbewijs tonen verplicht
+- **Faciliteiten:** par 3-baan (9 holes), driving range, oefenfaciliteiten, golfpro/lessen, Brasserie Laurius, Hotel Laurabos, tennis
+
+**Lus Championship Course (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6198 | 73.5 | 136 | 72 |
+| geel (men) | 6013 | 72.6 | 133 | 72 |
+| blauw (men) | 5323 | 69.3 | 124 | 72 |
+| rood (men) | 5182 | 68.4 | 123 | 72 |
+| oranje (men) | 4471 | 64.5 | 115 | 72 |
+| geel (women) | 6013 | 78.6 | 145 | 72 |
+| blauw (women) | 5323 | 74.8 | 127 | 72 |
+| rood (women) | 5182 | 74.1 | 125 | 72 |
+| oranje (women) | 4471 | 69.5 | 120 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 390 | 375 | 344 | 326 | 275 |
+| 2 | 3 | 17 | 169 | 162 | 150 | 150 | 141 |
+| 3 | 5 | 7 | 478 | 468 | 401 | 391 | 346 |
+| 4 | 4 | 15 | 345 | 340 | 296 | 296 | 254 |
+| 5 | 4 | 3 | 397 | 385 | 335 | 325 | 279 |
+| 6 | 4 | 11 | 344 | 340 | 293 | 293 | 253 |
+| 7 | 4 | 1 | 425 | 420 | 357 | 345 | 299 |
+| 8 | 3 | 9 | 183 | 155 | 163 | 146 | 126 |
+| 9 | 5 | 13 | 462 | 457 | 395 | 380 | 324 |
+| 10 | 3 | 16 | 173 | 166 | 155 | 140 | 121 |
+| 11 | 4 | 6 | 325 | 320 | 290 | 290 | 246 |
+| 12 | 4 | 4 | 392 | 354 | 330 | 315 | 279 |
+| 13 | 4 | 12 | 323 | 310 | 282 | 275 | 235 |
+| 14 | 4 | 14 | 352 | 345 | 297 | 280 | 236 |
+| 15 | 5 | 8 | 466 | 457 | 390 | 385 | 339 |
+| 16 | 4 | 2 | 377 | 367 | 330 | 330 | 279 |
+| 17 | 3 | 18 | 133 | 133 | 121 | 121 | 110 |
+| 18 | 5 | 10 | 464 | 459 | 394 | 394 | 329 |
+
+**Lus Par-3 Course (9 holes, 2x gespeeld)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 48.2 | 68 | 54 |
+| rood (women) |  | 49.9 | 69 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 |  |  |  |
+| 2 | 3 |  |  |  |
+| 3 | 3 |  |  |  |
+| 4 | 3 |  |  |  |
+| 5 | 3 |  |  |  |
+| 6 | 3 |  |  |  |
+| 7 | 3 |  |  |  |
+| 8 | 3 |  |  |  |
+| 9 | 3 |  |  |  |
+| 10 | 3 |  |  |  |
+| 11 | 3 |  |  |  |
+| 12 | 3 |  |  |  |
+| 13 | 3 |  |  |  |
+| 14 | 3 |  |  |  |
+| 15 | 3 |  |  |  |
+| 16 | 3 |  |  |  |
+| 17 | 3 |  |  |  |
+| 18 | 3 |  |  |  |
+
+- **Scorekaartpagina:** https://www.domeinlaurabos.com/golfbaan-crossmoor/championship-course/
+- **Bestanden:** [scorecard/page.html](crossmoor-weert/scorecard/page.html), [scorecard/page-par-3-course.html](crossmoor-weert/scorecard/page-par-3-course.html), [scorecard/cc-hole-01.jpg](crossmoor-weert/scorecard/cc-hole-01.jpg), [scorecard/cc-hole-02.jpg](crossmoor-weert/scorecard/cc-hole-02.jpg), [scorecard/cc-hole-03.jpg](crossmoor-weert/scorecard/cc-hole-03.jpg), [scorecard/cc-hole-04.jpg](crossmoor-weert/scorecard/cc-hole-04.jpg), [scorecard/cc-hole-05.jpg](crossmoor-weert/scorecard/cc-hole-05.jpg), [scorecard/cc-hole-06.jpg](crossmoor-weert/scorecard/cc-hole-06.jpg), [scorecard/cc-hole-07.jpg](crossmoor-weert/scorecard/cc-hole-07.jpg), [scorecard/cc-hole-08.jpg](crossmoor-weert/scorecard/cc-hole-08.jpg), [scorecard/cc-hole-09.jpg](crossmoor-weert/scorecard/cc-hole-09.jpg), [scorecard/cc-hole-10.jpg](crossmoor-weert/scorecard/cc-hole-10.jpg), [scorecard/cc-hole-11.jpg](crossmoor-weert/scorecard/cc-hole-11.jpg), [scorecard/cc-hole-12.jpg](crossmoor-weert/scorecard/cc-hole-12.jpg), [scorecard/cc-hole-13.jpg](crossmoor-weert/scorecard/cc-hole-13.jpg), [scorecard/cc-hole-14.jpg](crossmoor-weert/scorecard/cc-hole-14.jpg), [scorecard/cc-hole-15.jpg](crossmoor-weert/scorecard/cc-hole-15.jpg), [scorecard/cc-hole-16.jpg](crossmoor-weert/scorecard/cc-hole-16.jpg), [scorecard/cc-hole-17.jpg](crossmoor-weert/scorecard/cc-hole-17.jpg), [scorecard/cc-hole-18.jpg](crossmoor-weert/scorecard/cc-hole-18.jpg), [scorecard/handicap-cc-heren.pdf](crossmoor-weert/scorecard/handicap-cc-heren.pdf), [scorecard/handicap-cc-dames.pdf](crossmoor-weert/scorecard/handicap-cc-dames.pdf), [scorecard/handicap-par-3-dames-heren.pdf](crossmoor-weert/scorecard/handicap-par-3-dames-heren.pdf), [scorecard/plattegrond-p3.webp](crossmoor-weert/scorecard/plattegrond-p3.webp)
+- **Opmerking:** Championship Course compleet: par, SI en lengtes van de officiele hole-afbeeldingen (cc-hole-01..18), CR/slope uit de baanhandicaptabellen van 05-10-2021; GolfingRecord geeft dezelfde lengtes maar oudere ratings. Par-3 Course: alleen ratings (18 holes = 2x9: geel heren CR 48.2/SR 68, rood dames CR 49.9/SR 69, par 54); holelengtes en SI niet gepubliceerd (de site toont placeholdertekst 'Par 4 / Stroke 5'), dus null. www.crossmoor.nl verwijst door naar domeinlaurabos.com.
+
+<a id="golfpark-land-van-thorn-hunsel"></a>
+## Golfpark Land van Thorn
+
+Golfpark Land van Thorn ligt in Hunsel, niet ver van het witte stadje Thorn, en hoort bij de Hollandsche Golfclub. De 9-holesbaan (par 36) heeft een licht linksachtig karakter met glooiende fairways, verhoogde greens en ruim twintig bunkers. Voor 18 holes wordt de lus twee keer gespeeld vanaf dezelfde afslagen.
+
+- **Club:** Hollandsche Golfclub (Golfpark Land van Thorn)
+- **Adres:** Kallestraat 37 A, 6013 RM Hunsel, Limburg, NL
+- **GPS:** 51.187297, 5.8185872
+- **Afstand:** 163.2 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** licht linksachtig, glooiende fairways en verhoogde greens met ruim 20 bunkers
+- **Telefoon:** 0475 563 350
+- **E-mail:** info@golfparklandvanthorn.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/land-van-thorn/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/land-van-thorn/boek-een-starttijd-golfpark-land-van-thorn/
+- **Greenfee welkom:** True
+- **Eisen:** Handicap 54 of baanpermissie van de Hollandsche Golfclub
+- **Faciliteiten:** driving range, oefenfaciliteiten, golflessen, brasserie
+
+**Lus 18 holes (2x gele lus)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5524 | 70.7 | 142 | 72 |
+| rood (men) | 4838 | 67.1 | 121 | 72 |
+| oranje (men) | 3774 | 62.9 | 112 | 72 |
+| geel (women) | 5524 | 76.6 | 146 | 72 |
+| rood (women) | 4838 | 71.9 | 134 | 72 |
+| oranje (women) | 3774 | 65.3 | 115 | 72 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 13 | 320 | 287 | 224 |
+| 2 | 4 | 5 | 345 | 307 | 238 |
+| 3 | 3 | 17 | 111 | 96 | 63 |
+| 4 | 4 | 1 | 363 | 312 | 246 |
+| 5 | 5 | 3 | 451 | 407 | 342 |
+| 6 | 4 | 9 | 329 | 285 | 219 |
+| 7 | 4 | 11 | 250 | 221 | 158 |
+| 8 | 3 | 15 | 151 | 115 | 83 |
+| 9 | 5 | 7 | 442 | 389 | 314 |
+| 10 | 4 | 14 | 320 | 287 | 224 |
+| 11 | 4 | 6 | 345 | 307 | 238 |
+| 12 | 3 | 18 | 111 | 96 | 63 |
+| 13 | 4 | 2 | 363 | 312 | 246 |
+| 14 | 5 | 4 | 451 | 407 | 342 |
+| 15 | 4 | 10 | 329 | 285 | 219 |
+| 16 | 4 | 12 | 250 | 221 | 158 |
+| 17 | 3 | 16 | 151 | 115 | 83 |
+| 18 | 5 | 8 | 442 | 389 | 314 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/land-van-thorn/course/land-van-thorn-18-holes-2-x-gele-lus/
+- **Bestanden:** [scorecard/page.html](golfpark-land-van-thorn-hunsel/scorecard/page.html), [scorecard/Land-van-Thorn-18-holes-MRT-2026.pdf](golfpark-land-van-thorn-hunsel/scorecard/Land-van-Thorn-18-holes-MRT-2026.pdf), [scorecard/Land-van-Thorn-Handicaptabellen.pdf](golfpark-land-van-thorn-hunsel/scorecard/Land-van-Thorn-Handicaptabellen.pdf)
+- **Opmerking:** Officiele scorekaart (maart 2026): kolommen geel, rood, oranje; SI 1-9 oneven, 10-18 even. CR/slope uit de baanhandicaptabellen van 19-03-2025 (18 holes).
+
+<a id="golfbaan-de-achterste-hoef-bladel"></a>
+## Golfbaan De Achterste Hoef
+
+Golfbaan De Achterste Hoef ligt bij het gelijknamige recreatiepark ten zuiden van Bladel, in de bossen van de Kempen tegen de Belgische grens. Het is een korte 9-holesbaan (par 29) met overwegend par 3-holes en twee par 4's, die voor 18 holes twee keer wordt gespeeld.
+
+- **Club:** Golfbaan De Achterste Hoef & Stichting Golfclub Bladel
+- **Adres:** Troprijt 10, 5531 NA Bladel, Noord-Brabant, NL
+- **GPS:** 51.3434035, 5.2278062
+- **Afstand:** 163.3 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** bosrijk Kempenlandschap bij de Belgische grens
+- **Website:** https://www.achterstehoef.nl
+- **Faciliteiten:** oefenfaciliteiten, golfschool, clubhuis (bij recreatiepark De Achterste Hoef)
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel | 2226 |  |  | 58 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 3 | 17 | 60 |
+| 2 | 3 | 15 | 97 |
+| 3 | 3 | 5 | 138 |
+| 4 | 4 | 3 | 230 |
+| 5 | 4 | 1 | 230 |
+| 6 | 3 | 13 | 88 |
+| 7 | 3 | 11 | 80 |
+| 8 | 3 | 9 | 95 |
+| 9 | 3 | 7 | 85 |
+| 10 | 3 | 18 | 60 |
+| 11 | 3 | 16 | 97 |
+| 12 | 3 | 6 | 138 |
+| 13 | 4 | 4 | 230 |
+| 14 | 4 | 2 | 250 |
+| 15 | 3 | 14 | 88 |
+| 16 | 3 | 12 | 80 |
+| 17 | 3 | 10 | 95 |
+| 18 | 3 | 8 | 85 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/golfbaan-de-achterste-hoef
+- **Bestanden:** [scorecard/page-golfpass.html](golfbaan-de-achterste-hoef-bladel/scorecard/page-golfpass.html), [scorecard/page-hole19.html](golfbaan-de-achterste-hoef-bladel/scorecard/page-hole19.html)
+- **Opmerking:** Geen officiële golfsite of scorekaart gevonden (achterstehoef.nl is de site van het recreatiepark, zonder golfinformatie). Par, S.I. en lengtes van Hole19 (tee "damen", eenheid daar als yds gelabeld; golfpass.com geeft 1123 meters voor 9 holes wit - lengtes waarschijnlijk meters). Teekleur onbekend (hier "geel"). Golfpass noemt Alan Rijks als architect (niet officieel bevestigd). Geen CR/slope.
+
+<a id="golfclub-broekpolder-vlaardingen"></a>
+## Golfclub Broekpolder
+
+Broekpolder is de baan van de vereniging die in 1932 als Rotterdamsche Golfclub in Kralingen begon en in 1981 naar Vlaardingen verhuisde. Frank Pennink ontwierp hier op opgespoten havenslib een lange park- en polderbaan met ruime fairways en rietkragen langs het water; Gerard Jol heeft later een aantal holes vernieuwd. De baan ontving onder meer het Deloitte Ladies Open en draagt het GEO-certificaat voor duurzaam beheer.
+
+- **Club:** Golfclub Broekpolder
+- **Adres:** Watersportweg 100, 3138 HD Vlaardingen, Zuid-Holland, NL
+- **GPS:** 51.9364828, 4.3154059
+- **Afstand:** 163.5 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** park-/polderbaan op opgespoten slib, open fairways, rietomzoomde waterpartijen
+- **Opgericht:** 1932
+- **Architect:** J.J. Frank Pennink (renovatie Gerard Jol)
+- **Telefoon:** 010 249 5554
+- **E-mail:** secretariaat@golfclubbroekpolder.nl
+- **Website:** https://golfclubbroekpolder.nl
+- **Greenfee welkom:** True
+- **Eisen:** NGF-pas tonen; greenfeespelers van NGF-clubs en buitenlandse clubs maximaal handicap 28; introductie max. 4x per jaar met GVB
+- **Faciliteiten:** driving range, shortgame practice area, putting green, clubhuis, restaurant, golfshop (RS Golfshop), golfprofessionals
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6301 | 74.4 | 139 | 72 |
+| geel (men) | 5852 | 71.9 | 135 | 72 |
+| blauw (men) | 5423 | 69.5 | 126 | 72 |
+| rood (men) | 5044 | 67.7 | 118 | 72 |
+| oranje (men) | 4567 | 65.3 | 111 | 72 |
+| geel (women) | 5852 | 78.9 | 145 | 72 |
+| blauw (women) | 5423 | 75.9 | 138 | 72 |
+| rood (women) | 5044 | 73.3 | 133 | 72 |
+| oranje (women) | 4567 | 70.3 | 123 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 14 | 472 | 455 | 435 | 373 | 369 |
+| 2 | 4 | 6 | 423 | 374 | 344 | 330 | 327 |
+| 3 | 4 | 12 | 347 | 327 | 324 | 281 | 274 |
+| 4 | 5 | 8 | 530 | 467 | 424 | 394 | 389 |
+| 5 | 3 | 10 | 179 | 164 | 141 | 135 | 111 |
+| 6 | 4 | 2 | 382 | 367 | 350 | 332 | 312 |
+| 7 | 4 | 4 | 390 | 366 | 335 | 329 | 295 |
+| 8 | 3 | 18 | 154 | 132 | 125 | 106 | 100 |
+| 9 | 4 | 16 | 297 | 280 | 250 | 230 | 204 |
+| 10 | 4 | 5 | 433 | 373 | 367 | 333 | 276 |
+| 11 | 4 | 7 | 373 | 356 | 337 | 311 | 308 |
+| 12 | 4 | 1 | 378 | 357 | 317 | 311 | 236 |
+| 13 | 3 | 15 | 167 | 160 | 132 | 127 | 105 |
+| 14 | 5 | 9 | 495 | 457 | 427 | 420 | 388 |
+| 15 | 4 | 3 | 364 | 356 | 339 | 304 | 256 |
+| 16 | 3 | 13 | 154 | 141 | 141 | 118 | 90 |
+| 17 | 4 | 17 | 268 | 263 | 251 | 246 | 169 |
+| 18 | 5 | 11 | 495 | 457 | 384 | 364 | 358 |
+
+- **Scorekaartpagina:** https://golfclubbroekpolder.nl/baan/scorekaarten/
+- **Bestanden:** [scorecard/page.html](golfclub-broekpolder-vlaardingen/scorecard/page.html), [scorecard/page-handicaptabellen.html](golfclub-broekpolder-vlaardingen/scorecard/page-handicaptabellen.html), [scorecard/Scorekaart-2-paginas.pdf](golfclub-broekpolder-vlaardingen/scorecard/Scorekaart-2-paginas.pdf), [scorecard/Scorekaart-2025-pag-1.png](golfclub-broekpolder-vlaardingen/scorecard/Scorekaart-2025-pag-1.png), [scorecard/Scorekaart-2025-pag-2.png](golfclub-broekpolder-vlaardingen/scorecard/Scorekaart-2025-pag-2.png), [scorecard/Broekpolder-Heren-2025.pdf](golfclub-broekpolder-vlaardingen/scorecard/Broekpolder-Heren-2025.pdf), [scorecard/Broekpolder-Dames-2025.pdf](golfclub-broekpolder-vlaardingen/scorecard/Broekpolder-Dames-2025.pdf)
+- **Opmerking:** Scorekaart 2025; CR/slope uit baanhandicaptabellen d.d. 17-07-2025. Oprichtingsjaar 1932 = Rotterdamsche Golfclub (rechtsvoorganger); de baan in de Broekpolder werd in 1981 opgeleverd.
+
+<a id="golf-ockenburgh-den-haag"></a>
+## Golf Ockenburgh
+
+Golf Ockenburgh is een openbare 9-holesbaan aan de rand van Den Haag, beschut gelegen in de duinen bij Kijkduin. De par 32-baan telt vier par 3's en vijf par 4's, met smalle fairways, veel bunkers en enkele waterpartijen, waaronder een korte eilandhole. Door de zandondergrond blijft de baan ook na regen goed bespeelbaar.
+
+- **Club:** Golfclub Ockenburgh / Stichting Golf Ockenburgh
+- **Adres:** Wijndaelerweg 125, 2554 CA Den Haag, Zuid-Holland, NL
+- **GPS:** 52.0564296, 4.2171906
+- **Afstand:** 163.9 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** duinbaan (beschut tussen Den Haag en Kijkduin)
+- **Telefoon:** 070 325 89 04
+- **E-mail:** reageren@golfockenburgh.nl
+- **Website:** https://golfockenburgh.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, putting green, chipping green, oefenbunker, clubhuis met restaurant, Golf Academy, jeu-de-boulesbaan, handicarts
+
+**Lus 18 holes (9 holes 2x gespeeld)** — 18 holes, par 64
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 61.7 | 113 | 64 |
+| rood (men) |  | 60.1 | 106 | 64 |
+| geel (women) |  | 65.3 | 122 | 64 |
+| rood (women) |  | 63.2 | 117 | 64 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 |  |  |  |
+| 2 | 3 |  |  |  |
+| 3 | 3 |  |  |  |
+| 4 | 4 |  |  |  |
+| 5 | 3 |  |  |  |
+| 6 | 4 |  |  |  |
+| 7 | 4 |  |  |  |
+| 8 | 4 |  |  |  |
+| 9 | 4 |  |  |  |
+| 10 | 3 |  |  |  |
+| 11 | 3 |  |  |  |
+| 12 | 3 |  |  |  |
+| 13 | 4 |  |  |  |
+| 14 | 3 |  |  |  |
+| 15 | 4 |  |  |  |
+| 16 | 4 |  |  |  |
+| 17 | 4 |  |  |  |
+| 18 | 4 |  |  |  |
+
+- **Scorekaartpagina:** https://golfockenburgh.nl/whs-baanhandicap-tabellen/
+- **Bestanden:** [scorecard/page.html](golf-ockenburgh-den-haag/scorecard/page.html), [scorecard/baanboekje-HbH-2026.pdf](golf-ockenburgh-den-haag/scorecard/baanboekje-HbH-2026.pdf), [scorecard/WHS-tabel-18-holes-heren.jpg](golf-ockenburgh-den-haag/scorecard/WHS-tabel-18-holes-heren.jpg), [scorecard/WHS-tabel-18-holes-dames.jpg](golf-ockenburgh-den-haag/scorecard/WHS-tabel-18-holes-dames.jpg)
+- **Opmerking:** Geen scorekaart met S.I. en lengtes per tee gevonden. Par per hole uit het baanboekje 'Hole by Hole 2026' (som 32 per negen, consistent met par 64 in de WHS-tabellen). Baanboekje noemt per hole één lengte zonder teekleur: 1=170, 2=134, 3=160, 4=266, 5=76, 6=256, 7=234, 8=269, 9=283 m (totaal 1848 m); niet aan een tee toegekend. CR/SR 18 holes uit WHS-tabellen (2022); 9-holestabellen staan ook op de site.
+
+<a id="golfbaan-schinkelshoek-vlaardingen"></a>
+## Golfbaan Schinkelshoek
+
+Schinkelshoek in Vlaardingen werkt met een eigen, lichtere golfbal die minder ver vliegt, waardoor op een compact terrein drie series van negen holes (Westland, Waterland en Delfland) elk als par 36 worden gespeeld. Een ronde van 18 holes duurt zo ongeveer tweeënhalf uur. Op donderdag- en zaterdagmiddag kan de A-serie met een gewone bal worden gespeeld als korte baan (par 28, 816 meter).
+
+- **Club:** Golfbaan Schinkelshoek
+- **Adres:** Zuidbuurt 79, 3132 KA Vlaardingen, Zuid-Holland, NL
+- **GPS:** 51.9101408, 4.3014505
+- **Afstand:** 165.7 km
+- **Type:** 27-holes
+- **Holes:** 27
+- **Landschap:** compacte parkbaan met bomen, sloten en waterpartijen (Vlaardingen-Zuidbuurt)
+- **Telefoon:** 010 460 21 39
+- **E-mail:** info@golfbaanschinkelshoek.nl
+- **Website:** https://www.golfbaanschinkelshoek.nl
+- **Greenfee welkom:** True
+- **Eisen:** NGF-pas met minimaal golfbaanpermissie of handicap (voor de A-serie met traditionele bal: NGF-pas of toestemming golfprofessional)
+- **Faciliteiten:** oefenfaciliteiten, golfles, brasserie, vergader- en feestruimte
+
+**Lus Serie A Westland (Schinkelshoek-bal)** — 9 holes, par 36
+
+**Lus Serie B Waterland (Schinkelshoek-bal)** — 9 holes, par 36
+
+**Lus Serie C Delfland (Schinkelshoek-bal)** — 9 holes, par 36
+
+**Lus Serie A met traditionele bal (NGF korte baan)** — 9 holes, par 28
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| baan | 816 |  |  | 28 |
+
+- **Scorekaartpagina:** https://www.golfbaanschinkelshoek.nl/golfbaan/baaninformatie/
+- **Bestanden:** [scorecard/page.html](golfbaan-schinkelshoek-vlaardingen/scorecard/page.html), [scorecard/schermafbeelding-2022-09-28-om-12_1664362577.png](golfbaan-schinkelshoek-vlaardingen/scorecard/schermafbeelding-2022-09-28-om-12_1664362577.png), [scorecard/schermafbeelding-2022-09-28-om-13.png](golfbaan-schinkelshoek-vlaardingen/scorecard/schermafbeelding-2022-09-28-om-13.png)
+- **Opmerking:** De site publiceert alleen baankaarten (geen scorekaart met par/S.I./lengtes per hole). Officieel: iedere serie par 36 met de Schinkelshoek-bal; A-serie met traditionele bal par 28, 816 m, alle holes par 3 behalve hole 4 (par 4). Golfingrecord.com toont per serie een par 27-kaart (Westland geel 1127/rood 1007, eenheid onbekend) die niet met de officiële par-informatie strookt; daarom niet overgenomen. Handicaptabellen hangen volgens de site op het mededelingenbord, niet online gevonden.
+
+<a id="golfpark-de-turfvaert-rijsbergen"></a>
+## Golfpark De Turfvaert
+
+Golfpark De Turfvaert bij Rijsbergen, tussen Breda en Roosendaal, is een 18-holes inland links van architect Frank Pont. Het ontwerp sluit aan bij klassieke architecten als Colt en MacKenzie, met natuurlijk ogende bunkers en strategische holes. De baan is relatief kort (par 70), maar vraagt om goede plaatsing.
+
+- **Club:** Golfpark De Turfvaert
+- **Adres:** Zwart Moerken 12, 4891 TK Rijsbergen, Noord-Brabant, NL
+- **GPS:** 51.5317, 4.6976
+- **Afstand:** 169.2 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** inland links op voormalige landbouwgrond
+- **Architect:** Frank Pont
+- **Telefoon:** 076 596 83 54
+- **E-mail:** info@deturfvaert.nl
+- **Website:** https://www.deturfvaert.nl/
+- **Starttijden:** https://www.deturfvaert.nl/golf-spelen/greenfee
+- **Greenfee welkom:** True
+- **Faciliteiten:** oefenfaciliteiten/driving range, familiegolf, clubhuis/horeca
+
+**Lus 18 holes** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5683 | 70.1 | 130 | 70 |
+| geel (men) | 5393 | 68.4 | 126 | 70 |
+| blauw (men) | 5240 | 67.8 | 125 | 70 |
+| rood (men) | 4712 | 65.1 | 115 | 70 |
+| geel (women) | 5393 | 75.0 | 134 | 70 |
+| blauw (women) | 5240 | 74.0 | 130 | 70 |
+| rood (women) | 4712 | 69.9 | 122 | 70 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 5 | 9 | 490 | 467 | 457 | 416 |
+| 2 | 4 | 1 | 385 | 368 | 358 | 321 |
+| 3 | 4 | 5 | 412 | 369 | 359 | 335 |
+| 4 | 4 | 15 | 238 | 237 | 227 | 212 |
+| 5 | 3 | 17 | 115 | 108 | 108 | 100 |
+| 6 | 4 | 7 | 322 | 319 | 309 | 281 |
+| 7 | 3 | 13 | 170 | 150 | 147 | 126 |
+| 8 | 4 | 11 | 333 | 328 | 318 | 287 |
+| 9 | 4 | 3 | 411 | 372 | 362 | 308 |
+| 10 | 5 | 4 | 482 | 472 | 462 | 428 |
+| 11 | 3 | 14 | 152 | 142 | 132 | 111 |
+| 12 | 4 | 8 | 378 | 359 | 349 | 300 |
+| 13 | 3 | 16 | 139 | 121 | 111 | 98 |
+| 14 | 5 | 10 | 468 | 459 | 449 | 394 |
+| 15 | 3 | 12 | 177 | 165 | 155 | 138 |
+| 16 | 5 | 6 | 496 | 468 | 458 | 407 |
+| 17 | 3 | 18 | 124 | 110 | 110 | 97 |
+| 18 | 4 | 2 | 391 | 379 | 369 | 353 |
+
+- **Scorekaartpagina:** https://www.deturfvaert.nl/golfbaan/holes
+- **Bestanden:** [scorecard/turfvaert-scorekaart-2025-wit-geel-blauw-en-rood.pdf](golfpark-de-turfvaert-rijsbergen/scorecard/turfvaert-scorekaart-2025-wit-geel-blauw-en-rood.pdf), [scorecard/turfvaert-whs-tabel-heren-per-1-maart-2021.pdf](golfpark-de-turfvaert-rijsbergen/scorecard/turfvaert-whs-tabel-heren-per-1-maart-2021.pdf), [scorecard/turfvaert-whs-tabel-dames-per-1-maart-2021.pdf](golfpark-de-turfvaert-rijsbergen/scorecard/turfvaert-whs-tabel-dames-per-1-maart-2021.pdf), [scorecard/page.html](golfpark-de-turfvaert-rijsbergen/scorecard/page.html)
+- **Opmerking:** Scorekaart 2025 (wit/geel/blauw/rood; OUT/IN/TOT 5683/5393/5240/4712 kloppen). CR/slope uit WHS-tabellen per 1 maart 2021; die bevatten ook oranje (heren 62,2/104, dames 65,7/113), maar oranje staat niet op de scorekaart en is daarom niet opgenomen. Ratings kunnen ouder zijn dan de kaart.
+
+<a id="golfclub-westland-s-gravenzande"></a>
+## Golfclub Westland (par 3-baan)
+
+Golfclub Westland in 's-Gravenzande begon bijna twintig jaar geleden als trainingscentrum op een paar voetbalvelden en groeide uit tot een volwaardige 9-holes par 3-baan met NGF-accreditatie. De holes zijn kort (ongeveer 70 tot 105 meter) en de club richt zich sterk op lessen en beginners. Het is de enige golfclub in het Westland.
+
+- **Club:** Stichting Golfclub Westland
+- **Adres:** Koningin Julianaweg 156a, 2691 GH 's-Gravenzande, Zuid-Holland, NL
+- **GPS:** 51.9924179, 4.174008
+- **Afstand:** 169.5 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** par 3-baan op voormalige voetbalvelden
+- **Telefoon:** 06 120 202 32
+- **E-mail:** info@golfclubwestland.nl
+- **Website:** https://golfclubwestland.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** oefenfaciliteiten, golfpro's en lessen, oefengreen (Hole 10, voor jaarkaarthouders), shop
+
+**Lus Par 3-baan 9 holes** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| baan (men) | 791 | 24.0 | 65 | 27 |
+| baan (women) | 791 | 24.8 | 69 | 27 |
+
+| Hole | Par | SI | baan |
+|---|---|---|---|
+| 1 | 3 | 7 | 86 |
+| 2 | 3 | 4 | 94 |
+| 3 | 3 | 1 | 93 |
+| 4 | 3 | 5 | 101 |
+| 5 | 3 | 3 | 75 |
+| 6 | 3 | 8 | 71 |
+| 7 | 3 | 6 | 106 |
+| 8 | 3 | 9 | 87 |
+| 9 | 3 | 2 | 78 |
+
+- **Scorekaartpagina:** https://golfclubwestland.nl/golfclubwestland/regels-handicap/
+- **Bestanden:** [scorecard/page.html](golfclub-westland-s-gravenzande/scorecard/page.html), [scorecard/handicap-tabel-9-holes.pdf](golfclub-westland-s-gravenzande/scorecard/handicap-tabel-9-holes.pdf), [scorecard/handicap-tabel-18-holes.pdf](golfclub-westland-s-gravenzande/scorecard/handicap-tabel-18-holes.pdf), [scorecard/hole19-scorecard.html](golfclub-westland-s-gravenzande/scorecard/hole19-scorecard.html)
+- **Opmerking:** Clubsite publiceert geen scorekaart; par, S.I. en lengtes per hole van hole19golf.com (tee 'heren', totaal 791, eenheid niet vermeld, vermoedelijk meters; Hole19 noemt voor dames dezelfde lengte). CR/slope officieel uit de baanhandicaptabellen d.d. 13-06-2022: 9 holes geel heren 24,0/65, rood dames 24,8/69; 18 holes 48,0/65 en 49,6/69 (lus 2x).
+
+<a id="golfclub-cromstrijen-challenge-course-numansdorp"></a>
+## Golfclub Cromstrijen Challenge Course
+
+De Challenge Course is de korte 9-holesbaan van Golfclub Cromstrijen in Numansdorp, met zes par 3's en drie korte par 4's (par 30). De baan is compact en geschikt voor beginners en om het korte spel aan te scherpen. Voor 18 holes wordt de lus twee keer gespeeld.
+
+- **Club:** Golfclub Cromstrijen
+- **Adres:** Veerweg 26, 3281 LX Numansdorp, Zuid-Holland, NL
+- **GPS:** 51.7225605, 4.4145578
+- **Afstand:** 170.3 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** compacte polderbaan
+- **Opgericht:** 1989
+- **Architect:** Tom MacAuley
+- **Telefoon:** 0186 65 44 55
+- **E-mail:** info@golfclubcromstrijen.nl
+- **Website:** https://golfclubcromstrijen.nl
+- **Starttijden:** https://cromstrijen.golfer.intogolf.nl/#/teetimes
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, oefenfaciliteiten, clubhuis met restaurant
+
+**Lus Challenge Course 18 holes (9 holes 2x)** — 18 holes, par 60
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3720 | 60.9 | 102 | 60 |
+| rood (men) | 3338 | 59.8 | 96 | 60 |
+| oranje (men) | 2978 | 58.5 | 93 | 60 |
+| geel (women) | 3720 | 63.6 | 106 | 60 |
+| rood (women) | 3338 | 62.4 | 106 | 60 |
+| oranje (women) | 2978 | 61.4 | 99 | 60 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 9 | 184 | 167 | 148 |
+| 2 | 3 | 1 | 190 | 178 | 157 |
+| 3 | 3 | 17 | 119 | 104 | 94 |
+| 4 | 4 | 11 | 302 | 265 | 238 |
+| 5 | 3 | 13 | 147 | 136 | 122 |
+| 6 | 4 | 3 | 311 | 268 | 243 |
+| 7 | 3 | 15 | 146 | 134 | 119 |
+| 8 | 4 | 7 | 318 | 292 | 260 |
+| 9 | 3 | 5 | 143 | 125 | 108 |
+| 10 | 3 | 10 | 184 | 167 | 148 |
+| 11 | 3 | 2 | 190 | 178 | 157 |
+| 12 | 3 | 18 | 119 | 104 | 94 |
+| 13 | 4 | 12 | 302 | 265 | 238 |
+| 14 | 3 | 14 | 147 | 136 | 122 |
+| 15 | 4 | 4 | 311 | 268 | 243 |
+| 16 | 3 | 16 | 146 | 134 | 119 |
+| 17 | 4 | 8 | 318 | 292 | 260 |
+| 18 | 3 | 6 | 143 | 125 | 108 |
+
+**Lus Challenge Course 9 holes** — 9 holes, par 30
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1860 | 29.8 | 99 | 30 |
+| rood (men) | 1669 | 28.9 | 94 | 30 |
+| oranje (men) | 1489 | 27.8 | 91 | 30 |
+| geel (women) | 1860 | 31.8 | 103 | 30 |
+| rood (women) | 1669 | 30.4 | 101 | 30 |
+| oranje (women) | 1489 | 29.4 | 92 | 30 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 9 | 184 | 167 | 148 |
+| 2 | 3 | 1 | 190 | 178 | 157 |
+| 3 | 3 | 17 | 119 | 104 | 94 |
+| 4 | 4 | 11 | 302 | 265 | 238 |
+| 5 | 3 | 13 | 147 | 136 | 122 |
+| 6 | 4 | 3 | 311 | 268 | 243 |
+| 7 | 3 | 15 | 146 | 134 | 119 |
+| 8 | 4 | 7 | 318 | 292 | 260 |
+| 9 | 3 | 5 | 143 | 125 | 108 |
+
+- **Scorekaartpagina:** https://golfclubcromstrijen.nl/baaninformatie
+- **Bestanden:** [scorecard/page.html](golfclub-cromstrijen-challenge-course-numansdorp/scorecard/page.html), [scorecard/Scorekaart-challenge-course.pdf](golfclub-cromstrijen-challenge-course-numansdorp/scorecard/Scorekaart-challenge-course.pdf), [scorecard/Cromstrijen-Par-3-4-baan-Heren.pdf](golfclub-cromstrijen-challenge-course-numansdorp/scorecard/Cromstrijen-Par-3-4-baan-Heren.pdf), [scorecard/Cromstrijen-Par-3-4-baan-Dames.pdf](golfclub-cromstrijen-challenge-course-numansdorp/scorecard/Cromstrijen-Par-3-4-baan-Dames.pdf), [scorecard/BAANBOEKJE-9HOLES.pdf](golfclub-cromstrijen-challenge-course-numansdorp/scorecard/BAANBOEKJE-9HOLES.pdf)
+- **Opmerking:** Lengtes, par en S.I. van de scorekaart Challenge Course. CR/slope 18 holes zoals op de scorekaart (heren geel 60,9/102, rood 59,8/96, oranje 58,5/93; dames 63,6/106, 62,4/106, 61,4/99); de handicaptabellen van 21-08-2023 noemen afwijkende waarden (18 holes heren 59,6/99, 57,8/94, 55,5/91; dames 63,6/103, 60,8/101, 58,7/92). Het is onduidelijk welke nieuwer is. 9-holes ratings uit de tabellen 2023. 9-holes lus: S.I. in 18-holes-stijl (oneven).
+
+<a id="golfclub-cromstrijen-numansdorp"></a>
+## Golfclub Cromstrijen Championship Course
+
+Golfclub Cromstrijen ligt aan de rand van Numansdorp in de Hoeksche Waard, vlak bij het Hollandsch Diep. De club werd in 1989 opgericht; Tom MacAuley ontwierp de 18-holes Championship Course (par 72) en de 9-holes Challenge Course. Lange holes wisselen af met technische, waarbij bomen, bunkers en water de lijnen bepalen.
+
+- **Club:** Golfclub Cromstrijen
+- **Adres:** Veerweg 26, 3281 LX Numansdorp, Zuid-Holland, NL
+- **GPS:** 51.7225605, 4.4145578
+- **Afstand:** 170.3 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** polderbaan in de Hoeksche Waard met bomen, bunkers en waterpartijen
+- **Opgericht:** 1989
+- **Architect:** Tom MacAuley
+- **Telefoon:** 0186 65 44 55
+- **E-mail:** info@golfclubcromstrijen.nl
+- **Website:** https://golfclubcromstrijen.nl
+- **Starttijden:** https://cromstrijen.golfer.intogolf.nl/#/teetimes
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, oefenfaciliteiten, 9-holes Challenge Course (par 3/4), handicarts, golfschool, clubhuis met restaurant
+
+**Lus Championship Course 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6137 | 73.3 | 136 | 72 |
+| geel (men) | 5847 | 71.7 | 134 | 72 |
+| blauw (men) | 5212 | 68.2 | 126 | 72 |
+| rood (men) | 4954 | 67.0 | 119 | 72 |
+| oranje (men) | 4253 | 63.6 | 110 | 72 |
+| geel (women) | 5847 | 78.6 | 144 | 72 |
+| blauw (women) | 5212 | 74.3 | 135 | 72 |
+| rood (women) | 4954 | 72.5 | 130 | 72 |
+| oranje (women) | 4253 | 68.2 | 123 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 377 | 367 | 315 | 305 | 262 |
+| 2 | 5 | 3 | 510 | 493 | 426 | 418 | 378 |
+| 3 | 4 | 15 | 348 | 338 | 296 | 289 | 236 |
+| 4 | 3 | 11 | 186 | 178 | 170 | 160 | 151 |
+| 5 | 4 | 5 | 358 | 344 | 300 | 291 | 230 |
+| 6 | 4 | 17 | 304 | 284 | 279 | 240 | 236 |
+| 7 | 4 | 1 | 373 | 330 | 320 | 269 | 235 |
+| 8 | 4 | 7 | 389 | 349 | 340 | 300 | 260 |
+| 9 | 5 | 13 | 482 | 469 | 403 | 389 | 345 |
+| 10 | 5 | 12 | 456 | 442 | 378 | 373 | 317 |
+| 11 | 3 | 14 | 157 | 151 | 144 | 138 | 129 |
+| 12 | 4 | 4 | 326 | 314 | 284 | 275 | 209 |
+| 13 | 4 | 2 | 356 | 327 | 286 | 281 | 231 |
+| 14 | 4 | 10 | 365 | 355 | 310 | 301 | 239 |
+| 15 | 3 | 18 | 156 | 145 | 122 | 116 | 110 |
+| 16 | 5 | 8 | 459 | 446 | 385 | 373 | 326 |
+| 17 | 3 | 16 | 150 | 136 | 129 | 121 | 117 |
+| 18 | 4 | 6 | 385 | 379 | 325 | 315 | 242 |
+
+**Lus Championship Course 1e 9 holes** — 9 holes, par 37
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 3327 | 38.1 | 139 | 37 |
+| geel (men) | 3152 | 37.2 | 140 | 37 |
+| blauw (men) | 2849 | 35.4 | 136 | 37 |
+| rood (men) | 2661 | 34.4 | 126 | 37 |
+| oranje (men) | 2333 | 32.7 | 116 | 37 |
+| geel (women) | 3152 | 40.9 | 148 | 37 |
+| blauw (women) | 2849 | 38.8 | 138 | 37 |
+| rood (women) | 2661 | 37.5 | 133 | 37 |
+| oranje (women) | 2333 | 35.4 | 130 | 37 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 377 | 367 | 315 | 305 | 262 |
+| 2 | 5 | 3 | 510 | 493 | 426 | 418 | 378 |
+| 3 | 4 | 15 | 348 | 338 | 296 | 289 | 236 |
+| 4 | 3 | 11 | 186 | 178 | 170 | 160 | 151 |
+| 5 | 4 | 5 | 358 | 344 | 300 | 291 | 230 |
+| 6 | 4 | 17 | 304 | 284 | 279 | 240 | 236 |
+| 7 | 4 | 1 | 373 | 330 | 320 | 269 | 235 |
+| 8 | 4 | 7 | 389 | 349 | 340 | 300 | 260 |
+| 9 | 5 | 13 | 482 | 469 | 403 | 389 | 345 |
+
+**Lus Championship Course 2e 9 holes** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2810 | 35.2 | 133 | 35 |
+| geel (men) | 2695 | 34.6 | 128 | 35 |
+| blauw (men) | 2363 | 32.9 | 115 | 35 |
+| rood (men) | 2293 | 32.6 | 111 | 35 |
+| oranje (men) | 1920 | 31.3 | 106 | 35 |
+| geel (women) | 2695 | 37.8 | 140 | 35 |
+| blauw (women) | 2363 | 35.5 | 132 | 35 |
+| rood (women) | 2293 | 35.1 | 127 | 35 |
+| oranje (women) | 1920 | 32.9 | 115 | 35 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 12 | 456 | 442 | 378 | 373 | 317 |
+| 2 | 3 | 14 | 157 | 151 | 144 | 138 | 129 |
+| 3 | 4 | 4 | 326 | 314 | 284 | 275 | 209 |
+| 4 | 4 | 2 | 356 | 327 | 286 | 281 | 231 |
+| 5 | 4 | 10 | 365 | 355 | 310 | 301 | 239 |
+| 6 | 3 | 18 | 156 | 145 | 122 | 116 | 110 |
+| 7 | 5 | 8 | 459 | 446 | 385 | 373 | 326 |
+| 8 | 3 | 16 | 150 | 136 | 129 | 121 | 117 |
+| 9 | 4 | 6 | 385 | 379 | 325 | 315 | 242 |
+
+- **Scorekaartpagina:** https://golfclubcromstrijen.nl/baaninformatie
+- **Bestanden:** [scorecard/page.html](golfclub-cromstrijen-numansdorp/scorecard/page.html), [scorecard/SCOREKAART_MAA_V2.pdf](golfclub-cromstrijen-numansdorp/scorecard/SCOREKAART_MAA_V2.pdf), [scorecard/Cromstrijen-Heren.pdf](golfclub-cromstrijen-numansdorp/scorecard/Cromstrijen-Heren.pdf), [scorecard/Cromstrijen-Dames.pdf](golfclub-cromstrijen-numansdorp/scorecard/Cromstrijen-Dames.pdf), [scorecard/BAANBOEKJE-18HOLES.pdf](golfclub-cromstrijen-numansdorp/scorecard/BAANBOEKJE-18HOLES.pdf), [scorecard/Local-Rules-GCC.pdf](golfclub-cromstrijen-numansdorp/scorecard/Local-Rules-GCC.pdf)
+- **Opmerking:** Scorekaart Championship Course (SCOREKAART_MAA_V2.pdf); CR/slope uit baanhandicaptabellen d.d. 21-08-2023 (komen overeen met de scorekaart). 9-holes lussen: S.I. in 18-holes-stijl (1e 9 oneven, 2e 9 even).
+
+<a id="golfclub-kleiburg-brielle"></a>
+## Golfclub Kleiburg
+
+Kleiburg bij Brielle opende in 1973 als eerste openbare golfbaan van Nederland; een jaar later werd de golfclub opgericht. De 18 holes liggen in het recreatiegebied van de Brielse Maas, deels langs het kanaal, met waterhindernissen zoals de eiland-par 3 op hole 15. Er zijn vijf teekleuren, van 5925 tot 4391 meter.
+
+- **Club:** Golfclub Kleiburg
+- **Adres:** Krabbeweg 9, 3231 NB Brielle, Zuid-Holland, NL
+- **GPS:** 51.9254899, 4.1613043
+- **Afstand:** 173.5 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** parkbaan langs het Voedingskanaal met waterpartijen en glooiingen (Brielse Maas)
+- **Opgericht:** 1974
+- **Telefoon:** 0181 417 336
+- **E-mail:** info@golfclub-kleiburg.nl
+- **Website:** https://golfclub-kleiburg.nl
+- **Greenfee welkom:** True
+- **Faciliteiten:** golfacademie (PGA-professionals), restaurant, GEO-gecertificeerd
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5925 | 73.0 | 139 | 72 |
+| geel (men) | 5595 | 71.1 | 132 | 72 |
+| blauw (men) | 5154 | 69.0 | 122 | 72 |
+| rood (men) | 4820 | 67.5 | 118 | 72 |
+| oranje (men) | 4391 | 64.9 | 113 | 72 |
+| geel (women) | 5595 | 77.5 | 146 | 72 |
+| blauw (women) | 5154 | 74.3 | 141 | 72 |
+| rood (women) | 4820 | 72.3 | 134 | 72 |
+| oranje (women) | 4391 | 69.7 | 130 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 3 | 436 | 425 | 388 | 382 | 332 |
+| 2 | 4 | 11 | 289 | 278 | 248 | 242 | 242 |
+| 3 | 4 | 1 | 368 | 358 | 305 | 298 | 268 |
+| 4 | 5 | 13 | 500 | 478 | 391 | 386 | 336 |
+| 5 | 4 | 7 | 399 | 396 | 331 | 324 | 294 |
+| 6 | 3 | 17 | 152 | 139 | 139 | 116 | 116 |
+| 7 | 4 | 5 | 250 | 242 | 236 | 212 | 212 |
+| 8 | 4 | 9 | 341 | 335 | 292 | 286 | 256 |
+| 9 | 3 | 15 | 208 | 185 | 169 | 145 | 115 |
+| 10 | 4 | 14 | 334 | 326 | 289 | 284 | 254 |
+| 11 | 4 | 12 | 330 | 321 | 319 | 313 | 283 |
+| 12 | 5 | 10 | 439 | 429 | 413 | 401 | 332 |
+| 13 | 4 | 4 | 358 | 333 | 325 | 278 | 248 |
+| 14 | 4 | 8 | 365 | 305 | 294 | 271 | 251 |
+| 15 | 3 | 18 | 147 | 112 | 105 | 87 | 87 |
+| 16 | 5 | 2 | 464 | 441 | 437 | 390 | 360 |
+| 17 | 3 | 16 | 176 | 148 | 148 | 130 | 130 |
+| 18 | 4 | 6 | 369 | 344 | 325 | 275 | 275 |
+
+**Lus 1e 9 holes** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2943 | 36.3 | 138 | 36 |
+| geel (men) | 2836 | 35.7 | 132 | 36 |
+| blauw (men) | 2499 | 34.1 | 116 | 36 |
+| rood (men) | 2391 | 33.6 | 113 | 36 |
+| oranje (men) | 2171 | 32.3 | 110 | 36 |
+| geel (women) | 2836 | 38.8 | 145 | 36 |
+| blauw (women) | 2499 | 36.5 | 141 | 36 |
+| rood (women) | 2391 | 36.1 | 134 | 36 |
+| oranje (women) | 2171 | 34.6 | 128 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 3 | 436 | 425 | 388 | 382 | 332 |
+| 2 | 4 | 11 | 289 | 278 | 248 | 242 | 242 |
+| 3 | 4 | 1 | 368 | 358 | 305 | 298 | 268 |
+| 4 | 5 | 13 | 500 | 478 | 391 | 386 | 336 |
+| 5 | 4 | 7 | 399 | 396 | 331 | 324 | 294 |
+| 6 | 3 | 17 | 152 | 139 | 139 | 116 | 116 |
+| 7 | 4 | 5 | 250 | 242 | 236 | 212 | 212 |
+| 8 | 4 | 9 | 341 | 335 | 292 | 286 | 256 |
+| 9 | 3 | 15 | 208 | 185 | 169 | 145 | 115 |
+
+**Lus 2e 9 holes** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 2982 | 36.7 | 142 | 36 |
+| geel (men) | 2759 | 35.5 | 133 | 36 |
+| blauw (men) | 2655 | 35.0 | 126 | 36 |
+| rood (men) | 2429 | 34.0 | 123 | 36 |
+| oranje (men) | 2220 | 32.7 | 116 | 36 |
+| geel (women) | 2759 | 38.7 | 146 | 36 |
+| blauw (women) | 2655 | 37.8 | 141 | 36 |
+| rood (women) | 2429 | 36.2 | 134 | 36 |
+| oranje (women) | 2220 | 35.2 | 131 | 36 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 14 | 334 | 326 | 289 | 284 | 254 |
+| 2 | 4 | 12 | 330 | 321 | 319 | 313 | 283 |
+| 3 | 5 | 10 | 439 | 429 | 413 | 401 | 332 |
+| 4 | 4 | 4 | 358 | 333 | 325 | 278 | 248 |
+| 5 | 4 | 8 | 365 | 305 | 294 | 271 | 251 |
+| 6 | 3 | 18 | 147 | 112 | 105 | 87 | 87 |
+| 7 | 5 | 2 | 464 | 441 | 437 | 390 | 360 |
+| 8 | 3 | 16 | 176 | 148 | 148 | 130 | 130 |
+| 9 | 4 | 6 | 369 | 344 | 325 | 275 | 275 |
+
+- **Scorekaartpagina:** https://golfclub-kleiburg.nl/baan/holes-overzicht/
+- **Bestanden:** [scorecard/page.html](golfclub-kleiburg-brielle/scorecard/page.html), [scorecard/page-playing-handicap.html](golfclub-kleiburg-brielle/scorecard/page-playing-handicap.html), [scorecard/lr-scorekaart-binnen-jan2026.pdf](golfclub-kleiburg-brielle/scorecard/lr-scorekaart-binnen-jan2026.pdf), [scorecard/hole19-scorecard.html](golfclub-kleiburg-brielle/scorecard/hole19-scorecard.html)
+- **Opmerking:** Par, S.I. en lengtes van de officiele scorekaart rev. 2026.01. Geen CR/slope op de clubsite gevonden; CR/slope (18 en 9 holes) overgenomen van hole19golf.com (third-party, niet officieel bevestigd; tee-totalen bij Hole19 komen exact overeen met de scorekaart). 9-holes lussen: S.I. in 18-holes-stijl (1e 9 oneven, 2e 9 even). Oprichting club 1974, baan geopend 1973.
+
+<a id="golfbaan-echt-susteren"></a>
+## Golfbaan Echt-Susteren
+
+Golfbaan Echt-Susteren ligt in het landelijke gebied 'de Hei' bij Susteren. De 9-holesbaan (par 36) is ontworpen door Städler Golf Courses volgens de eisen voor de NGF A-status en heeft snelle USGA-greens en een par 5 van 540 meter. Verder zijn er een 6-holes approachbaan en een overdekte driving range.
+
+- **Club:** Golfclub Echt-Susteren
+- **Adres:** Hommelweg 3, 6114 RR Susteren, Limburg, NL
+- **GPS:** 51.070797, 5.8897082
+- **Afstand:** 174.6 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** vlak, landelijk gebied 'de Hei' met USGA-greens
+- **Architect:** Dirk Städler Golf Courses
+- **Telefoon:** 046 449 49 92
+- **E-mail:** info@golfbaanecht-susteren.nl
+- **Website:** https://golfbaanecht-susteren.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** 6 holes approachbaan, overdekte driving range, 2 oefengreens, brasserie (Huys ter Heide), golflessen/clinics, shop
+
+**Lus 9 holes (2x gespeeld = 18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5618 | 70.6 | 131 | 72 |
+| rood (men) | 4704 | 67.1 | 115 | 72 |
+| oranje (men) | 3920 | 63.2 | 114 | 72 |
+| geel (women) | 5618 | 76.6 | 145 | 72 |
+| rood (women) | 4704 | 71.4 | 127 | 72 |
+| oranje (women) | 3920 | 66.8 | 118 | 72 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 5 | 332 | 283 | 243 |
+| 2 | 3 | 17 | 140 | 114 | 114 |
+| 3 | 4 | 9 | 317 | 245 | 196 |
+| 4 | 5 | 3 | 441 | 378 | 311 |
+| 5 | 4 | 13 | 276 | 232 | 185 |
+| 6 | 5 | 1 | 540 | 460 | 384 |
+| 7 | 4 | 7 | 345 | 291 | 236 |
+| 8 | 4 | 11 | 303 | 252 | 194 |
+| 9 | 3 | 15 | 115 | 97 | 97 |
+| 10 | 4 | 6 | 332 | 283 | 243 |
+| 11 | 3 | 18 | 140 | 114 | 114 |
+| 12 | 4 | 10 | 317 | 245 | 196 |
+| 13 | 5 | 4 | 441 | 378 | 311 |
+| 14 | 4 | 14 | 276 | 232 | 185 |
+| 15 | 5 | 2 | 540 | 460 | 384 |
+| 16 | 4 | 8 | 345 | 291 | 236 |
+| 17 | 4 | 12 | 303 | 252 | 194 |
+| 18 | 3 | 16 | 115 | 97 | 97 |
+
+- **Scorekaartpagina:** https://golfbaanecht-susteren.nl/handicap-tabellen/
+- **Bestanden:** [scorecard/page.html](golfbaan-echt-susteren/scorecard/page.html), [scorecard/Scorekaart-2019-1.pdf](golfbaan-echt-susteren/scorecard/Scorekaart-2019-1.pdf), [scorecard/Echt-Susteren-WHS-tabel-Heren-1.pdf](golfbaan-echt-susteren/scorecard/Echt-Susteren-WHS-tabel-Heren-1.pdf), [scorecard/Echt-Susteren-WHS-tabel-Dames-1.pdf](golfbaan-echt-susteren/scorecard/Echt-Susteren-WHS-tabel-Dames-1.pdf)
+- **Opmerking:** Officiele scorekaart 2019 (PDF licht beschadigd maar leesbaar) met par, SI en lengtes geel/rood/oranje; CR/slope (18 holes) uit de WHS-tabellen van 06-01-2021. Openingsjaar 2006 volgens derden (niet officieel bevestigd, daarom null).
+
+<a id="golfcentrum-roosendaal-de-stok"></a>
+## Golfcentrum Roosendaal (Golfbaan De Stok)
+
+Openbare 9-holes baan aan De Stok in Roosendaal, tegenwoordig onder de naam Golf & Relax. De korte, technische baan combineert par 3-holes met twee lange par 5's en wordt voor 18 holes twee keer gespeeld. Er is een golfschool en een restaurant met zicht op de baan.
+
+- **Club:** Golf & Relax Roosendaal / Golfcentrum Roosendaal
+- **Adres:** De Stok 16, 4703 SZ Roosendaal, Noord-Brabant, NL
+- **GPS:** 51.538, 4.4354
+- **Afstand:** 181.9 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** technische parkbaan aan de rand van Roosendaal, langs de snelweg
+- **Telefoon:** 0165 544 080
+- **Website:** https://golf-relax.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, golfschool, restaurant met uitzicht over de baan, vergaderruimte
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 66
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 4064 | 61.4 | 108 | 66 |
+| rood (men) | 3554 | 60.4 | 94 | 66 |
+| oranje (men) | 3146 | 58.2 | 93 | 66 |
+| geel (women) | 4064 | 66.0 | 112 | 66 |
+| rood (women) | 3554 | 62.4 | 108 | 66 |
+| oranje (women) | 3146 | 61.2 | 107 | 66 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 5 | 153 | 116 | 116 |
+| 2 | 3 | 17 | 79 | 71 | 71 |
+| 3 | 5 | 7 | 471 | 440 | 354 |
+| 4 | 5 | 1 | 498 | 441 | 366 |
+| 5 | 3 | 13 | 98 | 98 | 98 |
+| 6 | 4 | 9 | 257 | 219 | 191 |
+| 7 | 3 | 15 | 84 | 72 | 72 |
+| 8 | 3 | 11 | 118 | 90 | 90 |
+| 9 | 4 | 3 | 274 | 230 | 215 |
+| 10 | 3 | 6 | 172 | 116 | 116 |
+| 11 | 3 | 18 | 79 | 71 | 71 |
+| 12 | 5 | 8 | 471 | 440 | 354 |
+| 13 | 5 | 2 | 498 | 441 | 366 |
+| 14 | 3 | 14 | 98 | 98 | 98 |
+| 15 | 4 | 10 | 257 | 219 | 191 |
+| 16 | 3 | 16 | 84 | 72 | 72 |
+| 17 | 3 | 12 | 118 | 90 | 90 |
+| 18 | 4 | 4 | 255 | 230 | 215 |
+
+- **Scorekaartpagina:** https://www.golfify.io/courses/golfbaan-de-stok
+- **Bestanden:** [scorecard/page.html](golfcentrum-roosendaal-de-stok/scorecard/page.html), [scorecard/clubsite-baaninformatie.html](golfcentrum-roosendaal-de-stok/scorecard/clubsite-baaninformatie.html), [scorecard/handicaptabel-winterbaan-heren.png](golfcentrum-roosendaal-de-stok/scorecard/handicaptabel-winterbaan-heren.png), [scorecard/handicaptabel-winterbaan-dames.png](golfcentrum-roosendaal-de-stok/scorecard/handicaptabel-winterbaan-dames.png)
+- **Opmerking:** De clubsite (golf-relax.nl) publiceert geen scorekaart, alleen een handicaptabel voor de ingekorte winterbaan (par 58) en WHS-tabellen van Dongen. Holedata van golfify.io (eenheid niet vermeld, vermoedelijk meters; 2032/1777/1573 per 9 holes, sommen kloppen). Holes 1 en 9 verschillen tussen eerste en tweede ronde. Golfify geeft alleen 9-holesratings (heren geel 30,7/108, rood 30,2/94, oranje 29,1/93; dames geel 33,0/112, rood 31,2/108, oranje 30,6/107); de 18-holeswaarden hier zijn tweemaal de CR met dezelfde slope (WHS-optelling, zelf berekend). 1golf.eu noemt een oudere indeling (par 56, 2398 m).
+
+<a id="akkermans-golf-de-heen"></a>
+## Akkermans Golf De Heen
+
+Par 3-baan van Akkermans Leisure & Golf in De Heen, waar Brabant en Zeeland elkaar raken; ook golfvereniging De Heensche speelt hier. De 9 greens hebben elk twee afslagplaatsen, waardoor een ronde van 18 holes ontstaat met holes van ongeveer 62 tot 115 meter. Waterpartijen, bunkers en glooiende greens maken de korte baan uitdagend.
+
+- **Club:** Akkermans Leisure & Golf / Golfvereniging De Heensche
+- **Adres:** Heense Molenweg 23, 4655 TB De Heen, Noord-Brabant, NL
+- **GPS:** 51.607, 4.2453
+- **Afstand:** 187.3 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** landelijk polderlandschap aan de Brabantse Wal met waterpartijen en hoogteverschillen
+- **Telefoon:** +31 167 502621
+- **E-mail:** info@akkermans.com
+- **Website:** https://akkermans.com/golfbaan/
+- **Starttijden:** https://akkermans.com/toegang-en-reserveren/
+- **Greenfee welkom:** True
+- **Eisen:** Baanpermissie of handicapbewijs vereist; zonder alleen onder begeleiding van iemand met een geldig handicapbewijs.
+- **Faciliteiten:** driving range 200 m (deels overdekt), oefengreens met bunker, golfschool, grand café met terras
+
+**Lus Par 3-baan 18 holes (9 greens, 18 afslagplaatsen)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 48.1 | 68 | 54 |
+| rood (men) |  | 48.0 | 67 | 54 |
+| geel (women) |  | 49.5 | 69 | 54 |
+| rood (women) |  | 49.4 | 68 | 54 |
+
+- **Scorekaartpagina:** https://deheensche.nl/de-baan/scorekaart-akkermansgolf/
+- **Bestanden:** [scorecard/20250107-Nieuwe-baanindeling.jpg](akkermans-golf-de-heen/scorecard/20250107-Nieuwe-baanindeling.jpg), [scorecard/20250106-handicaptabel-18-holes-Heren.pdf](akkermans-golf-de-heen/scorecard/20250106-handicaptabel-18-holes-Heren.pdf), [scorecard/20250106-handicaptabel-18-holes-Dames.pdf](akkermans-golf-de-heen/scorecard/20250106-handicaptabel-18-holes-Dames.pdf), [scorecard/page.html](akkermans-golf-de-heen/scorecard/page.html), [scorecard/akkermans-golfbaan.html](akkermans-golf-de-heen/scorecard/akkermans-golfbaan.html)
+- **Opmerking:** Begin 2025 is de baan aangepast en de holevolgorde vernieuwd (nieuwe plattegrond 07-01-2025); de nieuwe scorekaart is volgens De Heensche nog niet gepubliceerd. Daarom geen holedata. Ratings uit de handicaptabellen van 06-01-2025 (18 holes par 54). Oudere derden-gegevens (GolfPass/Golfify: 9 holes van 68-114 m, 738 m) dateren van vóór de wijziging en spreken elkaar tegen over de S.I.; niet overgenomen.
+
+<a id="golf-resort-brunssummerheide"></a>
+## Golf-Resort Brunssummerheide
+
+Golf-Resort Brunssummerheide ligt tussen het natuurgebied Brunssummerheide en de Schinveldse bossen. De 27-holes Champions Course (lussen blauw, geel en rood) valt op door grote hoogteverschillen, bos, vennen en hoger gelegen afslagen; de eerste 18 holes werden in 1986 geopend naar een ontwerp van Dudok van Heel, de derde lus in 1994. Verder zijn er een 9-holes Compact Course voor beginners en een par 3-oefenbaan.
+
+- **Club:** Golfclub Brunssummerheide
+- **Adres:** Rimburgerweg 52, 6445 PA Brunssum, Limburg, NL
+- **GPS:** 50.9350451, 6.0102146
+- **Afstand:** 187.8 km
+- **Type:** 27-holes
+- **Holes:** 45
+- **Landschap:** heuvelachtig, naald- en loofbos, vennen en open delen tussen Brunssummerheide en Schinveldse bossen
+- **Opgericht:** 1986
+- **Architect:** Joan Dudok van Heel (ontwerp 18 holes)
+- **Telefoon:** 045 564 63 00
+- **E-mail:** info@golfresortbrunssum.nl
+- **Website:** https://www.golfresortbrunssum.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Champions Course: handicap 45 of lager; Compact Course: baanpermissie
+- **Faciliteiten:** 27-holes Champions Course (blauw, geel, rood), 9-holes Compact Course (groen), 9-holes par 3-oefenbaan, driving range, golfschool, golfshop, hotel, restaurant, footgolf, buggy's
+
+**Lus Blauw-Geel (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6234 | 73.6 | 143 | 72 |
+| geel (men) | 5932 | 72.8 | 135 | 72 |
+| blauw (men) |  | 70.5 | 130 | 72 |
+| rood (men) | 5199 | 68.8 | 124 | 72 |
+| oranje (men) |  | 66.2 | 118 | 72 |
+| geel (women) | 5932 | 78.7 | 151 | 72 |
+| blauw (women) |  | 76.1 | 140 | 72 |
+| rood (women) | 5199 | 74.4 | 130 | 72 |
+| oranje (women) |  | 71.2 | 119 | 72 |
+
+| Hole | Par | SI | wit | geel | rood | blauw | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 3 | 488 | 480 | 438 |  |  |
+| 2 | 4 | 7 | 392 | 372 | 320 |  |  |
+| 3 | 4 | 1 | 376 | 350 | 290 |  |  |
+| 4 | 3 | 15 | 194 | 187 | 162 |  |  |
+| 5 | 4 | 5 | 338 | 324 | 276 |  |  |
+| 6 | 5 | 11 | 454 | 440 | 379 |  |  |
+| 7 | 4 | 13 | 314 | 314 | 264 |  |  |
+| 8 | 3 | 17 | 186 | 169 | 151 |  |  |
+| 9 | 4 | 9 | 356 | 339 | 318 |  |  |
+| 10 | 4 | 6 | 360 | 336 | 314 |  |  |
+| 11 | 3 | 18 | 143 | 127 | 111 |  |  |
+| 12 | 5 | 2 | 533 | 509 | 439 |  |  |
+| 13 | 4 | 10 | 339 | 314 | 278 |  |  |
+| 14 | 3 | 16 | 136 | 130 | 113 |  |  |
+| 15 | 4 | 8 | 400 | 372 | 314 |  |  |
+| 16 | 4 | 12 | 351 | 332 | 300 |  |  |
+| 17 | 4 | 4 | 408 | 379 | 331 |  |  |
+| 18 | 5 | 14 | 466 | 458 | 401 |  |  |
+
+**Lus Geel-Rood (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6213 | 73.6 | 146 | 72 |
+| geel (men) | 5908 | 72.1 | 137 | 72 |
+| blauw (men) |  | 70.3 | 133 | 72 |
+| rood (men) | 5143 | 68.2 | 126 | 72 |
+| oranje (men) |  | 65.4 | 119 | 72 |
+| geel (women) | 5908 | 78.3 | 150 | 72 |
+| blauw (women) |  | 75.3 | 139 | 72 |
+| rood (women) | 5143 | 73.4 | 131 | 72 |
+| oranje (women) |  | 70.3 | 123 | 72 |
+
+| Hole | Par | SI | wit | geel | rood | blauw | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 360 | 336 | 314 |  |  |
+| 2 | 3 | 17 | 143 | 127 | 111 |  |  |
+| 3 | 5 | 1 | 533 | 509 | 439 |  |  |
+| 4 | 4 | 9 | 339 | 314 | 278 |  |  |
+| 5 | 3 | 15 | 136 | 130 | 113 |  |  |
+| 6 | 4 | 7 | 400 | 372 | 314 |  |  |
+| 7 | 4 | 11 | 351 | 332 | 300 |  |  |
+| 8 | 4 | 3 | 408 | 379 | 331 |  |  |
+| 9 | 5 | 13 | 466 | 458 | 401 |  |  |
+| 10 | 4 | 10 | 314 | 314 | 283 |  |  |
+| 11 | 5 | 4 | 507 | 497 | 440 |  |  |
+| 12 | 3 | 14 | 152 | 143 | 117 |  |  |
+| 13 | 4 | 12 | 325 | 314 | 258 |  |  |
+| 14 | 4 | 2 | 366 | 357 | 297 |  |  |
+| 15 | 5 | 8 | 506 | 467 | 422 |  |  |
+| 16 | 4 | 18 | 331 | 321 | 288 |  |  |
+| 17 | 3 | 16 | 153 | 139 | 99 |  |  |
+| 18 | 4 | 6 | 423 | 399 | 338 |  |  |
+
+**Lus Rood-Blauw (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6175 | 73.7 | 147 | 72 |
+| geel (men) | 5926 | 73.0 | 137 | 72 |
+| blauw (men) |  | 71.3 | 134 | 72 |
+| rood (men) | 5140 | 68.9 | 125 | 72 |
+| oranje (men) |  | 66.1 | 123 | 72 |
+| geel (women) | 5926 | 78.5 | 151 | 72 |
+| blauw (women) |  | 76.5 | 137 | 72 |
+| rood (women) | 5140 | 74.2 | 129 | 72 |
+| oranje (women) |  | 70.9 | 120 | 72 |
+
+| Hole | Par | SI | wit | geel | rood | blauw | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 10 | 314 | 314 | 283 |  |  |
+| 2 | 5 | 4 | 507 | 497 | 440 |  |  |
+| 3 | 3 | 14 | 152 | 143 | 117 |  |  |
+| 4 | 4 | 12 | 325 | 314 | 258 |  |  |
+| 5 | 4 | 2 | 366 | 357 | 297 |  |  |
+| 6 | 5 | 8 | 506 | 467 | 422 |  |  |
+| 7 | 4 | 18 | 331 | 321 | 288 |  |  |
+| 8 | 3 | 16 | 153 | 139 | 99 |  |  |
+| 9 | 4 | 6 | 423 | 399 | 338 |  |  |
+| 10 | 5 | 3 | 488 | 480 | 438 |  |  |
+| 11 | 4 | 7 | 392 | 372 | 320 |  |  |
+| 12 | 4 | 1 | 376 | 350 | 290 |  |  |
+| 13 | 3 | 15 | 194 | 187 | 162 |  |  |
+| 14 | 4 | 5 | 338 | 324 | 276 |  |  |
+| 15 | 5 | 11 | 454 | 440 | 379 |  |  |
+| 16 | 4 | 13 | 314 | 314 | 264 |  |  |
+| 17 | 3 | 17 | 186 | 169 | 151 |  |  |
+| 18 | 4 | 9 | 356 | 339 | 318 |  |  |
+
+**Lus Rood-Groen (18 holes)** — 18 holes, par 67
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 64.9 | 118 | 67 |
+| rood (men) |  | 63.1 | 110 | 67 |
+| geel (women) |  | 69.3 | 126 | 67 |
+| rood (women) |  | 66.1 | 114 | 67 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 9 | 314 | 283 |
+| 2 | 5 | 5 | 497 | 440 |
+| 3 | 3 | 13 | 143 | 117 |
+| 4 | 4 | 15 | 314 | 258 |
+| 5 | 4 | 1 | 357 | 297 |
+| 6 | 5 | 3 | 467 | 422 |
+| 7 | 4 | 11 | 321 | 288 |
+| 8 | 3 | 17 | 139 | 99 |
+| 9 | 4 | 7 | 399 | 338 |
+| 10 | 3 | 4 |  |  |
+| 11 | 3 | 12 |  |  |
+| 12 | 4 | 14 |  |  |
+| 13 | 3 | 6 |  |  |
+| 14 | 4 | 2 |  |  |
+| 15 | 3 | 16 |  |  |
+| 16 | 4 | 18 |  |  |
+| 17 | 3 | 8 |  |  |
+| 18 | 4 | 10 |  |  |
+
+**Lus Groen / Compact Course (9 holes, 2x gespeeld)** — 18 holes, par 62
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 57.6 | 97 | 62 |
+| rood (men) |  | 56.8 | 90 | 62 |
+| geel (women) |  | 60.6 | 104 | 62 |
+| rood (women) |  | 59.6 | 98 | 62 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 4 |  |  |
+| 2 | 3 | 9 |  |  |
+| 3 | 4 | 8 |  |  |
+| 4 | 3 | 3 |  |  |
+| 5 | 3 | 7 |  |  |
+| 6 | 4 | 2 |  |  |
+| 7 | 3 | 5 |  |  |
+| 8 | 4 | 1 |  |  |
+| 9 | 3 | 6 |  |  |
+| 10 | 4 | 13 |  |  |
+| 11 | 3 | 18 |  |  |
+| 12 | 4 | 17 |  |  |
+| 13 | 3 | 12 |  |  |
+| 14 | 3 | 16 |  |  |
+| 15 | 4 | 11 |  |  |
+| 16 | 3 | 14 |  |  |
+| 17 | 4 | 10 |  |  |
+| 18 | 3 | 15 |  |  |
+
+**Lus Par 3-baan (9 holes, 2x gespeeld)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) |  | 51.5 | 77 | 54 |
+| rood (women) |  | 53.9 | 84 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 8 |  |  |
+| 2 | 3 | 7 |  |  |
+| 3 | 3 | 3 |  |  |
+| 4 | 3 | 9 |  |  |
+| 5 | 3 | 6 |  |  |
+| 6 | 3 | 4 |  |  |
+| 7 | 3 | 1 |  |  |
+| 8 | 3 | 5 |  |  |
+| 9 | 3 | 2 |  |  |
+| 10 | 3 | 17 |  |  |
+| 11 | 3 | 16 |  |  |
+| 12 | 3 | 12 |  |  |
+| 13 | 3 | 18 |  |  |
+| 14 | 3 | 15 |  |  |
+| 15 | 3 | 13 |  |  |
+| 16 | 3 | 10 |  |  |
+| 17 | 3 | 14 |  |  |
+| 18 | 3 | 11 |  |  |
+
+- **Scorekaartpagina:** https://www.golfresortbrunssum.nl/info
+- **Bestanden:** [scorecard/page.html](golf-resort-brunssummerheide/scorecard/page.html), [scorecard/strokeindex-tabellen-18-holes.pdf](golf-resort-brunssummerheide/scorecard/strokeindex-tabellen-18-holes.pdf), [scorecard/strokeindex-tabellen-9-holes.pdf](golf-resort-brunssummerheide/scorecard/strokeindex-tabellen-9-holes.pdf), [scorecard/brunssummerheide-18-holes-blauw-geel-heren.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-18-holes-blauw-geel-heren.pdf), [scorecard/brunssummerheide-18-holes-blauw-geel-dames.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-18-holes-blauw-geel-dames.pdf), [scorecard/brunssummerheide-18-holes-geel-rood-heren.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-18-holes-geel-rood-heren.pdf), [scorecard/brunssummerheide-18-holes-geel-rood-dames.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-18-holes-geel-rood-dames.pdf), [scorecard/brunssummerheide-18-holes-rood-blauw-heren.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-18-holes-rood-blauw-heren.pdf), [scorecard/brunssummerheide-18-holes-rood-blauw-dames.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-18-holes-rood-blauw-dames.pdf), [scorecard/brunssummerheide-18-holes-rood-groen-heren.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-18-holes-rood-groen-heren.pdf), [scorecard/brunssummerheide-18-holes-rood-groen-dames.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-18-holes-rood-groen-dames.pdf), [scorecard/brunssummerheide-18-holes-groen-heren.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-18-holes-groen-heren.pdf), [scorecard/brunssummerheide-18-holes-groen-dames.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-18-holes-groen-dames.pdf), [scorecard/brunssummerheide-9-holes-blauw-heren.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-9-holes-blauw-heren.pdf), [scorecard/brunssummerheide-9-holes-blauw-dames.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-9-holes-blauw-dames.pdf), [scorecard/brunssummerheide-9-holes-geel-heren.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-9-holes-geel-heren.pdf), [scorecard/brunssummerheide-9-holes-geel-dames.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-9-holes-geel-dames.pdf), [scorecard/brunssummerheide-9-holes-rood-heren.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-9-holes-rood-heren.pdf), [scorecard/brunssummerheide-9-holes-rood-dames.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-9-holes-rood-dames.pdf), [scorecard/brunssummerheide-9-holes-groen-heren.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-9-holes-groen-heren.pdf), [scorecard/brunssummerheide-9-holes-groen-dames.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-9-holes-groen-dames.pdf), [scorecard/brunssummerheide-par-3-baan-damesand-heren.pdf](golf-resort-brunssummerheide/scorecard/brunssummerheide-par-3-baan-damesand-heren.pdf)
+- **Opmerking:** Par en SI per combinatie uit de officiele stroke-indextabellen; CR/slope uit de officiele handicaptabellen (2021). De club publiceert geen lengtes: lengtes wit/geel/rood per lus komen van golfingrecord.com (derden; consistent tussen de combinaties). Lengtes blauw en oranje, de groene lus en de par 3-baan zijn onbekend (null); GolfingRecord-gegevens voor die tees/lussen zijn inconsistent. De groene lus in Rood-Groen heeft een andere parvolgorde dan de Compact Course (officiele tabel). Clubsite: GolfingRecord-pagina's Blue/Yellow, Yellow/Red, Red/Blue.
+
+<a id="golfbaan-catharinenburg-melissant"></a>
+## Golfbaan Catharinenburg (18 holes)
+
+Catharinenburg ligt bij Melissant op Goeree-Overflakkee, in de vijftiende-eeuwse polder Roxenisse naast de gelijknamige boerderij. De familie Mijnders legde hier in de jaren negentig een baan aan voor de golfers die uit Ouddorp moesten vertrekken; inmiddels is het een open polderbaan van 18 holes (par 72) met daarnaast een 18-holes par 3-baan. De thuisclub heet Golfclub Roxenisse.
+
+- **Club:** Golfbaan Catharinenburg / Golfclub Roxenisse
+- **Adres:** Bouwdijk 9, 3248 LA Melissant, Zuid-Holland, NL
+- **GPS:** 51.7739428, 4.0575558
+- **Afstand:** 187.8 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** open polderbaan in de polder Roxenisse (Goeree-Overflakkee)
+- **Telefoon:** 0187 60 50 60
+- **E-mail:** info@catharinenburg.nl
+- **Website:** https://www.catharinenburg.nl
+- **Starttijden:** https://catharinenburg.golfer.intogolf.nl/#/teetimes
+- **Greenfee welkom:** True
+- **Eisen:** GVB/handicap (toegankelijk voor iedereen met GVB of EGA-handicap)
+- **Faciliteiten:** driving range (18 plaatsen, 6 overdekt), putting greens, chip- en pitchveld, oefenbunkers, 18-holes par 3-baan, golfshop, restaurant, B&B
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5555 | 70.5 | 132 | 72 |
+| rood (men) | 4844 | 66.7 | 115 | 72 |
+| oranje (men) | 4293 | 63.8 | 111 | 72 |
+| geel (women) | 5555 | 77.0 | 141 | 72 |
+| rood (women) | 4844 | 72.8 | 128 | 72 |
+| oranje (women) | 4293 | 68.8 | 117 | 72 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 5 | 321 | 305 | 281 |
+| 2 | 3 | 15 | 130 | 115 | 100 |
+| 3 | 4 | 9 | 339 | 291 | 261 |
+| 4 | 3 | 17 | 138 | 106 | 91 |
+| 5 | 5 | 3 | 433 | 377 | 340 |
+| 6 | 5 | 7 | 443 | 379 | 343 |
+| 7 | 3 | 11 | 139 | 126 | 106 |
+| 8 | 4 | 13 | 305 | 250 | 213 |
+| 9 | 5 | 1 | 410 | 392 | 341 |
+| 10 | 4 | 16 | 316 | 299 | 277 |
+| 11 | 5 | 10 | 442 | 376 | 339 |
+| 12 | 4 | 6 | 335 | 294 | 273 |
+| 13 | 4 | 2 | 332 | 272 | 240 |
+| 14 | 4 | 14 | 282 | 240 | 204 |
+| 15 | 4 | 8 | 350 | 293 | 235 |
+| 16 | 4 | 12 | 329 | 272 | 236 |
+| 17 | 3 | 18 | 140 | 125 | 106 |
+| 18 | 4 | 4 | 371 | 332 | 307 |
+
+**Lus 1e 9 holes** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2658 | 34.6 | 125 | 36 |
+| rood (men) | 2341 | 32.8 | 108 | 36 |
+| oranje (men) | 2076 | 31.7 | 107 | 36 |
+| geel (women) | 2658 | 37.4 | 139 | 36 |
+| rood (women) | 2341 | 35.8 | 127 | 36 |
+| oranje (women) | 2076 | 33.8 | 114 | 36 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 5 | 321 | 305 | 281 |
+| 2 | 3 | 15 | 130 | 115 | 100 |
+| 3 | 4 | 9 | 339 | 291 | 261 |
+| 4 | 3 | 17 | 138 | 106 | 91 |
+| 5 | 5 | 3 | 433 | 377 | 340 |
+| 6 | 5 | 7 | 443 | 379 | 343 |
+| 7 | 3 | 11 | 139 | 126 | 106 |
+| 8 | 4 | 13 | 305 | 250 | 213 |
+| 9 | 5 | 1 | 410 | 392 | 341 |
+
+**Lus 2e 9 holes** — 9 holes, par 36
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2897 | 35.9 | 140 | 36 |
+| rood (men) | 2503 | 34.0 | 121 | 36 |
+| oranje (men) | 2217 | 32.3 | 115 | 36 |
+| geel (women) | 2897 | 39.6 | 143 | 36 |
+| rood (women) | 2503 | 37.0 | 130 | 36 |
+| oranje (women) | 2217 | 35.0 | 121 | 36 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 16 | 316 | 299 | 277 |
+| 2 | 5 | 10 | 442 | 376 | 339 |
+| 3 | 4 | 6 | 335 | 294 | 273 |
+| 4 | 4 | 2 | 332 | 272 | 240 |
+| 5 | 4 | 14 | 282 | 240 | 204 |
+| 6 | 4 | 8 | 350 | 293 | 235 |
+| 7 | 4 | 12 | 329 | 272 | 236 |
+| 8 | 3 | 18 | 140 | 125 | 106 |
+| 9 | 4 | 4 | 371 | 332 | 307 |
+
+- **Scorekaartpagina:** https://www.catharinenburg.nl/golfcomplex/
+- **Bestanden:** [scorecard/page.html](golfbaan-catharinenburg-melissant/scorecard/page.html), [scorecard/18-holes-catharinenburg.png](golfbaan-catharinenburg-melissant/scorecard/18-holes-catharinenburg.png), [scorecard/18holes14TC.png](golfbaan-catharinenburg-melissant/scorecard/18holes14TC.png), [scorecard/Heren-18-holes.png](golfbaan-catharinenburg-melissant/scorecard/Heren-18-holes.png), [scorecard/Dames-18-holes.png](golfbaan-catharinenburg-melissant/scorecard/Dames-18-holes.png), [scorecard/Roxenisse-Heren.pdf](golfbaan-catharinenburg-melissant/scorecard/Roxenisse-Heren.pdf), [scorecard/Roxenisse-Dames.pdf](golfbaan-catharinenburg-melissant/scorecard/Roxenisse-Dames.pdf)
+- **Opmerking:** Par, S.I. en lengtes uit de scorekaarttabel op de site (afbeelding 18-holes-catharinenburg.png). CR/slope uit baanhandicaptabellen Golfclub Roxenisse d.d. 18-08-2021 (website-tekst noemt slope geel heren 131, tabel 132; tabel aangehouden). 9-holes lussen: S.I. in 18-holes-stijl (1e 9 oneven, 2e 9 even).
+
+<a id="golfbaan-catharinenburg-par-3-melissant"></a>
+## Golfbaan Catharinenburg Par 3-baan
+
+Naast de grote baan heeft Catharinenburg in Melissant een 18-holes par 3-baan van samen 2339 meter. De holes variëren van 71 tot 191 meter en vragen vooral om precieze ijzerslagen. Een goede plek om het korte spel te oefenen of een kortere ronde te lopen.
+
+- **Club:** Golfbaan Catharinenburg / Golfclub Roxenisse
+- **Adres:** Bouwdijk 9, 3248 LA Melissant, Zuid-Holland, NL
+- **GPS:** 51.7739428, 4.0575558
+- **Afstand:** 187.8 km
+- **Type:** par-3
+- **Holes:** 18
+- **Landschap:** polder
+- **Telefoon:** 0187 60 50 60
+- **E-mail:** info@catharinenburg.nl
+- **Website:** https://www.catharinenburg.nl
+- **Starttijden:** https://catharinenburg.golfer.intogolf.nl/#/teetimes
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, oefengreens, restaurant
+
+**Lus Par 3-baan 18 holes** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2339 | 51.7 | 74 | 54 |
+| geel (women) | 2339 | 54.0 | 79 | 54 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 3 | 15 | 94 |
+| 2 | 3 | 17 | 80 |
+| 3 | 3 | 1 | 191 |
+| 4 | 3 | 6 | 130 |
+| 5 | 3 | 11 | 138 |
+| 6 | 3 | 13 | 151 |
+| 7 | 3 | 3 | 158 |
+| 8 | 3 | 12 | 125 |
+| 9 | 3 | 7 | 101 |
+| 10 | 3 | 18 | 71 |
+| 11 | 3 | 16 | 95 |
+| 12 | 3 | 2 | 176 |
+| 13 | 3 | 5 | 156 |
+| 14 | 3 | 8 | 151 |
+| 15 | 3 | 14 | 145 |
+| 16 | 3 | 4 | 149 |
+| 17 | 3 | 10 | 133 |
+| 18 | 3 | 9 | 95 |
+
+- **Scorekaartpagina:** https://www.catharinenburg.nl/golfcomplex/
+- **Bestanden:** [scorecard/page.html](golfbaan-catharinenburg-par-3-melissant/scorecard/page.html), [scorecard/Par-3-catharinenburg.png](golfbaan-catharinenburg-par-3-melissant/scorecard/Par-3-catharinenburg.png), [scorecard/Par-3.png](golfbaan-catharinenburg-par-3-melissant/scorecard/Par-3.png), [scorecard/PAR3_baantekening_LDS_0717.jpg](golfbaan-catharinenburg-par-3-melissant/scorecard/PAR3_baantekening_LDS_0717.jpg), [scorecard/WHS-ROX-Par3.pdf](golfbaan-catharinenburg-par-3-melissant/scorecard/WHS-ROX-Par3.pdf)
+- **Opmerking:** Eén lengtekolom (geel). CR/slope uit tabel Golfclub Roxenisse 18-01-2021: geel heren 51,7/74, rood dames 54,0/79 (lengte rood niet apart vermeld; hier gelijk aan geel genoteerd als 'geel' dames). 9-holes ratings: 25,9/74 (heren) en 27,0/79 (dames).
+
+<a id="golfclub-wouwse-plantage-bergen-op-zoom"></a>
+## Golfclub Wouwse Plantage
+
+Golfclub Wouwse Plantage ligt in een bosrijk stiltegebied op het gelijknamige landgoed tussen Bergen op Zoom en Roosendaal. De baan bestaat sinds 2021 uit twee lussen: De Plantage met bosholes en een zandverstuiving, en De Bleekloop met een parkachtig karakter, een beek en waterpartijen. Het oorspronkelijke ontwerp is van Frank Pennink; Bruno Steensels renoveerde in 2018-2019 meerdere holes.
+
+- **Club:** Golfclub Wouwse Plantage
+- **Adres:** Zoomvlietweg 66, 4624 RP Bergen op Zoom, Noord-Brabant, NL
+- **GPS:** 51.4761, 4.3613
+- **Afstand:** 190.3 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** bos, heide en zandverstuiving (De Plantage) en parklandschap met beek en water (De Bleekloop)
+- **Opgericht:** 1981
+- **Architect:** Frank Pennink (oorspronkelijk); renovatie 2018-2019 door Bruno Steensels
+- **Telefoon:** +31 165 377100
+- **E-mail:** gwp@golfwouwseplantage.nl
+- **Website:** https://www.golfwouwseplantage.nl/
+- **Starttijden:** https://www.golfwouwseplantage.nl/golfen/tarieven-greenfee
+- **Greenfee welkom:** True
+- **Eisen:** Greenfee alleen met minimaal twee greenfeespelers per flight (max. vier); max. WHS-handicap 90 per 4-ball en 108 per 2- of 3-ball; boeken tot 14 dagen vooruit via de caddiemaster.
+- **Faciliteiten:** driving range, oefengreen, zes oefenholes, golfschool, clubhuis met restaurant
+
+**Lus 18 holes (De Bleekloop + De Plantage)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6312 | 74.5 | 142 | 72 |
+| geel (men) | 5920 | 72.4 | 138 | 72 |
+| blauw (men) | 5634 | 70.9 | 135 | 72 |
+| rood (men) | 5101 | 68.6 | 122 | 72 |
+| oranje (men) | 4533 | 65.4 | 114 | 72 |
+| geel (women) | 5920 | 78.8 | 148 | 72 |
+| blauw (women) | 5634 | 76.9 | 143 | 72 |
+| rood (women) | 5101 | 73.8 | 135 | 72 |
+| oranje (women) | 4533 | 70.0 | 127 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 360 | 327 | 317 | 274 | 247 |
+| 2 | 5 | 3 | 523 | 512 | 480 | 435 | 370 |
+| 3 | 4 | 7 | 367 | 353 | 339 | 297 | 272 |
+| 4 | 3 | 15 | 169 | 152 | 145 | 132 | 123 |
+| 5 | 5 | 5 | 530 | 483 | 472 | 417 | 387 |
+| 6 | 4 | 1 | 412 | 380 | 365 | 327 | 307 |
+| 7 | 4 | 13 | 368 | 301 | 290 | 262 | 240 |
+| 8 | 3 | 17 | 166 | 125 | 115 | 109 | 93 |
+| 9 | 4 | 11 | 363 | 356 | 346 | 302 | 270 |
+| 10 | 4 | 18 | 301 | 288 | 265 | 252 | 243 |
+| 11 | 4 | 10 | 392 | 362 | 342 | 296 | 259 |
+| 12 | 3 | 14 | 190 | 177 | 165 | 160 | 152 |
+| 13 | 5 | 6 | 461 | 443 | 420 | 379 | 300 |
+| 14 | 4 | 4 | 380 | 373 | 348 | 348 | 275 |
+| 15 | 5 | 2 | 479 | 469 | 445 | 390 | 316 |
+| 16 | 3 | 16 | 160 | 160 | 155 | 145 | 120 |
+| 17 | 4 | 12 | 310 | 310 | 292 | 287 | 287 |
+| 18 | 4 | 8 | 381 | 349 | 333 | 289 | 272 |
+
+- **Scorekaartpagina:** https://www.golfwouwseplantage.nl/de-baan/baandetails
+- **Bestanden:** [scorecard/Scorekaart-zomer-GWP-2025.pdf](golfclub-wouwse-plantage-bergen-op-zoom/scorecard/Scorekaart-zomer-GWP-2025.pdf), [scorecard/Wouwse-Plantage-Heren-2026.pdf](golfclub-wouwse-plantage-bergen-op-zoom/scorecard/Wouwse-Plantage-Heren-2026.pdf), [scorecard/Wouwse-Plantage-Dames-2026.pdf](golfclub-wouwse-plantage-bergen-op-zoom/scorecard/Wouwse-Plantage-Dames-2026.pdf), [scorecard/page.html](golfclub-wouwse-plantage-bergen-op-zoom/scorecard/page.html)
+- **Opmerking:** Zomerscorekaart 2025 (OUT 3258/2989/2869/2555/2309, IN 3054/2931/2765/2546/2224, TOT 6312/5920/5634/5101/4533; klopt met de holes). CR/slope uit handicaptabellen 2026 (18 holes De Bleekloop-De Plantage). Er bestaat ook een winterscorekaart met wintertees; niet opgenomen. Opgericht: club 1981 (bevestigd 1982), baan geopend 1980 (9 holes), 18 holes sinds 1991.
+
+<a id="golfclub-grevelingenhout-bruinisse"></a>
+## Golfclub Grevelingenhout
+
+Grevelingenhout ligt op voormalige landerijen en bosjes langs het Grevelingenmeer, een paar kilometer buiten Bruinisse. De 18-holes parkbaan van Donald Harradine werd vanaf 1988 aangelegd en kent veel waterpartijen. Een 9-holes par 3-baan met holes van 50 tot 130 meter is er voor beginners en voor wie het korte spel wil oefenen.
+
+- **Club:** Golfclub Grevelingenhout
+- **Adres:** Oudendijk 3, 4311 NA Bruinisse, Zeeland, NL
+- **GPS:** 51.6699, 4.0619
+- **Afstand:** 193.6 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** parkbaan met veel water, aan het Grevelingenmeer
+- **Opgericht:** 1988
+- **Architect:** Donald Harradine
+- **Telefoon:** 0111 482650
+- **E-mail:** golfclub@grevelingenhout.nl
+- **Website:** https://www.grevelingenhout.nl/
+- **Starttijden:** https://www.grevelingenhout.nl/tarieven/
+- **Greenfee welkom:** True
+- **Eisen:** 18 holes: minimaal GVB en/of clubhandicap 54. Par 3-baan: minimaal baanpermissie.
+- **Faciliteiten:** driving range, par 3-baan (9 holes), clubhuis/horeca, golfschool
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6151 | 72.6 | 137 | 72 |
+| geel (men) | 5931 | 72.0 | 129 | 72 |
+| blauw (men) | 5375 | 69.6 | 114 | 72 |
+| rood (men) | 5102 | 68.6 | 115 | 72 |
+| oranje (men) | 4434 | 65.2 | 104 | 72 |
+| geel (women) | 5931 | 78.0 | 145 | 72 |
+| blauw (women) | 5375 | 74.6 | 136 | 72 |
+| rood (women) | 5102 | 73.4 | 128 | 72 |
+| oranje (women) | 4434 | 69.6 | 117 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 8 | 340 | 326 | 289 | 279 | 242 |
+| 2 | 5 | 12 | 445 | 436 | 406 | 396 | 360 |
+| 3 | 3 | 14 | 159 | 149 | 139 | 129 | 98 |
+| 4 | 4 | 2 | 397 | 388 | 341 | 332 | 285 |
+| 5 | 4 | 16 | 317 | 307 | 267 | 257 | 218 |
+| 6 | 3 | 18 | 171 | 160 | 150 | 140 | 124 |
+| 7 | 5 | 10 | 465 | 455 | 404 | 395 | 360 |
+| 8 | 4 | 4 | 371 | 360 | 316 | 306 | 260 |
+| 9 | 4 | 6 | 371 | 361 | 318 | 307 | 260 |
+| 10 | 5 | 5 | 510 | 487 | 457 | 418 | 363 |
+| 11 | 4 | 7 | 363 | 354 | 336 | 322 | 274 |
+| 12 | 3 | 11 | 164 | 157 | 143 | 130 | 105 |
+| 13 | 5 | 9 | 483 | 464 | 432 | 392 | 361 |
+| 14 | 4 | 1 | 400 | 383 | 338 | 323 | 285 |
+| 15 | 3 | 17 | 165 | 155 | 148 | 138 | 117 |
+| 16 | 4 | 13 | 341 | 331 | 286 | 252 | 217 |
+| 17 | 4 | 15 | 299 | 290 | 279 | 270 | 232 |
+| 18 | 4 | 3 | 390 | 368 | 326 | 316 | 273 |
+
+**Lus Par 3-baan 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1604 | 48.2 | 66 | 54 |
+| rood (women) | 1604 | 50.1 | 67 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 17 | 50 | 50 |
+| 2 | 3 | 7 | 103 | 103 |
+| 3 | 3 | 15 | 70 | 70 |
+| 4 | 3 | 5 | 107 | 107 |
+| 5 | 3 | 1 | 119 | 119 |
+| 6 | 3 | 13 | 89 | 89 |
+| 7 | 3 | 3 | 130 | 130 |
+| 8 | 3 | 11 | 64 | 64 |
+| 9 | 3 | 9 | 70 | 70 |
+| 10 | 3 | 18 | 50 | 50 |
+| 11 | 3 | 8 | 103 | 103 |
+| 12 | 3 | 16 | 70 | 70 |
+| 13 | 3 | 6 | 107 | 107 |
+| 14 | 3 | 2 | 119 | 119 |
+| 15 | 3 | 14 | 89 | 89 |
+| 16 | 3 | 4 | 130 | 130 |
+| 17 | 3 | 12 | 64 | 64 |
+| 18 | 3 | 10 | 70 | 70 |
+
+- **Scorekaartpagina:** https://www.grevelingenhout.nl/golfbaan/handicaptabellen-en-scorekaarten/
+- **Bestanden:** [scorecard/20220103_Ti_18_Holes.pdf](golfclub-grevelingenhout-bruinisse/scorecard/20220103_Ti_18_Holes.pdf), [scorecard/20211221_TOME_Par3.pdf](golfclub-grevelingenhout-bruinisse/scorecard/20211221_TOME_Par3.pdf), [scorecard/Grevelingenhout-WHS-tabel-Heren-18-holes.pdf](golfclub-grevelingenhout-bruinisse/scorecard/Grevelingenhout-WHS-tabel-Heren-18-holes.pdf), [scorecard/Grevelingenhout-WHS-tabel-Dames-18-holes.pdf](golfclub-grevelingenhout-bruinisse/scorecard/Grevelingenhout-WHS-tabel-Dames-18-holes.pdf), [scorecard/Grevelingenhout-WHS-tabel-Par-3-Baan-18-holes.pdf](golfclub-grevelingenhout-bruinisse/scorecard/Grevelingenhout-WHS-tabel-Par-3-Baan-18-holes.pdf), [scorecard/page.html](golfclub-grevelingenhout-bruinisse/scorecard/page.html)
+- **Opmerking:** 18 holes: scorekaart 2022 (gescand), totalen 6151/5931/5375/5102/4434 m kloppen met de holes. CR/slope van de scorekaart; de WHS-tabel van 06-01-2021 geeft voor blauw heren CR 69,9 i.p.v. 69,6 (kaart, nieuwer, aangehouden). Par 3: kaart toont geel en rood met dezelfde lengtes; S.I. hole 11 onleesbaar in de scan, afgeleid als 8 (enige ontbrekende waarde; past bij even S.I. op de tweede ronde).
+
+<a id="golf-country-club-hoenshuis-voerendaal"></a>
+## Golf & Country Club Hoenshuis
+
+Hoenshuis bij Voerendaal is een parkbaan uit 1987 rond een eeuwenoude carre-hoeve in het Zuid-Limburgse heuvelland. De 18 holes (par 72, 6277 m van achteren) zijn onder leiding van Bruno Steensels gerenoveerd en hebben glooiende fairways, waterpartijen en goed verdedigde greens. Bekend zijn de slotholes langs het clubhuis.
+
+- **Club:** Golf- en Countryclub Hoenshuis
+- **Adres:** Hoensweg 17, 6367 GN Voerendaal, Limburg, NL
+- **GPS:** 50.8847952, 5.9175774
+- **Afstand:** 194.4 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** parkbaan met glooiende fairways, vijvers en beken rond een carre-hoeve
+- **Opgericht:** 1987
+- **Architect:** Baron Paul Rolin en Wiel Snelder (landschap); renovatie Bruno Steensels
+- **Telefoon:** 045 575 33 00
+- **E-mail:** info@hoenshuis.nl
+- **Website:** https://hoenshuis.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** overdekte driving range, 3 putting greens, 5 holes pitch & putt, golf academy, brasserie, business club
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6277 | 73.3 | 139 | 72 |
+| geel (men) | 5983 | 71.9 | 132 | 72 |
+| blauw (men) | 5590 | 70.2 | 129 | 72 |
+| rood (men) | 5218 | 68.4 | 117 | 72 |
+| oranje (men) | 4841 | 66.6 | 115 | 72 |
+| geel (women) | 5983 | 78.6 | 141 | 72 |
+| blauw (women) | 5590 | 76.0 | 135 | 72 |
+| rood (women) | 5218 | 73.4 | 129 | 72 |
+| oranje (women) | 4841 | 71.5 | 122 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 396 | 364 | 345 | 339 | 320 |
+| 2 | 4 | 9 | 364 | 342 | 304 | 294 | 268 |
+| 3 | 4 | 13 | 355 | 349 | 326 | 300 | 283 |
+| 4 | 4 | 11 | 346 | 335 | 311 | 305 | 282 |
+| 5 | 3 | 15 | 158 | 145 | 140 | 129 | 124 |
+| 6 | 5 | 3 | 501 | 472 | 418 | 413 | 372 |
+| 7 | 4 | 1 | 387 | 368 | 358 | 336 | 285 |
+| 8 | 3 | 17 | 158 | 152 | 145 | 122 | 113 |
+| 9 | 5 | 7 | 527 | 515 | 480 | 449 | 401 |
+| 10 | 4 | 10 | 372 | 358 | 328 | 293 | 277 |
+| 11 | 5 | 4 | 478 | 468 | 444 | 402 | 385 |
+| 12 | 4 | 16 | 348 | 318 | 313 | 285 | 277 |
+| 13 | 4 | 2 | 427 | 394 | 347 | 313 | 297 |
+| 14 | 4 | 8 | 356 | 348 | 324 | 314 | 293 |
+| 15 | 3 | 18 | 173 | 160 | 140 | 120 | 107 |
+| 16 | 5 | 12 | 451 | 436 | 425 | 395 | 377 |
+| 17 | 4 | 6 | 288 | 282 | 272 | 259 | 255 |
+| 18 | 3 | 14 | 192 | 177 | 170 | 150 | 125 |
+
+- **Scorekaartpagina:** https://hoenshuis.nl/nl/de-baan/baaninformatie
+- **Bestanden:** [scorecard/page.html](golf-country-club-hoenshuis-voerendaal/scorecard/page.html), [scorecard/HoenshuisScorekaart2025.pdf](golf-country-club-hoenshuis-voerendaal/scorecard/HoenshuisScorekaart2025.pdf), [scorecard/Hoenshuis-Heren-2024-HCPTABEL.pdf](golf-country-club-hoenshuis-voerendaal/scorecard/Hoenshuis-Heren-2024-HCPTABEL.pdf), [scorecard/Hoenshuis-Dames-2024-HCPTABEL.pdf](golf-country-club-hoenshuis-voerendaal/scorecard/Hoenshuis-Dames-2024-HCPTABEL.pdf)
+- **Opmerking:** Officiele scorekaart 2025 (par, SI, lengtes wit/geel/blauw/rood/oranje) en handicaptabellen 07-05-2024; de ratingtabel op de kaart komt hiermee overeen. De hole-by-hole-tekst noemt voor hole 3 nog SI 17 (kaart: 13).
+
+<a id="golfclub-meerssen-bunde"></a>
+## Golfclub Meerssen
+
+Golfclub Meerssen werd in 1987 opgericht en speelt op een 9-holesbaan bij Bunde, in een bosrijk en glooiend deel van het Zuid-Limburgse heuvelland. De baan bestaat vooral uit par 3-holes met twee par 4's (par 29) en biedt mooie vergezichten. Gasten spelen er alleen op uitnodiging van leden.
+
+- **Club:** Golfclub Meerssen
+- **Adres:** Heiveld 4, 6241 EK Bunde (Meerssen), Limburg, NL
+- **GPS:** 50.8964337, 5.7441933
+- **Afstand:** 195.8 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** bosrijk, glooiend heuvellandschap met vergezichten
+- **Opgericht:** 1987
+- **Telefoon:** 043 365 2756
+- **E-mail:** info@golfclubmeerssen.nl
+- **Website:** https://www.golfclubmeerssen.nl/
+- **Greenfee welkom:** False
+- **Eisen:** Gastspelers alleen als introducee van leden of gast van bedrijfsleden; leden van Het Rijk van Margraten en Residenz Rothenbach welkom
+- **Faciliteiten:** oefenkooi, clubhuis
+
+**Lus 9 holes par 3/4 (2x gespeeld = 18 holes)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 3000 | 56.2 | 102 | 58 |
+| rood (men) | 2876 | 55.7 | 89 | 58 |
+| geel (women) | 3000 | 59.2 | 99 | 58 |
+| rood (women) | 2876 | 57.9 | 102 | 58 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 11 | 156 | 156 |
+| 2 | 4 | 13 | 224 | 224 |
+| 3 | 3 | 17 | 109 | 109 |
+| 4 | 3 | 7 | 175 | 175 |
+| 5 | 3 | 15 | 130 | 130 |
+| 6 | 3 | 9 | 110 | 110 |
+| 7 | 4 | 5 | 259 | 223 |
+| 8 | 3 | 1 | 166 | 166 |
+| 9 | 3 | 3 | 171 | 145 |
+| 10 | 3 | 12 | 156 | 156 |
+| 11 | 4 | 14 | 224 | 224 |
+| 12 | 3 | 18 | 109 | 109 |
+| 13 | 3 | 8 | 175 | 175 |
+| 14 | 3 | 16 | 130 | 130 |
+| 15 | 3 | 10 | 110 | 110 |
+| 16 | 4 | 6 | 259 | 223 |
+| 17 | 3 | 2 | 166 | 166 |
+| 18 | 3 | 4 | 171 | 145 |
+
+- **Scorekaartpagina:** https://www.golfclubmeerssen.nl/baan/hole-info/
+- **Bestanden:** [scorecard/page.html](golfclub-meerssen-bunde/scorecard/page.html), [scorecard/Scorekaart-2024.pdf](golfclub-meerssen-bunde/scorecard/Scorekaart-2024.pdf), [scorecard/Meerssen-WHS-tabel-Heren.pdf](golfclub-meerssen-bunde/scorecard/Meerssen-WHS-tabel-Heren.pdf), [scorecard/Meerssen-WHS-tabel-Dames.pdf](golfclub-meerssen-bunde/scorecard/Meerssen-WHS-tabel-Dames.pdf)
+- **Opmerking:** Officiele scorekaart (versie 2024-09-20): par, SI en lengtes geel/rood. CR/slope uit de WHS-tabellen van 08-02-2021 (heren geel 56.2/102, rood 55.7/89; dames geel 59.2/99, rood 57.9/102). In augustus 2026 is een nieuwe course rating vastgesteld die nog niet gepubliceerd is.
+
+<a id="het-rijk-van-margraten-cadier-en-keer"></a>
+## Golfbaan Het Rijk van Margraten
+
+Het Rijk van Margraten ligt op het plateau bij Cadier en Keer, tussen akkers, wijngaarden en oude bossen in het Zuid-Limburgse heuvelland. De parkbaan uit 2002 (ontwerp Alan Rijks, par 72) opent opvallend met een korte par 3 en heeft afwisselende holes met weidse uitzichten. Er is ook een 9-holes shortgolfbaan met holes van 50 tot 80 meter.
+
+- **Club:** Golfvereniging Het Rijk van Margraten
+- **Adres:** Bemelerweg 99, 6267 AL Cadier en Keer, Limburg, NL
+- **GPS:** 50.8384478, 5.7574572
+- **Afstand:** 201.8 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** parkbaan in het heuvelland tussen landerijen, wijngaarden en oude bossen
+- **Opgericht:** 2002
+- **Architect:** Alan Rijks
+- **Telefoon:** 043 356 99 99
+- **E-mail:** info@golfbaanhetrijkvanmargraten.nl
+- **Website:** https://www.golfenophetrijk.nl/margraten.html
+- **Starttijden:** https://www.golfenophetrijk.nl/margraten/starttijd-reserveren.html
+- **Greenfee welkom:** True
+- **Eisen:** Handicap 54
+- **Faciliteiten:** short golf 9 holes par 3 (50-80 m), overdekte driving range, oefenfaciliteiten, golfschool, restaurant met terras, buggy's en handicarts
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5709 | 70.6 | 129 | 72 |
+| rood (men) | 4962 | 67.6 | 114 | 72 |
+| oranje (men) | 4181 | 63.5 | 110 | 72 |
+| geel (women) | 5709 | 76.6 | 143 | 72 |
+| rood (women) | 4962 | 72.5 | 128 | 72 |
+| oranje (women) | 4181 | 68.2 | 111 | 72 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 3 | 18 | 106 | 92 | 68 |
+| 2 | 4 | 6 | 388 | 320 | 284 |
+| 3 | 4 | 10 | 324 | 283 | 255 |
+| 4 | 5 | 4 | 424 | 374 | 327 |
+| 5 | 3 | 16 | 145 | 121 | 102 |
+| 6 | 4 | 14 | 247 | 217 | 186 |
+| 7 | 4 | 8 | 382 | 307 | 256 |
+| 8 | 4 | 12 | 263 | 232 | 186 |
+| 9 | 5 | 2 | 454 | 399 | 358 |
+| 10 | 4 | 9 | 339 | 299 | 239 |
+| 11 | 5 | 15 | 441 | 395 | 355 |
+| 12 | 5 | 3 | 434 | 379 | 326 |
+| 13 | 3 | 17 | 141 | 123 | 95 |
+| 14 | 4 | 5 | 406 | 358 | 327 |
+| 15 | 4 | 1 | 397 | 348 | 274 |
+| 16 | 4 | 13 | 348 | 308 | 237 |
+| 17 | 3 | 11 | 155 | 133 | 92 |
+| 18 | 4 | 7 | 315 | 274 | 214 |
+
+- **Scorekaartpagina:** https://www.golfenophetrijk.nl/margraten/baandetails.html
+- **Bestanden:** [scorecard/page.html](het-rijk-van-margraten-cadier-en-keer/scorecard/page.html), [scorecard/page-baaninformatie.html](het-rijk-van-margraten-cadier-en-keer/scorecard/page-baaninformatie.html), [scorecard/margraten-scorekaart-18-holes.pdf](het-rijk-van-margraten-cadier-en-keer/scorecard/margraten-scorekaart-18-holes.pdf), [scorecard/Rijk-van-Margraten-Heren.pdf](het-rijk-van-margraten-cadier-en-keer/scorecard/Rijk-van-Margraten-Heren.pdf), [scorecard/Rijk-van-Margraten-Dames.pdf](het-rijk-van-margraten-cadier-en-keer/scorecard/Rijk-van-Margraten-Dames.pdf), [scorecard/margraten-plattegrond-golfbaan.pdf](het-rijk-van-margraten-cadier-en-keer/scorecard/margraten-plattegrond-golfbaan.pdf), [scorecard/margraten-plattegrond-short-golf.pdf](het-rijk-van-margraten-cadier-en-keer/scorecard/margraten-plattegrond-short-golf.pdf)
+- **Opmerking:** Officiele scorekaart (par, SI, lengtes geel/rood/oranje; totalen 5709/4962 kloppen met de baandetails) en handicaptabellen van 25-09-2025. De kaart noemt ook 'blauwe tees' maar geeft daar geen lengtes of ratings voor. Short Golf (9 holes par 3) heeft geen gepubliceerde holegegevens.
+
+<a id="international-golf-maastricht"></a>
+## International Golf Maastricht
+
+International Golf Maastricht ligt op de Dousberg aan de westrand van Maastricht, pal op de grens: van de 18 holes liggen er dertien in Nederland en vijf in Belgie. De heuvelachtige baan met waterpartijen biedt uitzicht over het Maasdal. Er is ook een kortere 9-holes Limburg Course.
+
+- **Club:** International Golf Maastricht
+- **Adres:** Dousbergweg 100, 6216 GC Maastricht, Limburg, NL
+- **GPS:** 50.8545886, 5.6439389
+- **Afstand:** 202.1 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** heuvelachtig op de Dousberg, met water; deels in Belgie
+- **Architect:** Steve Marnoch (volgens 1golf.eu)
+- **Telefoon:** 043 328 1740
+- **Website:** https://www.internationalgolfmaastricht.com/
+- **Greenfee welkom:** True
+- **Faciliteiten:** 9-holes Limburg Course, clubhuis met terras
+
+**Lus Championship Course (18 holes)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5967 | 72.5 | 134 | 72 |
+| geel (men) | 5606 | 70.6 | 129 | 72 |
+| blauw (men) | 5122 | 68.0 | 120 | 72 |
+| rood (men) | 4821 | 66.2 | 115 | 72 |
+| oranje (men) | 4350 | 64.2 | 109 | 72 |
+| geel (women) | 5606 | 76.5 | 138 | 72 |
+| blauw (women) | 5122 | 73.4 | 131 | 72 |
+| rood (women) | 4821 | 72.0 | 126 | 72 |
+| oranje (women) | 4350 | 68.6 | 120 | 72 |
+
+| Hole | Par | SI | blauw | wit | geel | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 14 | 271 |  |  |  |  |
+| 2 | 4 | 2 | 310 |  |  |  |  |
+| 3 | 3 | 18 | 107 |  |  |  |  |
+| 4 | 4 | 8 | 285 |  |  |  |  |
+| 5 | 5 | 10 | 426 |  |  |  |  |
+| 6 | 3 | 16 | 151 |  |  |  |  |
+| 7 | 4 | 6 | 306 |  |  |  |  |
+| 8 | 4 | 12 | 388 |  |  |  |  |
+| 9 | 4 | 4 | 301 |  |  |  |  |
+| 10 | 3 | 15 | 130 |  |  |  |  |
+| 11 | 5 | 11 | 403 |  |  |  |  |
+| 12 | 3 | 13 | 137 |  |  |  |  |
+| 13 | 4 | 9 | 316 |  |  |  |  |
+| 14 | 4 | 1 | 330 |  |  |  |  |
+| 15 | 5 | 5 | 400 |  |  |  |  |
+| 16 | 4 | 17 | 185 |  |  |  |  |
+| 17 | 5 | 7 | 377 |  |  |  |  |
+| 18 | 4 | 3 | 299 |  |  |  |  |
+
+**Lus Limburg Course (9 holes)** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (women) | 2191 |  |  | 35 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 4 | 3 | 311 |
+| 2 | 4 | 5 | 310 |
+| 3 | 3 | 7 | 116 |
+| 4 | 4 | 6 | 225 |
+| 5 | 4 | 1 | 256 |
+| 6 | 4 | 8 | 242 |
+| 7 | 3 | 9 | 109 |
+| 8 | 4 | 2 | 235 |
+| 9 | 5 | 4 | 387 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/international-golf-maastricht-championship
+- **Bestanden:** [scorecard/page.html](international-golf-maastricht/scorecard/page.html), [scorecard/hole19-championship.html](international-golf-maastricht/scorecard/hole19-championship.html), [scorecard/hole19-limburg-course.html](international-golf-maastricht/scorecard/hole19-limburg-course.html)
+- **Opmerking:** Officiele site (internationalgolfmaastricht.com) onbereikbaar: ongeldig TLS-certificaat en standaard hostingpagina. Holegegevens van hole19golf.com (metrisch): par, SI en alleen lengtes blauwe tee voor de Championship Course; CR/slope en totale lengtes per tee ook van Hole19. Limburg Course: par/SI/lengtes gele tee (Hole19 noemt deze tee 'yellow (l)'); ratings voor deze 9 holes zijn bij Hole19 onduidelijk (meerdere sets voor par 35 en par 37). Recente reviews (aug. 2026, 1golf.eu) klagen over de staat van de baan; actuele status onzeker.
+
+<a id="golfvereniging-reymerswael-rilland"></a>
+## Golfpark Reymerswael
+
+Golfpark Reymerswael ligt bij Rilland in het open Zeeuwse landschap tussen de Westerschelde, het Schelde-Rijnkanaal en de polders. De par-71-baan bestaat uit een lus van 12 en een lus van 6 holes, met lage begroeiing en lichte duintoppen, waardoor de wind vaak de doorslag geeft. Het park wordt geëxploiteerd door de Hollandsche Golfclub.
+
+- **Club:** Hollandsche Golfclub – Golfpark Reymerswael (Golfvereniging Reymerswael)
+- **Adres:** Grensweg 21, 4411 ST Rilland, Zeeland, NL
+- **GPS:** 51.3899, 4.2389
+- **Afstand:** 203.1 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** open, links-achtig met lage begroeiing en lichte duintoppen, tussen Westerschelde en Schelde-Rijnkanaal
+- **Opgericht:** 1986
+- **Architect:** Joan Frederik Dudok van Heel en Alan Rijks (volgens golfingrecord.com)
+- **Telefoon:** 0113 551 265
+- **E-mail:** info@golfparkreymerswael.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/reymerswael/
+- **Greenfee welkom:** True
+- **Eisen:** Vanaf baanpermissie van de Hollandsche Golfclub.
+- **Faciliteiten:** driving range, putting green, chipping green, oefenbunker, brasserie
+
+**Lus 18 holes (lus 12 + lus 6)** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5944 | 72.3 | 130 | 71 |
+| geel (men) | 5779 | 71.3 | 130 | 71 |
+| blauw (men) | 5334 | 69.2 | 122 | 71 |
+| rood (men) | 4916 | 67.2 | 116 | 71 |
+| oranje (men) | 3998 | 63.5 | 105 | 71 |
+| geel (women) | 5779 | 78.2 | 142 | 71 |
+| blauw (women) | 5334 | 75.1 | 137 | 71 |
+| rood (women) | 4916 | 72.5 | 127 | 71 |
+| oranje (women) | 3998 | 66.5 | 112 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 4 | 522 | 443 | 443 | 398 | 313 |
+| 2 | 3 | 12 | 164 | 164 | 144 | 144 | 144 |
+| 3 | 4 | 14 | 272 | 272 | 266 | 266 | 204 |
+| 4 | 4 | 10 | 343 | 343 | 343 | 290 | 214 |
+| 5 | 3 | 18 | 139 | 139 | 119 | 119 | 119 |
+| 6 | 5 | 2 | 446 | 446 | 446 | 365 | 267 |
+| 7 | 4 | 6 | 352 | 352 | 352 | 317 | 240 |
+| 8 | 3 | 16 | 162 | 162 | 137 | 137 | 137 |
+| 9 | 4 | 8 | 355 | 355 | 294 | 294 | 245 |
+| 10 | 4 | 15 | 331 | 331 | 306 | 306 | 226 |
+| 11 | 4 | 13 | 382 | 344 | 344 | 277 | 204 |
+| 12 | 5 | 1 | 526 | 522 | 412 | 412 | 341 |
+| 13 | 4 | 3 | 337 | 337 | 278 | 278 | 245 |
+| 14 | 4 | 9 | 405 | 365 | 297 | 297 | 239 |
+| 15 | 4 | 11 | 347 | 347 | 347 | 286 | 232 |
+| 16 | 4 | 7 | 336 | 336 | 322 | 322 | 220 |
+| 17 | 4 | 5 | 393 | 389 | 361 | 285 | 285 |
+| 18 | 3 | 17 | 132 | 132 | 123 | 123 | 123 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/reymerswael/course/18-holes-golfpark-reymerswael/
+- **Bestanden:** [scorecard/REYMERSWAEL_SCOREKAART18HOLES_2025WEB.pdf](golfvereniging-reymerswael-rilland/scorecard/REYMERSWAEL_SCOREKAART18HOLES_2025WEB.pdf), [scorecard/Reymerswael_HCPTabellen_Nov2026.pdf](golfvereniging-reymerswael-rilland/scorecard/Reymerswael_HCPTabellen_Nov2026.pdf), [scorecard/page.html](golfvereniging-reymerswael-rilland/scorecard/page.html), [scorecard/golfingrecord-reymerswael-oud.html](golfvereniging-reymerswael-rilland/scorecard/golfingrecord-reymerswael-oud.html)
+- **Opmerking:** Officiële scorekaart 2025 via de site van de Hollandsche Golfclub (TOT 5944/5779/5334/4916/3998 m, par 71; kolomvolgorde wit/geel/blauw/rood/oranje aangenomen op basis van de handicaptabellen). Holes 13-18 vormen de 6-holeslus (op de kaart ook 1-6 genummerd). CR/slope uit tabellen november 2026. De oude clubsite reymerswael.nl is offline; golfingrecord.com geeft een verouderde indeling (5909 m).
+
+<a id="zuid-limburgse-golf-country-club-wittem"></a>
+## De Zuid Limburgse Golf & Country Club Wittem
+
+De baan van de Zuid Limburgse Golf & Country Club ligt bij Mechelen in het Zuid-Limburgse heuvelland en is ontworpen door Fred W. Hawtree. De eerste negen holes lopen grotendeels door bos, de tweede negen over glooiende hellingen met hoogteverschillen, waterpartijen en wijde uitzichten. Met par 71 vraagt de baan vooral om precisie.
+
+- **Club:** De Zuid Limburgse Golf & Country Club
+- **Adres:** Aubelsweg 1, 6281 PC Mechelen (Gulpen-Wittem), Limburg, NL
+- **GPS:** 50.7900415, 5.8958786
+- **Afstand:** 205.1 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** heuvelland: eerste negen in bos, tweede negen over glooiende hellingen met water en vergezichten
+- **Architect:** Fred W. Hawtree
+- **Telefoon:** 043 455 13 97
+- **E-mail:** secretariaat@zlgolf.nl
+- **Website:** https://zlgolf.nl/
+- **Starttijden:** https://zlgolf.nl/gasten/starttijd/
+- **Greenfee welkom:** True
+- **Eisen:** NGF-handicap 45 of lager
+- **Faciliteiten:** driving range, restaurant (Gasterij Wittem), handicarts, trolleyverhuur, hotelarrangementen
+
+**Lus 18 holes** — 18 holes, par 71
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 5765 | 71.0 | 133 | 71 |
+| geel (men) | 5490 | 69.5 | 125 | 71 |
+| blauw (men) | 5137 | 68.0 | 121 | 71 |
+| rood (men) | 4765 | 66.2 | 115 | 71 |
+| oranje (men) | 4195 | 63.5 | 110 | 71 |
+| geel (women) | 5490 | 75.2 | 139 | 71 |
+| blauw (women) | 5137 | 73.1 | 134 | 71 |
+| rood (women) | 4765 | 70.8 | 125 | 71 |
+| oranje (women) | 4195 | 67.3 | 116 | 71 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 5 | 386 | 363 | 354 | 328 | 287 |
+| 2 | 4 | 7 | 359 | 337 | 329 | 287 | 233 |
+| 3 | 3 | 17 | 145 | 124 | 124 | 102 | 102 |
+| 4 | 4 | 3 | 340 | 325 | 325 | 285 | 234 |
+| 5 | 3 | 15 | 171 | 159 | 159 | 135 | 106 |
+| 6 | 4 | 9 | 337 | 337 | 286 | 286 | 243 |
+| 7 | 5 | 11 | 448 | 437 | 437 | 392 | 342 |
+| 8 | 4 | 13 | 287 | 287 | 287 | 258 | 258 |
+| 9 | 5 | 1 | 454 | 436 | 393 | 393 | 273 |
+| 10 | 5 | 10 | 447 | 424 | 395 | 395 | 395 |
+| 11 | 3 | 14 | 189 | 158 | 158 | 134 | 134 |
+| 12 | 4 | 4 | 331 | 331 | 324 | 268 | 228 |
+| 13 | 4 | 2 | 380 | 357 | 316 | 316 | 316 |
+| 14 | 3 | 18 | 155 | 155 | 116 | 116 | 116 |
+| 15 | 4 | 12 | 336 | 310 | 300 | 255 | 224 |
+| 16 | 5 | 6 | 489 | 461 | 399 | 399 | 350 |
+| 17 | 3 | 16 | 140 | 130 | 130 | 111 | 111 |
+| 18 | 4 | 8 | 371 | 359 | 305 | 305 | 243 |
+
+- **Scorekaartpagina:** https://zlgolf.nl/baan/scorekaart/
+- **Bestanden:** [scorecard/page.html](zuid-limburgse-golf-country-club-wittem/scorecard/page.html), [scorecard/Scorekaart-2025.pdf](zuid-limburgse-golf-country-club-wittem/scorecard/Scorekaart-2025.pdf), [scorecard/ZLGCC-WHS-tabel-Heren.pdf](zuid-limburgse-golf-country-club-wittem/scorecard/ZLGCC-WHS-tabel-Heren.pdf), [scorecard/ZLGCC-WHS-tabel-Dames.pdf](zuid-limburgse-golf-country-club-wittem/scorecard/ZLGCC-WHS-tabel-Dames.pdf)
+- **Opmerking:** Officiele scorekaart 2025 (par, SI, lengtes 5 tees, CR/SR); ratings komen overeen met de WHS-tabellen van 19-01-2021. De baaninformatiepagina noemt geel 5451 m / rood 4751 m (oudere waarden; kaart: 5490/4765).
+
+<a id="golfclub-hoog-vaals"></a>
+## Golfclub Hoog Vaals
+
+Golfclub Hoog Vaals ligt in het heuvelland bij Vaals, direct naast vakantiepark Landal Hoog Vaals. De 9-holesbaan bestaat uit zeven par 3's en twee par 4's (par 29) en wordt voor 18 holes twee keer gespeeld. Er zijn een overdekte driving range en een clubhuis.
+
+- **Club:** Golfclub Hoog Vaals
+- **Adres:** Eschberg 12, 6291 NK Vaals, Limburg, NL
+- **GPS:** 50.7689169, 5.999756
+- **Afstand:** 206.1 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** heuvelland naast vakantiepark Landal Hoog Vaals
+- **Telefoon:** 043 306 8345
+- **Greenfee welkom:** True
+- **Faciliteiten:** overdekte driving range, clubhuis, 9 holes par 3-baan (volgens derden)
+
+**Lus 9 holes par 3/4 (2x gespeeld = 18 holes)** — 18 holes, par 58
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| heren (men) | 2816 | 54.1 | 91 | 58 |
+| dames (women) | 2724 | 56.6 | 99 | 58 |
+
+| Hole | Par | SI | heren | dames |
+|---|---|---|---|---|
+| 1 | 3 | 7 | 93 | 93 |
+| 2 | 4 | 1 | 351 | 320 |
+| 3 | 4 | 3 | 340 | 325 |
+| 4 | 3 | 9 | 102 | 102 |
+| 5 | 3 | 13 | 110 | 110 |
+| 6 | 3 | 17 | 81 | 81 |
+| 7 | 3 | 15 | 91 | 91 |
+| 8 | 3 | 11 | 108 | 108 |
+| 9 | 3 | 5 | 132 | 132 |
+| 10 | 3 | 8 | 93 | 93 |
+| 11 | 4 | 2 | 351 | 320 |
+| 12 | 4 | 4 | 340 | 325 |
+| 13 | 3 | 10 | 102 | 102 |
+| 14 | 3 | 14 | 110 | 110 |
+| 15 | 3 | 18 | 81 | 81 |
+| 16 | 3 | 16 | 91 | 91 |
+| 17 | 3 | 12 | 108 | 108 |
+| 18 | 3 | 6 | 132 | 132 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/golfclub-hoog-vaals
+- **Bestanden:** [scorecard/page.html](golfclub-hoog-vaals/scorecard/page.html), [scorecard/hole19-golfclub-hoog-vaals.html](golfclub-hoog-vaals/scorecard/hole19-golfclub-hoog-vaals.html), [scorecard/golfify-hoog-vaals.html](golfclub-hoog-vaals/scorecard/golfify-hoog-vaals.html)
+- **Opmerking:** TWIJFELGEVAL: het oude domein golfclubhoogvaals.nl toont nu een ongerelateerde blog; geen officiele bron gevonden en actuele status onbekend (review 2021: baan deels onverzorgd). Par, SI en damestee (rood) van hole19golf.com (metrisch, CR 56.6/SR 99 over 18 holes); herentee-lengtes van golfify.io (holes 2 en 3: 351/340 i.p.v. 320/325; 9-holes CR 27.0/SR 91 -> Hole19 18 holes CR 54.1/SR 91). Teekleur heren onbekend. Telefoonnummer en adres volgens derden (1golf.eu/Hole19).
+
+<a id="de-goese-golf-goes"></a>
+## De Goese Golf
+
+De Goese Golf ligt in het open landschap van Zuid-Beveland, met kreken en knotwilgen langs ruime fairways. Met ruim 6.100 meter vanaf geel hoort de par-72-baan van Donald Steel bij de langere banen van Nederland; op meer dan tien holes speelt water uit de Oosterschelde mee. Daarnaast is er een 9-holes par 3-baan.
+
+- **Club:** De Goese Golf
+- **Adres:** Krukweg 31, 4465 BH Goes, Zeeland, NL
+- **GPS:** 51.5215, 3.9112
+- **Afstand:** 211.5 km
+- **Type:** 18-holes
+- **Holes:** 27
+- **Landschap:** parkachtig polderlandschap met kreken en knotwilgen; water op meer dan 10 holes
+- **Architect:** Donald Steel & Hans Hertzberger
+- **Telefoon:** 0113 229 557
+- **E-mail:** info@goesegolf.nl
+- **Website:** https://goesegolf.nl/
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, par 3-baan (9 holes), clubhuis/horeca, golflessen
+
+**Lus 18 holes** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6268 | 74.1 | 140 | 72 |
+| geel (men) | 6112 | 73.1 | 139 | 72 |
+| blauw (men) | 5272 | 69.6 | 120 | 72 |
+| rood (men) | 5154 | 69.0 | 117 | 72 |
+| oranje (men) | 4395 | 65.0 | 110 | 72 |
+| geel (women) | 6112 | 80.1 | 144 | 72 |
+| blauw (women) | 5272 | 74.5 | 135 | 72 |
+| rood (women) | 5154 | 73.8 | 132 | 72 |
+| oranje (women) | 4395 | 69.4 | 119 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 15 | 332 | 327 | 274 | 268 | 229 |
+| 2 | 4 | 1 | 394 | 385 | 340 | 332 | 287 |
+| 3 | 3 | 17 | 155 | 150 | 135 | 130 | 105 |
+| 4 | 5 | 11 | 493 | 475 | 408 | 396 | 348 |
+| 5 | 4 | 7 | 372 | 366 | 311 | 304 | 262 |
+| 6 | 3 | 13 | 191 | 180 | 162 | 154 | 132 |
+| 7 | 4 | 3 | 345 | 338 | 292 | 287 | 219 |
+| 8 | 4 | 9 | 360 | 347 | 303 | 296 | 255 |
+| 9 | 5 | 5 | 477 | 467 | 398 | 390 | 334 |
+| 10 | 4 | 6 | 384 | 369 | 320 | 305 | 270 |
+| 11 | 4 | 18 | 328 | 328 | 267 | 267 | 228 |
+| 12 | 3 | 16 | 164 | 164 | 141 | 141 | 120 |
+| 13 | 5 | 10 | 482 | 474 | 411 | 403 | 341 |
+| 14 | 4 | 12 | 338 | 334 | 293 | 293 | 250 |
+| 15 | 4 | 2 | 394 | 384 | 331 | 326 | 276 |
+| 16 | 4 | 8 | 385 | 374 | 320 | 312 | 267 |
+| 17 | 3 | 14 | 175 | 169 | 154 | 149 | 128 |
+| 18 | 5 | 4 | 499 | 481 | 412 | 401 | 344 |
+
+**Lus Par 3-baan 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard (men) | 1450 | 48.0 | 67 | 54 |
+| standaard (women) | 1450 | 49.3 | 70 | 54 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 9 | 80 |
+| 2 | 3 | 7 | 115 |
+| 3 | 3 | 3 | 72 |
+| 4 | 3 | 15 | 78 |
+| 5 | 3 | 17 | 60 |
+| 6 | 3 | 13 | 59 |
+| 7 | 3 | 1 | 115 |
+| 8 | 3 | 11 | 65 |
+| 9 | 3 | 5 | 81 |
+| 10 | 3 | 10 | 80 |
+| 11 | 3 | 8 | 115 |
+| 12 | 3 | 4 | 72 |
+| 13 | 3 | 16 | 78 |
+| 14 | 3 | 18 | 60 |
+| 15 | 3 | 14 | 59 |
+| 16 | 3 | 2 | 115 |
+| 17 | 3 | 12 | 65 |
+| 18 | 3 | 6 | 81 |
+
+- **Scorekaartpagina:** https://goesegolf.nl/golfcourse/
+- **Bestanden:** [scorecard/Scorekaart-Website.pdf](de-goese-golf-goes/scorecard/Scorekaart-Website.pdf), [scorecard/Par-3-Scorekaart-Website.pdf](de-goese-golf-goes/scorecard/Par-3-Scorekaart-Website.pdf), [scorecard/baanhandicap-calculator.html](de-goese-golf-goes/scorecard/baanhandicap-calculator.html), [scorecard/page.html](de-goese-golf-goes/scorecard/page.html)
+- **Opmerking:** Holedata en lengtes van de officiële scorekaart (totaal 6268/6112/5272/5154/4395 m klopt; de site noemt 6.269 m). Er zijn geen gepubliceerde CR-waarden gevonden: slope komt direct uit de baanhandicapcalculator van de club (degoese.bhcp.nl); de course rating is daaruit afgeleid als de enige waarde (op 0,1) die alle drempels van die calculator reproduceert met de WHS-formule. Par 3-baan: één lengtekolom (725 m per 9 holes), ratings op dezelfde manier afgeleid (heren 48,0/67, dames 49,3/70); de calculator vermeldt daar een lengte van 275 m, wat niet met de kaart overeenkomt.
+
+<a id="golfbaan-molenberg-burgh-haamstede"></a>
+## Golfbaan Molenberg
+
+Kleine 18-holes pitch & putt-baan bij boerderij Molenberg in Burgh-Haamstede, met holes van 20 tot 57 meter. Je hebt er geen golfvaardigheidsbewijs nodig, wat de baan geschikt maakt voor vakantiegasten en beginners. Golfclub Molenberg organiseert er daarnaast eigen clubwedstrijden.
+
+- **Club:** Golfclub Molenberg
+- **Adres:** Hogeweg 53, 4328 PB Burgh-Haamstede, Zeeland, NL
+- **GPS:** 51.684, 3.7243
+- **Afstand:** 212.7 km
+- **Type:** pitch-putt
+- **Holes:** 18
+- **Landschap:** vlak, aan de rand van de duinen naast een vakantiepark en minicamping
+- **Telefoon:** 0111 654400
+- **Website:** https://golfclubmolenberg.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Welkom zonder GVB; geldig toegangsbewijs verplicht, max. 4 spelers per flight; kinderen 7-14 jaar onder toezicht, kinderen jonger dan 7 niet toegestaan.
+- **Faciliteiten:** driving range, oefengreen, oefenbunker, horeca (boerderij Molenberg), minicamping
+
+**Lus Pitch & putt 18 holes** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard | 784 |  |  | 54 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 | 7 | 48 |
+| 2 | 3 | 5 | 50 |
+| 3 | 3 | 15 | 40 |
+| 4 | 3 | 1 | 53 |
+| 5 | 3 | 11 | 51 |
+| 6 | 3 | 17 | 20 |
+| 7 | 3 | 3 | 29 |
+| 8 | 3 | 9 | 50 |
+| 9 | 3 | 13 | 49 |
+| 10 | 3 | 12 | 35 |
+| 11 | 3 | 14 | 46 |
+| 12 | 3 | 2 | 57 |
+| 13 | 3 | 8 | 39 |
+| 14 | 3 | 18 | 35 |
+| 15 | 3 | 16 | 42 |
+| 16 | 3 | 4 | 52 |
+| 17 | 3 | 10 | 36 |
+| 18 | 3 | 6 | 52 |
+
+- **Scorekaartpagina:** https://golfclubmolenberg.nl/baaninfo
+- **Bestanden:** [scorecard/scorekaart-5.png](golfbaan-molenberg-burgh-haamstede/scorecard/scorekaart-5.png), [scorecard/scorekaart-3.png](golfbaan-molenberg-burgh-haamstede/scorecard/scorekaart-3.png), [scorecard/layout-2.jpg](golfbaan-molenberg-burgh-haamstede/scorecard/layout-2.jpg), [scorecard/page.html](golfbaan-molenberg-burgh-haamstede/scorecard/page.html)
+- **Opmerking:** Scorekaart (afbeelding) op de clubsite: één afstandskolom (meters), alle holes par 3, totaal 784 m / par 54 (klopt met som). Geen course rating/slope gepubliceerd. golfkaart.com noemt het een 18-holesbaan; het is een pitch & putt-baan.
+
+<a id="de-zeeuwsche-middelburg"></a>
+## Golfbaan De Zeeuwsche
+
+Openbare golfaccommodatie aan de rand van Middelburg met een 9-holes baan van par 35, die voor 18 holes twee keer wordt gespeeld. Daarnaast is er een korte 9-holes par 3-baan die zonder golfvaardigheidsbewijs bespeeld mag worden. Opvallend is de driving range waar je ook op het water kunt afslaan.
+
+- **Club:** De Zeeuwsche
+- **Adres:** Paukenweg 1, 4337 WH Middelburg, Zeeland, NL
+- **GPS:** 51.4834, 3.6445
+- **Afstand:** 229.1 km
+- **Type:** 9-holes
+- **Holes:** 18
+- **Landschap:** open polderlandschap met waterpartijen aan de rand van Middelburg
+- **Telefoon:** 0118 56 74 90
+- **E-mail:** administratie@dezeeuwsche.nl
+- **Website:** https://www.dezeeuwsche.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Grote baan: geldig handicapbewijs, golfvaardigheidsbewijs of baanpermissie De Zeeuwsche. Par 3-baan: voor iedereen toegankelijk, ook zonder GVB.
+- **Faciliteiten:** driving range (ook afslaan op water, deels overdekt), putting green, oefenbunker, par 3-baan (9 holes), clubhuis met restaurant, golfshop, golfsets te huur
+
+**Lus Grote baan 18 holes (9 holes 2x)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5348 | 69.7 | 136 | 70 |
+| rood (men) | 4552 | 65.6 | 117 | 70 |
+| oranje (men) | 3618 | 63.2 | 104 | 70 |
+| geel (women) | 5348 | 76.7 | 145 | 70 |
+| rood (women) | 4552 | 71.1 | 130 | 70 |
+| oranje (women) | 3618 | 65.8 | 111 | 70 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 5 | 11 | 437 | 371 | 319 |
+| 2 | 4 | 15 | 279 | 223 | 160 |
+| 3 | 3 | 13 | 118 | 97 | 97 |
+| 4 | 4 | 9 | 347 | 288 | 231 |
+| 5 | 4 | 5 | 314 | 277 | 213 |
+| 6 | 3 | 17 | 109 | 102 | 94 |
+| 7 | 4 | 3 | 325 | 300 | 198 |
+| 8 | 4 | 7 | 345 | 281 | 207 |
+| 9 | 4 | 1 | 400 | 337 | 290 |
+| 10 | 5 | 12 | 437 | 371 | 319 |
+| 11 | 4 | 16 | 279 | 223 | 160 |
+| 12 | 3 | 14 | 118 | 97 | 97 |
+| 13 | 4 | 10 | 347 | 288 | 231 |
+| 14 | 4 | 6 | 314 | 277 | 213 |
+| 15 | 3 | 18 | 109 | 102 | 94 |
+| 16 | 4 | 4 | 325 | 300 | 198 |
+| 17 | 4 | 8 | 345 | 281 | 207 |
+| 18 | 4 | 2 | 400 | 337 | 290 |
+
+**Lus Par 3-baan 18 holes (9 holes 2x)** — 18 holes, par 54
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1842 | 49.9 | 69 | 54 |
+| rood (women) | 1842 | 51.8 | 75 | 54 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 13 | 79 | 79 |
+| 2 | 3 | 5 | 94 | 94 |
+| 3 | 3 | 3 | 142 | 142 |
+| 4 | 3 | 9 | 100 | 100 |
+| 5 | 3 | 15 | 72 | 72 |
+| 6 | 3 | 7 | 123 | 123 |
+| 7 | 3 | 17 | 72 | 72 |
+| 8 | 3 | 1 | 147 | 147 |
+| 9 | 3 | 11 | 92 | 92 |
+| 10 | 3 | 14 | 79 | 79 |
+| 11 | 3 | 6 | 94 | 94 |
+| 12 | 3 | 4 | 142 | 142 |
+| 13 | 3 | 10 | 100 | 100 |
+| 14 | 3 | 16 | 72 | 72 |
+| 15 | 3 | 8 | 123 | 123 |
+| 16 | 3 | 18 | 72 | 72 |
+| 17 | 3 | 2 | 147 | 147 |
+| 18 | 3 | 12 | 92 | 92 |
+
+- **Scorekaartpagina:** https://www.dezeeuwsche.nl/golfbaan/
+- **Bestanden:** [scorecard/Zeeuwsche-Scorecard-C-2025-nieuw.pdf](de-zeeuwsche-middelburg/scorecard/Zeeuwsche-Scorecard-C-2025-nieuw.pdf), [scorecard/scorekaart-PAR3-2025-nieuw.pdf](de-zeeuwsche-middelburg/scorecard/scorekaart-PAR3-2025-nieuw.pdf), [scorecard/De-Zeeuwsche-Heren.pdf](de-zeeuwsche-middelburg/scorecard/De-Zeeuwsche-Heren.pdf), [scorecard/De-Zeeuwsche-Dames.pdf](de-zeeuwsche-middelburg/scorecard/De-Zeeuwsche-Dames.pdf), [scorecard/De-Zeeuwsche-Dames-Heren-Par-3-baan.pdf](de-zeeuwsche-middelburg/scorecard/De-Zeeuwsche-Dames-Heren-Par-3-baan.pdf), [scorecard/page.html](de-zeeuwsche-middelburg/scorecard/page.html)
+- **Opmerking:** Grote baan: scorekaart 2025 (holes 10-18 = 1-9 met even S.I.); totalen per 9 holes 2674/2276/1809 m kloppen. CR/slope uit WHS-tabellen sept. 2025 (18 holes); 9 holes heren geel 34,9/136, rood 32,8/117, oranje 31,6/104; dames geel 38,4/145, rood 35,6/130, oranje 32,9/111. Par 3-baan: kaart heeft één lengtekolom (921 m per 9 holes); die lengte is voor geel (heren) en rood (dames) gebruikt. Par 3-ratings 9 holes: 25,0/69 (geel heren), 25,9/75 (rood dames).
+
+<a id="de-woeste-kop-axel"></a>
+## Golfbaan De Woeste Kop
+
+De Woeste Kop ligt bij Axel in Zeeuws-Vlaanderen en is een parkachtige 18-holes baan met A-status en GEO-certificaat. Smalle fairways, waterpartijen, doglegs en zandige waste areas maken de baan gevarieerd. De club bestaat in 2026 veertig jaar en werkt de baan verder bij volgens een plan van architect Bruno Steensels.
+
+- **Club:** Golfvereniging De Woeste Kop
+- **Adres:** Justaasweg 4, 4571 NB Axel, Zeeland, NL
+- **GPS:** 51.2566, 3.9004
+- **Afstand:** 230.5 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** parkachtig met waterpartijen, doglegs en waste areas
+- **Architect:** Bruno Steensels (huidig renovatieplan)
+- **Telefoon:** 0115 564467
+- **E-mail:** info@dewoestekop.nl
+- **Website:** https://www.dewoestekop.nl/
+- **Greenfee welkom:** True
+- **Eisen:** Gastspelers: aantoonbare handicap van minimaal 36 (introducees van leden hcp 54 of baanpermissie); flights max. 110 handicap samen; NGF-pas tonen.
+- **Faciliteiten:** driving range, clubhuis/restaurant, golfprofessionals (PGA), buggy-route
+
+**Lus 18 holes (De Watertoren + De Grote Kreek)** — 18 holes, par 72
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 6071 | 72.9 | 129 | 72 |
+| geel (men) | 5549 | 70.9 | 128 | 72 |
+| blauw (men) | 5383 | 70.2 | 126 | 72 |
+| rood (men) | 4901 | 67.3 | 115 | 72 |
+| oranje (men) | 4176 | 63.6 | 111 | 72 |
+| geel (women) | 5549 | 76.0 | 139 | 72 |
+| blauw (women) | 5383 | 75.0 | 137 | 72 |
+| rood (women) | 4901 | 72.5 | 122 | 72 |
+| oranje (women) | 4176 | 67.9 | 117 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 9 | 371 | 327 | 327 | 284 | 241 |
+| 2 | 3 | 17 | 134 | 121 | 121 | 116 | 99 |
+| 3 | 4 | 7 | 362 | 334 | 334 | 281 | 239 |
+| 4 | 4 | 5 | 402 | 359 | 337 | 327 | 278 |
+| 5 | 4 | 3 | 350 | 341 | 320 | 310 | 264 |
+| 6 | 4 | 13 | 345 | 338 | 334 | 320 | 272 |
+| 7 | 4 | 11 | 305 | 273 | 273 | 241 | 205 |
+| 8 | 3 | 15 | 205 | 156 | 156 | 126 | 107 |
+| 9 | 5 | 1 | 458 | 451 | 451 | 423 | 360 |
+| 10 | 5 | 2 | 474 | 417 | 414 | 386 | 328 |
+| 11 | 3 | 14 | 134 | 127 | 127 | 110 | 94 |
+| 12 | 4 | 12 | 353 | 315 | 315 | 288 | 245 |
+| 13 | 4 | 8 | 369 | 337 | 337 | 299 | 254 |
+| 14 | 4 | 16 | 329 | 281 | 281 | 239 | 203 |
+| 15 | 4 | 6 | 355 | 328 | 283 | 274 | 233 |
+| 16 | 5 | 4 | 549 | 492 | 453 | 397 | 346 |
+| 17 | 3 | 18 | 147 | 137 | 137 | 107 | 91 |
+| 18 | 5 | 10 | 429 | 415 | 383 | 373 | 317 |
+
+- **Scorekaartpagina:** https://www.dewoestekop.nl/baan
+- **Bestanden:** [scorecard/DWK_Scorekaart_achterzijde.png](de-woeste-kop-axel/scorecard/DWK_Scorekaart_achterzijde.png), [scorecard/Scorekaart_April_2026_voorzijde.png](de-woeste-kop-axel/scorecard/Scorekaart_April_2026_voorzijde.png), [scorecard/Handicaptabel_Heren_2022.pdf](de-woeste-kop-axel/scorecard/Handicaptabel_Heren_2022.pdf), [scorecard/Handicaptabel_Dames_2022.pdf](de-woeste-kop-axel/scorecard/Handicaptabel_Dames_2022.pdf), [scorecard/HCP_Par3_18holes_Heren.pdf](de-woeste-kop-axel/scorecard/HCP_Par3_18holes_Heren.pdf), [scorecard/HCP_Par3_18holes_Dames.pdf](de-woeste-kop-axel/scorecard/HCP_Par3_18holes_Dames.pdf), [scorecard/page.html](de-woeste-kop-axel/scorecard/page.html)
+- **Opmerking:** Holedata van de nieuwe scorekaart (april/mei 2026; alleen als kleine afbeelding van 956 px op de site, cijfers gecontroleerd met de OUT/IN/TOT-totalen 6071/5549/5383/4901/4176). CR/slope uit de handicaptabellen van 04-08-2022; die kunnen achterlopen op de nieuwe kaart. Er is ook een par 3-variant "De Kleine Kreek" (paarse tees, 18 holes, CR 48,0/61 heren, 49,5/67 dames, 31-05-2023) zonder gepubliceerde holedata; niet als lus opgenomen.
+
+<a id="domburgsche-golfclub-domburg"></a>
+## Domburgsche Golfclub
+
+De Domburgsche ligt in de duinen achter het strand van Domburg en is in 1914 aangelegd, waarmee het een van de oudste banen van Nederland is. De 9 holes worden voor 18 holes twee keer gespeeld met deels andere afslagen. Bomkraters uit de Tweede Wereldoorlog zijn in het ontwerp opgenomen als grasbunkers, en de wind maakt het een echte linksbaan.
+
+- **Club:** Domburgsche Golfclub
+- **Adres:** Schelpweg 26, 4357 BP Domburg, Zeeland, NL
+- **GPS:** 51.5615, 3.4895
+- **Afstand:** 233.5 km
+- **Type:** 9-holes
+- **Holes:** 9
+- **Landschap:** links in de duinen aan zee
+- **Opgericht:** 1914
+- **Architect:** E.C. Warren (1914); later aangepast met Alan Rijks
+- **Telefoon:** 0118 586 106
+- **E-mail:** secretariaat@domburgschegolfclub.nl
+- **Website:** https://www.domburgschegolfclub.nl/
+- **Starttijden:** https://www.domburgschegolfclub.nl/gasten/tarieven-greenfeespelers
+- **Greenfee welkom:** True
+- **Eisen:** Geldige pas met handicap; buiten juli/augustus max. hcp 36,0, in juli/augustus max. 28,0 (met één medespeler max. 36,0).
+- **Faciliteiten:** driving range, clubhuis/horeca, handicarts, buggy, trolleys (gratis), golfschool
+
+**Lus 18 holes (9 holes 2x)** — 18 holes, par 70
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 5217 | 67.6 | 123 | 70 |
+| rood (men) | 4658 | 64.8 | 111 | 70 |
+| oranje (men) | 4034 | 61.5 | 93 | 70 |
+| geel (women) | 5217 | 73.7 | 128 | 70 |
+| rood (women) | 4658 | 69.9 | 122 | 70 |
+| oranje (women) | 4034 | 63.9 | 107 | 70 |
+
+| Hole | Par | SI | geel | rood | oranje |
+|---|---|---|---|---|---|
+| 1 | 4 | 9 | 268 | 268 | 225 |
+| 2 | 4 | 7 | 296 | 286 | 256 |
+| 3 | 3 | 17 | 142 | 124 | 119 |
+| 4 | 5 | 1 | 504 | 442 | 403 |
+| 5 | 3 | 15 | 135 | 109 | 103 |
+| 6 | 5 | 3 | 439 | 388 | 331 |
+| 7 | 4 | 5 | 331 | 295 | 257 |
+| 8 | 3 | 13 | 163 | 139 | 91 |
+| 9 | 4 | 11 | 324 | 258 | 248 |
+| 10 | 4 | 10 | 302 | 295 | 225 |
+| 11 | 4 | 8 | 296 | 286 | 256 |
+| 12 | 3 | 18 | 142 | 124 | 119 |
+| 13 | 5 | 2 | 504 | 442 | 403 |
+| 14 | 3 | 16 | 135 | 109 | 71 |
+| 15 | 5 | 4 | 439 | 388 | 331 |
+| 16 | 4 | 6 | 331 | 295 | 257 |
+| 17 | 3 | 14 | 163 | 139 | 91 |
+| 18 | 4 | 12 | 303 | 271 | 248 |
+
+- **Scorekaartpagina:** https://www.domburgschegolfclub.nl/baan/plattegrond
+- **Bestanden:** [scorecard/handicaptabellen.pdf](domburgsche-golfclub-domburg/scorecard/handicaptabellen.pdf), [scorecard/page.html](domburgsche-golfclub-domburg/scorecard/page.html), [scorecard/holes-montage.png](domburgsche-golfclub-domburg/scorecard/holes-montage.png), [scorecard/hole1-10.jpg](domburgsche-golfclub-domburg/scorecard/hole1-10.jpg), [scorecard/hole2-11.jpg](domburgsche-golfclub-domburg/scorecard/hole2-11.jpg), [scorecard/hole3-12.jpg](domburgsche-golfclub-domburg/scorecard/hole3-12.jpg), [scorecard/hole4-13.jpg](domburgsche-golfclub-domburg/scorecard/hole4-13.jpg), [scorecard/hole5-14.jpg](domburgsche-golfclub-domburg/scorecard/hole5-14.jpg), [scorecard/hole6-15.jpg](domburgsche-golfclub-domburg/scorecard/hole6-15.jpg), [scorecard/hole7-16.jpg](domburgsche-golfclub-domburg/scorecard/hole7-16.jpg), [scorecard/hole8-17.jpg](domburgsche-golfclub-domburg/scorecard/hole8-17.jpg), [scorecard/hole9.jpg](domburgsche-golfclub-domburg/scorecard/hole9.jpg), [scorecard/hole18.jpg](domburgsche-golfclub-domburg/scorecard/hole18.jpg)
+- **Opmerking:** Holedata (par, S.I., lengtes geel/rood/oranje) van de officiële holeplattegronden per hole (1/10 t/m 9 en 18); 1e negen oneven S.I., 2e negen even. Holes 1/10 en 5/14 hebben verschillende lengtes. CR/slope uit handicaptabellen 03-06-2025 (18 holes). 9-holesratings heren geel 33,8/123, rood 32,4/110 (1e) en 32,5/111 (2e), oranje 30,8/93; dames geel 36,9/128 (1e) 36,9/127 (2e), rood 34,9/120 en 35,1/123, oranje 32,0/107. Totale lengtes zijn som van de holes (geen totaal op de kaart).
+
+<a id="golfclub-oostburg-brugse-vaart"></a>
+## Golfclub Oostburg – Domein De Brugse Vaart
+
+De baan van Golfclub Oostburg ligt in West-Zeeuws-Vlaanderen langs de Brugse Vaart, een kanaal dat Brugge in de zestiende eeuw liet graven tegen de verzanding van het Zwin. Sinds 1986 ligt hier een lange par-73-baan met veel water. Door de ligging vlak bij de Belgische grens komen er veel Vlaamse spelers.
+
+- **Club:** Golfclub Oostburg (Golfvereniging De Brugse Vaart)
+- **Adres:** Brugse Vaart 10, 4501 NE Oostburg, Zeeland, NL
+- **GPS:** 51.3244, 3.4633
+- **Afstand:** 249.5 km
+- **Type:** 18-holes
+- **Holes:** 18
+- **Landschap:** parkbaan met veel waterpartijen aan de oevers van de Brugse Vaart, bij het oude Zwin
+- **Opgericht:** 1986
+- **Telefoon:** +31 117 453 410
+- **E-mail:** info@golfoostburg.com
+- **Website:** https://www.golfoostburg.com/
+- **Greenfee welkom:** True
+- **Eisen:** Geldig handicapbewijs van de eigen club; handicaplimiet 36 (volgens 1golf.eu).
+
+**Lus 18 holes** — 18 holes, par 73
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit | 7002 |  |  | 73 |
+| geel (men) | 6135 | 73.8 | 139 | 73 |
+| blauw | 5975 |  |  | 73 |
+| rood | 5679 |  |  | 73 |
+
+| Hole | Par | SI | wit | geel | blauw | rood |
+|---|---|---|---|---|---|---|
+| 1 | 3 | 15 | 176 | 151 | 154 | 142 |
+| 2 | 5 | 5 | 529 | 475 | 501 | 419 |
+| 3 | 3 | 13 | 197 | 172 | 175 | 160 |
+| 4 | 4 | 7 | 419 | 371 | 384 | 371 |
+| 5 | 4 | 1 | 434 | 385 | 372 | 361 |
+| 6 | 5 | 17 | 493 | 437 | 414 | 400 |
+| 7 | 4 | 11 | 339 | 302 | 287 | 278 |
+| 8 | 3 | 9 | 209 | 181 | 160 | 149 |
+| 9 | 5 | 3 | 589 | 517 | 477 | 467 |
+| 10 | 4 | 6 | 463 | 410 | 402 | 392 |
+| 11 | 4 | 16 | 386 | 332 | 318 | 309 |
+| 12 | 3 | 18 | 149 | 126 | 126 | 115 |
+| 13 | 4 | 2 | 441 | 375 | 362 | 352 |
+| 14 | 5 | 12 | 525 | 463 | 444 | 432 |
+| 15 | 3 | 4 | 173 | 150 | 156 | 150 |
+| 16 | 4 | 8 | 394 | 345 | 329 | 320 |
+| 17 | 5 | 14 | 460 | 389 | 376 | 369 |
+| 18 | 5 | 10 | 626 | 554 | 538 | 493 |
+
+- **Scorekaartpagina:** https://www.golfify.io/courses/golfclub-oostburg-domein-de-brugse-vaart
+- **Bestanden:** [scorecard/page.html](golfclub-oostburg-brugse-vaart/scorecard/page.html), [scorecard/golfingrecord-brugse-vaart.html](golfclub-oostburg-brugse-vaart/scorecard/golfingrecord-brugse-vaart.html), [scorecard/1golf-brugse-vaart.html](golfclub-oostburg-brugse-vaart/scorecard/1golf-brugse-vaart.html), [scorecard/clubsite-home.html](golfclub-oostburg-brugse-vaart/scorecard/clubsite-home.html)
+- **Opmerking:** De clubsite (golfoostburg.com) publiceert geen scorekaart. Holedata van golfify.io (identiek aan golfingrecord.com). Eenheid onzeker: golfingrecord noemt het yards, en 7002 yd = 6402 m, precies de lengte die 1golf.eu voor geel heren in meters geeft (en 5975 yd = 5464 m voor rood dames). Daarom complete=false. CR/slope: golfify/golfingrecord geel 73,8/139; 1golf.eu geeft geel heren CR 74/130 (6402 m) en rood dames CR 75/132 (5464 m) — tegenstrijdig, alleen de golfify-waarde voor geel is overgenomen. Het oostelijke OSM-polygoon r19527293 bij Oostburg is waarschijnlijk dezelfde baan.
+
+<a id="greenz-shortgolf-cadzand-bad"></a>
+## GREENZ Cadzand-Bad (Shortgolf Cadzand-Bad)
+
+Recreatieve shortgolfbaan van 9 korte holes aan de kust bij Cadzand-Bad, tot voor kort bekend als Shortgolf Cadzand-Bad. De holes van 48 tot 90 meter lopen tussen struikgewas, bunkers en waterpartijen. Clubs en ballen krijg je erbij, en een ronde van 9 holes duurt ongeveer anderhalf tot twee uur.
+
+- **Club:** GREENZ Cadzand-Bad
+- **Adres:** Lange Strinkweg 1A, 4506 JG Cadzand-Bad, Zeeland, NL
+- **GPS:** 51.3787, 3.3992
+- **Afstand:** 249.7 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** compacte baan met struikgewas, bunkers en twee vijvers, vlak bij de kust
+- **Telefoon:** +31 117 391234
+- **E-mail:** info@greenz-cadzandbad.nl
+- **Website:** https://www.greenz-cadzandbad.nl/
+- **Starttijden:** https://www.greenz-cadzandbad.nl/reserveren/
+- **Greenfee welkom:** True
+- **Eisen:** Geen golfervaring of handicapbewijs nodig; max. 4 personen per hole.
+- **Faciliteiten:** golflessen, driving-range-kooi, coffee & drinks/horeca, huurclubs en ballen inbegrepen, parkeerplaats
+
+**Lus Shortgolf 9 holes** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| standaard | 588 |  |  | 27 |
+
+| Hole | Par | SI | standaard |
+|---|---|---|---|
+| 1 | 3 |  | 66 |
+| 2 | 3 |  | 90 |
+| 3 | 3 |  | 66 |
+| 4 | 3 |  | 48 |
+| 5 | 3 |  | 80 |
+| 6 | 3 |  | 70 |
+| 7 | 3 |  | 68 |
+| 8 | 3 |  | 52 |
+| 9 | 3 |  | 48 |
+
+- **Scorekaartpagina:** https://www.greenz-cadzandbad.nl/shortgolf/
+- **Bestanden:** [scorecard/plattegrond-shortgolf-cadzand.png](greenz-shortgolf-cadzand-bad/scorecard/plattegrond-shortgolf-cadzand.png), [scorecard/page.html](greenz-shortgolf-cadzand-bad/scorecard/page.html), [scorecard/hole19-shortgolf-cadzand-bad.html](greenz-shortgolf-cadzand-bad/scorecard/hole19-shortgolf-cadzand-bad.html)
+- **Opmerking:** Holelengtes van de officiële plattegrond (meters, totaal 588 m; Hole19 geeft 65/80/65/45/80/65/65/50/75 = 590). Par per hole staat niet op de clubsite; par 3 per hole (par 27) komt van Hole19 (derden). Geen S.I. of rating gepubliceerd. 18 holes = baan twee keer.
 

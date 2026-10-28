@@ -1,0 +1,281 @@
+{
+  "slug": "valkenswaardse-golfclub",
+  "name": "Valkenswaardse Golfclub",
+  "club_name": "Valkenswaardse Golfclub",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Sportpark Den Dries (parkeren Pastoor Heerkensdreef)",
+    "postal_code": "5552 KA",
+    "city": "Valkenswaard",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.3652,
+    "lon": 5.4586,
+    "source": "OpenStreetMap leisure=golf_course (middelpunt baan); postcode 5552 KA van de site"
+  },
+  "distance_km_from_dedemsvaart": 153.5,
+  "phone": null,
+  "email": null,
+  "website": "https://valkenswaardsegolfclub.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "sportpark (open, tussen sportvelden)",
+  "facilities": [
+    "driving range (130 m, 2 overdekte afslagplaatsen)",
+    "oefengreen",
+    "oefenbunker",
+    "clubhuis",
+    "3 extra winterholes op het buitenbadterrein"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Greenfee alleen onder begeleiding van een VGC-lid; eerst introductieronde met marshal",
+  "description_nl": "De Valkenswaardse Golfclub speelt op een 9-holes par 29-baan op sportpark Den Dries aan de noordkant van Valkenswaard. De korte holes lopen tussen en langs de sportvelden; door het openbare karakter van het park mogen gasten alleen met een lid spelen. In de wintermaanden zijn er drie extra holes op het terrein van het buitenbad.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2912,
+          "course_rating": 55.4,
+          "slope": 91,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2882,
+          "course_rating": 55.6,
+          "slope": 88,
+          "par": 58
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2912,
+          "course_rating": 58.6,
+          "slope": 88,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2882,
+          "course_rating": 58.4,
+          "slope": 86,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 242,
+            "rood": 227
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 114,
+            "rood": 114
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 148,
+            "rood": 148
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 152
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 259,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 152
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 179,
+            "rood": 179
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 242,
+            "rood": 227
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 114,
+            "rood": 114
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 148,
+            "rood": 148
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 152
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 259,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 152
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 179,
+            "rood": 179
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://valkenswaardsegolfclub.nl/scorekaart/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/scorekaartX26-8a-2-pdf.jpg",
+      "scorecard/scorekaartX26-8b-1-pdf.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart d.d. 17-08-2026: 9 holes (par 29) 2x met eigen S.I. voor 10-18; CR/slope staan op de achterkant (heren rood CR 55,6 hoger dan geel 55,4 - zo gedrukt). Extra winterholes Z1-Z6 (Z1-Z3 2x; 116/150/86 m) zonder par op de kaart - niet opgenomen. Geen telefoon/e-mail op de site gevonden."
+  },
+  "sources": [
+    "https://valkenswaardsegolfclub.nl/scorekaart/",
+    "https://valkenswaardsegolfclub.nl/de-baan/",
+    "https://valkenswaardsegolfclub.nl/routebeschrijving/"
+  ]
+}

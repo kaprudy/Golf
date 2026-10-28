@@ -1,0 +1,261 @@
+{
+  "slug": "golfclub-hoog-vaals",
+  "name": "Golfclub Hoog Vaals",
+  "club_name": "Golfclub Hoog Vaals",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Eschberg 12",
+    "postal_code": "6291 NK",
+    "city": "Vaals",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 50.7689169,
+    "lon": 5.999756,
+    "source": "nominatim (Eschberg 12, Vaals)"
+  },
+  "distance_km_from_dedemsvaart": 206.1,
+  "phone": "043 306 8345",
+  "email": null,
+  "website": null,
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "heuvelland naast vakantiepark Landal Hoog Vaals",
+  "facilities": [
+    "overdekte driving range",
+    "clubhuis",
+    "9 holes par 3-baan (volgens derden)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfclub Hoog Vaals ligt in het heuvelland bij Vaals, direct naast vakantiepark Landal Hoog Vaals. De 9-holesbaan bestaat uit zeven par 3's en twee par 4's (par 29) en wordt voor 18 holes twee keer gespeeld. Er zijn een overdekte driving range en een clubhuis.",
+  "loops": [
+    {
+      "name": "9 holes par 3/4 (2x gespeeld = 18 holes)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "heren",
+          "color": "heren",
+          "gender": "men",
+          "length_m": 2816,
+          "course_rating": 54.1,
+          "slope": 91,
+          "par": 58
+        },
+        {
+          "name": "dames",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2724,
+          "course_rating": 56.6,
+          "slope": 99,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 93,
+            "dames": 93
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 351,
+            "dames": 320
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 340,
+            "dames": 325
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 102,
+            "dames": 102
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 110,
+            "dames": 110
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 81,
+            "dames": 81
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 91,
+            "dames": 91
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 108,
+            "dames": 108
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 132,
+            "dames": 132
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 93,
+            "dames": 93
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 351,
+            "dames": 320
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 340,
+            "dames": 325
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 102,
+            "dames": 102
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 110,
+            "dames": 110
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 81,
+            "dames": 81
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 91,
+            "dames": 91
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 108,
+            "dames": 108
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 132,
+            "dames": 132
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/golfclub-hoog-vaals",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/hole19-golfclub-hoog-vaals.html",
+      "scorecard/golfify-hoog-vaals.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "TWIJFELGEVAL: het oude domein golfclubhoogvaals.nl toont nu een ongerelateerde blog; geen officiele bron gevonden en actuele status onbekend (review 2021: baan deels onverzorgd). Par, SI en damestee (rood) van hole19golf.com (metrisch, CR 56.6/SR 99 over 18 holes); herentee-lengtes van golfify.io (holes 2 en 3: 351/340 i.p.v. 320/325; 9-holes CR 27.0/SR 91 -> Hole19 18 holes CR 54.1/SR 91). Teekleur heren onbekend. Telefoonnummer en adres volgens derden (1golf.eu/Hole19)."
+  },
+  "sources": [
+    "https://www.hole19golf.com/courses/golfclub-hoog-vaals",
+    "https://www.golfify.io/courses/golfclub-hoog-vaals-hoog-vaals",
+    "https://www.1golf.eu/en/club/golfclub-hoog-vaals/"
+  ]
+}

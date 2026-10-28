@@ -1,0 +1,262 @@
+{
+  "slug": "golfpark-soestduinen",
+  "name": "Golfpark Soestduinen",
+  "club_name": "Golfpark Soestduinen",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Van Weerden Poelmanweg 8",
+    "postal_code": "3768 MN",
+    "city": "Soest",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1419196,
+    "lon": 5.2917463,
+    "source": "nominatim (Van Weerden Poelmanweg 8, Soest)"
+  },
+  "distance_km_from_dedemsvaart": 94.3,
+  "phone": "+31 35 588 0005",
+  "email": "info@golfparksoestduinen.nl",
+  "website": "https://www.golfparksoestduinen.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "licht glooiende par 3-baan omsloten door bos",
+  "facilities": [
+    "clubhuis",
+    "korte en lange driving range",
+    "chipping area",
+    "putting green",
+    "golfschool"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Par 3-baan in de bossen van Soestduinen met dubbele afslagplaatsen per hole, zodat een volledige 18-holesronde (par 54) met andere lengtes op de tweede negen mogelijk is. De holes zijn kort (circa 60 tot 110 meter) en licht glooiend, wat de baan geschikt maakt voor beginners en het korte spel. Er zijn twee driving ranges en een chipping area.",
+  "loops": [
+    {
+      "name": "18 holes par 3 (voorste 9 paars, achterste 9 wit)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1429,
+          "course_rating": 47.4,
+          "slope": 62,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1429,
+          "course_rating": 48.7,
+          "slope": 63,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 106,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 65,
+            "rood": 65
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 69,
+            "rood": 69
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 62,
+            "rood": 62
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 81,
+            "rood": 81
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 72,
+            "rood": 72
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 83,
+            "rood": 83
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 111,
+            "rood": 111
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 82,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 82,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 73,
+            "rood": 73
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 70,
+            "rood": 70
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 65,
+            "rood": 65
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 94,
+            "rood": 94
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfparksoestduinen.nl/golfbaan/baaninformatie/",
+    "files": [
+      "scorecard/7051-Golfpark-Soestduinen-scorekaart-2025_cPDF.pdf",
+      "scorecard/GP-Soestduinen-Par-3-baan-Zomer-Dames-Heren.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart versie 2025 (front 9 = paarse afslagen, back 9 = witte afslagen, één lengte per hole) + baanhandicaptabel par 3-baan zomer 27-05-2025 (geel heren / rood dames; gelijke lengtes aangenomen). Er is ook een wintertabel."
+  },
+  "sources": [
+    "https://www.golfparksoestduinen.nl/golfbaan/baaninformatie/",
+    "https://www.golfparksoestduinen.nl/"
+  ]
+}

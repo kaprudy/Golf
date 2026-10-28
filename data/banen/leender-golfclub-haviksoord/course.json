@@ -1,0 +1,306 @@
+{
+  "slug": "leender-golfclub-haviksoord",
+  "name": "Leender Golfclub Haviksoord",
+  "club_name": "Leender Golfclub Haviksoord",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Maarheezerweg Noord 11",
+    "postal_code": "5595 XG",
+    "city": "Leende",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.3347782,
+    "lon": 5.5838898,
+    "source": "nominatim.openstreetmap.org (Maarheezerweg-Noord 11)"
+  },
+  "distance_km_from_dedemsvaart": 153.0,
+  "phone": "+31 (0)40 2061818",
+  "email": "info@haviksoord.nl",
+  "website": "https://www.haviksoord.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "bos (voormalige heide \"Zevenhuizensche Heide\") met meer",
+  "facilities": [
+    "putting green",
+    "clubhuis"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Haviksoord ligt in de bossen van de voormalige Zevenhuizensche Heide bij Leende, vlak langs de A2. De eerste negen holes stammen uit 1976; in 2006 kwamen er negen nieuwe bosholes bij. De baan loopt grotendeels tussen naaldbomen en rond een oude zandwinplas, en dankt haar naam aan een vliegtuigfabriek die hier ooit stond.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6083,
+          "course_rating": 72.2,
+          "slope": 136,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5703,
+          "course_rating": 70.9,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5071,
+          "course_rating": 68.3,
+          "slope": 111,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5703,
+          "course_rating": 76.5,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5071,
+          "course_rating": 73.3,
+          "slope": 128,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 443,
+            "geel": 438,
+            "rood": 384
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 497,
+            "geel": 454,
+            "rood": 428
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 292,
+            "geel": 287,
+            "rood": 236
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 160,
+            "geel": 132,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 350,
+            "geel": 314,
+            "rood": 280
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 383,
+            "geel": 349,
+            "rood": 307
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 120,
+            "geel": 111,
+            "rood": 103
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 341,
+            "geel": 341,
+            "rood": 309
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 346,
+            "geel": 346,
+            "rood": 288
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 163,
+            "geel": 163,
+            "rood": 144
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 419,
+            "geel": 390,
+            "rood": 354
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 510,
+            "geel": 468,
+            "rood": 437
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 303,
+            "geel": 283,
+            "rood": 246
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 379,
+            "geel": 340,
+            "rood": 285
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 163,
+            "geel": 152,
+            "rood": 126
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 484,
+            "geel": 453,
+            "rood": 402
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 399,
+            "geel": 368,
+            "rood": 333
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 331,
+            "geel": 314,
+            "rood": 299
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.haviksoord.nl/",
+    "files": [
+      "scorecard/Handicaptabel-Dames2023.pdf",
+      "scorecard/Handicaptabel-heren2023.pdf",
+      "scorecard/Scorekaart.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart (PDF) met wit/geel/rood, S.I. en CR/slope; komt overeen met handicaptabellen d.d. 29-08-2022 (ook per 9 holes). Eerste 9 holes 1976, uitbreiding naar 18 in 2006."
+  },
+  "sources": [
+    "https://www.haviksoord.nl/",
+    "https://www.haviksoord.nl/hgc2025/pages/baan.html",
+    "https://www.haviksoord.nl/hgc2025/pages/gasten.html"
+  ]
+}

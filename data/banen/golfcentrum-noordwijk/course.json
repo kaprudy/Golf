@@ -1,0 +1,263 @@
+{
+  "slug": "golfcentrum-noordwijk",
+  "name": "Golf Centrum Noordwijk",
+  "club_name": "Golf Centrum Noordwijk",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Van Berckelweg 38",
+    "postal_code": "2203 LB",
+    "city": "Noordwijk",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2279127,
+    "lon": 4.4657492,
+    "source": "nominatim.openstreetmap.org (adres Van Berckelweg 38, Noordwijk)"
+  },
+  "distance_km_from_dedemsvaart": 141.4,
+  "phone": "071 364 65 43",
+  "email": null,
+  "website": "https://golfcentrumnoordwijk.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Alan Rijks",
+  "landscape": "open polder met water (bollenstreek)",
+  "facilities": [
+    "driving range",
+    "golfschool/golfles",
+    "golfshop",
+    "restaurant",
+    "GVB-cursussen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golf Centrum Noordwijk ligt in de bollenvelden tussen Noordwijk en Voorhout en heeft een 9-holes par 3-baan van Alan Rijks. Ondanks het kleine oppervlak hebben de holes karakter door wind en water, en een ronde duurt ongeveer een uur. De baan is geschikt voor beginners die hun baanpermissie halen en voor spelers die hun korte spel willen verbeteren.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x gespeeld)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 49.2,
+          "slope": 75,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 50.9,
+          "slope": 73,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfcentrumnoordwijk.nl/baan-handicap-tabel/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/GC-Noordwijk-Par-3-baan-tabel-0.jpg",
+      "scorecard/GC-Noordwijk-Par-3-baan-tabel-1.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Officieel alleen baanhandicaptabellen (29-08-2024): 18 holes geel heren CR 49,2 SR 75, rood dames CR 50,9 SR 73, par 54; 9 holes heren 24,6/75, dames 25,5/73, par 27. Geen scorekaart op de site; S.I. en lengtes onbekend. Derden spreken elkaar tegen (golfingrecord.com: 794 m totaal met rating 24,8/68; golfpass-pagina met 862 is van een andere baan) – niet overgenomen."
+  },
+  "sources": [
+    "https://golfcentrumnoordwijk.nl/de-par-3-golfbaan/",
+    "https://golfcentrumnoordwijk.nl/baan-handicap-tabel/",
+    "https://golfcentrumnoordwijk.nl/contact/"
+  ]
+}

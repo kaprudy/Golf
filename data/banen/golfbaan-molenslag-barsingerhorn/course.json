@@ -1,0 +1,174 @@
+{
+  "slug": "golfbaan-molenslag-barsingerhorn",
+  "name": "Golfbaan Molenslag",
+  "club_name": "Golfbaan Molenslag (v.o.f.)",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Heerenweg 75",
+    "postal_code": "1768 BL",
+    "city": "Barsingerhorn",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.7869172,
+    "lon": 4.8692944,
+    "source": "nominatim (Heerenweg 75, Barsingerhorn)"
+  },
+  "phone": "+31 6 22111723",
+  "email": null,
+  "website": "https://www.molenslag.nl/",
+  "booking_url": "https://www.molenslag.nl/online-store/Greenfee-9-of-18-holes-p116057331",
+  "founded": null,
+  "architect": "G. Schoorl (eigenaar)",
+  "landscape": "vlak polderland met sloten, kleine waterpartijen",
+  "facilities": [
+    "driving range (deels overdekt)",
+    "putting green",
+    "clubhuis",
+    "golfles/GVB-cursus"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen GVB of lidmaatschap vereist",
+  "description_nl": "Laagdrempelige, korte 9-holesbaan (par 30) in de polder bij Barsingerhorn, gemeente Hollands Kroon. De baan bestaat vooral uit par 3-holes met drie par 4's en is zonder GVB met een greenfee te spelen. Ontworpen en geëxploiteerd door de eigenaar.",
+  "loops": [
+    {
+      "name": "9 holes (par 3/4)",
+      "holes": 9,
+      "par": 30,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1432,
+          "course_rating": 28.2,
+          "slope": 89,
+          "par": 30
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1432,
+          "course_rating": 29.5,
+          "slope": 98,
+          "par": 30
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 214,
+            "rood": 214
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 341,
+            "rood": 341
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 106,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 170,
+            "rood": 170
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 136
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 72,
+            "rood": 72
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 232,
+            "rood": 232
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 59,
+            "rood": 59
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.molenslag.nl/baan-status",
+    "files": [
+      "scorecard/ff43d8_48c66a2f82f244879a0b75cf3cec6c21_mv2.jpg",
+      "scorecard/ff43d8_cfc128103bd546d3a8259eb7a059617d_mv2.png",
+      "scorecard/ff43d8_6fe90c2402b34630bad5e09c50ba6a79_mv2.png",
+      "scorecard/ff43d8_704387363b324f98b7d8503eba3346a7_mv2.jpg",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Par en lengte per hole uit de baanplattegrond (01-12-2022, totaal 1432 m, par 30); slechts 1 lengte per hole, ingevuld voor beide tees. Geen S.I. op de officiele site (derden golfpass/golfify geven onderling tegenstrijdige S.I. en lengtes, daarom null). Ratings NGF 21-06-2023: 9 holes geel heren CR 28,2/SR 89, rood dames CR 29,5/SR 98; 18 holes (2x) geel heren 56,3/89, rood dames 59,0/98 (par 60). Bestand ...704387...jpg = lokale regels."
+  },
+  "sources": [
+    "https://www.molenslag.nl/",
+    "https://www.molenslag.nl/baan-status",
+    "https://www.molenslag.nl/contact"
+  ],
+  "distance_km_from_dedemsvaart": 109.1
+}

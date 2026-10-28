@@ -1,0 +1,267 @@
+{
+  "slug": "golf-maasduinen-arcen",
+  "name": "Golf Maasduinen",
+  "club_name": "Stichting Golf Maasduinen",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Verlengde Roobeekweg 4A",
+    "postal_code": "5944 NR",
+    "city": "Arcen",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.5001513,
+    "lon": 6.1762018,
+    "source": "nominatim (adres Verlengde Roobeekweg 4A, Arcen)"
+  },
+  "distance_km_from_dedemsvaart": 123.9,
+  "phone": "077 374 3073",
+  "email": "info@golfmaasduinen.nl",
+  "website": "https://golfmaasduinen.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "parkachtig met water, bunkers en bomen tussen Maas en Nationaal Park De Maasduinen",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "chipping green",
+    "oefenbunker",
+    "clubhuis met terras",
+    "golfschool",
+    "clubverhuur"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golf Maasduinen is een compacte 9-holesbaan tussen Arcen en Wellerlooi, vlak bij Nationaal Park De Maasduinen. De baan bestaat vooral uit par 3-holes met twee par 4's en heeft water, bunkers en bomen als hindernissen. Ze is gericht op beginners, senioren en golfers die hun korte spel willen slijpen; de oefenfaciliteiten zijn gratis te gebruiken.",
+  "loops": [
+    {
+      "name": "9 holes par 3/4 (2x gespeeld = 18 holes)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2374,
+          "course_rating": 53.2,
+          "slope": 84,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 55.3,
+          "slope": 89,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 84,
+            "rood": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 62,
+            "rood": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 201,
+            "rood": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 270,
+            "rood": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 84,
+            "rood": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 62,
+            "rood": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 201,
+            "rood": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 270,
+            "rood": null
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfmaasduinen.nl/golfbaan/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-baan-handicap-tabel.html",
+      "scorecard/Maasduinen-WHS-tabel-Par-3-Baan-Dames-en-Heren.pdf",
+      "scorecard/hole19-golf-maasduinen.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Club publiceert geen scorekaart. Par, SI en lengtes (geel, metrisch) van hole19golf.com; par 58 over 18 holes klopt met de officiele WHS-tabel (11-01-2021): geel heren CR 53.2/SR 84, rood dames CR 55.3/SR 89. Lengtes rode tee onbekend. GolfingRecord en Greenfee365 tonen een oudere versie (9x par 3, par 27, geel 959 m); niet gebruikt. Hole19 noemt CR 55.0/slope 68 (afwijkend)."
+  },
+  "sources": [
+    "https://golfmaasduinen.nl/golfbaan/",
+    "https://golfmaasduinen.nl/baan-handicap-tabel/",
+    "https://golfmaasduinen.nl/contact/",
+    "https://www.hole19golf.com/courses/golf-maasduinen"
+  ]
+}

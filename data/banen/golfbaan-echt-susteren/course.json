@@ -1,0 +1,320 @@
+{
+  "slug": "golfbaan-echt-susteren",
+  "name": "Golfbaan Echt-Susteren",
+  "club_name": "Golfclub Echt-Susteren",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Hommelweg 3",
+    "postal_code": "6114 RR",
+    "city": "Susteren",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.070797,
+    "lon": 5.8897082,
+    "source": "nominatim (Hommelweg 3, Susteren)"
+  },
+  "distance_km_from_dedemsvaart": 174.6,
+  "phone": "046 449 49 92",
+  "email": "info@golfbaanecht-susteren.nl",
+  "website": "https://golfbaanecht-susteren.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Dirk Städler Golf Courses",
+  "landscape": "vlak, landelijk gebied 'de Hei' met USGA-greens",
+  "facilities": [
+    "6 holes approachbaan",
+    "overdekte driving range",
+    "2 oefengreens",
+    "brasserie (Huys ter Heide)",
+    "golflessen/clinics",
+    "shop"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfbaan Echt-Susteren ligt in het landelijke gebied 'de Hei' bij Susteren. De 9-holesbaan (par 36) is ontworpen door Städler Golf Courses volgens de eisen voor de NGF A-status en heeft snelle USGA-greens en een par 5 van 540 meter. Verder zijn er een 6-holes approachbaan en een overdekte driving range.",
+  "loops": [
+    {
+      "name": "9 holes (2x gespeeld = 18 holes)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5618,
+          "course_rating": 70.6,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4704,
+          "course_rating": 67.1,
+          "slope": 115,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3920,
+          "course_rating": 63.2,
+          "slope": 114,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5618,
+          "course_rating": 76.6,
+          "slope": 145,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4704,
+          "course_rating": 71.4,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3920,
+          "course_rating": 66.8,
+          "slope": 118,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 332,
+            "rood": 283,
+            "oranje": 243
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 114,
+            "oranje": 114
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 317,
+            "rood": 245,
+            "oranje": 196
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 441,
+            "rood": 378,
+            "oranje": 311
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 276,
+            "rood": 232,
+            "oranje": 185
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 540,
+            "rood": 460,
+            "oranje": 384
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 345,
+            "rood": 291,
+            "oranje": 236
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 303,
+            "rood": 252,
+            "oranje": 194
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115,
+            "rood": 97,
+            "oranje": 97
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 332,
+            "rood": 283,
+            "oranje": 243
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 114,
+            "oranje": 114
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 317,
+            "rood": 245,
+            "oranje": 196
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 441,
+            "rood": 378,
+            "oranje": 311
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 276,
+            "rood": 232,
+            "oranje": 185
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 540,
+            "rood": 460,
+            "oranje": 384
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 345,
+            "rood": 291,
+            "oranje": 236
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 303,
+            "rood": 252,
+            "oranje": 194
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115,
+            "rood": 97,
+            "oranje": 97
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfbaanecht-susteren.nl/handicap-tabellen/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/Scorekaart-2019-1.pdf",
+      "scorecard/Echt-Susteren-WHS-tabel-Heren-1.pdf",
+      "scorecard/Echt-Susteren-WHS-tabel-Dames-1.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Officiele scorekaart 2019 (PDF licht beschadigd maar leesbaar) met par, SI en lengtes geel/rood/oranje; CR/slope (18 holes) uit de WHS-tabellen van 06-01-2021. Openingsjaar 2006 volgens derden (niet officieel bevestigd, daarom null)."
+  },
+  "sources": [
+    "https://golfbaanecht-susteren.nl/",
+    "https://golfbaanecht-susteren.nl/golfbaan-algemeen/",
+    "https://golfbaanecht-susteren.nl/handicap-tabellen/",
+    "https://golfbaanecht-susteren.nl/contact/"
+  ]
+}

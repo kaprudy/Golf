@@ -1,0 +1,173 @@
+{
+  "slug": "golfcentrum-dongen",
+  "name": "Golfcentrum Dongen",
+  "club_name": "Golfcentrum Dongen / Golfvereniging Dongen",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Zandeweg 2",
+    "postal_code": "5107 NM",
+    "city": "Dongen",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.617,
+    "lon": 4.9154,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 151.9,
+  "phone": "0162 320 783",
+  "email": "info@golfdongen.nl",
+  "website": "https://www.golfcentrumdongen.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "landelijk Brabants landschap met waterpartijen",
+  "facilities": [
+    "driving range",
+    "horeca met uitzicht op de baan",
+    "golfschool"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfcentrum Dongen heeft een landelijk gelegen 9-holes baan van par 36 die opgaat in de Brabantse natuur. De baan is geschikt voor beginners en gevorderden en wordt voor 18 holes twee keer gespeeld. Bij het clubhuis is horeca met uitzicht over de baan.",
+  "loops": [
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 36,
+      "tees": [
+        {
+          "name": "heren",
+          "color": null,
+          "gender": "men",
+          "length_m": 2758,
+          "course_rating": null,
+          "slope": null,
+          "par": 36
+        },
+        {
+          "name": "dames",
+          "color": null,
+          "gender": "women",
+          "length_m": 2458,
+          "course_rating": null,
+          "slope": null,
+          "par": 36
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 249,
+            "dames": 229
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 525,
+            "dames": 458
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 115,
+            "dames": 101
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 436,
+            "dames": 384
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 385,
+            "dames": 344
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 411,
+            "dames": 375
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 143,
+            "dames": 129
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 274,
+            "dames": 238
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 220,
+            "dames": 200
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfcentrumdongen.nl/plattegronden-hcptabel/",
+    "files": [
+      "scorecard/Dongen-Heren-Hcp-2022.pdf",
+      "scorecard/Dongen-Dames-Hcp-2022.pdf",
+      "scorecard/page.html",
+      "scorecard/holes-montage.png",
+      "scorecard/golfify-golfcentrum-dongen.html"
+    ],
+    "source": "third-party",
+    "complete": false,
+    "notes": "De clubsite toont alleen uitsneden van holeplattegronden (zonder par/S.I.) en handicaptabellen. Par, S.I. en lengtes van golfify.io (tees \"Mensen\"/\"Dames\"); eenheid onzeker, vermoedelijk yards (de officiële plattegronden tonen kortere afstanden, bv. hole 1 230/219). Officiële ratings 18 holes (par 72, tabel 08-09-2022): heren geel 69,6/115, rood 66,9/105, oranje 64,1/98; dames geel 75,1/131, rood 71,2/124, oranje 67,2/112 — niet aan de 9-holeslus gekoppeld omdat de tee-indeling (geel/rood/oranje) niet overeenkomt met de holegegevens.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.golfcentrumdongen.nl/",
+    "https://www.golfcentrumdongen.nl/plattegronden-hcptabel/",
+    "https://www.golfify.io/courses/golfcentrum-dongen"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "slug": "golfcenter-uithoorn",
+  "name": "Golfcenter Uithoorn",
+  "club_name": "Golfcenter Uithoorn",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Noorddammerweg 30",
+    "postal_code": "1424 NX",
+    "city": "Uithoorn",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.24534,
+    "lon": 4.79968,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 119.3,
+  "phone": "+31 6 5189 0210",
+  "email": "info@golfcenteruithoorn.nl",
+  "website": "https://www.golfcenteruithoorn.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "vlak polderterrein naast een sportcomplex",
+  "facilities": [
+    "9-holes par 3-baan (NGF-goedgekeurd, qualifying)",
+    "driving range met ballenautomaat",
+    "golflessen / GVB (handicap 54)",
+    "golfshop"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Starttijd reserveren verplicht (NexxChange voor leden, golf.nl voor niet-leden); minimaal aantoonbare baanpermissie of handicap 54.",
+  "description_nl": "Golfcenter Uithoorn is een compacte oefenlocatie met een 9-holes par 3-baan van in totaal 764 meter en een driving range. De korte holes, tussen ruwweg 50 en 120 meter, zijn ideaal om aan het korte spel te werken of een handicap te halen of te verlagen. De baan is NGF-goedgekeurd en qualifying.",
+  "loops": [
+    {
+      "name": "9 holes par 3",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 764,
+          "course_rating": 24.3,
+          "slope": 72,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 764,
+          "course_rating": 25.2,
+          "slope": 76,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 82,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 63,
+            "rood": 63
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 119,
+            "rood": 119
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 118,
+            "rood": 118
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 90,
+            "rood": 90
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 53,
+            "rood": 53
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 71,
+            "rood": 71
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://www.golfcenteruithoorn.nl/baan-informatie/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/handicaptabel-1.png",
+      "scorecard/handicaptabel-2.png",
+      "scorecard/hole19.html"
+    ],
+    "source": "third-party",
+    "complete": true,
+    "notes": "Club publiceert alleen de totale lengte (764 m) en de NGF-baanhandicaptabellen (3-9-2024: 9 holes geel heren 24,3/72, rood dames 25,2/76; 18 holes 48,5/72 en 50,3/76). Holelengtes en S.I. komen van Hole19 (third-party); de holesom 764 m komt overeen met het officiele totaal. Geen aparte lengtes per tee bekend: geel en rood gelijk gezet. Golfkaart noemt ook 'Golfvereniging Uithoorn' (9 holes) vlakbij; geen aparte baan gevonden, waarschijnlijk dezelfde locatie."
+  },
+  "sources": [
+    "https://www.golfcenteruithoorn.nl/baan-informatie/",
+    "https://www.golfcenteruithoorn.nl/greenfee-en-range-tarieven/",
+    "https://www.golfcenteruithoorn.nl/contact/",
+    "https://www.hole19golf.com/courses/golfcenter-uithoorn"
+  ]
+}

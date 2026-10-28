@@ -1,0 +1,594 @@
+{
+  "slug": "golfbaan-ameland-hollum",
+  "name": "Golfbaan Ameland",
+  "club_name": "Golfvereniging Ameland",
+  "holes_total": 18,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Oosterhiemweg 20",
+    "postal_code": "9161 CZ",
+    "city": "Hollum (Ameland)",
+    "province": "Friesland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 53.44864,
+    "lon": 5.643,
+    "source": "nominatim.openstreetmap.org (Oosterhiemweg 20, Hollum)"
+  },
+  "distance_km_from_dedemsvaart": 108.9,
+  "phone": "0519 554219",
+  "email": "info@golfbaanameland.nl",
+  "website": "https://golfbaanameland.nl/",
+  "booking_url": "https://golfbaanameland.teecontrol.com/",
+  "founded": null,
+  "architect": null,
+  "landscape": "duinen/links",
+  "facilities": [
+    "driving range",
+    "oefenfaciliteiten",
+    "par 3-baan 9 holes (Wadbaan)",
+    "clubhuis",
+    "restaurant De Bunker",
+    "golfshop",
+    "golfschool",
+    "materiaalverhuur"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Dûnbaan (9 holes): baanpermissie (handicap 54) vereist; Wadbaan (par 3): vrij toegankelijk, geen handicap nodig.",
+  "description_nl": "Eilandbaan aan de duinrand bij Hollum op de westpunt van Ameland. De 9 holes van de Dûnbaan hebben een linkskarakter met natuurlijke glooiingen en veel wind van zee; met aparte S.I. voor de tweede ronde wordt 18 holes gespeeld. Naast de grote baan ligt de Wadbaan, een 9 holes par 3-baan waar ook beginners zonder handicap terechtkunnen.",
+  "loops": [
+    {
+      "name": "Dûnbaan (9 holes, 2x voor 18)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6160,
+          "course_rating": 73.3,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5826,
+          "course_rating": 71.4,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5130,
+          "course_rating": 68.6,
+          "slope": 112,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4908,
+          "course_rating": 67.7,
+          "slope": 106,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4056,
+          "course_rating": 63.4,
+          "slope": 99,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5826,
+          "course_rating": 77.9,
+          "slope": 136,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5130,
+          "course_rating": 73.7,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4908,
+          "course_rating": 72.9,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4056,
+          "course_rating": 66.6,
+          "slope": 110,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 298,
+            "geel": 294,
+            "blauw": 257,
+            "rood": 225,
+            "oranje": 200
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 461,
+            "geel": 440,
+            "blauw": 432,
+            "rood": 399,
+            "oranje": 319
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 383,
+            "geel": 351,
+            "blauw": 340,
+            "rood": 330,
+            "oranje": 272
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 155,
+            "geel": 148,
+            "blauw": 144,
+            "rood": 137,
+            "oranje": 121
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 330,
+            "geel": 318,
+            "blauw": 276,
+            "rood": 271,
+            "oranje": 207
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 366,
+            "geel": 345,
+            "blauw": 281,
+            "rood": 279,
+            "oranje": 248
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 412,
+            "geel": 382,
+            "blauw": 341,
+            "rood": 333,
+            "oranje": 246
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 496,
+            "geel": 469,
+            "blauw": 356,
+            "rood": 347,
+            "oranje": 311
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 179,
+            "geel": 166,
+            "blauw": 138,
+            "rood": 133,
+            "oranje": 104
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 298,
+            "geel": 294,
+            "blauw": 257,
+            "rood": 225,
+            "oranje": 200
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 461,
+            "geel": 440,
+            "blauw": 432,
+            "rood": 399,
+            "oranje": 319
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 383,
+            "geel": 351,
+            "blauw": 340,
+            "rood": 330,
+            "oranje": 272
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 155,
+            "geel": 148,
+            "blauw": 144,
+            "rood": 137,
+            "oranje": 121
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 330,
+            "geel": 318,
+            "blauw": 276,
+            "rood": 271,
+            "oranje": 207
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 366,
+            "geel": 345,
+            "blauw": 281,
+            "rood": 279,
+            "oranje": 248
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 412,
+            "geel": 382,
+            "blauw": 341,
+            "rood": 333,
+            "oranje": 246
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 496,
+            "geel": 469,
+            "blauw": 356,
+            "rood": 347,
+            "oranje": 311
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 179,
+            "geel": 166,
+            "blauw": 138,
+            "rood": 133,
+            "oranje": 104
+          }
+        }
+      ]
+    },
+    {
+      "name": "Wadbaan par 3 (9 holes, 2x voor 18)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1828,
+          "course_rating": 49.7,
+          "slope": 74,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1828,
+          "course_rating": 50.9,
+          "slope": 72,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 97
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 85
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 130
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 87,
+            "rood": 87
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 97
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 97
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 85
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 130
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 87,
+            "rood": 87
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 97
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfbaanameland.nl/praktisch/handicap-tabellen/",
+    "files": [
+      "scorecard/Ameland-Par-3-Baan-Dames-en-Heren.pdf",
+      "scorecard/Dames-18-holes-2021.pdf",
+      "scorecard/Heren-18-holes-2021-1.pdf",
+      "scorecard/binnenzijde-scorekaart-Grote-Baan.pdf",
+      "scorecard/binnenzijde-scorekaart-PAR-3.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart grote baan (PDF, 2026-05) met lengtes per tee wit/geel/blauw/rood/oranje, par en SI voor holes 1-9 en 10-18 (zelfde holes, eigen SI). Som holes = out 3080/2913/2565/2454/2028. CR/slope uit NGF-baanhandicaptabellen 18 holes d.d. 05-01-2021 (heren 5 tees, dames geel/blauw/rood/oranje); 9-holes tabellen ook op de site. Wadbaan: kaart heeft één lengtekolom (geel/rood-tees, ratingtabel noemt geel heren en rood dames) plus kortere A-tees (groen, zonder SI/rating): 70,74,45,65,67,70,67,70,83 = 611 m per 9. SI hole 18 staat op de kaart als 5 (zelfde als hole 9, 6 ontbreekt); hier als 6 overgenomen (Hole19 \"Pitch & Putt Golf Ameland\" = deze Wadbaan geeft ook SI 6). Website blokkeert curl (403); bestanden via WebFetch opgehaald, page.html kon daardoor niet worden opgeslagen. Project gestart in 1995 (oprichtingsjaar baan niet expliciet)."
+  },
+  "sources": [
+    "https://golfbaanameland.nl/praktisch/handicap-tabellen/",
+    "https://golfbaanameland.nl/over-golfbaan-ameland/",
+    "https://golfbaanameland.nl/praktisch/tarieven/",
+    "https://golfbaanameland.nl/contact/",
+    "https://www.golf.nl/api/playgolfapi/GetGolfCourses"
+  ]
+}

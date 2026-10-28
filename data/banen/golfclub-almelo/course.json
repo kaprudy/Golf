@@ -1,0 +1,439 @@
+{
+  "slug": "golfclub-almelo",
+  "name": "Golfclub Almelo",
+  "club_name": "Golfclub Almelo",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Veenelandenweg 34",
+    "postal_code": "7608 HB",
+    "city": "Almelo",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.38339,
+    "lon": 6.67098,
+    "source": "nominatim.openstreetmap.org (Veenelandenweg 34, Almelo; sportpark gedeeld met vv PH)"
+  },
+  "distance_km_from_dedemsvaart": 28.1,
+  "phone": "0546-568276",
+  "email": "info@golfinalmelo.nl",
+  "website": "https://www.golfinalmelo.nl/",
+  "booking_url": null,
+  "founded": 2002,
+  "architect": "Jurrian van der Vaart (nieuw ontwerp)",
+  "landscape": "parkachtig",
+  "facilities": [
+    "driving range",
+    "oefengreens",
+    "oefenbunker",
+    "clubhuis",
+    "golflessen/clinics"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Baanpermissie / WHS-handicap 55 of lager; greenfee in het clubhuis of vooraf via WhatsApp/e-mail.",
+  "description_nl": "Kleine verenigingsbaan in de groene wijk Schelfhorst aan de rand van Almelo, opgezet en onderhouden door vrijwilligers. De 9 holes zijn te spelen als korte Veenlus (rode afslagen, par 28) of als Landlus (gele afslagen, par 30), waarbij holes 7 en 8 dan par 4 worden. De baan is vernieuwd naar een ontwerp van Jurrian van der Vaart en heeft een driving range en oefengreens.",
+  "loops": [
+    {
+      "name": "Veenlus (rode tee, 9 holes 2x)",
+      "holes": 18,
+      "par": 56,
+      "tees": [
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2318,
+          "course_rating": 51.7,
+          "slope": 76,
+          "par": 56
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2318,
+          "course_rating": 54.2,
+          "slope": 83,
+          "par": 56
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 75
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 117
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 112
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 150
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 150
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 200
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 160
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 74
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 121
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 75
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 117
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 112
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 150
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 150
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 200
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 160
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 74
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 121
+          }
+        }
+      ]
+    },
+    {
+      "name": "Landlus (gele tee, 9 holes 2x)",
+      "holes": 18,
+      "par": 60,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2754,
+          "course_rating": 54.9,
+          "slope": 80,
+          "par": 60
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2754,
+          "course_rating": 57.5,
+          "slope": 90,
+          "par": 60
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 200
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 232
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 220
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 121
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 200
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 232
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 220
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 121
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfinalmelo.nl/holes-en-handicaptabellen/",
+    "files": [
+      "scorecard/GC-Almelo-18-holes-Dames-Heren-Landlus-Gele-tee.pdf",
+      "scorecard/GC-Almelo-18-holes-Dames-Heren-Veenlus-Rode-tee.pdf",
+      "scorecard/GC-Almelo-9-holes-Dames-Heren-Landlus-Gele-tee.pdf",
+      "scorecard/GC-Almelo-9-holes-Dames-Heren-Veenlus-Rode-tee.pdf",
+      "scorecard/Holes-par-lengte-totaal.pdf",
+      "scorecard/Scorekaart-GCA0825-wikkel-A6.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart GCA 08-2025 met par, SI en lengte voor Veenlus (rood) en Landlus (geel), holes 10-18 = 1-9 met eigen SI. Totalen 1159/2318 (Veenlus) en 1377/2754 (Landlus) kloppen met de som. CR/slope uit baanhandicaptabellen 06-10-2025 (18 holes); 9 holes: Veenlus heren 25,9/76, dames 27,1/83; Landlus heren 27,5/80, dames 28,8/90. Geen aparte dames-SI. Bij rijp wordt alleen de Veenlus gespeeld. Oprichtingsjaar 2002 = start vrijwilligersinitiatief volgens de site."
+  },
+  "sources": [
+    "https://www.golfinalmelo.nl/holes-en-handicaptabellen/",
+    "https://www.golfinalmelo.nl/scorekaart-ph-golf/",
+    "https://www.golfinalmelo.nl/gastspelers-en-greenfee-kado/",
+    "https://www.golf.nl/api/playgolfapi/GetGolfCourses"
+  ]
+}

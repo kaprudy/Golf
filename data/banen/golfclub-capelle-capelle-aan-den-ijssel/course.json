@@ -1,0 +1,645 @@
+{
+  "slug": "golfclub-capelle-capelle-aan-den-ijssel",
+  "name": "Golfclub Capelle",
+  "club_name": "Golfclub Capelle (Golf & Country Club Capelle a/d IJssel)",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "'s-Gravenweg 311",
+    "postal_code": "2905 LB",
+    "city": "Capelle aan den IJssel",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.9405489,
+    "lon": 4.5921986,
+    "source": "Nominatim (OpenStreetMap), adres 's-Gravenweg 311"
+  },
+  "distance_km_from_dedemsvaart": 146.7,
+  "phone": "010 44 22 337",
+  "email": "info@golfclubcapelle.nl",
+  "website": "https://golfclubcapelle.nl",
+  "booking_url": "https://golfclubcapelle.nl/starttijd-reserveren/",
+  "founded": null,
+  "architect": null,
+  "landscape": "parkbaan met sloten en vijvers",
+  "facilities": [
+    "Trackman driving range",
+    "golfschool",
+    "brasserie",
+    "vergaderruimte",
+    "GEO (duurzaam beheer)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfclub Capelle ligt aan de 's-Gravenweg tussen Capelle aan den IJssel en Rotterdam-Kralingen. De vrij korte 18-holes parkbaan (par 69) heeft smalle holes langs sloten en vijvers. Er is een Trackman-range en een brasserie; greenfeespelers kunnen tot twaalf dagen vooruit reserveren.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 69,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5155,
+          "course_rating": 67.9,
+          "slope": 125,
+          "par": 69
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4385,
+          "course_rating": 64.7,
+          "slope": 109,
+          "par": 69
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3925,
+          "course_rating": 63.2,
+          "slope": 106,
+          "par": 69
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5155,
+          "course_rating": 73.8,
+          "slope": 136,
+          "par": 69
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4385,
+          "course_rating": 69.0,
+          "slope": 126,
+          "par": 69
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3925,
+          "course_rating": 66.9,
+          "slope": 113,
+          "par": 69
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 346,
+            "rood": 285,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 366,
+            "rood": 307,
+            "oranje": 276
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160,
+            "rood": 138,
+            "oranje": 119
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 456,
+            "rood": 386,
+            "oranje": 348
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 125,
+            "oranje": 110
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 272,
+            "rood": 233,
+            "oranje": 208
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 155,
+            "rood": 136,
+            "oranje": 116
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 384,
+            "rood": 319,
+            "oranje": 288
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 464,
+            "rood": 399,
+            "oranje": 360
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 121,
+            "oranje": 89
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 393,
+            "rood": 333,
+            "oranje": 302
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 233,
+            "rood": 200,
+            "oranje": 181
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 260,
+            "rood": 214,
+            "oranje": 193
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 107,
+            "oranje": 107
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 326,
+            "rood": 286,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 232,
+            "rood": 201,
+            "oranje": 177
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 205,
+            "rood": 177,
+            "oranje": 159
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 499,
+            "rood": 418,
+            "oranje": 380
+          }
+        }
+      ]
+    },
+    {
+      "name": "1e 9 holes",
+      "holes": 9,
+      "par": 35,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2743,
+          "course_rating": 34.8,
+          "slope": 127,
+          "par": 35
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2328,
+          "course_rating": 33.2,
+          "slope": 111,
+          "par": 35
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 2081,
+          "course_rating": 32.2,
+          "slope": 105,
+          "par": 35
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2743,
+          "course_rating": 37.8,
+          "slope": 141,
+          "par": 35
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2328,
+          "course_rating": 35.3,
+          "slope": 128,
+          "par": 35
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 2081,
+          "course_rating": 34.4,
+          "slope": 112,
+          "par": 35
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 346,
+            "rood": 285,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 366,
+            "rood": 307,
+            "oranje": 276
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160,
+            "rood": 138,
+            "oranje": 119
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 456,
+            "rood": 386,
+            "oranje": 348
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 125,
+            "oranje": 110
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 272,
+            "rood": 233,
+            "oranje": 208
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 155,
+            "rood": 136,
+            "oranje": 116
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 384,
+            "rood": 319,
+            "oranje": 288
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 464,
+            "rood": 399,
+            "oranje": 360
+          }
+        }
+      ]
+    },
+    {
+      "name": "2e 9 holes",
+      "holes": 9,
+      "par": 34,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2412,
+          "course_rating": 33.2,
+          "slope": 123,
+          "par": 34
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2057,
+          "course_rating": 31.8,
+          "slope": 108,
+          "par": 34
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 1844,
+          "course_rating": 31.0,
+          "slope": 107,
+          "par": 34
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2412,
+          "course_rating": 36.0,
+          "slope": 132,
+          "par": 34
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2057,
+          "course_rating": 33.8,
+          "slope": 123,
+          "par": 34
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 1844,
+          "course_rating": 32.7,
+          "slope": 114,
+          "par": 34
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 121,
+            "oranje": 89
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 393,
+            "rood": 333,
+            "oranje": 302
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 233,
+            "rood": 200,
+            "oranje": 181
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 260,
+            "rood": 214,
+            "oranje": 193
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 107,
+            "oranje": 107
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 326,
+            "rood": 286,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 232,
+            "rood": 201,
+            "oranje": 177
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 205,
+            "rood": 177,
+            "oranje": 159
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 499,
+            "rood": 418,
+            "oranje": 380
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclubcapelle.nl/baan/scorekaart-handicap-tabel/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/Scorekaart-Golfclub-Capelle-nieuwe-pinposities.pdf",
+      "scorecard/Capelle-a-d-IJssel-Heren-18.pdf",
+      "scorecard/Capelle-a-d-IJssel-Heren-9.pdf",
+      "scorecard/Capelle-a-d-IJssel-Dames-18.pdf",
+      "scorecard/Capelle-a-d-IJssel-Dames-9.pdf",
+      "scorecard/Tabel-A5-afstanden-per-hole-tussen-de-winter-en-zomergreens.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 'nieuwe pinposities' (2026). CR/slope uit baanhandicaptabellen d.d. 01-04-2021 (Golf & Country Club Capelle a/d IJssel). 9-holes lussen: S.I. in 18-holes-stijl (1e 9 even, 2e 9 oneven). Er is ook een tabel met afstanden tussen winter- en zomergreens."
+  },
+  "sources": [
+    "https://golfclubcapelle.nl/baan/scorekaart-handicap-tabel/",
+    "https://golfclubcapelle.nl/bezoekers/greenfee-tarieven/",
+    "https://golfclubcapelle.nl/contact/"
+  ]
+}

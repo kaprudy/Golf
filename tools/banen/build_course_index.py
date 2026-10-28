@@ -70,9 +70,9 @@ def write_csv(courses):
 
 
 def write_md(courses, bad):
-    L = ["# Golfbanen rond Dedemsvaart (≤ 80 km)", "",
+    L = ["# Golfbanen in Nederland (en net over de grens)", "",
          "Gegenereerd door `tools/banen/build_course_index.py` uit `data/banen/<slug>/course.json`. "
-         "Afstand hemelsbreed vanaf Dedemsvaart (52.6008, 6.4594). De scorekaartbestanden "
+         "Gesorteerd op afstand hemelsbreed vanaf Dedemsvaart (52.6008, 6.4594). De scorekaartbestanden "
          "(`<slug>/scorecard/...`) staan op de branch `scorekaarten`, onder dezelfde paden.", "",
          "| # | Baan | Plaats | km | Holes | Scorekaart |", "|---|---|---|---|---|---|"]
     for i, d in enumerate(courses, 1):

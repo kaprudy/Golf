@@ -1,0 +1,1233 @@
+{
+  "slug": "golfcentrum-de-hoge-dijk-amsterdam",
+  "name": "Golfcentrum De Hoge Dijk",
+  "club_name": "Golfcentrum De Hoge Dijk / Golfclub Olympus",
+  "holes_total": 27,
+  "course_type": "27-holes",
+  "address": {
+    "street": "Abcouderstraatweg 46",
+    "postal_code": "1105 AA",
+    "city": "Amsterdam",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2871053,
+    "lon": 4.9597621,
+    "source": "nominatim.openstreetmap.org (adres)"
+  },
+  "distance_km_from_dedemsvaart": 107.5,
+  "phone": "+31 294 281 241",
+  "email": "receptie@dehogedijk.nl",
+  "website": "https://dehogedijk.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "licht glooiend op voormalige stortplaats (Bullewijk) en open polder met water (Holendrecht, Abcoude)",
+  "facilities": [
+    "18-holes wedstrijdbaan (A-status, par 71)",
+    "9-holes Abcoude-lus (par 31)",
+    "driving range (verlicht, tot 22:00)",
+    "Golflounge/academy",
+    "golfshop",
+    "Brasserie",
+    "zalen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Wedstrijdbaan: clubhandicap 54 (GVB) vereist.",
+  "description_nl": "De Hoge Dijk aan de zuidoostrand van Amsterdam is een openbaar golfcentrum met 27 holes, ook de thuisbasis van Golfclub Olympus. De Bullewijk-lus ligt licht glooiend en bosrijk op een voormalige vuilstort, de Holendrecht-lus is open polder met wind en water; samen vormen ze een 18-holes A-statusbaan van par 71. De kortere Abcoude-lus (par 31) is geschikt voor beginners maar biedt ook risk-reward-holes.",
+  "loops": [
+    {
+      "name": "Bullewijk/Holendrecht (18 holes)",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6000,
+          "course_rating": 73.2,
+          "slope": 132,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5663,
+          "course_rating": 70.8,
+          "slope": 135,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5120,
+          "course_rating": 67.9,
+          "slope": 128,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4803,
+          "course_rating": 66.9,
+          "slope": 116,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5663,
+          "course_rating": 77.4,
+          "slope": 140,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5120,
+          "course_rating": 73.6,
+          "slope": 132,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4803,
+          "course_rating": 71.3,
+          "slope": 128,
+          "par": 71
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 264,
+            "geel": 251,
+            "blauw": 251,
+            "rood": 223
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 357,
+            "geel": 340,
+            "blauw": 293,
+            "rood": 293
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 142,
+            "geel": 136,
+            "blauw": 136,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 495,
+            "geel": 472,
+            "blauw": 390,
+            "rood": 390
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 157,
+            "geel": 142,
+            "blauw": 142,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 405,
+            "geel": 382,
+            "blauw": 334,
+            "rood": 334
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 209,
+            "geel": 173,
+            "blauw": 173,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 545,
+            "geel": 500,
+            "blauw": 497,
+            "rood": 390
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 392,
+            "geel": 370,
+            "blauw": 300,
+            "rood": 300
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 298,
+            "geel": 294,
+            "blauw": 294,
+            "rood": 264
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 488,
+            "geel": 464,
+            "blauw": 424,
+            "rood": 414
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 363,
+            "geel": 356,
+            "blauw": 315,
+            "rood": 315
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 180,
+            "geel": 170,
+            "blauw": 155,
+            "rood": 147
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 424,
+            "geel": 398,
+            "blauw": 342,
+            "rood": 342
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 109,
+            "geel": 91,
+            "blauw": 91,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 329,
+            "geel": 318,
+            "blauw": 289,
+            "rood": 235
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 389,
+            "geel": 362,
+            "blauw": 302,
+            "rood": 302
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 454,
+            "geel": 444,
+            "blauw": 392,
+            "rood": 385
+          }
+        }
+      ]
+    },
+    {
+      "name": "Abcoude 18 holes (2x 9)",
+      "holes": 18,
+      "par": 62,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 3582,
+          "course_rating": 58.8,
+          "slope": 95,
+          "par": 62
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 3132,
+          "course_rating": 56.6,
+          "slope": 87,
+          "par": 62
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 2792,
+          "course_rating": 54.7,
+          "slope": 85,
+          "par": 62
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 3582,
+          "course_rating": 62.5,
+          "slope": 103,
+          "par": 62
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 3132,
+          "course_rating": 59.7,
+          "slope": 97,
+          "par": 62
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 2792,
+          "course_rating": 57.8,
+          "slope": 89,
+          "par": 62
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117,
+            "oranje": 117
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 318,
+            "rood": 280,
+            "oranje": 229
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 284,
+            "rood": 240,
+            "oranje": 189
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 257,
+            "rood": 201,
+            "oranje": 201
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 139,
+            "oranje": 135
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 117,
+            "oranje": 110
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112,
+            "rood": 112,
+            "oranje": 85
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 253,
+            "oranje": 230
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 110,
+            "oranje": 103
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 111,
+            "rood": 111,
+            "oranje": 111
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 318,
+            "rood": 280,
+            "oranje": 229
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 284,
+            "rood": 240,
+            "oranje": 189
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 257,
+            "rood": 201,
+            "oranje": 201
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 139,
+            "oranje": 135
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 117,
+            "oranje": 110
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112,
+            "rood": 112,
+            "oranje": 85
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 253,
+            "oranje": 230
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 110,
+            "oranje": 103
+          }
+        }
+      ]
+    },
+    {
+      "name": "Abcoude 9 holes",
+      "holes": 9,
+      "par": 31,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1794,
+          "course_rating": 29.4,
+          "slope": 95,
+          "par": 31
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 1569,
+          "course_rating": 28.3,
+          "slope": 87,
+          "par": 31
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 1399,
+          "course_rating": 27.4,
+          "slope": 85,
+          "par": 31
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 1794,
+          "course_rating": 31.3,
+          "slope": 103,
+          "par": 31
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1569,
+          "course_rating": 29.9,
+          "slope": 97,
+          "par": 31
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 1399,
+          "course_rating": 28.9,
+          "slope": 89,
+          "par": 31
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117,
+            "oranje": 117
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 318,
+            "rood": 280,
+            "oranje": 229
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 284,
+            "rood": 240,
+            "oranje": 189
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 257,
+            "rood": 201,
+            "oranje": 201
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 139,
+            "oranje": 135
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 117,
+            "oranje": 110
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112,
+            "rood": 112,
+            "oranje": 85
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 253,
+            "oranje": 230
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 110,
+            "oranje": 103
+          }
+        }
+      ]
+    },
+    {
+      "name": "Abcoude/Bullewijk (18 holes)",
+      "holes": 18,
+      "par": 66,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 4560,
+          "course_rating": 64.5,
+          "slope": 115,
+          "par": 66
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 3886,
+          "course_rating": 62.1,
+          "slope": 104,
+          "par": 66
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 4560,
+          "course_rating": 69.7,
+          "slope": 123,
+          "par": 66
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 3886,
+          "course_rating": 65.2,
+          "slope": 112,
+          "par": 66
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 318,
+            "rood": 280
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 284,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 257,
+            "rood": 201
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 139
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 253
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 251,
+            "rood": 223
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 340,
+            "rood": 293
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 472,
+            "rood": 390
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 382,
+            "rood": 334
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 173,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 500,
+            "rood": 390
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 370,
+            "rood": 300
+          }
+        }
+      ]
+    },
+    {
+      "name": "Abcoude/Holendrecht (18 holes)",
+      "holes": 18,
+      "par": 67,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 4691,
+          "course_rating": 65.1,
+          "slope": 114,
+          "par": 67
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4055,
+          "course_rating": 62.9,
+          "slope": 102,
+          "par": 67
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 4691,
+          "course_rating": 70.2,
+          "slope": 120,
+          "par": 67
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4055,
+          "course_rating": 65.9,
+          "slope": 113,
+          "par": 67
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 318,
+            "rood": 280
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 284,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 257,
+            "rood": 201
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 139
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 253
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 294,
+            "rood": 264
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 464,
+            "rood": 414
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 356,
+            "rood": 315
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 170,
+            "rood": 147
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 398,
+            "rood": 342
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 91,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 318,
+            "rood": 235
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 362,
+            "rood": 302
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 444,
+            "rood": 385
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://dehogedijk.nl/course-slope-rating/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-baan-layout.html",
+      "scorecard/230253-SCOREKAART-HOGE-DIJK-HR-02-05-2023.pdf",
+      "scorecard/210302-MULLER-OLYMPUS-SCOREKAART-ABCOUDE-HR.pdf",
+      "scorecard/De-Hoge-Dijk-Bullewijk-Holendrecht-Heren-9-en-18-holes.pdf",
+      "scorecard/De-Hoge-Dijk-Bullewijk-Holendrecht-Dames-9-en-18-holes.pdf",
+      "scorecard/De-Hoge-Dijk-18-holes-Abcoudebaan-Heren.pdf",
+      "scorecard/De-Hoge-Dijk-18-holes-Abcoudebaan-Dames.pdf",
+      "scorecard/De-Hoge-Dijk-9-holes-Abcoudebaan-Heren.pdf",
+      "scorecard/De-Hoge-Dijk-9-holes-Abcoudebaan-Dames.pdf",
+      "scorecard/De-Hoge-Dijk-18-holes-Abcoude-Bullewijkbaan-Heren.pdf",
+      "scorecard/De-Hoge-Dijk-18-holes-Abcoude-Bullewijkbaan-Dames.pdf",
+      "scorecard/De-Hoge-Dijk-18-holes-Abcoude-Holendrechtbaan-Heren.pdf",
+      "scorecard/De-Hoge-Dijk-18-holes-Abcoude-Holendrechtbaan-Dames.pdf"
+    ],
+    "source": "official",
+    "complete": false,
+    "notes": "Scorekaart Bullewijk/Holendrecht 02-05-2023 (tees 60/57/51/48 = wit/geel/blauw/rood); sinds jan. 2023 is Bullewijk de eerste negen. CR/SR heren en dames staan op de kaart en in de WHS-tabellen. Oranje tee (B/H heren 64,5/107, dames 68,5/117; Abcoude-combinaties heren 60,9/100 en 61,2/98, dames 63,7/106 en 63,7/103) zonder lengtes voor Bullewijk/Holendrecht, daarom alleen bij de Abcoude-lus opgenomen. Abcoude-kaart (2021): hole 10 is 111 m, hole 1 117 m; overige holes gelijk. Combinaties Abcoude/Bullewijk en Abcoude/Holendrecht: ratings officieel, maar geen S.I. gepubliceerd en volgorde (Abcoude eerst) aangenomen, daarom complete=false. Alle totalen van de kaart kloppen met de holesom."
+  },
+  "sources": [
+    "https://dehogedijk.nl/de-baan/",
+    "https://dehogedijk.nl/de-baan/baan-layout/",
+    "https://dehogedijk.nl/course-slope-rating/",
+    "https://dehogedijk.nl/de-baan/tarieven/",
+    "https://dehogedijk.nl/contact/",
+    "https://dehogedijk.nl/baanwissel-hole-1-en-hole-10/"
+  ]
+}

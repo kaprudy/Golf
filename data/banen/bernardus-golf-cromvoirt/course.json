@@ -1,0 +1,415 @@
+{
+  "slug": "bernardus-golf-cromvoirt",
+  "name": "Bernardus Golf",
+  "club_name": "Bernardus Golf",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Deutersestraat 39B",
+    "postal_code": "5266 AW",
+    "city": "Cromvoirt",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.6653213,
+    "lon": 5.2297148,
+    "source": "nominatim.openstreetmap.org (Deutersestraat 39B, clubhuis/Bernardus Café)"
+  },
+  "distance_km_from_dedemsvaart": 133.7,
+  "phone": "+31 (0)73 203 41 41",
+  "email": "info@bernardus.com",
+  "website": "https://bernardusgolf.com",
+  "booking_url": "https://bernardusgolf.com/book-day-membership/",
+  "founded": 2018,
+  "architect": "Kyle Phillips",
+  "landscape": "heide (heathland-stijl met duinen, heide, brem en waterpartijen)",
+  "facilities": [
+    "driving range",
+    "short game area",
+    "putting greens",
+    "academy",
+    "lodge (hotel)",
+    "restaurant Nami",
+    "Bernardus Café",
+    "fitness",
+    "buitenzwembad",
+    "sauna/hammam",
+    "tennisbaan"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Bezoekers spelen als \"Day Member\" (dagtarief vanaf € 195); handicapeis niet vermeld op de site",
+  "description_nl": "Bernardus Golf bij Cromvoirt, vlak onder Den Bosch, is een moderne kampioenschapsbaan van de Amerikaanse architect Kyle Phillips. De baan is in heidestijl aangelegd met veel bunkers, water, duintjes en brem, en ontving al het Dutch Open, het KLM Open en de Solheim Cup. Gasten spelen als dagleden en kunnen ook gebruikmaken van de lodge, restaurants en wellness.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "68",
+          "color": null,
+          "gender": "men",
+          "length_m": 6808,
+          "course_rating": 77.3,
+          "slope": 153,
+          "par": 72
+        },
+        {
+          "name": "64",
+          "color": null,
+          "gender": "men",
+          "length_m": 6440,
+          "course_rating": 75.5,
+          "slope": 147,
+          "par": 72
+        },
+        {
+          "name": "60",
+          "color": null,
+          "gender": "men",
+          "length_m": 5996,
+          "course_rating": 72.9,
+          "slope": 139,
+          "par": 72
+        },
+        {
+          "name": "56",
+          "color": null,
+          "gender": "men",
+          "length_m": 5585,
+          "course_rating": 70.9,
+          "slope": 136,
+          "par": 72
+        },
+        {
+          "name": "52",
+          "color": null,
+          "gender": "men",
+          "length_m": 5158,
+          "course_rating": 68.6,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "47",
+          "color": null,
+          "gender": "men",
+          "length_m": 4700,
+          "course_rating": 66.5,
+          "slope": 121,
+          "par": 72
+        },
+        {
+          "name": "60",
+          "color": null,
+          "gender": "women",
+          "length_m": 5996,
+          "course_rating": 79.5,
+          "slope": 153,
+          "par": 72
+        },
+        {
+          "name": "56",
+          "color": null,
+          "gender": "women",
+          "length_m": 5585,
+          "course_rating": 77.2,
+          "slope": 148,
+          "par": 72
+        },
+        {
+          "name": "52",
+          "color": null,
+          "gender": "women",
+          "length_m": 5158,
+          "course_rating": 74.1,
+          "slope": 141,
+          "par": 72
+        },
+        {
+          "name": "47",
+          "color": null,
+          "gender": "women",
+          "length_m": 4700,
+          "course_rating": 71.4,
+          "slope": 130,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "68": 418,
+            "64": 379,
+            "60": 360,
+            "56": 334,
+            "52": 282,
+            "47": 282
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "68": 395,
+            "64": 372,
+            "60": 356,
+            "56": 322,
+            "52": 322,
+            "47": 265
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "68": 343,
+            "64": 320,
+            "60": 290,
+            "56": 270,
+            "52": 270,
+            "47": 228
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "68": 534,
+            "64": 518,
+            "60": 470,
+            "56": 457,
+            "52": 457,
+            "47": 394
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "68": 424,
+            "64": 405,
+            "60": 367,
+            "56": 347,
+            "52": 285,
+            "47": 285
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "68": 206,
+            "64": 187,
+            "60": 169,
+            "56": 152,
+            "52": 119,
+            "47": 119
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "68": 530,
+            "64": 508,
+            "60": 473,
+            "56": 454,
+            "52": 454,
+            "47": 405
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "68": 146,
+            "64": 138,
+            "60": 126,
+            "56": 119,
+            "52": 79,
+            "47": 79
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "68": 410,
+            "64": 383,
+            "60": 359,
+            "56": 347,
+            "52": 283,
+            "47": 283
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "68": 341,
+            "64": 331,
+            "60": 312,
+            "56": 292,
+            "52": 251,
+            "47": 251
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "68": 415,
+            "64": 404,
+            "60": 377,
+            "56": 343,
+            "52": 343,
+            "47": 302
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "68": 489,
+            "64": 471,
+            "60": 449,
+            "56": 421,
+            "52": 421,
+            "47": 351
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "68": 196,
+            "64": 176,
+            "60": 154,
+            "56": 137,
+            "52": 94,
+            "47": 94
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "68": 399,
+            "64": 362,
+            "60": 333,
+            "56": 318,
+            "52": 280,
+            "47": 280
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "68": 432,
+            "64": 411,
+            "60": 401,
+            "56": 350,
+            "52": 350,
+            "47": 295
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "68": 438,
+            "64": 414,
+            "60": 386,
+            "56": 366,
+            "52": 312,
+            "47": 312
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "68": 167,
+            "64": 149,
+            "60": 137,
+            "56": 117,
+            "52": 117,
+            "47": 84
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "68": 525,
+            "64": 512,
+            "60": 477,
+            "56": 439,
+            "52": 439,
+            "47": 391
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://bernardusgolf.com/golf/",
+    "files": [
+      "scorecard/bernardus-golf-handicap-table-men.pdf",
+      "scorecard/bernardus-golf-handicap-table-women.pdf",
+      "scorecard/bernardusGolf_Scorecards_2507_merged.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Tees heten naar lengte (68/64/60/56/52/47 = ca. hectometers), geen kleuren; color=null. Scorekaart 2025-07 (2 kaarten: 60-47 en 68-64). CR/slope uit handicaptabellen d.d. 26-01-2021 (heren 68-47, dames 60-47); kunnen verouderd zijn."
+  },
+  "sources": [
+    "https://bernardusgolf.com/golf/",
+    "https://bernardusgolf.com/contact/",
+    "https://bernardusgolf.com/bernardus-history/",
+    "https://bernardusgolf.com/day-member/"
+  ]
+}

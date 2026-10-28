@@ -1,0 +1,81 @@
+{
+  "slug": "brabant-golf-rijen",
+  "name": "Brabant Golf",
+  "club_name": "Golfvereniging Brabant Golf",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Statenlaan 18",
+    "postal_code": "5121 HD",
+    "city": "Rijen",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.5974,
+    "lon": 4.9096,
+    "source": "OpenStreetMap Overpass (way 6320818, centroid)"
+  },
+  "distance_km_from_dedemsvaart": 153.8,
+  "phone": "0161 220076",
+  "email": "info@brabantgolf.nl",
+  "website": "https://www.brabantgolf.nl/",
+  "booking_url": null,
+  "founded": 1989,
+  "architect": null,
+  "landscape": null,
+  "facilities": [
+    "driving range",
+    "oefencorner/pitching green",
+    "putting green",
+    "clubhuis met terras",
+    "golfpro's"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Handicap 54 vereist (geen golfpaspoort).",
+  "description_nl": "Brabant Golf in Rijen is een kleinschalige vereniging met een korte 9-holesbaan, een driving range en een gezellig clubhuis met terras. De club richt zich nadrukkelijk op betaalbaar golf en leidt beginners op tot baanpermissie en handicap 54. Gasten met minimaal handicap 54 kunnen een greenfee betalen.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 57,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2799,
+          "course_rating": 57.8,
+          "slope": 95,
+          "par": 57
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2799,
+          "course_rating": 59.7,
+          "slope": 95,
+          "par": 57
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.brabantgolf.nl/?page_id=172",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/1golf-brabant-golf.html"
+    ],
+    "source": "third-party",
+    "complete": false,
+    "notes": "Clubsite publiceert geen scorekaart (pagina Handicap Tabellen is leeg). Ratings en lengte uit 1golf.eu (par 57, 2799 m, geel heren CR 57,8/95, rood dames 59,7/95); de 1golf-scorekaartpagina gaf een Cloudflare-controle en is niet opgehaald. Geen holedata. Oprichtingsjaar 1989 volgens 1golf.eu.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.brabantgolf.nl/",
+    "https://www.brabantgolf.nl/?page_id=172",
+    "https://www.1golf.eu/en/club/brabant-golf/"
+  ]
+}

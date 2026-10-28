@@ -1,0 +1,469 @@
+{
+  "slug": "golfbaan-ter-specke-lisse",
+  "name": "Golfbaan Ter Specke",
+  "club_name": "Golfclub Ter Specke",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Spekkelaan 1",
+    "postal_code": "2161 GH",
+    "city": "Lisse",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.257243,
+    "lon": 4.5404267,
+    "source": "nominatim.openstreetmap.org (adres Spekkelaan 1, Lisse)"
+  },
+  "distance_km_from_dedemsvaart": 135.6,
+  "phone": "06 51 71 76 74",
+  "email": "info@golfbaanterspecke.nl",
+  "website": "https://golfbaanterspecke.nl",
+  "booking_url": null,
+  "founded": 2006,
+  "architect": "Gerard Jol (renovatie 2015)",
+  "landscape": "vlak sportpark",
+  "facilities": [
+    "driving range (15 afslagplaatsen)",
+    "putting green",
+    "golfschool",
+    "clubhuis"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Melden bij de marshal; geen vooraf gereserveerde starttijden (volgorde van binnenkomst)",
+  "description_nl": "Ter Specke is een 9-holes par 3-baan op en rond het sportpark van FC Lisse, in 2006 aangelegd op particulier initiatief en in 2015 door Gerard Jol vernieuwd. De holes van 84 tot 172 meter liggen in een rustige groene omgeving; hole 5 heeft een alternatieve, langere variant (5A). De greens zijn van kunstgras, waardoor er het hele jaar zonder wintergreens gespeeld kan worden.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x, met hole 5/14)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2262,
+          "course_rating": 54.6,
+          "slope": 90,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2262,
+          "course_rating": 56.9,
+          "slope": 87,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 132
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 149,
+            "rood": 149
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 84,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 157
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 172,
+            "rood": 172
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 132
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 149,
+            "rood": 149
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 84,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 157
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 172,
+            "rood": 172
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        }
+      ]
+    },
+    {
+      "name": "18 holes (9 holes 2x, met hole 5A/14A)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2306,
+          "course_rating": 54.8,
+          "slope": 92,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2306,
+          "course_rating": 57.4,
+          "slope": 89,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 132
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 149,
+            "rood": 149
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 84,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 139,
+            "rood": 139
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 157
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 172,
+            "rood": 172
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 132
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 149,
+            "rood": 149
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 84,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 139,
+            "rood": 139
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 157
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 172,
+            "rood": 172
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfbaanterspecke.nl/de-baan/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/Scorekaart-18-holes-okt-2025.pdf",
+      "scorecard/Handicaptabel-samengevoegd.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart oktober 2025: één lengtekolom (heren geel en dames rood spelen dezelfde afslag volgens de tabellen); hole 5/14 117 m of 5A/14A 139 m. CR/SR uit handicaptabellen d.d. 12-06-2023 ('18-holes Par-3 Baan' en '18-holes Baan 5A'); 9 holes: 27,3/90 en 28,5/87 resp. 27,4/92 en 28,7/89."
+  },
+  "sources": [
+    "https://golfbaanterspecke.nl/de-baan/",
+    "https://golfbaanterspecke.nl/over-ons/",
+    "https://golfbaanterspecke.nl/contact/"
+  ]
+}

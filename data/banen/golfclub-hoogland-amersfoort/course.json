@@ -1,0 +1,354 @@
+{
+  "slug": "golfclub-hoogland-amersfoort",
+  "name": "Golfclub Hoogland Amersfoort",
+  "club_name": "Golfclub Hoogland Amersfoort",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Bunschoterstraat 23",
+    "postal_code": "3828 NR",
+    "city": "Hoogland (Amersfoort)",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1870421,
+    "lon": 5.3669444,
+    "source": "nominatim (Bunschoterstraat 23, Hoogland)"
+  },
+  "distance_km_from_dedemsvaart": 87.2,
+  "phone": "+31 33 888 8475",
+  "email": "info@gcha.nl",
+  "website": "https://www.gcha.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "polderbaan in het verkavelde Hooglandse landschap met houtwallen, oude bomen en de Malewetering",
+  "facilities": [
+    "brasserie",
+    "driving range",
+    "golfschool",
+    "handicarts",
+    "footgolf",
+    "indoor golf"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Negen-holesbaan met A-status aan de noordkant van Amersfoort, aangelegd in het bestaande kavelpatroon van Hoogland. Houtwallen, vrijstaande oude bomen en de Malewetering, die je twee keer per negen holes oversteekt, bepalen het spel. De baan is gemaakt voor 18 holes met andere afslagen op enkele holes van de tweede negen, en er is ook een footgolfbaan.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 68,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5234,
+          "course_rating": 68.2,
+          "slope": 123,
+          "par": 68
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5234,
+          "course_rating": 72.9,
+          "slope": 129,
+          "par": 68
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 4969,
+          "course_rating": 65.8,
+          "slope": 124,
+          "par": 68
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 4969,
+          "course_rating": 71.2,
+          "slope": 124,
+          "par": 68
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4416,
+          "course_rating": 62.9,
+          "slope": 112,
+          "par": 68
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4416,
+          "course_rating": 68.2,
+          "slope": 117,
+          "par": 68
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4200,
+          "course_rating": 62.2,
+          "slope": 109,
+          "par": 68
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4200,
+          "course_rating": 66.0,
+          "slope": 114,
+          "par": 68
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 321,
+            "blauw": 266,
+            "rood": 264,
+            "oranje": 260
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 121,
+            "blauw": 115,
+            "rood": 105,
+            "oranje": 102
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 404,
+            "blauw": 393,
+            "rood": 320,
+            "oranje": 315
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 336,
+            "blauw": 324,
+            "rood": 298,
+            "oranje": 294
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 361,
+            "blauw": 357,
+            "rood": 301,
+            "oranje": 297
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 178,
+            "blauw": 166,
+            "rood": 159,
+            "oranje": 154
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 278,
+            "blauw": 270,
+            "rood": 221,
+            "oranje": 214
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134,
+            "blauw": 131,
+            "rood": 118,
+            "oranje": 118
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 484,
+            "blauw": 468,
+            "rood": 422,
+            "oranje": 352
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 321,
+            "blauw": 266,
+            "rood": 264,
+            "oranje": 248
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 121,
+            "blauw": 115,
+            "rood": 105,
+            "oranje": 102
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 404,
+            "blauw": 393,
+            "rood": 320,
+            "oranje": 315
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 336,
+            "blauw": 324,
+            "rood": 298,
+            "oranje": 294
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 361,
+            "blauw": 357,
+            "rood": 301,
+            "oranje": 297
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 178,
+            "blauw": 166,
+            "rood": 159,
+            "oranje": 154
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 278,
+            "blauw": 270,
+            "rood": 221,
+            "oranje": 214
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134,
+            "blauw": 120,
+            "rood": 118,
+            "oranje": 118
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 484,
+            "blauw": 468,
+            "rood": 422,
+            "oranje": 352
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.gcha.nl/baan/scorekaart",
+    "files": [
+      "scorecard/hcp-dames.pdf",
+      "scorecard/hcp-heren.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart als HTML-tabel op de site (page.html); baanhandicaptabellen 29-08-2022. Op de tweede negen wijken blauw hole 17 (120 i.p.v. 131) en oranje hole 10 (248 i.p.v. 260) af, maar de site vermeldt voor \"in\" dezelfde totalen als \"uit\" (2490 resp. 2106). Controle: 18 holes (9 holes 2x) blauw: som holes 4969 vs kaart 4980 (verschil -11); 18 holes (9 holes 2x) oranje: som holes 4200 vs kaart 4212 (verschil -12)."
+  },
+  "sources": [
+    "https://www.gcha.nl/baan/scorekaart",
+    "https://www.gcha.nl/",
+    "https://www.gcha.nl/contact"
+  ]
+}

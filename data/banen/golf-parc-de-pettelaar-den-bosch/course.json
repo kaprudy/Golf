@@ -1,0 +1,211 @@
+{
+  "slug": "golf-parc-de-pettelaar-den-bosch",
+  "name": "Golf Parc De Pettelaar",
+  "club_name": "Golf Parc De Pettelaar (thuisbaan o.a. Golf Club Bois le Duc)",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Meerendonkweg 2",
+    "postal_code": "5216 TZ",
+    "city": "'s-Hertogenbosch",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.6780764,
+    "lon": 5.3377,
+    "source": "nominatim.openstreetmap.org (Meerendonkweg 2)"
+  },
+  "distance_km_from_dedemsvaart": 128.0,
+  "phone": "073 – 613 66 30",
+  "email": "info@pettelaar-golf.nl",
+  "website": "https://www.golfparcdepettelaar.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "stadspark met hoogteverschillen en waterpartijen, uitzicht op de skyline van Den Bosch",
+  "facilities": [
+    "driving range",
+    "pitch & putt",
+    "putting green",
+    "approach green",
+    "oefenbunkers",
+    "clubhuis",
+    "golfschool",
+    "handicarts (4)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "NGF-baanpermissie of lokale baanpermissie (Pettelaar)",
+  "description_nl": "Golf Parc De Pettelaar ligt in het Pettelaarse park aan de zuidoostkant van Den Bosch, met zicht op de Sint-Janskathedraal. De 9-holesbaan (par 29) is kort maar lastig door smalle fairways, hoogteverschillen, water en sterk glooiende greens. Er zijn uitgebreide oefenfaciliteiten, inclusief een pitch & putt.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 3311,
+          "course_rating": 58.9,
+          "slope": 102,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2924,
+          "course_rating": 59.8,
+          "slope": 102,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {}
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfparcdepettelaar.nl/golfbaan/",
+    "files": [
+      "scorecard/page-golfpass.html",
+      "scorecard/page.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Officiële site geeft alleen: 9 holes par 29; heren 3311 m CR 58,9 SR 102; dames 2924 m CR 59,8 SR 102 (lengtes/ratings gelden voor 18 holes = 2x 9). Geen scorekaart gepubliceerd. Par en S.I. holes 1-9 van golfpass.com (derden); S.I. holes 10-18 onbekend. Golfpass geeft holelengtes alleen in yards (heren 148,172,177,164,318,362,175,145,141 = 1802 yd; dames 105,153,139,153,305,327,151,128,135 = 1596 yd; totaal 18 holes 3620/3199 yd) - niet omgerekend opgenomen. Tee-kleuren geel/rood volgens golfpass."
+  },
+  "sources": [
+    "https://www.golfparcdepettelaar.nl/golfbaan/",
+    "https://www.golfparcdepettelaar.nl/golf/tarieven/",
+    "https://www.golfpass.com/travel-advisor/courses/23175-parc-de-pettelaar-golf-club/scorecard-and-layout"
+  ]
+}

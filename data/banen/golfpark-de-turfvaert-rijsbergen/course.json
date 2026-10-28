@@ -1,0 +1,342 @@
+{
+  "slug": "golfpark-de-turfvaert-rijsbergen",
+  "name": "Golfpark De Turfvaert",
+  "club_name": "Golfpark De Turfvaert",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Zwart Moerken 12",
+    "postal_code": "4891 TK",
+    "city": "Rijsbergen",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.5317,
+    "lon": 4.6976,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 169.2,
+  "phone": "076 596 83 54",
+  "email": "info@deturfvaert.nl",
+  "website": "https://www.deturfvaert.nl/",
+  "booking_url": "https://www.deturfvaert.nl/golf-spelen/greenfee",
+  "founded": null,
+  "architect": "Frank Pont",
+  "landscape": "inland links op voormalige landbouwgrond",
+  "facilities": [
+    "oefenfaciliteiten/driving range",
+    "familiegolf",
+    "clubhuis/horeca"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfpark De Turfvaert bij Rijsbergen, tussen Breda en Roosendaal, is een 18-holes inland links van architect Frank Pont. Het ontwerp sluit aan bij klassieke architecten als Colt en MacKenzie, met natuurlijk ogende bunkers en strategische holes. De baan is relatief kort (par 70), maar vraagt om goede plaatsing.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 5683,
+          "course_rating": 70.1,
+          "slope": 130,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5393,
+          "course_rating": 68.4,
+          "slope": 126,
+          "par": 70
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5240,
+          "course_rating": 67.8,
+          "slope": 125,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4712,
+          "course_rating": 65.1,
+          "slope": 115,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5393,
+          "course_rating": 75.0,
+          "slope": 134,
+          "par": 70
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5240,
+          "course_rating": 74.0,
+          "slope": 130,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4712,
+          "course_rating": 69.9,
+          "slope": 122,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 490,
+            "geel": 467,
+            "blauw": 457,
+            "rood": 416
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 385,
+            "geel": 368,
+            "blauw": 358,
+            "rood": 321
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 412,
+            "geel": 369,
+            "blauw": 359,
+            "rood": 335
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 238,
+            "geel": 237,
+            "blauw": 227,
+            "rood": 212
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 115,
+            "geel": 108,
+            "blauw": 108,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 322,
+            "geel": 319,
+            "blauw": 309,
+            "rood": 281
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 170,
+            "geel": 150,
+            "blauw": 147,
+            "rood": 126
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 333,
+            "geel": 328,
+            "blauw": 318,
+            "rood": 287
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 411,
+            "geel": 372,
+            "blauw": 362,
+            "rood": 308
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 482,
+            "geel": 472,
+            "blauw": 462,
+            "rood": 428
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 152,
+            "geel": 142,
+            "blauw": 132,
+            "rood": 111
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 378,
+            "geel": 359,
+            "blauw": 349,
+            "rood": 300
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 139,
+            "geel": 121,
+            "blauw": 111,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 468,
+            "geel": 459,
+            "blauw": 449,
+            "rood": 394
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 177,
+            "geel": 165,
+            "blauw": 155,
+            "rood": 138
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 496,
+            "geel": 468,
+            "blauw": 458,
+            "rood": 407
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 124,
+            "geel": 110,
+            "blauw": 110,
+            "rood": 97
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 391,
+            "geel": 379,
+            "blauw": 369,
+            "rood": 353
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.deturfvaert.nl/golfbaan/holes",
+    "files": [
+      "scorecard/turfvaert-scorekaart-2025-wit-geel-blauw-en-rood.pdf",
+      "scorecard/turfvaert-whs-tabel-heren-per-1-maart-2021.pdf",
+      "scorecard/turfvaert-whs-tabel-dames-per-1-maart-2021.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Scorekaart 2025 (wit/geel/blauw/rood; OUT/IN/TOT 5683/5393/5240/4712 kloppen). CR/slope uit WHS-tabellen per 1 maart 2021; die bevatten ook oranje (heren 62,2/104, dames 65,7/113), maar oranje staat niet op de scorekaart en is daarom niet opgenomen. Ratings kunnen ouder zijn dan de kaart.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.deturfvaert.nl/golfbaan",
+    "https://www.deturfvaert.nl/golfbaan/holes"
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "slug": "golfpark-land-van-thorn-hunsel",
+  "name": "Golfpark Land van Thorn",
+  "club_name": "Hollandsche Golfclub (Golfpark Land van Thorn)",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Kallestraat 37 A",
+    "postal_code": "6013 RM",
+    "city": "Hunsel",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.187297,
+    "lon": 5.8185872,
+    "source": "nominatim (Kallestraat 37a, Hunsel)"
+  },
+  "distance_km_from_dedemsvaart": 163.2,
+  "phone": "0475 563 350",
+  "email": "info@golfparklandvanthorn.nl",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/land-van-thorn/",
+  "booking_url": "https://www.hollandschegolfclub.nl/golfpark/land-van-thorn/boek-een-starttijd-golfpark-land-van-thorn/",
+  "founded": null,
+  "architect": null,
+  "landscape": "licht linksachtig, glooiende fairways en verhoogde greens met ruim 20 bunkers",
+  "facilities": [
+    "driving range",
+    "oefenfaciliteiten",
+    "golflessen",
+    "brasserie"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Handicap 54 of baanpermissie van de Hollandsche Golfclub",
+  "description_nl": "Golfpark Land van Thorn ligt in Hunsel, niet ver van het witte stadje Thorn, en hoort bij de Hollandsche Golfclub. De 9-holesbaan (par 36) heeft een licht linksachtig karakter met glooiende fairways, verhoogde greens en ruim twintig bunkers. Voor 18 holes wordt de lus twee keer gespeeld vanaf dezelfde afslagen.",
+  "loops": [
+    {
+      "name": "18 holes (2x gele lus)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5524,
+          "course_rating": 70.7,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4838,
+          "course_rating": 67.1,
+          "slope": 121,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3774,
+          "course_rating": 62.9,
+          "slope": 112,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5524,
+          "course_rating": 76.6,
+          "slope": 146,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4838,
+          "course_rating": 71.9,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3774,
+          "course_rating": 65.3,
+          "slope": 115,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 320,
+            "rood": 287,
+            "oranje": 224
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 345,
+            "rood": 307,
+            "oranje": 238
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 111,
+            "rood": 96,
+            "oranje": 63
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 363,
+            "rood": 312,
+            "oranje": 246
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 451,
+            "rood": 407,
+            "oranje": 342
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 329,
+            "rood": 285,
+            "oranje": 219
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 250,
+            "rood": 221,
+            "oranje": 158
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 151,
+            "rood": 115,
+            "oranje": 83
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 442,
+            "rood": 389,
+            "oranje": 314
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 320,
+            "rood": 287,
+            "oranje": 224
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 345,
+            "rood": 307,
+            "oranje": 238
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 111,
+            "rood": 96,
+            "oranje": 63
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 363,
+            "rood": 312,
+            "oranje": 246
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 451,
+            "rood": 407,
+            "oranje": 342
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 329,
+            "rood": 285,
+            "oranje": 219
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 250,
+            "rood": 221,
+            "oranje": 158
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 151,
+            "rood": 115,
+            "oranje": 83
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 442,
+            "rood": 389,
+            "oranje": 314
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hollandschegolfclub.nl/golfpark/land-van-thorn/course/land-van-thorn-18-holes-2-x-gele-lus/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/Land-van-Thorn-18-holes-MRT-2026.pdf",
+      "scorecard/Land-van-Thorn-Handicaptabellen.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Officiele scorekaart (maart 2026): kolommen geel, rood, oranje; SI 1-9 oneven, 10-18 even. CR/slope uit de baanhandicaptabellen van 19-03-2025 (18 holes)."
+  },
+  "sources": [
+    "https://www.hollandschegolfclub.nl/golfpark/land-van-thorn/",
+    "https://www.hollandschegolfclub.nl/golfpark/land-van-thorn/course/land-van-thorn-18-holes-2-x-gele-lus/"
+  ]
+}

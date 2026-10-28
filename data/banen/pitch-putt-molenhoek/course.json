@@ -1,0 +1,232 @@
+{
+  "slug": "pitch-putt-molenhoek",
+  "name": "Pitch & Putt Golf Molenhoek",
+  "club_name": "Pitch & Putt Golf Molenhoek",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Lierweg 2C",
+    "postal_code": "6584 DC",
+    "city": "Molenhoek",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.7754313,
+    "lon": 5.8756136,
+    "source": "nominatim (Lierweg 2c, Molenhoek)"
+  },
+  "distance_km_from_dedemsvaart": 100.0,
+  "phone": "024 388 0552",
+  "email": null,
+  "website": null,
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "voormalige zandafgraving ('The Pit') bij sportpark De Lyre",
+  "facilities": [
+    "voetgolf",
+    "kinderfeestjes"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Deze pitch & puttbaan ligt in Molenhoek (gemeente Mook en Middelaar), achter het sportcentrum aan de Lierweg, in een oude zandafgraving. De 18 holes zijn allemaal par 3 en meten ongeveer 40 tot 70 meter, geschikt voor beginners en voor het oefenen van het korte spel. Spelen gaat volgens derden op afspraak.",
+  "loops": [
+    {
+      "name": "Pitch & putt (18 holes)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": "standaard",
+          "gender": "men",
+          "length_m": 979,
+          "course_rating": 45.0,
+          "slope": 85,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 57
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 45
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 59
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 49
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 45
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 67
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 53
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 66
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 39
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 55
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 70
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 43
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 46
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 65
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 63
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 57
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/pitch-putt-golf-molenhoek",
+    "files": [
+      "scorecard/hole19-pitch-putt-golf-molenhoek.html",
+      "scorecard/golfify-pitch-putt-golf-molenhoek.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Geen officiele website gevonden. Par, SI en lengtes (metrisch, 979 m) van hole19golf.com, CR 45.0/slope 85 ook van Hole19 (geslacht niet vermeld). Golfify geeft dezelfde SI met lengtes in vermoedelijk yards (totaal 1071). FIPPA (2012) noemt een andere SI-volgorde. Openingstijden volgens Kidsproof 'op afspraak'. Ligt in Limburg (Mook en Middelaar), niet in de opgegeven gemeentelijst."
+  },
+  "sources": [
+    "https://www.hole19golf.com/courses/pitch-putt-golf-molenhoek",
+    "https://www.golfify.io/courses/pitch-putt-golf-molenhoek",
+    "https://fippa.org/courses/molenhoek_netherlands"
+  ]
+}

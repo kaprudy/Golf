@@ -1,0 +1,486 @@
+{
+  "slug": "golfclub-ookmeer-amsterdam",
+  "name": "Golfclub Ookmeer",
+  "club_name": "Golfclub Ookmeer",
+  "holes_total": 18,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Abe Lenstralaan 8",
+    "postal_code": "1067 MV",
+    "city": "Amsterdam",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.3723841,
+    "lon": 4.7972952,
+    "source": "nominatim.openstreetmap.org (adres)"
+  },
+  "distance_km_from_dedemsvaart": 115.4,
+  "phone": "+31 20 411 1118",
+  "email": "info@golfclubookmeer.nl",
+  "website": "https://golfclubookmeer.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "stedelijk sportpark (Sportpark Ookmeer) met water en kunstgrasvelden",
+  "facilities": [
+    "9-holes baan (par 31)",
+    "9-holes shortgolfbaan (par 27)",
+    "driving range",
+    "golfschool",
+    "clubhuis",
+    "buggyverhuur",
+    "lockers"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Ookmeer is een laagdrempelige verenigingsbaan in sportpark Ookmeer in Amsterdam-Osdorp. De 9-holes baan (par 31) met par 3's en korte par 4's is qualifying en wordt voor 18 holes twee keer gespeeld met eigen S.I. Daarnaast is er een kleine shortgolfbaan met holes van 30 tot 75 meter en een golfschool.",
+  "loops": [
+    {
+      "name": "Grote baan 18 holes (2x 9)",
+      "holes": 18,
+      "par": 62,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 3466,
+          "course_rating": 60.5,
+          "slope": 104,
+          "par": 62
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 3466,
+          "course_rating": 63.3,
+          "slope": 104,
+          "par": 62
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "rood": 129
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 240,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 159,
+            "rood": 159
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 257,
+            "rood": 257
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 259,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 224,
+            "rood": 224
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125,
+            "rood": 125
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 161,
+            "rood": 161
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 179,
+            "rood": 179
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "rood": 129
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 240,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 159,
+            "rood": 159
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 257,
+            "rood": 257
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 259,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 224,
+            "rood": 224
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125,
+            "rood": 125
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 161,
+            "rood": 161
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 179,
+            "rood": 179
+          }
+        }
+      ]
+    },
+    {
+      "name": "Grote baan 9 holes",
+      "holes": 9,
+      "par": 31,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1733,
+          "course_rating": 30.3,
+          "slope": 104,
+          "par": 31
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1733,
+          "course_rating": 31.7,
+          "slope": 104,
+          "par": 31
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "rood": 129
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 240,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 159,
+            "rood": 159
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 257,
+            "rood": 257
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 259,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 224,
+            "rood": 224
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125,
+            "rood": 125
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 161,
+            "rood": 161
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 179,
+            "rood": 179
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shortgolfbaan 9 holes",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": "men",
+          "length_m": 410,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 35
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 45
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 75
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 30
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 35
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 40
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://golfclubookmeer.nl/scorekaart/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/Grote-baan-achterkant.jpg",
+      "scorecard/2026-4-Ookmeer-SCRKRT-shortholes-achter.jpg",
+      "scorecard/WHS-Heren-18-holes.jpg",
+      "scorecard/WHS-Dames-18-holes.jpg",
+      "scorecard/WHS-Heren-9-holes.jpg",
+      "scorecard/WHS-Dames-9-holes.jpg"
+    ],
+    "source": "official",
+    "complete": false,
+    "notes": "Grote baan: één lengte per hole (gele kolom); CR/SR 18 holes op de kaart (heren 60,5/104, dames 63,3/104), 9 holes uit de WHS-tabellen (geel heren 30,3/104, rood dames 31,7/104, 12-01-2021); dames spelen volgens de WHS-tabel van 'rood', met dezelfde lengtes. 9-holes S.I. = oneven S.I. van de kaart (18-holesstijl). Shortgolfbaan (par 27, 410 m) heeft geen S.I. en geen rating, daarom complete=false. Totalen kloppen."
+  },
+  "sources": [
+    "https://golfclubookmeer.nl/scorekaart/",
+    "https://golfclubookmeer.nl/baanhandicap-tabellen/",
+    "https://golfclubookmeer.nl/greenfee-bezoeker/",
+    "https://golfclubookmeer.nl/contact/"
+  ]
+}

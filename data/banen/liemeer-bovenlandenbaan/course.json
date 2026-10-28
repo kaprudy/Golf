@@ -1,0 +1,315 @@
+{
+  "slug": "liemeer-bovenlandenbaan",
+  "name": "Golf & Country Club Liemeer – Bovenlandenbaan",
+  "club_name": "Golf & Country Club Liemeer",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Golfpad 1",
+    "postal_code": "2441 EW",
+    "city": "Nieuwveen",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1896037,
+    "lon": 4.7436161,
+    "source": "nominatim.openstreetmap.org (adres Golfpad 1, Nieuwveen)"
+  },
+  "distance_km_from_dedemsvaart": 125.1,
+  "phone": "0172 82 00 16",
+  "email": "info@golfclubliemeer.nl",
+  "website": "https://www.golfclubliemeer.nl",
+  "booking_url": null,
+  "founded": 2006,
+  "architect": "Alan Rijks",
+  "landscape": "inland links in de polder",
+  "facilities": [
+    "driving range",
+    "18-holes Torenbaan",
+    "clubhuis"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "De Bovenlandenbaan is de korte 9-holesbaan van Liemeer, met vijf par 3's en vier par 4's (par 31) tot ruim 300 meter. De baan ligt rond de driving range en is qualifying, waardoor ook ervaren spelers er hun korte spel kunnen aanscherpen. Net als de Torenbaan is hij ontworpen door Alan Rijks.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x gespeeld)",
+      "holes": 18,
+      "par": 62,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 3292,
+          "course_rating": 57.1,
+          "slope": 96,
+          "par": 62
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2928,
+          "course_rating": 55.8,
+          "slope": 81,
+          "par": 62
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 2540,
+          "course_rating": 53.6,
+          "slope": 79,
+          "par": 62
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 3292,
+          "course_rating": 60.9,
+          "slope": 102,
+          "par": 62
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2928,
+          "course_rating": 58.3,
+          "slope": 98,
+          "par": 62
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 2540,
+          "course_rating": 56.1,
+          "slope": 83,
+          "par": 62
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 99,
+            "rood": 99,
+            "oranje": 62
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 111,
+            "rood": 111,
+            "oranje": 86
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98,
+            "oranje": 70
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 265,
+            "rood": 237,
+            "oranje": 204
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 261,
+            "rood": 213,
+            "oranje": 188
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100,
+            "oranje": 85
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 131,
+            "rood": 105,
+            "oranje": 90
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 306,
+            "rood": 267,
+            "oranje": 255
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 275,
+            "rood": 234,
+            "oranje": 230
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 99,
+            "rood": 99,
+            "oranje": 62
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 111,
+            "rood": 111,
+            "oranje": 86
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98,
+            "oranje": 70
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 265,
+            "rood": 237,
+            "oranje": 204
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 261,
+            "rood": 213,
+            "oranje": 188
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100,
+            "oranje": 85
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 131,
+            "rood": 105,
+            "oranje": 90
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 306,
+            "rood": 267,
+            "oranje": 255
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 275,
+            "rood": 234,
+            "oranje": 230
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclubliemeer.nl/nl/baan/baanhandicap-tabellen-scorekaarten/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/scorekaart-bovenlandenbaan-7-2026.pdf",
+      "scorecard/liemeer-bovenlandenbaan-heren.pdf",
+      "scorecard/liemeer-bovenlandenbaan-dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart Bovenlandenbaan juli 2026. De holepars op de kaart (3,3,3,4,4,3,3,4,4) tellen op tot 31 per negen, terwijl de totaalregel op de kaart '30' (en 60 voor 18) vermeldt; de site (5 par 3 + 4 par 4) en de baanhandicaptabellen d.d. 24-09-2026 (PAR=31/62) bevestigen par 31, dus de totaalregel op de kaart is een drukfout. Teekolommen zonder naam op de kaart; kleuren geel/rood/oranje volgens kleurvlakken en tabellen. 9 holes CR/SR: heren geel 28,6/96, rood 27,9/81, oranje 26,8/79; dames geel 30,5/102, rood 29,2/98, oranje 28,1/83."
+  },
+  "sources": [
+    "https://www.golfclubliemeer.nl/nl/baan/de-baan/",
+    "https://www.golfclubliemeer.nl/nl/baan/baanhandicap-tabellen-scorekaarten/"
+  ]
+}

@@ -160,9 +160,18 @@ for (const c of DATA) {
     entries.push({ ref, loop: { ...a, holes: 18, par: (a.par ?? 0) + (b.par ?? 0), hole_data: [...a.hole_data, ...b.hole_data].map((h, i) => ({ ...h, hole: i + 1 })) }, ratingLoop: loops[comb.ratingsFrom] });
   }
   loops.forEach((loop, i) => { if (!SKIP.has(`${c.slug}/${i}`)) entries.push({ ref: `${c.slug}/${i}`, loop }); });
-  for (const e of entries) {
+  // Labels per lus; geven twee lussen hetzelfde label (bijv. "18 holes" en "9 holes" worden allebei
+  // leeg), dan de lusnaam zonder haakjes, en anders met een volgnummer. Bestaande id's blijven gelijk.
+  const labels = entries.map((e) => (e.ref in LABEL ? LABEL[e.ref] : entries.length > 1 ? cleanLabel(e.loop.name) : ''));
+  const dupes = (list) => list.map((l, i) => list.indexOf(l) !== i || list.lastIndexOf(l) !== i);
+  if (dupes(labels).some(Boolean)) {
+    const plain = (s) => (s ?? '').replace(/\s*\(.*?\)\s*/g, ' ').replace(/\s+/g, ' ').trim();
+    dupes(labels).forEach((d, i) => { if (d && !(entries[i].ref in LABEL)) labels[i] = plain(entries[i].loop.name) || `lus ${i + 1}`; });
+    dupes(labels).forEach((d, i) => { if (d) labels[i] = `${labels[i]} ${i + 1}`.trim(); });
+  }
+  for (const [n, e] of entries.entries()) {
     const rep = REPLACE[e.ref];
-    const label = e.ref in LABEL ? LABEL[e.ref] : entries.length > 1 ? cleanLabel(e.loop.name) : '';
+    const label = labels[n];
     const idSuffix = label && !rep ? `-${label.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}` : '';
     const key = { id: rep?.id ?? `${c.slug}${idSuffix}`, dataVersion: rep?.dataVersion, name: displayName(c, label), ref: e.ref, toString() { return this.ref; } };
     const course = convert(c, key, e.loop, e.ratingLoop, problems);

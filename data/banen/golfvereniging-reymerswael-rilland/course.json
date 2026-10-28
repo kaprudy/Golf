@@ -1,0 +1,380 @@
+{
+  "slug": "golfvereniging-reymerswael-rilland",
+  "name": "Golfpark Reymerswael",
+  "club_name": "Hollandsche Golfclub – Golfpark Reymerswael (Golfvereniging Reymerswael)",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Grensweg 21",
+    "postal_code": "4411 ST",
+    "city": "Rilland",
+    "province": "Zeeland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.3899,
+    "lon": 4.2389,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 203.1,
+  "phone": "0113 551 265",
+  "email": "info@golfparkreymerswael.nl",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/reymerswael/",
+  "booking_url": null,
+  "founded": 1986,
+  "architect": "Joan Frederik Dudok van Heel en Alan Rijks (volgens golfingrecord.com)",
+  "landscape": "open, links-achtig met lage begroeiing en lichte duintoppen, tussen Westerschelde en Schelde-Rijnkanaal",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "chipping green",
+    "oefenbunker",
+    "brasserie"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Vanaf baanpermissie van de Hollandsche Golfclub.",
+  "description_nl": "Golfpark Reymerswael ligt bij Rilland in het open Zeeuwse landschap tussen de Westerschelde, het Schelde-Rijnkanaal en de polders. De par-71-baan bestaat uit een lus van 12 en een lus van 6 holes, met lage begroeiing en lichte duintoppen, waardoor de wind vaak de doorslag geeft. Het park wordt geëxploiteerd door de Hollandsche Golfclub.",
+  "loops": [
+    {
+      "name": "18 holes (lus 12 + lus 6)",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 5944,
+          "course_rating": 72.3,
+          "slope": 130,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5779,
+          "course_rating": 71.3,
+          "slope": 130,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5334,
+          "course_rating": 69.2,
+          "slope": 122,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4916,
+          "course_rating": 67.2,
+          "slope": 116,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3998,
+          "course_rating": 63.5,
+          "slope": 105,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5779,
+          "course_rating": 78.2,
+          "slope": 142,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5334,
+          "course_rating": 75.1,
+          "slope": 137,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4916,
+          "course_rating": 72.5,
+          "slope": 127,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3998,
+          "course_rating": 66.5,
+          "slope": 112,
+          "par": 71
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 522,
+            "geel": 443,
+            "blauw": 443,
+            "rood": 398,
+            "oranje": 313
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 164,
+            "geel": 164,
+            "blauw": 144,
+            "rood": 144,
+            "oranje": 144
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 272,
+            "geel": 272,
+            "blauw": 266,
+            "rood": 266,
+            "oranje": 204
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 343,
+            "geel": 343,
+            "blauw": 343,
+            "rood": 290,
+            "oranje": 214
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 139,
+            "geel": 139,
+            "blauw": 119,
+            "rood": 119,
+            "oranje": 119
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 446,
+            "geel": 446,
+            "blauw": 446,
+            "rood": 365,
+            "oranje": 267
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 352,
+            "geel": 352,
+            "blauw": 352,
+            "rood": 317,
+            "oranje": 240
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 162,
+            "geel": 162,
+            "blauw": 137,
+            "rood": 137,
+            "oranje": 137
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 355,
+            "geel": 355,
+            "blauw": 294,
+            "rood": 294,
+            "oranje": 245
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 331,
+            "geel": 331,
+            "blauw": 306,
+            "rood": 306,
+            "oranje": 226
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 382,
+            "geel": 344,
+            "blauw": 344,
+            "rood": 277,
+            "oranje": 204
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 526,
+            "geel": 522,
+            "blauw": 412,
+            "rood": 412,
+            "oranje": 341
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 337,
+            "geel": 337,
+            "blauw": 278,
+            "rood": 278,
+            "oranje": 245
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 405,
+            "geel": 365,
+            "blauw": 297,
+            "rood": 297,
+            "oranje": 239
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 347,
+            "geel": 347,
+            "blauw": 347,
+            "rood": 286,
+            "oranje": 232
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 336,
+            "geel": 336,
+            "blauw": 322,
+            "rood": 322,
+            "oranje": 220
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 393,
+            "geel": 389,
+            "blauw": 361,
+            "rood": 285,
+            "oranje": 285
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 132,
+            "geel": 132,
+            "blauw": 123,
+            "rood": 123,
+            "oranje": 123
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hollandschegolfclub.nl/golfpark/reymerswael/course/18-holes-golfpark-reymerswael/",
+    "files": [
+      "scorecard/REYMERSWAEL_SCOREKAART18HOLES_2025WEB.pdf",
+      "scorecard/Reymerswael_HCPTabellen_Nov2026.pdf",
+      "scorecard/page.html",
+      "scorecard/golfingrecord-reymerswael-oud.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Officiële scorekaart 2025 via de site van de Hollandsche Golfclub (TOT 5944/5779/5334/4916/3998 m, par 71; kolomvolgorde wit/geel/blauw/rood/oranje aangenomen op basis van de handicaptabellen). Holes 13-18 vormen de 6-holeslus (op de kaart ook 1-6 genummerd). CR/slope uit tabellen november 2026. De oude clubsite reymerswael.nl is offline; golfingrecord.com geeft een verouderde indeling (5909 m).",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.hollandschegolfclub.nl/golfpark/reymerswael/",
+    "https://www.hollandschegolfclub.nl/golfpark/reymerswael/course/18-holes-golfpark-reymerswael/"
+  ]
+}

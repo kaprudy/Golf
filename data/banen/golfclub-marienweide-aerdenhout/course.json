@@ -1,0 +1,382 @@
+{
+  "slug": "golfclub-marienweide-aerdenhout",
+  "name": "Golfclub Mariënweide",
+  "club_name": "Golfclub Mariënweide",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Boekenroodeweg 52",
+    "postal_code": "2111 HN",
+    "city": "Aerdenhout",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.3523441,
+    "lon": 4.5836447,
+    "source": "nominatim.openstreetmap.org (adres)"
+  },
+  "distance_km_from_dedemsvaart": 130.0,
+  "phone": "+31 23 524 6245",
+  "email": null,
+  "website": "https://www.marienweide.nl/",
+  "booking_url": null,
+  "founded": 1985,
+  "architect": null,
+  "landscape": "parkachtig, rond de hockeyvelden van Rood-Wit, met waterpartijen; grenst aan stiltegebied Naaldenveld",
+  "facilities": [
+    "9-holes par 3-baan (NGF-status, qualifying)",
+    "oefenfaciliteiten",
+    "golfpro / lessen",
+    "clubhuis met bar"
+  ],
+  "greenfee_welcome": false,
+  "requirements": "Bezoekers alleen in gezelschap van een clublid; NGF-lidmaatschap vereist; max. 5x per jaar als greenfeespeler.",
+  "description_nl": "Mariënweide is een kleine verenigingsbaan in Aerdenhout, in 1985 aangelegd rond de velden van hockeyclub Rood-Wit. De negen par 3-holes variëren van zo'n 77 tot 167 meter en worden met water en bunkers verdedigd, ideaal om het korte spel te oefenen. De baan is qualifying en heeft zowel een 9- als 18-holes handicaptabel; gasten spelen alleen mee met een lid.",
+  "loops": [
+    {
+      "name": "18 holes (2x 9, par 3)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2044,
+          "course_rating": 51.9,
+          "slope": 84,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2044,
+          "course_rating": 54.1,
+          "slope": 85,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 84,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 87,
+            "rood": 87
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 162,
+            "rood": 162
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 167,
+            "rood": 167
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 153,
+            "rood": 153
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 84,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 83,
+            "rood": 83
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 162,
+            "rood": 162
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 167,
+            "rood": 167
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 153,
+            "rood": 153
+          }
+        }
+      ]
+    },
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1022,
+          "course_rating": 26.0,
+          "slope": 84,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1022,
+          "course_rating": 27.1,
+          "slope": 85,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 84,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 87,
+            "rood": 87
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 162,
+            "rood": 162
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 167,
+            "rood": 167
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 153,
+            "rood": 153
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://www.marienweide.nl/de-baan/baaninformatie",
+    "files": [
+      "scorecard/Marienweide-Scorekaart-FC-2025.pdf",
+      "scorecard/Marienweide_WHS_tabel_18_holes.pdf",
+      "scorecard/Marienweide_WHS_tabel_9_holes.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Scorekaart vermeldt één lengte per hole (geen aparte tee-kleuren); CR/slope uit de WHS-baanhandicaptabellen (geel heren, rood dames). Hole 6 is 87 m, hole 15 (zelfde hole, 2e ronde) 83 m; de kaart geeft OUT en IN beide 1022 m, terwijl de holesom 1024 (OUT) en 1020 (IN) is. 9-holes S.I. is de oneven S.I. van de kaart (18-holesstijl)."
+  },
+  "sources": [
+    "https://www.marienweide.nl/de-baan/baaninformatie",
+    "https://www.marienweide.nl/de-baan/playing-handicaps",
+    "https://www.marienweide.nl/de-baan/greenfreeregeling",
+    "https://www.marienweide.nl/contact",
+    "https://www.marienweide.nl/de-club/golfclub-marienweide-bestaat-40-jaar"
+  ]
+}
