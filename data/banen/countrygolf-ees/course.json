@@ -1,0 +1,268 @@
+{
+  "slug": "countrygolf-ees",
+  "name": "Country Golf Ees",
+  "club_name": "Vereniging Country Golf Ees",
+  "holes_total": 18,
+  "course_type": "par-3",
+  "address": {
+    "street": "Oosterweg 1",
+    "postal_code": "9536 PR",
+    "city": "Ees",
+    "province": "Drenthe",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.90667,
+    "lon": 6.81356,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 41.5,
+  "phone": "+31 599 236328",
+  "email": "info@countrygolfees.nl",
+  "website": "https://countrygolfees.nl/",
+  "booking_url": "https://countrygolfees.nl/reserveren/",
+  "founded": null,
+  "architect": null,
+  "landscape": "landelijk, natuurrijk Drents terrein",
+  "facilities": [
+    "18-holes par-3 baan",
+    "overdekte driving range",
+    "putting green",
+    "clubhuis 'Hole 19' met terras",
+    "golfles en beginnerscursus",
+    "HCP-54 traject",
+    "leenclubs",
+    "lockers",
+    "vergaderruimte"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen handicap vereist; beginners krijgen uitleg en leenmateriaal. Officiele handicapronde (CR/slope) mogelijk.",
+  "description_nl": "Country Golf Ees is een laagdrempelige 18-holes par-3 baan in het Drentse dorp Ees, waar ook mensen zonder golfervaring terechtkunnen. De holes variëren van ongeveer 45 tot 112 meter en vragen vooral om een goed kort spel. Met een overdekte driving range, putting green en clubhuis met terras is het een populaire plek voor starters, groepen en recreatieve golfers.",
+  "loops": [
+    {
+      "name": "18 holes par-3 baan",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1394,
+          "course_rating": 47.3,
+          "slope": 64,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1394,
+          "course_rating": 48.9,
+          "slope": 66,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 69,
+            "rood": 69
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 65,
+            "rood": 65
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 46,
+            "rood": 46
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 53,
+            "rood": 53
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 107,
+            "rood": 107
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 103,
+            "rood": 103
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 93,
+            "rood": 93
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 71,
+            "rood": 71
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 107,
+            "rood": 107
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 94,
+            "rood": 94
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 61,
+            "rood": 61
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 59,
+            "rood": 59
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://countrygolfees.nl/baaninformatie/",
+    "files": [
+      "scorecard/Scorekaart-Country-Golf-Ees-1.pdf",
+      "scorecard/hcp-Country-Golf-Ees-18-holes.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart heeft een enkele meterkolom (geel heren / rood dames gebruiken dezelfde lengtes). CR/slope uit NGF-handicaptabel 24-09-2025 (https://countrygolfees.nl/handicaptabel/)."
+  },
+  "sources": [
+    "https://countrygolfees.nl/baaninformatie/",
+    "https://countrygolfees.nl/handicaptabel/",
+    "https://countrygolfees.nl/faciliteiten/",
+    "https://countrygolfees.nl/leer-ons-kennen/",
+    "https://golfkaart.com/api/kaart.json"
+  ]
+}

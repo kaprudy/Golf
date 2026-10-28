@@ -1,0 +1,326 @@
+{
+  "slug": "golfpark-de-hildenberg",
+  "name": "Golfpark De Hildenberg",
+  "club_name": "Golfclub De Hildenberg",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Gruun 3",
+    "postal_code": "8426 NA",
+    "city": "Appelscha",
+    "province": "Friesland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.94229,
+    "lon": 6.35254,
+    "source": "golfkaart"
+  },
+  "distance_km_from_dedemsvaart": 38.6,
+  "phone": "+31 6 57848818",
+  "email": "receptie@golfparkdehildenberg.nl",
+  "website": "https://www.golfparkdehildenberg.nl/",
+  "booking_url": "https://www.chronogolf.co.nl/login#/reservations",
+  "founded": null,
+  "architect": "Alan Rijks (ontwerp nieuwe holes bij uitbreiding; oorspronkelijk ontwerper onbekend)",
+  "landscape": "open, glooiend terrein met waterpartijen, heide en landschapstuin, grenzend aan Nationaal Park Drents-Friese Wold",
+  "facilities": [
+    "driving range (14 overdekte afslagplaatsen)",
+    "putting green",
+    "chipping area met bunker",
+    "9-holes pitch & putt",
+    "golfschool",
+    "brasserie",
+    "golfwinkel",
+    "handicarts/buggy's",
+    "laadpalen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Minimaal baanpermissie en geldige NGF-pas; pitch & putt ook zonder GVB/baanpermissie toegankelijk",
+  "description_nl": "Golfpark aan de rand van het Nationaal Park Drents-Friese Wold bij Appelscha, naast vakantiepark Buitenplaats De Hildenberg. De 9-holes wedstrijdbaan (par 35, twee keer gespeeld par 70) combineert open holes met hoogteverschillen, waterpartijen, bunkers en heide. Daarnaast zijn er een 9-holes pitch & putt-baan en ruime oefenfaciliteiten, waardoor het park ook geschikt is voor beginners.",
+  "loops": [
+    {
+      "name": "9-holes wedstrijdbaan",
+      "holes": 9,
+      "par": 35,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2452,
+          "course_rating": 33.2,
+          "slope": 115,
+          "par": 35
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2180,
+          "course_rating": 31.7,
+          "slope": 110,
+          "par": 35
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 1832,
+          "course_rating": 30.5,
+          "slope": 102,
+          "par": 35
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2452,
+          "course_rating": 35.6,
+          "slope": 126,
+          "par": 35
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2180,
+          "course_rating": 34.3,
+          "slope": 117,
+          "par": 35
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 1832,
+          "course_rating": 31.9,
+          "slope": 106,
+          "par": 35
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 124,
+            "rood": 101,
+            "oranje": 69
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 455,
+            "rood": 401,
+            "oranje": 346
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 237,
+            "rood": 203,
+            "oranje": 159
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 103,
+            "rood": 89,
+            "oranje": 89
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 311,
+            "rood": 277,
+            "oranje": 233
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 337,
+            "rood": 327,
+            "oranje": 267
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "rood": 101,
+            "oranje": 78
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 435,
+            "rood": 395,
+            "oranje": 361
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 321,
+            "rood": 268,
+            "oranje": 230
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pitch & Putt",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "pitch & putt",
+          "color": null,
+          "gender": null,
+          "length_m": 470,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "pitch & putt": 50
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "pitch & putt": 40
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "pitch & putt": 40
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "pitch & putt": 30
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "pitch & putt": 65
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "pitch & putt": 70
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "pitch & putt": 35
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "pitch & putt": 40
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "pitch & putt": 100
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfparkdehildenberg.nl/index.php/golfbaan/baanoverzicht",
+    "files": [
+      "scorecard/scorekaart-2026-p2.jpg",
+      "scorecard/handicaptabellen-heren.pdf",
+      "scorecard/handicaptabellen-dames.pdf",
+      "scorecard/pitch-putt-scorekaart-2026.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 2026: 9 holes, 2x gespeeld voor 18 holes (holes 10-18 = 1-9). SI hier voor de eerste ronde; tweede ronde (holes 10-18): 16,4,12,18,8,2,14,10,6. Tees geel/rood/oranje; 9-holes CR/slope uit handicaptabellen. 18-holes ratings (par 70): heren geel 66.4/115, rood 63.3/110, oranje 61.0/102; dames geel 71.1/126, rood 68.5/117, oranje 63.8/106. Pitch & putt (par 27, 470 m) als aparte lus, zonder rating. Let op: de holelengtes rood op de kaart tellen op tot 2162 m, terwijl de kaart (en Hole19) 2180 m als totaal geeft; holewaarden overgenomen zoals gedrukt (hole 4 rood = 89 m, gelijk aan oranje, is mogelijk een drukfout), tee-lengte = gedrukt totaal 2180."
+  },
+  "sources": [
+    "https://www.golfparkdehildenberg.nl/index.php/golfbaan/baanoverzicht",
+    "https://www.golfparkdehildenberg.nl/index.php/golfbaan",
+    "https://www.golfparkdehildenberg.nl/index.php/gasten/greenfee-tarieven",
+    "https://www.golfparkdehildenberg.nl/index.php/golfbaan/reserveren-starttijd",
+    "https://www.golfparkdehildenberg.nl/index.php/pitch-put",
+    "https://www.golfparkdehildenberg.nl/index.php/golfbaan/oefenfaciliteiten",
+    "https://www.chronogolf.com/club/18475"
+  ]
+}

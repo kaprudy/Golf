@@ -1,0 +1,479 @@
+{
+  "slug": "dutch-golf-hattem",
+  "name": "Dutch Golf Hattem",
+  "club_name": "Dutch Golf Hattem",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Konijnenbergerweg 3",
+    "postal_code": "8051 CC",
+    "city": "Hattem",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.45867,
+    "lon": 6.07199,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 30.6,
+  "phone": "038 444 06 20",
+  "email": "hattem@dutchgolf.nl",
+  "website": "https://www.dutchgolf.nl",
+  "booking_url": "https://www.dutchgolf.nl/golfbaan/",
+  "founded": null,
+  "architect": null,
+  "landscape": null,
+  "facilities": [
+    "driving range (overdekt)",
+    "putting green",
+    "chipping area",
+    "golfshop",
+    "Brasserie De Konijnenberg",
+    "golflessen/clinics"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Baanpermissie of handicap 54 voor de golfbaan; starttijd reserveren (gasten telefonisch)",
+  "description_nl": "Dutch Golf Hattem is een compacte, openbaar toegankelijke 9 holesbaan (qualifying) aan de rand van Hattem met een grote lus (par 30) en een korte par 3-lus. De baan is geschikt voor beginners en voor het trainen van het korte spel. Er zijn een overdekte range, oefengreens en een brasserie.",
+  "loops": [
+    {
+      "name": "Grote/lange lus (9 holes, 2x gespeeld = 18 holes)",
+      "holes": 18,
+      "par": 60,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "course_rating": 55.0,
+          "slope": 91,
+          "length_m": 2672,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "course_rating": 53.9,
+          "slope": 84,
+          "length_m": 2482,
+          "par": 60
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2672,
+          "course_rating": 57.3,
+          "slope": 101,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2482,
+          "course_rating": 56.4,
+          "slope": 93,
+          "par": 60
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 198,
+            "rood": 198
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 270,
+            "rood": 258
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 320,
+            "rood": 275
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 92,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 92,
+            "rood": 92
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 198,
+            "rood": 198
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 270,
+            "rood": 258
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 320,
+            "rood": 275
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 92,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 92,
+            "rood": 92
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 112
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kleine/korte lus (par 3, 9 holes, 2x gespeeld = 18 holes)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "course_rating": 47.5,
+          "slope": 67,
+          "length_m": 1468,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1468,
+          "course_rating": 48.8,
+          "slope": 70,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 74
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 75
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 48
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 55
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 121
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 82
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 92
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 75
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 112
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 74
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 75
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 48
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 55
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 121
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 82
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 92
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 75
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 112
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.dutchgolf.nl/golfbaan/scorekaart/",
+    "files": [
+      "scorecard/Scorekaart-lange-lus.jpg",
+      "scorecard/Scorekaart-korte-lus.jpg",
+      "scorecard/2023-dutch-golf-hattem-grote-lus-heren.pdf",
+      "scorecard/2023-dutch-golf-hattem-grote-lus-dames.pdf",
+      "scorecard/Dutch-golf-hattem-18-holes-kleine-lus-dames-heren.pdf",
+      "scorecard/2023-Dutch-Golf-Hattem-9-holes-Kleine-Lus-Dames-Heren.pdf",
+      "scorecard/Baanoverzicht-Dutch-Golf.pdf",
+      "scorecard/page.html",
+      "scorecard/page-playing-hcp.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Fysiek 9 holes; scorekaarten tonen 18 holes (2x rond, aparte SI). CR/SR uit handicaptabellen 2023 voor 18 holes; 9-holes ratings grote lus: heren geel 27,5/91, rood 27,0/84; dames geel 28,7/101, rood 28,2/93; kleine lus 9 holes: heren rood 23,8/67, dames rood 24,4/70. Provincie: Hattem ligt in Gelderland."
+  },
+  "sources": [
+    "https://www.dutchgolf.nl/golfbaan/scorekaart/",
+    "https://www.dutchgolf.nl/golfbaan/playing-hcp-tabel/",
+    "https://www.dutchgolf.nl/golfbaan/",
+    "https://www.dutchgolf.nl/golfbaan/greenfee/",
+    "https://golfkaart.com/api/kaart.json"
+  ]
+}

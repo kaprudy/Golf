@@ -1,0 +1,284 @@
+{
+  "slug": "golfclub-driene-hengelo",
+  "name": "Golfclub Driene",
+  "club_name": "Golfclub Driene",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Morshoekweg 16",
+    "postal_code": "7552 PE",
+    "city": "Hengelo",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.25208,
+    "lon": 6.82587,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 46.1,
+  "phone": "074-2508466",
+  "email": "info@golfclubdriene.nl",
+  "website": "https://www.golfclubdriene.nl/",
+  "booking_url": null,
+  "founded": 1926,
+  "architect": "G.M. del Court van Krimpen en W.G. Janssen (aanleg H. Copijn & Zn., 1926-1927)",
+  "landscape": "park-/bosbaan in coulisselandschap",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "shortgame baan",
+    "chipping green",
+    "clubhuis/horeca",
+    "golfprofessionals/lessen",
+    "handicarts",
+    "buggy's"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "WHS-handicap 45 of lager vereist; geen vaste starttijden, reserveren via horeca aanbevolen",
+  "description_nl": "Historische 9-holes park- en bosbaan uit 1927 op een landgoed van 31 hectare tussen Hengelo en Enschede. Het oorspronkelijke ontwerp is grotendeels bewaard gebleven; gespeeld over 2x9 holes is het een technische par-72 baan met smalle, door bomen omzoomde holes. Bekend om de fraaie doorkijkjes in het Twentse coulisselandschap.",
+  "loops": [
+    {
+      "name": "Driene Route (2x9 holes)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5446,
+          "course_rating": 69.5,
+          "slope": 124,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5446,
+          "course_rating": 74.8,
+          "slope": 137,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4958,
+          "course_rating": 66.8,
+          "slope": 112,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4958,
+          "course_rating": 71.7,
+          "slope": 134,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 386,
+            "rood": 359
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112,
+            "rood": 104
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 344,
+            "rood": 306
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 412,
+            "rood": 386
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 245,
+            "rood": 230
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 144,
+            "rood": 131
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 424,
+            "rood": 372
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 393,
+            "rood": 366
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 275,
+            "rood": 242
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 373,
+            "rood": 317
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 112,
+            "rood": 104
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 335,
+            "rood": 307
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 412,
+            "rood": 386
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 245,
+            "rood": 234
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 144,
+            "rood": 131
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 372,
+            "rood": 348
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 443,
+            "rood": 393
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 275,
+            "rood": 242
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclubdriene.nl/de-baan",
+    "files": [
+      "scorecard/20250280-Scorekaart_spreads.pdf",
+      "scorecard/Driene-Heren.pdf",
+      "scorecard/Driene-Dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "9-holes baan, gespeeld als 18 holes (holes 10-18 = tweede ronde met andere tees/SI). Par, SI en lengtes uit scorekaart-PDF 2025; CR/SR uit baanhandicaptabellen 30-05-2023 (9-holes: heren geel CR 34,9/SR 125, rood 33,6/111; dames geel 37,5/136, rood 36,0/135)."
+  },
+  "sources": [
+    "https://www.golfclubdriene.nl/de-baan",
+    "https://www.golfclubdriene.nl/hole-informatie",
+    "https://www.golfclubdriene.nl/gasten"
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "slug": "golfclub-prinses-wilhelmina-enschede",
+  "name": "Golfclub Prinses Wilhelmina (PW Golf)",
+  "club_name": "Enschedese Golfclub Prinses Wilhelmina",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Maatmanweg 27",
+    "postal_code": "7522 AN",
+    "city": "Enschede",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.23261,
+    "lon": 6.87657,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 49.8,
+  "phone": "06-26071544",
+  "email": "info@pwgolf.nl",
+  "website": "https://www.pwgolf.nl/",
+  "booking_url": null,
+  "founded": 1986,
+  "architect": "Eschauzier (renovatieplan begin jaren '90)",
+  "landscape": "parkbaan (Het Ledeboer) met beken, vijvers, oude bomen en rododendrons",
+  "facilities": [
+    "driving range (overdekte afslagplaatsen)",
+    "putting green",
+    "oefenbunker",
+    "clubhuis",
+    "golfacademy/lessen",
+    "electrocarts (beperkt)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "WHS-handicap 54 of lager; geen starttijden, inschrijven in greenfeeboek; niet tijdens clubwedstrijden",
+  "description_nl": "Compacte 9-holes baan (par 28) binnen de bebouwde kom van Enschede, gelegen in het parklandschap van Het Ledeboer bij de hockeyvelden. Oude bomen, beekjes, vijvers en rododendrons maken de korte holes verrassend uitdagend. De club ontstond in 1986 vanuit de Country Club Prinses Wilhelmina.",
+  "loops": [
+    {
+      "name": "18 holes (2x9)",
+      "holes": 18,
+      "par": 56,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2719,
+          "course_rating": 54.2,
+          "slope": 85,
+          "par": 56
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2719,
+          "course_rating": 57.0,
+          "slope": 95,
+          "par": 56
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2631,
+          "course_rating": 53.8,
+          "slope": 84,
+          "par": 56
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2631,
+          "course_rating": 56.5,
+          "slope": 94,
+          "par": 56
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 1496,
+          "course_rating": 48.0,
+          "slope": 71,
+          "par": 56
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 1496,
+          "course_rating": 49.6,
+          "slope": 79,
+          "par": 56
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 144,
+            "rood": 144,
+            "oranje": 80
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 276,
+            "rood": 276,
+            "oranje": 155
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 211,
+            "rood": 167,
+            "oranje": 102
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 144,
+            "rood": 144,
+            "oranje": 73
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 78,
+            "rood": 78,
+            "oranje": 78
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 133,
+            "rood": 133,
+            "oranje": 83
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 105,
+            "rood": 105,
+            "oranje": 45
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "rood": 137,
+            "oranje": 71
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134,
+            "rood": 134,
+            "oranje": 61
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 144,
+            "rood": 144,
+            "oranje": 80
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 263,
+            "rood": 263,
+            "oranje": 155
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 211,
+            "rood": 167,
+            "oranje": 102
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 144,
+            "rood": 144,
+            "oranje": 73
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 78,
+            "rood": 78,
+            "oranje": 78
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 133,
+            "rood": 133,
+            "oranje": 83
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 111,
+            "rood": 111,
+            "oranje": 45
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "rood": 137,
+            "oranje": 71
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 136,
+            "oranje": 61
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.pwgolf.nl/baan/Informatie/",
+    "files": [
+      "scorecard/2026-01-01-scorecard.pdf",
+      "scorecard/2026-01-01-18-holes-heren.pdf",
+      "scorecard/2026-01-01-18-holes-dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart per 01-01-2026 (9 holes, 2x gespeeld; par 28/56). Teekleuren van de lengtekolommen (geel/rood/oranje) volgen de volgorde van CR/SR op de kaart en in de handicaptabellen (02-10-2025). SI-toewijzing per hole afgeleid uit PDF-tekstlaag."
+  },
+  "sources": [
+    "https://www.pwgolf.nl/baan/Informatie/",
+    "https://www.pwgolf.nl/gasten/Greenfee-nl/",
+    "https://www.pwgolf.nl/Club/clubinformatie/",
+    "https://www.pwgolf.nl/baan/Overzicht-van-de-holes/"
+  ]
+}

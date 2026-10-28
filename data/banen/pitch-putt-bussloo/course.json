@@ -1,0 +1,360 @@
+{
+  "slug": "pitch-putt-bussloo",
+  "name": "Pitch & Putt Bussloo",
+  "club_name": "Multi Fun Bussloo",
+  "holes_total": 27,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Withagenweg 17",
+    "postal_code": "7384 SB",
+    "city": "Wilp",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2013796,
+    "lon": 6.0919166,
+    "source": "nominatim (Pitch & Putt Bussloo, Withagenweg 17, Wilp)"
+  },
+  "distance_km_from_dedemsvaart": 50.9,
+  "phone": "0571-261212",
+  "email": "info@multifunbussloo.nl",
+  "website": "https://multifunbussloo.nl/outdoor/pitch-en-putt/",
+  "booking_url": "https://portal.nostium.com/reservering/b929bc5qhm1z/multi-fun-bussloo#sc-pitch-putt",
+  "founded": 2005,
+  "architect": null,
+  "landscape": "bosrijk terrein met waterpartijen, heuvels en schuine greens",
+  "facilities": [
+    "clubhuis met horeca en terras",
+    "golfshop (Jumbo Sports)",
+    "pitch & putt-lessen",
+    "minigolf",
+    "voetgolf",
+    "diverse indoor activiteiten"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen handicap of GVB nodig; korte instructie inbegrepen. Op dinsdag (zomer) en ma/di (winter) alleen op reservering.",
+  "description_nl": "Par-3 pitch & putt-baan met 27 holes in de bossen naast de recreatieplas van Bussloo, onderdeel van activiteitencentrum Multi Fun Bussloo. De holes zijn kort maar lastig door water, heuvels en hellende greens. Er speelt een eigen club met zo'n 200 leden en er zijn nationale toernooien zoals de Dutch Open gehouden. Iedereen kan zonder handicap spelen.",
+  "loops": [
+    {
+      "name": "A (holes 1-9)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": null,
+          "length_m": 470,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 54
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 39
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 49
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 68
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 48
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 36
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 77
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 42
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 57
+          }
+        }
+      ]
+    },
+    {
+      "name": "B (holes 10-18)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": null,
+          "length_m": 452,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 54
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 62
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 54
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 38
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 38
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 47
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 56
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 52
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 51
+          }
+        }
+      ]
+    },
+    {
+      "name": "C (holes 19-27)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": null,
+          "length_m": 517,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 19,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 45
+          }
+        },
+        {
+          "hole": 20,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 71
+          }
+        },
+        {
+          "hole": 21,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 62
+          }
+        },
+        {
+          "hole": 22,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 66
+          }
+        },
+        {
+          "hole": 23,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 50
+          }
+        },
+        {
+          "hole": 24,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 60
+          }
+        },
+        {
+          "hole": 25,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 66
+          }
+        },
+        {
+          "hole": 26,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 45
+          }
+        },
+        {
+          "hole": 27,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 52
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfify.io/courses/pitch-putt-golf-bussloo-a-holes-1-9",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/golfify-a-holes-1-9.html",
+      "scorecard/golfify-b-holes-10-18.html",
+      "scorecard/golfify-c-holes-19-27.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen scorekaart op de officiele site (page.html = officiele pitch & putt-pagina). Holedata (par, SI, afstanden) van Golfify per lus A/B/C; Golfify nummert elke lus 1-9, hier doorgenummerd 1-27. Golfify vermeldt de eenheid niet expliciet (vermoedelijk meters). Geen course rating/slope (pitch & putt)."
+  },
+  "sources": [
+    "https://multifunbussloo.nl/outdoor/pitch-en-putt/",
+    "https://multifunbussloo.nl/contact/",
+    "https://multifunbussloo.nl/over-ons/",
+    "https://www.golfify.io/courses/pitch-putt-golf-bussloo-a-holes-1-9",
+    "https://www.golfify.io/courses/pitch-putt-golf-bussloo-b-holes-10-18",
+    "https://www.golfify.io/courses/pitch-putt-golf-bussloo-c-holes-19-27",
+    "https://fippa.org/courses/bussloo_netherlands",
+    "https://golfkaart.com/wilp/pitch-putt-bussloo"
+  ]
+}

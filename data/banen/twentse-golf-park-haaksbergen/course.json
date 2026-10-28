@@ -1,0 +1,253 @@
+{
+  "slug": "twentse-golf-park-haaksbergen",
+  "name": "Twentse Golf Park",
+  "club_name": "Golfclub Twentse Golf Park",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Watermolenweg 1",
+    "postal_code": "7481 VL",
+    "city": "Haaksbergen",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.14042,
+    "lon": 6.72883,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 54.4,
+  "phone": "053-7400142",
+  "email": "info@twentsegolfpark.nl",
+  "website": "https://twentsegolfpark.nl/",
+  "booking_url": "https://twentsegolfpark.nl/aanbod/starttijd-reserveren/",
+  "founded": null,
+  "architect": "Alan Rijks",
+  "landscape": "natuurlijke parkbaan met waterpartijen en bosranden",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "clubhuis",
+    "golfcursussen/clinics"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geldige EGA/WHS-handicappas tonen bij aanmelden; starttijd reserveren verplicht (alleen baanpermissie tegen hoger tarief)",
+  "description_nl": "Qualifying 9-holes par-3 baan in Haaksbergen, ontworpen door Alan Rijks. De holes van 70 tot 140 meter spelen langs vijvers, beekjes en bosschages en vragen vooral een nauwkeurig ijzerspel. Geschikt voor beginners en voor ervaren golfers die hun korte spel willen aanscherpen.",
+  "loops": [
+    {
+      "name": "Par-3 baan (2x9 holes)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1982,
+          "course_rating": 50.2,
+          "slope": 81,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 52.1,
+          "slope": 83,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 70
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 104
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 70
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 104
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://twentsegolfpark.nl/de-golfbaan/hole-informatie/",
+    "files": [
+      "scorecard/Twentse-Golf-Park-Par-3-baan-Dames-Heren.pdf",
+      "scorecard/TGA-Plattegrond-3-1.png",
+      "scorecard/Schermafbeelding-2023-05-25-om-15.08.12-1030x523-2-1024x520.png",
+      "scorecard/TGA-Hole-2-1030x551-2-1024x548.png",
+      "scorecard/TGA-Hole-3-1030x551-2-1024x548.png",
+      "scorecard/TGA-Hole-4-1030x551-2-1024x548.png",
+      "scorecard/TGA-Hole-5-1030x551-2-1024x548.png",
+      "scorecard/TGA-Hole-6-1030x551-2-1024x548.png",
+      "scorecard/TGA-Hole-7-1030x551-2-1024x548.png",
+      "scorecard/TGA-Hole-8-1030x551-2-1024x548.png",
+      "scorecard/TGA-Hole-9-1030x551-2-1024x548.png"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen klassieke scorekaart; par/SI/lengte per hole uit de holekaarten (lengte = afstand tot midden green, met voor-/achterkant green op de kaart). Holekaarten tonen een enkele afslagplaats; CR/SR uit baanhandicaptabel 21-09-2023 (geel heren, rood dames). Aparte lengte voor rode tee niet gepubliceerd."
+  },
+  "sources": [
+    "https://twentsegolfpark.nl/de-golfbaan/",
+    "https://twentsegolfpark.nl/de-golfbaan/hole-informatie/",
+    "https://twentsegolfpark.nl/gasten/",
+    "https://twentsegolfpark.nl/contact/"
+  ]
+}

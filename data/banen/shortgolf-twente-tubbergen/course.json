@@ -1,0 +1,64 @@
+{
+  "slug": "shortgolf-twente-tubbergen",
+  "name": "Shortgolf Twente",
+  "club_name": "Shortgolf Twente",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Tibsweg 2",
+    "postal_code": "7651 KP",
+    "city": "Tubbergen",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.40996,
+    "lon": 6.80609,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 31.6,
+  "phone": "0546-621378",
+  "email": "info@shortgolftwente.nl",
+  "website": "https://shortgolftwente.nl/",
+  "booking_url": "https://shortgolftwente.nl/reserveren",
+  "founded": null,
+  "architect": null,
+  "landscape": "landelijk, groen gebied bij recreatiepark 'n Kaps",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "leenmateriaal",
+    "scootmobiels voor mindervaliden",
+    "golflessen/HCP54-opleiding",
+    "restaurant naast de baan (Troubadour)",
+    "groepsaccommodatie"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen handicap vereist; materiaal te leen",
+  "description_nl": "Laagdrempelige shortgolfbaan aan de rand van Tubbergen bij recreatiepark 'n Kaps, met 9 of 18 holes van maximaal 90 meter. Ideaal om kennis te maken met golf of het korte spel te oefenen; leenmateriaal is bij de prijs inbegrepen. Er zijn ook een driving range, putting green en lessen richting handicap 54.",
+  "loops": [
+    {
+      "name": "Shortgolfbaan",
+      "holes": 18,
+      "par": null,
+      "tees": [],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://shortgolftwente.nl/baaninformatie",
+    "files": [
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen scorekaart gepubliceerd (geen par/SI/lengtes per hole); site vermeldt alleen 9/18 holes met maximaal 90 meter per hole. Niet-qualifying shortgolfbaan."
+  },
+  "sources": [
+    "https://shortgolftwente.nl/baaninformatie",
+    "https://shortgolftwente.nl/shortgolf-twente",
+    "https://shortgolftwente.nl/contact",
+    "https://shortgolftwente.nl/tarieven"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "pitch-putt-lemele",
+  "name": "Pitch & Putt Lemele (De Kleine Esch)",
+  "club_name": "Pitch & Putt Lemele / Golf & Bowlen Lemele (Coöperatie Pitch en Putt U.A.)",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Lage Esweg 5",
+    "postal_code": "8148 RA",
+    "city": "Lemele",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.4533,
+    "lon": 6.41128,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 16.7,
+  "phone": "0572 331 413",
+  "email": "lemele@pitch-putt.nl",
+  "website": "https://pitch-putt.nl/locaties/lemele/",
+  "booking_url": "https://portal.nostium.com/reservering/lpibodtd5fzq/pitch-putt-lemele",
+  "founded": null,
+  "architect": null,
+  "landscape": "glooiend, bosrand (voet van de Lemelerberg)",
+  "facilities": [
+    "pitch & putt 18 holes",
+    "voetgolf 9 holes",
+    "bowling",
+    "biljartgolf",
+    "horeca/buffetten",
+    "vergaderzaal"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen handicap of GVB nodig; recreatieve pitch & putt (materiaal en uitleg inbegrepen)",
+  "description_nl": "Recreatieve pitch & putt-baan van 18 holes aan de voet van de Lemelerberg, bekend als baan De Kleine Esch. De glooiende holes hebben bunkers, beplanting en waterpartijen. De locatie richt zich vooral op groepsuitjes en combineert golf met voetgolf, bowlen en buffetten.",
+  "loops": [
+    {
+      "name": "Pitch & Putt 18 holes",
+      "holes": 18,
+      "par": null,
+      "tees": [],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://pitch-putt.nl/locaties/lemele/lemele-pitchputt/",
+    "files": [
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen gepubliceerde scorekaart gevonden (officiële sites pitch-putt.nl en golfenbowlen.nl tonen alleen 18 holes, geen par/lengtes). Een 18-holes 'Golfclub/Golfbaan Lemelerberg' bestaat niet; de naam verwijst naar deze P&P-baan."
+  },
+  "sources": [
+    "https://pitch-putt.nl/lemele",
+    "https://pitch-putt.nl/locaties/lemele/lemele-pitchputt/",
+    "https://www.golfenbowlen.nl/golf/",
+    "https://golfkaart.com/lemele/pitch-putt-lemele"
+  ]
+}

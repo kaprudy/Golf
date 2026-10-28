@@ -1,0 +1,236 @@
+{
+  "slug": "pitch-putt-doetinchem",
+  "name": "Pitch & Putt Golf Doetinchem",
+  "club_name": "Pitch & Putt Golf Doetinchem",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Liemersweg 99",
+    "postal_code": "7006 GG",
+    "city": "Doetinchem",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.96869,
+    "lon": 6.23673,
+    "source": "golfkaart.com (OSM: 51.9676, 6.2390)"
+  },
+  "distance_km_from_dedemsvaart": 71.9,
+  "phone": "+31 314 364 698",
+  "email": "info@pitch-putt-doetinchem.nl",
+  "website": "https://pitch-putt-doetinchem.nl",
+  "booking_url": "https://pitch-putt-doetinchem.nl/reserveren",
+  "founded": null,
+  "architect": null,
+  "landscape": "Glooiend terrein met hoogteverschillen",
+  "facilities": [
+    "footgolf",
+    "fungolf",
+    "golfschool (golfprofessionals)",
+    "terras en catering",
+    "gratis parkeren"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen handicap nodig; vanaf 10 jaar; 9 of 18 holes; geopend op reservering/aanvraag.",
+  "description_nl": "Pitch & putt-baan aan de rand van Doetinchem waar je kunt kiezen uit 9 of 18 korte holes. De baan heeft opvallende hoogteverschillen en is toegankelijk voor iedereen vanaf 10 jaar, ook zonder golfervaring. Naast pitch & putt zijn er onder meer footgolf, fungolf en cateringmogelijkheden.",
+  "loops": [
+    {
+      "name": "18 holes pitch & putt",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "heren",
+          "color": null,
+          "gender": "men",
+          "length_m": 944,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 50
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 47
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 54
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 55
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 42
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 58
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 35
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 48
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 56
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 60
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 50
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 53
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 60
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 55
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 69
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 51
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 54
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 47
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/pitch-putt-golf-doetinchem",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/official-pitch-putt-golf.html",
+      "scorecard/pitch-putt-nl-doetinchem.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen officiele scorekaart online. Par en lengtes alleen van Hole19 (tee 'men b', totaal 944; Hole19 labelt het totaal als 'yds', eenheid daarom onzeker). Geen SI, geen CR/slope. Hole19 vermeldt een oud adres (Broekhuizerstraat 1a, Wehl); officieel adres Liemersweg 99 Doetinchem. Volgens een review is er ook een 9-holes qualifying-variant met verlengde holes."
+  },
+  "sources": [
+    "https://pitch-putt-doetinchem.nl/pitch-putt-golf/",
+    "https://www.pitch-putt.nl/locaties/doetinchem/",
+    "https://www.hole19golf.com/courses/pitch-putt-golf-doetinchem"
+  ]
+}

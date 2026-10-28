@@ -1,0 +1,234 @@
+{
+  "slug": "pitch-putt-groningen-kardinge",
+  "name": "Pitch & Putt Groningen",
+  "club_name": "Pitch & Putt Golf Groningen",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Bieskemaar 10",
+    "postal_code": "9735 AE",
+    "city": "Groningen",
+    "province": "Groningen",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 53.24095,
+    "lon": 6.5965164,
+    "source": "Nominatim (Bieskemaar 10, Groningen)"
+  },
+  "distance_km_from_dedemsvaart": 71.8,
+  "phone": "050-3080123",
+  "email": "groningen@pitch-putt.nl",
+  "website": "https://pitch-putt.nl/locaties/groningen/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "Recreatiegebied Kardinge, aan de oostrand van de stad",
+  "facilities": [
+    "18 holes pitch & putt (ook 9 holes)",
+    "voetgolf",
+    "adventure minigolf",
+    "voetdarts",
+    "terras en horeca",
+    "golfles (HCP54-cursus)",
+    "leenmateriaal"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen handicap vereist; uitleg en materiaal inbegrepen.",
+  "description_nl": "Pitch & Putt Groningen ligt naast natuurgebied Kardinge aan de oostkant van de stad Groningen. De 18-holes pitch & puttbaan met korte par-3 holes is toegankelijk voor iedereen, zonder handicap. Naast golf zijn er voetgolf, minigolf en een groot terras, en er wordt ook golfles en een HCP54-cursus gegeven.",
+  "loops": [
+    {
+      "name": "Pitch & Putt 18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "back",
+          "color": null,
+          "gender": null,
+          "length_m": 957,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "back": 41
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "back": 64
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "back": 52
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "back": 50
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "back": 47
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "back": 66
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "back": 70
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "back": 54
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "back": 45
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "back": 52
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "back": 50
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "back": 45
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "back": 50
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "back": 64
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "back": 65
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "back": 57
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "back": 30
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "back": 55
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/pitch-putt-golf-groningen",
+    "files": [],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen officiële scorekaart gevonden; hole-data van Hole19 (page.html). Hole19 toont totaal als '957 yds' - eenheid (yards of meters) onzeker. Geen CR/slope (niet-gerate pitch & puttbaan). official.html = locatiepagina pitch-putt.nl."
+  },
+  "sources": [
+    "https://pitch-putt.nl/locaties/groningen/",
+    "https://www.hole19golf.com/courses/pitch-putt-golf-groningen",
+    "https://www.dagjeweg.nl/tip/4984/Pitch%26Putt-Golf-Groningen"
+  ]
+}

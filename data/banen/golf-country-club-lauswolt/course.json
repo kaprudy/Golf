@@ -1,0 +1,385 @@
+{
+  "slug": "golf-country-club-lauswolt",
+  "name": "Golf & Country Club Lauswolt",
+  "club_name": "Golf & Country Club Lauswolt",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Van Harinxmaweg 8-A",
+    "postal_code": "9244 CJ",
+    "city": "Beetsterzwaag",
+    "province": "Friesland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 53.05936,
+    "lon": 6.09126,
+    "source": "golfkaart"
+  },
+  "distance_km_from_dedemsvaart": 56.7,
+  "phone": "+31 512 383 590",
+  "email": "info@golfclublauswolt.nl",
+  "website": "https://golfclublauswolt.nl/",
+  "booking_url": "https://golfclublauswolt.nl/bezoekers/starttijden-en-tarieven/",
+  "founded": 1964,
+  "architect": "Frank Pennink (eerste 9 holes), Donald Steel (uitbreiding naar 18 holes, 1995), Mackenzie & Ebert (update 2016)",
+  "landscape": "bos/parkland met heide en beekdal (Koningsdiep)",
+  "facilities": [
+    "overdekte driving range",
+    "putting green",
+    "oefenfaciliteiten",
+    "golfschool",
+    "clubhuis",
+    "restaurant (Birdy's & Bites)",
+    "handicarts",
+    "hotel Landgoed Lauswolt naast de baan"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "WHS-handicap en digitale NGF-pas (of buitenlandse equivalent) vereist; starttijd aanvragen",
+  "description_nl": "De oudste golfclub van Friesland ligt verscholen in de bossen van landgoed Lauswolt bij Beetsterzwaag. De 18 holes zijn verdeeld over twee lussen van negen door bos, heide en het dal van het Koningsdiep, waar enkele holes langs water lopen. Een technische par-73-baan met smalle bosholes, die na negen holes terugkeert bij het clubhuis.",
+  "loops": [
+    {
+      "name": "18 holes (lus 1 + lus 2)",
+      "holes": 18,
+      "par": 73,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6239,
+          "course_rating": 74.5,
+          "slope": 140,
+          "par": 73
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5895,
+          "course_rating": 72.6,
+          "slope": 130,
+          "par": 73
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5327,
+          "course_rating": 69.9,
+          "slope": 123,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4902,
+          "course_rating": 67.7,
+          "slope": 119,
+          "par": 73
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3971,
+          "course_rating": 63.4,
+          "slope": 110,
+          "par": 73
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5895,
+          "course_rating": 79.0,
+          "slope": 150,
+          "par": 73
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5327,
+          "course_rating": 75.3,
+          "slope": 140,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4902,
+          "course_rating": 72.7,
+          "slope": 123,
+          "par": 73
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3971,
+          "course_rating": 66.8,
+          "slope": 117,
+          "par": 73
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 461,
+            "geel": 429,
+            "blauw": 383,
+            "rood": 356,
+            "oranje": 297
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 170,
+            "geel": 153,
+            "blauw": 136,
+            "rood": 125,
+            "oranje": 117
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 408,
+            "geel": 399,
+            "blauw": 342,
+            "rood": 307,
+            "oranje": 266
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 304,
+            "geel": 286,
+            "blauw": 278,
+            "rood": 245,
+            "oranje": 196
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 500,
+            "geel": 491,
+            "blauw": 426,
+            "rood": 406,
+            "oranje": 325
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 140,
+            "geel": 124,
+            "blauw": 124,
+            "rood": 104,
+            "oranje": 78
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 338,
+            "geel": 325,
+            "blauw": 320,
+            "rood": 276,
+            "oranje": 221
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 372,
+            "geel": 355,
+            "blauw": 308,
+            "rood": 297,
+            "oranje": 240
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 406,
+            "geel": 373,
+            "blauw": 338,
+            "rood": 317,
+            "oranje": 260
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 355,
+            "geel": 341,
+            "blauw": 303,
+            "rood": 285,
+            "oranje": 228
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 173,
+            "geel": 154,
+            "blauw": 145,
+            "rood": 126,
+            "oranje": 95
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 510,
+            "geel": 495,
+            "blauw": 425,
+            "rood": 412,
+            "oranje": 330
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 410,
+            "geel": 376,
+            "blauw": 323,
+            "rood": 300,
+            "oranje": 251
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 471,
+            "geel": 461,
+            "blauw": 409,
+            "rood": 396,
+            "oranje": 310
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 311,
+            "geel": 289,
+            "blauw": 271,
+            "rood": 248,
+            "oranje": 198
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 481,
+            "geel": 444,
+            "blauw": 412,
+            "rood": 361,
+            "oranje": 289
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 145,
+            "geel": 135,
+            "blauw": 125,
+            "rood": 115,
+            "oranje": 89
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 284,
+            "geel": 265,
+            "blauw": 259,
+            "rood": 226,
+            "oranje": 181
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclublauswolt.nl/de-baan/scorekaart-lauswolt/",
+    "files": [
+      "scorecard/2025-Scorekaart-Lauswolt-binnenkant.jpg",
+      "scorecard/Handicaptabellen-Heren-18-en-9-holes.pdf",
+      "scorecard/Handicaptabellen-Dames-18-en-9-holes.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 2025 (binnenkant) met lengtes per tee (wit/geel/blauw/rood/oranje), par en index; één SI-kolom (geen aparte damesindex). CR/slope uit handicaptabellen d.d. 22-07-2025. 9-holes ratings heren: lus 1 (par 36) wit 37.3/139, geel 36.3/130, blauw 34.9/125, rood 33.7/119, oranje 32.0/110; lus 2 (par 37) wit 37.3/140, geel 36.3/131, blauw 35.1/121, rood 34.1/119, oranje 31.5/111. Dames lus 1: geel 39.8/149, blauw 37.6/146, rood 36.1/125, oranje 33.7/115; lus 2: geel 39.3/150, blauw 37.7/134, rood 36.6/122, oranje 33.2/120. Wit heeft geen damesrating."
+  },
+  "sources": [
+    "https://golfclublauswolt.nl/de-baan/scorekaart-lauswolt/",
+    "https://golfclublauswolt.nl/de-baan/handicaptabellen/",
+    "https://golfclublauswolt.nl/de-baan/baanboekje/",
+    "https://golfclublauswolt.nl/bezoekers/starttijden-en-tarieven/",
+    "https://golfclublauswolt.nl/bezoekers/bezoekersregeling-golfers-en-pros/"
+  ]
+}

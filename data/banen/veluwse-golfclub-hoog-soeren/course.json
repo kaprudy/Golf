@@ -1,0 +1,353 @@
+{
+  "slug": "veluwse-golfclub-hoog-soeren",
+  "name": "Veluwse Golfclub",
+  "club_name": "Veluwse Golf Club",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Hoog Soeren 57",
+    "postal_code": "7346 AC",
+    "city": "Hoog Soeren",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2173624,
+    "lon": 5.8710322,
+    "source": "nominatim (clubhuis/restaurant De Witte Juffer, Hoog Soeren 57); golfkaart 52.2187,5.86804"
+  },
+  "phone": "+31 55 519 1275",
+  "email": "office@veluwsegolfclub.nl",
+  "website": "https://veluwsegolfclub.nl/",
+  "booking_url": null,
+  "founded": 1957,
+  "architect": "C.K. (Ken) Cotton (volgens Hole19/GolfPass)",
+  "landscape": "bosbaan (Veluwe, heuvelachtig)",
+  "facilities": [
+    "clubhuis",
+    "restaurant De Witte Juffer",
+    "driving range",
+    "golfpro & shop",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Handicap 54 (GVB) minimaal; geldige NGF-pas; flight van 3-4 spelers max. totaal hcp 90; aanmelden bij office/bar of via reserveren@veluwsegolfclub.nl; dagelijks maximum aantal greenfeespelers",
+  "description_nl": "Een van de oudere clubs van de Veluwe, met een 9-holesbaan midden in de bossen bij Hoog Soeren. Opvallend voor Nederland zijn de flinke hoogteverschillen en golvende fairways. Voor een 18-holesronde wordt de lus tweemaal gespeeld vanaf deels andere afslagen. Greenfeespelers met minimaal handicap 54 zijn welkom, wel geldt een dagelijks maximum.",
+  "loops": [
+    {
+      "name": "9 holes (2x gespeeld, holes 10-18 met andere afslagen)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5668,
+          "course_rating": 70.9,
+          "slope": 136,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5668,
+          "course_rating": 76.9,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5284,
+          "course_rating": 68.8,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5284,
+          "course_rating": 74.7,
+          "slope": 137,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4952,
+          "course_rating": 67.2,
+          "slope": 119,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4952,
+          "course_rating": 72.2,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4260,
+          "course_rating": 64.5,
+          "slope": 109,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4260,
+          "course_rating": 67.9,
+          "slope": 121,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 329,
+            "blauw": 329,
+            "rood": 280,
+            "oranje": 255
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 119,
+            "blauw": 100,
+            "rood": 100,
+            "oranje": 95
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 408,
+            "blauw": 345,
+            "rood": 345,
+            "oranje": 302
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 441,
+            "blauw": 441,
+            "rood": 388,
+            "oranje": 341
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "blauw": 147,
+            "rood": 136,
+            "oranje": 99
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 342,
+            "blauw": 312,
+            "rood": 312,
+            "oranje": 246
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 347,
+            "blauw": 347,
+            "rood": 321,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 293,
+            "blauw": 293,
+            "rood": 244,
+            "oranje": 182
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 413,
+            "blauw": 363,
+            "rood": 363,
+            "oranje": 354
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 350,
+            "blauw": 286,
+            "rood": 286,
+            "oranje": 255
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "blauw": 130,
+            "rood": 109,
+            "oranje": 95
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 408,
+            "blauw": 345,
+            "rood": 345,
+            "oranje": 302
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 435,
+            "blauw": 435,
+            "rood": 388,
+            "oranje": 341
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 106,
+            "blauw": 99,
+            "rood": 99,
+            "oranje": 99
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 319,
+            "blauw": 319,
+            "rood": 296,
+            "oranje": 246
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 374,
+            "blauw": 342,
+            "rood": 342,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 273,
+            "blauw": 273,
+            "rood": 220,
+            "oranje": 182
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 434,
+            "blauw": 378,
+            "rood": 378,
+            "oranje": 354
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://veluwsegolfclub.nl/baan/scorekaart/",
+    "files": [
+      "scorecard/scorekaart-veluwse-golfclub.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Officiele scorekaart april 2026. Fysiek 9 holes; scorekaart toont 18 holes (tweede ronde met deels andere afslaglengtes en eigen SI). CR/slope per tee voor 18 holes van de kaart. page.html kon niet worden opgeslagen: de server weigert curl (HTTP 406); PDF via WebFetch-download verkregen."
+  },
+  "sources": [
+    "https://veluwsegolfclub.nl/baan/scorekaart/",
+    "https://veluwsegolfclub.nl/contact/",
+    "https://veluwsegolfclub.nl/bezoekers/greenfees-en-greenfeereglement/",
+    "https://www.1golf.eu/club/veluwse-golf-club/",
+    "https://www.golfpass.com/travel-advisor/courses/23170-veluwse-golf-club"
+  ],
+  "distance_km_from_dedemsvaart": 58.4
+}

@@ -1,0 +1,384 @@
+{
+  "slug": "noord-nederlandse-glimmen",
+  "name": "Noord-Nederlandse Golf & Country Club",
+  "club_name": "Noord-Nederlandse Golf & Country Club (NNG&CC)",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Pollselaan 5",
+    "postal_code": "9756 CJ",
+    "city": "Glimmen",
+    "province": "Groningen",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 53.12072,
+    "lon": 6.63174,
+    "source": "golfkaart (bevestigd via Nominatim: Pollselaan 5 = 53.1207, 6.6317)"
+  },
+  "distance_km_from_dedemsvaart": 59.0,
+  "phone": "050-4062004",
+  "email": "secretariaat@nngcc.nl",
+  "website": "https://www.nngcc.nl/",
+  "booking_url": null,
+  "founded": 1950,
+  "architect": "Sir Guy Campbell (9 holes, 1954); uitbreiding naar 18 holes door Frank Pennink (1984); later optimalisaties door Donald Steel",
+  "landscape": "Parkbaan/bosbaan op landgoed De Poll (coulisselandschap, beekdal Drentsche Aa)",
+  "facilities": [
+    "18 holes",
+    "driving range",
+    "oefenfaciliteiten",
+    "handicarts",
+    "restaurant/sociëteit De Poll",
+    "golfacademy",
+    "leentrolleys"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Minimaal NGF-baanpermissie; vooraf reserveren via secretariaat (050-4062004).",
+  "description_nl": "De Noord-Nederlandse Golf & Country Club speelt sinds 1954 op het historische landgoed De Poll in Glimmen, tussen Haren en Zuidlaren. De oorspronkelijke negen holes van Sir Guy Campbell werden in 1984 door Frank Pennink tot 18 holes uitgebreid. De baan slingert door houtwallen, bos en langs vijvers en de villa uit 1913 dient als clubhuis.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 5989,
+          "course_rating": 72.4,
+          "slope": 136,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5633,
+          "course_rating": 70.8,
+          "slope": 133,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5265,
+          "course_rating": 69.1,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4984,
+          "course_rating": 67.6,
+          "slope": 122,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3990,
+          "course_rating": 63.2,
+          "slope": 106,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5633,
+          "course_rating": 76.8,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5265,
+          "course_rating": 74.5,
+          "slope": 133,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4984,
+          "course_rating": 72.6,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3990,
+          "course_rating": 65.7,
+          "slope": 110,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 360,
+            "geel": 347,
+            "blauw": 326,
+            "rood": 304,
+            "oranje": 255
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 470,
+            "geel": 448,
+            "blauw": 428,
+            "rood": 375,
+            "oranje": 301
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 290,
+            "geel": 265,
+            "blauw": 225,
+            "rood": 225,
+            "oranje": 154
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 130,
+            "geel": 124,
+            "blauw": 124,
+            "rood": 112,
+            "oranje": 104
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 316,
+            "geel": 286,
+            "blauw": 259,
+            "rood": 259,
+            "oranje": 203
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 285,
+            "geel": 276,
+            "blauw": 276,
+            "rood": 239,
+            "oranje": 182
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 384,
+            "geel": 366,
+            "blauw": 322,
+            "rood": 322,
+            "oranje": 267
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 467,
+            "geel": 432,
+            "blauw": 432,
+            "rood": 408,
+            "oranje": 310
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 139,
+            "geel": 139,
+            "blauw": 130,
+            "rood": 122,
+            "oranje": 104
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 304,
+            "geel": 285,
+            "blauw": 265,
+            "rood": 260,
+            "oranje": 195
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 560,
+            "geel": 498,
+            "blauw": 425,
+            "rood": 425,
+            "oranje": 344
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 190,
+            "geel": 171,
+            "blauw": 157,
+            "rood": 143,
+            "oranje": 132
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 495,
+            "geel": 477,
+            "blauw": 466,
+            "rood": 420,
+            "oranje": 329
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 409,
+            "geel": 389,
+            "blauw": 354,
+            "rood": 338,
+            "oranje": 293
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 375,
+            "geel": 350,
+            "blauw": 316,
+            "rood": 316,
+            "oranje": 272
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 320,
+            "geel": 310,
+            "blauw": 290,
+            "rood": 290,
+            "oranje": 229
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 160,
+            "geel": 150,
+            "blauw": 150,
+            "rood": 140,
+            "oranje": 102
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 335,
+            "geel": 320,
+            "blauw": 320,
+            "rood": 286,
+            "oranje": 214
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.nngcc.nl/baan/holes",
+    "files": [
+      "scorecard/scorekaart-nngcc.png",
+      "scorecard/hcp-heren-2021.pdf",
+      "scorecard/hcp-dames-2021.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart (PNG via https://www.nngcc.nl/download/type/document/id/2) en per-hole pagina's /baan/hole-1..18 komen overeen. Gedrukte subtotalen op de scorekaart wijken deels af van de som van de (op kaart en hole-pagina's identieke) holelengtes: wit OUT 2823 vs som 2841 (totaal 5971 vs 5989), blauw IN 2768 vs 2743 (5290 vs 5265), rood IN 2624 vs 2618 (4980 vs 4984), oranje 1825/2062 vs 1880/2110 (3887 vs 3990). Tee-totalen hier = som van holes. CR/slope uit baanhandicaptabellen d.d. 09-09-2021. Eén SI-kolom."
+  },
+  "sources": [
+    "https://www.nngcc.nl/baan/holes",
+    "https://www.nngcc.nl/baan/hole-1",
+    "https://www.nngcc.nl/baan/playing-handicap-tabellen",
+    "https://www.nngcc.nl/club/historie",
+    "https://www.nngcc.nl/club/arrangementen"
+  ]
+}

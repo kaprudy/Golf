@@ -1,0 +1,397 @@
+{
+  "slug": "leeuwarder-golfclub-de-groene-ster",
+  "name": "Leeuwarder Golfclub De Groene Ster",
+  "club_name": "Leeuwarder Golfclub",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Woelwijk 101",
+    "postal_code": "8926 XD",
+    "city": "Leeuwarden",
+    "province": "Friesland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 53.21001,
+    "lon": 5.8913,
+    "source": "golfkaart (opgegeven referentie)"
+  },
+  "distance_km_from_dedemsvaart": 77.7,
+  "phone": "0511 432299",
+  "email": "info@leeuwardergolfclub.nl",
+  "website": "https://www.leeuwardergolfclub.nl/",
+  "booking_url": "https://www.leeuwardergolfclub.nl/greenfees/",
+  "founded": 1988,
+  "architect": "Gerard Jol",
+  "landscape": "waterrijke parkbaan in recreatiegebied De Groene Ster",
+  "facilities": [
+    "clubhuis",
+    "restaurant",
+    "terras",
+    "deels overdekte driving range (gratis ballen bij greenfee)",
+    "oefenbunker",
+    "pitching- en chippinggreen",
+    "putting green",
+    "par-3 oefenbaan (5 holes)",
+    "golfshop",
+    "golflessen",
+    "lockerverhuur",
+    "handicarts",
+    "2 laadpalen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "18-holes baan: minimaal clubhandicap 54. Par-3 baan: aantoonbaar baanpermissie.",
+  "description_nl": "Achttien holes tellende baan van Gerard Jol aan de oostkant van Leeuwarden, ingebed in het natuur- en recreatiegebied De Groene Ster. Sloten en vijvers liggen op vrijwel elke hole in het spel, waardoor strategisch spel en goede clubkeuze belangrijk zijn. De baan is 6188 meter lang vanaf wit (par 72). Daarnaast zijn er een 5-holes par-3 oefenbaan en uitgebreide oefenfaciliteiten.",
+  "loops": [
+    {
+      "name": "18 holes (West 1-9 + Oost 10-18)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6188,
+          "course_rating": 73.8,
+          "slope": 147,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5890,
+          "course_rating": 72.5,
+          "slope": 137,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5287,
+          "course_rating": 69.1,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4989,
+          "course_rating": 67.8,
+          "slope": 121,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4181,
+          "course_rating": 65.0,
+          "slope": 109,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5890,
+          "course_rating": 78.7,
+          "slope": 144,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5287,
+          "course_rating": 75.0,
+          "slope": 139,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4989,
+          "course_rating": 73.4,
+          "slope": 135,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4181,
+          "course_rating": 68.3,
+          "slope": 115,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 481,
+            "geel": 455,
+            "blauw": 385,
+            "rood": 381,
+            "oranje": 316
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 313,
+            "geel": 289,
+            "blauw": 252,
+            "rood": 246,
+            "oranje": 213
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 198,
+            "geel": 186,
+            "blauw": 177,
+            "rood": 156,
+            "oranje": 136
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 396,
+            "geel": 383,
+            "blauw": 328,
+            "rood": 322,
+            "oranje": 274
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 459,
+            "geel": 451,
+            "blauw": 378,
+            "rood": 372,
+            "oranje": 310
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 145,
+            "geel": 127,
+            "blauw": 118,
+            "rood": 112,
+            "oranje": 104
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 336,
+            "geel": 319,
+            "blauw": 271,
+            "rood": 264,
+            "oranje": 224
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 395,
+            "geel": 379,
+            "blauw": 371,
+            "rood": 326,
+            "oranje": 270
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 464,
+            "geel": 449,
+            "blauw": 377,
+            "rood": 372,
+            "oranje": 322
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 514,
+            "geel": 494,
+            "blauw": 415,
+            "rood": 402,
+            "oranje": 360
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 348,
+            "geel": 334,
+            "blauw": 328,
+            "rood": 302,
+            "oranje": 242
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 326,
+            "geel": 317,
+            "blauw": 299,
+            "rood": 293,
+            "oranje": 240
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 371,
+            "geel": 336,
+            "blauw": 335,
+            "rood": 270,
+            "oranje": 230
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 141,
+            "geel": 136,
+            "blauw": 116,
+            "rood": 113,
+            "oranje": 80
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 357,
+            "geel": 343,
+            "blauw": 296,
+            "rood": 288,
+            "oranje": 236
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 181,
+            "geel": 167,
+            "blauw": 167,
+            "rood": 148,
+            "oranje": 103
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 364,
+            "geel": 344,
+            "blauw": 337,
+            "rood": 301,
+            "oranje": 250
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 399,
+            "geel": 381,
+            "blauw": 337,
+            "rood": 321,
+            "oranje": 271
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.leeuwardergolfclub.nl/de-baan-2/de-baan/handicaptabel-en-scorekaart/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/scorekaart-2025.pdf",
+      "scorecard/whs-tabel-heren.pdf",
+      "scorecard/whs-tabel-dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Officiele scorekaart 2025 (PDF) + WHS-tabellen heren/dames (CR/slope 18 holes). Een SI voor de dames staat niet apart op de kaart (een gezamenlijke s.i.-rij). 9-holes CR/slope heren West(1-9, par 37): wit 37,4/146, geel 36,8/133, blauw 34,7/121, rood 34,4/117, oranje 32,8/109; Oost(10-18, par 35): wit 36,5/147, geel 35,7/140, blauw 34,5/138, rood 33,5/125, oranje 32,3/109. Dames West: geel 39,8/148, blauw 37,5/143, rood 37,2/139, oranje 34,9/114; Oost: geel 38,9/140, blauw 37,6/135, rood 36,3/131, oranje 33,4/116. De 5-holes par-3 oefenbaan heeft geen eigen gepubliceerde scorekaart (alleen beschrijving; Hole19 noemt 5 holes, ca. 499 yds) en is daarom niet als extra loop opgenomen. Oprichtingsjaar 1988 alleen uit derde-partijbron (golfgids), niet officieel bevestigd. De baanpagina noemt nog 'slope 142' (verouderd)."
+  },
+  "sources": [
+    "https://www.leeuwardergolfclub.nl/",
+    "https://www.leeuwardergolfclub.nl/de-baan-2/de-baan/",
+    "https://www.leeuwardergolfclub.nl/de-baan-2/de-baan/handicaptabel-en-scorekaart/",
+    "https://www.leeuwardergolfclub.nl/app/uploads/2024/12/Website-scorecard-2025-1.pdf",
+    "https://www.leeuwardergolfclub.nl/app/uploads/2024/12/Groene-Ster-WHS-tabel-Heren-1.pdf",
+    "https://www.leeuwardergolfclub.nl/app/uploads/2024/12/Groene-Ster-WHS-tabel-Dames-1.pdf",
+    "https://www.leeuwardergolfclub.nl/de-baan-2/de-baan/par-3-oefenbaan/",
+    "https://www.leeuwardergolfclub.nl/greenfees/",
+    "https://www.leeuwardergolfclub.nl/contact/",
+    "https://visitleeuwarden.com/en/locations/734769020/leeuwarder-golfclub-de-groene-ster",
+    "https://www.hole19golf.com/courses/leeuwarder-golfclub-de-groene-ster-par-3"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "slug": "pitch-putt-golf-koudum",
+  "name": "Pitch & Putt Golf Koudum",
+  "club_name": "Pitch & Putt Golf Koudum",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Nieuweweg 42",
+    "postal_code": "8723 EB",
+    "city": "Koudum",
+    "province": "Friesland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.91984,
+    "lon": 5.46076,
+    "source": "golfkaart (opgegeven referentie)"
+  },
+  "distance_km_from_dedemsvaart": 76.0,
+  "phone": "0514 522246",
+  "email": "koudum@pitch-putt.nl",
+  "website": "https://www.pitch-putt.nl/locaties/koudum/",
+  "booking_url": "https://www.pitch-putt.nl/locaties/koudum/koudum-pitch-putt-golf/",
+  "founded": null,
+  "architect": null,
+  "landscape": null,
+  "facilities": [
+    "clubhuis",
+    "terras",
+    "horeca",
+    "materiaalverhuur (clubs, ballen, scorekaarten)",
+    "footgolf",
+    "vergaderruimte",
+    "groepsarrangementen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen golfervaring of handicap nodig; geschikt vanaf 8 jaar. Korte instructie inbegrepen.",
+  "description_nl": "Pitch & putt-baan van 18 korte par-3 holes in Koudum, onderdeel van de Cooperatie Pitch en Putt. Iedereen kan hier zonder golfervaring spelen; materiaal en een korte uitleg zijn bij de prijs inbegrepen. Er kan ook een halve ronde van 9 holes worden gespeeld. Naast golf zijn er footgolf, groepsuitjes en een clubhuis met terras.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": null,
+          "length_m": null,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": null
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/pitch-putt-golf-koudum",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/hole19-scorecard.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen scorekaart op de officiele site (pitch-putt.nl). Hole19 geeft 18 holes, alle par 3 (par 54), geen stroke index en geen CR/slope. Hole19-lengtes (eenheid onduidelijk, getoond als yds; tee-naam 'distance', totaal 1008): 50, 43, 58, 56, 55, 54, 57, 55, 78, 46, 48, 60, 62, 60, 44, 68, 48, 66 - niet als meters overgenomen. Oprichtingsjaar en architect onbekend."
+  },
+  "sources": [
+    "https://www.pitch-putt.nl/locaties/koudum/",
+    "https://www.pitch-putt.nl/locaties/koudum/koudum-pitch-putt-golf/",
+    "https://www.hole19golf.com/courses/pitch-putt-golf-koudum",
+    "https://www.kuilart.nl/en/surroundings/sights/pitchputt-koudum/"
+  ]
+}

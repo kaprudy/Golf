@@ -1,0 +1,281 @@
+{
+  "slug": "euregio-bad-bentheim",
+  "name": "Golfclub Euregio Bad Bentheim",
+  "club_name": "Golfclub Euregio Bad Bentheim e.V.",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Am Hauptdiek 8",
+    "postal_code": "48455",
+    "city": "Bad Bentheim",
+    "province": "Niedersachsen",
+    "country": "DE"
+  },
+  "gps": {
+    "lat": 52.2755,
+    "lon": 7.153,
+    "source": "nominatim (Am Hauptdiek 8, Bad Bentheim)"
+  },
+  "distance_km_from_dedemsvaart": 59.3,
+  "phone": "+49 5922 9044310",
+  "email": "info@golfclub-euregio.de",
+  "website": "https://www.golfclub-euregio.de/",
+  "booking_url": "https://www.pccaddie.net/clubs/0493312/app.php?cat=tt_timetable_course",
+  "founded": 1987,
+  "architect": null,
+  "landscape": "bosrijk, met water, natte heide en biotopen",
+  "facilities": [
+    "driving range",
+    "3 oefenholes (kurzbahnen)",
+    "pitching area",
+    "clubhuis",
+    "restaurant",
+    "service-pavillon (proshop)",
+    "golfschool",
+    "golfcarts",
+    "halfway house",
+    "e-bike laadstation"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Lidmaatschapskaart met handicap-index (HCPI) en thuisclub; in het weekend/op feestdagen max. stamvorgabe 108 per flight; starttijd reserveren via service-pavillon",
+  "description_nl": "Bosrijke 18-holesbaan (par 72) ten zuiden van Bad Bentheim, vlak bij de Nederlandse grens. De banen lopen door oud bos, langs natte heide en vijvers, met veel waterhindernissen en doglegs. Naast de hoofdbaan zijn er een driving range en drie korte oefenholes. De club bestaat sinds 1987; de eerste negen holes openden in 1989 en de volledige 18 holes in 1994.",
+  "loops": [
+    {
+      "name": "18 holes (A 1-9 + B 10-18)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "gelb",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5780,
+          "course_rating": 70.8,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5011,
+          "course_rating": 66.6,
+          "slope": 115,
+          "par": 68
+        },
+        {
+          "name": "rot",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5011,
+          "course_rating": 71.9,
+          "slope": 126,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 441,
+            "rot": 370
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 331,
+            "rot": 268
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 173,
+            "rot": 147
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 301,
+            "rot": 264
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 130,
+            "rot": 115
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 299,
+            "rot": 264
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 300,
+            "rot": 256
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 395,
+            "rot": 348
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 487,
+            "rot": 424
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 456,
+            "rot": 385
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 375,
+            "rot": 328
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 473,
+            "rot": 413
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 154,
+            "rot": 154
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 304,
+            "rot": 261
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 169,
+            "rot": 150
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 489,
+            "rot": 428
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 178,
+            "rot": 151
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "gelb": 325,
+            "rot": 285
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclub-euregio.de/download-center/",
+    "files": [
+      "scorecard/Birdie_Book_NEU_fur_Homepage_2025.pdf",
+      "scorecard/GC_Euregio_Course_Handicaps_Platz_AB_1-18.pdf",
+      "scorecard/GC_Euregio_Course_Handicaps_Platz_A_1-9.pdf",
+      "scorecard/GC_Euregio_Course_Handicaps_Platz_B_10-18.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Holelengtes/par uit Birdie Book 2025 (p.7 'Platzübersicht'), HCP per hole uit de holepagina's (p.11-28). CR/slope uit Course-Handicap-tabellen 05/2025. Herren rot is par 68 (Damen rot par 72). 9-holes ratings: Platz A (1-9) Herren gelb 35,2/125 par 36, Herren rot 33,0/111 par 35, Damen rot 35,6/128 par 36; Platz B (10-18) Herren gelb 35,6/134 par 36, Herren rot 33,6/118 par 33, Damen rot 36,3/124 par 36. Geen aparte scorekaart-PDF op de site; het Birdie Book bevat de scorekaartgegevens."
+  },
+  "sources": [
+    "https://www.golfclub-euregio.de/golf-spielen/",
+    "https://www.golfclub-euregio.de/download-center/",
+    "https://www.golfclub-euregio.de/greenfee-euregio/",
+    "https://www.golfclub-euregio.de/historie-und-chronik/",
+    "https://www.golfclub-euregio.de/kontakt/"
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "slug": "golfpark-sint-nyk",
+  "name": "Golfpark Sint Nyk",
+  "club_name": "Hollandsche Golfclub (voorheen BurgGolf Sint Nyk)",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Legemeersterweg 16-18",
+    "postal_code": "8527 DS",
+    "city": "Legemeer (Sint Nicolaasga)",
+    "province": "Friesland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.93942,
+    "lon": 5.72967,
+    "source": "golfkaart"
+  },
+  "distance_km_from_dedemsvaart": 61.9,
+  "phone": "+31 513 498 032",
+  "email": "info@golfparksintnyk.nl",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/sint-nyk/",
+  "booking_url": "https://www.hollandschegolfclub.nl/golfpark/sint-nyk/boek-een-starttijd-golfpark-sint-nyk/",
+  "founded": 2001,
+  "architect": "Alan Rijks, Paul Rolin",
+  "landscape": "open Fries weidelandschap met bosranden, bomenrijen en waterpartijen",
+  "facilities": [
+    "driving range",
+    "golfschool",
+    "brasserie",
+    "handicarts",
+    "schuilhut"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Handicap 54 of baanpermissie (afgegeven door de Hollandsche Golfclub)",
+  "description_nl": "Openbaar golfpark aan de rand van Sint Nicolaasga, tegenwoordig onderdeel van de Hollandsche Golfclub (voorheen BurgGolf). De 18 holes bestaan uit een gele en een rode lus van elk negen holes, die ook los te spelen zijn. Open weidse holes wisselen af met bomenrijen, waterhindernissen en doglegs, in een laagdrempelige en gastvrije sfeer.",
+  "loops": [
+    {
+      "name": "18 holes (gele lus + rode lus)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6038,
+          "course_rating": 72.7,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5765,
+          "course_rating": 71.2,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5185,
+          "course_rating": 67.9,
+          "slope": 121,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4993,
+          "course_rating": 67.1,
+          "slope": 116,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4147,
+          "course_rating": 63.8,
+          "slope": 105,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5765,
+          "course_rating": 77.6,
+          "slope": 136,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5185,
+          "course_rating": 73.5,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4993,
+          "course_rating": 72.2,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4147,
+          "course_rating": 67.5,
+          "slope": 110,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 331,
+            "geel": 320,
+            "blauw": 291,
+            "rood": 281,
+            "oranje": 224
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 168,
+            "geel": 154,
+            "blauw": 142,
+            "rood": 142,
+            "oranje": 125
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 347,
+            "geel": 341,
+            "blauw": 301,
+            "rood": 292,
+            "oranje": 261
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 389,
+            "geel": 376,
+            "blauw": 333,
+            "rood": 325,
+            "oranje": 281
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 357,
+            "geel": 350,
+            "blauw": 305,
+            "rood": 296,
+            "oranje": 242
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 460,
+            "geel": 439,
+            "blauw": 390,
+            "rood": 386,
+            "oranje": 338
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 474,
+            "geel": 443,
+            "blauw": 393,
+            "rood": 380,
+            "oranje": 341
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 150,
+            "geel": 140,
+            "blauw": 113,
+            "rood": 113,
+            "oranje": 74
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 323,
+            "geel": 314,
+            "blauw": 276,
+            "rood": 269,
+            "oranje": 215
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 131,
+            "geel": 121,
+            "blauw": 115,
+            "rood": 110,
+            "oranje": 82
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 463,
+            "geel": 450,
+            "blauw": 402,
+            "rood": 386,
+            "oranje": 329
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 372,
+            "geel": 360,
+            "blauw": 337,
+            "rood": 323,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 291,
+            "geel": 280,
+            "blauw": 262,
+            "rood": 249,
+            "oranje": 174
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 340,
+            "geel": 325,
+            "blauw": 300,
+            "rood": 289,
+            "oranje": 235
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 408,
+            "geel": 385,
+            "blauw": 344,
+            "rood": 331,
+            "oranje": 277
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 149,
+            "geel": 140,
+            "blauw": 126,
+            "rood": 113,
+            "oranje": 103
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 345,
+            "geel": 339,
+            "blauw": 313,
+            "rood": 303,
+            "oranje": 241
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 540,
+            "geel": 488,
+            "blauw": 442,
+            "rood": 405,
+            "oranje": 349
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hollandschegolfclub.nl/golfpark/sint-nyk/course/18-holes-baan-sint-nyk/",
+    "files": [
+      "scorecard/NYK-18-HOLES-SEP-2026-web.pdf",
+      "scorecard/Golfpark-Sint-Nyk-handicaptabellen.pdf",
+      "scorecard/SintNyk_Baanboekje_2026.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart sep-2026: 5 lengtekolommen zonder tekstlabel; teekleuren wit/geel/blauw/rood/oranje toegekend op aflopende lengte, consistent met volgorde en CR-waarden in de handicaptabellen (06-03-2025), niet visueel geverifieerd. Gele lus = holes 1-9, rode lus = holes 10-18. 9-holes ratings heren: gele lus wit 36.2/134, geel 35.6/133, blauw 33.8/118, rood 33.6/114, oranje 32.0/105; rode lus wit 36.5/129, geel 35.6/126, blauw 34.1/124, rood 33.6/118, oranje 31.8/106. Dames gele lus: geel 38.7/135, blauw 36.5/128, rood 36.1/126, oranje 34.1/111; rode lus: geel 38.9/136, blauw 37.1/134, rood 36.1/129, oranje 33.5/110. Oprichtingsjaar 2001 en architecten volgens 1golf.eu (derde partij)."
+  },
+  "sources": [
+    "https://www.hollandschegolfclub.nl/golfpark/sint-nyk/course/18-holes-baan-sint-nyk/",
+    "https://www.hollandschegolfclub.nl/golfpark/sint-nyk/",
+    "https://www.1golf.eu/club/golfpark-sint-nyk/"
+  ]
+}

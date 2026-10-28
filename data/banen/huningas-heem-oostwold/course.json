@@ -1,0 +1,231 @@
+{
+  "slug": "huningas-heem-oostwold",
+  "name": "Huninga's Heem Pitch & Putt",
+  "club_name": "Huninga's Heem",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Huningaweg 7",
+    "postal_code": "9682 PA",
+    "city": "Oostwold",
+    "province": "Groningen",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 53.2016165,
+    "lon": 7.0328841,
+    "source": "Nominatim (Huninga's Heem, Huningaweg 7)"
+  },
+  "distance_km_from_dedemsvaart": 77.1,
+  "phone": "0597-552221",
+  "email": "info@huningasheem.nl",
+  "website": "https://sites.google.com/view/huningas-heem/homepage",
+  "booking_url": null,
+  "founded": 2002,
+  "architect": null,
+  "landscape": "Pitch & puttbaan in een slingertuin bij een Oldambtster boerderij, met zicht op het Oldambtmeer",
+  "facilities": [
+    "18 holes pitch & putt (ook 9 holes)",
+    "eetcafé met terras",
+    "groepsarrangementen",
+    "leenmateriaal en instructie"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen handicap vereist; minimumleeftijd 8 jaar; reserveren via contactformulier.",
+  "description_nl": "Huninga's Heem ligt op de grens van Midwolda en Oostwold en opende in 2002 een 18-holes pitch & puttbaan van circa twee hectare. De baan is aangelegd als Engelse slingertuin naast een boerderij uit 1890, met uitzicht over het Oldambtmeer. Iedereen vanaf 8 jaar kan spelen; materiaal en instructie zijn inbegrepen en er is een eetcafé.",
+  "loops": [
+    {
+      "name": "Pitch & Putt 18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "meters",
+          "color": null,
+          "gender": null,
+          "length_m": 855,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 27
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 47
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 49
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 59
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 70
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 36
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 59
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 40
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 61
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 30
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 42
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 31
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 60
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 55
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 59
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 48
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 35
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 47
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/pitch-putt-golf-oostwold",
+    "files": [],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen officiële scorekaart; hole-data van Hole19 (page.html), afslag daar 'meters' genoemd (totaal 855) maar Hole19 labelt totaal als yds. Geen CR/slope. official.html = pitch & putt-pagina van de eigen site."
+  },
+  "sources": [
+    "https://sites.google.com/view/huningas-heem/pitch-putt",
+    "https://sites.google.com/view/huningas-heem/homepage",
+    "https://www.hole19golf.com/courses/pitch-putt-golf-oostwold"
+  ]
+}

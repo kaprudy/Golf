@@ -1,0 +1,505 @@
+{
+  "slug": "golfclub-emmeloord",
+  "name": "Golfclub Emmeloord",
+  "club_name": "Golfclub Emmeloord",
+  "holes_total": 18,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Casteleynsweg 6",
+    "postal_code": "8305 AN",
+    "city": "Emmeloord",
+    "province": "Flevoland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.73947,
+    "lon": 5.78077,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 48.3,
+  "phone": "+31 527 621 477",
+  "email": "info@golfclub-emmeloord.nl",
+  "website": "https://golfclub-emmeloord.nl/",
+  "booking_url": "https://emmeloord.teecontrol.com/",
+  "founded": 2003,
+  "architect": null,
+  "landscape": "links (polder, terp)",
+  "facilities": [
+    "clubhuis",
+    "terras",
+    "driving range",
+    "oefenfaciliteiten",
+    "golfschool",
+    "golfshop",
+    "trolleyverhuur",
+    "huur golfset",
+    "handicarts",
+    "par-3 baan"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Suydersee: ma-do minimaal handicap 54, vr-zo minimaal handicap 48; gezamenlijke flight-handicap max. 144. Pionier (par-3): minimaal baanpermissie. Starttijd reserveren via TeeControl.",
+  "description_nl": "Verenigingsbaan in de Noordoostpolder, gerund door vrijwilligers. De Suydersee-baan (2012) ligt deels op een kunstmatige terp van circa 20 meter hoog, waardoor wind, hoogteverschil en blinde greens het spel bepalen; de negen holes worden met wisselende afslagplaatsen als 18 holes par 72 gespeeld. Daarnaast ligt naast het boerderij-clubhuis de 9-holes par-3 baan Pionier, de oorspronkelijke baan uit 2003.",
+  "loops": [
+    {
+      "name": "Suydersee",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 5999,
+          "course_rating": 72.7,
+          "slope": 140,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5673,
+          "course_rating": 70.9,
+          "slope": 138,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5673,
+          "course_rating": 77.4,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4780,
+          "course_rating": 65.8,
+          "slope": 125,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4780,
+          "course_rating": 70.9,
+          "slope": 131,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 272,
+            "geel": 261,
+            "rood": 220
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 498,
+            "geel": 479,
+            "rood": 400
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 404,
+            "geel": 339,
+            "rood": 270
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 186,
+            "geel": 166,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 289,
+            "geel": 289,
+            "rood": 239
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 141,
+            "geel": 141,
+            "rood": 124
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 375,
+            "geel": 365,
+            "rood": 302
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 358,
+            "geel": 331,
+            "rood": 277
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 492,
+            "geel": 465,
+            "rood": 394
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 272,
+            "geel": 261,
+            "rood": 220
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 498,
+            "geel": 479,
+            "rood": 400
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 437,
+            "geel": 404,
+            "rood": 345
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 186,
+            "geel": 139,
+            "rood": 127
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 289,
+            "geel": 289,
+            "rood": 239
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 274,
+            "geel": 274,
+            "rood": 236
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 375,
+            "geel": 365,
+            "rood": 302
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 161,
+            "geel": 161,
+            "rood": 149
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 492,
+            "geel": 465,
+            "rood": 394
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pionier (par 3)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1544,
+          "course_rating": 48.3,
+          "slope": 60,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 49.4,
+          "slope": 64,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 83
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 68
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 93
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 79
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 79
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 66
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 67
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 83
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 68
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 93
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 79
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 79
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 66
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 67
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclub-emmeloord.nl/de-golfbanen/",
+    "files": [
+      "scorecard/GCE-Scorekaart.pdf",
+      "scorecard/Emmeloord-WHS-tabel-Heren-2021-Suydersee.pdf",
+      "scorecard/Emmeloord-WHS-tabel-Dames-2021-Suydersee.pdf",
+      "scorecard/Emmeloord-WHS-tabel-Pionier-2021.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Suydersee is fysiek 9 holes met afwijkende tees op holes 3/12, 4/13, 6/15 en 8/17 (6/15 en 8/17 wisselen ook van par); scorekaart toont 18 holes. CR/slope uit WHS-baanhandicaptabellen d.d. 06-01-2021. Scorekaart heeft één SI-kolom (geen aparte damesindex). Pionier is 9 holes par 27, op de kaart als 18 holes par 54; de kaart toont één lengtekolom (hier onder 'geel' gezet), CR/slope geel heren / rood dames, rode lengte niet apart gepubliceerd. 1golf.eu noemt Gerard Jol als architect (niet officieel bevestigd)."
+  },
+  "sources": [
+    "https://golfclub-emmeloord.nl/de-golfbanen/",
+    "https://golfclub-emmeloord.nl/tarieven/",
+    "https://golfclub-emmeloord.nl/wp-content/uploads/2026/03/GCE-Scorekaart.pdf",
+    "https://golfkaart.com/api/kaart.json"
+  ]
+}
