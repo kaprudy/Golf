@@ -1,0 +1,3 @@
+https://www.golfparcsandur.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfparcsandur.nl%2Fgolfparc-sandur%2Fbaan-layout%2F
+
+{"version":"1.0","provider_name":"Golfparc Sandur","provider_url":"https:\/\/www.golfparcsandur.nl","author_name":"Webmaster Golfparc Sandur","author_url":"https:\/\/www.golfparcsandur.nl\/author\/met_golfparcsandur\/","title":"Baan layout","type":"rich","width":600,"height":338,"html":" Baan layout \n\/* *\/\n \n"}

@@ -1,0 +1,91 @@
+Datum/tijd                                       SCORE                                    STROKE                       SPELER                                      MARKER
+                                                                                            PLAY
+Wedstrijd                                                                  STABLEFORD
+
+Spelvorm                                         Kleur teebox
+
+Speler                                           Hcp                                                               G        R      O                               G            R    O
+
+Marker                                           Slagen                                             SR Heren       124     118    105           SR Dames          127       126     108
+
+                                                                                                    CR Heren      67,8     66,4   62,5          CR Dames          72,4     71,6     64,9
+
+
+                Heren                                Dames        Speler                Marker                 Heren                              Dames                Speler         Marker
+ Hole                                                                                              Hole
+           s.i.     par      G      R      O       s.i.   par   slag   stbf      slag       stbf          s.i.     par      G      R      O     s.i.     par      slag      stbf    slag   stbf
+
+  1         5           4   306    300    254       5     4                                        10      6           4   306    300    254     6           4
+
+  2         3           4   397    386    326       3     5                                        11      4           4   397    386    326     4           5
+
+  3        13           4   236    225    180      13     4                                        12     14           4   236    225    180    14           4
+
+  4        17           3    84    84     84       17     3                                        13     18           3    84    84     84     18           3
+
+  5        11           5   409    396    349      11     5                                        14     12           5   409    396    349    12           5
+
+  6         1           4   355    321    263       1     4                                        15      2           4   355    321    263     2           4
+
+  7         7           5   423    390    305       7     5                                        16      8           5   423    390    305     8           5
+
+  8        15           3   101    87     55       15     3                                        17     16           3   101    87     55     16           3
+
+  9         9           3   157    157    107       9     3                                        18     10           3   157    157    107    10           3
+
+ Uit                35      2468   2348   1923            36                                        In             35      2468   2348   1923                36
+
+                                                                                                   Uit             35      2468   2348   1923                36
+
+                                                                                                   Tot             70      4936   4696   3846                72
+                                                                                                                                                 Handicap
+
+                                                                                                                                                     Netto
+
+
+
+
+Datum/tijd                                       SCORE                                    STROKE                       SPELER                                      MARKER
+                                                                                            PLAY
+Wedstrijd                                                                  STABLEFORD
+
+Spelvorm                                         Kleur teebox
+
+Speler                                           Hcp                                                               G        R      O                               G            R    O
+
+Marker                                           Slagen                                             SR Heren       124     118    105           SR Dames          127       126     108
+
+                                                                                                    CR Heren      67,8     66,4   62,5          CR Dames          72,4     71,6     64,9
+
+
+
+
+                Heren                                Dames        Speler                Marker                 Heren                              Dames                Speler         Marker
+ Hole                                                                                              Hole
+           s.i.     par      G      R      O       s.i.   par   slag   stbf      slag       stbf          s.i.     par      G      R      O     s.i.     par      slag      stbf    slag   stbf
+
+  1         5           4   306    300    254       5     4                                        10      6           4   306    300    254     6           4
+
+  2         3           4   397    386    326       3     5                                        11      4           4   397    386    326     4           5
+
+  3        13           4   236    225    180      13     4                                        12     14           4   236    225    180    14           4
+
+  4        17           3    84    84     84       17     3                                        13     18           3    84    84     84     18           3
+
+  5        11           5   409    396    349      11     5                                        14     12           5   409    396    349    12           5
+
+  6         1           4   355    321    263       1     4                                        15      2           4   355    321    263     2           4
+
+  7         7           5   423    390    305       7     5                                        16      8           5   423    390    305     8           5
+  8        15           3   101    87     55       15     3                                        17     16           3   101    87     55     16           3
+
+  9         9           3   157    157    107       9     3                                        18     10           3   157    157    107    10           3
+
+ Uit                35      2468   2348   1923            36                                        In             35      2468   2348   1923                36
+                                                                                                   Uit             35      2468   2348   1923                36
+
+                                                                                                   Tot             70      4936   4696   3846                72
+                                                                                                                                                 Handicap
+
+                                                                                                                                                     Netto
+

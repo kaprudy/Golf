@@ -1,0 +1,3 @@
+https://www.golfparkexloo.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfparkexloo.nl%2Fscorekaarten%2F
+
+{"version":"1.0","provider_name":"Golfpark Exloo","provider_url":"https:\/\/www.golfparkexloo.nl","author_name":"anita","author_url":"https:\/\/www.golfparkexloo.nl\/author\/anita\/","title":"Scorekaarten","type":"rich","width":600,"height":338,"html":" Scorekaarten \n\/* *\/\n \n"}

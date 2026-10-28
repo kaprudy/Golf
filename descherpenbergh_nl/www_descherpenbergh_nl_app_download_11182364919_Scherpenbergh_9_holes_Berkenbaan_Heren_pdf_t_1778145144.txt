@@ -1,0 +1,39 @@
+                         Golf & Businessclub De Scherpenbergh                                              06-09-2022
+
+
+                                  9-holes Berkenbaan
+                                    BAANHANDICAP TABEL HEREN
+                                             GEEL                                      ROOD
+                                         CR=28,3 PAR=31                            CR=27,4 PAR=31
+                                             SR=90                                     SR=89
+                                    HANDICAP                BAAN              HANDICAP              BAAN
+                                                             HCP                                     HCP
+                                  +4,0     -    +2,1          +4            +4,0     -    +2,3       +5
+                                  +2,0     -     0,5          +3            +2,2     -     0,2       +4
+                                   0,6     -     3,0          +2             0,3     -     2,7       +3
+                                   3,1     -     5,5          +1             2,8     -     5,3       +2
+                                   5,6     -     8,0           0             5,4     -     7,8       +1
+                                   8,1     -    10,5           1             7,9     -    10,4        0
+                                  10,6     -    13,0           2            10,5     -    12,9        1
+                                  13,1     -    15,5           3            13,0     -    15,4        2
+                                  15,6     -    18,0           4            15,5     -    18,0        3
+                                  18,1     -    20,5           5            18,1     -    20,5        4
+                                  20,6     -    23,1           6            20,6     -    23,1        5
+                                  23,2     -    25,6           7            23,2     -    25,6        6
+                                  25,7     -    28,1           8            25,7     -    28,1        7
+                                  28,2     -    30,6           9            28,2     -    30,7        8
+                                  30,7     -    33,1          10            30,8     -    33,2        9
+                                  33,2     -    35,6          11            33,3     -    35,8       10
+                                  35,7     -    38,1          12            35,9     -    38,3       11
+                                  38,2     -    40,6          13            38,4     -    40,8       12
+                                  40,7     -    43,1          14            40,9     -    43,4       13
+                                  43,2     -    45,7          15            43,5     -    45,9       14
+                                  45,8     -    48,2          16            46,0     -    48,5       15
+                                  48,3     -    50,7          17            48,6     -    51,0       16
+                                  50,8     -    53,2          18            51,1     -    53,5       17
+                                  53,3     -    54,0          19            53,6     -    54,0       18
+
+1. Bepaal de kleur van de tee's waarvan u gaat spelen.
+2. Zoek in de kolom van de bij 1. bepaalde kleur de range waarbinnen uw Handicap valt.
+3. Rechts naast de bij 2. bepaalde range vindt u uw Baanhandicap.
+

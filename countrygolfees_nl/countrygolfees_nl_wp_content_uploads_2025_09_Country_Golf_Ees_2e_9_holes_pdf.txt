@@ -1,0 +1,33 @@
+                                                 Country Golf Ees                                          24-09-2025
+
+
+                                               2e 9-holes Par-3 Baan
+                                               BAANHANDICAP TABEL
+                                          GEEL HEREN                                ROOD DAMES
+                                         CR=23,7 PAR=27                            CR=24,5 PAR=27
+                                             SR=65                                     SR=65
+                                    HANDICAP                BAAN              HANDICAP              BAAN
+                                                             HCP                                     HCP
+                                  +4,0     -    +0,7          +4            +4,0     -    +3,5       +4
+                                  +0,6     -     2,7          +3            +3,4     -    +0,1       +3
+                                   2,8     -     6,2          +2             0,0     -     3,4       +2
+                                   6,3     -     9,7          +1             3,5     -     6,9       +1
+                                   9,8     -    13,2           0             7,0     -    10,4        0
+                                  13,3     -    16,6           1            10,5     -    13,9        1
+                                  16,7     -    20,1           2            14,0     -    17,3        2
+                                  20,2     -    23,6           3            17,4     -    20,8        3
+                                  23,7     -    27,1           4            20,9     -    24,3        4
+                                  27,2     -    30,5           5            24,4     -    27,8        5
+                                  30,6     -    34,0           6            27,9     -    31,2        6
+                                  34,1     -    37,5           7            31,3     -    34,7        7
+                                  37,6     -    41,0           8            34,8     -    38,2        8
+                                  41,1     -    44,5           9            38,3     -    41,7        9
+                                  44,6     -    47,9          10            41,8     -    45,1       10
+                                  48,0     -    51,4          11            45,2     -    48,6       11
+                                  51,5     -    54,0          12            48,7     -    52,1       12
+                                                                            52,2     -    54,0       13
+
+1. Bepaal de kleur van de tee's waarvan u gaat spelen.
+2. Zoek in de kolom van de bij 1. bepaalde kleur de range waarbinnen uw Handicap valt.
+3. Rechts naast de bij 2. bepaalde range vindt u uw Baanhandicap.
+

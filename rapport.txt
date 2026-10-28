@@ -1,0 +1,1238 @@
+ok   https://countrygolfees.nl/
+ok   https://countrygolfees.nl/baaninformatie/
+ok   https://countrygolfees.nl/handicaptabel/
+ok   https://countrygolfees.nl/faciliteiten/
+ok   https://countrygolfees.nl/leer-ons-kennen/
+ok   https://countrygolfees.nl/golfbaan/
+ok   https://countrygolfees.nl/clubhuis-hole-19/
+ok   https://countrygolfees.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcountrygolfees.nl%2Fbaaninformatie%2F
+ok   https://countrygolfees.nl/wp-content/uploads/2025/11/Scorekaart-Country-Golf-Ees-1.pdf
+ok   https://countrygolfees.nl/wp-content/uploads/2025/09/Country-Golf-Ees-18-holes.pdf
+ok   https://countrygolfees.nl/wp-content/uploads/2025/09/Country-Golf-Ees-2e-9-holes.pdf
+ok   https://countrygolfees.nl/wp-content/uploads/2025/05/Veilig-Sport-Klimaat-5.pdf
+ok   https://countrygolfees.nl/wp-content/uploads/2026/04/DigAfschr-STW-Vereniging-Country-Golf-Ees.pdf
+ok   https://countrygolfees.nl/wp-content/uploads/2025/05/Privacy-Statement-1-1.pdf
+ok   https://countrygolfees.nl/wp-content/uploads/2026/04/Huishoudelijk-reglement-1.pdf
+ok   https://countrygolfees.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcountrygolfees.nl%2Fgolfbaan%2F
+ok   http://countrygolfees.nl/baaninformatie/
+ok   https://countrygolfees.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcountrygolfees.nl%2Fclubhuis-hole-19%2F
+ok   https://www.descherpenbergh.nl/
+ok   https://www.descherpenbergh.nl/lidmaatschappen/download-scorekaart-whs-tabellen/
+ok   https://www.descherpenbergh.nl/lidmaatschappen/greenfee-golf/
+ok   https://www.descherpenbergh.nl/contact/
+ok   https://www.descherpenbergh.nl/greenfee-golf/baanstatus/
+ok   https://www.descherpenbergh.nl/app/download/11182410919/Scorekaart+Berkenbaan+mei+2026.pdf?t=1778145144
+ok   https://www.descherpenbergh.nl/app/download/11182411219/Scorekaart+grotebaan+Mei+2026.pdf?t=1778145144
+ok   https://www.descherpenbergh.nl/app/download/11182412919/Plattegrond.pdf?t=1778145144
+ok   https://www.descherpenbergh.nl/app/download/11182413019/Plattegerond+Berkenbaan+sept+2022.pdf?t=1781000889
+ok   https://www.descherpenbergh.nl/app/download/11182364819/Scherpenbergh+9-holes+Berkenbaan+Dames.pdf?t=1778145144
+ok   https://www.descherpenbergh.nl/app/download/11182364919/Scherpenbergh+9-holes+Berkenbaan+Heren.pdf?t=1778145144
+ok   https://www.descherpenbergh.nl/app/download/11182365019/Scherpenbergh+18-holes+Berkenbaan+Dames.pdf?t=1778145144
+ok   https://www.descherpenbergh.nl/app/download/11182365119/Scherpenbergh+18-holes+Berkenbaan+Heren.pdf?t=1778145144
+ok   https://www.descherpenbergh.nl/app/download/11182365219/Scherpenbergh+Zwaluwen-Dassenbaan+Dames.pdf?t=1778145144
+ok   https://www.descherpenbergh.nl/app/download/11182365319/Scherpenbergh+Zwaluwen-Dassenbaan+Heren.pdf?t=1778145144
+ok   https://dgcc.nl/
+ok   https://dgcc.nl/golfbaan
+ok   https://dgcc.nl/gasten/greenfee-tarieven
+ok   https://dgcc.nl/storage/media-library/2026/04/3825/GEEL-ROOD-WIT-ZOMER-2025-AZv4.pdf
+ok   https://dgcc.nl/storage/media-library/2023/03/1399/Scorekaart-Par-3.pdf
+ok   https://dgcc.nl/golfbaan/inrange
+ok   https://dgcc.nl/storage/media-library/2026/04/3790/Drentsche-18-holes-Rood-Geel-Heren.pdf
+ok   https://dgcc.nl/storage/media-library/2026/04/3791/Drentsche-18-holes-Wit-Rood-Heren.pdf
+ok   https://dgcc.nl/storage/media-library/2026/04/3792/Drentsche-18-holes-Geel-Wit-Heren.pdf
+ok   https://dgcc.nl/storage/media-library/2026/04/3793/Drentsche-9-holes-Rood-Heren.pdf
+ok   https://dgcc.nl/storage/media-library/2026/04/3794/Drentsche-9-holes-Geel-Heren.pdf
+ok   https://dgcc.nl/storage/media-library/2026/04/3795/Drentsche-9-holes-Wit-Heren.pdf
+ok   https://dgcc.nl/storage/media-library/2025/11/3638/Drentsche-Par-3-baan-Dames-%26-Heren.pdf
+ok   https://dgcc.nl/storage/media-library/2025/11/3639/Drentsche-18-holes-Rood-Geel-Dames.pdf
+ok   https://dgcc.nl/storage/media-library/2025/11/3640/Drentsche-18-holes-Wit-Rood-Dames.pdf
+ok   https://dgcc.nl/storage/media-library/2025/11/3641/Drentsche-18-holes-Geel-Wit-Dames.pdf
+ok   https://dgcc.nl/storage/media-library/2025/11/3642/Drentsche-9-holes-Rood-Dames.pdf
+ok   https://dgcc.nl/storage/media-library/2025/11/3643/Drentsche-9-holes-Geel-Dames.pdf
+ok   https://www.dgcdegelpenberg.nl/
+ok   https://dgcdegelpenberg.nl/de-baan/
+ok   https://dgcdegelpenberg.nl/de-baan/scorekaarten/
+ok   https://dgcdegelpenberg.nl/de-baan/handicaptabellen/
+ok   https://dgcdegelpenberg.nl/gasten/greenfee-tarieven/
+ok   https://dgcdegelpenberg.nl/de-baan/baanstatus/
+ok   https://dgcdegelpenberg.nl/de-baan/flora-fauna/
+ok   https://dgcdegelpenberg.nl/wp-content/uploads/2025/12/baanboekje-2025.pdf
+ok   https://dgcdegelpenberg.nl/de-baan/laadpalen/
+ok   https://dgcdegelpenberg.nl/de-baan/layout-van-de-baan/
+ok   https://dgcdegelpenberg.nl/de-baan/par-3-baan/
+ok   https://dgcdegelpenberg.nl/de-baan/regels/
+ok   https://dgcdegelpenberg.nl/hole-in-one/
+ok   https://dgcdegelpenberg.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdgcdegelpenberg.nl%2Fde-baan%2F
+ok   https://dgcdegelpenberg.nl/en/de-baan/
+ok   https://dgcdegelpenberg.nl/de/de-baan-2/
+ok   https://dgcdegelpenberg.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdgcdegelpenberg.nl%2Fde-baan%2Fscorekaarten%2F
+ok   https://dgcdegelpenberg.nl/en/de-baan/scorecard/
+ok   https://www.dorhoutmeesgolf.nl/
+ok   https://www.dorhoutmeesgolf.nl/golfbaan-flevoland/over-de-baan/
+ok   https://www.dorhoutmeesgolf.nl/golfbaan-flevoland/greenfee/
+ok   https://www.dorhoutmeesgolf.nl/golfbaan-flevoland/
+ok   https://www.dorhoutmeesgolf.nl/holes/
+ok   https://www.dorhoutmeesgolf.nl/golfbaan-flevoland/baanstatus/
+ok   https://www.dorhoutmeesgolf.nl/golfbaan/baanstatus
+ok   https://www.dorhoutmeesgolf.nl/golfbaan/
+ok   https://www.dorhoutmeesgolf.nl/golfbaan/starttijd-reserveren/
+ok   https://www.dorhoutmeesgolf.nl/wp-content/uploads/2023/09/Dorhout-Mees-Dames-Playing-handicaps-1.pdf
+ok   https://www.dorhoutmeesgolf.nl/wp-content/uploads/2023/09/Dorhout-Mees-Heren-Playing-Handicaps-1.pdf
+ok   https://www.dorhoutmeesgolf.nl/hole-1/
+ok   https://www.dorhoutmeesgolf.nl/hole-2/
+ok   https://www.dorhoutmeesgolf.nl/hole-3/
+ok   https://www.dorhoutmeesgolf.nl/hole-4/
+ok   https://www.dorhoutmeesgolf.nl/hole-5/
+ok   https://www.dorhoutmeesgolf.nl/hole-6/
+ok   https://www.dorhoutmeesgolf.nl/hole-7/
+ok   https://www.dutchgolf.nl/
+ok   https://www.dutchgolf.nl
+ok   https://www.dutchgolf.nl/golfbaan/scorekaart/
+ok   https://www.dutchgolf.nl/golfbaan/playing-hcp-tabel/
+ok   https://www.dutchgolf.nl/golfbaan/
+ok   https://www.dutchgolf.nl/golfbaan/greenfee/
+fout https://staging.dutchgolf.nl/wp-content/uploads/2024/01/Playing-HCP-tabel.jpg (Command failed: curl -sSL --max-time 30 -A Mozilla/5.0 (Golfscore scorekaart-onderzoek; https://golf.kapital.nl) -w 
+%{content_type}
+%{url_effective} https://staging.dutchgolf.nl/wp-content/uploads/2024/01/Playing-HCP-tabel.jpg
+curl: (60) SSL certificate problem: certificate has expired
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+)
+ok   https://www.dutchgolf.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dutchgolf.nl%2Fgolfbaan%2Fscorekaart%2F
+ok   https://www.dutchgolf.nl/wp-content/uploads/2025/08/Scorekaart-lange-lus.jpg
+ok   https://www.dutchgolf.nl/wp-content/uploads/2025/08/Scorekaart-korte-lus.jpg
+ok   https://www.dutchgolf.nl/wp-content/uploads/2024/01/Spelregels-Dutch-Golf.pdf
+ok   https://www.dutchgolf.nl/wp-content/uploads/2024/01/Baanoverzicht-Dutch-Golf.pdf
+ok   https://www.dutchgolf.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dutchgolf.nl%2Fgolfbaan%2Fplaying-hcp-tabel%2F
+ok   https://www.dutchgolf.nl/wp-content/uploads/2024/01/2023-dutch-golf-hattem-grote-lus-dames.pdf
+ok   https://www.dutchgolf.nl/wp-content/uploads/2024/01/2023-dutch-golf-hattem-grote-lus-heren.pdf
+ok   https://www.dutchgolf.nl/wp-content/uploads/2025/08/2023-Dutch-Golf-Hattem-9-holes-Kleine-Lus-Dames-Heren.pdf
+ok   https://www.dutchgolf.nl/wp-content/uploads/2024/01/Dutch-golf-hattem-18-holes-kleine-lus-dames-heren.pdf
+ok   https://www.dutchgolf.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dutchgolf.nl%2Fgolfbaan%2F
+fout https://staging.dutchgolf.nl/wp-content/uploads/2024/01/Scorekaart-van-Dutch-Golf-Hattem.jpg (Command failed: curl -sSL --max-time 30 -A Mozilla/5.0 (Golfscore scorekaart-onderzoek; https://golf.kapital.nl) -w 
+%{content_type}
+%{url_effective} https://staging.dutchgolf.nl/wp-content/uploads/2024/01/Scorekaart-van-Dutch-Golf-Hattem.jpg
+curl: (60) SSL certificate problem: certificate has expired
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+)
+ok   https://www.dutchgolf.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dutchgolf.nl%2Fgolfbaan%2Fgreenfee%2F
+ok   https://www.edesegcpapendal.nl/
+ok   https://www.edesegcpapendal.nl/baan/baaninformatie/scorekaart/
+ok   https://www.edesegcpapendal.nl/baan/baaninformatie/handicaptabellen/
+ok   https://www.edesegcpapendal.nl/gasten/greenfee
+ok   https://www.edesegcpapendal.nl/club/organisatie-historie/
+ok   https://www.edesegcpapendal.nl/contact/
+ok   https://www.edesegcpapendal.nl/baan/baanstatus/
+ok   https://www.edesegcpapendal.nl/baan/baaninformatie/baanplattegrond/
+ok   https://www.edesegcpapendal.nl/baan/baaninformatie/handicaptabellen-2/
+ok   https://www.edesegcpapendal.nl/baan/baaninformatie/driving-range/
+ok   https://www.edesegcpapendal.nl/rules/baanreglement/
+ok   https://www.edesegcpapendal.nl/baan/duurzaamheid/geo-wildlife/
+ok   https://www.edesegcpapendal.nl/baan/duurzaamheid/greenkeepers-de-enk/
+ok   https://www.edesegcpapendal.nl/baan/duurzaamheid/greenkeepers-aha-de-man/
+ok   https://edesegcpapendal.nl/baan/baaninformatie/baanplattegrond/
+ok   https://edesegcpapendal.nl/baan/baaninformatie/driving-range/
+ok   https://www.edesegcpapendal.nl/wp-content/uploads/2024/02/van-Steenbergen-Sierbestrating.png
+ok   https://www.edesegcpapendal.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.edesegcpapendal.nl%2Fbaan%2Fbaaninformatie%2Fscorekaart%2F
+ok   https://engelenburg.com/golf/
+ok   https://engelenburg.com/golf/golfbaan/
+ok   https://engelenburg.com/golf/gasten-golf/
+ok   https://engelenburg.com/en/golf/golf-course/
+ok   https://engelenburg.com/golfbaan-videos/
+ok   https://engelenburg.com/wp-content/uploads/2023/11/Plattegrond-golf.pdf
+ok   https://engelenburg.com/wp-content/uploads/2023/11/Engelenburg-Luchtfoto.pdf
+ok   https://engelenburg.com/wp-content/uploads/2026/05/Scorekaart-Golf-Kasteel-Engelenburg.pdf
+ok   https://engelenburg.com/wp-content/uploads/2024/07/Plaatselijke-Regels-Engelenburg.pdf
+ok   https://engelenburg.com/wp-content/uploads/2023/11/Playing-Handicap-Heren-9-18-holes.pdf
+ok   https://engelenburg.com/wp-content/uploads/2023/11/Playing-Handicap-Dames-9-18-holes.pdf
+fout https://engelenburg.com/golf/golfbaan/itemDataObject.url (404)
+ok   https://engelenburg.com/en/golf-course-videos/
+fout https://engelenburg.com/en/golf/golf-course/itemDataObject.url (404)
+fout https://engelenburg.com/golfbaan-videos/itemDataObject.url (404)
+fout https://engelenburg.com/en/golf-course-videos/itemDataObject.url (404)
+ok   https://www.gc-emstal.de/
+ok   https://www.gc-emstal.de/platz/scorekarte
+ok   https://www.gc-emstal.de/platz/spielvorgabe
+ok   https://www.gc-emstal.de/club/ueber-uns
+ok   https://www.gc-emstal.de/kontakt
+ok   https://www.gc-emstal.de/gaeste
+ok   https://www.gc-emstal.de/fileadmin/user_upload/scorekarte/scorekarte_2017.pdf
+ok   https://www.gc-emstal.de/fileadmin/user_upload/Course_Handicaps_-__1-9__9L__2025.PDF
+ok   https://www.gc-emstal.de/fileadmin/user_upload/Course_Handicaps_-__1-18__2025_.PDF
+ok   https://www.gc-emstal.de/fileadmin/user_upload/content/club/ueber_uns/Broschuere_GCE.pdf
+ok   https://www.gc-emstal.de/fileadmin/user_upload/downloads/Allgemein/Regeln_Benutzung_cart.pdf
+ok   https://www.gc-muensterland.de/
+ok   https://www.gc-muensterland.de/golfplatz/
+ok   https://www.gc-muensterland.de/gaeste/
+ok   https://www.gc-muensterland.de/service/kontakt-anfahrt/
+ok   https://www.gc-muensterland.de/ueber-den-golfclub-muensterland-e-v/
+ok   https://www.gc-muensterland.de/golfplatz/course-handicaps/
+ok   https://www.gc-muensterland.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gc-muensterland.de%2Fgolfplatz%2Fcourse-handicaps%2F
+ok   https://www.gc-muensterland.de/wp-content/uploads/2024/06/Platz-A-9-Loch-Damen.pdf
+ok   https://www.gc-muensterland.de/wp-content/uploads/2024/06/Platz-A-9-Loch-Herren.pdf
+ok   https://www.gc-muensterland.de/wp-content/uploads/2024/06/Platz-1-9-18-Loch-Damen.pdf
+ok   https://www.gc-muensterland.de/wp-content/uploads/2024/06/Platz-1-9-18-Loch-Herren.pdf
+ok   https://www.gc-muensterland.de/wp-content/uploads/2024/06/Platz-AB-magenta-18-Loch-Herren-Damen.pdf
+ok   https://www.gcdecompagnie.nl/
+ok   https://www.gcdecompagnie.nl/golfbaan/handicaptabel
+ok   https://www.gcdecompagnie.nl/golfbaan
+ok   https://www.gcdecompagnie.nl/gasten
+ok   https://www.gcdecompagnie.nl/greenfee-tarieven
+ok   https://www.gcdecompagnie.nl/contact
+ok   https://www.gcdecompagnie.nl/golfbaan/oefenfaciliteiten
+ok   https://www.gcdecompagnie.nl/18-holes-baan
+ok   https://www.gcdecompagnie.nl/golfbaan/par-3-baan
+ok   https://www.gcdecompagnie.nl/golfbaan/baanstatus
+ok   https://www.gcdecompagnie.nl/golfbaan/golf-shop
+ok   https://www.gcdecompagnie.nl/golfbaan/beginnen-met-golfen
+ok   https://www.gcdecompagnie.nl/golfbaangolfschool
+ok   https://www.gcdecompagnie.nl/storage/media-library/2024/07/1405/Compagnie-WHS-tabel-Dames.pdf
+ok   https://www.gcdecompagnie.nl/storage/media-library/2024/07/1406/Compagnie-WHS-tabel-Heren.pdf
+ok   https://www.gcdecompagnie.nl/storage/media-library/2024/07/1407/Compagnie-WHS-tabel-Par-3-Baan-Dames-en-Heren.pdf
+ok   https://www.gcdecompagnie.nl/storage/media-library/2024/07/1429/Scorekaart_18H-2023.pdf
+ok   https://www.gcdecompagnie.nl/storage/media-library/2024/07/1430/Scorekaart_PAR3-2023.pdf
+ok   https://www.gcflevoland.nl/
+ok   https://www.gcflevoland.nl/baan/
+ok   https://www.gcflevoland.nl/vereniging/
+ok   https://www.gcflevoland.nl/lidmaatschap/
+ok   https://www.gcflevoland.nl/baanstatus/
+ok   https://www.gcflevoland.nl/baan
+ok   https://www.gcflevoland.nl/wp-content/uploads/2024/07/scorekaart-918-holes.2.jpg
+ok   https://www.gcflevoland.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gcflevoland.nl%2Fbaan%2F
+ok   https://www.gcflevoland.nl/wp-content/uploads/2024/08/scorekaart-2-zijden-scaled.jpg
+ok   https://www.gcflevoland.nl/wp-content/uploads/2024/07/scorekaart-12-holes.2.jpg
+ok   https://www.gcflevoland.nl/wp-content/uploads/2024/07/flevoland-12-9-18-holes-dames.merged-1.pdf
+ok   https://www.gcflevoland.nl/wp-content/uploads/2024/07/flevoland-12-9-18-holes-heren.merged-1.pdf
+ok   https://www.gcflevoland.nl/wp-content/uploads/2024/08/het-handicapsysteem-bij-een-12-holes-ronde.pdf
+ok   https://www.gcflevoland.nl/wp-content/uploads/2024/05/algemene-voorwaarden-voor-reserveringen-en-boekingen.pdf
+ok   https://www.gcflevoland.nl/wp-content/uploads/2023/05/statuten-golfclub-flevoland-2016.pdf
+ok   https://www.gcflevoland.nl/wp-content/uploads/2024/12/evenementen-kalender-2025.pdf
+ok   https://www.gcflevoland.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gcflevoland.nl%2Fbaanstatus%2F
+ok   https://www.gcwesterwolde.nl/
+ok   https://www.gcwesterwolde.nl/index.php/de-baan/handicap-tabel-en-scorekaart
+ok   https://www.gcwesterwolde.nl/index.php/golfclub-westerwolde/de-club
+ok   https://www.gcwesterwolde.nl/index.php/greenfee
+ok   https://www.gcwesterwolde.nl/index.php/golfclub-westerwolde/faciliteiten
+ok   https://www.gcwesterwolde.nl/index.php/de-baan
+ok   https://www.gcwesterwolde.nl/index.php/de-baan/baanstatus
+ok   https://www.gcwesterwolde.nl/images/tabel_scorekaart/Westerwolde-WHS-tabel-Dames-9.png
+ok   https://www.gcwesterwolde.nl/images/tabel_scorekaart/Westerwolde-WHS-tabel-Dames-18.png
+ok   https://www.gcwesterwolde.nl/images/tabel_scorekaart/Westerwolde-WHS-tabel-Heren-9.png
+ok   https://www.gcwesterwolde.nl/images/tabel_scorekaart/Westerwolde-WHS-tabel-Heren-18.png
+ok   https://www.gcwesterwolde.nl/images/tabel_scorekaart/Westerwolde-afstand-tabel.pdf
+ok   https://www.gcwesterwolde.nl/images/tabel_scorekaart/Scorekaart.pdf
+ok   https://www.gcwesterwolde.nl/index.php/de-baan/handicap-tabel-en-scorekaart?view=article&amp;id=311:theo-panneman-nuver-golfer-van-het-jaar-2026&amp;catid=89
+ok   https://www.gcwesterwolde.nl/index.php/de-baan/handicap-tabel-en-scorekaart?view=article&amp;id=310:jan-bults-en-harry-kroeze-winnaars-maandbeker-2026&amp;catid=89
+ok   https://www.gcwesterwolde.nl/index.php/de-baan/handicap-tabel-en-scorekaart?view=article&amp;id=304:gerke-panneman-prolongeert-titel-strokeplay&amp;catid=89
+ok   https://www.gcwesterwolde.nl/index.php/de-baan/handicap-tabel-en-scorekaart?view=article&amp;id=291:nuver-golfer-van-het-jaar-2026&amp;catid=89
+ok   https://www.gcwesterwolde.nl/index.php/de-baan?view=article&amp;id=167:hole-1-10&amp;catid=118:holes
+ok   https://www.gczelle.nl
+ok   https://www.gczelle.nl/baan/de-baan-en-oefenfaciliteiten
+ok   https://www.gczelle.nl/baan/greenfeetarieven-en-hospitality
+ok   https://www.gczelle.nl/baan/starttijd-reserveren
+ok   https://www.gczelle.nl/baan
+ok   https://www.gczelle.nl/baanstatus
+ok   https://www.gczelle.nl/nieuws/255/mannen-in-witte-pakken-in-de-baan
+ok   https://www.gczelle.nl/nieuws/245/hole-19-cup
+ok   https://www.gczelle.nl/nieuws/242/18-holes-pitch-en-putt-wedstrijd-in-groenlo
+ok   https://www.gczelle.nl/nieuws/240/de-hole-19-cup-zaterdag-26-september
+ok   https://www.gczelle.nl/nieuws/223/innovatie-op-onze-eigen-baan-26-000-ballen-gered-uit-de-natuur
+ok   https://www.gczelle.nl/nieuws/204/de-mooiste-par-3-baan-van-nederland
+ok   https://www.gczelle.nl/nieuws/203/wijziging-in-de-baan
+ok   https://cdn.i-pulse.nl/gczelle/userfiles/scorekaarten-en-handicaptabellen/scorekaart-bosrijk-waterrijk.pdf
+ok   https://cdn.i-pulse.nl/gczelle/userfiles/scorekaarten-en-handicaptabellen/scorekaart-par-3-2026.pdf
+ok   https://cdn.i-pulse.nl/gczelle/userfiles/scorekaarten-en-handicaptabellen/heren--18-holes--bosrijk-waterrrijk.pdf
+ok   https://cdn.i-pulse.nl/gczelle/userfiles/scorekaarten-en-handicaptabellen/heren--9-holes--bosrijk.pdf
+ok   https://cdn.i-pulse.nl/gczelle/userfiles/scorekaarten-en-handicaptabellen/heren--9-holes--waterrijk.pdf
+ok   https://www.glc-ahaus.de/
+ok   https://www.glc-ahaus.de/scorekarten-vorgaben/
+ok   https://www.glc-ahaus.de/golfbahnen-golfplatz-ahaus/
+ok   https://www.glc-ahaus.de/greenfee/
+ok   https://www.glc-ahaus.de/chronik/
+ok   https://www.glc-ahaus.de/kontakt/
+ok   https://www.glc-ahaus.de/wp-content/uploads/2025/11/Ost-Nord-Course.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2020/01/ahaus_scard_ost_nord.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2025/11/Sued-Nord-Course.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2020/01/ahaus_scard_sued_nord.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2025/11/Sued-Ost-Tabelle.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2022/04/ahaus_scard_ost_sued.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2025/11/West-Sued-Tabelle.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2020/01/ahaus_scard_west_sued.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2025/11/Ost-West-Course.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2020/01/ahaus_scard_ost_west.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2025/11/West-Nord-Course.pdf
+ok   https://www.glc-ahaus.de/wp-content/uploads/2020/01/ahaus_scard_west_nord.pdf
+ok   https://www.golf-emsland.de/
+ok   https://www.golfbaandelagemors.nl/
+ok   https://www.golfbaandelagemors.nl/golfbaan-info/
+ok   https://www.golfbaandelagemors.nl/golfbaan-faciliteiten/
+ok   https://www.golfbaandelagemors.nl/golfen/gasten/greenfeespelers/
+ok   https://www.golfbaandelagemors.nl/contact/
+ok   https://www.golfbaandelagemors.nl/ledenlogin/
+ok   https://www.golfbaandelagemors.nl/inschrijven/
+ok   https://www.golfbaandelagemors.nl/baanstatus-agenda/
+ok   https://www.golfbaandelagemors.nl/home/?lang=nl
+ok   https://www.golfbaandelagemors.nl/home/?lang=en
+ok   https://www.golfbaandelagemors.nl/home/?lang=de
+ok   https://www.golfbaandelagemors.nl/golfen/golfbaan/
+ok   https://www.golfbaandelagemors.nl/lidmaatschappen-golfbaan/
+ok   https://www.golfbaandelagemors.nl/onze-holes/
+ok   https://www.golfbaandelagemors.nl/golfen/golfclub/
+ok   https://www.golfbaandelagemors.nl/club-activiteiten/
+ok   https://www.golfbaandelagemors.nl/golfclub-vereniging-de-lage-mors/
+ok   https://www.golfbaandelagemors.nl/ledengedeelte/
+ok   https://golfclub-emmeloord.nl/
+ok   https://golfclub-emmeloord.nl/de-golfbanen/
+ok   https://golfclub-emmeloord.nl/tarieven/
+ok   https://golfclub-emmeloord.nl/wp-content/uploads/2026/03/GCE-Scorekaart.pdf
+ok   https://golfclub-emmeloord.nl/wp-content/uploads/2026/04/Emmeloord-WHS-tabel-Heren-2021-Suydersee.pdf
+ok   https://golfclub-emmeloord.nl/wp-content/uploads/2026/04/Emmeloord-WHS-tabel-Dames-2021-Suydersee.pdf
+ok   https://golfclub-emmeloord.nl/wp-content/uploads/2026/04/Emmeloord-WHS-tabel-Pionier-2021.pdf
+ok   https://www.golfclub-euregio.de/
+ok   https://www.golfclub-euregio.de/golf-spielen/
+ok   https://www.golfclub-euregio.de/download-center/
+ok   https://www.golfclub-euregio.de/greenfee-euregio/
+ok   https://www.golfclub-euregio.de/historie-und-chronik/
+ok   https://www.golfclub-euregio.de/kontakt/
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2025/12/GC_Euregio_Beitragsordnung_2026.pdf
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2025/06/Birdie_Book_NEU_fur_Homepage_2025.pdf
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2025/12/GC_Euregio_Platz_Spielordnung_26112025.pdf
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2026/09/GC_Euregio_Satzung_22042026_clean.pdf
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2024/12/GC_Euregio_Aufnahmeformular_Erwachsene.pdf
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2024/12/GC_Euregio_Aufnahmeformular_Jugendliche_Junge_Erwachsene.pdf
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2024/12/GC_Euregio_Kennenlernen_Angebot.pdf
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2024/12/GC_Euregie_Golfen_fuer_Kinder.pdf
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2026/02/Golfmagazin_Euregio_2025_Web.pdf
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2025/02/Golfmagazin_2024_Seite_1-80_homepage.pdf
+ok   https://www.golfclub-euregio.de/wp-content/uploads/2024/02/Golfclub_Euregio_Jahresmagazin_2023.pdf
+ok   https://golfclub-euregio.de/wp-content/uploads/2023/02/Clubmagazin_2022_Homepage_light.pdf
+ok   https://www.golfclub-hattem.nl
+ok   https://www.golfclub-hattem.nl/index.php/baan/6-de-baan
+ok   https://www.golfclub-hattem.nl/custom/hcpcalc/18holes.php
+ok   https://www.golfclub-hattem.nl/custom/hcpcalc/index.php
+ok   https://www.golfclub-hattem.nl/index.php/gasten
+ok   https://www.golfclub-hattem.nl/
+ok   https://www.golfclub-hattem.nl/index.php/baan
+fout https://www.golfclub-hattem.nl/images/articles/hgcc2005.pdf (te groot (159 MB))
+ok   https://www.golfclub-hattem.nl/public/docs/algemeen/Privacy%20policy%20Hattemse%20Golf%20%26%20Country%20Club.pdf
+ok   https://www.golfclub-hattem.nl/custom/hcpcalc/Hattemse%20dames%20whs.pdf
+ok   https://www.golfclub-hattem.nl/custom/hcpcalc/Hattemse%20heren%20whs.pdf
+ok   https://www.golfclub-hattem.nl/index.php/baan?format=feed&amp;type=rss
+ok   https://www.golfclub-hattem.nl/index.php/baan?format=feed&amp;type=atom
+ok   https://www.golfclub-hattem.nl/index.php/baan/705-baanreglement
+ok   https://www.golfclub-hattem.nl/index.php/baan/29-reserveren
+ok   https://www.golfclub-hattem.nl/index.php/baan/31-plaatselijke-regels
+ok   https://www.golfclub-zeewolde.nl/
+ok   https://www.golfclub-zeewolde.nl/baan/playing-hcp/
+ok   https://www.golfclub-zeewolde.nl/baan/baan-layout/
+ok   https://www.golfclub-zeewolde.nl/golfen/tarieven/
+ok   https://www.golfclub-zeewolde.nl/contact/
+ok   https://www.golfclub-zeewolde.nl/vereniging/golfclub-zeewolde/
+ok   https://www.golfclub-zeewolde.nl/baan/oefenfaciliteiten/
+ok   https://www.golfclub-zeewolde.nl/assets/files/baanreglement-golfclub-zeewolde.pdf
+ok   https://www.golfclub-zeewolde.nl/baan/plaatselijke-regels/
+ok   https://www.golfclub-zeewolde.nl/assets/files/privacy-policy-statement-gcz-1.pdf
+ok   https://www.golfclub-zeewolde.nl/assets/files/privacy-policy-statement-gcz-2.pdf
+ok   https://www.golfclub-zeewolde.nl/assets/files/zeewolde-18-holes-aak-botter-2026-dames.pdf
+ok   https://www.golfclub-zeewolde.nl/assets/files/zeewolde-18-holes-aak-botter-2026-heren.pdf
+ok   https://www.golfclub-zeewolde.nl/assets/files/zeewolde-18-holes-botter-pluut-2026-dames.pdf
+ok   https://www.golfclub-zeewolde.nl/assets/files/zeewolde-18-holes-botter-pluut-2026-heren-1.pdf
+ok   https://www.golfclub-zeewolde.nl/assets/files/zeewolde-18-holes-pluut-aak-dames-1.pdf
+ok   https://www.golfclub-zeewolde.nl/assets/files/zeewolde-18-holes-pluut-aak-heren-1.pdf
+ok   https://www.golfclub-zeewolde.nl/assets/files/zeewolde-aak-2024-dames-9h.pdf
+ok   https://www.golfclubdekoepel.nl/
+ok   https://www.golfclubdekoepel.nl/golfbaan/
+ok   https://www.golfclubdekoepel.nl/golfbaan/18-holes/
+ok   https://www.golfclubdekoepel.nl/gasten/
+ok   https://www.golfclubdekoepel.nl/algemene-informatie/
+ok   https://www.golfclubdekoepel.nl/golfbaan/oefenfaciliteiten/
+ok   https://www.golfclubdekoepel.nl/golfbaan/foto-videogallery-baan/
+ok   https://www.golfclubdekoepel.nl/golfbaan/18-holes-2/
+ok   https://www.golfclubdekoepel.nl/baanpermissie-richtlijnen/
+ok   https://www.golfclubdekoepel.nl/golfbaan/feed/
+ok   https://www.golfclubdekoepel.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfclubdekoepel.nl%2Fgolfbaan%2F
+ok   https://www.golfclubdekoepel.nl/wp-content/uploads/2026/06/TLR-080626.pdf
+ok   https://www.golfclubdekoepel.nl/wp-content/uploads/2022/02/20220216-Baanreglement.pdf
+ok   https://www.golfclubdekoepel.nl/wp-content/uploads/2023/04/clubrecords.pdf
+ok   https://www.golfclubdekoepel.nl/wp-content/uploads/2025/06/2025-Handicaptabellen-De-Koepel-Dames.pdf
+ok   https://www.golfclubdekoepel.nl/wp-content/uploads/2025/06/2025-Handicaptabellen-De-Koepel-Heren.pdf
+ok   https://www.golfclubdekoepel.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfclubdekoepel.nl%2Fgolfbaan%2F18-holes%2F
+ok   https://www.golfclubdekoepel.nl/18-holes/hole-13/
+ok   https://www.golfclubdriene.nl/
+ok   https://www.golfclubdriene.nl/de-baan
+ok   https://www.golfclubdriene.nl/hole-informatie
+ok   https://www.golfclubdriene.nl/gasten
+ok   https://www.golfclubdriene.nl/nieuws/let-op-bij-hole-2
+ok   https://www.golfclubdriene.nl/baanhistorie-golfclub-driene
+ok   https://golfclub-driene.files.svdcdn.com/production/Download/20250280-Scorekaart_spreads.pdf?dm=1764670674
+ok   https://golfclub-driene.files.svdcdn.com/production/Download/Driene-Heren.pdf?dm=1764670695
+ok   https://golfclub-driene.files.svdcdn.com/production/Download/Driene-Dames.pdf?dm=1764670709
+fout https://golfclub-driene.transforms.svdcdn.com/production/Baanoverzicht-Scorekaart.jpg?w=1364&amp;h=1886&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1764670119&amp;s=cf6f273ff2ef792eabb0745b7536d5c1 (401)
+ok   https://golfclubduurswold.nl/
+ok   https://golfclubduurswold.nl/golfbaan/handicap-scorekaart/
+ok   https://golfclubduurswold.nl/golfclub/algemene-informatie/
+ok   https://golfclubduurswold.nl/golfbaan/greenfee/
+ok   https://golfclubduurswold.nl/contact/
+ok   https://golfclubduurswold.nl/golfbaan/oefenfaciliteiten/
+ok   https://golfclubduurswold.nl/golfbaan/
+ok   https://golfclubduurswold.nl/golfbaan/baanstatus/
+ok   https://golfclubduurswold.nl/golfbaan/baan-kalender/
+ok   https://golfclubduurswold.nl/golfbaan/9h-baanoverzicht/
+ok   https://golfclubduurswold.nl/golfbaan/handicarts/
+ok   https://golfclubduurswold.nl/golfbaan/hospitality-chain/
+ok   https://golfclubduurswold.nl/golfbaan/plaatselijke-regels/
+ok   https://golfclubduurswold.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfclubduurswold.nl%2Fgolfbaan%2Fhandicap-scorekaart%2F
+ok   https://golfclubduurswold.nl/wp-content/uploads/2025/01/Duurswold-WHS-tabel-Heren-9h.webp
+ok   https://golfclubduurswold.nl/wp-content/uploads/2025/01/Duurswold-WHS-tabel-Dames-9h.webp
+ok   https://golfclubduurswold.nl/wp-content/uploads/2025/01/Duurswold-WHS-tabel-Heren-18h.webp
+ok   https://golfclubduurswold.nl/wp-content/uploads/2025/01/Duurswold-WHS-tabel-Dames-18h.webp
+ok   https://golfclubgaasterland.nl/
+ok   https://golfclubgaasterland.nl/golfbaan-friesland/hole-sponsors
+ok   https://golfclubgaasterland.nl/baan/hcp-tabellen
+ok   https://golfclubgaasterland.nl/golfclub/ontstaan
+ok   https://golfclubgaasterland.nl/baan/oefenfaciliteiten
+ok   https://golfclubgaasterland.nl/greenfee/greenfee-tarieven
+ok   https://golfclubgaasterland.nl/greenfee/starttijden
+ok   https://golfclubgaasterland.nl/baan
+ok   https://golfclubgaasterland.nl/golfbaan-friesland/tee-sluiting
+ok   https://golfclubgaasterland.nl/baan/natuurbaan
+ok   https://golfclubgaasterland.nl/golfbaan-friesland/baanreglement
+ok   https://golfclubgaasterland.nl/baan/calamiteitenplan
+ok   https://golfclubgaasterland.nl/baan/werkwijze-ballenautomaat
+ok   https://golfclubgaasterland.nl/baan/baanoptimalisatie
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfclub (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfclub/lidmaatschappen (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfclub/stichting-en-vereniging (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfclub/ontstaan (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfclub/wedstrijdkalender (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfclub/sponsoren (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfclub/jeugd (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfclub/vertrouwenspersoon (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/baan (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/tee-sluiting (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/hole-sponsors (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/baan/natuurbaan (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/baan/oefenfaciliteiten (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/baanreglement (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/baan/calamiteitenplan (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/baan/werkwijze-ballenautomaat (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/baan/baanoptimalisatie (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/baan/hcp-tabellen (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/greenfee (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/greenfee/starttijden (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/greenfee/greenfee-tarieven (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/greenfee/ngf-competitie (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/greenfee/handicart (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/greenfee/clubhuis (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/greenfee/hcp-tabellen (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/greenfee/hospitality-chain (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfschool (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfschool/leren-golfen (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfschool/handicap-54-halen-(whs) (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfschool/golflessen (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfschool/golfclinic (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfschool/tarieven (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfschool/golfprofessional-gezocht (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/horeca (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/leden (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/hole-sponsors/hole-1 (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/hole-sponsors/hole-2 (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/hole-sponsors/hole-3 (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/hole-sponsors/hole-4 (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/hole-sponsors/hole-5 (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/hole-sponsors/hole-6 (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/hole-sponsors/hole-7 (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/hole-sponsors/hole-8 (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/hole-sponsors/hole-9 (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/contact (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/disclaimer (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/colofon (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/contact-3 (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/sitemap (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/zoeken (404)
+fout https://golfclubgaasterland.nl/baan/golfclub (404)
+fout https://golfclubgaasterland.nl/baan/golfclub/lidmaatschappen (404)
+fout https://golfclubgaasterland.nl/baan/golfclub/stichting-en-vereniging (404)
+fout https://golfclubgaasterland.nl/baan/golfclub/ontstaan (404)
+fout https://golfclubgaasterland.nl/baan/golfclub/wedstrijdkalender (404)
+fout https://golfclubgaasterland.nl/baan/golfclub/sponsoren (404)
+fout https://golfclubgaasterland.nl/baan/golfclub/jeugd (404)
+fout https://golfclubgaasterland.nl/baan/golfclub/vertrouwenspersoon (404)
+fout https://golfclubgaasterland.nl/baan/baan (404)
+fout https://golfclubgaasterland.nl/baan/golfbaan-friesland/tee-sluiting (404)
+fout https://golfclubgaasterland.nl/baan/golfbaan-friesland/hole-sponsors (404)
+ok   https://golfclubgaasterland.nl/baan/baan/natuurbaan
+ok   https://golfclubgaasterland.nl/baan/baan/oefenfaciliteiten
+fout https://golfclubgaasterland.nl/baan/golfbaan-friesland/baanreglement (404)
+fout https://golfclubgaasterland.nl/baan/baan/calamiteitenplan (404)
+fout https://golfclubgaasterland.nl/baan/baan/werkwijze-ballenautomaat (404)
+fout https://golfclubgaasterland.nl/baan/baan/baanoptimalisatie (404)
+fout https://golfclubgaasterland.nl/baan/baan/hcp-tabellen (404)
+fout https://golfclubgaasterland.nl/baan/greenfee (404)
+fout https://golfclubgaasterland.nl/baan/greenfee/starttijden (404)
+fout https://golfclubgaasterland.nl/baan/greenfee/greenfee-tarieven (404)
+fout https://golfclubgaasterland.nl/baan/greenfee/ngf-competitie (404)
+fout https://golfclubgaasterland.nl/baan/greenfee/handicart (404)
+fout https://golfclubgaasterland.nl/baan/greenfee/clubhuis (404)
+fout https://golfclubgaasterland.nl/baan/greenfee/hcp-tabellen (404)
+fout https://golfclubgaasterland.nl/baan/greenfee/hospitality-chain (404)
+fout https://golfclubgaasterland.nl/baan/golfschool (404)
+fout https://golfclubgaasterland.nl/baan/golfschool/leren-golfen (404)
+fout https://golfclubgaasterland.nl/baan/golfschool/handicap-54-halen-(whs) (404)
+fout https://golfclubgaasterland.nl/baan/golfschool/golflessen (404)
+fout https://golfclubgaasterland.nl/baan/golfschool/golfclinic (404)
+fout https://golfclubgaasterland.nl/baan/golfschool/tarieven (404)
+fout https://golfclubgaasterland.nl/baan/golfschool/golfprofessional-gezocht (404)
+fout https://golfclubgaasterland.nl/baan/horeca (404)
+fout https://golfclubgaasterland.nl/baan/leden (404)
+fout https://golfclubgaasterland.nl/baan/files/8/5/1/5/1/Gaasterland%20Heren%202023.pdf (404)
+fout https://golfclubgaasterland.nl/baan/files/7/6/1/5/1/Gaasterland%20Dames%202023.pdf (404)
+fout https://golfclubgaasterland.nl/baan/files/1/6/1/5/1/GG%20Par%203%20-%209H.pdf (404)
+fout https://golfclubgaasterland.nl/baan/files/2/6/1/5/1/GG%20par%203%20-%2018H.pdf (404)
+fout https://golfclubgaasterland.nl/baan/contact (404)
+fout https://golfclubgaasterland.nl/baan/disclaimer (404)
+fout https://golfclubgaasterland.nl/baan/colofon (404)
+fout https://golfclubgaasterland.nl/baan/contact-3 (404)
+fout https://golfclubgaasterland.nl/baan/sitemap (404)
+fout https://golfclubgaasterland.nl/baan/zoeken (404)
+fout https://golfclubgaasterland.nl/golfclub/baan (404)
+fout https://golfclubgaasterland.nl/golfclub/golfbaan-friesland/tee-sluiting (404)
+fout https://golfclubgaasterland.nl/golfclub/golfbaan-friesland/hole-sponsors (404)
+fout https://golfclubgaasterland.nl/golfclub/baan/natuurbaan (404)
+fout https://golfclubgaasterland.nl/golfclub/baan/oefenfaciliteiten (404)
+fout https://golfclubgaasterland.nl/golfclub/golfbaan-friesland/baanreglement (404)
+fout https://golfclubgaasterland.nl/golfclub/baan/calamiteitenplan (404)
+fout https://golfclubgaasterland.nl/golfclub/baan/werkwijze-ballenautomaat (404)
+fout https://golfclubgaasterland.nl/golfclub/baan/baanoptimalisatie (404)
+fout https://golfclubgaasterland.nl/golfclub/baan/hcp-tabellen (404)
+fout https://golfclubgaasterland.nl/greenfee/baan (404)
+fout https://golfclubgaasterland.nl/greenfee/golfbaan-friesland/tee-sluiting (404)
+fout https://golfclubgaasterland.nl/greenfee/golfbaan-friesland/hole-sponsors (404)
+fout https://golfclubgaasterland.nl/greenfee/baan/natuurbaan (404)
+fout https://golfclubgaasterland.nl/greenfee/baan/oefenfaciliteiten (404)
+fout https://golfclubgaasterland.nl/greenfee/golfbaan-friesland/baanreglement (404)
+fout https://golfclubgaasterland.nl/greenfee/baan/calamiteitenplan (404)
+fout https://golfclubgaasterland.nl/greenfee/baan/werkwijze-ballenautomaat (404)
+fout https://golfclubgaasterland.nl/greenfee/baan/baanoptimalisatie (404)
+fout https://golfclubgaasterland.nl/greenfee/baan/hcp-tabellen (404)
+fout https://golfclubgaasterland.nl/baan/baanonderhoud (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/baanreglement/uitgebreide-versie-locale-regels (404)
+fout https://golfclubgaasterland.nl/golfbaan-friesland/golfbaan-friesland/baanreglement/uitgebreid-reglement (404)
+fout https://golfclubgaasterland.nl/baan/files/2/9/8/4/1/calamiteitenplan%20versie%20mei%202024.pdf (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfclub (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfclub/lidmaatschappen (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfclub/stichting-en-vereniging (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfclub/ontstaan (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfclub/wedstrijdkalender (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfclub/sponsoren (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfclub/jeugd (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfclub/vertrouwenspersoon (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/baan (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfbaan-friesland/tee-sluiting (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfbaan-friesland/hole-sponsors (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/baan/natuurbaan (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/baan/oefenfaciliteiten (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfbaan-friesland/baanreglement (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/baan/calamiteitenplan (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/baan/werkwijze-ballenautomaat (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/baan/baanoptimalisatie (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/baan/hcp-tabellen (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/greenfee (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/greenfee/starttijden (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/greenfee/greenfee-tarieven (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/greenfee/ngf-competitie (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/greenfee/handicart (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/greenfee/clubhuis (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/greenfee/hcp-tabellen (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/greenfee/hospitality-chain (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfschool (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfschool/leren-golfen (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfschool/handicap-54-halen-(whs) (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfschool/golflessen (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfschool/golfclinic (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfschool/tarieven (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/golfschool/golfprofessional-gezocht (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/horeca (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/leden (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/baan/calamiteitenplan/natuurbaan/groenlabel (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/contact (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/disclaimer (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/colofon (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/contact-3 (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/sitemap (404)
+fout https://golfclubgaasterland.nl/baan/calamiteitenplan/zoeken (404)
+ok   https://golfclubgaasterland.nl/baan/calamiteitenplan/oefenfaciliteiten
+ok   https://www.golfclubhavelte.nl
+ok   https://www.golfclubhavelte.nl/baan/scorekaart
+ok   https://www.golfclubhavelte.nl/baan/handicaptabel
+ok   https://www.golfclubhavelte.nl/baan/golfbaan
+ok   https://www.golfclubhavelte.nl/gasten/greenfee
+ok   https://www.golfclubhavelte.nl/contact
+ok   https://www.golfclubhavelte.nl/baan/baanstatus
+ok   https://www.golfclubhavelte.nl/baan/criteria-baansluiting
+ok   https://www.golfclubhavelte.nl/baan/baanreglement
+ok   https://www.golfclubhavelte.nl/baan/impressie
+ok   https://portal.everyoffice.nl/userfiles/1557/files/Driving_range/Gebruiksvoorschrift_Drivingrange_Golfclub_Havelte_1_0.pdf
+ok   https://portal.everyoffice.nl/userfiles/1557/files/scorekaart_nieuwste_versie_website.pdf
+fout https://www.golfclubhavelte.nl/_next/image?url=https%3A%2F%2Fportal.everyoffice.nl%2Fimages%2Fcompanyfiles%2F1557%2Fhighlight%2Fscorekaart-juli2026-20261023155254.png&amp;w=3840&amp;q=60 (400)
+fout https://www.golfclubhavelte.nl/_next/image?url=https%3A%2F%2Fportal.everyoffice.nl%2Fimages%2Fcompanyfiles%2F1557%2Fhighlight%2Fscorekaart-plattegrond-20261023155546.png&amp;w=3840&amp;q=60 (400)
+ok   https://golf-club-havelte.portal.everyoffice.nl/images/companyfiles/1557/card/handicap-tabel-heren-18-holes-20260407142441.jpg
+ok   https://golf-club-havelte.portal.everyoffice.nl/images/companyfiles/1557/card/baanhandicap-tabel-heren-1e-9-holes-20260407143521.jpg
+ok   https://golf-club-havelte.portal.everyoffice.nl/images/companyfiles/1557/card/handicap-tabel-dames-1e-9-holes-20260407143046.jpg
+ok   https://golf-club-havelte.portal.everyoffice.nl/images/companyfiles/1557/card/baanhandicap-tabel-heren-2e-9-holes-20260407142933.jpg
+ok   https://golf-club-havelte.portal.everyoffice.nl/images/companyfiles/1557/card/handicap-tabel-dames-2e-9-holes-20260407143153.jpg
+ok   https://portal.everyoffice.nl/userfiles/1557/files/par_3_dames_en_heren_-_9_holes.pdf
+ok   https://golfclubheidemeer.nl/
+ok   https://golfclubheidemeer.nl/layout/scorekaart-local-rules/
+ok   https://golfclubheidemeer.nl/layout/
+ok   https://golfclubheidemeer.nl/layout/playing-handicap-tabellen/
+ok   https://golfclubheidemeer.nl/gasten/greenfees-en-tarieven/
+ok   https://golfclubheidemeer.nl/contact/
+ok   https://golfclubheidemeer.nl/de-club/
+ok   https://golfclubheidemeer.nl/de-club/hole-in-one-reglement/
+ok   https://golfclubheidemeer.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfclubheidemeer.nl%2Flayout%2Fscorekaart-local-rules%2F
+ok   https://golfclubheidemeer.nl/wp-content/uploads/scorekaart-9-holes-2024.pdf
+ok   https://golfclubheidemeer.nl/wp-content/uploads/scorekaart-18-holes-2024.pdf
+ok   https://golfclubheidemeer.nl/baannieuws/
+ok   https://golfclubheidemeer.nl/wp-content/uploads/Heidemeer-Dames.pdf
+ok   https://golfclubheidemeer.nl/wp-content/uploads/Heidemeer-Heren.pdf
+ok   https://golfclubheidemeer.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfclubheidemeer.nl%2Fde-club%2Fhole-in-one-reglement%2F
+ok   https://golfclubheidemeer.nl/wp-content/uploads/holeinonereglement-2026.pdf
+ok   https://golfclubheidemeer.nl/baannieuws/feed/
+ok   https://golfclubholthuizen.nl/
+ok   https://golfclubholthuizen.nl/baan/baaninformatie/scorekaarten/
+ok   https://golfclubholthuizen.nl/baan/baaninformatie/handicap-tabellen/
+ok   https://golfclubholthuizen.nl/baan/over/
+ok   https://golfclubholthuizen.nl/baan/over/architectuur/
+ok   https://golfclubholthuizen.nl/club/historie/
+ok   https://golfclubholthuizen.nl/baan/tarieven-2/tarieven/
+ok   https://golfclubholthuizen.nl/baan/ngf-competitie-2025/
+ok   https://golfclubholthuizen.nl/baan/
+ok   https://golfclubholthuizen.nl/baan/baaninformatie/
+ok   https://golfclubholthuizen.nl/baan/baaninformatie/baanstatus/
+ok   https://golfclubholthuizen.nl/baan/kalender/
+ok   https://golfclubholthuizen.nl/baan/over/geo-certificaat/
+ok   https://golfclubholthuizen.nl/baan/over/impressie/
+ok   https://golfclubholthuizen.nl/baan/baaninformatie/plattegrond/
+ok   https://golfclubholthuizen.nl/baan/baaninformatie/baanboekje/
+ok   https://golfclubholthuizen.nl/baan/faciliteiten/par-3-baan/
+ok   https://golfclubholthuizen.nl/baan/installatie-nexxchange-weblink/
+ok   https://golfclublauswolt.nl/
+ok   https://golfclublauswolt.nl/de-baan/scorekaart-lauswolt/
+ok   https://golfclublauswolt.nl/de-baan/handicaptabellen/
+ok   https://golfclublauswolt.nl/de-baan/baanboekje/
+ok   https://golfclublauswolt.nl/bezoekers/starttijden-en-tarieven/
+ok   https://golfclublauswolt.nl/bezoekers/bezoekersregeling-golfers-en-pros/
+ok   https://golfclublauswolt.nl/de-baan/
+ok   https://golfclublauswolt.nl/de-baan/baanstatus/
+ok   https://golfclublauswolt.nl/de-baan/local-rules/
+ok   https://golfclublauswolt.nl/de-baan/oefenfaciliteiten-en-driving-range/
+ok   https://golfclublauswolt.nl/de-baan/geo-duurzaamheid/
+ok   https://golfclublauswolt.nl/de-baan/flora-en-fauna-2/
+ok   https://golfclublauswolt.nl/de-baan/veilig-sportklimaat/
+ok   https://golfclublauswolt.nl/business/holesponsoren/
+ok   https://golfclublauswolt.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfclublauswolt.nl%2Fde-baan%2Fscorekaart-lauswolt%2F
+ok   https://golfclublauswolt.nl/wp-content/uploads/2025/04/2025-Scorekaart-Lauswolt-binnenkant.jpg
+ok   https://golfclublauswolt.nl/wp-content/uploads/2023/12/2024-Golfclub-Lauswolt-scorekaart.jpg
+ok   https://golfclublauswolt.nl/wp-content/uploads/2025/04/2025-Scorekaart-Lauswolt-binnenkant-300x136.jpg
+ok   https://www.golfclubputten.com/
+ok   https://www.golfclubputten.com/golfbaan/scorekaart
+ok   https://www.golfclubputten.com/golfbaan/courserating
+ok   https://www.golfclubputten.com/heren-9-holes
+ok   https://www.golfclubputten.com/dames-9-holes
+ok   https://www.golfclubputten.com/tarieven/greenfee
+ok   https://www.golfclubputten.com/starttijden
+ok   https://www.golfclubputten.com/golfbaan
+ok   https://www.golfclubputten.com/golfbaan/courserating/onweer
+ok   https://www.golfclubputten.com/golfbaan/regels-local-rules
+ok   https://www.golfclubputten.com/golfbaan/oefenfaciliteiten
+ok   https://www.golfclubputten.com/golfbaan/greenkeeping
+ok   https://www.golfclubputten.com/golfbaan/golfen-met-de-hond
+ok   https://www.golfclubputten.com/golfbaan/opening
+ok   https://www.golfclubputten.com/tarieven/arrangementen/9-holes-golf-arrangement
+ok   https://www.golfclubputten.com/tarieven/arrangementen/18-holes-golf-arrangement
+ok   https://primary.jwwb.nl/public/s/p/o/temp-hndtgncwipnujfolznht/Scorekaartvoorkant.png
+ok   https://primary.jwwb.nl/public/s/p/o/temp-hndtgncwipnujfolznht/Scorekaartregels.png
+ok   https://www.golfclubwinterswijk.nl
+ok   https://www.golfclubwinterswijk.nl/golfbaan/score-kaart-hcp-tabel/
+ok   https://www.golfclubwinterswijk.nl/golfbaan/historie/
+ok   https://www.golfclubwinterswijk.nl/golfclub/historie/
+ok   https://www.golfclubwinterswijk.nl/gasten/greenfee-hospitality/
+ok   https://www.golfclubwinterswijk.nl/golfbaan/baanbezetting/
+ok   https://www.golfclubwinterswijk.nl/golfbaan/hole-informatie/
+ok   https://www.golfclubwinterswijk.nl/golfbaan/kledingvoorschriften/
+ok   https://www.golfclubwinterswijk.nl/golfbaan/local-rules-baanreglement/
+ok   https://www.golfclubwinterswijk.nl/golfbaan/baanmanagement/
+ok   https://www.golfclubwinterswijk.nl/de-golfbaan/starttijd-reserveren/
+ok   https://www.golfclubwinterswijk.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfclubwinterswijk.nl%2Fgolfbaan%2Fscore-kaart-hcp-tabel%2F
+ok   https://www.golfclubwinterswijk.nl/wp-content/uploads/2026/08/Golfbaan-De-Voortwisch-scorekaart-juli-2026-002.pdf
+ok   https://www.golfclubwinterswijk.nl/wp-content/uploads/2026/07/Winterswijk-Dames-2026.pdf
+ok   https://www.golfclubwinterswijk.nl/wp-content/uploads/2026/07/Winterswijk-Heren-2026.pdf
+ok   https://www.golfclubwinterswijk.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfclubwinterswijk.nl%2Fgolfbaan%2Fhistorie%2F
+ok   https://www.golfclubwinterswijk.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfclubwinterswijk.nl%2Fgolfbaan%2Fbaanbezetting%2F
+ok   https://www.golfclubwinterswijk.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfclubwinterswijk.nl%2Fgolfbaan%2Fhole-informatie%2F
+ok   https://www.golfclubzuiddrenthe.nl/
+ok   https://www.golfclubzuiddrenthe.nl/golfbaan/
+ok   https://www.golfclubzuiddrenthe.nl/scorekaarten/
+ok   https://www.golfclubzuiddrenthe.nl/handicaptabellen/
+ok   https://www.golfclubzuiddrenthe.nl/baanboekje/
+ok   https://www.golfclubzuiddrenthe.nl/baanimpressie/
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/golfbaan/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/baanboekje/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/local-rules/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/handicaptabellen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/scorekaarten/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/bestuur/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/lidmaatschappen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/aanmeldformulier-lidmaatschap/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/baanimpressie/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/contact/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/nieuwsberichten/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/privacyverklaring-en-cookiebeleid/ (404)
+fout https://www.golfclubzuiddrenthe.nl/golfbaan/inloggen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/golfbaan/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/baanboekje/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/local-rules/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/handicaptabellen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/scorekaarten/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/bestuur/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/lidmaatschappen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/aanmeldformulier-lidmaatschap/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/baanimpressie/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/contact/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/nieuwsberichten/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/privacyverklaring-en-cookiebeleid/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/inloggen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/scorekaarten/static/assets/logo.png (404)
+fout https://www.golfclubzuiddrenthe.nl/handicaptabellen/golfbaan/ (404)
+fout https://www.golfclubzuiddrenthe.nl/handicaptabellen/baanboekje/ (404)
+fout https://www.golfclubzuiddrenthe.nl/handicaptabellen/scorekaarten/ (404)
+fout https://www.golfclubzuiddrenthe.nl/handicaptabellen/baanimpressie/ (404)
+fout https://www.golfclubzuiddrenthe.nl/handicaptabellen/static/assets/logo.png (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/golfbaan/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/baanboekje/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/local-rules/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/handicaptabellen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/scorekaarten/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/bestuur/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/lidmaatschappen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/aanmeldformulier-lidmaatschap/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/baanimpressie/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/contact/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/nieuwsberichten/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/privacyverklaring-en-cookiebeleid/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanboekje/inloggen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/golfbaan/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/baanboekje/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/local-rules/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/handicaptabellen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/scorekaarten/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/bestuur/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/lidmaatschappen/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/aanmeldformulier-lidmaatschap/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/baanimpressie/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/contact/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/nieuwsberichten/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/privacyverklaring-en-cookiebeleid/ (404)
+fout https://www.golfclubzuiddrenthe.nl/baanimpressie/inloggen/ (404)
+ok   https://www.golfclubzwolle.nl
+ok   https://www.golfclubzwolle.nl/playinghandicap/
+ok   https://www.golfclubzwolle.nl/alle-18-holes/
+ok   https://www.golfclubzwolle.nl/bezoek-ons/
+ok   https://www.golfclubzwolle.nl/club/geschiedenis/
+ok   https://www.golfclubzwolle.nl/golfen/greenfee/
+ok   https://www.golfclubzwolle.nl/baan/oefenfaciliteiten/
+ok   https://www.golfclubzwolle.nl/baan/baanstatus/
+ok   https://www.golfclubzwolle.nl/golfen/baanagenda/
+ok   https://www.golfclubzwolle.nl/baan/
+ok   https://www.golfclubzwolle.nl/baaninformatie/
+ok   https://www.golfclubzwolle.nl/baan/natuur-milieu/
+ok   https://www.golfclubzwolle.nl/wp-content/uploads/2025/01/Cameraprotocol-2025.pdf
+ok   https://www.golfclubzwolle.nl/wp-content/uploads/2026/09/handicaptabel-18h-Heren--scaled.jpg
+ok   https://www.golfclubzwolle.nl/wp-content/uploads/2026/09/handicaptabel-9h-Bosch-Heren.png
+ok   https://www.golfclubzwolle.nl/wp-content/uploads/2026/09/handicaptabel-18h-Dames-scaled.jpg
+ok   https://www.golfclubzwolle.nl/wp-content/uploads/2026/09/handicaptabel-9h-Bosch-Dames.png
+ok   https://www.golfclubzwolle.nl/wp-content/uploads/2026/09/Scorekaart-02-2026.png
+ok   https://www.golfenophetrijk.nl/sybrook.html
+ok   https://www.golfenophetrijk.nl/nunspeet.html
+ok   https://www.golfenophetrijk.nl/sybrook/baandetails.html
+ok   https://www.golfenophetrijk.nl/sybrook/baaninformatie.html
+ok   https://www.golfenophetrijk.nl/sybrook/greenfee.html
+ok   https://www.golfenophetrijk.nl/sybrook/golfvereniging.html
+ok   https://www.golfenophetrijk.nl/nunspeet/baandetails.html
+ok   https://www.golfenophetrijk.nl/nunspeet/baaninformatie.html
+ok   https://www.golfenophetrijk.nl/nunspeet/greenfee-tarieven.html
+ok   https://www.golfenophetrijk.nl/nunspeet/oefenfaciliteiten.html
+ok   https://www.golfenophetrijk.nl/sybrook/de-baan.html
+ok   https://www.golfenophetrijk.nl/sybrook/actuele-baancondities.html
+ok   https://www.golfenophetrijk.nl/nunspeet/de-baan.html
+ok   https://www.golfenophetrijk.nl/nunspeet/actuele-baancondities.html
+ok   https://www.golfenophetrijk.nl/assets/Sybrook-handicaptabel-heren-noord-26052026.pdf
+ok   https://www.golfenophetrijk.nl/assets/Sybrook-handicaptabel-dames-noord-26052026.pdf
+ok   https://www.golfenophetrijk.nl/assets/Sybrook-handicaptabel-heren-oost-26052026.pdf
+ok   https://www.golfenophetrijk.nl/assets/Sybrook-handicaptabel-dames-oost-26052026.pdf
+ok   https://www.golfparcsandur.nl/
+ok   https://www.golfparcsandur.nl/golfparc-sandur/baan-layout/
+ok   https://www.golfparcsandur.nl/golfparc-sandur/playing-handicap/
+ok   https://www.golfparcsandur.nl/gasten/
+ok   https://www.golfparcsandur.nl/2022/02/01/kom-genieten-van-onze-uitdagende-baan/
+ok   https://www.golfparcsandur.nl/wp-content/uploads/2023/05/Club-van-100-website-nieuw-2023.pdf
+ok   https://www.golfparcsandur.nl/wp-content/uploads/2023/01/Huishoudelijk-reglement-GPS.pdf
+ok   https://www.golfparcsandur.nl/wp-content/uploads/2024/11/96350817-359A-438B-936C-436682284779.pdf
+ok   https://www.golfparcsandur.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfparcsandur.nl%2Fgolfparc-sandur%2Fbaan-layout%2F
+ok   https://www.golfparcsandur.nl/wp-content/uploads/2024/09/HCP-tabellen-Sandur-Heren-9-en-18-holes-2024.pdf
+ok   https://www.golfparcsandur.nl/wp-content/uploads/2024/09/HCP-tabellen-Sandur-Dames-9-en-18-holes-2024.pdf
+ok   https://www.golfparcsandur.nl/wp-content/uploads/2024/12/Voorspelen-en-teamcapt_-2025.pdf
+ok   https://www.golfparcsandur.nl/wp-content/uploads/2023/02/Plaatselijke-regels-05-04-2019.pdf
+ok   https://www.golfparcsandur.nl/2022/02/01/kom-genieten-van-onze-uitdagende-baan/feed/
+ok   https://www.golfparcsandur.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfparcsandur.nl%2F2022%2F02%2F01%2Fkom-genieten-van-onze-uitdagende-baan%2F
+ok   https://golfparkdehildenberg.nl/
+ok   https://www.golfparkdehildenberg.nl/
+ok   https://www.golfparkdehildenberg.nl/index.php/golfbaan/baanoverzicht
+ok   https://www.golfparkdehildenberg.nl/index.php/golfbaan
+ok   https://www.golfparkdehildenberg.nl/index.php/gasten/greenfee-tarieven
+ok   https://www.golfparkdehildenberg.nl/index.php/golfbaan/reserveren-starttijd
+ok   https://www.golfparkdehildenberg.nl/index.php/pitch-put
+ok   https://www.golfparkdehildenberg.nl/index.php/golfbaan/oefenfaciliteiten
+ok   https://golfparkdehildenberg.nl/index.php/golfbaan
+ok   https://golfparkdehildenberg.nl/index.php/golfbaan/baanoverzicht
+ok   https://golfparkdehildenberg.nl/index.php/golfbaan/handicarts-buggys
+ok   https://golfparkdehildenberg.nl/index.php/golfbaan/reserveren-starttijd
+ok   https://golfparkdehildenberg.nl/index.php/golfbaan/oefenfaciliteiten
+ok   https://golfparkdehildenberg.nl/index.php/golfbaan/ondernemers
+ok   https://golfparkdehildenberg.nl/index.php/golfbaan/vacatures
+ok   https://golfparkdehildenberg.nl/index.php/golfbaannieuws/aed-cursus
+ok   https://golfparkdehildenberg.nl/index.php/golfbaannieuws
+ok   https://www.golfparkdehildenberg.nl/index.php/golfbaan/handicarts-buggys
+ok   https://www.golfparkexloo.nl/
+ok   https://www.golfparkexloo.nl/scorekaarten/
+ok   https://www.golfparkexloo.nl/handicaptabellen/
+ok   https://www.golfparkexloo.nl/greenfeetarieven/
+ok   https://www.golfparkexloo.nl/over-de-club/
+ok   https://www.golfparkexloo.nl/baanstatus/
+ok   https://www.golfparkexloo.nl/baanimpressie/
+ok   https://www.golfparkexloo.nl/overzicht-holes/
+ok   https://www.golfparkexloo.nl/baanreglement/
+ok   https://www.golfparkexloo.nl/lidmaatschap-golfbaan-drenthe/
+ok   https://www.golfparkexloo.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golfparkexloo.nl%2Fscorekaarten%2F
+ok   https://www.golfparkexloo.nl/wp-content/uploads/2026/07/Scorekaart18Holes_2025_Buitenkant-scaled.jpg
+ok   https://www.golfparkexloo.nl/wp-content/uploads/2026/07/Scorekaart18Holes_2025_Binnenkant-scaled.jpg
+ok   https://www.golfparkexloo.nl/wp-content/uploads/2022/10/Handicaptabel-9-holes-Noord-Dames-2022.jpg
+ok   https://www.golfparkexloo.nl/wp-content/uploads/2022/10/Handiccaptabel-9-holes-Zuid-Dames-2022.jpg
+ok   https://www.golfparkexloo.nl/wp-content/uploads/2022/10/Handicaptabel-18-holes-Noord-Dames-2022-1.jpg
+ok   https://www.golfparkexloo.nl/wp-content/uploads/2022/10/Handicaptabel-18-holes-Noord-Zuid-Dames-2022.jpg
+ok   https://www.golfparkexloo.nl/wp-content/uploads/2022/10/Handicaptabel-9-holes-Noord-Heren-2022.jpg
+ok   https://golfpleziertwente.nl
+ok   https://golfpleziertwente.nl/
+ok   https://golfresidentie.nl/
+ok   https://golfresidentie.nl/golfen/greenfee-spelers/scorekaart/
+ok   https://golfresidentie.nl/golfen/greenfee-spelers/handicaptabellen/
+ok   https://golfresidentie.nl/greenfee-spelen/
+ok   https://golfresidentie.nl/contact/
+ok   https://golfresidentie.nl/golfen/greenfee-spelers/holes/
+ok   https://golfresidentie.nl/golfen/baaninformatie/
+ok   https://golfresidentie.nl/nieuwe-handicaptabellen-en-scorekaarten-vanaf-28-oktober/
+fout https://golfresidentie.nl/golfen/kalender-baanbezetting/ (404)
+ok   https://golfresidentie.nl/golfen/baanreglement/
+ok   https://golfresidentie.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfresidentie.nl%2Fgolfen%2Fgreenfee-spelers%2Fscorekaart%2F
+ok   https://golfresidentie.nl/wp-content/uploads/2024/11/scorekaart-2-stuks-op-1-a4-eigen-gebruik-aug-2020-kleur.pdf
+ok   https://golfresidentie.nl/wp-content/uploads/2024/11/scorekaart-2-stuks-op-1-a4-eigen-gebruik-aug-2020-zwartwit.pdf
+ok   https://golfresidentie.nl/wp-content/uploads/2024/11/scorekaart-2021-website-18h-grd.pdf
+ok   https://golfresidentie.nl/wp-content/uploads/2024/11/golfresidentie-scorekaart-1e-negen-dubbel-tbv-website-optim-minus-wit.pdf
+ok   https://golfresidentie.nl/wp-content/uploads/2024/11/golfresidentie-scorekaart-2e-negen-dubbel-tbv-website-optim-minus-wit.pdf
+ok   https://golfresidentie.nl/wp-content/uploads/2026/05/ScoreCardWebsite-2026-met-2-banen-1eGRD-en-1eOGD.pdf
+ok   https://golfresidentie.nl/wp-content/uploads/2026/05/ScoreCardWebsite-2026-met-2-banen-2eGRD-en-1eOGD.pdf
+ok   https://golfresidentie.nl/wp-content/uploads/2026/05/ScoreCardWebsite-2026-met-2-banen-1eGRD-en-2eOGD.pdf
+ok   https://www.golftuinzwolle.nl
+ok   https://www.golftuinzwolle.nl/
+ok   https://www.golftuinzwolle.nl/golfbaan/
+ok   https://www.golftuinzwolle.nl/plaatselijke-regels/
+ok   https://www.golftuinzwolle.nl/wp-content/uploads/2019/06/Golftuin-Zwolle-Algemene-voorwaarden.pdf
+ok   https://www.golftuinzwolle.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.golftuinzwolle.nl%2Fgolfbaan%2F
+ok   https://www.golftuinzwolle.nl/wp-content/uploads/2025/07/Golftuin-Zwolle-Dames-Heren.pdf
+ok   https://golfullerberg.nl/
+ok   https://golfullerberg.nl/lidmaatschap
+ok   https://harderwold.nl/golf/golfbaan/
+ok   https://harderwold.nl/golf/golfbaan/tarieven/
+ok   https://harderwold.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharderwold.nl%2Fgolf%2Fgolfbaan%2F
+ok   https://harderwold.nl/baanstatus/
+ok   https://harderwold.nl/wp-content/uploads/2025/03/Harderwold-heren-samengevoegd-1.pdf
+ok   https://harderwold.nl/golf/golfbaan/onweerprotocol/
+ok   https://harderwold.nl/wp-content/uploads/2025/04/Plattegrond_Harderwold.pdf
+ok   https://harderwold.nl/wp-content/uploads/2026/07/Lunch-Dinerkaart-Harderwold-Zomer-26.pdf
+ok   https://harderwold.nl/reserveren/golfbaan/
+ok   https://harderwold.nl/golf/reserveren/golfbaan-2/
+ok   https://harderwold.nl/wp-content/uploads/2025/04/Algemene-voorwaarden-241017.pdf
+ok   https://harderwold.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharderwold.nl%2Fgolf%2Fgolfbaan%2Ftarieven%2F
+ok   https://harderwold.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharderwold.nl%2Fbaanstatus%2F
+ok   https://harderwold.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharderwold.nl%2Fgolf%2Fgolfbaan%2Fonweerprotocol%2F
+ok   https://hetbuiten-land.nl/
+ok   https://hetbuiten-land.nl/pitch-putt-golf-leeuwarden/
+ok   https://hetbuiten-land.nl/contact/
+ok   https://www.hollandschegolfclub.nl/golfpark/de-breuninkhof/
+ok   https://www.hollandschegolfclub.nl/golfpark/sint-nyk/
+ok   https://www.hollandschegolfclub.nl/golfpark/de-breuninkhof/course/18-holes-baan-breuninkhof/
+ok   https://www.hollandschegolfclub.nl/golfpark/de-breuninkhof/course/de-breuninkhof-9-holes-kleine-baan/
+ok   https://www.hollandschegolfclub.nl/wp-content/uploads/2026/02/Breuninkhof_Scorekaart_18holes-MRT-2026-1.pdf
+ok   https://www.hollandschegolfclub.nl/wp-content/uploads/2026/01/Breuninkhof_Scorekaart_9holes-MRT-2026.pdf
+ok   https://www.hollandschegolfclub.nl/golfpark/sint-nyk/course/18-holes-baan-sint-nyk/
+ok   https://www.hollandschegolfclub.nl/wp-content/uploads/2026/03/BRE-Wedstrijdkalender-2026-Website.pdf
+ok   https://www.hollandschegolfclub.nl/golfpark/de-breuninkhof/course/de-breuninkhof-9-holes-gele-lus/
+ok   https://www.hollandschegolfclub.nl/golfpark/sint-nyk/course/sint-nyk-9-holes-geel/
+ok   https://www.hollandschegolfclub.nl/golfpark/sint-nyk/course/sint-nyk-9-holes-rood/
+ok   https://www.hollandschegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hollandschegolfclub.nl%2Fgolfpark%2Fde-breuninkhof%2Fcourse%2F18-holes-baan-breuninkhof%2F
+ok   https://www.hollandschegolfclub.nl/wp-json/wp/v2/course/6490
+ok   https://www.hollandschegolfclub.nl/wp-content/uploads/2026/02/Breuninkhof_9-18holesBaanboekje2026.pdf
+ok   https://www.hollandschegolfclub.nl/wp-content/uploads/2026/02/Golfpark-De-Breuninkhof-handicaptabellen.pdf
+ok   https://www.hollandschegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hollandschegolfclub.nl%2Fgolfpark%2Fde-breuninkhof%2Fcourse%2Fde-breuninkhof-9-holes-kleine-baan%2F
+ok   https://www.hollandschegolfclub.nl/wp-json/wp/v2/course/6489
+ok   https://www.hollandschegolfclub.nl/wp-content/uploads/2026/01/DB-BAANBOEKJE-9-HOLES-2026.pdf
+ok   https://hoogegraven.nl/
+ok   https://hoogegraven.nl/golfen/onze-baan/
+ok   https://hoogegraven.nl/golfen/greenfee-tarieven/
+ok   https://hoogegraven.nl/golfen/faciliteiten/
+ok   https://hoogegraven.nl/golfen/baanstatus/
+ok   https://hoogegraven.nl/storage/2025/11/Hooge-Graven-9-holes-Par-3-baan-DamesHeren.pdf
+ok   https://hoogegraven.nl/storage/2025/11/Hooge-Graven-18-holes-Par-3-baan-DamesHeren.pdf
+ok   https://hoogegraven.nl/storage/2025/11/Hooge-Graven-Heren-grote-baan.pdf
+ok   https://hoogegraven.nl/storage/2025/11/Hooge-Graven-Dames-grote-baan.pdf
+ok   https://hoogegraven.nl/storage/2026/06/Scorekaart-hooge-graven-golfclub-ommen-gecomprimeerd-2.pdf
+ok   https://hoogegraven.nl/storage/2025/11/scorekaarten-PAR3-baan.pdf
+ok   https://www.keppelse.nl
+ok   https://keppelse.nl/playing-handicap/
+ok   https://keppelse.nl/greenfee-gasten/
+ok   https://keppelse.nl/contact-en-aanrijroutes/
+ok   https://keppelse.nl/club/clubhistorie/
+ok   https://keppelse.nl/baanbeschrijving/
+ok   https://www.keppelse.nl/baanstatus
+ok   https://keppelse.nl/baanreglement/
+ok   https://keppelse.nl/in-de-baan-bij-onweer/
+ok   https://keppelse.nl/in-de-baan-bij-onweer/businessclub/businessclub-kgc/
+ok   https://keppelse.nl/in-de-baan-bij-onweer/businessclub/sponsoren-en-bc-leden/
+ok   https://keppelse.nl/in-de-baan-bij-onweer/businessclub/businessleden/
+ok   https://keppelse.nl/in-de-baan-bij-onweer/businessclub/agenda/
+ok   https://keppelse.nl/in-de-baan-bij-onweer/businessclub/businessnieuws/
+ok   https://keppelse.nl/in-de-baan-bij-onweer/businessclub/businesscompetitie/
+ok   https://keppelse.nl/nieuws/zorgvuldig-omgaan-met-de-baan/
+ok   https://www.keppelse.nl/wp-content/uploads/2021/04/Aanrijroutes-ambulance.pdf
+ok   https://keppelse.nl/baanstatus
+ok   https://www.kruisselt.nl/golf/
+ok   https://www.kruisselt.nl/golfclub-t-kruisselt/
+ok   https://www.kruisselt.nl/wp-content/uploads/2026/01/Golf-brochure-26.pdf
+ok   https://www.kruisselt.nl/wp-content/uploads/2026/01/Inschrijfformulier-golf-2026.pdf
+ok   https://www.kruisselt.nl/wp-content/uploads/2025/12/2025-2026-Algemene-voorwaarden-Golfclub-t-Kruisselt.pdf
+ok   https://www.kruisselt.nl/wp-content/uploads/2026/08/GCC-t-Kruisselt-Dames-en-Heren-2026.pdf
+ok   https://www.landal.nl/parken/orveltermarke
+ok   https://www.landal.nl/thema/vakantiepark-padelbaan
+ok   https://www.leeuwardergolfclub.nl/
+ok   https://www.leeuwardergolfclub.nl/de-baan-2/de-baan/
+ok   https://www.leeuwardergolfclub.nl/de-baan-2/de-baan/handicaptabel-en-scorekaart/
+ok   https://www.leeuwardergolfclub.nl/app/uploads/2024/12/Website-scorecard-2025-1.pdf
+ok   https://www.leeuwardergolfclub.nl/app/uploads/2024/12/Groene-Ster-WHS-tabel-Heren-1.pdf
+ok   https://www.leeuwardergolfclub.nl/app/uploads/2024/12/Groene-Ster-WHS-tabel-Dames-1.pdf
+ok   https://www.leeuwardergolfclub.nl/de-baan-2/de-baan/par-3-oefenbaan/
+ok   https://www.leeuwardergolfclub.nl/greenfees/
+ok   https://www.leeuwardergolfclub.nl/contact/
+ok   https://www.leeuwardergolfclub.nl/de-baan-2/de-baan/plaatselijke-regels/
+ok   https://www.leeuwardergolfclub.nl/de-baan-2/de-baan/drivingrange/
+ok   https://www.leeuwardergolfclub.nl//de-baan/
+ok   https://www.leeuwardergolfclub.nl/de-baan-2/
+ok   https://www.leeuwardergolfclub.nl/par-3-oefenbaan/
+ok   https://www.leeuwardergolfclub.nl/app/uploads/2025/07/4-sterren-regeling-2025.pdf
+ok   https://www.lochemsegolfclub.nl/
+ok   https://www.lochemsegolfclub.nl/de-baan/
+ok   https://www.lochemsegolfclub.nl/gasten/
+ok   https://www.lochemsegolfclub.nl/gasten/tarieven-wip/
+ok   https://www.lochemsegolfclub.nl/contact/
+ok   https://www.lochemsegolfclub.nl/de-baan/birdwatching-day/
+ok   https://www.lochemsegolfclub.nl/de-baan/gedragsregels/
+ok   https://www.lochemsegolfclub.nl/de-baan/baanreglement/
+ok   https://www.lochemsegolfclub.nl/de-baan/baanonderhoud/
+ok   https://www.lochemsegolfclub.nl/wp-content/uploads/2024/01/2023_Lochemse_scorekrt_handicap_website.pdf
+ok   https://www.lochemsegolfclub.nl/nieuws/baanhandicap-berekenen/
+fout https://www.lochemsegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lochemsegolfclub.nl%2Fde-baan%2F (401)
+ok   https://www.lochemsegolfclub.nl/wp-content/uploads/2026/01/Lochemse-Heren-nw.pdf
+ok   https://www.lochemsegolfclub.nl/wp-content/uploads/2026/01/Lochemse-Dames-nw.pdf
+fout https://www.lochemsegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lochemsegolfclub.nl%2Fde-baan%2Fbirdwatching-day%2F (401)
+fout https://www.lochemsegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lochemsegolfclub.nl%2Fde-baan%2Fgedragsregels%2F (401)
+ok   https://www.lochemsegolfclub.nl/wp-content/uploads/2025/03/ngf-tuchtreglement-gog-2024.pdf
+ok   https://www.lochemsegolfclub.nl/wp-content/uploads/2025/03/ngf-tuchtreglement-seksuele-intimidatie-2024.pdf
+fout https://www.lochemsegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lochemsegolfclub.nl%2Fde-baan%2Fbaanreglement%2F (401)
+fout https://www.lochemsegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lochemsegolfclub.nl%2Fde-baan%2Fbaanonderhoud%2F (401)
+ok   https://www.lochemsegolfclub.nl/wp-content/uploads/2025/06/GEO_Certificate_Lochemse_Golfclub_2025.pdf
+fout https://www.lochemsegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lochemsegolfclub.nl%2Fnieuws%2Fbaanhandicap-berekenen%2F (401)
+ok   https://www.martensplek.nl/
+ok   https://www.martensplek.nl/gastspelers/scorekaart
+ok   https://www.martensplek.nl/baan
+ok   https://www.martensplek.nl/baan/rating-en-whs-handicaptabellen
+ok   https://www.martensplek.nl/gastspelers
+ok   https://www.martensplek.nl/tarieven/greenfee-2026
+ok   https://www.martensplek.nl/baan/plattegrond
+ok   https://www.martensplek.nl/baan/baanimpressie
+ok   https://www.martensplek.nl/baan/gedragsregels
+ok   https://www.martensplek.nl/baan/local-rules
+ok   https://www.martensplek.nl/baanstatus-1
+ok   https://www.martensplek.nl/product/21957220/najaarsactie-9-holes-all-in
+ok   https://www.martensplek.nl/product/21957330/najaarsactie-18-holes-all-in
+ok   https://multifunbussloo.nl/outdoor/pitch-en-putt/
+ok   https://multifunbussloo.nl/contact/
+ok   https://multifunbussloo.nl/over-ons/
+ok   https://www.nngcc.nl/
+ok   https://www.nngcc.nl/baan/holes
+ok   https://www.nngcc.nl/baan/hole-1
+ok   https://www.nngcc.nl/baan/playing-handicap-tabellen
+ok   https://www.nngcc.nl/club/historie
+ok   https://www.nngcc.nl/club/arrangementen
+ok   https://www.nngcc.nl/baan
+ok   https://www.nngcc.nl/baan/oefenfaciliteiten
+ok   https://www.nngcc.nl/baan/plaatselijke-regels
+ok   https://www.nngcc.nl/baan/hole-2
+ok   https://www.nngcc.nl/baan/hole-3
+ok   https://www.nngcc.nl/baan/hole-4
+ok   https://www.nngcc.nl/baan/hole-5
+ok   https://www.nngcc.nl/baan/hole-6
+ok   https://www.nngcc.nl/baan/hole-7
+ok   https://www.nngcc.nl/baan/hole-8
+ok   https://www.nngcc.nl/baan/hole-9
+ok   https://www.nngcc.nl/baan/hole-10
+ok   https://www.openbaregolfclubdronten.nl/
+ok   https://www.openbaregolfclubdronten.nl/Scorekaart-en-handicap
+ok   https://www.openbaregolfclubdronten.nl/Golfbaan
+ok   https://www.openbaregolfclubdronten.nl/Contact
+ok   https://www.openbaregolfclubdronten.nl/Gasten/Greenfee
+ok   https://www.openbaregolfclubdronten.nl/Baangids-en-local-rules
+ok   https://www.openbaregolfclubdronten.nl/gallery/Disclaimer%20OGD.pdf
+ok   https://www.openbaregolfclubdronten.nl/gallery/d809bc489f76a22a9f2932b4b3acaaeb_e-object-Privacy_policy_OGD.pdf
+ok   https://www.openbaregolfclubdronten.nl/gallery/Openbare%20GC%20Dronten%20Dames.pdf
+ok   https://www.openbaregolfclubdronten.nl/gallery/Openbare%20GC%20Dronten%20Heren.pdf
+fout https://www.openbaregolfclubdronten.nl/Gasten/Golfbaan (404)
+fout https://www.openbaregolfclubdronten.nl/Gasten/Scorekaart-en-handicap (404)
+fout https://www.openbaregolfclubdronten.nl/Gasten/Baangids-en-local-rules (404)
+ok   https://www.openbaregolfclubdronten.nl/gallery/Baangids%202026%20v1.pdf
+ok   https://pitch-putt-doetinchem.nl
+ok   https://pitch-putt-doetinchem.nl/pitch-putt-golf/
+ok   https://pitch-putt-twente.nl/
+ok   https://pitch-putt-twente.nl/golfbaan/
+ok   https://pitch-putt-twente.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpitch-putt-twente.nl%2Fgolfbaan%2F
+ok   https://pitch-putt.nl/locaties/lemele/
+ok   https://www.pitch-putt.nl/locaties/groenlo/
+ok   https://pitch-putt.nl/locaties/groningen/
+ok   https://www.pitch-putt.nl/locaties/koudum/
+ok   https://www.pitch-putt.nl/locaties/papendal/
+ok   https://pitch-putt.nl/lemele
+ok   https://pitch-putt.nl/locaties/lemele/lemele-pitchputt/
+ok   https://www.pitch-putt.nl/locaties/groenlo/groenlo-pitch-putt-golf/
+ok   https://www.pitch-putt.nl/locaties/koudum/koudum-pitch-putt-golf/
+ok   https://www.pitch-putt.nl/locaties/papendal/papendal-pitch-putt-golf/
+ok   https://pitch-putt.nl/wp-content/uploads/2023/01/PP-privacy-verklaring.pdf
+ok   https://www.pitchenputtheerde.nl
+ok   https://www.pitchenputtheerde.nl/over-pitch-en-putt/
+ok   https://www.pitchenputtheerde.nl/golfsoorten/
+ok   https://www.pitchenputtheerde.nl/contact/
+ok   https://www.pitchenputtheerde.nl/golfsoorten/pitch-putt-halve-baan/
+ok   https://www.pitchenputtheerde.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.pitchenputtheerde.nl%2Fgolfsoorten%2Fpitch-putt-halve-baan%2F
+ok   https://www.pitchenputtheerde.nl/reserveren/?referral=pitch___putt_9-holes
+ok   https://www.pitchenputtmartensplek.nl/
+ok   https://www.pitchenputtmartensplek.nl/informatie
+ok   https://www.pitchenputtmartensplek.nl/contact-1
+ok   https://www.pitchenputtmartensplek.nl/product/8838413/pitch-putt-9-holes
+ok   https://www.pitchenputtmartensplek.nl/product/15301711/pitch-putt-9-holes-jeugd-t-m-15-jaar
+ok   https://www.pitchenputtmartensplek.nl/product/8838490/pitch-putt-18-holes
+ok   https://www.pitchenputtmartensplek.nl/product/15302424/pitch-putt-18-holes-jeugd-t-m-15-jaar
+ok   https://www.pitchenputtmartensplek.nl/product/8729374/moonlight-pitch-putt-9-holes
+ok   https://playstay.nl/
+ok   https://playstay.nl/activiteiten/9-holes-pitch-putt/
+ok   https://playstay.nl/activiteiten/18-holes-pitch-putt/
+ok   https://playstay.nl/veelgestelde-vragen/
+ok   https://playstay.nl/groepen/scholen/
+ok   https://playstay.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fplaystay.nl%2Factiviteiten%2F9-holes-pitch-putt%2F
+ok   https://playstay.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fplaystay.nl%2Factiviteiten%2F18-holes-pitch-putt%2F
+ok   https://playstay.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fplaystay.nl%2Fgroepen%2Fscholen%2F
+ok   https://www.pwgolf.nl/
+ok   https://www.pwgolf.nl/baan/Informatie/
+ok   https://www.pwgolf.nl/gasten/Greenfee-nl/
+ok   https://www.pwgolf.nl/Club/clubinformatie/
+ok   https://www.pwgolf.nl/baan/Overzicht-van-de-holes/
+ok   https://www.pwgolf.nl/baan/
+ok   https://www.pwgolf.nl/baan/calamiteiten/
+fout https://www.pwgolf.nl/baan/Baanbezetting/ (500)
+ok   https://www.pwgolf.nl/baan/Golfetiquette/
+ok   https://www.pwgolf.nl/baan/Drivingrange/
+ok   https://www.pwgolf.nl/baan/Groot-onderhoud/
+ok   https://www.pwgolf.nl/baan/Plaatselijke%20Regels/
+ok   https://www.pwgolf.nl/baan/plattegrond/
+ok   https://www.pwgolf.nl/bibliotheek/pdf-uploads/rh-commissie/2026-01-01-18-holes-dames.pdf
+ok   https://www.pwgolf.nl/bibliotheek/pdf-uploads/rh-commissie/2026-01-01-18-holes-heren.pdf
+ok   https://www.pwgolf.nl/bibliotheek/pdf-uploads/rh-commissie/2026-01-01-9-holes-dames.pdf
+ok   https://www.pwgolf.nl/bibliotheek/pdf-uploads/rh-commissie/2026-01-01-9-holes-heren.pdf
+ok   https://www.pwgolf.nl/bibliotheek/pdf-uploads/rh-commissie/2026-01-01-scorecard.pdf
+fout https://www.pwgolf.nl/gasten/Baanbezetting/ (500)
+ok   https://www.pwgolf.nl/PW%20Golfacademy/Golfbaanpermissie_Golfvaardigheid/
+ok   https://rosendaelsche.nl/
+ok   https://rosendaelsche.nl/golfbaan/
+ok   https://rosendaelsche.nl/clubhistorie/
+ok   https://rosendaelsche.nl/gasten/tarieven/
+ok   https://rosendaelsche.nl/gasten/informatie/
+ok   https://rosendaelsche.nl/baanbezetting/
+ok   https://rosendaelsche.nl/golfbaan/florafauna/
+ok   https://rosendaelsche.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frosendaelsche.nl%2Fgolfbaan%2F
+ok   https://rosendaelsche.nl/en/golfbaan/
+ok   https://rosendaelsche.nl/wp-content/uploads/2026/04/rosendaelsche-golfclub-scorecard-2-scaled.jpg
+ok   https://rosendaelsche.nl/wp-content/uploads/2026/09/TPR-september-2026.pdf
+ok   https://rosendaelsche.nl/wp-content/uploads/2022/07/2021-06-22-RG-HC-tabellen-dames-22062021.pdf
+ok   https://rosendaelsche.nl/wp-content/uploads/2022/07/2021-06-22-RG-HC-tabellen-heren-22062021.pdf
+ok   https://rosendaelsche.nl/wp-content/uploads/2022/03/RG-Local-Rules-en-Gedragsregels.pdf
+ok   https://rosendaelsche.nl/wp-content/uploads/2026/04/rosendaelsche-golfclub-scorecard-plattegrond.jpg
+ok   https://rosendaelsche.nl/wp-content/uploads/2026/09/Pinzones-2026.pdf
+ok   https://rosendaelsche.nl/wp-content/uploads/2026/04/GEO-Certified-2030.pdf
+ok   https://rosendaelsche.nl/wp-content/uploads/2026/05/2026-Horeca-arrangementen-greenfee.pdf
+ok   https://sallandsche.nl/
+ok   https://sallandsche.nl/baan/18-holes/
+ok   https://sallandsche.nl/wp-content/uploads/2025/09/2025-Scorekaart-Golfclub-vanaf-15sep25.pdf
+ok   https://sallandsche.nl/contact/
+ok   https://sallandsche.nl/bezoekersregeling-en-tarieven/
+ok   https://sallandsche.nl/baan/historie/
+ok   https://sallandsche.nl/clubinfo/faciliteiten/driving-range-oefenfaciliteiten/
+ok   https://sallandsche.nl/gasten/baanreservering/
+ok   https://sallandsche.nl/wp-content/uploads/2026/03/Sallandsche-Dames-vanaf-15.09.25.pdf
+ok   https://sallandsche.nl/wp-content/uploads/2026/03/Sallandsche-Heren-vanaf-15.09.25.pdf
+ok   https://sallandsche.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsallandsche.nl%2Fbaan%2F18-holes%2F
+ok   https://sallandsche.nl/baan/
+ok   https://sallandsche.nl/baan/18-holes/hole/hole-1/
+ok   https://sallandsche.nl/baan/18-holes/hole/hole-2/
+ok   https://sallandsche.nl/baan/18-holes/hole/hole-3/
+ok   https://sallandsche.nl/baan/18-holes/hole/hole-4/
+ok   https://sallandsche.nl/baan/18-holes/hole/hole-5/
+ok   https://sallandsche.nl/baan/18-holes/hole/hole-6/
+ok   https://semslanden.nl/
+ok   https://semslanden.nl/playing-handicap/
+ok   https://semslanden.nl/alle-holes
+ok   https://semslanden.nl/drieveld-par3-baan/
+ok   https://semslanden.nl/gasten-info/
+ok   https://semslanden.nl/greenfee/
+ok   https://semslanden.nl/2026/10/baanbulletin-oktober-2026/
+ok   https://semslanden.nl/wp-content/uploads/2026/02/20260121-Privacyverklaring-Golfclub-de-Semslanden.pdf
+ok   https://semslanden.nl/wp-content/uploads/2023/08/Semslanden-WHS-tabel-Hondsrug-Boerveen-Dames-Aug-2022.pdf
+ok   https://semslanden.nl/wp-content/uploads/2023/08/Semslanden-WHS-tabel-Hondsrug-Boerveen-Heren-Aug-2022.pdf
+ok   https://semslanden.nl/wp-content/uploads/2023/06/Semslanden-WHS-tabel-Par-3-Hondsrug-Boerveen-dames-en-Heren.pdf
+ok   https://semslanden.nl/wp-content/uploads/2026/04/Nieuwe-scorekaart-2026.pdf
+ok   https://semslanden.nl/wp-content/uploads/2024/09/Par-3-grote-baan-scorekaart-2024.pdf
+ok   https://semslanden.nl/wp-content/uploads/2023/09/Semslanden-WHS-tabel-Drieveld-Par-3-Dames-en-Heren-002.pdf
+ok   https://semslanden.nl/wp-content/uploads/2024/07/Par-3-scorekaarten-2021.pdf
+ok   https://semslanden.nl/alle-holes/
+ok   https://semslanden.nl/alle-holes/feed/
+ok   https://semslanden.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsemslanden.nl%2Falle-holes%2F
+ok   https://shortgolf.nl/
+ok   https://shortgolf.nl/golfen/golfbaan/
+ok   https://shortgolf.nl/contact/
+ok   https://shortgolf.nl/over-shortgolf-swifterbant/
+ok   https://shortgolf.nl/wp-content/uploads/playing-handicap-tabellen-shortgolf-01-07-2024.pdf
+ok   https://shortgolf.nl/foto-impressie-golfbaan/
+ok   https://shortgolftwente.nl/
+ok   https://shortgolftwente.nl/baaninformatie
+ok   https://shortgolftwente.nl/shortgolf-twente
+ok   https://shortgolftwente.nl/contact
+ok   https://shortgolftwente.nl/tarieven
+ok   https://sites.google.com/view/huningas-heem/homepage
+ok   https://sites.google.com/view/huningas-heem/pitch-putt
+ok   https://www.spielehof.nl/
+ok   https://www.spielehof.nl/golfbaan/baaninformatie/
+ok   https://www.spielehof.nl/golfbaan/greenfee/
+ok   https://www.spielehof.nl/golfbaan/
+ok   https://www.spielehof.nl/categorie/golfbaan/
+ok   https://www.spielehof.nl/golfbaan/abonnement/
+ok   https://www.spielehof.nl/golfbaan/chronogolf/
+ok   https://www.spielehof.nl/golfbaan/trackman-io/
+ok   https://www.spielehof.nl/golfbaan/baanetiquette/
+ok   https://www.spielehof.nl/golfbaan/baanstatus/
+ok   https://www.spielehof.nl/golfbaan/baanstatus
+ok   https://www.spielehof.nl/golfbaan/baaninformatie
+ok   https://www.spielehof.nl/golfbaan/greenfee
+ok   https://www.spielehof.nl/golfbaan/trackman-io
+ok   https://www.spielehof.nl/golfbaan/baaninformatie/feed/
+ok   https://www.spielehof.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.spielehof.nl%2Fgolfbaan%2Fbaaninformatie%2F
+ok   http://www.spielehof.nl/wp-content/uploads/scorekaart-grobbebaan.jpg
+ok   https://www.spielehof.nl/wp-content/uploads/scorekaart-shortgolfbaan-1.jpg
+ok   https://www.thelinksvalley.nl/
+ok   https://www.thelinksvalley.nl/north-course/
+ok   https://www.thelinksvalley.nl/south-course/
+ok   https://www.thelinksvalley.nl/combi-north-south-course/
+ok   https://www.thelinksvalley.nl/ons-verhaal/
+ok   https://www.thelinksvalley.nl/greenfeetarieven/
+ok   https://www.thelinksvalley.nl/oefenfaciliteiten/
+ok   https://www.thelinksvalley.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thelinksvalley.nl%2Fnorth-course%2F
+ok   https://www.thelinksvalley.nl/wp-content/uploads/2025/05/Scorekaart-North-Course-1-scaled.jpg
+ok   https://www.thelinksvalley.nl/wp-content/uploads/2026/01/Courseplanning-2026.pdf
+ok   https://www.thelinksvalley.nl/wp-content/uploads/2025/05/Links-Valley-WHS-tabel-North-Dames-9.pdf
+fout https://www.thelinksvalley.nl/wp-content/uploads/2025/05/Links-Valley-WHS-tabel-North-Dames-18.pdf (te groot (27 MB))
+fout https://www.thelinksvalley.nl/wp-content/uploads/2025/05/Links-Valley-WHS-tabel-North-Heren-9.pdf (te groot (26 MB))
+fout https://www.thelinksvalley.nl/wp-content/uploads/2025/05/Links-Valley-WHS-tabel-North-Heren-18.pdf (te groot (32 MB))
+ok   https://www.thelinksvalley.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thelinksvalley.nl%2Fsouth-course%2F
+ok   https://www.thelinksvalley.nl/wp-content/uploads/2025/05/Scorekaart-South-Course-2-scaled.jpg
+ok   https://www.thelinksvalley.nl/wp-content/uploads/2025/05/Links-Valley-WHS-tabel-South-Dames-9.pdf
+fout https://www.thelinksvalley.nl/wp-content/uploads/2025/05/Links-Valley-WHS-tabel-South-Dames-18.pdf (te groot (27 MB))
+ok   https://www.thelinksvalley.nl/wp-content/uploads/2025/05/Links-Valley-WHS-tabel-South-Heren-9.pdf
+fout https://www.thelinksvalley.nl/wp-content/uploads/2025/05/Links-Valley-WHS-tabel-South-Heren-18.pdf (te groot (32 MB))
+ok   https://www.thelinksvalley.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thelinksvalley.nl%2Fcombi-north-south-course%2F
+ok   https://www.thelinksvalley.nl/wp-content/uploads/2025/06/Scorekaart-mix-1-scaled.jpg
+ok   https://www.thelinksvalley.nl/wp-content/uploads/2025/06/Links-Valley-WHS-tabel-18-holes-North-South-Dames.pdf
+ok   https://twentschegolfclub.nl/
+ok   https://twentschegolfclub.nl/golfbaan/baaninformatie/scorekaart
+ok   https://twentschegolfclub.nl/golfbaan/baaninformatie/handicaptabellen
+ok   https://twentschegolfclub.nl/golfbaan/tarieven-en-reserveren
+ok   https://twentschegolfclub.nl/club/historie
+ok   https://twentschegolfclub.nl/golfbaan
+ok   https://twentschegolfclub.nl/golfbaan/baaninformatie
+ok   https://twentschegolfclub.nl/golfbaan/baaninformatie/baanlayout
+ok   https://twentschegolfclub.nl/golfbaan/baaninformatie/baanregels
+ok   https://twentschegolfclub.nl/golfbaan/driving-range
+ok   https://twentschegolfclub.nl/baanbezetting
+ok   https://twentschegolfclub.nl/golfbaan/
+ok   https://twentschegolfclub.nl/baanbezetting/
+ok   https://twentschegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwentschegolfclub.nl%2Fgolfbaan%2Fbaaninformatie%2Fscorekaart
+ok   https://twentschegolfclub.nl/wp-content/uploads/2025/12/TWGO-Scorekaart-17-10-2024-Binnenzijde-kopie-scaled-1.jpg
+fout https://twentschegolfclub.nl/golfbaan/baaninformatie/itemDataObject.url (404)
+ok   https://twentschegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwentschegolfclub.nl%2Fgolfbaan%2Fbaaninformatie%2Fhandicaptabellen
+ok   https://twentschegolfclub.nl/wp-content/uploads/2025/12/Twentsche-Heren.pdf
+ok   https://twentschegolfclub.nl/wp-content/uploads/2025/12/Twentsche-Dames.pdf
+ok   https://www.twentsegolfpark.nl/
+ok   https://twentsegolfpark.nl/de-golfbaan/
+ok   https://twentsegolfpark.nl/de-golfbaan/hole-informatie/
+ok   https://twentsegolfpark.nl/gasten/
+ok   https://twentsegolfpark.nl/contact/
+ok   https://twentsegolfpark.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwentsegolfpark.nl%2Fde-golfbaan%2F
+ok   https://twentsegolfpark.nl/de-golfbaan/3d-tour/
+ok   https://twentsegolfpark.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwentsegolfpark.nl%2Fde-golfbaan%2Fhole-informatie%2F
+ok   https://twentsegolfpark.nl/wp-content/uploads/2026/09/Twentse-Golf-Park-Par-3-baan-Dames-Heren.pdf
+ok   https://twentsegolfpark.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftwentsegolfpark.nl%2Fde-golfbaan%2F3d-tour%2F
+ok   https://veluwsegolfclub.nl/
+ok   https://veluwsegolfclub.nl/baan/scorekaart/
+ok   https://veluwsegolfclub.nl/contact/
+ok   https://veluwsegolfclub.nl/bezoekers/greenfees-en-greenfeereglement/
+ok   https://veluwsegolfclub.nl/baan/
+ok   https://veluwsegolfclub.nl/baan/handicap-tabellen/
+ok   https://veluwsegolfclub.nl/baan/driving-range/
+ok   https://veluwsegolfclub.nl/baan/hcp-tabellen-local-rules-baanboekje/
+ok   https://veluwsegolfclub.nl/baan/handicarts/
+ok   https://veluwsegolfclub.nl/baan/baanreglement/
+ok   https://veluwsegolfclub.nl/baan/duurzaamheid-geo/
+ok   https://veluwsegolfclub.nl/baan/duurzaamheid-geo/wat-is-geo/
+ok   https://veluwsegolfclub.nl/baan/veiligheid-in-de-baan/
+ok   https://veluwsegolfclub.nl/club-info/informatie-per-commissie/baancommissie/
+ok   https://veluwsegolfclub.nl/baan/golfregels-in-beeld/
+ok   https://veluwsegolfclub.nl/wp-content/uploads/2025/09/Noodplan-VGC-versie-04-09-25.pdf
+ok   https://veluwsegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fveluwsegolfclub.nl%2Fbaan%2Fscorekaart%2F
+ok   https://veluwsegolfclub.nl/wp-content/uploads/2026/04/090326_Scorekaart-Veluwsche-golfclub-a6.pdf
+ok   https://www.weleveldgolf.nl/
+ok   https://www.weleveldgolf.nl/gasten/
+ok   https://www.weleveldgolf.nl/contact/
+ok   https://www.weleveldgolf.nl/wp-content/uploads/2024/08/Scorekaart_Faltblatt_22.07_24_CS6final.pdf
+ok   https://www.weleveldgolf.nl/wp-content/uploads/2024/08/Weleveld-WHS-tabel-Dames.pdf
+ok   https://www.weleveldgolf.nl/wp-content/uploads/2024/08/Weleveld-WHS-tabel-Heren.pdf

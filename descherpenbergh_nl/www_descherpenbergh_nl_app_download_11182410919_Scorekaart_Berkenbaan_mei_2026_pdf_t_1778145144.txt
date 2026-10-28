@@ -1,0 +1,56 @@
+Datum:                          Starttijd:                  Spelvorm:
+
+
+
+Speler 1:                                        HCP             Baan HCP
+
+Speler 2:                                        HCP             Baan HCP
+
+
+
+                                                 Naam marker:
+
+Handtekening speler                              Handtekening marker:
+
+
+
+
+                            COURSE RATING 18 HOLES                  Wedstrijdresultaat:
+                                            Heren Heren Dames Dames
+                                            Geel Rood Rood Geel
+                            Course Rating   56,5 54,7   57,3  59,1
+                            Slope Rating    90    89    91    98
+
+
+
+
+		 GEEL     ROOD STROKE		 SCORE STBF.		 SCORE STBF.
+HOLE METERS METERS INDEX PAR SPELER PUNTEN		 MARKER PUNTEN
+    1        63        63       17           3
+    2       266       236        1           4
+    3       105       105        9           3
+    4       125       125        7           3
+    5       112       112       13           3
+    6       244       210        5           4
+    7       300       242        3           4
+    8        84        84       15           3
+    9       220       160       11           4
+   OUT      1519      1337		31
+
+
+
+
+  HOLE      GEEL      ROOD    STROKE PAR SPELER PUNTEN		                MARKER PUNTEN
+    10       63        63       18           3
+    11      266       236        2           4
+    12      105       105       10           3
+    13      125       125        8           3
+    14      112       112       14           3
+    15      244       210        6           4
+    16      300       242        4           4
+    17       84        84       16           3
+    18      220       160       12           4
+    IN      1519      1337		31
+   OUT      1519      1337		31
+  TOTAL     3038      2674		62
+

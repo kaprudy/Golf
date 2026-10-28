@@ -1,0 +1,48 @@
+Het handicapsysteem bij een 12 holes ronde
+
+1. Indien we een ronde van 18 holes gaan spelen, kijken we tevoren in de handicaptabel om te zien
+wat onze baanhandicap is, ofwel hoeveel slagen we meekrijgen. Op welke holes we die slagen
+krijgen, wordt bepaald door de Stroke-Index. Bijvoorbeeld als een speler 10 slagen krijgt over 18
+holes, dan gebeurt dat op de holes met Stroke-Index 1 t/m 10. Krijgt een speler 20 slagen, dan is dat
+op alle holes 1 slag en op de holes met Stroke-Index 1 en 2 een tweede slag.
+
+Een qualifying ronde wordt altijd teruggerekend naar 18 holes, dus als er minder holes worden
+gespeeld, wordt de uiteindelijke score door het systeem berekend naar een 18 holes score, zie voor
+uitleg hierover volgende link: https://www.golf.nl/golfsport/handicapsysteem/verwacht-resultaat-
+whs-2024
+
+2. Als we een ronde gaan spelen van 9 holes, dan kijken we in de handicaptabel voor 9 holes en dan
+blijkt dat we de helft van het aantal slagen krijgen vergeleken met 18 holes. Die slagen worden weer
+verdeeld op basis van de Stroke-index, maar nu zien we dat op onze eerste 9 holes alle Stroke-Index
+cijfers oneven zijn en op de tweede negen even. We spelen maar 9 holes, dus we komen alleen maar
+oneven Stroke-Index cijfers tegen. Iemand die 5 slagen krijgt over 9 holes, krijgt die op de holes met
+Stroke-Index 1, 3, 5, 7, 9. Dus op 5 holes een slag en op 4 holes niet. Krijgt een speler 10 slagen, dan
+is dat op alle 9 holes 1 slag en op de hole met Stroke-Index 1 is dat een tweede slag.
+
+3. Bij een ronde van 12 holes wordt het ingewikkelder, omdat niet zomaar de getallen van 18 holes
+door twee kunnen worden gedeeld, zoals bij 9 holes. Dat heeft de volgende consequenties:
+
+In onze handicaptabel van die 12 holes baan ziet men erboven staan “par 70”. Dat is niet de
+werkelijke par van onze 12 holes baan, maar van de 18 holes ronde waarmee wordt gerekend (12
+holes die we spelen en 6 holes die we niet spelen). Voor het toekennen van het aantal te ontvangen
+slagen moet de moeilijkheidsgraad (course rating) van de baan worden bepaald over 18 holes.
+
+Vervolgens wordt op basis van de moeilijkheidsgraad van de baan over 18 holes in de tabel slagen
+vermeld die men meekrijgt, maar dit is het aantal slagen over de (gedeeltelijk fictieve) 18 holes. Als
+we nu weer de speler als voorbeeld nemen die 10 slagen meekrijgt, dan kijken we weer naar de
+Stroke-Index en dan zien we dat hij slagen meekrijgt op holes met Stroke-Index 1,2, 3, 4, 5, 6, 7, 9. De
+oneven strokes worden op de eerste 9 holes gegeven. Op holes 10-12 vallen stroke 2, 4 en 6, en
+stroke-Index 8 en 10 staan niet op de kaart, want vallen op de holes 12-18 (die niet worden
+gespeeld), dus die slagen worden niet gegeven. Zo krijgt deze speler effectief over 12 holes 8 slagen.
+Maar dat is dus niet het getal dat in de tabel is te vinden. Een speler die 20 slagen meekrijgt, krijgt
+op elk van de 12 holes een slag, daarmee zijn de eerste 18 slagen vergeven ( 6 daarvan staan niet op
+de kaart en worden niet gegeven) Blijven er nog twee slagen over, op Stroke-Index 1 en 2 krijgt deze
+speler twee slagen, dus effectief totaal 14 slagen.
+
+Het volgende is ook nog van belang:
+
+    -   De Stroke-Index kan per hole verschillen of men de 12-holes ronde loopt of de 9/18 holes
+        ronde
+    -   De rating van de 9/18 holes ronde is anders dan van de 12 holes ronde; dus de baanhandicap
+        is verschillend, afhankelijk van welk parcours (12 of 9/18) men speelt.
+

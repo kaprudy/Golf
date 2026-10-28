@@ -1,0 +1,34 @@
+                                                Dutch Golf Hattem                                          11-10-2022
+
+
+                                                9-holes Kleine Lus
+                                               BAANHANDICAP TABEL
+                                          ROOD HEREN                                ROOD DAMES
+                                         CR=23,8 PAR=27                            CR=24,4 PAR=27
+                                             SR=67                                     SR=70
+                                    HANDICAP                BAAN              HANDICAP              BAAN
+                                                             HCP                                     HCP
+                                  +4,0     -    +1,1          +4            +4,0     -    +3,0       +4
+                                  +1,0     -     2,3          +3            +2,9     -     0,3       +3
+                                   2,4     -     5,7          +2             0,4     -     3,5       +2
+                                   5,8     -     9,1          +1             3,6     -     6,7       +1
+                                   9,2     -    12,4           0             6,8     -    10,0        0
+                                  12,5     -    15,8           1            10,1     -    13,2        1
+                                  15,9     -    19,2           2            13,3     -    16,4        2
+                                  19,3     -    22,5           3            16,5     -    19,6        3
+                                  22,6     -    25,9           4            19,7     -    22,9        4
+                                  26,0     -    29,3           5            23,0     -    26,1        5
+                                  29,4     -    32,7           6            26,2     -    29,3        6
+                                  32,8     -    36,0           7            29,4     -    32,6        7
+                                  36,1     -    39,4           8            32,7     -    35,8        8
+                                  39,5     -    42,8           9            35,9     -    39,0        9
+                                  42,9     -    46,2          10            39,1     -    42,2       10
+                                  46,3     -    49,5          11            42,3     -    45,5       11
+                                  49,6     -    52,9          12            45,6     -    48,7       12
+                                  53,0     -    54,0          13            48,8     -    51,9       13
+                                                                            52,0     -    54,0       14
+
+1. Bepaal de kleur van de tee's waarvan u gaat spelen.
+2. Zoek in de kolom van de bij 1. bepaalde kleur de range waarbinnen uw Handicap valt.
+3. Rechts naast de bij 2. bepaalde range vindt u uw Baanhandicap.
+

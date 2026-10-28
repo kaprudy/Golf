@@ -1,0 +1,3 @@
+https://www.pitchenputtheerde.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.pitchenputtheerde.nl%2Fgolfsoorten%2Fpitch-putt-halve-baan%2F
+
+{"version":"1.0","provider_name":"Pitch & Putt Heerde","provider_url":"https:\/\/www.pitchenputtheerde.nl","author_name":"BeterBekend","author_url":"https:\/\/www.pitchenputtheerde.nl\/author\/beterbekend\/","title":"Pitch Putt 9-holes","type":"rich","width":600,"height":338,"html":" Pitch Putt 9-holes \n\/* *\/\n \n"}
