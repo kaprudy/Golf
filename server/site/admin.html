@@ -90,7 +90,7 @@
 
   <section id="login" class="card" hidden>
     <h2>Inloggen</h2>
-    <p class="muted small">Met je gewone Golfscore-account. Alleen e-mailadressen die op de server als beheerder zijn ingesteld (ADMIN_EMAILS) krijgen toegang.</p>
+    <p class="muted small">Met je gewone Golfscore-account. Alleen accounts die op de server als beheerder zijn ingesteld (ADMIN_USER_IDS) krijgen toegang.</p>
     <form class="login" id="login-form">
       <label>E-mailadres <input id="email" type="email" autocomplete="email" required></label>
       <label>Wachtwoord <input id="password" type="password" autocomplete="current-password" required></label>
@@ -138,7 +138,10 @@ async function load() {
     render(o);
   } catch (err) {
     if (err.status === 401) { token = null; sessionStorage.removeItem(TOKEN_KEY); showLogin(); }
-    else if (err.status === 403) showLogin('Dit account is geen beheerder. Zet je e-mailadres in ADMIN_EMAILS op de server.');
+    else if (err.status === 403) {
+      const id = await api('GET', '/api/me').then((r) => r.user.id).catch(() => null);
+      showLogin(`Dit account${id ? ` (id ${id})` : ''} is geen beheerder. Zet ADMIN_USER_IDS=${id ?? '<id>'} in server/.env op de server.`);
+    }
     else showLogin(err.message);
   }
 }
