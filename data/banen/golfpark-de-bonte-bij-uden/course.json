@@ -1,0 +1,155 @@
+{
+  "slug": "golfpark-de-bonte-bij-uden",
+  "name": "Golfpark De Bonte Bij (voorheen De Leemskuilen)",
+  "club_name": "Golfpark De Bonte Bij",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Doelenweg 1",
+    "postal_code": "5406 XK",
+    "city": "Uden",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.6789024,
+    "lon": 5.5990665,
+    "source": "nominatim.openstreetmap.org (Doelenweg 1)"
+  },
+  "distance_km_from_dedemsvaart": 118.1,
+  "phone": "0413-257701",
+  "email": "info@golfparkdebontebij.nl",
+  "website": "https://golfparkdebontebij.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "bosrand met waterpartijen",
+  "facilities": [
+    "driving range",
+    "pitch & putt",
+    "oefenfaciliteiten",
+    "clubgebouw met bar",
+    "golfclinics"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Minimaal NGF-handicap 54 of baanpermissie van Golfpark De Bonte Bij; NGF-pas tonen",
+  "description_nl": "Golfpark De Bonte Bij, voorheen De Leemskuilen, ligt aan de rand van Uden en heeft een qualifying 9-holes par 3-baan. De holes variëren van ruim 70 tot bijna 170 meter en spelen langs bos en over water, met goed verdedigde greens. Er zijn uitgebreide oefenfaciliteiten en jaarlijks wordt het Brabants Open Par-3 gespeeld.",
+  "loops": [
+    {
+      "name": "9 holes par 3",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1085,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 119
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 73
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 88
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 163
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 107
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 168
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfparkdebontebij.nl/golfpark/lay-out-golfbaan/",
+    "files": [
+      "scorecard/holes-leemskuilen-plattegrond-klein.jpg",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Par 3-baan (9 holes, par 27); holelengtes uit de holebeschrijvingen op de site, één lengte per hole zonder teekleur (hier \"geel\"; de pagina handicaptabellen noemt \"Heren en Dames Geel\"). Geen scorekaart, S.I. of CR/slope online gevonden (handicaptabel niet als bestand vindbaar)."
+  },
+  "sources": [
+    "https://golfparkdebontebij.nl/golfpark/lay-out-golfbaan/",
+    "https://golfparkdebontebij.nl/greenfee/",
+    "https://golfparkdebontebij.nl/contact/",
+    "https://golfparkdebontebij.nl/handicap-tabellen/"
+  ]
+}

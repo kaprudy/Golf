@@ -1,0 +1,286 @@
+{
+  "slug": "golfbaan-waterland-amsterdam",
+  "name": "Golfbaan Waterland Amsterdam",
+  "club_name": "Golf Waterland (Club Golf Waterland)",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Buikslotermeerdijk 141",
+    "postal_code": "1027 AC",
+    "city": "Amsterdam",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.4093905,
+    "lon": 4.9422258,
+    "source": "nominatim (Buikslotermeerdijk 141, Amsterdam)"
+  },
+  "phone": "+31 20 636 1010",
+  "email": null,
+  "website": "https://www.golfbaanwaterlandamsterdam.nl/",
+  "booking_url": "https://www.chronogolf.co.nl/club/golfbaan-waterland",
+  "founded": null,
+  "architect": null,
+  "landscape": "landelijk Amsterdam-Noord (Waterland), holes langs watergangen en natuurgebied",
+  "facilities": [
+    "driving range",
+    "9-holes par 3-baan",
+    "par 3/4-lus binnen de grote baan",
+    "clubhuis/restaurant",
+    "golfshop",
+    "academy/clinics",
+    "buggy's"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "18-holes Championship Course (par 71, A-status) in landelijk Amsterdam-Noord, op tien minuten van het centrum. De holes slingeren langs watergangen en natuurgebied, met veel water in het spel. Daarnaast zijn er een 9-holes par 3-baan en een kortere par 3/4-lus binnen de grote baan.",
+  "loops": [
+    {
+      "name": "Championship Course (18 holes)",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5351,
+          "course_rating": 69.0,
+          "slope": 125,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4800,
+          "course_rating": 66.4,
+          "slope": 112,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5351,
+          "course_rating": 75.1,
+          "slope": 134,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4800,
+          "course_rating": 71.7,
+          "slope": 124,
+          "par": 71
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 133,
+            "rood": 133
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 222,
+            "rood": 208
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 330,
+            "rood": 303
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134,
+            "rood": 116
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 482,
+            "rood": 429
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 340,
+            "rood": 285
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 377,
+            "rood": 365
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 478,
+            "rood": 452
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 339,
+            "rood": 323
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 447,
+            "rood": 410
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 367,
+            "rood": 312
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 257,
+            "rood": 230
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 448,
+            "rood": 400
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135,
+            "rood": 99
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 134
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 435,
+            "rood": 367
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfbaanwaterlandamsterdam.nl/",
+    "files": [
+      "scorecard/Golfbaan-Waterland-18-holes-baan-Dames-Heren-aug-2022.pdf",
+      "scorecard/Golfbaan-Waterland-9-holes-baan-Dames-Heren-aug-2022.pdf",
+      "scorecard/Golfbaan-Waterland-Par-3-4-Baan-binnen-de-grote-baan-Dames-Heren-aug-2022.pdf",
+      "scorecard/Golfbaan-Waterland-Par-3-baan-Dames-Heren-aug-2022.pdf",
+      "scorecard/page.html",
+      "scorecard/page-golfpass.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Officiele site publiceert alleen handicaptabellen (04-08-2022): 18 holes H geel 69,0/125, rood 66,4/112; D geel 75,1/134, rood 71,7/124; 1e negen par 35, 2e negen par 36 (9-holesratings in PDF). Par, S.I. en lengtes per hole van golfpass.com (derden), daar in yards; omgerekend naar meters (x0,9144, afgerond) -> totaal geel 5351 m en rood 4800 m, gelijk aan golfpass-totalen. Par per negen klopt met officiele tabellen. Par 3-baan (9 holes, CR geel H 24,4/63, rood D 25,3/68) en par 3/4-lus 'Groen' (18 holes par 65: H 59,4/99, D 63,6/103) zonder holegegevens niet als loop opgenomen. Grens regio: Amsterdam-Noord (Waterland) op verzoek meegenomen."
+  },
+  "sources": [
+    "https://www.golfbaanwaterlandamsterdam.nl/",
+    "https://www.golfbaanwaterlandamsterdam.nl/contact-us/",
+    "https://www.golfpass.com/courses/23649-golf-waterland-amsterdam-championship-course/scorecard-and-layout"
+  ],
+  "distance_km_from_dedemsvaart": 104.9
+}

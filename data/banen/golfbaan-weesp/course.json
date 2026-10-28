@@ -1,0 +1,243 @@
+{
+  "slug": "golfbaan-weesp",
+  "name": "Golfbaan Weesp (UP Events)",
+  "club_name": "Golfbaan Weesp / UP Events",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Basisweg 2",
+    "postal_code": "1383 NC",
+    "city": "Weesp",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.29964,
+    "lon": 5.0268,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 102.7,
+  "phone": "+31 20 244 7211",
+  "email": null,
+  "website": "https://upevents.nl/golf/",
+  "booking_url": "https://www.chronogolf.com/club/golfbaan-weesp",
+  "founded": null,
+  "architect": null,
+  "landscape": "vlakke polderbaan met water, naast een evenementenlocatie",
+  "facilities": [
+    "9-holes par 3-baan (qualifying)",
+    "verlichte driving range",
+    "putting- en chippinggreen",
+    "horeca",
+    "footgolf (UP Events)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfbaan Weesp, tegenwoordig onderdeel van UP Events, is een informele 9-holes par 3-baan aan de rand van Weesp. De holes zijn tussen ongeveer 70 en 156 meter en de baan is qualifying, met een verlichte driving range ernaast. Spelen gaat met losse starttijden, rittenkaarten of abonnementen, zonder lidmaatschap.",
+  "loops": [
+    {
+      "name": "18 holes (2x 9, par 3)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2040,
+          "course_rating": 51.2,
+          "slope": 82,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2024,
+          "course_rating": 53.7,
+          "slope": 86,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 90
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 89
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 82
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 156
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 139
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 104
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 121
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 70
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://upevents.nl/golf/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/hole19.html"
+    ],
+    "source": "third-party",
+    "complete": false,
+    "notes": "Club (UP Events, golfweesp.nl verwijst door; golfweesp.nl gaf 403 op curl) publiceert geen scorekaart. Par, S.I., gele lengtes en CR/slope komen van Hole19 (third-party, eenheid aangenomen meters); Hole19 geeft voor de 2e negen deels andere lengtes (aparte tees). Rode lengtes per hole onbekend (totaal 2024). Adres bevestigd op upevents.nl. Golfkaart noemt ook 'Golfvereniging Weesp' en 'Golfcentrum Weesp' (zelfde locatie, geen aparte baan gevonden)."
+  },
+  "sources": [
+    "https://upevents.nl/golf/",
+    "https://www.hole19golf.com/courses/golfbaan-weesp"
+  ]
+}

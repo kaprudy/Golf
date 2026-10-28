@@ -1,0 +1,314 @@
+{
+  "slug": "golfclub-de-dorpswaard-kerkdriel",
+  "name": "Golfclub De Dorpswaard",
+  "club_name": "Golfvereniging De Dorpswaard",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Piekenwaardweg 3",
+    "postal_code": "5331 PD",
+    "city": "Kerkdriel",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.7800745,
+    "lon": 5.3301576,
+    "source": "nominatim (Brasserie 't Waardje / clubhuis, Piekenwaardweg 3, Kerkdriel)"
+  },
+  "distance_km_from_dedemsvaart": 119.4,
+  "phone": "+31 418 634 803",
+  "email": "info@dorpswaard.com",
+  "website": "https://dorpswaard.com/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "uiterwaardenbaan langs de Maas met water en bomenrijen",
+  "facilities": [
+    "clubhuis/brasserie 't Waardje",
+    "driving range"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Negen-holesbaan in de uiterwaarden bij Kerkdriel in de Bommelerwaard, met een eigen clubhuis en brasserie. Gespeeld als 18 holes (par 73) met deels andere afslagen en pars op de tweede negen, zodat holes 6/15 en 9/18 lange par 5's worden. Water speelt onder meer mee op de holes bij het clubhuis.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 73,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5926,
+          "course_rating": 72.7,
+          "slope": 134,
+          "par": 73
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5926,
+          "course_rating": 78.7,
+          "slope": 145,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5031,
+          "course_rating": 67.6,
+          "slope": 121,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5031,
+          "course_rating": 73.1,
+          "slope": 134,
+          "par": 73
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4190,
+          "course_rating": 64.2,
+          "slope": 110,
+          "par": 73
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4190,
+          "course_rating": 68.0,
+          "slope": 126,
+          "par": 73
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 453,
+            "rood": 375,
+            "oranje": 304
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 196,
+            "rood": 149,
+            "oranje": 120
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 317,
+            "rood": 269,
+            "oranje": 233
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 136,
+            "oranje": 114
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 343,
+            "rood": 291,
+            "oranje": 245
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 406,
+            "rood": 329,
+            "oranje": 316
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 313,
+            "rood": 264,
+            "oranje": 210
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 300,
+            "rood": 258,
+            "oranje": 210
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 439,
+            "rood": 398,
+            "oranje": 343
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 443,
+            "rood": 353,
+            "oranje": 304
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 205,
+            "rood": 159,
+            "oranje": 120
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 334,
+            "rood": 285,
+            "oranje": 233
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 155,
+            "rood": 145,
+            "oranje": 114
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 359,
+            "rood": 306,
+            "oranje": 245
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 446,
+            "rood": 374,
+            "oranje": 316
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 293,
+            "rood": 250,
+            "oranje": 210
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 319,
+            "rood": 276,
+            "oranje": 210
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 460,
+            "rood": 414,
+            "oranje": 343
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://dorpswaard.com/",
+    "files": [
+      "scorecard/Playing-handicap-Dorpswaard_Dames.pdf",
+      "scorecard/Playing-handicap-Dorpswaard_Heren.pdf",
+      "scorecard/page.html",
+      "scorecard/scorekaart2023.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart versie 2023 + baanhandicaptabellen 07-09-2021. 9 holes 2x met eigen S.I. en deels andere afslagen voor 10-18; hole 15 is par 5 (hole 6 par 4)."
+  },
+  "sources": [
+    "https://dorpswaard.com/",
+    "https://dorpswaard.com/holes/"
+  ]
+}

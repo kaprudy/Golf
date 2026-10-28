@@ -1,0 +1,233 @@
+{
+  "slug": "golfclub-t-lohr-voorst",
+  "name": "Golfclub 't Lohr",
+  "club_name": "Golfclub 't Lohr",
+  "holes_total": 9,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Lohrpad 2",
+    "postal_code": "7083 AX",
+    "city": "Voorst (Oude IJsselstreek)",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.8696099,
+    "lon": 6.4165109,
+    "source": "nominatim (Lohrpad 2, Voorst, Oude IJsselstreek)"
+  },
+  "distance_km_from_dedemsvaart": 81.4,
+  "phone": "+31 315 631 697",
+  "email": null,
+  "website": "https://golfinvoorst.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "korte golfbaan in het Achterhoekse coulisselandschap",
+  "facilities": [
+    "horeca/terras",
+    "voetgolf",
+    "adventure minigolf",
+    "arrangementen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Pitch & puttbaan van een familiebedrijf in Voorst bij Gendringen, aangeprezen als de korte golfbaan van de Achterhoek. De negen par 3-holes zijn 44 tot 123 meter lang en worden voor een volle ronde twee keer gespeeld. Naast golf zijn er voetgolf, adventure minigolf en arrangementen met horeca.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "heren",
+          "color": null,
+          "gender": "men",
+          "length_m": 1420,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 44
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 59
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 73
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 70
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 69
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 95
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 123
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 106
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 71
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 44
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 59
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 73
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 70
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 69
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 95
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 123
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 106
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 71
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/golfclub-t-lohr",
+    "files": [
+      "scorecard/hole19.html",
+      "scorecard/page.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Geen officiële scorekaart online gevonden; par, S.I. en lengtes (afslag \"heren\", 9 holes 2x) uit hole19golf.com (label \"yds\", waarden lijken meters). Geen CR/slope bekend."
+  },
+  "sources": [
+    "https://golfinvoorst.nl/",
+    "https://www.hole19golf.com/courses/golfclub-t-lohr"
+  ]
+}

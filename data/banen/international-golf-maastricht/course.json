@@ -1,0 +1,476 @@
+{
+  "slug": "international-golf-maastricht",
+  "name": "International Golf Maastricht",
+  "club_name": "International Golf Maastricht",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Dousbergweg 100",
+    "postal_code": "6216 GC",
+    "city": "Maastricht",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 50.8545886,
+    "lon": 5.6439389,
+    "source": "nominatim (Dousbergweg 100, Maastricht)"
+  },
+  "distance_km_from_dedemsvaart": 202.1,
+  "phone": "043 328 1740",
+  "email": null,
+  "website": "https://www.internationalgolfmaastricht.com/",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Steve Marnoch (volgens 1golf.eu)",
+  "landscape": "heuvelachtig op de Dousberg, met water; deels in Belgie",
+  "facilities": [
+    "9-holes Limburg Course",
+    "clubhuis met terras"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "International Golf Maastricht ligt op de Dousberg aan de westrand van Maastricht, pal op de grens: van de 18 holes liggen er dertien in Nederland en vijf in Belgie. De heuvelachtige baan met waterpartijen biedt uitzicht over het Maasdal. Er is ook een kortere 9-holes Limburg Course.",
+  "loops": [
+    {
+      "name": "Championship Course (18 holes)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 5967,
+          "course_rating": 72.5,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5606,
+          "course_rating": 70.6,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5122,
+          "course_rating": 68.0,
+          "slope": 120,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4821,
+          "course_rating": 66.2,
+          "slope": 115,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4350,
+          "course_rating": 64.2,
+          "slope": 109,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5606,
+          "course_rating": 76.5,
+          "slope": 138,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5122,
+          "course_rating": 73.4,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4821,
+          "course_rating": 72.0,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4350,
+          "course_rating": 68.6,
+          "slope": 120,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 271,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 310,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 107,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 285,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 426,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 151,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 306,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 388,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 301,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 130,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 403,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 137,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 316,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 330,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 400,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 185,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 377,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 299,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Limburg Course (9 holes)",
+      "holes": 9,
+      "par": 35,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2191,
+          "course_rating": null,
+          "slope": null,
+          "par": 35
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 311
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 310
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 116
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 225
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 256
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 242
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 109
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 235
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 387
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/international-golf-maastricht-championship",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/hole19-championship.html",
+      "scorecard/hole19-limburg-course.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Officiele site (internationalgolfmaastricht.com) onbereikbaar: ongeldig TLS-certificaat en standaard hostingpagina. Holegegevens van hole19golf.com (metrisch): par, SI en alleen lengtes blauwe tee voor de Championship Course; CR/slope en totale lengtes per tee ook van Hole19. Limburg Course: par/SI/lengtes gele tee (Hole19 noemt deze tee 'yellow (l)'); ratings voor deze 9 holes zijn bij Hole19 onduidelijk (meerdere sets voor par 35 en par 37). Recente reviews (aug. 2026, 1golf.eu) klagen over de staat van de baan; actuele status onzeker."
+  },
+  "sources": [
+    "https://www.hole19golf.com/courses/international-golf-maastricht-championship",
+    "https://www.hole19golf.com/courses/international-golf-maastricht-limburg",
+    "https://www.1golf.eu/en/club/international-golf-maastricht/"
+  ]
+}

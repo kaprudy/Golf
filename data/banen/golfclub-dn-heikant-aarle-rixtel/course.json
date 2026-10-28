@@ -1,0 +1,381 @@
+{
+  "slug": "golfclub-dn-heikant-aarle-rixtel",
+  "name": "Golfclub d'n Heikant",
+  "club_name": "Golfclub d'n Heikant",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Asdonkseweg 6",
+    "postal_code": "5735 SP",
+    "city": "Aarle-Rixtel",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.512295,
+    "lon": 5.6825006,
+    "source": "nominatim.openstreetmap.org (Asdonkseweg 6)"
+  },
+  "distance_km_from_dedemsvaart": 132.2,
+  "phone": "0492-550871",
+  "email": null,
+  "website": "https://golfclubdenheikant.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "landgoed aan de bosrand bij natuurgebied De Biezen en de Grotelse Heide, met water",
+  "facilities": [
+    "driving range",
+    "oefenarea",
+    "clubhuis met terras",
+    "Brasserie Bravoure",
+    "golfschool/clinics"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfclub d'n Heikant ligt op een landgoed aan de bosrand bij Aarle-Rixtel, vlak bij natuurgebied De Biezen. De 9-holes par 3-baan heeft holes van 60 tot 165 meter met bunkers, sloten en een waterpartij, en wordt voor 18 holes twee keer gespeeld. Bij de baan horen een driving range, oefenarea en een brasserie.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1970,
+          "course_rating": 50.3,
+          "slope": 77,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1970,
+          "course_rating": 52.0,
+          "slope": 84,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 165,
+            "rood": 165
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 105,
+            "rood": 105
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 85
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 165,
+            "rood": 165
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 105,
+            "rood": 105
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 85
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 145
+          }
+        }
+      ]
+    },
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 985,
+          "course_rating": 25.2,
+          "slope": 77,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 985,
+          "course_rating": 26.0,
+          "slope": 84,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 165,
+            "rood": 165
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 105,
+            "rood": 105
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 85
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 145
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclubdenheikant.nl/golfbaan/playing-hcp-lijsten/",
+    "files": [
+      "scorecard/Heikant-Par-3-Baan-Dames-en-Heren-2023.pdf",
+      "scorecard/page.html",
+      "scorecard/scorekaart.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart (PDF, 2020): één lengtekolom \"D/H\" voor dames en heren; ratings uit tabel 21-09-2023: geel heren en rood dames (de lengtes zijn voor beide gelijk opgegeven). 9-holes S.I. in 18-holes stijl (oneven)."
+  },
+  "sources": [
+    "https://golfclubdenheikant.nl/",
+    "https://golfclubdenheikant.nl/golfbaan/playing-hcp-lijsten/",
+    "https://golfclubdenheikant.nl/greenfee/",
+    "https://landvandepeel.nl/en/locations/1682978565/golfclub-d-n-heikant-aarle-rixtel-laarbeek"
+  ]
+}

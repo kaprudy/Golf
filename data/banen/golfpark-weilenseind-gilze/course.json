@@ -1,0 +1,318 @@
+{
+  "slug": "golfpark-weilenseind-gilze",
+  "name": "Golfpark Weilenseind",
+  "club_name": "Golfpark Weilenseind",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Alphenseweg 14a",
+    "postal_code": "5126 PN",
+    "city": "Gilze",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.5342,
+    "lon": 4.9443,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 157.4,
+  "phone": "0161 45 13 87",
+  "email": null,
+  "website": "https://golfparkweilenseind.nl/",
+  "booking_url": "https://golfparkweilenseind.nl/golfbaan/starttijd-reserveren/",
+  "founded": 2001,
+  "architect": "Alan Rijks",
+  "landscape": "Brabants landschap met bunkers, glooiende greens en waterpartijen",
+  "facilities": [
+    "oefenfaciliteiten/driving range",
+    "golfschool",
+    "horeca",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Starttijd verplicht digitaal reserveren.",
+  "description_nl": "Golfpark Weilenseind in Gilze, tussen Breda en Tilburg, heeft een 9-holes par 3/4-baan die in 2001 werd aangelegd naar een ontwerp van Alan Rijks. Met bunkers, glooiende greens en waterpartijen biedt de korte baan alle facetten van het spel. Voor 18 holes wordt de baan twee keer gespeeld; vanaf de oranje tees geldt een aparte par 3-rating.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 60,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2924,
+          "course_rating": 55.8,
+          "slope": 86,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2812,
+          "course_rating": 55.3,
+          "slope": 85,
+          "par": 60
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2924,
+          "course_rating": 58.8,
+          "slope": 91,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2812,
+          "course_rating": 58.2,
+          "slope": 90,
+          "par": 60
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 2268,
+          "course_rating": 50.7,
+          "slope": 69,
+          "par": 56
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 2268,
+          "course_rating": 52.9,
+          "slope": 81,
+          "par": 56
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 158,
+            "rood": 158,
+            "oranje": 136
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 62,
+            "rood": 62,
+            "oranje": 62
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 260,
+            "rood": 241,
+            "oranje": 218
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 223,
+            "rood": 201,
+            "oranje": 165
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100,
+            "oranje": 100
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 140,
+            "oranje": 123
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134,
+            "rood": 134,
+            "oranje": 110
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160,
+            "rood": 160,
+            "oranje": 75
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 225,
+            "rood": 210,
+            "oranje": 145
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 158,
+            "rood": 158,
+            "oranje": 136
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 62,
+            "rood": 62,
+            "oranje": 62
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 260,
+            "rood": 241,
+            "oranje": 218
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 223,
+            "rood": 201,
+            "oranje": 165
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100,
+            "oranje": 100
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 140,
+            "oranje": 123
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134,
+            "rood": 134,
+            "oranje": 110
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160,
+            "rood": 160,
+            "oranje": 75
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 225,
+            "rood": 210,
+            "oranje": 145
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfparkweilenseind.nl/golfbaan/scorekaart-2/",
+    "files": [
+      "scorecard/LR_Weilenseind_Scorekaart_2020-binnenkant.jpg",
+      "scorecard/20250715_Playing-Handicap-Tabel_Weilenseind-18-holes-Heren-geel-rood.pdf",
+      "scorecard/20250715_Playing-Handicap-Tabel_Weilenseind-18-holes-Dames-geel-rood.pdf",
+      "scorecard/20250721_Playing-Handicap-Tabel_Weilenseind-18-holes-Par-3-baan-Heren-oranje.pdf",
+      "scorecard/20250721_Playing-Handicap-Tabel_Weilenseind-18-holes-Par-3-baan-Dames-oranje.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Scorekaart 2020 (par 60; 1462/1406/1134 m per 9 holes; holes 10-18 = 1-9 met even S.I.). Ratings uit tabellen juli 2025 (18 holes geel/rood par 60). De oranje tee is in 2025 gerated als par 3-baan met par 56 (heren 50,7/69, dames 52,9/81); de kaart uit 2020 geeft per hole alleen één par-kolom (par 60), dus de par per hole vanaf oranje is niet gepubliceerd.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://golfparkweilenseind.nl/golfbaan/9-holes-golfbaan/",
+    "https://golfparkweilenseind.nl/golfbaan/scorekaart-2/"
+  ]
+}

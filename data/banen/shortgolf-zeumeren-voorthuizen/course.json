@@ -1,0 +1,171 @@
+{
+  "slug": "shortgolf-zeumeren-voorthuizen",
+  "name": "ShortGolf Zeumeren",
+  "club_name": "ShortGolf Zeumeren (v/h Pitch & Putt Zeumeren)",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Stroetweg",
+    "postal_code": "3781 PR",
+    "city": "Voorthuizen",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.175,
+    "lon": 5.6152,
+    "source": "OpenStreetMap (leisure=golf_course \"Pitch & Putt Zeumeren\", centrum baan)"
+  },
+  "distance_km_from_dedemsvaart": 74.3,
+  "phone": "+31 6 1092 3277",
+  "email": "info@shortgolfen.nl",
+  "website": "https://shortgolfen.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "korte par 3-baan bij recreatiegebied Zeumeren",
+  "facilities": [
+    "golflessen",
+    "groepsarrangementen",
+    "BBQ/borrel"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "geen golfervaring vereist; vooraf reserveren",
+  "description_nl": "Kleine 9-holes par 3-baan bij Voorthuizen waar ook mensen zonder golfervaring terechtkunnen. De holes zijn 43 tot 123 meter lang (totaal 710 m) en de baan heeft een NGF-rating, zodat je er ook handicap 54 kunt halen. Er worden lessen, cursussen en groepsuitjes georganiseerd.",
+  "loops": [
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 710,
+          "course_rating": 23.7,
+          "slope": 67,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 710,
+          "course_rating": 24.5,
+          "slope": 71,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 91,
+            "rood": 91
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 73,
+            "rood": 73
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 43,
+            "rood": 43
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 103,
+            "rood": 103
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 61,
+            "rood": 61
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 69,
+            "rood": 69
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 123,
+            "rood": 123
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 52,
+            "rood": 52
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://shortgolfen.nl/courserating-2/",
+    "files": [
+      "scorecard/Courserating18.jpg",
+      "scorecard/Scorekaart2026.pdf.jpg",
+      "scorecard/page.html",
+      "scorecard/tabel-9-holes.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 2026 (9 holes, één lengte per hole) + baanhandicaptabellen 12-02-2026; 9-holes CR/SR in de loop; 18 holes (9 holes 2x): geel heren 47,4/67, rood dames 49,0/71 (par 54). Geen S.I. voor holes 10-18 gepubliceerd. Huisnummer niet gevonden; GPS uit OSM."
+  },
+  "sources": [
+    "https://shortgolfen.nl/",
+    "https://shortgolfen.nl/courserating-2/"
+  ]
+}

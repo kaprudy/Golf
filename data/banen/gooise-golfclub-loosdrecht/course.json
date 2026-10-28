@@ -1,0 +1,270 @@
+{
+  "slug": "gooise-golfclub-loosdrecht",
+  "name": "Gooise Golfclub",
+  "club_name": "Gooise Golfclub",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "'t Jagerspaadje 24a",
+    "postal_code": "1231 KJ",
+    "city": "Loosdrecht",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.20968,
+    "lon": 5.13166,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 100.0,
+  "phone": null,
+  "email": "secretariaat@gooisegolfclub.nl",
+  "website": "https://www.gooisegolfclub.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "kleinschalig, met bosranden, sloten, een vijver en bunkers; deels aan weerszijden van een weg",
+  "facilities": [
+    "9-holes par 3-baan (NGF C-status)",
+    "driving range",
+    "putting green",
+    "clubhuis met terras"
+  ],
+  "greenfee_welcome": false,
+  "requirements": "Alleen toegankelijk voor leden en hun introducés.",
+  "description_nl": "De Gooise Golfclub in Loosdrecht is een kleine verenigingsbaan met negen par 3-holes van 60 tot 152 meter, die voor 18 holes twee keer worden gespeeld. Sloten, een vijver, bunkers en bosranden maken de korte holes verrassend lastig. De baan heeft NGF C-status en is alleen voor leden en hun introducés.",
+  "loops": [
+    {
+      "name": "18 holes (2x 9, par 3)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1870,
+          "course_rating": 50.6,
+          "slope": 78,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1870,
+          "course_rating": 52.4,
+          "slope": 80,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 152
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 147
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 67,
+            "rood": 67
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 94,
+            "rood": 94
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 90,
+            "rood": 90
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 150
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 152
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 147
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 67,
+            "rood": 67
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 94,
+            "rood": 94
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 90,
+            "rood": 90
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 150
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://www.gooisegolfclub.nl/golfbaan/baan/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/Baan_Overzicht.jpg",
+      "scorecard/holes/hole-1.html",
+      "scorecard/holes/hole-2.html",
+      "scorecard/holes/hole-3.html",
+      "scorecard/holes/hole-4.html",
+      "scorecard/holes/hole-5.html",
+      "scorecard/holes/hole-6.html",
+      "scorecard/holes/hole-7.html",
+      "scorecard/holes/hole-8.html",
+      "scorecard/holes/hole-9.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Geen scorekaartbestand; per hole lengte en S.I. (1e/2e ronde) van de holepagina's, CR/SR 18 holes van de baanpagina (heren 50,6/78, dames 52,4/80). Eén lengte per hole (afslagmatten); tee-kleuren geel (heren) en rood (dames) aangenomen. Totaal 935 m per 9 holes = 1870 m (klopt met clubopgave)."
+  },
+  "sources": [
+    "https://www.gooisegolfclub.nl/golfbaan/baan/",
+    "https://www.gooisegolfclub.nl/golfbaan/holes/",
+    "https://www.gooisegolfclub.nl/contact/"
+  ]
+}

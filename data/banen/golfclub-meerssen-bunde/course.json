@@ -1,0 +1,279 @@
+{
+  "slug": "golfclub-meerssen-bunde",
+  "name": "Golfclub Meerssen",
+  "club_name": "Golfclub Meerssen",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Heiveld 4",
+    "postal_code": "6241 EK",
+    "city": "Bunde (Meerssen)",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 50.8964337,
+    "lon": 5.7441933,
+    "source": "nominatim (Heiveld 4, Bunde)"
+  },
+  "distance_km_from_dedemsvaart": 195.8,
+  "phone": "043 365 2756",
+  "email": "info@golfclubmeerssen.nl",
+  "website": "https://www.golfclubmeerssen.nl/",
+  "booking_url": null,
+  "founded": 1987,
+  "architect": null,
+  "landscape": "bosrijk, glooiend heuvellandschap met vergezichten",
+  "facilities": [
+    "oefenkooi",
+    "clubhuis"
+  ],
+  "greenfee_welcome": false,
+  "requirements": "Gastspelers alleen als introducee van leden of gast van bedrijfsleden; leden van Het Rijk van Margraten en Residenz Rothenbach welkom",
+  "description_nl": "Golfclub Meerssen werd in 1987 opgericht en speelt op een 9-holesbaan bij Bunde, in een bosrijk en glooiend deel van het Zuid-Limburgse heuvelland. De baan bestaat vooral uit par 3-holes met twee par 4's (par 29) en biedt mooie vergezichten. Gasten spelen er alleen op uitnodiging van leden.",
+  "loops": [
+    {
+      "name": "9 holes par 3/4 (2x gespeeld = 18 holes)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 3000,
+          "course_rating": 56.2,
+          "slope": 102,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2876,
+          "course_rating": 55.7,
+          "slope": 89,
+          "par": 58
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 3000,
+          "course_rating": 59.2,
+          "slope": 99,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2876,
+          "course_rating": 57.9,
+          "slope": 102,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 156,
+            "rood": 156
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 224,
+            "rood": 224
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 109,
+            "rood": 109
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 175,
+            "rood": 175
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 130
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 259,
+            "rood": 223
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 166,
+            "rood": 166
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 171,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 156,
+            "rood": 156
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 224,
+            "rood": 224
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 109,
+            "rood": 109
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 175,
+            "rood": 175
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 130
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 259,
+            "rood": 223
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 166,
+            "rood": 166
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 171,
+            "rood": 145
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclubmeerssen.nl/baan/hole-info/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/Scorekaart-2024.pdf",
+      "scorecard/Meerssen-WHS-tabel-Heren.pdf",
+      "scorecard/Meerssen-WHS-tabel-Dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Officiele scorekaart (versie 2024-09-20): par, SI en lengtes geel/rood. CR/slope uit de WHS-tabellen van 08-02-2021 (heren geel 56.2/102, rood 55.7/89; dames geel 59.2/99, rood 57.9/102). In augustus 2026 is een nieuwe course rating vastgesteld die nog niet gepubliceerd is."
+  },
+  "sources": [
+    "https://www.golfclubmeerssen.nl/",
+    "https://www.golfclubmeerssen.nl/baan/hole-info/",
+    "https://www.golfclubmeerssen.nl/gastspelers/greenfee-spelers/"
+  ]
+}

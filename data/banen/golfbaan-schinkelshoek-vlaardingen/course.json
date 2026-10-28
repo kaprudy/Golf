@@ -1,0 +1,94 @@
+{
+  "slug": "golfbaan-schinkelshoek-vlaardingen",
+  "name": "Golfbaan Schinkelshoek",
+  "club_name": "Golfbaan Schinkelshoek",
+  "holes_total": 27,
+  "course_type": "27-holes",
+  "address": {
+    "street": "Zuidbuurt 79",
+    "postal_code": "3132 KA",
+    "city": "Vlaardingen",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.9101408,
+    "lon": 4.3014505,
+    "source": "Nominatim (OpenStreetMap), adres Zuidbuurt 79"
+  },
+  "distance_km_from_dedemsvaart": 165.7,
+  "phone": "010 460 21 39",
+  "email": "info@golfbaanschinkelshoek.nl",
+  "website": "https://www.golfbaanschinkelshoek.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "compacte parkbaan met bomen, sloten en waterpartijen (Vlaardingen-Zuidbuurt)",
+  "facilities": [
+    "oefenfaciliteiten",
+    "golfles",
+    "brasserie",
+    "vergader- en feestruimte"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "NGF-pas met minimaal golfbaanpermissie of handicap (voor de A-serie met traditionele bal: NGF-pas of toestemming golfprofessional)",
+  "description_nl": "Schinkelshoek in Vlaardingen werkt met een eigen, lichtere golfbal die minder ver vliegt, waardoor op een compact terrein drie series van negen holes (Westland, Waterland en Delfland) elk als par 36 worden gespeeld. Een ronde van 18 holes duurt zo ongeveer tweeënhalf uur. Op donderdag- en zaterdagmiddag kan de A-serie met een gewone bal worden gespeeld als korte baan (par 28, 816 meter).",
+  "loops": [
+    {
+      "name": "Serie A Westland (Schinkelshoek-bal)",
+      "holes": 9,
+      "par": 36,
+      "tees": [],
+      "hole_data": []
+    },
+    {
+      "name": "Serie B Waterland (Schinkelshoek-bal)",
+      "holes": 9,
+      "par": 36,
+      "tees": [],
+      "hole_data": []
+    },
+    {
+      "name": "Serie C Delfland (Schinkelshoek-bal)",
+      "holes": 9,
+      "par": 36,
+      "tees": [],
+      "hole_data": []
+    },
+    {
+      "name": "Serie A met traditionele bal (NGF korte baan)",
+      "holes": 9,
+      "par": 28,
+      "tees": [
+        {
+          "name": "baan",
+          "color": null,
+          "gender": null,
+          "length_m": 816,
+          "course_rating": null,
+          "slope": null,
+          "par": 28
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfbaanschinkelshoek.nl/golfbaan/baaninformatie/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/schermafbeelding-2022-09-28-om-12_1664362577.png",
+      "scorecard/schermafbeelding-2022-09-28-om-13.png"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "De site publiceert alleen baankaarten (geen scorekaart met par/S.I./lengtes per hole). Officieel: iedere serie par 36 met de Schinkelshoek-bal; A-serie met traditionele bal par 28, 816 m, alle holes par 3 behalve hole 4 (par 4). Golfingrecord.com toont per serie een par 27-kaart (Westland geel 1127/rood 1007, eenheid onbekend) die niet met de officiële par-informatie strookt; daarom niet overgenomen. Handicaptabellen hangen volgens de site op het mededelingenbord, niet online gevonden."
+  },
+  "sources": [
+    "https://www.golfbaanschinkelshoek.nl/golfbaan/baaninformatie/",
+    "https://www.golfbaanschinkelshoek.nl/golfbaan/uniek-concept/",
+    "https://www.golfbaanschinkelshoek.nl/contact/",
+    "https://www.golfingrecord.com/golf-scorecard/4b4552e4-e16f-441d-b547-e849e521a0c5"
+  ]
+}

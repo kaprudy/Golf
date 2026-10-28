@@ -1,0 +1,570 @@
+{
+  "slug": "golfpark-almkreek-almkerk",
+  "name": "Golfpark Almkreek",
+  "club_name": "Hollandsche Golfclub – Golfpark Almkreek",
+  "holes_total": 32,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Hoekje 7B",
+    "postal_code": "4286 LN",
+    "city": "Almkerk",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.7721,
+    "lon": 4.9726,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 137.0,
+  "phone": "0183 403 592",
+  "email": "info@golfpark-almkreek.nl",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/almkreek/",
+  "booking_url": "https://www.hollandschegolfclub.nl/golfpark/almkreek/boek-een-starttijd-golfpark-almkreek/",
+  "founded": null,
+  "architect": null,
+  "landscape": "weids polderlandschap met boerderijen, sloten en waterpartijen in het Land van Heusden en Altena",
+  "facilities": [
+    "14-holes kleine baan (par 3/4)",
+    "driving range",
+    "brasserie",
+    "golflessen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Vanaf baanpermissie van de Hollandsche Golfclub (18 holes en kleine baan).",
+  "description_nl": "Golfpark Almkreek bij Almkerk ligt in de open polder van het Land van Heusden en Altena, tussen boerderijen en sloten. De 18-holes baan van par 72 is bijna 5,9 kilometer lang en het water speelt op meerdere holes mee. Daarnaast is er een kleine baan van 14 holes met par 3- en par 4-holes, waarvan holes 6-14 als qualifying 9-holesronde gelden.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5881,
+          "course_rating": 71.5,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5054,
+          "course_rating": 67.7,
+          "slope": 114,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4417,
+          "course_rating": 64.8,
+          "slope": 103,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5881,
+          "course_rating": 78.5,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5054,
+          "course_rating": 72.9,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4417,
+          "course_rating": 69.1,
+          "slope": 118,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 362,
+            "rood": 304,
+            "oranje": 258
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 377,
+            "rood": 314,
+            "oranje": 263
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 370,
+            "rood": 333,
+            "oranje": 305
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 515,
+            "rood": 420,
+            "oranje": 362
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 128,
+            "oranje": 117
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 347,
+            "rood": 302,
+            "oranje": 267
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 361,
+            "rood": 341,
+            "oranje": 324
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "rood": 114,
+            "oranje": 99
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 485,
+            "rood": 412,
+            "oranje": 362
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 303,
+            "rood": 259,
+            "oranje": 223
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 480,
+            "rood": 419,
+            "oranje": 361
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 292,
+            "rood": 271,
+            "oranje": 241
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 128,
+            "rood": 112,
+            "oranje": 97
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 361,
+            "rood": 298,
+            "oranje": 246
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 173,
+            "rood": 147,
+            "oranje": 127
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 422,
+            "rood": 342,
+            "oranje": 297
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 273,
+            "rood": 240,
+            "oranje": 207
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 363,
+            "rood": 298,
+            "oranje": 261
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kleine baan 14 holes",
+      "holes": 14,
+      "par": 44,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": null,
+          "length_m": 1422,
+          "course_rating": null,
+          "slope": null,
+          "par": 44
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 44
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 95
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 60
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 69
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 58
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 87
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 255
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 68
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 51
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 209
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 149
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 106
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 96
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 75
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kleine baan holes 6-14 (9 holes qualifying)",
+      "holes": 9,
+      "par": 29,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": "men",
+          "length_m": 1096,
+          "course_rating": 26.0,
+          "slope": 81,
+          "par": 29
+        },
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": "women",
+          "length_m": 1096,
+          "course_rating": 27.0,
+          "slope": 93,
+          "par": 29
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 87
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 255
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 68
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 51
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 209
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 149
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 106
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 96
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 75
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hollandschegolfclub.nl/golfpark/almkreek/course/18-holes-baan-almkreek/",
+    "files": [
+      "scorecard/ALMKREEK_SCOREKAART18-HOLES_2025WEB.pdf",
+      "scorecard/Almkreek-Handicaptabellen-18-holes.pdf",
+      "scorecard/ALMKREEK_SCOREKAART14HOLES_2025WEB.pdf",
+      "scorecard/Golfpark-Almkreek-kleine-baan-handicaptabel.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "complete": false,
+    "notes": "18 holes: scorekaart 2025 (UIT 3086/2668/2357, IN 2795/2386/2060, TOT 5881/5054/4417 m; kolommen geel/rood/oranje); CR/slope uit tabellen 2026 (ook per negen beschikbaar). Kleine baan: scorekaart 2025, 14 holes par 44 (1422 m), één lengtekolom. Holes 6-14 vormen de qualifying 9-holesronde (par 29, 1096 m; ratings geel heren 26,0/81, rood dames 27,0/93 op die 1096 m toegepast); de kaart geeft alleen de S.I. voor 14 holes, dus de 9-holeslus heeft geen S.I. (daarom complete=false).",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.hollandschegolfclub.nl/golfpark/almkreek/",
+    "https://www.hollandschegolfclub.nl/golfpark/almkreek/course/18-holes-baan-almkreek/",
+    "https://www.hollandschegolfclub.nl/golfpark/almkreek/course/14-holes-golfpark-almkreek/"
+  ]
+}

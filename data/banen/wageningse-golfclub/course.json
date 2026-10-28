@@ -1,0 +1,261 @@
+{
+  "slug": "wageningse-golfclub",
+  "name": "Wageningse Golfclub",
+  "club_name": "Wageningse Golfclub",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Zoomweg 10",
+    "postal_code": "6704 PE",
+    "city": "Wageningen",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.9789343,
+    "lon": 5.6924401,
+    "source": "nominatim (Zoomweg 10, Wageningen)"
+  },
+  "distance_km_from_dedemsvaart": 86.6,
+  "phone": "+31 317 428 775",
+  "email": "info@wageningsegolfclub.nl",
+  "website": "https://wageningsegolfclub.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "korte baan op Sportpark De Zoom",
+  "facilities": [
+    "clubhuis",
+    "driving range",
+    "golfclinics"
+  ],
+  "greenfee_welcome": null,
+  "requirements": null,
+  "description_nl": "Kleine verenigingsbaan van negen holes op Sportpark De Zoom in Wageningen, met zes par 3's en drie korte par 4's (par 30). De NGF-goedgekeurde baan is bedoeld om te leren golfen en handicap 54 te halen, maar telt ook mee voor qualifying. De club heeft ongeveer 400 leden.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 60,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2782,
+          "course_rating": 56.0,
+          "slope": 86,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2782,
+          "course_rating": 58.7,
+          "slope": 96,
+          "par": 60
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125,
+            "rood": 125
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 235,
+            "rood": 235
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 212,
+            "rood": 212
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 136
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 220,
+            "rood": 220
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 116,
+            "rood": 116
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125,
+            "rood": 125
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 235,
+            "rood": 235
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 212,
+            "rood": 212
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 136
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 145
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 220,
+            "rood": 220
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 116,
+            "rood": 116
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://wageningsegolfclub.nl/scorekaart/",
+    "files": [
+      "scorecard/Scorekaart_2025.pdf",
+      "scorecard/Wageninse-GC-18-holes-Dames-Heren.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart V7 7-2026 (één lengte per hole) + baanhandicaptabel 18 holes 17-06-2026 (geel heren, rood dames; zelfde lengtes aangenomen). Er is ook een 9-holes tabel."
+  },
+  "sources": [
+    "https://wageningsegolfclub.nl/scorekaart/",
+    "https://wageningsegolfclub.nl/playing-handicap/",
+    "https://wageningsegolfclub.nl/"
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "slug": "golfbaan-molenberg-burgh-haamstede",
+  "name": "Golfbaan Molenberg",
+  "club_name": "Golfclub Molenberg",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Hogeweg 53",
+    "postal_code": "4328 PB",
+    "city": "Burgh-Haamstede",
+    "province": "Zeeland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.684,
+    "lon": 3.7243,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 212.7,
+  "phone": "0111 654400",
+  "email": null,
+  "website": "https://golfclubmolenberg.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "vlak, aan de rand van de duinen naast een vakantiepark en minicamping",
+  "facilities": [
+    "driving range",
+    "oefengreen",
+    "oefenbunker",
+    "horeca (boerderij Molenberg)",
+    "minicamping"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Welkom zonder GVB; geldig toegangsbewijs verplicht, max. 4 spelers per flight; kinderen 7-14 jaar onder toezicht, kinderen jonger dan 7 niet toegestaan.",
+  "description_nl": "Kleine 18-holes pitch & putt-baan bij boerderij Molenberg in Burgh-Haamstede, met holes van 20 tot 57 meter. Je hebt er geen golfvaardigheidsbewijs nodig, wat de baan geschikt maakt voor vakantiegasten en beginners. Golfclub Molenberg organiseert er daarnaast eigen clubwedstrijden.",
+  "loops": [
+    {
+      "name": "Pitch & putt 18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": null,
+          "length_m": 784,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 48
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 40
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 53
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 51
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 20
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 29
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 49
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 35
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 46
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 57
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 39
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 35
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 42
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 52
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 36
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 52
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclubmolenberg.nl/baaninfo",
+    "files": [
+      "scorecard/scorekaart-5.png",
+      "scorecard/scorekaart-3.png",
+      "scorecard/layout-2.jpg",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Scorekaart (afbeelding) op de clubsite: één afstandskolom (meters), alle holes par 3, totaal 784 m / par 54 (klopt met som). Geen course rating/slope gepubliceerd. golfkaart.com noemt het een 18-holesbaan; het is een pitch & putt-baan.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://golfclubmolenberg.nl/",
+    "https://golfclubmolenberg.nl/baaninfo"
+  ]
+}

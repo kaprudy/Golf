@@ -1,0 +1,236 @@
+{
+  "slug": "golfcenter-seve-rotterdam",
+  "name": "Golfcenter Seve Par 3-baan",
+  "club_name": "Golfcenter Seve",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Kleiweg 480",
+    "postal_code": "3045 PM",
+    "city": "Rotterdam",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.9437969,
+    "lon": 4.4616526,
+    "source": "Nominatim (OpenStreetMap), adres Kleiweg 480"
+  },
+  "distance_km_from_dedemsvaart": 154.3,
+  "phone": "010 418 88 48",
+  "email": "info@seve.nl",
+  "website": "https://seve.nl",
+  "booking_url": "https://seve.nl/boek-starttijd/",
+  "founded": null,
+  "architect": null,
+  "landscape": "stadsparkbaan met waterpartijen en bunkers (Rotterdam-Noord, bij de A20)",
+  "facilities": [
+    "verlichte en verwarmde driving range met Trackman",
+    "golf academy",
+    "golfshop",
+    "restaurant"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfcenter Seve ligt aan de Kleiweg in Rotterdam-Noord en combineert een overdekte, verlichte Trackman-range met een 9-holes par 3-baan. De korte holes liggen tussen waterpartijen en bunkers en zijn bedoeld om het korte spel te oefenen. Wie 18 holes wil spelen loopt de lus twee keer, waarbij een paar holes vanaf een andere plek worden gespeeld.",
+  "loops": [
+    {
+      "name": "Par 3-baan (2x9 holes)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "heren",
+          "color": null,
+          "gender": "men",
+          "length_m": 1501,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 51
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 70
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 89
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 86
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 75
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 120
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 76
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 107
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 83
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 71
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 66
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 82
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 86
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 75
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 120
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 76
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 107
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "heren": 61
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://seve.nl/golf/golf-par-3-golfbaan/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/golfingrecord-scorecard.html",
+      "scorecard/golfpass-scorecard.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Clubsite publiceert geen scorekaart. Holegegevens van golfingrecord.com (tee 'Heren', 18 holes = 2x9 met andere lengtes op holes 10-18, totaal 1501, eenheid niet vermeld; vermoedelijk meters, want 1golf.eu noemt 1497 m). Golfingrecord vermeldt een tweede tee zonder gegevens en CR 51,4 / slope 57; GolfPass geeft andere waarden (9 holes 903, totaal 1638 m, CR 60,2 / slope 105, andere S.I.). Door deze tegenstrijdigheid zijn CR/slope niet ingevuld; gegevens met voorzichtigheid gebruiken."
+  },
+  "sources": [
+    "https://seve.nl/golf/golf-par-3-golfbaan/",
+    "https://www.golfingrecord.com/golf-scorecard/356462a9-b416-4fd3-a0e8-08850a969e4a",
+    "https://www.golfpass.com/courses/35651-seve-golf-center/scorecard-and-layout",
+    "https://www.1golf.eu/en/club/golfcenter-seve"
+  ]
+}

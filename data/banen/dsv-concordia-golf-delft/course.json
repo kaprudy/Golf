@@ -1,0 +1,177 @@
+{
+  "slug": "dsv-concordia-golf-delft",
+  "name": "DSV Concordia Golf (par 3-baan)",
+  "club_name": "D.S.V. Concordia Golf",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Brasserskade 236",
+    "postal_code": "2616 LA",
+    "city": "Delft",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.0305864,
+    "lon": 4.3724297,
+    "source": "Nominatim (OpenStreetMap), adres Brasserskade 236"
+  },
+  "distance_km_from_dedemsvaart": 155.4,
+  "phone": null,
+  "email": null,
+  "website": null,
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "par 3-baan aan de rand van de Delftse Hout",
+  "facilities": [
+    "driving range (volgens derden)",
+    "golfschool (volgens derden)"
+  ],
+  "greenfee_welcome": null,
+  "requirements": null,
+  "description_nl": "De golfafdeling van studentenvereniging D.S.V. Concordia heeft aan de Brasserskade in Delft een eigen 9-holes par 3-baan. De holes zijn tussen de 70 en 140 meter lang. Officiele baaninformatie is online niet te vinden; de gegevens hieronder komen van Hole19.",
+  "loops": [
+    {
+      "name": "Par 3-baan 9 holes",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 991,
+          "course_rating": 25.6,
+          "slope": 84,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 966,
+          "course_rating": 25.5,
+          "slope": 83,
+          "par": 27
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 991,
+          "course_rating": 26.6,
+          "slope": 89,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 966,
+          "course_rating": 26.5,
+          "slope": 88,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 101
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 138
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 135
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 70
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 104
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 104
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 112
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 69
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 133
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/concordia-delft-golf",
+    "files": [
+      "scorecard/hole19-scorecard.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen officiele site met baangegevens gevonden (Hole19 verwijst naar concordiadelft.nl). Par, S.I. en per-hole lengtes van Hole19 voor tee rood (totaal 966); geel alleen totaal (991). CR/slope van Hole19 (niet officieel bevestigd); Hole19 vermeldt ook 18-holes ratings (lus 2x): heren geel 51,1/84, rood 50,9/83; dames geel 53,2/89, rood 52,9/88. GolfPass noemt afwijkende S.I. en totaal 1065. Telefoon volgens derden +31 15 212 6600 (niet bevestigd, niet ingevuld)."
+  },
+  "sources": [
+    "https://www.hole19golf.com/courses/concordia-delft-golf",
+    "https://www.1golf.eu/en/club/dsv-concordia-golf",
+    "https://www.golfpass.com/courses/36523-dsv-concordia-golf-club-par-3-course/scorecard-and-layout/scorecard-and-layout"
+  ]
+}

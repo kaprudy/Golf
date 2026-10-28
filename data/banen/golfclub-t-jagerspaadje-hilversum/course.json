@@ -1,0 +1,244 @@
+{
+  "slug": "golfclub-t-jagerspaadje-hilversum",
+  "name": "Golfclub 't Jagerspaadje",
+  "club_name": "Golfclub 't Jagerspaadje",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Beresteinseweg 150",
+    "postal_code": "1217 TM",
+    "city": "Hilversum",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.22646,
+    "lon": 5.1436,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 98.5,
+  "phone": null,
+  "email": "info@gcjagerspaadje.nl",
+  "website": "https://www.jagerspaadje.nl/",
+  "booking_url": null,
+  "founded": 1981,
+  "architect": null,
+  "landscape": "bosbaan op zandgrond in het Corversbos (Natuurmonumenten), naast de buitenplaatsen van 's-Graveland",
+  "facilities": [
+    "9-holes baan (par 30, NGF C-status, qualifying)",
+    "clubhuis 'de Teeroom'",
+    "golfles (twee teaching pro's)"
+  ],
+  "greenfee_welcome": false,
+  "requirements": "Besloten vereniging: greenfee alleen in combinatie met een lid.",
+  "description_nl": "'t Jagerspaadje is een kleine vrijwilligersclub uit 1981 met een 9-holesbaan in het Corversbos bij Hilversum, op grond van Natuurmonumenten. De baan telt zes par 3's en drie par 4's en is dankzij de beschutte ligging en zandgrond vrijwel het hele jaar op zomergreens bespeelbaar. Gasten kunnen alleen samen met een lid spelen.",
+  "loops": [
+    {
+      "name": "18 holes (2x 9)",
+      "holes": 18,
+      "par": 60,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2785,
+          "course_rating": 55.0,
+          "slope": 91,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2785,
+          "course_rating": 57.5,
+          "slope": 102,
+          "par": 60
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 225
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 230
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 170
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 119
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 243
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 116
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 87
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 225
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 230
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 170
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 119
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 243
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 116
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 100
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 87
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://www.jagerspaadje.nl/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/WHS-1.jpg",
+      "scorecard/WHS-2.jpg",
+      "scorecard/hole19.html"
+    ],
+    "source": "third-party",
+    "complete": false,
+    "notes": "Club publiceert alleen totaal (9 holes: 3x par 4, 6x par 3; 2785 m) en NGF-tabellen 11-01-2021 (18 holes geel heren 55,0/91, rood dames 57,5/102; 9 holes 27,5/91 en 28,8/102). Par, S.I. en lengtes per hole komen van Hole19 (third-party); holesom 2785 m klopt met de clubopgave, par 60 en de par 4-verdeling ook. Rode lengtes per hole niet bekend (totaal gelijk aan geel volgens tabel/Hole19), daarom complete=false."
+  },
+  "sources": [
+    "https://www.jagerspaadje.nl/",
+    "https://www.jagerspaadje.nl/copy-of-home-nieuw-1",
+    "https://www.hole19golf.com/courses/golfclub-t-jagerspaadje"
+  ]
+}

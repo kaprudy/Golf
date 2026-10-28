@@ -1,0 +1,404 @@
+{
+  "slug": "golfbaan-dirkshorn",
+  "name": "Golfbaan Dirkshorn",
+  "club_name": "Stichting Golfbaan Dirkshorn",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Groenvelderweg 3",
+    "postal_code": "1746 EE",
+    "city": "Dirkshorn",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.7560698,
+    "lon": 4.7869704,
+    "source": "nominatim (Groenvelderweg 3, Dirkshorn)"
+  },
+  "phone": "+31 224 274 050",
+  "email": "receptie@golfbaandirkshorn.nl",
+  "website": "https://golfbaandirkshorn.nl/",
+  "booking_url": "https://dirkshorn.teecontrol.com/",
+  "founded": null,
+  "architect": "Alan Rijks",
+  "landscape": "polder-/weidebaan met 'inner links'-karakter, veel water, weinig bomen (55 ha)",
+  "facilities": [
+    "driving range",
+    "par 3-baan (incourse)",
+    "restaurant",
+    "vergaderruimte",
+    "golfacademy",
+    "buggyverhuur"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "NGF-pas/handicap vereist voor 18-holesbaan (greenfee online of telefonisch reserveren)",
+  "description_nl": "Open polderbaan van 18 holes (par 72) langs de N245 tussen Alkmaar en Schagen, ontworpen door Alan Rijks. Veel waterpartijen, golvende fairways en een eilandgreen op hole 17 bepalen het spel; bomen zijn er nauwelijks. De baan heeft de NGF A-status en een GEO-ecolabel.",
+  "loops": [
+    {
+      "name": "18 holes (par 72)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6225,
+          "course_rating": 73.2,
+          "slope": 141,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5724,
+          "course_rating": 70.8,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5342,
+          "course_rating": 68.8,
+          "slope": 123,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4805,
+          "course_rating": 65.7,
+          "slope": 116,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4337,
+          "course_rating": 63.6,
+          "slope": 109,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5724,
+          "course_rating": 76.8,
+          "slope": 144,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5342,
+          "course_rating": 74.4,
+          "slope": 140,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4805,
+          "course_rating": 71.5,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4337,
+          "course_rating": 68.7,
+          "slope": 115,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 375,
+            "geel": 325,
+            "blauw": 308,
+            "rood": 277,
+            "oranje": 223
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 460,
+            "geel": 436,
+            "blauw": 390,
+            "rood": 364,
+            "oranje": 364
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 411,
+            "geel": 364,
+            "blauw": 329,
+            "rood": 305,
+            "oranje": 267
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 380,
+            "geel": 350,
+            "blauw": 315,
+            "rood": 302,
+            "oranje": 257
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 356,
+            "geel": 335,
+            "blauw": 332,
+            "rood": 280,
+            "oranje": 245
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 450,
+            "geel": 426,
+            "blauw": 406,
+            "rood": 354,
+            "oranje": 354
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 139,
+            "geel": 126,
+            "blauw": 114,
+            "rood": 107,
+            "oranje": 107
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 382,
+            "geel": 349,
+            "blauw": 326,
+            "rood": 284,
+            "oranje": 245
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 155,
+            "geel": 140,
+            "blauw": 128,
+            "rood": 123,
+            "oranje": 123
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 515,
+            "geel": 472,
+            "blauw": 427,
+            "rood": 397,
+            "oranje": 397
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 154,
+            "geel": 142,
+            "blauw": 133,
+            "rood": 113,
+            "oranje": 113
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 402,
+            "geel": 369,
+            "blauw": 360,
+            "rood": 310,
+            "oranje": 250
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 347,
+            "geel": 321,
+            "blauw": 315,
+            "rood": 278,
+            "oranje": 231
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 154,
+            "geel": 140,
+            "blauw": 135,
+            "rood": 121,
+            "oranje": 121
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 375,
+            "geel": 349,
+            "blauw": 314,
+            "rood": 289,
+            "oranje": 231
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 332,
+            "geel": 304,
+            "blauw": 292,
+            "rood": 251,
+            "oranje": 204
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 337,
+            "geel": 315,
+            "blauw": 295,
+            "rood": 265,
+            "oranje": 220
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 501,
+            "geel": 461,
+            "blauw": 423,
+            "rood": 385,
+            "oranje": 385
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfbaandirkshorn.nl/de-baan/layout/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-heren-18-holes.html",
+      "scorecard/page-dames-18-holes.html",
+      "scorecard/page-incourse-par-3.html",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-1-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-2-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-3-3.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-4-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-5-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-6-q.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-7-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-8-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-9-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-10-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-11-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-12-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-13-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-14-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-15-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-16-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-17-min.jpg",
+      "scorecard/golfbaan-dirkshorn-plategrond-hole-18-min.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Geen scorekaart-PDF; par, S.I. en lengtes per tee (wit/geel/blauw/rood/oranje) afgelezen van de 18 holeplattegronden (2022) op de layoutpagina. Totalen berekend uit holelengtes (staan niet op de site). CR/slope van de pagina's Heren/Dames 18 holes. Er is ook een 'incourse' par 3-baan (18 holes par 54; heren CR 51,4/SR 72, dames CR 53,7/SR 78; 9-holes ratings 25,6/71 en 25,9/72 heren, 26,7/75 en 27,0/80 dames) maar zonder gepubliceerde holegegevens; niet als loop opgenomen."
+  },
+  "sources": [
+    "https://golfbaandirkshorn.nl/de-baan/",
+    "https://golfbaandirkshorn.nl/de-baan/layout/",
+    "https://golfbaandirkshorn.nl/de-baan/playing-handicap/",
+    "https://golfbaandirkshorn.nl/heren-18-holes/",
+    "https://golfbaandirkshorn.nl/dames-18-holes/",
+    "https://golfbaandirkshorn.nl/incourse-par-3/",
+    "https://golfbaandirkshorn.nl/de-baan/tarieven/"
+  ],
+  "distance_km_from_dedemsvaart": 114.1
+}

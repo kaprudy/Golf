@@ -1,0 +1,241 @@
+{
+  "slug": "doornse-golfclub",
+  "name": "Doornse Golfclub",
+  "club_name": "Doornse Golfclub",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Mariniersweg 3",
+    "postal_code": "3941 XK",
+    "city": "Doorn",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.0418426,
+    "lon": 5.3281674,
+    "source": "nominatim (Mariniersweg 3, Doorn)"
+  },
+  "distance_km_from_dedemsvaart": 98.9,
+  "phone": "+31 6 2743 6261",
+  "email": "secretariaat@doornsegolfclub.nl",
+  "website": "https://www.doornsegolfclub.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "compacte par 3-baan met waterpartijen naast tenniscentrum Heuvelrug",
+  "facilities": [
+    "putting green",
+    "terras",
+    "tennis (Tenniscenter Heuvelrug)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Kleine 9-holes par 3-baan naast Tenniscenter Heuvelrug in Doorn, met holes tussen ongeveer 60 en 125 meter en enkele waterpartijen. De baan is bedoeld voor zowel beginnende als geoefende golfers en greenfeespelers zijn welkom. Een ronde van 18 holes speel je door de negen holes twee keer te lopen.",
+  "loops": [
+    {
+      "name": "Par 3-baan (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": "men",
+          "length_m": 1598,
+          "course_rating": 49.2,
+          "slope": 76,
+          "par": 54
+        },
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": "women",
+          "length_m": 1598,
+          "course_rating": 50.7,
+          "slope": 80,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 100
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 111
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 70
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 114
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 68
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 58
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 126
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 66
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 81
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 110
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 111
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 70
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 114
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 68
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 58
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 126
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 66
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 81
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.doornsegolfclub.nl/golfen/score-kaart/",
+    "files": [
+      "scorecard/2021-11-scorecard-score-zijde.1920x1920.jpg",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart november 2021 (één afslag; CR/SR heren 49,2/76, dames 50,7/80 op de kaart). Hole 10 is 110 m tegen 100 m voor hole 1."
+  },
+  "sources": [
+    "https://www.doornsegolfclub.nl/golfen/score-kaart/",
+    "https://www.doornsegolfclub.nl/"
+  ]
+}

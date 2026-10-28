@@ -1,0 +1,382 @@
+{
+  "slug": "golfclub-wouwse-plantage-bergen-op-zoom",
+  "name": "Golfclub Wouwse Plantage",
+  "club_name": "Golfclub Wouwse Plantage",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Zoomvlietweg 66",
+    "postal_code": "4624 RP",
+    "city": "Bergen op Zoom",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.4761,
+    "lon": 4.3613,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 190.3,
+  "phone": "+31 165 377100",
+  "email": "gwp@golfwouwseplantage.nl",
+  "website": "https://www.golfwouwseplantage.nl/",
+  "booking_url": "https://www.golfwouwseplantage.nl/golfen/tarieven-greenfee",
+  "founded": 1981,
+  "architect": "Frank Pennink (oorspronkelijk); renovatie 2018-2019 door Bruno Steensels",
+  "landscape": "bos, heide en zandverstuiving (De Plantage) en parklandschap met beek en water (De Bleekloop)",
+  "facilities": [
+    "driving range",
+    "oefengreen",
+    "zes oefenholes",
+    "golfschool",
+    "clubhuis met restaurant"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Greenfee alleen met minimaal twee greenfeespelers per flight (max. vier); max. WHS-handicap 90 per 4-ball en 108 per 2- of 3-ball; boeken tot 14 dagen vooruit via de caddiemaster.",
+  "description_nl": "Golfclub Wouwse Plantage ligt in een bosrijk stiltegebied op het gelijknamige landgoed tussen Bergen op Zoom en Roosendaal. De baan bestaat sinds 2021 uit twee lussen: De Plantage met bosholes en een zandverstuiving, en De Bleekloop met een parkachtig karakter, een beek en waterpartijen. Het oorspronkelijke ontwerp is van Frank Pennink; Bruno Steensels renoveerde in 2018-2019 meerdere holes.",
+  "loops": [
+    {
+      "name": "18 holes (De Bleekloop + De Plantage)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6312,
+          "course_rating": 74.5,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5920,
+          "course_rating": 72.4,
+          "slope": 138,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5634,
+          "course_rating": 70.9,
+          "slope": 135,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5101,
+          "course_rating": 68.6,
+          "slope": 122,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4533,
+          "course_rating": 65.4,
+          "slope": 114,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5920,
+          "course_rating": 78.8,
+          "slope": 148,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5634,
+          "course_rating": 76.9,
+          "slope": 143,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5101,
+          "course_rating": 73.8,
+          "slope": 135,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4533,
+          "course_rating": 70.0,
+          "slope": 127,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 360,
+            "geel": 327,
+            "blauw": 317,
+            "rood": 274,
+            "oranje": 247
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 523,
+            "geel": 512,
+            "blauw": 480,
+            "rood": 435,
+            "oranje": 370
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 367,
+            "geel": 353,
+            "blauw": 339,
+            "rood": 297,
+            "oranje": 272
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 169,
+            "geel": 152,
+            "blauw": 145,
+            "rood": 132,
+            "oranje": 123
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 530,
+            "geel": 483,
+            "blauw": 472,
+            "rood": 417,
+            "oranje": 387
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 412,
+            "geel": 380,
+            "blauw": 365,
+            "rood": 327,
+            "oranje": 307
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 368,
+            "geel": 301,
+            "blauw": 290,
+            "rood": 262,
+            "oranje": 240
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 166,
+            "geel": 125,
+            "blauw": 115,
+            "rood": 109,
+            "oranje": 93
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 363,
+            "geel": 356,
+            "blauw": 346,
+            "rood": 302,
+            "oranje": 270
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 301,
+            "geel": 288,
+            "blauw": 265,
+            "rood": 252,
+            "oranje": 243
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 392,
+            "geel": 362,
+            "blauw": 342,
+            "rood": 296,
+            "oranje": 259
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 190,
+            "geel": 177,
+            "blauw": 165,
+            "rood": 160,
+            "oranje": 152
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 461,
+            "geel": 443,
+            "blauw": 420,
+            "rood": 379,
+            "oranje": 300
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 380,
+            "geel": 373,
+            "blauw": 348,
+            "rood": 348,
+            "oranje": 275
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 479,
+            "geel": 469,
+            "blauw": 445,
+            "rood": 390,
+            "oranje": 316
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 160,
+            "geel": 160,
+            "blauw": 155,
+            "rood": 145,
+            "oranje": 120
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 310,
+            "geel": 310,
+            "blauw": 292,
+            "rood": 287,
+            "oranje": 287
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 381,
+            "geel": 349,
+            "blauw": 333,
+            "rood": 289,
+            "oranje": 272
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfwouwseplantage.nl/de-baan/baandetails",
+    "files": [
+      "scorecard/Scorekaart-zomer-GWP-2025.pdf",
+      "scorecard/Wouwse-Plantage-Heren-2026.pdf",
+      "scorecard/Wouwse-Plantage-Dames-2026.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Zomerscorekaart 2025 (OUT 3258/2989/2869/2555/2309, IN 3054/2931/2765/2546/2224, TOT 6312/5920/5634/5101/4533; klopt met de holes). CR/slope uit handicaptabellen 2026 (18 holes De Bleekloop-De Plantage). Er bestaat ook een winterscorekaart met wintertees; niet opgenomen. Opgericht: club 1981 (bevestigd 1982), baan geopend 1980 (9 holes), 18 holes sinds 1991.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.golfwouwseplantage.nl/de-baan/baandetails",
+    "https://www.golfwouwseplantage.nl/de-baan/handicaptabellen",
+    "https://www.golfwouwseplantage.nl/de-club/historie",
+    "https://www.golfwouwseplantage.nl/golfen/tarieven-greenfee"
+  ]
+}

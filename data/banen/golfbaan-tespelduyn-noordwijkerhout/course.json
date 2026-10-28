@@ -1,0 +1,316 @@
+{
+  "slug": "golfbaan-tespelduyn-noordwijkerhout",
+  "name": "Golfbaan Tespelduyn (Bloembollenbaan)",
+  "club_name": "Landgoed & Golfbaan Tespelduyn",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Tespellaan 53",
+    "postal_code": "2211 VT",
+    "city": "Noordwijkerhout",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2833916,
+    "lon": 4.5258492,
+    "source": "nominatim.openstreetmap.org (adres Tespellaan 53, Noordwijkerhout; restaurant/clubhuis)"
+  },
+  "distance_km_from_dedemsvaart": 135.7,
+  "phone": "0252 24 13 33",
+  "email": "receptie@tespelduyn.nl",
+  "website": "https://golfbaantespelduyn.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "zandgrond met 23 m hoge terp, tussen duinen en Keukenhof",
+  "facilities": [
+    "driving range (Trackman)",
+    "golfschool",
+    "restaurant",
+    "landgoed"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "De Bloembollenbaan van landgoed Tespelduyn is een openbare 9-holesbaan bij Noordwijkerhout, gebouwd rond een 23 meter hoge terp. Enkele holes slaan af van of spelen naar de top, met uitzicht over de Bollenstreek, en water en bunkers zorgen voor extra uitdaging. Door de zandgrond is de baan het hele jaar goed bespeelbaar.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x, hole 4/13 met andere green)",
+      "holes": 18,
+      "par": 63,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 3543,
+          "course_rating": 60.9,
+          "slope": 116,
+          "par": 63
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 3400,
+          "course_rating": 60.6,
+          "slope": 111,
+          "par": 63
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3265,
+          "course_rating": 59.9,
+          "slope": 108,
+          "par": 63
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 3543,
+          "course_rating": 64.5,
+          "slope": 114,
+          "par": 63
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 3400,
+          "course_rating": 63.4,
+          "slope": 116,
+          "par": 63
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3265,
+          "course_rating": 63.0,
+          "slope": 114,
+          "par": 63
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 81,
+            "rood": 81,
+            "oranje": 81
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108,
+            "oranje": 108
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 375,
+            "rood": 375,
+            "oranje": 330
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 319,
+            "rood": 311,
+            "oranje": 266
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 105,
+            "rood": 105,
+            "oranje": 105
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 76,
+            "rood": 76,
+            "oranje": 76
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 90,
+            "rood": 90,
+            "oranje": 90
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 280,
+            "rood": 265,
+            "oranje": 265
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 274,
+            "rood": 244,
+            "oranje": 244
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 81,
+            "rood": 81,
+            "oranje": 81
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108,
+            "oranje": 108
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 375,
+            "rood": 375,
+            "oranje": 330
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 446,
+            "rood": 401,
+            "oranje": 401
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 105,
+            "rood": 105,
+            "oranje": 105
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 76,
+            "rood": 76,
+            "oranje": 76
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 90,
+            "rood": 90,
+            "oranje": 90
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 280,
+            "rood": 265,
+            "oranje": 265
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 274,
+            "rood": 244,
+            "oranje": 244
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/250622-Tespelduyn_scorekaart_9-en-18-holes-2.pdf",
+      "scorecard/250622-Tespelduyn_scorekaart_11-holes-2.pdf",
+      "scorecard/Tespelduyn-Heren.pdf",
+      "scorecard/Tespelduyn-Dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart v2506 (juni 2025). Hole 4 (par 4) wordt beneden uitgehold, hole 13 (par 5) boven op de terp; daardoor 1e negen par 31 en 2e negen par 32. CR/SR d.d. 12-06-2025; 1e negen heren 30,2/114, 30,0/109, 29,6/105, dames 31,8/112, 31,4/112, 31,1/111; 2e negen heren 30,8/117, 30,6/114, 30,4/110, dames 32,7/117, 32,0/120, 31,9/118. Er is ook een 11-holeskaart (par 37, geel 1884 m) – niet als loop opgenomen."
+  },
+  "sources": [
+    "https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/"
+  ]
+}

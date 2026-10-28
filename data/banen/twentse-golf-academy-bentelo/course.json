@@ -1,0 +1,153 @@
+{
+  "slug": "twentse-golf-academy-bentelo",
+  "name": "Twentse Golf Academy",
+  "club_name": "Twentse Golf Academy",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Bentelosestraat 54a",
+    "postal_code": null,
+    "city": "Bentelo",
+    "province": "Overijssel",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2404,
+    "lon": 6.695,
+    "source": "OpenStreetMap leisure=golf_course (middelpunt baan, via Overpass)"
+  },
+  "distance_km_from_dedemsvaart": 43.1,
+  "phone": "+31 6 16860123",
+  "email": "info@twentsegolfacademy.nl",
+  "website": "https://twentsegolfacademy.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "landelijk/agrarisch (Twents coulisselandschap)",
+  "facilities": [
+    "driving range",
+    "oefenfaciliteiten korte spel",
+    "clubhuis",
+    "golflessen (lesabonnement)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Kleinschalige golfaccommodatie in het buitengebied van Bentelo (Hof van Twente), een zusterbaan van het Twentse Golf Park in Haaksbergen. De 9 holes zijn allemaal par 3 en kort (circa 35 tot 115 meter), wat de baan geschikt maakt voor beginners en het oefenen van het korte spel. Er is een driving range en het accent ligt op lessen.",
+  "loops": [
+    {
+      "name": "Par 3-baan 9 holes",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "meters",
+          "color": null,
+          "gender": null,
+          "length_m": 631,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 95
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 66
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 43
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 71
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 113
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 78
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 61
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 70
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 34
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/twentse-golf-academy",
+    "files": [
+      "scorecard/page.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Holegegevens (par, SI 1-9, lengte) uit Hole19; tee heet daar \"meters\" (totaal 631, Hole19 labelt het als yds). Geen CR/slope gevonden. Officiële site twentsegolfacademy.nl toont alleen een lege serverpagina (geen inhoud) - status/actualiteit niet officieel te controleren; de club staat wel in de golf.nl-banenzoeker (beschreven als 9 holes par 3 met driving range). Postcode onbekend (Hole19 vermeldt \"7597MR\", vermoedelijk 7497 MR). Telefoon uit golf.nl, e-mail uit Hole19."
+  },
+  "sources": [
+    "https://www.hole19golf.com/courses/twentse-golf-academy",
+    "https://www.golf.nl/api/playgolfapi/GetGolfCourses",
+    "https://golfkaart.com/api/kaart.json",
+    "https://overpass-api.de (leisure=golf_course)"
+  ]
+}

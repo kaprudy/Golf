@@ -1,0 +1,145 @@
+{
+  "slug": "golfclub-de-haar",
+  "name": "Golfclub De Haar",
+  "club_name": "Golfclub De Haar",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Parkweg 5",
+    "postal_code": "3455 RH",
+    "city": "Haarzuilens (Utrecht)",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1181891,
+    "lon": 4.9849364,
+    "source": "nominatim (Golfclub De Haar, Parkweg 5, Haarzuilens)"
+  },
+  "distance_km_from_dedemsvaart": 113.6,
+  "phone": "+31 30 677 2860",
+  "email": "info@gcdehaar.nl",
+  "website": "https://www.gcdehaar.nl/",
+  "booking_url": null,
+  "founded": 1974,
+  "architect": "Frank Pennink (1974, 9 holes); Bruno Steensels (uitbreiding 18 holes, 2021)",
+  "landscape": "parkbaan in het Zuiderpark van Kasteel de Haar, met bos en vijvers",
+  "facilities": [
+    "clubhuis",
+    "restaurant",
+    "driving range",
+    "golfschool"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Verenigingsbaan in het historische Zuiderpark van Kasteel de Haar bij Haarzuilens. De oorspronkelijke 9 holes uit 1974 zijn in 2021 volledig vernieuwd en uitgebreid tot een 18-holesbaan van par 71 door Bruno Steensels. Smalle fairways, veel water en oude bomen maken plaatsing belangrijker dan lengte; op de slotholes kijk je uit op het kasteel.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 71.8,
+          "slope": 141,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 69.8,
+          "slope": 134,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 75.9,
+          "slope": 139,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 67.7,
+          "slope": 125,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 73.5,
+          "slope": 134,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 64.8,
+          "slope": 114,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 69.3,
+          "slope": 126,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 61.1,
+          "slope": 105,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 64.3,
+          "slope": 105,
+          "par": 71
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.gcdehaar.nl/de-baan/handicap-tabellen-heren/",
+    "files": [
+      "scorecard/De-Haar-Dames.pdf",
+      "scorecard/De-Haar-Heren.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Alleen CR/slope (baanhandicaptabellen 15-08-2024) gevonden. De site heeft een interactief baanboekje met lengtes per afslag (symbolen, geen kleuren) maar geen par/S.I. per hole; derden (golfify, golfpass) tonen nog de oude 9-holesbaan (par 72), dus niet gebruikt. Holegegevens ontbreken."
+  },
+  "sources": [
+    "https://www.gcdehaar.nl/de-baan/",
+    "https://www.gcdehaar.nl/de-baan/baanboekje/",
+    "https://www.gcdehaar.nl/de-baan/handicap-tabellen-dames/",
+    "https://www.gcdehaar.nl/de-baan/handicap-tabellen-heren/"
+  ]
+}

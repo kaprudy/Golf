@@ -1,0 +1,154 @@
+{
+  "slug": "greenz-shortgolf-cadzand-bad",
+  "name": "GREENZ Cadzand-Bad (Shortgolf Cadzand-Bad)",
+  "club_name": "GREENZ Cadzand-Bad",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Lange Strinkweg 1A",
+    "postal_code": "4506 JG",
+    "city": "Cadzand-Bad",
+    "province": "Zeeland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.3787,
+    "lon": 3.3992,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 249.7,
+  "phone": "+31 117 391234",
+  "email": "info@greenz-cadzandbad.nl",
+  "website": "https://www.greenz-cadzandbad.nl/",
+  "booking_url": "https://www.greenz-cadzandbad.nl/reserveren/",
+  "founded": null,
+  "architect": null,
+  "landscape": "compacte baan met struikgewas, bunkers en twee vijvers, vlak bij de kust",
+  "facilities": [
+    "golflessen",
+    "driving-range-kooi",
+    "coffee & drinks/horeca",
+    "huurclubs en ballen inbegrepen",
+    "parkeerplaats"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen golfervaring of handicapbewijs nodig; max. 4 personen per hole.",
+  "description_nl": "Recreatieve shortgolfbaan van 9 korte holes aan de kust bij Cadzand-Bad, tot voor kort bekend als Shortgolf Cadzand-Bad. De holes van 48 tot 90 meter lopen tussen struikgewas, bunkers en waterpartijen. Clubs en ballen krijg je erbij, en een ronde van 9 holes duurt ongeveer anderhalf tot twee uur.",
+  "loops": [
+    {
+      "name": "Shortgolf 9 holes",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": null,
+          "length_m": 588,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 66
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 90
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 66
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 48
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 80
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 70
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 68
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 52
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 48
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.greenz-cadzandbad.nl/shortgolf/",
+    "files": [
+      "scorecard/plattegrond-shortgolf-cadzand.png",
+      "scorecard/page.html",
+      "scorecard/hole19-shortgolf-cadzand-bad.html"
+    ],
+    "source": "official",
+    "complete": false,
+    "notes": "Holelengtes van de officiële plattegrond (meters, totaal 588 m; Hole19 geeft 65/80/65/45/80/65/65/50/75 = 590). Par per hole staat niet op de clubsite; par 3 per hole (par 27) komt van Hole19 (derden). Geen S.I. of rating gepubliceerd. 18 holes = baan twee keer.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.greenz-cadzandbad.nl/shortgolf/",
+    "https://www.hole19golf.com/courses/shortgolf-cadzand-bad"
+  ]
+}

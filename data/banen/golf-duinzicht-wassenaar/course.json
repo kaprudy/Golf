@@ -1,0 +1,285 @@
+{
+  "slug": "golf-duinzicht-wassenaar",
+  "name": "Golf Duinzicht",
+  "club_name": "Golfvereniging Golf Duinzicht",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Waalsdorperlaan 40",
+    "postal_code": "2244 BN",
+    "city": "Wassenaar",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1089762,
+    "lon": 4.3417781,
+    "source": "nominatim.openstreetmap.org (adres Waalsdorperlaan 40, Wassenaar)"
+  },
+  "distance_km_from_dedemsvaart": 153.9,
+  "phone": "070 324 65 98",
+  "email": "info@golfduinzicht.nl",
+  "website": "https://golfduinzicht.nl",
+  "booking_url": "https://golfduinzicht.nl/greenfee-reserveren-niet-voor-leden/",
+  "founded": null,
+  "architect": "deels Alan Rijks en Gerard Jol",
+  "landscape": "binnenduin/park",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "chipping green",
+    "oefenbunker",
+    "3 oefenholes",
+    "clubhuis met bar",
+    "golflessen",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "GVB/NGF-pas verplicht; maximaal handicap 54; vierballen beperkt (doordeweeks pas 's middags), gezamenlijke handicap < 100",
+  "description_nl": "Golf Duinzicht is een compacte 9-holesbaan op de grens van Den Haag en Wassenaar, met zeven par 3's en twee par 4's. Het binnenduinkarakter is terug te zien in golvende fairways en schrale rough, en smalle fairways, bunkers en vijvers maken de korte baan lastiger dan hij oogt. Bij een tweede ronde worden op holes 11 en 17 andere afslagplaatsen gebruikt.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x gespeeld)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2893,
+          "course_rating": 56.0,
+          "slope": 89,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2771,
+          "course_rating": 55.5,
+          "slope": 86,
+          "par": 58
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2893,
+          "course_rating": 58.6,
+          "slope": 98,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2771,
+          "course_rating": 58.1,
+          "slope": 97,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 103,
+            "rood": 103
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 141,
+            "rood": 135
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 138
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 128
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 238,
+            "rood": 233
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 275,
+            "rood": 260
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 103,
+            "rood": 103
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 150
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 138
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 128
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 238,
+            "rood": 233
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 275,
+            "rood": 260
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfduinzicht.nl/handicaptabellen-en-scorekaart/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/scorekaart-binnenkant.jpg",
+      "scorecard/scorekaart-buitenkant.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart oktober 2026 (binnenkant). CR/SR op de kaart staan zonder aanduiding 9/18; gezien par 58 aangenomen voor 18 holes. Op de kaart staat bij IN-kolom 'UIT rood 1.328' terwijl de voorste negen 1.378 optelt (totaal 2.771 klopt met 1.378). Site noemt totale lengte 1434 m voor 9 holes. Slagentabellen (JPG, 2022) op aparte pagina's niet gebruikt."
+  },
+  "sources": [
+    "https://golfduinzicht.nl/baan/",
+    "https://golfduinzicht.nl/handicaptabellen-en-scorekaart/",
+    "https://golfduinzicht.nl/regels/",
+    "https://golfduinzicht.nl/tarieven/"
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "slug": "eindhovensche-golf-valkenswaard",
+  "name": "Eindhovensche Golf",
+  "club_name": "Eindhovensche Golf",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Eindhovenseweg 300",
+    "postal_code": "5553 VB",
+    "city": "Valkenswaard",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.3699012,
+    "lon": 5.4760304,
+    "source": "nominatim.openstreetmap.org (Eindhovenseweg 300, clubhuis/restaurant De Gagel)"
+  },
+  "distance_km_from_dedemsvaart": 152.5,
+  "phone": "040 201 48 16",
+  "email": "info@eindhovenschegolf.nl",
+  "website": "https://www.eindhovenschegolf.nl",
+  "booking_url": null,
+  "founded": 1930,
+  "architect": "H.S. Colt (1928), landschapsarchitect Copijn",
+  "landscape": "bos en heide (inland links)",
+  "facilities": [
+    "driving range",
+    "Eindhovensche Golf Academy",
+    "executive course (5 holes par 3)",
+    "golfshop",
+    "clubhuis",
+    "restaurant De Gagel"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Greenfee voor NGF-leden en leden met speelrecht elders (zie greenfeeregeling/bezoekersregeling)",
+  "description_nl": "De Eindhovensche ligt tussen bos en heide ten noorden van Valkenswaard en werd eind jaren twintig ontworpen door Harry Colt. De baan geldt als een klassieke inland links met heuvelende fairways, heideranden en strategisch geplaatste bunkers, en ontving vele grote toernooien. Het karakteristieke clubhuis uit 1930 kijkt uit over het oude zwembad en enkele holes.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 73.9,
+          "slope": 136,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 71.4,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 69.4,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 67.5,
+          "slope": 122,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 64.1,
+          "slope": 118,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 77.4,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 74.9,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 72.4,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 68.9,
+          "slope": 121,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {}
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {}
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.eindhovenschegolf.nl/baan/courseguide",
+    "files": [
+      "scorecard/course-guide-eg-202110271024-2.jpg",
+      "scorecard/eindhovensche-dames-18-holes.pdf",
+      "scorecard/eindhovensche-dames-9-holes.pdf",
+      "scorecard/eindhovensche-heren-18-holes.pdf",
+      "scorecard/eindhovensche-heren-9-holes.pdf",
+      "scorecard/page-handicap.html",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen downloadbare scorekaart. Par en S.I. uit de officiële course guide (uitgave 2021, als losse JPG-pagina's op /baan/courseguide). Holelengtes staan wel in de guide maar zijn op de webafbeeldingen (564 px) niet betrouwbaar leesbaar; totale lengtes 2021: wit 6317, geel 5916, blauw 5456, rood 5079, oranje 4604 m (course-guide-...-2.jpg) - niet in tees gezet omdat de ratings in 2024 zijn herzien. CR/slope uit handicaptabellen 15-08-2024 (ook 9-holes tabellen aanwezig). Executive course (5 holes par 3) niet opgenomen."
+  },
+  "sources": [
+    "https://www.eindhovenschegolf.nl/baan/courseguide",
+    "https://www.eindhovenschegolf.nl/baan/handicap-tabellen",
+    "https://www.eindhovenschegolf.nl/gasten/greenfees",
+    "https://www.eindhovenschegolf.nl/baan"
+  ]
+}

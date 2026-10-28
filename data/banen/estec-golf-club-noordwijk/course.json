@@ -1,0 +1,473 @@
+{
+  "slug": "estec-golf-club-noordwijk",
+  "name": "ESTEC Golf Club",
+  "club_name": "ESTEC Golf Club (EGC)",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Keplerlaan 1 (ESTEC-terrein)",
+    "postal_code": "2201 AZ",
+    "city": "Noordwijk",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2171,
+    "lon": 4.4236,
+    "source": "golfkaart.com/api/kaart.json (ESTEC Golf Club); clubhuisligging op ESTEC-terrein niet exact bekend"
+  },
+  "distance_km_from_dedemsvaart": 144.5,
+  "phone": null,
+  "email": null,
+  "website": "https://www.egcgolf.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "binnenduin met vijvers en duinruggen",
+  "facilities": [
+    "driving range",
+    "Check Inn (registratiehut)"
+  ],
+  "greenfee_welcome": false,
+  "requirements": "Besloten baan op het ESTEC-terrein: alleen spelende leden, hun gasten (max. 3, met NGF-handicapkaart, aangemeld bij Site Security en begeleid door het lid) en door het bestuur toegelaten personen",
+  "description_nl": "De ESTEC Golf Club speelt op een besloten 9-holesbaan op het terrein van het Europese ruimtevaartcentrum ESTEC in Noordwijk. De baan telt zeven par 3's en twee par 4's, met vijvers, duinruggen, smalle fairways en kleine greens. Sinds 2024 zijn er ook oranje tees die samen een aparte par 54-baan vormen.",
+  "loops": [
+    {
+      "name": "Hoofdbaan 18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 3230,
+          "course_rating": 58.2,
+          "slope": 101,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2916,
+          "course_rating": 56.2,
+          "slope": 100,
+          "par": 58
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 3230,
+          "course_rating": 61.5,
+          "slope": 110,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2916,
+          "course_rating": 59.2,
+          "slope": 105,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 248,
+            "rood": 239
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 297,
+            "rood": 269
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 127
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 169,
+            "rood": 139
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 198,
+            "rood": 174
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 194,
+            "rood": 162
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 127
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 248,
+            "rood": 239
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 297,
+            "rood": 269
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132,
+            "rood": 127
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 169,
+            "rood": 139
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 198,
+            "rood": 174
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 194,
+            "rood": 162
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 127
+          }
+        }
+      ]
+    },
+    {
+      "name": "Par 3-baan oranje tees 18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 2388,
+          "course_rating": 53.1,
+          "slope": 91,
+          "par": 54
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 2388,
+          "course_rating": 55.8,
+          "slope": 93,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 120
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 162
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 131
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 101
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 127
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 90
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 174
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 162
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 127
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 120
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 162
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 131
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 101
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 127
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 90
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 174
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 162
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "oranje": 127
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://wp.egcgolf.nl/course/83-2/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/NewScoreCard2021.png",
+      "scorecard/New-Par-3-SI.png",
+      "scorecard/ESTEC-18-holes-Heren.pdf",
+      "scorecard/ESTEC-18-holes-Dames.pdf",
+      "scorecard/ESTEC-Par-3-baan-Heren-18-holes.pdf",
+      "scorecard/ESTEC-Par-3-baan-Dames-18-holes.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Hoofdbaan: scorekaart (geel/rood standard) en handicaptabellen d.d. 27-09-2021. Par 3-baan (oranje tees, sinds 2024): scorekaart met eigen S.I. en CR/SR (tabellen 20-02-2024); de kaart van holes 10-18 heeft de kolomkop 'Yellow Standard' maar is oranje gekleurd met dezelfde lengtes – als oranje behandeld. Geen contactgegevens of adres van de club op de site; adres is dat van ESTEC."
+  },
+  "sources": [
+    "https://wp.egcgolf.nl/course/course-overview/",
+    "https://wp.egcgolf.nl/course/83-2/",
+    "https://wp.egcgolf.nl/course/handicap-tables/",
+    "https://wp.egcgolf.nl/course/access-and-etiquette/",
+    "https://wp.egcgolf.nl/club/guest-players/"
+  ]
+}

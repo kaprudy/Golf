@@ -1,0 +1,388 @@
+{
+  "slug": "sluispolder-noordhollandse-golfclub-alkmaar",
+  "name": "Golfbaan Sluispolder",
+  "club_name": "De Noordhollandse Golfclub",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Sluispolderweg 7",
+    "postal_code": "1817 BM",
+    "city": "Alkmaar",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.6575573,
+    "lon": 4.7396779,
+    "source": "nominatim (Sluispolderweg 7, Alkmaar)"
+  },
+  "phone": "+31 72 511 1555",
+  "email": "info@sluispolder.nl",
+  "website": "https://sluispolder.nl/",
+  "booking_url": "https://sluispolder.nl/reserveren/golfen",
+  "founded": 1983,
+  "architect": null,
+  "landscape": "parkachtige polderbaan met veel water en bomensingels aan de rand van Alkmaar",
+  "facilities": [
+    "driving range (Inrange)",
+    "9-holes par 3-baan",
+    "putting area",
+    "chip-/bunkerarea",
+    "clubhuis met restaurant",
+    "padelbanen",
+    "golfles/clinics",
+    "buggy's"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Grote baan vanaf handicap 54; par 3-baan zonder ervaring/GVB",
+  "description_nl": "Particuliere golfbaan aan de zuidwestrand van Alkmaar en thuisbasis van De Noordhollandse Golfclub. De 18-holes wedstrijdbaan (par 72) is in fases aangelegd vanaf 1983 en kenmerkt zich door veel waterpartijen en houtwallen; daarnaast is er een 9-holes par 3-baan. Bezoekers met handicap 54 zijn welkom.",
+  "loops": [
+    {
+      "name": "18 holes (par 72)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 73.2,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5865,
+          "course_rating": 71.7,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 69.3,
+          "slope": 116,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 67.9,
+          "slope": 114,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 65.6,
+          "slope": 106,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5865,
+          "course_rating": 78.0,
+          "slope": 143,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 74.3,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 72.6,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 70.2,
+          "slope": 117,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 480,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 325,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 389,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 355,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 143,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 449,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 273,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 151,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 161,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 470,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 394,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 365,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 468,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 390,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 317,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 304,
+            "wit": null,
+            "blauw": null,
+            "rood": null,
+            "oranje": null
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://sluispolder.nl/baaninformatie",
+    "files": [
+      "scorecard/Sluispolder_scorekaart_2026_03_1.jpg",
+      "scorecard/Noordhollandse-WHS-tabel-Heren.pdf",
+      "scorecard/Noordhollandse-WHS-tabel-Dames.pdf",
+      "scorecard/page.html",
+      "scorecard/page-golfingrecord.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Officiele 'scorekaart' 2026 is alleen een baanplattegrond zonder holegegevens. Par, S.I. en gele lengtes (totaal 5865 m) van golfingrecord.com (derden, ongedateerd; vermeldt CR 70,7/SR 125, wijkt af van officieel); S.I. holes 1-9 bevestigd door hole19golf.com. Lengtes overige tees onbekend. CR/slope per tee uit officiele WHS-tabellen De Noordhollandse Golfclub 12-01-2021 (ook 9-holesratings 1e/2e negen beschikbaar). Par 3-baan (9 holes) zonder gepubliceerde holegegevens niet opgenomen. 1golf.eu blokkeerde (Cloudflare)."
+  },
+  "sources": [
+    "https://sluispolder.nl/baaninformatie",
+    "https://sluispolder.nl/baan-en-vereniging/sluispolder-de-noordhollandse-golfclub",
+    "https://sluispolder.nl/tarieven",
+    "https://sluispolder.nl/contact",
+    "https://www.golfingrecord.com/golf-scorecard/027a46c8-0e21-3f36-11aa-9ab0d2f66ac3",
+    "https://www.hole19golf.com/netherlands/golfbaan-sluispolder-de-noordhollandse-golf-club"
+  ],
+  "distance_km_from_dedemsvaart": 116.2
+}

@@ -1,0 +1,287 @@
+{
+  "slug": "golfbaan-de-vlietlanden-wervershoof",
+  "name": "Golfbaan De Vlietlanden",
+  "club_name": "Golfbaan De Vlietlanden (openbaar)",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Grutteweide 31",
+    "postal_code": "1693 HR",
+    "city": "Wervershoof",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.7445747,
+    "lon": 5.1107907,
+    "source": "nominatim (Grutteweide 31, Wervershoof)"
+  },
+  "phone": "+31 6 53851697",
+  "email": "info@golfbaandevlietlanden.nl",
+  "website": "https://golfbaandevlietlanden.nl/",
+  "booking_url": "https://vlietlanden.golfer.intogolf.nl/",
+  "founded": null,
+  "architect": null,
+  "landscape": "parkbaan met hoogteverschillen en waterpartijen in West-Fries landschap",
+  "facilities": [
+    "driving range",
+    "putting/chipping green",
+    "oefenhole",
+    "oefenbunkers",
+    "clubhuis/brasserie Bunker'95",
+    "golfshop",
+    "handicarts",
+    "flinggolf",
+    "golfclinics"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Openbare baan: geen baanpermissie, handicap 54 of lidmaatschap nodig",
+  "description_nl": "Openbare 18-holesbaan (par 60) bij Wervershoof, vlak bij Medemblik. Het is een compacte parkbaan met vooral par 3-holes, enkele par 4's en één par 5, met hoogteverschillen en veel water. Iedereen mag spelen zonder handicap of lidmaatschap, wat de baan geschikt maakt voor starters.",
+  "loops": [
+    {
+      "name": "18 holes (par 60)",
+      "holes": 18,
+      "par": 60,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 56.9,
+          "slope": 89,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 55.6,
+          "slope": 90,
+          "par": 60
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 60.0,
+          "slope": 103,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 58.9,
+          "slope": 101,
+          "par": 60
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfbaandevlietlanden.nl/handicaptabellen/",
+    "files": [
+      "scorecard/Vlietlanden-WHS-tabel-Heren.pdf",
+      "scorecard/Vlietlanden-WHS-tabel-Dames.pdf",
+      "scorecard/page.html",
+      "scorecard/page-hole19.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Officiele site publiceert geen scorekaart, alleen WHS-tabellen (03-12-2024): 18 holes H geel 56,9/89, rood 55,6/90; D geel 60,0/103, rood 58,9/101; 1e negen H 28,6/94 & 28,0/94, D 30,3/107 & 29,8/106; 2e negen H 28,3/86 & 27,6/87, D 29,8/98 & 29,2/95 (geel/rood). Par en S.I. per hole van hole19golf.com (derden). Hole19 geeft rode tee in 'yds' (217..141, totaal 2865) - eenheid twijfelachtig, daarom lengtes null. GolfAdvisor noemt geel 2960 m."
+  },
+  "sources": [
+    "https://golfbaandevlietlanden.nl/over-ons/",
+    "https://golfbaandevlietlanden.nl/handicaptabellen/",
+    "https://golfbaandevlietlanden.nl/greenfees/",
+    "https://www.hole19golf.com/netherlands/golfbaan-de-vlietlanden"
+  ],
+  "distance_km_from_dedemsvaart": 92.3
+}

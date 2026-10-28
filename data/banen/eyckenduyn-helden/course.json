@@ -1,0 +1,280 @@
+{
+  "slug": "eyckenduyn-helden",
+  "name": "Golfbaan Eyckenduyn",
+  "club_name": "Golfvereniging Eyckenduyn",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Kesselseweg 9",
+    "postal_code": "5988 CC",
+    "city": "Helden",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.318116,
+    "lon": 6.0048378,
+    "source": "nominatim (Kesselseweg 9, Helden)"
+  },
+  "distance_km_from_dedemsvaart": 146.0,
+  "phone": "077 782 0219",
+  "email": "info@eyckenduyn.nl",
+  "website": "https://www.eyckenduyn.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "parkbaan met hoge bomen en vijvers (circa 10 ha)",
+  "facilities": [
+    "driving range",
+    "golfacademy",
+    "horeca (Gastrobar Negen)",
+    "businessclub"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "GVB/handicap verplicht (volgens scorekaart)",
+  "description_nl": "Eyckenduyn is een 9-holes parkbaan in Helden (Peel en Maas) op ongeveer tien hectare. De baan telt vooral par 3-holes en twee par 4's en loopt langs hoge bomen en vijvers. Ze heeft de NGF C-status en is het hele jaar bespeelbaar.",
+  "loops": [
+    {
+      "name": "9 holes par 3/4 (2x gespeeld = 18 holes)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2990,
+          "course_rating": 56.9,
+          "slope": 103,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2756,
+          "course_rating": 55.8,
+          "slope": 100,
+          "par": 58
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2990,
+          "course_rating": 59.9,
+          "slope": 103,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2756,
+          "course_rating": 58.6,
+          "slope": 100,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160,
+            "rood": 156
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 111
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 131
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 151,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 168,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 211,
+            "rood": 211
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 264,
+            "rood": 264
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 161,
+            "rood": 157
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160,
+            "rood": 156
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 111
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 131
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 151,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 168,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 211,
+            "rood": 211
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 264,
+            "rood": 264
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 161,
+            "rood": 157
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.eyckenduyn.nl/baanstatus",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/Eyckenduyn_scorekaart_1.jpg",
+      "scorecard/Eyckenduyn_18-holes_Heren.pdf",
+      "scorecard/Eyckenduyn_18-holes_Dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Par, SI en lengtes van de officiele scorekaart (afbeelding). CR/slope uit de baanhandicaptabellen van 20-09-2023 (heren geel 56.9/103, rood 55.8/100; dames geel 59.9/103, rood 58.6/100). De scorekaart zelf noemt oudere waarden (heren 57.8/109, dames 60.4/102). 9-holestabellen niet gedownload."
+  },
+  "sources": [
+    "https://www.eyckenduyn.nl/",
+    "https://www.eyckenduyn.nl/baanstatus"
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "slug": "golfpark-de-loonsche-duynen-de-moer",
+  "name": "Golfpark De Loonsche Duynen",
+  "club_name": "Hollandsche Golfclub – Golfpark De Loonsche Duynen",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Veldstraat 6",
+    "postal_code": "5176 NB",
+    "city": "De Moer",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.6391,
+    "lon": 5.0317,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 144.7,
+  "phone": "0416 749 800",
+  "email": "info@golfparkdeloonscheduynen.nl",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/de-loonsche-duynen/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "tussen de Loonse en Drunense Duinen en landgoed Huis ter Heide; water, bunkers en bos",
+  "facilities": [
+    "9-holes shortgolfbaan (par 3/4)",
+    "driving range",
+    "brasserie"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Vanaf baanpermissie van de Hollandsche Golfclub.",
+  "description_nl": "Golfpark De Loonsche Duynen bij De Moer ligt tussen de Loonse en Drunense Duinen en landgoed Huis ter Heide. De 18-holes baan van par 72 combineert waterpartijen, bunkers en bosranden met een aantal lange holes. Een 9-holes shortgolfbaan met par 3- en par 4-holes is er voor beginners en het korte spel.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6269,
+          "course_rating": 74.0,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5931,
+          "course_rating": 71.7,
+          "slope": 133,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5336,
+          "course_rating": 68.4,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5096,
+          "course_rating": 67.5,
+          "slope": 121,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4814,
+          "course_rating": 65.8,
+          "slope": 118,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5931,
+          "course_rating": 78.0,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5336,
+          "course_rating": 74.4,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5096,
+          "course_rating": 73.3,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4814,
+          "course_rating": 71.4,
+          "slope": 122,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 408,
+            "geel": 373,
+            "blauw": 345,
+            "rood": 315,
+            "oranje": 294
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 375,
+            "geel": 342,
+            "blauw": 342,
+            "rood": 312,
+            "oranje": 251
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 489,
+            "geel": 468,
+            "blauw": 399,
+            "rood": 392,
+            "oranje": 392
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 390,
+            "geel": 376,
+            "blauw": 325,
+            "rood": 320,
+            "oranje": 281
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 330,
+            "geel": 278,
+            "blauw": 261,
+            "rood": 241,
+            "oranje": 241
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 181,
+            "geel": 161,
+            "blauw": 150,
+            "rood": 145,
+            "oranje": 140
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 505,
+            "geel": 486,
+            "blauw": 428,
+            "rood": 415,
+            "oranje": 399
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 151,
+            "geel": 145,
+            "blauw": 125,
+            "rood": 123,
+            "oranje": 123
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 388,
+            "geel": 383,
+            "blauw": 333,
+            "rood": 326,
+            "oranje": 289
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 411,
+            "geel": 382,
+            "blauw": 326,
+            "rood": 307,
+            "oranje": 275
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 380,
+            "geel": 359,
+            "blauw": 330,
+            "rood": 311,
+            "oranje": 290
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 263,
+            "geel": 241,
+            "blauw": 224,
+            "rood": 219,
+            "oranje": 219
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 185,
+            "geel": 180,
+            "blauw": 165,
+            "rood": 160,
+            "oranje": 160
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 453,
+            "geel": 448,
+            "blauw": 382,
+            "rood": 373,
+            "oranje": 373
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 363,
+            "geel": 335,
+            "blauw": 293,
+            "rood": 289,
+            "oranje": 289
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 159,
+            "geel": 154,
+            "blauw": 148,
+            "rood": 126,
+            "oranje": 125
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 480,
+            "geel": 467,
+            "blauw": 467,
+            "rood": 431,
+            "oranje": 382
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 358,
+            "geel": 353,
+            "blauw": 293,
+            "rood": 291,
+            "oranje": 291
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kleine baan 9 holes (shortgolf par 28)",
+      "holes": 9,
+      "par": 28,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1326,
+          "course_rating": 27.4,
+          "slope": 89,
+          "par": 28
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 1136,
+          "course_rating": 26.4,
+          "slope": 84,
+          "par": 28
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 1326,
+          "course_rating": 28.5,
+          "slope": 89,
+          "par": 28
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1136,
+          "course_rating": 27.3,
+          "slope": 84,
+          "par": 28
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 116,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 161,
+            "rood": 136
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125,
+            "rood": 107
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 239,
+            "rood": 218
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 106,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "rood": 116
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 186,
+            "rood": 150
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 111
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hollandschegolfclub.nl/golfpark/de-loonsche-duynen/course/18-holes-baan-de-loonsche-duynen/",
+    "files": [
+      "scorecard/DLD-Scorekaart-18-holes-15-OKT-2026_WEB.pdf",
+      "scorecard/De-Loonsche-Duynen-handicaptabellen-grote-baan.pdf",
+      "scorecard/Loonsche-Duynen-Scorekaart-9-holes-MRT-2026.pdf",
+      "scorecard/De-Loonsche-HCP-Tabellen-Kleine-baan.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Scorekaart 18 holes 15-10-2026 (UIT 3217/3012/2708/2589/2410, IN 3052/2919/2628/2507/2404, TOT 6269/5931/5336/5096/4814; kolomvolgorde wit/geel/blauw/rood/oranje zoals de tabellen). CR/slope uit tabellen feb. 2026 (ook per negen beschikbaar). Kleine baan: kaart maart 2026, twee lengtekolommen (geel; rood/oranje gedeeld), par 28, S.I. 1-17 oneven; ratings 9 holes (18 holes: heren 54,7 geel / 52,8 rood, dames 56,9 / 54,6).",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.hollandschegolfclub.nl/golfpark/de-loonsche-duynen/",
+    "https://www.hollandschegolfclub.nl/golfpark/de-loonsche-duynen/course/18-holes-baan-de-loonsche-duynen/",
+    "https://www.hollandschegolfclub.nl/golfpark/de-loonsche-duynen/course/9-holes-kleine-baan-de-loonsche-duynen/"
+  ]
+}

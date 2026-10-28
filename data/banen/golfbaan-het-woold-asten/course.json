@@ -1,0 +1,609 @@
+{
+  "slug": "golfbaan-het-woold-asten",
+  "name": "Golfbaan Het Woold",
+  "club_name": "Golfbaan Het Woold",
+  "holes_total": 27,
+  "course_type": "27-holes",
+  "address": {
+    "street": "Gezandebaan 46a",
+    "postal_code": "5725 TN",
+    "city": "Asten-Heusden",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.3670426,
+    "lon": 5.7670927,
+    "source": "nominatim.openstreetmap.org (Golfbaan het Woold, Gezandebaan 46a)"
+  },
+  "distance_km_from_dedemsvaart": 145.1,
+  "phone": "0493-56 04 62",
+  "email": "info@golfbaanhetwoold.nl",
+  "website": "https://golfbaanhetwoold.nl",
+  "booking_url": null,
+  "founded": 2000,
+  "architect": "ir. Han Wessels (Vier Eijckenbaan)",
+  "landscape": "Peellandschap met bos, heide en water",
+  "facilities": [
+    "Vier Eijckenbaan (18 holes)",
+    "Gezandebaan (9 holes par 3)",
+    "oefenfaciliteiten",
+    "golfopleiding",
+    "golfshop",
+    "restaurant Volentieri"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfbaan Het Woold ligt in het buitengebied van Heusden bij Asten, in het Peellandschap richting de Groote Peel. De 18-holes Vier Eijckenbaan van Han Wessels (2011) is een strategische par 72 tussen bos, heide en water, aangelegd met het doel oude natuur te herstellen. De oorspronkelijke Gezandebaan uit 2000 is een 9-holes par 3-baan.",
+  "loops": [
+    {
+      "name": "Vier Eijckenbaan (18 holes)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "62",
+          "color": null,
+          "gender": "men",
+          "length_m": 6235,
+          "course_rating": 73.4,
+          "slope": 138,
+          "par": 72
+        },
+        {
+          "name": "58",
+          "color": null,
+          "gender": "men",
+          "length_m": 5834,
+          "course_rating": 71.4,
+          "slope": 137,
+          "par": 72
+        },
+        {
+          "name": "54",
+          "color": null,
+          "gender": "men",
+          "length_m": 5380,
+          "course_rating": 69.5,
+          "slope": 123,
+          "par": 72
+        },
+        {
+          "name": "50",
+          "color": null,
+          "gender": "men",
+          "length_m": 4978,
+          "course_rating": 68.2,
+          "slope": 110,
+          "par": 72
+        },
+        {
+          "name": "45",
+          "color": null,
+          "gender": "men",
+          "length_m": 4469,
+          "course_rating": 65.5,
+          "slope": 108,
+          "par": 72
+        },
+        {
+          "name": "58",
+          "color": null,
+          "gender": "women",
+          "length_m": 5834,
+          "course_rating": 77.8,
+          "slope": 147,
+          "par": 72
+        },
+        {
+          "name": "54",
+          "color": null,
+          "gender": "women",
+          "length_m": 5380,
+          "course_rating": 74.6,
+          "slope": 139,
+          "par": 72
+        },
+        {
+          "name": "50",
+          "color": null,
+          "gender": "women",
+          "length_m": 4978,
+          "course_rating": 72.2,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "45",
+          "color": null,
+          "gender": "women",
+          "length_m": 4469,
+          "course_rating": 70.0,
+          "slope": 117,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "62": 332,
+            "58": 320,
+            "54": 304,
+            "50": 270,
+            "45": 243
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "62": 403,
+            "58": 365,
+            "54": 331,
+            "50": 305,
+            "45": 274
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "62": 507,
+            "58": 480,
+            "54": 443,
+            "50": 413,
+            "45": 371
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "62": 385,
+            "58": 355,
+            "54": 341,
+            "50": 310,
+            "45": 278
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "62": 170,
+            "58": 163,
+            "54": 154,
+            "50": 144,
+            "45": 120
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "62": 350,
+            "58": 325,
+            "54": 315,
+            "50": 285,
+            "45": 255
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "62": 375,
+            "58": 343,
+            "54": 310,
+            "50": 285,
+            "45": 255
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "62": 151,
+            "58": 138,
+            "54": 122,
+            "50": 110,
+            "45": 89
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "62": 496,
+            "58": 465,
+            "54": 426,
+            "50": 405,
+            "45": 363
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "62": 401,
+            "58": 375,
+            "54": 331,
+            "50": 320,
+            "45": 288
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "62": 322,
+            "58": 310,
+            "54": 266,
+            "50": 255,
+            "45": 228
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "62": 526,
+            "58": 495,
+            "54": 442,
+            "50": 420,
+            "45": 378
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "62": 368,
+            "58": 355,
+            "54": 344,
+            "50": 320,
+            "45": 288
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "62": 160,
+            "58": 130,
+            "54": 130,
+            "50": 110,
+            "45": 105
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "62": 315,
+            "58": 307,
+            "54": 268,
+            "50": 262,
+            "45": 240
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "62": 295,
+            "58": 280,
+            "54": 265,
+            "50": 230,
+            "45": 207
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "62": 161,
+            "58": 138,
+            "54": 138,
+            "50": 114,
+            "45": 109
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "62": 518,
+            "58": 490,
+            "54": 450,
+            "50": 420,
+            "45": 378
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gezandebaan par 3 (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1694,
+          "course_rating": 48.2,
+          "slope": 64,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 1660,
+          "course_rating": 48.0,
+          "slope": 64,
+          "par": 54
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 1694,
+          "course_rating": 49.1,
+          "slope": 66,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1660,
+          "course_rating": 48.9,
+          "slope": 66,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 85
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 72,
+            "rood": 55
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 72,
+            "rood": 72
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 71,
+            "rood": 71
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 140
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 85,
+            "rood": 85
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 72,
+            "rood": 55
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 72,
+            "rood": 72
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 77,
+            "rood": 77
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 71,
+            "rood": 71
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 140
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfbaanhetwoold.nl/vier-eijckenbaan/",
+    "files": [
+      "scorecard/02_4Eijcken_scorekrt_2024.pdf",
+      "scorecard/03_Gezandebaan_scorekrt_2022.pdf",
+      "scorecard/20250218-HC-tabellen-dames.pdf",
+      "scorecard/20251210-HC-tabellen-heren.pdf",
+      "scorecard/page-gezandebaan.html",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Vier Eijckenbaan: scorekaart 2024 (tees heten naar lengte 62/58/54/50/45, geen kleur; color=null); CR/slope op de kaart = handicaptabellen heren 10-12-2025 en dames 18-02-2025 (ook 9-holes tabellen). Gezandebaan: scorekaart 2022, 9 holes 2x met eigen S.I.; CR/slope van de kaart (rij-volgorde geel/rood aangenomen)."
+  },
+  "sources": [
+    "https://golfbaanhetwoold.nl/vier-eijckenbaan/",
+    "https://golfbaanhetwoold.nl/gezandebaan/",
+    "https://golfbaanhetwoold.nl/contact/"
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "slug": "golfpark-de-biltse-duinen",
+  "name": "Golfpark De Biltse Duinen",
+  "club_name": "Golfpark De Biltse Duinen / Golfclub De Biltse Duinen",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Burgemeester van der Borchlaan 6",
+    "postal_code": "3722 GZ",
+    "city": "Bilthoven",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1296565,
+    "lon": 5.2178985,
+    "source": "nominatim (Golfpark De Biltse Duinen, Burgemeester van der Borchlaan 6, Bilthoven)"
+  },
+  "distance_km_from_dedemsvaart": 99.2,
+  "phone": "+31 30 228 0561",
+  "email": "kantoor@biltseduinen.nl",
+  "website": "https://www.biltseduinen.nl/",
+  "booking_url": "https://www.nexxchange.com/search/teetimes/golfpark-de-biltse-duinen",
+  "founded": 1987,
+  "architect": null,
+  "landscape": "glooiende bosbaan op het terrein van een voormalig natuurbad",
+  "facilities": [
+    "restaurant",
+    "driving range (32 plekken, 16 overdekt)",
+    "golfschool",
+    "tennisbanen",
+    "fitnessruimte"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Kleine par 3-baan van negen holes midden in de bossen van Bilthoven, op de plek van een voormalig natuurbad. De holes variëren van ongeveer 60 tot ruim 150 meter, en een grote driving range met deels overdekte afslagplaatsen hoort bij het park. Er zijn ook tennisbanen en een restaurant op het terrein.",
+  "loops": [
+    {
+      "name": "Par 3-baan (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1926,
+          "course_rating": 50.1,
+          "slope": 63,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1926,
+          "course_rating": 51.7,
+          "slope": 67,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 113,
+            "rood": 113
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 156,
+            "rood": 156
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 105,
+            "rood": 105
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 61,
+            "rood": 61
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 61,
+            "rood": 61
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 63,
+            "rood": 63
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 147
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115,
+            "rood": 115
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 113,
+            "rood": 113
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 156,
+            "rood": 156
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 105,
+            "rood": 105
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 61,
+            "rood": 61
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 61,
+            "rood": 61
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 63,
+            "rood": 63
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 147
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115,
+            "rood": 115
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclubbiltseduinen.nl/golfbaan/",
+    "files": [
+      "scorecard/handicaptabellen2021.pdf",
+      "scorecard/page.html",
+      "scorecard/scorekaartversied6.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart (oudere versie, nog met EGA-ratings 52,5/59 heren en 54,6/82 dames) voor holes, par en S.I.; CR/slope uit de baanhandicaptabel 02-03-2021 (18 holes par 3). Heren en dames spelen van dezelfde afslag (geel/rood, gelijke lengtes)."
+  },
+  "sources": [
+    "https://www.biltseduinen.nl/de-biltse-duinen/historie-en-anno-2020/",
+    "https://www.golfclubbiltseduinen.nl/home/",
+    "https://www.biltseduinen.nl/de-biltse-duinen/baanoverzicht/"
+  ]
+}
