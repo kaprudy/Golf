@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+  <meta charset="utf-8">
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>De baan - Golfbaan Ter Specke</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://golfbaanterspecke.nl/wp-content/themes/terspecke/stylesheets/bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="https://golfbaanterspecke.nl/wp-content/themes/terspecke/assets/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+  <link href="https://golfbaanterspecke.nl/wp-content/themes/terspecke/assets/fontawesome/css/all.css" rel="stylesheet" type="text/css" />
+  <link href="https://golfbaanterspecke.nl/wp-content/themes/terspecke/assets/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://golfbaanterspecke.nl/wp-content/themes/terspecke/assets/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link
+    href="https://golfbaanterspecke.nl/wp-content/themes/terspecke/stylesheets/style.css?v=1776243883"
+    rel="stylesheet">
+
+  <link href="//www.googletagmanager.com" rel="preconnect"><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<link rel="canonical" href="https://golfbaanterspecke.nl/de-baan/" />
+	<meta property="og:locale" content="nl_NL" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="De baan - Golfbaan Ter Specke" />
+	<meta property="og:description" content="Hole 1 =    132 meter              Hole 2 = 149 meter                 Hole 3 = 84 meter               Hole 4 = 102 meter           Hole 5 = 117 meter Hole 5a =  139 meter    [&hellip;]" />
+	<meta property="og:url" content="https://golfbaanterspecke.nl/de-baan/" />
+	<meta property="og:site_name" content="Golfbaan Ter Specke" />
+	<meta property="article:modified_time" content="2026-07-27T21:00:00+00:00" />
+	<meta property="og:image" content="https://golfbaanterspecke.nl/wp-content/uploads/2024/07/Layout-Golfbaan.png" />
+	<meta property="og:image:width" content="928" />
+	<meta property="og:image:height" content="684" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://golfbaanterspecke.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfbaanterspecke.nl%2Fde-baan%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://golfbaanterspecke.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfbaanterspecke.nl%2Fde-baan%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<script id="jquery-core-js" src="https://golfbaanterspecke.nl/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://golfbaanterspecke.nl/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="https://golfbaanterspecke.nl/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://golfbaanterspecke.nl/wp-json/wp/v2/pages/12" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://golfbaanterspecke.nl/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<link rel='shortlink' href='https://golfbaanterspecke.nl/?p=12' />
+<!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KJ7T753');</script><!-- End Google Tag Manager --><script>window.dataLayer = window.dataLayer || []; dataLayer.push({"post_id":12,"post_type":"page","post_title":"De baan","post_page":"page"});</script><link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fbrfg/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/fbrfg/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/fbrfg/favicon-16x16.png">
+<link rel="manifest" href="/wp-content/uploads/fbrfg/site.webmanifest">
+<link rel="mask-icon" href="/wp-content/uploads/fbrfg/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+
+  <script>
+    let ajaxurl = 'https://golfbaanterspecke.nl/wp-content/themes/terspecke/ajax-handler.php';
+  </script>
+<link rel='stylesheet' id='gform_basic-css' href='https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css?ver=2.10.5' media='all' />
+<link rel='stylesheet' id='gform_theme_components-css' href='https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css?ver=2.10.5' media='all' />
+<link rel='stylesheet' id='gform_theme-css' href='https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css?ver=2.10.5' media='all' />
+
+</head>
+
+<body class="wp-singular page-template-default page page-id-12 wp-theme-terspecke">
+  <header  class="page" >
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="logo">
+              <a href="https://golfbaanterspecke.nl"><img src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/logo-groot.svg"
+                  alt="Golfbaan Ter Specke"></a>
+            </div>
+            <div class="logo-small">
+              <a href="https://golfbaanterspecke.nl"><img src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/logo-klein.svg"
+                  alt="Golfbaan Ter Specke"></a>
+            </div>
+            <a href="#" class="contact-icon launch-search open-search" title="Zoeken"><i
+                class="fa fa-search" aria-hidden="true"></i></a>
+            <div class="top-nav">
+              <div class="menu-top-menu-container"><ul id="menu-top-menu" class="menu"><li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a target="_blank" href="http://www.nexxchange.com">Nexxchange</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a target="_blank" href="https://www.fclisse.nl/">FC Lisse</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="https://golfbaanterspecke.nl/lid-worden/">Gasten</a></li>
+</ul></div>            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="container nav-container">
+        <div class="menu-primary-menu-container"><ul id="menu-primary-menu" class="menu"><li id="menu-item-5" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5"><a href="https://golfbaanterspecke.nl/">Home</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28"><a href="https://golfbaanterspecke.nl/over-ons/">Over ons</a>
+<ul class="sub-menu">
+	<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://golfbaanterspecke.nl/nieuws/">Nieuws</a></li>
+	<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="https://golfbaanterspecke.nl/kalender/">Kalender</a></li>
+	<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://golfbaanterspecke.nl/documenten/">Algemeen</a></li>
+	<li id="menu-item-525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-525"><a href="https://golfbaanterspecke.nl/gallerij/">Galerij</a></li>
+	<li id="menu-item-629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-629"><a href="https://golfbaanterspecke.nl/nieuws/wachtwoord-test/">Ledenpagina’s</a></li>
+	<li id="menu-item-776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="https://golfbaanterspecke.nl/over-ons/">Over Golfclub Ter Specke</a></li>
+</ul>
+</li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12 current_page_item menu-item-26"><a href="https://golfbaanterspecke.nl/de-baan/" aria-current="page">De baan</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://golfbaanterspecke.nl/golfschool/">Golfschool</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://golfbaanterspecke.nl/contact/">Contact</a></li>
+</ul></div>        <div class="menu-top-menu-container"><ul id="menu-top-menu-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a target="_blank" href="http://www.nexxchange.com">Nexxchange</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a target="_blank" href="https://www.fclisse.nl/">FC Lisse</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="https://golfbaanterspecke.nl/lid-worden/">Gasten</a></li>
+</ul></div>        <div class="hamburger hamburger--squeeze">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <div class="breadcrumbs">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <span><span><a href="https://golfbaanterspecke.nl/">Home</a></span> » <span class="breadcrumb_last" aria-current="page">De baan</span></span>            </div>
+          </div>
+        </div>
+      </div>
+      </header>
+  <main  class="page" >
+<section class="title-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+        <h1>De baan</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+                <img src="https://golfbaanterspecke.nl/wp-content/uploads/2024/07/Layout-Golfbaan-650x500.png" loading="lazy" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="single-page-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+        <p>Hole 1 =    132 meter              Hole 2 = 149 meter                 Hole 3 = 84 meter               Hole 4 = 102 meter           Hole 5 = 117 meter</p>
+<p>Hole 5a =  139 meter             Hole 6 = 157 meter                  Hole 7 = 120 meter             Hole 8 = 172 meter            Hole 9 = 98 meter</p>
+<h3>Baanreglement</h3>
+<p>1. Alvorens de golfbaan te betreden dient eenieder zich bij de marshal te melden voor het (zo nodig) verkrijgen van een geldig toegangsbewijs, een starttijd en een scorekaart. Ook neemt u hier kennis van tijdelijke plaatselijke regels en andere relevante informatie.<br />
+2. Er kunnen tevoren geen tijdsafspraken worden gemaakt, u speelt op volgorde van binnenkomst.<br />
+3. De normale openingstijden zijn weergegeven in bijgaande baaninformatie en bij afwijkingen zal dit tijdig worden gepubliceerd op de website.<br />
+4. Er dient altijd gestart te worden op hole 1, de volgende holes moeten dan in de gebruikelijke volgorde worden gelopen. Er mag op aanraden van de marshal evt. op een andere hole gestart worden.<br />
+5. De greenfeekaart of de aan de leden uitgereikte taslabel dient duidelijk zichtbaar aan de golftas te zijn bevestigd.<br />
+6. Op de driving range is het niet toegestaan bewust ballen over het hek te slaan.<br />
+7. Het is niet toegestaan (behalve met toestemming van de Pro en/of dienstdoende marshal) ballen te rapen van de driving range.<br />
+8. Het is toegestaan behalve met golfschoenen met sportschoenen te golfen.<br />
+9. Iedereen is verplicht de veiligheid van andere spelers, wandelaars, gebruikers van de wielerbaan en onderhoudspersoneel niet in gevaar te brengen.<br />
+10. Onderhouds- of baanpersoneel heeft altijd voorrang, pas wanneer zij een teken geven mag u doorspelen.<br />
+11. Aanwijzingen van de marshal dienen te worden opgevolgd.<br />
+12. Golfclub Ter Specke is niet aansprakelijk voor diefstal van uw golfmateriaal op het sportcomplex of voor schade aan derden berokkend.<br />
+13. Spelers die naar een bal zoeken dienen achteropkomende spelers door te laten (en hiertoe een teken te geven) zodra duidelijk wordt dat de bal niet snel gevonden wordt.<br />
+14. Er wordt gespeeld volgens de &#8216;Rules of Golf&#8217; zoals vastgesteld door de R&amp;A Rules Limited en de United States Golf Association, aangevuld met het baanreglement.</p>
+<p><em>Niet voldoen aan deze regels kan uitsluiting tot gevolg hebben</em></p>
+<p>&nbsp;</p>
+<h2><strong>Plaatselijke regels 24-07-2026</strong></h2>
+<h4>Klik op onderstaande link;</h4>
+<h4><strong> <a href="https://golfbaanterspecke.nl/wp-content/uploads/2026/07/Plaatselijke-regels-24-juli-2026.pdf">https://golfbaanterspecke.nl/wp-content/uploads/2026/07/Plaatselijke-regels-24-juli-2026.pdf</a></strong></h4>
+<h2>Tijdelijk Plaatselijke Regel (TPR)</h2>
+<h4>Klik op onderstaande link;</h4>
+<h4><a href="https://golfbaanterspecke.nl/wp-content/uploads/2026/07/TPR-Grasnaden-naast-de-greens.pdf">https://golfbaanterspecke.nl/wp-content/uploads/2026/07/TPR-Grasnaden-naast-de-greens.pdf</a></h4>
+<p>&nbsp;</p>
+<p><strong>Handicaplijst</strong><br />
+<a href="https://golfbaanterspecke.nl/wp-content/uploads/2023/08/Handicaptabel-samengevoegd.pdf">Hele tabel bij gebruik hole 5 of 5a</a></p>
+<p><strong>Scorekaart<br />
+</strong></p>
+<p><a href="https://golfbaanterspecke.nl/wp-content/uploads/2025/10/Scorekaart-18-holes-okt.-2025.pdf">Scorekaart</a></p>
+<p><a href="https://golfbaanterspecke.nl/wp-content/uploads/2025/10/Plaatselijke-regels-en-baanoverzicht-okt.-2025.pdf">Baanlayout en plaatselijke regels</a></p>
+<h3><strong>Openingstijden (voor actuele informatie bekijk de baanstatus op de Homepage)</strong></h3>
+<p><strong>Golfbaan</strong><br />
+Maandag t/m vrijdag &#8211; 08:30 &#8211; zonsondergang (vanaf 17.00 onder voorbehoud van voetbalwedstrijden en training)<br />
+Zaterdag &#8211; gesloten<br />
+Zondag &#8211; 08:30 &#8211; zonsondergang</p>
+<p><strong>Driving range</strong><br />
+Ma, di, do en vrijdag 8:30 &#8211; 15:30<br />
+Woensdag 08:30 &#8211; 12.30</p>
+<p>Zaterdag gesloten<br />
+Zondag gesloten</p>
+<p><em>De marshal is op maandag t/m vrijdag aanwezig van 08:30 uur tot 16:30 uur.</em></p>
+<p><span style="color: #000000;"><strong>Planning groot onderhoud 2026<a href="https://golfbaanterspecke.nl/wp-content/uploads/2026/02/Groot-Onderhoud-2026-planning.pdf">https://golfbaanterspecke.nl/wp-content/uploads/2026/02/Groot-Onderhoud-2026-planning.pdf</a></strong></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="newsletter">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+                <div class='gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_1' >
+                        <div class='gform_heading'>
+                            <h2 class="gform_title">Blijf op de hoogte en schrijf u in voor onze nieuwsbrief</h2>
+                            <p class='gform_description'></p>
+                        </div><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/de-baan/' data-formid='1' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_1_6" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_6'>Facebook</label><div class='ginput_container'><input name='input_6' id='input_1_6' type='text' value='' autocomplete='new-password'/></div><div class='gfield_description' id='gfield_description_1_6'>Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd.</div></div><fieldset id="field_1_1" class="gfield gfield--type-name gfield--width-half gfield_contains_required field_sublabel_hidden_label gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><legend class='gfield_label gform-field-label gfield_label_before_complex' >Naam<span class="gfield_required"><span class="gfield_required gfield_required_text">(Vereist)</span></span></legend><div class='ginput_complex ginput_container ginput_container--name no_prefix has_first_name no_middle_name no_last_name no_suffix gf_name_has_1 ginput_container_name gform-grid-row' id='input_1_1'>
+                            
+                            <span id='input_1_1_3_container' class='name_first gform-grid-col gform-grid-col--size-auto' >
+                                                    <input type='text' name='input_1.3' id='input_1_1_3' value=''   aria-required='true'   placeholder='Voor- en achternaam'  />
+                                                    <label for='input_1_1_3' class='gform-field-label gform-field-label--type-sub hidden_sub_label screen-reader-text'>Voornaam</label>
+                                                </span>
+                            
+                            
+                            
+                        </div></fieldset><div id="field_1_3" class="gfield gfield--type-email gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_3'>E-mailadres<span class="gfield_required"><span class="gfield_required gfield_required_text">(Vereist)</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_3' id='input_1_3' type='email' value='' class='large'   placeholder='birdy@voorbeeld.nl' aria-required="true" aria-invalid="false"  />
+                        </div></div><div id="field_1_5" class="gfield gfield--type-captcha gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label screen-reader-text' for='input_1_5'></label><div id='input_1_5' class='ginput_container ginput_recaptcha' data-sitekey='6Le_lGEjAAAAAGlBsqNGaiRkbCQ5cQ1FTNz96qWF'  data-theme='light' data-tabindex='-1' data-size='invisible' data-badge='bottomright'></div></div><fieldset id="field_1_4" class="gfield gfield--type-checkbox gfield--type-choice gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><legend class='gfield_label gform-field-label gfield_label_before_complex' >Accepteer het privacy statement<span class="gfield_required"><span class="gfield_required gfield_required_text">(Vereist)</span></span></legend><div class='ginput_container ginput_container_checkbox'><div class='gfield_checkbox ' id='input_1_4'><div class='gchoice gchoice_1_4_1'>
+								<input class='gfield-choice-input' name='input_4.1' type='checkbox'  value='Ik heb de &lt;a href=&quot;https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/privacy-statement.pdf&quot; target=&quot;_blank&quot; title=&quot;privacy statement&quot;&gt;Privacy voorwaarden&lt;/a&gt; gelezen en ik ga hiermee akkoord.'  id='choice_1_4_1'   />
+								<label for='choice_1_4_1' id='label_1_4_1' class='gform-field-label gform-field-label--type-inline'>Ik heb de <a href="https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/privacy-statement.pdf" target="_blank" title="privacy statement">Privacy voorwaarden</a> gelezen en ik ga hiermee akkoord.</label>
+							</div></div></div></fieldset><div id="field_submit" class="gfield gfield--type-submit gfield--width-half field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-field-class="gform_editor_submit_container" data-field-position="inline" ><input type='submit' id='gform_submit_button_1' class='gform-button gform-button--white  button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' value='Aanmelden nieuwsbrief'  /></div></div></div>
+        <div class='gform-footer gform_footer top_label'>  
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_1' value='postback' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_1' id='gform_theme_1' value='gravity-theme' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_1' id='gform_style_settings_1' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='EUR' value='u16UdYRVkIkB0w0b8tGQHdxOJAR6X6178dcdHYmwHJvPaKzHV+sQJd+ShrQkAN76tSzDh+Kt30XP9TGBQUrzPH9uZFwjTrfniknRfCvtLHMW8uk=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjFiZGNkN2FjY2U0M2UxZGM2YTQ2ZTJkNThlNjdkYjg0Il0=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script>
+gform.initializeOnLoaded( function() {gformInitSpinner( 1, 'https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 1, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+      <div class="golfbal">
+      <img src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/golfbal.svg" loading="lazy" alt="Golfbal icon" />
+    </div>
+    <div class="footer">
+    <div class="container">
+      <div class="reference">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3>Contactgegevens</h3>
+            <address><strong>Golfbaan Ter Specke</strong><br />
+Spekkelaan 1<br />
+2161 GH Lisse <a title="Mail Golfbaan Ter Specke" href="mailto:info@golfbaanterspecke.nl">info@golfbaanterspecke.nl</a><br />
+<a title="Bel Golfbaan Ter Specke" href="tel:+31651717674">06 51 71 76 74</a></address>
+            <ul class="social-icons">
+                          </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3>Openingstijden</h3>
+            <p><strong>Maandag t/m vrijdag </strong><br />
+Baan open zondag t/m vrijdag 08:30 &#8211; zonsondergang (onder voorbehoud van wedstrijden en trainingen in de avonduren)</p>
+<p>Driving range open ma.di.do,vrijdag 8.30 &#8211; 15.30 uur ( gedurende schoolvakanties open tot 13.00 uur), woensdag tot 12.30 uur</p>
+<p><strong>Zaterdag</strong><br />
+Gesloten</p>
+<p><strong>Zondag</strong><br />
+Baan open 08:30 &#8211; zonsondergang                                                                                               Driving range gesloten</p>
+<p>&nbsp;</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3>Links</h3>
+            <div class="menu-primary-menu-container"><ul id="menu-primary-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5"><a href="https://golfbaanterspecke.nl/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28"><a href="https://golfbaanterspecke.nl/over-ons/">Over ons</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://golfbaanterspecke.nl/nieuws/">Nieuws</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="https://golfbaanterspecke.nl/kalender/">Kalender</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://golfbaanterspecke.nl/documenten/">Algemeen</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-525"><a href="https://golfbaanterspecke.nl/gallerij/">Galerij</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-629"><a href="https://golfbaanterspecke.nl/nieuws/wachtwoord-test/">Ledenpagina’s</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-776"><a href="https://golfbaanterspecke.nl/over-ons/">Over Golfclub Ter Specke</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12 current_page_item menu-item-26"><a href="https://golfbaanterspecke.nl/de-baan/" aria-current="page">De baan</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://golfbaanterspecke.nl/golfschool/">Golfschool</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://golfbaanterspecke.nl/contact/">Contact</a></li>
+</ul></div>          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3>Route</h3>
+            <a href="https://www.google.com/maps/dir/52.2027008,4.456448/ter+specke/@52.2315886,4.4315809,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47c5c21979668609:0xc9c486f41b6c1c9b!2m2!1d4.5404246!2d52.257244"
+              class="map" target="_blank" title="Route in Google Maps">
+              <img src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/contact-map.jpg" loading="lazy"
+                alt="Route kaart Ter Specke" />
+            </a>
+            <a href="https://www.google.com/maps/dir/52.2027008,4.456448/ter+specke/@52.2315886,4.4315809,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47c5c21979668609:0xc9c486f41b6c1c9b!2m2!1d4.5404246!2d52.257244"
+              target="_blank" class="btn" title="Routebeschrijving en contact">Routebeschrijving</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul class="footer-logos">
+                              <li class='facebook-logo'>
+                  <a href="https://nl-nl.facebook.com/terspecke/" title="Golfbaan Ter Specke facebook"
+                    target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                            <li><a href="https://www.avg-programma.nl/avg-ok-vignet/10946c7a-c58a-41bf-ad97-da65222a4deb"
+                  target="_blank"><img src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/avg-ok.png" loading="lazy"
+                    alt="AVG OK logo" /></a></li>
+              <li><a href="https://www.nvg-golf.nl/" target="_blank"><img
+                    src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/nvg.png" loading="lazy" alt="NVG logo" /></a>
+              </li>
+              <li><a href="https://www.ngf.nl/" target="_blank"><img
+                    src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/ngf.png" loading="lazy" alt="NGF logo" /></a>
+              </li>
+              <li><a href="http://www.nexxchange.com/" target="_blank"><img
+                    src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/Nexxchange logo.jpg" loading="lazy"
+                    alt="Nexxchange" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="bottom-footer">
+    <div class="container">
+      <p>Copyright Golfclub Ter Specke &copy; 2026 | <a
+          href="https://golfbaanterspecke.nl/privacybeleid/">Privacy Policy</a></p>
+      <a href="https://dunepebbler.nl" target="blank">Website door Dune Pebbler</a>
+    </div>
+  </div>
+</footer>
+
+<div class="search-screen">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form id="searchform" role="search" method="get" action="/">
+          <div class="input-group"><input class="form-control" id="s" type="text"
+              placeholder="Zoeken naar..." name="s" /><span class="input-group-btn"><button
+                class="btn-search-close" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </span><span class="input-group-btn"><button class="btn-search" type="submit"><i
+                  class="fa fa-search"></i></button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+<a href="https://m.eg4u.nl/#/login" target="_blank" class="e-golf" title="E-golf4u">
+  <img src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/img/e-golf.svg" loading="lazy" alt="e-golf4u  omgeving" />
+</a> -->
+
+<script src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/js/in-view.js" type="text/javascript"></script>
+<script src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/js/jQuery.js" type="text/javascript"></script>
+<script src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/assets/fancybox/jquery.fancybox.min.js" type="text/javascript">
+</script>
+<script src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/assets/owlcarousel/owl.carousel.min.js" type="text/javascript">
+</script>
+<script src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/js/masonry.js" type="text/javascript"></script>
+<script src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/assets/imagesLoaded/imagesloaded.js" type="text/javascript"
+  defer></script>
+<script src="https://golfbaanterspecke.nl/wp-content/themes/terspecke/js/main.js" type="text/javascript"></script>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/terspecke/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+    <!-- 
+        Gemaakt met liefde door Dune Pebbler <3 
+    --><script id="wp-dom-ready-js" src="https://golfbaanterspecke.nl/wp-includes/js/dist/dom-ready.min.js?ver=3fe927cab37bf38d6a23"></script>
+<script id="wp-hooks-js" src="https://golfbaanterspecke.nl/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://golfbaanterspecke.nl/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-10-26 15:32:17+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"nl"},"Notifications":["Meldingen"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+//# sourceURL=wp-a11y-js-translations
+</script>
+<script id="wp-a11y-js" src="https://golfbaanterspecke.nl/wp-includes/js/dist/a11y.min.js?ver=31c6cec5a4ff7aff483d"></script>
+<script id="gform_json-js" defer='defer' src="https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.10.5"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"days":{"monday":"Ma","tuesday":"Di","wednesday":"Wo","thursday":"Do","friday":"Vr","saturday":"Za","sunday":"Zo"},"months":{"january":"Januari","february":"Februari","march":"Maart","april":"April","may":"Mei","june":"Juni","july":"Juli","august":"Augustus","september":"September","october":"Oktober","november":"November","december":"December"},"firstDay":1,"iconText":"Selecteer een datum"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"Dit bestandstype is niet toegestaan. Moet \u00e9\u00e9n van de volgende zijn:","file_uploaded":"Bestand ge\u00fcpload","delete_file":"Dit bestand verwijderen","in_progress":"in behandeling","file_exceeds_limit":"Bestand overschrijdt limiet bestandsgrootte","illegal_extension":"Dit type bestand is niet toegestaan.","max_reached":"Maximale aantal bestanden bereikt","unknown_error":"Er was een probleem bij het opslaan van het bestand op de server","currently_uploading":"Wacht tot het uploaden is voltooid","cancel":"Annuleren","cancel_upload":"Deze upload annuleren","cancelled":"Geannuleerd","error":"Fout","message":"Bericht"},"vars":{"images_url":"https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"Euro","symbol_left":"","symbol_right":"&#8364;","symbol_padding":" ","thousand_separator":".","decimal_separator":",","decimals":2,"code":"EUR"},"base_url":"https://golfbaanterspecke.nl/wp-content/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/images/spinner.svg","version_hash":"d7e164d77389cb154666c82902e11678","strings":{"newRowAdded":"Nieuwe rij toegevoegd.","rowRemoved":"Rij verwijderd","formSaved":"Het formulier is opgeslagen. De inhoud bevat de link om terug te keren en het formulier in te vullen."}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script id="gform_gravityforms-js" defer='defer' src="https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.10.5"></script>
+<script id="gform_recaptcha-js" defer='defer' src="https://www.google.com/recaptcha/api.js?hl=en&#038;&#038;ver=7.1.3#038;render=explicit"></script>
+<script id="gform_placeholder-js" defer='defer' src="https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.10.5"></script>
+<script id="gform_gravityforms_utils-js" defer='defer' src="https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=3f278756f0a3032bed328ff6a9f6c01d"></script>
+<script id="gform_gravityforms_theme_vendors-js" defer='defer' src="https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=7c651d0ba638ce98b9c65141edddd567"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"d7e164d77389cb154666c82902e11678"},"ajax":{"ajaxurl":"https://golfbaanterspecke.nl/wp-admin/admin-ajax.php","ajax_submission_nonce":"6847aaa646","i18n":{"step_announcement":"Stap %1$s van %2$s, %3$s","unknown_error":"Er was een onbekende fout bij het verwerken van je aanvraag. Probeer het opnieuw.","error_403":"De aanvraag is om onbekende veiligheidsredenen geblokkeerd (403-fout). Verwijder alle code-achtige tekst (scripts of databasequery&#039;s) en probeer het opnieuw."}}}},"hmr_dev":"","public_path":"https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"8c9f9a8650"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script id="gform_gravityforms_theme-js" defer='defer' src="https://golfbaanterspecke.nl/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=301fdc9aa6144168f3b854c4c2c8f6d3"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://golfbaanterspecke.nl/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://golfbaanterspecke.nl/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }				gform.utils.addAsyncFilter('gform/submission/pre_submission', async (data) => {
+				    const input = document.createElement('input');
+				    input.type = 'hidden';
+				    input.name = 'gf_zero_spam_key';
+				    input.value = '0CXLSLeiIAjPIsqFVWUAEJCeq3LYuvwGHXoW5mO2tX4BzNakkAXnGAQEDbHdGGQI';
+				    input.setAttribute('autocomplete', 'new-password');
+				    data.form.appendChild(input);
+				
+				    return data;
+				});} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 1, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+</body>
+
+</html>

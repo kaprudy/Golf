@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://golfcentrumdebatouwe.nl/xmlrpc.php" />
+
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	
+	<title>Downloads - Golfcentrum de Batouwe</title><link rel="preload" data-rocket-preload as="style" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;display=swap" /></noscript><link rel="preload" data-rocket-preload as="image" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/course-wit-02.svg" fetchpriority="high">
+<meta name="dc.title" content="Downloads - Golfcentrum de Batouwe">
+<meta name="dc.relation" content="https://golfcentrumdebatouwe.nl/downloads/">
+<meta name="dc.source" content="https://golfcentrumdebatouwe.nl/">
+<meta name="dc.language" content="nl_NL">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://golfcentrumdebatouwe.nl/downloads/">
+<meta property="og:url" content="https://golfcentrumdebatouwe.nl/downloads/">
+<meta property="og:site_name" content="Golfcentrum de Batouwe">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:type" content="article">
+<meta property="article:author" content="https://www.facebook.com/GolfcentrumDeBatouwe/">
+<meta property="article:publisher" content="https://www.facebook.com/GolfcentrumDeBatouwe/">
+<meta property="og:title" content="Downloads - Golfcentrum de Batouwe">
+<meta property="fb:pages" content="">
+<meta property="fb:admins" content="">
+<meta property="fb:app_id" content="">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Downloads - Golfcentrum de Batouwe">
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Golfcentrum de Batouwe &raquo; feed" href="https://golfcentrumdebatouwe.nl/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Golfcentrum de Batouwe &raquo; reactiesfeed" href="https://golfcentrumdebatouwe.nl/comments/feed/" />
+<meta content="Yeps v.1.0.0" name="generator"/><style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://golfcentrumdebatouwe.nl/wp-includes/css/dist/block-library/style.min.css?ver=6.6.10' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='wppb-content-restriction-start-style-inline-css' type='text/css'>
+
+
+</style>
+<style id='wppb-content-restriction-end-style-inline-css' type='text/css'>
+
+
+</style>
+<style id='wpseopress-local-business-style-inline-css' type='text/css'>
+span.wp-block-wpseopress-local-business-field{margin-right:8px}
+
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='ditty-displays-css' href='https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/plugins/ditty-news-ticker/build/dittyDisplays.css?ver=1778499961' type='text/css' media='all' />
+<link rel='stylesheet' id='dcl-slick-css' href='https://golfcentrumdebatouwe.nl/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/slick/slick.min.css?ver=2.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='dcl-magnific-css' href='https://golfcentrumdebatouwe.nl/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/magnific/magnific-popup.min.css?ver=2.0.2' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='dcl-frontend-css' href='https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/plugins/wow-carousel-for-divi-lite/assets/css/frontend.css?ver=1778499961' type='text/css' media='all' />
+<link rel='stylesheet' id='profile-builder-divi-extension-styles-css' href='https://golfcentrumdebatouwe.nl/wp-content/plugins/profile-builder/assets/misc/divi/styles/style.min.css?ver=1.0.0' type='text/css' media='all' />
+
+<link rel='stylesheet' id='photonic-slider-css' href='https://golfcentrumdebatouwe.nl/wp-content/plugins/photonic/include/ext/splide/splide.min.css?ver=20241007-71254' type='text/css' media='all' />
+<link rel='stylesheet' id='photonic-lightbox-css' href='https://golfcentrumdebatouwe.nl/wp-content/plugins/photonic/include/ext/baguettebox/baguettebox.min.css?ver=20241007-71254' type='text/css' media='all' />
+<link rel='stylesheet' id='photonic-css' href='https://golfcentrumdebatouwe.nl/wp-content/plugins/photonic/include/css/front-end/core/photonic.min.css?ver=20241007-71254' type='text/css' media='all' />
+<style id='photonic-inline-css' type='text/css'>
+/* Retrieved from saved CSS */
+.photonic-panel { background:  rgb(17,17,17)  !important;
+
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+ }
+.photonic-random-layout .photonic-thumb { padding: 2px}
+.photonic-masonry-layout .photonic-thumb, .photonic-masonry-horizontal-layout .photonic-thumb { padding: 2px}
+.photonic-mosaic-layout .photonic-thumb { padding: 2px}
+
+</style>
+<link data-minify="1" rel='stylesheet' id='divi-style-parent-css' href='https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/themes/Divi/style-static.min.css?ver=1778499961' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://golfcentrumdebatouwe.nl/wp-content/themes/Yeps/style.css?ver=4.24.2' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpa_stylesheet-css' href='https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/plugins/passwordless-login/assets/style-front-end.css?ver=1778499961' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wppb_stylesheet-css' href='https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/plugins/profile-builder/assets/css/style-front-end.css?ver=1778499961' type='text/css' media='all' />
+<script type="text/javascript" src="https://golfcentrumdebatouwe.nl/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://golfcentrumdebatouwe.nl/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://golfcentrumdebatouwe.nl/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://golfcentrumdebatouwe.nl/wp-json/wp/v2/pages/3215" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://golfcentrumdebatouwe.nl/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.10" />
+<link rel='shortlink' href='https://golfcentrumdebatouwe.nl/?p=3215' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://golfcentrumdebatouwe.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfcentrumdebatouwe.nl%2Fdownloads%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://golfcentrumdebatouwe.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfcentrumdebatouwe.nl%2Fdownloads%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><!-- Swiper JS -->
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/npm/swiper/swiper-bundle.min.js?ver=1778499961"></script>
+
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3LZDD93');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/batouwe-favicon.svg" sizes="32x32" />
+<link rel="icon" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/batouwe-favicon.svg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/batouwe-favicon.svg" />
+<meta name="msapplication-TileImage" content="https://golfcentrumdebatouwe.nl/wp-content/uploads/batouwe-favicon.svg" />
+<style id="et-divi-customizer-global-cached-inline-styles">body,.et_pb_column_1_2 .et_quote_content blockquote cite,.et_pb_column_1_2 .et_link_content a.et_link_main_url,.et_pb_column_1_3 .et_quote_content blockquote cite,.et_pb_column_3_8 .et_quote_content blockquote cite,.et_pb_column_1_4 .et_quote_content blockquote cite,.et_pb_blog_grid .et_quote_content blockquote cite,.et_pb_column_1_3 .et_link_content a.et_link_main_url,.et_pb_column_3_8 .et_link_content a.et_link_main_url,.et_pb_column_1_4 .et_link_content a.et_link_main_url,.et_pb_blog_grid .et_link_content a.et_link_main_url,body .et_pb_bg_layout_light .et_pb_post p,body .et_pb_bg_layout_dark .et_pb_post p{font-size:16px}.et_pb_slide_content,.et_pb_best_value{font-size:18px}body{color:#1a1a19}h1,h2,h3,h4,h5,h6{color:#1a1a19}#et_search_icon:hover,.mobile_menu_bar:before,.mobile_menu_bar:after,.et_toggle_slide_menu:after,.et-social-icon a:hover,.et_pb_sum,.et_pb_pricing li a,.et_pb_pricing_table_button,.et_overlay:before,.entry-summary p.price ins,.et_pb_member_social_links a:hover,.et_pb_widget li a:hover,.et_pb_filterable_portfolio .et_pb_portfolio_filters li a.active,.et_pb_filterable_portfolio .et_pb_portofolio_pagination ul li a.active,.et_pb_gallery .et_pb_gallery_pagination ul li a.active,.wp-pagenavi span.current,.wp-pagenavi a:hover,.nav-single a,.tagged_as a,.posted_in a{color:#147836}.et_pb_contact_submit,.et_password_protected_form .et_submit_button,.et_pb_bg_layout_light .et_pb_newsletter_button,.comment-reply-link,.form-submit .et_pb_button,.et_pb_bg_layout_light .et_pb_promo_button,.et_pb_bg_layout_light .et_pb_more_button,.et_pb_contact p input[type="checkbox"]:checked+label i:before,.et_pb_bg_layout_light.et_pb_module.et_pb_button{color:#147836}.footer-widget h4{color:#147836}.et-search-form,.nav li ul,.et_mobile_menu,.footer-widget li:before,.et_pb_pricing li:before,blockquote{border-color:#147836}.et_pb_counter_amount,.et_pb_featured_table .et_pb_pricing_heading,.et_quote_content,.et_link_content,.et_audio_content,.et_pb_post_slider.et_pb_bg_layout_dark,.et_slide_in_menu_container,.et_pb_contact p input[type="radio"]:checked+label i:before{background-color:#147836}.container,.et_pb_row,.et_pb_slider .et_pb_container,.et_pb_fullwidth_section .et_pb_title_container,.et_pb_fullwidth_section .et_pb_title_featured_container,.et_pb_fullwidth_header:not(.et_pb_fullscreen) .et_pb_fullwidth_header_container{max-width:1500px}.et_boxed_layout #page-container,.et_boxed_layout.et_non_fixed_nav.et_transparent_nav #page-container #top-header,.et_boxed_layout.et_non_fixed_nav.et_transparent_nav #page-container #main-header,.et_fixed_nav.et_boxed_layout #page-container #top-header,.et_fixed_nav.et_boxed_layout #page-container #main-header,.et_boxed_layout #page-container .container,.et_boxed_layout #page-container .et_pb_row{max-width:1660px}a{color:#147836}.et_secondary_nav_enabled #page-container #top-header{background-color:#4d9a36!important}#et-secondary-nav li ul{background-color:#4d9a36}.et_header_style_centered .mobile_nav .select_page,.et_header_style_split .mobile_nav .select_page,.et_nav_text_color_light #top-menu>li>a,.et_nav_text_color_dark #top-menu>li>a,#top-menu a,.et_mobile_menu li a,.et_nav_text_color_light .et_mobile_menu li a,.et_nav_text_color_dark .et_mobile_menu li a,#et_search_icon:before,.et_search_form_container input,span.et_close_search_field:after,#et-top-navigation .et-cart-info{color:#1a1a19}.et_search_form_container input::-moz-placeholder{color:#1a1a19}.et_search_form_container input::-webkit-input-placeholder{color:#1a1a19}.et_search_form_container input:-ms-input-placeholder{color:#1a1a19}#top-header,#top-header a,#et-secondary-nav li li a,#top-header .et-social-icon a:before{font-size:14px}#top-menu li a{font-size:16px}body.et_vertical_nav .container.et_search_form_container .et-search-form input{font-size:16px!important}#top-menu li.current-menu-ancestor>a,#top-menu li.current-menu-item>a,#top-menu li.current_page_item>a{color:#147836}#main-footer .footer-widget h4,#main-footer .widget_block h1,#main-footer .widget_block h2,#main-footer .widget_block h3,#main-footer .widget_block h4,#main-footer .widget_block h5,#main-footer .widget_block h6{color:#147836}.footer-widget li:before{border-color:#147836}#footer-widgets .footer-widget li:before{top:10.6px}body .et_pb_button{font-size:16px;background-color:#71b736;border-width:0px!important}body.et_pb_button_helper_class .et_pb_button,body.et_pb_button_helper_class .et_pb_module.et_pb_button{color:#ffffff}body .et_pb_button:after{font-size:25.6px}body .et_pb_bg_layout_light.et_pb_button:hover,body .et_pb_bg_layout_light .et_pb_button:hover,body .et_pb_button:hover{color:#ffffff!important;background-color:rgba(98,165,49,0.8);border-radius:0px}@media only screen and (min-width:981px){.et_header_style_left #et-top-navigation,.et_header_style_split #et-top-navigation{padding:35px 0 0 0}.et_header_style_left #et-top-navigation nav>ul>li>a,.et_header_style_split #et-top-navigation nav>ul>li>a{padding-bottom:35px}.et_header_style_split .centered-inline-logo-wrap{width:70px;margin:-70px 0}.et_header_style_split .centered-inline-logo-wrap #logo{max-height:70px}.et_pb_svg_logo.et_header_style_split .centered-inline-logo-wrap #logo{height:70px}.et_header_style_centered #top-menu>li>a{padding-bottom:13px}.et_header_style_slide #et-top-navigation,.et_header_style_fullscreen #et-top-navigation{padding:26px 0 26px 0!important}.et_header_style_centered #main-header .logo_container{height:70px}#logo{max-height:100%}.et_pb_svg_logo #logo{height:100%}.et_header_style_left .et-fixed-header #et-top-navigation,.et_header_style_split .et-fixed-header #et-top-navigation{padding:35px 0 0 0}.et_header_style_left .et-fixed-header #et-top-navigation nav>ul>li>a,.et_header_style_split .et-fixed-header #et-top-navigation nav>ul>li>a{padding-bottom:35px}.et_header_style_centered header#main-header.et-fixed-header .logo_container{height:70px}.et_header_style_split #main-header.et-fixed-header .centered-inline-logo-wrap{width:70px;margin:-70px 0}.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo{max-height:70px}.et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo{height:70px}.et_header_style_slide .et-fixed-header #et-top-navigation,.et_header_style_fullscreen .et-fixed-header #et-top-navigation{padding:26px 0 26px 0!important}.et_fixed_nav #page-container .et-fixed-header#top-header{background-color:#4d9a36!important}.et_fixed_nav #page-container .et-fixed-header#top-header #et-secondary-nav li ul{background-color:#4d9a36}.et-fixed-header #top-menu a,.et-fixed-header #et_search_icon:before,.et-fixed-header #et_top_search .et-search-form input,.et-fixed-header .et_search_form_container input,.et-fixed-header .et_close_search_field:after,.et-fixed-header #et-top-navigation .et-cart-info{color:#1a1a19!important}.et-fixed-header .et_search_form_container input::-moz-placeholder{color:#1a1a19!important}.et-fixed-header .et_search_form_container input::-webkit-input-placeholder{color:#1a1a19!important}.et-fixed-header .et_search_form_container input:-ms-input-placeholder{color:#1a1a19!important}.et-fixed-header #top-menu li.current-menu-ancestor>a,.et-fixed-header #top-menu li.current-menu-item>a,.et-fixed-header #top-menu li.current_page_item>a{color:#4d9a36!important}}@media only screen and (min-width:1875px){.et_pb_row{padding:37px 0}.et_pb_section{padding:75px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:112px}.et_pb_fullwidth_section{padding:0}}h1,h1.et_pb_contact_main_title,.et_pb_title_container h1{font-size:50px}h2,.product .related h2,.et_pb_column_1_2 .et_quote_content blockquote p{font-size:43px}h3{font-size:36px}h4,.et_pb_circle_counter h3,.et_pb_number_counter h3,.et_pb_column_1_3 .et_pb_post h2,.et_pb_column_1_4 .et_pb_post h2,.et_pb_blog_grid h2,.et_pb_column_1_3 .et_quote_content blockquote p,.et_pb_column_3_8 .et_quote_content blockquote p,.et_pb_column_1_4 .et_quote_content blockquote p,.et_pb_blog_grid .et_quote_content blockquote p,.et_pb_column_1_3 .et_link_content h2,.et_pb_column_3_8 .et_link_content h2,.et_pb_column_1_4 .et_link_content h2,.et_pb_blog_grid .et_link_content h2,.et_pb_column_1_3 .et_audio_content h2,.et_pb_column_3_8 .et_audio_content h2,.et_pb_column_1_4 .et_audio_content h2,.et_pb_blog_grid .et_audio_content h2,.et_pb_column_3_8 .et_pb_audio_module_content h2,.et_pb_column_1_3 .et_pb_audio_module_content h2,.et_pb_gallery_grid .et_pb_gallery_item h3,.et_pb_portfolio_grid .et_pb_portfolio_item h2,.et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2{font-size:30px}h5{font-size:26px}h6{font-size:23px}.et_pb_slide_description .et_pb_slide_title{font-size:76px}.et_pb_gallery_grid .et_pb_gallery_item h3,.et_pb_portfolio_grid .et_pb_portfolio_item h2,.et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2,.et_pb_column_1_4 .et_pb_audio_module_content h2{font-size:26px}	h1,h2,h3,h4,h5,h6{font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif}body,input,textarea,select{font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif}::-moz-selection{color:#ffffff;background:rgba(18,87,46,0.8)}::selection{color:#ffffff;background:rgba(18,87,46,0.8)}body.user-5 .menu-item-2321{display:none!important;visibility:hidden!important;opacity:0!important}#logo{margin-top:10px;min-height:110px}#top-menu li.menu-item.button a,.gform_button.button{border-radius:2em;color:#ffffff!important;background-color:#19375F;padding-top:0.8em!important;padding-right:1.2em!important;padding-bottom:0.8em!important;padding-left:1.2em!important;border-width:0px!important;transition:all 300ms ease 0ms;font-weight:300;font-size:14px;opacity:1!important}#top-menu li.menu-item.button a:hover{border-radius:2em;color:#ffffff!important;background-color:rgba(25,55,95,0.8);opacity:1!important}#top-menu li.menu-item.button a:before{content:"\e08b";position:relative;font-family:'ETmodules';margin-right:9px;top:1px}@media only screen and (min-width:981px) and (max-width:1446px){#main-header>.container{width:90%}#top-menu li a{font-size:16px}}@media only screen and (min-width:981px) and (max-width:1287px){}@media only screen and (min-width:981px) and (max-width:1210px){#top-menu li.menu-item.button{display:none}#top-menu li.menu-item.voorlaatste{padding-right:0}}body #top-menu li li a{padding:6px 0}.pa-menu-keylock>a:before{font-family:'ETMODULES';content:'\7e';text-align:center;margin-right:8px;margin-left:0;color:#1E8B49;font-size:0.8em;transition:all .3s ease}#top-header .pa-menu-keylock-mijn-profiel>a:before{color:#ffffff;font-size:0.8em}.wppb-user-forms h1,.wppb-user-forms h2,.wppb-user-forms h3,.wppb-user-forms h4{font-weight:800;line-height:1.4em}.menu-item .wppb-front-end-logout span{display:none!important}p.login-register-lost-password{display:none!important}.entry-content>p,.entry-content>#wppb-login-wrap,.entry-content>h1{width:80%;max-width:1500px;margin:auto}.entry-content>h1{font-weight:800;line-height:1.4em;font-size:30px}form#wppb-loginform{max-width:900px}.entry-content>p:first-child{margin-top:100px}.entry-content>p:last-child{margin-bottom:100px}body .wppb-user-forms ul{padding-bottom:0}p.form-submit{text-align:left}input#wppb-submit,input#edit_profile,input#register,input#wppb-recover-password-button{border-radius:2em;color:#ffffff;padding-top:0.6em!important;padding-right:1.2em!important;padding-bottom:0.6em!important;padding-left:1.2em!important;font-size:16px;background-color:#71b736;border-width:0px!important;transition:all 300ms ease 0ms;font-weight:500;line-height:1.7em!important;background-size:cover;background-position:50%;background-repeat:no-repeat;border:2px solid;-webkit-transition-property:all!important;transition-property:all!important;cursor:pointer}input#wppb-submit:hover,input#edit_profile:hover,input#register:hover,input#wppb-recover-password-button:hover{background-color:rgba(98,165,49,0.8)}.ditty{color:#fff}.ditty-ticker__items{height:19.6875px!important}.ditty-ticker .ditty-item{padding:0px 150px!important}.inline-buttons .et_pb_button_module_wrapper{display:inline-block}.et_pb_row_2_tb_footer{background-position-x:-30px;opacity:0;animation-name:golfbal;animation-duration:15s;animation-timing-function:ease-out;animation-iteration-count:infinite}@keyframes golfbal{0%{background-position-x:-30px;opacity:0}1%{background-position-x:-30px;opacity:1}30%{background-position-x:calc(100% + 30px);opacity:1}31%{background-position-x:calc(100% + 30px);opacity:0}100%{background-position-x:-30px;opacity:0}}.inline-buttons .et_pb_button_module_wrapper{display:inline-block}.et_mobile_menu .first-level>a{background-color:transparent;position:relative}.et_mobile_menu .first-level>a:after{font-family:'ETmodules';content:'\4c';font-weight:normal;position:absolute;font-size:16px;top:13px;right:10px}.et_mobile_menu .first-level>.icon-switch:after{content:'\4d'}.second-level{display:none}.reveal-items{display:block}.et_mobile_menu{width:126%;margin-left:-13%}@media only screen and (max-width:981px){.et_header_style_left .logo_container{z-index:99991}.et_header_style_left #et-top-navigation .mobile_menu_bar{z-index:99992}}@media all and (max-width:980px){.custom_row{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap}.first-on-mobile{-webkit-order:1;order:1}.second-on-mobile{-webkit-order:2;order:2}.third-on-mobile{-webkit-order:3;order:3}.fourth-on-mobile{-webkit-order:4;order:4}.custom_row:last-child .et_pb_column:last-child{margin-bottom:30px}}.pa-inline-buttons .et_pb_button_module_wrapper{display:inline-block}@media screen and (max-width:600px){h2{font-size:28px!important}}@media screen and (max-width:600px){h1{font-size:36px!important}}@media screen and (max-width:600px){h3{font-size:25px!important}}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body class="page-template-default page page-id-3215 et-tb-has-template et-tb-has-footer user-5 et_button_no_icon et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_svg_logo et_cover_background et_pb_gutter osx et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
+	<div  id="page-container">
+<div  id="et-boc" class="et-boc">
+			
+		
+
+	<header  id="main-header" data-height-onload="70">
+		<div class="container clearfix et_menu_container">
+					<div class="logo_container">
+				<span class="logo_helper"></span>
+				<a href="https://golfcentrumdebatouwe.nl/">
+				<img src="https://golfcentrumdebatouwe.nl/wp-content/uploads/batouwe-logo-web-stroke-01.svg" width="0" height="0" alt="Golfcentrum de Batouwe" id="logo" data-height-percentage="100" />
+				</a>
+			</div>
+					<div id="et-top-navigation" data-height="70" data-fixed-height="70">
+									<nav id="top-menu-nav">
+					<ul id="top-menu" class="nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-64"><a href="https://golfcentrumdebatouwe.nl/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-283"><a href="https://golfcentrumdebatouwe.nl/baaninformatie/">Baaninformatie</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-762"><a href="https://golfcentrumdebatouwe.nl/baaninformatie/">Actuele baan­informatie</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3215 current_page_item menu-item-3227"><a href="https://golfcentrumdebatouwe.nl/downloads/" aria-current="page">Downloads</a></li>
+</ul>
+</li>
+<li class="first-level menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-318"><a href="https://golfcentrumdebatouwe.nl/27-holesbaan/">De Batouwe</a>
+<ul class="sub-menu">
+	<li class="second-level menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="https://golfcentrumdebatouwe.nl/tarieven/">Tarieven en arrangementen</a></li>
+	<li class="second-level menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="https://golfcentrumdebatouwe.nl/27-holesbaan/">27-holesbaan</a></li>
+	<li class="second-level menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="https://golfcentrumdebatouwe.nl/clubhuis/">Clubhuis</a></li>
+	<li class="second-level menu-item menu-item-type-post_type menu-item-object-page menu-item-157"><a href="https://golfcentrumdebatouwe.nl/golflessen/">Golflessen en oefenfaciliteiten</a></li>
+	<li class="second-level menu-item menu-item-type-post_type menu-item-object-page menu-item-166"><a href="https://golfcentrumdebatouwe.nl/restaurant-vergaderen/">Restaurant en vergaderen</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2339"><a href="https://golfcentrumdebatouwe.nl/golfshop/">Golfshop</a></li>
+	<li class="second-level menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a href="https://golfcentrumdebatouwe.nl/bedrijfsuitjes-en-evenementen/">Events</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2252"><a href="https://golfcentrumdebatouwe.nl/golfpros-en-lestarieven/">Golfpro’s en lestarieven</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-712"><a href="https://golfcentrumdebatouwe.nl/hospitality-chain/">Birdie Circle</a></li>
+</ul>
+</li>
+<li class="first-level menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-119"><a href="https://golfcentrumdebatouwe.nl/businessclub/">Businessclub</a>
+<ul class="sub-menu">
+	<li class="second-level menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="https://golfcentrumdebatouwe.nl/businessclub/">Businessclub De Batouwe</a></li>
+	<li class="second-level menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="https://golfcentrumdebatouwe.nl/businessclub/lidmaatschappen/">Lidmaatschappen</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-690"><a href="https://golfcentrumdebatouwe.nl/businessclub/bedrijfsleden/">Bedrijfsleden</a></li>
+	<li class="pa-menu-keylock menu-item menu-item-type-post_type menu-item-object-page menu-item-714"><a href="https://golfcentrumdebatouwe.nl/businessclub/uitslagen/">Uitslagen</a></li>
+	<li class="pa-menu-keylock menu-item menu-item-type-post_type menu-item-object-page menu-item-2347"><a href="https://golfcentrumdebatouwe.nl/businessclub/fotoalbums/">Fotoalbums</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-688"><a href="https://golfcentrumdebatouwe.nl/starttijd-reserveren/">Starttijd reserveren</a></li>
+<li class="first-level menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-231"><a href="https://golfcentrumdebatouwe.nl/contact/">Contact</a>
+<ul class="sub-menu">
+	<li class="second-level menu-item menu-item-type-post_type menu-item-object-page menu-item-320"><a href="https://golfcentrumdebatouwe.nl/contact/">Contact</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285"><a href="https://golfcentrumdebatouwe.nl/openingstijden/">Openingstijden</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3705"><a href="https://golfcentrumdebatouwe.nl/3698-2/">Vacatures</a></li>
+</ul>
+</li>
+</ul>					</nav>
+				
+				
+				
+				
+				<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Selecteer een pagina</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>			</div> <!-- #et-top-navigation -->
+		</div> <!-- .container -->
+			</header> <!-- #main-header -->
+<div  id="et-main-area">
+	
+<div id="main-content">
+
+
+			
+				<article id="post-3215" class="post-3215 page type-page status-publish hentry">
+
+				
+					<div class="entry-content">
+					<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty">
+				
+				
+				
+				
+				
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: center;">Downloads</h2>
+<p>&nbsp;</p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+				
+				
+				
+				
+				
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+			</div><div class="et_pb_section et_pb_section_1 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2><span></span></h2>
+<h2 style="text-align: justify;"></h2>
+<h2 style="text-align: justify;"><span></span></h2>
+<h2 style="text-align: justify;"><span></span></h2>
+<h2 style="text-align: justify;"><span></span></h2>
+<h2 style="text-align: justify;"><span></span></h2>
+<h2 style="text-align: center;"><span>Baanboekje</span></h2></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/100633_Baanboekje_februari_2022.pdf" target="_blank" data-icon="&#xe092;">Download baanboekje De Batouwe</a>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img fetchpriority="high" decoding="async" width="400" height="555" src="https://golfcentrumdebatouwe.nl/wp-content/uploads/baanboekje-mockup-1.webp" alt="" title="baanboekje-mockup" class="wp-image-424" /></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider et_pb_top_divider" >
+				<div class="et_pb_top_inside_divider et-no-transition"></div>
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: left;"><span>                Scorekaarten</span><span> </span></h2>
+<p><span></span></p>
+<p><span></span></p></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_1_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_1 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/1238-Batouwe_scorekaart_binnenzijde.pdf" target="_blank" data-icon="&#xe092;">Download scorekaart Appel, Peren, en Kersengaard</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_2_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_2 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/batouwe-kleineBaanKaart-binnenzijde-feb-23_1.pdf" target="_blank" data-icon="&#xe092;">Download scorekaart Pruimengaard</a>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_1">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="400" height="305" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20305'%3E%3C/svg%3E" alt="" title="scorekaart-mockup" class="wp-image-430" data-lazy-src="https://golfcentrumdebatouwe.nl/wp-content/uploads/scorekaart-mockup-2.webp" /><noscript><img decoding="async" width="400" height="305" src="https://golfcentrumdebatouwe.nl/wp-content/uploads/scorekaart-mockup-2.webp" alt="" title="scorekaart-mockup" class="wp-image-430" /></noscript></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+			</div><div class="et_pb_section et_pb_section_3 et_section_regular section_has_divider et_pb_bottom_divider et_pb_top_divider" >
+				<div class="et_pb_top_inside_divider et-no-transition"></div>
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_3">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: center;"><span></span></h2>
+<p><span></span></p>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;"><span></span></h2>
+<h2 style="text-align: center;">Handicaptabellen<span></span></h2>
+<p style="text-align: center;">Vanaf 1 november 2024 zijn onze handicaptabellen gewijzigd. Controleert alstublieft wat de gevolgen zijn voor uw eigen handicap. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span></span></p>
+<p><span></span></p>
+<p><span></span></p>
+<p><span></span></p>
+<p><span></span></p>
+<p><span></span></p>
+<ul></ul></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner">
+<h3>18-holes</h3>
+<h4>Perengaard en Appelgaard</h4>
+</div>
+</div></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_3_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_3 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-18-holes-Peer-Appel-Heren.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen heren</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_4_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_4 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-18-holes-Peer-Appel-Dames.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen dames</a>
+			</div><div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner">
+<h3></h3>
+<h3></h3>
+<h3>18-holes</h3>
+<h4>Kersengaard en Perengaard</h4>
+</div>
+</div></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_5_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_5 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-18-holes-Kers-Peer-Heren.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen heren</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_6_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_6 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-18-holes-Kers-Peer-Dames.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen dames</a>
+			</div><div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="et_pb_module et_pb_text et_pb_text_12  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner">
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3>9-holes</h3>
+<h4>Perengaard</h4>
+</div>
+</div></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_7_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_7 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-9-holes-Peer-Heren.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen heren</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_8_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_8 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-9-holes-Peer-Dames.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen dames</a>
+			</div><div class="et_pb_module et_pb_text et_pb_text_7  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h3 style="text-align: center;">9-holes</h3>
+<h4 style="text-align: center;">Kersengaard</h4></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_9_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_9 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-9-holes-Kers-Heren.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen heren</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_10_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_10 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-9-holes-Kers-Dames.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen dames</a>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_2">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img decoding="async" width="400" height="347" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20347'%3E%3C/svg%3E" alt="" title="handicaptabellen-mockup" class="wp-image-431" data-lazy-src="https://golfcentrumdebatouwe.nl/wp-content/uploads/handicaptabellen-mockup.webp" /><noscript><img decoding="async" width="400" height="347" src="https://golfcentrumdebatouwe.nl/wp-content/uploads/handicaptabellen-mockup.webp" alt="" title="handicaptabellen-mockup" class="wp-image-431" /></noscript></span>
+			</div><div class="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner">
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3>18-holes</h3>
+<h4>Appelgaard en Kersengaard</h4>
+</div>
+</div></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_11_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_11 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-18-holes-Appel-Kers-Heren.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen heren</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_12_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_12 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-18-holes-Appel-Kers-Dames.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen dames</a>
+			</div><div class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner">
+<h3></h3>
+<h3></h3>
+<h3>18-holes</h3>
+<h4>Pruimengaard Par 3/4 Parcours</h4>
+</div>
+</div></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_13_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_13 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-Pruim-DamesHeren.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen heren en dames</a>
+			</div><div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;"></h3>
+<h3 style="text-align: center;">9-holes</h3>
+<h4 style="text-align: center;">Appelgaard</h4></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_14_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_14 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-9-holes-Appel-Heren.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen heren</a>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_15_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_15 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-9-holes-Appel-Dames.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen dames</a>
+			</div><div class="et_pb_module et_pb_text et_pb_text_11  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h3 style="text-align: center;">9-holes</h3>
+<h4 style="text-align: center;">Pruimengaard Par 3/4 Parcours</h4></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_16_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a class="et_pb_button et_pb_button_16 et_pb_bg_layout_light" href="https://golfcentrumdebatouwe.nl/wp-content/uploads/Batouwe-Pruim-DamesHeren.pdf" target="_blank" data-icon="&#xe092;">Download handicaptabellen heren en dames</a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+			</div><div class="et_pb_section et_pb_section_4 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>		</div>
+	</div>
+						</div>
+
+				
+				</article>
+
+			
+
+</div>
+
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider et_pb_top_divider" >
+				<div class="et_pb_top_inside_divider et-no-transition"></div>
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><a href="/">Home</a><br /><a href="/starttijd-reserveren/">Online starttijd boeken</a><br /><a href="/openingstijden/">Openingstijden</a><br /><a href="/baaninformatie/">Baaninformatie</a><br /><a href="/golflessen/">Golflessen en oefenfaciliteiten</a><br /><a href="/clubhuis/">Clubhuis</a><br /><a href="/restaurant-vergaderen/">Restaurant en vergaderen</a><br /><a href="/bedrijfsuitjes-en-evenementen/">Bedrijfs­uitjes en evenementen</a><br /><a href="/contact/">Contact</a></p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_0_tb_footer et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>Betuws Golfcentrum De Batouwe<br />Oost Kanaalweg 1<br />4011 LA Zoelen </p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_1_tb_footer et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p><span>0344-624370</span></p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_2_tb_footer et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>info@golfcentrumdebatouwe.nl</p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_3_tb_footer et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p><span>@GolfcentrumDeBatouwe</span></p></div>
+					</div>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty">
+				
+				
+				
+				
+				
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_image et_pb_image_0_tb_footer">
+				
+				
+				
+				
+				<a href="https://www.leadingcourses.com/nl/clubs/europa+nederland+gelderland/golfcentrum-de-batouwe" target="_blank"><span class="et_pb_image_wrap "><img decoding="async" width="186" height="271" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20186%20271'%3E%3C/svg%3E" alt="" title="download" class="wp-image-4026" data-lazy-src="https://golfcentrumdebatouwe.nl/wp-content/uploads/download-1.png" /><noscript><img decoding="async" width="186" height="271" src="https://golfcentrumdebatouwe.nl/wp-content/uploads/download-1.png" alt="" title="download" class="wp-image-4026" /></noscript></span></a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_1_tb_footer">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner">© 2026 Golfcentrum De Batouwe</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_4_tb_footer  et_pb_text_align_right  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="https://yeps.nl/" target="_blank"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone" data-lazy-src="https://www.yeps.nl/wp-content/uploads/logos/YEPS-logo-wit.png" /><noscript><img decoding="async" src="https://www.yeps.nl/wp-content/uploads/logos/YEPS-logo-wit.png" alt="" class="et-waypoint et_pb_animation_off et_pb_animation_off_tablet et_pb_animation_off_phone" /></noscript></span></a></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p><a href="https://yeps.nl/" target="_blank" rel="noopener" title="Marketingbureau Yeps">Marketingbureau</a></p></div>
+					</div>
+				</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_2_tb_footer">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_6_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_code et_pb_code_0_tb_footer">
+				
+				
+				
+				
+				
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+				<script type="text/javascript">
+				var et_link_options_data = [{"class":"et_pb_blurb_0_tb_footer","url":"https:\/\/goo.gl\/maps\/DzoXVEFcZVW3ijFA6","target":"_blank"},{"class":"et_pb_blurb_1_tb_footer","url":"tel:0031344624370","target":"_self"},{"class":"et_pb_blurb_2_tb_footer","url":"mailto:info@golfcentrumdebatouwe.nl","target":"_self"},{"class":"et_pb_blurb_3_tb_footer","url":"https:\/\/www.facebook.com\/GolfcentrumDeBatouwe\/","target":"_self"}];
+			</script>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3LZDD93" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Swiper CSS -->
+<link data-minify="1" rel="stylesheet" href="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/npm/swiper/swiper-bundle.min.css?ver=1778499961">
+
+<!-- Mobile menu -->
+<script type="rocketlazyloadscript">
+	(function($) {
+
+		function setup_collapsible_submenus() {
+			var FirstLevel = $('.et_mobile_menu .first-level > a');
+			FirstLevel.off('click').click(function() {
+				$(this).attr('href', '#');  
+				$(this).parent().children().children().toggleClass('reveal-items');
+				$(this).toggleClass('icon-switch');
+			});
+		}
+			$(window).load(function() {
+				setTimeout(function() {
+				setup_collapsible_submenus();
+			}, 700);
+		});
+	})(jQuery);
+</script><script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/slick/slick.min.js?ver=2.0.2" id="dcl-slick-js"></script>
+<script type="text/javascript" src="https://golfcentrumdebatouwe.nl/wp-content/plugins/wow-carousel-for-divi-lite/assets/libs/magnific/jquery.magnific-popup.min.js?ver=2.0.2" id="dcl-magnific-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1" id="react-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.3.1" id="react-dom-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/plugins/wow-carousel-for-divi-lite/assets/js/frontend.js?ver=1778499961" id="dcl-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/golfcentrumdebatouwe.nl","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/golfcentrumdebatouwe.nl\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/golfcentrumdebatouwe.nl\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/golfcentrumdebatouwe.nl\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"8a6c942cd1","subscription_failed":"Kijk dan de onderstaande velden in om ervoor te zorgen u de juiste informatie.","et_ab_log_nonce":"3cf23c0bf1","fill_message":"Alsjeblieft, vul op de volgende gebieden:","contact_error_message":"Gelieve de volgende fouten te verbeteren:","invalid":"Ongeldig e-mail","captcha":"Captcha","prev":"Vorig","previous":"Vorige","next":"Volgende","wrong_captcha":"U heeft het verkeerde nummer in de captcha ingevoerd.","wrong_checkbox":"Selectievakje","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"3215","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/golfcentrumdebatouwe.nl\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#147836","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://golfcentrumdebatouwe.nl/wp-content/themes/Divi/js/scripts.min.js?ver=4.24.2" id="divi-custom-script-js"></script>
+<script data-minify="1" type="text/javascript" src="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=1778499961" id="fitvids-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-includes/js/comment-reply.min.js?ver=6.6.10" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script data-minify="1" type="text/javascript" src="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=1778499961" id="jquery-mobile-js"></script>
+<script data-minify="1" type="text/javascript" src="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=1778499961" id="magnific-popup-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=1778499961" id="easypiechart-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=1778499961" id="salvattore-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-content/plugins/profile-builder/assets/misc/divi/scripts/frontend-bundle.min.js?ver=1.0.0" id="profile-builder-divi-extension-frontend-bundle-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/themes/Divi/core/admin/js/common.js?ver=1778499961" id="et-core-common-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=1778499961" id="et-builder-modules-script-motion-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://golfcentrumdebatouwe.nl/wp-content/cache/min/1/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=1778499962" id="et-builder-modules-script-sticky-js"></script>
+<style id="et-builder-module-design-tb-49-3215-cached-inline-styles">div.et_pb_section.et_pb_section_0_tb_footer{background-size:initial;background-position:center bottom 0px;background-image:url(https://golfcentrumdebatouwe.nl/wp-content/uploads/footer-gras.png)!important}.et_pb_section_0_tb_footer.et_pb_section{padding-bottom:5px;background-color:#147836!important}.et_pb_section_0_tb_footer.section_has_divider.et_pb_top_divider .et_pb_top_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI3MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTEyODAgMTQwVjBIMGwxMjgwIDE0MHoiLz48L2c+PC9zdmc+);background-size:100% 70px;top:0;height:70px;z-index:1;transform:scale(-1,1)}.et_pb_row_0_tb_footer.et_pb_row{margin-top:70px!important}.et_pb_text_0_tb_footer.et_pb_text a{color:#FFFFFF!important;transition:color 300ms ease 0ms}.et_pb_text_0_tb_footer.et_pb_text a:hover{color:rgba(255,255,255,0.8)!important}.et_pb_text_0_tb_footer h1,.et_pb_text_1_tb_footer h1{font-weight:800;line-height:1.4em}.et_pb_text_0_tb_footer h2,.et_pb_text_1_tb_footer h2{font-weight:800;font-size:43px}.et_pb_text_0_tb_footer h3,.et_pb_text_1_tb_footer h3{font-weight:800;font-size:36px;line-height:1.4em}.et_pb_text_0_tb_footer h4,.et_pb_text_1_tb_footer h4{font-weight:800;font-size:30px}.et_pb_text_0_tb_footer h5,.et_pb_text_1_tb_footer h5{font-weight:800;font-size:26px}.et_pb_text_0_tb_footer h6,.et_pb_text_1_tb_footer h6{font-weight:800;font-size:23px}.et_pb_blurb_0_tb_footer.et_pb_blurb,.et_pb_blurb_1_tb_footer.et_pb_blurb,.et_pb_blurb_2_tb_footer.et_pb_blurb{color:#FFFFFF!important;margin-bottom:20px!important}.et_pb_blurb_0_tb_footer .et-pb-icon,.et_pb_blurb_1_tb_footer .et-pb-icon,.et_pb_blurb_2_tb_footer .et-pb-icon{font-size:26px;color:#FFFFFF;font-family:FontAwesome!important;font-weight:900!important}.et_pb_blurb_0_tb_footer .et_pb_blurb_content,.et_pb_blurb_1_tb_footer .et_pb_blurb_content,.et_pb_blurb_2_tb_footer .et_pb_blurb_content,.et_pb_blurb_3_tb_footer .et_pb_blurb_content{max-width:100%}.et_pb_blurb_3_tb_footer.et_pb_blurb,.et_pb_blurb_4_tb_footer.et_pb_blurb .et_pb_blurb_description a{color:#FFFFFF!important}.et_pb_blurb_3_tb_footer .et-pb-icon{font-size:26px;color:#FFFFFF;font-family:ETmodules!important;font-weight:400!important}.et_pb_image_0_tb_footer .et_pb_image_wrap{border-radius:5px 5px 5px 5px;overflow:hidden;border-width:4px}.et_pb_image_0_tb_footer{max-width:180px;text-align:left;margin-left:0}.et_pb_row_1_tb_footer.et_pb_row{padding-top:10px!important;padding-bottom:10px!important;padding-top:10px;padding-bottom:10px}.et_pb_blurb_4_tb_footer.et_pb_blurb .et_pb_main_blurb_image{margin-left:12px;margin-bottom:0px}.et_pb_blurb_4_tb_footer.et_pb_blurb .et_pb_blurb_content{display:flex;flex-direction:row-reverse}.et_pb_blurb_4_tb_footer .et_pb_main_blurb_image .et_pb_image_wrap{width:80px}.et_pb_row_2_tb_footer{background-size:initial;background-image:url(https://golfcentrumdebatouwe.nl/wp-content/uploads/footer-bal.png)}.et_pb_row_2_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_2_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2_tb_footer.et_pb_row{width:100%;max-width:100%}.et_pb_row_2_tb_footer.et_pb_row{padding-bottom:0px!important;margin-left:auto!important;margin-right:auto!important;padding-bottom:0px}@media only screen and (max-width:980px){.et_pb_image_0_tb_footer .et_pb_image_wrap img{width:auto}}@media only screen and (max-width:767px){.et_pb_image_0_tb_footer .et_pb_image_wrap img{width:auto}}div.et_pb_section.et_pb_section_0,div.et_pb_section.et_pb_section_2{background-size:auto 90%;background-position:right 0px center;background-image:url(https://golfcentrumdebatouwe.nl/wp-content/uploads/course-groen-01.svg)!important}.et_pb_section_0.et_pb_section{padding-top:40px;padding-bottom:106px;background-color:#147836!important}.et_pb_section_0{background-position-x:110%!important}.et_pb_section_0.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI3MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTAgMHYxNDBoMTI4MEwwIDB6Ii8+PC9nPjwvc3ZnPg==);background-size:100% 70px;bottom:0;height:70px;z-index:1;transform:scale(1,1)}.et_pb_row_0.et_pb_row{margin-top:0px!important;margin-right:229px!important;margin-bottom:0px!important;margin-left:auto!important}.et_pb_row_0,body #page-container .et-db #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row{width:100%}.et_pb_text_0{font-size:49px;min-height:116.2px;padding-right:0px!important;margin-right:-236px!important;width:100%}.et_pb_text_0.et_pb_text a,.et_pb_text_2.et_pb_text a,.et_pb_text_3.et_pb_text a{color:#FFFFFF!important}.et_pb_text_0 a,.et_pb_text_2 a,.et_pb_text_3 a{text-decoration:underline}.et_pb_text_0 h1,.et_pb_text_1 h1,.et_pb_text_2 h1,.et_pb_text_3 h1,.et_pb_text_4 h1,.et_pb_text_5 h1,.et_pb_text_6 h1,.et_pb_text_7 h1,.et_pb_text_8 h1,.et_pb_text_9 h1,.et_pb_text_10 h1,.et_pb_text_11 h1{font-weight:800;line-height:1.4em}.et_pb_text_0 h2,.et_pb_text_1 h2,.et_pb_text_2 h2,.et_pb_text_3 h2,.et_pb_text_4 h2,.et_pb_text_5 h2,.et_pb_text_6 h2,.et_pb_text_7 h2,.et_pb_text_8 h2,.et_pb_text_9 h2,.et_pb_text_10 h2,.et_pb_text_11 h2{font-weight:800;font-size:43px}.et_pb_text_0 h3,.et_pb_text_1 h3,.et_pb_text_2 h3,.et_pb_text_3 h3,.et_pb_text_4 h3,.et_pb_text_5 h3,.et_pb_text_6 h3,.et_pb_text_7 h3,.et_pb_text_8 h3,.et_pb_text_9 h3,.et_pb_text_10 h3,.et_pb_text_11 h3{font-weight:800;font-size:36px;line-height:1.4em}.et_pb_text_0 h4,.et_pb_text_1 h4,.et_pb_text_2 h4,.et_pb_text_3 h4,.et_pb_text_4 h4,.et_pb_text_5 h4,.et_pb_text_6 h4,.et_pb_text_7 h4,.et_pb_text_8 h4,.et_pb_text_9 h4,.et_pb_text_10 h4,.et_pb_text_11 h4{font-weight:800;font-size:30px}.et_pb_text_0 h5,.et_pb_text_1 h5,.et_pb_text_2 h5,.et_pb_text_3 h5,.et_pb_text_4 h5,.et_pb_text_5 h5,.et_pb_text_6 h5,.et_pb_text_7 h5,.et_pb_text_8 h5,.et_pb_text_9 h5,.et_pb_text_10 h5,.et_pb_text_11 h5{font-weight:800;font-size:26px}.et_pb_text_0 h6,.et_pb_text_1 h6,.et_pb_text_2 h6,.et_pb_text_3 h6,.et_pb_text_4 h6,.et_pb_text_5 h6,.et_pb_text_6 h6,.et_pb_text_7 h6,.et_pb_text_8 h6,.et_pb_text_9 h6,.et_pb_text_10 h6,.et_pb_text_11 h6{font-weight:800;font-size:23px}div.et_pb_section.et_pb_section_1{background-size:58% 429px;background-image:url(https://golfcentrumdebatouwe.nl/wp-content/uploads/course-wit-02.svg)!important}.et_pb_section_1{background-position-x:10%!important}.et_pb_button_0_wrapper .et_pb_button_0,.et_pb_button_0_wrapper .et_pb_button_0:hover{padding-top:0.6em!important;padding-right:1.8em!important;padding-bottom:0.6em!important;padding-left:1.8em!important}body #page-container .et_pb_section .et_pb_button_0,body #page-container .et_pb_section .et_pb_button_1,body #page-container .et_pb_section .et_pb_button_3,body #page-container .et_pb_section .et_pb_button_5,body #page-container .et_pb_section .et_pb_button_7,body #page-container .et_pb_section .et_pb_button_9,body #page-container .et_pb_section .et_pb_button_11,body #page-container .et_pb_section .et_pb_button_13,body #page-container .et_pb_section .et_pb_button_14,body #page-container .et_pb_section .et_pb_button_16{border-radius:2em}body #page-container .et_pb_section .et_pb_button_0:after,body #page-container .et_pb_section .et_pb_button_1:after,body #page-container .et_pb_section .et_pb_button_2:after,body #page-container .et_pb_section .et_pb_button_3:after,body #page-container .et_pb_section .et_pb_button_4:after,body #page-container .et_pb_section .et_pb_button_5:after,body #page-container .et_pb_section .et_pb_button_6:after,body #page-container .et_pb_section .et_pb_button_7:after,body #page-container .et_pb_section .et_pb_button_8:after,body #page-container .et_pb_section .et_pb_button_9:after,body #page-container .et_pb_section .et_pb_button_10:after,body #page-container .et_pb_section .et_pb_button_11:after,body #page-container .et_pb_section .et_pb_button_12:after,body #page-container .et_pb_section .et_pb_button_13:after,body #page-container .et_pb_section .et_pb_button_14:after,body #page-container .et_pb_section .et_pb_button_15:after,body #page-container .et_pb_section .et_pb_button_16:after{display:none}body #page-container .et_pb_section .et_pb_button_0:before,body #page-container .et_pb_section .et_pb_button_1:before,body #page-container .et_pb_section .et_pb_button_2:before,body #page-container .et_pb_section .et_pb_button_3:before,body #page-container .et_pb_section .et_pb_button_4:before,body #page-container .et_pb_section .et_pb_button_5:before,body #page-container .et_pb_section .et_pb_button_6:before,body #page-container .et_pb_section .et_pb_button_7:before,body #page-container .et_pb_section .et_pb_button_8:before,body #page-container .et_pb_section .et_pb_button_9:before,body #page-container .et_pb_section .et_pb_button_10:before,body #page-container .et_pb_section .et_pb_button_11:before,body #page-container .et_pb_section .et_pb_button_12:before,body #page-container .et_pb_section .et_pb_button_13:before,body #page-container .et_pb_section .et_pb_button_14:before,body #page-container .et_pb_section .et_pb_button_15:before,body #page-container .et_pb_section .et_pb_button_16:before{content:attr(data-icon);font-family:ETmodules!important;font-weight:400!important;line-height:inherit;font-size:inherit!important;opacity:1;margin-left:-1.3em;right:auto;display:inline-block;font-family:ETmodules!important;font-weight:400!important}body #page-container .et_pb_section .et_pb_button_0:hover:before,body #page-container .et_pb_section .et_pb_button_1:hover:before,body #page-container .et_pb_section .et_pb_button_2:hover:before,body #page-container .et_pb_section .et_pb_button_3:hover:before,body #page-container .et_pb_section .et_pb_button_4:hover:before,body #page-container .et_pb_section .et_pb_button_5:hover:before,body #page-container .et_pb_section .et_pb_button_6:hover:before,body #page-container .et_pb_section .et_pb_button_7:hover:before,body #page-container .et_pb_section .et_pb_button_8:hover:before,body #page-container .et_pb_section .et_pb_button_9:hover:before,body #page-container .et_pb_section .et_pb_button_10:hover:before,body #page-container .et_pb_section .et_pb_button_11:hover:before,body #page-container .et_pb_section .et_pb_button_12:hover:before,body #page-container .et_pb_section .et_pb_button_13:hover:before,body #page-container .et_pb_section .et_pb_button_14:hover:before,body #page-container .et_pb_section .et_pb_button_15:hover:before,body #page-container .et_pb_section .et_pb_button_16:hover:before{margin-left:.3em;right:auto;margin-left:-1.3em}.et_pb_button_0,.et_pb_button_0:after,.et_pb_button_1,.et_pb_button_1:after,.et_pb_button_2,.et_pb_button_2:after,.et_pb_button_3,.et_pb_button_3:after,.et_pb_button_4,.et_pb_button_4:after,.et_pb_button_5,.et_pb_button_5:after,.et_pb_button_6,.et_pb_button_6:after,.et_pb_button_7,.et_pb_button_7:after,.et_pb_button_8,.et_pb_button_8:after,.et_pb_button_9,.et_pb_button_9:after,.et_pb_button_10,.et_pb_button_10:after,.et_pb_button_11,.et_pb_button_11:after,.et_pb_button_12,.et_pb_button_12:after,.et_pb_button_13,.et_pb_button_13:after,.et_pb_button_14,.et_pb_button_14:after,.et_pb_button_15,.et_pb_button_15:after,.et_pb_button_16,.et_pb_button_16:after{transition:all 300ms ease 0ms}.et_pb_image_0 .et_pb_image_wrap img{height:382px;min-height:376px;max-height:394px;width:auto}.et_pb_image_0{width:100%;max-width:100%;text-align:center}.et_pb_section_2{min-height:647px;background-position-x:110%!important}.et_pb_section_2.et_pb_section{padding-top:40px;padding-bottom:0px;background-color:#147836!important}.et_pb_section_2.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider,.et_pb_section_3.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI3MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI0ZGRkZGRiI+PHBhdGggZD0iTTAgMHYxNDBoMTI4MEwwIDB6Ii8+PC9nPjwvc3ZnPg==);background-size:100% 70px;bottom:0;height:70px;z-index:1;transform:scale(1,1)}.et_pb_section_2.section_has_divider.et_pb_top_divider .et_pb_top_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI3MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTEyODAgMTQwVjBIMGwxMjgwIDE0MHoiLz48L2c+PC9zdmc+);background-size:100% 70px;top:0;height:70px;z-index:1;transform:scale(-1,1)}.et_pb_row_2{min-height:54px}.et_pb_row_2.et_pb_row{padding-top:100px!important;padding-bottom:0px!important;margin-top:0px!important;margin-bottom:0px!important;padding-top:100px;padding-bottom:0px}.et_pb_button_1_wrapper .et_pb_button_1,.et_pb_button_1_wrapper .et_pb_button_1:hover,.et_pb_button_2_wrapper .et_pb_button_2,.et_pb_button_2_wrapper .et_pb_button_2:hover,.et_pb_button_3_wrapper .et_pb_button_3,.et_pb_button_3_wrapper .et_pb_button_3:hover,.et_pb_button_4_wrapper .et_pb_button_4,.et_pb_button_4_wrapper .et_pb_button_4:hover,.et_pb_button_5_wrapper .et_pb_button_5,.et_pb_button_5_wrapper .et_pb_button_5:hover,.et_pb_button_6_wrapper .et_pb_button_6,.et_pb_button_6_wrapper .et_pb_button_6:hover,.et_pb_button_7_wrapper .et_pb_button_7,.et_pb_button_7_wrapper .et_pb_button_7:hover,.et_pb_button_8_wrapper .et_pb_button_8,.et_pb_button_8_wrapper .et_pb_button_8:hover,.et_pb_button_9_wrapper .et_pb_button_9,.et_pb_button_9_wrapper .et_pb_button_9:hover,.et_pb_button_10_wrapper .et_pb_button_10,.et_pb_button_10_wrapper .et_pb_button_10:hover,.et_pb_button_11_wrapper .et_pb_button_11,.et_pb_button_11_wrapper .et_pb_button_11:hover,.et_pb_button_12_wrapper .et_pb_button_12,.et_pb_button_12_wrapper .et_pb_button_12:hover,.et_pb_button_13_wrapper .et_pb_button_13,.et_pb_button_13_wrapper .et_pb_button_13:hover,.et_pb_button_14_wrapper .et_pb_button_14,.et_pb_button_14_wrapper .et_pb_button_14:hover,.et_pb_button_15_wrapper .et_pb_button_15,.et_pb_button_15_wrapper .et_pb_button_15:hover,.et_pb_button_16_wrapper .et_pb_button_16,.et_pb_button_16_wrapper .et_pb_button_16:hover{padding-top:0.6em!important;padding-right:2em!important;padding-bottom:0.6em!important;padding-left:2em!important}body #page-container .et_pb_section .et_pb_button_2{color:#FFFFFF!important;border-radius:2em;background-color:#000000}.et_pb_image_1,.et_pb_image_2{text-align:center}.et_pb_section_3{min-height:517.5px;background-position-x:10%!important}.et_pb_section_3.section_has_divider.et_pb_top_divider .et_pb_top_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI3MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI0ZGRkZGRiI+PHBhdGggZD0iTTEyODAgMTQwVjBIMGwxMjgwIDE0MHoiLz48L2c+PC9zdmc+);background-size:100% 70px;top:0;height:70px;z-index:1;transform:scale(-1,1)}.et_pb_row_3.et_pb_row{margin-top:0px!important;margin-right:auto!important;margin-bottom:-381px!important;margin-left:auto!important}.et_pb_text_3{min-height:396px;padding-bottom:0px!important}body #page-container .et_pb_section .et_pb_button_4,body #page-container .et_pb_section .et_pb_button_6,body #page-container .et_pb_section .et_pb_button_8,body #page-container .et_pb_section .et_pb_button_10,body #page-container .et_pb_section .et_pb_button_12,body #page-container .et_pb_section .et_pb_button_15{border-radius:2em;background-color:#000000}.et_pb_section_4{min-height:339.8px;background-position-x:10%!important}.et_pb_section_4.et_pb_section{padding-bottom:20px}.et_pb_column_0,.et_pb_column_7,.et_pb_column_8{padding-top:70px}@media only screen and (max-width:980px){body #page-container .et_pb_section .et_pb_button_0:before,body #page-container .et_pb_section .et_pb_button_1:before,body #page-container .et_pb_section .et_pb_button_2:before,body #page-container .et_pb_section .et_pb_button_3:before,body #page-container .et_pb_section .et_pb_button_4:before,body #page-container .et_pb_section .et_pb_button_5:before,body #page-container .et_pb_section .et_pb_button_6:before,body #page-container .et_pb_section .et_pb_button_7:before,body #page-container .et_pb_section .et_pb_button_8:before,body #page-container .et_pb_section .et_pb_button_9:before,body #page-container .et_pb_section .et_pb_button_10:before,body #page-container .et_pb_section .et_pb_button_11:before,body #page-container .et_pb_section .et_pb_button_12:before,body #page-container .et_pb_section .et_pb_button_13:before,body #page-container .et_pb_section .et_pb_button_14:before,body #page-container .et_pb_section .et_pb_button_15:before,body #page-container .et_pb_section .et_pb_button_16:before{line-height:inherit;font-size:inherit!important;margin-left:-1.3em;right:auto;display:inline-block;opacity:1;content:attr(data-icon);font-family:ETmodules!important;font-weight:400!important}body #page-container .et_pb_section .et_pb_button_0:after,body #page-container .et_pb_section .et_pb_button_1:after,body #page-container .et_pb_section .et_pb_button_2:after,body #page-container .et_pb_section .et_pb_button_3:after,body #page-container .et_pb_section .et_pb_button_4:after,body #page-container .et_pb_section .et_pb_button_5:after,body #page-container .et_pb_section .et_pb_button_6:after,body #page-container .et_pb_section .et_pb_button_7:after,body #page-container .et_pb_section .et_pb_button_8:after,body #page-container .et_pb_section .et_pb_button_9:after,body #page-container .et_pb_section .et_pb_button_10:after,body #page-container .et_pb_section .et_pb_button_11:after,body #page-container .et_pb_section .et_pb_button_12:after,body #page-container .et_pb_section .et_pb_button_13:after,body #page-container .et_pb_section .et_pb_button_14:after,body #page-container .et_pb_section .et_pb_button_15:after,body #page-container .et_pb_section .et_pb_button_16:after{display:none}body #page-container .et_pb_section .et_pb_button_0:hover:before,body #page-container .et_pb_section .et_pb_button_1:hover:before,body #page-container .et_pb_section .et_pb_button_2:hover:before,body #page-container .et_pb_section .et_pb_button_3:hover:before,body #page-container .et_pb_section .et_pb_button_4:hover:before,body #page-container .et_pb_section .et_pb_button_5:hover:before,body #page-container .et_pb_section .et_pb_button_6:hover:before,body #page-container .et_pb_section .et_pb_button_7:hover:before,body #page-container .et_pb_section .et_pb_button_8:hover:before,body #page-container .et_pb_section .et_pb_button_9:hover:before,body #page-container .et_pb_section .et_pb_button_10:hover:before,body #page-container .et_pb_section .et_pb_button_11:hover:before,body #page-container .et_pb_section .et_pb_button_12:hover:before,body #page-container .et_pb_section .et_pb_button_13:hover:before,body #page-container .et_pb_section .et_pb_button_14:hover:before,body #page-container .et_pb_section .et_pb_button_15:hover:before,body #page-container .et_pb_section .et_pb_button_16:hover:before{margin-left:.3em;right:auto;margin-left:-1.3em}.et_pb_image_0 .et_pb_image_wrap img,.et_pb_image_1 .et_pb_image_wrap img,.et_pb_image_2 .et_pb_image_wrap img{width:auto}.et_pb_column_0,.et_pb_column_7,.et_pb_column_8{padding-top:30px}}@media only screen and (max-width:767px){body #page-container .et_pb_section .et_pb_button_0:before,body #page-container .et_pb_section .et_pb_button_1:before,body #page-container .et_pb_section .et_pb_button_2:before,body #page-container .et_pb_section .et_pb_button_3:before,body #page-container .et_pb_section .et_pb_button_4:before,body #page-container .et_pb_section .et_pb_button_5:before,body #page-container .et_pb_section .et_pb_button_6:before,body #page-container .et_pb_section .et_pb_button_7:before,body #page-container .et_pb_section .et_pb_button_8:before,body #page-container .et_pb_section .et_pb_button_9:before,body #page-container .et_pb_section .et_pb_button_10:before,body #page-container .et_pb_section .et_pb_button_11:before,body #page-container .et_pb_section .et_pb_button_12:before,body #page-container .et_pb_section .et_pb_button_13:before,body #page-container .et_pb_section .et_pb_button_14:before,body #page-container .et_pb_section .et_pb_button_15:before,body #page-container .et_pb_section .et_pb_button_16:before{line-height:inherit;font-size:inherit!important;margin-left:-1.3em;right:auto;display:inline-block;opacity:1;content:attr(data-icon);font-family:ETmodules!important;font-weight:400!important}body #page-container .et_pb_section .et_pb_button_0:after,body #page-container .et_pb_section .et_pb_button_1:after,body #page-container .et_pb_section .et_pb_button_2:after,body #page-container .et_pb_section .et_pb_button_3:after,body #page-container .et_pb_section .et_pb_button_4:after,body #page-container .et_pb_section .et_pb_button_5:after,body #page-container .et_pb_section .et_pb_button_6:after,body #page-container .et_pb_section .et_pb_button_7:after,body #page-container .et_pb_section .et_pb_button_8:after,body #page-container .et_pb_section .et_pb_button_9:after,body #page-container .et_pb_section .et_pb_button_10:after,body #page-container .et_pb_section .et_pb_button_11:after,body #page-container .et_pb_section .et_pb_button_12:after,body #page-container .et_pb_section .et_pb_button_13:after,body #page-container .et_pb_section .et_pb_button_14:after,body #page-container .et_pb_section .et_pb_button_15:after,body #page-container .et_pb_section .et_pb_button_16:after{display:none}body #page-container .et_pb_section .et_pb_button_0:hover:before,body #page-container .et_pb_section .et_pb_button_1:hover:before,body #page-container .et_pb_section .et_pb_button_2:hover:before,body #page-container .et_pb_section .et_pb_button_3:hover:before,body #page-container .et_pb_section .et_pb_button_4:hover:before,body #page-container .et_pb_section .et_pb_button_5:hover:before,body #page-container .et_pb_section .et_pb_button_6:hover:before,body #page-container .et_pb_section .et_pb_button_7:hover:before,body #page-container .et_pb_section .et_pb_button_8:hover:before,body #page-container .et_pb_section .et_pb_button_9:hover:before,body #page-container .et_pb_section .et_pb_button_10:hover:before,body #page-container .et_pb_section .et_pb_button_11:hover:before,body #page-container .et_pb_section .et_pb_button_12:hover:before,body #page-container .et_pb_section .et_pb_button_13:hover:before,body #page-container .et_pb_section .et_pb_button_14:hover:before,body #page-container .et_pb_section .et_pb_button_15:hover:before,body #page-container .et_pb_section .et_pb_button_16:hover:before{margin-left:.3em;right:auto;margin-left:-1.3em}.et_pb_image_0 .et_pb_image_wrap img,.et_pb_image_1 .et_pb_image_wrap img,.et_pb_image_2 .et_pb_image_wrap img{width:auto}.et_pb_column_0,.et_pb_column_7,.et_pb_column_8{padding-top:30px}}</style><script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://golfcentrumdebatouwe.nl/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>	
+	</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1792673161 -->

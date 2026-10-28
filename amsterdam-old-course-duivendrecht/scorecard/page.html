@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<script></script>
+<style type="text/css">
+	body{width:100%;overflow:hidden;}
+	.css_loader{position:fixed;top:0;bottom:0;left:0;right:0;z-index:2000;background: #fff;}
+	.css_loader i,.css_loader i::before,.css_loader i::after{position: absolute;top: 50%;left: 50%;border:1px solid rgba(0,0,0,.2);border-left-color: rgba(0,0,0,1);border-radius: 974px;-o-border-radius: 974px;-ms-border-radius: 974px;-webkit-border-radius: 974px;-moz-border-radius: 974px;}
+	.css_loader i{margin: -24px 0 0 -24px;height: 49px;width:49px;
+		animation: cssload-rotate 1150ms linear infinite;
+		-o-animation: cssload-rotate 1150ms linear infinite;
+		-ms-animation: cssload-rotate 1150ms linear infinite;
+		-webkit-animation: cssload-rotate 1150ms linear infinite;
+		-moz-animation: cssload-rotate 1150ms linear infinite;
+	}
+	.css_loader i:before{content: "";margin: -22px 0 0 -22px;height: 43px;width: 43px;
+		animation: cssload-rotate 1150ms linear infinite;
+		-o-animation: cssload-rotate 1150ms linear infinite;
+		-ms-animation: cssload-rotate 1150ms linear infinite;
+		-webkit-animation: cssload-rotate 1150ms linear infinite;
+		-moz-animation: cssload-rotate 1150ms linear infinite;
+	}
+	.css_loader i:after{content: "";margin: -28px 0 0 -28px;height: 55px;width: 55px;
+		animation: cssload-rotate 2300ms linear infinite;
+		-o-animation: cssload-rotate 2300ms linear infinite;
+		-ms-animation: cssload-rotate 2300ms linear infinite;
+		-webkit-animation: cssload-rotate 2300ms linear infinite;
+		-moz-animation: cssload-rotate 2300ms linear infinite;
+	}
+	@keyframes cssload-rotate{100%{transform: rotate(360deg);}}
+	@-o-keyframes cssload-rotate{100%{-o-transform: rotate(360deg);}}
+	@-ms-keyframes cssload-rotate{100%{-ms-transform: rotate(360deg);}}
+	@-webkit-keyframes cssload-rotate{100%{-webkit-transform: rotate(360deg);}}
+	@-moz-keyframes cssload-rotate{100%{-moz-transform: rotate(360deg);}}
+</style>
+
+
+
+
+
+
+	<title>Baanstatus en scorekaart</title>
+	
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link type="text/css" rel="stylesheet" href="/css/style_less.css">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.amsterdamoldcourse.nl/de-baan/scorekaart/">
+<link rel="canonical" href="https://www.amsterdamoldcourse.nl/de-baan/scorekaart/">
+
+
+</head>
+<body class="page-387 tmpl-content">
+
+<i class="css_loader"><i></i></i>
+
+	
+	<div id="page">
+		
+
+<div class="login_popup">
+	
+<script type="text/javascript">var userLogin = false; </script><div class="custom_login_link"><li><a href="#" class="login_popup_button"><span>Log in</span></a></li></div>
+	
+<form id="loginoutform" class="fw_form" method="post" action="https://api.e-golf4u.nl/auth/login">
+  	  <div class="row">
+
+  	      <div id="loginError" class="login-error"></div>
+    <input type="hidden" value="true" name="login">
+
+      <div class="fw_form_row">
+        <label for="username" class="fw_form_label">Gebruikersnaam</label>
+        <div class="fw_form_field">
+          <input type="text" class="form-control" name="APIusername" id="APIusername">
+        </div>
+      </div>
+
+      <div class="fw_form_row">
+        <label for="password" class="fw_form_label">Wachtwoord</label>
+        <div class="fw_form_field">
+          <div class="input-group">
+            <input type="password" class="form-control" name="APIpassword" id="APIpassword">
+            
+            <span class="input-group-btn">
+              <a target="_blank" href="http://aoc.e-golf4u.nl/leden/iframe/default/wachtwoordvergeten" class="btn btn-default btn-xs" type="button"><span class="glyphicon glyphicon-question-sign"></span></a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+  
+
+
+      <div class="fw_form_row">
+ 			<input type="submit" value="Inloggen" class=" fw_form_submit_link loginBtn btn btn-sm btn-default" name="submitBtn">
+      </div>
+	  </div>
+<!-- .row -->
+	<input type="hidden" name="environment" value="aoc">
+</form>
+</div>
+<div class="custom-header-sticky-3-placeholder"></div>
+<header xmlns:default="http://www.w3.org/2000/svg" class="custom-header-sticky-3 nr1" data-ips-ref="block">
+	<div class="topbar" data-ips-ref="topbar">
+		<div class="block-container" data-ips-ref="block container">
+			<div class="row">
+				<div class="logo" data-ips-ref="logo">
+					
+<a href="/"><img src="/files/aoc-kleur-rgb.svg" alt="AOC_kleur_rgb"></a>
+				</div>
+				<div class="topmenu" data-ips-ref="topmenu">
+					<div class="show_subtext">
+						<div class="fw_main_wrapper">
+							<ul>
+								<li class="custom_item"><a href="#">Baanstatus</a></li>
+							</ul>
+						</div>						
+						<div class="subtext content agenda-status nr1">
+							
+            <div id="HUr8lGJX8dUFiiLhukjY8jwID7769GhL">
+<div class="list group"><div class="list tab 02670134_button tab_button fw_active">aoc</div></div>
+<div class="02670134_content list_items">
+                    <div class="status_item item_1 clearfix" id="02670134">
+                        <div class="ttl">Baan</div>
+                        <div class="txt">Open</div>
+                    </div>
+                    <div class="status_item item_2 clearfix">
+                        <div class="ttl">Qualifying</div>
+                        <div class="txt">Ja</div>
+                    </div>
+                    <div class="status_item item_3 clearfix">
+                        <div class="ttl">Vervoer</div>
+                        <div class="txt">Draagtassen en trolleys toegestaan</div>
+                    </div>
+                    <div class="status_item item_4 clearfix">
+                        <div class="ttl">Greens</div>
+                        <div class="txt">Zomer</div>
+                    </div>
+                    <div class="status_item item_5 clearfix">
+                        <div class="ttl">Driving range</div>
+                        <div class="txt">Open</div>
+                    </div>
+                    <p>Laatste update: 27-10-2026</p>
+                    <p>De bestaande gele tee hole 9 is tijdelijk verplaatst naar de linkerkant naast het pad.  Ivm diverse natte plekken op de fairways en in de baan is het niet mogelijk om met buggy's in de baan te rijden we houden het in de gaten zodra het mogelijk is passen wij de baanstatus aan.     </p>
+                </div>
+</div>
+<script>
+                    document.addEventListener('DOMContentLoaded', function(event) {
+                        var my_div = document.getElementById('HUr8lGJX8dUFiiLhukjY8jwID7769GhL')
+                        var tab_content_02670134 = my_div.getElementsByClassName('02670134_content');
+                        var tab_button_02670134 = my_div.getElementsByClassName('02670134_button');
+                        const list_items = my_div.querySelectorAll('.list_items');
+                        const tab_button = my_div.querySelectorAll('.tab_button');
+
+                        for (let button of tab_button_02670134) {
+                            button.addEventListener('click', function() {
+        
+                                for (const item of list_items) {
+                                    item.style.display = 'none';
+                                }
+
+                                for (const item of tab_button) {
+                                    item.classList.remove('fw_active');
+                                }
+
+                                for (let content of tab_content_02670134) {
+                                    content.style.display = '';
+                                }
+
+                                button.classList.add('fw_active')
+                            });
+                        }
+                    });
+            </script>
+						</div>
+					</div>
+					
+<div class="fw_main_wrapper"><ul>
+<li class="fw_page_848"><a href="/natuur/"><span>Natuur</span></a></li>
+<li class="fw_page_1 fw_alt"><a href="/"><span>Home</span></a></li>
+<li class="fw_page_7"><a href="/contact-/"><span>Contact </span></a></li>
+</ul></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottombar" data-ips-ref="bottombar">
+		<div class="block-container" data-ips-ref="block container">
+			<div class="row nowrap vi-bottom">
+				<div class="menu" data-ips-ref="menu">
+					<div class="menu-frame">
+						
+<div class="fw_main_wrapper"><ul>
+<li class="fw_page_167 fw_active fw_subs">
+<a href="/de-baan/"><span>De baan</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_305"><a href="/de-baan/starttijd-reserveren-teetime-reservation/"><span>Starttijd reserveren | Teetime reservation</span></a></li>
+<li class="fw_page_387 fw_alt fw_active"><a href="/de-baan/scorekaart/"><span>Scorekaart</span></a></li>
+<li class="fw_page_168"><a href="/de-baan/overzicht-holes/"><span>Overzicht holes</span></a></li>
+<li class="fw_page_169 fw_alt"><a href="/de-baan/handicapslagentabellen/"><span>Handicapslagentabellen</span></a></li>
+<li class="fw_page_187"><a href="/de-baan/geschiedenis/"><span>Geschiedenis</span></a></li>
+<li class="fw_page_203 fw_alt"><a href="/de-baan/geo-duurzaam-golfbaanbeheer/"><span>GEO: duurzaam golfbaanbeheer</span></a></li>
+<li class="fw_page_209"><a href="/localrules"><span>Local rules, AED en onweer</span></a></li>
+<li class="fw_page_282 fw_alt"><a href="/de-baan/video/"><span>Video</span></a></li>
+<li class="fw_page_660"><a href="/de-baan/baanetiquette/"><span>Baanetiquette</span></a></li>
+<li class="fw_page_472 fw_alt"><a href="/de-baan/greenkeeping/"><span>Greenkeeping</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_204 fw_alt fw_subs">
+<a href="/de-club/"><span>De club</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_205"><a href="/de-club/bestuur-/"><span>Bestuur </span></a></li>
+<li class="fw_page_301 fw_alt"><a href="/de-club/vrijwilligersdesk/"><span>Vrijwilligersdesk</span></a></li>
+<li class="fw_page_311"><a href="/de-club/world-handicap-system-whs-/"><span>World Handicap System (WHS)</span></a></li>
+<li class="fw_page_281 fw_alt"><a href="/de-club/etiquette/"><span>Etiquette</span></a></li>
+<li class="fw_page_268"><a href="/vereniging/bridge/"><span>Bridge</span></a></li>
+<li class="fw_page_208 fw_alt"><a href="/vereniging/clubnieuws/"><span>Clubnieuws</span></a></li>
+<li class="fw_page_267"><a href="/de-club/privacy-statement/"><span>Privacy statement</span></a></li>
+<li class="fw_page_547 fw_alt"><a href="/de-club/vertrouwenspersoon/"><span>Vertrouwenspersoon</span></a></li>
+<li class="fw_page_768"><a href="/de-club/ngf-reglementen/"><span>NGF Reglementen</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_172 fw_subs">
+<a href="/bezoekersinformatie/"><span>Bezoekersinformatie</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_214"><a href="/bezoekersinformatie/bezoekersinformatie-en-greenfee/"><span>Bezoekersinformatie en greenfee</span></a></li>
+<li class="fw_page_217 fw_alt"><a href="/bezoekersinformatie/stichting-handicart/"><span>Stichting Handicart</span></a></li>
+<li class="fw_page_218"><a href="/bezoekersinformatie/9-holes-verbond/"><span>9-holes verbond</span></a></li>
+<li class="fw_page_251 fw_alt"><a href="/bezoekersinformatie/visitors-information/"><span>Visitors information</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_848 fw_alt fw_subs">
+<a href="/natuur/"><span>Natuur</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_266"><a href="/natuur/een-natuurgebied-waar-golf-wordt-gespeeld/"><span>Een natuurgebied waar golf wordt gespeeld</span></a></li>
+<li class="fw_page_850 fw_alt"><a href="/natuur/vogels/"><span>Vogels</span></a></li>
+<li class="fw_page_851"><a href="/natuur/flora-en-fauna/"><span>Flora en fauna</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_201 fw_subs">
+<a href="/horeca/"><span>Horeca</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_211"><a target="_blank" href="/horeca/vergaderen-op-aoc-/"><span>Vergaderen op AOC </span></a></li>
+<li class="fw_page_580 fw_alt"><a href="/concert"><span>Parkeren en dineren</span></a></li>
+<li class="fw_page_641"><a href="/vacature"><span>Vacature horeca</span></a></li>
+<li class="fw_page_649 fw_alt"><a href="/horeca/opwaarderen-saldo-horeca/"><span>Opwaarderen saldo horeca</span></a></li>
+<li class="fw_page_651"><a href="/horeca/openingstijden-horeca-/"><span>Openingstijden horeca </span></a></li>
+<li class="fw_page_652 fw_alt"><a href="/horeca/reserveren-lunch-of-diner/"><span>Reserveren lunch of diner</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_233 fw_alt fw_subs">
+<a href="/#"><span>Golf Academy</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_390"><a href="/golf-academy/andrew-hastie/"><span>Andrew Hastie</span></a></li>
+<li class="fw_page_444 fw_alt"><a href="/golf-academy/jacqueline-kooiman/"><span>Jacqueline Kooiman</span></a></li>
+<li class="fw_page_769"><a href="/golf-academy/tarieven/"><span>Tarieven</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_178 fw_subs">
+<a href="/lid-worden/"><span>Lid worden</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_174"><a href="/lid-worden/lidmaatschappen/"><span>Lidmaatschappen</span></a></li>
+<li class="fw_page_554 fw_alt"><a href="/lid-worden/golf-in-the-netherlands/"><span>Golf in The Netherlands</span></a></li>
+<li class="fw_page_659"><a href="/lid-worden/alumni-vereniging-aoc-/"><span>Alumni Vereniging AOC </span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_7 fw_alt"><a href="/contact-/"><span>Contact </span></a></li>
+</ul></div>
+					</div>
+					<a href="#" id="mobile-menu-trigger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				
+				<div class="language">
+					<div class="hidden-xs visible-md" data-ips-ref="language">
+						
+					</div>
+				</div>
+				<div class="hidden-xs visible-md">
+					<div class="search">
+						<a class="trigger" data-ips-ref="search trigger">
+							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsxlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve">
+								<g id="search_1_">
+									<g id="search">
+										<path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343    c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88    c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593    c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789    C9.2,24.382,4.81,19.991,4.81,14.593z"></path>
+									</g>
+								</g>
+							</svg>
+						</a>
+						<div class="listener">
+							
+			<form action="/zoeken/" method="get" class="fw_search_form fw_inside">
+				<div class="fw_label" style="display:none;"><label for="search_936fb8a837d4257db4a73dab3ec27648">Zoeken</label></div>
+				<div class="fw_field"><input type="text" name="search" value="" id="search_936fb8a837d4257db4a73dab3ec27648"></div>
+				<div class="fw_button"><input type="submit" value="Zoeken"></div>
+			</form>
+			
+							<div class="results"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+		
+<section class="hero-basic nr1" data-ips-ref="block">
+	<div class="block-container" data-ips-ref="block container">
+		
+<div class="block-parallax parallax" data-ips-ref="block image">
+	<div class="parallax-image">
+<img src="/files/thumbnails/0-1.2200x700x1.jpg" alt="0-1">	</div>
+</div>
+		<div class="inner">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+						<div class="hero-text" data-ips-ref="field">
+							
+							
+<div class="title" data-ips-ref="title">
+	<h1>Baanstatus en scorekaart	</h1>
+</div>
+							
+							
+<div class="seperator" data-ips-ref="seperator">
+
+
+
+
+
+<hr>
+</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		
+		
+		<main>
+			
+
+
+<section class="content-1col nr1" data-ips-ref="block">
+	
+	<div class="block-container" data-ips-ref="block container">
+		<div class="row">
+			<div class="col col-lg-10 col-lg-offset-1 col-xl-8 col-xl-offset-2 span-xs">
+				
+				
+<div class="subheading-text" data-ips-ref="subheading text">
+
+
+
+
+
+
+<p>
+
+<script src="https://www.baanstatus.nl/aoc?js"></script>
+</p>
+<p><a href="/files/aoc-scorecard-binnenzijde-def-a6-aug2019-v1-3mmafloop.pdf" target="_blank"><span>Klik hier voor de scorekaart (pdf).</span></a></p>
+<p> </p>
+<p><a href="/files/schermafbeelding-2019-03-20-om-07-16-33-2.png" data-href="#FILE-LINK:538#" target="_blank">Klik hier voor de plattegrond</a>. </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p style="text-align: center;"><img src="/files/schermafbeelding-2021-11-18-om-17-22-06.png" alt="" width="300" height="58"></p>
+<p> </p>
+<p style="text-align: left;"> </p>
+<p style="text-align: left;"><strong>Speel ready golf!</strong> </p>
+<p style="text-align: left;">Om een ronde op Amsterdam Old Course voor iedereen zo plezierig mogelijk te maken verzoeken we leden en gasten om <em>ready golf</em> te spelen, niet alleen in wedstrijden maar in elk rondje. <em>Ready golf</em> zorgt er voor dat iedereen een plezierige ronde in een normaal tempo kan spelen, ook als het druk is.</p>
+<p style="text-align: left;"><em>Ready golf</em> betekent niet dat je gehaast moet spelen maar wel dat je efficiënt moet spelen, geen onnodig tijdverlies maakt. Ready golf leidt vaak tot beter spel omdat je minder hoeft te wachten, minder moe wordt, geconcentreerd blijft. </p>
+<p style="text-align: left;">Hieronder wordt uitgelegd hoe <em>ready golf</em> werkt. </p>
+<p style="text-align: left;"> </p>
+<ol style="text-align: left;">
+<li><strong>Speel je bal zodra het veilig is om dat te doen, ook al ligt je medespeler nog verder van de hole dan jij. </strong></li>
+<li><strong>Speel alvast je eigen bal als een ander na een bunkerschot eerst nog de bunker moet aanharken. Of hark de bunker aan voor je medespeler zodat hij of zij alvast kan slaan.</strong></li>
+<li><strong>Chip alvast als je medespeler de bal over de green geslagen heeft en veel tijd nodig heeft om bij de bal te komen en te spelen.</strong></li>
+<li><strong>Als je bij de tee aankomt en je hebt de eer, sla dan eerst af en vul pas je score van de vorige hole in als de anderen afslaan. </strong></li>
+<li><strong>Als je moet wachten op de tee, laat dan eerst de spelers afslaan die minder ver slaan, ook al hebben ze misschien niet de eer. Daarna kunnen de longhitters slaan.</strong></li>
+<li><strong>Sommige spelers moeten wachten totdat de green verlaten is, maar flightgenoten die de green niet kunnen halen kunnen wel alvast slaan.</strong></li>
+<li><strong>In sommige gevallen is het slim om je eigen bal alvast te spelen voordat je een ander helpt moet zoeken; de bal van de ander wordt in de tussentijd soms al gevonden.</strong></li>
+<li><strong>Hole een korte putt meteen uit. Marken, opnemen en terugplaatsen kost tijd. </strong></li>
+</ol>
+<p style="text-align: left;"> </p>
+<p style="text-align: left;">Volg verder ook deze bekende etiquetteregels om snel spel te bevorderen:</p>
+<p style="text-align: left;"> </p>
+<ol style="text-align: left;">
+<li><strong>Houd altijd aansluiting met de flight voor je. Het gaat er niet om of je sneller bent dan de flight achter je maar of je even snel speelt als de flight voor je. Zo voorkom je opstoppingen direct achter jouw flight of een paar holes achter jouw flight.</strong></li>
+<li><strong>Zet je tas of buggie voor het putten aan de goede kant van de green (in de richting van de volgende tee).</strong></li>
+<li><strong>Als er maar enige twijfel is of je je bal gaat vinden, sla dan een provisional. Zorg dat je een tweede bal bij je hebt en dat je niet eerst naar je tas moet lopen.</strong></li>
+<li><strong>Noteer je score pas als je bij de volgende afslagplaats bent.</strong></li>
+<li><strong>De windrichting bepalen, de afstand meten: doe dit soort dingen zo snel mogelijk zodat je klaar bent om te slaan zodra je kunt slaan.</strong></li>
+<li><strong>Lees de lijn van je putt terwijl een ander putt of chipt en niet pas als het jouw beurt is.</strong></li>
+<li><strong>Werk met de pro aan een snelle pre-shot routine met hooguit één oefenswing.</strong></li>
+<li><strong>Zoek niet te lang naar een bal in het water als duidelijk is dat je moet gaan droppen. </strong></li>
+</ol>
+<p style="text-align: left;"> </p>
+<p style="text-align: left;">Met ready golf en aandacht voor de etiquette is een 9-holes ronde met drie personen prima te doen in twee uur tijd of minder. Veel plezier en veel dank voor uw medewerking!</p>
+
+</div>
+			</div>
+		</div>
+		<div class="row content" data-ips-ref="text">
+			<div class="col col-lg-10 col-lg-offset-1 col-xl-8 col-xl-offset-2">
+				
+
+
+
+
+
+<p><img src="/files/schermafbeelding-2019-03-20-om-07-16-33-2.png" alt="" width="1080" height="1524"></p>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+		</main>
+		
+
+<footer class="footer-1 nr1" data-ips-ref="block">
+	<div class="main" data-ips-ref="main">
+		<div class="block-container" data-ips-ref="block container">
+			<div class="row">
+				<div class="col col-md-6 col-lg-3">
+					
+<h4>Websites</h4>
+					
+<div class="text">
+
+
+
+
+
+
+<p><a href="https://www.ngf.nl/" target="_blank">Website NGF<br></a><a href="https://www.golf.nl/ngf-competitie?s=178165&amp;l=2000&amp;c=178178&amp;g=178189&amp;cl=14666&amp;t=188168&amp;sc=l" target="_blank">Website NGF Competitie</a></p>
+<p><a href="https://www.golf.nl/" target="_blank">Website GOLF.NL</a></p>
+<p><a href="http://www.europeantour.com/" target="_blank">Website European Tour</a></p>
+<p><a href="http://ladieseuropeantour.com/" target="_blank">Website Ladies European Tour</a></p>
+<p> </p>
+<p> </p>
+<p>Standing = Voorrang op de 1ste tee (baan is open)</p>
+<p> </p>
+
+</div>
+				</div>
+				<div class="col col-md-6 col-lg-3">
+					
+					
+<div class="text">
+
+
+
+
+
+
+<p><img src="/files/ngfklein.png" alt="" width="150" height="69"></p>
+<p> </p>
+
+</div>
+				</div>
+				<div class="col col-md-6 col-lg-3">
+					
+					
+<div class="text" data-ips-ref="text">
+
+
+
+
+
+
+<p><img src="/files/schermafbeelding-2017-09-16-om-08-53-34.png" alt="" width="99" height="197"></p>
+<p> </p>
+<p> </p>
+
+</div>
+				</div>
+				<div class="col col-md-6 col-lg-3">
+					
+<h4 data-ips-ref="title">Contact</h4>
+					
+<div class="text" data-ips-ref="text">
+
+
+
+
+
+
+<p><strong>Amsterdam Old Course<br></strong>Zwarte Laantje 4<br>1114 BA Amsterdam-Duivendrecht<br>E-mail: <a href="mailto:info@amsterdamoldcourse.nl">info@amsterdamoldcourse.nl</a><br>Telefoon: 020-6943650<br><br>Het secretariaat is open tot 14:00 uur. Dinsdag gesloten. Indien u een afspraak wilt maken kan dat door een mail te sturen naar secretariaat@amsterdamoldcourse.nl<br><br></p>
+<p><a href="/disclaimer/" data-href="#PAGE-LINK:216#" target="_blank">Disclaimer</a></p>
+
+</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="img" data-ips-ref="logo">
+						
+<img src="/files/logo-aoc-nieuw.png" alt="Logo AOC Nieuw">
+					</div>
+					<div class="seperator" data-ips-ref="seperator"></div>
+					<div class="social" data-ips-ref="social media icon">
+						
+
+
+
+
+
+<p><span style="color: #ff0000;"><a href="https://www.facebook.com/amsterdamoldcourse/" style="color: #ff0000;" target="_blank"><img src="/files/facebook.svg" alt=""></a>  <a href="https://twitter.com/amsterdamoc" style="color: #ff0000;" target="_blank"><img src="/files/twitter.svg" alt=""></a>    <a href="https://www.instagram.com/amsterdamoldcourse/" target="_blank"><span style="color: #ffffff;"><img src="/files/237-2378905-ig-png-logo-svg-transparent-instagram-logo-png.jpg" alt="" width="30" height="30"></span></a></span></p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<div class="bottom">
+
+
+
+
+
+<p>© 2025 AOC © All rights Reserved.</p>
+</div>
+</footer>
+
+
+		
+
+<div id="mobile-menu">
+	<div id="mobile-menu-window">
+		<a id="mobile-menu-close" href="#"></a>
+		<div id="mobile-menu-frame">
+			<div class="all-content">
+				<div class="left-content">
+					<div class="results"></div>
+					<a class="button small back" href="#">Terug &gt;</a>
+				</div>
+				<div class="right-content">
+					<div class="language">
+						
+					</div>
+					<div class="search">
+						
+			<form action="/zoeken/" method="get" class="fw_search_form fw_inside">
+				<div class="fw_label" style="display:none;"><label for="search_936fb8a837d4257db4a73dab3ec27648">Zoeken</label></div>
+				<div class="fw_field"><input type="text" name="search" value="" id="search_936fb8a837d4257db4a73dab3ec27648"></div>
+				<div class="fw_button"><input type="submit" value="Zoeken"></div>
+			</form>
+			
+					</div>
+					<div class="topmenu"></div>
+					<div class="menu">
+						
+<div class="fw_main_wrapper"><ul>
+<li class="fw_page_167 fw_active fw_subs">
+<a href="/de-baan/"><span>De baan</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_305"><a href="/de-baan/starttijd-reserveren-teetime-reservation/"><span>Starttijd reserveren | Teetime reservation</span></a></li>
+<li class="fw_page_387 fw_alt fw_active"><a href="/de-baan/scorekaart/"><span>Scorekaart</span></a></li>
+<li class="fw_page_168"><a href="/de-baan/overzicht-holes/"><span>Overzicht holes</span></a></li>
+<li class="fw_page_169 fw_alt"><a href="/de-baan/handicapslagentabellen/"><span>Handicapslagentabellen</span></a></li>
+<li class="fw_page_187"><a href="/de-baan/geschiedenis/"><span>Geschiedenis</span></a></li>
+<li class="fw_page_203 fw_alt"><a href="/de-baan/geo-duurzaam-golfbaanbeheer/"><span>GEO: duurzaam golfbaanbeheer</span></a></li>
+<li class="fw_page_209"><a href="/localrules"><span>Local rules, AED en onweer</span></a></li>
+<li class="fw_page_282 fw_alt"><a href="/de-baan/video/"><span>Video</span></a></li>
+<li class="fw_page_660"><a href="/de-baan/baanetiquette/"><span>Baanetiquette</span></a></li>
+<li class="fw_page_472 fw_alt"><a href="/de-baan/greenkeeping/"><span>Greenkeeping</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_204 fw_alt fw_subs">
+<a href="/de-club/"><span>De club</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_205"><a href="/de-club/bestuur-/"><span>Bestuur </span></a></li>
+<li class="fw_page_301 fw_alt"><a href="/de-club/vrijwilligersdesk/"><span>Vrijwilligersdesk</span></a></li>
+<li class="fw_page_311"><a href="/de-club/world-handicap-system-whs-/"><span>World Handicap System (WHS)</span></a></li>
+<li class="fw_page_281 fw_alt"><a href="/de-club/etiquette/"><span>Etiquette</span></a></li>
+<li class="fw_page_268"><a href="/vereniging/bridge/"><span>Bridge</span></a></li>
+<li class="fw_page_208 fw_alt"><a href="/vereniging/clubnieuws/"><span>Clubnieuws</span></a></li>
+<li class="fw_page_267"><a href="/de-club/privacy-statement/"><span>Privacy statement</span></a></li>
+<li class="fw_page_547 fw_alt"><a href="/de-club/vertrouwenspersoon/"><span>Vertrouwenspersoon</span></a></li>
+<li class="fw_page_768"><a href="/de-club/ngf-reglementen/"><span>NGF Reglementen</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_172 fw_subs">
+<a href="/bezoekersinformatie/"><span>Bezoekersinformatie</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_214"><a href="/bezoekersinformatie/bezoekersinformatie-en-greenfee/"><span>Bezoekersinformatie en greenfee</span></a></li>
+<li class="fw_page_217 fw_alt"><a href="/bezoekersinformatie/stichting-handicart/"><span>Stichting Handicart</span></a></li>
+<li class="fw_page_218"><a href="/bezoekersinformatie/9-holes-verbond/"><span>9-holes verbond</span></a></li>
+<li class="fw_page_251 fw_alt"><a href="/bezoekersinformatie/visitors-information/"><span>Visitors information</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_848 fw_alt fw_subs">
+<a href="/natuur/"><span>Natuur</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_266"><a href="/natuur/een-natuurgebied-waar-golf-wordt-gespeeld/"><span>Een natuurgebied waar golf wordt gespeeld</span></a></li>
+<li class="fw_page_850 fw_alt"><a href="/natuur/vogels/"><span>Vogels</span></a></li>
+<li class="fw_page_851"><a href="/natuur/flora-en-fauna/"><span>Flora en fauna</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_201 fw_subs">
+<a href="/horeca/"><span>Horeca</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_211"><a target="_blank" href="/horeca/vergaderen-op-aoc-/"><span>Vergaderen op AOC </span></a></li>
+<li class="fw_page_580 fw_alt"><a href="/concert"><span>Parkeren en dineren</span></a></li>
+<li class="fw_page_641"><a href="/vacature"><span>Vacature horeca</span></a></li>
+<li class="fw_page_649 fw_alt"><a href="/horeca/opwaarderen-saldo-horeca/"><span>Opwaarderen saldo horeca</span></a></li>
+<li class="fw_page_651"><a href="/horeca/openingstijden-horeca-/"><span>Openingstijden horeca </span></a></li>
+<li class="fw_page_652 fw_alt"><a href="/horeca/reserveren-lunch-of-diner/"><span>Reserveren lunch of diner</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_233 fw_alt fw_subs">
+<a href="/#"><span>Golf Academy</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_390"><a href="/golf-academy/andrew-hastie/"><span>Andrew Hastie</span></a></li>
+<li class="fw_page_444 fw_alt"><a href="/golf-academy/jacqueline-kooiman/"><span>Jacqueline Kooiman</span></a></li>
+<li class="fw_page_769"><a href="/golf-academy/tarieven/"><span>Tarieven</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_178 fw_subs">
+<a href="/lid-worden/"><span>Lid worden</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_174"><a href="/lid-worden/lidmaatschappen/"><span>Lidmaatschappen</span></a></li>
+<li class="fw_page_554 fw_alt"><a href="/lid-worden/golf-in-the-netherlands/"><span>Golf in The Netherlands</span></a></li>
+<li class="fw_page_659"><a href="/lid-worden/alumni-vereniging-aoc-/"><span>Alumni Vereniging AOC </span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_7 fw_alt"><a href="/contact-/"><span>Contact </span></a></li>
+</ul></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+	
+	
+<link type="text/css" rel="stylesheet" href="/css/custom_less.css">
+	
+<script src="/lib/js/jquery/jquery-3.2.1.min.js"></script>
+<script src="/lib/js/forms/FW_Search_Form.min.js"></script>
+<script src="/js/google-font-loader.js"></script>
+<script src="/js/custom.min.js"></script>
+<script src="/lib/js/magnific-popup/magnific-popup.js"></script>
+<script src="/lib/js/royalslider/royalslider.js"></script>
+	
+<script src="/js/all.min.js"></script>
+
+
+</body>
+</html>

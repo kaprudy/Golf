@@ -1,0 +1,1436 @@
+<!doctype html>
+
+<style type="text/css">
+	.login-submit {
+		background: #006cb4;
+	    color: #fff;
+	    text-align: center;
+	    font-weight: bold;
+	    display: block;
+	    font-size: 1.1em;
+	    border-radius: 3px;
+    	padding: 0px 15px;
+    	height: 30px;
+        line-height: 30px;
+        clear: both;
+	}
+</style>
+
+<html lang="nl-NL">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title> &raquo; Baan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Eenvoud Media">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="mask-icon" href="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/favicons/safari-pinned-tab.svg" color="#48004a">
+	<link rel="manifest" href="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/favicons/manifest.json">
+	<link rel="shortcut icon" href="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/favicons/favicon.ico">
+	<meta name="msapplication-config" content="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#48004a">
+
+	<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-61876092-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	<meta name='robots' content='max-image-preview:large' />
+		<!-- Google Tag Manager with Consent Mode v2 -->
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+
+			// Global defaults: functionality + security always granted (no region restriction)
+			gtag('consent', 'default', {"functionality_storage":"granted","security_storage":"granted"});
+
+			// EER + UK defaults: strict denied for ad/analytics
+			// Outside EER, Google falls back to granted (no restriction sent)
+			gtag('consent', 'default', {"personalization_storage":"denied","analytics_storage":"granted","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","region":["BE","BG","CZ","DK","DE","EE","IE","EL","ES","FR","HR","IT","CY","LV","LT","LU","HU","MT","NL","AT","PL","PT","RO","SI","SK","FI","SE","IS","LI","NO","GB"]});
+
+			// Replay previously stored consent before GTM loads.
+			//
+			// Contract with the banner tag (lives in GTM, not in this plugin):
+			//   localStorage.cookie_consent = encodeURIComponent(JSON.stringify({
+			//     analytics_storage:       'granted' | 'denied',
+			//     ad_storage:              'granted' | 'denied',
+			//     ad_user_data:            'granted' | 'denied',
+			//     ad_personalization:      'granted' | 'denied',
+			//     personalization_storage: 'granted' | 'denied',
+			//     functionality_storage:   'granted',
+			//     security_storage:        'granted'
+			//   }))
+			//
+			// Cookie fallback uses the same value under the cookie name `cookie_consent`.
+			// Only known keys with values 'granted'/'denied' are forwarded to gtag.
+			(function() {
+				var ALLOWED_KEYS = [
+					'ad_storage',
+					'ad_user_data',
+					'ad_personalization',
+					'analytics_storage',
+					'personalization_storage',
+					'functionality_storage',
+					'security_storage'
+				];
+
+				var savedConsent = null;
+				try {
+					savedConsent = window.localStorage && localStorage.getItem('cookie_consent');
+				} catch (e) {}
+
+				if (!savedConsent) {
+					var rows = document.cookie ? document.cookie.split('; ') : [];
+					for (var i = 0; i < rows.length; i++) {
+						if (rows[i].indexOf('cookie_consent=') === 0) {
+							savedConsent = rows[i].substring('cookie_consent='.length);
+							break;
+						}
+					}
+				}
+
+				if (!savedConsent) {
+					return;
+				}
+
+				var parsed;
+				try {
+					parsed = JSON.parse(decodeURIComponent(savedConsent));
+				} catch (e) {
+					return;
+				}
+				if (!parsed || typeof parsed !== 'object') {
+					return;
+				}
+
+				var clean = {};
+				var hasAny = false;
+				for (var k = 0; k < ALLOWED_KEYS.length; k++) {
+					var key = ALLOWED_KEYS[k];
+					var val = parsed[key];
+					if (val === 'granted' || val === 'denied') {
+						clean[key] = val;
+						hasAny = true;
+					}
+				}
+				if (hasAny) {
+					gtag('consent', 'update', clean);
+				}
+			})();
+
+			(function(w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					'gtm.start': new Date().getTime(),
+					event: 'gtm.js'
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-53Z9R329');
+		</script>
+		<!-- End Google Tag Manager -->
+	<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+		<!-- Cookie Banner Configuration -->
+		<script>
+			window.cookieBannerConfig = {"stylingMode":"native","primaryColor":"#016243","privacyPolicyUrl":"https://www.noordwijksegolfclub.nl/app/uploads/2020/06/Privacyverklaring-NGC-3.pdf","cookiePolicyUrl":"https://www.noordwijksegolfclub.nl/app/uploads/2020/06/Privacyverklaring-NGC-3.pdf","nativeH2Size":24,"nativeH3Size":20,"nativeBodySize":16,"popupDelay":0};
+		</script>
+		<!-- End Cookie Banner Configuration -->
+	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.noordwijksegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.noordwijksegolfclub.nl%2Fbaan%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.noordwijksegolfclub.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.noordwijksegolfclub.nl%2Fbaan%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.noordwijksegolfclub.nl/wp/wp-includes/css/dist/block-library/common.min.css?ver=7.1.3' media='all' />
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="wp-block-accordion-inline-css">
+.wp-block-accordion{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/accordion/style.min.css */
+</style>
+<style id="wp-block-accordion-item-inline-css">
+.wp-block-accordion-item.is-open>.wp-block-accordion-heading .wp-block-accordion-heading__toggle-icon{transform:rotate(45deg)}@media (prefers-reduced-motion:no-preference){.wp-block-accordion-item{transition:grid-template-rows .3s ease-out}.wp-block-accordion-item>.wp-block-accordion-heading .wp-block-accordion-heading__toggle-icon{transition:transform .2s ease-in-out}}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/accordion-item/style.min.css */
+</style>
+<style id="wp-block-archives-inline-css">
+.wp-block-archives{box-sizing:border-box}.wp-block-archives-dropdown label{display:block}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/archives/style.min.css */
+</style>
+<style id="wp-block-avatar-inline-css">
+.wp-block-avatar{line-height:0}.wp-block-avatar,.wp-block-avatar img{box-sizing:border-box}.wp-block-avatar.aligncenter{text-align:center}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/avatar/style.min.css */
+</style>
+<style id="wp-block-breadcrumbs-inline-css">
+.wp-block-breadcrumbs{box-sizing:border-box}.wp-block-breadcrumbs ol{flex-wrap:wrap;list-style:none}.wp-block-breadcrumbs li,.wp-block-breadcrumbs ol{align-items:center;display:flex;margin:0;padding:0}.wp-block-breadcrumbs li:not(:last-child):after{content:var(--separator,"/")/"";margin:0 .5em;opacity:.7}.wp-block-breadcrumbs span{color:inherit}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/breadcrumbs/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-button-css' href='https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/button/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-calendar-inline-css">
+.wp-block-calendar{text-align:center}.wp-block-calendar td,.wp-block-calendar th{border:1px solid;padding:.25em}.wp-block-calendar th{font-weight:400}.wp-block-calendar caption{background-color:inherit}.wp-block-calendar table{border-collapse:collapse;width:100%}.wp-block-calendar table.has-background th{background-color:inherit}.wp-block-calendar table.has-text-color th{color:inherit}.wp-block-calendar :where(table:not(.has-text-color)){color:#40464d}.wp-block-calendar :where(table:not(.has-text-color)) td,.wp-block-calendar :where(table:not(.has-text-color)) th{border-color:#ddd}:where(.wp-block-calendar table:not(.has-background) th){background:#ddd}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/calendar/style.min.css */
+</style>
+<style id="wp-block-categories-inline-css">
+.wp-block-categories{box-sizing:border-box}.wp-block-categories.alignleft{margin-right:2em}.wp-block-categories.alignright{margin-left:2em}.wp-block-categories.wp-block-categories-dropdown.aligncenter{text-align:center}.wp-block-categories .wp-block-categories__label:not(.screen-reader-text){display:block;width:100%}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/categories/style.min.css */
+</style>
+<style id="wp-block-comment-author-name-inline-css">
+.wp-block-comment-author-name{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/comment-author-name/style.min.css */
+</style>
+<style id="wp-block-comment-content-inline-css">
+.comment-awaiting-moderation{display:block;font-size:.875em;line-height:1.5}.wp-block-comment-content{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/comment-content/style.min.css */
+</style>
+<style id="wp-block-comment-date-inline-css">
+.wp-block-comment-date{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/comment-date/style.min.css */
+</style>
+<style id="wp-block-comment-edit-link-inline-css">
+.wp-block-comment-edit-link{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/comment-edit-link/style.min.css */
+</style>
+<style id="wp-block-comment-reply-link-inline-css">
+.wp-block-comment-reply-link{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/comment-reply-link/style.min.css */
+</style>
+<style id="wp-block-comment-template-inline-css">
+.wp-block-comment-template{box-sizing:border-box;list-style:none;margin-bottom:0;max-width:100%;padding:0}.wp-block-comment-template li{clear:both}.wp-block-comment-template ol{list-style:none;margin-bottom:0;max-width:100%;padding-left:2rem}.wp-block-comment-template.alignleft{float:left}.wp-block-comment-template.aligncenter{margin-left:auto;margin-right:auto;width:-moz-fit-content;width:fit-content}.wp-block-comment-template.alignright{float:right}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/comment-template/style.min.css */
+</style>
+<style id="wp-block-comments-inline-css">
+.wp-block-post-comments{box-sizing:border-box}.wp-block-post-comments .alignleft{float:left}.wp-block-post-comments .alignright{float:right}.wp-block-post-comments .navigation:after{clear:both;content:"";display:table}.wp-block-post-comments .commentlist{clear:both;list-style:none;margin:0;padding:0}.wp-block-post-comments .commentlist .comment{min-height:2.25em;padding-left:3.25em}.wp-block-post-comments .commentlist .comment p{font-size:1em;line-height:1.8;margin:1em 0}.wp-block-post-comments .commentlist .children{list-style:none;margin:0;padding:0}.wp-block-post-comments .comment-author{line-height:1.5}.wp-block-post-comments .comment-author .avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;margin-top:.5em;width:2.5em}.wp-block-post-comments .comment-author cite{font-style:normal}.wp-block-post-comments .comment-meta{font-size:.875em;line-height:1.5}.wp-block-post-comments .comment-meta b{font-weight:400}.wp-block-post-comments .comment-meta .comment-awaiting-moderation{display:block;margin-bottom:1em;margin-top:1em}.wp-block-post-comments .comment-body .commentmetadata{font-size:.875em}.wp-block-post-comments .comment-form-author label,.wp-block-post-comments .comment-form-comment label,.wp-block-post-comments .comment-form-email label,.wp-block-post-comments .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments .comment-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments .comment-reply-title{margin-bottom:0}.wp-block-post-comments .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}.wp-block-post-comments .reply{font-size:.875em;margin-bottom:1.4em}.wp-block-post-comments input:not([type=submit]),.wp-block-post-comments textarea{border:1px solid #949494;font-family:inherit;font-size:1em}.wp-block-post-comments input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments textarea{padding:calc(.667em + 2px)}:where(.wp-block-post-comments input[type=submit]){border:none}.wp-block-comments{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/comments/style.min.css */
+</style>
+<style id="wp-block-comments-pagination-inline-css">
+.wp-block-comments-pagination>.wp-block-comments-pagination-next,.wp-block-comments-pagination>.wp-block-comments-pagination-numbers,.wp-block-comments-pagination>.wp-block-comments-pagination-previous{font-size:inherit}.wp-block-comments-pagination .wp-block-comments-pagination-previous-arrow{display:inline-block;margin-right:1ch}.wp-block-comments-pagination .wp-block-comments-pagination-previous-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-comments-pagination .wp-block-comments-pagination-next-arrow{display:inline-block;margin-left:1ch}.wp-block-comments-pagination .wp-block-comments-pagination-next-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-comments-pagination.aligncenter{justify-content:center}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/comments-pagination/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-cover-css' href='https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/cover/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-details-inline-css">
+.wp-block-details{box-sizing:border-box}.wp-block-details summary{cursor:pointer}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/details/style.min.css */
+</style>
+<style id="wp-block-file-inline-css">
+.wp-block-file{box-sizing:border-box}.wp-block-file:not(.wp-element-button){font-size:.8em}.wp-block-file.aligncenter{text-align:center}.wp-block-file.alignright{text-align:right}.wp-block-file *+.wp-block-file__button{margin-left:.75em}:where(.wp-block-file){margin-bottom:1.5em}.wp-block-file__embed{margin-bottom:1em}:where(.wp-block-file__button){border-radius:2em;display:inline-block;padding:.5em 1em}:where(.wp-block-file__button):where(a):active,:where(.wp-block-file__button):where(a):focus,:where(.wp-block-file__button):where(a):hover,:where(.wp-block-file__button):where(a):visited{box-shadow:none;color:#fff;opacity:.85;text-decoration:none}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/file/style.min.css */
+</style>
+<style id="wp-block-footnotes-inline-css">
+.editor-styles-wrapper,.entry-content{counter-reset:footnotes}a[data-fn].fn{counter-increment:footnotes;display:inline-flex;font-size:smaller;text-decoration:none;text-indent:-9999999px;vertical-align:super}a[data-fn].fn:after{content:"[" counter(footnotes) "]";float:left;text-indent:0}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/footnotes/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-gallery-css' href='https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/gallery/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-icon-inline-css">
+.wp-block-icon{line-height:0}.wp-block-icon.aligncenter{display:flex;justify-content:center}.wp-block-icon svg{fill:currentColor;box-sizing:border-box}.wp-block-icon svg.is-flip-horizontal{transform:scaleX(-1)}.wp-block-icon svg.is-flip-vertical{transform:scaleY(-1)}.wp-block-icon svg.is-flip-horizontal.is-flip-vertical{transform:scaleX(-1) scaleY(-1)}:where(.wp-block-icon) svg{height:100%;width:100%}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/icon/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-image-css' href='https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/image/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-latest-comments-inline-css">
+:where(.wp-block-latest-comments){padding-left:0}ol.wp-block-latest-comments{box-sizing:border-box;margin-left:0}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment)){line-height:1.1}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment-excerpt p)){line-height:1.8}.has-dates :where(.wp-block-latest-comments:not([style*=line-height])),.has-excerpts :where(.wp-block-latest-comments:not([style*=line-height])){line-height:1.5}.wp-block-latest-comments__comment{list-style:none;margin-bottom:1em}.has-avatars .wp-block-latest-comments__comment{list-style:none;min-height:2.25em}.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt,.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta{margin-left:3.25em}.wp-block-latest-comments__comment-excerpt p{font-size:.875em;margin:.36em 0 1.4em}.wp-block-latest-comments__comment-date{display:block;font-size:.75em}.wp-block-latest-comments .avatar,.wp-block-latest-comments__comment-avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;width:2.5em}.wp-block-latest-comments[class*=-font-size] a,.wp-block-latest-comments[style*=font-size] a{font-size:inherit}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/latest-comments/style.min.css */
+</style>
+<style id="wp-block-latest-posts-inline-css">
+.wp-block-latest-posts{box-sizing:border-box}.wp-block-latest-posts.alignleft{margin-right:2em}.wp-block-latest-posts.alignright{margin-left:2em}.wp-block-latest-posts.wp-block-latest-posts__list{list-style:none}.wp-block-latest-posts.wp-block-latest-posts__list li{clear:both;overflow-wrap:break-word}.wp-block-latest-posts.is-grid:not(.is-layout-grid){display:flex;flex-wrap:wrap}.wp-block-latest-posts.is-grid:not(.is-layout-grid) li{margin:0 1.25em 1.25em 0;width:100%}@media (min-width:600px){.wp-block-latest-posts.columns-2:not(.is-layout-grid) li{width:calc(50% - .625em)}.wp-block-latest-posts.columns-2:not(.is-layout-grid) li:nth-child(2n){margin-right:0}.wp-block-latest-posts.columns-3:not(.is-layout-grid) li{width:calc(33.33333% - .83333em)}.wp-block-latest-posts.columns-3:not(.is-layout-grid) li:nth-child(3n){margin-right:0}.wp-block-latest-posts.columns-4:not(.is-layout-grid) li{width:calc(25% - .9375em)}.wp-block-latest-posts.columns-4:not(.is-layout-grid) li:nth-child(4n){margin-right:0}.wp-block-latest-posts.columns-5:not(.is-layout-grid) li{width:calc(20% - 1em)}.wp-block-latest-posts.columns-5:not(.is-layout-grid) li:nth-child(5n){margin-right:0}.wp-block-latest-posts.columns-6:not(.is-layout-grid) li{width:calc(16.66667% - 1.04167em)}.wp-block-latest-posts.columns-6:not(.is-layout-grid) li:nth-child(6n){margin-right:0}}@media (max-width:600px){.wp-block-latest-posts-is-layout-grid[class*=columns-]:not(.has-native-responsive-grid){grid-template-columns:1fr}}:root :where(.wp-block-latest-posts.is-grid){padding:0}:root :where(.wp-block-latest-posts.wp-block-latest-posts__list){padding-left:0}.wp-block-latest-posts__post-author,.wp-block-latest-posts__post-date{display:block;font-size:.8125em}.wp-block-latest-posts__post-excerpt,.wp-block-latest-posts__post-full-content{margin-bottom:1em;margin-top:.5em}.wp-block-latest-posts__featured-image a{display:inline-block}.wp-block-latest-posts__featured-image img{height:auto;max-width:100%;width:auto}.wp-block-latest-posts__featured-image.alignleft{float:left;margin-right:1em}.wp-block-latest-posts__featured-image.alignright{float:right;margin-left:1em}.wp-block-latest-posts__featured-image.aligncenter{margin-bottom:1em;text-align:center}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/latest-posts/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-loginout-inline-css">
+.wp-block-loginout{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/loginout/style.min.css */
+</style>
+<style id="wp-block-media-text-inline-css">
+.wp-block-media-text{box-sizing:border-box;direction:ltr;display:grid;grid-template-columns:50% 1fr;grid-template-rows:auto}.wp-block-media-text.has-media-on-the-right{grid-template-columns:1fr 50%}.wp-block-media-text.is-vertically-aligned-top>.wp-block-media-text__content,.wp-block-media-text.is-vertically-aligned-top>.wp-block-media-text__media{align-self:start}.wp-block-media-text.is-vertically-aligned-center>.wp-block-media-text__content,.wp-block-media-text.is-vertically-aligned-center>.wp-block-media-text__media,.wp-block-media-text>.wp-block-media-text__content,.wp-block-media-text>.wp-block-media-text__media{align-self:center}.wp-block-media-text.is-vertically-aligned-bottom>.wp-block-media-text__content,.wp-block-media-text.is-vertically-aligned-bottom>.wp-block-media-text__media{align-self:end}.wp-block-media-text>.wp-block-media-text__media{grid-column:1;grid-row:1;margin:0}.wp-block-media-text>.wp-block-media-text__content{direction:ltr;grid-column:2;grid-row:1;padding:0 8%;word-break:break-word}.wp-block-media-text.has-media-on-the-right>.wp-block-media-text__media{grid-column:2;grid-row:1}.wp-block-media-text.has-media-on-the-right>.wp-block-media-text__content{grid-column:1;grid-row:1}.wp-block-media-text__media a{display:block}.wp-block-media-text__media img,.wp-block-media-text__media video{height:auto;max-width:unset;vertical-align:middle;width:100%}.wp-block-media-text.is-image-fill>.wp-block-media-text__media{background-size:cover;height:100%;min-height:250px}.wp-block-media-text.is-image-fill>.wp-block-media-text__media>a{display:block;height:100%}.wp-block-media-text.is-image-fill>.wp-block-media-text__media img{clip:rect(0,0,0,0);border:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.wp-block-media-text.is-image-fill-element>.wp-block-media-text__media{height:100%;min-height:250px;position:relative}.wp-block-media-text.is-image-fill-element>.wp-block-media-text__media>a{display:block;height:100%}.wp-block-media-text.is-image-fill-element>.wp-block-media-text__media img{height:100%;-o-object-fit:cover;object-fit:cover;position:absolute;width:100%}@media (max-width:600px){.wp-block-media-text.is-stacked-on-mobile{grid-template-columns:100%!important}.wp-block-media-text.is-stacked-on-mobile>.wp-block-media-text__media{grid-column:1;grid-row:1}.wp-block-media-text.is-stacked-on-mobile>.wp-block-media-text__content{grid-column:1;grid-row:2}}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/media-text/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-navigation-css' href='https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/navigation/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-navigation-link-inline-css">
+.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{outline:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/navigation-link/style.min.css */
+</style>
+<style id="wp-block-navigation-overlay-close-inline-css">
+.wp-block-navigation-overlay-close{align-items:center;background:transparent;border:none;cursor:pointer;display:inline-flex;gap:.5em;justify-content:center;padding:0;text-decoration:none}.wp-block-navigation-overlay-close:focus{outline-offset:2px}.wp-block-navigation-overlay-close svg{fill:currentColor;display:block;flex-shrink:0;height:24px;width:24px}.wp-block-navigation-overlay-close .wp-block-navigation-overlay-close__text{align-items:center;display:inline-flex}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/navigation-overlay-close/style.min.css */
+</style>
+<style id="wp-block-page-list-inline-css">
+.wp-block-navigation .wp-block-page-list{align-items:var(--navigation-layout-align,initial);background-color:inherit;display:flex;flex-direction:var(--navigation-layout-direction,initial);flex-wrap:var(--navigation-layout-wrap,wrap);justify-content:var(--navigation-layout-justify,initial)}.wp-block-navigation .wp-block-navigation-item{background-color:inherit}.wp-block-page-list{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/page-list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-playlist-css' href='https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/playlist/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-playlist-track-inline-css">
+.wp-block-playlist-track:has([aria-current=true]){background-color:color-mix(in srgb,currentColor 10%,transparent)}.wp-block-playlist-track:hover{background-color:color-mix(in srgb,currentColor 15%,transparent)}.wp-block-playlist__tracklist-show-numbers .wp-block-playlist-track{counter-increment:playlist-track}.wp-block-playlist-track .wp-block-playlist-track__button{align-items:center;background-color:transparent;border:0;color:inherit;cursor:pointer;display:flex;font-family:inherit;font-size:inherit;outline-offset:2px;padding:var(--wp--preset--spacing--20,.5em);text-align:left;width:100%}.wp-block-playlist__tracklist-show-numbers .wp-block-playlist-track .wp-block-playlist-track__button:before{content:counter(playlist-track);font-size:.85em;margin-right:var(--wp--preset--spacing--20,.5em);opacity:.7;width:2ch}.wp-block-playlist-track .wp-block-playlist-track__button .wp-block-playlist-track__image{border:1px solid rgba(0,0,0,.08);box-sizing:border-box;flex:0 0 50px;height:50px;margin-right:var(--wp--preset--spacing--20,.5em);-o-object-fit:cover;object-fit:cover;width:50px}.wp-block-playlist-track .wp-block-playlist-track__button .wp-block-playlist-track__content{flex:1 1 0;min-width:0}.wp-block-playlist-track .wp-block-playlist-track__button .wp-block-playlist-track__title{display:block}.wp-block-playlist-track .wp-block-playlist-track__button .wp-block-playlist-track__artist{display:block;font-size:.85em;margin-top:.125em;opacity:.7}.wp-block-playlist-track .wp-block-playlist-track__button .wp-block-playlist-track__length{font-size:.85em;margin-left:auto;opacity:.7}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/playlist-track/style.min.css */
+</style>
+<style id="wp-block-post-author-inline-css">
+.wp-block-post-author{box-sizing:border-box;display:flex;flex-wrap:wrap}.wp-block-post-author__byline{font-size:.5em;margin-bottom:0;margin-top:0;width:100%}.wp-block-post-author__avatar{margin-right:1em}.wp-block-post-author__bio{font-size:.7em;margin-bottom:.7em}.wp-block-post-author__content{flex-basis:0;flex-grow:1}.wp-block-post-author__name{margin:0}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-author/style.min.css */
+</style>
+<style id="wp-block-post-author-biography-inline-css">
+.wp-block-post-author-biography{box-sizing:border-box;white-space:pre-wrap}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-author-biography/style.min.css */
+</style>
+<style id="wp-block-post-author-name-inline-css">
+.wp-block-post-author-name{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-author-name/style.min.css */
+</style>
+<style id="wp-block-post-comments-count-inline-css">
+.wp-block-post-comments-count{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-comments-count/style.min.css */
+</style>
+<style id="wp-block-post-comments-form-inline-css">
+:where(.wp-block-post-comments-form input:not([type=submit])),:where(.wp-block-post-comments-form textarea){border:1px solid #949494;font-family:inherit;font-size:1em}:where(.wp-block-post-comments-form input:where(:not([type=submit]):not([type=checkbox]))),:where(.wp-block-post-comments-form textarea){padding:calc(.667em + 2px)}.wp-block-post-comments-form{box-sizing:border-box}.wp-block-post-comments-form[style*=font-weight] :where(.comment-reply-title){font-weight:inherit}.wp-block-post-comments-form[style*=font-family] :where(.comment-reply-title){font-family:inherit}.wp-block-post-comments-form[class*=-font-size] :where(.comment-reply-title),.wp-block-post-comments-form[style*=font-size] :where(.comment-reply-title){font-size:inherit}.wp-block-post-comments-form[style*=line-height] :where(.comment-reply-title){line-height:inherit}.wp-block-post-comments-form[style*=font-style] :where(.comment-reply-title){font-style:inherit}.wp-block-post-comments-form[style*=letter-spacing] :where(.comment-reply-title){letter-spacing:inherit}.wp-block-post-comments-form :where(input[type=submit]){box-shadow:none;cursor:pointer;display:inline-block;overflow-wrap:break-word;text-align:center}.wp-block-post-comments-form .comment-form input:not([type=submit]):not([type=checkbox]):not([type=hidden]),.wp-block-post-comments-form .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments-form .comment-form-author label,.wp-block-post-comments-form .comment-form-email label,.wp-block-post-comments-form .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments-form .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments-form .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments-form .comment-reply-title{margin-bottom:0}.wp-block-post-comments-form .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-comments-form/style.min.css */
+</style>
+<style id="wp-block-buttons-inline-css">
+.wp-block-buttons{box-sizing:border-box}.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons .wp-block-button__link{width:100%}.wp-block-button.aligncenter{text-align:center}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/buttons/style.min.css */
+</style>
+<style id="wp-block-post-comments-link-inline-css">
+.wp-block-post-comments-link{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-comments-link/style.min.css */
+</style>
+<style id="wp-block-post-content-inline-css">
+.wp-block-post-content{display:flow-root}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-content/style.min.css */
+</style>
+<style id="wp-block-post-date-inline-css">
+.wp-block-post-date{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-date/style.min.css */
+</style>
+<style id="wp-block-post-excerpt-inline-css">
+:where(.wp-block-post-excerpt){box-sizing:border-box;margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap)}.wp-block-post-excerpt__excerpt{margin-bottom:0;margin-top:0}.wp-block-post-excerpt__more-text{margin-bottom:0;margin-top:var(--wp--style--block-gap)}.wp-block-post-excerpt__more-link{display:inline-block}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-excerpt/style.min.css */
+</style>
+<style id="wp-block-post-featured-image-inline-css">
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block;height:100%}.wp-block-post-featured-image :where(img){box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:transparent}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}.wp-block-post-featured-image:where(.alignleft,.alignright){width:100%}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-featured-image/style.min.css */
+</style>
+<style id="wp-block-post-navigation-link-inline-css">
+.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous{display:inline-block;margin-right:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next{display:inline-block;margin-left:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link.has-text-align-left[style*="writing-mode: vertical-lr"],.wp-block-post-navigation-link.has-text-align-right[style*="writing-mode: vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-navigation-link/style.min.css */
+</style>
+<style id="wp-block-post-template-inline-css">
+.wp-block-post-template{box-sizing:border-box;list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}.wp-block-post-template.is-flex-container{display:flex;flex-direction:row;flex-wrap:wrap;gap:1.25em}.wp-block-post-template.is-flex-container>li{margin:0;width:100%}@media (min-width:600px){.wp-block-post-template.is-flex-container.is-flex-container.columns-2>li{width:calc(50% - .625em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-3>li{width:calc(33.33333% - .83333em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-4>li{width:calc(25% - .9375em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-5>li{width:calc(20% - 1em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-6>li{width:calc(16.66667% - 1.04167em)}}@media (max-width:600px){.wp-block-post-template-is-layout-grid[class*=columns-]:not(.has-native-responsive-grid){grid-template-columns:1fr}}.wp-block-post-template-is-layout-constrained>li>.alignright,.wp-block-post-template-is-layout-flow>li>.alignright{float:right;margin-inline-end:0;margin-inline-start:2em}.wp-block-post-template-is-layout-constrained>li>.alignleft,.wp-block-post-template-is-layout-flow>li>.alignleft{float:left;margin-inline-end:2em;margin-inline-start:0}.wp-block-post-template-is-layout-constrained>li>.aligncenter,.wp-block-post-template-is-layout-flow>li>.aligncenter{margin-inline-end:auto;margin-inline-start:auto}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-template/style.min.css */
+</style>
+<style id="wp-block-post-terms-inline-css">
+.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-terms/style.min.css */
+</style>
+<style id="wp-block-post-time-to-read-inline-css">
+.wp-block-post-time-to-read{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-time-to-read/style.min.css */
+</style>
+<style id="wp-block-post-title-inline-css">
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/post-title/style.min.css */
+</style>
+<style id="wp-block-query-pagination-inline-css">
+.wp-block-query-pagination.is-content-justification-space-between>.wp-block-query-pagination-next:last-of-type{margin-inline-start:auto}.wp-block-query-pagination.is-content-justification-space-between>.wp-block-query-pagination-previous:first-child{margin-inline-end:auto}.wp-block-query-pagination .wp-block-query-pagination-previous-arrow{display:inline-block;margin-right:1ch}.wp-block-query-pagination .wp-block-query-pagination-previous-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-query-pagination .wp-block-query-pagination-next-arrow{display:inline-block;margin-left:1ch}.wp-block-query-pagination .wp-block-query-pagination-next-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-query-pagination.aligncenter{justify-content:center}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/query-pagination/style.min.css */
+</style>
+<style id="wp-block-query-title-inline-css">
+.wp-block-query-title{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/query-title/style.min.css */
+</style>
+<style id="wp-block-query-total-inline-css">
+.wp-block-query-total{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/query-total/style.min.css */
+</style>
+<style id="wp-block-read-more-inline-css">
+.wp-block-read-more{display:block;width:-moz-fit-content;width:fit-content}.wp-block-read-more:where(:not([style*=text-decoration])){text-decoration:none}.wp-block-read-more:where(:not([style*=text-decoration])):active,.wp-block-read-more:where(:not([style*=text-decoration])):focus{text-decoration:none}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/read-more/style.min.css */
+</style>
+<style id="wp-block-rss-inline-css">
+ul.wp-block-rss.alignleft{margin-right:2em}ul.wp-block-rss.alignright{margin-left:2em}ul.wp-block-rss.is-grid{display:flex;flex-wrap:wrap;padding:0}ul.wp-block-rss.is-grid li{margin:0 1em 1em 0;width:100%}@media (min-width:600px){ul.wp-block-rss.columns-2 li{width:calc(50% - 1em)}ul.wp-block-rss.columns-3 li{width:calc(33.33333% - 1em)}ul.wp-block-rss.columns-4 li{width:calc(25% - 1em)}ul.wp-block-rss.columns-5 li{width:calc(20% - 1em)}ul.wp-block-rss.columns-6 li{width:calc(16.66667% - 1em)}}.wp-block-rss__item-author,.wp-block-rss__item-publish-date{display:block;font-size:.8125em}.wp-block-rss{box-sizing:border-box;list-style:none;padding:0}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/rss/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-search-css' href='https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/search/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-site-logo-inline-css">
+.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/site-logo/style.min.css */
+</style>
+<style id="wp-block-site-tagline-inline-css">
+.wp-block-site-tagline{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/site-tagline/style.min.css */
+</style>
+<style id="wp-block-site-title-inline-css">
+.wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/site-title/style.min.css */
+</style>
+<style id="wp-block-tab-list-inline-css">
+:where(.wp-block-tab-list button){-moz-appearance:none;appearance:none;-webkit-appearance:none;background:none;border:none;box-sizing:border-box;color:inherit;cursor:pointer;display:block;flex-basis:inherit!important;flex-grow:inherit!important;font-family:inherit;font-size:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin:0;padding:var(--wp--preset--spacing--20,.5em) var(--wp--preset--spacing--30,1em);position:relative;text-align:inherit;text-decoration:none;text-transform:inherit;width:-moz-max-content;width:max-content}:where(.wp-block-tab-list button)[aria-selected=true]:before{border-bottom:2px solid;bottom:0;content:"";left:0;pointer-events:none;position:absolute;width:100%}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/tab-list/style.min.css */
+</style>
+<style id="wp-block-tab-panel-inline-css">
+.wp-block-tab-panel:empty,.wp-block-tab-panel[hidden]{display:none!important}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/tab-panel/style.min.css */
+</style>
+<style id="wp-block-tabs-inline-css">
+.wp-block-tabs{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/tabs/style.min.css */
+</style>
+<style id="wp-block-tag-cloud-inline-css">
+.wp-block-tag-cloud{box-sizing:border-box}.wp-block-tag-cloud.aligncenter{justify-content:center;text-align:center}.wp-block-tag-cloud a{display:inline-block;margin-right:5px}.wp-block-tag-cloud span{display:inline-block;margin-left:5px;text-decoration:none}:root :where(.wp-block-tag-cloud.is-style-outline){display:flex;flex-wrap:wrap;gap:1ch}:root :where(.wp-block-tag-cloud.is-style-outline a){border:1px solid;font-size:unset!important;margin-right:0;padding:1ch 2ch;text-decoration:none!important}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/tag-cloud/style.min.css */
+</style>
+<style id="wp-block-term-count-inline-css">
+.wp-block-term-count{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/term-count/style.min.css */
+</style>
+<style id="wp-block-term-description-inline-css">
+:where(.wp-block-term-description){box-sizing:border-box;margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap)}.wp-block-term-description p{margin-bottom:0;margin-top:0}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/term-description/style.min.css */
+</style>
+<style id="wp-block-term-name-inline-css">
+.wp-block-term-name{box-sizing:border-box}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/term-name/style.min.css */
+</style>
+<style id="wp-block-term-template-inline-css">
+.wp-block-term-template{box-sizing:border-box;list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/term-template/style.min.css */
+</style>
+<style id="wp-block-video-inline-css">
+.wp-block-video{box-sizing:border-box}.wp-block-video video{height:auto;vertical-align:middle;width:100%}@supports (position:sticky){.wp-block-video [poster]{-o-object-fit:cover;object-fit:cover}}.wp-block-video.aligncenter{text-align:center}.wp-block-video :where(figcaption){margin-bottom:1em;margin-top:.5em}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/video/style.min.css */
+</style>
+<style id="wp-block-accordion-heading-inline-css">
+.wp-block-accordion-heading__toggle{align-items:center;background:none;border:none;color:inherit;cursor:pointer;display:flex;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;overflow:hidden;padding:var(--wp--preset--spacing--20,1em) 0;text-align:inherit;text-decoration:inherit;text-transform:inherit;width:100%;word-spacing:inherit}.wp-block-accordion-heading__toggle:not(:focus-visible){outline:none}.wp-block-accordion-heading__toggle:hover .wp-block-accordion-heading__toggle-title{text-decoration:underline}.wp-block-accordion-heading__toggle-title{flex:1}.wp-block-accordion-heading__toggle-icon{align-items:center;display:flex;height:1.2em;justify-content:center;width:1.2em}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/accordion-heading/style.min.css */
+</style>
+<style id="wp-block-accordion-panel-inline-css">
+.wp-block-accordion-panel[hidden]{border:none!important;box-shadow:none!important;margin-block-start:0;padding:0!important}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/accordion-panel/style.min.css */
+</style>
+<style id="wp-block-audio-inline-css">
+.wp-block-audio{box-sizing:border-box}.wp-block-audio :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-audio audio{min-width:300px;width:100%}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/audio/style.min.css */
+</style>
+<style id="wp-block-code-inline-css">
+.wp-block-code{box-sizing:border-box}.wp-block-code code{direction:ltr;display:block;font-family:inherit;overflow-wrap:break-word;text-align:initial;white-space:break-spaces}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/code/style.min.css */
+</style>
+<style id="wp-block-columns-inline-css">
+.wp-block-columns{box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns{align-items:normal!important}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/columns/style.min.css */
+</style>
+<style id="wp-block-embed-inline-css">
+.wp-block-embed.alignleft,.wp-block-embed.alignright,.wp-block[data-align=left]>[data-type="core/embed"],.wp-block[data-align=right]>[data-type="core/embed"]{max-width:360px;width:100%}.wp-block-embed.alignleft .wp-block-embed__wrapper,.wp-block-embed.alignright .wp-block-embed__wrapper,.wp-block[data-align=left]>[data-type="core/embed"] .wp-block-embed__wrapper,.wp-block[data-align=right]>[data-type="core/embed"] .wp-block-embed__wrapper{min-width:280px}.wp-block-cover .wp-block-embed{min-height:240px;min-width:320px}.wp-block-group.is-layout-flex .wp-block-embed{flex:1 1 0%;min-width:0}.wp-block-embed{overflow-wrap:break-word}.wp-block-embed :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-embed iframe{max-width:100%}.wp-block-embed__wrapper{position:relative}.wp-embed-responsive .wp-has-aspect-ratio .wp-block-embed__wrapper:before{content:"";display:block;padding-top:50%}.wp-embed-responsive .wp-has-aspect-ratio iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.wp-embed-responsive .wp-embed-aspect-21-9 .wp-block-embed__wrapper:before{padding-top:42.85%}.wp-embed-responsive .wp-embed-aspect-18-9 .wp-block-embed__wrapper:before{padding-top:50%}.wp-embed-responsive .wp-embed-aspect-16-9 .wp-block-embed__wrapper:before{padding-top:56.25%}.wp-embed-responsive .wp-embed-aspect-4-3 .wp-block-embed__wrapper:before{padding-top:75%}.wp-embed-responsive .wp-embed-aspect-1-1 .wp-block-embed__wrapper:before{padding-top:100%}.wp-embed-responsive .wp-embed-aspect-9-16 .wp-block-embed__wrapper:before{padding-top:177.77%}.wp-embed-responsive .wp-embed-aspect-1-2 .wp-block-embed__wrapper:before{padding-top:200%}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/embed/style.min.css */
+</style>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/group/style.min.css */
+</style>
+<style id="wp-block-math-inline-css">
+.wp-block-math{overflow-x:auto;overflow-y:hidden}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/math/style.min.css */
+</style>
+<style id="wp-block-preformatted-inline-css">
+.wp-block-preformatted{box-sizing:border-box;white-space:pre-wrap}:where(.wp-block-preformatted.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/preformatted/style.min.css */
+</style>
+<style id="wp-block-pullquote-inline-css">
+.wp-block-pullquote{box-sizing:border-box;margin:0 0 1em;overflow-wrap:break-word;padding:4em 0;text-align:center}.wp-block-pullquote blockquote,.wp-block-pullquote p{color:inherit}.wp-block-pullquote blockquote{margin:0}.wp-block-pullquote p{margin-top:0}.wp-block-pullquote p:last-child{margin-bottom:0}.wp-block-pullquote.alignleft,.wp-block-pullquote.alignright{max-width:420px}.wp-block-pullquote cite,.wp-block-pullquote footer{position:relative}.wp-block-pullquote .has-text-color a{color:inherit}.wp-block-pullquote.has-text-align-left blockquote{text-align:left}.wp-block-pullquote.has-text-align-right blockquote{text-align:right}.wp-block-pullquote.has-text-align-center blockquote{text-align:center}.wp-block-pullquote.is-style-solid-color{border:none}.wp-block-pullquote.is-style-solid-color blockquote{margin-left:auto;margin-right:auto;max-width:60%}.wp-block-pullquote.is-style-solid-color blockquote p{font-size:2em;margin-bottom:0;margin-top:0}.wp-block-pullquote.is-style-solid-color blockquote cite{font-style:normal;text-transform:none}.wp-block-pullquote :where(cite){color:inherit;display:block}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/pullquote/style.min.css */
+</style>
+<style id="wp-block-quote-inline-css">
+.wp-block-quote{box-sizing:border-box;overflow-wrap:break-word}.wp-block-quote.is-large:where(:not(.is-style-plain)),.wp-block-quote.is-style-large:where(:not(.is-style-plain)){margin-bottom:1em;padding:0 1em}.wp-block-quote.is-large:where(:not(.is-style-plain)) p,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) p{font-size:1.5em;font-style:italic;line-height:1.6}.wp-block-quote.is-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-large:where(:not(.is-style-plain)) footer,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) footer{font-size:1.125em;text-align:right}.wp-block-quote>cite{display:block}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/quote/style.min.css */
+</style>
+<style id="wp-block-separator-inline-css">
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/separator/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-social-links-css' href='https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/social-links/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-spacer-inline-css">
+.wp-block-spacer{clear:both}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/spacer/style.min.css */
+</style>
+<link rel='stylesheet' id='wp-block-table-css' href='https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/table/style.min.css?ver=7.1.3' media='all' />
+<style id="wp-block-text-columns-inline-css">
+.wp-block-text-columns,.wp-block-text-columns.aligncenter{display:flex}.wp-block-text-columns .wp-block-column{margin:0 1em;padding:0}.wp-block-text-columns .wp-block-column:first-child{margin-left:0}.wp-block-text-columns .wp-block-column:last-child{margin-right:0}.wp-block-text-columns.columns-2 .wp-block-column{width:50%}.wp-block-text-columns.columns-3 .wp-block-column{width:33.3333333333%}.wp-block-text-columns.columns-4 .wp-block-column{width:25%}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/text-columns/style.min.css */
+</style>
+<style id="wp-block-verse-inline-css">
+pre.wp-block-verse{box-sizing:border-box;min-width:1em;overflow:auto;white-space:pre-wrap;word-break:break-word}:where(pre.wp-block-verse){font-family:inherit}
+/*# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/blocks/verse/style.min.css */
+</style>
+<style id="pronamic-form-style-inline-css">
+:root{--pronamic-color-base:var(--wp--custom--pronamic--color--base,#fff);--pronamic-color-contrast:var(--wp--custom--pronamic--color--contrast,#000);--pronamic-color-neutral:var(--wp--custom--pronamic--color--neutral,#ccc);--pronamic-form-control-border-color:var(--pronamic-color-neutral);--pronamic-form-control-background-color:var(--pronamic-color-base);--pronamic-form-control-background-color-focus:var(--pronamic-color-contrast);--pronamic-form-control-border-radius:.25em}
+
+/*# sourceURL=https://www.noordwijksegolfclub.nl//app/plugins/pronamic-ideal/packages/pronamic/wp-pronamic-forms/blocks/form/style-index.css */
+</style>
+<link rel='stylesheet' id='pronamic-form-control-style-css' href='https://www.noordwijksegolfclub.nl//app/plugins/pronamic-ideal/packages/pronamic/wp-pronamic-forms/blocks/form-control/style-index.css?ver=1.0.0' media='all' />
+<style id="pronamic-form-label-style-inline-css">
+
+
+/*# sourceURL=https://www.noordwijksegolfclub.nl//app/plugins/pronamic-ideal/packages/pronamic/wp-pronamic-forms/blocks/form-label/style-index.css */
+</style>
+<style id="pronamic-form-field-style-3-inline-css">
+input[type=pronamic-password]{-webkit-text-security:disc}
+
+/*# sourceURL=https://www.noordwijksegolfclub.nl//app/plugins/pronamic-ideal/packages/pronamic/wp-pronamic-forms/blocks/form-field/style-index.css */
+</style>
+<style id="pronamic-form-radio-option-style-2-inline-css">
+.wp-block-pronamic-form-radio-option .pronamic-forms-radio-option-image{vertical-align:middle}
+
+/*# sourceURL=https://www.noordwijksegolfclub.nl//app/plugins/pronamic-ideal/packages/pronamic/wp-pronamic-forms/blocks/form-radio-option/style-index.css */
+</style>
+<link rel='stylesheet' id='pronamic-form-radio-field-style-css' href='https://www.noordwijksegolfclub.nl//app/plugins/pronamic-ideal/packages/pronamic/wp-pronamic-forms/blocks/form-radio-field/style-index.css?ver=1.0.0' media='all' />
+<style id="pronamic-form-checkbox-option-style-2-inline-css">
+
+
+/*# sourceURL=https://www.noordwijksegolfclub.nl//app/plugins/pronamic-ideal/packages/pronamic/wp-pronamic-forms/blocks/form-checkbox-option/style-index.css */
+</style>
+<link rel='stylesheet' id='pronamic-form-checkbox-field-style-css' href='https://www.noordwijksegolfclub.nl//app/plugins/pronamic-ideal/packages/pronamic/wp-pronamic-forms/blocks/form-checkbox-field/style-index.css?ver=1.0.0' media='all' />
+<style id="pronamic-form-submission-notification-style-inline-css">
+
+
+/*# sourceURL=https://www.noordwijksegolfclub.nl//app/plugins/pronamic-ideal/packages/pronamic/wp-pronamic-forms/blocks/form-submission-notification/style-index.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:where(.wp-block-gallery.is-layout-flex){gap: var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}:where(.wp-block-gallery.is-layout-grid){gap: var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}
+:where(.wp-block-latest-posts.is-layout-flex){gap: 1.25em;}:where(.wp-block-latest-posts.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='style-css' href='https://www.noordwijksegolfclub.nl//app/themes/golf/assets/css/style.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='lightbox-css' href='https://www.noordwijksegolfclub.nl//app/themes/golf/assets/css/lightbox.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='override-css' href='https://www.noordwijksegolfclub.nl//app/themes/golf/style.css?ver=7.1.3' media='all' />
+<script id="jquery-core-js" src="https://www.noordwijksegolfclub.nl/wp/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.noordwijksegolfclub.nl/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="main-js-extra">
+var ajax_news_list = {"ajax_url":"https://www.noordwijksegolfclub.nl/wp/wp-admin/admin-ajax.php"};
+//# sourceURL=main-js-extra
+</script>
+<script id="main-js" src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/js/main.min.js?ver=7.1.3"></script>
+<script id="nwscript-js" src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/js/nwscript.js?ver=7.1.3"></script>
+<link rel="https://api.w.org/" href="https://www.noordwijksegolfclub.nl/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.noordwijksegolfclub.nl/wp-json/wp/v2/pages/11" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.noordwijksegolfclub.nl/wp/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<link rel="canonical" href="https://www.noordwijksegolfclub.nl/baan/" />
+<link rel='shortlink' href='https://www.noordwijksegolfclub.nl/?p=11' />
+</head>
+
+<body class="content">
+	<header class="site-header">
+	    <div class="header-content">
+
+	      <div class="site-branding">
+	        <a href="/">
+	          <img class="logo" src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/logo_1.svg">
+	          <h2>Noordwijkse Golfclub</h2>
+	        </a>
+	      </div>
+
+	      <div class="right-section">
+	        <a href="javascript:void(0);" class="hamburger-toggle">
+	          <span></span>
+	          <span></span>
+	          <span></span>
+	        </a>
+	        <a href="javascript:void(0);" class="account-toggle">
+	          <span class="login-label">Inloggen</span>
+	          <span class="username-label">Hi, !</span>
+	          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/user.svg"></i></a>
+	        <a href="javascript:void(0);" class="search-toggle">
+	          <span class="circle"></span>
+	          <span></span>
+	          <span></span>
+	        </a>
+	      </div>
+
+	      <div class="site-menu">
+	        <a href="javascript:void(0)" class="close-menu-toggle"><i class="fa fa-times"></i></a>
+	        <ul id="menu-hoofdmenu" class="site-navigation"><li id="menu-item-1734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1734"><a href="https://www.noordwijksegolfclub.nl/club/">Club</a>
+<div class="dropdown"><i class="fa fa-angle-down"></i></div><div class='submenu'><ul>
+	<li id="menu-item-4245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4245"><a href="http://www.noordwijksegolfclub.nl/club/#organisatie">Organisatie</a></li>
+	<li id="menu-item-47863" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47863"><a href="https://www.noordwijksegolfclub.nl/club/#vacatures">Vacatures</a></li>
+	<li id="menu-item-4247" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4247"><a href="http://www.noordwijksegolfclub.nl/club/#bestuur">Bestuur</a></li>
+	<li id="menu-item-27035" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27035"><a href="http://www.noordwijksegolfclub.nl/club/#lidmaatschap">Lidmaatschap</a></li>
+	<li id="menu-item-26032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26032"><a href="https://www.noordwijksegolfclub.nl/expatriate-membership/">Expat membership</a></li>
+	<li id="menu-item-4251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4251"><a href="http://www.noordwijksegolfclub.nl/club/#sponsoring">Sponsoring</a></li>
+	<li id="menu-item-4248" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4248"><a href="http://www.noordwijksegolfclub.nl/club/#etiquette">Etiquette</a></li>
+	<li id="menu-item-35070" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35070"><a href="https://www.noordwijksegolfclub.nl/club/#sociaal-veilig-sportklimaat">Sociaal veilig sportklimaat</a></li>
+	<li id="menu-item-4249" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4249"><a href="http://www.noordwijksegolfclub.nl/club/#historie">Historie</a></li>
+	<li id="menu-item-5468" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5468"><a href="http://www.noordwijksegolfclub.nl/club/#links">Links</a></li>
+	<li id="menu-item-4253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4253"><a href="http://www.noordwijksegolfclub.nl/club/#route">Route</a></li>
+</ul></div>
+</li>
+<li id="menu-item-1735" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1735"><a href="https://www.noordwijksegolfclub.nl/baan/" aria-current="page">Baan</a>
+<div class="dropdown"><i class="fa fa-angle-down"></i></div><div class='submenu'><ul>
+	<li id="menu-item-4261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4261"><a href="https://www.noordwijksegolfclub.nl/natuur/">Natuur</a></li>
+	<li id="menu-item-50316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50316"><a href="https://www.noordwijksegolfclub.nl/holes_routes/">Renovatie</a></li>
+	<li id="menu-item-4254" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-4254"><a href="http://www.noordwijksegolfclub.nl/baan/#bezoekers" aria-current="page">Bezoekers</a></li>
+	<li id="menu-item-4255" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-4255"><a href="http://www.noordwijksegolfclub.nl/baan/#greenfees" aria-current="page">Greenfees</a></li>
+	<li id="menu-item-4258" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-4258"><a href="http://www.noordwijksegolfclub.nl/baan/#baanhandicaps" aria-current="page">Baanhandicaps</a></li>
+	<li id="menu-item-4259" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-4259"><a href="http://www.noordwijksegolfclub.nl/baan/#plaatselijke-regels" aria-current="page">Plaatselijke Regels</a></li>
+	<li id="menu-item-24323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24323"><a href="https://www.noordwijksegolfclub.nl/pinsheet/">PinSheet</a></li>
+	<li id="menu-item-4256" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-4256"><a href="http://www.noordwijksegolfclub.nl/baan/#openingstijden" aria-current="page">Openingstijden</a></li>
+	<li id="menu-item-4257" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-4257"><a href="http://www.noordwijksegolfclub.nl/baan/#handicarts" aria-current="page">Handicarts</a></li>
+	<li id="menu-item-48443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48443"><a href="https://www.noordwijksegolfclub.nl/baanstatus-toelichting/">Baanstatus uitleg</a></li>
+	<li id="menu-item-26738" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-26738"><a href="https://www.noordwijksegolfclub.nl/baan/#onweer" aria-current="page">Onweer</a></li>
+	<li id="menu-item-15062" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15062"><a href="http://www.noordwijksegolfclub.nl/flyover">Flyover</a></li>
+</ul></div>
+</li>
+<li id="menu-item-24219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24219"><a href="https://www.noordwijksegolfclub.nl/?page_id=24217">Events</a></li>
+<li id="menu-item-272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"><a href="https://www.noordwijksegolfclub.nl/shop/">Shop</a></li>
+<li id="menu-item-33122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33122"><a href="https://www.noordwijksegolfclub.nl/restaurant/">Restaurant</a></li>
+<li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737"><a href="https://www.noordwijksegolfclub.nl/english/">English</a></li>
+<li id="menu-item-26455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26455"><a href="https://www.noordwijksegolfclub.nl/contact-2/">Contact</a></li>
+</ul>	        <div class="search-form-wrapper">
+	          <h4>Zoeken</h4>
+	          <form role="search" action="/" method="get" class="search-form" class="search-form">
+	            <input type="search" class="search-field" placeholder="beginnen met typen..." name="s">
+	            <input type="submit" class="search-submit" value=" ">
+	            <i class="fa fa-search"></i>
+	          </form>
+	        </div>
+	        <div class="account-form-wrapper">
+	          <div class="login-form">
+	            <h4>Inloggen</h4>
+	            <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/user.svg">
+	            <a class="login-submit" href="https://noordwijkse.golfer.intogolf.nl/#/login?redirect=true">Inloggen</a>
+	          </div>
+	          <div class="user-menu">
+	            <h4>Hi, </h4>
+	            <ul id="menu-leden-menu" class=""><li id="menu-item-1950" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1950"><a target="_blank" href="https://noordwijkse.golfer.intogolf.nl/#/login">Mijn NGC</a></li>
+<li id="menu-item-2713" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2713"><a href="http://www.noordwijksegolfclub.nl/nieuws/">Nieuws</a>
+<div class="dropdown"><i class="fa fa-angle-down"></i></div><div class='sub-menu-wrapper'><ul class='sub-menu'>
+	<li id="menu-item-33127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33127"><a href="https://www.noordwijksegolfclub.nl/nieuwsbrieven/">Nieuwsbrieven</a></li>
+	<li id="menu-item-33128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33128"><a href="https://www.noordwijksegolfclub.nl/nieuws/">Website berichten</a></li>
+	<li id="menu-item-33129" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33129"><a href="https://www.noordwijksegolfclub.nl/parpost-archief/">ParPost</a></li>
+</ul></div>
+</li>
+<li id="menu-item-2301" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2301"><a href="#">Bestuur</a>
+<div class="dropdown"><i class="fa fa-angle-down"></i></div><div class='sub-menu-wrapper'><ul class='sub-menu'>
+	<li id="menu-item-2972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2972"><a href="http://www.noordwijksegolfclub.nl/commissie/bestuur-nieuw/">Nieuws</a></li>
+	<li id="menu-item-1906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1906"><a href="https://www.noordwijksegolfclub.nl/lidmaatschappen/">Lidmaatschappen</a></li>
+	<li id="menu-item-23019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23019"><a href="https://www.noordwijksegolfclub.nl/missie-golfclub-visie-bestuur-strategische-doelen/">Missie Golfclub, Visie bestuur &#038; Strategische doelen</a></li>
+	<li id="menu-item-1911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1911"><a href="https://www.noordwijksegolfclub.nl/algemene-leden-vergadering-alv/">ALV, reglementen en beleid</a></li>
+	<li id="menu-item-12282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12282"><a href="https://www.noordwijksegolfclub.nl/portefeuille/">Portefeuille bestuursleden</a></li>
+	<li id="menu-item-3570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3570"><a href="https://www.noordwijksegolfclub.nl/contributies/">Contributies</a></li>
+	<li id="menu-item-1910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1910"><a href="https://www.noordwijksegolfclub.nl/ereleden-en-leden-verdienste/">Eregalerij</a></li>
+	<li id="menu-item-31696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31696"><a href="https://www.noordwijksegolfclub.nl/ledenbestand/">Ledenbestand</a></li>
+	<li id="menu-item-31705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31705"><a href="https://www.noordwijksegolfclub.nl/baanbezetting/">Baanbezetting</a></li>
+</ul></div>
+</li>
+<li id="menu-item-1918" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1918"><a href="#">Commissies &#038; Werkgroepen</a>
+<div class="dropdown"><i class="fa fa-angle-down"></i></div><div class='sub-menu-wrapper'><ul class='sub-menu'>
+	<li id="menu-item-4149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4149"><a href="http://www.noordwijksegolfclub.nl/commissie/algemeen/">Algemeen</a></li>
+	<li id="menu-item-5490" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-5490"><a href="https://www.noordwijksegolfclub.nl/commissie/abac/">ABAC</a></li>
+	<li id="menu-item-26167" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26167"><a href="https://www.noordwijksegolfclub.nl/commissie/historisch-archief/">Archief</a></li>
+	<li id="menu-item-41767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41767"><a href="https://www.noordwijksegolfclub.nl/baan-en-natuurplan_stuur-werkgroepen/">Baan- en Natuurplan</a></li>
+	<li id="menu-item-2463" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2463"><a href="https://www.noordwijksegolfclub.nl/commissie/bridge/">Bridge</a></li>
+	<li id="menu-item-2464" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2464"><a href="https://www.noordwijksegolfclub.nl/commissie/combi/">Combi</a></li>
+	<li id="menu-item-39880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39880"><a href="https://www.noordwijksegolfclub.nl/commissie/competitie-commissie/">Competitie</a></li>
+	<li id="menu-item-26871" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26871"><a href="https://www.noordwijksegolfclub.nl/commissie/dads-army/">Dad&#8217;s Army</a></li>
+	<li id="menu-item-2466" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2466"><a href="https://www.noordwijksegolfclub.nl/commissie/dames/">Dames</a></li>
+	<li id="menu-item-41777" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41777"><a href="https://www.noordwijksegolfclub.nl/commissie/duurzaamheid-wg/">Duurzaamheid (WG)</a></li>
+	<li id="menu-item-2467" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2467"><a href="https://www.noordwijksegolfclub.nl/commissie/evenementen/">Evenementen</a></li>
+	<li id="menu-item-5488" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-5488"><a href="https://www.noordwijksegolfclub.nl/commissie/fac/">FAC</a></li>
+	<li id="menu-item-19833" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19833"><a href="https://www.noordwijksegolfclub.nl/commissie/golfweek-commissie/">Golfweek</a></li>
+	<li id="menu-item-2469" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2469"><a href="https://www.noordwijksegolfclub.nl/commissie/handicarts/">Handicart consuls</a></li>
+	<li id="menu-item-28356" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28356"><a href="https://www.noordwijksegolfclub.nl/commissie/heren-senioren-donderdag/">Heren</a></li>
+	<li id="menu-item-2471" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2471"><a href="https://www.noordwijksegolfclub.nl/commissie/juridische/">Juridische</a></li>
+	<li id="menu-item-36982" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36982"><a href="https://www.noordwijksegolfclub.nl/commissie/natuur/">Natuur</a></li>
+	<li id="menu-item-11440" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11440"><a href="http://www.noordwijksegolfclub.nl/commissie/njo">NJO</a></li>
+	<li id="menu-item-2473" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2473"><a href="https://www.noordwijksegolfclub.nl/commissie/overige/">Overige</a></li>
+	<li id="menu-item-2474" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2474"><a href="https://www.noordwijksegolfclub.nl/commissie/parpost/">ParPost</a></li>
+	<li id="menu-item-2475" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2475"><a href="https://www.noordwijksegolfclub.nl/commissie/prijzen/">Prijzen</a></li>
+	<li id="menu-item-2476" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2476"><a href="https://www.noordwijksegolfclub.nl/commissie/regels-en-etiquette/">R &#038; E</a></li>
+	<li id="menu-item-41985" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41985"><a href="https://www.noordwijksegolfclub.nl/?post_type=commissie&#038;p=41984&#038;preview=true">Signatuur (WG)</a></li>
+	<li id="menu-item-2477" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2477"><a href="https://www.noordwijksegolfclub.nl/commissie/sponsor/">Sponsor</a></li>
+	<li id="menu-item-2478" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2478"><a href="https://www.noordwijksegolfclub.nl/commissie/technische/">Technische</a></li>
+	<li id="menu-item-2462" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2462"><a href="https://www.noordwijksegolfclub.nl/commissie/baan/">Terrein</a></li>
+	<li id="menu-item-2465" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2465"><a href="https://www.noordwijksegolfclub.nl/commissie/competitie-topgolf/">Topgolf</a></li>
+	<li id="menu-item-2480" class="menu-item menu-item-type-post_type menu-item-object-commissie menu-item-2480"><a href="https://www.noordwijksegolfclub.nl/commissie/wedstrijd-en-handicap/">WHC</a></li>
+	<li id="menu-item-30434" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30434"><a href="https://www.noordwijksegolfclub.nl/commissie/zomeravond-bal-zab/">Zomeravond Competitie</a></li>
+</ul></div>
+</li>
+<li id="menu-item-1964" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1964"><a href="#">Faciliteiten</a>
+<div class="dropdown"><i class="fa fa-angle-down"></i></div><div class='sub-menu-wrapper'><ul class='sub-menu'>
+	<li id="menu-item-32438" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32438"><a href="https://noordwijkse.golfer.intogolf.nl/#/members">Zoek lid</a></li>
+	<li id="menu-item-1957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1957"><a href="https://www.noordwijksegolfclub.nl/starttijden-boeken/">Starttijd</a></li>
+	<li id="menu-item-42554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42554"><a href="https://www.noordwijksegolfclub.nl/intogolf/">Intogolf info</a></li>
+	<li id="menu-item-7401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7401"><a href="https://www.noordwijksegolfclub.nl/golfcentrum-noordwijk/">Drivingrange GCN</a></li>
+	<li id="menu-item-1954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1954"><a href="https://www.noordwijksegolfclub.nl/hospitality-chain/">Hospitalities</a></li>
+	<li id="menu-item-1956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1956"><a href="https://www.noordwijksegolfclub.nl/lockers-en-tassenberging/">Tassenbergingen / Lockers</a></li>
+	<li id="menu-item-9914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9914"><a href="https://www.noordwijksegolfclub.nl/gevonden-voorwerpen-2/">Gevonden voorwerpen</a></li>
+	<li id="menu-item-2633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2633"><a href="https://www.noordwijksegolfclub.nl/ruimte-reserveren-2/">Vergaderruimtes</a></li>
+	<li id="menu-item-7710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7710"><a href="https://www.noordwijksegolfclub.nl/race-to-nortuk-ranglijst/">Race to Nortuk</a></li>
+</ul></div>
+</li>
+<li id="menu-item-1965" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1965"><a href="http://www.noordwijksegolfclub.nl/jeugd/">Jeugd</a></li>
+<li id="menu-item-35097" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35097"><a href="https://www.noordwijksegolfclub.nl/baan-en-natuurplan_landingspagina/">Baan- en Natuurplan</a></li>
+<li id="menu-item-13938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13938"><a href="https://www.noordwijksegolfclub.nl/golflessen/">Lesagenda Pro’s</a></li>
+<li id="menu-item-2707" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2707"><a href="http://www.noordwijksegolfclub.nl/galerij/">Foto&#8217;s</a></li>
+<li id="menu-item-1963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1963"><a href="https://www.noordwijksegolfclub.nl/uitloggen/">Uitloggen</a></li>
+</ul>		        </div>
+		      </div>
+		    </div>
+
+		    <div class="features-menu">
+		        <a href="javascript:void(0)" class="close-features-menu-toggle"><i class="fa fa-times"></i></a>
+		            <section class="feature-section">
+    <div class="container">
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <h2 style="color:white; font-weight: 400;">9</h2>
+        </div>
+        <div class="text-wrapper">
+          <p>holes open</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/q.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Qualifying ronde  mogelijk</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/cart.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Trolleys  toegestaan</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/car.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Buggy's  toegestaan</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/stick.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Putting green open</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/ball.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Driving range open</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle blue">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/sun.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Zomer greens</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle blue">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/flag.svg">
+        </div>
+        <div class="text-wrapper">
+                      <p><a class="pinlink" href="www.noordwijksegolfclub.nl/pinsheet">Pinpositie </a></p>
+                  </div>
+      </div>
+    </div>
+  </section>
+		    </div>
+
+	</header>
+	<div class="site-content">
+					            <section class="content-header" style="background-image:url( 'https://www.noordwijksegolfclub.nl/wp/uploads/2022/04/DJI_0419-1920x800.jpg' )">
+            <section class="feature-section">
+    <div class="container">
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <h2 style="color:white; font-weight: 400;">9</h2>
+        </div>
+        <div class="text-wrapper">
+          <p>holes open</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/q.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Qualifying ronde  mogelijk</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/cart.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Trolleys  toegestaan</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/car.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Buggy's  toegestaan</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/stick.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Putting green open</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle green">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/ball.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Driving range open</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle blue">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/sun.svg">
+        </div>
+        <div class="text-wrapper">
+          <p>Zomer greens</p>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="circle blue">
+          <img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/flag.svg">
+        </div>
+        <div class="text-wrapper">
+                      <p><a class="pinlink" href="www.noordwijksegolfclub.nl/pinsheet">Pinpositie </a></p>
+                  </div>
+      </div>
+    </div>
+  </section>
+        <div class="features-toggle">
+            <div class="circle green">
+              <i class="fa fa-check"></i>
+            </div>
+        Baanstatus&nbsp;&nbsp;&gt;
+        </div>
+    </section>
+		<section class="anchor-menu-section">
+	<div class="anchor-menu">
+		<ul>
+		</ul>
+	</div>
+</section>
+		
+    <section class="count-table  centered-text-section with-bg" style="background-image:url('https://www.noordwijksegolfclub.nl/wp/uploads/2022/04/2021KS_img_0050-1920x800.jpg')" id="starttijd">
+      <div class="overlay"></div>
+      <div class="container">
+                <h2>Starttijd</h2>        <p><p>Maximaal 6 spelers? Lees alle informatie op deze pagina s.v.p. goed en stuur dan een e-mail naar <a href="mailto:caddiemaster@noordwijksegolfclub.nl" target="_blank" rel="noopener">caddiemaster@noordwijksegolfclub.nl</a>. Voeg aan deze e-mail uw digitale NGF-pasje (en dat van uw medespelers) toe en uw voorkeuren voor datum en starttijd. Vergeet ook uw mobiele nummer niet. Dan kunnen wij u beter bereiken.</p>
+</p>                                
+      </div>
+    </section>    <section class="content-section with-bg" id="gasten">
+      <div class="container centered">
+        <h2>Gasten</h2>              </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+                <div class="harmonica-wrapper">
+
+      
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">Algemene regels voor gasten</a>
+            <div class="harmonica-content">
+              <p>Onderstaande regels gelden ook voor gasten in groepsverband.</p>
+<ul>
+<li>Maximum handicap m/v 24,0 (geldt niet voor gasten van leden).</li>
+<li>Digitaal NGF-pasje mailen naar caddiemaster op moment van boeken starttijd.</li>
+<li>Digitaal NGF-pasje ook weer overleggen op moment van melden bij de caddiemaster.</li>
+<li>Op vrijdagmiddag, weekenddagen, wedstrijddagen en feestdagen zijn er geen speelmogelijkheden.</li>
+<li>Maximaal 5x per jaar spelen (incl. introductie, wedstrijden, etc.).</li>
+<li>Reservering van starttijden is verplicht. Bellen voor een starttijd voor de volgende dag kan vanaf 13.00 uur (0252-373763).</li>
+<li>Gasten mogen maximaal met drie personen in een flight spelen.</li>
+<li>Registreren en betalen (uitsluitend met pinpas) voordat men de baan in gaat bij de caddiemaster (bij afwezigheid in het restaurant).</li>
+<li>Speelsnelheid in de gaten houden.</li>
+</ul>
+<p>Andere nuttige informatie</p>
+<ul>
+<li><a href="http://www.noordwijksegolfclub.nl/baan/#greenfees" target="_blank" rel="noopener">Greenfeetarieven</a></li>
+<li><a href="http://www.noordwijksegolfclub.nl/club/#etiquette" target="_blank" rel="noopener">Kledingvoorschriften</a>, <a href="http://www.noordwijksegolfclub.nl/baan/#etiquette" target="_blank" rel="noopener">baanetiquette en speelsnelheid</a></li>
+<li>Wij staan voor een <a href="https://www.noordwijksegolfclub.nl/club/#sociaal-veilig-sportklimaat">sociaal veilig sportklimaat</a></li>
+</ul>
+            </div>
+          </div>
+
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">Mogelijke starttijden</a>
+            <div class="harmonica-content">
+              <ul>
+<li>Gasten (niet geïntroduceerd door een lid) mogen alleen starten gedurende <a href="https://www.noordwijksegolfclub.nl/baan/#openingstijden" target="_blank" rel="noopener">de tijden dat de caddiemaster aanwezig is</a>.</li>
+<li>
+<div>Maandag, donderdag: vóór 10.00 uur en na 14.00 uur.</div>
+</li>
+<li>
+<div>Dinsdag: na 14.00 uur.</div>
+</li>
+<li>
+<div>Woensdag: vóór 09.00 uur en na 14.00 uur.</div>
+</li>
+<li>Vrijdagochtend vóór 10.00 uur.</li>
+</ul>
+<p>Op weekenddagen, wedstrijddagen en feestdagen (Pasen, Pinksteren, Hemelvaartsdag, Koningsdag, Bevrijdingsdag om de vijf jaar (vanaf 2020), Kerstdagen en 1 januari) zijn er geen speelmogelijkheden.</p>
+<p>Gedurende de NGF-competitieperiode geen speelmogelijkheden op dagen waarop Noordwijk teams ontvangt.</p>
+            </div>
+          </div>
+
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">Introductie door een lid</a>
+            <div class="harmonica-content">
+              <ul>
+<li>Een lid mag per dag twee gasten introduceren.</li>
+<li>Een lid mag per jaar onbeperkt introduceren.</li>
+<li>Het lid moet met zijn gasten meespelen.</li>
+<li>Indien een lid handicap 24 of lager heeft, mag een introducé 54 of lager hebben.</li>
+<li>Introductietarief is niet van toepassing bij &#8220;vooruitboeking&#8221;.</li>
+<li>Bij voorkeur tussen mei en oktober zo min mogelijk introducés.</li>
+</ul>
+            </div>
+          </div>
+
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">Leden gastgroep</a>
+            <div class="harmonica-content">
+              <ul>
+<li>Meerdere leden spelen mee.</li>
+<li>7 t/m 18 spelers en/of 19 t/m 36 spelers.</li>
+<li>Verhouding leden versus gasten: 2:1.</li>
+<li><a href="mailto:groep@noordwijksegolfclub.nl" target="_blank" rel="noopener">E-mail onze groepencoördinator voor de voorwaarden</a></li>
+</ul>
+            </div>
+          </div>
+
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">Externe groepen</a>
+            <div class="harmonica-content">
+              <p>Groepen van niet-leden met minimaal 7 spelers kunnen een verzoek indienen per <a href="mailto:groep@noordwijksegolfclub.nl" target="_blank" rel="noopener">e-mail bij onze groepencoördinator.</a></p>
+<p>Onderstaand de belangrijkste voorwaarden:</p>
+<ul>
+<li>Maximale handicap 24.0.</li>
+<li>Uitsluitend 2-of 3-ballen.</li>
+<li>Niet in het weekend.</li>
+<li>Onze voorkeur gaat uit naar maandag of woensdagmiddag.</li>
+<li>In april en mei zijn er geen mogelijkheden i.v.m. de NGF-competitie.</li>
+<li>De reservering is pas definitief na ontvangst van de betaling van de factuur.</li>
+<li>Bij voorkeur vóór 1 november uw aanvraag indienen voor het volgende jaar.</li>
+<li>Informatie over greenfees vind je op een apart deel van deze pagina (<a href="https://www.noordwijksegolfclub.nl/baan/#greenfees">klik hier</a>).</li>
+</ul>
+            </div>
+          </div>
+
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">Oude negen en hospitality chain</a>
+            <div class="harmonica-content">
+              <ul>
+<li><strong>Oude negen</strong>: Broekpolder, Eindhovensche, Haagsche, Kennemer, Rosendaelsche, Toxandria, De Pan en Hilversumsche.</li>
+<li><strong>Hospitality chain</strong>: de Dommel, Noord-Nederlandse en SallandschOude negene.</li>
+<li>Maximaal 4 spelers per dag, per club.</li>
+<li>Reserveren kan 6 dagen van tevoren. Eerder kan, maar dan geldt een hoger tarief.</li>
+<li>Bij spelen in groepsverband is deze regeling <span style="text-decoration: underline;"><b>niet </b></span>van toepassing.</li>
+<li>Op weekenddagen, wedstrijddagen en feestdagen zijn er geen speelmogelijkheden.</li>
+</ul>
+            </div>
+          </div>
+
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">Vrij spelen</a>
+            <div class="harmonica-content">
+              <p><strong>Sponsorkaart </strong></p>
+<ul>
+<li>Let op uiterste geldigheidsdatum kaart.</li>
+<li>Starttijd boeken via de caddiemaster.</li>
+<li>Vermeld dat het om een sponsorkaart gaat.</li>
+</ul>
+<p><strong>Voorzitters en secretarissen van golfverenigingen (gouden kaart)<br />
+</strong></p>
+<p>Wij geven &#8220;courtesy of the course&#8221; aan houders van een gouden kaart van een NGF A-, B- of C-club. Voorafgaand reserveren vanaf 6 dagen van tevoren via caddiemaster@noordwijksegolfclub.nl. Deze regeling is niet geldig bij een groepsboeking en bij voorspelen voor de competitie.</p>
+<p><strong>PGA (A&amp;B)-kaarthouders</strong></p>
+<ul>
+<li>Uitsluitend op maandagen (indien geen feestdag).</li>
+<li>Uitsluitend professionals die de PGA A- of B-opleiding hebben afgerond.</li>
+<li>Geldt niet drie weken voor de week van een NGF wedstrijd.</li>
+<li>De caddiemaster van onze club moet op de hoogte zijn van je komst. Meld je vanaf 13.00 uur op zondag ervoor aan en stuur een kopie van een geldig PGA Holland pasje naar <a href="mailto:caddiemaster@noordwijksegolfclub.nl" target="_blank" rel="noopener">caddiemaster@noordwijksegolfclub.nl</a>.</li>
+<li>Maximaal twee professionals mogen gratis komen spelen op een maandag. Vandaar dat het aanmelden belangrijk is.</li>
+<li>Graag op de speeldag melden bij de caddiemaster en jouw PGA Holland pasje overleggen.</li>
+<li>Niet gebruiken voor baanles.</li>
+<li>Als je eerder boekt (voor 13.00 uur op de zondag voor de dag dat je wilt spelen) of in groepsverband speelt, vervalt het recht op gratis spelen.</li>
+</ul>
+<p>Voor het overige gelden de algemene regels voor gasten.</p>
+            </div>
+          </div>
+
+        
+      
+    </div>          </div>
+          <div class="column">
+            <p>
+  <img src="https://www.noordwijksegolfclub.nl/wp/uploads/2022/04/baan-8-768x432.jpg">
+</p>          </div>
+        </div>
+      </div>
+    </section>    <section class="content-section" id="greenfees">
+      <div class="container centered">
+        <h2>Greenfees</h2>              </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h4><img decoding="async" class="alignnone wp-image-27940" src="https://www.noordwijksegolfclub.nl/wp/../app/uploads/2022/01/pinnen-300x115.png" alt="" width="149" height="57" srcset="https://www.noordwijksegolfclub.nl/wp/uploads/2022/01/pinnen-300x115.png 300w, https://www.noordwijksegolfclub.nl/wp/uploads/2022/01/pinnen.png 350w" sizes="(max-width: 149px) 100vw, 149px" /></h4>
+<h3>Tarieven per 1 januari 2026</h3>
+<p>Alle tarieven gelden onder bovengenoemde voorwaarden. Greenfees zijn inclusief gebruik van de oefenfaciliteiten.</p>
+<hr />
+<h3><strong>Introducties (max. twee per lid per dag)</strong></h3>
+<ul>
+<li>9 holes: € 30,&#8211;</li>
+<li>9 holes vooruitboeking € 40,&#8211;</li>
+<li>ledengastgroep 7 t/m 18 spelers, max. verhouding gast : lid = 2 : 1: € 70,&#8211;   |   9 holes € 40,&#8211;</li>
+<li>ledengastgroep 19 t/m 36 spelers, max. verhouding gast : lid = 2 : 1: € 100,&#8211; |   9 holes € 55,&#8211;</li>
+</ul>
+<hr />
+<h3><strong>Lid van binnen- of buitenlandse club &#8211; 9 holes</strong></h3>
+<ul>
+<li>Hospitality: € 30,&#8211; | vooruitboeking € 40,&#8211;</li>
+<li>NGF A-, B- of C-club (vereniging met baan): € 95,&#8211;</li>
+<li>NGF D-club (vereniging zonder baan): €120,&#8211;</li>
+<li>Erkende buitenlandse vereniging: € 120,&#8211;</li>
+<li>Twilight uitgesloten tot medio september</li>
+</ul>
+<h3>Groepen (vanaf 7 spelers) &#8211; 9 holes</h3>
+<p>€ 95,&#8211; NGF-lid met baan<br />
+€ 120,&#8211; NGF-lid zonder baan<br />
+€ 120,&#8211; bedrijven/groep met zakelijk karakter<br />
+€ 120,&#8211; bezoekers uit het buitenland<br />
+Overige tarieven en regelingen komen in een groepsboeking te vervallen</p>
+<p>Heb je interesse om met een groep te komen spelen? Graag een e-mail naar <a href="mailto:groep@noordwijksegolfclub.nl" target="_blank" rel="noopener noreferrer">groep@noordwijksegolfclub.nl</a>. Vermeld in ieder geval de grootte van de groep, voorkeursdata en een telefoonnummer waarop we je kunnen bereiken.</p>
+          </div>
+          <div class="column">
+            <h3>Jeugd</h3>
+<p>Onze club draagt jeugdgolf een warm hart toe en wil graag dat talentvolle jeugdspelers zich verder kunnen ontwikkelen. De voorwaarden voor een gereduceerd tarief van € 15,&#8211; zijn:</p>
+<ul>
+<li>Aantoonbaar (via pasje op golf.nl app) voldoen aan onderstaande handicap voorwaarden.</li>
+<li>Bij registratie overleggen van het NGF-pasje en een legitimatiebewijs.</li>
+<li>Lid zijn van een vereniging met eigen baan (A-, B- of C).</li>
+<li>Voor het overige gelden dezelfde voorwaarden als voor andere gasten.</li>
+</ul>
+<p>Let op: voor toernooien of de NGF-competitie gelden mogelijke andere regelingen voor voorspelen. Deze regelingen gelden voor alle deelnemers ongeacht hun leeftijd.</p>
+<h3>Handicapvoorwaarden gereduceerd tarief</h3>
+<p>Meisjes</p>
+<ul>
+<li>t/m 12 jaar, handicap 36,0</li>
+<li>13 en 14 jaar, handicap 28,0</li>
+<li>15 en 16 jaar, handicap 22,0</li>
+<li>17 t/m 21 jaar, handicap 14,0</li>
+</ul>
+<p>Jongens</p>
+<ul>
+<li>t/m 12 jaar, handicap 36,0</li>
+<li>13 en 14 jaar, handicap 22,0</li>
+<li>15 en 16 jaar, handicap 16,0</li>
+<li>17 t/m 21 jaar, handicap 7,0</li>
+</ul>
+<hr />
+<h3>Twilight-tijden (uitgesloten mei t/m uiterlijk medio september)</h3>
+<p>14.00 uur: januari + december (9+ holes)<br />
+15.00 uur: februari + november (9+ holes)<br />
+16.00 uur: maart + oktober (9+ holes)<br />
+17.00 uur: april + september (9+ holes)<br />
+19.00 uur: mei + augustus (9 holes)<br />
+20.00 uur: juni + juli (9 holes)</p>
+          </div>
+        </div>
+      </div>
+    </section>    <section class="content-section with-bg" id="openingstijden">
+      <div class="container centered">
+        <h2>Openingstijden</h2>              </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <p>
+  <img src="https://www.noordwijksegolfclub.nl/wp/uploads/2017/01/2017_geo_vos_zittend.jpg">
+</p>          </div>
+          <div class="column">
+            <h3>Baan</h3>
+<p>Alle dagen van het jaar geopend, tenzij rond de feestdagen op de website andere sluitingstijden staan.</p>
+<h3>Caddiemaster</h3>
+<ul>
+<li>Januari/februari: 08:30-15:30 uur</li>
+<li>Maart: 08:30-17:00 uur</li>
+<li>April/september: 08:30-17:30 uur</li>
+<li>Oktober/november: 08:30-16:30 uur</li>
+<li>December: 08:30-15:30 uur</li>
+</ul>
+<h3>Secretariaat</h3>
+<p>Maandag t/m donderdag 09.00 -14.30 uur.</p>
+<h3>Shop</h3>
+<p><a href="http://www.noordwijksegolfclub.nl/shop/">Zie pagina golfshop</a></p>
+<h4>Clubzaal &amp; Restaurant</h4>
+<p><a href="https://www.noordwijksegolfclub.nl/restaurant-2/" target="_blank" rel="noopener">Zie pagina Restaurant</a></p>
+          </div>
+        </div>
+      </div>
+    </section>    <section class="content-section" id="handicarts">
+      <div class="container centered">
+        <h2>Handicarts</h2>              </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+                <div class="harmonica-wrapper">
+
+      
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">Hoe word ik donateur of gebruiker?</a>
+            <div class="harmonica-content">
+              <ul>
+<li><a href="http://www.handicart.nl" target="_blank" rel="noopener noreferrer">Donateur worden van de Stichting Handicart</a></li>
+<li>Gebruikerskaart nodig? Neem contact op met de NGC-consul van de Stichting Handicart, Dettie Veering of Leo Hazenoot.</li>
+</ul>
+            </div>
+          </div>
+
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">Reserveren en gebruik</a>
+            <div class="harmonica-content">
+              <ul>
+<li>Alleen buggies/handicarts van de Stichting Handicart worden toegelaten.</li>
+<li>Bij het boeken van een wedstrijd of starttijd kan meteen een handicart gereserveerd worden (0252-373763).</li>
+<li>Minimale leeftijd voor het rijden in een handicart is 16 jaar.</li>
+<li>Melden bij caddiemaster, gebruikerspas tonen en eventuele meerijders registreren.</li>
+<li>Toch niet nodig? S.v.p. afbellen.</li>
+<li>Gebruik bij een wedstrijd: vermelden bij aanmelding en zelf handicart reserveren bij caddiemaster.</li>
+</ul>
+            </div>
+          </div>
+
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">Tarieven</a>
+            <div class="harmonica-content">
+              <p><a href="https://www.noordwijksegolfclub.nl/wp/uploads/2025/07/2025_handicart_tarieven.png"><img fetchpriority="high" decoding="async" class="alignnone wp-image-45243 size-full" src="https://www.noordwijksegolfclub.nl/wp/uploads/2025/07/2025_handicart_tarieven.png" alt="" width="516" height="173" srcset="https://www.noordwijksegolfclub.nl/wp/uploads/2025/07/2025_handicart_tarieven.png 516w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/07/2025_handicart_tarieven-300x101.png 300w" sizes="(max-width: 516px) 100vw, 516px" /></a></p>
+<p>Gebruik door niet-pashouder alleen mogelijk als er handicarts vrij zijn. Pashouders gaan altijd voor.</p>
+            </div>
+          </div>
+
+        
+          <div class="harmonica-item collapsed">
+            <a class="harmonica-toggle" href="javascript:void(0);">GPS</a>
+            <div class="harmonica-content">
+              <p>Onze handicarts zijn sinds 2016 uitgerust met GPS. Dit systeem zorgt ervoor dat de actieradius van de handicarts wordt beperkt tot dat deel van de baan waar de kar geen schade kan aanrichten. De kar zal weigeren door de rough en op de (fore)green te rijden. U kunt dan uitsluitend nog achteruit rijden. In de periode van het seizoen waarin de baan extra kwetsbaar is, kan de actieradius nog meer worden beperkt.</p>
+            </div>
+          </div>
+
+        
+      
+    </div>          </div>
+          <div class="column">
+            <p>
+  <img src="https://www.noordwijksegolfclub.nl/wp/uploads/2017/01/baan-3.png">
+</p>          </div>
+        </div>
+      </div>
+    </section>
+    <section class="count-table  centered-text-section with-bg" style="background-image:url('https://www.noordwijksegolfclub.nl/wp/uploads/2017/01/2017_baan_tee_1e_hert-1920x800.jpg')" id="baanhandicaps">
+      <div class="overlay"></div>
+      <div class="container">
+                <h2>Baanhandicaps</h2>                                          <div class="hole-count">
+
+            
+              
+                <div class="col">
+                  <h4>Heren</h4>
+                                      <div class="table">
+
+                    
+                      
+                        <a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/Noordwijk-18-holes-tijdelijksept-26-mei-27-Heren.pdf" target="_blank">18 holes <span></span><span></span></a>
+
+                      
+                        <a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/Noordwijk-9-holes-tijdelijkhole-10-18-sept-26-mei-27-Heren.pdf" target="_blank">9 holes  <span></span><span></span></a>
+
+                      
+                    
+                    </div>
+                  
+                </div>
+
+              
+                <div class="col">
+                  <h4>Dames</h4>
+                                      <div class="table">
+
+                    
+                      
+                        <a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/Noordwijk-18-holes-tijdelijksept-26-mei-27-Dames.pdf" target="_blank">18 holes <span></span><span></span></a>
+
+                      
+                        <a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/Noordwijk-9-holes-tijdelijkhole-10-18-sept-26-mei-27-Dames.pdf" target="_blank">9 holes <span></span><span></span></a>
+
+                      
+                    
+                    </div>
+                  
+                </div>
+
+              
+            
+                
+      </div>
+    </section>    <section class="scorecard">
+                  <a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/scorekaart-sep-2026-mei-2027-voorkant.png" class="btn white">Bekijk de scorekaart</a>    </section>    <section class="scorecard">
+                  <a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/scorekaart-sep-2026-mei-2027-achterkant.png" class="btn white">Bekijk de plattegrond</a>    </section>    <section class="content-section" id="plaatselijke-regels">
+      <div class="container centered">
+        <h2>Plaatselijke Regels</h2>              </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <div id="attachment_49326" style="width: 160px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-49326" decoding="async" class="wp-image-49326 size-thumbnail" src="https://www.noordwijksegolfclub.nl/wp/uploads/2026/04/baan-20-150x150.png" alt="Baan 50" width="150" height="150" srcset="https://www.noordwijksegolfclub.nl/wp/uploads/2026/04/baan-20-150x150.png 150w, https://www.noordwijksegolfclub.nl/wp/uploads/2026/04/baan-20-300x300.png 300w, https://www.noordwijksegolfclub.nl/wp/uploads/2026/04/baan-20-1024x1024.png 1024w, https://www.noordwijksegolfclub.nl/wp/uploads/2026/04/baan-20-768x768.png 768w, https://www.noordwijksegolfclub.nl/wp/uploads/2026/04/baan-20.png 1200w" sizes="(max-width: 150px) 100vw, 150px" /><p id="caption-attachment-49326" class="wp-caption-text">op het hele terrein en in alle gebouwen</p></div>
+<p><a href="https://www.noordwijksegolfclub.nl/baan-en-kleding-etiquette/" target="_blank" rel="noopener">Lees hier de etiquette regels van de club</a></p>
+<h3>Plaatselijke regels vanaf vrijdag 18 september 2026</h3>
+<p><span style="color: #ff0000;"><strong>Ingezaaide gebieden niet betreden, ook niet om je bal te pakken!</strong></span></p>
+<ol>
+<li><a href="https://www.noordwijksegolfclub.nl/wp/uploads/2024/12/20241205_plaatselijke_regels_standaard.pdf" target="_blank" rel="noopener">Permanente regels</a></li>
+<li><a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/07/20260729_plaatselijke_regels_gespecificeerde-omstandigheden.pdf" target="_blank" rel="noopener">In bepaalde omstandigheden</a> (schapen, plaatsen en schoonmaken, beluchtingsgaten, tijdelijke (winter)greens)</li>
+<li><a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/20260918_plaatselijke_regels_tijdelijk.pdf" target="_blank" rel="noopener">Tijdelijke regels ivm renovatie</a></li>
+<li>Specifieke gebieden:<br />
+<a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/20260922-gebieden-per-hole.png"><img decoding="async" class="alignnone wp-image-50643 size-full" src="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/20260922-gebieden-per-hole.png" alt="" width="660" height="857" srcset="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/20260922-gebieden-per-hole.png 660w, https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/20260922-gebieden-per-hole-231x300.png 231w" sizes="(max-width: 660px) 100vw, 660px" /></a></li>
+</ol>
+<h3>English as from September 18th 2026</h3>
+<p><span style="color: #ff0000;"><strong>Do not enter seeded areas, not even to retrieve your ball!</strong></span></p>
+<ol>
+<li><a href="https://www.noordwijksegolfclub.nl/wp/uploads/2024/12/20241205_plaatselijke_regels_standaard_EN.pdf">Permanent local rules</a></li>
+<li><a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/07/20260729_plaatselijke_regels_gespecificeerde-omstandigheden_EN.pdf" target="_blank" rel="noopener">Local rules for specified circumstances</a></li>
+<li><a href="https://www.noordwijksegolfclub.nl/wp/uploads/2026/09/20260918_plaatselijke_regels_tijdelijk_EN.pdf">Temporary local rules</a> (list per hole only available in Dutch)</li>
+</ol>
+          </div>
+          <div class="column">
+            <p><img decoding="async" class="size-thumbnail wp-image-45001 alignleft" src="https://www.noordwijksegolfclub.nl/wp/uploads/2025/06/rainbird-vlaggen-wit-groen-150x150.jpg" alt="" width="150" height="150" srcset="https://www.noordwijksegolfclub.nl/wp/uploads/2025/06/rainbird-vlaggen-wit-groen-150x150.jpg 150w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/06/rainbird-vlaggen-wit-groen-300x300.jpg 300w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/06/rainbird-vlaggen-wit-groen.jpg 400w" sizes="(max-width: 150px) 100vw, 150px" /></p>
+<p>Op diverse plekken in de baan kun je kleine witte en groene vlaggetjes tegenkomen. Ze markeren waar de nieuwe beregening is gekomen: groen voor een leiding; wit voor een sprinkler. <strong>Wil je alsjeblieft deze vlaggetjes niet verplaatsen!</strong> Alleen als het een belemmering voor de ligging van je bal, je stand of swing is. Dan mag het wel. Markeer het vlaggetje zodat je het op dezelfde plek terug kan zetten.</p>
+<p>&nbsp;</p>
+<h3>Toelichting op de regels</h3>
+<ul>
+<li><a href="https://www.noordwijksegolfclub.nl/wp/uploads/2025/12/20251213_plaatselijke_regels_informatie_verboden_speelzone_schapen.pdf" target="_blank" rel="noopener">Verboden zone</a></li>
+</ul>
+<h3>Wat is wat en hoe verder?</h3>
+<p>Maar lees vooral de plaatselijke regels en de specifieke GUR gebieden benoemd in bovenstaand geel plaatje.</p>
+<p><a href="https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-markering-gebieden-scaled.jpg"><img decoding="async" class="alignnone wp-image-45901" src="https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-markering-gebieden-591x1024.jpg" alt="" width="250" height="433" srcset="https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-markering-gebieden-591x1024.jpg 591w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-markering-gebieden-173x300.jpg 173w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-markering-gebieden-768x1330.jpg 768w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-markering-gebieden-887x1536.jpg 887w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-markering-gebieden-1183x2048.jpg 1183w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-markering-gebieden-scaled.jpg 1478w" sizes="(max-width: 250px) 100vw, 250px" /></a>  <a href="https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-R16-GUR.jpg"><img decoding="async" class="alignnone wp-image-45902" src="https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-R16-GUR-232x300.jpg" alt="" width="250" height="323" srcset="https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-R16-GUR-232x300.jpg 232w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-R16-GUR-792x1024.jpg 792w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-R16-GUR-768x992.jpg 768w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-R16-GUR-1189x1536.jpg 1189w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-R16-GUR-1585x2048.jpg 1585w, https://www.noordwijksegolfclub.nl/wp/uploads/2025/08/20250828-R16-GUR.jpg 1817w" sizes="(max-width: 250px) 100vw, 250px" /></a></p>
+          </div>
+        </div>
+      </div>
+    </section>    <section class="content-section with-bg" id="onweer">
+      <div class="container centered">
+        <h2>Onweer?</h2>              </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h3>Acties club</h3><ul>
+<li>Raadpleegt de weerberichten bij omstandigheden waarin onweer kan ontstaan.</li>
+<li>Waarschuwt spelers op dagen dat er onweer verwacht wordt, en vertel hoe zij geïnformeerd worden als zij bescherming tegen de bliksem moeten opzoeken.</li>
+<li>Vertelt spelers wat zij moeten doen als het gaat onweren. Geeft o.a. aan waar de veilige schuilplekken zijn en hoe spelers die kunnen vinden (staan aangegeven op de scorekaart).</li>
+<li>Maakt gebruik van een centraal toetersysteem:
+<ul>
+<li><strong>1x lange toon</strong> (10 seconden): spel onderbreken, schuilhut opzoeken, verwachting is dat het snel hervat kan worden.</li>
+<li><strong>2x korte toon </strong>(3 seconden): spel kan hervat worden.</li>
+<li><strong>3x lange toon</strong> (10 seconden): spel staken, s.v.p. schuilhut opzoeken of de baan uitkomen. Spel zal niet hervat worden.</li>
+</ul>
+</li>
+</ul>
+          </div>
+          <div class="column">
+            <h3>Speler</h3><ul>
+<li>Ga naar het dichtstbijzijnde gebouw of een schuilhut.</li>
+<li>Indien er niet verder gespeeld wordt (<strong>3x lange toon</strong>), kijk s.v.p. zelf op bijvoorbeeld de onweer-/alarm-app of het mogelijk is veilig naar het clubhuis te komen.</li>
+<li>Indien u van de baan afkomt, verzoeken wij u zich af te melden bij de caddiemaster. Dit om te kunnen bepalen of er nog spelers van de baan gehaald moeten worden.</li>
+</ul>
+<p>Als het bovenstaande niet mogelijk is:</p>
+<ul>
+<li>Zoek een lage plek op.</li>
+<li>Ga niet in een groep staan, maar minimaal twee meter van elkaar af.</li>
+<li>In een open terrein: gehurkt op de tenen, armen over de knieën, het hoofd zo laag mogelijk en de voeten tegen elkaar.</li>
+<li>Alles van metaal s.v.p. achterlaten.</li>
+</ul>
+<p>Bij twijfel kunt u bellen met de caddiemaster: <strong>0252 &#8211; 373763</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>    <script>
+      var page_nav_array = [["starttijd","Starttijd"],["gasten","Gasten"],["greenfees","Greenfees"],["openingstijden","Openingstijden"],["handicarts","Handicarts"],["baanhandicaps","Baanhandicaps"],["plaatselijke-regels","Plaatselijke Regels"],["onweer","Onweer?"]];
+    </script>
+    	</div>
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="contact-info">
+					<div class="img-wrapper">
+						<img src="https://www.noordwijksegolfclub.nl//app/themes/golf/assets/img/logo_1.svg">
+					</div>
+					<div class="text-wrapper">
+													<li id="text-2" class="widget widget_text">
+<div class="textwidget">Noordwijkse Golfclub<br />
+Postbus 70, 2200 AB Noordwijk<br />
+Randweg 25, 2204 AL Noordwijk</p>
+<p>Caddiemaster: 0252-373763 (starttijden)<br />
+Secretariaat:    0252-373761<br />
+secretariaat@noordwijksegolfclub.nl</p></div>
+</li>
+											</div>
+				</div>
+				<div class="footer-menu">
+					<div class="menu-wrapper">
+													<li id="nav_menu-6" class="widget widget_nav_menu">
+<h2 class="widgettitle">Home</h2>
+<div class="menu-footer-home-container">
+<ul id="menu-footer-home" class="menu">
+<li id="menu-item-49580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49580"><a href="https://www.noordwijksegolfclub.nl/flyover/">Flyover</a></li>
+</ul>
+</div>
+</li>
+<li id="nav_menu-7" class="widget widget_nav_menu">
+<h2 class="widgettitle">Baan</h2>
+<div class="menu-footer-baan-container">
+<ul id="menu-footer-baan" class="menu">
+<li id="menu-item-49581" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49581"><a target="_blank" href="https://www.buienradar.nl/">Buienradar.nl</a></li>
+</ul>
+</div>
+</li>
+<li id="nav_menu-8" class="widget widget_nav_menu">
+<h2 class="widgettitle">Golfshop</h2>
+<div class="menu-footer-shop-container">
+<ul id="menu-footer-shop" class="menu">
+<li id="menu-item-49582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49582"><a href="https://www.noordwijksegolfclub.nl/shop/">Openingstijden</a></li>
+</ul>
+</div>
+</li>
+<li id="nav_menu-9" class="widget widget_nav_menu">
+<h2 class="widgettitle">Restaurant</h2>
+<div class="menu-footer-restaurant-container">
+<ul id="menu-footer-restaurant" class="menu">
+<li id="menu-item-49583" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49583"><a href="https://www.noordwijksegolfclub.nl/restaurant/#menukaarten">Wijn &#038; Menukaart</a></li>
+</ul>
+</div>
+</li>
+<li id="nav_menu-10" class="widget widget_nav_menu">
+<h2 class="widgettitle">Golfclub</h2>
+<div class="menu-footer-golfclub-container">
+<ul id="menu-footer-golfclub" class="menu">
+<li id="menu-item-49585" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49585"><a href="https://www.noordwijksegolfclub.nl/app/uploads/2020/06/Privacyverklaring-NGC-3.pdf">Privacyverklaring</a></li>
+<li id="menu-item-49586" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49586"><a href="https://www.noordwijksegolfclub.nl/contact-2/">Contact club</a></li>
+</ul>
+</div>
+</li>
+											</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="copyright">
+					&copy; Copyright 2026. Noordwijkse Golfclub. All rights reserved. <a style="color: #22e6ae;" href="https://www.eenvoud.nl/">Website development</a> door Eenvoud.
+				</div>
+				<a href="javascript:void(0);" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+			</div>
+			</div>
+		</footer>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp/wp-*.php","/wp/wp-admin/*","/wp/uploads/*","//app/*","//app/plugins/*","//app/themes/golf/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.noordwijksegolfclub.nl/wp/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://www.noordwijksegolfclub.nl/wp/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+		<div id="windmeteroverlay">
+
+			<div class="windmeterback"></div>
+
+			<div class="windmetertable">
+				<div class="windmetertablecell">
+					<div class="windmeterpopup">
+						<div class="inner">
+
+							<div class="introtekst">
+
+								<iframe src="" border="0" width="100%" height="750px"></iframe>
+
+							</div>
+
+							<div class="closer">Sluit venster</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		</body>
+
+		</html>

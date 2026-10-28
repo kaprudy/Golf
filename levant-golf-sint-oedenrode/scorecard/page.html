@@ -1,0 +1,1066 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>  Golfbaan | Levant</title>
+
+	<meta charset="UTF-8" />
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+	<link rel="stylesheet" href="https://www.levant.nl/wp-content/themes/levant/css/chota.css" media="all" />
+	<link rel="stylesheet" href="https://www.levant.nl/wp-content/themes/levant/style.css" media="screen" />
+	<link rel="stylesheet" href="https://use.typekit.net/kwx3ykf.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css?ver=c18f8a5a3ceb54ce0a3de3ce05c254af" media="screen" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" media="screen" />
+
+	<script src="https://kit.fontawesome.com/7a118607fb.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+	<!--
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+	-->
+
+	<script src="https://www.levant.nl/wp-content/themes/levant/js/website.js"></script>
+
+	<meta name='robots' content='max-image-preview:large' />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v11.3.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-0DGYCKH6QZ"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '11.3.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.levant.nl\/golfbaan\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-0DGYCKH6QZ',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-0DGYCKH6QZ', {"forceSSL":"true","anonymize_ip":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+		<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='trp-language-switcher-v2-css' href='https://www.levant.nl/wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher-v2.css?ver=3.3.8' media='all' />
+<script id="cookie-law-info-js-extra">
+var _ckyConfig = {"_ipData":[],"_assetsURL":"https://www.levant.nl/wp-content/plugins/cookie-law-info/lite/frontend/images/","_publicURL":"https://www.levant.nl","_expiry":"365","_categories":[{"name":"Necessary","slug":"necessary","isNecessary":true,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":true,"ccpa":true}},{"name":"Functional","slug":"functional","isNecessary":false,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}},{"name":"Analytics","slug":"analytics","isNecessary":false,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}},{"name":"Performance","slug":"performance","isNecessary":false,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}},{"name":"Advertisement","slug":"advertisement","isNecessary":false,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}}],"_activeLaw":"gdpr","_rootDomain":"","_block":"1","_showBanner":"1","_bannerConfig":{"settings":{"type":"box","preferenceCenterType":"popup","position":"bottom-left","applicableLaw":"gdpr"},"behaviours":{"reloadBannerOnAccept":false,"loadAnalyticsByDefault":false,"animations":{"onLoad":"animate","onHide":"sticky"}},"config":{"revisitConsent":{"status":false,"tag":"revisit-consent","position":"bottom-left","meta":{"url":"#"},"styles":{"background-color":"#0056A7"},"elements":{"title":{"type":"text","tag":"revisit-consent-title","status":true,"styles":{"color":"#0056a7"}}}},"preferenceCenter":{"toggle":{"status":true,"tag":"detail-category-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863DC"}},"inactive":{"styles":{"background-color":"#D0D5D2"}}}}},"categoryPreview":{"status":false,"toggle":{"status":true,"tag":"detail-category-preview-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863DC"}},"inactive":{"styles":{"background-color":"#D0D5D2"}}}}},"videoPlaceholder":{"status":true,"styles":{"background-color":"#000000","border-color":"#000000","color":"#ffffff"}},"readMore":{"status":false,"tag":"readmore-button","type":"link","meta":{"noFollow":true,"newTab":true},"styles":{"color":"#1863DC","background-color":"transparent","border-color":"transparent"}},"showMore":{"status":true,"tag":"show-desc-button","type":"button","styles":{"color":"#1863DC"}},"showLess":{"status":true,"tag":"hide-desc-button","type":"button","styles":{"color":"#1863DC"}},"alwaysActive":{"status":true,"tag":"always-active","styles":{"color":"#008000"}},"manualLinks":{"status":true,"tag":"manual-links","type":"link","styles":{"color":"#1863DC"}},"auditTable":{"status":true},"optOption":{"status":true,"toggle":{"status":true,"tag":"optout-option-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863dc"}},"inactive":{"styles":{"background-color":"#FFFFFF"}}}}}}},"_version":"3.5.7","_logConsent":"1","_tags":[{"tag":"accept-button","styles":{"color":"#FFFFFF","background-color":"#1863DC","border-color":"#1863DC"}},{"tag":"reject-button","styles":{"color":"#1863DC","background-color":"transparent","border-color":"#1863DC"}},{"tag":"settings-button","styles":{"color":"#1863DC","background-color":"transparent","border-color":"#1863DC"}},{"tag":"readmore-button","styles":{"color":"#1863DC","background-color":"transparent","border-color":"transparent"}},{"tag":"donotsell-button","styles":{"color":"#1863DC","background-color":"transparent","border-color":"transparent"}},{"tag":"show-desc-button","styles":{"color":"#1863DC"}},{"tag":"hide-desc-button","styles":{"color":"#1863DC"}},{"tag":"cky-always-active","styles":[]},{"tag":"cky-link","styles":[]},{"tag":"accept-button","styles":{"color":"#FFFFFF","background-color":"#1863DC","border-color":"#1863DC"}},{"tag":"revisit-consent","styles":{"background-color":"#0056A7"}}],"_shortCodes":[{"key":"cky_readmore","content":"\u003Ca href=\"#\" class=\"cky-policy\" aria-label=\"Cookie Policy\" target=\"_blank\" rel=\"noopener\" data-cky-tag=\"readmore-button\"\u003ECookie Policy\u003C/a\u003E","tag":"readmore-button","status":false,"attributes":{"rel":"nofollow","target":"_blank"}},{"key":"cky_show_desc","content":"\u003Cbutton class=\"cky-show-desc-btn\" data-cky-tag=\"show-desc-button\" aria-label=\"Show more\"\u003EShow more\u003C/button\u003E","tag":"show-desc-button","status":true,"attributes":[]},{"key":"cky_hide_desc","content":"\u003Cbutton class=\"cky-show-desc-btn\" data-cky-tag=\"hide-desc-button\" aria-label=\"Show less\"\u003EShow less\u003C/button\u003E","tag":"hide-desc-button","status":true,"attributes":[]},{"key":"cky_optout_show_desc","content":"[cky_optout_show_desc]","tag":"optout-show-desc-button","status":true,"attributes":[]},{"key":"cky_optout_hide_desc","content":"[cky_optout_hide_desc]","tag":"optout-hide-desc-button","status":true,"attributes":[]},{"key":"cky_category_toggle_label","content":"[cky_{{status}}_category_label] [cky_preference_{{category_slug}}_title]","tag":"","status":true,"attributes":[]},{"key":"cky_enable_category_label","content":"Enable","tag":"","status":true,"attributes":[]},{"key":"cky_disable_category_label","content":"Disable","tag":"","status":true,"attributes":[]},{"key":"cky_video_placeholder","content":"\u003Cdiv class=\"video-placeholder-normal\" data-cky-tag=\"video-placeholder\" id=\"[UNIQUEID]\"\u003E\u003Cp class=\"video-placeholder-text-normal\" data-cky-tag=\"placeholder-title\"\u003EPlease accept cookies to access this content\u003C/p\u003E\u003C/div\u003E","tag":"","status":true,"attributes":[]},{"key":"cky_enable_optout_label","content":"Enable","tag":"","status":true,"attributes":[]},{"key":"cky_disable_optout_label","content":"Disable","tag":"","status":true,"attributes":[]},{"key":"cky_optout_toggle_label","content":"[cky_{{status}}_optout_label] [cky_optout_option_title]","tag":"","status":true,"attributes":[]},{"key":"cky_optout_option_title","content":"Do Not Sell or Share My Personal Information","tag":"","status":true,"attributes":[]},{"key":"cky_optout_close_label","content":"Close","tag":"","status":true,"attributes":[]},{"key":"cky_preference_close_label","content":"Close","tag":"","status":true,"attributes":[]}],"_rtl":"","_language":"en","_providersToBlock":[]};
+var _ckyStyles = {"css":".cky-overlay{background: #000000; opacity: 0.4; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99999999;}.cky-hide{display: none;}.cky-btn-revisit-wrapper{display: flex; align-items: center; justify-content: center; background: #0056a7; width: 45px; height: 45px; border-radius: 50%; position: fixed; z-index: 999999; cursor: pointer;}.cky-revisit-bottom-left{bottom: 15px; left: 15px;}.cky-revisit-bottom-right{bottom: 15px; right: 15px;}.cky-btn-revisit-wrapper .cky-btn-revisit{display: flex; align-items: center; justify-content: center; background: none; border: none; cursor: pointer; position: relative; margin: 0; padding: 0;}.cky-btn-revisit-wrapper .cky-btn-revisit img{max-width: fit-content; margin: 0; height: 30px; width: 30px;}.cky-revisit-bottom-left:hover::before{content: attr(data-tooltip); position: absolute; background: #4e4b66; color: #ffffff; left: calc(100% + 7px); font-size: 12px; line-height: 16px; width: max-content; padding: 4px 8px; border-radius: 4px;}.cky-revisit-bottom-left:hover::after{position: absolute; content: \"\"; border: 5px solid transparent; left: calc(100% + 2px); border-left-width: 0; border-right-color: #4e4b66;}.cky-revisit-bottom-right:hover::before{content: attr(data-tooltip); position: absolute; background: #4e4b66; color: #ffffff; right: calc(100% + 7px); font-size: 12px; line-height: 16px; width: max-content; padding: 4px 8px; border-radius: 4px;}.cky-revisit-bottom-right:hover::after{position: absolute; content: \"\"; border: 5px solid transparent; right: calc(100% + 2px); border-right-width: 0; border-left-color: #4e4b66;}.cky-revisit-hide{display: none;}.cky-consent-container{position: fixed; width: 440px; box-sizing: border-box; z-index: 9999999; border-radius: 6px;}.cky-consent-container .cky-consent-bar{background: #ffffff; border: 1px solid; padding: 20px 26px; box-shadow: 0 -1px 10px 0 #acabab4d; border-radius: 6px;}.cky-box-bottom-left{bottom: 40px; left: 40px;}.cky-box-bottom-right{bottom: 40px; right: 40px;}.cky-box-top-left{top: 40px; left: 40px;}.cky-box-top-right{top: 40px; right: 40px;}.cky-custom-brand-logo-wrapper .cky-custom-brand-logo{width: 100px; height: auto; margin: 0 0 12px 0;}.cky-notice .cky-title{color: #212121; font-weight: 700; font-size: 18px; line-height: 24px; margin: 0 0 12px 0;}.cky-notice-des *,.cky-preference-content-wrapper *,.cky-accordion-header-des *,.cky-gpc-wrapper .cky-gpc-desc *{font-size: 14px;}.cky-notice-des{color: #212121; font-size: 14px; line-height: 24px; font-weight: 400;}.cky-notice-des img{height: 25px; width: 25px;}.cky-consent-bar .cky-notice-des p,.cky-gpc-wrapper .cky-gpc-desc p,.cky-preference-body-wrapper .cky-preference-content-wrapper p,.cky-accordion-header-wrapper .cky-accordion-header-des p,.cky-cookie-des-table li div:last-child p{color: inherit; margin-top: 0; overflow-wrap: break-word;}.cky-notice-des P:last-child,.cky-preference-content-wrapper p:last-child,.cky-cookie-des-table li div:last-child p:last-child,.cky-gpc-wrapper .cky-gpc-desc p:last-child{margin-bottom: 0;}.cky-notice-des a.cky-policy,.cky-notice-des button.cky-policy{font-size: 14px; color: #1863dc; white-space: nowrap; cursor: pointer; background: transparent; border: 1px solid; text-decoration: underline;}.cky-notice-des button.cky-policy{padding: 0;}.cky-notice-des a.cky-policy:focus-visible,.cky-notice-des button.cky-policy:focus-visible,.cky-preference-content-wrapper .cky-show-desc-btn:focus-visible,.cky-accordion-header .cky-accordion-btn:focus-visible,.cky-preference-header .cky-btn-close:focus-visible,.cky-switch input[type=\"checkbox\"]:focus-visible,.cky-footer-wrapper a:focus-visible,.cky-btn:focus-visible{outline: 2px solid #1863dc; outline-offset: 2px;}.cky-btn:focus:not(:focus-visible),.cky-accordion-header .cky-accordion-btn:focus:not(:focus-visible),.cky-preference-content-wrapper .cky-show-desc-btn:focus:not(:focus-visible),.cky-btn-revisit-wrapper .cky-btn-revisit:focus:not(:focus-visible),.cky-preference-header .cky-btn-close:focus:not(:focus-visible),.cky-consent-bar .cky-banner-btn-close:focus:not(:focus-visible){outline: 0;}button.cky-show-desc-btn:not(:hover):not(:active){color: #1863dc; background: transparent;}button.cky-accordion-btn:not(:hover):not(:active),button.cky-banner-btn-close:not(:hover):not(:active),button.cky-btn-revisit:not(:hover):not(:active),button.cky-btn-close:not(:hover):not(:active){background: transparent;}.cky-consent-bar button:hover,.cky-modal.cky-modal-open button:hover,.cky-consent-bar button:focus,.cky-modal.cky-modal-open button:focus{text-decoration: none;}.cky-notice-btn-wrapper{display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap; margin-top: 16px;}.cky-notice-btn-wrapper .cky-btn{text-shadow: none; box-shadow: none;}.cky-btn{flex: auto; max-width: 100%; font-size: 14px; font-family: inherit; line-height: 24px; padding: 8px; font-weight: 500; margin: 0 8px 0 0; border-radius: 2px; cursor: pointer; text-align: center; text-transform: none; min-height: 0;}.cky-btn:hover{opacity: 0.8;}.cky-btn-customize{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-btn-reject{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-btn-accept{background: #1863dc; color: #ffffff; border: 2px solid #1863dc;}.cky-btn:last-child{margin-right: 0;}@media (max-width: 576px){.cky-box-bottom-left{bottom: 0; left: 0;}.cky-box-bottom-right{bottom: 0; right: 0;}.cky-box-top-left{top: 0; left: 0;}.cky-box-top-right{top: 0; right: 0;}}@media (max-width: 440px){.cky-box-bottom-left, .cky-box-bottom-right, .cky-box-top-left, .cky-box-top-right{width: 100%; max-width: 100%;}.cky-consent-container .cky-consent-bar{padding: 20px 0;}.cky-custom-brand-logo-wrapper, .cky-notice .cky-title, .cky-notice-des, .cky-notice-btn-wrapper{padding: 0 24px;}.cky-notice-des{max-height: 40vh; overflow-y: scroll;}.cky-notice-btn-wrapper{flex-direction: column; margin-top: 0;}.cky-btn{width: 100%; margin: 10px 0 0 0;}.cky-notice-btn-wrapper .cky-btn-customize{order: 2;}.cky-notice-btn-wrapper .cky-btn-reject{order: 3;}.cky-notice-btn-wrapper .cky-btn-accept{order: 1; margin-top: 16px;}}@media (max-width: 352px){.cky-notice .cky-title{font-size: 16px;}.cky-notice-des *{font-size: 12px;}.cky-notice-des, .cky-btn{font-size: 12px;}}.cky-modal.cky-modal-open{display: flex; visibility: visible; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); top: 50%; left: 50%; transition: all 1s ease;}.cky-modal{box-shadow: 0 32px 68px rgba(0, 0, 0, 0.3); margin: 0 auto; position: fixed; max-width: 100%; background: #ffffff; top: 50%; box-sizing: border-box; border-radius: 6px; z-index: 999999999; color: #212121; -webkit-transform: translate(-50%, 100%); -moz-transform: translate(-50%, 100%); -ms-transform: translate(-50%, 100%); -o-transform: translate(-50%, 100%); transform: translate(-50%, 100%); visibility: hidden; transition: all 0s ease;}.cky-preference-center{max-height: 79vh; overflow: hidden; width: 845px; overflow: hidden; flex: 1 1 0; display: flex; flex-direction: column; border-radius: 6px;}.cky-preference-header{display: flex; align-items: center; justify-content: space-between; padding: 22px 24px; border-bottom: 1px solid;}.cky-preference-header .cky-preference-title{font-size: 18px; font-weight: 700; line-height: 24px;}.cky-preference-header .cky-btn-close{margin: 0; cursor: pointer; vertical-align: middle; padding: 0; background: none; border: none; width: 24px; height: 24px; min-height: 0; line-height: 0; text-shadow: none; box-shadow: none;}.cky-preference-header .cky-btn-close img{margin: 0; height: 10px; width: 10px;}.cky-preference-body-wrapper{padding: 0 24px; flex: 1; overflow: auto; box-sizing: border-box;}.cky-preference-content-wrapper,.cky-gpc-wrapper .cky-gpc-desc{font-size: 14px; line-height: 24px; font-weight: 400; padding: 12px 0;}.cky-preference-content-wrapper{border-bottom: 1px solid;}.cky-preference-content-wrapper img{height: 25px; width: 25px;}.cky-preference-content-wrapper .cky-show-desc-btn{font-size: 14px; font-family: inherit; color: #1863dc; text-decoration: none; line-height: 24px; padding: 0; margin: 0; white-space: nowrap; cursor: pointer; background: transparent; border-color: transparent; text-transform: none; min-height: 0; text-shadow: none; box-shadow: none;}.cky-accordion-wrapper{margin-bottom: 10px;}.cky-accordion{border-bottom: 1px solid;}.cky-accordion:last-child{border-bottom: none;}.cky-accordion .cky-accordion-item{display: flex; margin-top: 10px;}.cky-accordion .cky-accordion-body{display: none;}.cky-accordion.cky-accordion-active .cky-accordion-body{display: block; padding: 0 22px; margin-bottom: 16px;}.cky-accordion-header-wrapper{cursor: pointer; width: 100%;}.cky-accordion-item .cky-accordion-header{display: flex; justify-content: space-between; align-items: center;}.cky-accordion-header .cky-accordion-btn{font-size: 16px; font-family: inherit; color: #212121; line-height: 24px; background: none; border: none; font-weight: 700; padding: 0; margin: 0; cursor: pointer; text-transform: none; min-height: 0; text-shadow: none; box-shadow: none;}.cky-accordion-header .cky-always-active{color: #008000; font-weight: 600; line-height: 24px; font-size: 14px;}.cky-accordion-header-des{font-size: 14px; line-height: 24px; margin: 10px 0 16px 0;}.cky-accordion-chevron{margin-right: 22px; position: relative; cursor: pointer;}.cky-accordion-chevron-hide{display: none;}.cky-accordion .cky-accordion-chevron i::before{content: \"\"; position: absolute; border-right: 1.4px solid; border-bottom: 1.4px solid; border-color: inherit; height: 6px; width: 6px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); transition: all 0.2s ease-in-out; top: 8px;}.cky-accordion.cky-accordion-active .cky-accordion-chevron i::before{-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}.cky-audit-table{background: #f4f4f4; border-radius: 6px;}.cky-audit-table .cky-empty-cookies-text{color: inherit; font-size: 12px; line-height: 24px; margin: 0; padding: 10px;}.cky-audit-table .cky-cookie-des-table{font-size: 12px; line-height: 24px; font-weight: normal; padding: 15px 10px; border-bottom: 1px solid; border-bottom-color: inherit; margin: 0;}.cky-audit-table .cky-cookie-des-table:last-child{border-bottom: none;}.cky-audit-table .cky-cookie-des-table li{list-style-type: none; display: flex; padding: 3px 0;}.cky-audit-table .cky-cookie-des-table li:first-child{padding-top: 0;}.cky-cookie-des-table li div:first-child{width: 100px; font-weight: 600; word-break: break-word; word-wrap: break-word;}.cky-cookie-des-table li div:last-child{flex: 1; word-break: break-word; word-wrap: break-word; margin-left: 8px;}.cky-footer-shadow{display: block; width: 100%; height: 40px; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%); position: absolute; bottom: calc(100% - 1px);}.cky-footer-wrapper{position: relative;}.cky-prefrence-btn-wrapper{display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 22px 24px; border-top: 1px solid;}.cky-prefrence-btn-wrapper .cky-btn{flex: auto; max-width: 100%; text-shadow: none; box-shadow: none;}.cky-btn-preferences{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-preference-header,.cky-preference-body-wrapper,.cky-preference-content-wrapper,.cky-accordion-wrapper,.cky-accordion,.cky-accordion-wrapper,.cky-footer-wrapper,.cky-prefrence-btn-wrapper{border-color: inherit;}@media (max-width: 845px){.cky-modal{max-width: calc(100% - 16px);}}@media (max-width: 576px){.cky-modal{max-width: 100%;}.cky-preference-center{max-height: 100vh;}.cky-prefrence-btn-wrapper{flex-direction: column;}.cky-accordion.cky-accordion-active .cky-accordion-body{padding-right: 0;}.cky-prefrence-btn-wrapper .cky-btn{width: 100%; margin: 10px 0 0 0;}.cky-prefrence-btn-wrapper .cky-btn-reject{order: 3;}.cky-prefrence-btn-wrapper .cky-btn-accept{order: 1; margin-top: 0;}.cky-prefrence-btn-wrapper .cky-btn-preferences{order: 2;}}@media (max-width: 425px){.cky-accordion-chevron{margin-right: 15px;}.cky-notice-btn-wrapper{margin-top: 0;}.cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 15px;}}@media (max-width: 352px){.cky-preference-header .cky-preference-title{font-size: 16px;}.cky-preference-header{padding: 16px 24px;}.cky-preference-content-wrapper *, .cky-accordion-header-des *{font-size: 12px;}.cky-preference-content-wrapper, .cky-preference-content-wrapper .cky-show-more, .cky-accordion-header .cky-always-active, .cky-accordion-header-des, .cky-preference-content-wrapper .cky-show-desc-btn, .cky-notice-des a.cky-policy{font-size: 12px;}.cky-accordion-header .cky-accordion-btn{font-size: 14px;}}.cky-switch{display: flex;}.cky-switch input[type=\"checkbox\"]{position: relative; width: 44px; height: 24px; margin: 0; background: #d0d5d2; -webkit-appearance: none; border-radius: 50px; cursor: pointer; outline: 0; border: none; top: 0;}.cky-switch input[type=\"checkbox\"]:checked{background: #1863dc;}.cky-switch input[type=\"checkbox\"]:before{position: absolute; content: \"\"; height: 20px; width: 20px; left: 2px; bottom: 2px; border-radius: 50%; background-color: white; -webkit-transition: 0.4s; transition: 0.4s; margin: 0;}.cky-switch input[type=\"checkbox\"]:after{display: none;}.cky-switch input[type=\"checkbox\"]:checked:before{-webkit-transform: translateX(20px); -ms-transform: translateX(20px); transform: translateX(20px);}@media (max-width: 425px){.cky-switch input[type=\"checkbox\"]{width: 38px; height: 21px;}.cky-switch input[type=\"checkbox\"]:before{height: 17px; width: 17px;}.cky-switch input[type=\"checkbox\"]:checked:before{-webkit-transform: translateX(17px); -ms-transform: translateX(17px); transform: translateX(17px);}}.cky-consent-bar .cky-banner-btn-close{position: absolute; right: 9px; top: 5px; background: none; border: none; cursor: pointer; padding: 0; margin: 0; min-height: 0; line-height: 0; height: 24px; width: 24px; text-shadow: none; box-shadow: none;}.cky-consent-bar .cky-banner-btn-close img{height: 9px; width: 9px; margin: 0;}.cky-notice-group{font-size: 14px; line-height: 24px; font-weight: 400; color: #212121;}.cky-notice-btn-wrapper .cky-btn-do-not-sell{font-size: 14px; line-height: 24px; padding: 6px 0; margin: 0; font-weight: 500; background: none; border-radius: 2px; border: none; cursor: pointer; text-align: left; color: #1863dc; background: transparent; border-color: transparent; box-shadow: none; text-shadow: none;}.cky-consent-bar .cky-banner-btn-close:focus-visible,.cky-notice-btn-wrapper .cky-btn-do-not-sell:focus-visible,.cky-opt-out-btn-wrapper .cky-btn:focus-visible,.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:focus-visible{outline: 2px solid #1863dc; outline-offset: 2px;}@media (max-width: 440px){.cky-consent-container{width: 100%;}}@media (max-width: 352px){.cky-notice-des a.cky-policy, .cky-notice-btn-wrapper .cky-btn-do-not-sell{font-size: 12px;}}.cky-opt-out-wrapper{padding: 12px 0;}.cky-opt-out-wrapper .cky-opt-out-checkbox-wrapper{display: flex; align-items: center;}.cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{font-size: 16px; font-weight: 700; line-height: 24px; margin: 0 0 0 12px; cursor: pointer;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox{background-color: #ffffff; border: 1px solid black; width: 20px; height: 18.5px; margin: 0; -webkit-appearance: none; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 2px; cursor: pointer;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked{background-color: #1863dc; border: none;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked::after{left: 6px; bottom: 4px; width: 7px; height: 13px; border: solid #ffffff; border-width: 0 3px 3px 0; border-radius: 2px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); content: \"\"; position: absolute; box-sizing: border-box;}.cky-opt-out-checkbox-wrapper.cky-disabled .cky-opt-out-checkbox-label,.cky-opt-out-checkbox-wrapper.cky-disabled input[type=\"checkbox\"].cky-opt-out-checkbox{cursor: no-drop;}.cky-gpc-wrapper{margin: 0 0 0 32px;}.cky-footer-wrapper .cky-optout-action-area{padding:0 24px 22px 24px;box-sizing:border-box;border-color:inherit}.cky-footer-wrapper .cky-opt-out-btn-wrapper{padding-top:22px;border-top:1px solid;border-color:inherit}.cky-footer-wrapper .cky-opt-out-btn-wrapper{display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}.cky-opt-out-btn-wrapper .cky-btn{flex: auto; max-width: 100%; text-shadow: none; box-shadow: none;}.cky-opt-out-btn-wrapper .cky-btn-cancel{border: 1px solid #dedfe0; background: transparent; color: #858585;}.cky-opt-out-btn-wrapper .cky-btn-confirm{background: #1863dc; color: #ffffff; border: 1px solid #1863dc;}\n.cky-optout-success{width:798px;max-width:100%;border-radius:8px;padding:8px 12px;margin:0 auto;box-sizing:border-box;outline:none}.cky-optout-success .cky-optout-success-inner{display:flex;flex-direction:column;gap:4px}.cky-optout-success .cky-optout-success-row{display:flex;align-items:flex-start}.cky-optout-success .cky-optout-success-icon{width:20px;flex-shrink:0}.cky-optout-success .cky-optout-success-text{margin:0;margin-inline-start:8px;margin-top:1px;font-weight:400;font-size:13px;line-height:20px}.cky-optout-success .cky-optout-success-text p{margin:0}.cky-optout-success .cky-optout-success-subtext{margin:0;font-weight:400;font-size:12px;line-height:20px}@media (max-width: 352px){.cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{font-size: 14px;}.cky-gpc-wrapper .cky-gpc-desc, .cky-gpc-wrapper .cky-gpc-desc *{font-size: 12px;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox{width: 16px; height: 16px;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked::after{left: 5px; bottom: 4px; width: 3px; height: 9px;}.cky-gpc-wrapper{margin: 0 0 0 28px;}}.video-placeholder-youtube{background-size: 100% 100%; background-position: center; background-repeat: no-repeat; background-color: #b2b0b059; position: relative; display: flex; align-items: center; justify-content: center; max-width: 100%;}.video-placeholder-text-youtube{text-align: center; align-items: center; padding: 10px 16px; background-color: #000000cc; color: #ffffff; border: 1px solid; border-radius: 2px; cursor: pointer;}.video-placeholder-normal{background-image: url(\"/wp-content/plugins/cookie-law-info/lite/frontend/images/placeholder.svg\"); background-size: 80px; background-position: center; background-repeat: no-repeat; background-color: #b2b0b059; position: relative; display: flex; align-items: flex-end; justify-content: center; max-width: 100%;}.video-placeholder-text-normal{align-items: center; padding: 10px 16px; text-align: center; border: 1px solid; border-radius: 2px; cursor: pointer;}.cky-rtl{direction: rtl; text-align: right;}.cky-rtl .cky-banner-btn-close{left: 9px; right: auto;}.cky-rtl .cky-notice-btn-wrapper .cky-btn:last-child{margin-right: 8px;}.cky-rtl .cky-notice-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-notice-btn-wrapper{margin-left: 0; margin-right: 15px;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn{margin-right: 8px;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-accordion .cky-accordion-chevron i::before{border: none; border-left: 1.4px solid; border-top: 1.4px solid; left: 12px;}.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-chevron i::before{-webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg);}@media (max-width: 768px){.cky-rtl .cky-notice-btn-wrapper{margin-right: 0;}}@media (max-width: 576px){.cky-rtl .cky-notice-btn-wrapper .cky-btn:last-child{margin-right: 0;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn{margin-right: 0;}.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 22px 0 0;}}@media (max-width: 425px){.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 15px 0 0;}}.cky-rtl .cky-opt-out-btn-wrapper .cky-btn{margin-right: 12px;}.cky-rtl .cky-opt-out-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{margin: 0 12px 0 0;}"};
+//# sourceURL=cookie-law-info-js-extra
+</script>
+<script id="cookie-law-info-js" src="https://www.levant.nl/wp-content/plugins/cookie-law-info/lite/frontend/js/script.min.js?ver=3.5.7"></script>
+<script async data-wp-strategy="async" id="monsterinsights-frontend-script-js" src="https://www.levant.nl/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=11.3.0"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.levant.nl","hash_tracking":"false","v4_id":"G-0DGYCKH6QZ"};/* ]]> */
+</script>
+<script id="trp-language-switcher-js-v2-js" src="https://www.levant.nl/wp-content/plugins/translatepress-multilingual/assets/js/trp-frontend-language-switcher.js?ver=3.3.8"></script>
+<link rel="canonical" href="https://www.levant.nl/golfbaan/" />
+<style id="cky-style-inline">[data-cky-tag]{visibility:hidden;}</style><script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.levant.nl/?wordfence_lh=1&hid=8C5C557A116358F315CC4129B0C65F68');
+</script><link rel="alternate" hreflang="nl-NL" href="https://www.levant.nl/golfbaan/"/>
+<link rel="alternate" hreflang="en-GB" href="https://www.levant.nl/en/golfbaan/"/>
+<link rel="alternate" hreflang="nl" href="https://www.levant.nl/golfbaan/"/>
+<link rel="alternate" hreflang="en" href="https://www.levant.nl/en/golfbaan/"/>
+<link rel="icon" href="https://www.levant.nl/wp-content/uploads/2026/03/cropped-favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.levant.nl/wp-content/uploads/2026/03/cropped-favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.levant.nl/wp-content/uploads/2026/03/cropped-favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://www.levant.nl/wp-content/uploads/2026/03/cropped-favicon-300x300.png" />
+<link rel='stylesheet' id='gform_basic-css' href='https://www.levant.nl/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css?ver=3.2.0' media='all' />
+<link rel='stylesheet' id='gform_theme_components-css' href='https://www.levant.nl/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css?ver=3.2.0' media='all' />
+<link rel='stylesheet' id='gform_theme-css' href='https://www.levant.nl/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css?ver=3.2.0' media='all' />
+
+</head>
+
+<body class="wp-singular page-template-default page page-id-82 wp-theme-levant translatepress-nl_NL">
+																																																																		
+	<div id="header" class="fluid">
+		<div class="container">
+			<div class="row is-vertical-align">
+				<div class="col col-12 col-3-md">
+					<a href="https://www.levant.nl" id="logo" class="pull-left"></a>
+				</div>
+				<div class="col col-12 col-6-md is-marginless text-center hide-md hide-sm hide-xs">
+					<ul>
+						<li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-86"><a href="#">Golf</a>
+<ul class="sub-menu">
+	<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-82 current_page_item menu-item-87"><a href="https://www.levant.nl/golfbaan/" aria-current="page">Golfbaan</a></li>
+	<li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"><a href="https://www.levant.nl/golf-academy/">Golf Academy</a></li>
+</ul>
+</li>
+<li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="https://www.levant.nl/lidmaatschap/">Lidmaatschap</a></li>
+<li id="menu-item-375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://www.levant.nl/zakelijk/">Zakelijk</a></li>
+<li id="menu-item-407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-407"><a href="https://www.levant.nl/events/">Events</a></li>
+<li id="menu-item-94" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-94"><a href="https://www.levant.nl/contact/">Contact</a>
+<ul class="sub-menu">
+	<li id="menu-item-448" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-448"><a href="https://www.levant.nl/over-ons/">Over ons</a></li>
+</ul>
+</li>
+<li id="menu-item-191" class="button menu-item menu-item-type-custom menu-item-object-custom menu-item-191"><a target="_blank" href="https://www.nexxchange.com/golfclub/levant">Boek nu</a></li>
+					</ul>
+				</div>
+				<div class="col col-12 col-3-md text-right is-marginless hide-md hide-sm hide-xs">
+					<a href="https://www.nexxchange.com/golfclub/levant" target="_blank" class="button brown pull-right">Boek nu</a>
+
+										<div class="language-switcher pull-right">
+						<ul data-no-translation>
+																																		<li class="menu-item-has-children"><a href="#">nl</a>
+											<ul>
+																																																																<li><a href="https://www.levant.nl/en/golfbaan/">en</a></li>
+																																				</ul>
+										</li>
+																																															</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="toggle-menu">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<div id="header-bg"></div>
+
+
+
+	<div id="mobile-menu" class="fluid">
+		<div class="row">
+			<div class="col">
+				<ul>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-86"><a href="#">Golf</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-82 current_page_item menu-item-87"><a href="https://www.levant.nl/golfbaan/" aria-current="page">Golfbaan</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"><a href="https://www.levant.nl/golf-academy/">Golf Academy</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="https://www.levant.nl/lidmaatschap/">Lidmaatschap</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://www.levant.nl/zakelijk/">Zakelijk</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-407"><a href="https://www.levant.nl/events/">Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-94"><a href="https://www.levant.nl/contact/">Contact</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-448"><a href="https://www.levant.nl/over-ons/">Over ons</a></li>
+</ul>
+</li>
+<li class="button menu-item menu-item-type-custom menu-item-object-custom menu-item-191"><a target="_blank" href="https://www.nexxchange.com/golfclub/levant">Boek nu</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	
+		<div id="content" class="has-pagebuilder">
+			
+
+	
+
+
+		
+
+
+			
+			<section id="sectie1" class="fluid banner" style="background-image:url();">
+									<video autoplay muted loop playsinline>
+						<source src="https://player.vimeo.com/progressive_redirect/playback/1181225085/rendition/720p/file.mp4%20%28720p%29.mp4?loc=external&amp;log_user=0&amp;signature=5794f31f3973e168db5748462f818a941786e30df1ad74257cb59a9241715737" media="screen" type="video/mp4">
+					</video>
+				
+				<div class="cover"></div>
+				<div class="container">
+					<div class="row text-center">
+						<div class="col col-2-md hide-sm hide-xs"></div>
+						<div class="col col-12 col-8-md">
+							<h1>The Course</h1>
+<p>Levant brengt golf, sfeer en beleving samen tot een unieke ervaring</p>
+						</div>
+						<div class="col col-2-md hide-sm hide-xs"></div>
+					</div>
+				</div>
+
+							</section>
+
+
+
+		
+		
+	
+
+
+		
+
+
+							<section id="sectie2" class="fluid submenu">
+					<div class="container">
+						<div class="row text-center">
+							<div class="col">
+								<div class="links">
+																			
+										<div class="link"><a href="#sectie6"  target="_self">De holes</a></div>
+																			
+										<div class="link"><a href="#sectie7"  target="_self">Driving Range &amp; Putting green</a></div>
+																			
+										<div class="link"><a href="#sectie8"  target="_self">Short Course</a></div>
+																			
+										<div class="link"><a href="#sectie9"  target="_self">Greenkeeping</a></div>
+																			
+										<div class="link"><a href="#sectie10"  target="_self">Downloads</a></div>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			
+
+
+		
+		
+	
+
+
+		
+
+
+									
+			
+				<section id="sectie3" class="fluid contentrow text">
+					<div class="container">
+						<div class="row">
+
+							
+								<div class="col col-3 hide-sm hide-xs"></div>
+								<div class="col col-12 col-6-md">
+									<h2 style="text-align: center;">Omring jezelf met rust, natuur en een verfijnde golfbeleving</h2>
+<p style="text-align: center;">Levant is gelegen in een groene, serene omgeving en biedt een verfijnde golfervaring voor golfers van elk niveau.</p>
+								</div>
+								<div class="col col-3 hide-sm hide-xs"></div>
+
+							
+						</div>
+					</div>
+				</section>
+
+			
+
+
+		
+		
+	
+
+
+		
+
+
+			
+			<section id="sectie4" class="fluid mediarow">
+				<div class="container">
+									</div>
+			</section>
+
+
+
+		
+		
+	
+
+
+		
+
+
+									
+			
+				<section id="sectie5" class="fluid contentrow text">
+					<div class="container">
+						<div class="row">
+
+							
+								<div class="col col-3 hide-sm hide-xs"></div>
+								<div class="col col-12 col-6-md">
+									<p><span class="intro">De baan omvat een 9-holes golfbaan en een 6-holes par-3 baan, waar doordacht ontworpen holes, waterpartijen en strategisch geplaatste bunkers zorgen voor een elegant en uitdagend spel.</span></p>
+<p>De harmonieuze combinatie van natuur, rust en speelkwaliteit maakt Levant tot een plek waar sport en ontspanning op hoog niveau samenkomen.</p>
+								</div>
+								<div class="col col-3 hide-sm hide-xs"></div>
+
+							
+						</div>
+					</div>
+				</section>
+
+			
+
+
+		
+		
+	
+
+
+		
+
+
+			
+			<section id="sectie6" class="fluid holesslider">
+				<div class="container">
+											<div class="row title">
+							<div class="col col-1-md hide-sm hide-xs"></div>
+							<div class="col col-12 col-10-md">
+								<h3>De Holes</h3>
+							</div>
+							<div class="col col-1-md hide-sm hide-xs"></div>
+						</div>
+					
+											<div class="row">
+							<div class="col col-1-md hide-sm hide-xs"></div>
+							<div class="col col-12 col-10-md is-marginless">
+								<div class="slider">
+
+																			
+										<a href="https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-1.jpg" class="slide" style="background-image:url(https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-1.jpg);">
+											<div class="content">
+												<div class="number pull-left">
+													<h4>1</h4>
+												</div>
+												<div class="info pull-left">
+																											<span>Par</span> 4<br />
+																																								<span>Afstand</span> 245 - 282																									</div>
+											</div>
+										</a>
+									 										
+										<a href="https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-2.jpg" class="slide" style="background-image:url(https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-2.jpg);">
+											<div class="content">
+												<div class="number pull-left">
+													<h4>2</h4>
+												</div>
+												<div class="info pull-left">
+																											<span>Par</span> 4<br />
+																																								<span>Afstand</span> 294 - 336																									</div>
+											</div>
+										</a>
+									 										
+										<a href="https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-3.jpg" class="slide" style="background-image:url(https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-3.jpg);">
+											<div class="content">
+												<div class="number pull-left">
+													<h4>3</h4>
+												</div>
+												<div class="info pull-left">
+																											<span>Par</span> 5<br />
+																																								<span>Afstand</span> 389 - 464																									</div>
+											</div>
+										</a>
+									 										
+										<a href="https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-4.jpg" class="slide" style="background-image:url(https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-4.jpg);">
+											<div class="content">
+												<div class="number pull-left">
+													<h4>4</h4>
+												</div>
+												<div class="info pull-left">
+																											<span>Par</span> 3<br />
+																																								<span>Afstand</span> 99 - 121																									</div>
+											</div>
+										</a>
+									 										
+										<a href="https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-5.jpg" class="slide" style="background-image:url(https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-5.jpg);">
+											<div class="content">
+												<div class="number pull-left">
+													<h4>5</h4>
+												</div>
+												<div class="info pull-left">
+																											<span>Par</span> 4<br />
+																																								<span>Afstand</span> 291 - 349																									</div>
+											</div>
+										</a>
+									 										
+										<a href="https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-6.jpg" class="slide" style="background-image:url(https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-6.jpg);">
+											<div class="content">
+												<div class="number pull-left">
+													<h4>6</h4>
+												</div>
+												<div class="info pull-left">
+																											<span>Par</span> 5<br />
+																																								<span>Afstand</span> 424 - 479																									</div>
+											</div>
+										</a>
+									 										
+										<a href="https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-7.jpg" class="slide" style="background-image:url(https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-7.jpg);">
+											<div class="content">
+												<div class="number pull-left">
+													<h4>7</h4>
+												</div>
+												<div class="info pull-left">
+																											<span>Par</span> 4<br />
+																																								<span>Afstand</span> 237 - 284																									</div>
+											</div>
+										</a>
+									 										
+										<a href="https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-8.jpg" class="slide" style="background-image:url(https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-8.jpg);">
+											<div class="content">
+												<div class="number pull-left">
+													<h4>8</h4>
+												</div>
+												<div class="info pull-left">
+																											<span>Par</span> 3<br />
+																																								<span>Afstand</span> 152 - 177																									</div>
+											</div>
+										</a>
+									 										
+										<a href="https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-9.jpg" class="slide" style="background-image:url(https://www.levant.nl/wp-content/uploads/2026/03/Plattegronden_hole-9.jpg);">
+											<div class="content">
+												<div class="number pull-left">
+													<h4>9</h4>
+												</div>
+												<div class="info pull-left">
+																											<span>Par</span> 4<br />
+																																								<span>Afstand</span> 333 - 377																									</div>
+											</div>
+										</a>
+									 									 
+								</div>
+							</div>
+							<div class="col col-1-md hide-sm hide-xs"></div>
+						</div>
+									</div>
+			</section>
+
+
+
+		
+		
+	
+
+
+		
+
+
+									
+			
+				
+					<section id="sectie7" class="fluid contentrow text-img">
+						<div class="container">
+							<div class="row is-vertical-align mobile-reverse">
+
+								<div class="col col-12 col-12-md col-4-lg">
+									<div class="content">
+										<h2>Driving Range &amp; Putting green</h2>
+<p>Bij Levant zijn de oefenfaciliteiten ingericht voor golfers die hun spel serieus willen verbeteren. De driving range beschikt over ruime afslagplaatsen en is deels overdekt, waardoor je het hele jaar door comfortabel kunt <a href="#">trainen aan techniek</a>, afstand en consistentie. De verzorgde putting- en oefengreens bieden alle ruimte om te werken aan precisie, gevoel en vertrouwen. Of je nu komt om gericht te trainen of je rustig voor te bereiden op een ronde op de course. Bij Levant staan kwaliteit, beleving en aandacht<br />
+voor het spel centraal.</p>
+									</div>
+								</div>
+
+								<div class="col col-12 col-1-lg hide-md hide-sm hide-xs"></div>
+
+								
+									<div class="col col-12 col-6-md col-7-lg">
+																				<img src="https://www.levant.nl/wp-content/uploads/2026/04/drivingrange.jpg" alt="" width="100%" height="" />
+									</div>
+
+								
+							</div>
+						</div>
+					</section>
+
+				
+			
+
+
+		
+		
+	
+
+
+		
+
+
+									
+			
+				
+					<section id="sectie8" class="fluid contentrow img-text">
+						<div class="container">
+							<div class="row">
+
+								
+									<div class="col col-12 col-6-md col-7-lg">
+																				<img src="https://www.levant.nl/wp-content/uploads/2026/04/golfbaan.png" alt="" width="100%" height="" />
+									</div>
+
+								
+								<div class="col col-12 col-1-lg hide-md hide-sm hide-xs"></div>
+
+								<div class="col col-12 col-12-md col-4-lg">
+									<div class="content">
+										<h2>The Short Course</h2>
+<p>The Short Course bij Levant is een verfijnde 6-holes par-3 baan, ideaal voor golfers die willen werken aan hun korte spel of op zoek zijn naar een toegankelijke, ontspannen ronde. De holes zijn doordacht ontworpen en vragen om precisie, strategie en controle.</p>
+<p>Dankzij de compacte opzet is The Short Course perfect voor beginnende golfers, trainingsrondes of een snelle speelsessie. Voor deze baan is geen GVB of baanpermissie vereist, waardoor iedereen op een laagdrempelige manier kan kennismaken met de golfsport, in een rustige en verzorgde omgeving.</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</section>
+
+				
+			
+
+
+		
+		
+	
+
+
+		
+
+
+									
+			
+				
+					<section id="sectie9" class="fluid contentrow text-img">
+						<div class="container">
+							<div class="row is-vertical-align mobile-reverse">
+
+								<div class="col col-12 col-12-md col-4-lg">
+									<div class="content">
+										<h2>Greenkeeping</h2>
+<p>De kwaliteit van de baan begint bij het werk van onze greenkeepers. Dagelijks zorgen zij ervoor dat de baan in optimale conditie verkeert, zodat iedere ronde gespeeld kan worden zoals het bedoeld is.</p>
+<p>Met oog voor detail en aandacht voor elk onderdeel van de baan werken zij continu aan het onderhoud en de ontwikkeling van de greens, fairways en omliggende gebieden. Dit gebeurt met respect voor de natuur en de omgeving, waarbij kwaliteit altijd voorop staat.</p>
+<p>Greenkeeping is een proces dat nooit stilstaat. Door het seizoen heen worden werkzaamheden afgestemd op weersomstandigheden en groei, zodat de speelkwaliteit gewaarborgd blijft.</p>
+<p>Wij vragen onze gasten om hier samen met ons aan bij te dragen door zorgvuldig met de baan en de natuur om te gaan.</p>
+									</div>
+								</div>
+
+								<div class="col col-12 col-1-lg hide-md hide-sm hide-xs"></div>
+
+								
+									<div class="col col-12 col-6-md col-7-lg">
+																				<img src="https://www.levant.nl/wp-content/uploads/2026/04/greenkeeping-1.jpg" alt="" width="100%" height="" />
+									</div>
+
+								
+							</div>
+						</div>
+					</section>
+
+				
+			
+
+
+		
+		
+	
+
+
+		
+
+
+									
+			
+				<section id="sectie10" class="fluid contentrow text">
+					<div class="container">
+						<div class="row">
+
+							
+								<div class="col col-2 hide-sm hide-xs"></div>
+								<div class="col col-12 col-8-md">
+									<h3>Downloads</h3>
+<table border="1" style="border-collapse: collapse; width: 100%;">
+<thead>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 298px;">Document</td>
+<td style="height: 30px; width: 298px;">Actie</td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 298px;">Local rules</td>
+<td style="height: 30px; width: 298px;"><a href="/wp-content/uploads/2026/04/local-rules.pdf" target="_blank" rel="noopener">Download</a></td>
+</tr>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 298px;">Score card 9 holes</td>
+<td style="height: 30px; width: 298px;"><a href="/wp-content/uploads/2026/04/Levant-Golf_Scorekaart_9-holes.pdf" target="_blank" rel="noopener">Download</a></td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 298px; height: 30px;">Score card 18 holes</td>
+<td style="width: 298px; height: 30px;"><a href="/wp-content/uploads/2026/04/Levant-Golf_Scorekaart_18-holes.pdf" target="_blank" rel="noopener">Download</a></td>
+</tr>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 298px;">Course menu</td>
+<td style="height: 30px; width: 298px;">Binnenkort beschikbaar</td>
+</tr>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 298px;">Handicap tabel heren</td>
+<td style="height: 30px; width: 298px;"><a href="/wp-content/uploads/2026/03/Handicap-tabel-heren.pdf" target="_blank" rel="noopener">Download</a></td>
+</tr>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 298px;">Handicap tabel dames</td>
+<td style="height: 30px; width: 298px;"><a href="/wp-content/uploads/2026/03/Handicap-tabel-dames.pdf" target="_blank" rel="noopener">Download</a></td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 298px; height: 30px;">House rules</td>
+<td style="width: 298px; height: 30px;"><a href="/wp-content/uploads/2026/04/Houserules-levant-website.pdf" target="_blank" rel="noopener">Download</a></td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 298px; height: 30px;">Dresscode &amp; etiquette</td>
+<td style="width: 298px; height: 30px;"><a href="/wp-content/uploads/2026/04/Dresscode-Etiquette-aangepast.pdf" target="_blank" rel="noopener">Download</a></td>
+</tr>
+</tbody>
+</table>
+								</div>
+								<div class="col col-2 hide-sm hide-xs"></div>
+
+							
+						</div>
+					</div>
+				</section>
+
+			
+
+
+		
+		
+	
+
+
+		
+
+
+			<section id="sectie11" class="fluid photoslider">
+				<div class="container">
+											<div class="row title">
+							<div class="col">
+								<h2>Proef de sfeer</h2>
+							</div>
+						</div>
+					
+
+					
+											<div class="row">
+							<div class="col">
+								<div class="slider">
+																			<div class="slide pull-left">
+											<a href="https://www.levant.nl/wp-content/uploads/2026/04/sfeerfoto-golfbaan.jpg" data-fancybox="sectie11"><img src="https://www.levant.nl/wp-content/uploads/2026/04/sfeerfoto-golfbaan.jpg" alt="" class="pull-left" /></a>
+										</div>
+																			<div class="slide pull-left">
+											<a href="https://www.levant.nl/wp-content/uploads/2026/04/golfbaan.jpg" data-fancybox="sectie11"><img src="https://www.levant.nl/wp-content/uploads/2026/04/golfbaan.jpg" alt="" class="pull-left" /></a>
+										</div>
+																			<div class="slide pull-left">
+											<a href="https://www.levant.nl/wp-content/uploads/2026/04/dining-golf-1.jpg" data-fancybox="sectie11"><img src="https://www.levant.nl/wp-content/uploads/2026/04/dining-golf-1.jpg" alt="" class="pull-left" /></a>
+										</div>
+																	</div>
+							</div>
+						</div>
+					
+				</div>
+			</section>
+
+
+
+		
+		
+	
+		</div>
+
+	
+
+	<div id="footer" class="fluid">
+		<div class="container">
+
+			<div id="newsletter" class="row is-vertical-align">
+				<div class="col col-2-md hide-sm hide-xs"></div>
+				<div class="col col-12 col-4-md">
+					<span>Nieuws, acties en aanbiedingen</span>
+				</div>
+				<div class="col col-12 col-4-md">
+					
+                <div class='gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_2' ><div id='gf_2' class='gform_anchor' tabindex='-1'></div>
+                        <div class='gform_heading'>
+                            <p class='gform_description'></p>
+							<p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; geeft vereiste velden aan</p>
+                        </div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_2' id='gform_2'  action='/golfbaan/#gf_2' data-formid='2' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_2' class='gform_fields top_label form_sublabel_below description_below validation_below' data-column-layout='fill'><div id="field_2_4" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"><label id='gfield_label_2_4' class='gfield_label gform-field-label' for='input_2_4'><span class='gform-field-label__text'>Company</span></label><div class='ginput_container'><input name='input_4' id='input_2_4' type='text' value='' autocomplete='new-password'/></div><div class='gfield_description' id='gfield_description_2_4'>Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd.</div></div><div id="field_2_2" class="gfield gfield--type-email gfield--input-type-email gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible" data-group-id="c14b9538" data-field-span="12"><label id='gfield_label_2_2' class='gfield_label gform-field-label' for='input_2_2'><span class='gform-field-label__text'>E-mailadres</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_2_2' type='email' value='' class='large'   placeholder='E-mailadres' aria-required="true" aria-invalid="false"  />
+                        </div></div><div id="field_2_3" class="gfield gfield--type-captcha gfield--input-type-captcha gfield--captcha-invisible gfield--width-full field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible" data-group-id="eaad86a4" data-field-span="12"><div id='input_2_3' class='ginput_container ginput_recaptcha' data-sitekey='6LfcqAgtAAAAAESuMhqYNJXFgJkok0QnYTh31R0E'  data-theme='dark' data-tabindex='-1' data-size='invisible' data-badge='bottomright'></div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <button type='submit' id='gform_submit_button_2' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' >Aanmelden</button> <input type='hidden' name='gform_ajax' value='form_id=2&amp;title=&amp;description=1&amp;tabindex=0&amp;theme=gravity-theme&amp;styles=[]&amp;hash=a8c9ac33142b15f9fdad89d12378a65d' />
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_2' value='iframe' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_2' id='gform_theme_2' value='gravity-theme' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_2' id='gform_style_settings_2' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_2' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='2' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='EUR' value='jcIVLcXiyaWMNC5MXl1677LA6Ss7xEiqI3EU2ZRnXpcFi6ZlJJDtJhddXg1kK597xELlwPt7DHVDEO/WKImJaR04ypsQ086PA3Ki30SFYFC5S/I=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_2' value='WyJ7XCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcIjNmMGQ3ZWE0M2MyMDE4NWZlNGU3NjMyNmMzMTMwMTAzXCIsXCJiY2Q5NmI3N2FiMTUyM2NjNDNmZTQ5Y2M0NzQ4NjEwMlwiLFwiZGZlZDgxNTVmZGVjOGRhNzZhYmMzZTY3N2FmNWRjOTFcIl0sXCJnZm9ybV90aGVtZVwiOlwiNGJmMTIyOGIxNzFhOGNlYzY4NGIzNjE2OTk5YjU1ZDNcIixcImdmb3JtX3N0eWxlX3NldHRpbmdzXCI6XCIyMGZmMmQ0ODExZTc1NjhiOTRmYzEyMGViOGY1YTRmZFwiLFwiZm9ybV9pZFwiOlwiYjNhZTEwYTNmZWY3ZTliY2NlZDY5YzBkM2UxOTExMTlcIixcInVybFwiOlwiZmM5YjIzZjlmZTM4ZWJjNGUyMzQzZDM1ODFjZmRjYzZcIixcInN0YXRlX3RpbWVzdGFtcFwiOlwiMzQ3M2ExNzM1ODkzYzU0MDU2NTQ3MTI3ODU1MGVmM2RcIn0iLCIyMjNhNjNjNDkzMjQzMDI3YTA1MjI1MGY0MTFhZTVlYSIsMTc5MzE5ODAzM10=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_2' id='gform_target_page_number_2' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_2' id='gform_source_page_number_2' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_2' id='gform_ajax_frame_2' title='Dit iframe bevat de vereiste logica om Ajax aangedreven Gravity Forms te verwerken.'></iframe>
+		                <script>
+gform.initializeOnLoaded( function() {jQuery('#gform_ajax_frame_2').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_2');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_2').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_2').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_2').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_2').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_2').offset().top - mt); }, 50 );var current_page = jQuery('#gform_source_page_number_2').val();jQuery(document).trigger('gform_page_loaded', [2, current_page]);window['gf_submitting_2'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_2').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_2').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [2]);if(window.gform && gform.pagination && gform.pagination.removePageQueryArg){gform.pagination.removePageQueryArg(2);}window['gf_submitting_2'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_2').text());}else{jQuery('#gform_2').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "2", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_2" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_2";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_2" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 2, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script>
+									</div>
+				<div class="col col-2-md hide-sm hide-xs"></div>
+			</div>
+
+			<div id="info" class="row">
+                <div class="col col-2-md hide-sm hide-xs">
+					<img src="https://www.levant.nl/wp-content/themes/levant/img/element-footer.svg" alt="" width="68" height="70" />
+				</div>
+
+				<div class="col col-6 col-2-md quicklinks">
+														<div class="textwidget"><ul>
+<li><a href="/golfbaan">Golfbaan</a></li>
+<li><a href="/golf-academy">Golf Academy</a></li>
+<li><a href="/lidmaatschap">Lidmaatschap</a></li>
+<li><a href="/over-ons/">Over ons</a></li>
+</ul>
+</div>
+											</div>
+
+				<div class="col col-6 col-2-md quicklinks">
+														<div class="textwidget"><ul>
+<li><a href="/zakelijk/">Zakelijk</a></li>
+<li><a href="/events/">Events</a></li>
+<li><a href="https://www.levantdining.nl" target="_blank">Dining</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</div>
+											</div>
+
+				<div class="col col-6 col-4-md">
+														<div class="textwidget"><p>Schootsedijk 18<br />
+5491 TD Sint-Oedenrode<br />
+Nederland</p>
+<p><a href="https://www.google.com/maps/place/Schootsedijk+18,+5491+TD+Sint-Oedenrode/@51.5846845,5.4384882,17z/data=!4m15!1m8!3m7!1s0x47c6e73bf6d7074f:0x1097f75adbf4af64!2sSchootsedijk+18,+5491+TD+Sint-Oedenrode!3b1!8m2!3d51.5846845!4d5.4410631!16s%2Fg%2F11jq7w_n2r!3m5!1s0x47c6e73bf6d7074f:0x1097f75adbf4af64!8m2!3d51.5846845!4d5.4410631!16s%2Fg%2F11jq7w_n2r?entry=ttu&#038;g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Routebeschrijving</a></p>
+</div>
+											</div>
+
+                <div class="col col-6 col-2-md">
+					<div id="socials" class="pull-left">
+                        <a href="#" target="_blank" class="pull-right"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/levantgolfdining/" target="_blank" class="pull-right"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank" class="pull-right"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+				</div>
+			</div>
+
+			<div id="socket" class="row">
+				<div class="col">
+					<ul>
+						<li>Copyright Levant</li>
+						<li id="menu-item-536" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-536"><a target="_blank" href="https://www.levant.nl/wp-content/uploads/2026/10/algemene-voorwaarden-Levant-2027-1.pdf">Algemene voorwaarden</a></li>
+<li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"><a target="_blank" href="https://www.levant.nl/wp-content/uploads/2026/04/privacybeleid.pdf">Privacybeleid</a></li>
+<li id="menu-item-97" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97"><a target="_blank" href="https://www.bonsaimedia.nl/">Webdesign</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<template id="tp-language" data-tp-language="nl_NL"></template><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/levant/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="ckyBannerTemplate" type="text/template"><div class="cky-overlay cky-hide"></div><div class="cky-consent-container cky-hide" tabindex="0"> <div class="cky-consent-bar" data-cky-tag="notice" style="background-color:#FFFFFF;border-color:#F4F4F4">  <div class="cky-notice"> <p class="cky-title" role="heading" aria-level="2" data-cky-tag="title" style="color:#212121">Fijn dat je er bent!</p><div class="cky-notice-group"> <div class="cky-notice-des" data-cky-tag="description" style="color:#212121"> <div class="cky-notice-des" data-cky-tag="description" style="color:#212121">
+<p>We gebruiken cookies om je browse-ervaring te verbeteren, gepersonaliseerde advertenties of inhoud te tonen en ons verkeer te analyseren. Door op "Alles accepteren" te klikken, ga je akkoord.</p>
+</div>
+<div class="cky-notice-btn-wrapper" data-cky-tag="notice-buttons"> </div> </div><div class="cky-notice-btn-wrapper" data-cky-tag="notice-buttons"> <button class="cky-btn cky-btn-customize" aria-label="Instellingen" aria-haspopup="true" aria-controls="ckyPreferenceCenter" data-cky-tag="settings-button" style="color:#1863DC;background-color:transparent;border-color:#1863DC">Instellingen</button>  <button class="cky-btn cky-btn-accept" aria-label="Accepteer cookies" data-cky-tag="accept-button" style="color:#FFFFFF;background-color:#1863DC;border-color:#1863DC">Accepteer cookies</button>  </div></div></div></div></div><div class="cky-modal" tabindex="0"> <div class="cky-preference-center" id="ckyPreferenceCenter" data-cky-tag="detail" style="color:#212121;background-color:#FFFFFF;border-color:#F4F4F4"> <div class="cky-preference-header"> <span class="cky-preference-title" role="heading" aria-level="2" data-cky-tag="detail-title" style="color:#212121">Customise Consent Preferences</span> <button class="cky-btn-close" aria-label="Close" data-cky-tag="detail-close"> <img src="https://www.levant.nl/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg" alt=""> </button> </div><div class="cky-preference-body-wrapper"> <div class="cky-preference-content-wrapper" data-cky-tag="detail-description" style="color:#212121"> <p>We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below.</p><p>The cookies that are categorised as "Necessary" are stored on your browser as they are essential for enabling the basic functionalities of the site. </p><p>We also use third-party cookies that help us analyse how you use this website, store your preferences, and provide the content and advertisements that are relevant to you. These cookies will only be stored in your browser with your prior consent.</p><p>You can choose to enable or disable some or all of these cookies but disabling some of them may affect your browsing experience.</p> </div><div class="cky-accordion-wrapper" data-cky-tag="detail-categories"> <div class="cky-accordion" id="ckyDetailCategorynecessary"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Necessary" data-cky-tag="detail-category-title" style="color:#212121">Necessary</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchnecessary"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#212121"> <p>Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.</p></div> </div> </div> <div class="cky-accordion-body"> <div class="cky-audit-table" data-cky-tag="audit-table" style="color:#212121;background-color:#f4f4f4;border-color:#ebebeb"><p class="cky-empty-cookies-text">No cookies to display.</p></div> </div> </div><div class="cky-accordion" id="ckyDetailCategoryfunctional"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Functional" data-cky-tag="detail-category-title" style="color:#212121">Functional</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchfunctional"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#212121"> <p>Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features.</p></div> </div> </div> <div class="cky-accordion-body"> <div class="cky-audit-table" data-cky-tag="audit-table" style="color:#212121;background-color:#f4f4f4;border-color:#ebebeb"><p class="cky-empty-cookies-text">No cookies to display.</p></div> </div> </div><div class="cky-accordion" id="ckyDetailCategoryanalytics"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Analytics" data-cky-tag="detail-category-title" style="color:#212121">Analytics</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchanalytics"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#212121"> <p>Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.</p></div> </div> </div> <div class="cky-accordion-body"> <div class="cky-audit-table" data-cky-tag="audit-table" style="color:#212121;background-color:#f4f4f4;border-color:#ebebeb"><p class="cky-empty-cookies-text">No cookies to display.</p></div> </div> </div><div class="cky-accordion" id="ckyDetailCategoryperformance"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Performance" data-cky-tag="detail-category-title" style="color:#212121">Performance</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchperformance"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#212121"> <p>Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors.</p></div> </div> </div> <div class="cky-accordion-body"> <div class="cky-audit-table" data-cky-tag="audit-table" style="color:#212121;background-color:#f4f4f4;border-color:#ebebeb"><p class="cky-empty-cookies-text">No cookies to display.</p></div> </div> </div><div class="cky-accordion" id="ckyDetailCategoryadvertisement"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Advertisement" data-cky-tag="detail-category-title" style="color:#212121">Advertisement</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchadvertisement"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#212121"> <p>Advertisement cookies are used to provide visitors with customised advertisements based on the pages you visited previously and to analyse the effectiveness of the ad campaigns.</p></div> </div> </div> <div class="cky-accordion-body"> <div class="cky-audit-table" data-cky-tag="audit-table" style="color:#212121;background-color:#f4f4f4;border-color:#ebebeb"><p class="cky-empty-cookies-text">No cookies to display.</p></div> </div> </div> </div></div><div class="cky-footer-wrapper"> <span class="cky-footer-shadow"></span> <div class="cky-prefrence-btn-wrapper" data-cky-tag="detail-buttons">  <button class="cky-btn cky-btn-preferences" aria-label="Save My Preferences" data-cky-tag="detail-save-button" style="color:#1863DC;background-color:transparent;border-color:#1863DC"> Save My Preferences </button> <button class="cky-btn cky-btn-accept" aria-label="Accepteer cookies" data-cky-tag="detail-accept-button" style="color:#FFFFFF;background-color:#1863DC;border-color:#1863DC"> Accepteer cookies </button> </div></div></div></div></script><script id="wp-dom-ready-js" src="https://www.levant.nl/wp-includes/js/dist/dom-ready.min.js?ver=3fe927cab37bf38d6a23"></script>
+<script id="wp-hooks-js" src="https://www.levant.nl/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://www.levant.nl/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-10-26 15:32:17+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"nl"},"Notifications":["Meldingen"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+//# sourceURL=wp-a11y-js-translations
+</script>
+<script id="wp-a11y-js" src="https://www.levant.nl/wp-includes/js/dist/a11y.min.js?ver=31c6cec5a4ff7aff483d"></script>
+<script id="jquery-core-js" src="https://www.levant.nl/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.levant.nl/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="gform_json-js" defer='defer' src="https://www.levant.nl/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=3.2.0"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"wdOffset":1,"helpTextShort":"Press F1 for help","helpText":"Press the arrow keys to navigate by day, PageUp and PageDown to navigate by month, Alt+PageUp and Alt+PageDown to navigate by year, or Escape to cancel.","openOnFocusHelpText":"Press Down arrow to browse the calendar, or Escape to close.","tooltipTxt":"Press Escape to cancel","disabledTxt":"Uitgeschakeld","markedTxt":"Geselecteerd","prevTxt":"Vorige","nextTxt":"Volgende","monthTxt":"Maand","yearTxt":"Jaar","months":["Januari","Februari","Maart","April","May","Juni","Juli","Augustus","September","Oktober","November","December"],"days":[{"s":"S","l":"Zondag"},{"s":"M","l":"Maandag"},{"s":"T","l":"Dinsdag"},{"s":"W","l":"Woensdag"},{"s":"T","l":"Donderdag"},{"s":"F","l":"Vrijdag"},{"s":"S","l":"Zaterdag"}]}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"Dit bestandstype is niet toegestaan. Moet \u00e9\u00e9n van de volgende zijn:","file_uploaded":"Bestand ge\u00fcpload","delete_file":"Dit bestand verwijderen","in_progress":"in behandeling","file_exceeds_limit":"Bestand overschrijdt limiet bestandsgrootte","illegal_extension":"Dit type bestand is niet toegestaan.","max_reached":"Maximale aantal bestanden bereikt","unknown_error":"Er was een probleem bij het opslaan van het bestand op de server","currently_uploading":"Wacht tot het uploaden is voltooid","cancel":"Annuleren","cancel_upload":"Deze upload annuleren","cancelled":"Geannuleerd","error":"Fout","message":"Bericht"},"vars":{"images_url":"https://www.levant.nl/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"Euro","symbol_left":"","symbol_right":"&#8364;","symbol_padding":" ","thousand_separator":".","decimal_separator":",","decimals":2,"code":"EUR"},"base_url":"https://www.levant.nl/wp-content/plugins/gravityforms","number_formats":[],"version_hash":"9826d6eb4fc45f1ac7f6f370c5b38c45","countries":{"AF":"Afghanistan","AX":"Aland-eilanden","AL":"Albani\u00eb","DZ":"Algerije","AS":"Amerikaans Samoa","AD":"Andorra","AO":"Angola","AI":"Anguilla","AQ":"Antarctica","AG":"Antigua en Barbuda","AR":"Argentini\u00eb","AM":"Armeni\u00eb","AW":"Aruba","AU":"Australi\u00eb","AT":"Oostenrijk","AZ":"Azerbeidzjan","BS":"Bahama's","BH":"Bahrein","BD":"Bangladesh","BB":"Barbados","BY":"Wit-Rusland","BE":"Belgi\u00eb","BZ":"Belize","BJ":"Benin","BM":"Bermuda","BT":"Bhutan","BO":"Bolivia","BQ":"Bonaire, Sint Eustatius en Saba","BA":"Bosni\u00eb en Herzegovina","BW":"Botswana","BV":"Bouvet eiland","BR":"Brazili\u00eb","IO":"Brits-Indisch oceaan gebied","BN":"Brunei Darussalam","BG":"Bulgarije","BF":"Burkina Faso","BI":"Burundi","CV":"Kaapverdi\u00eb","KH":"Cambodja","CM":"Kameroen","CA":"Canada","KY":"Kaaimaneilanden","CF":"Centraal-Afrikaanse Republiek","TD":"Tsjaad","CL":"Chili","CN":"China","CX":"Kersteiland","CC":"Cocoseilanden","CO":"Colombia","KM":"Comoren","CD":"Congo, Democratische Republiek","CG":"Congo","CK":"Cook eilanden","CR":"Costa Rica","CI":"Ivoorkust","HR":"Kroati\u00eb","CU":"Cuba","CW":"Cura\u00e7ao","CY":"Cyprus","CZ":"Tsjechi\u00eb","DK":"Denemarken","DJ":"Djibouti","DM":"Dominica","DO":"Dominicaanse Republiek","EC":"Ecuador","EG":"Egypte","SV":"El Salvador","GQ":"Equatoriaal-Guinea","ER":"Eritrea","EE":"Estland","SZ":"Eswatini","ET":"Ethiopi\u00eb","FK":"Falkland eilanden","FO":"Faer\u00f6er","FJ":"Fiji","FI":"Finland","FR":"Frankrijk","GF":"Frans Guyana","PF":"Frans-Polynesi\u00eb","TF":"Franse zuidelijke gebieden","GA":"Gabon","GM":"Gambia","GE":"Georgi\u00eb","DE":"Duitsland","GH":"Ghana","GI":"Gibraltar","GR":"Griekenland","GL":"Groenland","GD":"Grenada","GP":"Guadeloupe","GU":"Guam","GT":"Guatemala","GG":"Guernsey","GN":"Guinee","GW":"Guinee-Bissau","GY":"Guyana","HT":"Ha\u00efti","HM":"Heard Eiland en McDonald Eilanden","VA":"Vaticaanstad","HN":"Honduras","HK":"Hongkong","HU":"Hongarije","IS":"IJsland","IN":"India","ID":"Indonesi\u00eb","IR":"Iran","IQ":"Irak","IE":"Ierland","IM":"Man","IL":"Isra\u00ebl","IT":"Itali\u00eb","JM":"Jamaica","JP":"Japan","JE":"Jersey","JO":"Jordani\u00eb","KZ":"Kazachstan","KE":"Kenia","KI":"Kiribati","KP":"Korea, Democratische Volksrepubliek","KR":"Korea, Republiek van","KW":"Koeweit","KG":"Kirgizi\u00eb","LA":"Lao Democratische Volksrepubliek","LV":"Letland","LB":"Libanon","LS":"Lesotho","LR":"Liberia","LY":"Libi\u00eb","LI":"Liechtenstein","LT":"Litouwen","LU":"Luxemburg","MO":"Macau","MG":"Madagaskar","MW":"Malawi","MY":"Maleisi\u00eb","MV":"Maldiven","ML":"Mali","MT":"Malta","MH":"Marshalleilanden","MQ":"Martinique","MR":"Mauritani\u00eb","MU":"Mauritius","YT":"Mayotte","MX":"Mexico","FM":"Micronesi\u00eb","MD":"Moldavi\u00eb","MC":"Monaco","MN":"Mongoli\u00eb","ME":"Montenegro","MS":"Montserrat","MA":"Marokko","MZ":"Mozambique","MM":"Myanmar","NA":"Namibi\u00eb","NR":"Nauru","NP":"Nepal","NL":"Nederland","NC":"Nieuw-Caledoni\u00eb","NZ":"Nieuw-Zeeland","NI":"Nicaragua","NE":"Niger","NG":"Nigeria","NU":"Niue","NF":"Norfolk eiland","MK":"Noord-Macedoni\u00eb","MP":"Noordelijke Marianen","NO":"Noorwegen","OM":"Oman","PK":"Pakistan","PW":"Palau","PS":"Palestina, Staat","PA":"Panama","PG":"Papoea-Nieuw-Guinea","PY":"Paraguay","PE":"Peru","PH":"Filipijnen","PN":"Pitcairn","PL":"Polen","PT":"Portugal","PR":"Puerto Rico","QA":"Qatar","RE":"Bijeenkomst","RO":"Roemeni\u00eb","RU":"Russische Federatie","RW":"Rwanda","BL":"Sint-Bartholomeus","SH":"Sint-Helena, Hemelvaart en Tristan da Cunha","KN":"Saint Kitts en Nevis","LC":"Saint Lucia","MF":"Sint Maarten","PM":"Saint Pierre en Miquelon","VC":"Saint Vincent en de Grenadines","WS":"Samoa","SM":"San Marino","ST":"Sao Tom\u00e9 en Principe","SA":"Saoedi-Arabi\u00eb","SN":"Senegal","RS":"Servi\u00eb","SC":"Seychellen","SL":"Sierra Leone","SG":"Singapore","SX":"Sint Maarten","SK":"Slowakije","SI":"Sloveni\u00eb","SB":"Salomonseilanden","SO":"Somali\u00eb","ZA":"Zuid-Afrika","GS":"Ji\u017en\u00ed Georgie a Ji\u017en\u00ed Sandwichovy ostrovy","SS":"Zuid Soedan","ES":"Spanje","LK":"Sri Lanka","SD":"Soedan","SR":"Suriname","SJ":"Spitsbergen en Jan Mayen","SE":"Zweden","CH":"Zwitserland","SY":"Arabische Republiek Syri\u00eb","TW":"Taiwan","TJ":"Tadzjikistan","TZ":"Tanzania, de Verenigde Republiek van","TH":"Thailand","TL":"Oost-Timor","TG":"Togo","TK":"Tokelau","TO":"Tonga","TT":"Trinidad en Tobago","TN":"Tunesi\u00eb","TR":"Turkije","TM":"Turkmenistan","TC":"Turks- en Caicoseilanden","TV":"Tuvalu","UG":"Oeganda","UA":"Oekra\u00efne","AE":"Verenigde Arabische Emiraten","GB":"Verenigd Koninkrijk","US":"Verenigde Staten","UY":"Uruguay","UM":"Kleine eilanden van de Verenigde Staten","UZ":"Oezbekistan","VU":"Vanuatu","VE":"Venezuela","VN":"Vietnam","VG":"Britse Maagdeneilanden","VI":"Amerikaanse Maagdeneilanden","WF":"Wallis en Futuna","EH":"Westelijke Sahara","YE":"Jemen","ZM":"Zambia","ZW":"Zimbabwe"},"strings":{"newRowAdded":"Nieuwe rij toegevoegd.","rowRemoved":"Rij verwijderd","formSaved":"Het formulier is opgeslagen. De inhoud bevat de link om terug te keren en het formulier in te vullen."}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script id="gform_gravityforms-js" defer='defer' src="https://www.levant.nl/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=3.2.0"></script>
+<script id="gform_recaptcha-js" defer='defer' src="https://www.google.com/recaptcha/api.js?hl=nl&#038;&#038;ver=918bb0cb9bf192d8c6c050273d0668cc#038;render=explicit"></script>
+<script id="gform_placeholder-js" defer='defer' src="https://www.levant.nl/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=3.2.0"></script>
+<script id="gform_gravityforms_utils-js" defer='defer' src="https://www.levant.nl/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=d7e103405223e60d2719f4c330fd11cf"></script>
+<script id="gform_gravityforms_theme_vendors-js" defer='defer' src="https://www.levant.nl/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=ddae8d403393f0e5eaeedeb511ce46e0"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"9826d6eb4fc45f1ac7f6f370c5b38c45"},"ajax":{"ajaxurl":"https://www.levant.nl/wp-admin/admin-ajax.php","ajax_submission_nonce":"71d3dea3aa","i18n":{"step_announcement":"Stap %1$s van %2$s, %3$s","unknown_error":"Er was een onbekende fout bij het verwerken van je aanvraag. Probeer het opnieuw.","error_403":"De aanvraag is om onbekende veiligheidsredenen geblokkeerd (403-fout). Verwijder alle code-achtige tekst (scripts of databasequery&#039;s) en probeer het opnieuw."}}}},"fields":{"repeater":{"strings":{"item_added":"added.","item_removed":"removed.","renumbered":"and above renumbered.","max_items":"You have reached the maximum number of repeated items.","confirm_delete":"Are you sure you want to remove {label} {number}?"}}},"hmr_dev":"","public_path":"https://www.levant.nl/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"d12e36adf9"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script id="gform_gravityforms_theme-js" defer='defer' src="https://www.levant.nl/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=97219a00e44efe96fe680a9fde3911cf"></script>
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 2) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "2", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_2" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_2";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_2" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 2, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+</body>
+</html>

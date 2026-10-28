@@ -1,0 +1,2865 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.eyckenduyn.nl/',
+
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: 'e5a339f0',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Oct 17, 2026',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'baanstatus',
+        InitialPageUuid: 'fd52956bf6c4416ba622f085b819bae4',
+        InitialPageId: '1197128790',
+        InitialEncodedPageAlias: 'YmFhbnN0YXR1cw==',
+        InitialHeaderUuid: '27111141bc804c8eb6b28d84c2927f3a',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        sidebarPosition: 'LEFT',
+        currentLanguage: 'nl',
+        currentLocale: 'nl',
+        NavItems: '{}',
+        
+        mapConsent: {
+            message: 'Deze inhoud wordt aangeboden door een derde partij, {0}. Indien ingeschakeld, kan {0} informatie verzamelen over uw activiteiten.',
+            enable: 'Inschakelen'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 5,
+            NavbarLiveHomePage: 'https://www.eyckenduyn.nl/',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        planID: '7',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        isInPreview: false,
+        hasNativeStore: false,
+        defaultLang: 'nl',
+        hamburgerMigration: null,
+        isFlexSite: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 25;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="d_track_campaign" data-entry-referrer data-utm-cookies></script>
+
+<script type="text/javascript" >
+    var _dm_gaq = {};
+    var _gaq = _gaq || [];
+    var _dm_insite = [];
+</script>
+
+
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+
+
+
+
+<meta name="d-service-worker" content="unregister">
+
+
+
+<link rel="canonical" href="https://www.eyckenduyn.nl/baanstatus">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/e5a339f0/site_favicon_16_1637332009543.ico"/>
+
+
+<link rel="preconnect" href="https://irp.cdn-website.com"/>
+<link rel="preconnect" href="https://irp.cdn-website.com" crossorigin/>
+<link rel="preconnect" href="https://static.cdn-website.com"/>
+
+
+
+
+<script id='d-js-dmapi'>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}@media (min-width:768px) and (max-width:1024px){.responsiveTablet #dm .dmInner .hide-for-medium,[data-hidden-on-tablet]{display:none!important}}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cinzel:ital,wght@0,400..900;1,400..900&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/6877/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/0798db064b813951029320787919481b.css" id="widgetCSS" />
+
+
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+
+<style>
+  body[data-page-alias="baanstatus"] #dm [data-show-on-page-only="baanstatus"] {
+    display: block !important;
+  }
+</style>
+
+
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/e5a339f0/files/e5a339f0_1.min.css?v=442" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody div.u_1137169420
+{
+	background-color:rgba(255,255,255,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody a.u_1912241785 *.iconBg
+{
+	display:none !important;
+}
+*#dm *.dmBody a.u_1912241785:hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1912241785.hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1912241785:hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1912241785.hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1912241785 span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1912241785
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+	border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	-webkit-border-radius:0 !important;
+	background-image:linear-gradient(90deg,rgba(101,147,32,1) 0,rgba(98,144,30,1) 100%) !important;
+	background-origin:border-box !important;
+}
+*#dm *.dmBody *.u_1218988000
+{
+	width:100% !important;
+}
+*#dm *.dmBody a.u_1388236137 *.iconBg
+{
+	display:none !important;
+}
+*#dm *.dmBody a.u_1388236137:hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1388236137.hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1388236137:hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1388236137.hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1388236137 span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1388236137
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+	border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	-webkit-border-radius:0 !important;
+	background-image:linear-gradient(90deg,rgba(101,147,32,1) 0,rgba(98,144,30,1) 100%) !important;
+	background-origin:border-box !important;
+}
+*#dm *.dmBody div.u_1188684746 .svg
+{
+	color:rgba(101,147,32,1) !important;
+	fill:rgba(101,147,32,1) !important;
+}
+*#dm *.dmBody div.u_1601897455 .svg
+{
+	color:rgba(101,147,32,1) !important;
+	fill:rgba(101,147,32,1) !important;
+}
+*#dm *.dmBody div.u_1565160651 .svg
+{
+	color:rgba(101,147,32,1) !important;
+	fill:rgba(101,147,32,1) !important;
+}
+*#dm *.dmBody div.u_1881770413 .svg
+{
+	color:rgba(101,147,32,1) !important;
+	fill:rgba(101,147,32,1) !important;
+}
+*#dm *.dmBody div.u_1539478197 .svg
+{
+	color:rgba(101,147,32,1) !important;
+	fill:rgba(101,147,32,1) !important;
+}
+*#dm *.dmBody div.u_1062255415 .svg
+{
+	color:rgba(101,147,32,1) !important;
+	fill:rgba(101,147,32,1) !important;
+}
+*#dm *.dmBody div.u_1493336569 .svg
+{
+	color:rgba(101,147,32,1) !important;
+	fill:rgba(101,147,32,1) !important;
+}
+*#dm *.dmBody div.u_1218444593 .svg
+{
+	color:rgba(101,147,32,1) !important;
+	fill:rgba(101,147,32,1) !important;
+}
+*#dm *.dmBody a.u_1963011165 *.iconBg
+{
+	display:none !important;
+}
+*#dm *.dmBody a.u_1963011165:hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1963011165.hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1963011165:hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1963011165.hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1963011165 span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1963011165
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+	border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	-webkit-border-radius:0 !important;
+	background-image:linear-gradient(90deg,rgba(101,147,32,1) 0,rgba(98,144,30,1) 100%) !important;
+	background-origin:border-box !important;
+}
+*#dm *.dmBody a.u_1072100396 *.iconBg
+{
+	display:none !important;
+}
+*#dm *.dmBody a.u_1072100396:hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1072100396.hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1072100396:hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1072100396.hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1072100396 span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1072100396
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+	border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	-webkit-border-radius:0 !important;
+	background-image:linear-gradient(90deg,rgba(101,147,32,1) 0,rgba(98,144,30,1) 100%) !important;
+	background-origin:border-box !important;
+}
+*#dm *.dmBody a.u_1789035290 *.iconBg
+{
+	display:none !important;
+}
+*#dm *.dmBody a.u_1789035290:hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1789035290.hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1789035290:hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1789035290.hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1789035290 span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1789035290
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+	border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	-webkit-border-radius:0 !important;
+	background-image:linear-gradient(90deg,rgba(101,147,32,1) 0,rgba(98,144,30,1) 100%) !important;
+	background-origin:border-box !important;
+}
+*#dm *.dmBody a.u_1136138227 *.iconBg
+{
+	display:none !important;
+}
+*#dm *.dmBody a.u_1136138227:hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1136138227.hover span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1136138227:hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1136138227.hover
+{
+	border-color:rgba(0,0,0,0) !important;
+	background-color:rgba(25,185,52,0.87) !important;
+}
+*#dm *.dmBody a.u_1136138227 span.text
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody a.u_1136138227
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+	border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	-webkit-border-radius:0 !important;
+	background-image:linear-gradient(90deg,rgba(101,147,32,1) 0,rgba(98,144,30,1) 100%) !important;
+	background-origin:border-box !important;
+}
+*#dm *.dmBody div.u_1080471840 .svg
+{
+	color:rgba(255,0,0,1) !important;
+	fill:rgba(255,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1680510311 .svg
+{
+	color:rgba(101,147,32,1) !important;
+	fill:rgba(101,147,32,1) !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.dmBody h3.u_1128225071
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody h3.u_1960456903
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1767131098
+{
+	padding-top:0 !important;
+	margin-left:auto !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	margin-right:auto !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:none !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1186579037
+{
+	padding-top:0 !important;
+	margin-left:auto !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:7px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	margin-right:auto !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:none !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody h3.u_1979837121
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1075008293
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:none !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody h3.u_1821295201
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody h3.u_1006516000
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1851830828
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:none !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1445363129
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:-8px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1416250354
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:none !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody h3.u_1210076707
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1633543776
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:530px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:20px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1249874947
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:530px !important;
+	margin-top:31px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody h3.u_1652873734
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1676121994
+{
+	padding-right:30px !important;
+}
+*#dm *.dmBody div.u_1374759987
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 18px) !important;
+	position:relative !important;
+	height:286px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:0 !important;
+	margin-left:18px !important;
+	max-width:357px !important;
+	margin-top:78px !important;
+	margin-bottom:10px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody a.u_1912241785
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 34px) !important;
+	position:relative !important;
+	height:44px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:291px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+	margin-right:84.5px !important;
+	margin-left:34.4375px !important;
+	margin-top:9px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1460825290
+{
+	padding-top:14px !important;
+	padding-bottom:14px !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:40px !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1355781120
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:5px !important;
+	padding-bottom:0 !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1349897323
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1894389363
+{
+	padding-right:10px !important;
+	padding-left:10px !important;
+	padding-top:40px !important;
+	padding-bottom:40px !important;
+}
+*#dm *.dmBody div.u_1430721227
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:1px !important;
+	margin-bottom:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1137169420
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:80px !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:80px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	background-position:50% 50% !important;
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:initial !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1971678927
+{
+	padding-top:15px !important;
+	padding-left:0 !important;
+	padding-bottom:15px !important;
+	padding-right:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody div.u_1359338652
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody div.u_1006516000
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:21px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1807786704
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:22px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1188684746
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:42.9375px !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1601897455
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:42.9375px !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:37px !important;
+	margin-bottom:10px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1960456903
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:66px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1979837121
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:22px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1718989663
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:23px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1565160651
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:42.9375px !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1128225071
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:18px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1821295201
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:21px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1062255415
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:42.9375px !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1210076707
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:19px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1652873734
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:20px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1539478197
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:42.9375px !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1313862712
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:530px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:20px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1178133270
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:530px !important;
+	margin-top:31px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1123376889
+{
+	padding-right:30px !important;
+}
+*#dm *.dmBody div.u_1221476696
+{
+	padding-top:14px !important;
+	padding-bottom:14px !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:40px !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1218988000
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:188px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_BAANLAY-OUT
+{
+	padding-top:14px !important;
+	padding-bottom:14px !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:40px !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody a.u_1388236137
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:44px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:291px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+	margin-right:159px !important;
+	margin-left:0 !important;
+	margin-top:29px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1881770413
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:42.9375px !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1493336569
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 5px) !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:42.9375px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+	min-height:auto !important;
+	margin-right:25.2031px !important;
+	margin-left:5px !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1218444593
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 5px) !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:42.9375px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+	min-height:auto !important;
+	margin-right:21px !important;
+	margin-left:5px !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody a.u_1963011165
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 34px) !important;
+	position:relative !important;
+	height:44px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:291px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+	min-height:auto !important;
+	margin-right:89px !important;
+	margin-left:34.4375px !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody a.u_1072100396
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 34px) !important;
+	position:relative !important;
+	height:44px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:291px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+	min-height:auto !important;
+	margin-right:44.5px !important;
+	margin-left:34.4375px !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody a.u_1789035290
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 34px) !important;
+	position:relative !important;
+	height:44px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:291px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+	min-height:auto !important;
+	margin-right:44.5px !important;
+	margin-left:34.4375px !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody a.u_1136138227
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 34px) !important;
+	position:relative !important;
+	height:44px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:291px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+	min-height:auto !important;
+	margin-right:44.5px !important;
+	margin-left:34.4375px !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1080471840
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:42.9375px !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1971194551
+{
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1730313752
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:155px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1095416604
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1680510311
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 5px) !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:42.9297px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+	min-height:auto !important;
+	margin-right:25.1953px !important;
+	margin-left:5px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}@font-face {
+  font-family: "Cinzel Fallback";
+  src: local('Arial');
+  ascent-override: 76.7937%;
+  descent-override: 29.2697%;
+  size-adjust: 127.0938%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.eyckenduyn.nl/baanstatus">
+
+  <title>
+    Baanstatus | Eyckenduyn Golf Eten Drinken
+  </title>
+  <meta name="description" content="Natuurlijk kunt u bij Golfbaan Eyckenduyn het hele jaar door uw favoriete golfsport blijven beoefenen. Onze greenkeepers doen er alles aan om de banen in de best mogelijke conditie te houden."/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Baanstatus | Eyckenduyn Golf Eten Drinken"/>
+  <meta name="twitter:description" content="Natuurlijk kunt u bij Golfbaan Eyckenduyn het hele jaar door uw favoriete golfsport blijven beoefenen. Onze greenkeepers doen er alles aan om de banen in de best mogelijke conditie te houden."/>
+  <meta property="og:description" content="Natuurlijk kunt u bij Golfbaan Eyckenduyn het hele jaar door uw favoriete golfsport blijven beoefenen. Onze greenkeepers doen er alles aan om de banen in de best mogelijke conditie te houden."/>
+  <meta property="og:title" content="Baanstatus | Eyckenduyn Golf Eten Drinken"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="baanstatus"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper fullSidebarLayout-var5 null fullSidebarLayout">
+         <div dmwrapped="true" id="1355046121"> <div dmtemplateid="fullSideBarLayout" class="fullSidebarLayout dm-bfs dm-layout-sec hasAnimations hasStickyHeader inMiniHeaderMode layout-drawer_push-content dmPageBody d-page-1262738399 inputs-css-clean dmFreeHeader" id="dm-outer-wrapper" data-page-class="1262738399" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner" data-auto="page-inner"> <div id="site_content"> <div class="hasGenericSidebar sidebarLeft" data-auto="sidebar-left"> <div id="siteSidebar" class="genericSidebar sideheader u_sideheader u_siteSidebar p_hfcontainer" data-auto="site-sidebar" data-global-position="true" data-no-rows-wrapper="true" data-no-full-height="true" data-has-layouts="true" data-has-small-screen="true"> <div id="sbcontainer" class="sbcontainer" layout="e432cda0764b4255a28ec48b399dd413===header"> <div class="u_1334818380 dmRespRow" style="text-align: center;" id="1334818380"> <div class="dmRespColsWrapper" id="1540517303"> <div class="dmRespCol small-12 medium-12 large-12" id="1710069272"> <div class="u_1124938317 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1124938317"><img src="https://irp.cdn-website.com//e5a339f0/dms3rep/multi/opt/logo-eyckenduyn-black-1920w.png" id="1293720865" class="" data-dm-image-path="https://irp-cdn.multiscreensite.com/e5a339f0/dms3rep/multi/logo-eyckenduyn-black.png" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1573264914 dmRespRow middleDrawerRow" style="text-align: center;" id="1573264914"> <div class="dmRespColsWrapper" id="1550110781"> <div class="dmRespCol small-12 medium-12 large-12 content-removed" id="1393993113"> <nav class="u_1457390402 unifiednav_vertical effect-bottom2 main-navigation unifiednav dmLinksMenu" data-auto="links-menu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HOVER" id="1457390402" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         HOME
+        " data-auto="page-text-style">HOME<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://www.gastrobar9.nl" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101354960  " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         RESTAURANT
+        " data-auto="page-text-style">RESTAURANT<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" aria-expanded="false" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/baanstatus" class="unifiednav__item unav-item unav-top-item  dmNavItemSelected  dmUDNavigationItem_01010138897  unifiednav__item_has-sub-nav" target="" data-target-page-alias="" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         BAANSTATUS
+        " data-auto="page-text-style">BAANSTATUS<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" class="unifiednav__container unifiednav__container_sub-nav unav-sub" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/baanstatus#BAANLAY-OUT" class="unifiednav__item unav-item   dmUDNavigationItem_010101861493  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           BAAN LAY-OUT
+          " data-auto="page-text-style">BAAN LAY-OUT<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/agenda" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101542177  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         AGENDA
+        " data-auto="page-text-style">AGENDA<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/tarieven" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101828041  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         TARIEVEN
+        " data-auto="page-text-style">TARIEVEN<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" aria-expanded="false" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101259197  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         BUSINESS
+        " data-auto="page-text-style">BUSINESS<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" class="unifiednav__container unifiednav__container_sub-nav unav-sub" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/businessclub" class="unifiednav__item unav-item   dmUDNavigationItem_010101385971  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           BUSINESS LID WORDEN
+          " data-auto="page-text-style">BUSINESS LID WORDEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/business-lounge" class="unifiednav__item unav-item   dmUDNavigationItem_010101309316  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           BUSINESS LOUNGE
+          " data-auto="page-text-style">BUSINESS LOUNGE<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/business-leden" class="unifiednav__item unav-item   dmUDNavigationItem_010101594084  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           BUSINESS LEDEN
+          " data-auto="page-text-style">BUSINESS LEDEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/lid-worden" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101271647  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         LID WORDEN
+        " data-auto="page-text-style">LID WORDEN<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/fotos" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101347774  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         FOTO'S
+        " data-auto="page-text-style">FOTO'S<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101943230  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         CONTACT
+        " data-auto="page-text-style">CONTACT<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1200163257" style="text-align: center;" id="1200163257"> <div class="dmRespColsWrapper" id="1641554943"> <div class="dmRespCol small-12 medium-12 large-12" id="1650672832"> <div data-element-type="html" class="dmCustomHtml" id="1189455382"> <div id="eyckenduyn-golf-form"></div> 
+ <script>
+
+
+  (() => {
+    const e = "https://limburggolfland.nl/eyckenduyn/";
+    const n = new XMLHttpRequest();
+    n.open("GET", e + "embed.php", false);
+    n.send(null);
+    document.getElementById("eyckenduyn-golf-form").innerHTML = n.responseText;
+    const t = document.createElement("script");
+    t.src = e + "resources/form.js";
+    document.head.appendChild(t);
+  })();
+                                                                                                                                                                                                                                       
+
+          </script> 
+</div> 
+ <div class="u_1136048586 dmform default native-inputs" data-element-type="dContactUsRespId" id="1136048586" data-require-captcha="true" data-captcha-position="bottomleft" captcha="true"> <h3 class="dmform-title dmwidget-title" id="1382512376">Bericht sturen</h3> 
+ <div class="dmform-wrapper" id="1488124733" captcha-lang="nl"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1902560106"> <div class="dmforminput required  small-12 dmRespDesignCol medium-12 large-12" id="1169040349"> <label for="1260755061" id="1800182361" class="" hide="true" data-dm-for="dmform-0">Naam:</label> 
+<input type="text" class="" name="dmform-0" id="1260755061" placeholder="Naam:" data-placeholder-original="Naam:"/><input type="hidden" name="label-dmform-0" value="Naam:" id="1529239598" class=""/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-10 large-10 medium-12 large-12" id="1759958843"> <label for="1049967477" id="1930248580" class="" hide="true" data-dm-for="dmform-1">E-mail:</label> 
+<input type="email" class="" name="dmform-1" id="1049967477" placeholder="E-mail:" data-placeholder-original="E-mail:"/><input type="hidden" name="label-dmform-1" value="E-mail:" id="1312998588" class=""/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-12 large-12" id="1225863355"> <label for="1590372437" id="1088985493" class="" hide="true" data-dm-for="dmform-2">Telefoon:</label> 
+<input type="tel" class="" name="dmform-2" id="1590372437" placeholder="Telefoon:" data-placeholder-original="Telefoon:"/><input type="hidden" name="label-dmform-2" value="Telefoon:" id="1016972151" class=""/></div> 
+ <div class="dmforminput large-12 medium-12 dmRespDesignCol" id="1609736701"> <label for="1890678988" id="1028405905" class="" hide="true" data-dm-for="dmform-3">Datum:</label> 
+ <textarea name="dmform-3" id="1890678988" class="" placeholder="Bericht" data-placeholder-original="Bericht"></textarea> 
+<input type="hidden" name="label-dmform-3" value="Datum:" id="1936462710" class=""/></div> 
+ <span id="1609736701_clear" class="dmWidgetClear"></span> 
+ <div class="dmformsubmit dmWidget R" id="1444741461"><input class="" name="submit" type="submit" value="Verstuur" id="1662110466"/></div> 
+<input name="dmformsendto" type="hidden" id="1351497880" class="" value="O0wrseIfFLsSlLR4GAldF4vBBVVonsEOfoH7GpgOrBv9hxs+r36gZBCsVTL9rtp0uLcvUbpsAUA=" data-dec="true"/><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1170062496"/><input name="dmformsubject" type="hidden" value="Bericht via website" id="1994834434" class=""/><input name="dmformsubmitparams" type="hidden" value="8mpKnCSiNQXK/d9M7IDrSzRkXjNcoSR43dcqOnBIfANslOurc+6diuhvkdIaLvvuNVQHAHqJrxYqGboZT+d17M8Qbm3+jV9vNmV8uA9e57JsUrHjRelOHqVDLNPQLAXr2oaHsKvp4ys2ITJj3mVQJDLcdxN/4Fs9K5ENL6KAq6KfgYQ8Fi+c43zJYKnfxyqk/YcbPq9+oGQg4dD3nztLYw==" data-dec="true"/><input type="hidden" name="page_uuid" value="fd52956bf6c4416ba622f085b819bae4"/></form> 
+</div> 
+ <div class="dmform-success" style="display:none" id="1844806383">Bedankt voor uw bericht. We nemen zo snel mogelijk contact met u op.</div> 
+ <div class="dmform-error" style="display:none" id="1346316373">Oeps, er is een fout opgetreden bij het verzenden van uw bericht. Probeer het later nog eens.</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="sidebarHamburger" class="u_sidebarHamburger"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</div> 
+</div> 
+ <div id="siteSidebarSpacer"></div> 
+ <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="desktopBodyBox"> <div id="iscrollBody"> <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_baanstatus"> <div id="allWrapper" class="allWrapper" data-auto="all-wrapper"> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1262738399"> <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper" id="1019462802"> <div class="u_1460825290 dmRespRow" style="text-align: center;" id="1460825290"> <div class="dmRespColsWrapper" id="1202924709"> <div class="u_1676121994 dmRespCol small-12 large-6 medium-6" id="1676121994"> <div class="u_1249874947 dmNewParagraph" data-element-type="paragraph" id="1249874947" data-version="5"> <h2 class="text-align-left"><span style="font-weight:bold;display:initial;font-family:Poppins, 'Poppins Fallback';">Actuele baanstatus</span></h2> 
+</div> <div class="u_1633543776 dmNewParagraph" id="1633543776" style="transition: opacity 1s ease-in-out;" data-version="5"><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">Natuurlijk kunt u bij Golfbaan Eyckenduyn het hele jaar door uw favoriete golfsport blijven beoefenen. Onze greenkeepers doen er alles aan om de banen in de best mogelijke conditie te houden. Echter, door regen of andere weersinvloeden is het mogelijk dat de wedstrijdbaan (gedeeltelijk) wordt afgesloten.</span> 
+</span></p><p class="text-align-left"><span style="display: initial;"><br/></span></p><p class="text-align-left"><span style="display: initial;">Om misverstanden te voorkomen raden wij u (vooral in het naseizoen aan), alvorens u naar de golfbaan komt, eerst onderstaande baanstatus te controleren.<br/></span></p></div></div> 
+ <div class="u_1889392322 dmRespCol small-12 large-6 medium-6" id="1889392322"> <div data-element-type="html" class="u_1374759987 dmCustomHtml" id="1374759987"> <iframe frameborder="0" scrolling="no" class="weerplazaWidget" src="https://www.weerplaza.nl/weerwidgets/activiteit/?YT1nb2xmJmdpZD0xMDU4OSZkPTU=" style="padding: 10px; width: 100% !important; max-width: 450px !important; height: 285px !important; border: 1px solid rgb(244, 244, 244) !important; box-sizing: border-box !important;" title="Embedded content"></iframe> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1137169420 dmRespRow" style="text-align: center;" id="1137169420" mode="1"> <div class="dmRespColsWrapper" id="1001637563"> <div class="u_1349897323 dmRespCol small-12 large-7 medium-7" id="1349897323"> <div class="u_1971678927 dmRespRow" id="1971678927"> <div class="dmRespColsWrapper" id="1781238589"> <div class="u_1095416604 dmRespCol small-12 large-2 medium-2 content-removed" id="1095416604"> <div class="u_1680510311 graphicWidget hide-for-small" data-element-type="graphic" data-widget-type="graphic" id="1680510311"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1792 1792" id="1045406061" class="svg u_1045406061" data-icon-name="fa-check"> <path fill="inherit" d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1864277306 dmRespCol small-12 large-10 medium-10" id="1864277306"> <div class="u_1006516000 dmNewParagraph" id="1006516000" style="transition:opacity 1s ease-in-out;display:block;line-height:initial;" data-element-type="paragraph" data-version="5"> <h4 class="m-text-align-center size-18"><span class="font-size-18" style="display: initial; font-weight: 700; color: rgb(0, 0, 0);">Baan</span></h4> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1355781120 dmRespRow" id="1355781120"> <div class="dmRespColsWrapper" id="1984558545"> <div class="u_1234338134 dmRespCol small-12 large-2 medium-2" id="1234338134"> <div class="u_1188684746 graphicWidget hide-for-small" data-element-type="graphic" data-widget-type="graphic" id="1188684746"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1792 1792" id="1334091887" class="svg u_1334091887" data-icon-name="fa-check"> <path fill="inherit" d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path> 
+</svg> 
+</div> 
+ <div class="u_1601897455 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1601897455"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1792 1792" id="1516387042" class="svg u_1516387042" data-icon-name="fa-check"> <path fill="inherit" d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1904379519 dmRespCol small-12 large-10 medium-10" id="1904379519"> <div class="u_1807786704 dmNewParagraph" id="1807786704" style="transition: none 0s ease 0s; text-align: left; display: block;" data-element-type="paragraph" data-version="5"> <h4 class="m-text-align-center size-18"><span class="font-size-18" style="color: rgb(0, 0, 0); font-weight: 700; display: initial;">Oefengreens</span></h4> 
+</div> <div class="u_1960456903 dmNewParagraph" id="1960456903" style="transition: opacity 1s ease-in-out 0s; text-align: left;" data-element-type="paragraph" data-version="5"> <h4 class="size-18 m-text-align-center"><span class="font-size-18" style="color: rgb(0, 0, 0); font-weight: 700; display: initial;">Trolleys</span></h4> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1186579037 dmRespRow" id="1186579037"> <div class="dmRespColsWrapper" id="1259791768"> <div class="u_1928458697 dmRespCol small-12 large-2 medium-2" id="1928458697"> <div class="u_1218444593 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1218444593"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1792 1792" id="1725283970" class="svg u_1725283970" data-icon-name="fa-check"> <path fill="inherit" d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1515736825 dmRespCol small-12 large-10 medium-10" id="1515736825"> <div class="u_1979837121 dmNewParagraph" id="1979837121" style="transition:opacity 1s ease-in-out;display:block;line-height:initial;" data-element-type="paragraph" data-version="5"> <h4 class="m-text-align-center"><span style="display: initial;">Brasserie</span></h4> 
+</div> <div class="u_1445363129 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1445363129"><p class="m-text-align-center"><span style="display: initial;">1-4 tot 1-11 dagelijks geopend</span></p><p class="m-text-align-center"><span style="display: initial;">vanaf 09:00 uur</span></p><p class="m-text-align-center"><span class="" style="display: initial;"><span style="display: initial;">1-11 tot 1-4 dagelijks geopend</span> 
+</span></p><p class="m-text-align-center"><span style="display: initial;">vanaf 10:00 uur</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1430721227 dmRespRow" id="1430721227"> <div class="dmRespColsWrapper" id="1901972282"> <div class="u_1971194551 dmRespCol small-12 large-3 medium-3" id="1971194551"> <div class="u_1080471840 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1080471840"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1408 1792" id="1478259574" class="svg u_1478259574" data-icon-name="fa-close"> <path fill="inherit" d="M1298 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1730313752 dmRespCol small-12 large-9 medium-9" id="1730313752"> <div class="u_1718989663 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1718989663"><p class="m-text-align-center"><span style="font-weight: bold; display: unset;">Wintergreens</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1423167592 dmRespRow hide-for-large" id="1423167592"> <div class="dmRespColsWrapper" id="1933320147"> <div class="dmRespCol empty-column large-6 medium-6 small-12" id="1294440721"></div> 
+ <div class="dmRespCol empty-column large-6 medium-6 small-12" id="1225905491"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1894389363 dmRespCol small-12 large-5 medium-5" id="1894389363"> <div class="u_1767131098 dmRespRow" id="1767131098"> <div class="dmRespColsWrapper" id="1282928873"> <div class="u_1974486576 dmRespCol small-12 large-3 medium-3" id="1974486576"> <div class="u_1565160651 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1565160651"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1792 1792" id="1889545652" class="svg u_1889545652" data-icon-name="fa-check"> <path fill="inherit" d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1247539197 dmRespCol small-12 large-9 medium-9" id="1247539197"> <div class="u_1128225071 dmNewParagraph" id="1128225071" style="transition:opacity 1s ease-in-out;display:block;line-height:initial;" data-element-type="paragraph" data-version="5"> <h4 class="m-text-align-center size-18"><span class="font-size-18" style="display: initial; font-weight: 700; color: rgb(0, 0, 0);">Driving range</span></h4> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1075008293 dmRespRow" id="1075008293"> <div class="dmRespColsWrapper" id="1227288493"> <div class="u_1857894113 dmRespCol small-12 large-3 medium-3" id="1857894113"> <div class="u_1881770413 graphicWidget hide-for-small" data-element-type="graphic" data-widget-type="graphic" id="1881770413"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1792 1792" id="1445372455" class="svg u_1445372455" data-icon-name="fa-check"> <path fill="inherit" d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1791141828 dmRespCol small-12 large-9 medium-9" id="1791141828"> <div class="u_1821295201 dmNewParagraph" id="1821295201" style="transition:opacity 1s ease-in-out;display:block;line-height:initial;" data-element-type="paragraph" data-version="5"> <h4 class="size-18 m-text-align-center"><span class="font-size-18" style="display: initial; font-weight: 700; color: rgb(0, 0, 0);">Buggy's</span></h4> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1416250354 dmRespRow" id="1416250354"> <div class="dmRespColsWrapper" id="1250711621"> <div class="u_1841266563 dmRespCol small-12 large-3 medium-3" id="1841266563"> <div class="u_1062255415 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1062255415"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1792 1792" id="1434459450" class="svg u_1434459450" data-icon-name="fa-check"> <path fill="inherit" d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1907320380 dmRespCol small-12 large-9 medium-9" id="1907320380"> <div class="u_1210076707 dmNewParagraph" id="1210076707" style="transition:opacity 1s ease-in-out;display:block;line-height:initial;" data-element-type="paragraph" data-version="5"> <h4 class="m-text-align-center"><span style="display: initial;">Qualifying</span></h4> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1359338652 dmRespRow" id="1359338652"> <div class="dmRespColsWrapper" id="1665699248"> <div class="u_1752993024 dmRespCol small-12 large-3 medium-3" id="1752993024"> <div class="u_1539478197 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1539478197"> <a href="/" id="1975323513" aria-label="fa-check"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1792 1792" id="1295447522" class="svg u_1295447522" data-icon-name="fa-check"> <path fill="inherit" d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path> 
+</svg> 
+</a> 
+</div> 
+</div> 
+ <div class="u_1902587045 dmRespCol small-12 large-9 medium-9" id="1902587045"> <div class="u_1652873734 dmNewParagraph" id="1652873734" style="transition:opacity 1s ease-in-out;display:block;line-height:initial;" data-element-type="paragraph" data-version="5"> <h4 class="m-text-align-center"><span style="display: initial;">Zomergreens</span></h4> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1851830828 dmRespRow" id="1851830828"> <div class="dmRespColsWrapper" id="1696761762"> <div class="u_1004608997 dmRespCol small-12 medium-12 large-12" id="1004608997"> <a data-display-type="block" class="u_1912241785 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="true" href="https://irp.cdn-website.com/e5a339f0/files/uploaded/Eyckenduyn_scorekaart_1.jpg" id="1912241785" data-element-type="dButtonLinkId" target="_blank"> <span class="iconBg" id="1659797539"> <span class="icon hasFontIcon icon-star" id="1911622901"></span> 
+</span> 
+ <span class="text" id="1897958834">Download scorekaart</span> 
+</a> 
+ <a data-display-type="block" class="u_1963011165 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="true" href="https://irp.cdn-website.com/e5a339f0/files/uploaded/Eyckenduyn_9-holes_Heren_%281%29.pdf" id="1963011165" data-element-type="dButtonLinkId" target="_blank"> <span class="iconBg" id="1942815979"> <span class="icon hasFontIcon icon-star" id="1317652359"></span> 
+</span> 
+ <span class="text" id="1905950874">9-holes Heren</span> 
+</a> 
+ <a data-display-type="block" class="u_1789035290 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="true" href="https://irp.cdn-website.com/e5a339f0/files/uploaded/Eyckenduyn_18-holes_Heren.pdf" id="1789035290" data-element-type="dButtonLinkId" target="_blank"> <span class="iconBg" id="1747166166"> <span class="icon hasFontIcon icon-star" id="1490230677"></span> 
+</span> 
+ <span class="text" id="1872457829">18-holes Heren</span> 
+</a> 
+ <a data-display-type="block" class="u_1136138227 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="true" href="https://irp.cdn-website.com/e5a339f0/files/uploaded/Eyckenduyn_18-holes_Dames.pdf" id="1136138227" data-element-type="dButtonLinkId" target="_blank"> <span class="iconBg" id="1911715257"> <span class="icon hasFontIcon icon-star" id="1849231257"></span> 
+</span> 
+ <span class="text" id="1713242030">18-holes Dames</span> 
+</a> 
+ <a data-display-type="block" class="u_1072100396 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="true" href="https://irp.cdn-website.com/e5a339f0/files/uploaded/Eyckenduyn_9-holes_Dames.pdf" id="1072100396" data-element-type="dButtonLinkId" target="_blank"> <span class="iconBg" id="1564530233"> <span class="icon hasFontIcon icon-star" id="1100553328"></span> 
+</span> 
+ <span class="text" id="1662812819">9-holes Dames</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_BAANLAY-OUT dmRespRow" style="text-align: center;" id="BAANLAY-OUT" data-anchor="BAAN LAY-OUT"> <div class="dmRespColsWrapper" id="1050651972"> <div class="u_1123376889 dmRespCol small-12 large-6 medium-6" id="1123376889"> <div class="u_1178133270 dmNewParagraph" data-element-type="paragraph" id="1178133270" data-version="5"> <h2 class="text-align-left"><span style="font-weight:bold;display:initial;font-family:Poppins, 'Poppins Fallback';">Baan lay-out</span></h2> 
+</div> <div class="u_1313862712 dmNewParagraph" id="1313862712" style="transition: opacity 1s ease-in-out;" data-version="5"><p style="direction: ltr;"><span style="display: initial;">Hole 1/10 is een hole die je in de diepte ziet liggen. Alleen een recht geslagen bal maakt kans om de green te bereiken. Water, bomen en bunkers verdedigen de green. Maar gezien de stroke index is deze PAR te spelen.<br/></span></p></div> <a data-display-type="block" class="u_1388236137 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="true" href="https://irp.cdn-website.com/e5a339f0/files/uploaded/UITLEG%20HOLES.pptx" id="1388236137" data-element-type="dButtonLinkId" target="_blank"> <span class="iconBg" id="1974309441"> <span class="icon hasFontIcon icon-star" id="1625347928"></span> 
+</span> 
+ <span class="text" id="1485999172">Volledige baan lay-out bekijken</span> 
+</a> 
+</div> 
+ <div class="u_1391582490 dmRespCol small-12 large-6 medium-6" id="1391582490"> <div class="u_1218988000 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1218988000"><img src="https://irp.cdn-website.com/e5a339f0/dms3rep/multi/opt/Afbeelding1-1920w.png" alt="" id="1162334124" class="" data-dm-image-path="https://irp.cdn-website.com/e5a339f0/dms3rep/multi/Afbeelding1.png" width="221" height="397" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1131807784"> <a data-display-type="block" class="u_1495036047 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient flexButton sticky-desktop-position-bottom-right sticky-mobile-position-bottom" file="false" href="https://limburggolfland.nl/eyckenduyn/index.php" data-element-type="dButtonLinkId" id="1495036047" target="_blank"> <span class="iconBg" aria-hidden="true" id="1888410505"> <span class="icon hasFontIcon icon-star" id="1296983212"></span> 
+</span> 
+ <span class="text" id="1655025565">Inschrijven Limburg Golfland / Eyckenduyn</span> 
+</a> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1452592572 dmRespRow" style="text-align: center;" id="1452592572"> <div class="dmRespColsWrapper" id="1315237714"> <div class="u_1035685072 dmRespCol small-12 large-3 medium-3" id="1035685072"> <div class="dmNewParagraph u_1903294785" data-element-type="paragraph" id="1903294785" style="transition:opacity 1s ease-in-out;line-height:initial;" data-version="5"> <h5><span style="color: rgb(0, 0, 0); font-weight: bold; display: initial;">Pagina's</span></h5> 
+</div> <nav class="u_1903484371 unifiednav_vertical effect-none main-navigation unifiednav dmLinksMenu" data-auto="links-menu" role="navigation" layout-main="vertical_nav_layout_4" layout-sub="" data-show-vertical-sub-items="HOVER" id="1903484371" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="https://irt-cdn.multiscreensite.com/00cbb981216048049f7166bc84478f36/dms3rep/multi/desktop/logo-02.svg" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         HOME
+        " data-auto="page-text-style">HOME<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://www.gastrobar9.nl" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101354960  " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         RESTAURANT
+        " data-auto="page-text-style">RESTAURANT<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" aria-expanded="false" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/baanstatus" class="unifiednav__item unav-item unav-top-item  dmNavItemSelected  dmUDNavigationItem_01010138897  unifiednav__item_has-sub-nav" target="" data-target-page-alias="" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         BAANSTATUS
+        " data-auto="page-text-style">BAANSTATUS<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" class="unifiednav__container unifiednav__container_sub-nav unav-sub" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/baanstatus#BAANLAY-OUT" class="unifiednav__item unav-item   dmUDNavigationItem_010101861493  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           BAAN LAY-OUT
+          " data-auto="page-text-style">BAAN LAY-OUT<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/agenda" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101542177  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         AGENDA
+        " data-auto="page-text-style">AGENDA<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/tarieven" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101828041  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         TARIEVEN
+        " data-auto="page-text-style">TARIEVEN<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" aria-expanded="false" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101259197  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         BUSINESS
+        " data-auto="page-text-style">BUSINESS<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" class="unifiednav__container unifiednav__container_sub-nav unav-sub" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/businessclub" class="unifiednav__item unav-item   dmUDNavigationItem_010101385971  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           BUSINESS LID WORDEN
+          " data-auto="page-text-style">BUSINESS LID WORDEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/business-lounge" class="unifiednav__item unav-item   dmUDNavigationItem_010101309316  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           BUSINESS LOUNGE
+          " data-auto="page-text-style">BUSINESS LOUNGE<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/business-leden" class="unifiednav__item unav-item   dmUDNavigationItem_010101594084  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+           BUSINESS LEDEN
+          " data-auto="page-text-style">BUSINESS LEDEN<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/lid-worden" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101271647  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         LID WORDEN
+        " data-auto="page-text-style">LID WORDEN<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/fotos" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101347774  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         FOTO'S
+        " data-auto="page-text-style">FOTO'S<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item unav-item unav-top-item  dmUDNavigationItem_010101943230  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         CONTACT
+        " data-auto="page-text-style">CONTACT<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1247336122 dmRespCol small-12 large-5 medium-5" id="1247336122"> <div class="dmNewParagraph u_1469706974" data-element-type="paragraph" id="1469706974" style="transition:opacity 1s ease-in-out;line-height:initial;" data-version="5"> <h5><span style="display: initial; font-weight: bold; color: rgb(0, 0, 0);">Openingstijden</span></h5> 
+</div> <div class="u_1520528551 default dmHoursOfOperation" id="1520528551" dmle_extension="open_hours" data-element-type="open_hours" time_format="24" wr="true" lang="nl" displaytitle="false" forcedisplay="false" icon="true" surround="true" adwords=""> <dl class="open-hours-data"> <div class="open-hours-item"> <dt day="0">Maandag</dt> 
+ <dd> <time>9:00</time> 
+- <time>17:00</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="1">Dinsdag</dt> 
+ <dd> <time>9:00</time> 
+- <time>17:00</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="2">Woensdag</dt> 
+ <dd> <time>9:00</time> 
+- <time>17:00</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="3">Donderdag</dt> 
+ <dd> <time>9:00</time> 
+- <time>17:00</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="4">Vrijdag</dt> 
+ <dd> <time>9:00</time> 
+- <time>17:00</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="5">Zaterdag</dt> 
+ <dd> <time>9:00</time> 
+- <time>17:00</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="6">Zondag</dt> 
+ <dd> <time>9:00</time> 
+- <time>17:00</time> 
+</dd> 
+</div> 
+</dl> 
+</div> 
+</div> 
+ <div class="u_1634873930 dmRespCol small-12 large-4 medium-4" id="1634873930"> <div class="dmNewParagraph u_1948524658" data-element-type="paragraph" id="1948524658" style="line-height:initial;" data-version="5"> <h5><span style="font-weight: bold; color: rgb(0, 0, 0); display: initial;">Adres golfbaan</span></h5> 
+</div> <div class="u_1652064032 dmNewParagraph" data-element-type="paragraph" id="1652064032" style="transition: none 0s ease 0s; display: block; text-align: left;" data-version="5"><p class="text-align-left"><span class="" style="color:rgb(0, 0, 0);font-weight:400;display:initial;font-family:Poppins, 'Poppins Fallback';"><span style="color:rgb(0, 0, 0);font-weight:400;display:initial;font-family:Poppins, 'Poppins Fallback';">Golfbaan Eyckenduyn<br/>Kesselseweg 9</span> 
+</span></p><p class="text-align-left"><span style="color:rgb(0, 0, 0);font-weight:400;display:initial;font-family:Poppins, 'Poppins Fallback';">5988CC | Helden</span></p><p class="text-align-left"><span class="" style="color:rgb(0, 0, 0);font-weight:400;display:initial;font-family:Poppins, 'Poppins Fallback';"><span style="color:rgb(0, 0, 0);font-weight:400;display:initial;font-family:Poppins, 'Poppins Fallback';">&nbsp;</span> 
+</span></p><p class="text-align-left"><a href="tel:0031777820219" runtime_url="tel:0031777820219" type="call" style="font-weight:400;display:initial;font-family:Poppins, 'Poppins Fallback';">0031777820219</a><span style="color:rgb(0, 0, 0);font-weight:400;display:initial;font-family:Poppins, 'Poppins Fallback';"><br/>info@eyckenduyn.nl</span></p></div> <div class="u_1140756998 align-center text-align-center dmSocialHub gapSpacing" id="1140756998" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv " data-auto="social-hub-inner"> <a href="https://www.facebook.com/golfeyckenduyn/" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.linkedin.com/company/golfbaan-eyckenduyn/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.instagram.com/explore/locations/450662545108354/eyckenduyn-golf-eten-drinken/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "DUTCH"
+    window.isSitePreview = false;
+</script>
+
+
+
+
+<script type="text/javascript">
+
+    var d_version = "production_6877";
+    var build = "2026-10-22T12_49_19";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+
+
+
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+
+
+
+
+<!-- Injecting site-wide before scripts -->
+
+<!-- End Injecting site-wide to the head -->
+
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+
+
+
+
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["common.build.dist.folder"] = 'production/6877';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/6877';
+    rtCommonProps["common.fonts.api.v2.url"] = 'https://irp.cdn-website.com/fonts/css2?family=';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+    rtCommonProps["booking.cal.api.domain"] = 'api.cal.com';
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://irp.cdn-website.com/';
+    rtCommonProps["feature.flag.performance.logs"] =false;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["termly.mapbox.consent.category"] = 'performance';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["fnb.animations.tracking.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.accountPage.repeatOrderRedirect.enabled"] = false;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.monolith.legacy.js.api.disabled.for.new.sites"] = false;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["flex.animation.design.panel.layout"] =true;
+    rtFlags["runtime.cwv.report.cls.enabled"] =false;
+    rtFlags["runtime.cwv.report.lcp.enabled"] =false;
+    rtFlags["runtime.lcp.preload.selfheal.enabled"] =true;
+    rtFlags["runtime.lcp.preload.bootstrap.enabled"] =true;
+    rtFlags["runtime.lcp.preload.monitor.enabled"] =true;
+    rtFlags["runtime.customwidget.heightpin.enabled"] =true;
+    rtFlags["runtime.customwidget.config.compare.enabled"] =false;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/6877/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://static.cdn-website.com/mnlt/production/6877/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+
+
+
+
+
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="d_track_sp">
+    ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+        p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+        };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+        n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+    window.dmsnowplow  = window.snowplow;
+
+    dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+        appId: 'e5a339f0'
+    });
+
+    // snowplow queries element styles so we wait until CSS calculations are done.
+    requestAnimationFrame(() => {
+        dmsnowplow('trackPageView');
+        _dm_insite.forEach((rule) => {
+            // Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+            // the tracking is in popup.js
+            if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+            window?.waitForDeferred?.('dmAjax', () => {
+                $.DM.events.trigger('event-ruleTriggered', {value: rule});
+            });
+        });
+    });
+</script>
+
+
+
+<div style="display:none;" id="P6iryBW0Wu"></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" data-auto="pswp-close" title="Sluiten (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" data-auto="pswp-share" title="Delen"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Volledig scherm in- of uitschakelen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="In-/uitzoomen"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Vorige (pijl naar links)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Volgende (pijl naar rechts)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="nl_NL"></div>
+<!-- Alias: e5a339f0 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup" data-auto="popup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" data-auto="popup-close" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    </script>
+<!--  Begin Body End Markup -->
+<!-- EYCKENDUYN POPUP FORM -->
+<div id="eyckenduyn-modal" style="display:none;">
+  <div style="
+    background:#fff;
+    padding:20px;
+    max-width:900px;
+    width:100%;
+    max-height:90vh;
+    overflow:auto;
+    position:relative;
+  ">
+    <a href="#" id="eyckenduyn-close" style="
+      position:absolute;
+      top:10px;
+      right:10px;
+      text-decoration:none;
+      font-size:20px;
+    ">✕</a>
+    <div id="eyckenduyn-golf-form"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const BASE = "https://limburggolfland.nl/eyckenduyn/";
+  const modal = document.getElementById("eyckenduyn-modal");
+  const form = document.getElementById("eyckenduyn-golf-form");
+  const close = document.getElementById("eyckenduyn-close");
+
+  function openPopup() {
+    modal.style.display = "flex";
+
+    if (form.dataset.loaded) return;
+
+    fetch(BASE + "embed.php")
+      .then(r => r.text())
+      .then(html => {
+        form.innerHTML = html;
+        const s = document.createElement("script");
+        s.src = BASE + "resources/form.js";
+        document.head.appendChild(s);
+        form.dataset.loaded = "true";
+      });
+  }
+
+  close.onclick = e => {
+    e.preventDefault();
+    modal.style.display = "none";
+  };
+
+  document.addEventListener("click", e => {
+    const link = e.target.closest('a[href="#eyckenduyn-form"]');
+    if (!link) return;
+    e.preventDefault();
+    openPopup();
+  });
+
+  if (location.hash === "#eyckenduyn-form") {
+    openPopup();
+  }
+})();
+</script>
+<!-- /EYCKENDUYN POPUP FORM -->
+<!--  End Body End Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

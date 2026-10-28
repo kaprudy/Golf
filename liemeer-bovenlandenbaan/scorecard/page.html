@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5XPD9QC2');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript" src="https://www.teecontrol.com/widget/TeecontrolWidget.js"></script>
+<script type="text/javascript">
+	// Configure the settings for the golf course
+	TeecontrolWidget.settings.subdomain = "liemeer";
+	TeecontrolWidget.settings.skipLogin = true;
+	TeecontrolWidget.settings.buttonText = "Boek je starttijd";
+	TeecontrolWidget.settings.defaultStyle = true;
+	TeecontrolWidget.settings.platform = "Website";
+	TeecontrolWidget.settings.skipCookieBanner = false;
+
+	// Inject the app into an element on the website
+	TeecontrolWidget.init('body');
+</script>
+
+
+
+
+
+
+	<title>Baanhandicap tabellen | Scorekaarten</title>
+	
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link id="stylesheet" rel="preload" as="style" href="/css/style_less.css?v=1" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<link rel="icon" href="/files/favicon.ico" type="image/x-icon">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Golfclub Liemeer">
+<meta property="og:url" content="https://www.golfclubliemeer.nl/nl/baan/baanhandicap-tabellen-scorekaarten/">
+<link rel="canonical" href="https://www.golfclubliemeer.nl/nl/baan/baanhandicap-tabellen-scorekaarten/">
+
+
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XPD9QC2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<!--fw-include id="438" name="Loader"></fw-include-->
+	
+	<div id="page" class="shop">
+		
+
+<div class="login_popup">
+	
+<script type="text/javascript">var userLogin = false;</script><div class="custom_login_link"><a href="#" class="login_popup_button fw_button"><span>Login</span></a></div>
+	
+<form id="loginoutform" class="fw_form" method="post" action="https://api.golfspot.io/golfdashboard/sso" enctype="application/x-www-form-urlencoded">
+    <input type="hidden" name="account_code" value="">
+    <input type="hidden" name="success_url" value="">
+    <input type="hidden" name="fail_url" value="">
+
+    <div class="row">
+        <div id="loginError" class="login-error"></div>
+
+        <div class="fw_form_row">
+            <label for="email" class="fw_form_label">E-mailadres</label>
+            <div class="fw_form_field">
+                <input type="email" class="form-control" name="email" id="email" required="">
+            </div>
+        </div>
+
+        <div class="fw_form_row">
+            <label for="password" class="fw_form_label">Wachtwoord</label>
+            <div class="fw_form_field">
+                <div class="input-group">
+                    <input type="password" class="form-control" name="password" id="password" required="">
+                </div>
+            </div>
+        </div>
+
+        <div class="fw_form_row">
+            <input type="submit" value="Inloggen" class="fw_button loginBtn btn btn-sm btn-default" name="submitBtn">
+        </div>
+    </div>
+<!-- .row -->
+</form>
+	
+<script>
+(function () {
+    var form = document.getElementById('loginoutform');
+    if (!form) return;
+
+    var loggedIn = false;
+    if (loggedIn) {
+        // Vervang het form door een Uitloggen-blok zodat de popup ook na
+        // login zinvolle inhoud heeft. Voorkomt tegelijk dat een al-ingelogde
+        // gebruiker per ongeluk credentials opnieuw POSTet naar Golfspot.
+        var wrapper = document.createElement('div');
+        wrapper.className = 'login-popup-loggedin';
+        wrapper.innerHTML =
+            '<p style="margin-bottom:18px;">Je bent ingelogd.</p>' +
+            '<a href="?golfspot_logout=1" class="fw_button logoutBtn"><span>Uitloggen</span></a>';
+        form.parentNode.replaceChild(wrapper, form);
+        return;
+    }
+
+    form.action  = "https://api.golfspot.io/golfdashboard/sso";
+    form.method  = 'post';
+    form.enctype = 'application/x-www-form-urlencoded';
+
+    function setHidden(name, value) {
+        var input = form.querySelector('input[type="hidden"][name="' + name + '"]');
+        if (!input) {
+            input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = name;
+            form.appendChild(input);
+        }
+        input.value = value;
+    }
+
+    setHidden('account_code', "e761c504-f41c-43c2-851f-24b561402a56");
+    setHidden('success_url',  "https://www.golfclubliemeer.nl/nl/login-antwoord/");
+    setHidden('fail_url',     "https://www.golfclubliemeer.nl/nl/login-antwoord/");
+
+    // Submit-guard tegen dubbele POSTs (dubbelklik / autofill-races).
+    var alreadySubmitted = false;
+    form.addEventListener('submit', function (e) {
+        if (alreadySubmitted) {
+            e.preventDefault();
+            return;
+        }
+        alreadySubmitted = true;
+        var btn = form.querySelector('input[type="submit"], button[type="submit"]');
+        if (btn) {
+            btn.disabled = true;
+            if (btn.tagName === 'INPUT') btn.value = 'Bezig met inloggen...';
+        }
+    });
+})();
+</script>
+</div>
+<header class="header_main_1 nr1">
+	<div class="row">
+		<div class="logo">
+			
+<a href="/"><img src="/files/logo-fc-g-ccliemeer-webkopie-3.png" alt="Logo_FC_G&amp;CCliemeer-webkopie-3"></a>
+		</div>
+		<div class="col col-xs-6">
+			<div class="menu_overlay"></div>
+			<nav class="main">
+				<div class="hidden-xl">
+					
+<div class="fw_main_wrapper"><ul>
+<li class="fw_page_1017"><a href="/nl/"><span>Home</span></a></li>
+<li class="fw_page_196 fw_alt"><a href="/nl/nieuws/"><span>Nieuws</span></a></li>
+<li class="fw_page_285 fw_subs">
+<a href="/nl/contact/"><span>Contact</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_286"><a href="/nl/contact/contactgegevens/"><span>Contactgegevens</span></a></li>
+<li class="fw_page_284 fw_alt"><a href="/nl/contact/openingstijden/"><span>Openingstijden</span></a></li>
+<li class="fw_page_283"><a href="/nl/contact/routebeschrijving/"><span>Routebeschrijving</span></a></li>
+</ul></div>
+</li>
+</ul></div>
+				</div>
+				
+<div class="fw_main_wrapper"><ul>
+<li class="fw_page_234"><a href="/nl/starttijd-boeken/"><span>Starttijd boeken</span></a></li>
+<li class="fw_page_244 fw_alt fw_active fw_subs">
+<a href="/nl/baan/"><span>Baan</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_243"><a href="/nl/baan/de-baan/"><span>De baan</span></a></li>
+<li class="fw_page_261 fw_alt"><a href="/nl/baan/historie/"><span>Historie</span></a></li>
+<li class="fw_page_265 fw_active"><a href="/nl/baan/baanhandicap-tabellen-scorekaarten/"><span>Baanhandicap tabellen | Scorekaarten</span></a></li>
+<li class="fw_page_823 fw_alt"><a href="/nl/baan/digitaal-baanboekje/"><span>Digitaal baanboekje</span></a></li>
+<li class="fw_page_798"><a href="/files/club-en-baanreglement-g-cc-liemeer-1-maart-2023.pdf"><span>Club- en baanreglement G&amp;CCL</span></a></li>
+<li class="fw_page_277 fw_alt"><a href="/nl/golfbaan/plaatselijke-regels/"><span>Plaatselijke regels</span></a></li>
+<li class="fw_page_360"><a href="/nl/baan/geo/"><span>GEO</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_231 fw_subs">
+<a href="/nl/gasten/"><span>Gasten</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_197"><a href="/nl/gasten/arrangementen/"><span>Arrangementen</span></a></li>
+<li class="fw_page_274 fw_alt"><a href="/nl/gasten/handicarts-buggies/"><span>Handicarts &amp; buggies</span></a></li>
+<li class="fw_page_291"><a href="/nl/gasten/groepen/"><span>Groepen</span></a></li>
+<li class="fw_page_237 fw_alt"><a href="/nl/gasten/tarieven/"><span>Tarieven</span></a></li>
+<li class="fw_page_264"><a href="/nl/gasten/samenwerkingsverbanden/"><span>Samenwerkingsverbanden</span></a></li>
+<li class="fw_page_239 fw_alt"><a href="/nl/gasten/competitiespelers/"><span>Competitiespelers</span></a></li>
+<li class="fw_page_968"><a target="_blank" href="/nl/gasten/liemeer-open-2026/"><span>Liemeer Open 2026</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_224 fw_alt fw_subs">
+<a href="/nl/club/"><span>Club</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_238"><a href="/nl/club/countryclub/"><span>Countryclub</span></a></li>
+<li class="fw_page_628 fw_alt"><a href="/experience"><span>Golf Experience 2026</span></a></li>
+<li class="fw_page_627"><a href="/nl/club/nieuw-bij-de-club/"><span>Nieuw bij de club</span></a></li>
+<li class="fw_page_257 fw_alt"><a href="/nl/club/commissies/"><span>Commissies</span></a></li>
+<li class="fw_page_266"><a href="/nl/club/g-golf-op-liemeer/"><span>G-Golf op Liemeer</span></a></li>
+<li class="fw_page_267 fw_alt"><a href="/nl/club/jeugd/"><span>Jeugd</span></a></li>
+<li class="fw_page_288"><a href="/nl/club/clubhuis/"><span>Clubhuis</span></a></li>
+<li class="fw_page_290 fw_alt"><a href="/nl/club/driving-range/"><span>Driving range</span></a></li>
+<li class="fw_page_278"><a href="/nl/club/shop/"><span>Shop</span></a></li>
+<li class="fw_page_777 fw_alt"><a href="/nl/club/samenwerkingsverbanden-voor-leden/"><span>Samenwerkingsverbanden voor leden</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_292 fw_subs">
+<a href="/nl/golfschool/"><span>Golfschool</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_318"><a href="/nl/golfschool/over-de-golfschool/"><span>Over de Golfschool</span></a></li>
+<li class="fw_page_880 fw_alt"><a href="/nl/golfschool/kennismakingsles/"><span>Kennismakingsles</span></a></li>
+<li class="fw_page_845"><a href="/nl/golfschool/starten-met-golf/"><span>Starten met golf</span></a></li>
+<li class="fw_page_319 fw_alt"><a href="/nl/golfschool/lesmogelijkheden/"><span>Lesmogelijkheden</span></a></li>
+<li class="fw_page_320"><a href="/nl/golfschool/ons-team/"><span>Ons team</span></a></li>
+<li class="fw_page_321 fw_alt"><a href="/nl/golfschool/les-boeken/"><span>Les boeken</span></a></li>
+<li class="fw_page_512"><a href="/nl/golfschool/regelexamen/"><span>Regelexamen</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_228 fw_alt"><a href="/nl/businessclub/"><span>Businessclub</span></a></li>
+<li class="fw_page_1019 fw_subs">
+<a href="/nl/horeca/"><span>Horeca</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_1020"><a href="/nl/horeca/de-heeren-van-liemeer/"><span>De Heeren van Liemeer</span></a></li>
+<li class="fw_page_966 fw_alt"><a href="/nl/horeca/betalen-met-mydealz/"><span>Betalen met MyDealz</span></a></li>
+</ul></div>
+</li>
+<li class="fw_page_251 fw_alt"><a href="/nl/lid-worden/"><span>Lid worden</span></a></li>
+</ul></div>
+			</nav>
+		</div>
+		<div class="col col-xs-6">
+			<div class="container">
+				<div class="row">
+					<div class="col col-sm-6">
+						<nav class="secondary">
+							
+<div class="fw_main_wrapper"><ul>
+<li class="fw_page_1017"><a href="/nl/"><span>Home</span></a></li>
+<li class="fw_page_196 fw_alt"><a href="/nl/nieuws/"><span>Nieuws</span></a></li>
+<li class="fw_page_285 fw_subs">
+<a href="/nl/contact/"><span>Contact</span></a><div class="fw_subs_wrapper"><ul>
+<li class="fw_page_286"><a href="/nl/contact/contactgegevens/"><span>Contactgegevens</span></a></li>
+<li class="fw_page_284 fw_alt"><a href="/nl/contact/openingstijden/"><span>Openingstijden</span></a></li>
+<li class="fw_page_283"><a href="/nl/contact/routebeschrijving/"><span>Routebeschrijving</span></a></li>
+</ul></div>
+</li>
+</ul></div>
+						</nav>
+						<nav class="lang">
+							
+						<ul>
+						
+							<li class="fw_language_link_1 fw_active"><a href="/nl/baan/baanhandicap-tabellen-scorekaarten/"><span>nl</span></a></li>
+							
+						</ul>
+						
+						</nav>
+						<a href="#" class="login_popup_button">Login</a>
+						<a id="show_nav" class="icon_nav" href="#"><i></i></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</header>
+<div class="sidebar_links">
+	
+<a href="/nl/agenda/" class="calendar"></a>
+	
+<a href="https://www.golfclubliemeer.nl/nl/baanstatus/?1734356004#" class="hole js_popup"></a>
+	
+<a href="https://www.instagram.com/golfclubliemeer/" class="instagram" target="_blank"></a>
+	
+<a href="https://www.facebook.com/golfclubliemeer" class="facebook" target="_blank"></a>
+	
+<a href="https://www.linkedin.com/company/2671303/admin/feed/posts/" class="linkedin" target="_blank"></a>
+</div>
+
+		
+		<main>
+			
+
+
+<section class="content-1col-2 nr2" data-ips-ref="block">
+	
+	<div class="block-container" data-ips-ref="block container">
+		<div class="row">
+			<div class="col col-md-6 content" data-ips-ref="text">
+				
+
+
+
+
+
+
+
+
+
+
+<h2>BAANHANDICAPTABELLEN &amp; SCOREKAARTEN</h2>
+<p> </p>
+<p><a href="#TORENBAAN" class="fw_button">TORENBAAN</a> <a href="#BOVENLANDENBAAN" class="fw_button_alt">BOVENLANDENBAAN</a></p>
+<p> </p>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="content-1 nr1" data-ips-ref="block">
+	
+	<div class="block-container" data-ips-ref="block container">
+		<div class="row">
+			<div class="col col-md-6 col-lg-7 col-xl-8 span" data-aos="fade">
+				<!--div class="image"><fw-image id="551" name="Afbeelding (1180xXXX)"></fw-image></div-->
+				<div class="image_box">
+					
+<div class="block-parallax parallax" data-ips-ref="block image">
+	<div class="parallax-image">
+<img src="/files/thumbnails/hole18-liemeer58-1-.1180x0.jpg" alt="Hole18_Liemeer58 (1)">	</div>
+</div>
+
+				</div>
+			</div>
+			<div class="col col-md-6 col-lg-5 col-xl-4 content" data-ips-ref="text">
+				
+
+
+
+
+
+
+
+
+
+
+<h2>
+<a id="TORENBAAN"></a><br>TORENBAAN</h2>
+<p><a href="/files/liemeer-torenbaan-dames.pdf" data-href="#FILE-LINK:3243#">Baanhandicap tabellen Dames</a><a href="/files/tabel-baanhandicap-torenbaan-heren.pdf" target="_blank" data-href="#FILE-LINK:1268#"></a></p>
+<p><a href="/files/liemeer-torenbaan-heren.pdf" data-href="#FILE-LINK:3244#">Baanhandicap tabellen Heren</a></p>
+<p><br><a href="/files/scorekaart-torenbaan-jan-2023-online.pdf" target="_blank" data-href="#FILE-LINK:2288#">Scorekaart Torenbaan </a></p>
+<p>De juiste CR en SR gegevens staan vermeld op de baan handicap tabellen.</p>
+<p> </p>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="content-2 nr1" data-ips-ref="block">
+	
+	<div class="block-container" data-ips-ref="block container">
+		<div class="row">
+			<div class="col col-md-6 col-lg-5 col-xl-4 content" data-ips-ref="text" data-aos="fade">
+				
+
+
+
+
+
+
+
+
+
+
+<h2>
+<a id="BOVENLANDENBAAN"></a><br>BOVENLANDEN</h2>
+<h2>BAAN</h2>
+<p><a href="/files/liemeer-bovenlandenbaan-dames.pdf" data-href="#FILE-LINK:3245#">Baanhandicap tabellen Dames</a><a href="/files/tabel-baanhandicap-bovenlandenbaan-heren.pdf" target="_blank" data-href="#FILE-LINK:1270#"></a></p>
+<p><a href="/files/liemeer-bovenlandenbaan-heren.pdf" data-href="#FILE-LINK:3246#">Baanhandicap tabellen Heren</a><br><br><a href="/files/winter-tabel-baanhandicap-bovenlandenbaan-dames-en-heren.pdf" target="_blank" data-href="#FILE-LINK:1267#">Baanhandicap tabellen Wintertees </a></p>
+<p><a href="/files/scorekaart-bovenlandenbaan-7-2026.pdf" target="_blank" data-href="#FILE-LINK:3228#">Scorekaart Bovenlandenbaan</a></p>
+<p>In de winter wordt op de Bovenlandenbaan gespeeld van de wintertees met daarvoor aangepaste tabellen.</p>
+<p> </p>
+
+
+			</div>
+			<div class="col col-md-6 col-lg-7 col-xl-8 span" data-aos="fade" data-aos-delay="200">
+				<!--div class="image"><fw-image id="551" name="Afbeelding (1180xXXX)"></fw-image></div-->
+				<div class="image_box">
+					
+<div class="block-parallax parallax" data-ips-ref="block image">
+	<div class="parallax-image">
+<img src="/files/thumbnails/hole18-liemeer2024-bovenlandenbaan-12-kopie-edit2.1050x0.jpg" alt="Hole18_liemeer2024_Bovenlandenbaan_12 kopie_Edit2">	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+		</main>
+		
+
+<footer class="footer-1 nr1" data-ips-ref="block">
+	<!--div class="logo" data-ips-ref="logo">
+		<fw-image id="31" name="Footer: logo"></fw-image>
+	</div-->
+	<div class="main" data-ips-ref="main">
+		<div class="block-container" data-ips-ref="block container">
+			<div class="row">
+				<div class="col col-sm-4 col-md-2 col-lg-2">
+					<div class="logo_2">
+
+<img src="/files/leading-courses.png" alt="leading-courses">
+</div>
+				</div>
+				<div class="col col-sm-8 col-md-6 col-lg-4">
+					
+<div class="text">
+
+
+
+
+
+
+<h2>Ook lid worden?</h2>
+<p>Bekijk al onze lidmaatschappen.</p>
+<p> </p>
+<p><a href="#" class="fw_button">KOM ER BIJ</a></p>
+
+</div>
+				</div>
+				<div class="col col-md-4 col-lg-4 col-lg-offset-2">
+					
+<div class="text">
+
+
+
+
+
+
+
+
+
+<h3><span>Golf- &amp; Countryclub Liemeer</span></h3>
+<p><span>Golfpad 1 <br>2441 EW Nieuwveen</span><br><a href="mailto:info@golfclubliemeer.nl" target="_blank"><span>info@golfclubliemeer.nl</span></a></p>
+
+</div>
+					<div class="social">
+						
+
+
+
+
+
+<p><a href="https://www.facebook.com/golfclubliemeer"><img src="/files/social-facebook.png" alt="" width="50" height="50"></a> <a href="https://www.instagram.com/golfclubliemeer/"><img src="/files/social-instagram.png" alt="" width="50" height="50"></a> <a href="https://www.linkedin.com/company/2671303/admin/feed/posts/"><img src="/files/social-linkedin.png" alt="" width="50" height="50"></a></p>
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="text">
+
+
+
+
+
+
+
+<h4><a href="/nl/baan/" data-href="#PAGE-LINK:244#">Baan</a></h4>
+<ul>
+<li><a href="/nl/baan/de-baan/">De baan</a></li>
+<li><a href="/nl/baan/historie/">Historie</a></li>
+<li><a href="/nl/baan/baanhandicap-tabellen-scorekaarten/">Baanhandicap tabellen | Scorekaarten</a></li>
+<li><a href="/nl/baan/digitaal-baanboekje/">Digitaal baanboekje</a></li>
+<li><a href="/files/club-en-baanreglement-g-cc-liemeer-1-maart-2023.pdf">Club- en baanreglement G&amp;CCL</a></li>
+<li><a href="/nl/baan/plaatselijke-regels/">Plaatselijke regels</a></li>
+<li><a href="/nl/baan/geo/">GEO</a></li>
+</ul>
+
+</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="text">
+
+
+
+
+
+
+
+
+
+<h4><a href="/nl/club/" data-href="#PAGE-LINK:224#">Club</a></h4>
+<ul>
+<li><a href="/nl/club/countryclub/">Countryclub</a></li>
+<li><a href="/nl/club/nieuw-bij-de-club/">Nieuw bij de club</a></li>
+<li><a href="/nl/club/g-golf-op-liemeer/">G-Golf op Liemeer</a></li>
+<li><a href="/nl/club/jeugd/">Jeugd</a></li>
+<li><a href="/nl/club/clubhuis/">Clubhuis</a></li>
+<li><a href="/nl/club/drivingrange/">Drivingrange</a></li>
+<li><a href="/nl/club/shop/">Shop</a></li>
+<li><a href="/nl/club/samenwerkingsverbanden-voor-leden/">Samenwerkingsverbanden voor leden</a></li>
+</ul>
+
+</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="text">
+
+
+
+
+
+
+
+
+
+<h4><a href="/nl/gasten/" data-href="#PAGE-LINK:231#">Gasten</a></h4>
+<ul>
+<li><a href="/nl/gasten/arrangementen/">Arrangementen</a></li>
+<li><a href="/nl/gasten/golf-en-overnachten/">Golf en overnachten</a></li>
+<li><a href="/nl/gasten/handicarts-buggies/">Handicarts &amp; buggies</a></li>
+<li><a href="/nl/gasten/groepen/">Groepen</a></li>
+<li><a href="/nl/gasten/tarieven/">Tarieven</a></li>
+<li><a href="/nl/gasten/samenwerkingsverbanden/">Samenwerkingsverbanden</a></li>
+<li><a href="/nl/gasten/competitiespelers/">Competitiespelers</a></li>
+<li><a href="https://www.liemeerjeugdopen.nl/" target="_blank">Liemeer Jeugd Open 2026</a></li>
+</ul>
+
+</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="text">
+
+
+
+
+
+
+
+
+
+<h4><a href="/nl/golfschool/" data-href="#PAGE-LINK:292#">Golfschool</a></h4>
+<ul>
+<li><a href="/nl/golfschool/kennismakingsles/">Kennismakingsles</a></li>
+<li><a href="/nl/golfschool/starten-met-golf/">Starten met golf</a></li>
+<li><a href="/nl/golfschool/over-de-golfschool/">Over de Golfschool</a></li>
+<li><a href="/nl/golfschool/lesmogelijkheden/">Lesmogelijkheden</a></li>
+<li><a href="/nl/golfschool/ons-team/">Ons team</a></li>
+<li><a href="/nl/golfschool/les-boeken/">Les boeken</a></li>
+<li><a href="/nl/golfschool/regelexamen/">Regelexamen</a></li>
+</ul>
+
+</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="text">
+
+
+
+
+
+
+
+
+
+<h4><a href="/nl/businessclub/" data-href="#PAGE-LINK:228#"><span>Businessclub</span></a></h4>
+<h4><a href="/nl/horeca/" data-href="#PAGE-LINK:230#"><span>Horeca</span></a></h4>
+
+</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="text">
+
+
+
+
+
+
+
+<h4>Handig</h4>
+<ul>
+<li><a href="/files/vereniging-privacyverklaring-kv-29-04-2024.pdf" data-href="#FILE-LINK:2551#" target="_blank">Privacyverklaring</a></li>
+<li>
+<a href="https://www.golfclubliemeer.nl/files/club-en-baanreglement-g-cc-liemeer-1-maart-2023.pdf">Onweer</a> (zie artikel 22)</li>
+</ul>
+<p> </p>
+<p><a href="https://www.golfclubliemeer.nl/nl/baan/geo/"><img src="/files/geo-certified-1.png" alt="" width="130" height="134"></a></p>
+
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="scroll_top"></a>
+</footer>
+<div class="scroll_wapper"><a class="scroll" href="#"><i></i></a></div>
+
+					<div id="fw_cookie" style="background-color: #000; background-color:rgba(0,0,0,0.7); bottom: 0; color: #FFF; font-family: Verdana, Arial, sans-serif; font-size: 11px; line-height: 16px; position: fixed; width: 100%; z-index: 1000;">
+						<div class="fw_cookie_wrapper" style="clear: both; margin: 10px auto; max-width: 800px; width: 90%;">
+							<div class="fw_cookie_text" style="float: left; padding-top: 5px; width: 80%;">
+								Deze website gebruikt cookies. Voor meer informatie, bekijk ons <a href="#" class="fw_cookie_policy_link" style="color: #FFF;">cookiebeleid</a>
+							</div>
+							<div class="fw_cookie_close" style="float: right; width: 15%;">
+<a href="#" class="fw_cookie_button fw_cookie_accept" style="background-color: #F8F8F8; color: #777; display: inline-block; font-weight: bold; float: right; margin-left: 5px; padding: 4px 10px; text-decoration: none;">Sluiten</a>
+						</div>
+						<div class="fw_cookie_clear" style="clear: both;"></div>
+					</div>
+					<div class="fw_cookie_policy" style="clear: both; display: none; margin: 0 auto; max-width: 800px; width: 90%;">
+						<p>Hier komt een stukje tekst over cookies. Tracking cookies moeten worden toegestaan door de bezoeker.</p>
+					</div>
+				</div>
+				
+	</div>
+	
+<link type="text/css" rel="stylesheet" href="/css/custom_less.css">
+	<noscript id="deferred-styles">
+		<link rel="stylesheet" href="/css/style_less.css">
+	</noscript>
+	
+<script src="/lib/js/jquery/jquery-3.2.1.min.js"></script>
+<script src="/lib/js/cookies/FW_Cookie_Tracker.min.js"></script>
+<script src="/js/google-font-loader.js"></script>
+<script src="/js/custom.min.js"></script>
+<script src="/lib/js/magnific-popup/magnific-popup.js"></script>
+<script src="/lib/js/royalslider/royalslider.js"></script>
+				<script>
+					var cookie_tracker = new FW_Cookie_Tracker({refresh_page: false});
+				</script>
+				
+	
+<script src="/js/all.min.js?v=1"></script>
+	
+<script src="/js/libs.min.js?v=1"></script>
+	
+<script src="/js/scripts.min.js?v=3"></script>
+
+
+
+                        <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                        ga('create', 'G-NN8NB2Q98Y', 'https://www.golfclubliemeer.nl/');
+                        ga('send', 'pageview');
+                        </script>
+                    </body>
+</html>

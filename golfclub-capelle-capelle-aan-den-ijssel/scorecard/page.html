@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="nl-NL" >
+<head>
+<meta charset="UTF-8">
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- WP_HEAD() START -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lato:300,regular,|EB+Garamond:italic,regular,|Lato:100,200,300,400,500,600,700,800,900|EB+Garamond:100,200,300,400,500,600,700,800,900" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,regular,|EB+Garamond:italic,regular,|Lato:100,200,300,400,500,600,700,800,900|EB+Garamond:100,200,300,400,500,600,700,800,900">
+<title>Scorekaart &amp; Handicap tabel - Golfclub Capelle</title>
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel="alternate" type="application/rss+xml" title="Golfclub Capelle &raquo; feed" href="https://golfclubcapelle.nl/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Golfclub Capelle &raquo; reacties feed" href="https://golfclubcapelle.nl/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://golfclubcapelle.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfclubcapelle.nl%2Fbaan%2Fscorekaart-handicap-tabel%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://golfclubcapelle.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgolfclubcapelle.nl%2Fbaan%2Fscorekaart-handicap-tabel%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #FFFFFF;--wp--preset--color--contrast: #111111;--wp--preset--color--accent-1: #FFEE58;--wp--preset--color--accent-2: #F6CFF4;--wp--preset--color--accent-3: #503AA8;--wp--preset--color--accent-4: #686868;--wp--preset--color--accent-5: #FBFAF3;--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: currentColor;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: 1rem;padding-right: 2.25rem;padding-bottom: 1rem;padding-left: 2.25rem;text-decoration: none;text-transform: inherit;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='oxygen-css' href='https://golfclubcapelle.nl/wp-content/plugins/oxygen/component-framework/oxygen.css?ver=4.9.7' media='all' />
+<link rel='stylesheet' id='uaf_client_css-css' href='https://golfclubcapelle.nl/wp-content/uploads/useanyfont/uaf.css?ver=1789030072' media='all' />
+<script id="jquery-core-js" src="https://golfclubcapelle.nl/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<link rel="https://api.w.org/" href="https://golfclubcapelle.nl/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://golfclubcapelle.nl/wp-json/wp/v2/pages/989" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://golfclubcapelle.nl/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<link rel='shortlink' href='https://golfclubcapelle.nl/?p=989' />
+<style id='script-68a44a43d1d47-sass-css' type='text/css'>
+@media only screen and (max-width:992px){.dashboard-hover-wrapper{padding:0 !important}}@media only screen and (max-width:992px){.dashboard-hover-wrapper .dashboard-hover-menu{display:none !important;opacity:0 !important;visibility:hidden !important;height:0}}ul.oxy-mega-menu_inner{gap:22px}@media only screen and (max-width:1310px){ul.oxy-mega-menu_inner{gap:1px}}span.oxy-mega-dropdown_icon{display:none}#-mega-dropdown-1116-17 .oxy-mega-dropdown_inner.oxy-header-container{left:-270% !important}#-mega-dropdown-1158-17 .oxy-mega-dropdown_inner.oxy-header-container{left:-180% !important}li#mega-dropdown-1200-17 .oxy-mega-dropdown_inner.oxy-header-container{left:-35% !important}li#-mega-dropdown-1221-17 .oxy-mega-dropdown_inner.oxy-header-container{left:-200% !important}li#mega-dropdown-1200-17 .oxy-mega-dropdown_container:not(:has(.ct-link)){display:none !important}.oxy-mega-dropdown_inner.oxy-header-container{margin-top:0;transform:unset !important;left:-250% !important;width:340px !important;right:0;background-color:transparent !important;display:block}.oxy-mega-dropdown_inner.oxy-header-container .oxy-mega-dropdown_container{margin-top:50px;background-color:#f4f5f0 !important;border-radius:0 !important}.oxy-mega-dropdown_inner.oxy-header-container .oxy-mega-dropdown_container .oxy-inner-content.oxy-mega-dropdown_content.oxy-header-container{margin:0 !important;width:100% !important}.oxy-inner-content.oxy-mega-dropdown_content.oxy-header-container{margin:0 !important;width:100% !important}.oxy-inner-content.oxy-mega-dropdown_content.oxy-header-container:before{content:"";display:block;background-image:url(/wp-content/uploads/2025/08/submenuOpen.png);background-size:contain;height:20px;width:20px;position:absolute;top:-18px;left:39%;opacity:1;transition:all 0s !important;z-index:9999999;background-repeat:no-repeat;background-position:center}.oxy-inner-content.oxy-mega-dropdown_content.oxy-header-container:after{content:"";display:block;position:fixed;left:-80vw;right:0;bottom:0;top:-19px;background-color:rgba(1, 27, 39, 0.55);width:180vw;height:100vh;z-index:-1;pointer-events:none}.oxy-inner-content.oxy-mega-dropdown_content.oxy-header-container .mega-container a{border-bottom:1px solid #C3CDCE;border-radius:0;padding:20px 30px !important;transition:0.2s;background-color:#F4F5F0;z-index:1}.oxy-inner-content.oxy-mega-dropdown_content.oxy-header-container .mega-container a:hover{transition:0.2s;opacity:0.7}.oxy-inner-content.oxy-mega-dropdown_content.oxy-header-container .mega-container a:hover img{transition:0.2s;margin-right:-3px}.oxy-inner-content.oxy-mega-dropdown_content.oxy-header-container .mega-container a:last-child{border-bottom:0}.oxy-inner-content.oxy-mega-dropdown_content.oxy-header-container .mega-container a h1{font-size:14px;font-family:"Lato";-webkit-font-smoothing:antialiased}.oxy-inner-content.oxy-mega-dropdown_content.oxy-header-container .mega-container a img{max-width:7px;transition:0.2s}.oxy-mega-menu .main-menu-items .oxy-mega-dropdown_link-text{font-weight:400 !important}.oxy-mega-menu .oxy-mega-dropdown_link{margin-right:-20px}.oxy-mega-menu .oxy-mega-dropdown_link.oxy-mega-dropdown_inner-open:after{opacity:1;transition:all 0.5s ease 0.07s !important}.oxy-mega-menu .mega-sub-item .on-hover{display:none}.oxy-mega-menu .mega-sub-item:hover .on-hover{display:flex}.oxy-mega-menu .mega-sub-item:hover .before-hover{display:none}.oxy-mega-dropdown_inner .oxy-mega-dropdown_container{background-color:#ffffff00 !important;justify-content:center !important;display:flex !important}@media (max-width:1300px){.oxy-mega-dropdown .mega-container{max-width:calc(100vw - 100px) !important}}.active-m{display:flex !important}.active-m a{flex-wrap:nowrap !important}.item1 .active-main{background-color:#fff !important}.item1 .active-main h2,.item1 .active-main h1{color:#FFA120 !important}.item1 .mega-sub-item:hover .ct-headline{color:#FFA120 !important}.mega-main-item-list,.mega-sub-item-list{max-height:100% !important;overflow-y:auto}.mega-main-item-list{width:40% !important}.mega-sub-item-list{width:60% !important}@media (max-width:1400px){.mega-main-item-list{width:50% !important}.mega-sub-item-list{width:50% !important}.mega-sub-item-list .active-grid{grid-template-columns:1fr !important;grid-row-gap:40px !important}}.fade-background{opacity:0.5;transition:all, 0.3s ease-in;position:fixed !important;top:0 !important;z-index:99 !important}.fade-background.active{transition:0.3s ease-in;opacity:1 !important;display:flex !important}.fade-background.toggle-active{transition:0.3s ease-in;opacity:1 !important;display:flex !important}
+</style>
+<style id='script-6863ba4bb705e-sass-css' type='text/css'>
+.disable-scroll{overflow:hidden !important;height:100% !important}.mobile-menu{transition:0.4s;transform:translateX(105%)}.mobile-menu.active{transform:translateX(0%)}.close-icon{padding-left:24px !important;padding-right:24px !important}.close-icon img.closeImage{display:flex !important}.close-icon img.openImage{display:none}.mobile-menu .ct-section-inner-wrap{width:100%;margin:0;padding-right:0 !important}ul.menu-custom{padding:0;margin:0;list-style-type:none;height:auto;overflow-y:scroll;margin-top:50px;max-height:70dvh}ul.menu-custom .highlight a{background-color:#5c614d;color:white;border:none}ul.menu-custom ul,ul.menu-custom li{padding:0;list-style-type:none}ul.menu-custom li:last-child a{border-bottom:none}ul.menu-custom li a{color:#023046;font-weight:400;font-size:14px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #D1D8D8;text-decoration:none}ul.menu-custom li a:after{content:"";background-image:url(/wp-content/uploads/2025/07/Pijltje-hoog.svg);background-repeat:no-repeat;background-size:contain;background-position:center;width:12px;height:12px;display:inline-block;transform:rotate(90deg)}ul.menu-custom li a i{font-size:12px;color:#2F3126}ul.menu-custom ul.sub-menu{position:absolute;background-color:#f4f5f0;left:0;right:0;top:0;bottom:0;display:none;z-index:10}ul.menu-custom ul.sub-menu .return-menu{padding:0 20px}ul.menu-custom ul.sub-menu h3{display:none}ul.menu-custom ul.sub-menu.active{display:flex !important;flex-direction:column !important}ul.menu-custom ul.sub-menu .menu-item a{width:100%;display:flex;justify-content:space-between !important}ul.menu-custom h3{font-size:22px;margin-top:5px;margin-bottom:15px;color:#2F3126}ul.menu-custom .return-menu{display:flex;align-items:center;font-size:12px;margin-top:20px;margin-bottom:14px;color:#023046;justify-content:end;gap:0}ul.menu-custom .return-menu:before{content:"";width:12px;height:12px;display:inline-block;background-image:url(/wp-content/uploads/2025/07/Path-9056.svg);background-position:center;background-size:contain;background-repeat:no-repeat;margin-right:5px}@media (max-width:992px){.oxy-cart-counter_icon{display:flex !important}}@media (max-width:992px){.logo.logo.shrink{min-width:50px !important}}
+</style>
+<style id='script-6899ec4aa62bc-sass-css' type='text/css'>
+.filter-categories{display:flex;justify-content:start;flex-direction:row;flex-wrap:wrap;width:100%;gap:10px}@media only screen and (max-width:992px){.filter-categories{justify-content:center;gap:10px;display:grid;grid-template-columns:1fr 1fr}}.filter-categories .filter-category{cursor:pointer;text-align:center;background-color:transparent;border:1px solid rgba(2, 48, 70, 0.22);padding:16px 22px;line-height:1;color:#2F3126}.filter-categories .filter-category:hover{transition:0.3s;background-color:#53AB55;color:#fff}.filter-categories .filter-category.active{transition:0.3s;text-decoration:none !important;color:#fff;background-color:#023046}@media only screen and (max-width:992px){.filter-categories .filter-category.active{font-weight:400 !important}}@media only screen and (max-width:992px){.filter-categories .filter-category{font-size:13px;padding:12px 20px;min-width:unset !important;width:100%}}@media only screen and (max-width:360px){.filter-categories .filter-category{font-size:12px !important;padding:10px 15px;min-width:unset !important}}@media only screen and (max-width:300px){.filter-categories .filter-category{font-size:10px !important;padding:8px 10px;min-width:unset !important}}.pagination-page ul{list-style:none;display:flex;padding:0;margin:0;align-items:center;height:35px}@media only screen and (max-width:992px){.pagination-page ul{height:35px}}.pagination-page ul .disabled{opacity:0;cursor:disabled}.pagination-page ul li{min-width:fit-content !important}.pagination-page .page-link{margin:0 3.5px;display:flex;justify-content:center;min-width:30px;min-height:30px;line-height:30px;background-color:transparent;border:1px solid rgba(2, 48, 70, 0.22);color:#023046;font-family:"Lato";font-size:16px;font-weight:400;position:relative;cursor:pointer;background:transparent 0% 0% no-repeat padding-box;transition:all 0.2s}@media only screen and (max-width:992px){.pagination-page .page-link{min-width:33px;min-height:33px;line-height:33px;font-size:16px;margin:0 3.25px}}.pagination-page .page-link:hover{text-decoration:none;opacity:0.5;transition:all 0.2s}.pagination-page .page-link.current{background-color:#53AB55;color:#fff;cursor:default;border-color:#53AB55}.pagination-page .page-link.current:hover{opacity:1}.pagination-page .page-link.next,.pagination-page .page-link.prev{min-width:fit-content !important;background-color:transparent;color:transparent;font-size:20px;font-weight:500;min-width:10px !important;min-height:10px !important;height:12px !important;width:12px !important;box-shadow:unset;border:none;margin:0 10px}@media only screen and (max-width:992px){.pagination-page .page-link.next,.pagination-page .page-link.prev{font-size:16px}}.pagination-page .page-link.next:hover,.pagination-page .page-link.prev:hover{text-decoration:underline}.first .update-card-cat{display:none}@media only screen and (max-width:992px){.news-wrapper.first .image-wrapper{min-width:100% !important}.news-wrapper.first .news-category{display:flex !important}.news-wrapper.first .blog-item-wrapper{flex-direction:column !important}.news-wrapper.first .content-wrapper{padding:20px 0px 30px 0px !important}.news-wrapper.first h2{font-size:20px !important}.news-wrapper.first .update-date span{font-size:17px;margin-bottom:12px;margin-top:5px}}@media only screen and (min-width:992px){.update-list-o .news-wrapper.first{grid-column:span 2 !important}}@media only screen and (max-width:992px){.update-list-o .news-wrapper.first{grid-column:span 1 !important}}.update-list-o .news-wrapper .blog-item-wrapper:hover span,.update-list-o .news-wrapper .blog-item-wrapper:hover h2{opacity:0.6;transition:all 0.2s}.update-list-o .news-wrapper .blog-item-wrapper span,.update-list-o .news-wrapper .blog-item-wrapper h2{transition:all 0.2s}@media only screen and (min-width:992px){.update-list-o .news-wrapper.first{border-top-right-radius:0 !important;grid-column:span 3 !important}.update-list-o .news-wrapper.first .blog-item-wrapper{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;gap:40px !important;background-color:#fff}.update-list-o .news-wrapper.first .blog-item-wrapper .image-wrapper{height:330px !important}.update-list-o .news-wrapper.first .blog-item-wrapper .image-wrapper img{object-fit:cover !important}.update-list-o .news-wrapper.first .blog-item-wrapper .content-wrapper{padding-top:40px !important;padding-bottom:40px !important;padding-left:10px !important;padding-right:35px !important;height:100% !important;justify-content:center !important}.update-list-o .news-wrapper.first .blog-item-wrapper .update-date{font-size:14px !important}.update-list-o .news-wrapper.first .blog-item-wrapper .overzicht-tekst-blog{display:none}.update-list-o .news-wrapper.first .blog-item-wrapper .blog-text-wrapper{height:initial}.update-list-o .news-wrapper.first .blog-item-wrapper .excerpt{display:flex !important}.update-list-o .news-wrapper.first .blog-item-wrapper .excerpt .oxy-stock-content-styles{overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;line-clamp:4;-webkit-box-orient:vertical}.update-list-o .news-wrapper.first .blog-item-wrapper .excerpt span p{display:none}.update-list-o .news-wrapper.first .blog-item-wrapper .excerpt span p:first-child{overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;line-clamp:4;-webkit-box-orient:vertical}.update-list-o .news-wrapper.first .blog-item-wrapper .ct-headline{width:100% !important;font-size:28px !important}}@media only screen and (max-width:767px){.blog-wrapper .oxy-dynamic-list{row-gap:22px !important}.blog-wrapper .news-wrapper:not(.first) a{flex-direction:row !important;width:100% !important;height:78px;justify-content:space-between}.blog-wrapper .news-wrapper:not(.first) a .blog-image-block{width:30% !important;height:100% !important}.blog-wrapper .news-wrapper:not(.first) a .blog-image-block img{height:78px !important;object-fit:cover !important;object-position:center 20px}.blog-wrapper .news-wrapper:not(.first) a .blog-text-block{max-width:67% !important;padding:0 !important;justify-content:center;text-align:left;padding-right:46px}.blog-wrapper .news-wrapper:not(.first) a .blog-text-block .blog-text-excerpt{display:none !important}.blog-wrapper .news-wrapper:not(.first) a .blog-link-wrapper{display:block !important;position:absolute;right:10px;margin-top:60px}.blog-wrapper .news-wrapper.first .blog-text-block{gap:0 !important}.blog-wrapper .news-wrapper.first a .blog-date{font-size:16px !important}.blog-wrapper .news-wrapper.first a .blog-title{font-size:18px}}
+</style>
+<style id='script-6895f4ffc124a-sass-css' type='text/css'>
+.openingTimesText p{margin:0}.grecaptcha-badge{display:none !important;visibility:hidden !important;opacity:0 !important}.openingTimes{transition:all 0.5s}.openingTimes.open{max-height:1200px;visibility:visible;padding-bottom:10px}.toggleImage.rotated{transform:rotate(90deg)}div.gform_wrapper div.gform_validation_errors{display:none !important;visibility:hidden !important}div.gform_wrapper div.gform_heading{margin-top:32px}@media only screen and (max-width:992px){div.gform_wrapper div.gform_heading{margin-top:25px;margin-bottom:18px}}div.gform_wrapper div.gform_heading span.titleForm{display:block}div.gform_wrapper div.gform_heading span.subtitleForm{font-size:12.5px;display:block}div.gform_wrapper div.gform_heading p.gform_required_legend{display:none !important;visibility:hidden !important}div.gform_wrapper form div.gform_body div.gform_fields{gap:10px}div.gform_wrapper form div.gform_body div.gform_fields div.gfield_error input,div.gform_wrapper form div.gform_body div.gform_fields div.gfield_error textarea,div.gform_wrapper form div.gform_body div.gform_fields fieldset.gfield_error input,div.gform_wrapper form div.gform_body div.gform_fields fieldset.gfield_error textarea{border:1px solid red}div.gform_wrapper form div.gform_body div.gform_fields div.gfield_error div.gfield_validation_message,div.gform_wrapper form div.gform_body div.gform_fields fieldset.gfield_error div.gfield_validation_message{display:none !important;visibility:hidden !important}div.gform_wrapper form div.gform_body div.gform_fields input,div.gform_wrapper form div.gform_body div.gform_fields textarea{background-color:transparent;border:solid 0.6px #023046;border-radius:0;font-size:13px;box-shadow:none}div.gform_wrapper form div.gform_body div.gform_fields input::placeholder,div.gform_wrapper form div.gform_body div.gform_fields textarea::placeholder{font-size:13px;font-weight:300;opacity:0.45;color:#023046}div.gform_wrapper form div.gform_body div.gform_fields input:focus,div.gform_wrapper form div.gform_body div.gform_fields input:active,div.gform_wrapper form div.gform_body div.gform_fields textarea:focus,div.gform_wrapper form div.gform_body div.gform_fields textarea:active{outline:none;box-shadow:0 0 0 3px rgba(83, 171, 85, 0.4)}div.gform_wrapper form div.gform_body div.gform_fields label{font-weight:600;-webkit-font-smoothing:antialiased;color:#023046;font-size:13px}div.gform_wrapper form div.gform_body div.gform_fields label span.gfield_required{display:none !important;visibility:hidden !important}@media only screen and (max-width:992px){div.gform_wrapper form div.gform_body div.gform_fields div.has_middle_name span.name_first{max-width:70%}}div.gform_wrapper form div.gform_body div.gform_fields div.has_middle_name span.name_middle{max-width:20%}@media only screen and (max-width:992px){div.gform_wrapper form div.gform_body div.gform_fields div.has_middle_name span.name_middle{max-width:30%}}div.gform_wrapper form div.gform_body div.gform_fields div.gfield--input-type-html{font-style:italic;font-size:12px}@media only screen and (max-width:992px){div.gform_wrapper form div.gform_body div.gform_fields div.gfield--input-type-html{font-size:10px}}div.gform_wrapper form div.gform_body div.gform_fields div.gfield--input-type-html a{text-decoration:underline;transition:all 0.2s}div.gform_wrapper form div.gform_body div.gform_fields div.gfield--input-type-html a:hover{transition:all 0.2s;opacity:0.7}div.gform_wrapper form div.gform_footer{margin-top:2px}div.gform_wrapper form div.gform_footer input{background-color:#53ab55 !important;padding-top:15px !important;padding-bottom:15px !important;padding-left:28px !important;padding-right:28px !important;transition:all 0.2s !important;font-size:14px !important;border-radius:0 !important}div.gform_wrapper form div.gform_footer input:focus,div.gform_wrapper form div.gform_footer input:active{outline:none !important}div.gform_wrapper form div.gform_footer input:hover{transition:all 0.2s;background-color:#023046 !important}
+</style>
+<style id='script-68652fa2839b5-sass-css' type='text/css'>
+.contentBlokkenContainer .contentBlokkenInner .contentBlokkenItem:nth-child(odd){flex-direction:row-reverse !important}.videoInner{position:relative;cursor:pointer}.videoInner:after{content:"";background-image:url(/wp-content/uploads/2025/07/Icon-feather-play.svg);background-repeat:no-repeat;background-size:contain;background-position:center;width:60px;height:60px;display:inline-block;position:absolute;top:34%;left:45%;transition:all 0.2s}@media only screen and (max-width:992px){.videoInner:after{top:38%;width:30px;height:30px;left:47%}}.videoInner.hide-after:after,.videoInner.hide-after span.videoText{opacity:0;visibility:hidden;transition:all 0.2s}.videoInner span.videoText{transition:all 0.2s;position:absolute;top:43%;left:31%;color:white;line-height:1.15;font-size:35px;font-weight:400;font-family:"EB Garamond";margin-bottom:0}@media only screen and (max-width:992px){.videoInner span.videoText{left:32%;top:45%;font-size:18px}}.informatieBlokken span a{text-decoration:underline;transition:all 0.2s}.informatieBlokken span a:hover{transition:all 0.2s;color:#53AB55}.informatieBlokken span p{margin-bottom:20px !important}@media only screen and (max-width:992px){.informatieBlokken span p{margin-bottom:30px !important}}.informatieBlokken span h2,.informatieBlokken span h3,.informatieBlokken span h4,.informatieBlokken span h5,.informatieBlokken span h6{font-size:22px;font-weight:400}@media only screen and (max-width:992px){.informatieBlokken span h2,.informatieBlokken span h3,.informatieBlokken span h4,.informatieBlokken span h5,.informatieBlokken span h6{font-size:25px}}.contentBlokkenContainer .contentBlokkenInner .contentBlokkenItem:nth-child(odd){flex-direction:row-reverse !important}@media only screen and (max-width:992px){.contentBlokkenContainer .contentBlokkenInner .contentBlokkenItem:nth-child(odd){flex-direction:column !important}}@media only screen and (max-width:992px){.contentBlokkenContainer .contentBlokkenInner .contentBlokkenItem{flex-direction:column !important}}
+</style>
+<style id='script-6865794af28c3-sass-css' type='text/css'>
+@media only screen and (max-width:992px){.collapsible-footer-container .collapsible-footer-toggle{cursor:pointer}.collapsible-footer-container .header-icon{rotate:90deg;transition:transform 0.4s ease}.collapsible-footer-container.open .header-icon{transform:rotate(180deg)}.collapsible-footer-container.open .collapsible-content{max-height:500px}.collapsible-footer-container .collapsible-content{max-height:0;overflow:hidden;transition:max-height 0.5s ease}}
+</style>
+<style id='script-68ac24a8c6837-sass-css' type='text/css'>
+#gform_confirmation_wrapper_3 .gform_confirmation_message{font-size:11px;line-height:1.6;color:#53AB55}#gform_wrapper_3 .gform_heading{margin-top:0 !important}#gform_wrapper_3 .gform_heading p{margin:0;padding:0}form#gform_3{display:flex;align-items:end}form#gform_3 .gform-body{width:100%}form#gform_3 div.ginput_container input{border-top:0;border-left:0;border-right:0;line-height:2;padding:2px 0;font-size:11px;width:100%;font-family:"Lato";height:auto}form#gform_3 div.ginput_container input::placeholder{font-size:11px;color:#023046;opacity:1;font-weight:400}form#gform_3 div.ginput_container input:focus,form#gform_3 div.ginput_container input:active{box-shadow:0 3px 2px -2px rgba(83, 171, 85, 0.4)}form#gform_3 div.gform_footer{margin-top:0}form#gform_3 div.gform_footer .gform_button{font-size:9px !important;padding-top:4px !important;padding-bottom:4px !important;padding-left:13px !important;padding-right:13px !important;background-color:#023046 !important;border:none;line-height:1.8;transition:all 0.2s;min-height:auto}form#gform_3 div.gform_footer .gform_button:hover{transition:all 0.2s;opacity:0.7}
+</style>
+<style id='script-68b08d9142e86-sass-css' type='text/css'>
+.footerBaanstatus .collapsible-content p{margin:0;font-size:13px;max-width:90%;text-align:left;line-height:1.5}.footerBaanstatus .status-container{display:flex;flex-direction:column;gap:8px}.footerBaanstatus .status-row{display:flex;align-items:center;justify-content:space-between;gap:8px}.footerBaanstatus .status-row .status-line{flex-grow:1;height:2px;background-color:#DFE3E1}.footerBaanstatus .status-row .status-icon{width:18px;height:18px}
+</style>
+<style id='script-685e7bddf03fc-sass-css' type='text/css'>
+iframe{width:100%}.agendaContainer p,.agendaContainer iframe{height:100%}html,body{scroll-behavior:smooth}body{overflow-x:hidden}a:hover{text-decoration:underline}.defaultHoverText a span{transition:all 0.2s}.defaultHoverText a:hover span{transition:all 0.2s;color:#53AB55}h1 p,h2 p,h3 p,h4 p,h5 p,h6 p{margin:0}p,li{-webkit-font-smoothing:antialiased}.opacity-hover{transition:opacity 0.2s ease}.opacity-hover:hover,.opacity-hover-container:hover .opacity-hover{opacity:0.44}.welcome-item:hover .opacity-hover{opacity:0.39}.CTA-hover{transition:background-color 0.2s ease}.CTA-hover:hover{background-color:#023046 !important}.fadeUp,.fadeUp2{opacity:0;transform:translateY(20px);animation:fadeInUp 0.6s ease forwards;animation-delay:0.3s}@keyframes fadeInUp{to{opacity:1;transform:translateY(0px)}}.fadeUp2{animation-delay:0.45s}.afterLinkArrow{transition:all 0.2s}.afterLinkArrow:after{content:"";background-image:url(/wp-content/uploads/2025/07/Path-9057.svg);background-repeat:no-repeat;background-size:contain;background-position:center;width:10px;height:10px;display:inline-block;position:relative;top:1px;margin-left:5px;transition:all 0.2s}.afterLinkBigArrow{transition:all 0.2s}.afterLinkBigArrow:after{content:"";background-image:url(/wp-content/uploads/2025/07/pijltje-links-1.svg);background-repeat:no-repeat;background-size:contain;background-position:center;width:13px;height:13px;display:inline-block;position:relative;top:1px;margin-left:5px;transition:all 0.2s}.AllesRepeaterContainer .AllesRepeaterItem{position:relative}.AllesRepeaterContainer .AllesRepeaterItem a{transition:all 0.2s}.AllesRepeaterContainer .AllesRepeaterItem a:hover{transition:all 0.2s}.AllesRepeaterContainer .AllesRepeaterItem a:hover .afterLinkArrow{transition:all 0.2s;color:#53ab55 !important}.AllesRepeaterContainer .AllesRepeaterItem a:hover .afterLinkArrow:after{transition:all 0.2s;background-image:url(/wp-content/uploads/2025/07/pijltje-links-1.svg)}@media only screen and (max-width:992px){.AllesRepeaterContainer .AllesRepeaterItem a .titleMobile:after{content:"";background-image:url(/wp-content/uploads/2025/07/pijltje-links-1.svg);background-repeat:no-repeat;background-size:contain;background-position:center;width:15px;height:15px;display:inline-block}}.AllesRepeaterContainer .AllesRepeaterItem:nth-child(3n),.AllesRepeaterContainer .AllesRepeaterItem:last-child{border-right:1px solid #D5DBDA !important}.AllesRepeaterContainer .AllesRepeaterItem:first-child:before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(4):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(7):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(10):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(13):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(16):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(19):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(22):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(25):before{content:"";border-bottom:1px solid #D5DBDA !important;width:150%;height:auto;display:block;position:absolute;left:-150%;bottom:-1px}@media only screen and (max-width:992px){.AllesRepeaterContainer .AllesRepeaterItem:first-child:before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(4):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(7):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(10):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(13):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(16):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(19):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(22):before,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(25):before{display:none}}.AllesRepeaterContainer .AllesRepeaterItem:nth-child(3):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(6):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(9):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(12):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(15):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(18):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(21):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(24):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(27):after{content:"";border-bottom:1px solid #D5DBDA !important;width:150%;height:auto;display:block;position:absolute;right:-150%;bottom:-1px}@media only screen and (max-width:992px){.AllesRepeaterContainer .AllesRepeaterItem:nth-child(3):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(6):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(9):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(12):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(15):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(18):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(21):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(24):after,.AllesRepeaterContainer .AllesRepeaterItem:nth-child(27):after{display:none}}.oxel-breadcrumb ol li{font-size:12px}.oxel-breadcrumb ol li a{opacity:0.6}.oxel-breadcrumb ol li a:hover{text-decoration:underline}.oxel-breadcrumb ol li img{max-width:8px;max-height:8px}.informatieBlokken span p{margin-bottom:20px !important}.contentBlokkenContainer .contentBlokkenInner .contentBlokkenItem:nth-child(odd){flex-direction:row-reverse !important}.videoInner{position:relative;cursor:pointer}.videoInner:after{content:"";background-image:url(/wp-content/uploads/2025/07/Icon-feather-play.svg);background-repeat:no-repeat;background-size:contain;background-position:center;width:60px;height:60px;display:inline-block;position:absolute;top:34%;left:45%}.videoInner.hide-after:after{display:none}.regularBlocks p a{text-decoration:underline;transition:all 0.2s}.regularBlocks p a:hover{opacity:0.7;transition:all 0.2s}
+</style>
+<style id='script-6863f45a0cce4-sass-css' type='text/css'>
+div.collapsible-container{padding:7px 17px;cursor:pointer;background-color:#F4F5F0;min-width:250px}div.collapsible-container.open{padding-bottom:12px}div.collapsible-container.open .collapsible-content{padding-top:3px;padding-bottom:2px}div.collapsible-container:nth-child(2){margin-top:12px}div.collapsible-container .collapsible-header{display:flex;justify-content:space-between;align-items:center;font-size:14px}div.collapsible-container .collapsible-header .header-icon{max-width:13px}div.collapsible-container .header-text{flex:1}@media only screen and (max-width:992px){div.collapsible-container .header-text{flex:unset}}div.collapsible-container .header-icon{transition:transform 0.4s ease}div.collapsible-container.open .header-icon{transform:rotate(180deg)}div.collapsible-container.open .collapsible-content{max-height:650px}@media only screen and (max-width:992px){div.collapsible-container.open .collapsible-content{max-height:150px;overflow-y:scroll}}div.collapsible-container .collapsible-content{max-height:0;overflow:hidden;transition:max-height 0.5s ease}div.collapsible-container .collapsible-content p{margin:0;font-size:11px;max-width:90%;text-align:left;line-height:1.5}div.collapsible-container .collapsible-content p span.ietsDikker{font-weight:600}div.collapsible-container .status-container{display:flex;flex-direction:column;gap:8px}div.collapsible-container .status-row{display:flex;align-items:center;justify-content:space-between;gap:8px}div.collapsible-container .status-row .status-line{flex-grow:1;height:1px;background-color:#ccc}div.collapsible-container .status-row .status-icon{width:16;height:16px}
+</style>
+<style id='script-686fb54885602-sass-css' type='text/css'>
+@media only screen and (max-width:992px){#div_block-243-303-1,#div_block-243-303-2,#div_block-243-303-3,#div_block-243-303-4,#div_block-243-303-5,#div_block-243-303-6,#div_block-243-303-7,#div_block-243-303-8,#div_block-243-303-9,#div_block-243-303-10,#div_block-243-303-11,#div_block-243-303-12,#div_block-243-303-13,#div_block-243-303-14,#div_block-243-303-15,#div_block-243-303-16,#div_block-243-303-17,#div_block-243-303-18,#div_block-286-303{grid-template-columns:180px 180px 400px 180px !important}}
+</style>
+<style id='script-689c5c5302ccc-sass-css' type='text/css'>
+.menukaarten:hover img{transition:all 0.2s;opacity:0.5}.openingstijdenBrasserie span a{color:white;border-bottom:0.5px solid white;transition:all 0.2s}.openingstijdenBrasserie span a:hover{transition:all 0.2s;opacity:0.6}
+</style>
+<style id='script-68ac3a22da8a0-sass-css' type='text/css'>
+#CookiebotWidget{display:none !important;visibility:hidden !important;opacity:0 !important}
+</style>
+<style id='script-68da57dd6065d-sass-css' type='text/css'>
+#gform_wrapper_4 select{background-color:transparent}#gform_wrapper_4 div.gform_footer{margin-top:15px}
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WRB7JRWC');</script>
+<!-- End Google Tag Manager --><script id='script-696f71d5d058a-js' type='text/javascript'>
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.hash === "#div_block-123-17") {
+        var targetDiv = document.getElementById("div_block-138-17");
+        if (targetDiv) {
+            targetDiv.classList.add("open");
+        }
+    }
+});
+</script>
+<style id='script-6a8c3a6a771f4-css' type='text/css'>
+.agendaContainer{
+    overflow: hidden; height: 500px; width: 100%; position: relative;
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: currentcolor;
+    border-image: none;
+}
+.agendaContainer iframe{
+    margin-top: -45px;
+    border-width: 0;
+}
+</style>
+    <style>
+    .proware-restricted-content {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .proware-restricted-content h3 {
+        margin-top: 0;
+        color: #333;
+    }
+    .proware-restricted-content .button {
+        background: #53ab55;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .proware-restricted-content .button:hover {
+        background: #53ab55;
+        color: white;
+    }
+    </style>
+    <style class="wp-fonts-local">
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('https://golfclubcapelle.nl/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('https://golfclubcapelle.nl/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}
+</style>
+<link rel="icon" href="https://golfclubcapelle.nl/wp-content/uploads/2025/07/cropped-image-2-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://golfclubcapelle.nl/wp-content/uploads/2025/07/cropped-image-2-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://golfclubcapelle.nl/wp-content/uploads/2025/07/cropped-image-2-180x180.png" />
+<meta name="msapplication-TileImage" content="https://golfclubcapelle.nl/wp-content/uploads/2025/07/cropped-image-2-270x270.png" />
+<link rel='stylesheet' id='oxygen-cache-17-css' href='//golfclubcapelle.nl/wp-content/uploads/oxygen/css/17.css?cache=1792479183&#038;ver=7.1.3' media='all' />
+<link rel='stylesheet' id='oxygen-cache-222-css' href='//golfclubcapelle.nl/wp-content/uploads/oxygen/css/222.css?cache=1779181076&#038;ver=7.1.3' media='all' />
+<link rel='stylesheet' id='oxygen-universal-styles-css' href='//golfclubcapelle.nl/wp-content/uploads/oxygen/css/universal.css?cache=1792479182&#038;ver=7.1.3' media='all' />
+<!-- END OF WP_HEAD() -->
+</head>
+<body class="wp-singular page-template-default page page-id-989 page-child parent-pageid-971 wp-embed-responsive wp-theme-oxygen-is-not-a-theme  oxygen-body" >
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRB7JRWC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+						<header id="section-21-17" class=" ct-section " ><div class="ct-section-inner-wrap"><div id="div_block-27-17" class="ct-div-block" ><a id="link-316-17" class="ct-link" href="https://golfclubcapelle.nl/"   ><img  id="image-30-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/Group-10890.png" class="ct-image" srcset="" sizes="(max-width: 152px) 100vw, 152px" /></a></div><div id="div_block-46-17" class="ct-div-block" ><div id="div_block-109-17" class="ct-div-block" ><div id="div_block-49-17" class="ct-div-block" ><div id="div_block-364-17" class="ct-div-block" ><a id="link_text-77-17" class="ct-link-text menuItem" href="/reserveren" target="_self"  >Reserveren</a></div><div id="div_block-367-17" class="ct-div-block" ><a id="link_text-370-17" class="ct-link-text menuItem" href="/agenda" target="_self"  >Agenda</a></div><div id="div_block-369-17" class="ct-div-block" ><a id="link_text-371-17" class="ct-link-text menuItem" href="/contact" target="_self"  >Contact</a></div><div id="div_block-372-17" class="ct-div-block" >
+		<div id="-header-search-1270-17" class="oxy-header-search " ><button aria-label="Open search" aria-expanded="false" class="oxy-header-search_toggle oxy-header-search_toggle-open" data-prevent-scroll="false"><span class="oxy-header-search_toggle-text"></span><svg tabindex="-1" aria-hidden="true" focusable="false" class="oxy-header-search_open-icon" id="open-header-search-1270-17-icon"><use xlink:href="#Lineariconsicon-magnifier"></use></svg></button><form role="search" method="get" class="oxy-header-search_form" action="https://golfclubcapelle.nl/">
+                    <div class="oxy-header-container">
+                    <label>
+                        <span class="screen-reader-text">Search for</span>
+                        <input required type="search" class="oxy-header-search_search-field" placeholder="Zoeken..." value="" name="s" />
+                    </label><input type="submit" class="search-submit oxy-header-search_search-submit" value="Search" /><button aria-label="Close search" type=button class="oxy-header-search_toggle"><svg tabindex="-1" aria-hidden="true" class="oxy-header-search_close-icon" id="close-header-search-1270-17-icon"><use xlink:href="#Lineariconsicon-cross"></use></svg></button></div></form></div>
+
+		</div></div></div><div id="div_block-115-17" class="ct-div-block" ><div id="div_block-50-17" class="ct-div-block" >
+		<nav id="-mega-menu-723-17" class="oxy-mega-menu  " ><ul class="oxy-inner-content oxy-mega-menu_inner" data-trigger=".oxy-burger-trigger" data-hovertabs="false" data-odelay="0" data-cdelay="50" data-duration="300" data-mouseover="true" data-hash-close="false" data-auto-aria="true" data-type="individual" >
+		<li id="-mega-dropdown-725-177" class="oxy-mega-dropdown active-fade main-menu-items " ><a  href="/de-club" class="oxy-mega-dropdown_link " data-disable-link="disable" data-expanded="disable" ><span class="oxy-mega-dropdown_link-text">De Club</span><span class="oxy-mega-dropdown_icon"><svg id="icon-mega-dropdown-725-177"><use xlink:href="#FontAwesomeicon-angle-down"></use></svg></span></a><div class="oxy-mega-dropdown_inner oxy-header-container" data-icon="FontAwesomeicon-angle-down"><div class="oxy-mega-dropdown_container"><div class="oxy-inner-content oxy-mega-dropdown_content oxy-header-container"><div id="div_block-728-17" class="ct-div-block mega-container" ><div id="div_block-729-17" class="ct-div-block " ><a id="link-730-17" class="ct-link item1 mega-link-main-list" href="/de-club/clubinformatie/" target="_self"  ><h1 id="headline-734-17" class="ct-headline mega-main-item-titel">Clubinformatie</h1><img  id="image-954-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1305-17" class="ct-link item1 mega-link-main-list" href="/de-club/lid-worden" target="_self"  ><h1 id="headline-1306-17" class="ct-headline mega-main-item-titel">Lid worden</h1><img  id="image-1307-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1018-17" class="ct-link item1 mega-link-main-list" href="/de-club/lid-worden" target="_self"  ><h1 id="headline-1019-17" class="ct-headline mega-main-item-titel">Lid worden</h1><img  id="image-1020-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1302-17" class="ct-link item1 mega-link-main-list" href="/de-club/lid-worden/supergolf/" target="_self"  ><h1 id="headline-1303-17" class="ct-headline mega-main-item-titel">SuperGolf<br></h1><img  id="image-1304-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1027-17" class="ct-link item1 mega-link-main-list" href="/de-club/nieuws-van-de-club/" target="_self"  ><h1 id="headline-1028-17" class="ct-headline mega-main-item-titel">Nieuws van de club</h1><img  id="image-1029-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1030-17" class="ct-link item1 mega-link-main-list" href="/de-club/bestuur-commissies" target="_self"  ><h1 id="headline-1031-17" class="ct-headline mega-main-item-titel">Bestuur &amp; Commissies</h1><img  id="image-1032-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a></div></div></div></div></div></li>
+
+		
+		<li id="-mega-dropdown-1094-17" class="oxy-mega-dropdown active-fade main-menu-items " ><a  href="/baan" class="oxy-mega-dropdown_link " data-disable-link="disable" data-expanded="disable" ><span class="oxy-mega-dropdown_link-text">De Baan</span><span class="oxy-mega-dropdown_icon"><svg id="icon-mega-dropdown-1094-17"><use xlink:href="#FontAwesomeicon-angle-down"></use></svg></span></a><div class="oxy-mega-dropdown_inner oxy-header-container" data-icon="FontAwesomeicon-angle-down"><div class="oxy-mega-dropdown_container"><div class="oxy-inner-content oxy-mega-dropdown_content oxy-header-container"><div id="div_block-1095-17" class="ct-div-block mega-container" ><div id="div_block-1096-17" class="ct-div-block " ><a id="link-1097-17" class="ct-link item1 mega-link-main-list" href="/baan/baanomschrijving/" target="_self"  ><h1 id="headline-1098-17" class="ct-headline mega-main-item-titel">Baanomschrijving</h1><img  id="image-1099-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1100-17" class="ct-link item1 mega-link-main-list" href="/baan/trackman-driving-range/" target="_self"  ><h1 id="headline-1101-17" class="ct-headline mega-main-item-titel">Trackman Driving Range</h1><img  id="image-1102-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1021-17" class="ct-link item1 mega-link-main-list" href="/de-club/duurzaam-beheer-en-geo/" target="_self"  ><h1 id="headline-1022-17" class="ct-headline mega-main-item-titel">Duurzaam beheer</h1><img  id="image-1023-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1103-17" class="ct-link item1 mega-link-main-list" href="/baan/baanregels/" target="_self"  ><h1 id="headline-1104-17" class="ct-headline mega-main-item-titel">Baanregels (en plaatselijke regels)</h1><img  id="image-1105-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1242-17" class="ct-link item1 mega-link-main-list" href="/baan/scorekaart-handicap-tabel/" target="_self"  ><h1 id="headline-1243-17" class="ct-headline mega-main-item-titel">Scorekaart + handicaptabellen</h1><img  id="image-1244-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1245-17" class="ct-link item1 mega-link-main-list" href="https://golfclubcapelle.nl/wp-content/uploads/2026/08/Calamiteitenplan-Golfclub-Capelle-met-bijlagen-2026.pdf" target="_blank"  ><h1 id="headline-1246-17" class="ct-headline mega-main-item-titel">Calamiteitenplan</h1><img  id="image-1247-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a></div></div></div></div></div></li>
+
+		
+		<li id="-mega-dropdown-1116-17" class="oxy-mega-dropdown active-fade main-menu-items " ><a  href="/bezoekers" class="oxy-mega-dropdown_link " data-disable-link="disable" data-expanded="disable" ><span class="oxy-mega-dropdown_link-text">Gasten</span><span class="oxy-mega-dropdown_icon"><svg id="icon-mega-dropdown-1116-17"><use xlink:href="#FontAwesomeicon-angle-down"></use></svg></span></a><div class="oxy-mega-dropdown_inner oxy-header-container" data-icon="FontAwesomeicon-angle-down"><div class="oxy-mega-dropdown_container"><div class="oxy-inner-content oxy-mega-dropdown_content oxy-header-container"><div id="div_block-1117-17" class="ct-div-block mega-container" ><div id="div_block-1118-17" class="ct-div-block " ><a id="link-1122-17" class="ct-link item1 mega-link-main-list" href="/bezoekers/greenfee-tarieven/" target="_self"  ><h1 id="headline-1123-17" class="ct-headline mega-main-item-titel">Greenfee tarieven</h1><img  id="image-1124-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1125-17" class="ct-link item1 mega-link-main-list" href="/bezoekers/hospitality-golfbanen/" target="_self"  ><h1 id="headline-1126-17" class="ct-headline mega-main-item-titel">Hospitality golfbanen (SuperGolf)</h1><img  id="image-1127-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1248-17" class="ct-link item1 mega-link-main-list" href="/bezoekers/kledingadvies" target="_self"  ><h1 id="headline-1249-17" class="ct-headline mega-main-item-titel">Kleding advies</h1><img  id="image-1250-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a></div></div></div></div></div></li>
+
+		
+		<li id="-mega-dropdown-1137-17" class="oxy-mega-dropdown active-fade main-menu-items " ><a  href="/zakelijk" class="oxy-mega-dropdown_link " data-disable-link="disable" data-expanded="disable" ><span class="oxy-mega-dropdown_link-text">Zakelijk</span><span class="oxy-mega-dropdown_icon"><svg id="icon-mega-dropdown-1137-17"><use xlink:href="#FontAwesomeicon-angle-down"></use></svg></span></a><div class="oxy-mega-dropdown_inner oxy-header-container" data-icon="FontAwesomeicon-angle-down"><div class="oxy-mega-dropdown_container"><div class="oxy-inner-content oxy-mega-dropdown_content oxy-header-container"><div id="div_block-1138-17" class="ct-div-block mega-container" ><div id="div_block-1139-17" class="ct-div-block " ><a id="link-1140-17" class="ct-link item1 mega-link-main-list" href="/zakelijk/zakelijke-lidmaatschappen/" target="_self"  ><h1 id="headline-1141-17" class="ct-headline mega-main-item-titel">Zakelijke lidmaatschappen</h1><img  id="image-1142-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1143-17" class="ct-link item1 mega-link-main-list" href="/zakelijk/bedrijvencompetitie/" target="_self"  ><h1 id="headline-1144-17" class="ct-headline mega-main-item-titel">Bedrijvencompetitie (en uitslagen)</h1><img  id="image-1145-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1146-17" class="ct-link item1 mega-link-main-list" href="/zakelijk/vergaderen-bij-golfclub-capelle" target="_self"  ><h1 id="headline-1147-17" class="ct-headline mega-main-item-titel">Vergaderen</h1><img  id="image-1148-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1290-17" class="ct-link item1 mega-link-main-list" href="/zakelijk/bedrijfsleden/" target="_self"  ><h1 id="headline-1291-17" class="ct-headline mega-main-item-titel">Bedrijfsleden</h1><img  id="image-1292-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a></div></div></div></div></div></li>
+
+		
+		<li id="-mega-dropdown-1158-17" class="oxy-mega-dropdown active-fade main-menu-items " ><a  href="/golfschool" class="oxy-mega-dropdown_link " data-disable-link="disable" data-expanded="disable" ><span class="oxy-mega-dropdown_link-text">Golfschool</span><span class="oxy-mega-dropdown_icon"><svg id="icon-mega-dropdown-1158-17"><use xlink:href="#FontAwesomeicon-angle-down"></use></svg></span></a><div class="oxy-mega-dropdown_inner oxy-header-container" data-icon="FontAwesomeicon-angle-down"><div class="oxy-mega-dropdown_container"><div class="oxy-inner-content oxy-mega-dropdown_content oxy-header-container"><div id="div_block-1159-17" class="ct-div-block mega-container" ><div id="div_block-1160-17" class="ct-div-block " ><a id="link-1161-17" class="ct-link item1 mega-link-main-list" href="/golfschool/beginnen-met-golf/" target="_self"  ><h1 id="headline-1162-17" class="ct-headline mega-main-item-titel">Beginnen met golf</h1><img  id="image-1163-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1299-17" class="ct-link item1 mega-link-main-list" href="/golfschool/beter-golfen/" target="_self"  ><h1 id="headline-1300-17" class="ct-headline mega-main-item-titel">Beter golfen</h1><img  id="image-1301-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1164-17" class="ct-link item1 mega-link-main-list" href="/golfschool/jeugdlessen/" target="_self"  ><h1 id="headline-1165-17" class="ct-headline mega-main-item-titel">Jeugdlessen</h1><img  id="image-1166-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1167-17" class="ct-link item1 mega-link-main-list" href="/golfschool/golfclinic/" target="_self"  ><h1 id="headline-1168-17" class="ct-headline mega-main-item-titel">Golfclinic</h1><img  id="image-1169-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a></div></div></div></div></div></li>
+
+		
+		<li id="-mega-dropdown-1179-17" class="oxy-mega-dropdown active-fade main-menu-items " ><a  target="_self" href="/brasserie" class="oxy-mega-dropdown_link oxy-mega-dropdown_just-link " data-disable-link="disable" data-expanded="disable" ><span class="oxy-mega-dropdown_link-text">Brasserie</span></a></li>
+
+		
+		<li id="mega-dropdown-1200-17" class="oxy-mega-dropdown active-fade main-menu-items " ><a  href="/wedstrijden-competitie" class="oxy-mega-dropdown_link " data-disable-link="disable" data-expanded="disable" ><span class="oxy-mega-dropdown_link-text">Wedstrijden &amp; Competitie</span><span class="oxy-mega-dropdown_icon"><svg id="iconmega-dropdown-1200-17"><use xlink:href="#FontAwesomeicon-angle-down"></use></svg></span></a><div class="oxy-mega-dropdown_inner oxy-header-container" data-icon="FontAwesomeicon-angle-down"><div class="oxy-mega-dropdown_container"><div class="oxy-inner-content oxy-mega-dropdown_content oxy-header-container"><div id="div_block-1201-17" class="ct-div-block mega-container" ><div id="div_block-1202-17" class="ct-div-block " ><a id="link-1212-17" class="ct-link item1 mega-link-main-list" href="https://capelle.prowaregolf.nl/matches" target="_blank"  ><h1 id="headline-1213-17" class="ct-headline mega-main-item-titel">Wedstrijdkalender </h1><img  id="image-1214-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1215-17" class="ct-link item1 mega-link-main-list" href="/wedstrijden-competitie/competitie-uitslagen/" target="_self"  ><h1 id="headline-1216-17" class="ct-headline mega-main-item-titel">Competitie + uitslagen </h1><img  id="image-1217-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1287-17" class="ct-link item1 mega-link-main-list" href="/wedstrijden-competitie/wedstrijden-voor-alle-leden/" target="_self"  ><h1 id="headline-1288-17" class="ct-headline mega-main-item-titel">Wedstrijden voor alle leden<br> </h1><img  id="image-1289-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1293-17" class="ct-link item1 mega-link-main-list" href="/wedstrijden-competitie/happy-golf-voor-beginners/" target="_self"  ><h1 id="headline-1294-17" class="ct-headline mega-main-item-titel">Happy Golf voor Beginners<br> </h1><img  id="image-1295-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1218-17" class="ct-link item1 mega-link-main-list" href="/wedstrijden-competitie/golf-ster-van-het-jaar/" target="_self"  ><h1 id="headline-1219-17" class="ct-headline mega-main-item-titel">Golf(st)er van het jaar  </h1><img  id="image-1220-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a><a id="link-1252-17" class="ct-link item1 mega-link-main-list" href="/wp-content/uploads/2025/08/Wedstrijdreglement-Golfclub-Capelle-2021.pdf" target="_blank"  ><h1 id="headline-1253-17" class="ct-headline mega-main-item-titel">Wedstrijdreglement  </h1><img  id="image-1254-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/pijltje-links-1.svg" class="ct-image" srcset="" sizes="(max-width: 8px) 100vw, 8px" /></a></div></div></div></div></div></li>
+
+		</ul></nav>
+
+		</div><div id="div_block-51-17" class="ct-div-block" ><div id="code_block-959-17" class="ct-code-block" >    <a class="ct-link menuItem dashboardLink" href="/login?redirect=https://golfclubcapelle.nl/baan/scorekaart-handicap-tabel/">
+      <img class="dashboardLinkIcon" alt="" src="/wp-content/uploads/2025/06/account.svg" class="ct-image" srcset="" sizes="(max-width: 20px) 100vw, 20px">
+      <div class="ct-text-block">Inloggen</div>
+    </a>
+    </div></div></div></div></div></header><section id="section-317-17" class=" ct-section " ><div class="ct-section-inner-wrap"><a id="link-320-17" class="ct-link" href="https://golfclubcapelle.nl/"   ><img  id="image-321-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/Group-10890.png" class="ct-image logo" srcset="" sizes="(max-width: 152px) 100vw, 152px" /></a><div id="div_block-323-17" class="ct-div-block" ><div id="div_block-325-17" class="ct-div-block" >
+		<div id="-header-search-1271-17" class="oxy-header-search " ><button aria-label="Open search" aria-expanded="false" class="oxy-header-search_toggle oxy-header-search_toggle-open" data-prevent-scroll="false"><span class="oxy-header-search_toggle-text"></span><svg tabindex="-1" aria-hidden="true" focusable="false" class="oxy-header-search_open-icon" id="open-header-search-1271-17-icon"><use xlink:href="#Lineariconsicon-magnifier"></use></svg></button><form role="search" method="get" class="oxy-header-search_form" action="https://golfclubcapelle.nl/">
+                    <div class="oxy-header-container">
+                    <label>
+                        <span class="screen-reader-text">Search for</span>
+                        <input required type="search" class="oxy-header-search_search-field" placeholder="Zoeken..." value="" name="s" />
+                    </label><input type="submit" class="search-submit oxy-header-search_search-submit" value="Search" /><button aria-label="Close search" type=button class="oxy-header-search_toggle"><svg tabindex="-1" aria-hidden="true" class="oxy-header-search_close-icon" id="close-header-search-1271-17-icon"><use xlink:href="#Lineariconsicon-cross"></use></svg></button></div></form></div>
+
+		</div><div id="div_block-327-17" class="ct-div-block" ><div id="code_block-1259-17" class="ct-code-block" >    <a class="ct-link menuItem dashboardLink" href="/login?redirect=https://golfclubcapelle.nl/baan/scorekaart-handicap-tabel/">
+      <img class="dashboardLinkIcon" alt="" src="/wp-content/uploads/2025/06/account.svg" class="ct-image" srcset="">
+    </a>
+    </div></div><div id="div_block-329-17" class="ct-div-block menu-toggle" ><img  id="image-330-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/mobiel-menu.svg" class="ct-image openImage" srcset="" sizes="(max-width: 32px) 100vw, 32px" /><img  id="image-398-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/Kruisje.svg" class="ct-image closeImage" srcset="" sizes="(max-width: 19px) 100vw, 19px" /></div></div></div></section><section id="section-382-17" class=" ct-section mobile-menu" ><div class="ct-section-inner-wrap"><div id="div_block-383-17" class="ct-div-block " ><div id="code_block-390-17" class="ct-code-block " ><ul id="menu-headermobile-menu" class="menu-custom menu_item"><li id="menu-item-94" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-94"><a href="#">De Club</a>
+<ul class="sub-menu">
+	<li id="menu-item-95" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95"><a href="/de-club">De Club</a></li>
+	<li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"><a href="/clubinformatie">Clubinformatie</a></li>
+	<li id="menu-item-1917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1917"><a href="https://golfclubcapelle.nl/de-club/lid-worden/">Lid worden</a></li>
+	<li id="menu-item-6193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6193"><a href="https://golfclubcapelle.nl/de-club/lid-worden/supergolf/">SuperGolf</a></li>
+	<li id="menu-item-1920" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1920"><a href="https://golfclubcapelle.nl/de-club/nieuws-van-de-club/">Nieuws van de club</a></li>
+	<li id="menu-item-4147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4147"><a href="https://golfclubcapelle.nl/de-club/bestuur-commissies/">Bestuur &amp; Commissies</a></li>
+</ul>
+</li>
+<li id="menu-item-97" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-97"><a href="#">De Baan</a>
+<ul class="sub-menu">
+	<li id="menu-item-1931" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-1931"><a href="https://golfclubcapelle.nl/baan/">De Baan</a></li>
+	<li id="menu-item-1923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1923"><a href="https://golfclubcapelle.nl/baan/baanomschrijving/">Baanomschrijving</a></li>
+	<li id="menu-item-1924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1924"><a href="https://golfclubcapelle.nl/baan/trackman-driving-range/">Trackman Driving Range</a></li>
+	<li id="menu-item-1918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1918"><a href="https://golfclubcapelle.nl/baan/duurzaam-beheer-en-geo/">Duurzaam beheer &amp; GEO</a></li>
+	<li id="menu-item-1925" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1925"><a href="https://golfclubcapelle.nl/baan/baanregels/">Baanregels (en plaatselijke regels)</a></li>
+	<li id="menu-item-1926" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-989 current_page_item menu-item-1926"><a href="https://golfclubcapelle.nl/baan/scorekaart-handicap-tabel/" aria-current="page">Scorekaart &#038; Handicap tabel</a></li>
+	<li id="menu-item-1927" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1927"><a href="https://golfclubcapelle.nl/wp-content/uploads/2026/08/Calamiteitenplan-Golfclub-Capelle-met-bijlagen-2026.pdf">Calamiteitenplan</a></li>
+</ul>
+</li>
+<li id="menu-item-98" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-98"><a href="#">Gasten</a>
+<ul class="sub-menu">
+	<li id="menu-item-5586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5586"><a href="https://golfclubcapelle.nl/bezoekers/greenfee-tarieven/">Greenfee tarieven</a></li>
+	<li id="menu-item-1932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1932"><a href="https://golfclubcapelle.nl/bezoekers/hospitality-golfbanen/">Hospitality Golfbanen</a></li>
+	<li id="menu-item-1933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1933"><a href="https://golfclubcapelle.nl/bezoekers/kledingadvies/">Kledingadvies</a></li>
+</ul>
+</li>
+<li id="menu-item-2017" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2017"><a href="#">Zakelijk</a>
+<ul class="sub-menu">
+	<li id="menu-item-1935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1935"><a href="https://golfclubcapelle.nl/zakelijk/">Zakelijk</a></li>
+	<li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1936"><a href="https://golfclubcapelle.nl/zakelijk/zakelijke-lidmaatschappen/">Zakelijke lidmaatschappen</a></li>
+	<li id="menu-item-1937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1937"><a href="https://golfclubcapelle.nl/zakelijk/bedrijvencompetitie/">Bedrijvencompetitie</a></li>
+	<li id="menu-item-1938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1938"><a href="https://golfclubcapelle.nl/zakelijk/vergaderen-bij-golfclub-capelle/">Vergaderen</a></li>
+	<li id="menu-item-4150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4150"><a href="https://golfclubcapelle.nl/zakelijk/bedrijfsleden/">Bedrijfsleden</a></li>
+</ul>
+</li>
+<li id="menu-item-2018" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2018"><a href="#">Golfschool</a>
+<ul class="sub-menu">
+	<li id="menu-item-1939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1939"><a href="https://golfclubcapelle.nl/golfschool/">Golfschool</a></li>
+	<li id="menu-item-1941" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1941"><a href="https://golfclubcapelle.nl/golfschool/beginnen-met-golf/">Beginnen met golf</a></li>
+	<li id="menu-item-5178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5178"><a href="https://golfclubcapelle.nl/golfschool/beter-golfen/">Beter golfen</a></li>
+	<li id="menu-item-1942" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1942"><a href="https://golfclubcapelle.nl/golfschool/jeugdlessen/">Jeugdlessen</a></li>
+	<li id="menu-item-1943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1943"><a href="https://golfclubcapelle.nl/golfschool/golfclinic/">Golfclinic</a></li>
+</ul>
+</li>
+<li id="menu-item-1944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1944"><a href="https://golfclubcapelle.nl/brasserie/">Brasserie</a></li>
+<li id="menu-item-2019" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2019"><a href="#">Wedstrijden + Competitie</a>
+<ul class="sub-menu">
+	<li id="menu-item-1945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><a href="https://golfclubcapelle.nl/wedstrijden-competitie/">Wedstrijden &amp; Competitie</a></li>
+	<li id="menu-item-1947" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1947"><a href="https://capelle.prowaregolf.nl/matches">Wedstrijdkalender</a></li>
+	<li id="menu-item-1948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1948"><a href="https://golfclubcapelle.nl/wedstrijden-competitie/competitie-uitslagen/">Competitie + uitslagen</a></li>
+	<li id="menu-item-4151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4151"><a href="https://golfclubcapelle.nl/wedstrijden-competitie/happy-golf-voor-beginners/">Happy Golf voor Beginners</a></li>
+	<li id="menu-item-1950" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1950"><a href="/wp-content/uploads/2025/08/Wedstrijdreglement-Golfclub-Capelle-2021.pdf">Wedstrijdreglement</a></li>
+</ul>
+</li>
+<li id="menu-item-2020" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2020"><a href="#">De leden</a>
+<ul class="sub-menu">
+	<li id="menu-item-1955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1955"><a href="https://golfclubcapelle.nl/leden/opzeggen-lidmaatschap/">Opzeggen lidmaatschap</a></li>
+</ul>
+</li>
+<li id="menu-item-3329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3329"><a href="https://golfclubcapelle.nl/agenda/">Agenda</a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101"><a href="/contact">Contact</a></li>
+</ul>
+    <style>
+      #menu-item-2020 {
+      display:none;
+      }
+    </style></div><div id="div_block-394-17" class="ct-div-block" ></div><div id="div_block-391-17" class="ct-div-block" ><div id="code_block-1261-17" class="ct-code-block" >    <a class="ct-link menuItem dashboardLink" href="/login?redirect=https://golfclubcapelle.nl/baan/scorekaart-handicap-tabel/">
+      <img class="dashboardLinkIcon" alt="" src="/wp-content/uploads/2025/06/account.svg" class="ct-image" srcset="">
+      <div class="ct-text-block mobile">Inloggen</div>
+    </a>
+    </div></div></div></div></section><section id="section-2-222" class=" ct-section" ><div class="ct-section-inner-wrap"><div id="div_block-3-222" class="ct-div-block" ><div id="div_block-4-222" class="ct-div-block " ><div id="code_block-5-222" class="ct-code-block " >
+<!-- === HTML output === -->
+<nav aria-label="Breadcrumb" class="oxel-breadcrumb">
+    <ol>
+                    <li>
+                <a title="Breadcrumb link to Home" href="/">
+                    Home                </a>
+                <span><img class="breadcrum-icon" src="/wp-content/uploads/2025/07/Path-9057.svg" sizes="(max-width: 125px) 100vw, 125px"></span>            </li>
+        
+                    <li>
+                                    <a title="Breadcrumb link to Baan" href="https://golfclubcapelle.nl/baan/">
+                        Baan                    </a>
+                
+                                    <span><img class="breadcrum-icon" src="/wp-content/uploads/2025/07/Path-9057.svg" sizes="(max-width: 125px) 100vw, 125px"></span>
+                            </li>
+                    <li>
+                                    Scorekaart &amp; Handicap tabel                
+                            </li>
+            </ol>
+</nav>
+</div></div><h1 id="headline-6-222" class="ct-headline"><span id="span-7-222" class="ct-span" >Scorekaart &amp; Handicap tabel</span></h1><div id="text_block-8-222" class="ct-text-block" ><span id="span-9-222" class="ct-span" ><p>Op deze pagina vindt u de actuele scorekaarten en handicaptabellen van onze golfbaan. Of u nu een wedstrijd speelt of een ontspannen ronde loopt, een goede voorbereiding begint met inzicht in de afstanden, baanrating en slagenverdeling. De tabellen zijn afgestemd op de verschillende tees en handicaps, zodat u altijd met de juiste informatie de baan in gaat.</p>
+</span></div><a id="link-10-222" class="ct-link CTA-hover" href="#section-234-222"   ><div id="text_block-11-222" class="ct-text-block" ><span id="span-12-222" class="ct-span" >Bekijk scorekaart &amp; handicap tabellen</span><br></div></a></div><img  id="image-52-222" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/WV2023_DJI_0496-min-1-scaled.jpg" class="ct-image"/></div></section><section id="section-234-222" class=" ct-section" ><div class="ct-section-inner-wrap"><div id="div_block-235-222" class="ct-div-block" ><div id="text_block-236-222" class="ct-text-block" ><span id="span-237-222" class="ct-span" >Scorekaart &amp; Handicap tabellen</span></div></div><div id="div_block-238-222" class="ct-div-block" ><div id="_dynamic_list-239-222" class="oxy-dynamic-list AllesRepeaterContainer"><div id="div_block-240-222-1" class="ct-div-block AllesRepeaterItem defaultHoverText" data-id="div_block-240-222"><a id="link-241-222-1" class="ct-link" href="/wp-content/uploads/2025/07/Capelle-a-d-IJssel-Heren-18.pdf" target="_self" data-id="link-241-222"><div id="text_block-242-222-1" class="ct-text-block " data-id="text_block-242-222"><span id="span-243-222-1" class="ct-span" data-id="span-243-222">Handicaptabel | Heren, 18 holes</span></div><div id="text_block-244-222-1" class="ct-text-block afterLinkBigArrow" data-id="text_block-244-222">&nbsp;</div><div id="_dynamic_list-436-222-1" class="oxy-dynamic-list" data-id="_dynamic_list-436-222"></div>
+</a></div><div id="div_block-240-222-2" class="ct-div-block AllesRepeaterItem defaultHoverText" data-id="div_block-240-222"><a id="link-241-222-2" class="ct-link" href="/wp-content/uploads/2025/07/Capelle-a-d-IJssel-Heren-9.pdf" target="_self" data-id="link-241-222"><div id="text_block-242-222-2" class="ct-text-block " data-id="text_block-242-222"><span id="span-243-222-2" class="ct-span" data-id="span-243-222">Handicaptabel | Heren, 9 holes</span></div><div id="text_block-244-222-2" class="ct-text-block afterLinkBigArrow" data-id="text_block-244-222">&nbsp;</div><div id="_dynamic_list-436-222-2" class="oxy-dynamic-list" data-id="_dynamic_list-436-222"></div>
+</a></div><div id="div_block-240-222-3" class="ct-div-block AllesRepeaterItem defaultHoverText" data-id="div_block-240-222"><a id="link-241-222-3" class="ct-link" href="/wp-content/uploads/2025/07/Capelle-a-d-IJssel-Dames-18.pdf" target="_self" data-id="link-241-222"><div id="text_block-242-222-3" class="ct-text-block " data-id="text_block-242-222"><span id="span-243-222-3" class="ct-span" data-id="span-243-222">Handicaptabel | Dames, 18 holes</span></div><div id="text_block-244-222-3" class="ct-text-block afterLinkBigArrow" data-id="text_block-244-222">&nbsp;</div><div id="_dynamic_list-436-222-3" class="oxy-dynamic-list" data-id="_dynamic_list-436-222"></div>
+</a></div><div id="div_block-240-222-4" class="ct-div-block AllesRepeaterItem defaultHoverText" data-id="div_block-240-222"><a id="link-241-222-4" class="ct-link" href="/wp-content/uploads/2025/07/Capelle-a-d-IJssel-Dames-9.pdf" target="_self" data-id="link-241-222"><div id="text_block-242-222-4" class="ct-text-block " data-id="text_block-242-222"><span id="span-243-222-4" class="ct-span" data-id="span-243-222">Handicaptabel | Dames, 9 holes</span></div><div id="text_block-244-222-4" class="ct-text-block afterLinkBigArrow" data-id="text_block-244-222">&nbsp;</div><div id="_dynamic_list-436-222-4" class="oxy-dynamic-list" data-id="_dynamic_list-436-222"></div>
+</a></div><div id="div_block-240-222-5" class="ct-div-block AllesRepeaterItem defaultHoverText" data-id="div_block-240-222"><a id="link-241-222-5" class="ct-link" href="https://golfclubcapelle.nl/wp-content/uploads/2026/07/Scorekaart-Golfclub-Capelle-nieuwe-pinposities.pdf" target="_self" data-id="link-241-222"><div id="text_block-242-222-5" class="ct-text-block " data-id="text_block-242-222"><span id="span-243-222-5" class="ct-span" data-id="span-243-222">Scorekaart van de baan</span></div><div id="text_block-244-222-5" class="ct-text-block afterLinkBigArrow" data-id="text_block-244-222">&nbsp;</div><div id="_dynamic_list-436-222-5" class="oxy-dynamic-list" data-id="_dynamic_list-436-222"></div>
+</a></div><div id="div_block-240-222-6" class="ct-div-block AllesRepeaterItem defaultHoverText" data-id="div_block-240-222"><a id="link-241-222-6" class="ct-link" href="/wp-content/uploads/2025/07/Tabel-A5-afstanden-per-hole-tussen-de-winter-en-zomergreens.pdf" target="_self" data-id="link-241-222"><div id="text_block-242-222-6" class="ct-text-block " data-id="text_block-242-222"><span id="span-243-222-6" class="ct-span" data-id="span-243-222">Overzicht van de afstanden per hole tussen de winter en zomergreens</span></div><div id="text_block-244-222-6" class="ct-text-block afterLinkBigArrow" data-id="text_block-244-222">&nbsp;</div><div id="_dynamic_list-436-222-6" class="oxy-dynamic-list" data-id="_dynamic_list-436-222"></div>
+</a></div></div>
+</div></div></section><section id="section-226-222" class=" ct-section" ><div class="ct-section-inner-wrap"><div id="div_block-227-222" class="ct-div-block" ><img  id="image-228-222" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/Group-10641.svg" class="ct-image" srcset="" sizes="(max-width: 61px) 100vw, 61px" /><h2 id="headline-229-222" class="ct-headline"><span id="span-230-222" class="ct-span" ><p>Golfen, culinair genieten of vergaderen?<br />
+Dat is <em>Golfclub Capelle</em></p>
+</span></h2><a id="link-231-222" class="ct-link" href="/reserveren" target="_self"  ><div id="text_block-232-222" class="ct-text-block" ><span id="span-233-222" class="ct-span" >Baan reserveren</span></div></a></div></div></section><section id="section-22-17" class=" ct-section" ><div class="ct-section-inner-wrap"><div id="div_block-122-17" class="ct-div-block" ><div id="div_block-137-17" class="ct-div-block" ><img  id="image-173-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/Logo_Golfclub_Capelle_2023.png" class="ct-image" srcset="https://golfclubcapelle.nl/wp-content/uploads/2025/06/Logo_Golfclub_Capelle_2023.png 311w, https://golfclubcapelle.nl/wp-content/uploads/2025/06/Logo_Golfclub_Capelle_2023-222x300.png 222w" sizes="(max-width: 311px) 100vw, 311px" /><div id="div_block-174-17" class="ct-div-block" ><div id="div_block-176-17" class="ct-div-block" ><img  id="image-177-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/Group-10894.svg" class="ct-image" srcset="" sizes="(max-width: 18px) 100vw, 18px" /><div id="div_block-1309-17" class="ct-div-block" ><a id="link_text-186-17" class="ct-link-text" href="tel:0104422337"   >010 - 44 22 337</a><div id="text_block-1308-17" class="ct-text-block" >– Golfclub </div></div></div><div id="div_block-1314-17" class="ct-div-block" ><img  id="image-1315-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/Group-10894.svg" class="ct-image" srcset="" sizes="(max-width: 18px) 100vw, 18px" /><div id="div_block-1316-17" class="ct-div-block" ><a id="link_text-1317-17" class="ct-link-text" href="tel:0104422109"   >010 - 44 22 109</a><div id="text_block-1318-17" class="ct-text-block" >– Restaurant Mulligan </div></div></div><div id="div_block-180-17" class="ct-div-block" ><img  id="image-181-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/letter.svg" class="ct-image" srcset="" sizes="(max-width: 17px) 100vw, 17px" /><a id="link_text-239-17" class="ct-link-text" href="mailto:info@golfclubcapelle.nl"   >info@golfclubcapelle.nl</a></div><div id="div_block-183-17" class="ct-div-block" ><img  id="image-184-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/Group-10898.svg" class="ct-image" srcset="" sizes="(max-width: 17px) 100vw, 17px" /><div id="_rich_text-241-17" class="oxy-rich-text" ><p>’s-Gravenweg 311, 2905 LB<br />Capelle aan den IJssel (<a href="https://www.google.com/maps/place/Golfclub+Capelle/@51.9405828,4.5896781,17z/data=!3m1!4b1!4m6!3m5!1s0x47c5d2af4529ccb7:0x9076bd7bcaf03723!8m2!3d51.9405828!4d4.5922584!16s%2Fg%2F1z3t269_t?entry=ttu&amp;g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">route</a>)</p></div></div></div><div id="div_block-175-17" class="ct-div-block" ><div id="text_block-189-17" class="ct-text-block" >Volg ons op</div><div id="div_block-191-17" class="ct-div-block" ><a id="link-254-17" class="ct-link" href="https://www.facebook.com/Golfclub-Capelle-403231103825657/" target="_blank"  ><img  id="image-192-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/Facebook.svg" class="ct-image" srcset="" sizes="(max-width: 27px) 100vw, 27px" /></a><a id="link-255-17" class="ct-link" href="https://www.instagram.com/golfclubcapelle/" target="_blank"  ><img  id="image-193-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/Instagram.svg" class="ct-image" srcset="" sizes="(max-width: 27px) 100vw, 27px" /></a><a id="link-256-17" class="ct-link" href="https://www.linkedin.com/company/golfclubcapelle/?originalSubdomain=nl" target="_blank"  ><img  id="image-194-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/LinkedIn.svg" class="ct-image" srcset="" sizes="(max-width: 27px) 100vw, 27px" /></a></div></div></div><div id="div_block-138-17" class="ct-div-block collapsible-footer-container" ><div id="div_block-423-17" class="ct-div-block collapsible-footer-toggle" ><h5 id="headline-150-17" class="ct-headline">Baanstatus</h5><img  id="image-426-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/Path-9057.svg" class="ct-image header-icon" srcset="" sizes="(max-width: 5px) 100vw, 5px" /></div><div id="div_block-422-17" class="ct-div-block collapsible-content" ><div id="code_block-420-17" class="ct-code-block" >Woensdag 28 oktober 2026</div><div id="div_block-166-17" class="ct-div-block" ><div id="code_block-1267-17" class="ct-code-block footerBaanstatus" ><div class="collapsible-content status-container"><div class="status-row"><p>Baan</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/check.svg" alt="Baan"></div><div class="status-row"><p>Qualifying (1e 9 holes)</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/check.svg" alt="Qualifying (1e 9 holes)"></div><div class="status-row"><p>Qualifying (2e 9 holes)</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/check.svg" alt="Qualifying (2e 9 holes)"></div><div class="status-row"><p>Zomertees</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/check.svg" alt="Zomertees"></div><div class="status-row"><p>Zomergreens</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/check.svg" alt="Zomergreens"></div><div class="status-row"><p>Plaatsen</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/Kruis.svg" alt="Plaatsen"></div><div class="status-row"><p>Handicarts toegestaan</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/Kruis.svg" alt="Handicarts toegestaan"></div><div class="status-row"><p>Trackman Driving Range</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/check.svg" alt="Trackman Driving Range"></div><div class="status-row"><p>Trolleys toegestaan</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/Oranje.svg" alt="Trolleys toegestaan"></div><div class="status-row"><p>Putting green</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/check.svg" alt="Putting green"></div><div class="status-row"><p>Chipping green</p><div class="status-line"></div><img class="status-icon" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/check.svg" alt="Chipping green"></div></div></div></div><div id="div_block-161-17" class="ct-div-block particulars-popup-container" ><div id="div_block-495-17" class="ct-div-block " ><div id="text_block-497-17" class="ct-text-block" ><span id="span-1265-17" class="ct-span" > Baan open maar is erg nat. Handicarts niet toegestaan.</span> </div></div><div id="text_block-163-17" class="ct-text-block" ><u>Klik hier</u></div><div id="text_block-499-17" class="ct-text-block" >&nbsp;voor bijzonderheden</div></div></div></div><div id="div_block-139-17" class="ct-div-block" ><div id="div_block-257-17" class="ct-div-block collapsible-footer-container" ><div id="div_block-429-17" class="ct-div-block collapsible-footer-toggle" ><h5 id="headline-432-17" class="ct-headline">Gecertificeerd</h5><img  id="image-431-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/Path-9057.svg" class="ct-image header-icon" srcset="" sizes="(max-width: 5px) 100vw, 5px" /></div><div id="div_block-433-17" class="ct-div-block collapsible-content" ><div id="text_block-145-17" class="ct-text-block" ><span id="span-1280-17" class="ct-span" >Het GEO certificaat is het internationaal erkende milieukeurmerk van de Golf Environment Organization en wordt uitgereikt aan golfbanen die zorgvuldig omgaan met bronnen, milieu en natuur.</span></div><div id="div_block-276-17" class="ct-div-block" ><img  id="image-277-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/DEO.svg" class="ct-image" srcset="" sizes="(max-width: 46px) 100vw, 46px" /><img  id="image-278-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/06/Keurmerk.svg" class="ct-image" srcset="" sizes="(max-width: 42px) 100vw, 42px" /></div></div></div><div id="div_block-258-17" class="ct-div-block collapsible-footer-container" ><div id="div_block-486-17" class="ct-div-block collapsible-footer-toggle" ><h5 id="headline-261-17" class="ct-headline">Op de hoogte blijven?</h5><img  id="image-488-17" alt="" src="https://golfclubcapelle.nl/wp-content/uploads/2025/07/Path-9057.svg" class="ct-image header-icon" srcset="" sizes="(max-width: 5px) 100vw, 5px" /></div><div id="div_block-490-17" class="ct-div-block collapsible-content" ><div id="text_block-267-17" class="ct-text-block" ><span id="span-1278-17" class="ct-span" >Geen dagelijkse mails, wél leuke updates. Ook als je geen lid bent.</span></div><div id="shortcode-1262-17" class="ct-shortcode" >
+                <div class='gf_browser_unknown gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_3' ><style>#gform_wrapper_3[data-form-index="0"].gform-theme{--gf-color-primary: #204ce5;--gf-color-primary-rgb: 32, 76, 229;--gf-color-primary-contrast: #fff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #001AB3;--gf-color-primary-lighter: #527EFF;--gf-color-secondary: #fff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #112337;--gf-color-secondary-contrast-rgb: 17, 35, 55;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-out-ctrl-light-rgb: 17, 35, 55;--gf-color-out-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #585e6a;--gf-color-out-ctrl-dark-rgb: 88, 94, 106;--gf-color-out-ctrl-dark-darker: #112337;--gf-color-out-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-color-in-ctrl: #fff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #112337;--gf-color-in-ctrl-contrast-rgb: 17, 35, 55;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #204ce5;--gf-color-in-ctrl-primary-rgb: 32, 76, 229;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #001AB3;--gf-color-in-ctrl-primary-lighter: #527EFF;--gf-color-in-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-in-ctrl-light-rgb: 17, 35, 55;--gf-color-in-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #585e6a;--gf-color-in-ctrl-dark-rgb: 88, 94, 106;--gf-color-in-ctrl-dark-darker: #112337;--gf-color-in-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-radius: 3px;--gf-font-size-secondary: 14px;--gf-font-size-tertiary: 13px;--gf-icon-ctrl-number: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-select: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-search: url("data:image/svg+xml,%3Csvg width='640' height='640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-label-space-y-secondary: var(--gf-label-space-y-md-secondary);--gf-ctrl-border-color: #686e77;--gf-ctrl-size: var(--gf-ctrl-size-md);--gf-ctrl-label-color-primary: #112337;--gf-ctrl-label-color-secondary: #112337;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-md);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-md);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-md);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-md);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-md);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-md);--gf-ctrl-btn-border-color-secondary: #686e77;--gf-ctrl-btn-bg-color-hover-tertiary: #EBEBEB;--gf-field-img-choice-size: var(--gf-field-img-choice-size-md);--gf-field-img-choice-card-space: var(--gf-field-img-choice-card-space-md);--gf-field-img-choice-check-ind-size: var(--gf-field-img-choice-check-ind-size-md);--gf-field-img-choice-check-ind-icon-size: var(--gf-field-img-choice-check-ind-icon-size-md);--gf-field-pg-steps-number-color: rgba(17, 35, 55, 0.8);}</style><div id='gf_3' class='gform_anchor' tabindex='-1'></div>
+                        <div class='gform_heading'>
+                            <p class='gform_description'></p>
+                        </div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_3' id='gform_3'  action='/baan/scorekaart-handicap-tabel/#gf_3' data-formid='3' novalidate><div class='gf_invisible ginput_recaptchav3'  data-tabindex='0'><input id="input_758befbaf0db4f55f79edb12dec25966" class="gfield_recaptcha_response" type="hidden" name="input_758befbaf0db4f55f79edb12dec25966" value=""/></div>
+                        <div class='gform-body gform_body'><div id='gform_fields_3' class='gform_fields top_label form_sublabel_below description_below validation_below' data-column-layout='fill'><div id="field_3_1" class="gfield gfield--type-email gfield--input-type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible" data-group-id="4d8b535a" data-field-span="12"><label id='gfield_label_3_1' class='gfield_label gform-field-label' for='input_3_1'><span class='gform-field-label__text'>Mailadres</span><span class="gfield_required"><span class="gfield_required gfield_required_text">(Vereist)</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_3_1' type='email' value='' class='large'   placeholder='Mailadres' aria-required="true" aria-invalid="false"  />
+                        </div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <button type='submit' id='gform_submit_button_3' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' >Versturen</button> <input type='hidden' name='gform_ajax' value='form_id=3&amp;title=&amp;description=1&amp;tabindex=0&amp;theme=orbital&amp;styles=[]&amp;hash=4eb7154ad112c30c1b6f3350a7250fb2' />
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_3' value='iframe' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_3' id='gform_theme_3' value='orbital' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_3' id='gform_style_settings_3' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_3' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='3' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='EUR' value='85dDz4ZTowWv8TM8/vKwHKBoBAX+HtYbWnhY5FWWpKjoZ46YkWeIx06b8AFhSJIr65qv0xYqLt/pHjyv8c6vyv6gPg3JddmQfCJVjnCd3k9DLSE=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_3' value='WyJ7XCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcIjM2ZGQzYWNhNjQyMDE2NGJmNGQ5MmVjNzdiYzI2YTBhXCIsXCI3ZTRiMDc4ZGZlODFjNTI4NDFlZjZkZmNjNzI4NjAzN1wiLFwiNWU2YzBjMDliOGRkNWI3NWY0ZDRhMzMxM2NmYjE2YmFcIl0sXCJnZm9ybV90aGVtZVwiOlwiYzA0MzFmMWFhMzVjYTZmNTllODg5NTk3ZGU3Y2M4MTVcIixcImdmb3JtX3N0eWxlX3NldHRpbmdzXCI6XCJmZjQ4OTg3YzU0YzUxOGRiMDllOWI5MjUyNzI5ZmZlYVwiLFwiZm9ybV9pZFwiOlwiM2FjMDhkOTczYmZlOWIxZGJkN2EwZjkxZjk1Mzc4NGNcIixcInVybFwiOlwiNjA0MDRkOGJlODg0MDU1OGJmMzQ5MmU3OGJmOTBiOTNcIixcInN0YXRlX3RpbWVzdGFtcFwiOlwiOGQxZmE5Y2U5OTdlZWE3NTk3MWM3NmU5NzA1MGFkMGNcIn0iLCJhZWJjMjA0MjIyNTkxYmZjZTkyMDllNTBmMjU1OTI4OSIsMTc5MzE5ODU2N10=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_3' id='gform_target_page_number_3' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_3' id='gform_source_page_number_3' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_3' id='gform_ajax_frame_3' title='Dit iframe bevat de vereiste logica om Ajax aangedreven Gravity Forms te verwerken.'></iframe>
+		                <script>
+gform.initializeOnLoaded( function() {jQuery('#gform_ajax_frame_3').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_3');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_3').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_3').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_3').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_3').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_3').offset().top - mt); }, 50 );var current_page = jQuery('#gform_source_page_number_3').val();jQuery(document).trigger('gform_page_loaded', [3, current_page]);window['gf_submitting_3'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_3').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_3').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [3]);if(window.gform && gform.pagination && gform.pagination.removePageQueryArg){gform.pagination.removePageQueryArg(3);}window['gf_submitting_3'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_3').text());}else{jQuery('#gform_3').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "3", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_3" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_3";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_3" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 3, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script>
+</div><div id="div_block-299-17" class="ct-div-block" ><div id="_rich_text-301-17" class="oxy-rich-text" ><p><em>Golfclub Capelle verwerkt deze gegevens volgens de <span style="text-decoration: underline;"><a href="/privacy-verklaring">Privacy Verklaring.</a></span></em></p></div></div></div></div></div></div><div id="div_block-123-17" class="ct-div-block" ><div id="div_block-124-17" class="ct-div-block" ><a id="link_text-129-17" class="ct-link-text" href="/privacy-verklaring"   >Privacy verklaring</a><a id="link_text-130-17" class="ct-link-text" href="/algemene-voorwaarden"   >Algemene voorwaarden</a><a id="link_text-131-17" class="ct-link-text" href="/user-terms-and-conditions"   >Gebruikersvoorwaarden</a><a id="link_text-132-17" class="ct-link-text" href="/cookies"   >Cookies</a></div><div id="div_block-125-17" class="ct-div-block" ><div id="div_block-1284-17" class="ct-div-block" ><div id="code_block-1285-17" class="ct-code-block" >© 2026</div><div id="text_block-1286-17" class="ct-text-block" >Golfclub Capelle&nbsp; |&nbsp; &nbsp;All rights reserved&nbsp; &nbsp;|&nbsp; &nbsp;Webdesign &amp; ontwikkeling door:&nbsp;<a href="https://dunico.nl" target="_blank"><u>Dunico websites en reclame</u></a></div></div></div></div></div></section>	<!-- WP_FOOTER -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/twentytwentyfive-child/*","/wp-content/themes/oxygen-is-not-a-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id='script-6863ba308c41a-js' type='text/javascript'>
+(function($) {
+    
+    $('.menu-toggle, .close-menu').click( function(){
+        $('.mobile-menu').toggleClass('active');
+        $('.menu-toggle').toggleClass('close-icon');
+        $('body').toggleClass('disable-scroll');
+    });
+    
+})(jQuery);
+
+(function($) {
+        
+    $('.menu-custom .sub-menu').each( function(){
+        
+        let mainCategory = $(this).parent().find('a:first').html();
+        
+        $(this).prev().append('<i class="fa-solid fa-chevron-right"></i>')
+
+        $(this).prepend('<h3>' + mainCategory + '</h3>');
+        $(this).prepend('<div class="return-menu"><i class="fa-solid fa-chevron-left"></i> Terug</div>');
+    });
+    
+    $('.menu-custom .menu-item-has-children a').click( function(){
+        var checkSubmenu = $(this).next();
+
+        if ( $(checkSubmenu).hasClass("sub-menu")) {
+            $(this).next().addClass('active');
+        }
+    });
+    
+    $('.return-menu').click( function(){
+        $(this).closest('.sub-menu').removeClass('active');
+    });
+
+})(jQuery);
+</script>
+<script id='script-686f958f0016f-js' type='text/javascript'>
+let lastScrollTop = 0;
+const logo = document.querySelector('.logo');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (window.innerWidth <= 768) {
+      if (currentScroll > lastScrollTop) {
+        // Scroll naar beneden
+        logo.classList.add('shrink');
+      } else {
+        // Scroll naar boven
+        logo.classList.remove('shrink');
+      }
+    }
+    
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Safari fix
+});
+</script>
+<script id='script-689a08fbd5dd0-js' type='text/javascript'>
+/**
+* simplePagination.js v1.6
+* A simple jQuery pagination plugin.
+* http://flaviusmatis.github.com/simplePagination.js/
+*
+* Copyright 2012, Flavius Matis
+* Released under the MIT license.
+* http://flaviusmatis.github.com/license.html
+*/
+
+(function($){
+
+	var methods = {
+		init: function(options) {
+			var o = $.extend({
+				items: 1,
+				itemsOnPage: 1,
+				pages: 0,
+				displayedPages: 3,
+				edges: 2,
+				currentPage: 0,
+				useAnchors: true,
+				hrefTextPrefix: '#page-',
+				hrefTextSuffix: '',
+				prevText: '<img src="/wp-content/uploads/2025/08/paginate_left.svg"/>',
+				nextText: '<img src="/wp-content/uploads/2025/08/paginate_right.svg"/>',
+				ellipseText: '&hellip;',
+				ellipsePageSet: true,
+				cssStyle: 'light-theme',
+				listStyle: 'none',
+				labelMap: [],
+				selectOnClick: true,
+				nextAtFront: false,
+				invertPageOrder: false,
+				useStartEdge : true,
+				useEndEdge : true,
+				onPageClick: function(pageNumber, event) {
+					// Callback triggered when a page is clicked
+					// Page number is given as an optional parameter
+				},
+				onInit: function() {
+					// Callback triggered immediately after initialization
+				}
+			}, options || {});
+
+			var self = this;
+
+			o.pages = o.pages ? o.pages : Math.ceil(o.items / o.itemsOnPage) ? Math.ceil(o.items / o.itemsOnPage) : 1;
+			if (o.currentPage)
+				o.currentPage = o.currentPage - 1;
+			else
+				o.currentPage = !o.invertPageOrder ? 0 : o.pages - 1;
+			o.halfDisplayed = o.displayedPages / 2;
+
+			this.each(function() {
+				self.addClass(o.cssStyle + ' simple-pagination').data('pagination', o);
+				methods._draw.call(self);
+			});
+
+			o.onInit();
+
+			return this;
+		},
+
+		selectPage: function(page) {
+			methods._selectPage.call(this, page - 1);
+			return this;
+		},
+
+		prevPage: function() {
+			var o = this.data('pagination');
+		
+			if (!o.invertPageOrder) {
+				if (o.currentPage > 0) {
+					methods._selectPage.call(this, o.currentPage - 1);
+				}
+			} else {
+				if (o.currentPage < o.pages - 1) {
+					methods._selectPage.call(this, o.currentPage + 1);
+				}
+			}
+			return this;
+		},
+
+		nextPage: function() {
+			var o = this.data('pagination');
+			
+			if (!o.invertPageOrder) {
+				if (o.currentPage < o.pages - 1) {
+					methods._selectPage.call(this, o.currentPage + 1);
+				}
+			} else {
+				if (o.currentPage > 0) {
+					methods._selectPage.call(this, o.currentPage - 1);
+				}
+			}
+			return this;
+		},
+
+		getPagesCount: function() {
+			return this.data('pagination').pages;
+		},
+
+		setPagesCount: function(count) {
+			this.data('pagination').pages = count;
+		},
+
+		getCurrentPage: function () {
+			return this.data('pagination').currentPage + 1;
+		},
+
+		destroy: function(){
+			this.empty();
+			return this;
+		},
+
+		drawPage: function (page) {
+			var o = this.data('pagination');
+			o.currentPage = page - 1;
+			this.data('pagination', o);
+			methods._draw.call(this);
+			return this;
+		},
+
+		redraw: function(){
+			methods._draw.call(this);
+			return this;
+		},
+
+		disable: function(){
+			var o = this.data('pagination');
+			o.disabled = true;
+			this.data('pagination', o);
+			methods._draw.call(this);
+			return this;
+		},
+
+		enable: function(){
+			var o = this.data('pagination');
+			o.disabled = false;
+			this.data('pagination', o);
+			methods._draw.call(this);
+			return this;
+		},
+
+		updateItems: function (newItems) {
+			var o = this.data('pagination');
+			o.items = newItems;
+			o.pages = methods._getPages(o);
+			this.data('pagination', o);
+			methods._draw.call(this);
+		},
+
+		updateItemsOnPage: function (itemsOnPage) {
+			var o = this.data('pagination');
+			o.itemsOnPage = itemsOnPage;
+			o.pages = methods._getPages(o);
+			this.data('pagination', o);
+			methods._selectPage.call(this, 0);
+			return this;
+		},
+
+		getItemsOnPage: function() {
+			return this.data('pagination').itemsOnPage;
+		},
+
+		_draw: function() {
+			var	o = this.data('pagination'),
+				interval = methods._getInterval(o),
+				i,
+				tagName;
+
+			methods.destroy.call(this);
+
+			tagName = (typeof this.prop === 'function') ? this.prop('tagName') : this.attr('tagName');
+
+			var $panel = tagName === 'UL' ? this : $('<ul' + (o.listStyle ? ' class="' + o.listStyle + '"' : '') + '></ul>').appendTo(this);
+
+			// Generate Prev link
+			if (o.prevText) {
+				methods._appendItem.call(this, !o.invertPageOrder ? o.currentPage - 1 : o.currentPage + 1, {text: o.prevText, classes: 'prev'});
+			}
+
+			// Generate Next link (if option set for at front)
+			if (o.nextText && o.nextAtFront) {
+				methods._appendItem.call(this, !o.invertPageOrder ? o.currentPage + 1 : o.currentPage - 1, {text: o.nextText, classes: 'next'});
+			}
+
+			// Generate start edges
+			if (!o.invertPageOrder) {
+				if (interval.start > 0 && o.edges > 0) {
+					if(o.useStartEdge) {
+						var end = Math.min(o.edges, interval.start);
+						for (i = 0; i < end; i++) {
+							methods._appendItem.call(this, i);
+						}
+					}
+					if (o.edges < interval.start && (interval.start - o.edges != 1)) {
+						$panel.append('<li class="disabled"><span class="ellipse">' + o.ellipseText + '</span></li>');
+					} else if (interval.start - o.edges == 1) {
+						methods._appendItem.call(this, o.edges);
+					}
+				}
+			} else {
+				if (interval.end < o.pages && o.edges > 0) {
+					if(o.useStartEdge) {
+						var begin = Math.max(o.pages - o.edges, interval.end);
+						for (i = o.pages - 1; i >= begin; i--) {
+							methods._appendItem.call(this, i);
+						}
+					}
+
+					if (o.pages - o.edges > interval.end && (o.pages - o.edges - interval.end != 1)) {
+						$panel.append('<li class="disabled"><span class="ellipse">' + o.ellipseText + '</span></li>');
+					} else if (o.pages - o.edges - interval.end == 1) {
+						methods._appendItem.call(this, interval.end);
+					}
+				}
+			}
+
+			// Generate interval links
+			if (!o.invertPageOrder) {
+				for (i = interval.start; i < interval.end; i++) {
+					methods._appendItem.call(this, i);
+				}
+			} else {
+				for (i = interval.end - 1; i >= interval.start; i--) {
+					methods._appendItem.call(this, i);
+				}
+			}
+
+			// Generate end edges
+			if (!o.invertPageOrder) {
+				if (interval.end < o.pages && o.edges > 0) {
+					if (o.pages - o.edges > interval.end && (o.pages - o.edges - interval.end != 1)) {
+						$panel.append('<li class="disabled"><span class="ellipse">' + o.ellipseText + '</span></li>');
+					} else if (o.pages - o.edges - interval.end == 1) {
+						methods._appendItem.call(this, interval.end);
+					}
+					if(o.useEndEdge) {
+						var begin = Math.max(o.pages - o.edges, interval.end);
+						for (i = begin; i < o.pages; i++) {
+							methods._appendItem.call(this, i);
+						}
+					}
+				}
+			} else {
+				if (interval.start > 0 && o.edges > 0) {
+					if (o.edges < interval.start && (interval.start - o.edges != 1)) {
+						$panel.append('<li class="disabled"><span class="ellipse">' + o.ellipseText + '</span></li>');
+					} else if (interval.start - o.edges == 1) {
+						methods._appendItem.call(this, o.edges);
+					}
+
+					if(o.useEndEdge) {
+						var end = Math.min(o.edges, interval.start);
+						for (i = end - 1; i >= 0; i--) {
+							methods._appendItem.call(this, i);
+						}
+					}
+				}
+			}
+
+			// Generate Next link (unless option is set for at front)
+			if (o.nextText && !o.nextAtFront) {
+				methods._appendItem.call(this, !o.invertPageOrder ? o.currentPage + 1 : o.currentPage - 1, {text: o.nextText, classes: 'next'});
+			}
+
+			if (o.ellipsePageSet && !o.disabled) {
+				methods._ellipseClick.call(this, $panel);
+			}
+
+		},
+
+		_getPages: function(o) {
+			var pages = Math.ceil(o.items / o.itemsOnPage);
+			return pages || 1;
+		},
+
+		_getInterval: function(o) {
+			return {
+				start: Math.ceil(o.currentPage > o.halfDisplayed ? Math.max(Math.min(o.currentPage - o.halfDisplayed, (o.pages - o.displayedPages)), 0) : 0),
+				end: Math.ceil(o.currentPage > o.halfDisplayed ? Math.min(o.currentPage + o.halfDisplayed, o.pages) : Math.min(o.displayedPages, o.pages))
+			};
+		},
+
+		_appendItem: function(pageIndex, opts) {
+			var self = this, options, $link, o = self.data('pagination'), $linkWrapper = $('<li></li>'), $ul = self.find('ul');
+
+			pageIndex = pageIndex < 0 ? 0 : (pageIndex < o.pages ? pageIndex : o.pages - 1);
+
+			options = {
+				text: pageIndex + 1,
+				classes: ''
+			};
+
+			if (o.labelMap.length && o.labelMap[pageIndex]) {
+				options.text = o.labelMap[pageIndex];
+			}
+
+			options = $.extend(options, opts || {});
+
+			if (pageIndex == o.currentPage || o.disabled) {
+				if (o.disabled || options.classes === 'prev' || options.classes === 'next') {
+					$linkWrapper.addClass('disabled');
+				} else {
+					$linkWrapper.addClass('active');
+				}
+				$link = $('<span class="current page-link">' + (options.text) + '</span>');
+			} else {
+				if (o.useAnchors) {
+					$link = $('<a href="' + o.hrefTextPrefix + (pageIndex + 1) + o.hrefTextSuffix + '" class="page-link">' + (options.text) + '</a>');
+				} else {
+					$link = $('<span >' + (options.text) + '</span>');
+				}
+				$link.click(function(event){
+					return methods._selectPage.call(self, pageIndex, event);
+				});
+			}
+
+			if (options.classes) {
+				$link.addClass(options.classes);
+			}
+
+			$linkWrapper.append($link);
+
+			if ($ul.length) {
+				$ul.append($linkWrapper);
+			} else {
+				self.append($linkWrapper);
+			}
+		},
+
+		_selectPage: function(pageIndex, event) {
+			var o = this.data('pagination');
+			o.currentPage = pageIndex;
+			if (o.selectOnClick) {
+				methods._draw.call(this);
+			}
+			return o.onPageClick(pageIndex + 1, event);
+		},
+
+
+		_ellipseClick: function($panel) {
+			var self = this,
+				o = this.data('pagination'),
+				$ellip = $panel.find('.ellipse');
+			$ellip.addClass('clickable').parent().removeClass('disabled');
+			$ellip.click(function(event) {
+				if (!o.disable) {
+					var $this = $(this),
+						val = (parseInt($this.parent().prev().text(), 10) || 0) + 1;
+					$this
+						.html('<input type="number" min="1" max="' + o.pages + '" step="1" value="' + val + '">')
+						.find('input')
+						.focus()
+						.click(function(event) {
+							// prevent input number arrows from bubbling a click event on $ellip
+							event.stopPropagation();
+						})
+						.keyup(function(event) {
+							var val = $(this).val();
+							if (event.which === 13 && val !== '') {
+								// enter to accept
+								if ((val>0)&&(val<=o.pages))
+								methods._selectPage.call(self, val - 1);
+							} else if (event.which === 27) {
+								// escape to cancel
+								$ellip.empty().html(o.ellipseText);
+							}
+						})
+						.bind('blur', function(event) {
+							var val = $(this).val();
+							if (val !== '') {
+								methods._selectPage.call(self, val - 1);
+							}
+							$ellip.empty().html(o.ellipseText);
+							return false;
+						});
+				}
+				return false;
+			});
+		}
+
+	};
+
+	$.fn.pagination = function(method) {
+
+		// Method calling logic
+		if (methods[method] && method.charAt(0) != '_') {
+			return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+		} else if (typeof method === 'object' || !method) {
+			return methods.init.apply(this, arguments);
+		} else {
+			$.error('Method ' +  method + ' does not exist on jQuery.pagination');
+		}
+
+	};
+
+})(jQuery);
+</script>
+<script id='script-6896038e56236-js' type='text/javascript'>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.querySelector(".toggleOpeningTimes");
+  const openingDiv = document.querySelector(".openingTimes");
+  const toggleIcon = document.querySelector(".toggleImage");
+
+  toggleBtn.addEventListener("click", function () {
+    if (window.innerWidth <= 768) {
+      openingDiv.classList.toggle("open");
+      toggleIcon.classList.toggle("rotated");
+    }
+  });
+});
+
+</script>
+<script id='script-68652c51c57da-js' type='text/javascript'>
+document.addEventListener('DOMContentLoaded', function () {
+    const videoInner = document.querySelector('.videoInner');
+    const video = document.querySelector('#video');
+  
+    function hideOverlay() {
+        videoInner.classList.add('hide-after');
+    }
+
+    video.addEventListener('click', hideOverlay);
+ 
+    videoInner.addEventListener('click', function (e) {
+        const clickTarget = document.elementFromPoint(e.clientX, e.clientY);
+        
+        if (clickTarget === videoInner) {
+          // Start de video
+          video.play();
+        
+          // Verberg de ::after pseudo-element
+          videoInner.classList.add('hide-after');
+        }
+    });
+    
+    
+
+    // Detecteer of het GEEN mobiel apparaat is
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+    if (!isMobile) {
+        // Alleen op desktop: voeg controls toe
+        video.setAttribute('controls', 'controls');
+    } else if (isMobile) {
+    video.addEventListener('loadedmetadata', function () {
+      // Zet het frame naar 0.1 maar pauzeer niet hier!
+      // Hiermee zorg je dat het eerste frame geladen wordt zonder af te spelen.
+      video.currentTime = 0.1;
+    });
+
+    // Verwijder de 'timeupdate' pauze, dat blokkeert soms play na klik.
+    // Video pauzeer je alleen als dat nodig is, bijv. via UI events.
+
+    // Voeg een event toe om op klik af te spelen:
+    video.addEventListener('click', function () {
+      if (video.paused) {
+        video.play().catch((e) => {
+          // Fallback of debug info
+          console.log('Play failed:', e);
+        });
+      } else {
+        video.pause();
+      }
+    });
+  }
+});
+</script>
+<script id='script-6866288824f00-js' type='text/javascript'>
+document.addEventListener('DOMContentLoaded', function () {
+  const trigger = document.querySelector('.particulars-popup-container');
+  const popup = document.getElementById('div_block-495-17');
+
+  trigger.addEventListener('click', function () {
+    // Toggle popup visibility
+    if (popup.style.display === 'block') {
+      popup.style.display = 'none';
+    } else {
+      popup.style.display = 'block';
+    }
+  });
+});
+</script>
+<script id='script-686583a9bcaf4-js' type='text/javascript'>
+document.addEventListener("DOMContentLoaded", function () {
+  const containers = document.querySelectorAll(".collapsible-footer-container");
+
+  containers.forEach(function (container) {
+    const toggle = container.querySelector(".collapsible-footer-toggle");
+    toggle.addEventListener("click", function () {
+        // Close all containers
+        containers.forEach(function (c) {
+            if (c !== container) {
+                c.classList.remove("open");
+            }
+        });
+        
+        container.classList.toggle("open");
+    });
+  });
+});
+</script>
+<script>jQuery(document).on('click','a[href*="#"]',function(t){if(jQuery(t.target).closest('.wc-tabs').length>0){return}if(jQuery(this).is('[href="#"]')||jQuery(this).is('[href="#0"]')||jQuery(this).is('[href*="replytocom"]')){return};if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=jQuery(this.hash);(e=e.length?e:jQuery("[name="+this.hash.slice(1)+"]")).length&&(t.preventDefault(),jQuery("html, body").animate({scrollTop:e.offset().top-0},200))}});</script><style>.ct-FontAwesomeicon-angle-down{width:0.64285714285714em}</style>
+<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"><defs><symbol id="FontAwesomeicon-angle-down" viewBox="0 0 18 28"><title>angle-down</title><path d="M16.797 11.5c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-7.281-7.281c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.219-0.156 0.359-0.156 0.125 0 0.266 0.063 0.359 0.156l6.141 6.141 6.141-6.141c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l0.781 0.781c0.094 0.094 0.156 0.234 0.156 0.359z"/></symbol></defs></svg><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"><defs><symbol id="Lineariconsicon-magnifier" viewBox="0 0 20 20"><title>magnifier</title><path class="path1" d="M18.869 19.162l-5.943-6.484c1.339-1.401 2.075-3.233 2.075-5.178 0-2.003-0.78-3.887-2.197-5.303s-3.3-2.197-5.303-2.197-3.887 0.78-5.303 2.197-2.197 3.3-2.197 5.303 0.78 3.887 2.197 5.303 3.3 2.197 5.303 2.197c1.726 0 3.362-0.579 4.688-1.645l5.943 6.483c0.099 0.108 0.233 0.162 0.369 0.162 0.121 0 0.242-0.043 0.338-0.131 0.204-0.187 0.217-0.503 0.031-0.706zM1 7.5c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5-6.5-2.916-6.5-6.5z"/></symbol><symbol id="Lineariconsicon-cross" viewBox="0 0 20 20"><title>cross</title><path class="path1" d="M10.707 10.5l5.646-5.646c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.646 5.646-5.646-5.646c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l5.646 5.646-5.646 5.646c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l5.646-5.646 5.646 5.646c0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146c0.195-0.195 0.195-0.512 0-0.707l-5.646-5.646z"/></symbol></defs></svg>			
+			<script type="text/javascript">
+			jQuery(document).ready(oxygen_init_search);
+			function oxygen_init_search($) {
+
+				  
+				$('body').on( 'click', '.oxy-header-search_toggle', function(e) {           
+						e.preventDefault();
+						let $toggle = $(this);
+						let $form = $toggle.closest('.oxy-header-search').find('.oxy-header-search_form');
+						
+						if (!$form.hasClass('visible')) {
+							showSearch($toggle);
+							
+						} else {
+							hideSearch($toggle);
+						}
+					}
+				);
+				
+				// Close search when clicking outside
+				$(document).on('click', function(e) {
+					let $target = $(e.target);
+					let $search = $('.oxy-header-search');
+					
+					// If click is outside the search component and search is visible, close it
+					if (!$target.closest('.oxy-header-search').length && $search.find('.oxy-header-search_form').hasClass('visible')) {
+						hideSearch($search.find('.oxy-header-search_toggle-open'));
+					}
+				});
+				
+				// Close search when focus leaves the entire search component
+				$('.oxy-header-search').on('focusout', function(e) {
+					let $search = $(this);
+					let $form = $search.find('.oxy-header-search_form');
+					
+					// Only close if search is visible
+					if (!$form.hasClass('visible')) {
+						return;
+					}
+					
+					// Use setTimeout to allow the browser to set the new activeElement
+					setTimeout(function() {
+						// Check if the newly focused element is NOT within the search component
+						if (!$search.find(document.activeElement).length) {
+							hideSearch($search.find('.oxy-header-search_toggle-open'));
+						}
+					}, 0);
+				});
+				
+				// Pressing ESC will close search
+				$(document).on('keyup', function(e) {
+					if (e.keyCode === 27) {
+						let $search = $('.oxy-header-search');
+						let $form = $search.find('.oxy-header-search_form');
+						
+						if ($form.hasClass('visible')) {
+							hideSearch($search.find('.oxy-header-search_toggle-open'));
+						}
+					}
+				});
+				
+				
+				// Helper function to show the search form.
+				function showSearch(toggle) {
+					
+					let $form = toggle.closest('.oxy-header-search').find('.oxy-header-search_form');
+					$form.removeAttr('aria-hidden').addClass('visible');
+					
+					// Update aria-expanded
+					toggle.closest('.oxy-header-search').find('.oxy-header-search_toggle-open').attr('aria-expanded', 'true');
+
+					if (true === toggle.closest('.oxy-header-search').find('.oxy-header-search_toggle-open').data('prevent-scroll')) {
+						$('html,body').addClass('oxy-header-search_prevent-scroll');
+					}
+
+					setTimeout(
+					function() {
+						toggle.closest('.oxy-header-search').find('input[type=search]').focus();
+					}, 300);
+
+				}
+
+				// Helper function to hide the search form.
+				function hideSearch(toggle) {
+
+					// Move focus back to button first
+					let toggleElement = toggle.closest('.oxy-header-search').find('.oxy-header-search_toggle-open').get(0);
+					if (toggleElement) {
+						toggleElement.focus({ preventScroll: true });
+					}
+
+					toggle.closest('.oxy-header-search').find('.oxy-header-search_toggle-open').attr('aria-expanded', 'false');
+
+					let $form = toggle.closest('.oxy-header-search').find('.oxy-header-search_form');
+					$form.attr('aria-hidden', 'true');
+					$form.removeClass('visible');
+					$('html,body').removeClass('oxy-header-search_prevent-scroll');
+
+				}
+
+			};
+			
+		</script>
+
+		<link rel='stylesheet' id='gravity_forms_theme_reset-css' href='https://golfclubcapelle.nl/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css?ver=3.2.0' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_foundation-css' href='https://golfclubcapelle.nl/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css?ver=3.2.0' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_framework-css' href='https://golfclubcapelle.nl/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min.css?ver=3.2.0' media='all' />
+<link rel='stylesheet' id='gravity_forms_orbital_theme-css' href='https://golfclubcapelle.nl/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min.css?ver=3.2.0' media='all' />
+<script id="gforms_recaptcha_recaptcha-js-extra">
+var gforms_recaptcha_recaptcha_strings = {"nonce":"07412909dd","disconnect":"Disconnecting","change_connection_type":"Resetting","spinner":"https://golfclubcapelle.nl/wp-content/plugins/gravityforms/images/spinner.svg","connection_type":"enterprise","disable_badge":"","change_connection_type_title":"Change Connection Type","change_connection_type_message":"Changing the connection type will delete your current settings.  Do you want to proceed?","disconnect_title":"Disconnect","disconnect_message":"Disconnecting from reCAPTCHA will delete your current settings.  Do you want to proceed?","site_key":"6LeIx1csAAAAAFkTdm4y7FEh6CyqggRZUyXCrfgY","key_type":"","ajaxurl":"https://golfclubcapelle.nl/wp-admin/admin-ajax.php"};
+//# sourceURL=gforms_recaptcha_recaptcha-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="gforms_recaptcha_recaptcha-js" src="https://www.google.com/recaptcha/enterprise.js?render=6LeIx1csAAAAAFkTdm4y7FEh6CyqggRZUyXCrfgY&#038;ver=2.2.2"></script>
+<script data-wp-strategy="defer" defer id="gforms_recaptcha_frontend-js" src="https://golfclubcapelle.nl/wp-content/plugins/gravityformsrecaptcha/js/frontend.min.js?ver=2.2.2"></script>
+<script id="wp-dom-ready-js" src="https://golfclubcapelle.nl/wp-includes/js/dist/dom-ready.min.js?ver=3fe927cab37bf38d6a23"></script>
+<script id="wp-hooks-js" src="https://golfclubcapelle.nl/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://golfclubcapelle.nl/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-10-26 15:32:17+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"nl"},"Notifications":["Meldingen"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+//# sourceURL=wp-a11y-js-translations
+</script>
+<script id="wp-a11y-js" src="https://golfclubcapelle.nl/wp-includes/js/dist/a11y.min.js?ver=31c6cec5a4ff7aff483d"></script>
+<script id="gform_json-js" defer='defer' src="https://golfclubcapelle.nl/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=3.2.0"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"wdOffset":1,"helpTextShort":"Press F1 for help","helpText":"Press the arrow keys to navigate by day, PageUp and PageDown to navigate by month, Alt+PageUp and Alt+PageDown to navigate by year, or Escape to cancel.","openOnFocusHelpText":"Press Down arrow to browse the calendar, or Escape to close.","tooltipTxt":"Press Escape to cancel","disabledTxt":"Uitgeschakeld","markedTxt":"Geselecteerd","prevTxt":"Vorige","nextTxt":"Volgende","monthTxt":"Maand","yearTxt":"Jaar","months":["Januari","Februari","Maart","April","May","Juni","Juli","Augustus","September","Oktober","November","December"],"days":[{"s":"S","l":"Zondag"},{"s":"M","l":"Maandag"},{"s":"T","l":"Dinsdag"},{"s":"W","l":"Woensdag"},{"s":"T","l":"Donderdag"},{"s":"F","l":"Vrijdag"},{"s":"S","l":"Zaterdag"}]}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"Dit bestandstype is niet toegestaan. Moet \u00e9\u00e9n van de volgende zijn:","file_uploaded":"Bestand ge\u00fcpload","delete_file":"Dit bestand verwijderen","in_progress":"in behandeling","file_exceeds_limit":"Bestand overschrijdt limiet bestandsgrootte","illegal_extension":"Dit type bestand is niet toegestaan.","max_reached":"Maximale aantal bestanden bereikt","unknown_error":"Er was een probleem bij het opslaan van het bestand op de server","currently_uploading":"Wacht tot het uploaden is voltooid","cancel":"Annuleren","cancel_upload":"Deze upload annuleren","cancelled":"Geannuleerd","error":"Fout","message":"Bericht"},"vars":{"images_url":"https://golfclubcapelle.nl/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"Euro","symbol_left":"","symbol_right":"&#8364;","symbol_padding":" ","thousand_separator":".","decimal_separator":",","decimals":2,"code":"EUR"},"base_url":"https://golfclubcapelle.nl/wp-content/plugins/gravityforms","number_formats":[],"version_hash":"a072876bc6a90b0426311f63f8d16559","countries":{"AF":"Afghanistan","AX":"Aland-eilanden","AL":"Albani\u00eb","DZ":"Algerije","AS":"Amerikaans Samoa","AD":"Andorra","AO":"Angola","AI":"Anguilla","AQ":"Antarctica","AG":"Antigua en Barbuda","AR":"Argentini\u00eb","AM":"Armeni\u00eb","AW":"Aruba","AU":"Australi\u00eb","AT":"Oostenrijk","AZ":"Azerbeidzjan","BS":"Bahama's","BH":"Bahrein","BD":"Bangladesh","BB":"Barbados","BY":"Wit-Rusland","BE":"Belgi\u00eb","BZ":"Belize","BJ":"Benin","BM":"Bermuda","BT":"Bhutan","BO":"Bolivia","BQ":"Bonaire, Sint Eustatius en Saba","BA":"Bosni\u00eb en Herzegovina","BW":"Botswana","BV":"Bouvet eiland","BR":"Brazili\u00eb","IO":"Brits-Indisch oceaan gebied","BN":"Brunei Darussalam","BG":"Bulgarije","BF":"Burkina Faso","BI":"Burundi","CV":"Kaapverdi\u00eb","KH":"Cambodja","CM":"Kameroen","CA":"Canada","KY":"Kaaimaneilanden","CF":"Centraal-Afrikaanse Republiek","TD":"Tsjaad","CL":"Chili","CN":"China","CX":"Kersteiland","CC":"Cocoseilanden","CO":"Colombia","KM":"Comoren","CD":"Congo, Democratische Republiek","CG":"Congo","CK":"Cook eilanden","CR":"Costa Rica","CI":"Ivoorkust","HR":"Kroati\u00eb","CU":"Cuba","CW":"Cura\u00e7ao","CY":"Cyprus","CZ":"Tsjechi\u00eb","DK":"Denemarken","DJ":"Djibouti","DM":"Dominica","DO":"Dominicaanse Republiek","EC":"Ecuador","EG":"Egypte","SV":"El Salvador","GQ":"Equatoriaal-Guinea","ER":"Eritrea","EE":"Estland","SZ":"Eswatini","ET":"Ethiopi\u00eb","FK":"Falkland eilanden","FO":"Faer\u00f6er","FJ":"Fiji","FI":"Finland","FR":"Frankrijk","GF":"Frans Guyana","PF":"Frans-Polynesi\u00eb","TF":"Franse zuidelijke gebieden","GA":"Gabon","GM":"Gambia","GE":"Georgi\u00eb","DE":"Duitsland","GH":"Ghana","GI":"Gibraltar","GR":"Griekenland","GL":"Groenland","GD":"Grenada","GP":"Guadeloupe","GU":"Guam","GT":"Guatemala","GG":"Guernsey","GN":"Guinee","GW":"Guinee-Bissau","GY":"Guyana","HT":"Ha\u00efti","HM":"Heard Eiland en McDonald Eilanden","VA":"Vaticaanstad","HN":"Honduras","HK":"Hong Kong","HU":"Hongarije","IS":"IJsland","IN":"India","ID":"Indonesi\u00eb","IR":"Iran","IQ":"Irak","IE":"Ierland","IM":"Man","IL":"Isra\u00ebl","IT":"Itali\u00eb","JM":"Jamaica","JP":"Japan","JE":"Jersey","JO":"Jordani\u00eb","KZ":"Kazachstan","KE":"Kenia","KI":"Kiribati","KP":"Korea, Democratische Volksrepubliek","KR":"Korea, Republiek van","KW":"Koeweit","KG":"Kirgizi\u00eb","LA":"Lao Democratische Volksrepubliek","LV":"Letland","LB":"Libanon","LS":"Lesotho","LR":"Liberia","LY":"Libi\u00eb","LI":"Liechtenstein","LT":"Litouwen","LU":"Luxemburg","MO":"Macau","MG":"Madagaskar","MW":"Malawi","MY":"Maleisi\u00eb","MV":"Maldiven","ML":"Mali","MT":"Malta","MH":"Marshalleilanden","MQ":"Martinique","MR":"Mauritani\u00eb","MU":"Mauritius","YT":"Mayotte","MX":"Mexico","FM":"Micronesia","MD":"Moldavi\u00eb","MC":"Monaco","MN":"Mongoli\u00eb","ME":"Montenegro","MS":"Montserrat","MA":"Marokko","MZ":"Mozambique","MM":"Myanmar","NA":"Namibi\u00eb","NR":"Nauru","NP":"Nepal","NL":"Nederland","NC":"Nieuw-Caledoni\u00eb","NZ":"Nieuw-Zeeland","NI":"Nicaragua","NE":"Niger","NG":"Nigeria","NU":"Niue","NF":"Norfolk eiland","MK":"Noord-Macedoni\u00eb","MP":"Noordelijke Marianen","NO":"Noorwegen","OM":"Oman","PK":"Pakistan","PW":"Palau","PS":"Palestina, Staat","PA":"Panama","PG":"Papoea-Nieuw-Guinea","PY":"Paraguay","PE":"Peru","PH":"Filipijnen","PN":"Pitcairn","PL":"Polen","PT":"Portugal","PR":"Puerto Rico","QA":"Qatar","RE":"R\u00e9union","RO":"Roemeni\u00eb","RU":"Russische Federatie","RW":"Rwanda","BL":"Saint Barth\u00e9lemy","SH":"Sint-Helena, Hemelvaart en Tristan da Cunha","KN":"Saint Kitts en Nevis","LC":"Saint Lucia","MF":"Sint Maarten","PM":"Saint Pierre en Miquelon","VC":"Saint Vincent en de Grenadines","WS":"Samoa","SM":"San Marino","ST":"Sao Tom\u00e9 en Principe","SA":"Saoedi-Arabi\u00eb","SN":"Senegal","RS":"Servi\u00eb","SC":"Seychellen","SL":"Sierra Leone","SG":"Singapore","SX":"Sint Maarten","SK":"Slowakije","SI":"Sloveni\u00eb","SB":"Salomonseilanden","SO":"Somali\u00eb","ZA":"Zuid-Afrika","GS":"Ji\u017en\u00ed Georgie a Ji\u017en\u00ed Sandwichovy ostrovy","SS":"Zuid Soedan","ES":"Spanje","LK":"Sri Lanka","SD":"Soedan","SR":"Suriname","SJ":"Spitsbergen en Jan Mayen","SE":"Zweden","CH":"Zwitserland","SY":"Arabische Republiek Syri\u00eb","TW":"Taiwan","TJ":"Tadzjikistan","TZ":"Tanzania, de Verenigde Republiek van","TH":"Thailand","TL":"Timor-Leste","TG":"Togo","TK":"Tokelau","TO":"Tonga","TT":"Trinidad en Tobago","TN":"Tunesi\u00eb","TR":"Turkije","TM":"Turkmenistan","TC":"Turks- en Caicoseilanden","TV":"Tuvalu","UG":"Oeganda","UA":"Oekra\u00efne","AE":"Verenigde Arabische Emiraten","GB":"Verenigd Koninkrijk","US":"Verenigde Staten","UY":"Uruguay","UM":"Kleine eilanden van de Verenigde Staten","UZ":"Oezbekistan","VU":"Vanuatu","VE":"Venezuela","VN":"Vietnam","VG":"Britse Maagdeneilanden","VI":"Amerikaanse Maagdeneilanden","WF":"Wallis en Futuna","EH":"Westelijke Sahara","YE":"Yemen","ZM":"Zambia","ZW":"Zimbabwe"},"strings":{"newRowAdded":"Nieuwe rij toegevoegd.","rowRemoved":"Rij verwijderd","formSaved":"Het formulier is opgeslagen. De inhoud bevat de link om terug te keren en het formulier in te vullen."}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script id="gform_gravityforms-js" defer='defer' src="https://golfclubcapelle.nl/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=3.2.0"></script>
+<script id="gform_placeholder-js" defer='defer' src="https://golfclubcapelle.nl/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=3.2.0"></script>
+<script id="gform_gravityforms_utils-js" defer='defer' src="https://golfclubcapelle.nl/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=d7e103405223e60d2719f4c330fd11cf"></script>
+<script id="gform_gravityforms_theme_vendors-js" defer='defer' src="https://golfclubcapelle.nl/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=ddae8d403393f0e5eaeedeb511ce46e0"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"a072876bc6a90b0426311f63f8d16559"},"ajax":{"ajaxurl":"https://golfclubcapelle.nl/wp-admin/admin-ajax.php","ajax_submission_nonce":"b70a868417","i18n":{"step_announcement":"Stap %1$s van %2$s, %3$s","unknown_error":"Er was een onbekende fout bij het verwerken van je aanvraag. Probeer het opnieuw.","error_403":"De aanvraag is om onbekende veiligheidsredenen geblokkeerd (403-fout). Verwijder alle code-achtige tekst (scripts of databasequery&#039;s) en probeer het opnieuw."}}}},"fields":{"repeater":{"strings":{"item_added":"added.","item_removed":"removed.","renumbered":"and above renumbered.","max_items":"You have reached the maximum number of repeated items.","confirm_delete":"Are you sure you want to remove {label} {number}?"}}},"hmr_dev":"","public_path":"https://golfclubcapelle.nl/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"aa57daf98c"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script id="gform_gravityforms_theme-js" defer='defer' src="https://golfclubcapelle.nl/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=97219a00e44efe96fe680a9fde3911cf"></script>
+<script type='text/javascript'>var gfZeroSpamConfig = {"forms":[{"ajaxUrl":"https:\/\/golfclubcapelle.nl\/wp-admin\/admin-ajax.php","fallbackToken":"M3wxNzkzMTk4NTY3fDE3OTM4MDMzNjd8ZWZhOTBjZWQzMjMwNjBmYzYyMGFmNThiMDYwNzZlNTh8MQ.NTA4ODUxZGMwZjgyZjIyOWVhMjIyMDNhOTQ1Nzc4ZTliZTE3OWE4ZGQ0MjczZjExNmZhZDA4OGVlZmU5YzIzNQ","formId":3,"timeout":3000}],"debug":true};</script>
+<script id="gf-zero-spam-js" defer='defer' src="https://golfclubcapelle.nl/wp-content/plugins/gravity-forms-zero-spam/dist/js/gf-zero-spam.js?ver=1789030060"></script>
+<script id="extras_megamenu-js" src="https://golfclubcapelle.nl/wp-content/plugins/oxyextras/components/assets/accessible-megamenu.js?ver=1.0.0"></script>
+<script id="extras_megamenu-init-js" src="https://golfclubcapelle.nl/wp-content/plugins/oxyextras/components/assets/megamenu-init.js?ver=1.0.2"></script>
+<script type="text/javascript" id="ct-footer-js"></script><style type="text/css" id="ct_code_block_css_100959">.dashboard-hover-wrapper {
+  position: relative;
+  padding: 10px 0;
+}
+
+.dashboardLink{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    gap: 12px;
+    color: #f4f5f0;
+}
+
+.dashboardLinkIcon{
+  width: 19px;
+  height: 19px;
+}
+
+.dashboard-hover-wrapper:hover .dashboard-hover-menu {
+  display: block;
+}
+
+.dashboard-hover-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.dashboard-hover-menu a {
+  transition-duration: .2s;
+  display: block;
+  color: #333;
+  padding: 0.25rem 0;
+}
+
+.dashboard-hover-menu a:hover {
+  color: #53ab55;
+}</style>
+<style type="text/css" id="ct_code_block_css_101259">.dashboard-hover-wrapper {
+  position: relative;
+  padding: 10px 0;
+}
+
+.dashboardLink{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    gap: 12px;
+    color: #f4f5f0;
+}
+
+.dashboardLinkIcon{
+  width: 19px;
+  height: 19px;
+}
+
+@media only screen and (max-width: 992px) {
+  .dashboardLinkIcon{
+            width: 23px;
+        height: 22px;
+  }
+}
+
+
+.dashboard-hover-wrapper:hover .dashboard-hover-menu {
+  display: block;
+}
+
+.dashboard-hover-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.dashboard-hover-menu a {
+  transition-duration: .2s;
+  display: block;
+  color: #333;
+  padding: 0.25rem 0;
+}
+
+.dashboard-hover-menu a:hover {
+  color: #53ab55;
+}</style>
+<style type="text/css" id="ct_code_block_css_100390">overflow: -moz-scrollbars-vertical; 
+overflow-y: scroll;</style>
+<style type="text/css" id="ct_code_block_css_101261">.mobile {
+  font-size: 15px;
+}
+
+.dashboard-hover-wrapper {
+  position: relative;
+  padding: 10px 0;
+}
+
+.dashboardLink{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    gap: 12px;
+    color: #f4f5f0;
+}
+
+.dashboardLinkIcon{
+  width: 19px;
+  height: 19px;
+}
+
+@media only screen and (max-width: 992px) {
+  .dashboardLinkIcon{
+            width: 23px;
+        height: 22px;
+  }
+}
+
+
+.dashboard-hover-wrapper:hover .dashboard-hover-menu {
+  display: block;
+}
+
+.dashboard-hover-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.dashboard-hover-menu a {
+  transition-duration: .2s;
+  display: block;
+  color: #333;
+  padding: 0.25rem 0;
+}
+
+.dashboard-hover-menu a:hover {
+  color: #53ab55;
+}</style>
+<style type="text/css" id="ct_code_block_css_5">.oxel-breadcrumb {
+	display: block !important;
+}
+
+
+.oxel-breadcrumb ol {
+	list-style-type: none;
+	padding-inline-start: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.oxel-breadcrumb ol li {
+	padding: 4px;
+	 color: #023046;
+}
+
+.oxel-breadcrumb ol li a {
+      color: #023046;
+      text-decoration: none;
+}
+
+.oxel-breadcrumb ol li:not(:last-child) a {
+	margin-right: 4px;
+}
+
+.oxel-breadcrumb ol li:last-child span:last-child {
+	display: none;
+}</style>
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 3) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "3", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_3" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_3";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_3" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 3, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+<!-- /WP_FOOTER --> 
+</body>
+</html>

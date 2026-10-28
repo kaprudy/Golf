@@ -1,0 +1,832 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+<meta charset="utf-8">
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="google-site-verification" content="BXI4an-Gtcy5T1902P6eAvHMclzeOyDA81ishrvjyhY" />
+<meta name="p:domain_verify" content="e10fa93c8a37a22b121fe267b3025baf"/>
+<title>Baanplattegrond, scorekaarten &amp; handicaptabellen - Golfbaan Tespelduyn</title><style id="perfmatters-used-css">:root{--clonable-bg:rgba(255,90,31,1);--clonable-color:#f0f0f1;--clonable-img-height:14px;--clonable-img-width:14px;--clonable-flag-width:18px;--clonable-flag-height:11px}.gform_legacy_markup_wrapper{margin-bottom:16px;margin-top:16px;max-width:100%}.gform_legacy_markup_wrapper form{margin:0 auto;max-width:100%;text-align:left}.gform_legacy_markup_wrapper *,.gform_legacy_markup_wrapper ::after,.gform_legacy_markup_wrapper ::before{box-sizing:border-box !important}.gform_legacy_markup_wrapper h1,.gform_legacy_markup_wrapper h2,.gform_legacy_markup_wrapper h3{background:0 0;border:none;font-weight:400}.gform_legacy_markup_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]){font-family:inherit;font-size:inherit;letter-spacing:normal;padding:5px 4px}.gform_legacy_markup_wrapper input[type=image]{border:none !important;padding:0 !important;width:auto !important}.gform_legacy_markup_wrapper ul.gform_fields{display:block;list-style-type:none;margin:0 !important}.gform_legacy_markup_wrapper ul,html>body .entry ul{text-indent:0}.gform_legacy_markup_wrapper form li,.gform_legacy_markup_wrapper li{list-style:none !important;list-style-image:none !important;list-style-type:none !important;margin-left:0 !important;overflow:visible}.gform_legacy_markup_wrapper ul li.gfield{clear:both}.gform_legacy_markup_wrapper ul.gfield_checkbox li,.gform_legacy_markup_wrapper ul.gfield_radio li{overflow:hidden}.gform_legacy_markup_wrapper ul li::after,.gform_legacy_markup_wrapper ul li::before,.gform_legacy_markup_wrapper ul.gform_fields{margin:0;overflow:visible;padding:0}.gform_legacy_markup_wrapper .gform_heading{margin-bottom:18px;width:100%}.gform_legacy_markup_wrapper .field_sublabel_above div[class*=gfield_date_].ginput_container label,.gform_legacy_markup_wrapper .field_sublabel_below div[class*=gfield_date_].ginput_container label{text-align:center;width:3rem}.gform_legacy_markup_wrapper .field_sublabel_above div[class*=gfield_time_].ginput_container label,.gform_legacy_markup_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label{text-align:center;width:48px}.gform_legacy_markup_wrapper label.gfield_label,.gform_legacy_markup_wrapper legend.gfield_label{font-size:inherit;font-weight:700}.gform_legacy_markup_wrapper .top_label .gfield_label,.gform_legacy_markup_wrapper legend.gfield_label{clear:both;display:-moz-inline-stack;display:inline-block;line-height:1.3}.gform_legacy_markup_wrapper .field_sublabel_above .ginput_complex.ginput_container label,.gform_legacy_markup_wrapper .field_sublabel_above div[class*=gfield_date_].ginput_container label,.gform_legacy_markup_wrapper .field_sublabel_above div[class*=gfield_time_].ginput_container label,.gform_legacy_markup_wrapper .field_sublabel_below .ginput_complex.ginput_container label,.gform_legacy_markup_wrapper .field_sublabel_below div[class*=gfield_date_].ginput_container label,.gform_legacy_markup_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label{display:block;font-size:.813em;letter-spacing:.5pt;white-space:nowrap}.gform_legacy_markup_wrapper ul.gfield_checkbox li label,.gform_legacy_markup_wrapper ul.gfield_radio li label{cursor:pointer;display:-moz-inline-stack;display:inline-block;letter-spacing:inherit;vertical-align:middle}.gform_legacy_markup_wrapper .field_sublabel_below .ginput_complex.ginput_container label,.gform_legacy_markup_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label{margin:1px 0 9px 1px}body .gform_legacy_markup_wrapper .top_label div.ginput_container{margin-top:8px}body .gform_legacy_markup_wrapper ul li.field_description_below div.ginput_container_checkbox,body .gform_legacy_markup_wrapper ul li.field_description_below div.ginput_container_radio{margin-bottom:0;margin-top:16px}.gform_legacy_markup_wrapper input.large,.gform_legacy_markup_wrapper input.medium,.gform_legacy_markup_wrapper input.small,.gform_legacy_markup_wrapper select.large,.gform_legacy_markup_wrapper select.medium,.gform_legacy_markup_wrapper select.small{width:100%}.gform_legacy_markup_wrapper span.gform_description{display:block;font-weight:400;margin-bottom:16px;width:calc(100% - 16px)}.gform_legacy_markup_wrapper .gfield_checkbox li,.gform_legacy_markup_wrapper .gfield_radio li{position:relative}.gform_legacy_markup_wrapper ul.gfield_checkbox,.gform_legacy_markup_wrapper ul.gfield_radio{margin:6px 0;padding:0}.gform_legacy_markup_wrapper .gfield_checkbox li label,.gform_legacy_markup_wrapper .gfield_radio li label{display:-moz-inline-stack;display:inline-block;font-size:.875em;line-height:1.5;max-width:85%;padding:0;vertical-align:middle;white-space:normal;width:auto}.gform_legacy_markup_wrapper .gfield_checkbox li label{margin:0}.gform_legacy_markup_wrapper .gfield_checkbox li input,.gform_legacy_markup_wrapper .gfield_checkbox li input[type=checkbox],.gform_legacy_markup_wrapper .gfield_radio li input[type=radio]{display:-moz-inline-stack;display:inline-block;margin-left:1px;vertical-align:middle}.gform_legacy_markup_wrapper .description,.gform_legacy_markup_wrapper .gfield_description,.gform_legacy_markup_wrapper .gsection_description,.gform_legacy_markup_wrapper .instruction{clear:both;font-family:inherit;font-size:.813em;letter-spacing:normal;line-height:inherit}.gform_legacy_markup_wrapper .description,.gform_legacy_markup_wrapper .gfield_description,.gform_legacy_markup_wrapper .gsection_description{padding:0 16px 0 0}.gform_legacy_markup_wrapper .field_description_below .gfield_description{padding-top:16px}.gform_legacy_markup_wrapper .gfield_description{width:100%}.gform_legacy_markup_wrapper .gfield_required{color:#790000;margin-left:4px}.gform_legacy_markup_wrapper .gform_footer{clear:both;margin:16px 0 0 0;padding:16px 0 10px 0;width:100%}.gform_legacy_markup_wrapper .gform_footer input.button,.gform_legacy_markup_wrapper .gform_footer input[type=submit],.gform_legacy_markup_wrapper .gform_page_footer input.button,.gform_legacy_markup_wrapper .gform_page_footer input[type=submit]{font-size:1em;margin:0 0 16px 0;width:100%}.gform_legacy_markup_wrapper .gform_footer input[type=image]{background:0 0 !important;border:none !important;display:block;margin:0 auto 16px auto !important;max-width:100%;padding:0;width:auto !important}.gform_legacy_markup_wrapper .gfield_checkbox li,.gform_legacy_markup_wrapper .gfield_radio li{line-height:1.2;margin:0 0 16px 0}.gchoice_select_all,.gform_legacy_markup_wrapper ul.gfield_checkbox li input[type=checkbox]:checked+label,.gform_legacy_markup_wrapper ul.gfield_radio li input[type=radio]:checked+label{font-weight:700}.gform_legacy_markup_wrapper .gf_hidden,.gform_legacy_markup_wrapper .gform_hidden,.gform_legacy_markup_wrapper input.gform_hidden,.gform_legacy_markup_wrapper input[type=hidden]{display:none !important;max-height:1px !important;overflow:hidden}.gform_legacy_markup_wrapper .gf_invisible,.gform_legacy_markup_wrapper .gfield_visibility_hidden{left:-9999px;position:absolute;visibility:hidden}.gform_legacy_markup_wrapper ul.gfield_checkbox li,.gform_legacy_markup_wrapper ul.gfield_radio li{padding:0 !important}.gform_legacy_markup_wrapper li.gfield_html{max-width:100%}.gform_legacy_markup_wrapper .gfield_html.gfield_no_follows_desc{margin-top:10px}body .gform_legacy_markup_wrapper ul li.gfield.gfield_html img{max-width:100% !important}.gform_legacy_markup_wrapper .gform_validation_container,body .gform_legacy_markup_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,body .gform_legacy_markup_wrapper li.gform_validation_container,body .gform_legacy_markup_wrapper ul.gform_fields li.gfield.gform_validation_container{display:none !important;left:-9000px;position:absolute !important}body .gform_legacy_markup_wrapper ul li.gfield{margin-top:16px;padding-top:0}body .gform_legacy_markup_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html{line-height:inherit}body .gform_legacy_markup_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul li,body .gform_legacy_markup_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul li{list-style-type:disc !important;margin:0 0 8px 0;overflow:visible;padding-left:0}body .gform_legacy_markup_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul,body .gform_legacy_markup_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul{list-style-type:disc !important;margin:16px 0 16px 28px !important;padding-left:0}@media only screen and (max-width:641px){.gform_legacy_markup_wrapper input:not([type=radio]):not([type=checkbox]):not([type=image]):not([type=file]){line-height:2;min-height:2rem}.gform_legacy_markup_wrapper .ginput_container span:not(.ginput_price){display:block;margin-bottom:8px}.gform_legacy_markup_wrapper ul.gfield_checkbox li label,.gform_legacy_markup_wrapper ul.gfield_radio li label{cursor:pointer;width:85%}}@media only screen and (min-width:641px){.gform_legacy_markup_wrapper .gform_body{width:100%}.gform_legacy_markup_wrapper .gfield_checkbox li,.gform_legacy_markup_wrapper .gfield_radio li{line-height:1.3;margin:0 0 8px 0}.gform_legacy_markup_wrapper ul.gform_fields:not(.top_label) .gfield_label{float:left;margin-bottom:16px;padding-right:16px;width:29%}.gform_legacy_markup_wrapper form ul.gform_fields:not(.top_label) li.gfield_html_formatted{margin-left:29% !important;width:70%}.gform_legacy_markup_wrapper ul.gform_fields:not(.top_label) ul.gfield_checkbox,.gform_legacy_markup_wrapper ul.gform_fields:not(.top_label) ul.gfield_radio{overflow:hidden}.gform_legacy_markup_wrapper .hidden_label input.large,.gform_legacy_markup_wrapper .hidden_label select.large,.gform_legacy_markup_wrapper .top_label input.large,.gform_legacy_markup_wrapper .top_label select.large{width:100%}.gform_legacy_markup_wrapper .gform_footer input.button,.gform_legacy_markup_wrapper .gform_footer input[type=image],.gform_legacy_markup_wrapper .gform_footer input[type=submit]{display:-moz-inline-stack;display:inline-block}.gform_legacy_markup_wrapper .gform_footer input[type=image]{vertical-align:middle}.gform_legacy_markup_wrapper .gform_footer input.button,.gform_legacy_markup_wrapper .gform_footer input[type=submit],.gform_legacy_markup_wrapper .gform_page_footer input.button,.gform_legacy_markup_wrapper .gform_page_footer input[type=submit]{font-size:1em;margin:0 16px 0 0;width:auto}.gform_legacy_markup_wrapper ul.gform_fields li.gfield{padding-right:16px}.gform_legacy_markup_wrapper .gform_footer:not(.top_label){margin-left:29%;padding:16px 0 10px 0;width:70%}html:not([dir=rtl]) .gform_legacy_markup_wrapper ul.gform_fields:not(.top_label) .clear-multi,html:not([dir=rtl]) .gform_legacy_markup_wrapper ul.gform_fields:not(.top_label) .gfield_description,html:not([dir=rtl]) .gform_legacy_markup_wrapper ul.gform_fields:not(.top_label) .ginput_container:not(.ginput_container_time):not(.ginput_container_date){margin-left:29%;width:70%}}@media only screen and (min-width:641px){.gform_wrapper .top_label li ul.gfield_checkbox,.gform_wrapper .top_label li ul.gfield_radio{width:calc(100% + 16px)}.gform_wrapper ul.gform_fields:not(.top_label) li ul.gfield_checkbox,.gform_wrapper ul.gform_fields:not(.top_label) li ul.gfield_radio{width:calc(70% + 16px)}.gform_wrapper li.gfield[class*=col][class*=gf_list_] ul.gfield_checkbox,.gform_wrapper li.gfield[class*=col][class*=gf_list_] ul.gfield_radio{font-size:0;display:block}.gform_wrapper li.gfield[class*=col][class*=gf_list_] ul.gfield_checkbox li,.gform_wrapper li.gfield[class*=col][class*=gf_list_] ul.gfield_radio li{font-size:.9rem}}.entry .gform_legacy_markup_wrapper.gf_browser_unknown ul li:after,.entry .gform_legacy_markup_wrapper.gf_browser_unknown ul li:before,.gform_legacy_markup_wrapper.gf_browser_unknown ul li:after,.gform_legacy_markup_wrapper.gf_browser_unknown ul li:before{content:none}</style>
+<meta name="clonable-verification" content="fd023eeb001f01a36f862a35456355ceda6f05d6">
+<!-- Search Engine Optimization door Rank Math - https://rankmath.com/ -->
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/" />
+<meta property="og:locale" content="nl_NL" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Baanplattegrond, scorekaarten &amp; handicaptabellen - Golfbaan Tespelduyn" />
+<meta property="og:description" content="De Bloembollenbaan is een openbare uitdagende 9-holes qualifying golfbaan met een afslag op de 23 meter hoge terp en een lengte van 1825 meter. De golfbaan beschikt over Eén par [&hellip;]" />
+<meta property="og:url" content="https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/" />
+<meta property="og:site_name" content="Golfbaan Tespelduyn" />
+<meta property="og:updated_time" content="2025-08-13T10:41:38+02:00" />
+<meta property="og:image" content="https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-1024x1024.png" />
+<meta property="og:image:secure_url" content="https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-1024x1024.png" />
+<meta property="og:image:alt" content="Baanplattegrond, scorekaarten &#038; handicaptabellen" />
+<meta property="article:published_time" content="2021-03-01T09:18:54+01:00" />
+<meta property="article:modified_time" content="2025-08-13T10:41:38+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Baanplattegrond, scorekaarten &amp; handicaptabellen - Golfbaan Tespelduyn" />
+<meta name="twitter:description" content="De Bloembollenbaan is een openbare uitdagende 9-holes qualifying golfbaan met een afslag op de 23 meter hoge terp en een lengte van 1825 meter. De golfbaan beschikt over Eén par [&hellip;]" />
+<meta name="twitter:image" content="https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-1024x1024.png" />
+<meta name="twitter:label1" content="Tijd om te lezen" />
+<meta name="twitter:data1" content="1 minuut" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["GolfCourse","Organization"],"@id":"https://golfbaantespelduyn.nl/#organization","name":"Golfbaan Tespelduyn","url":"https://golfbaantespelduyn.nl","logo":{"@type":"ImageObject","@id":"https://golfbaantespelduyn.nl/#logo","url":"https://golfbaantespelduyn.nl/wp-content/uploads/2021/11/tespelduyn_lgolfbaan_color.png","contentUrl":"https://golfbaantespelduyn.nl/wp-content/uploads/2021/11/tespelduyn_lgolfbaan_color.png","caption":"Golfbaan Tespelduyn","inLanguage":"nl-NL","width":"382","height":"100"},"openingHours":["Mo,Tu,We,Th,Fr,Sa,Su 09:00-17:00"],"image":{"@id":"https://golfbaantespelduyn.nl/#logo"}},{"@type":"WebSite","@id":"https://golfbaantespelduyn.nl/#website","url":"https://golfbaantespelduyn.nl","name":"Golfbaan Tespelduyn","publisher":{"@id":"https://golfbaantespelduyn.nl/#organization"},"inLanguage":"nl-NL"},{"@type":"ImageObject","@id":"https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-1024x1024.png","url":"https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-1024x1024.png","width":"200","height":"200","inLanguage":"nl-NL"},{"@type":"BreadcrumbList","@id":"https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://golfbaantespelduyn.nl","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/","name":"Baanplattegrond, scorekaarten &#038; handicaptabellen"}}]},{"@type":"WebPage","@id":"https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/#webpage","url":"https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/","name":"Baanplattegrond, scorekaarten &amp; handicaptabellen - Golfbaan Tespelduyn","datePublished":"2021-03-01T09:18:54+01:00","dateModified":"2025-08-13T10:41:38+02:00","isPartOf":{"@id":"https://golfbaantespelduyn.nl/#website"},"primaryImageOfPage":{"@id":"https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-1024x1024.png"},"inLanguage":"nl-NL","breadcrumb":{"@id":"https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/#breadcrumb"}},{"@type":"Person","@id":"https://golfbaantespelduyn.nl/author/bo/","name":"Bo","url":"https://golfbaantespelduyn.nl/author/bo/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/1c5e94a0dc91b237387d2aad14f69689e85359386aaa43160ba25860244baa0d?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/1c5e94a0dc91b237387d2aad14f69689e85359386aaa43160ba25860244baa0d?s=96&amp;d=mm&amp;r=g","caption":"Bo","inLanguage":"nl-NL"},"worksFor":{"@id":"https://golfbaantespelduyn.nl/#organization"}},{"@type":"Article","headline":"Baanplattegrond, scorekaarten &amp; handicaptabellen - Golfbaan Tespelduyn","datePublished":"2021-03-01T09:18:54+01:00","dateModified":"2025-08-13T10:41:38+02:00","author":{"@id":"https://golfbaantespelduyn.nl/author/bo/","name":"Bo"},"publisher":{"@id":"https://golfbaantespelduyn.nl/#organization"},"description":"De fraaie waterpartijen en bunkers zorgen voor extra uitdagingen op de fairways en rond de greens.","name":"Baanplattegrond, scorekaarten &amp; handicaptabellen - Golfbaan Tespelduyn","@id":"https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/#richSnippet","isPartOf":{"@id":"https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/#webpage"},"image":{"@id":"https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-1024x1024.png"},"inLanguage":"nl-NL","mainEntityOfPage":{"@id":"https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//static.addtoany.com' />
+<link rel='dns-prefetch' href='//api.e-golf4u.nl' />
+<link rel='dns-prefetch' href='//tespelduyn.nl' />
+<link rel="alternate" hreflang="x-default" href="https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/" />
+<link rel="alternate" hreflang="nl-nl" href="https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/" />
+<link rel="alternate" hreflang="en-gb" href="https://golfbaantespelduyn.nl/en/baanplattegrond-scorekaarten-handicaptabellen/" />
+<link rel="alternate" hreflang="de-de" href="https://golfbaantespelduyn.nl/de/baanplattegrond-scorekaarten-handicaptabellen/" />
+
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel="stylesheet" id="clonable-admin-bar-css" media="all" data-pmdelayedstyle="https://golfbaantespelduyn.nl/wp-content/cache/perfmatters/golfbaantespelduyn.nl/minify/840573876ef8.clonable-admin-bar.min.css">
+<link rel="stylesheet" id="addtoany-css" media="all" data-pmdelayedstyle="https://golfbaantespelduyn.nl/wp-content/plugins/add-to-any/addtoany.min.css">
+<style id="addtoany-inline-css">
+a span,addtoany_list a>span { border-radius: 0 !important; margin-left: 8px !important; } .sharing svg * {fill: #fff !important}
+/*# sourceURL=addtoany-inline-css */
+</style>
+<link rel='stylesheet' id='owl-css' href='https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/css/owl.carousel.min.css' media='all' />
+<link rel="stylesheet" id="custom-style-css" href="https://golfbaantespelduyn.nl/wp-content/cache/perfmatters/golfbaantespelduyn.nl/minify/de2f1f29a64e.style.1.0.1.min.css" media="all">
+<link rel='stylesheet' id='lightbox-css' href='https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/lightbox/css/lightbox.min.css' media='all' />
+<link rel='stylesheet' id='events-style-css' href='https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/css/events.css' media='all' />
+<link rel="stylesheet" id="overwrites-style-css" href="https://golfbaantespelduyn.nl/wp-content/cache/perfmatters/golfbaantespelduyn.nl/minify/be747ade1689.overwrite.min.css" media="all">
+<script id="addtoany-core-js-before">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_localize = {
+	Share: "Delen",
+	Save: "Opslaan",
+	Subscribe: "Inschrijven",
+	Email: "E-mail",
+	Bookmark: "Bookmark",
+	ShowAll: "Alles weergeven",
+	ShowLess: "Niet alles weergeven",
+	FindServices: "Vind dienst(en)",
+	FindAnyServiceToAddTo: "Vind direct een dienst om aan toe te voegen",
+	PoweredBy: "Mede mogelijk gemaakt door",
+	ShareViaEmail: "Delen per e-mail",
+	SubscribeViaEmail: "Abonneren via e-mail",
+	BookmarkInYourBrowser: "Bookmark in je browser",
+	BookmarkInstructions: "Druk op Ctrl+D of \u2318+D om deze pagina te bookmarken",
+	AddToYourFavorites: "Voeg aan je favorieten toe",
+	SendFromWebOrProgram: "Stuur vanuit elk e-mailadres of e-mail programma",
+	EmailProgram: "E-mail programma",
+	More: "Meer&#8230;",
+	ThanksForSharing: "Bedankt voor het delen!",
+	ThanksForFollowing: "Dank voor het volgen!"
+};
+
+a2a_config.icon_color="#3e441d";
+
+//# sourceURL=addtoany-core-js-before
+</script>
+<script id="addtoany-core-js" defer src="https://static.addtoany.com/menu/page.js"></script>
+<script id="jquery-core-js" src="https://golfbaantespelduyn.nl/wp-includes/js/jquery/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="https://golfbaantespelduyn.nl/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script id="addtoany-jquery-js" defer src="https://golfbaantespelduyn.nl/wp-content/plugins/add-to-any/addtoany.min.js"></script>
+<script id="custom-js" src="https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/js/custom.js"></script>
+<script id="owl-js-js" src="https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/js/owl.carousel.min.js"></script>
+<script id="inlineCoverImages-js" src="https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/js/inlineCoverImages.js"></script>
+<script id="instafeed-js" src="https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/js/instafeed.min.js"></script>
+<script id="lightbox-js-js" src="https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/lightbox/js/lightbox.min.js"></script>
+<script id="golf4u-js" src="https://api.e-golf4u.nl/static/sso.2.2.js?ver=7.1.3"></script>
+<link rel="https://api.w.org/" href="https://golfbaantespelduyn.nl/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://golfbaantespelduyn.nl/wp-json/wp/v2/pages/10801" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://golfbaantespelduyn.nl/xmlrpc.php?rsd" />
+        <style>
+            .fflag {
+                background-image: url(/wp-content/plugins/clonable/images/flags.png);
+            }
+        </style>
+        <meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://golfbaantespelduyn.nl"><link rel="alternate" href="https://golfbaantespelduyn.nl/wp-json/tribe/events/v1/" /><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTGDF9Q');</script>
+<link rel="icon" href="https://golfbaantespelduyn.nl/wp-content/uploads/2018/10/golf.png" sizes="32x32" />
+<link rel="icon" href="https://golfbaantespelduyn.nl/wp-content/uploads/2018/10/golf.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://golfbaantespelduyn.nl/wp-content/uploads/2018/10/golf.png" />
+<meta name="msapplication-TileImage" content="https://golfbaantespelduyn.nl/wp-content/uploads/2018/10/golf.png" />
+<style id="wp-custom-css">
+header.header--home .header-inner h1 {
+	font-size: clamp(1.5rem, 2.5vw, 4rem);}
+a.button.orange {  background: #E7811B;    border-color: #E7811B;}
+a.button.orange:hover {
+background: #c86d0b; border-color: #c86d0b;
+}
+.gform_wrapper .top_label .gfield_label {text-transform: uppercase; font-family: "Tinos",sans-serif; color: #757C13;font-weight: 700 !important;font-size: 14px !important;} .gform_body select {   height: 44px;} .gform_wrapper input[type=checkbox] {   visibility: hidden;}.gform_wrapper .gform_body .gfield_checkbox li { padding-left: 10px !important;}.gform_body .gfield_checkbox label::before { margin-left: -24px;} .datepicker {max-width:calc(100% - 30px); display: inline-block !important;} span.ginput_total.ginput_total_3 {color: #ff8300;   font-size: 20px;} .ui-widget-header, .ui-datepicker-calendar .ui-state-default { border: none; background: #fff !important;} .ui-datepicker table { border: none; padding:10px;} div#ui-datepicker-div { padding: 16px;} .ui-datepicker-title select { max-width: 45%; margin:0px 3px 20px 3px !important; font-size: 14px !important; display: inline-block !important;} .ui-datepicker tbody td {border-right:none;} .ui-datepicker .ui-widget-header .ui-icon { background-image: none;} a.ui-state-default.ui-state-active {  background: #757c13 !important;    color: #fff;}.ui-datepicker table tr:nth-child(odd) {   background: transparent;}
+/* Verberg extra keuzerondjes in Gravity Forms */
+.gform_wrapper .gfield_radio input[type="radio"] {
+    display: none;
+}
+#gform_wrapper_1 .gform_body .gfield_checkbox label::before {margin-left:0px;}
+.c-holder--video:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(62,68,29,.5);z-index:21}.ysp-vimeo-video{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background-color:#3e441c;pointer-events:none}.ysp-vimeo-video iframe{position:absolute;}@media (max-width:991px){.ysp-vimeo-video{height:100%}header.header--home{padding-bottom:130px;padding-top:110px}}@media (max-width:600px){.header-inner p.lead {  display: -webkit-box;   -webkit-line-clamp: 3;   -webkit-box-orient: vertical;   overflow: hidden;}.header-inner p{font-size:clamp(1rem,2vw,2rem)}.ysp-vimeo-video {	align-items: flex-end;}.ysp-vimeo-video{height:100%}}
+footer .footer--contact input {
+    background: transparent;
+}
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom {
+    z-index: 99999 !important;
+    position: relative !important;
+    top: 0 !important;
+}
+.datepicker.dropdown-menu table tr td.day.new {
+    background: #d9e1ab;
+}
+
+.datepicker.dropdown-menu table tr td.day.past {
+    background: #ccc;
+}
+.datepicker.dropdown-menu table tr td.day {
+    background: #bec885;
+    padding: 5px !important;
+    border: 3px solid #fff;
+    border-radius: 0;
+}
+
+.clonable-inline-iframe-container {
+	width:75px;
+}
+
+.clonable-inline-iframe-container iframe {
+	position: absolute;
+  height: 160px;
+  width: 75px;
+  border: 0;
+  top: -15px;
+}
+
+
+
+
+
+@media (max-width:991px) {
+	#top-logo svg { max-width: 150px; }
+}
+
+@media (max-width:320px) {
+	#top-logo svg { max-width: 90px; }
+}
+
+@media (min-width:1400px) {
+	#top-logo .clonable-inline-iframe-container { display:none; }
+}
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTGDF9Q');</script>
+<!-- End Google Tag Manager -->
+<!-- Hotjar Tracking Code for Golfbaan Tespelduyn -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5281876,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<style>
+    #gform_fields_5 .gfield_label {
+        display: block;
+        text-align: center;
+    }
+    input#gform_submit_button_5 {
+        height: auto;
+        padding-bottom: 10px;
+    }
+    #gform_fields_5 li.gchoice_5_7_1 {
+        overflow: visible;
+        text-align: center;
+    }
+</style>
+<!-- Start Clonable Language Switcher --> 
+<script>
+	jQuery(document).ready(function($) {
+    console.log('Monitoring calendar clicks');
+    jQuery(document).on('click', '.tribe-events-c-top-bar__nav-link, .tribe-events-calendar-month-nav-link', function(e) {
+        console.log('Calendar navigation clicked', e);
+    });
+});
+const resolveClonablePath = (url, sf) => {
+    let currentPath = window.location.pathname;
+	currentPath = currentPath.replace("/en", "");
+	currentPath = currentPath.replace("/nl", "");
+	currentPath = currentPath.replace("/de", "");
+    if (url.endsWith("/")) {
+        return url.slice(0, -1) + currentPath;
+    }
+    return url + currentPath;
+}
+ const clonableLSC = {
+    "backgroundColor": "#757C13",
+    "backgroundHoverColor": "#C9AA77",
+    "textColor": "#AAB41D",
+    "menuTextColor": "#ffffff",
+    "hasHoverTrigger": true,
+    "hasClickTrigger": false,
+    "hasRoundedFlags": false,
+    "showFlag": false,
+    "showName": true,
+    "showCountry": false,
+    "size": "md",
+   	"queryInput": "#header-nav-right, #top-logo a",
+   	"placement": "after",
+   	"position": "bottom-right",
+    "isStatic": false,
+    "languages": [
+        {
+            "clonableLocaleCode": "nl_NL",
+            "clonableDisplayLanguage": "NL",
+            "clonableDisplayCountry": "Nederland",
+            "clonableUrl": resolveClonablePath("https://golfbaantespelduynU+002Enl")
+        },
+        {
+            "clonableLocaleCode": "en_GB",
+            "clonableDisplayLanguage": "EN",
+            "clonableDisplayCountry": "United Kingdom",
+            "clonableUrl": resolveClonablePath("https://golfbaantespelduynU+002Enl/en/")
+        },
+        {
+            "clonableLocaleCode": "de_DE",
+            "clonableDisplayLanguage": "DE",
+            "clonableDisplayCountry": "Deutschland",
+            "clonableUrl": resolveClonablePath("https://golfbaantespelduynU+002Enl/de/")
+        }
+    ]
+}
+</script>
+<script defer src="https://modules.clonable.net/language-switcher/js/init.js?v=1.2.0"></script>
+<!-- End Clonable Language Switcher -->
+
+<link rel="stylesheet" id="https://golfbaantespelduyn.nl/wp-content/plugins/clonable/assets/css/freakflags.css-css" media="all" data-pmdelayedstyle="https://golfbaantespelduyn.nl/wp-content/plugins/clonable/assets/css/freakflags.css">
+<link rel="stylesheet" id="gforms_reset_css-css" media="all" data-pmdelayedstyle="https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/legacy/css/formreset.min.css">
+<link rel="stylesheet" id="gforms_formsmain_css-css" media="all" data-pmdelayedstyle="https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css">
+<link rel="stylesheet" id="gforms_ready_class_css-css" media="all" data-pmdelayedstyle="https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css">
+<link rel="stylesheet" id="gforms_browsers_css-css" media="all" data-pmdelayedstyle="https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/legacy/css/browsers.min.css">
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTGDF9Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTGDF9Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+	<div id="wrapper">
+		<div id="top">
+			<div id="overlay"></div>
+			<div class="container">
+				<div class="row d-flex justify-content-between">
+					<div class="col-sm flex align-items-center">
+						<nav id="header-nav-left" class="clearfix top">
+							<ul class="clearfix ">
+							    <li id="menu-item-499" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-499"><a href="https://golfbaantespelduyn.nl/over-ons/">Golfbaan</a>
+<ul class="sub-menu">
+	<li id="menu-item-10821" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10801 current_page_item menu-item-10821"><a href="https://golfbaantespelduyn.nl/baanplattegrond-scorekaarten-handicaptabellen/" aria-current="page">Baaninformatie</a></li>
+	<li id="menu-item-19719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19719"><a href="https://golfbaantespelduyn.nl/tespelduyn-trackman-driving-range/">Tespelduyn Trackman Driving Range</a>
+	<ul class="sub-menu">
+		<li id="menu-item-20259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20259"><a href="https://golfbaantespelduyn.nl/tespelduyn-trackman-driving-range/app/">Tespelduyn Trackman Driving Range app</a></li>
+	</ul>
+</li>
+	<li id="menu-item-20261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20261"><a href="https://golfbaantespelduyn.nl/golf-pas/">Golf-Pas</a></li>
+	<li id="menu-item-5365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5365"><a href="https://golfbaantespelduyn.nl/tarieven/">Greenfee tarieven</a></li>
+	<li id="menu-item-19421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19421"><a href="https://golfbaantespelduyn.nl/1-op-1-begeleiders/">1 op 1 begeleiders</a></li>
+	<li id="menu-item-5613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5613"><a href="https://golfbaantespelduyn.nl/golfarrangementen/">Golfarrangementen</a></li>
+	<li id="menu-item-5408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5408"><a href="https://golfbaantespelduyn.nl/jaarkaart-tespelduyn/">Jaarkaart</a></li>
+	<li id="menu-item-12747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12747"><a href="https://golfbaantespelduyn.nl/partner-golfbanen/">Partner Golfbanen</a></li>
+	<li id="menu-item-5928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5928"><a href="https://golfbaantespelduyn.nl/business-club/">Business Club Tespelduyn</a></li>
+	<li id="menu-item-9306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9306"><a href="https://golfbaantespelduyn.nl/hole-in-ones/">Hole in One’s</a></li>
+</ul>
+</li>
+<li id="menu-item-5729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5729"><a href="https://golfbaantespelduyn.nl/wedstrijden/">Wedstrijden &#038; competities</a></li>
+<li id="menu-item-11539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11539"><a href="https://golfbaantespelduyn.nl/golfschool-tespelduyn/">Golfschool</a>
+<ul class="sub-menu">
+	<li id="menu-item-20260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20260"><a href="https://golfbaantespelduyn.nl/golf-fit/">Golf-Fit</a></li>
+	<li id="menu-item-20218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20218"><a href="https://golfbaantespelduyn.nl/beginnen-met-golfen-in-de-bollenstreek/">Beginnen met golf</a></li>
+	<li id="menu-item-20244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20244"><a href="https://golfbaantespelduyn.nl/beter-leren-golfen-in-de-bollenstreek/">Beter leren golfen</a></li>
+	<li id="menu-item-19233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19233"><a href="https://golfbaantespelduyn.nl/golfschool-tespelduyn/jeugdprogramma/">Jeugd Golf</a></li>
+	<li id="menu-item-18866" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18866"><a href="https://golfbaantespelduyn.nl/golfschool-tespelduyn/pros-van-golfschool-tespelduyn/">Ontdek de pro’s</a></li>
+</ul>
+</li>
+							</ul>
+							<ul class="clearfix d-block d-xxl-none align-items-center">
+							    <li id="menu-item-19009" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19009"><a href="/agenda">Agenda</a></li>
+<li id="menu-item-420" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-420"><a href="https://tespelduyn.nl/">Restaurant Tespelduyn</a></li>
+							    <!-- <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#3E441D" d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"/></svg></a></li>
+								 -->
+								 <!--<li class="button internal-booking"><a href="https://golfbaantespelduyn.nl/reserveren/">Reserveren</a></li>
+								 <li class="button external-booking"><a href="https://golfbaantespelduyn.nl/migratie" target="_blank">Reserveren</a></li>-->
+								 <li class="button"><a href="https://golfbaantespelduyn.nl/starttijd-reserveren/" target="_blank">Reserveren</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-auto" id="top-logo">
+						<a href="https://golfbaantespelduyn.nl">
+							
+							<svg height="57" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412.74 125.86"><g id="Laag_2" data-name="Laag 2"><g id="Laag_3" data-name="Laag 3"><path fill="#757c13" d="M92.41 78.07v-3.3C96 74.42 96 73.9 96 71.37V20.31c-3.47 0-5.74 0-7.65 4.09l-2.78-1 2.84-7.4a90.8 90.8 0 0 0 9.74.52c3.31 0 6.52-.26 9.74-.52l2.87 7.48-2.78 1c-1.91-4.09-4.18-4.09-7.66-4.09v50.98c0 2.53 0 3 3.57 3.4v3.3zM116.24 78.07v-3.3c3.92-.44 3.92-.87 3.92-3.4V23.18c0-2.52 0-3-3.92-3.39v-3.31h10.53a22.36 22.36 0 0 0 8.61-1.3l3.13 5.91-2.61 1.48c-1.39-1.13-2.09-2.26-5-2.26h-6.43v7.48h8.17c2.87 0 3.13-1 3.22-2.44h2.61v8.7h-2.57c-.26-1.3-.61-2.43-3-2.43h-8.35v42.62h9c4 0 4.61-1.82 6.08-3.65l2.61 1.74-3.24 6.78a35.73 35.73 0 0 0-5.91-.86c-2.09-.18-4.18-.18-5.74-.18zM159.21 23.44c-2.87-2.52-4-3.83-5.65-3.83a2.42 2.42 0 0 0-2.56 2.53c0 3 3.66 7.39 9.05 17.31 4.18 7.57 9.31 17.57 9.31 26 0 8.78-5.83 13.65-12.44 13.65a13.71 13.71 0 0 1-6.7-2l-1.56 1h-2.27l-1.21-9.57 2.78-1c1.57 3.48 3.48 7.48 9 7.48 4.61 0 8.09-3.92 8.09-8.79 0-7.56-4.35-16.44-8.44-23.83-6-11.31-9.91-16.36-9.91-20.71 0-3.91 2.34-6.17 6.08-6.17a15.14 15.14 0 0 1 2 .17l1.56-1.13H159l3.13 7.92zM182.35 71.37c0 2.35 0 3 3.57 3.4v3.3h-11.49v-3.3c3.57-.44 3.57-.87 3.57-3.4V23.18c0-2.52 0-3-3.57-3.39v-3.31h15.84c7.56 0 9.83 3.05 9.83 7.13 0 4.62-3 7.05-10 7.05h-7.74zm7.92-44.54c3.48 0 5.21-.78 5.21-3.3 0-2.26-2.34-3.22-5.21-3.22h-7.92v6.52zM205.57 78.07v-3.3c3.92-.44 3.92-.87 3.92-3.4V23.18c0-2.52 0-3-3.92-3.39v-3.31h10.53a22.33 22.33 0 0 0 8.61-1.3l3.13 5.91-2.61 1.48c-1.39-1.13-2.08-2.26-5-2.26h-6.43v7.48h8.2c2.88 0 3.14-1 3.22-2.44h2.61v8.7h-2.61c-.26-1.3-.61-2.43-3-2.43h-8.35v42.62h9c4 0 4.61-1.82 6.09-3.65l2.61 1.74-3.13 6.78a36 36 0 0 0-5.92-.86c-2.09-.18-4.18-.18-5.74-.18zM235.67 78.07v-3.3c3.83-.44 3.83-.87 3.83-3.4V23.18c0-2.52 0-3-3.83-3.39v-3.31h11.74v3.31c-3.56.35-3.56.87-3.56 3.39v51.06h9c3.74 0 4.7-1.91 6-3.82l2.78 1.74-3.22 7a17.26 17.26 0 0 0-4.61-.78 55.1 55.1 0 0 0-5.22-.26zM265.07 16.48c8.35 0 14.53 2.61 20.53 8.87 5 5.31 9.22 14.1 9.22 26.36 0 16-6.87 26.36-22.62 26.36h-7.13v-3.3c3.31-.44 3.31-.87 3.31-3.4V23.18c0-2.52 0-3-3.31-3.39zm7.66 57.76H274c7.83 0 16.18-5.91 16.18-22.53 0-20.79-13-29.75-17.48-30.53zM327 62.76c0 10.26-2.26 16.35-12.52 16.35-9.83 0-12-6.09-12-16.35V23.18c0-2.52 0-3-3.3-3.39v-3.31h11.05v3.31c-3.4.35-3.4.87-3.4 3.39v39.93c0 7.83 1.57 11.83 7.83 11.83 6.44 0 8-4 8-11.83V23.18c0-2.52 0-3-3.4-3.39v-3.31h11.05v3.31c-3.31.35-3.31.87-3.31 3.39zM342 78.07v-3.3c3.56-.35 3.56-.87 3.56-3.4V29.44l-7-7.39c-1-1-1.91-2.09-4-2.26v-3.31h10.35v3.31c-1.21.17-2.43.17-2.43.78 0 .44.95 1.31 1.48 1.83l3.82 3.83 4.22-3.75c1-.87 1.83-1.47 1.83-2s-1.92-.61-2.87-.69v-3.31h9.91v3.31c-1.74.35-2.17 1.3-3.48 2.35l-7.48 7.3v41.93c0 2.53 0 3 3.57 3.4v3.3zM365.8 74.77c3.57-.44 3.57-.87 3.57-3.4V23.18c0-2.52 0-3-3.57-3.39v-3.31h7.91v.87c0 1.48.18 1.66 1.48 2.35l14.18 7.92v-4.44c0-2.52 0-3-3.56-3.39v-3.31h11.48v3.31c-3.57.35-3.57.87-3.57 3.39v48.19c0 2.35 0 3 3.57 3.4v3.3h-11.48v-3.3c3.56-.44 3.56-.87 3.56-3.4V32.05l-15.66-8.87v48.19c0 2.35 0 3 3.57 3.4v3.3H365.8z"/><path fill="#d3d5b2" d="M21.24 71.34c0-2.39 2.73-4.57 7.21-6.19a3.88 3.88 0 0 0-1.85 2.95c0 4 9.6 7.26 21.45 7.26S69.5 72.11 69.5 68.1a3.88 3.88 0 0 0-1.85-2.95c4.47 1.62 7.21 3.8 7.21 6.19 0 5-12 9.08-26.81 9.08s-26.81-4.07-26.81-9.08z"/><path fill="#d3d5b2" d="M48.89 71.08c.06-16.43 0-34.57-.41-35.54-.79-1.78-1.12-1.92-.23-3.51s1.92-3.84 3-4.68a6.1 6.1 0 0 1 3.51-1.08c1.13 0 3.42.28 3.8-1.36s-.52-2-1.5-2.62a69.87 69.87 0 0 0-12.74-6.37A115.37 115.37 0 0 0 32 12.35c-1.69-.28-3.94-.47-4.59 2.34s-.19 3.47.7 3.7 10 3.76 12.69 4.65 6 1.92 6.65 2.25a1.37 1.37 0 0 1 .61 2.29c-.89 1.27-2.62 4.5-2.62 5.34a2.92 2.92 0 0 0 .23 1.45 12.49 12.49 0 0 1 .85 3.8c.07 1.06 0 17.54 0 32.89h1.52z"/><path fill="#d3d5b2" d="M44.21 70.65S44 45.84 44 43.1 41.46 36 31.63 31.77s-10-3.61-11.81-2.61-3.25 4.08-3.25 8.24 2.5 6.83 4 6.91 13.48 1.12 15.64 1.12S40 44.6 40.46 45c1.39 1.39 1.43 23.26 1.45 25.28zM54 70.23s-.09-23.65.25-23.9 1.91 0 3.24-.33 12.67-4.15 15-5 1.33-12.33-3.58-13.16-6.26.74-9.76 3.49-7 7.31-7.33 8.32c-.71 2.49-.11 30.92-.11 30.92z"/><path fill="#3d441d" d="M159.61 109.83a7.52 7.52 0 0 1-5.76-.11 6.91 6.91 0 0 1-2.31-1.69 7.59 7.59 0 0 1-1.44-2.46 8.55 8.55 0 0 1-.5-2.88 10.73 10.73 0 0 1 .47-3.18 7.74 7.74 0 0 1 1.38-2.64 6.66 6.66 0 0 1 2.28-1.8 7.1 7.1 0 0 1 3.19-.67 9 9 0 0 1 2.36.29 6 6 0 0 1 2 .9 5.48 5.48 0 0 1 1.46 1.57 6 6 0 0 1 .81 2.3h-2a4.05 4.05 0 0 0-.56-1.51 3.67 3.67 0 0 0-1-1 4.48 4.48 0 0 0-1.37-.61 6.12 6.12 0 0 0-1.63-.2 4.65 4.65 0 0 0-4 2 6.26 6.26 0 0 0-.94 2.08 9.47 9.47 0 0 0-.3 2.38 7.56 7.56 0 0 0 .34 2.29 5.85 5.85 0 0 0 1 1.95 4.83 4.83 0 0 0 3.91 1.85 5.4 5.4 0 0 0 2.13-.39 4.45 4.45 0 0 0 1.57-1.06 4.28 4.28 0 0 0 .95-1.58 5 5 0 0 0 .28-2H157V102h6.73v8h-1.29l-.54-1.9a5.08 5.08 0 0 1-2.29 1.73zM176.44 99.38a7.5 7.5 0 0 1 1.38-2.55 6.79 6.79 0 0 1 2.31-1.77 8.11 8.11 0 0 1 6.41 0 6.79 6.79 0 0 1 2.31 1.77 7.5 7.5 0 0 1 1.38 2.55 9.82 9.82 0 0 1 .47 3 9.71 9.71 0 0 1-.47 3 7.5 7.5 0 0 1-1.38 2.55 6.64 6.64 0 0 1-2.31 1.76 8.23 8.23 0 0 1-6.41 0 6.64 6.64 0 0 1-2.31-1.76 7.5 7.5 0 0 1-1.38-2.55 9.71 9.71 0 0 1-.47-3 9.82 9.82 0 0 1 .47-3zm1.88 5.28a6.16 6.16 0 0 0 1 2 4.78 4.78 0 0 0 1.65 1.44 5.58 5.58 0 0 0 4.83 0 4.78 4.78 0 0 0 1.65-1.44 6.16 6.16 0 0 0 .95-2 8.78 8.78 0 0 0 0-4.55 6.16 6.16 0 0 0-.95-2 4.78 4.78 0 0 0-1.65-1.44 5.67 5.67 0 0 0-4.83 0 4.78 4.78 0 0 0-1.65 1.44 6.16 6.16 0 0 0-1 2 8.78 8.78 0 0 0 0 4.55zM205.38 94.76v13.54h8.13v1.7h-10.18V94.76zM235.54 94.76v1.71h-8v4.85h7.06V103h-7.06v7h-2.05V94.76zM253.51 94.76h1.07c.38 0 .75 0 1.13.06a9.9 9.9 0 0 1 1 .16 2.72 2.72 0 0 1 .83.33 3.94 3.94 0 0 1 1.28 1.23 3.46 3.46 0 0 1 .53 2 3.65 3.65 0 0 1-.6 2.1 3.47 3.47 0 0 1-1.69 1.32 3.57 3.57 0 0 1 2.18 1.28 3.83 3.83 0 0 1 .75 2.39 4.57 4.57 0 0 1-.3 1.63 4.22 4.22 0 0 1-.89 1.4 4.67 4.67 0 0 1-1.47 1 5 5 0 0 1-2 .37h-7.43V94.76zm.56 6.56a4 4 0 0 0 2.51-.61 2.21 2.21 0 0 0 .76-1.83 2.57 2.57 0 0 0-.26-1.28 1.91 1.91 0 0 0-.71-.73 2.83 2.83 0 0 0-1-.33 10.19 10.19 0 0 0-1.26-.07H250v4.85zm1 7a3 3 0 0 0 2.12-.72 2.66 2.66 0 0 0 .77-2 2.56 2.56 0 0 0-.28-1.24 2.16 2.16 0 0 0-.75-.78 3.13 3.13 0 0 0-1.06-.41 7.27 7.27 0 0 0-1.25-.11H250v5.27zM279.25 94.76l6 15.25H283l-1.68-4.59h-6.5L273.1 110H271l6-15.25zm1.43 8.95l-2.57-7.11-2.6 7.11zM303.34 94.76l6 15.25h-2.26l-1.68-4.59h-6.5l-1.71 4.58h-2.09l6-15.25zm1.42 8.95l-2.56-7.11-2.61 7.11zM323.15 94.76l8.09 12.37V94.76h1.94V110H331l-8-12.24V110h-2V94.76zM85.68 101.38h48.16v2H85.68zM348.94 101.38h48.92v2h-48.92z"/></g></g></svg>
+					
+						</a>
+					</div>
+					<div class="col-sm d-none d-xxl-flex flex align-items-center justify-content-end">
+					    <nav id="header-nav-right" class="clearfix top">
+							<ul class="clearfix d-flex align-items-center">
+							    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19009"><a href="/agenda">Agenda</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-420"><a href="https://tespelduyn.nl/">Restaurant Tespelduyn</a></li>
+							    <!-- <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#3E441D" d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"/></svg></a></li>
+							     -->
+								<!--<li class="button"><a href="https://golfbaantespelduyn.nl/reserveren/">Reserveren</a></li>-->
+								<li class="button"><a href="https://golfbaantespelduyn.nl/starttijd-reserveren/" target="_blank">Reserveren</a></li>
+							</ul>
+						</nav>
+					</div>
+					<span class="side-pull right"><span></span><i>MENU</i></span>
+				</div>
+			</div>
+
+		</div>
+<header class="bg">
+                    
+            <div class="inline-cover"><img src alt class="no-lazy"></div>
+                <div class="header-inner container">
+        <div class="centered">
+            <h1>
+            Baanplattegrond, scorekaarten &#038; handicaptabellen</h1>
+        </div>
+    </div>
+</header>			
+		<section class="content container">
+		    <div class="row">
+		        <div class="col-lg-12">
+		            <!-- <h2>Baanplattegrond, scorekaarten &#038; handicaptabellen</h2> -->
+                    <p class="lead big">                      
+                        <h2>De Bloembollenbaan is een openbare uitdagende 9-holes qualifying golfbaan met een afslag op de 23 meter hoge terp en een lengte van 1825 meter.</h2>
+<p><img fetchpriority="high" decoding="async" class="alignnone wp-image-19452 size-large" src="https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-1024x1024.png" alt="Tespelduyn 5000x5000 With Number" width="1024" height="1024" title="Baanplattegrond, scorekaarten &amp; handicaptabellen 3" srcset="https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-1024x1024.png 1024w, https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-300x300.png 300w, https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-150x150.png 150w, https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-768x768.png 768w, https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-1536x1536.png 1536w, https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn_5000x5000_With-Number-scaled.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<h3>De golfbaan beschikt over</h3>
+<ul>
+<li>Eén par 5 hole met een lengte van 425 meter, waarbij de afslag zich op zeeniveau bevindt en de green op 18 meter hoogte ligt. Uniek in Nederland!</li>
+<li>Drie par 4 holes, met baanlengtes tot 375 meter. Bij de 375 meter lange hole 3 bevindt de afslag zich op 23 meter hoogte en de green op zeeniveau. Vanaf dit hoogste punt heeft u een fabuleus uitzicht op de skylines van Amsterdam, Haarlem, Leiden en Den Haag.</li>
+<li>Vijf par 3 holes, met lengtes tot meer dan meter, waaronder de ‘blinde’ hole 2.</li>
+</ul>
+<p>De fraaie waterpartijen en bunkers zorgen voor extra uitdagingen op de fairways en rond de greens.</p>
+<p>Tespelduyn is gelegen op zand, dé ideale ondergrond voor een golfbaan. Tevens is de baan voorzien van uitstekende drainage en beregenen wij volop indien de situatie daarom vraagt. Deze combinatie zorgt ervoor dat wij jaarrond uitstekende bespeelbaarheid garanderen.</p>
+<p>Door de 23 meter hoge Terp te benutten is de golfbaan van zeer bijzondere aard. De heuvelholes kenmerken zich door hun open karakter met een prachtig uitzicht over de gehele Bollenstreek. Het speciale karakter van Golfbaan Tespelduyn wordt verder versterkt door de samensmelting met de ecologische verbindingszone tussen de duinen en Keukenhof.</p>
+<p>Het betreden van de golfbaan met een hond is niet toegestaan.</p>
+<h3 id="scorekaarten">Scorekaarten</h3>
+<ul>
+<li><strong><a href="https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/250622-Tespelduyn_scorekaart_9-en-18-holes-2.pdf" target="_blank" rel="noopener">9- &amp; 18-holes scorekaart</a></strong></li>
+<li><a href="https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/250622-Tespelduyn_scorekaart_11-holes-2.pdf" target="_blank" rel="noopener"><strong>11-holes scorekaart</strong></a></li>
+</ul>
+<h3>Handicaptabellen</h3>
+<ul>
+<li><strong><a href="https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn-Dames.pdf" target="_blank" rel="noopener">Dames</a></strong></li>
+<li><strong><a href="https://golfbaantespelduyn.nl/wp-content/uploads/2025/08/Tespelduyn-Heren.pdf" target="_blank" rel="noopener">Heren</a></strong></li>
+</ul>
+<h3>Plaatselijke regels</h3>
+<p><a href="https://golfbaantespelduyn.nl/plaatselijke-regels/"><strong>Klik hier voor de plaatselijke regels.</strong></a></p>
+                    </p>
+                    
+                     
+
+                    
+<div class="download-menu d-sm-flex align-items-start">
+    </div>     
+                </div>
+		    </div>
+		</section>	
+        <section class="container-fluid bg-green">
+            <div class="container">
+                <div class="divider mt-3 py-9 centered newcta">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <h3>Reserveer jouw starttijd en ontdek onze Bloembollenbaan</h3>
+                            <a href="https://golfbaantespelduyn.nl/starttijd-reserveren/" class="button first">Starttijd reserveren</a><a href="https://golfbaantespelduyn.nl/contact/" class="button second">Contact</a>                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content container">
+		    <div class="row">
+		        <div class="col-lg-12">
+                    
+                    <div class="mt-3 mb-4 row margins margins-extra d-flex">
+
+                                                                                    <a href="https://golfbaantespelduyn.nl/wedstrijden/" class="col-md-4 mb-2 mb-md-4">
+                                  <div class="grid-block">
+                                     <div class="grid-content">
+                                        <figure class="inline-cover square">
+                                            <img width="1600" height="1000" src="https://golfbaantespelduyn.nl/wp-content/uploads/2022/09/documentnaam-WEB-©Maaike-Petri-Fotografie_7.jpg" alt class="no-lazy">
+                                        </figure>
+                                        <span class="h3">Wedstrijden en competities</span>
+                                     </div>
+                                  </div>
+                                </a>
+                                                            <a href="https://golfbaantespelduyn.nl/golfschool/" class="col-md-4 mb-2 mb-md-4">
+                                  <div class="grid-block">
+                                     <div class="grid-content">
+                                        <figure class="inline-cover square">
+                                            <img width="1920" height="1280" src="https://golfbaantespelduyn.nl/wp-content/uploads/2022/02/037_MPF4902-©Maaike-Petri-Fotografie-scaled.jpg" alt class="no-lazy">
+                                        </figure>
+                                        <span class="h3">Golfschool</span>
+                                     </div>
+                                  </div>
+                                </a>
+                                                            <a href="https://golfbaantespelduyn.nl/jaarkaart/" class="col-md-4 mb-2 mb-md-4">
+                                  <div class="grid-block">
+                                     <div class="grid-content">
+                                        <figure class="inline-cover square">
+                                            <img width="1600" height="1000" src="https://golfbaantespelduyn.nl/wp-content/uploads/2022/09/Wildcards-Business-Club-Tespelduyn.jpg" alt class="no-lazy">
+                                        </figure>
+                                        <span class="h3">Jaarkaart</span>
+                                     </div>
+                                  </div>
+                                </a>
+                                                        
+                    </div>
+                </div>
+		    </div>
+		</section>	
+                    
+<div class="download-menu d-sm-flex align-items-start">
+    </div> 
+                   
+                    		     
+            
+			
+
+		
+		    <section class="content bg cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 cta--image inline-cover">
+                <img width="1080" height="675" src="https://golfbaantespelduyn.nl/wp-content/uploads/2018/08/MPF1988-WEB-©Maaike-Petri-Fotografie-1.jpg" alt class="no-lazy">
+            </div>
+            <div class="col-md-6 bg-green justify-content-center align-items-center d-flex centered flex-column p-4 py-6 p-sm-8">
+                <h3 class="h3">Wil jij een starttijd reserveren?</h3>
+                <a href="https://golfbaantespelduyn.nl/reserveren/" class="button white">Boek jouw starttijd</a>
+            </div>
+        </div>
+    </div>
+</section>
+	
+
+</div>
+<footer>
+	<section class="footer--contact inline-cover">
+		<img width="1800" height="1200" src="https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/images/footer.jpg" alt class="no-lazy">
+		<div class="container">
+			<div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 centered">
+				<figure class="mb-4">
+					<img src="https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/images/logo_landgoed_white.svg" height="72" alt class="no-lazy">
+				</figure>
+				<p>
+					Landgoed & Golfbaan Tespelduyn <br />
+Tespellaan 53 <br />
+2211VT Noordwijkerhout				</p>
+				<p>
+					<a href="tel:0252-241333 ">0252-241333 </a> <br>
+					<a href="mailto:receptie@tespelduyn.nl">receptie@tespelduyn.nl</a> <br>
+				</p>
+
+				<h3>Blijf op de hoogte</h3>
+				<style>
+.u-jaarkaart-tarieven .gfield_radio label::before {
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+	.gform_wrapper .gf_page_steps {
+    border-bottom: 2px dashed #000;
+	    margin: 0 0 40px 0;
+    padding: 0px 0 30px 0;
+}
+	.gform_wrapper .gform_page_footer {
+    border-top: 2px dashed #000;
+	    margin: 30px 0 0px 0;
+    padding:30px 0px 0px 0px !important;
+}
+textarea {
+    background: #f5f5f5;
+}
+span.gf_step_number {
+    background: #eee;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+}
+.gf_step_active span.gf_step_number {
+    color: #fff;
+    background:#757c13;
+}
+
+.gf_step_active {
+    color: #757c13;
+    font-weight: 700;
+}
+.u-jaarkaart-tarieven .gfield_checkbox label::before {
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+input#gform_previous_button_1 {
+    display: inline-block;
+    width: 40%;
+}
+.u-jaarkaart-tarieven .gfield_checkbox {
+    width: 100% !important;
+}
+	.u-jaarkaart-tarieven .gfield_checkbox label {padding-left:10px !important;}
+	.full-label label {
+    width: 100%;
+}
+@media(min-width:641px){
+body .gfield.no-margin-left {
+    margin-left: 0 !important;
+}
+	}
+.u-jaarkaart-tarieven .gfield_radio input, .u-jaarkaart-tarieven .gfield_checkbox input {
+    visibility: hidden;
+}
+.u-jaarkaart-tarieven .gfield_radio b, .u-jaarkaart-tarieven .gfield_checkbox b {
+    display: block;
+}
+.gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+    max-width: 100%;
+}
+.gchoice_select_all, .gform_wrapper ul.gfield_checkbox li input[type=checkbox]:checked+label, .gform_wrapper ul.gfield_radio li input[type=radio]:checked+label {
+	color: #348434;
+	}
+.gform_fields>li>label {
+    font-size: 14px !important;
+    padding-top: 3px;
+}
+.gform_fields select {
+    padding: 7px 12px !important;height: 36px;
+}
+.gform_fields input {
+    background: #f5f5f5;
+    padding: 5px 12px !important;
+}
+div#input_1_11_Container, #input_1_40_Container {
+    margin-left: 0;
+}
+	.gform_wrapper span.ginput_product_price {
+    color: #348434; font-size:14px;		
+	}
+.gform_wrapper span.ginput_total {
+    color: #348434;
+    font-size: 22px;
+}
+span.ginput_price {
+    color: #348434;
+    opacity: 1 !important;
+		margin-left: 8px;
+}
+span.ginput_product_price_label {
+    display: none;
+}
+
+/*@media(min-width:991px){
+	.u-gf-col-third {
+		display: inline-block !important;
+		width: 33.33%;
+	}
+	.u-gf-col-half {
+		display: inline-block !important;
+		width: 50%;
+	}
+}*/
+footer, section.content.bg.cta {
+    display: none;
+    height: 1px !important;
+}
+.gform_button.button {
+    min-width: 55%;
+    height: 52px;
+}
+.gform_button {background:#757C13;padding:10px 24px;border:none;color:#fff;cursor:pointer;margin-top:1rem!important;}
+.gform_button:hover {background:#3E441D;}
+select { background: #f5f5f5;}
+.ginput_container_fileupload { background: #f5f5f5;  border-radius: 4px;  padding: var(--spacing-md);  border: 1px solid var(--gray-2);}
+span.ginput_full span, .ginput_container_fileupload span { font-size: 13px !important;}
+
+</style>
+
+                <div class='gf_browser_unknown gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_5' style='display:none'>
+                        <div class='gform_heading'>
+                            <p class='gform_description'></p>
+                        </div><form method='post' enctype='multipart/form-data'  id='gform_5'  action='/baanplattegrond-scorekaarten-handicaptabellen/' data-formid='5' novalidate>
+                        <div class='gform-body gform_body'><ul id='gform_fields_5' class='gform_fields top_label form_sublabel_below description_below validation_below'><li id="field_5_9" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_5_9'><span class='gform-field-label__text'>Instagram</span></label><div class='ginput_container'><input name='input_9' id='input_5_9' type='text' value='' autocomplete='new-password'/></div><div class='gfield_description' id='gfield_description_5_9'>Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd.</div></li><li id="field_5_3" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_5_3'><span class='gform-field-label__text'>Voornaam</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_3' id='input_5_3' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /></div></li><li id="field_5_4" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_5_4'><span class='gform-field-label__text'>Achternaam</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_4' id='input_5_4' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /></div></li><li id="field_5_5" class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_5_5'><span class='gform-field-label__text'>E-mailadres</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_5' id='input_5_5' type='email' value='' class='large'    aria-required="true" aria-invalid="false"  />
+                        </div></li><li id="field_5_8" class="gfield gfield--type-email gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_hidden"  ><div class="admin-hidden-markup"><i class="gform-icon gform-icon--hidden" aria-hidden="true" title="Dit veld is verborgen bij het bekijken van het formulier"></i><span>Dit veld is verborgen bij het bekijken van het formulier</span></div><label class='gfield_label gform-field-label' for='input_5_8'><span class='gform-field-label__text'>E-mailadres *</span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_8' id='input_5_8' type='email' value='' class='large'     aria-invalid="false"  />
+                        </div></li><li id="field_5_7" class="gfield gfield--type-checkbox gfield--type-choice hide-title gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible gfield--choice-align-vertical"  ><label class='gfield_label gform-field-label gfield_label_before_complex' ><span class='gform-field-label__text'>Akkoord</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_checkbox'><ul class='gfield_checkbox' id='input_5_7'><li class='gchoice gchoice_5_7_1'>
+								<input class='gfield-choice-input' name='input_7.1' type='checkbox'  value='Ik heb de &lt;a target=&quot;_blank&quot; href=&quot;/privacy-policy/&quot;&gt;privacy voorwaarden&lt;/a&gt; gelezen en ik ga hiermee akkoord.'  id='choice_5_7_1'   />
+								<label for='choice_5_7_1' id='label_5_7_1' class='gform-field-label gform-field-label--type-inline'>Ik heb de <a target="_blank" href="/privacy-policy/">privacy voorwaarden</a> gelezen en ik ga hiermee akkoord.</label>
+							</li></ul></div></li><li id="field_5_6" class="gfield gfield--type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><style>#gform_fields_5 input[type=text] {
+    background: transparent;
+} #gform_fields_5 li.gchoice_5_7_1 {
+    padding-left: 10px !important;
+}footer {display:block;}
+footer ul li.gfield {
+    display: block;
+}input#choice_5_7_1 {
+    visibility: hidden;
+}.hide-title .gfield_label {
+    display: none !important;
+}#gform_fields_5 label::before {
+    margin-left: -24px;
+}
+.gform_footer.top_label {
+    margin: 0 auto !important;
+    text-align: center;
+}
+input#gform_submit_button_5 {
+    background: #e78113; margin-right:0px;
+    cursor: pointer !important; margin-top:0 !important;
+
+}
+input#gform_submit_button_5:hover {
+    background: #c86d0b;
+}
+#gform_fields_5 .gfield_label {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  font-size: 13px !important;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+</style></li></ul></div>
+        <div class='gform-footer gform_footer top_label'> <button type='submit' id='gform_submit_button_5' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' >Aanmelden voor de nieuwsbrief</button> 
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_5' value='postback' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_5' id='gform_theme_5' value='legacy' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_5' id='gform_style_settings_5' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_5' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='5' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='EUR' value='e3XPUjhHTboU86mIsXKmN5Wd/+7UlNDfoAevraznFu3xRZcUyrTymRDxRSf9LMLgFtaVnM9Msa2UFPLPmqkNpvRI7EEERswnqV8Anhjuy++EZ+c=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_5' value='WyJ7XCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcImZmYzdjZTA1N2Q4ODkxMWYwMDdiOGVmMWIwZjk2ZjkwXCIsXCJkYWRiYWYwOTFmMWFmNDkwZTBhM2M4ZTc1Mjc2M2MwOFwiXSxcImdmb3JtX3RoZW1lXCI6XCJmNmU2Y2VhZDQxMDZiZWQyM2YzYjJjYThjOGE5NWZhY1wiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcIjFmYjUzZmEzNzg1ODU4ZmZkYTljNDg5NDM5MjMxODYzXCIsXCJmb3JtX2lkXCI6XCJmODM3NzM3NGMyNWMwMmE5NWY2NWM0YTNjZmJiNGFhN1wiLFwidXJsXCI6XCJmZGI1ODQ0MjIzNmQ5YzliNTAzODBlMzE0NDVlYmQxOFwiLFwic3RhdGVfdGltZXN0YW1wXCI6XCI3M2E2YjdkYzhmMWYwYjI3MzA0OWFiY2I0Yzg0MDBjYVwifSIsIjVkNTlmNzU4Mzc2YzQzODUyMzdmODFkZTA2YjhkODI5IiwxNzkzMTc1MjU3XQ==' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_5' id='gform_target_page_number_5' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_5' id='gform_source_page_number_5' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>			</div>
+		</div>
+	</section>
+	<section class="footer--awards container">
+		<div class="row margins justify-content-between align-items-center py-4">
+			<div class="col-md-auto">
+
+			</div>
+			<div class="col-md-auto">
+
+				<!-- <a class="lc-widget-badge" target="_blank" data-id="10131" data-origin="club-10131" data-width="150" data-year="2020" href="https://nl.leadingcourses.com/europa+nederland+zuid-holland/golfbaan-tespelduyn/"></a>
+				<script>(function(L,C){if(typeof L.lcWidget==="undefined"){L.lcWidget=true;var a=C.createElement("script");a.src="https://www.leadingcourses.com/widget/controller.js?cache-bust="+Date.now();a.async=true;C.getElementsByTagName("head")[0].appendChild(a)}})(window,document)</script> -->
+				</div> 
+			</div>
+		</div>
+		</div>
+	</section>
+	<section class="footer--nav bg">
+		<div class="container">
+			<div class="row margins justify-content-between align-items-center">
+				<div class="col-md-auto">
+					<nav>
+						<ul>
+							<li id="menu-item-12749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12749"><a href="https://golfbaantespelduyn.nl/contact/">Contact</a></li>
+<li id="menu-item-12751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12751"><a href="https://tespelduyn.nl/een-baan-met-uitzicht/">Vacatures</a></li>
+<li id="menu-item-12752" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12752"><a href="https://tespelduyn.nl/mvo/">Duurzaamheid</a></li>
+<li id="menu-item-12753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12753"><a href="https://tespelduyn.nl/cadeaubon/">Cadeaubon</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-auto footer--social-media">
+											<a href="https://nl.linkedin.com/company/landgoed-tespelduyn" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z" />
+							</svg>
+						</a>
+																<a href="https://www.facebook.com/tespelduyngolf" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path d="M0 0v24h24v-24h-24zm16 7h-1.923c-.616 0-1.077.252-1.077.889v1.111h3l-.239 3h-2.761v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z" />
+							</svg>
+						</a>
+																<a href="https://www.instagram.com/golfbaan.tespelduyn" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path d="M14.667 12c0 1.473-1.194 2.667-2.667 2.667-1.473 0-2.667-1.193-2.667-2.667 0-1.473 1.194-2.667 2.667-2.667 1.473 0 2.667 1.194 2.667 2.667zm3.846-3.232c.038.843.046 1.096.046 3.232s-.008 2.389-.046 3.233c-.1 2.15-1.109 3.181-3.279 3.279-.844.038-1.097.047-3.234.047-2.136 0-2.39-.008-3.232-.046-2.174-.099-3.181-1.132-3.279-3.279-.039-.845-.048-1.098-.048-3.234s.009-2.389.047-3.232c.099-2.152 1.109-3.181 3.279-3.279.844-.039 1.097-.047 3.233-.047s2.39.008 3.233.046c2.168.099 3.18 1.128 3.28 3.28zm-2.405 3.232c0-2.269-1.84-4.108-4.108-4.108-2.269 0-4.108 1.839-4.108 4.108 0 2.269 1.84 4.108 4.108 4.108 2.269 0 4.108-1.839 4.108-4.108zm1.122-4.27c0-.53-.43-.96-.96-.96s-.96.43-.96.96.43.96.96.96c.531 0 .96-.43.96-.96zm6.77-7.73v24h-24v-24h24zm-4 12c0-2.172-.009-2.445-.048-3.298-.131-2.902-1.745-4.52-4.653-4.653-.854-.04-1.126-.049-3.299-.049s-2.444.009-3.298.048c-2.906.133-4.52 1.745-4.654 4.653-.039.854-.048 1.127-.048 3.299 0 2.173.009 2.445.048 3.298.134 2.906 1.746 4.521 4.654 4.654.854.039 1.125.048 3.298.048s2.445-.009 3.299-.048c2.902-.133 4.522-1.745 4.653-4.654.039-.853.048-1.125.048-3.298z" />
+							</svg>
+						</a>
+																			</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer--copyright">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-md-auto">
+					&copy; Copyright 2026 Golfbaan Tespelduyn					<ul>
+						<li><a href="https://golfbaantespelduyn.nl/privacy-policy/">Privacy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/tespelduyn/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"],"dayNamesShort":["zo","ma","di","wo","do","vr","za"],"dayNamesMin":["Z","M","D","W","D","V","Z"],"monthNames":["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"],"monthNamesShort":["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"],"monthNamesMin":["jan","feb","mrt","apr","mei","jun","jul","aug","sep","okt","nov","dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script id="tec-user-agent-js" src="https://golfbaantespelduyn.nl/wp-content/plugins/the-events-calendar/common/build/js/user-agent.js"></script>
+<script id="clonable-subfolder-ajax-middleware-js" src="https://golfbaantespelduyn.nl/clonable-cgi/js/sfm?ver=2.13.2"></script>
+<script data-wp-strategy="defer" defer id="litespeed-cache-js" src="https://golfbaantespelduyn.nl/wp-content/plugins/litespeed-cache/assets/js/instant_click.min.js"></script>
+<script id="perfmatters-lazy-load-js-before">
+window.lazyLoadOptions={elements_selector:"img[data-src],.perfmatters-lazy,.perfmatters-lazy-css-bg",thresholds:"700px 0px",class_loading:"pmloading",class_loaded:"pmloaded",callback_loaded:function(element){if(element.tagName==="IFRAME"){if(element.classList.contains("pmloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener("LazyLoad::Initialized",function(e){var lazyLoadInstance=e.detail.instance;});
+//# sourceURL=perfmatters-lazy-load-js-before
+</script>
+<script id="perfmatters-lazy-load-js" async src="https://golfbaantespelduyn.nl/wp-content/plugins/perfmatters/js/lazyload.min.js"></script>
+<script id="bootstrap-js" src="https://golfbaantespelduyn.nl/wp-content/themes/tespelduyn/js/bootstrap.js"></script>
+<script id="js.cookie-js" src="//tespelduyn.nl/wp-content/themes/tespelduyn/js/js.cookie.js?ver=7.1.3"></script>
+<script id="language-switcher.js-js" src="https://golfbaantespelduyn.nl/wp-content/plugins/clonable/assets/js/language-switcher.js"></script>
+<script id="wp-dom-ready-js" src="https://golfbaantespelduyn.nl/wp-includes/js/dist/dom-ready.min.js"></script>
+<script id="wp-hooks-js" src="https://golfbaantespelduyn.nl/wp-includes/js/dist/hooks.min.js"></script>
+<script id="wp-i18n-js" src="https://golfbaantespelduyn.nl/wp-includes/js/dist/i18n.min.js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-10-04 07:06:40+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"nl"},"Notifications":["Meldingen"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+//# sourceURL=wp-a11y-js-translations
+</script>
+<script id="wp-a11y-js" src="https://golfbaantespelduyn.nl/wp-includes/js/dist/a11y.min.js"></script>
+<script id="gform_json-js" defer='defer' src="https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/js/jquery.json.min.js"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"wdOffset":1,"helpTextShort":"Press F1 for help","helpText":"Press the arrow keys to navigate by day, PageUp and PageDown to navigate by month, Alt+PageUp and Alt+PageDown to navigate by year, or Escape to cancel.","openOnFocusHelpText":"Press Down arrow to browse the calendar, or Escape to close.","tooltipTxt":"Press Escape to cancel","disabledTxt":"Uitgeschakeld","markedTxt":"Geselecteerd","prevTxt":"Vorige","nextTxt":"Volgende","monthTxt":"Maand","yearTxt":"Jaar","months":["Januari","Februari","Maart","April","May","Juni","Juli","Augustus","September","Oktober","November","December"],"days":[{"s":"S","l":"Zondag"},{"s":"M","l":"Maandag"},{"s":"T","l":"Dinsdag"},{"s":"W","l":"Woensdag"},{"s":"T","l":"Donderdag"},{"s":"F","l":"Vrijdag"},{"s":"S","l":"Zaterdag"}]}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"Dit bestandstype is niet toegestaan. Moet \u00e9\u00e9n van de volgende zijn:","file_uploaded":"Bestand ge\u00fcpload","delete_file":"Dit bestand verwijderen","in_progress":"in behandeling","file_exceeds_limit":"Bestand overschrijdt limiet bestandsgrootte","illegal_extension":"Dit type bestand is niet toegestaan.","max_reached":"Maximale aantal bestanden bereikt","unknown_error":"Er was een probleem bij het opslaan van het bestand op de server","currently_uploading":"Wacht tot het uploaden is voltooid","cancel":"Annuleren","cancel_upload":"Deze upload annuleren","cancelled":"Geannuleerd","error":"Fout","message":"Bericht"},"vars":{"images_url":"https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"Euro","symbol_left":"&#8364;","symbol_right":"","symbol_padding":" ","thousand_separator":".","decimal_separator":",","decimals":2},"base_url":"https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms","number_formats":[],"version_hash":"b2fd269519885809cfee89013886181e","countries":{"AF":"Afghanistan","AX":"Aland-eilanden","AL":"Albani\u00eb","DZ":"Algerije","AS":"Amerikaans Samoa","AD":"Andorra","AO":"Angola","AI":"Anguilla","AQ":"Antarctica","AG":"Antigua en Barbuda","AR":"Argentini\u00eb","AM":"Armeni\u00eb","AW":"Aruba","AU":"Australi\u00eb","AT":"Oostenrijk","AZ":"Azerbeidzjan","BS":"Bahama's","BH":"Bahrein","BD":"Bangladesh","BB":"Barbados","BY":"Wit-Rusland","BE":"Belgi\u00eb","BZ":"Belize","BJ":"Benin","BM":"Bermuda","BT":"Bhutan","BO":"Bolivia","BQ":"Bonaire, Sint Eustatius en Saba","BA":"Bosni\u00eb en Herzegovina","BW":"Botswana","BV":"Bouvet eiland","BR":"Brazili\u00eb","IO":"Brits-Indisch oceaan gebied","BN":"Brunei Darussalam","BG":"Bulgarije","BF":"Burkina Faso","BI":"Burundi","CV":"Kaapverdi\u00eb","KH":"Cambodja","CM":"Kameroen","CA":"Canada","KY":"Kaaimaneilanden","CF":"Centraal-Afrikaanse Republiek","TD":"Tsjaad","CL":"Chili","CN":"China","CX":"Kersteiland","CC":"Cocoseilanden","CO":"Colombia","KM":"Comoren","CD":"Congo, Democratische Republiek","CG":"Congo","CK":"Cook eilanden","CR":"Costa Rica","CI":"Ivoorkust","HR":"Kroati\u00eb","CU":"Cuba","CW":"Cura\u00e7ao","CY":"Cyprus","CZ":"Tsjechi\u00eb","DK":"Denemarken","DJ":"Djibouti","DM":"Dominica","DO":"Dominicaanse Republiek","EC":"Ecuador","EG":"Egypte","SV":"El Salvador","GQ":"Equatoriaal-Guinea","ER":"Eritrea","EE":"Estland","SZ":"Eswatini","ET":"Ethiopi\u00eb","FK":"Falkland eilanden","FO":"Faer\u00f6er","FJ":"Fiji","FI":"Finland","FR":"Frankrijk","GF":"Frans Guyana","PF":"Frans-Polynesi\u00eb","TF":"Franse zuidelijke gebieden","GA":"Gabon","GM":"Gambia","GE":"Georgi\u00eb","DE":"Duitsland","GH":"Ghana","GI":"Gibraltar","GR":"Griekenland","GL":"Groenland","GD":"Grenada","GP":"Guadeloupe","GU":"Guam","GT":"Guatemala","GG":"Guernsey","GN":"Guinee","GW":"Guinee-Bissau","GY":"Guyana","HT":"Ha\u00efti","HM":"Heard Eiland en McDonald Eilanden","VA":"Vaticaanstad","HN":"Honduras","HK":"Hong Kong","HU":"Hongarije","IS":"IJsland","IN":"India","ID":"Indonesi\u00eb","IR":"Iran","IQ":"Irak","IE":"Ierland","IM":"Man","IL":"Isra\u00ebl","IT":"Itali\u00eb","JM":"Jamaica","JP":"Japan","JE":"Jersey","JO":"Jordani\u00eb","KZ":"Kazachstan","KE":"Kenia","KI":"Kiribati","KP":"Korea, Democratische Volksrepubliek","KR":"Korea, Republiek van","KW":"Koeweit","KG":"Kirgizi\u00eb","LA":"Lao Democratische Volksrepubliek","LV":"Letland","LB":"Libanon","LS":"Lesotho","LR":"Liberia","LY":"Libi\u00eb","LI":"Liechtenstein","LT":"Litouwen","LU":"Luxemburg","MO":"Macau","MG":"Madagaskar","MW":"Malawi","MY":"Maleisi\u00eb","MV":"Maldiven","ML":"Mali","MT":"Malta","MH":"Marshalleilanden","MQ":"Martinique","MR":"Mauritani\u00eb","MU":"Mauritius","YT":"Mayotte","MX":"Mexico","FM":"Micronesia","MD":"Moldavi\u00eb","MC":"Monaco","MN":"Mongoli\u00eb","ME":"Montenegro","MS":"Montserrat","MA":"Marokko","MZ":"Mozambique","MM":"Myanmar","NA":"Namibi\u00eb","NR":"Nauru","NP":"Nepal","NL":"Nederland","NC":"Nieuw-Caledoni\u00eb","NZ":"Nieuw-Zeeland","NI":"Nicaragua","NE":"Niger","NG":"Nigeria","NU":"Niue","NF":"Norfolk eiland","MK":"Noord-Macedoni\u00eb","MP":"Noordelijke Marianen","NO":"Noorwegen","OM":"Oman","PK":"Pakistan","PW":"Palau","PS":"Palestina, Staat","PA":"Panama","PG":"Papoea-Nieuw-Guinea","PY":"Paraguay","PE":"Peru","PH":"Filipijnen","PN":"Pitcairn","PL":"Polen","PT":"Portugal","PR":"Puerto Rico","QA":"Qatar","RE":"R\u00e9union","RO":"Roemeni\u00eb","RU":"Russische Federatie","RW":"Rwanda","BL":"Saint Barth\u00e9lemy","SH":"Sint-Helena, Hemelvaart en Tristan da Cunha","KN":"Saint Kitts en Nevis","LC":"Saint Lucia","MF":"Sint Maarten","PM":"Saint Pierre en Miquelon","VC":"Saint Vincent en de Grenadines","WS":"Samoa","SM":"San Marino","ST":"Sao Tom\u00e9 en Principe","SA":"Saoedi-Arabi\u00eb","SN":"Senegal","RS":"Servi\u00eb","SC":"Seychellen","SL":"Sierra Leone","SG":"Singapore","SX":"Sint Maarten","SK":"Slowakije","SI":"Sloveni\u00eb","SB":"Salomonseilanden","SO":"Somali\u00eb","ZA":"Zuid-Afrika","GS":"Ji\u017en\u00ed Georgie a Ji\u017en\u00ed Sandwichovy ostrovy","SS":"Zuid Soedan","ES":"Spanje","LK":"Sri Lanka","SD":"Soedan","SR":"Suriname","SJ":"Spitsbergen en Jan Mayen","SE":"Zweden","CH":"Zwitserland","SY":"Arabische Republiek Syri\u00eb","TW":"Taiwan","TJ":"Tadzjikistan","TZ":"Tanzania, de Verenigde Republiek van","TH":"Thailand","TL":"Timor-Leste","TG":"Togo","TK":"Tokelau","TO":"Tonga","TT":"Trinidad en Tobago","TN":"Tunesi\u00eb","TR":"Turkije","TM":"Turkmenistan","TC":"Turks- en Caicoseilanden","TV":"Tuvalu","UG":"Oeganda","UA":"Oekra\u00efne","AE":"Verenigde Arabische Emiraten","GB":"Verenigd Koninkrijk","US":"Verenigde Staten","UY":"Uruguay","UM":"Kleine eilanden van de Verenigde Staten","UZ":"Oezbekistan","VU":"Vanuatu","VE":"Venezuela","VN":"Vietnam","VG":"Britse Maagdeneilanden","VI":"Amerikaanse Maagdeneilanden","WF":"Wallis en Futuna","EH":"Westelijke Sahara","YE":"Yemen","ZM":"Zambia","ZW":"Zimbabwe"},"strings":{"newRowAdded":"Nieuwe rij toegevoegd.","rowRemoved":"Rij verwijderd","formSaved":"Het formulier is opgeslagen. De inhoud bevat de link om terug te keren en het formulier in te vullen."}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script id="gform_gravityforms-js" defer='defer' src="https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/js/gravityforms.min.js"></script>
+<script id="gform_conditional_logic-js-extra">
+var gf_legacy = {"is_legacy":"1"};
+//# sourceURL=gform_conditional_logic-js-extra
+</script>
+<script id="gform_conditional_logic-js" defer='defer' src="https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/js/conditional_logic.min.js"></script>
+<script id="gform_gravityforms_utils-js" defer='defer' src="https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js"></script>
+<script id="gform_gravityforms_theme_vendors-js" defer='defer' src="https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"b2fd269519885809cfee89013886181e"},"ajax":{"ajaxurl":"https://golfbaantespelduyn.nl/wp-admin/admin-ajax.php","ajax_submission_nonce":"7d847cf69c","i18n":{"step_announcement":"Stap %1$s van %2$s, %3$s","unknown_error":"Er was een onbekende fout bij het verwerken van je aanvraag. Probeer het opnieuw.","error_403":"De aanvraag is om onbekende veiligheidsredenen geblokkeerd (403-fout). Verwijder alle code-achtige tekst (scripts of databasequery&#039;s) en probeer het opnieuw."}}}},"hmr_dev":"","public_path":"https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"8be7b6af51"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script id="gform_gravityforms_theme-js" defer='defer' src="https://golfbaantespelduyn.nl/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js"></script>
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 5) {gf_global["number_formats"][5] = {"3":{"price":false,"value":false},"4":{"price":false,"value":false},"5":{"price":false,"value":false},"8":{"price":false,"value":false},"7":{"price":false,"value":false},"6":{"price":false,"value":false}};if(window['jQuery']){if(!window['gf_form_conditional_logic'])window['gf_form_conditional_logic'] = new Array();window['gf_form_conditional_logic'][5] = { logic: { 0: {"field":{"actionType":"hide","logicType":"all","rules":[{"fieldId":"8","operator":"contains","value":"@"}],"enabled":true},"section":null} }, dependents: { 0: [0] }, animation: 0, defaults: [], fields: {"3":[],"4":[],"5":[],"8":[0],"7":[],"6":[]} }; if(!window['gf_number_format'])window['gf_number_format'] = 'decimal_comma';jQuery(document).ready(function(){gform.utils.trigger({ event: 'gform/conditionalLogic/init/start', native: false, data: { formId: 5, fields: null, isInit: true } });gf_apply_rules(5, [0], true);jQuery('#gform_wrapper_5').show();jQuery('#gform_wrapper_5 form').css('opacity', '');jQuery(document).trigger('gform_post_conditional_logic', [5, null, true]);gform.utils.trigger({ event: 'gform/conditionalLogic/init/end', native: false, data: { formId: 5, fields: null, isInit: true } });} );} } } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "5", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_5" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_5";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_5" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 5, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+<script type="text/javascript" id="perfmatters-delayed-styles-js">!function(){const e=["keydown","mousemove","wheel","touchmove","touchstart","touchend"];function t(){document.querySelectorAll("link[data-pmdelayedstyle]").forEach(function(e){e.setAttribute("href",e.getAttribute("data-pmdelayedstyle"))}),e.forEach(function(e){window.removeEventListener(e,t,{passive:!0})})}e.forEach(function(e){window.addEventListener(e,t,{passive:!0})})}();</script></body>
+
+</html>
+
+<!-- Page cached by LiteSpeed Cache 7.9.1 on 2026-10-28 09:14:17 -->
