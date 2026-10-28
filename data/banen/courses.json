@@ -1734,7 +1734,11 @@
             "length_m": 5770,
             "course_rating": 71.0,
             "slope": 130,
-            "par": 71
+            "par": 71,
+            "course_rating_front9": 35.9,
+            "slope_front9": 131,
+            "course_rating_back9": 35.2,
+            "slope_back9": 129
           },
           {
             "name": "blauw",
@@ -1743,7 +1747,11 @@
             "length_m": 5308,
             "course_rating": 68.7,
             "slope": 121,
-            "par": 71
+            "par": 71,
+            "course_rating_front9": 34.9,
+            "slope_front9": 123,
+            "course_rating_back9": 33.9,
+            "slope_back9": 120
           },
           {
             "name": "rood",
@@ -1752,7 +1760,11 @@
             "length_m": 4897,
             "course_rating": 66.6,
             "slope": 110,
-            "par": 71
+            "par": 71,
+            "course_rating_front9": 34.0,
+            "slope_front9": 105,
+            "course_rating_back9": 32.7,
+            "slope_back9": 115
           },
           {
             "name": "oranje",
@@ -1761,7 +1773,11 @@
             "length_m": 4216,
             "course_rating": 63.5,
             "slope": 105,
-            "par": 71
+            "par": 71,
+            "course_rating_front9": 32.2,
+            "slope_front9": 105,
+            "course_rating_back9": 31.3,
+            "slope_back9": 107
           },
           {
             "name": "blauw",
@@ -1770,7 +1786,11 @@
             "length_m": 5308,
             "course_rating": 74.4,
             "slope": 131,
-            "par": 71
+            "par": 71,
+            "course_rating_front9": 37.7,
+            "slope_front9": 140,
+            "course_rating_back9": 36.7,
+            "slope_back9": 124
           },
           {
             "name": "rood",
@@ -1779,7 +1799,11 @@
             "length_m": 4897,
             "course_rating": 72.0,
             "slope": 127,
-            "par": 71
+            "par": 71,
+            "course_rating_front9": 36.5,
+            "slope_front9": 131,
+            "course_rating_back9": 35.5,
+            "slope_back9": 123
           },
           {
             "name": "oranje",
@@ -1788,7 +1812,11 @@
             "length_m": 4216,
             "course_rating": 67.9,
             "slope": 110,
-            "par": 71
+            "par": 71,
+            "course_rating_front9": 34.5,
+            "slope_front9": 105,
+            "course_rating_back9": 33.4,
+            "slope_back9": 114
           }
         ],
         "hole_data": []
@@ -5487,7 +5515,11 @@
             "length_m": 6279,
             "course_rating": 73.8,
             "slope": 138,
-            "par": 72
+            "par": 72,
+            "course_rating_front9": 36.8,
+            "slope_front9": 138,
+            "course_rating_back9": 37.1,
+            "slope_back9": 137
           },
           {
             "name": "geel",
@@ -5496,7 +5528,11 @@
             "length_m": 5824,
             "course_rating": 71.9,
             "slope": 127,
-            "par": 72
+            "par": 72,
+            "course_rating_front9": 35.8,
+            "slope_front9": 126,
+            "course_rating_back9": 36.1,
+            "slope_back9": 128
           },
           {
             "name": "geel",
@@ -5505,7 +5541,11 @@
             "length_m": 5824,
             "course_rating": 77.7,
             "slope": 142,
-            "par": 72
+            "par": 72,
+            "course_rating_front9": 38.7,
+            "slope_front9": 146,
+            "course_rating_back9": 39.0,
+            "slope_back9": 139
           },
           {
             "name": "blauw",
@@ -5514,7 +5554,11 @@
             "length_m": 5269,
             "course_rating": 69.4,
             "slope": 118,
-            "par": 72
+            "par": 72,
+            "course_rating_front9": 34.7,
+            "slope_front9": 121,
+            "course_rating_back9": 34.7,
+            "slope_back9": 116
           },
           {
             "name": "blauw",
@@ -5523,7 +5567,11 @@
             "length_m": 5269,
             "course_rating": 74.4,
             "slope": 131,
-            "par": 72
+            "par": 72,
+            "course_rating_front9": 37.2,
+            "slope_front9": 134,
+            "course_rating_back9": 37.2,
+            "slope_back9": 128
           },
           {
             "name": "rood",
@@ -5532,7 +5580,11 @@
             "length_m": 4743,
             "course_rating": 66.5,
             "slope": 112,
-            "par": 72
+            "par": 72,
+            "course_rating_front9": 33.6,
+            "slope_front9": 112,
+            "course_rating_back9": 33.0,
+            "slope_back9": 112
           },
           {
             "name": "rood",
@@ -5541,7 +5593,11 @@
             "length_m": 4743,
             "course_rating": 71.5,
             "slope": 120,
-            "par": 72
+            "par": 72,
+            "course_rating_front9": 36.0,
+            "slope_front9": 118,
+            "course_rating_back9": 35.5,
+            "slope_back9": 123
           },
           {
             "name": "oranje",
@@ -5550,7 +5606,11 @@
             "length_m": 4057,
             "course_rating": 63.5,
             "slope": 107,
-            "par": 72
+            "par": 72,
+            "course_rating_front9": 32.2,
+            "slope_front9": 108,
+            "course_rating_back9": 31.3,
+            "slope_back9": 108
           },
           {
             "name": "oranje",
@@ -5559,7 +5619,11 @@
             "length_m": 4057,
             "course_rating": 67.0,
             "slope": 116,
-            "par": 72
+            "par": 72,
+            "course_rating_front9": 33.9,
+            "slope_front9": 117,
+            "course_rating_back9": 33.2,
+            "slope_back9": 115
           }
         ],
         "hole_data": [

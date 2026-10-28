@@ -25,10 +25,10 @@ const SKIP = new Set([
 ]);
 // Banen die eerder uit openbare bronnen kwamen: nu de officiële gegevens, met dezelfde id.
 const REPLACE = {
-  'golfclub-zwolle/0+1': { id: 'zwolle', dataVersion: 3 },
+  'golfclub-zwolle/0+1': { id: 'zwolle', dataVersion: 4 },
   'de-koepel-wierden/0': { id: 'de-koepel', dataVersion: 4 },
   'martensplek-tiendeveen/0': { id: 'martensplek', dataVersion: 3 },
-  'twentsche-golfclub-delden/0': { id: 'twentsche', dataVersion: 3 },
+  'twentsche-golfclub-delden/0': { id: 'twentsche', dataVersion: 4 },
 };
 // Twee 9-holes lussen die samen de 18-holes baan vormen; ratings uit een aparte lus.
 const COMBINE = [{ slug: 'golfclub-zwolle', loops: [0, 1], ratingsFrom: 2 }];
@@ -102,7 +102,11 @@ function convert(c, key, loop, ratingLoop, problems) {
     const id = `${key.id}-${colour}${num ? `-${num}` : ''}-${gender}`;
     if (tees.some((x) => x.id === id)) return;
     const lengths = lengthsFor(t, holeData);
-    tees.push({ id, name, gender, rating, slope, rating9: null, slope9: null, ...(ratingUnknown ? { ratingUnknown: true } : {}), ...(lengths ? { lengths } : {}) });
+    // Officiële ratings per negen (handicaptabellen van de club), alleen bij 18 holes.
+    const nine = n === 18 && !ratingUnknown && t.course_rating_front9 && t.slope_front9
+      ? { rating9: t.course_rating_front9, slope9: t.slope_front9, ...(t.course_rating_back9 && t.slope_back9 ? { rating9Back: t.course_rating_back9, slope9Back: t.slope_back9 } : {}) }
+      : { rating9: null, slope9: null };
+    tees.push({ id, name, gender, rating, slope, ...nine, ...(ratingUnknown ? { ratingUnknown: true } : {}), ...(lengths ? { lengths } : {}) });
   };
   for (const t of rated) {
     const g = genderOf(t);
