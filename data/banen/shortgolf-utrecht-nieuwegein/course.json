@@ -1,0 +1,292 @@
+{
+  "slug": "shortgolf-utrecht-nieuwegein",
+  "name": "ShortGolf Utrecht",
+  "club_name": "Hollandsche Golfclub – ShortGolf Utrecht",
+  "holes_total": 18,
+  "course_type": "par-3",
+  "address": {
+    "street": "Sportpark Galecop 10",
+    "postal_code": "3438 HX",
+    "city": "Nieuwegein",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.0580647,
+    "lon": 5.0925733,
+    "source": "nominatim (Sportpark Galecop 10, Nieuwegein)"
+  },
+  "distance_km_from_dedemsvaart": 110.8,
+  "phone": "030 208 3005",
+  "email": "info@shortgolf-utrecht.nl",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/",
+  "booking_url": "https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/boek-een-starttijd-golfpark-shortgolf-utrecht/",
+  "founded": null,
+  "architect": null,
+  "landscape": "vlak sportparkterrein met sloten en waterpartijen, aan de rand van Nieuwegein vlak bij Utrecht",
+  "facilities": [
+    "driving range",
+    "oefengreens",
+    "golfschool",
+    "horeca (hapje & drankje)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen baanpermissie of handicap vereist; voor golfers zonder ervaring adviseert de club de par-3-lus.",
+  "description_nl": "ShortGolf Utrecht ligt op Sportpark Galecop in Nieuwegein en valt onder de Hollandsche Golfclub. Er zijn twee korte 9-holeslussen: een pure par-3-lus voor beginners en een iets langere lus met twee par-4-holes en meer water. Beide lussen zijn qualifying en vrij toegankelijk zonder baanpermissie of handicap, met daarnaast een driving range en oefengreens.",
+  "loops": [
+    {
+      "name": "9 holes Par 3",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 705,
+          "course_rating": 23.9,
+          "slope": 65,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 705,
+          "course_rating": 24.6,
+          "slope": 68,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 58,
+            "rood": 58
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 56,
+            "rood": 56
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 56,
+            "rood": 56
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 92,
+            "rood": 92
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 123,
+            "rood": 123
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 118,
+            "rood": 118
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 67,
+            "rood": 67
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 75,
+            "rood": 75
+          }
+        }
+      ]
+    },
+    {
+      "name": "9 holes Par 3|4",
+      "holes": 9,
+      "par": 29,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1099,
+          "course_rating": 27.1,
+          "slope": 89,
+          "par": 29
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1099,
+          "course_rating": 28.3,
+          "slope": 89,
+          "par": 29
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 232,
+            "rood": 232
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 97
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 58,
+            "rood": 58
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 45,
+            "rood": 45
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 245,
+            "rood": 245
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 93,
+            "rood": 93
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 88,
+            "rood": 88
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 181,
+            "rood": 181
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/course/shortgolf-utrecht-par-3/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-par-3-4.html",
+      "scorecard/SU-SCOREKAART-PAR-3-2026.pdf",
+      "scorecard/SHORTGOLF_SCOREKAART9HOLESPAR3-4_2025WEB.pdf",
+      "scorecard/Golfpark-ShortGolf-Utrecht-Par3-handicaptabellen.pdf",
+      "scorecard/Golfpark-ShortGolf-Utrecht-Par3-4-handicaptabellen.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-29",
+    "complete": true,
+    "notes": "Officiële scorekaarten via de site van de Hollandsche Golfclub: Par 3 (kaart 2026, 705 m, par 27) en Par 3|4 (kaart '2025WEB', 1099 m, par 29). Geel en rood hebben op beide kaarten dezelfde lengtes. S.I. par-3-lus in 18-holesstijl (alleen even nummers 2-18); Par 3|4-lus oneven 1-17. CR/slope uit handicaptabellen van 13-06-2024 (9 holes; geel heren, rood dames). 18-holeswaarden (lus 2x): Par 3 geel H 47,8/65, rood D 49,1/68 (par 54); Par 3|4 geel H 54,1/89, rood D 56,5/89 (par 58). Let op: de baan is volgens de opdrachtgever in 2026 vernieuwd; de ratings dateren van vóór 2026 en de Par 3|4-kaart is van 2025, dus mogelijk niet actueel. De coursepagina Par 3|4 noemt 'Par 27, 700 meter', wat afwijkt van de scorekaart (par 29, 1099 m); scorekaart aangehouden. Teekleuren van de Par 3-kaart niet visueel gecontroleerd (twee meterkolommen, gelijk aan de andere kaart aangenomen). Baan open bevestigd op 29-10-2026."
+  },
+  "sources": [
+    "https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/",
+    "https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/course/shortgolf-utrecht-par-3/",
+    "https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/course/shortgolf-utrecht-par-3-4/"
+  ]
+}

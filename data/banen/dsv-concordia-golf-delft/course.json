@@ -19,7 +19,7 @@
   "distance_km_from_dedemsvaart": 155.4,
   "phone": null,
   "email": null,
-  "website": null,
+  "website": "https://www.concordiadelft.nl",
   "booking_url": null,
   "founded": null,
   "architect": null,
@@ -78,9 +78,10 @@
         {
           "hole": 1,
           "par": 3,
-          "si": 6,
+          "si": 11,
           "si_women": null,
           "lengths_m": {
+            "geel": 101,
             "rood": 101
           }
         },
@@ -90,69 +91,77 @@
           "si": 1,
           "si_women": null,
           "lengths_m": {
+            "geel": 138,
             "rood": 138
           }
         },
         {
           "hole": 3,
           "par": 3,
-          "si": 3,
+          "si": 5,
           "si_women": null,
           "lengths_m": {
+            "geel": 135,
             "rood": 135
           }
         },
         {
           "hole": 4,
           "par": 3,
-          "si": 9,
+          "si": 17,
           "si_women": null,
           "lengths_m": {
+            "geel": 70,
             "rood": 70
           }
         },
         {
           "hole": 5,
           "par": 3,
-          "si": 7,
+          "si": 13,
           "si_women": null,
           "lengths_m": {
+            "geel": 104,
             "rood": 104
           }
         },
         {
           "hole": 6,
           "par": 3,
-          "si": 2,
+          "si": 3,
           "si_women": null,
           "lengths_m": {
+            "geel": 129,
             "rood": 104
           }
         },
         {
           "hole": 7,
           "par": 3,
-          "si": 5,
+          "si": 9,
           "si_women": null,
           "lengths_m": {
+            "geel": 112,
             "rood": 112
           }
         },
         {
           "hole": 8,
           "par": 3,
-          "si": 8,
+          "si": 15,
           "si_women": null,
           "lengths_m": {
+            "geel": 69,
             "rood": 69
           }
         },
         {
           "hole": 9,
           "par": 3,
-          "si": 4,
+          "si": 7,
           "si_women": null,
           "lengths_m": {
+            "geel": 133,
             "rood": 133
           }
         }
@@ -160,18 +169,22 @@
     }
   ],
   "scorecard": {
-    "page_url": "https://www.hole19golf.com/courses/concordia-delft-golf",
+    "page_url": "https://www.concordiadelft.nl/index.php?page=5_DB_Scorekaart",
     "files": [
-      "scorecard/hole19-scorecard.html"
+      "scorecard/hole19-scorecard.html",
+      "scorecard/concordia_scorekaart.png"
     ],
-    "source": "third-party",
+    "source": "official",
     "retrieved": "2026-10-28",
-    "complete": false,
-    "notes": "Geen officiele site met baangegevens gevonden (Hole19 verwijst naar concordiadelft.nl). Par, S.I. en per-hole lengtes van Hole19 voor tee rood (totaal 966); geel alleen totaal (991). CR/slope van Hole19 (niet officieel bevestigd); Hole19 vermeldt ook 18-holes ratings (lus 2x): heren geel 51,1/84, rood 50,9/83; dames geel 53,2/89, rood 52,9/88. GolfPass noemt afwijkende S.I. en totaal 1065. Telefoon volgens derden +31 15 212 6600 (niet bevestigd, niet ingevuld)."
+    "complete": true,
+    "notes": "Geen officiele site met baangegevens gevonden (Hole19 verwijst naar concordiadelft.nl). Par, S.I. en per-hole lengtes van Hole19 voor tee rood (totaal 966); geel alleen totaal (991). CR/slope van Hole19 (niet officieel bevestigd); Hole19 vermeldt ook 18-holes ratings (lus 2x): heren geel 51,1/84, rood 50,9/83; dames geel 53,2/89, rood 52,9/88. GolfPass noemt afwijkende S.I. en totaal 1065. Telefoon volgens derden +31 15 212 6600 (niet bevestigd, niet ingevuld). Holegegevens op 29-10-2026 vervangen door de officiële scorekaart van de club (9 holes 2x = par 54, rood 966 m / geel 991 m; S.I. 1–9 oneven, 10–18 even). Ratings ongewijzigd."
   },
   "sources": [
     "https://www.hole19golf.com/courses/concordia-delft-golf",
     "https://www.1golf.eu/en/club/dsv-concordia-golf",
     "https://www.golfpass.com/courses/36523-dsv-concordia-golf-club-par-3-course/scorecard-and-layout/scorecard-and-layout"
-  ]
+  ],
+  "status": "open",
+  "status_note": "Open; officiële site concordiadelft.nl.",
+  "status_checked": "2026-10-29"
 }

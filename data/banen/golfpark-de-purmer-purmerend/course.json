@@ -1568,5 +1568,8 @@
     "https://www.hollandschegolfclub.nl/golfpark/de-purmer/course/9-holes-kleine-baan-de-purmer/",
     "https://www.hollandschegolfclub.nl/golfpark/de-purmer/afscheid-van-de-purmer/"
   ],
-  "distance_km_from_dedemsvaart": 99.7
+  "distance_km_from_dedemsvaart": 99.7,
+  "status": "sluit",
+  "status_note": "Sluit na 31-12-2026 (woningbouw); golf.nl: \"Geen golfbaan meer in Purmerend vanaf 2027\".",
+  "status_checked": "2026-10-29"
 }

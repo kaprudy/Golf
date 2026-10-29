@@ -1,6 +1,6 @@
 # Golfscore
 
-> Golfscore is een Nederlandstalige web-app voor golfers: slagen inspreken of tikken tijdens de ronde, GPS-afstand tot de green, en na de ronde bruto, stableford, score differential en een handicapindicatie volgens het World Handicap System (WHS). De app werkt ook zonder bereik. Deze site bevat ook de scorekaarten, course ratings en slopes van 443 golfbanen in Oost-Nederland en net over de grens.
+> Golfscore is een Nederlandstalige web-app voor golfers: slagen inspreken of tikken tijdens de ronde, GPS-afstand tot de green, en na de ronde bruto, stableford, score differential en een handicapindicatie volgens het World Handicap System (WHS). De app werkt ook zonder bereik. Deze site bevat ook de scorekaarten, course ratings en slopes van 445 golfbanen in Nederland en net over de grens.
 
 - App: https://kaprudy.github.io/Golf/
 - Broncode: https://github.com/kaprudy/Golf
@@ -18,14 +18,14 @@
 - [Golfbanen in Noord-Holland](https://golf.kapital.nl/provincie/noord-holland.html): 74 banen
 - [Golfbanen in Noord-Brabant](https://golf.kapital.nl/provincie/noord-brabant.html): 72 banen
 - [Golfbanen in Gelderland](https://golf.kapital.nl/provincie/gelderland.html): 49 banen
-- [Golfbanen in Limburg](https://golf.kapital.nl/provincie/limburg.html): 33 banen
+- [Golfbanen in Limburg](https://golf.kapital.nl/provincie/limburg.html): 34 banen
+- [Golfbanen in Utrecht](https://golf.kapital.nl/provincie/utrecht.html): 29 banen
 - [Golfbanen in Overijssel](https://golf.kapital.nl/provincie/overijssel.html): 27 banen
-- [Golfbanen in Utrecht](https://golf.kapital.nl/provincie/utrecht.html): 27 banen
 - [Golfbanen in Drenthe](https://golf.kapital.nl/provincie/drenthe.html): 20 banen
 - [Golfbanen in Flevoland](https://golf.kapital.nl/provincie/flevoland.html): 16 banen
 - [Golfbanen in Friesland](https://golf.kapital.nl/provincie/friesland.html): 13 banen
 - [Golfbanen in Zeeland](https://golf.kapital.nl/provincie/zeeland.html): 12 banen
-- [Golfbanen in Duitsland](https://golf.kapital.nl/provincie/duitsland.html): 10 banen
+- [Golfbanen in Duitsland](https://golf.kapital.nl/provincie/duitsland.html): 9 banen
 - [Golfbanen in Groningen](https://golf.kapital.nl/provincie/groningen.html): 8 banen
 
 ## Gegevens
@@ -55,6 +55,8 @@
 - [De Gelpenberg Par-3 baan](https://golf.kapital.nl/banen/gelpenberg-par3.html): Aalden, 9 holes, par 27
 - [De Goese Golf](https://golf.kapital.nl/banen/de-goese-golf-goes.html): Goes, 18 holes, par 72
 - [De Goese Golf Par 3-baan](https://golf.kapital.nl/banen/de-goese-golf-goes-par-3-baan.html): Goes, 18 holes, par 54
+- [De Golfweide 18 holes](https://golf.kapital.nl/banen/golfplezier-twente-hoge-hexel-18-holes.html): Hoge Hexel, 18 holes, par 54
+- [De Golfweide 9 holes](https://golf.kapital.nl/banen/golfplezier-twente-hoge-hexel-9-holes.html): Hoge Hexel, 9 holes, par 27
 - [De Hattemse Golf & Country Club](https://golf.kapital.nl/banen/hattemse-golf-country-club.html): Hattem, 18 holes, par 68
 - [De Herkenbosche Par 3-baan](https://golf.kapital.nl/banen/de-herkenbosche-herkenbosch-par-3-baan.html): Herkenbosch, 18 holes, par 54
 - [De Herkenbosche wedstrijdbaan](https://golf.kapital.nl/banen/de-herkenbosche-herkenbosch-wedstrijdbaan.html): Herkenbosch, 18 holes, par 72
@@ -88,6 +90,7 @@
 - [Golf & Country Club Lauswolt](https://golf.kapital.nl/banen/golf-country-club-lauswolt.html): Beetsterzwaag, 18 holes, par 73
 - [Golf & Country Club Liemeer – Bovenlandenbaan](https://golf.kapital.nl/banen/liemeer-bovenlandenbaan.html): Nieuwveen, 18 holes, par 62
 - [Golf & Country Club Liemeer – Torenbaan](https://golf.kapital.nl/banen/golf-country-club-liemeer.html): Nieuwveen, 18 holes, par 72
+- [Golf & Country Makkeveld](https://golf.kapital.nl/banen/golfclub-losdorp.html): Losdorp, 18 holes, par 54
 - [Golf & Recreatiepark 't Caves Par 3-baan](https://golf.kapital.nl/banen/golfpark-t-caves-wintelre-par-3-baan.html): Wintelre, 9 holes, par 27
 - [Golf & Recreatiepark 't Caves Par 3-baan 18 holes](https://golf.kapital.nl/banen/golfpark-t-caves-wintelre-par-3-baan-18-holes.html): Wintelre, 18 holes, par 54
 - [Golf Amsteldijk A-statusbaan 18 holes](https://golf.kapital.nl/banen/golf-amsteldijk-amstelveen-a-statusbaan-18-holes.html): Amstelveen, 18 holes, par 68
@@ -139,7 +142,6 @@
 - [Golfbaan Crimpenerhout 9 holes](https://golf.kapital.nl/banen/golfbaan-crimpenerhout-krimpen-aan-de-lek-9-holes.html): Krimpen aan de Lek, 9 holes, par 33
 - [Golfbaan Crossmoor Championship Course](https://golf.kapital.nl/banen/crossmoor-weert-championship-course.html): Weert, 18 holes, par 72
 - [Golfbaan Crossmoor Par-3 Course](https://golf.kapital.nl/banen/crossmoor-weert-par-3-course.html): Weert, 18 holes, par 54
-- [Golfbaan De Achterste Hoef](https://golf.kapital.nl/banen/golfbaan-de-achterste-hoef-bladel.html): Bladel, 18 holes, par 58
 - [Golfbaan de Golfhorst](https://golf.kapital.nl/banen/golfhorst-america.html): America, 18 holes, par 70
 - [Golfbaan de Golfhorst Americabaan par 3](https://golf.kapital.nl/banen/golfhorst-america-americabaan-par-3.html): America, 9 holes, par 27
 - [Golfbaan De Hooge Rotterdamsche](https://golf.kapital.nl/banen/de-hooge-rotterdamsche-bergschenhoek.html): Bergschenhoek, 18 holes, par 71
@@ -201,6 +203,7 @@
 - [Golfbaan Midden-Brabant](https://golf.kapital.nl/banen/golfbaan-midden-brabant-esbeek.html): Esbeek, 18 holes, par 72
 - [Golfbaan Molenberg](https://golf.kapital.nl/banen/golfbaan-molenberg-burgh-haamstede.html): Burgh-Haamstede, 18 holes, par 54
 - [Golfbaan Molenslag](https://golf.kapital.nl/banen/golfbaan-molenslag-barsingerhorn.html): Barsingerhorn, 9 holes, par 30
+- [Golfbaan Oijense Zij](https://golf.kapital.nl/banen/golfbaan-oijense-zij-oss.html): Oss, 9 holes, par 27
 - [Golfbaan Ooghduyne](https://golf.kapital.nl/banen/golfbaan-ooghduyne-julianadorp.html): Julianadorp, 18 holes, par 70
 - [Golfbaan Overloon 18 holes](https://golf.kapital.nl/banen/golfbaan-overloon-18-holes.html): Overloon, 18 holes, par 60
 - [Golfbaan Overloon 9 holes](https://golf.kapital.nl/banen/golfbaan-overloon-9-holes.html): Overloon, 9 holes, par 30
@@ -285,14 +288,12 @@
 - [Golfclub Gaasterland Paarse par 3](https://golf.kapital.nl/banen/golfclub-gaasterland-paarse-par-3.html): Oudemirdum, 9 holes, par 27
 - [Golfclub Grevelingenhout](https://golf.kapital.nl/banen/golfclub-grevelingenhout-bruinisse.html): Bruinisse, 18 holes, par 72
 - [Golfclub Grevelingenhout Par 3-baan](https://golf.kapital.nl/banen/golfclub-grevelingenhout-bruinisse-par-3-baan.html): Bruinisse, 18 holes, par 54
-- [Golfclub Gut Düneburg](https://golf.kapital.nl/banen/gut-dueneburg-haren.html): Haren, 18 holes, par 72
 - [Golfclub Heelsum Airborne-Helsum](https://golf.kapital.nl/banen/golfclub-heelsum-airborne-helsum.html): Heelsum, 18 holes, par 71
 - [Golfclub Heelsum Helsum-Sandr](https://golf.kapital.nl/banen/golfclub-heelsum-helsum-sandr.html): Heelsum, 18 holes, par 71
 - [Golfclub Heelsum Sandr-Airborne](https://golf.kapital.nl/banen/golfclub-heelsum-sandr-airborne.html): Heelsum, 18 holes, par 72
 - [Golfclub Heidemeer](https://golf.kapital.nl/banen/golfclub-heidemeer.html): Heerenveen, 9 holes, par 35
 - [Golfclub Holthuizen](https://golf.kapital.nl/banen/holthuizen-roden.html): Roden, 18 holes, par 73
 - [Golfclub Holthuizen Par 3-baan](https://golf.kapital.nl/banen/holthuizen-roden-par-3-baan.html): Roden, 18 holes, par 54
-- [Golfclub Hoog Vaals](https://golf.kapital.nl/banen/golfclub-hoog-vaals.html): Vaals, 18 holes, par 58
 - [Golfclub Hoogland Amersfoort](https://golf.kapital.nl/banen/golfclub-hoogland-amersfoort.html): Hoogland, 18 holes, par 68
 - [Golfclub Houtrak](https://golf.kapital.nl/banen/golfclub-houtrak-halfweg.html): Halfweg, 18 holes, par 72
 - [Golfclub Kagerzoom](https://golf.kapital.nl/banen/golfclub-kagerzoom-warmond.html): Warmond, 18 holes, par 70
@@ -304,7 +305,6 @@
 - [Golfclub Landgoed De Compagnie](https://golf.kapital.nl/banen/de-compagnie-veendam.html): Veendam, 18 holes, par 72
 - [Golfclub Landgoed De Compagnie Par 3-baan](https://golf.kapital.nl/banen/de-compagnie-veendam-par-3-baan.html): Veendam, 18 holes, par 54
 - [Golfclub Landgoed Nieuwkerk](https://golf.kapital.nl/banen/golfclub-landgoed-nieuwkerk-goirle.html): Goirle, 18 holes, par 72
-- [Golfclub Losdorp](https://golf.kapital.nl/banen/golfclub-losdorp.html): Losdorp, 18 holes, par 54
 - [Golfclub Mariënweide 18 holes](https://golf.kapital.nl/banen/golfclub-marienweide-aerdenhout-18-holes.html): Aerdenhout, 18 holes, par 54
 - [Golfclub Mariënweide 9 holes](https://golf.kapital.nl/banen/golfclub-marienweide-aerdenhout-9-holes.html): Aerdenhout, 9 holes, par 27
 - [Golfclub Meerssen](https://golf.kapital.nl/banen/golfclub-meerssen-bunde.html): Bunde, 18 holes, par 58
@@ -367,6 +367,10 @@
 - [Golfpark Gendersteyn Gele lus](https://golf.kapital.nl/banen/golfpark-gendersteyn-veldhoven-gele-lus.html): Veldhoven, 9 holes, par 36
 - [Golfpark Gendersteyn Rode lus](https://golf.kapital.nl/banen/golfpark-gendersteyn-veldhoven-rode-lus.html): Veldhoven, 9 holes, par 35
 - [Golfpark Land van Thorn](https://golf.kapital.nl/banen/golfpark-land-van-thorn-hunsel.html): Hunsel, 18 holes, par 72
+- [Golfpark Maastricht International Championship Course](https://golf.kapital.nl/banen/international-golf-maastricht-championship-course.html): Maastricht, 18 holes, par 72
+- [Golfpark Maastricht International Gele lus](https://golf.kapital.nl/banen/international-golf-maastricht-gele-lus.html): Maastricht, 9 holes, par 35
+- [Golfpark Maastricht International Limburg Course](https://golf.kapital.nl/banen/international-golf-maastricht-limburg-course.html): Maastricht, 9 holes, par 35
+- [Golfpark Maastricht International Rode lus](https://golf.kapital.nl/banen/international-golf-maastricht-rode-lus.html): Maastricht, 9 holes, par 37
 - [Golfpark Reymerswael](https://golf.kapital.nl/banen/golfvereniging-reymerswael-rilland.html): Rilland, 18 holes, par 71
 - [Golfpark Rotterdam Rode lus](https://golf.kapital.nl/banen/golfpark-rotterdam-rode-lus.html): Rotterdam, 9 holes, par 36
 - [Golfpark Sint Nyk](https://golf.kapital.nl/banen/golfpark-sint-nyk.html): Legemeer, 18 holes, par 72
@@ -380,8 +384,6 @@
 - [Golfpark Westerpark Gele lus](https://golf.kapital.nl/banen/golfpark-westerpark-zoetermeer-gele-lus.html): Zoetermeer, 9 holes, par 35
 - [Golfpark Wilnis](https://golf.kapital.nl/banen/golfpark-wilnis.html): Wilnis, 18 holes, par 72
 - [Golfpark Wilnis Par 3-baan](https://golf.kapital.nl/banen/golfpark-wilnis-par-3-baan.html): Wilnis, 18 holes, par 54
-- [Golfplezier Twente 18 holes](https://golf.kapital.nl/banen/golfplezier-twente-hoge-hexel-18-holes.html): Hoge Hexel, 18 holes, par 54
-- [Golfplezier Twente 9 holes](https://golf.kapital.nl/banen/golfplezier-twente-hoge-hexel-9-holes.html): Hoge Hexel, 9 holes, par 27
 - [Golfsociëteit De Lage Vuursche](https://golf.kapital.nl/banen/golfsocieteit-de-lage-vuursche.html): Den Dolder, 18 holes, par 71
 - [Golftuin Zwolle Par 3-baan](https://golf.kapital.nl/banen/golftuin-zwolle-par-3-baan.html): Zwolle, 18 holes, par 54
 - [Golfvereniging Albatross](https://golf.kapital.nl/banen/golfvereniging-albatross-prinsenbeek.html): Prinsenbeek, 18 holes, par 70
@@ -404,8 +406,6 @@
 - [Hooge Graven](https://golf.kapital.nl/banen/hooge-graven.html): Ommen, 18 holes, par 72
 - [Hooge Graven Par 3](https://golf.kapital.nl/banen/par3.html): Ommen, 9 holes, par 27
 - [Huninga's Heem Pitch & Putt](https://golf.kapital.nl/banen/huningas-heem-oostwold.html): Oostwold, 18 holes, par 54
-- [International Golf Maastricht Championship Course](https://golf.kapital.nl/banen/international-golf-maastricht-championship-course.html): Maastricht, 18 holes, par 72
-- [International Golf Maastricht Limburg Course](https://golf.kapital.nl/banen/international-golf-maastricht-limburg-course.html): Maastricht, 9 holes, par 35
 - [Kennemer Golf & Country Club A/B](https://golf.kapital.nl/banen/kennemer-golf-country-club-zandvoort-a-b.html): Zandvoort, 18 holes, par 72
 - [Kennemer Golf & Country Club A/C](https://golf.kapital.nl/banen/kennemer-golf-country-club-zandvoort-a-c.html): Zandvoort, 18 holes, par 72
 - [Kennemer Golf & Country Club B/C](https://golf.kapital.nl/banen/kennemer-golf-country-club-zandvoort-b-c.html): Zandvoort, 18 holes, par 72
@@ -457,8 +457,11 @@
 - [Rosendaelsche Golfclub](https://golf.kapital.nl/banen/rosendaelsche-golfclub-arnhem.html): Arnhem, 18 holes, par 72
 - [Sallandsche Golfclub De Hoek](https://golf.kapital.nl/banen/de-hoek.html): Diepenveen, 18 holes, par 72
 - [Schaerweijde Golf](https://golf.kapital.nl/banen/schaerweijde-golf-zeist.html): Zeist, 18 holes, par 56
+- [Short Golf Hof van Twente](https://golf.kapital.nl/banen/twentse-golf-academy-bentelo.html): Bentelo, 9 holes, par 27
 - [Shortgolf Swifterbant](https://golf.kapital.nl/banen/shortgolf-swifterbant.html): Swifterbant, 18 holes, par 54
 - [Shortgolf Twente](https://golf.kapital.nl/banen/shortgolf-twente-tubbergen.html): Tubbergen, 18 holes, par 54
+- [ShortGolf Utrecht Par 3](https://golf.kapital.nl/banen/shortgolf-utrecht-nieuwegein-par-3.html): Nieuwegein, 9 holes, par 27
+- [ShortGolf Utrecht Par 3|4](https://golf.kapital.nl/banen/shortgolf-utrecht-nieuwegein-par-3-4.html): Nieuwegein, 9 holes, par 29
 - [ShortGolf Zeumeren](https://golf.kapital.nl/banen/shortgolf-zeumeren-voorthuizen.html): Voorthuizen, 9 holes, par 27
 - [Sportfondsen Golfbaan Het Wedde](https://golf.kapital.nl/banen/golfbaan-het-wedde-voorschoten.html): Voorschoten, 18 holes, par 54
 - [The Dutch](https://golf.kapital.nl/banen/the-dutch-spijk.html): Spijk, 18 holes, par 71
@@ -466,7 +469,6 @@
 - [The Links Valley North](https://golf.kapital.nl/banen/the-links-valley-ermelo-north.html): Ermelo, 9 holes, par 35
 - [The Links Valley South](https://golf.kapital.nl/banen/the-links-valley-ermelo-south.html): Ermelo, 9 holes, par 35
 - [Twentsche Golfclub](https://golf.kapital.nl/banen/twentsche.html): Ambt Delden, 18 holes, par 72
-- [Twentse Golf Academy](https://golf.kapital.nl/banen/twentse-golf-academy-bentelo.html): Bentelo, 9 holes, par 27
 - [Twentse Golf Park](https://golf.kapital.nl/banen/twentse-golf-park.html): Haaksbergen, 9 holes, par 27
 - [Utrechtse Golfclub 'De Pan'](https://golf.kapital.nl/banen/utrechtse-golfclub-de-pan.html): Bosch en Duin, 18 holes, par 72
 - [Utrechtse Golfclub Amelisweerd](https://golf.kapital.nl/banen/utrechtse-golfclub-amelisweerd.html): Utrecht, 18 holes, par 70

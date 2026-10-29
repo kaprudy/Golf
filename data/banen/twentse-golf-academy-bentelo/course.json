@@ -1,11 +1,11 @@
 {
   "slug": "twentse-golf-academy-bentelo",
-  "name": "Twentse Golf Academy",
-  "club_name": "Twentse Golf Academy",
+  "name": "Short Golf Hof van Twente (voorheen Twentse Golf Academy)",
+  "club_name": "Short Golf Hof van Twente",
   "holes_total": 9,
   "course_type": "par-3",
   "address": {
-    "street": "Bentelosestraat 54a",
+    "street": "Platenkampsweg",
     "postal_code": null,
     "city": "Bentelo",
     "province": "Overijssel",
@@ -148,6 +148,11 @@
     "https://www.hole19golf.com/courses/twentse-golf-academy",
     "https://www.golf.nl/api/playgolfapi/GetGolfCourses",
     "https://golfkaart.com/api/kaart.json",
-    "https://overpass-api.de (leisure=golf_course)"
-  ]
+    "https://overpass-api.de (leisure=golf_course)",
+    "https://www.tubantia.nl",
+    "https://www.hofweekblad.nl"
+  ],
+  "status": "open",
+  "status_note": "Open; na sluiting in 2024 op 5-7-2025 heropend als Short Golf Hof van Twente (Bram Holterman). 9 holes par 3 + driving range, geen GVB nodig. Holegegevens van vóór de heropening (Hole19).",
+  "status_checked": "2026-10-29"
 }

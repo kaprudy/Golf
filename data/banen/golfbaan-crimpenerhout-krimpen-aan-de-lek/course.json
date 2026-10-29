@@ -484,5 +484,8 @@
   "sources": [
     "https://www.golfbaancrimpenerhout.nl/golfbaan/baaninformatie/",
     "https://www.golfbaancrimpenerhout.nl/contact/"
-  ]
+  ],
+  "status": "open",
+  "status_note": "Open (golfbaancrimpenerhout.nl, NGF B-status). Het domein crimpenerhout.nl dat te koop staat is een ander adres.",
+  "status_checked": "2026-10-29"
 }
