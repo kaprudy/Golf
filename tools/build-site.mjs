@@ -4,12 +4,15 @@
 //   node tools/build-site.mjs           schrijft de bestanden in server/site/
 //   node tools/build-site.mjs --check   controleert alleen of ze actueel zijn (voor de tests)
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DEFAULT_COURSES, BASE_GEO, isShortCourse } from '../js/courses.js';
 import { distanceM } from '../js/gps.js';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'server', 'site');
+// Versie van de stylesheet in de link, zodat een browser na een wijziging niet de oude uit de cache houdt.
+const CSS = `/style.css?v=${crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, 'style.css'))).digest('hex').slice(0, 10)}`;
 const SITE = 'https://golf.kapital.nl';
 const APP = 'https://kaprudy.github.io/Golf/';
 const REPO = 'https://github.com/kaprudy/Golf';
@@ -69,7 +72,7 @@ function page({ path: p, title: t, description, body, jsonld = [], active = '' }
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="${CSS}">
 ${jsonld.map((j) => `  <script type="application/ld+json">${JSON.stringify(j)}</script>`).join('\n')}
 </head>
 <body>
@@ -436,6 +439,11 @@ ${provinces.map((p) => `- [Golfbanen in ${p.name}](${SITE}/provincie/${p.slug}.h
 
 ${courses.map((c) => `- [${title(c)}](${SITE}${courseUrl(c)}): ${c.town ?? ''}, ${holesOf(c)} holes, par ${parOf(c)}`).join('\n')}
 `;
+
+// De pagina's die niet gegenereerd worden krijgen dezelfde stylesheet-link.
+for (const rel of ['index.html']) {
+  files[rel] = fs.readFileSync(path.join(ROOT, rel), 'utf8').replace(/href="\/style\.css(\?v=\w+)?"/, `href="${CSS}"`);
+}
 
 // ---------- Schrijven of controleren ----------
 
