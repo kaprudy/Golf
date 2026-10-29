@@ -3,7 +3,8 @@
 import { API_URL } from './config.js';
 
 const TOKEN_KEY = 'golfscore-cloud';
-// Geheim van deze telefoon voor een anoniem account, of {off:true} als de gebruiker uitlogde.
+// Geheim van deze telefoon voor een anoniem account, {account:true} als er met e-mail is
+// ingelogd, of {off:true} als de gebruiker uitlogde.
 const DEVICE_KEY = 'golfscore-device';
 const listeners = [];
 
@@ -19,6 +20,8 @@ function saveSession(session) {
 }
 
 let session = loadSession();
+// Al met e-mail ingelogd van vóór {account:true}: dat alsnog onthouden.
+if (session?.user && !session.user.anonymous && !deviceInfo().account && !deviceInfo().off) setDeviceInfo({ account: true });
 
 class CloudError extends Error {
   // status 0 = de server is niet bereikt; reason: 'offline' | 'blocked' (bereikbaar, maar weigert de app) | 'unreachable'
@@ -75,8 +78,10 @@ export async function currentUser() {
     const { user } = await api('GET', '/api/me');
     return user;
   } catch (err) {
-    // Offline: met de bewaarde gegevens doorgaan; synchroniseren lukt later wel.
-    return err.status === 0 ? session?.user ?? null : null;
+    // Alleen bij 401 is de sessie echt ongeldig (dan heeft api() hem al gewist). Offline, een
+    // haperende server (5xx, bijv. tijdens een uitrol) of te veel verzoeken: gewoon doorgaan met
+    // het bewaarde account; anders zou de app bij elke hapering een nieuw account aanmaken.
+    return session?.user ?? null;
   }
 }
 
@@ -88,7 +93,7 @@ async function authenticate(path, email, password) {
   const result = await api('POST', path, { email, password });
   session = { token: result.token, user: result.user };
   saveSession(session);
-  setDeviceInfo({});
+  setDeviceInfo({ account: true });
   return result.user;
 }
 
@@ -102,8 +107,10 @@ function setDeviceInfo(info) {
   try { localStorage.setItem(DEVICE_KEY, JSON.stringify(info)); } catch { /* geen opslag */ }
 }
 
-// Mag de app vanzelf een anoniem account voor deze telefoon gebruiken? Niet meer na uitloggen.
-export const autoDeviceAllowed = () => !deviceInfo().off;
+// Mag de app vanzelf een anoniem account voor deze telefoon gebruiken? Niet meer na uitloggen,
+// en niet als je met e-mail was ingelogd: dan moet je opnieuw inloggen, geen nieuw account.
+export const autoDeviceAllowed = () => !deviceInfo().off && !deviceInfo().account;
+export const hadEmailAccount = () => Boolean(deviceInfo().account);
 
 // Anoniem account voor deze telefoon: geen e-mail of wachtwoord nodig.
 export async function deviceLogin() {
@@ -124,7 +131,7 @@ export async function upgradeAccount(email, password) {
   const { user } = await api('POST', '/api/account', { email, password });
   session = { ...session, user };
   saveSession(session);
-  setDeviceInfo({}); // de oude apparaatcode geeft geen toegang meer
+  setDeviceInfo({ account: true }); // de oude apparaatcode geeft geen toegang meer
   return user;
 }
 

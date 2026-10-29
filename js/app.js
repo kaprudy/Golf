@@ -633,6 +633,8 @@ async function initCloud() {
   // E-mail en wachtwoord zijn optioneel; daar vragen we pas om na een ronde (zie afterRound).
   if (!cloud.user && api.autoDeviceAllowed() && navigator.onLine) {
     try { cloud.user = await api.deviceLogin(); state.sync.syncedAt = null; } catch { /* later opnieuw */ }
+  } else if (!cloud.user && api.hadEmailAccount()) {
+    toast('Je bent uitgelogd. Log opnieuw in bij <b>Instellingen → Account en cloud</b>; je gegevens op deze telefoon blijven staan.', 8000);
   }
   render();
   if (cloud.user) syncNow();
@@ -831,12 +833,38 @@ async function flushEvents() {
   }
 }
 
-function logSession() {
+// Wat voor telefoon en browser (voor het beheeroverzicht): merk en model alleen als de browser
+// dat geeft (Chrome op Android), verder besturingssysteem, browser en schermmaat.
+async function deviceDetails() {
+  const ua = navigator.userAgent;
+  const d = {
+    os: /Android ([\d.]+)/.exec(ua)?.[0] ?? (/(iPhone|iPad).*OS ([\d_]+)/.exec(ua) ? `iOS ${/OS ([\d_]+)/.exec(ua)[1].replace(/_/g, '.')}` : null)
+      ?? (/Windows|Mac OS X|Linux/.exec(ua)?.[0] ?? null),
+    browser: /SamsungBrowser\/[\d.]+|Firefox\/[\d.]+|Edg\/[\d.]+|Chrome\/[\d.]+|Version\/[\d.]+.*Safari/.exec(ua)?.[0].replace(/\/([\d]+)[\d.]*/, ' $1').replace(/ .*Safari/, ' Safari') ?? null,
+    screen: `${screen.width}×${screen.height}`,
+    lang: navigator.language,
+  };
+  try {
+    const hi = await navigator.userAgentData?.getHighEntropyValues?.(['model', 'platformVersion']);
+    if (hi?.model) d.model = hi.model;
+    if (hi?.platform === 'Android' && hi.platformVersion) d.os = `Android ${hi.platformVersion.split('.')[0]}`;
+  } catch { /* niet beschikbaar */ }
+  try { d.persisted = await navigator.storage?.persisted?.(); } catch { /* onbekend */ }
+  return d;
+}
+
+async function logSession() {
   const last = Date.parse(getMeta().lastSessionAt) || 0;
   if (Date.now() - last < SESSION_GAP_MS) return;
   setMeta({ lastSessionAt: new Date().toISOString() });
-  logEvent('open', { gps: gpsOn(), standalone: matchMedia('(display-mode: standalone)').matches || navigator.standalone === true });
+  logEvent('open', {
+    gps: gpsOn(), standalone: matchMedia('(display-mode: standalone)').matches || navigator.standalone === true,
+    device: await deviceDetails(),
+  });
 }
+// Vraag de browser om de gegevens niet op te ruimen als de opslag vol raakt (anders kan ook de
+// code van het anonieme account verdwijnen en lijkt de telefoon een nieuwe gebruiker).
+navigator.storage?.persist?.().catch(() => {});
 setMeta({ lastSessionAt: null });
 logSession();
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') logSession(); });

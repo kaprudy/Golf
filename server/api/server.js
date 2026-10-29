@@ -90,6 +90,7 @@ export function openDatabase(path = DB_PATH) {
       data       TEXT
     );
     CREATE INDEX IF NOT EXISTS app_events_time ON app_events(created_at);
+    CREATE INDEX IF NOT EXISTS app_events_user ON app_events(user_id, kind, created_at);
   `);
   // Anonieme accounts (alleen een geheim van de telefoon, geen e-mail). Kolom later toegevoegd.
   if (!db.prepare('PRAGMA table_info(users)').all().some((c) => c.name === 'device_hash')) {
@@ -313,14 +314,29 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
     const registrations = db.prepare(`SELECT substr(created_at, 1, 10) day,
         SUM(CASE WHEN ${anon} THEN 1 ELSE 0 END) anonymous, SUM(CASE WHEN ${anon} THEN 0 ELSE 1 END) email
         FROM users WHERE created_at > ? GROUP BY day ORDER BY day`).all(ago(30));
+    // Telefoon: uit de laatste keer 'app geopend' waarbij de app dat meestuurde.
     const recentUsers = db.prepare(`SELECT u.id, u.email, u.perms, u.created_at, g.updated_at last_sync, g.data,
-        (SELECT COUNT(*) FROM speech_samples s WHERE s.user_id = u.id) samples
+        (SELECT COUNT(*) FROM speech_samples s WHERE s.user_id = u.id) samples,
+        (SELECT COUNT(*) FROM app_events e WHERE e.user_id = u.id AND e.kind = 'open') opens,
+        (SELECT MAX(created_at) FROM app_events e WHERE e.user_id = u.id AND e.kind = 'open') last_open,
+        (SELECT e.data FROM app_events e WHERE e.user_id = u.id AND e.kind = 'open' AND json_extract(e.data, '$.device') IS NOT NULL
+          ORDER BY e.created_at DESC LIMIT 1) open_data
         FROM users u LEFT JOIN golf_state g ON g.user_id = u.id ORDER BY u.id DESC LIMIT 100`).all().map((r) => {
       let rounds = null;
       let players = null;
       try { const d = JSON.parse(r.data); rounds = d.history?.length ?? 0; players = d.players?.length ?? 0; } catch { /* nog niets opgeslagen */ }
+      let device = null;
+      try {
+        const o = JSON.parse(r.open_data);
+        const d = o?.device;
+        if (d && typeof d === 'object') {
+          const str = (v) => (typeof v === 'string' ? v.slice(0, 60) : null);
+          device = { model: str(d.model), os: str(d.os), browser: str(d.browser), screen: str(d.screen), lang: str(d.lang),
+            installed: o.standalone === true, persisted: typeof d.persisted === 'boolean' ? d.persisted : null };
+        }
+      } catch { /* geen telefoongegevens */ }
       return { id: r.id, email: r.email.includes('@') ? r.email : null, createdAt: r.created_at, lastSync: r.last_sync, rounds, players, samples: r.samples,
-        admin: isAdmin(r), perms: permsOf(r) };
+        opens: r.opens, lastOpen: r.last_open, device, admin: isAdmin(r), perms: permsOf(r) };
     });
 
     const rows = q.allSamples.all().map((r) => {

@@ -6,6 +6,14 @@ const nf = new Intl.NumberFormat('nl-NL');
 const pct = (x) => (x == null ? '–' : `${Math.round(x * 100)}%`);
 const date = (iso) => (iso ? new Date(iso).toLocaleDateString('nl-NL', { day: 'numeric', month: 'short' }) : '–');
 const dateTime = (iso) => (iso ? new Date(iso).toLocaleString('nl-NL', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '–');
+// Telefoon van een account: model (als de browser het geeft), systeem, browser, scherm.
+const deviceCell = (d) => {
+  if (!d) return '<span class="muted">onbekend</span>';
+  const main = d.model || d.os || 'onbekend';
+  const sub = [d.model ? d.os : null, d.browser, d.screen, d.installed ? 'geïnstalleerd' : 'in browser',
+    d.persisted === false ? 'opslag niet blijvend' : null].filter(Boolean).join(' · ');
+  return `<b>${esc(main)}</b>${sub ? `<br><span class="muted small">${esc(sub)}</span>` : ''}`;
+};
 let token = sessionStorage.getItem(TOKEN_KEY);
 
 async function api(method, path, body) {
@@ -140,9 +148,9 @@ function render(o) {
     <div class="card"><h2>Accounts</h2>
       <p class="muted small">De nieuwste 100. Scores en rondes zelf zijn hier niet te zien, alleen aantallen. Wie GPS-punten mag vastleggen, ziet in de app de knoppen “Ik sta op de tee/green”; alleen hun punten tellen mee in het overzicht hierboven.</p>
       <div class="scroll"><table>
-        <tr><th class="num">#</th><th>Account</th><th>Aangemaakt</th><th>Laatst gesynchroniseerd</th><th class="num">Rondes</th><th class="num">Spelers</th><th class="num">Zinnen gedeeld</th><th>GPS-punten vastleggen</th></tr>
+        <tr><th class="num">#</th><th>Account</th><th>Aangemaakt</th><th>Telefoon</th><th>Laatst geopend</th><th class="num">Keer geopend</th><th>Laatst gesynchroniseerd</th><th class="num">Rondes</th><th class="num">Spelers</th><th class="num">Zinnen gedeeld</th><th>GPS-punten vastleggen</th></tr>
         ${o.recentUsers.map((u) => `<tr><td class="num">${u.id}</td><td>${u.email ? esc(u.email) : '<span class="muted">anoniem (telefoon)</span>'}</td>
-          <td>${dateTime(u.createdAt)}</td><td>${dateTime(u.lastSync)}</td><td class="num">${u.rounds ?? '–'}</td><td class="num">${u.players ?? '–'}</td><td class="num">${u.samples}</td>
+          <td>${dateTime(u.createdAt)}</td><td>${deviceCell(u.device)}</td><td>${dateTime(u.lastOpen)}</td><td class="num">${u.opens || '–'}</td><td>${dateTime(u.lastSync)}</td><td class="num">${u.rounds ?? '–'}</td><td class="num">${u.players ?? '–'}</td><td class="num">${u.samples}</td>
           <td>${u.admin ? '<span class="pill ok">beheerder</span>' : `<label class="small"><input type="checkbox" data-perm="gps-mark" data-user="${u.id}" ${u.perms?.includes('gps-mark') ? 'checked' : ''}> mag</label>`}</td></tr>`).join('')}
       </table></div>
     </div>`;

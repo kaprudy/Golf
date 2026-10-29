@@ -180,7 +180,7 @@ test('beheeroverzicht alleen voor beheerders', async () => {
 
     // Sessies, rondes en GPS-punten
     const ev = await post('/api/events', { events: [
-      { kind: 'open', at: new Date().toISOString(), data: { gps: true, standalone: true } },
+      { kind: 'open', at: new Date().toISOString(), data: { gps: true, standalone: true, device: { model: 'Pixel 8', os: 'Android 15', browser: 'Chrome 141', screen: '412×915', persisted: true, extra: 'x' } } },
       { kind: 'open', at: '2099-01-01T00:00:00Z', data: { gps: false } },
       { kind: 'round_start', data: { course: 'par3', holes: 'front' } },
       { kind: 'onbekend' },
@@ -207,6 +207,11 @@ test('beheeroverzicht alleen voor beheerders', async () => {
     assert.equal(tee.n, 2);
     assert.ok(tee.spreadM >= 10 && tee.spreadM <= 12, String(tee.spreadM));
     assert.deepEqual(o3.recentUsers.find((u) => u.id === devId).perms, ['gps-mark']);
+    // Telefoon uit de laatste 'app geopend' met gegevens; onbekende velden vallen weg
+    const devRow = o3.recentUsers.find((u) => u.id === devId);
+    assert.deepEqual(devRow.device, { model: 'Pixel 8', os: 'Android 15', browser: 'Chrome 141', screen: '412×915', lang: null, installed: true, persisted: true });
+    assert.equal(devRow.opens, 2);
+    assert.equal(o3.recentUsers.find((u) => u.email).device, null);
   } finally {
     adminServer.close();
   }
