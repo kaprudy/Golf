@@ -260,18 +260,20 @@
     "page_url": "https://harderwold.nl/golf/golfbaan/",
     "files": [
       "scorecard/Plattegrond_Harderwold.pdf",
+      "scorecard/Nieuwe-9-holes-golfbaan.pdf",
       "scorecard/Harderwold-heren-samengevoegd-1.pdf",
       "scorecard/page.html",
       "scorecard/hole19.html"
     ],
     "source": "official",
     "complete": false,
-    "notes": "Scorecard staat op de officiele plattegrond (PDF): alleen lengtes per hole (1-9 en 10-18 via tweede tee) en par; geen stroke index. Kaart vermeldt 1431 m voor holes 10-18 maar de holes tellen op tot 1438 (totaal kaart 2870). CR/slope uit officiele handicaptabellen 17-10-2023: 18 holes geel H 57.0/88, D 60.1/95; 1e 9 H 28.6/89, D 30.2/95; 2e 9 H 28.4/88, D 29.9/96. Par-3 variant (oranje tee, par 27 per 9): 9 holes H 23.5/57, D 24.1/61; geen lengtes/holegegevens voor oranje. Hole19 toont afwijkende (oudere) lengtes. Telefoon: site noemt ook +31 320 288 185 (brasserie)."
+    "notes": "Scorecard staat op de officiele plattegrond (PDF): alleen lengtes per hole (1-9 en 10-18 via tweede tee) en par; geen stroke index. Kaart vermeldt 1431 m voor holes 10-18 maar de holes tellen op tot 1438 (totaal kaart 2870). CR/slope uit officiele handicaptabellen 17-10-2023: 18 holes geel H 57.0/88, D 60.1/95; 1e 9 H 28.6/89, D 30.2/95; 2e 9 H 28.4/88, D 29.9/96. Par-3 variant (oranje tee, par 27 per 9): 9 holes H 23.5/57, D 24.1/61; geen lengtes/holegegevens voor oranje. Hole19 toont afwijkende (oudere) lengtes. Telefoon: site noemt ook +31 320 288 185 (brasserie). Officiële bron gecontroleerd 29-10-2026: clubsite, mediabibliotheek en golf.nl opnieuw doorzocht; alleen de bekende kaart (ook als 'Nieuwe-9-holes-golfbaan.pdf', zelfde lengtes/par, geen SI) en handicaptabellen (17-10-2023; een oudere tabel 15-11-2022 staat nog in de uploads). Geen officiele stroke index of oranje-lengtes gevonden; holedata ongewijzigd."
   },
   "sources": [
     "https://harderwold.nl/golf/golfbaan/",
     "https://harderwold.nl/golf/golfbaan/tarieven/",
     "https://www.golfpass.com/courses/23095-harderwold-golf-events/",
-    "https://www.hole19golf.com/courses/harderwold-golf-events"
+    "https://www.hole19golf.com/courses/harderwold-golf-events",
+    "https://harderwold.nl/wp-content/uploads/2025/03/Nieuwe-9-holes-golfbaan.pdf"
   ]
 }

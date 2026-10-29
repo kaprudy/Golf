@@ -48,8 +48,26 @@
           "color": "yellow",
           "gender": "men",
           "length_m": 3311,
-          "course_rating": 58.9,
-          "slope": 102,
+          "course_rating": 57.9,
+          "slope": 105,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2924,
+          "course_rating": 56.2,
+          "slope": 101,
+          "par": 58
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 3311,
+          "course_rating": 61.2,
+          "slope": 109,
           "par": 58
         },
         {
@@ -57,8 +75,8 @@
           "color": "red",
           "gender": "women",
           "length_m": 2924,
-          "course_rating": 59.8,
-          "slope": 102,
+          "course_rating": 59.1,
+          "slope": 105,
           "par": 58
         }
       ],
@@ -196,16 +214,22 @@
     "page_url": "https://www.golfparcdepettelaar.nl/golfbaan/",
     "files": [
       "scorecard/page-golfpass.html",
-      "scorecard/page.html"
+      "scorecard/page.html",
+      "scorecard/Bois-le-Duc-18-holes-Heren.pdf",
+      "scorecard/Bois-le-Duc-18-holes-Dames.pdf",
+      "scorecard/Bois-le-Duc-9-holes-Heren.pdf",
+      "scorecard/Bois-le-Duc-9-holes-Dames.pdf",
+      "scorecard/clubsite-handicap.html"
     ],
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Officiële site geeft alleen: 9 holes par 29; heren 3311 m CR 58,9 SR 102; dames 2924 m CR 59,8 SR 102 (lengtes/ratings gelden voor 18 holes = 2x 9). Geen scorekaart gepubliceerd. Par en S.I. holes 1-9 van golfpass.com (derden); S.I. holes 10-18 onbekend. Golfpass geeft holelengtes alleen in yards (heren 148,172,177,164,318,362,175,145,141 = 1802 yd; dames 105,153,139,153,305,327,151,128,135 = 1596 yd; totaal 18 holes 3620/3199 yd) - niet omgerekend opgenomen. Tee-kleuren geel/rood volgens golfpass."
+    "notes": "Officiële site geeft alleen: 9 holes par 29; heren 3311 m CR 58,9 SR 102; dames 2924 m CR 59,8 SR 102 (lengtes/ratings gelden voor 18 holes = 2x 9). Geen scorekaart gepubliceerd. Par en S.I. holes 1-9 van golfpass.com (derden); S.I. holes 10-18 onbekend. Golfpass geeft holelengtes alleen in yards (heren 148,172,177,164,318,362,175,145,141 = 1802 yd; dames 105,153,139,153,305,327,151,128,135 = 1596 yd; totaal 18 holes 3620/3199 yd) - niet omgerekend opgenomen. Tee-kleuren geel/rood volgens golfpass. Officiële bron gecontroleerd 29-10-2026: de clubpagina Handicap (golf/handicap) linkt playing-handicaptabellen van Golfclub Bois le Duc d.d. 14-08-2025, van kracht per 15-12-2025: 18 holes par 58, heren geel CR 57,9/SR 105, rood 56,2/101; dames geel 61,2/109, rood 59,1/105 (9 holes par 29: heren geel 29,0/105, rood 28,1/101; dames geel 30,6/109, rood 29,6/105). Deze ratings vervangen de oudere waarden van de pagina Golfbaan (heren 58,9/102, dames 59,8/102). Lengtes 3311/2924 m staan op de clubsite als heren/dames en zijn hier aan geel/rood gekoppeld. Par en S.I. per hole blijven van golfpass.com (derden): de club publiceert geen scorekaart."
   },
   "sources": [
     "https://www.golfparcdepettelaar.nl/golfbaan/",
     "https://www.golfparcdepettelaar.nl/golf/tarieven/",
-    "https://www.golfpass.com/travel-advisor/courses/23175-parc-de-pettelaar-golf-club/scorecard-and-layout"
+    "https://www.golfpass.com/travel-advisor/courses/23175-parc-de-pettelaar-golf-club/scorecard-and-layout",
+    "https://www.golfparcdepettelaar.nl/golf/handicap/"
   ]
 }

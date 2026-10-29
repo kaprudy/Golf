@@ -44,7 +44,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "men",
-          "length_m": null,
+          "length_m": 1378,
           "course_rating": 47.0,
           "slope": 68,
           "par": 54
@@ -53,30 +53,214 @@
           "name": "rood",
           "color": "red",
           "gender": "women",
-          "length_m": null,
+          "length_m": 1378,
           "course_rating": 48.5,
           "slope": 69,
           "par": 54
         }
       ],
-      "hole_data": []
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 48,
+            "rood": 48
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 79,
+            "rood": 79
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 66,
+            "rood": 66
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 97
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 58,
+            "rood": 58
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 54,
+            "rood": 54
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 48,
+            "rood": 48
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 74,
+            "rood": 74
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 79,
+            "rood": 79
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 66,
+            "rood": 66
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 97,
+            "rood": 97
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 58,
+            "rood": 58
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 54,
+            "rood": 54
+          }
+        }
+      ]
     }
   ],
   "scorecard": {
     "page_url": "https://www.kruisselt.nl/golfclub-t-kruisselt/",
     "files": [
+      "scorecard/Nieuwe-scorekaart-2026.jpg",
       "scorecard/GCC-t-Kruisselt-Dames-en-Heren-2026.pdf",
-      "scorecard/golfpass-scorecard.html"
+      "scorecard/2305-Plattegrond-golfbaan-bijgesneden.jpg",
+      "scorecard/page.html"
     ],
     "source": "official",
-    "retrieved": "2026-10-28",
-    "complete": false,
-    "notes": "Geen scorekaart met par/SI/lengte per hole gepubliceerd. Alleen officiele baanhandicaptabel 02-07-2026 (18 holes: geel heren CR 47,0/SR 68, rood dames 48,5/69; 9 holes: CR 23,5 resp. 24,3, par 27). GolfPass (verouderd, derde partij) noemt 689 m totaal over 9 holes. Holes 55-110 m volgens clubsite."
+    "retrieved": "2026-10-29",
+    "complete": true,
+    "notes": "Officiële bron gecontroleerd 29-10-2026: officiële scorekaart 2026 gevonden in de mediabibliotheek van kruisselt.nl (wp-content/uploads/2026/08/Nieuwe-scorekaart-2026.jpg, niet gelinkt vanaf een pagina). 9 holes 2x gespeeld; één afslag voor geel (heren) en rood (dames) met dezelfde lengte. Par/S.I./lengtes van de kaart (S.I. oneven op holes 1-9, even op 10-18). Kaarttotaal 689 m per 9 holes, som van de holelengtes is 692 m (3 m verschil op de kaart zelf). CR/slope aangehouden uit de NGF-baanhandicaptabel d.d. 02-07-2026 (geel heren 47,0/68, rood dames 48,5/69); de scorekaart noemt afwijkend 47,2/60 heren en 48,3/64 dames."
   },
   "sources": [
+    "https://www.kruisselt.nl/wp-content/uploads/2026/08/Nieuwe-scorekaart-2026.jpg",
+    "https://www.kruisselt.nl/wp-content/uploads/2026/08/GCC-t-Kruisselt-Dames-en-Heren-2026.pdf",
     "https://www.kruisselt.nl/golf/",
     "https://www.kruisselt.nl/golfclub-t-kruisselt/",
-    "https://www.golfpass.com/courses/39064-kruisselt-golf-club/scorecard-and-layout",
     "https://www.leadingcourses.com/clubs/europe%2Bthe-netherlands%2Boverijssel/golfclub-t-kruisselt"
   ]
 }

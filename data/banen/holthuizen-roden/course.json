@@ -332,7 +332,8 @@
           "si": 10,
           "si_women": null,
           "lengths_m": {
-            "lengte": 87
+            "geel": 87,
+            "rood": 87
           }
         },
         {
@@ -341,7 +342,8 @@
           "si": 4,
           "si_women": null,
           "lengths_m": {
-            "lengte": 130
+            "geel": 130,
+            "rood": 130
           }
         },
         {
@@ -350,7 +352,8 @@
           "si": 6,
           "si_women": null,
           "lengths_m": {
-            "lengte": 117
+            "geel": 117,
+            "rood": 117
           }
         },
         {
@@ -359,7 +362,8 @@
           "si": 12,
           "si_women": null,
           "lengths_m": {
-            "lengte": 86
+            "geel": 86,
+            "rood": 86
           }
         },
         {
@@ -368,7 +372,8 @@
           "si": 2,
           "si_women": null,
           "lengths_m": {
-            "lengte": 161
+            "geel": 161,
+            "rood": 161
           }
         },
         {
@@ -377,7 +382,8 @@
           "si": 8,
           "si_women": null,
           "lengths_m": {
-            "lengte": 100
+            "geel": 100,
+            "rood": 100
           }
         },
         {
@@ -386,7 +392,8 @@
           "si": 18,
           "si_women": null,
           "lengths_m": {
-            "lengte": 75
+            "geel": 75,
+            "rood": 75
           }
         },
         {
@@ -395,7 +402,8 @@
           "si": 16,
           "si_women": null,
           "lengths_m": {
-            "lengte": 77
+            "geel": 77,
+            "rood": 77
           }
         },
         {
@@ -404,7 +412,8 @@
           "si": 14,
           "si_women": null,
           "lengths_m": {
-            "lengte": 80
+            "geel": 80,
+            "rood": 80
           }
         },
         {
@@ -413,7 +422,8 @@
           "si": 9,
           "si_women": null,
           "lengths_m": {
-            "lengte": 87
+            "geel": 87,
+            "rood": 87
           }
         },
         {
@@ -422,7 +432,8 @@
           "si": 3,
           "si_women": null,
           "lengths_m": {
-            "lengte": 130
+            "geel": 130,
+            "rood": 130
           }
         },
         {
@@ -431,7 +442,8 @@
           "si": 5,
           "si_women": null,
           "lengths_m": {
-            "lengte": 117
+            "geel": 117,
+            "rood": 117
           }
         },
         {
@@ -440,7 +452,8 @@
           "si": 11,
           "si_women": null,
           "lengths_m": {
-            "lengte": 86
+            "geel": 86,
+            "rood": 86
           }
         },
         {
@@ -449,7 +462,8 @@
           "si": 1,
           "si_women": null,
           "lengths_m": {
-            "lengte": 161
+            "geel": 161,
+            "rood": 161
           }
         },
         {
@@ -458,7 +472,8 @@
           "si": 7,
           "si_women": null,
           "lengths_m": {
-            "lengte": 100
+            "geel": 100,
+            "rood": 100
           }
         },
         {
@@ -467,7 +482,8 @@
           "si": 17,
           "si_women": null,
           "lengths_m": {
-            "lengte": 75
+            "geel": 75,
+            "rood": 75
           }
         },
         {
@@ -476,7 +492,8 @@
           "si": 15,
           "si_women": null,
           "lengths_m": {
-            "lengte": 77
+            "geel": 77,
+            "rood": 77
           }
         },
         {
@@ -485,7 +502,8 @@
           "si": 13,
           "si_women": null,
           "lengths_m": {
-            "lengte": 80
+            "geel": 80,
+            "rood": 80
           }
         }
       ]
@@ -496,14 +514,15 @@
     "files": [
       "scorecard/scorekaart-hoofdbaan-2023.png",
       "scorecard/scorekaart-par3.png",
-      "scorecard/hcp-Holthuizen-Heren-1.jpg",
-      "scorecard/hcp-Holthuizen-Dames-1.jpg",
-      "scorecard/hcp-Holthuizen-Par-3-baan-1.jpg"
+      "scorecard/Holthuizen-Heren.pdf",
+      "scorecard/Holthuizen-Dames.pdf",
+      "scorecard/Holthuizen-Par-3-baan.pdf",
+      "scorecard/page.html"
     ],
     "source": "official",
-    "retrieved": "2026-10-28",
+    "retrieved": "2026-10-29",
     "complete": true,
-    "notes": "Fysiek 9 holes; scorekaart toont 18 holes (holes 10-18 = tweede ronde met andere afslagen/par). CR/slope uit officiele baanhandicaptabellen d.d. 06-09-2022; de scorekaart is van 2023 en de site noemt elders 'slope 128' (1golf.eu: geel 71,9/128, 6005 m) - ratings mogelijk verouderd. Eén index-kolom (geen aparte dames-SI). Par-3 scorekaart geeft één lengte per hole (key 'lengte'); CR/SR geel heren en rood dames uit handicaptabel."
+    "notes": "Officiële bron gecontroleerd 29-10-2026: alle holegegevens en CR/slope zijn al officieel (scorekaarten hoofdbaan 2023 en par-3, NGF-baanhandicaptabellen 06-09-2022, nog steeds de actuele tabellen op de site); bestanden opnieuw gedownload. De eerder genoemde 'slope 128' is de slope van de 1e 9 holes geel heren (CR 35,7/128), geen afwijking; 1golf.eu niet meer gebruikt. Par-3-lengtes nu onder de tee-namen geel/rood (één lengte per hole op de kaart). Fysiek 9 holes; scorekaart toont 18 holes (holes 10-18 = tweede ronde met andere afslagen/S.I.). Eén index-kolom (geen aparte dames-S.I.)."
   },
   "sources": [
     "https://golfclubholthuizen.nl/baan/baaninformatie/scorekaarten/",
@@ -511,7 +530,6 @@
     "https://golfclubholthuizen.nl/baan/over/",
     "https://golfclubholthuizen.nl/baan/over/architectuur/",
     "https://golfclubholthuizen.nl/club/historie/",
-    "https://golfclubholthuizen.nl/baan/tarieven-2/tarieven/",
-    "https://www.1golf.eu/club/golfclub-holthuizen/"
+    "https://golfclubholthuizen.nl/baan/tarieven-2/tarieven/"
   ]
 }

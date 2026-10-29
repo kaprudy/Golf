@@ -107,7 +107,8 @@
             "gelb": 445,
             "blau": 431,
             "rot": 409,
-            "orange": 373
+            "orange": 373,
+            "grün": null
           }
         },
         {
@@ -119,7 +120,8 @@
             "gelb": 143,
             "blau": 127,
             "rot": 127,
-            "orange": 111
+            "orange": 111,
+            "grün": null
           }
         },
         {
@@ -131,7 +133,8 @@
             "gelb": 342,
             "blau": 342,
             "rot": 272,
-            "orange": 272
+            "orange": 272,
+            "grün": null
           }
         },
         {
@@ -143,7 +146,8 @@
             "gelb": 329,
             "blau": 305,
             "rot": 305,
-            "orange": 254
+            "orange": 254,
+            "grün": null
           }
         },
         {
@@ -155,7 +159,8 @@
             "gelb": 186,
             "blau": 154,
             "rot": 154,
-            "orange": 108
+            "orange": 108,
+            "grün": null
           }
         },
         {
@@ -167,7 +172,8 @@
             "gelb": 446,
             "blau": 446,
             "rot": 401,
-            "orange": 392
+            "orange": 392,
+            "grün": null
           }
         },
         {
@@ -179,7 +185,8 @@
             "gelb": 334,
             "blau": 300,
             "rot": 300,
-            "orange": 251
+            "orange": 251,
+            "grün": null
           }
         },
         {
@@ -191,7 +198,8 @@
             "gelb": 402,
             "blau": 348,
             "rot": 348,
-            "orange": 307
+            "orange": 307,
+            "grün": null
           }
         },
         {
@@ -203,7 +211,8 @@
             "gelb": 274,
             "blau": 240,
             "rot": 240,
-            "orange": 203
+            "orange": 203,
+            "grün": null
           }
         },
         {
@@ -215,7 +224,8 @@
             "gelb": 171,
             "blau": 143,
             "rot": 143,
-            "orange": 102
+            "orange": 102,
+            "grün": null
           }
         },
         {
@@ -227,7 +237,8 @@
             "gelb": 513,
             "blau": 447,
             "rot": 447,
-            "orange": 385
+            "orange": 385,
+            "grün": null
           }
         },
         {
@@ -239,7 +250,8 @@
             "gelb": 370,
             "blau": 326,
             "rot": 326,
-            "orange": 244
+            "orange": 244,
+            "grün": null
           }
         },
         {
@@ -251,7 +263,8 @@
             "gelb": 418,
             "blau": 365,
             "rot": 365,
-            "orange": 335
+            "orange": 335,
+            "grün": null
           }
         },
         {
@@ -263,7 +276,8 @@
             "gelb": 331,
             "blau": 296,
             "rot": 296,
-            "orange": 266
+            "orange": 266,
+            "grün": null
           }
         },
         {
@@ -275,7 +289,8 @@
             "gelb": 311,
             "blau": 293,
             "rot": 260,
-            "orange": 245
+            "orange": 245,
+            "grün": null
           }
         },
         {
@@ -287,7 +302,8 @@
             "gelb": 466,
             "blau": 436,
             "rot": 393,
-            "orange": 370
+            "orange": 370,
+            "grün": null
           }
         },
         {
@@ -299,7 +315,8 @@
             "gelb": 338,
             "blau": 338,
             "rot": 266,
-            "orange": 266
+            "orange": 266,
+            "grün": null
           }
         },
         {
@@ -311,7 +328,8 @@
             "gelb": 161,
             "blau": 161,
             "rot": 146,
-            "orange": 146
+            "orange": 146,
+            "grün": null
           }
         }
       ]
@@ -326,9 +344,9 @@
       "scorecard/page.html"
     ],
     "source": "official",
-    "retrieved": "2026-10-28",
-    "complete": true,
-    "notes": "Holelengtes/par/HCP van officiële scorekaart (scorekarte_2017.pdf). CR/slope uit Course-Handicap-tabellen 2025 (stand 21.07.2025); op de kaart van 2017 staan oudere ratings (Herren gelb 71,3/134, blau 68,9/126, Damen rot 72,8/129, orange 69,3/122). Lengtes groene (junioren)tee onbekend. Let op: golfingrecord.com toont voor rood enkele afwijkende lengtes (bv. hole 3: 319, hole 17: 329) - mogelijk zijn lengtes sinds 2017 gewijzigd. 9-holes ratings (1-9, 2025): Herren gelb 35,4/132, blau 34,2/125, Junioren grün 29,9/102 (par 33); Damen rot 36,2/132, orange 34,2/126, grün 30,9/105."
+    "retrieved": "2026-10-29",
+    "complete": false,
+    "notes": "Holelengtes/par/HCP van officiële scorekaart (scorekarte_2017.pdf). CR/slope uit Course-Handicap-tabellen 2025 (stand 21.07.2025); op de kaart van 2017 staan oudere ratings (Herren gelb 71,3/134, blau 68,9/126, Damen rot 72,8/129, orange 69,3/122). Lengtes groene (junioren)tee onbekend. Let op: golfingrecord.com toont voor rood enkele afwijkende lengtes (bv. hole 3: 319, hole 17: 329) - mogelijk zijn lengtes sinds 2017 gewijzigd. 9-holes ratings (1-9, 2025): Herren gelb 35,4/132, blau 34,2/125, Junioren grün 29,9/102 (par 33); Damen rot 36,2/132, orange 34,2/126, grün 30,9/105. Officiële bron gecontroleerd 29-10-2026: geen nieuwere scorekaart dan scorekarte_2017.pdf op /platz/scorekarte; ratings 2025 ongewijzigd. De ontbrekende map scorecard/ is opnieuw gevuld met de officiële bestanden (scorekarte_2017.pdf, beide Course-Handicap-PDF's 2025, page.html). Lengtes groene tee niet gepubliceerd; alle gebruikte data is officieel. Sleutel grün (null) aan lengths_m toegevoegd zodat tee-namen en lengtesleutels overeenkomen; complete op false gezet omdat de lengtes van de groene tee ontbreken."
   },
   "sources": [
     "https://www.gc-emstal.de/platz/scorekarte",

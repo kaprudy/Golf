@@ -236,14 +236,14 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfplezier-twente-hoge-hexel-18-holes', province: 'Overijssel', town: 'Hoge Hexel', dataVersion: 1, name: 'De Golfweide 18 holes (Hoge Hexel)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [9, 15, 5, 7, 17, 1, 3, 11, 13, 10, 2, 12, 14, 16, 8, 4, 6, 18], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.40817, lon: 6.57135 }, website: 'https://golfpleziertwente.nl',
+    id: 'golfplezier-twente-hoge-hexel-18-holes', province: 'Overijssel', town: 'Hoge Hexel', dataVersion: 1, name: 'De Golfweide 18 holes (Hoge Hexel)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [9, 15, 5, 7, 17, 1, 3, 11, 13, 10, 2, 12, 14, 16, 8, 4, 6, 18], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.40817, lon: 6.57135 }, website: 'https://degolfweide.nl/',
     tees: [
       { id: 'golfplezier-twente-hoge-hexel-18-holes-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [71, 44, 55, 56, 49, 92, 69, 50, 69, 58, 55, 40, 34, 39, 65, 66, 58, 46] },
       { id: 'golfplezier-twente-hoge-hexel-18-holes-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [71, 44, 55, 56, 49, 92, 69, 50, 69, 58, 55, 40, 34, 39, 65, 66, 58, 46] },
     ],
   },
   {
-    id: 'golfplezier-twente-hoge-hexel-9-holes', province: 'Overijssel', town: 'Hoge Hexel', dataVersion: 1, name: 'De Golfweide 9 holes (Hoge Hexel)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [4, 8, 2, 5, 3, 6, 7, 1, 9], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.40817, lon: 6.57135 }, website: 'https://golfpleziertwente.nl',
+    id: 'golfplezier-twente-hoge-hexel-9-holes', province: 'Overijssel', town: 'Hoge Hexel', dataVersion: 1, name: 'De Golfweide 9 holes (Hoge Hexel)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [4, 8, 2, 5, 3, 6, 7, 1, 9], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.40817, lon: 6.57135 }, website: 'https://degolfweide.nl/',
     tees: [
       { id: 'golfplezier-twente-hoge-hexel-9-holes-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [125, 56, 153, 69, 86, 77, 69, 124, 59] },
       { id: 'golfplezier-twente-hoge-hexel-9-holes-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [125, 56, 153, 69, 86, 77, 69, 124, 59] },
@@ -394,7 +394,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'pitch-putt-heerde', province: 'Gelderland', town: 'Heerde', dataVersion: 2, name: 'Pitch & Putt Heerde', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [15, 17, 16, 5, 1, 13, 6, 3, 4, 8, 7, 11, 18, 14, 12, 10, 9, 2], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.39725, lon: 6.0113 }, website: 'https://www.pitchenputtheerde.nl',
+    id: 'pitch-putt-heerde', province: 'Gelderland', town: 'Heerde', dataVersion: 2, name: 'Pitch & Putt Heerde', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [15, 17, 16, 5, 1, 13, 6, 3, 4, 8, 7, 11, 18, 14, 12, 10, 9, 2], confirmed: true, countsForIndex: false, location: { lat: 52.39725, lon: 6.0113 }, website: 'https://www.pitchenputtheerde.nl',
     tees: [
       { id: 'pitch-putt-heerde-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [50, 34, 45, 62, 90, 59, 47, 82, 42, 63, 48, 56, 36, 40, 54, 30, 66, 50] },
       { id: 'pitch-putt-heerde-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [50, 34, 45, 62, 90, 59, 47, 82, 42, 63, 48, 56, 36, 40, 54, 30, 66, 50] },
@@ -444,10 +444,10 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'twentse-golf-academy-bentelo', province: 'Overijssel', town: 'Bentelo', dataVersion: 1, name: 'Short Golf Hof van Twente (Bentelo)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [2, 4, 8, 7, 1, 6, 3, 5, 9], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.2404, lon: 6.695 }, website: 'https://twentsegolfacademy.nl',
+    id: 'twentse-golf-academy-bentelo', province: 'Overijssel', town: 'Bentelo', dataVersion: 1, name: 'Short Golf Hof van Twente (Bentelo)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [1, 2, 3, 4, 5, 6, 7, 8, 9], confirmed: true, siUnknown: true, countsForIndex: false, location: { lat: 52.2404, lon: 6.695 }, website: 'https://shortgolfhofvantwente.nl/',
     tees: [
-      { id: 'twentse-golf-academy-bentelo-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [95, 66, 43, 71, 113, 78, 61, 70, 34] },
-      { id: 'twentse-golf-academy-bentelo-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [95, 66, 43, 71, 113, 78, 61, 70, 34] },
+      { id: 'twentse-golf-academy-bentelo-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [95, 100, 65, 95, 85, 75, 55, 60, 70] },
+      { id: 'twentse-golf-academy-bentelo-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [95, 100, 65, 95, 85, 75, 55, 60, 70] },
     ],
   },
   {
@@ -458,10 +458,10 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 't-kruisselt-de-lutte', province: 'Overijssel', town: 'De Lutte', dataVersion: 2, name: 'Golf & Country Club \'t Kruisselt (De Lutte)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], confirmed: true, siUnknown: true, countsForIndex: false, location: { lat: 52.31916, lon: 6.96638 }, website: 'https://www.kruisselt.nl/golf/',
+    id: 't-kruisselt-de-lutte', province: 'Overijssel', town: 'De Lutte', dataVersion: 2, name: 'Golf & Country Club \'t Kruisselt (De Lutte)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [5, 1, 11, 13, 9, 7, 3, 15, 17, 6, 2, 12, 14, 10, 8, 4, 16, 18], confirmed: true, countsForIndex: false, location: { lat: 52.31916, lon: 6.96638 }, website: 'https://www.kruisselt.nl/golf/',
     tees: [
-      { id: 't-kruisselt-de-lutte-geel-h', name: 'Geel (heren)', gender: 'h', rating: 47, slope: 68, rating9: 23.5, slope9: 68, rating9Back: 23.5, slope9Back: 68 },
-      { id: 't-kruisselt-de-lutte-rood-d', name: 'Rood (dames)', gender: 'd', rating: 48.5, slope: 69, rating9: 24.3, slope9: 69, rating9Back: 24.3, slope9Back: 69 },
+      { id: 't-kruisselt-de-lutte-geel-h', name: 'Geel (heren)', gender: 'h', rating: 47, slope: 68, rating9: 23.5, slope9: 68, lengths: [108, 108, 48, 74, 79, 66, 97, 58, 54, 108, 108, 48, 74, 79, 66, 97, 58, 54], rating9Back: 23.5, slope9Back: 68 },
+      { id: 't-kruisselt-de-lutte-rood-d', name: 'Rood (dames)', gender: 'd', rating: 48.5, slope: 69, rating9: 24.3, slope9: 69, lengths: [108, 108, 48, 74, 79, 66, 97, 58, 54, 108, 108, 48, 74, 79, 66, 97, 58, 54], rating9Back: 24.3, slope9Back: 69 },
     ],
   },
   {
@@ -763,6 +763,15 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
+    id: 'golfbaan-dorhout-mees', province: 'Flevoland', town: 'Biddinghuizen', dataVersion: 1, name: 'Golfbaan Dorhout Mees (Biddinghuizen)', holeCount: 18, parTotal: 71, pars: [5, 4, 3, 4, 4, 3, 4, 5, 3, 5, 4, 3, 4, 4, 3, 5, 5, 3], si: [9, 11, 15, 13, 5, 7, 1, 3, 17, 4, 10, 16, 14, 2, 12, 6, 8, 18], confirmed: true, location: { lat: 52.40986, lon: 5.67777 }, website: 'https://www.dorhoutmeesgolf.nl/',
+    tees: [
+      { id: 'golfbaan-dorhout-mees-geel-h', name: 'Geel (heren)', gender: 'h', rating: 68.5, slope: 114, rating9: null, slope9: null, lengths: [423, 366, 96, 331, 356, 199, 414, 476, 104, 453, 288, 106, 286, 400, 150, 429, 430, 128] },
+      { id: 'golfbaan-dorhout-mees-geel-d', name: 'Geel (dames)', gender: 'd', rating: 73.2, slope: 127, rating9: null, slope9: null, lengths: [423, 366, 96, 331, 356, 199, 414, 476, 104, 453, 288, 106, 286, 400, 150, 429, 430, 128] },
+      { id: 'golfbaan-dorhout-mees-rood-h', name: 'Rood (heren)', gender: 'h', rating: 64.2, slope: 103, rating9: null, slope9: null, lengths: [353, 356, 91, 279, 323, 138, 327, 422, 99, 409, 277, 100, 243, 350, 112, 405, 373, 110] },
+      { id: 'golfbaan-dorhout-mees-rood-d', name: 'Rood (dames)', gender: 'd', rating: 69.6, slope: 117, rating9: null, slope9: null, lengths: [353, 356, 91, 279, 323, 138, 327, 422, 99, 409, 277, 100, 243, 350, 112, 405, 373, 110] },
+    ],
+  },
+  {
     id: 'veluwse-golfclub-hoog-soeren', province: 'Gelderland', town: 'Hoog Soeren', dataVersion: 1, name: 'Veluwse Golfclub (Hoog Soeren)', holeCount: 18, parTotal: 72, pars: [4, 3, 4, 5, 3, 4, 4, 4, 5, 4, 3, 4, 5, 3, 4, 4, 4, 5], si: [7, 17, 1, 11, 15, 5, 3, 13, 9, 6, 16, 4, 12, 18, 10, 2, 14, 8], confirmed: true, location: { lat: 52.21736, lon: 5.87103 }, website: 'https://veluwsegolfclub.nl/',
     tees: [
       { id: 'veluwse-golfclub-hoog-soeren-geel-h', name: 'Geel (heren)', gender: 'h', rating: 70.9, slope: 136, rating9: null, slope9: null, lengths: [329, 119, 408, 441, 147, 342, 347, 293, 413, 350, 130, 408, 435, 106, 319, 374, 273, 434] },
@@ -993,11 +1002,11 @@ export const DEFAULT_COURSES = [
     id: 'golfclub-gaasterland', province: 'Friesland', town: 'Oudemirdum', dataVersion: 1, name: 'Golfclub Gaasterland (Oudemirdum)', holeCount: 9, parTotal: 35, pars: [4, 3, 4, 3, 4, 5, 4, 4, 4], si: [6, 8, 2, 9, 1, 4, 3, 7, 5], confirmed: true, location: { lat: 52.86211, lon: 5.54447 }, website: 'https://golfclubgaasterland.nl/',
     tees: [
       { id: 'golfclub-gaasterland-geel-h', name: 'Geel (heren)', gender: 'h', rating: 35.5, slope: 130, rating9: null, slope9: null, lengths: [353, 136, 358, 139, 335, 458, 345, 338, 351] },
-      { id: 'golfclub-gaasterland-rood-h', name: 'Rood (heren)', gender: 'h', rating: 33.5, slope: 117, rating9: null, slope9: null, lengths: [291, 114, 301, 124, 317, 385, 298, 291, 297] },
-      { id: 'golfclub-gaasterland-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 31.5, slope: 117, rating9: null, slope9: null, lengths: [248, 97, 256, 102, 276, 327, 253, 247, 252] },
+      { id: 'golfclub-gaasterland-rood-h', name: 'Rood (heren)', gender: 'h', rating: 33.5, slope: 117, rating9: null, slope9: null, lengths: [291, 114, 301, 124, 276, 385, 298, 291, 297] },
+      { id: 'golfclub-gaasterland-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 31.5, slope: 117, rating9: null, slope9: null, lengths: [248, 97, 256, 102, 238, 327, 253, 247, 252] },
       { id: 'golfclub-gaasterland-geel-d', name: 'Geel (dames)', gender: 'd', rating: 38.3, slope: 145, rating9: null, slope9: null, lengths: [353, 136, 358, 139, 335, 458, 345, 338, 351] },
-      { id: 'golfclub-gaasterland-rood-d', name: 'Rood (dames)', gender: 'd', rating: 35.7, slope: 127, rating9: null, slope9: null, lengths: [291, 114, 301, 124, 317, 385, 298, 291, 297] },
-      { id: 'golfclub-gaasterland-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 33.3, slope: 117, rating9: null, slope9: null, lengths: [248, 97, 256, 102, 276, 327, 253, 247, 252] },
+      { id: 'golfclub-gaasterland-rood-d', name: 'Rood (dames)', gender: 'd', rating: 35.7, slope: 127, rating9: null, slope9: null, lengths: [291, 114, 301, 124, 276, 385, 298, 291, 297] },
+      { id: 'golfclub-gaasterland-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 33.3, slope: 117, rating9: null, slope9: null, lengths: [248, 97, 256, 102, 238, 327, 253, 247, 252] },
     ],
   },
   {
@@ -1416,13 +1425,13 @@ export const DEFAULT_COURSES = [
   {
     id: 'goyer-golf-country-club', province: 'Utrecht', town: 'Eemnes', dataVersion: 1, name: 'Goyer Golf & Country Club (Eemnes)', holeCount: 18, parTotal: 72, pars: [4, 3, 4, 5, 3, 4, 5, 4, 4, 4, 3, 4, 5, 3, 4, 4, 5, 4], si: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], confirmed: false, fromSources: true, siUnknown: true, location: { lat: 52.24002, lon: 5.23835 }, website: 'https://www.goyer.nl/',
     tees: [
-      { id: 'goyer-golf-country-club-standaard-62-h', name: 'Standaard 62 (heren)', gender: 'h', rating: 75, slope: 143, rating9: null, slope9: null },
-      { id: 'goyer-golf-country-club-standaard-59-h', name: 'Standaard 59 (heren)', gender: 'h', rating: 73.1, slope: 140, rating9: null, slope9: null },
-      { id: 'goyer-golf-country-club-standaard-59-d', name: 'Standaard 59 (dames)', gender: 'd', rating: 78.8, slope: 150, rating9: null, slope9: null },
-      { id: 'goyer-golf-country-club-standaard-53-h', name: 'Standaard 53 (heren)', gender: 'h', rating: 70.1, slope: 130, rating9: null, slope9: null },
-      { id: 'goyer-golf-country-club-standaard-53-d', name: 'Standaard 53 (dames)', gender: 'd', rating: 75.6, slope: 141, rating9: null, slope9: null },
-      { id: 'goyer-golf-country-club-standaard-50-h', name: 'Standaard 50 (heren)', gender: 'h', rating: 68.2, slope: 127, rating9: null, slope9: null, lengths: [237, 130, 291, 371, 114, 279, 425, 326, 276, 248, 135, 261, 409, 125, 249, 297, 409, 300] },
-      { id: 'goyer-golf-country-club-standaard-50-d', name: 'Standaard 50 (dames)', gender: 'd', rating: 73.4, slope: 136, rating9: null, slope9: null, lengths: [237, 130, 291, 371, 114, 279, 425, 326, 276, 248, 135, 261, 409, 125, 249, 297, 409, 300] },
+      { id: 'goyer-golf-country-club-wit-62-h', name: 'Wit 62 (heren)', gender: 'h', rating: 75, slope: 143, rating9: null, slope9: null, lengths: [292, 192, 361, 456, 138, 340, 535, 394, 350, 320, 214, 338, 512, 184, 344, 360, 532, 375] },
+      { id: 'goyer-golf-country-club-geel-59-h', name: 'Geel 59 (heren)', gender: 'h', rating: 73.1, slope: 140, rating9: null, slope9: null, lengths: [282, 156, 350, 429, 130, 328, 507, 376, 334, 293, 192, 318, 484, 157, 296, 339, 514, 356] },
+      { id: 'goyer-golf-country-club-geel-59-d', name: 'Geel 59 (dames)', gender: 'd', rating: 78.8, slope: 150, rating9: null, slope9: null, lengths: [282, 156, 350, 429, 130, 328, 507, 376, 334, 293, 192, 318, 484, 157, 296, 339, 514, 356] },
+      { id: 'goyer-golf-country-club-blauw-53-h', name: 'Blauw 53 (heren)', gender: 'h', rating: 70.1, slope: 130, rating9: null, slope9: null, lengths: [247, 148, 313, 413, 115, 294, 472, 332, 298, 260, 183, 303, 418, 147, 281, 310, 433, 314] },
+      { id: 'goyer-golf-country-club-blauw-53-d', name: 'Blauw 53 (dames)', gender: 'd', rating: 75.6, slope: 141, rating9: null, slope9: null, lengths: [247, 148, 313, 413, 115, 294, 472, 332, 298, 260, 183, 303, 418, 147, 281, 310, 433, 314] },
+      { id: 'goyer-golf-country-club-rood-50-h', name: 'Rood 50 (heren)', gender: 'h', rating: 68.2, slope: 127, rating9: null, slope9: null, lengths: [237, 130, 291, 371, 114, 279, 425, 326, 276, 248, 135, 261, 409, 125, 249, 297, 409, 300] },
+      { id: 'goyer-golf-country-club-rood-50-d', name: 'Rood 50 (dames)', gender: 'd', rating: 73.4, slope: 136, rating9: null, slope9: null, lengths: [237, 130, 291, 371, 114, 279, 425, 326, 276, 248, 135, 261, 409, 125, 249, 297, 409, 300] },
     ],
   },
   {
@@ -1537,17 +1546,17 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18', province: 'Gelderland', town: 'Groesbeek', dataVersion: 1, name: 'Golfbaan Het Rijk van Nijmegen Nijmeegse baan 1-18 (Groesbeek)', holeCount: 18, parTotal: 72, pars: [4, 4, 5, 4, 3, 5, 3, 4, 4, 4, 5, 3, 5, 4, 4, 3, 4, 4], si: [7, 13, 3, 1, 17, 5, 15, 9, 11, 12, 2, 14, 4, 18, 6, 16, 10, 8], confirmed: false, fromSources: true, location: { lat: 51.79029, lon: 5.92242 }, website: 'https://www.golfenophetrijk.nl/nijmegen.html',
+    id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18', province: 'Gelderland', town: 'Groesbeek', dataVersion: 1, name: 'Golfbaan Het Rijk van Nijmegen Nijmeegse baan 1-18 (Groesbeek)', holeCount: 18, parTotal: 72, pars: [4, 4, 5, 4, 3, 5, 3, 4, 4, 4, 5, 3, 5, 4, 4, 3, 4, 4], si: [7, 13, 5, 1, 17, 3, 15, 11, 9, 12, 4, 14, 8, 16, 2, 18, 6, 10], confirmed: true, location: { lat: 51.79029, lon: 5.92242 }, website: 'https://www.golfenophetrijk.nl/nijmegen.html',
     tees: [
-      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-wit-h', name: 'Wit (heren)', gender: 'h', rating: 72.1, slope: 132, rating9: null, slope9: null },
-      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.8, slope: 130, rating9: null, slope9: null },
-      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.5, slope: 144, rating9: null, slope9: null },
+      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-wit-h', name: 'Wit (heren)', gender: 'h', rating: 72.1, slope: 132, rating9: null, slope9: null, lengths: [316, 323, 479, 391, 176, 480, 196, 357, 328, 340, 495, 171, 496, 328, 357, 123, 336, 345] },
+      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.8, slope: 130, rating9: null, slope9: null, lengths: [316, 323, 473, 386, 173, 480, 190, 355, 328, 340, 495, 165, 496, 328, 350, 123, 336, 345] },
+      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.5, slope: 144, rating9: null, slope9: null, lengths: [316, 323, 473, 386, 173, 480, 190, 355, 328, 340, 495, 165, 496, 328, 350, 123, 336, 345] },
       { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 69.1, slope: 126, rating9: null, slope9: null, lengths: [292, 289, 444, 358, 145, 430, 152, 337, 316, 301, 416, 154, 442, 313, 344, 116, 304, 331] },
       { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 75.1, slope: 131, rating9: null, slope9: null, lengths: [292, 289, 444, 358, 145, 430, 152, 337, 316, 301, 416, 154, 442, 313, 344, 116, 304, 331] },
-      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-rood-h', name: 'Rood (heren)', gender: 'h', rating: 68.2, slope: 123, rating9: null, slope9: null },
-      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-rood-d', name: 'Rood (dames)', gender: 'd', rating: 74, slope: 129, rating9: null, slope9: null },
-      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 64.5, slope: 109, rating9: null, slope9: null },
-      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 69, slope: 124, rating9: null, slope9: null },
+      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-rood-h', name: 'Rood (heren)', gender: 'h', rating: 68.2, slope: 123, rating9: null, slope9: null, lengths: [292, 284, 436, 355, 123, 425, 146, 317, 301, 285, 416, 136, 432, 305, 325, 116, 301, 305] },
+      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-rood-d', name: 'Rood (dames)', gender: 'd', rating: 74, slope: 129, rating9: null, slope9: null, lengths: [292, 284, 436, 355, 123, 425, 146, 317, 301, 285, 416, 136, 432, 305, 325, 116, 301, 305] },
+      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 64.5, slope: 109, rating9: null, slope9: null, lengths: [229, 235, 398, 306, 108, 382, 120, 272, 261, 230, 388, 122, 380, 232, 280, 103, 267, 247] },
+      { id: 'golfbaan-het-rijk-van-nijmegen-nijmeegse-baan-1-18-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 69, slope: 124, rating9: null, slope9: null, lengths: [229, 235, 398, 306, 108, 382, 120, 272, 261, 230, 388, 122, 380, 232, 280, 103, 267, 247] },
     ],
   },
   {
@@ -1560,7 +1569,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfclub-t-jagerspaadje-hilversum', province: 'Noord-Holland', town: 'Hilversum', dataVersion: 1, name: 'Golfclub \'t Jagerspaadje (Hilversum)', holeCount: 18, parTotal: 60, pars: [3, 4, 4, 3, 3, 4, 3, 3, 3, 3, 4, 4, 3, 3, 4, 3, 3, 3], si: [5, 11, 7, 1, 13, 3, 9, 17, 15, 10, 12, 6, 2, 14, 4, 8, 18, 16], confirmed: false, fromSources: true, location: { lat: 52.22646, lon: 5.1436 }, website: 'https://www.jagerspaadje.nl/',
+    id: 'golfclub-t-jagerspaadje-hilversum', province: 'Noord-Holland', town: 'Hilversum', dataVersion: 1, name: 'Golfclub \'t Jagerspaadje (Hilversum)', holeCount: 18, parTotal: 60, pars: [3, 4, 4, 3, 3, 4, 3, 3, 3, 3, 4, 4, 3, 3, 4, 3, 3, 3], si: [3, 11, 7, 1, 13, 5, 9, 15, 17, 6, 12, 8, 2, 14, 4, 10, 18, 16], confirmed: true, location: { lat: 52.22646, lon: 5.1436 }, website: 'https://www.jagerspaadje.nl/',
     tees: [
       { id: 'golfclub-t-jagerspaadje-hilversum-geel-h', name: 'Geel (heren)', gender: 'h', rating: 55, slope: 91, rating9: null, slope9: null, lengths: [110, 225, 230, 170, 119, 243, 116, 100, 87, 95, 225, 230, 170, 119, 243, 116, 100, 87] },
       { id: 'golfclub-t-jagerspaadje-hilversum-rood-d', name: 'Rood (dames)', gender: 'd', rating: 57.5, slope: 102, rating9: null, slope9: null, lengths: [110, 225, 230, 170, 119, 243, 116, 100, 87, 95, 225, 230, 170, 119, 243, 116, 100, 87] },
@@ -1702,7 +1711,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'pitch-putt-molenhoek', province: 'Limburg', town: 'Molenhoek', dataVersion: 1, name: 'Pitch & Putt Golf Molenhoek', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [12, 8, 16, 6, 13, 15, 2, 10, 3, 11, 18, 9, 1, 17, 14, 4, 5, 7], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 51.77543, lon: 5.87561 }, website: null,
+    id: 'pitch-putt-molenhoek', province: 'Limburg', town: 'Molenhoek', dataVersion: 1, name: 'Pitch & Putt Golf Molenhoek', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [12, 8, 16, 6, 13, 15, 2, 10, 3, 11, 18, 9, 1, 17, 14, 4, 5, 7], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 51.77543, lon: 5.87561 }, website: 'https://pitch-putt.nl/locaties/molenhoek/',
     tees: [
       { id: 'pitch-putt-molenhoek-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 45, slope: 85, rating9: null, slope9: null, lengths: [50, 57, 45, 59, 49, 45, 67, 53, 66, 50, 39, 55, 70, 43, 46, 65, 63, 57] },
     ],
@@ -1821,7 +1830,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfbaan-waterland-amsterdam', province: 'Noord-Holland', town: 'Amsterdam', dataVersion: 1, name: 'Golfbaan Waterland Amsterdam', holeCount: 18, parTotal: 71, pars: [3, 4, 4, 3, 5, 4, 4, 3, 5, 4, 3, 5, 4, 4, 5, 3, 3, 5], si: [16, 14, 10, 12, 4, 6, 2, 18, 8, 7, 13, 5, 1, 17, 9, 15, 11, 3], confirmed: false, fromSources: true, location: { lat: 52.40939, lon: 4.94223 }, website: 'https://www.golfbaanwaterlandamsterdam.nl/',
+    id: 'golfbaan-waterland-amsterdam', province: 'Noord-Holland', town: 'Amsterdam', dataVersion: 1, name: 'Golfbaan Waterland Amsterdam', holeCount: 18, parTotal: 71, pars: [3, 4, 4, 3, 5, 4, 4, 3, 5, 4, 3, 5, 4, 4, 5, 3, 3, 5], si: [16, 14, 10, 12, 4, 6, 2, 18, 8, 7, 13, 5, 1, 17, 9, 15, 11, 3], confirmed: true, location: { lat: 52.40939, lon: 4.94223 }, website: 'https://www.golfbaanwaterlandamsterdam.nl/',
     tees: [
       { id: 'golfbaan-waterland-amsterdam-geel-h', name: 'Geel (heren)', gender: 'h', rating: 69, slope: 125, rating9: null, slope9: null, lengths: [133, 222, 330, 134, 482, 340, 377, 137, 478, 339, 140, 447, 367, 257, 448, 135, 150, 435] },
       { id: 'golfbaan-waterland-amsterdam-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.4, slope: 112, rating9: null, slope9: null, lengths: [133, 208, 303, 116, 429, 285, 365, 112, 452, 323, 122, 410, 312, 230, 400, 99, 134, 367] },
@@ -2154,6 +2163,20 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
+    id: 'golfclub-de-haar', province: 'Utrecht', town: 'Haarzuilens', dataVersion: 1, name: 'Golfclub De Haar (Haarzuilens)', holeCount: 18, parTotal: 71, pars: [5, 4, 4, 3, 5, 3, 4, 4, 3, 4, 3, 4, 4, 5, 4, 4, 3, 5], si: [7, 1, 9, 13, 3, 17, 5, 11, 15, 2, 18, 12, 4, 14, 6, 8, 10, 16], confirmed: true, location: { lat: 52.11819, lon: 4.98494 }, website: 'https://www.gcdehaar.nl/',
+    tees: [
+      { id: 'golfclub-de-haar-wit-h', name: 'Wit (heren)', gender: 'h', rating: 71.8, slope: 141, rating9: null, slope9: null, lengths: [412, 428, 326, 168, 528, 137, 374, 282, 147, 317, 157, 305, 342, 476, 400, 335, 188, 435] },
+      { id: 'golfclub-de-haar-geel-h', name: 'Geel (heren)', gender: 'h', rating: 69.8, slope: 134, rating9: null, slope9: null, lengths: [412, 375, 301, 157, 495, 119, 348, 275, 136, 310, 147, 267, 289, 450, 386, 314, 178, 418] },
+      { id: 'golfclub-de-haar-geel-d', name: 'Geel (dames)', gender: 'd', rating: 75.9, slope: 139, rating9: null, slope9: null, lengths: [412, 375, 301, 157, 495, 119, 348, 275, 136, 310, 147, 267, 289, 450, 386, 314, 178, 418] },
+      { id: 'golfclub-de-haar-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 67.7, slope: 125, rating9: null, slope9: null, lengths: [403, 327, 270, 157, 483, 99, 338, 267, 122, 295, 90, 257, 279, 402, 367, 304, 168, 370] },
+      { id: 'golfclub-de-haar-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 73.5, slope: 134, rating9: null, slope9: null, lengths: [403, 327, 270, 157, 483, 99, 338, 267, 122, 295, 90, 257, 279, 402, 367, 304, 168, 370] },
+      { id: 'golfclub-de-haar-rood-h', name: 'Rood (heren)', gender: 'h', rating: 64.8, slope: 114, rating9: null, slope9: null, lengths: [382, 322, 242, 139, 433, 84, 297, 228, 122, 235, 80, 230, 246, 359, 313, 240, 127, 324] },
+      { id: 'golfclub-de-haar-rood-d', name: 'Rood (dames)', gender: 'd', rating: 69.3, slope: 126, rating9: null, slope9: null, lengths: [382, 322, 242, 139, 433, 84, 297, 228, 122, 235, 80, 230, 246, 359, 313, 240, 127, 324] },
+      { id: 'golfclub-de-haar-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 61.1, slope: 105, rating9: null, slope9: null },
+      { id: 'golfclub-de-haar-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 64.3, slope: 105, rating9: null, slope9: null },
+    ],
+  },
+  {
     id: 'golfbaan-dirkshorn', province: 'Noord-Holland', town: 'Dirkshorn', dataVersion: 1, name: 'Golfbaan Dirkshorn', holeCount: 18, parTotal: 72, pars: [4, 5, 4, 4, 4, 5, 3, 4, 3, 5, 3, 4, 4, 3, 4, 4, 4, 5], si: [9, 13, 1, 7, 3, 11, 17, 5, 15, 4, 16, 10, 2, 18, 8, 14, 6, 12], confirmed: true, location: { lat: 52.75607, lon: 4.78697 }, website: 'https://golfbaandirkshorn.nl/',
     tees: [
       { id: 'golfbaan-dirkshorn-wit-h', name: 'Wit (heren)', gender: 'h', rating: 73.2, slope: 141, rating9: null, slope9: null, lengths: [375, 460, 411, 380, 356, 450, 139, 382, 155, 515, 154, 402, 347, 154, 375, 332, 337, 501] },
@@ -2193,6 +2216,20 @@ export const DEFAULT_COURSES = [
     tees: [
       { id: 'golfbaan-sloten-amsterdam-geel-h', name: 'Geel (heren)', gender: 'h', rating: 56.2, slope: 98, rating9: null, slope9: null, lengths: [143, 129, 167, 136, 142, 158, 208, 134, 154, 143, 129, 167, 136, 142, 158, 208, 134, 154] },
       { id: 'golfbaan-sloten-amsterdam-rood-d', name: 'Rood (dames)', gender: 'd', rating: 59.1, slope: 110, rating9: null, slope9: null, lengths: [143, 129, 167, 136, 142, 158, 208, 134, 154, 143, 129, 167, 136, 142, 158, 208, 134, 154] },
+    ],
+  },
+  {
+    id: 'the-duke-golf-nistelrode', province: 'Noord-Brabant', town: 'Nistelrode', dataVersion: 1, name: 'The Duke (Nistelrode)', holeCount: 18, parTotal: 72, pars: [4, 4, 5, 4, 3, 5, 3, 4, 4, 4, 3, 5, 4, 4, 3, 4, 4, 5], si: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], confirmed: true, siUnknown: true, location: { lat: 51.71753, lon: 5.56091 }, website: 'https://theduke.nl',
+    tees: [
+      { id: 'the-duke-golf-nistelrode-wit-h', name: 'Wit (heren)', gender: 'h', rating: 71.3, slope: 137, rating9: null, slope9: null, lengths: [285, 358, 462, 345, 144, 430, 104, 360, 406, 356, 120, 425, 367, 356, 149, 294, 356, 465] },
+      { id: 'the-duke-golf-nistelrode-geel-h', name: 'Geel (heren)', gender: 'h', rating: 69.5, slope: 128, rating9: null, slope9: null, lengths: [269, 339, 443, 326, 126, 423, 104, 328, 368, 338, 111, 425, 338, 329, 149, 279, 341, 430] },
+      { id: 'the-duke-golf-nistelrode-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 67.9, slope: 124, rating9: null, slope9: null, lengths: [269, 339, 405, 326, 126, 378, 86, 287, 327, 317, 111, 395, 338, 318, 135, 279, 318, 405] },
+      { id: 'the-duke-golf-nistelrode-rood-h', name: 'Rood (heren)', gender: 'h', rating: 65.5, slope: 121, rating9: null, slope9: null, lengths: [237, 287, 373, 282, 108, 353, 86, 287, 327, 291, 96, 363, 330, 302, 120, 242, 0, 370] },
+      { id: 'the-duke-golf-nistelrode-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 63.6, slope: 108, rating9: null, slope9: null, lengths: [220, 240, 333, 252, 108, 316, 72, 267, 309, 255, 78, 319, 296, 272, 93, 211, 259, 342] },
+      { id: 'the-duke-golf-nistelrode-geel-d', name: 'Geel (dames)', gender: 'd', rating: 75.9, slope: 141, rating9: null, slope9: null, lengths: [269, 339, 443, 326, 126, 423, 104, 328, 368, 338, 111, 425, 338, 329, 149, 279, 341, 430] },
+      { id: 'the-duke-golf-nistelrode-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 73.5, slope: 137, rating9: null, slope9: null, lengths: [269, 339, 405, 326, 126, 378, 86, 287, 327, 317, 111, 395, 338, 318, 135, 279, 318, 405] },
+      { id: 'the-duke-golf-nistelrode-rood-d', name: 'Rood (dames)', gender: 'd', rating: 71.5, slope: 126, rating9: null, slope9: null, lengths: [237, 287, 373, 282, 108, 353, 86, 287, 327, 291, 96, 363, 330, 302, 120, 242, 0, 370] },
+      { id: 'the-duke-golf-nistelrode-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 67.3, slope: 127, rating9: null, slope9: null, lengths: [220, 240, 333, 252, 108, 316, 72, 267, 309, 255, 78, 319, 296, 272, 93, 211, 259, 342] },
     ],
   },
   {
@@ -2498,10 +2535,10 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golf-maasduinen-arcen', province: 'Limburg', town: 'Arcen', dataVersion: 1, name: 'Golf Maasduinen (Arcen)', holeCount: 18, parTotal: 58, pars: [3, 3, 3, 3, 3, 3, 3, 4, 4, 3, 3, 3, 3, 3, 3, 3, 4, 4], si: [7, 9, 15, 13, 17, 11, 5, 3, 1, 8, 10, 16, 14, 18, 12, 6, 4, 2], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 51.50015, lon: 6.1762 }, website: 'https://golfmaasduinen.nl/',
+    id: 'golf-maasduinen-arcen', province: 'Limburg', town: 'Arcen', dataVersion: 1, name: 'Golf Maasduinen (Arcen)', holeCount: 18, parTotal: 58, pars: [3, 3, 3, 3, 3, 3, 3, 4, 4, 3, 3, 3, 3, 3, 3, 3, 4, 4], si: [7, 9, 15, 13, 17, 11, 5, 3, 1, 8, 10, 16, 14, 18, 12, 6, 4, 2], confirmed: true, countsForIndex: false, location: { lat: 51.50015, lon: 6.1762 }, website: 'https://golfmaasduinen.nl/',
     tees: [
       { id: 'golf-maasduinen-arcen-geel-h', name: 'Geel (heren)', gender: 'h', rating: 53.2, slope: 84, rating9: null, slope9: null, lengths: [117, 126, 75, 84, 62, 126, 126, 201, 270, 117, 126, 75, 84, 62, 126, 126, 201, 270] },
-      { id: 'golf-maasduinen-arcen-rood-d', name: 'Rood (dames)', gender: 'd', rating: 55.3, slope: 89, rating9: null, slope9: null },
+      { id: 'golf-maasduinen-arcen-rood-d', name: 'Rood (dames)', gender: 'd', rating: 55.3, slope: 89, rating9: null, slope9: null, lengths: [117, 126, 75, 84, 62, 126, 126, 201, 270, 117, 126, 75, 84, 62, 126, 126, 201, 270] },
     ],
   },
   {
@@ -2656,8 +2693,10 @@ export const DEFAULT_COURSES = [
   {
     id: 'golf-parc-de-pettelaar-den-bosch', province: 'Noord-Brabant', town: '\'s-Hertogenbosch', dataVersion: 1, name: 'Golf Parc De Pettelaar (\'s-Hertogenbosch)', holeCount: 18, parTotal: 58, pars: [3, 3, 3, 3, 4, 4, 3, 3, 3, 3, 3, 3, 3, 4, 4, 3, 3, 3], si: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], confirmed: false, fromSources: true, siUnknown: true, countsForIndex: false, location: { lat: 51.67808, lon: 5.3377 }, website: 'https://www.golfparcdepettelaar.nl',
     tees: [
-      { id: 'golf-parc-de-pettelaar-den-bosch-geel-h', name: 'Geel (heren)', gender: 'h', rating: 58.9, slope: 102, rating9: null, slope9: null },
-      { id: 'golf-parc-de-pettelaar-den-bosch-rood-d', name: 'Rood (dames)', gender: 'd', rating: 59.8, slope: 102, rating9: null, slope9: null },
+      { id: 'golf-parc-de-pettelaar-den-bosch-geel-h', name: 'Geel (heren)', gender: 'h', rating: 57.9, slope: 105, rating9: null, slope9: null },
+      { id: 'golf-parc-de-pettelaar-den-bosch-rood-h', name: 'Rood (heren)', gender: 'h', rating: 56.2, slope: 101, rating9: null, slope9: null },
+      { id: 'golf-parc-de-pettelaar-den-bosch-geel-d', name: 'Geel (dames)', gender: 'd', rating: 61.2, slope: 109, rating9: null, slope9: null },
+      { id: 'golf-parc-de-pettelaar-den-bosch-rood-d', name: 'Rood (dames)', gender: 'd', rating: 59.1, slope: 105, rating9: null, slope9: null },
     ],
   },
   {
@@ -2767,20 +2806,20 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfbaan-noordeloos', province: 'Zuid-Holland', town: 'Noordeloos', dataVersion: 1, name: 'Golfbaan 9par3 Noordeloos', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [8, 5, 2, 7, 1, 4, 3, 9, 6], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 51.8981, lon: 4.92775 }, website: 'https://www.golfbaannoordeloos.nl',
+    id: 'golfbaan-noordeloos', province: 'Zuid-Holland', town: 'Noordeloos', dataVersion: 1, name: 'Golfbaan 9par3 Noordeloos', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [8, 7, 1, 6, 2, 4, 3, 9, 5], confirmed: true, countsForIndex: false, location: { lat: 51.8981, lon: 4.92775 }, website: 'https://www.golfbaannoordeloos.nl',
     tees: [
-      { id: 'golfbaan-noordeloos-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [49, 44, 81, 69, 66, 82, 108, 51, 75] },
-      { id: 'golfbaan-noordeloos-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [49, 44, 81, 69, 66, 82, 108, 51, 75] },
+      { id: 'golfbaan-noordeloos-geel-h', name: 'Geel (heren)', gender: 'h', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [49, 44, 116, 69, 91, 105, 108, 51, 75] },
+      { id: 'golfbaan-noordeloos-geel-d', name: 'Geel (dames)', gender: 'd', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [49, 44, 116, 69, 91, 105, 108, 51, 75] },
     ],
   },
   {
-    id: 'golfbaan-the-dunes-zandvoort', province: 'Noord-Holland', town: 'Zandvoort', dataVersion: 1, name: 'Golfbaan The Dunes (Zandvoort)', holeCount: 9, parTotal: 29, pars: [3, 4, 3, 3, 3, 3, 3, 4, 3], si: [6, 1, 8, 4, 2, 7, 9, 3, 5], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.3833, lon: 4.54858 }, website: 'https://thedunes.nl/',
+    id: 'golfbaan-the-dunes-zandvoort', province: 'Noord-Holland', town: 'Zandvoort', dataVersion: 1, name: 'Golfbaan The Dunes (Zandvoort)', holeCount: 9, parTotal: 29, pars: [3, 4, 3, 3, 3, 3, 3, 4, 3], si: [6, 1, 8, 4, 2, 7, 9, 3, 5], confirmed: true, countsForIndex: false, location: { lat: 52.3833, lon: 4.54858 }, website: 'https://thedunes.nl/',
     tees: [
-      { id: 'golfbaan-the-dunes-zandvoort-wit-h', name: 'Wit (heren)', gender: 'h', rating: 29.5, slope: 100, rating9: null, slope9: null },
-      { id: 'golfbaan-the-dunes-zandvoort-geel-h', name: 'Geel (heren)', gender: 'h', rating: 28.9, slope: 101, rating9: null, slope9: null, lengths: [157, 301, 105, 155, 179, 94, 77, 252, 119] },
-      { id: 'golfbaan-the-dunes-zandvoort-rood-h', name: 'Rood (heren)', gender: 'h', rating: 28.5, slope: 97, rating9: null, slope9: null },
-      { id: 'golfbaan-the-dunes-zandvoort-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 30.5, slope: 108, rating9: null, slope9: null, lengths: [157, 301, 105, 155, 179, 94, 77, 252, 119] },
-      { id: 'golfbaan-the-dunes-zandvoort-rood-d', name: 'Rood (dames)', gender: 'd', rating: 30, slope: 104, rating9: null, slope9: null },
+      { id: 'golfbaan-the-dunes-zandvoort-wit-h', name: 'Wit (heren)', gender: 'h', rating: 30.4, slope: 106, rating9: null, slope9: null, lengths: [207, 310, 113, 168, 179, 110, 83, 252, 122] },
+      { id: 'golfbaan-the-dunes-zandvoort-geel-h', name: 'Geel (heren)', gender: 'h', rating: 30, slope: 106, rating9: null, slope9: null, lengths: [157, 301, 105, 155, 179, 94, 77, 252, 119] },
+      { id: 'golfbaan-the-dunes-zandvoort-rood-h', name: 'Rood (heren)', gender: 'h', rating: 29.9, slope: 101, rating9: null, slope9: null, lengths: [152, 283, 95, 148, 175, 90, 77, 243, 112] },
+      { id: 'golfbaan-the-dunes-zandvoort-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 31.5, slope: 113, rating9: null, slope9: null, lengths: [157, 301, 105, 155, 179, 94, 77, 252, 119] },
+      { id: 'golfbaan-the-dunes-zandvoort-rood-d', name: 'Rood (dames)', gender: 'd', rating: 31.4, slope: 111, rating9: null, slope9: null, lengths: [152, 283, 95, 148, 175, 90, 77, 243, 112] },
     ],
   },
   {
@@ -2886,7 +2925,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfhorst-america-americabaan-par-3', province: 'Limburg', town: 'America', dataVersion: 1, name: 'Golfbaan de Golfhorst Americabaan par 3 (America)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [7, 6, 2, 1, 3, 8, 9, 5, 4], confirmed: true, countsForIndex: false, location: { lat: 51.4265, lon: 5.96824 }, website: 'https://www.golfbaandegolfhorst.nl/',
+    id: 'golfhorst-america-americabaan-par-3', province: 'Limburg', town: 'America', dataVersion: 1, name: 'Golfbaan de Golfhorst Americabaan par 3 (America)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [7, 6, 2, 1, 3, 8, 9, 5, 4], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 51.4265, lon: 5.96824 }, website: 'https://www.golfbaandegolfhorst.nl/',
     tees: [
       { id: 'golfhorst-america-americabaan-par-3-wit-h', name: 'Wit (heren)', gender: 'h', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [91, 99, 137, 141, 121, 54, 61, 73, 111] },
       { id: 'golfhorst-america-americabaan-par-3-wit-d', name: 'Wit (dames)', gender: 'd', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [91, 99, 137, 141, 121, 54, 61, 73, 111] },
@@ -2936,6 +2975,13 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
+    id: 'golfclub-son', province: 'Noord-Brabant', town: 'Son en Breugel', dataVersion: 1, name: 'Golfclub Son (Son en Breugel)', holeCount: 9, parTotal: 28, pars: [3, 3, 3, 3, 3, 3, 4, 3, 3], si: [1, 2, 3, 4, 5, 6, 7, 8, 9], confirmed: true, siUnknown: true, countsForIndex: false, location: { lat: 51.52391, lon: 5.48844 }, website: 'https://golfson.nl',
+    tees: [
+      { id: 'golfclub-son-geel-h', name: 'Geel (heren)', gender: 'h', rating: 26.4, slope: 93, rating9: null, slope9: null, lengths: [183, 115, 98, 94, 116, 102, 252, 136, 81] },
+      { id: 'golfclub-son-rood-d', name: 'Rood (dames)', gender: 'd', rating: 27.7, slope: 94, rating9: null, slope9: null },
+    ],
+  },
+  {
     id: 'golfpark-almkreek-almkerk', province: 'Noord-Brabant', town: 'Almkerk', dataVersion: 1, name: 'Golfpark Almkreek (Almkerk)', holeCount: 18, parTotal: 72, pars: [4, 4, 4, 5, 3, 4, 4, 3, 5, 4, 5, 4, 3, 4, 3, 5, 4, 4], si: [5, 13, 9, 1, 11, 15, 7, 17, 3, 16, 2, 12, 18, 4, 8, 6, 14, 10], confirmed: true, location: { lat: 51.7721, lon: 4.9726 }, website: 'https://www.hollandschegolfclub.nl/golfpark/almkreek/',
     tees: [
       { id: 'golfpark-almkreek-almkerk-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.5, slope: 128, rating9: null, slope9: null, lengths: [362, 377, 370, 515, 140, 347, 361, 129, 485, 303, 480, 292, 128, 361, 173, 422, 273, 363] },
@@ -2970,8 +3016,8 @@ export const DEFAULT_COURSES = [
   {
     id: 'de-peelse-golf-evertsoord-broekbosbaan-par-3', province: 'Limburg', town: 'Evertsoord', dataVersion: 1, name: 'De Peelse Golf Broekbosbaan par 3 (Evertsoord)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [13, 1, 15, 7, 9, 3, 17, 11, 5, 14, 2, 16, 8, 10, 4, 18, 12, 6], confirmed: true, countsForIndex: false, location: { lat: 51.38427, lon: 5.96266 }, website: 'https://www.depeelsegolf.nl/',
     tees: [
-      { id: 'de-peelse-golf-evertsoord-broekbosbaan-par-3-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [69, 114, 59, 78, 95, 100, 46, 92, 65, 69, 114, 59, 78, 95, 100, 46, 92, 65] },
-      { id: 'de-peelse-golf-evertsoord-broekbosbaan-par-3-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [69, 114, 59, 78, 95, 100, 46, 92, 65, 69, 114, 59, 78, 95, 100, 46, 92, 65] },
+      { id: 'de-peelse-golf-evertsoord-broekbosbaan-par-3-geel-h', name: 'Geel (heren)', gender: 'h', rating: 47.5, slope: 62, rating9: null, slope9: null },
+      { id: 'de-peelse-golf-evertsoord-broekbosbaan-par-3-rood-d', name: 'Rood (dames)', gender: 'd', rating: 48.8, slope: 66, rating9: null, slope9: null },
     ],
   },
   {
@@ -3301,10 +3347,36 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfbaan-hitland-nieuwerkerk', province: 'Zuid-Holland', town: 'Nieuwerkerk aan den IJssel', dataVersion: 1, name: 'Golfbaan Hitland (Nieuwerkerk aan den IJssel)', holeCount: 18, parTotal: 71, pars: [4, 5, 4, 3, 4, 4, 3, 5, 3, 4, 3, 4, 5, 4, 3, 5, 4, 4], si: [10, 6, 2, 14, 16, 4, 12, 8, 18, 7, 15, 1, 9, 3, 17, 13, 11, 5], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 51.9474, lon: 4.61304 }, website: 'https://hitland.nl',
+    id: 'golfbaan-hitland-nieuwerkerk', province: 'Zuid-Holland', town: 'Nieuwerkerk aan den IJssel', dataVersion: 1, name: 'Golfbaan Hitland (Nieuwerkerk aan den IJssel)', holeCount: 18, parTotal: 71, pars: [4, 5, 4, 3, 4, 4, 3, 5, 3, 4, 3, 4, 5, 4, 3, 5, 4, 4], si: [6, 16, 2, 10, 14, 4, 8, 12, 18, 7, 11, 5, 13, 1, 17, 15, 9, 3], confirmed: true, location: { lat: 51.9474, lon: 4.61304 }, website: 'https://hitland.nl',
     tees: [
-      { id: 'golfbaan-hitland-nieuwerkerk-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [347, 471, 386, 175, 294, 370, 169, 461, 128, 324, 163, 382, 472, 350, 133, 453, 366, 375] },
-      { id: 'golfbaan-hitland-nieuwerkerk-geel-d', name: 'Geel (dames)', gender: 'd', rating: 71, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [347, 471, 386, 175, 294, 370, 169, 461, 128, 324, 163, 382, 472, 350, 133, 453, 366, 375] },
+      { id: 'golfbaan-hitland-nieuwerkerk-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.6, slope: 128, rating9: null, slope9: null, lengths: [347, 471, 386, 175, 294, 370, 169, 461, 128, 324, 163, 382, 472, 350, 133, 453, 366, 375] },
+      { id: 'golfbaan-hitland-nieuwerkerk-rood-h', name: 'Rood (heren)', gender: 'h', rating: 68.3, slope: 115, rating9: null, slope9: null, lengths: [300, 401, 313, 148, 251, 352, 148, 400, 107, 264, 144, 343, 395, 298, 113, 382, 326, 327] },
+      { id: 'golfbaan-hitland-nieuwerkerk-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 65.7, slope: 109, rating9: null, slope9: null, lengths: [280, 401, 286, 138, 212, 291, 93, 387, 76, 250, 129, 308, 363, 268, 113, 352, 293, 296] },
+      { id: 'golfbaan-hitland-nieuwerkerk-geel-d', name: 'Geel (dames)', gender: 'd', rating: 77.9, slope: 144, rating9: null, slope9: null, lengths: [347, 471, 386, 175, 294, 370, 169, 461, 128, 324, 163, 382, 472, 350, 133, 453, 366, 375] },
+      { id: 'golfbaan-hitland-nieuwerkerk-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72.7, slope: 126, rating9: null, slope9: null, lengths: [300, 401, 313, 148, 251, 352, 148, 400, 107, 264, 144, 343, 395, 298, 113, 382, 326, 327] },
+      { id: 'golfbaan-hitland-nieuwerkerk-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 70.2, slope: 119, rating9: null, slope9: null, lengths: [280, 401, 286, 138, 212, 291, 93, 387, 76, 250, 129, 308, 363, 268, 113, 352, 293, 296] },
+    ],
+  },
+  {
+    id: 'golfbaan-hitland-nieuwerkerk-holes-1-9', province: 'Zuid-Holland', town: 'Nieuwerkerk aan den IJssel', dataVersion: 1, name: 'Golfbaan Hitland Holes 1-9 (Nieuwerkerk aan den IJssel)', holeCount: 9, parTotal: 35, pars: [4, 5, 4, 3, 4, 4, 3, 5, 3], si: [3, 8, 1, 5, 7, 2, 4, 6, 9], confirmed: true, location: { lat: 51.9474, lon: 4.61304 }, website: 'https://hitland.nl',
+    tees: [
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-1-9-geel-h', name: 'Geel (heren)', gender: 'h', rating: 35.3, slope: 124, rating9: null, slope9: null, lengths: [347, 471, 386, 175, 294, 370, 169, 461, 128] },
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-1-9-rood-h', name: 'Rood (heren)', gender: 'h', rating: 34, slope: 111, rating9: null, slope9: null, lengths: [300, 401, 313, 148, 251, 352, 148, 400, 107] },
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-1-9-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 32.7, slope: 107, rating9: null, slope9: null, lengths: [280, 401, 286, 138, 212, 291, 93, 387, 76] },
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-1-9-geel-d', name: 'Geel (dames)', gender: 'd', rating: 38.2, slope: 144, rating9: null, slope9: null, lengths: [347, 471, 386, 175, 294, 370, 169, 461, 128] },
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-1-9-rood-d', name: 'Rood (dames)', gender: 'd', rating: 36, slope: 120, rating9: null, slope9: null, lengths: [300, 401, 313, 148, 251, 352, 148, 400, 107] },
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-1-9-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 34.8, slope: 112, rating9: null, slope9: null, lengths: [280, 401, 286, 138, 212, 291, 93, 387, 76] },
+    ],
+  },
+  {
+    id: 'golfbaan-hitland-nieuwerkerk-holes-10-18', province: 'Zuid-Holland', town: 'Nieuwerkerk aan den IJssel', dataVersion: 1, name: 'Golfbaan Hitland Holes 10-18 (Nieuwerkerk aan den IJssel)', holeCount: 9, parTotal: 36, pars: [4, 3, 4, 5, 4, 3, 5, 4, 4], si: [4, 6, 3, 7, 1, 9, 8, 5, 2], confirmed: true, location: { lat: 51.9474, lon: 4.61304 }, website: 'https://hitland.nl',
+    tees: [
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-10-18-geel-h', name: 'Geel (heren)', gender: 'h', rating: 36.4, slope: 131, rating9: null, slope9: null, lengths: [324, 163, 382, 472, 350, 133, 453, 366, 375] },
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-10-18-rood-h', name: 'Rood (heren)', gender: 'h', rating: 34.4, slope: 118, rating9: null, slope9: null, lengths: [264, 144, 343, 395, 298, 113, 382, 326, 327] },
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-10-18-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 33.2, slope: 111, rating9: null, slope9: null, lengths: [250, 129, 308, 363, 268, 113, 352, 293, 296] },
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-10-18-geel-d', name: 'Geel (dames)', gender: 'd', rating: 39.8, slope: 143, rating9: null, slope9: null, lengths: [324, 163, 382, 472, 350, 133, 453, 366, 375] },
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-10-18-rood-d', name: 'Rood (dames)', gender: 'd', rating: 36.8, slope: 132, rating9: null, slope9: null, lengths: [264, 144, 343, 395, 298, 113, 382, 326, 327] },
+      { id: 'golfbaan-hitland-nieuwerkerk-holes-10-18-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 35.5, slope: 126, rating9: null, slope9: null, lengths: [250, 129, 308, 363, 268, 113, 352, 293, 296] },
     ],
   },
   {
@@ -3499,8 +3571,8 @@ export const DEFAULT_COURSES = [
   {
     id: 'de-kieviten-golf-wassenaar', province: 'Zuid-Holland', town: 'Wassenaar', dataVersion: 1, name: 'Golf De Kieviten (Wassenaar)', holeCount: 18, parTotal: 58, pars: [3, 3, 3, 3, 4, 3, 4, 3, 3, 3, 3, 3, 3, 4, 3, 4, 3, 3], si: [7, 11, 17, 5, 9, 1, 13, 15, 3, 8, 12, 18, 6, 10, 2, 14, 16, 4], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.15399, lon: 4.38815 }, website: 'https://www.kieviten.nl/',
     tees: [
-      { id: 'de-kieviten-golf-wassenaar-geel-h', name: 'Geel (heren)', gender: 'h', rating: 56.4, slope: 91, rating9: null, slope9: null, lengths: [160, 132, 71, 185, 235, 169, 228, 115, 125, 160, 132, 71, 185, 235, 169, 228, 115, 125] },
-      { id: 'de-kieviten-golf-wassenaar-rood-d', name: 'Rood (dames)', gender: 'd', rating: 59.1, slope: 99, rating9: null, slope9: null, lengths: [160, 132, 71, 185, 235, 169, 228, 115, 125, 160, 132, 71, 185, 235, 169, 228, 115, 125] },
+      { id: 'de-kieviten-golf-wassenaar-geel-h', name: 'Geel (heren)', gender: 'h', rating: 56.4, slope: 97, rating9: null, slope9: null, lengths: [160, 132, 71, 185, 235, 169, 228, 115, 125, 160, 132, 71, 185, 235, 169, 228, 115, 125] },
+      { id: 'de-kieviten-golf-wassenaar-rood-d', name: 'Rood (dames)', gender: 'd', rating: 59.6, slope: 102, rating9: null, slope9: null, lengths: [160, 132, 71, 185, 235, 169, 228, 115, 125, 160, 132, 71, 185, 235, 169, 228, 115, 125] },
     ],
   },
   {
@@ -3543,6 +3615,24 @@ export const DEFAULT_COURSES = [
       { id: 'golfpark-westerpark-zoetermeer-gele-lus-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 36.6, slope: 139, rating9: null, slope9: null, lengths: [288, 138, 298, 303, 364, 109, 299, 435, 265] },
       { id: 'golfpark-westerpark-zoetermeer-gele-lus-rood-d', name: 'Rood (dames)', gender: 'd', rating: 36.2, slope: 144, rating9: null, slope9: null, lengths: [288, 138, 298, 283, 348, 109, 299, 415, 265] },
       { id: 'golfpark-westerpark-zoetermeer-gele-lus-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 33.4, slope: 121, rating9: null, slope9: null, lengths: [200, 85, 248, 222, 253, 106, 249, 367, 211] },
+    ],
+  },
+  {
+    id: 'golfpark-t-caves-wintelre-18-holes', province: 'Noord-Brabant', town: 'Wintelre', dataVersion: 1, name: 'Golf & Recreatiepark \'t Caves 18 holes (Wintelre)', holeCount: 18, parTotal: 64, pars: [3, 3, 5, 4, 3, 3, 4, 3, 4, 3, 3, 5, 4, 3, 3, 4, 3, 4], si: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], confirmed: true, siUnknown: true, location: { lat: 51.43607, lon: 5.33715 }, website: 'https://hetcaves.nl',
+    tees: [
+      { id: 'golfpark-t-caves-wintelre-18-holes-geel-h', name: 'Geel (heren)', gender: 'h', rating: 61.6, slope: 105, rating9: null, slope9: null },
+      { id: 'golfpark-t-caves-wintelre-18-holes-rood-h', name: 'Rood (heren)', gender: 'h', rating: 58.9, slope: 98, rating9: null, slope9: null },
+      { id: 'golfpark-t-caves-wintelre-18-holes-geel-d', name: 'Geel (dames)', gender: 'd', rating: 65.3, slope: 113, rating9: null, slope9: null },
+      { id: 'golfpark-t-caves-wintelre-18-holes-rood-d', name: 'Rood (dames)', gender: 'd', rating: 62.4, slope: 104, rating9: null, slope9: null },
+    ],
+  },
+  {
+    id: 'golfpark-t-caves-wintelre-9-holes', province: 'Noord-Brabant', town: 'Wintelre', dataVersion: 1, name: 'Golf & Recreatiepark \'t Caves 9 holes (Wintelre)', holeCount: 9, parTotal: 32, pars: [3, 3, 5, 4, 3, 3, 4, 3, 4], si: [1, 2, 3, 4, 5, 6, 7, 8, 9], confirmed: true, siUnknown: true, location: { lat: 51.43607, lon: 5.33715 }, website: 'https://hetcaves.nl',
+    tees: [
+      { id: 'golfpark-t-caves-wintelre-9-holes-geel-h', name: 'Geel (heren)', gender: 'h', rating: 30.8, slope: 105, rating9: null, slope9: null },
+      { id: 'golfpark-t-caves-wintelre-9-holes-rood-h', name: 'Rood (heren)', gender: 'h', rating: 29.5, slope: 98, rating9: null, slope9: null },
+      { id: 'golfpark-t-caves-wintelre-9-holes-geel-d', name: 'Geel (dames)', gender: 'd', rating: 32.7, slope: 113, rating9: null, slope9: null },
+      { id: 'golfpark-t-caves-wintelre-9-holes-rood-d', name: 'Rood (dames)', gender: 'd', rating: 31.2, slope: 104, rating9: null, slope9: null },
     ],
   },
   {
@@ -3618,10 +3708,14 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfcentrum-dongen', province: 'Noord-Brabant', town: 'Dongen', dataVersion: 1, name: 'Golfcentrum Dongen', holeCount: 9, parTotal: 36, pars: [4, 5, 3, 5, 4, 4, 3, 4, 4], si: [7, 2, 6, 4, 3, 1, 8, 5, 9], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 51.617, lon: 4.9154 }, website: 'https://www.golfcentrumdongen.nl/',
+    id: 'golfcentrum-dongen', province: 'Noord-Brabant', town: 'Dongen', dataVersion: 1, name: 'Golfcentrum Dongen', holeCount: 9, parTotal: 36, pars: [4, 5, 3, 5, 4, 4, 3, 4, 4], si: [7, 2, 6, 4, 3, 1, 8, 5, 9], confirmed: true, location: { lat: 51.617, lon: 4.9154 }, website: 'https://www.golfcentrumdongen.nl/',
     tees: [
-      { id: 'golfcentrum-dongen-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 36, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [249, 525, 115, 436, 385, 411, 143, 274, 220] },
-      { id: 'golfcentrum-dongen-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 36, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [249, 525, 115, 436, 385, 411, 143, 274, 220] },
+      { id: 'golfcentrum-dongen-geel-h', name: 'Geel (heren)', gender: 'h', rating: 34.8, slope: 115, rating9: null, slope9: null, lengths: [256, 525, 110, 450, 390, 410, 142, 275, 220] },
+      { id: 'golfcentrum-dongen-rood-h', name: 'Rood (heren)', gender: 'h', rating: 33.5, slope: 105, rating9: null, slope9: null, lengths: [245, 445, 95, 387, 355, 374, 115, 255, 205] },
+      { id: 'golfcentrum-dongen-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 32.1, slope: 98, rating9: null, slope9: null },
+      { id: 'golfcentrum-dongen-geel-d', name: 'Geel (dames)', gender: 'd', rating: 37.6, slope: 131, rating9: null, slope9: null, lengths: [256, 525, 110, 450, 390, 410, 142, 275, 220] },
+      { id: 'golfcentrum-dongen-rood-d', name: 'Rood (dames)', gender: 'd', rating: 35.6, slope: 124, rating9: null, slope9: null, lengths: [245, 445, 95, 387, 355, 374, 115, 255, 205] },
+      { id: 'golfcentrum-dongen-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 33.6, slope: 112, rating9: null, slope9: null },
     ],
   },
   {
@@ -3649,12 +3743,19 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'hcc-groen-geel-golf-wassenaar', province: 'Zuid-Holland', town: 'Wassenaar', dataVersion: 1, name: 'Haagsche Country Club Groen-Geel (Wassenaar)', holeCount: 9, parTotal: 31, pars: [4, 4, 3, 4, 4, 3, 3, 3, 3], si: [5, 2, 8, 7, 1, 9, 3, 6, 4], confirmed: false, fromSources: true, location: { lat: 52.11452, lon: 4.34346 }, website: 'https://www.groengeel.nl',
+    id: 'hcc-groen-geel-golf-wassenaar', province: 'Zuid-Holland', town: 'Wassenaar', dataVersion: 1, name: 'Haagsche Country Club Groen-Geel (Wassenaar)', holeCount: 9, parTotal: 31, pars: [4, 4, 3, 4, 4, 3, 3, 3, 3], si: [6, 3, 9, 4, 1, 8, 2, 5, 7], confirmed: false, fromSources: true, location: { lat: 52.11452, lon: 4.34346 }, website: 'https://www.groengeel.nl',
     tees: [
-      { id: 'hcc-groen-geel-golf-wassenaar-geel-h', name: 'Geel (heren)', gender: 'h', rating: 29.9, slope: 98, rating9: null, slope9: null, lengths: [275, 280, 125, 212, 286, 118, 185, 135, 162] },
-      { id: 'hcc-groen-geel-golf-wassenaar-rood-h', name: 'Rood (heren)', gender: 'h', rating: 29.6, slope: 97, rating9: null, slope9: null, lengths: [251, 275, 125, 202, 273, 118, 173, 135, 162] },
-      { id: 'hcc-groen-geel-golf-wassenaar-geel-d', name: 'Geel (dames)', gender: 'd', rating: 31.7, slope: 97, rating9: null, slope9: null, lengths: [275, 280, 125, 212, 286, 118, 185, 135, 162] },
-      { id: 'hcc-groen-geel-golf-wassenaar-rood-d', name: 'Rood (dames)', gender: 'd', rating: 31.3, slope: 95, rating9: null, slope9: null, lengths: [251, 275, 125, 202, 273, 118, 173, 135, 162] },
+      { id: 'hcc-groen-geel-golf-wassenaar-geel-h', name: 'Geel (heren)', gender: 'h', rating: 29.9, slope: 98, rating9: null, slope9: null, lengths: [264, 277, 123, 207, 280, 122, 179, 133, 162] },
+      { id: 'hcc-groen-geel-golf-wassenaar-rood-h', name: 'Rood (heren)', gender: 'h', rating: 29.6, slope: 97, rating9: null, slope9: null, lengths: [264, 277, 123, 207, 280, 122, 179, 133, 162] },
+      { id: 'hcc-groen-geel-golf-wassenaar-geel-d', name: 'Geel (dames)', gender: 'd', rating: 31.7, slope: 97, rating9: null, slope9: null, lengths: [264, 277, 123, 207, 280, 122, 179, 133, 162] },
+      { id: 'hcc-groen-geel-golf-wassenaar-rood-d', name: 'Rood (dames)', gender: 'd', rating: 31.3, slope: 95, rating9: null, slope9: null, lengths: [264, 277, 123, 207, 280, 122, 179, 133, 162] },
+    ],
+  },
+  {
+    id: 'hcc-groen-geel-golf-wassenaar-gele-baan', province: 'Zuid-Holland', town: 'Wassenaar', dataVersion: 1, name: 'Haagsche Country Club Groen-Geel Gele baan (Wassenaar)', holeCount: 9, parTotal: 28, pars: [3, 3, 4, 3, 3, 3, 3, 3, 3], si: [6, 9, 3, 1, 4, 8, 2, 5, 7], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.11452, lon: 4.34346 }, website: 'https://www.groengeel.nl',
+    tees: [
+      { id: 'hcc-groen-geel-golf-wassenaar-gele-baan-geel-h', name: 'Geel (heren)', gender: 'h', rating: 28, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [134, 123, 207, 161, 95, 122, 179, 133, 162] },
+      { id: 'hcc-groen-geel-golf-wassenaar-gele-baan-geel-d', name: 'Geel (dames)', gender: 'd', rating: 28, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [134, 123, 207, 161, 95, 122, 179, 133, 162] },
     ],
   },
   {
@@ -3664,6 +3765,13 @@ export const DEFAULT_COURSES = [
       { id: 'valkenswaardse-golfclub-rood-h', name: 'Rood (heren)', gender: 'h', rating: 55.6, slope: 88, rating9: null, slope9: null, lengths: [227, 114, 148, 152, 259, 152, 108, 179, 102, 227, 114, 148, 152, 259, 152, 108, 179, 102] },
       { id: 'valkenswaardse-golfclub-geel-d', name: 'Geel (dames)', gender: 'd', rating: 58.6, slope: 88, rating9: null, slope9: null, lengths: [242, 114, 148, 152, 259, 152, 108, 179, 102, 242, 114, 148, 152, 259, 152, 108, 179, 102] },
       { id: 'valkenswaardse-golfclub-rood-d', name: 'Rood (dames)', gender: 'd', rating: 58.4, slope: 86, rating9: null, slope9: null, lengths: [227, 114, 148, 152, 259, 152, 108, 179, 102, 227, 114, 148, 152, 259, 152, 108, 179, 102] },
+    ],
+  },
+  {
+    id: 'brabant-golf-rijen', province: 'Noord-Brabant', town: 'Rijen', dataVersion: 1, name: 'Brabant Golf (Rijen)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], confirmed: true, siUnknown: true, countsForIndex: false, location: { lat: 51.5974, lon: 4.9096 }, website: 'https://www.brabantgolf.nl/',
+    tees: [
+      { id: 'brabant-golf-rijen-geel-h', name: 'Geel (heren)', gender: 'h', rating: 51.1, slope: 78, rating9: null, slope9: null },
+      { id: 'brabant-golf-rijen-rood-d', name: 'Rood (dames)', gender: 'd', rating: 53.5, slope: 77, rating9: null, slope9: null },
     ],
   },
   {
@@ -3735,43 +3843,43 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'prise-deau-golf-tilburg-blaak-sijsten', province: 'Noord-Brabant', town: 'Tilburg', dataVersion: 1, name: 'Prise d\'Eau Golf Blaak + Sijsten (Tilburg)', holeCount: 18, parTotal: 72, pars: [4, 3, 5, 4, 3, 5, 4, 4, 4, 4, 4, 4, 3, 4, 4, 5, 3, 5], si: [9, 17, 3, 13, 15, 5, 1, 11, 7, 12, 2, 14, 10, 4, 18, 6, 16, 8], confirmed: false, fromSources: true, location: { lat: 51.5493, lon: 4.9947 }, website: 'https://prisedeau-golf.nl/',
+    id: 'prise-deau-golf-tilburg-blaak-sijsten', province: 'Noord-Brabant', town: 'Tilburg', dataVersion: 1, name: 'Prise d\'Eau Golf Blaak + Sijsten (Tilburg)', holeCount: 18, parTotal: 72, pars: [4, 3, 5, 4, 3, 5, 4, 4, 4, 4, 4, 4, 3, 4, 4, 5, 3, 5], si: [9, 17, 5, 11, 13, 7, 1, 15, 3, 12, 2, 14, 10, 4, 18, 6, 16, 8], confirmed: true, location: { lat: 51.5493, lon: 4.9947 }, website: 'https://prisedeau-golf.nl/',
     tees: [
       { id: 'prise-deau-golf-tilburg-blaak-sijsten-wit-h', name: 'Wit (heren)', gender: 'h', rating: 73.8, slope: 134, rating9: null, slope9: null, lengths: [346, 154, 511, 381, 180, 519, 379, 333, 387, 352, 387, 355, 190, 448, 305, 507, 140, 530] },
-      { id: 'prise-deau-golf-tilburg-blaak-sijsten-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.7, slope: 132, rating9: null, slope9: null, lengths: [337, 146, 469, 346, 172, 506, 355, 323, 361, 343, 377, 339, 172, 396, 285, 471, 132, 518] },
+      { id: 'prise-deau-golf-tilburg-blaak-sijsten-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.7, slope: 132, rating9: null, slope9: null, lengths: [337, 146, 469, 346, 172, 506, 355, 323, 361, 343, 377, 339, 172, 396, 285, 471, 132, 517] },
       { id: 'prise-deau-golf-tilburg-blaak-sijsten-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 69.4, slope: 123, rating9: null, slope9: null, lengths: [328, 137, 421, 326, 159, 457, 334, 285, 349, 311, 305, 328, 162, 386, 270, 405, 114, 444] },
       { id: 'prise-deau-golf-tilburg-blaak-sijsten-rood-h', name: 'Rood (heren)', gender: 'h', rating: 67.4, slope: 119, rating9: null, slope9: null, lengths: [319, 128, 397, 283, 150, 450, 313, 275, 310, 286, 288, 289, 153, 348, 238, 394, 106, 435] },
-      { id: 'prise-deau-golf-tilburg-blaak-sijsten-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.4, slope: 137, rating9: null, slope9: null, lengths: [337, 146, 469, 346, 172, 506, 355, 323, 361, 343, 377, 339, 172, 396, 285, 471, 132, 518] },
+      { id: 'prise-deau-golf-tilburg-blaak-sijsten-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.4, slope: 137, rating9: null, slope9: null, lengths: [337, 146, 469, 346, 172, 506, 355, 323, 361, 343, 377, 339, 172, 396, 285, 471, 132, 517] },
       { id: 'prise-deau-golf-tilburg-blaak-sijsten-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 75.3, slope: 126, rating9: null, slope9: null, lengths: [328, 137, 421, 326, 159, 457, 334, 285, 349, 311, 305, 328, 162, 386, 270, 405, 114, 444] },
       { id: 'prise-deau-golf-tilburg-blaak-sijsten-rood-d', name: 'Rood (dames)', gender: 'd', rating: 73.1, slope: 123, rating9: null, slope9: null, lengths: [319, 128, 397, 283, 150, 450, 313, 275, 310, 286, 288, 289, 153, 348, 238, 394, 106, 435] },
     ],
   },
   {
-    id: 'prise-deau-golf-tilburg-leij-sijsten', province: 'Noord-Brabant', town: 'Tilburg', dataVersion: 1, name: 'Prise d\'Eau Golf Leij + Sijsten (Tilburg)', holeCount: 18, parTotal: 72, pars: [4, 4, 4, 3, 4, 5, 5, 3, 4, 4, 4, 4, 3, 4, 4, 5, 3, 5], si: [13, 7, 3, 9, 1, 15, 11, 17, 5, 12, 2, 14, 10, 4, 18, 6, 16, 8], confirmed: false, fromSources: true, location: { lat: 51.5493, lon: 4.9947 }, website: 'https://prisedeau-golf.nl/',
+    id: 'prise-deau-golf-tilburg-leij-sijsten', province: 'Noord-Brabant', town: 'Tilburg', dataVersion: 1, name: 'Prise d\'Eau Golf Leij + Sijsten (Tilburg)', holeCount: 18, parTotal: 72, pars: [4, 4, 4, 3, 4, 5, 5, 3, 4, 4, 4, 4, 3, 4, 4, 5, 3, 5], si: [13, 5, 3, 9, 1, 15, 11, 17, 7, 12, 2, 14, 10, 4, 18, 6, 16, 8], confirmed: true, location: { lat: 51.5493, lon: 4.9947 }, website: 'https://prisedeau-golf.nl/',
     tees: [
-      { id: 'prise-deau-golf-tilburg-leij-sijsten-wit-h', name: 'Wit (heren)', gender: 'h', rating: 74.2, slope: 130, rating9: null, slope9: null, lengths: [378, 367, 406, 188, 384, 477, 494, 159, 355, 352, 387, 355, 190, 448, 305, 507, 140, 530] },
-      { id: 'prise-deau-golf-tilburg-leij-sijsten-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.6, slope: 132, rating9: null, slope9: null, lengths: [350, 342, 376, 172, 350, 447, 467, 142, 334, 343, 377, 339, 172, 396, 285, 471, 132, 518] },
-      { id: 'prise-deau-golf-tilburg-leij-sijsten-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 69.1, slope: 123, rating9: null, slope9: null, lengths: [323, 307, 355, 165, 338, 391, 418, 127, 326, 311, 305, 328, 162, 386, 270, 405, 114, 444] },
-      { id: 'prise-deau-golf-tilburg-leij-sijsten-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.9, slope: 118, rating9: null, slope9: null, lengths: [307, 289, 339, 153, 292, 371, 381, 111, 291, 286, 288, 289, 153, 348, 238, 394, 106, 435] },
-      { id: 'prise-deau-golf-tilburg-leij-sijsten-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.6, slope: 135, rating9: null, slope9: null, lengths: [350, 342, 376, 172, 350, 447, 467, 142, 334, 343, 377, 339, 172, 396, 285, 471, 132, 518] },
-      { id: 'prise-deau-golf-tilburg-leij-sijsten-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 74.9, slope: 127, rating9: null, slope9: null, lengths: [323, 307, 355, 165, 338, 391, 418, 127, 326, 311, 305, 328, 162, 386, 270, 405, 114, 444] },
-      { id: 'prise-deau-golf-tilburg-leij-sijsten-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72.3, slope: 123, rating9: null, slope9: null, lengths: [307, 289, 339, 153, 292, 371, 381, 111, 291, 286, 288, 289, 153, 348, 238, 394, 106, 435] },
+      { id: 'prise-deau-golf-tilburg-leij-sijsten-wit-h', name: 'Wit (heren)', gender: 'h', rating: 74.2, slope: 130, rating9: null, slope9: null, lengths: [378, 392, 406, 188, 384, 477, 494, 159, 355, 352, 387, 355, 190, 448, 305, 507, 140, 530] },
+      { id: 'prise-deau-golf-tilburg-leij-sijsten-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.6, slope: 132, rating9: null, slope9: null, lengths: [350, 366, 376, 172, 350, 447, 467, 142, 334, 343, 377, 339, 172, 396, 285, 471, 132, 517] },
+      { id: 'prise-deau-golf-tilburg-leij-sijsten-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 69.1, slope: 123, rating9: null, slope9: null, lengths: [323, 332, 355, 165, 338, 391, 418, 127, 326, 311, 305, 328, 162, 386, 270, 405, 114, 444] },
+      { id: 'prise-deau-golf-tilburg-leij-sijsten-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.9, slope: 118, rating9: null, slope9: null, lengths: [307, 313, 339, 153, 292, 371, 381, 111, 291, 286, 288, 289, 153, 348, 238, 394, 106, 435] },
+      { id: 'prise-deau-golf-tilburg-leij-sijsten-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.6, slope: 135, rating9: null, slope9: null, lengths: [350, 366, 376, 172, 350, 447, 467, 142, 334, 343, 377, 339, 172, 396, 285, 471, 132, 517] },
+      { id: 'prise-deau-golf-tilburg-leij-sijsten-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 74.9, slope: 127, rating9: null, slope9: null, lengths: [323, 332, 355, 165, 338, 391, 418, 127, 326, 311, 305, 328, 162, 386, 270, 405, 114, 444] },
+      { id: 'prise-deau-golf-tilburg-leij-sijsten-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72.3, slope: 123, rating9: null, slope9: null, lengths: [307, 313, 339, 153, 292, 371, 381, 111, 291, 286, 288, 289, 153, 348, 238, 394, 106, 435] },
     ],
   },
   {
-    id: 'prise-deau-golf-tilburg-blaak-leij', province: 'Noord-Brabant', town: 'Tilburg', dataVersion: 1, name: 'Prise d\'Eau Golf Blaak + Leij (Tilburg)', holeCount: 18, parTotal: 72, pars: [4, 3, 5, 4, 3, 5, 4, 4, 4, 4, 4, 4, 3, 4, 5, 5, 3, 4], si: [9, 17, 3, 13, 15, 5, 1, 11, 7, 12, 2, 14, 6, 4, 16, 8, 18, 10], confirmed: false, fromSources: true, location: { lat: 51.5493, lon: 4.9947 }, website: 'https://prisedeau-golf.nl/',
+    id: 'prise-deau-golf-tilburg-blaak-leij', province: 'Noord-Brabant', town: 'Tilburg', dataVersion: 1, name: 'Prise d\'Eau Golf Blaak + Leij (Tilburg)', holeCount: 18, parTotal: 72, pars: [4, 3, 5, 4, 3, 5, 4, 4, 4, 4, 4, 4, 3, 4, 5, 5, 3, 4], si: [9, 17, 5, 11, 13, 7, 1, 15, 3, 14, 6, 4, 10, 2, 16, 12, 18, 8], confirmed: true, location: { lat: 51.5493, lon: 4.9947 }, website: 'https://prisedeau-golf.nl/',
     tees: [
-      { id: 'prise-deau-golf-tilburg-blaak-leij-wit-h', name: 'Wit (heren)', gender: 'h', rating: 74, slope: 130, rating9: null, slope9: null, lengths: [346, 154, 511, 381, 180, 519, 379, 333, 387, 378, 367, 406, 188, 384, 477, 494, 159, 355] },
-      { id: 'prise-deau-golf-tilburg-blaak-leij-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.5, slope: 131, rating9: null, slope9: null, lengths: [337, 146, 469, 346, 172, 506, 355, 323, 361, 350, 342, 376, 172, 350, 447, 467, 142, 334] },
-      { id: 'prise-deau-golf-tilburg-blaak-leij-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 69, slope: 128, rating9: null, slope9: null, lengths: [328, 137, 421, 326, 159, 457, 334, 285, 349, 323, 307, 355, 165, 338, 391, 418, 127, 326] },
-      { id: 'prise-deau-golf-tilburg-blaak-leij-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.8, slope: 121, rating9: null, slope9: null, lengths: [319, 128, 397, 283, 150, 450, 313, 275, 310, 307, 289, 339, 153, 292, 371, 381, 111, 291] },
-      { id: 'prise-deau-golf-tilburg-blaak-leij-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.5, slope: 133, rating9: null, slope9: null, lengths: [337, 146, 469, 346, 172, 506, 355, 323, 361, 350, 342, 376, 172, 350, 447, 467, 142, 334] },
-      { id: 'prise-deau-golf-tilburg-blaak-leij-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 75.3, slope: 127, rating9: null, slope9: null, lengths: [328, 137, 421, 326, 159, 457, 334, 285, 349, 323, 307, 355, 165, 338, 391, 418, 127, 326] },
-      { id: 'prise-deau-golf-tilburg-blaak-leij-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72.7, slope: 125, rating9: null, slope9: null, lengths: [319, 128, 397, 283, 150, 450, 313, 275, 310, 307, 289, 339, 153, 292, 371, 381, 111, 291] },
+      { id: 'prise-deau-golf-tilburg-blaak-leij-wit-h', name: 'Wit (heren)', gender: 'h', rating: 74, slope: 130, rating9: null, slope9: null, lengths: [346, 154, 511, 381, 180, 519, 379, 333, 387, 378, 392, 406, 188, 384, 477, 494, 159, 355] },
+      { id: 'prise-deau-golf-tilburg-blaak-leij-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.5, slope: 131, rating9: null, slope9: null, lengths: [337, 146, 469, 346, 172, 506, 355, 323, 361, 350, 366, 376, 172, 350, 447, 467, 142, 334] },
+      { id: 'prise-deau-golf-tilburg-blaak-leij-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 69, slope: 128, rating9: null, slope9: null, lengths: [328, 137, 421, 326, 159, 457, 334, 285, 349, 323, 332, 355, 165, 338, 391, 418, 127, 326] },
+      { id: 'prise-deau-golf-tilburg-blaak-leij-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.8, slope: 121, rating9: null, slope9: null, lengths: [319, 128, 397, 283, 150, 450, 313, 275, 310, 307, 313, 339, 153, 292, 371, 381, 111, 291] },
+      { id: 'prise-deau-golf-tilburg-blaak-leij-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.5, slope: 133, rating9: null, slope9: null, lengths: [337, 146, 469, 346, 172, 506, 355, 323, 361, 350, 366, 376, 172, 350, 447, 467, 142, 334] },
+      { id: 'prise-deau-golf-tilburg-blaak-leij-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 75.3, slope: 127, rating9: null, slope9: null, lengths: [328, 137, 421, 326, 159, 457, 334, 285, 349, 323, 332, 355, 165, 338, 391, 418, 127, 326] },
+      { id: 'prise-deau-golf-tilburg-blaak-leij-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72.7, slope: 125, rating9: null, slope9: null, lengths: [319, 128, 397, 283, 150, 450, 313, 275, 310, 307, 313, 339, 153, 292, 371, 381, 111, 291] },
     ],
   },
   {
-    id: 'prise-deau-golf-tilburg-par-3-baan-de-warande', province: 'Noord-Brabant', town: 'Tilburg', dataVersion: 1, name: 'Prise d\'Eau Golf Par 3-baan De Warande (Tilburg)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], confirmed: false, fromSources: true, siUnknown: true, countsForIndex: false, location: { lat: 51.5493, lon: 4.9947 }, website: 'https://prisedeau-golf.nl/',
+    id: 'prise-deau-golf-tilburg-par-3-baan-de-warande', province: 'Noord-Brabant', town: 'Tilburg', dataVersion: 1, name: 'Prise d\'Eau Golf Par 3-baan De Warande (Tilburg)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], confirmed: true, siUnknown: true, countsForIndex: false, location: { lat: 51.5493, lon: 4.9947 }, website: 'https://prisedeau-golf.nl/',
     tees: [
       { id: 'prise-deau-golf-tilburg-par-3-baan-de-warande-geel-h', name: 'Geel (heren)', gender: 'h', rating: 49.8, slope: 74, rating9: null, slope9: null },
       { id: 'prise-deau-golf-tilburg-par-3-baan-de-warande-rood-d', name: 'Rood (dames)', gender: 'd', rating: 51.5, slope: 76, rating9: null, slope9: null },
@@ -3791,8 +3899,8 @@ export const DEFAULT_COURSES = [
   {
     id: 'golfcenter-seve-rotterdam', province: 'Zuid-Holland', town: 'Rotterdam', dataVersion: 1, name: 'Golfcenter Seve Par 3-baan (Rotterdam)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [17, 11, 13, 15, 9, 3, 5, 7, 1, 16, 14, 6, 18, 12, 2, 8, 10, 4], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 51.9438, lon: 4.46165 }, website: 'https://seve.nl',
     tees: [
-      { id: 'golfcenter-seve-rotterdam-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [51, 70, 89, 86, 75, 120, 76, 107, 83, 71, 66, 82, 86, 75, 120, 76, 107, 61] },
-      { id: 'golfcenter-seve-rotterdam-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [51, 70, 89, 86, 75, 120, 76, 107, 83, 71, 66, 82, 86, 75, 120, 76, 107, 61] },
+      { id: 'golfcenter-seve-rotterdam-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [51, 70, 89, 86, 73, 120, 76, 107, 83, 71, 66, 82, 86, 75, 120, 76, 107, 61] },
+      { id: 'golfcenter-seve-rotterdam-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [51, 70, 89, 86, 73, 120, 76, 107, 83, 71, 66, 82, 86, 75, 120, 76, 107, 61] },
     ],
   },
   {
@@ -4388,49 +4496,49 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golf-resort-brunssummerheide-blauw-geel', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Blauw-Geel', holeCount: 18, parTotal: 72, pars: [5, 4, 4, 3, 4, 5, 4, 3, 4, 4, 3, 5, 4, 3, 4, 4, 4, 5], si: [3, 7, 1, 15, 5, 11, 13, 17, 9, 6, 18, 2, 10, 16, 8, 12, 4, 14], confirmed: false, fromSources: true, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
+    id: 'golf-resort-brunssummerheide-blauw-geel', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Blauw-Geel', holeCount: 18, parTotal: 72, pars: [5, 4, 4, 3, 4, 5, 4, 3, 4, 4, 3, 5, 4, 3, 4, 4, 4, 5], si: [3, 7, 1, 15, 5, 11, 13, 17, 9, 6, 18, 2, 10, 16, 8, 12, 4, 14], confirmed: true, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
     tees: [
       { id: 'golf-resort-brunssummerheide-blauw-geel-wit-h', name: 'Wit (heren)', gender: 'h', rating: 73.6, slope: 143, rating9: null, slope9: null, lengths: [488, 392, 376, 194, 338, 454, 314, 186, 356, 360, 143, 533, 339, 136, 400, 351, 408, 466] },
-      { id: 'golf-resort-brunssummerheide-blauw-geel-geel-h', name: 'Geel (heren)', gender: 'h', rating: 72.8, slope: 135, rating9: null, slope9: null, lengths: [480, 372, 350, 187, 324, 440, 314, 169, 339, 336, 127, 509, 314, 130, 372, 332, 379, 458] },
-      { id: 'golf-resort-brunssummerheide-blauw-geel-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 70.5, slope: 130, rating9: null, slope9: null },
-      { id: 'golf-resort-brunssummerheide-blauw-geel-rood-h', name: 'Rood (heren)', gender: 'h', rating: 68.8, slope: 124, rating9: null, slope9: null, lengths: [438, 320, 290, 162, 276, 379, 264, 151, 318, 314, 111, 439, 278, 113, 314, 300, 331, 401] },
-      { id: 'golf-resort-brunssummerheide-blauw-geel-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 66.2, slope: 118, rating9: null, slope9: null },
-      { id: 'golf-resort-brunssummerheide-blauw-geel-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.7, slope: 151, rating9: null, slope9: null, lengths: [480, 372, 350, 187, 324, 440, 314, 169, 339, 336, 127, 509, 314, 130, 372, 332, 379, 458] },
-      { id: 'golf-resort-brunssummerheide-blauw-geel-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 76.1, slope: 140, rating9: null, slope9: null },
-      { id: 'golf-resort-brunssummerheide-blauw-geel-rood-d', name: 'Rood (dames)', gender: 'd', rating: 74.4, slope: 130, rating9: null, slope9: null, lengths: [438, 320, 290, 162, 276, 379, 264, 151, 318, 314, 111, 439, 278, 113, 314, 300, 331, 401] },
-      { id: 'golf-resort-brunssummerheide-blauw-geel-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 71.2, slope: 119, rating9: null, slope9: null },
+      { id: 'golf-resort-brunssummerheide-blauw-geel-geel-h', name: 'Geel (heren)', gender: 'h', rating: 72.8, slope: 135, rating9: null, slope9: null, lengths: [470, 372, 350, 187, 324, 440, 314, 169, 339, 336, 127, 509, 314, 130, 372, 332, 379, 458] },
+      { id: 'golf-resort-brunssummerheide-blauw-geel-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 70.5, slope: 130, rating9: null, slope9: null, lengths: [470, 320, 290, 162, 324, 379, 314, 169, 339, 336, 127, 439, 314, 130, 314, 332, 331, 401] },
+      { id: 'golf-resort-brunssummerheide-blauw-geel-rood-h', name: 'Rood (heren)', gender: 'h', rating: 68.8, slope: 124, rating9: null, slope9: null, lengths: [452, 320, 290, 162, 276, 379, 264, 151, 318, 314, 111, 439, 278, 113, 314, 300, 331, 401] },
+      { id: 'golf-resort-brunssummerheide-blauw-geel-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 66.2, slope: 118, rating9: null, slope9: null, lengths: [377, 288, 265, 120, 243, 336, 231, 136, 285, 283, 100, 395, 250, 102, 283, 270, 298, 361] },
+      { id: 'golf-resort-brunssummerheide-blauw-geel-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.7, slope: 151, rating9: null, slope9: null, lengths: [470, 372, 350, 187, 324, 440, 314, 169, 339, 336, 127, 509, 314, 130, 372, 332, 379, 458] },
+      { id: 'golf-resort-brunssummerheide-blauw-geel-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 76.1, slope: 140, rating9: null, slope9: null, lengths: [470, 320, 290, 162, 324, 379, 314, 169, 339, 336, 127, 439, 314, 130, 314, 332, 331, 401] },
+      { id: 'golf-resort-brunssummerheide-blauw-geel-rood-d', name: 'Rood (dames)', gender: 'd', rating: 74.4, slope: 130, rating9: null, slope9: null, lengths: [452, 320, 290, 162, 276, 379, 264, 151, 318, 314, 111, 439, 278, 113, 314, 300, 331, 401] },
+      { id: 'golf-resort-brunssummerheide-blauw-geel-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 71.2, slope: 119, rating9: null, slope9: null, lengths: [377, 288, 265, 120, 243, 336, 231, 136, 285, 283, 100, 395, 250, 102, 283, 270, 298, 361] },
     ],
   },
   {
-    id: 'golf-resort-brunssummerheide-geel-rood', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Geel-Rood', holeCount: 18, parTotal: 72, pars: [4, 3, 5, 4, 3, 4, 4, 4, 5, 4, 5, 3, 4, 4, 5, 4, 3, 4], si: [5, 17, 1, 9, 15, 7, 11, 3, 13, 10, 4, 14, 12, 2, 8, 18, 16, 6], confirmed: false, fromSources: true, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
+    id: 'golf-resort-brunssummerheide-geel-rood', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Geel-Rood', holeCount: 18, parTotal: 72, pars: [4, 3, 5, 4, 3, 4, 4, 4, 5, 4, 5, 3, 4, 4, 5, 4, 3, 4], si: [5, 17, 1, 9, 15, 7, 11, 3, 13, 10, 4, 14, 12, 2, 8, 18, 16, 6], confirmed: true, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
     tees: [
       { id: 'golf-resort-brunssummerheide-geel-rood-wit-h', name: 'Wit (heren)', gender: 'h', rating: 73.6, slope: 146, rating9: null, slope9: null, lengths: [360, 143, 533, 339, 136, 400, 351, 408, 466, 314, 507, 152, 325, 366, 506, 331, 153, 423] },
       { id: 'golf-resort-brunssummerheide-geel-rood-geel-h', name: 'Geel (heren)', gender: 'h', rating: 72.1, slope: 137, rating9: null, slope9: null, lengths: [336, 127, 509, 314, 130, 372, 332, 379, 458, 314, 497, 143, 314, 357, 467, 321, 139, 399] },
-      { id: 'golf-resort-brunssummerheide-geel-rood-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 70.3, slope: 133, rating9: null, slope9: null },
+      { id: 'golf-resort-brunssummerheide-geel-rood-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 70.3, slope: 133, rating9: null, slope9: null, lengths: [336, 127, 439, 314, 130, 314, 332, 331, 401, 314, 440, 143, 314, 297, 467, 321, 139, 399] },
       { id: 'golf-resort-brunssummerheide-geel-rood-rood-h', name: 'Rood (heren)', gender: 'h', rating: 68.2, slope: 126, rating9: null, slope9: null, lengths: [314, 111, 439, 278, 113, 314, 300, 331, 401, 283, 440, 117, 258, 297, 422, 288, 99, 338] },
-      { id: 'golf-resort-brunssummerheide-geel-rood-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 65.4, slope: 119, rating9: null, slope9: null },
+      { id: 'golf-resort-brunssummerheide-geel-rood-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 65.4, slope: 119, rating9: null, slope9: null, lengths: [283, 100, 395, 250, 102, 283, 270, 298, 361, 255, 396, 105, 232, 267, 380, 259, 48, 304] },
       { id: 'golf-resort-brunssummerheide-geel-rood-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.3, slope: 150, rating9: null, slope9: null, lengths: [336, 127, 509, 314, 130, 372, 332, 379, 458, 314, 497, 143, 314, 357, 467, 321, 139, 399] },
-      { id: 'golf-resort-brunssummerheide-geel-rood-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 75.3, slope: 139, rating9: null, slope9: null },
+      { id: 'golf-resort-brunssummerheide-geel-rood-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 75.3, slope: 139, rating9: null, slope9: null, lengths: [336, 127, 439, 314, 130, 314, 332, 331, 401, 314, 440, 143, 314, 297, 467, 321, 139, 399] },
       { id: 'golf-resort-brunssummerheide-geel-rood-rood-d', name: 'Rood (dames)', gender: 'd', rating: 73.4, slope: 131, rating9: null, slope9: null, lengths: [314, 111, 439, 278, 113, 314, 300, 331, 401, 283, 440, 117, 258, 297, 422, 288, 99, 338] },
-      { id: 'golf-resort-brunssummerheide-geel-rood-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 70.3, slope: 123, rating9: null, slope9: null },
+      { id: 'golf-resort-brunssummerheide-geel-rood-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 70.3, slope: 123, rating9: null, slope9: null, lengths: [283, 100, 395, 250, 102, 283, 270, 298, 361, 255, 396, 105, 232, 267, 380, 259, 48, 304] },
     ],
   },
   {
-    id: 'golf-resort-brunssummerheide-rood-blauw', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Rood-Blauw', holeCount: 18, parTotal: 72, pars: [4, 5, 3, 4, 4, 5, 4, 3, 4, 5, 4, 4, 3, 4, 5, 4, 3, 4], si: [10, 4, 14, 12, 2, 8, 18, 16, 6, 3, 7, 1, 15, 5, 11, 13, 17, 9], confirmed: false, fromSources: true, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
+    id: 'golf-resort-brunssummerheide-rood-blauw', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Rood-Blauw', holeCount: 18, parTotal: 72, pars: [4, 5, 3, 4, 4, 5, 4, 3, 4, 5, 4, 4, 3, 4, 5, 4, 3, 4], si: [10, 4, 14, 12, 2, 8, 18, 16, 6, 3, 7, 1, 15, 5, 11, 13, 17, 9], confirmed: true, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
     tees: [
       { id: 'golf-resort-brunssummerheide-rood-blauw-wit-h', name: 'Wit (heren)', gender: 'h', rating: 73.7, slope: 147, rating9: null, slope9: null, lengths: [314, 507, 152, 325, 366, 506, 331, 153, 423, 488, 392, 376, 194, 338, 454, 314, 186, 356] },
-      { id: 'golf-resort-brunssummerheide-rood-blauw-geel-h', name: 'Geel (heren)', gender: 'h', rating: 73, slope: 137, rating9: null, slope9: null, lengths: [314, 497, 143, 314, 357, 467, 321, 139, 399, 480, 372, 350, 187, 324, 440, 314, 169, 339] },
-      { id: 'golf-resort-brunssummerheide-rood-blauw-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 71.3, slope: 134, rating9: null, slope9: null },
-      { id: 'golf-resort-brunssummerheide-rood-blauw-rood-h', name: 'Rood (heren)', gender: 'h', rating: 68.9, slope: 125, rating9: null, slope9: null, lengths: [283, 440, 117, 258, 297, 422, 288, 99, 338, 438, 320, 290, 162, 276, 379, 264, 151, 318] },
-      { id: 'golf-resort-brunssummerheide-rood-blauw-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 66.1, slope: 123, rating9: null, slope9: null },
-      { id: 'golf-resort-brunssummerheide-rood-blauw-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.5, slope: 151, rating9: null, slope9: null, lengths: [314, 497, 143, 314, 357, 467, 321, 139, 399, 480, 372, 350, 187, 324, 440, 314, 169, 339] },
-      { id: 'golf-resort-brunssummerheide-rood-blauw-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 76.5, slope: 137, rating9: null, slope9: null },
-      { id: 'golf-resort-brunssummerheide-rood-blauw-rood-d', name: 'Rood (dames)', gender: 'd', rating: 74.2, slope: 129, rating9: null, slope9: null, lengths: [283, 440, 117, 258, 297, 422, 288, 99, 338, 438, 320, 290, 162, 276, 379, 264, 151, 318] },
-      { id: 'golf-resort-brunssummerheide-rood-blauw-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 70.9, slope: 120, rating9: null, slope9: null },
+      { id: 'golf-resort-brunssummerheide-rood-blauw-geel-h', name: 'Geel (heren)', gender: 'h', rating: 73, slope: 137, rating9: null, slope9: null, lengths: [314, 497, 143, 314, 357, 467, 321, 139, 399, 470, 372, 350, 187, 324, 440, 314, 169, 339] },
+      { id: 'golf-resort-brunssummerheide-rood-blauw-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 71.3, slope: 134, rating9: null, slope9: null, lengths: [314, 440, 143, 314, 297, 467, 321, 139, 399, 470, 320, 290, 162, 324, 379, 314, 169, 339] },
+      { id: 'golf-resort-brunssummerheide-rood-blauw-rood-h', name: 'Rood (heren)', gender: 'h', rating: 68.9, slope: 125, rating9: null, slope9: null, lengths: [283, 440, 117, 258, 297, 422, 288, 99, 338, 452, 320, 290, 162, 276, 379, 264, 151, 318] },
+      { id: 'golf-resort-brunssummerheide-rood-blauw-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 66.1, slope: 123, rating9: null, slope9: null, lengths: [255, 396, 105, 232, 267, 380, 259, 48, 304, 377, 288, 265, 120, 243, 336, 231, 136, 285] },
+      { id: 'golf-resort-brunssummerheide-rood-blauw-geel-d', name: 'Geel (dames)', gender: 'd', rating: 78.5, slope: 151, rating9: null, slope9: null, lengths: [314, 497, 143, 314, 357, 467, 321, 139, 399, 470, 372, 350, 187, 324, 440, 314, 169, 339] },
+      { id: 'golf-resort-brunssummerheide-rood-blauw-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 76.5, slope: 137, rating9: null, slope9: null, lengths: [314, 440, 143, 314, 297, 467, 321, 139, 399, 470, 320, 290, 162, 324, 379, 314, 169, 339] },
+      { id: 'golf-resort-brunssummerheide-rood-blauw-rood-d', name: 'Rood (dames)', gender: 'd', rating: 74.2, slope: 129, rating9: null, slope9: null, lengths: [283, 440, 117, 258, 297, 422, 288, 99, 338, 452, 320, 290, 162, 276, 379, 264, 151, 318] },
+      { id: 'golf-resort-brunssummerheide-rood-blauw-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 70.9, slope: 120, rating9: null, slope9: null, lengths: [255, 396, 105, 232, 267, 380, 259, 48, 304, 377, 288, 265, 120, 243, 336, 231, 136, 285] },
     ],
   },
   {
-    id: 'golf-resort-brunssummerheide-rood-groen', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Rood-Groen', holeCount: 18, parTotal: 67, pars: [4, 5, 3, 4, 4, 5, 4, 3, 4, 3, 3, 4, 3, 4, 3, 4, 3, 4], si: [9, 5, 13, 15, 1, 3, 11, 17, 7, 4, 12, 14, 6, 2, 16, 18, 8, 10], confirmed: false, fromSources: true, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
+    id: 'golf-resort-brunssummerheide-rood-groen', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Rood-Groen', holeCount: 18, parTotal: 67, pars: [4, 5, 3, 4, 4, 5, 4, 3, 4, 3, 3, 4, 3, 4, 3, 4, 3, 4], si: [9, 5, 13, 15, 1, 3, 11, 17, 7, 4, 12, 14, 6, 2, 16, 18, 8, 10], confirmed: true, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
     tees: [
       { id: 'golf-resort-brunssummerheide-rood-groen-geel-h', name: 'Geel (heren)', gender: 'h', rating: 64.9, slope: 118, rating9: null, slope9: null, lengths: [314, 497, 143, 314, 357, 467, 321, 139, 399, 0, 0, 0, 0, 0, 0, 0, 0, 0] },
       { id: 'golf-resort-brunssummerheide-rood-groen-rood-h', name: 'Rood (heren)', gender: 'h', rating: 63.1, slope: 110, rating9: null, slope9: null, lengths: [283, 440, 117, 258, 297, 422, 288, 99, 338, 0, 0, 0, 0, 0, 0, 0, 0, 0] },
@@ -4439,7 +4547,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golf-resort-brunssummerheide-groen-compact-course', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Groen / Compact Course', holeCount: 18, parTotal: 62, pars: [4, 3, 4, 3, 3, 4, 3, 4, 3, 4, 3, 4, 3, 3, 4, 3, 4, 3], si: [4, 9, 8, 3, 7, 2, 5, 1, 6, 13, 18, 17, 12, 16, 11, 14, 10, 15], confirmed: false, fromSources: true, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
+    id: 'golf-resort-brunssummerheide-groen-compact-course', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Groen / Compact Course', holeCount: 18, parTotal: 62, pars: [4, 3, 4, 3, 3, 4, 3, 4, 3, 4, 3, 4, 3, 3, 4, 3, 4, 3], si: [4, 9, 8, 3, 7, 2, 5, 1, 6, 13, 18, 17, 12, 16, 11, 14, 10, 15], confirmed: true, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
     tees: [
       { id: 'golf-resort-brunssummerheide-groen-compact-course-geel-h', name: 'Geel (heren)', gender: 'h', rating: 57.6, slope: 97, rating9: null, slope9: null },
       { id: 'golf-resort-brunssummerheide-groen-compact-course-rood-h', name: 'Rood (heren)', gender: 'h', rating: 56.8, slope: 90, rating9: null, slope9: null },
@@ -4448,7 +4556,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golf-resort-brunssummerheide-par-3-baan', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Par 3-baan', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [8, 7, 3, 9, 6, 4, 1, 5, 2, 17, 16, 12, 18, 15, 13, 10, 14, 11], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
+    id: 'golf-resort-brunssummerheide-par-3-baan', province: 'Limburg', town: 'Brunssum', dataVersion: 1, name: 'Golf-Resort Brunssummerheide Par 3-baan', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [8, 7, 3, 9, 6, 4, 1, 5, 2, 17, 16, 12, 18, 15, 13, 10, 14, 11], confirmed: true, countsForIndex: false, location: { lat: 50.93505, lon: 6.01021 }, website: 'https://www.golfresortbrunssum.nl/',
     tees: [
       { id: 'golf-resort-brunssummerheide-par-3-baan-geel-h', name: 'Geel (heren)', gender: 'h', rating: 51.5, slope: 77, rating9: null, slope9: null },
       { id: 'golf-resort-brunssummerheide-par-3-baan-rood-d', name: 'Rood (dames)', gender: 'd', rating: 53.9, slope: 84, rating9: null, slope9: null },

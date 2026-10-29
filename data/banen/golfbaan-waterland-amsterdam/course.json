@@ -263,24 +263,27 @@
     }
   ],
   "scorecard": {
-    "page_url": "https://www.golfbaanwaterlandamsterdam.nl/",
+    "page_url": "https://www.golfbaanwaterlandamsterdam.nl/wp-content/uploads/2024/06/Scorecard-18-holes-Golf-Waterland.jpg",
     "files": [
       "scorecard/Golfbaan-Waterland-18-holes-baan-Dames-Heren-aug-2022.pdf",
       "scorecard/Golfbaan-Waterland-9-holes-baan-Dames-Heren-aug-2022.pdf",
       "scorecard/Golfbaan-Waterland-Par-3-4-Baan-binnen-de-grote-baan-Dames-Heren-aug-2022.pdf",
       "scorecard/Golfbaan-Waterland-Par-3-baan-Dames-Heren-aug-2022.pdf",
       "scorecard/page.html",
-      "scorecard/page-golfpass.html"
+      "scorecard/page-golfpass.html",
+      "scorecard/Scorecard-18-holes-Golf-Waterland.jpg",
+      "scorecard/Scorecard-Par-3-Golf-Waterland.jpg"
     ],
-    "source": "third-party",
-    "retrieved": "2026-10-28",
-    "complete": false,
-    "notes": "Officiele site publiceert alleen handicaptabellen (04-08-2022): 18 holes H geel 69,0/125, rood 66,4/112; D geel 75,1/134, rood 71,7/124; 1e negen par 35, 2e negen par 36 (9-holesratings in PDF). Par, S.I. en lengtes per hole van golfpass.com (derden), daar in yards; omgerekend naar meters (x0,9144, afgerond) -> totaal geel 5351 m en rood 4800 m, gelijk aan golfpass-totalen. Par per negen klopt met officiele tabellen. Par 3-baan (9 holes, CR geel H 24,4/63, rood D 25,3/68) en par 3/4-lus 'Groen' (18 holes par 65: H 59,4/99, D 63,6/103) zonder holegegevens niet als loop opgenomen. Grens regio: Amsterdam-Noord (Waterland) op verzoek meegenomen."
+    "source": "official",
+    "retrieved": "2026-10-29",
+    "complete": true,
+    "notes": "Officiële bron gecontroleerd 29-10-2026: officiële scorekaart 'De Waterlandse' (18 holes, geüpload 27-06-2024 in de mediabibliotheek van golfbaanwaterlandamsterdam.nl) gevonden. Par, index (S.I.) en lengtes geel/rood per hole komen daar exact overeen met de eerder van GolfPass omgerekende waarden (totaal geel 5351 m, rood 4800 m; uit 35/in 36); nu officieel. CR/slope uit de officiële handicaptabellen 04-08-2022: 18 holes H geel 69,0/125, rood 66,4/112; D geel 75,1/134, rood 71,7/124 (9-holesratings in PDF). Scorekaart Hazenlus par 3 (Scorecard-Par-3-Golf-Waterland.jpg) toont alleen de buitenkant (plattegrond, local rules), geen holegegevens; par 3-baan (CR geel H 24,4/63, rood D 25,3/68) en par 3/4-lus 'Groen' (18 holes par 65: H 59,4/99, D 63,6/103) daarom niet als loop opgenomen. Grens regio: Amsterdam-Noord (Waterland) op verzoek meegenomen."
   },
   "sources": [
     "https://www.golfbaanwaterlandamsterdam.nl/",
     "https://www.golfbaanwaterlandamsterdam.nl/contact-us/",
-    "https://www.golfpass.com/courses/23649-golf-waterland-amsterdam-championship-course/scorecard-and-layout"
+    "https://www.golfpass.com/courses/23649-golf-waterland-amsterdam-championship-course/scorecard-and-layout",
+    "https://www.golfbaanwaterlandamsterdam.nl/wp-content/uploads/2024/06/Scorecard-18-holes-Golf-Waterland.jpg"
   ],
   "distance_km_from_dedemsvaart": 104.9
 }

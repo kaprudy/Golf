@@ -68,6 +68,50 @@
           "course_rating": null,
           "slope": null,
           "par": 28
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 25.7,
+          "slope": 88,
+          "par": 28
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 26.9,
+          "slope": 86,
+          "par": 28
+        }
+      ],
+      "hole_data": []
+    },
+    {
+      "name": "Serie A met traditionele bal, 18 holes (1e + 2e 9 holes)",
+      "holes": 18,
+      "par": 56,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 51.2,
+          "slope": 88,
+          "par": 56
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 53.7,
+          "slope": 86,
+          "par": 56
         }
       ],
       "hole_data": []
@@ -78,17 +122,21 @@
     "files": [
       "scorecard/page.html",
       "scorecard/schermafbeelding-2022-09-28-om-12_1664362577.png",
-      "scorecard/schermafbeelding-2022-09-28-om-13.png"
+      "scorecard/schermafbeelding-2022-09-28-om-13.png",
+      "scorecard/golfbaan-schinkelshoek-par-3-baan-dames-heren.pdf",
+      "scorecard/page-handicaptabellen.html"
     ],
     "source": "official",
-    "retrieved": "2026-10-28",
+    "retrieved": "2026-10-29",
     "complete": false,
-    "notes": "De site publiceert alleen baankaarten (geen scorekaart met par/S.I./lengtes per hole). Officieel: iedere serie par 36 met de Schinkelshoek-bal; A-serie met traditionele bal par 28, 816 m, alle holes par 3 behalve hole 4 (par 4). Golfingrecord.com toont per serie een par 27-kaart (Westland geel 1127/rood 1007, eenheid onbekend) die niet met de officiële par-informatie strookt; daarom niet overgenomen. Handicaptabellen hangen volgens de site op het mededelingenbord, niet online gevonden."
+    "notes": "De site publiceert alleen baankaarten (geen scorekaart met par/S.I./lengtes per hole). Officieel: iedere serie par 36 met de Schinkelshoek-bal; A-serie met traditionele bal par 28, 816 m, alle holes par 3 behalve hole 4 (par 4). Golfingrecord.com toont per serie een par 27-kaart (Westland geel 1127/rood 1007, eenheid onbekend) die niet met de officiële par-informatie strookt; daarom niet overgenomen. Handicaptabellen hangen volgens de site op het mededelingenbord, niet online gevonden. Officiële bron gecontroleerd 29-10-2026: geen scorekaart met holegegevens gevonden, wel de officiële baanhandicaptabellen (NGF, 14-10-2024) voor de A-serie met traditionele bal: 1e 9 holes geel heren CR 25,7/SR 88, rood dames 26,9/86 (par 28); 2e 9 holes 25,6/87 en 26,8/85 (par 28); 18 holes 51,2/88 en 53,7/86 (par 56). De 1e-9-ratings staan nu bij de lus 'Serie A met traditionele bal'; de 18-holesratings in een nieuwe, achteraan toegevoegde lus (zonder holegegevens). Tee-lengtes per kleur niet gepubliceerd. Volgens de site bestaat de serie uit een 1e en 2e 9 holes."
   },
   "sources": [
     "https://www.golfbaanschinkelshoek.nl/golfbaan/baaninformatie/",
     "https://www.golfbaanschinkelshoek.nl/golfbaan/uniek-concept/",
     "https://www.golfbaanschinkelshoek.nl/contact/",
-    "https://www.golfingrecord.com/golf-scorecard/4b4552e4-e16f-441d-b547-e849e521a0c5"
+    "https://www.golfingrecord.com/golf-scorecard/4b4552e4-e16f-441d-b547-e849e521a0c5",
+    "https://www.golfbaanschinkelshoek.nl/golfbaan/ngf-korte-baan-par-3/ega-playing-handicap-tabellen/",
+    "https://www.golfbaanschinkelshoek.nl/files/golfbaan-schinkelshoek-par-3-baan-dames-heren.pdf"
   ]
 }

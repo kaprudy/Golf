@@ -46,7 +46,7 @@
           "gender": "men",
           "length_m": 2840,
           "course_rating": 56.4,
-          "slope": 91,
+          "slope": 97,
           "par": 58
         },
         {
@@ -54,8 +54,8 @@
           "color": "red",
           "gender": "women",
           "length_m": null,
-          "course_rating": 59.1,
-          "slope": 99,
+          "course_rating": 59.6,
+          "slope": 102,
           "par": 58
         }
       ],
@@ -235,14 +235,15 @@
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Officiele site kieviten.nl gaf 403 (CloudFront) voor curl en WebFetch; geen officiele scorekaart gezien. Par, S.I. (1-18, 9 holes 2x gespeeld: 1e ronde oneven, 2e ronde even) en lengtes (metrisch, per 9 holes 1420 m, totaal 2840 m) van Hole19 (tee 'men'); som pars 29+29=58 en som lengtes 2840 kloppen. CR/SR: Hole19 en GolfPass heren 56,4/91 en dames 59,1/99 (beide 2840 m); 1golf.eu geeft Geel heren 56,4/97 en Rood dames 59,6/102 - afwijkend, bron onzeker. Teenamen geel (heren) / rood (dames) volgens 1golf.eu; Hole19 noemt alleen 'men'/'ladies'. Lengtes dameste (rood) per hole onbekend (Hole19 noemt ook 2840 m totaal, mogelijk dezelfde afslagen). Telefoon niet eenduidig (+31 70 220 9005 bij 1golf/GolfPass, +31 70 511 4649 elders) en daarom null. 1golf noemt seizoen 9 januari - 31 augustus en greenfee EUR 30 (EUR 20 jeugd/introducees). Hole19 noemt de baan ten onrechte 18 holes. Wassenaarse Golf Groendael is een andere baan (Groenendaal 3)."
+    "notes": "Officiele site kieviten.nl gaf 403 (CloudFront) voor curl en WebFetch; geen officiele scorekaart gezien. Par, S.I. (1-18, 9 holes 2x gespeeld: 1e ronde oneven, 2e ronde even) en lengtes (metrisch, per 9 holes 1420 m, totaal 2840 m) van Hole19 (tee 'men'); som pars 29+29=58 en som lengtes 2840 kloppen. CR/SR: Hole19 en GolfPass heren 56,4/91 en dames 59,1/99 (beide 2840 m); 1golf.eu geeft Geel heren 56,4/97 en Rood dames 59,6/102 - afwijkend, bron onzeker. Teenamen geel (heren) / rood (dames) volgens 1golf.eu; Hole19 noemt alleen 'men'/'ladies'. Lengtes dameste (rood) per hole onbekend (Hole19 noemt ook 2840 m totaal, mogelijk dezelfde afslagen). Telefoon niet eenduidig (+31 70 220 9005 bij 1golf/GolfPass, +31 70 511 4649 elders) en daarom null. 1golf noemt seizoen 9 januari - 31 augustus en greenfee EUR 30 (EUR 20 jeugd/introducees). Hole19 noemt de baan ten onrechte 18 holes. Wassenaarse Golf Groendael is een andere baan (Groenendaal 3). Officiële bron gecontroleerd 29-10-2026: niets gevonden; kieviten.nl blokkeert curl en WebFetch (403 CloudFront) en websearch gaf alleen derden (Hole19, GolfPass, 1golf). Gegevens ongewijzigd; controle via browser nodig. Officiële bron gecontroleerd 29-10-2026 (in de browser; de site blokkeert scripts): CR/slope van de clubpagina Plattegrond (index.php?page=GF_Plattegrond): slope heren 97, dames 102; CR 18 holes heren 56,4, dames 59,6 (9 holes 28,2/29,8). Holegegevens (par, S.I., lengtes) blijven van Hole19; de club publiceert alleen totaal 1420 m, 7x par 3 en 2x par 4."
   },
   "sources": [
     "https://www.hole19golf.com/courses/golf-de-kieviten",
     "https://www.golfpass.com/courses/23878-kieviten-golf-club/scorecard-and-layout",
     "https://www.1golf.eu/club/golfclub-de-kieviten/",
     "https://nominatim.openstreetmap.org/",
-    "https://www.kieviten.nl"
+    "https://www.kieviten.nl",
+    "https://www.kieviten.nl/index.php?page=GF_Plattegrond"
   ],
   "status": "open",
   "status_note": "Open; clubsite actief (99 jaar). 9 holes C-baan, 1420 m, 7x par 3 en 2x par 4 (par 29), qualifying mogelijk. kieviten.nl geeft 403 aan scripts maar werkt in de browser.",

@@ -301,7 +301,7 @@
     ],
     "source": "third-party",
     "complete": false,
-    "notes": "De clubsite (golfoostburg.com) publiceert geen scorekaart. Holedata van golfify.io (identiek aan golfingrecord.com). Eenheid onzeker: golfingrecord noemt het yards, en 7002 yd = 6402 m, precies de lengte die 1golf.eu voor geel heren in meters geeft (en 5975 yd = 5464 m voor rood dames). Daarom complete=false. CR/slope: golfify/golfingrecord geel 73,8/139; 1golf.eu geeft geel heren CR 74/130 (6402 m) en rood dames CR 75/132 (5464 m) — tegenstrijdig, alleen de golfify-waarde voor geel is overgenomen. Het oostelijke OSM-polygoon r19527293 bij Oostburg is waarschijnlijk dezelfde baan.",
+    "notes": "De clubsite (golfoostburg.com) publiceert geen scorekaart. Holedata van golfify.io (identiek aan golfingrecord.com). Eenheid onzeker: golfingrecord noemt het yards, en 7002 yd = 6402 m, precies de lengte die 1golf.eu voor geel heren in meters geeft (en 5975 yd = 5464 m voor rood dames). Daarom complete=false. CR/slope: golfify/golfingrecord geel 73,8/139; 1golf.eu geeft geel heren CR 74/130 (6402 m) en rood dames CR 75/132 (5464 m) — tegenstrijdig, alleen de golfify-waarde voor geel is overgenomen. Het oostelijke OSM-polygoon r19527293 bij Oostburg is waarschijnlijk dezelfde baan. Officiële bron gecontroleerd 29-10-2026: niets gevonden; golfoostburg.com is een eenvoudige one-page site zonder baaninformatie, scorekaart of handicaptabellen, en websearch gaf alleen derden. Ongewijzigd.",
     "retrieved": "2026-10-28"
   },
   "sources": [

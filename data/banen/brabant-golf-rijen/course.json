@@ -3,7 +3,7 @@
   "name": "Brabant Golf",
   "club_name": "Golfvereniging Brabant Golf",
   "holes_total": 9,
-  "course_type": "9-holes",
+  "course_type": "par-3",
   "address": {
     "street": "Statenlaan 18",
     "postal_code": "5121 HD",
@@ -38,44 +38,50 @@
     {
       "name": "18 holes (9 holes 2x)",
       "holes": 18,
-      "par": 57,
+      "par": 54,
       "tees": [
         {
           "name": "geel",
           "color": "yellow",
           "gender": "men",
-          "length_m": 2799,
-          "course_rating": 57.8,
-          "slope": 95,
-          "par": 57
+          "length_m": null,
+          "course_rating": 51.1,
+          "slope": 78,
+          "par": 54
         },
         {
           "name": "rood",
           "color": "red",
           "gender": "women",
-          "length_m": 2799,
-          "course_rating": 59.7,
-          "slope": 95,
-          "par": 57
+          "length_m": null,
+          "course_rating": 53.5,
+          "slope": 77,
+          "par": 54
         }
       ],
       "hole_data": []
     }
   ],
   "scorecard": {
-    "page_url": "https://www.brabantgolf.nl/?page_id=172",
+    "page_url": "https://www.brabantgolf.nl/?page_id=489",
     "files": [
       "scorecard/page.html",
-      "scorecard/1golf-brabant-golf.html"
+      "scorecard/1golf-brabant-golf.html",
+      "scorecard/Brabant-Golf-18-holes-Par3-Baan.pdf",
+      "scorecard/Brabant-Golf-9-holes-Par3-Baan.pdf",
+      "scorecard/Handicaptabel-18-holes-2021.jpg",
+      "scorecard/handicap-tabellen.html"
     ],
-    "source": "third-party",
+    "source": "official",
     "complete": false,
-    "notes": "Clubsite publiceert geen scorekaart (pagina Handicap Tabellen is leeg). Ratings en lengte uit 1golf.eu (par 57, 2799 m, geel heren CR 57,8/95, rood dames 59,7/95); de 1golf-scorekaartpagina gaf een Cloudflare-controle en is niet opgehaald. Geen holedata. Oprichtingsjaar 1989 volgens 1golf.eu.",
-    "retrieved": "2026-10-28"
+    "notes": "Officiële bron gecontroleerd 29-10-2026: de pagina Handicap Tabellen (page_id=489) toont de baanhandicaptabellen van 10-05-2022 voor de '18-holes Par-3 baan' (par 54; geel heren CR 51,1 / SR 78, rood dames CR 53,5 / SR 77) en de 9-holes par-3-baan (par 27; geel heren 25,6/78, rood dames 26,8/77). De clubsite (Info) beschrijft 9 par-3-holes van 65 tot 180 m. Deze officiële ratings en par vervangen de 1golf.eu-waarden (par 57, 2799 m, CR 57,8/59,7 SR 95), die net als de oudere clubtabel van 05-01-2021 (par 57; geel 54,7/88, rood 58,3/85; bewaard als Handicaptabel-18-holes-2021.jpg) bij een eerdere indeling horen; de lengte van 2799 m is daarom verwijderd. Geen scorekaart of holegegevens gepubliceerd.",
+    "retrieved": "2026-10-29"
   },
   "sources": [
     "https://www.brabantgolf.nl/",
     "https://www.brabantgolf.nl/?page_id=172",
-    "https://www.1golf.eu/en/club/brabant-golf/"
+    "https://www.1golf.eu/en/club/brabant-golf/",
+    "https://www.brabantgolf.nl/?page_id=489",
+    "https://www.brabantgolf.nl/?page_id=138"
   ]
 }

@@ -1999,6 +1999,59 @@
   ]
  },
  {
+  "id": "brabant-golf-rijen",
+  "name": "Brabant Golf",
+  "town": "Rijen",
+  "province": "Noord-Brabant",
+  "url": "https://golf.kapital.nl/banen/brabant-golf-rijen.html",
+  "website": "https://www.brabantgolf.nl/",
+  "location": {
+   "lat": 51.5974,
+   "lon": 4.9096
+  },
+  "holes": 18,
+  "par": 54,
+  "pars": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "strokeIndex": null,
+  "shortCourse": true,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 51.1,
+    "slope": 78,
+    "lengths": null
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 53.5,
+    "slope": 77,
+    "lengths": null
+   }
+  ]
+ },
+ {
   "id": "countrygolf-ees",
   "name": "Country Golf Ees",
   "town": "Ees",
@@ -3329,7 +3382,7 @@
   "town": "Hoge Hexel",
   "province": "Overijssel",
   "url": "https://golf.kapital.nl/banen/golfplezier-twente-hoge-hexel-18-holes.html",
-  "website": "https://golfpleziertwente.nl",
+  "website": "https://degolfweide.nl/",
   "location": {
    "lat": 52.40817,
    "lon": 6.57135
@@ -3439,7 +3492,7 @@
   "town": "Hoge Hexel",
   "province": "Overijssel",
   "url": "https://golf.kapital.nl/banen/golfplezier-twente-hoge-hexel-9-holes.html",
-  "website": "https://golfpleziertwente.nl",
+  "website": "https://degolfweide.nl/",
   "location": {
    "lat": 52.40817,
    "lon": 6.57135
@@ -4629,56 +4682,18 @@
   "fromClubScorecard": true,
   "tees": [
    {
-    "name": "Standaard (heren)",
+    "name": "Geel (heren)",
     "gender": "h",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     69,
-     114,
-     59,
-     78,
-     95,
-     100,
-     46,
-     92,
-     65,
-     69,
-     114,
-     59,
-     78,
-     95,
-     100,
-     46,
-     92,
-     65
-    ]
+    "courseRating": 47.5,
+    "slope": 62,
+    "lengths": null
    },
    {
-    "name": "Standaard (dames)",
+    "name": "Rood (dames)",
     "gender": "d",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     69,
-     114,
-     59,
-     78,
-     95,
-     100,
-     46,
-     92,
-     65,
-     69,
-     114,
-     59,
-     78,
-     95,
-     100,
-     46,
-     92,
-     65
-    ]
+    "courseRating": 48.8,
+    "slope": 66,
+    "lengths": null
    }
   ]
  },
@@ -8611,7 +8626,26 @@
    3,
    3
   ],
-  "strokeIndex": null,
+  "strokeIndex": [
+   5,
+   1,
+   11,
+   13,
+   9,
+   7,
+   3,
+   15,
+   17,
+   6,
+   2,
+   12,
+   14,
+   10,
+   8,
+   4,
+   16,
+   18
+  ],
   "shortCourse": true,
   "fromClubScorecard": true,
   "tees": [
@@ -8620,14 +8654,52 @@
     "gender": "h",
     "courseRating": 47,
     "slope": 68,
-    "lengths": null
+    "lengths": [
+     108,
+     108,
+     48,
+     74,
+     79,
+     66,
+     97,
+     58,
+     54,
+     108,
+     108,
+     48,
+     74,
+     79,
+     66,
+     97,
+     58,
+     54
+    ]
    },
    {
     "name": "Rood (dames)",
     "gender": "d",
     "courseRating": 48.5,
     "slope": 69,
-    "lengths": null
+    "lengths": [
+     108,
+     108,
+     48,
+     74,
+     79,
+     66,
+     97,
+     58,
+     54,
+     108,
+     108,
+     48,
+     74,
+     79,
+     66,
+     97,
+     58,
+     54
+    ]
    }
   ]
  },
@@ -9828,6 +9900,131 @@
      85,
      80
     ]
+   }
+  ]
+ },
+ {
+  "id": "golfpark-t-caves-wintelre-18-holes",
+  "name": "Golf & Recreatiepark 't Caves 18 holes",
+  "town": "Wintelre",
+  "province": "Noord-Brabant",
+  "url": "https://golf.kapital.nl/banen/golfpark-t-caves-wintelre-18-holes.html",
+  "website": "https://hetcaves.nl",
+  "location": {
+   "lat": 51.43607,
+   "lon": 5.33715
+  },
+  "holes": 18,
+  "par": 64,
+  "pars": [
+   3,
+   3,
+   5,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4,
+   3,
+   3,
+   5,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4
+  ],
+  "strokeIndex": null,
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 61.6,
+    "slope": 105,
+    "lengths": null
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 58.9,
+    "slope": 98,
+    "lengths": null
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 65.3,
+    "slope": 113,
+    "lengths": null
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 62.4,
+    "slope": 104,
+    "lengths": null
+   }
+  ]
+ },
+ {
+  "id": "golfpark-t-caves-wintelre-9-holes",
+  "name": "Golf & Recreatiepark 't Caves 9 holes",
+  "town": "Wintelre",
+  "province": "Noord-Brabant",
+  "url": "https://golf.kapital.nl/banen/golfpark-t-caves-wintelre-9-holes.html",
+  "website": "https://hetcaves.nl",
+  "location": {
+   "lat": 51.43607,
+   "lon": 5.33715
+  },
+  "holes": 9,
+  "par": 32,
+  "pars": [
+   3,
+   3,
+   5,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4
+  ],
+  "strokeIndex": null,
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 30.8,
+    "slope": 105,
+    "lengths": null
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 29.5,
+    "slope": 98,
+    "lengths": null
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 32.7,
+    "slope": 113,
+    "lengths": null
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 31.2,
+    "slope": 104,
+    "lengths": null
    }
   ]
  },
@@ -11532,7 +11729,7 @@
     "name": "Geel (heren)",
     "gender": "h",
     "courseRating": 56.4,
-    "slope": 91,
+    "slope": 97,
     "lengths": [
      160,
      132,
@@ -11557,8 +11754,8 @@
    {
     "name": "Rood (dames)",
     "gender": "d",
-    "courseRating": 59.1,
-    "slope": 99,
+    "courseRating": 59.6,
+    "slope": 102,
     "lengths": [
      160,
      132,
@@ -11798,7 +11995,7 @@
    2
   ],
   "shortCourse": true,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Geel (heren)",
@@ -11831,7 +12028,26 @@
     "gender": "d",
     "courseRating": 55.3,
     "slope": 89,
-    "lengths": null
+    "lengths": [
+     117,
+     126,
+     75,
+     84,
+     62,
+     126,
+     126,
+     201,
+     270,
+     117,
+     126,
+     75,
+     84,
+     62,
+     126,
+     126,
+     201,
+     270
+    ]
    }
   ]
  },
@@ -11942,15 +12158,29 @@
    {
     "name": "Geel (heren)",
     "gender": "h",
-    "courseRating": 58.9,
-    "slope": 102,
+    "courseRating": 57.9,
+    "slope": 105,
+    "lengths": null
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 56.2,
+    "slope": 101,
+    "lengths": null
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 61.2,
+    "slope": 109,
     "lengths": null
    },
    {
     "name": "Rood (dames)",
     "gender": "d",
-    "courseRating": 59.8,
-    "slope": 102,
+    "courseRating": 59.1,
+    "slope": 105,
     "lengths": null
    }
   ]
@@ -13760,7 +13990,7 @@
    14
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Wit (heren)",
@@ -13794,7 +14024,7 @@
     "courseRating": 72.8,
     "slope": 135,
     "lengths": [
-     480,
+     470,
      372,
      350,
      187,
@@ -13819,7 +14049,26 @@
     "gender": "h",
     "courseRating": 70.5,
     "slope": 130,
-    "lengths": null
+    "lengths": [
+     470,
+     320,
+     290,
+     162,
+     324,
+     379,
+     314,
+     169,
+     339,
+     336,
+     127,
+     439,
+     314,
+     130,
+     314,
+     332,
+     331,
+     401
+    ]
    },
    {
     "name": "Rood (heren)",
@@ -13827,7 +14076,7 @@
     "courseRating": 68.8,
     "slope": 124,
     "lengths": [
-     438,
+     452,
      320,
      290,
      162,
@@ -13852,7 +14101,26 @@
     "gender": "h",
     "courseRating": 66.2,
     "slope": 118,
-    "lengths": null
+    "lengths": [
+     377,
+     288,
+     265,
+     120,
+     243,
+     336,
+     231,
+     136,
+     285,
+     283,
+     100,
+     395,
+     250,
+     102,
+     283,
+     270,
+     298,
+     361
+    ]
    },
    {
     "name": "Geel (dames)",
@@ -13860,7 +14128,7 @@
     "courseRating": 78.7,
     "slope": 151,
     "lengths": [
-     480,
+     470,
      372,
      350,
      187,
@@ -13885,7 +14153,26 @@
     "gender": "d",
     "courseRating": 76.1,
     "slope": 140,
-    "lengths": null
+    "lengths": [
+     470,
+     320,
+     290,
+     162,
+     324,
+     379,
+     314,
+     169,
+     339,
+     336,
+     127,
+     439,
+     314,
+     130,
+     314,
+     332,
+     331,
+     401
+    ]
    },
    {
     "name": "Rood (dames)",
@@ -13893,7 +14180,7 @@
     "courseRating": 74.4,
     "slope": 130,
     "lengths": [
-     438,
+     452,
      320,
      290,
      162,
@@ -13918,7 +14205,26 @@
     "gender": "d",
     "courseRating": 71.2,
     "slope": 119,
-    "lengths": null
+    "lengths": [
+     377,
+     288,
+     265,
+     120,
+     243,
+     336,
+     231,
+     136,
+     285,
+     283,
+     100,
+     395,
+     250,
+     102,
+     283,
+     270,
+     298,
+     361
+    ]
    }
   ]
  },
@@ -13976,7 +14282,7 @@
    6
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Wit (heren)",
@@ -14035,7 +14341,26 @@
     "gender": "h",
     "courseRating": 70.3,
     "slope": 133,
-    "lengths": null
+    "lengths": [
+     336,
+     127,
+     439,
+     314,
+     130,
+     314,
+     332,
+     331,
+     401,
+     314,
+     440,
+     143,
+     314,
+     297,
+     467,
+     321,
+     139,
+     399
+    ]
    },
    {
     "name": "Rood (heren)",
@@ -14068,7 +14393,26 @@
     "gender": "h",
     "courseRating": 65.4,
     "slope": 119,
-    "lengths": null
+    "lengths": [
+     283,
+     100,
+     395,
+     250,
+     102,
+     283,
+     270,
+     298,
+     361,
+     255,
+     396,
+     105,
+     232,
+     267,
+     380,
+     259,
+     48,
+     304
+    ]
    },
    {
     "name": "Geel (dames)",
@@ -14101,7 +14445,26 @@
     "gender": "d",
     "courseRating": 75.3,
     "slope": 139,
-    "lengths": null
+    "lengths": [
+     336,
+     127,
+     439,
+     314,
+     130,
+     314,
+     332,
+     331,
+     401,
+     314,
+     440,
+     143,
+     314,
+     297,
+     467,
+     321,
+     139,
+     399
+    ]
    },
    {
     "name": "Rood (dames)",
@@ -14134,7 +14497,26 @@
     "gender": "d",
     "courseRating": 70.3,
     "slope": 123,
-    "lengths": null
+    "lengths": [
+     283,
+     100,
+     395,
+     250,
+     102,
+     283,
+     270,
+     298,
+     361,
+     255,
+     396,
+     105,
+     232,
+     267,
+     380,
+     259,
+     48,
+     304
+    ]
    }
   ]
  },
@@ -14192,7 +14574,7 @@
    15
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Geel (heren)",
@@ -14278,7 +14660,7 @@
    11
   ],
   "shortCourse": true,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Geel (heren)",
@@ -14350,7 +14732,7 @@
    9
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Wit (heren)",
@@ -14393,7 +14775,7 @@
      321,
      139,
      399,
-     480,
+     470,
      372,
      350,
      187,
@@ -14409,7 +14791,26 @@
     "gender": "h",
     "courseRating": 71.3,
     "slope": 134,
-    "lengths": null
+    "lengths": [
+     314,
+     440,
+     143,
+     314,
+     297,
+     467,
+     321,
+     139,
+     399,
+     470,
+     320,
+     290,
+     162,
+     324,
+     379,
+     314,
+     169,
+     339
+    ]
    },
    {
     "name": "Rood (heren)",
@@ -14426,7 +14827,7 @@
      288,
      99,
      338,
-     438,
+     452,
      320,
      290,
      162,
@@ -14442,7 +14843,26 @@
     "gender": "h",
     "courseRating": 66.1,
     "slope": 123,
-    "lengths": null
+    "lengths": [
+     255,
+     396,
+     105,
+     232,
+     267,
+     380,
+     259,
+     48,
+     304,
+     377,
+     288,
+     265,
+     120,
+     243,
+     336,
+     231,
+     136,
+     285
+    ]
    },
    {
     "name": "Geel (dames)",
@@ -14459,7 +14879,7 @@
      321,
      139,
      399,
-     480,
+     470,
      372,
      350,
      187,
@@ -14475,7 +14895,26 @@
     "gender": "d",
     "courseRating": 76.5,
     "slope": 137,
-    "lengths": null
+    "lengths": [
+     314,
+     440,
+     143,
+     314,
+     297,
+     467,
+     321,
+     139,
+     399,
+     470,
+     320,
+     290,
+     162,
+     324,
+     379,
+     314,
+     169,
+     339
+    ]
    },
    {
     "name": "Rood (dames)",
@@ -14492,7 +14931,7 @@
      288,
      99,
      338,
-     438,
+     452,
      320,
      290,
      162,
@@ -14508,7 +14947,26 @@
     "gender": "d",
     "courseRating": 70.9,
     "slope": 120,
-    "lengths": null
+    "lengths": [
+     255,
+     396,
+     105,
+     232,
+     267,
+     380,
+     259,
+     48,
+     304,
+     377,
+     288,
+     265,
+     120,
+     243,
+     336,
+     231,
+     136,
+     285
+    ]
    }
   ]
  },
@@ -14566,7 +15024,7 @@
    10
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Geel (heren)",
@@ -14700,47 +15158,47 @@
   ],
   "strokeIndex": [
    8,
-   5,
-   2,
    7,
    1,
+   6,
+   2,
    4,
    3,
    9,
-   6
+   5
   ],
   "shortCourse": true,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
-    "name": "Standaard (heren)",
+    "name": "Geel (heren)",
     "gender": "h",
     "courseRating": null,
     "slope": null,
     "lengths": [
      49,
      44,
-     81,
+     116,
      69,
-     66,
-     82,
+     91,
+     105,
      108,
      51,
      75
     ]
    },
    {
-    "name": "Standaard (dames)",
+    "name": "Geel (dames)",
     "gender": "d",
     "courseRating": null,
     "slope": null,
     "lengths": [
      49,
      44,
-     81,
+     116,
      69,
-     66,
-     82,
+     91,
+     105,
      108,
      51,
      75
@@ -18068,7 +18526,7 @@
    4
   ],
   "shortCourse": true,
-  "fromClubScorecard": true,
+  "fromClubScorecard": false,
   "tees": [
    {
     "name": "Wit (heren)",
@@ -22988,6 +23446,168 @@
   ]
  },
  {
+  "id": "golfbaan-dorhout-mees",
+  "name": "Golfbaan Dorhout Mees",
+  "town": "Biddinghuizen",
+  "province": "Flevoland",
+  "url": "https://golf.kapital.nl/banen/golfbaan-dorhout-mees.html",
+  "website": "https://www.dorhoutmeesgolf.nl/",
+  "location": {
+   "lat": 52.40986,
+   "lon": 5.67777
+  },
+  "holes": 18,
+  "par": 71,
+  "pars": [
+   5,
+   4,
+   3,
+   4,
+   4,
+   3,
+   4,
+   5,
+   3,
+   5,
+   4,
+   3,
+   4,
+   4,
+   3,
+   5,
+   5,
+   3
+  ],
+  "strokeIndex": [
+   9,
+   11,
+   15,
+   13,
+   5,
+   7,
+   1,
+   3,
+   17,
+   4,
+   10,
+   16,
+   14,
+   2,
+   12,
+   6,
+   8,
+   18
+  ],
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 68.5,
+    "slope": 114,
+    "lengths": [
+     423,
+     366,
+     96,
+     331,
+     356,
+     199,
+     414,
+     476,
+     104,
+     453,
+     288,
+     106,
+     286,
+     400,
+     150,
+     429,
+     430,
+     128
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 73.2,
+    "slope": 127,
+    "lengths": [
+     423,
+     366,
+     96,
+     331,
+     356,
+     199,
+     414,
+     476,
+     104,
+     453,
+     288,
+     106,
+     286,
+     400,
+     150,
+     429,
+     430,
+     128
+    ]
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 64.2,
+    "slope": 103,
+    "lengths": [
+     353,
+     356,
+     91,
+     279,
+     323,
+     138,
+     327,
+     422,
+     99,
+     409,
+     277,
+     100,
+     243,
+     350,
+     112,
+     405,
+     373,
+     110
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 69.6,
+    "slope": 117,
+    "lengths": [
+     353,
+     356,
+     91,
+     279,
+     323,
+     138,
+     327,
+     422,
+     99,
+     409,
+     277,
+     100,
+     243,
+     350,
+     112,
+     405,
+     373,
+     110
+    ]
+   }
+  ]
+ },
+ {
   "id": "golfbaan-echt-susteren",
   "name": "Golfbaan Echt-Susteren",
   "town": "Susteren",
@@ -23979,46 +24599,103 @@
   "strokeIndex": [
    7,
    13,
-   3,
+   5,
    1,
    17,
-   5,
+   3,
    15,
-   9,
    11,
+   9,
    12,
-   2,
-   14,
    4,
+   14,
+   8,
+   16,
+   2,
    18,
    6,
-   16,
-   10,
-   8
+   10
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Wit (heren)",
     "gender": "h",
     "courseRating": 72.1,
     "slope": 132,
-    "lengths": null
+    "lengths": [
+     316,
+     323,
+     479,
+     391,
+     176,
+     480,
+     196,
+     357,
+     328,
+     340,
+     495,
+     171,
+     496,
+     328,
+     357,
+     123,
+     336,
+     345
+    ]
    },
    {
     "name": "Geel (heren)",
     "gender": "h",
     "courseRating": 71.8,
     "slope": 130,
-    "lengths": null
+    "lengths": [
+     316,
+     323,
+     473,
+     386,
+     173,
+     480,
+     190,
+     355,
+     328,
+     340,
+     495,
+     165,
+     496,
+     328,
+     350,
+     123,
+     336,
+     345
+    ]
    },
    {
     "name": "Geel (dames)",
     "gender": "d",
     "courseRating": 78.5,
     "slope": 144,
-    "lengths": null
+    "lengths": [
+     316,
+     323,
+     473,
+     386,
+     173,
+     480,
+     190,
+     355,
+     328,
+     340,
+     495,
+     165,
+     496,
+     328,
+     350,
+     123,
+     336,
+     345
+    ]
    },
    {
     "name": "Blauw (heren)",
@@ -24077,28 +24754,104 @@
     "gender": "h",
     "courseRating": 68.2,
     "slope": 123,
-    "lengths": null
+    "lengths": [
+     292,
+     284,
+     436,
+     355,
+     123,
+     425,
+     146,
+     317,
+     301,
+     285,
+     416,
+     136,
+     432,
+     305,
+     325,
+     116,
+     301,
+     305
+    ]
    },
    {
     "name": "Rood (dames)",
     "gender": "d",
     "courseRating": 74,
     "slope": 129,
-    "lengths": null
+    "lengths": [
+     292,
+     284,
+     436,
+     355,
+     123,
+     425,
+     146,
+     317,
+     301,
+     285,
+     416,
+     136,
+     432,
+     305,
+     325,
+     116,
+     301,
+     305
+    ]
    },
    {
     "name": "Oranje (heren)",
     "gender": "h",
     "courseRating": 64.5,
     "slope": 109,
-    "lengths": null
+    "lengths": [
+     229,
+     235,
+     398,
+     306,
+     108,
+     382,
+     120,
+     272,
+     261,
+     230,
+     388,
+     122,
+     380,
+     232,
+     280,
+     103,
+     267,
+     247
+    ]
    },
    {
     "name": "Oranje (dames)",
     "gender": "d",
     "courseRating": 69,
     "slope": 124,
-    "lengths": null
+    "lengths": [
+     229,
+     235,
+     398,
+     306,
+     108,
+     382,
+     120,
+     272,
+     261,
+     230,
+     388,
+     122,
+     380,
+     232,
+     280,
+     103,
+     267,
+     247
+    ]
    }
   ]
  },
@@ -26045,33 +26798,33 @@
    4
   ],
   "strokeIndex": [
-   10,
    6,
-   2,
-   14,
    16,
+   2,
+   10,
+   14,
    4,
-   12,
    8,
+   12,
    18,
    7,
-   15,
-   1,
-   9,
-   3,
-   17,
-   13,
    11,
-   5
+   5,
+   13,
+   1,
+   17,
+   15,
+   9,
+   3
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Geel (heren)",
     "gender": "h",
-    "courseRating": null,
-    "slope": null,
+    "courseRating": 71.6,
+    "slope": 128,
     "lengths": [
      347,
      471,
@@ -26094,10 +26847,62 @@
     ]
    },
    {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 68.3,
+    "slope": 115,
+    "lengths": [
+     300,
+     401,
+     313,
+     148,
+     251,
+     352,
+     148,
+     400,
+     107,
+     264,
+     144,
+     343,
+     395,
+     298,
+     113,
+     382,
+     326,
+     327
+    ]
+   },
+   {
+    "name": "Oranje (heren)",
+    "gender": "h",
+    "courseRating": 65.7,
+    "slope": 109,
+    "lengths": [
+     280,
+     401,
+     286,
+     138,
+     212,
+     291,
+     93,
+     387,
+     76,
+     250,
+     129,
+     308,
+     363,
+     268,
+     113,
+     352,
+     293,
+     296
+    ]
+   },
+   {
     "name": "Geel (dames)",
     "gender": "d",
-    "courseRating": null,
-    "slope": null,
+    "courseRating": 77.9,
+    "slope": 144,
     "lengths": [
      347,
      471,
@@ -26117,6 +26922,342 @@
      453,
      366,
      375
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 72.7,
+    "slope": 126,
+    "lengths": [
+     300,
+     401,
+     313,
+     148,
+     251,
+     352,
+     148,
+     400,
+     107,
+     264,
+     144,
+     343,
+     395,
+     298,
+     113,
+     382,
+     326,
+     327
+    ]
+   },
+   {
+    "name": "Oranje (dames)",
+    "gender": "d",
+    "courseRating": 70.2,
+    "slope": 119,
+    "lengths": [
+     280,
+     401,
+     286,
+     138,
+     212,
+     291,
+     93,
+     387,
+     76,
+     250,
+     129,
+     308,
+     363,
+     268,
+     113,
+     352,
+     293,
+     296
+    ]
+   }
+  ]
+ },
+ {
+  "id": "golfbaan-hitland-nieuwerkerk-holes-1-9",
+  "name": "Golfbaan Hitland Holes 1-9",
+  "town": "Nieuwerkerk aan den IJssel",
+  "province": "Zuid-Holland",
+  "url": "https://golf.kapital.nl/banen/golfbaan-hitland-nieuwerkerk-holes-1-9.html",
+  "website": "https://hitland.nl",
+  "location": {
+   "lat": 51.9474,
+   "lon": 4.61304
+  },
+  "holes": 9,
+  "par": 35,
+  "pars": [
+   4,
+   5,
+   4,
+   3,
+   4,
+   4,
+   3,
+   5,
+   3
+  ],
+  "strokeIndex": [
+   3,
+   8,
+   1,
+   5,
+   7,
+   2,
+   4,
+   6,
+   9
+  ],
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 35.3,
+    "slope": 124,
+    "lengths": [
+     347,
+     471,
+     386,
+     175,
+     294,
+     370,
+     169,
+     461,
+     128
+    ]
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 34,
+    "slope": 111,
+    "lengths": [
+     300,
+     401,
+     313,
+     148,
+     251,
+     352,
+     148,
+     400,
+     107
+    ]
+   },
+   {
+    "name": "Oranje (heren)",
+    "gender": "h",
+    "courseRating": 32.7,
+    "slope": 107,
+    "lengths": [
+     280,
+     401,
+     286,
+     138,
+     212,
+     291,
+     93,
+     387,
+     76
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 38.2,
+    "slope": 144,
+    "lengths": [
+     347,
+     471,
+     386,
+     175,
+     294,
+     370,
+     169,
+     461,
+     128
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 36,
+    "slope": 120,
+    "lengths": [
+     300,
+     401,
+     313,
+     148,
+     251,
+     352,
+     148,
+     400,
+     107
+    ]
+   },
+   {
+    "name": "Oranje (dames)",
+    "gender": "d",
+    "courseRating": 34.8,
+    "slope": 112,
+    "lengths": [
+     280,
+     401,
+     286,
+     138,
+     212,
+     291,
+     93,
+     387,
+     76
+    ]
+   }
+  ]
+ },
+ {
+  "id": "golfbaan-hitland-nieuwerkerk-holes-10-18",
+  "name": "Golfbaan Hitland Holes 10-18",
+  "town": "Nieuwerkerk aan den IJssel",
+  "province": "Zuid-Holland",
+  "url": "https://golf.kapital.nl/banen/golfbaan-hitland-nieuwerkerk-holes-10-18.html",
+  "website": "https://hitland.nl",
+  "location": {
+   "lat": 51.9474,
+   "lon": 4.61304
+  },
+  "holes": 9,
+  "par": 36,
+  "pars": [
+   4,
+   3,
+   4,
+   5,
+   4,
+   3,
+   5,
+   4,
+   4
+  ],
+  "strokeIndex": [
+   4,
+   6,
+   3,
+   7,
+   1,
+   9,
+   8,
+   5,
+   2
+  ],
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 36.4,
+    "slope": 131,
+    "lengths": [
+     324,
+     163,
+     382,
+     472,
+     350,
+     133,
+     453,
+     366,
+     375
+    ]
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 34.4,
+    "slope": 118,
+    "lengths": [
+     264,
+     144,
+     343,
+     395,
+     298,
+     113,
+     382,
+     326,
+     327
+    ]
+   },
+   {
+    "name": "Oranje (heren)",
+    "gender": "h",
+    "courseRating": 33.2,
+    "slope": 111,
+    "lengths": [
+     250,
+     129,
+     308,
+     363,
+     268,
+     113,
+     352,
+     293,
+     296
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 39.8,
+    "slope": 143,
+    "lengths": [
+     324,
+     163,
+     382,
+     472,
+     350,
+     133,
+     453,
+     366,
+     375
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 36.8,
+    "slope": 132,
+    "lengths": [
+     264,
+     144,
+     343,
+     395,
+     298,
+     113,
+     382,
+     326,
+     327
+    ]
+   },
+   {
+    "name": "Oranje (dames)",
+    "gender": "d",
+    "courseRating": 35.5,
+    "slope": 126,
+    "lengths": [
+     250,
+     129,
+     308,
+     363,
+     268,
+     113,
+     352,
+     293,
+     296
     ]
    }
   ]
@@ -33760,20 +34901,30 @@
    5
   ],
   "shortCourse": true,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Wit (heren)",
     "gender": "h",
-    "courseRating": 29.5,
-    "slope": 100,
-    "lengths": null
+    "courseRating": 30.4,
+    "slope": 106,
+    "lengths": [
+     207,
+     310,
+     113,
+     168,
+     179,
+     110,
+     83,
+     252,
+     122
+    ]
    },
    {
     "name": "Geel (heren)",
     "gender": "h",
-    "courseRating": 28.9,
-    "slope": 101,
+    "courseRating": 30,
+    "slope": 106,
     "lengths": [
      157,
      301,
@@ -33789,15 +34940,25 @@
    {
     "name": "Rood (heren)",
     "gender": "h",
-    "courseRating": 28.5,
-    "slope": 97,
-    "lengths": null
+    "courseRating": 29.9,
+    "slope": 101,
+    "lengths": [
+     152,
+     283,
+     95,
+     148,
+     175,
+     90,
+     77,
+     243,
+     112
+    ]
    },
    {
     "name": "Blauw (dames)",
     "gender": "d",
-    "courseRating": 30.5,
-    "slope": 108,
+    "courseRating": 31.5,
+    "slope": 113,
     "lengths": [
      157,
      301,
@@ -33813,9 +34974,19 @@
    {
     "name": "Rood (dames)",
     "gender": "d",
-    "courseRating": 30,
-    "slope": 104,
-    "lengths": null
+    "courseRating": 31.4,
+    "slope": 111,
+    "lengths": [
+     152,
+     283,
+     95,
+     148,
+     175,
+     90,
+     77,
+     243,
+     112
+    ]
    }
   ]
  },
@@ -33873,7 +35044,7 @@
    3
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Geel (heren)",
@@ -34741,7 +35912,7 @@
      70,
      89,
      86,
-     75,
+     73,
      120,
      76,
      107,
@@ -34767,7 +35938,7 @@
      70,
      89,
      86,
-     75,
+     73,
      120,
      76,
      107,
@@ -36763,41 +37934,89 @@
    9
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
-    "name": "Standaard (heren)",
+    "name": "Geel (heren)",
     "gender": "h",
-    "courseRating": null,
-    "slope": null,
+    "courseRating": 34.8,
+    "slope": 115,
     "lengths": [
-     249,
+     256,
      525,
-     115,
-     436,
-     385,
-     411,
-     143,
-     274,
+     110,
+     450,
+     390,
+     410,
+     142,
+     275,
      220
     ]
    },
    {
-    "name": "Standaard (dames)",
-    "gender": "d",
-    "courseRating": null,
-    "slope": null,
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 33.5,
+    "slope": 105,
     "lengths": [
-     249,
-     525,
+     245,
+     445,
+     95,
+     387,
+     355,
+     374,
      115,
-     436,
-     385,
-     411,
-     143,
-     274,
+     255,
+     205
+    ]
+   },
+   {
+    "name": "Oranje (heren)",
+    "gender": "h",
+    "courseRating": 32.1,
+    "slope": 98,
+    "lengths": null
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 37.6,
+    "slope": 131,
+    "lengths": [
+     256,
+     525,
+     110,
+     450,
+     390,
+     410,
+     142,
+     275,
      220
     ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 35.6,
+    "slope": 124,
+    "lengths": [
+     245,
+     445,
+     95,
+     387,
+     355,
+     374,
+     115,
+     255,
+     205
+    ]
+   },
+   {
+    "name": "Oranje (dames)",
+    "gender": "d",
+    "courseRating": 33.6,
+    "slope": 112,
+    "lengths": null
    }
   ]
  },
@@ -37319,27 +38538,27 @@
    3
   ],
   "strokeIndex": [
-   5,
+   3,
    11,
    7,
    1,
    13,
-   3,
+   5,
    9,
-   17,
    15,
-   10,
-   12,
+   17,
    6,
+   12,
+   8,
    2,
    14,
    4,
-   8,
+   10,
    18,
    16
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Geel (heren)",
@@ -42562,6 +43781,260 @@
   ]
  },
  {
+  "id": "golfclub-de-haar",
+  "name": "Golfclub De Haar",
+  "town": "Haarzuilens",
+  "province": "Utrecht",
+  "url": "https://golf.kapital.nl/banen/golfclub-de-haar.html",
+  "website": "https://www.gcdehaar.nl/",
+  "location": {
+   "lat": 52.11819,
+   "lon": 4.98494
+  },
+  "holes": 18,
+  "par": 71,
+  "pars": [
+   5,
+   4,
+   4,
+   3,
+   5,
+   3,
+   4,
+   4,
+   3,
+   4,
+   3,
+   4,
+   4,
+   5,
+   4,
+   4,
+   3,
+   5
+  ],
+  "strokeIndex": [
+   7,
+   1,
+   9,
+   13,
+   3,
+   17,
+   5,
+   11,
+   15,
+   2,
+   18,
+   12,
+   4,
+   14,
+   6,
+   8,
+   10,
+   16
+  ],
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Wit (heren)",
+    "gender": "h",
+    "courseRating": 71.8,
+    "slope": 141,
+    "lengths": [
+     412,
+     428,
+     326,
+     168,
+     528,
+     137,
+     374,
+     282,
+     147,
+     317,
+     157,
+     305,
+     342,
+     476,
+     400,
+     335,
+     188,
+     435
+    ]
+   },
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 69.8,
+    "slope": 134,
+    "lengths": [
+     412,
+     375,
+     301,
+     157,
+     495,
+     119,
+     348,
+     275,
+     136,
+     310,
+     147,
+     267,
+     289,
+     450,
+     386,
+     314,
+     178,
+     418
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 75.9,
+    "slope": 139,
+    "lengths": [
+     412,
+     375,
+     301,
+     157,
+     495,
+     119,
+     348,
+     275,
+     136,
+     310,
+     147,
+     267,
+     289,
+     450,
+     386,
+     314,
+     178,
+     418
+    ]
+   },
+   {
+    "name": "Blauw (heren)",
+    "gender": "h",
+    "courseRating": 67.7,
+    "slope": 125,
+    "lengths": [
+     403,
+     327,
+     270,
+     157,
+     483,
+     99,
+     338,
+     267,
+     122,
+     295,
+     90,
+     257,
+     279,
+     402,
+     367,
+     304,
+     168,
+     370
+    ]
+   },
+   {
+    "name": "Blauw (dames)",
+    "gender": "d",
+    "courseRating": 73.5,
+    "slope": 134,
+    "lengths": [
+     403,
+     327,
+     270,
+     157,
+     483,
+     99,
+     338,
+     267,
+     122,
+     295,
+     90,
+     257,
+     279,
+     402,
+     367,
+     304,
+     168,
+     370
+    ]
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 64.8,
+    "slope": 114,
+    "lengths": [
+     382,
+     322,
+     242,
+     139,
+     433,
+     84,
+     297,
+     228,
+     122,
+     235,
+     80,
+     230,
+     246,
+     359,
+     313,
+     240,
+     127,
+     324
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 69.3,
+    "slope": 126,
+    "lengths": [
+     382,
+     322,
+     242,
+     139,
+     433,
+     84,
+     297,
+     228,
+     122,
+     235,
+     80,
+     230,
+     246,
+     359,
+     313,
+     240,
+     127,
+     324
+    ]
+   },
+   {
+    "name": "Oranje (heren)",
+    "gender": "h",
+    "courseRating": 61.1,
+    "slope": 105,
+    "lengths": null
+   },
+   {
+    "name": "Oranje (dames)",
+    "gender": "d",
+    "courseRating": 64.3,
+    "slope": 105,
+    "lengths": null
+   }
+  ]
+ },
+ {
   "id": "golfclub-de-hoge-kleij",
   "name": "Golfclub De Hoge Kleij",
   "town": "Leusden",
@@ -44604,7 +46077,7 @@
      114,
      301,
      124,
-     317,
+     276,
      385,
      298,
      291,
@@ -44621,7 +46094,7 @@
      97,
      256,
      102,
-     276,
+     238,
      327,
      253,
      247,
@@ -44655,7 +46128,7 @@
      114,
      301,
      124,
-     317,
+     276,
      385,
      298,
      291,
@@ -44672,7 +46145,7 @@
      97,
      256,
      102,
-     276,
+     238,
      327,
      253,
      247,
@@ -51408,6 +52881,60 @@
      304,
      135
     ]
+   }
+  ]
+ },
+ {
+  "id": "golfclub-son",
+  "name": "Golfclub Son",
+  "town": "Son en Breugel",
+  "province": "Noord-Brabant",
+  "url": "https://golf.kapital.nl/banen/golfclub-son.html",
+  "website": "https://golfson.nl",
+  "location": {
+   "lat": 51.52391,
+   "lon": 5.48844
+  },
+  "holes": 9,
+  "par": 28,
+  "pars": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   4,
+   3,
+   3
+  ],
+  "strokeIndex": null,
+  "shortCourse": true,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 26.4,
+    "slope": 93,
+    "lengths": [
+     183,
+     115,
+     98,
+     94,
+     116,
+     102,
+     252,
+     136,
+     81
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 27.7,
+    "slope": 94,
+    "lengths": null
    }
   ]
  },
@@ -63809,42 +65336,137 @@
   "fromClubScorecard": false,
   "tees": [
    {
-    "name": "Standaard 62 (heren)",
+    "name": "Wit 62 (heren)",
     "gender": "h",
     "courseRating": 75,
     "slope": 143,
-    "lengths": null
+    "lengths": [
+     292,
+     192,
+     361,
+     456,
+     138,
+     340,
+     535,
+     394,
+     350,
+     320,
+     214,
+     338,
+     512,
+     184,
+     344,
+     360,
+     532,
+     375
+    ]
    },
    {
-    "name": "Standaard 59 (heren)",
+    "name": "Geel 59 (heren)",
     "gender": "h",
     "courseRating": 73.1,
     "slope": 140,
-    "lengths": null
+    "lengths": [
+     282,
+     156,
+     350,
+     429,
+     130,
+     328,
+     507,
+     376,
+     334,
+     293,
+     192,
+     318,
+     484,
+     157,
+     296,
+     339,
+     514,
+     356
+    ]
    },
    {
-    "name": "Standaard 59 (dames)",
+    "name": "Geel 59 (dames)",
     "gender": "d",
     "courseRating": 78.8,
     "slope": 150,
-    "lengths": null
+    "lengths": [
+     282,
+     156,
+     350,
+     429,
+     130,
+     328,
+     507,
+     376,
+     334,
+     293,
+     192,
+     318,
+     484,
+     157,
+     296,
+     339,
+     514,
+     356
+    ]
    },
    {
-    "name": "Standaard 53 (heren)",
+    "name": "Blauw 53 (heren)",
     "gender": "h",
     "courseRating": 70.1,
     "slope": 130,
-    "lengths": null
+    "lengths": [
+     247,
+     148,
+     313,
+     413,
+     115,
+     294,
+     472,
+     332,
+     298,
+     260,
+     183,
+     303,
+     418,
+     147,
+     281,
+     310,
+     433,
+     314
+    ]
    },
    {
-    "name": "Standaard 53 (dames)",
+    "name": "Blauw 53 (dames)",
     "gender": "d",
     "courseRating": 75.6,
     "slope": 141,
-    "lengths": null
+    "lengths": [
+     247,
+     148,
+     313,
+     413,
+     115,
+     294,
+     472,
+     332,
+     298,
+     260,
+     183,
+     303,
+     418,
+     147,
+     281,
+     310,
+     433,
+     314
+    ]
    },
    {
-    "name": "Standaard 50 (heren)",
+    "name": "Rood 50 (heren)",
     "gender": "h",
     "courseRating": 68.2,
     "slope": 127,
@@ -63870,7 +65492,7 @@
     ]
    },
    {
-    "name": "Standaard 50 (dames)",
+    "name": "Rood 50 (dames)",
     "gender": "d",
     "courseRating": 73.4,
     "slope": 136,
@@ -64278,15 +65900,15 @@
    3
   ],
   "strokeIndex": [
-   5,
-   2,
-   8,
-   7,
-   1,
-   9,
-   3,
    6,
-   4
+   3,
+   9,
+   4,
+   1,
+   8,
+   2,
+   5,
+   7
   ],
   "shortCourse": false,
   "fromClubScorecard": false,
@@ -64297,14 +65919,14 @@
     "courseRating": 29.9,
     "slope": 98,
     "lengths": [
-     275,
+     264,
+     277,
+     123,
+     207,
      280,
-     125,
-     212,
-     286,
-     118,
-     185,
-     135,
+     122,
+     179,
+     133,
      162
     ]
    },
@@ -64314,14 +65936,14 @@
     "courseRating": 29.6,
     "slope": 97,
     "lengths": [
-     251,
-     275,
-     125,
-     202,
-     273,
-     118,
-     173,
-     135,
+     264,
+     277,
+     123,
+     207,
+     280,
+     122,
+     179,
+     133,
      162
     ]
    },
@@ -64331,14 +65953,14 @@
     "courseRating": 31.7,
     "slope": 97,
     "lengths": [
-     275,
+     264,
+     277,
+     123,
+     207,
      280,
-     125,
-     212,
-     286,
-     118,
-     185,
-     135,
+     122,
+     179,
+     133,
      162
     ]
    },
@@ -64348,14 +65970,88 @@
     "courseRating": 31.3,
     "slope": 95,
     "lengths": [
-     251,
-     275,
-     125,
-     202,
-     273,
-     118,
-     173,
-     135,
+     264,
+     277,
+     123,
+     207,
+     280,
+     122,
+     179,
+     133,
+     162
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hcc-groen-geel-golf-wassenaar-gele-baan",
+  "name": "Haagsche Country Club Groen-Geel Gele baan",
+  "town": "Wassenaar",
+  "province": "Zuid-Holland",
+  "url": "https://golf.kapital.nl/banen/hcc-groen-geel-golf-wassenaar-gele-baan.html",
+  "website": "https://www.groengeel.nl",
+  "location": {
+   "lat": 52.11452,
+   "lon": 4.34346
+  },
+  "holes": 9,
+  "par": 28,
+  "pars": [
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "strokeIndex": [
+   6,
+   9,
+   3,
+   1,
+   4,
+   8,
+   2,
+   5,
+   7
+  ],
+  "shortCourse": true,
+  "fromClubScorecard": false,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     134,
+     123,
+     207,
+     161,
+     95,
+     122,
+     179,
+     133,
+     162
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     134,
+     123,
+     207,
+     161,
+     95,
+     122,
+     179,
+     133,
      162
     ]
    }
@@ -71967,7 +73663,7 @@
   "town": "Molenhoek",
   "province": "Limburg",
   "url": "https://golf.kapital.nl/banen/pitch-putt-molenhoek.html",
-  "website": null,
+  "website": "https://pitch-putt.nl/locaties/molenhoek/",
   "location": {
    "lat": 51.77543,
    "lon": 5.87561
@@ -72391,7 +74087,7 @@
    2
   ],
   "shortCourse": true,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Standaard (heren)",
@@ -72935,25 +74631,25 @@
   "strokeIndex": [
    9,
    17,
-   3,
-   13,
-   15,
    5,
-   1,
    11,
+   13,
    7,
-   12,
-   2,
+   1,
+   15,
+   3,
    14,
    6,
    4,
+   10,
+   2,
    16,
-   8,
+   12,
    18,
-   10
+   8
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Wit (heren)",
@@ -72971,7 +74667,7 @@
      333,
      387,
      378,
-     367,
+     392,
      406,
      188,
      384,
@@ -72997,7 +74693,7 @@
      323,
      361,
      350,
-     342,
+     366,
      376,
      172,
      350,
@@ -73023,7 +74719,7 @@
      285,
      349,
      323,
-     307,
+     332,
      355,
      165,
      338,
@@ -73049,7 +74745,7 @@
      275,
      310,
      307,
-     289,
+     313,
      339,
      153,
      292,
@@ -73075,7 +74771,7 @@
      323,
      361,
      350,
-     342,
+     366,
      376,
      172,
      350,
@@ -73101,7 +74797,7 @@
      285,
      349,
      323,
-     307,
+     332,
      355,
      165,
      338,
@@ -73127,7 +74823,7 @@
      275,
      310,
      307,
-     289,
+     313,
      339,
      153,
      292,
@@ -73175,13 +74871,13 @@
   "strokeIndex": [
    9,
    17,
-   3,
-   13,
-   15,
    5,
-   1,
    11,
+   13,
    7,
+   1,
+   15,
+   3,
    12,
    2,
    14,
@@ -73193,7 +74889,7 @@
    8
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Wit (heren)",
@@ -73244,7 +74940,7 @@
      285,
      471,
      132,
-     518
+     517
     ]
    },
    {
@@ -73322,7 +75018,7 @@
      285,
      471,
      132,
-     518
+     517
     ]
    },
    {
@@ -73414,14 +75110,14 @@
   ],
   "strokeIndex": [
    13,
-   7,
+   5,
    3,
    9,
    1,
    15,
    11,
    17,
-   5,
+   7,
    12,
    2,
    14,
@@ -73433,7 +75129,7 @@
    8
   ],
   "shortCourse": false,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Wit (heren)",
@@ -73442,7 +75138,7 @@
     "slope": 130,
     "lengths": [
      378,
-     367,
+     392,
      406,
      188,
      384,
@@ -73468,7 +75164,7 @@
     "slope": 132,
     "lengths": [
      350,
-     342,
+     366,
      376,
      172,
      350,
@@ -73484,7 +75180,7 @@
      285,
      471,
      132,
-     518
+     517
     ]
    },
    {
@@ -73494,7 +75190,7 @@
     "slope": 123,
     "lengths": [
      323,
-     307,
+     332,
      355,
      165,
      338,
@@ -73520,7 +75216,7 @@
     "slope": 118,
     "lengths": [
      307,
-     289,
+     313,
      339,
      153,
      292,
@@ -73546,7 +75242,7 @@
     "slope": 135,
     "lengths": [
      350,
-     342,
+     366,
      376,
      172,
      350,
@@ -73562,7 +75258,7 @@
      285,
      471,
      132,
-     518
+     517
     ]
    },
    {
@@ -73572,7 +75268,7 @@
     "slope": 127,
     "lengths": [
      323,
-     307,
+     332,
      355,
      165,
      338,
@@ -73598,7 +75294,7 @@
     "slope": 123,
     "lengths": [
      307,
-     289,
+     313,
      339,
      153,
      292,
@@ -73654,7 +75350,7 @@
   ],
   "strokeIndex": null,
   "shortCourse": true,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Geel (heren)",
@@ -75504,7 +77200,7 @@
   "town": "Bentelo",
   "province": "Overijssel",
   "url": "https://golf.kapital.nl/banen/twentse-golf-academy-bentelo.html",
-  "website": "https://twentsegolfacademy.nl",
+  "website": "https://shortgolfhofvantwente.nl/",
   "location": {
    "lat": 52.2404,
    "lon": 6.695
@@ -75522,19 +77218,9 @@
    3,
    3
   ],
-  "strokeIndex": [
-   2,
-   4,
-   8,
-   7,
-   1,
-   6,
-   3,
-   5,
-   9
-  ],
+  "strokeIndex": null,
   "shortCourse": true,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Standaard (heren)",
@@ -75543,14 +77229,14 @@
     "slope": null,
     "lengths": [
      95,
-     66,
-     43,
-     71,
-     113,
-     78,
-     61,
-     70,
-     34
+     100,
+     65,
+     95,
+     85,
+     75,
+     55,
+     60,
+     70
     ]
    },
    {
@@ -75560,14 +77246,14 @@
     "slope": null,
     "lengths": [
      95,
-     66,
-     43,
-     71,
-     113,
-     78,
-     61,
-     70,
-     34
+     100,
+     65,
+     95,
+     85,
+     75,
+     55,
+     60,
+     70
     ]
    }
   ]
@@ -76063,6 +77749,279 @@
      153,
      122,
      83
+    ]
+   }
+  ]
+ },
+ {
+  "id": "the-duke-golf-nistelrode",
+  "name": "The Duke",
+  "town": "Nistelrode",
+  "province": "Noord-Brabant",
+  "url": "https://golf.kapital.nl/banen/the-duke-golf-nistelrode.html",
+  "website": "https://theduke.nl",
+  "location": {
+   "lat": 51.71753,
+   "lon": 5.56091
+  },
+  "holes": 18,
+  "par": 72,
+  "pars": [
+   4,
+   4,
+   5,
+   4,
+   3,
+   5,
+   3,
+   4,
+   4,
+   4,
+   3,
+   5,
+   4,
+   4,
+   3,
+   4,
+   4,
+   5
+  ],
+  "strokeIndex": null,
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Wit (heren)",
+    "gender": "h",
+    "courseRating": 71.3,
+    "slope": 137,
+    "lengths": [
+     285,
+     358,
+     462,
+     345,
+     144,
+     430,
+     104,
+     360,
+     406,
+     356,
+     120,
+     425,
+     367,
+     356,
+     149,
+     294,
+     356,
+     465
+    ]
+   },
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 69.5,
+    "slope": 128,
+    "lengths": [
+     269,
+     339,
+     443,
+     326,
+     126,
+     423,
+     104,
+     328,
+     368,
+     338,
+     111,
+     425,
+     338,
+     329,
+     149,
+     279,
+     341,
+     430
+    ]
+   },
+   {
+    "name": "Blauw (heren)",
+    "gender": "h",
+    "courseRating": 67.9,
+    "slope": 124,
+    "lengths": [
+     269,
+     339,
+     405,
+     326,
+     126,
+     378,
+     86,
+     287,
+     327,
+     317,
+     111,
+     395,
+     338,
+     318,
+     135,
+     279,
+     318,
+     405
+    ]
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 65.5,
+    "slope": 121,
+    "lengths": [
+     237,
+     287,
+     373,
+     282,
+     108,
+     353,
+     86,
+     287,
+     327,
+     291,
+     96,
+     363,
+     330,
+     302,
+     120,
+     242,
+     0,
+     370
+    ]
+   },
+   {
+    "name": "Oranje (heren)",
+    "gender": "h",
+    "courseRating": 63.6,
+    "slope": 108,
+    "lengths": [
+     220,
+     240,
+     333,
+     252,
+     108,
+     316,
+     72,
+     267,
+     309,
+     255,
+     78,
+     319,
+     296,
+     272,
+     93,
+     211,
+     259,
+     342
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 75.9,
+    "slope": 141,
+    "lengths": [
+     269,
+     339,
+     443,
+     326,
+     126,
+     423,
+     104,
+     328,
+     368,
+     338,
+     111,
+     425,
+     338,
+     329,
+     149,
+     279,
+     341,
+     430
+    ]
+   },
+   {
+    "name": "Blauw (dames)",
+    "gender": "d",
+    "courseRating": 73.5,
+    "slope": 137,
+    "lengths": [
+     269,
+     339,
+     405,
+     326,
+     126,
+     378,
+     86,
+     287,
+     327,
+     317,
+     111,
+     395,
+     338,
+     318,
+     135,
+     279,
+     318,
+     405
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 71.5,
+    "slope": 126,
+    "lengths": [
+     237,
+     287,
+     373,
+     282,
+     108,
+     353,
+     86,
+     287,
+     327,
+     291,
+     96,
+     363,
+     330,
+     302,
+     120,
+     242,
+     0,
+     370
+    ]
+   },
+   {
+    "name": "Oranje (dames)",
+    "gender": "d",
+    "courseRating": 67.3,
+    "slope": 127,
+    "lengths": [
+     220,
+     240,
+     333,
+     252,
+     108,
+     316,
+     72,
+     267,
+     309,
+     255,
+     78,
+     319,
+     296,
+     272,
+     93,
+     211,
+     259,
+     342
     ]
    }
   ]

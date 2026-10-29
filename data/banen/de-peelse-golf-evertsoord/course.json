@@ -372,6 +372,24 @@
           "course_rating": null,
           "slope": null,
           "par": 54
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 47.5,
+          "slope": 62,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 48.8,
+          "slope": 66,
+          "par": 54
         }
       ],
       "hole_data": [
@@ -381,7 +399,9 @@
           "si": 13,
           "si_women": null,
           "lengths_m": {
-            "baan": 69
+            "baan": 69,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -390,7 +410,9 @@
           "si": 1,
           "si_women": null,
           "lengths_m": {
-            "baan": 114
+            "baan": 114,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -399,7 +421,9 @@
           "si": 15,
           "si_women": null,
           "lengths_m": {
-            "baan": 59
+            "baan": 59,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -408,7 +432,9 @@
           "si": 7,
           "si_women": null,
           "lengths_m": {
-            "baan": 78
+            "baan": 78,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -417,7 +443,9 @@
           "si": 9,
           "si_women": null,
           "lengths_m": {
-            "baan": 95
+            "baan": 95,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -426,7 +454,9 @@
           "si": 3,
           "si_women": null,
           "lengths_m": {
-            "baan": 100
+            "baan": 100,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -435,7 +465,9 @@
           "si": 17,
           "si_women": null,
           "lengths_m": {
-            "baan": 46
+            "baan": 46,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -444,7 +476,9 @@
           "si": 11,
           "si_women": null,
           "lengths_m": {
-            "baan": 92
+            "baan": 92,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -453,7 +487,9 @@
           "si": 5,
           "si_women": null,
           "lengths_m": {
-            "baan": 65
+            "baan": 65,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -462,7 +498,9 @@
           "si": 14,
           "si_women": null,
           "lengths_m": {
-            "baan": 69
+            "baan": 69,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -471,7 +509,9 @@
           "si": 2,
           "si_women": null,
           "lengths_m": {
-            "baan": 114
+            "baan": 114,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -480,7 +520,9 @@
           "si": 16,
           "si_women": null,
           "lengths_m": {
-            "baan": 59
+            "baan": 59,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -489,7 +531,9 @@
           "si": 8,
           "si_women": null,
           "lengths_m": {
-            "baan": 78
+            "baan": 78,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -498,7 +542,9 @@
           "si": 10,
           "si_women": null,
           "lengths_m": {
-            "baan": 95
+            "baan": 95,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -507,7 +553,9 @@
           "si": 4,
           "si_women": null,
           "lengths_m": {
-            "baan": 100
+            "baan": 100,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -516,7 +564,9 @@
           "si": 18,
           "si_women": null,
           "lengths_m": {
-            "baan": 46
+            "baan": 46,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -525,7 +575,9 @@
           "si": 12,
           "si_women": null,
           "lengths_m": {
-            "baan": 92
+            "baan": 92,
+            "geel": null,
+            "rood": null
           }
         },
         {
@@ -534,7 +586,9 @@
           "si": 6,
           "si_women": null,
           "lengths_m": {
-            "baan": 65
+            "baan": 65,
+            "geel": null,
+            "rood": null
           }
         }
       ]
@@ -562,18 +616,21 @@
       "scorecard/layout-hole-17.webp",
       "scorecard/layout-hole-18.webp",
       "scorecard/BaanhandicapPeelseGolfHeren_1.webp",
-      "scorecard/BaanhandicapPeelseGolfDames_1.webp"
+      "scorecard/BaanhandicapPeelseGolfDames_1.webp",
+      "scorecard/pg_Baanhandicap-par3-18.webp",
+      "scorecard/pg_Broekbosbaan-par-3-baanoverzicht.webp"
     ],
     "source": "official",
     "retrieved": "2026-10-28",
-    "complete": true,
-    "notes": "Site blokkeert curl (403); pagina's via WebFetch gelezen, geen page.html opgeslagen. Par/SI/lengtes per tee van de officiele hole-layouts (hole-1 t/m hole-18). CR/slope uit de baanhandicaptabellen d.d. 30-05-2023 (heren: wit, geel, blauw, rood, oranje; dames: geel, blauw, rood, oranje). Golfify toont een oudere holevolgorde (lussen omgewisseld, andere SI) en blauw hole 18 = 287; niet gebruikt. Broekbosbaan: lengtes en SI (18-holesstijl, 2x9) van de officiele pagina /broekbosbaan-par3; tee-kleur en ratings niet uitgelezen (tabellen op /handicaptabellen-broekbosbaan)."
+    "complete": false,
+    "notes": "Site blokkeert curl (403); pagina's via WebFetch gelezen, geen page.html opgeslagen. Par/SI/lengtes per tee van de officiele hole-layouts (hole-1 t/m hole-18). CR/slope uit de baanhandicaptabellen d.d. 30-05-2023 (heren: wit, geel, blauw, rood, oranje; dames: geel, blauw, rood, oranje). Golfify toont een oudere holevolgorde (lussen omgewisseld, andere SI) en blauw hole 18 = 287; niet gebruikt. Broekbosbaan: lengtes en SI (18-holesstijl, 2x9) van de officiele pagina /broekbosbaan-par3; tee-kleur en ratings niet uitgelezen (tabellen op /handicaptabellen-broekbosbaan). Officiële bron gecontroleerd 29-10-2026: Broekbosbaan-ratings gevonden in de officiële baanhandicaptabel '18-holes Par-3 baan' (30-05-2023, via WebFetch; curl krijgt 403): geel heren CR 47.5/SR 62, rood dames CR 48.8/SR 66, par 54; als tees 'geel' en 'rood' toegevoegd. De club publiceert per hole één lengte zonder teekleur (tee 'baan'; de plattegrond toont één afslag per hole), daarom lengtes voor geel/rood null en complete=false. Championship Course was al volledig officieel."
   },
   "sources": [
     "https://www.depeelsegolf.nl/championship-course",
     "https://www.depeelsegolf.nl/handicaptabellen",
     "https://www.depeelsegolf.nl/broekbosbaan-par3",
     "https://www.depeelsegolf.nl/contact",
-    "https://www.golfify.io/courses/de-peelse-golf"
+    "https://www.golfify.io/courses/de-peelse-golf",
+    "https://www.depeelsegolf.nl/handicaptabellen-broekbosbaan"
   ]
 }

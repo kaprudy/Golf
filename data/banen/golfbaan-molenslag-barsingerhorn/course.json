@@ -158,12 +158,13 @@
       "scorecard/ff43d8_cfc128103bd546d3a8259eb7a059617d_mv2.png",
       "scorecard/ff43d8_6fe90c2402b34630bad5e09c50ba6a79_mv2.png",
       "scorecard/ff43d8_704387363b324f98b7d8503eba3346a7_mv2.jpg",
-      "scorecard/page.html"
+      "scorecard/page.html",
+      "scorecard/ff43d8_d5b5eeed75f8450caba46bb2c97e24de_mv2.jpg"
     ],
     "source": "official",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Par en lengte per hole uit de baanplattegrond (01-12-2022, totaal 1432 m, par 30); slechts 1 lengte per hole, ingevuld voor beide tees. Geen S.I. op de officiele site (derden golfpass/golfify geven onderling tegenstrijdige S.I. en lengtes, daarom null). Ratings NGF 21-06-2023: 9 holes geel heren CR 28,2/SR 89, rood dames CR 29,5/SR 98; 18 holes (2x) geel heren 56,3/89, rood dames 59,0/98 (par 60). Bestand ...704387...jpg = lokale regels."
+    "notes": "Par en lengte per hole uit de baanplattegrond (01-12-2022, totaal 1432 m, par 30); slechts 1 lengte per hole, ingevuld voor beide tees. Geen S.I. op de officiele site (derden golfpass/golfify geven onderling tegenstrijdige S.I. en lengtes, daarom null). Ratings NGF 21-06-2023: 9 holes geel heren CR 28,2/SR 89, rood dames CR 29,5/SR 98; 18 holes (2x) geel heren 56,3/89, rood dames 59,0/98 (par 60). Bestand ...704387...jpg = lokale regels. Officiële bron gecontroleerd 29-10-2026: molenslag.nl (incl. pagina 'de-baan-9-holes', via WebFetch; curl gaf 500) bevat alleen een baanplattegrond zonder S.I. (toegevoegd); geen scorekaart. S.I. blijft onbekend."
   },
   "sources": [
     "https://www.molenslag.nl/",

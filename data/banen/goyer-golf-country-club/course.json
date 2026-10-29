@@ -39,52 +39,52 @@
       "par": 72,
       "tees": [
         {
-          "name": "62",
+          "name": "62 (wit)",
           "color": null,
           "gender": "men",
-          "length_m": null,
+          "length_m": 6237,
           "course_rating": 75.0,
           "slope": 143,
           "par": 72
         },
         {
-          "name": "59",
+          "name": "59 (geel)",
           "color": null,
           "gender": "men",
-          "length_m": null,
+          "length_m": 5841,
           "course_rating": 73.1,
           "slope": 140,
           "par": 72
         },
         {
-          "name": "59",
+          "name": "59 (geel)",
           "color": null,
           "gender": "women",
-          "length_m": null,
+          "length_m": 5841,
           "course_rating": 78.8,
           "slope": 150,
           "par": 72
         },
         {
-          "name": "53",
+          "name": "53 (blauw)",
           "color": null,
           "gender": "men",
-          "length_m": null,
+          "length_m": 5281,
           "course_rating": 70.1,
           "slope": 130,
           "par": 72
         },
         {
-          "name": "53",
+          "name": "53 (blauw)",
           "color": null,
           "gender": "women",
-          "length_m": null,
+          "length_m": 5281,
           "course_rating": 75.6,
           "slope": 141,
           "par": 72
         },
         {
-          "name": "50",
+          "name": "50 (rood)",
           "color": null,
           "gender": "men",
           "length_m": 4882,
@@ -93,7 +93,7 @@
           "par": 72
         },
         {
-          "name": "50",
+          "name": "50 (rood)",
           "color": null,
           "gender": "women",
           "length_m": 4882,
@@ -109,10 +109,10 @@
           "si": null,
           "si_women": 16,
           "lengths_m": {
-            "50": 237,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 237,
+            "62 (wit)": 292,
+            "59 (geel)": 282,
+            "53 (blauw)": 247
           }
         },
         {
@@ -121,10 +121,10 @@
           "si": null,
           "si_women": 10,
           "lengths_m": {
-            "50": 130,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 130,
+            "62 (wit)": 192,
+            "59 (geel)": 156,
+            "53 (blauw)": 148
           }
         },
         {
@@ -133,10 +133,10 @@
           "si": null,
           "si_women": 6,
           "lengths_m": {
-            "50": 291,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 291,
+            "62 (wit)": 361,
+            "59 (geel)": 350,
+            "53 (blauw)": 313
           }
         },
         {
@@ -145,10 +145,10 @@
           "si": null,
           "si_women": 2,
           "lengths_m": {
-            "50": 371,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 371,
+            "62 (wit)": 456,
+            "59 (geel)": 429,
+            "53 (blauw)": 413
           }
         },
         {
@@ -157,10 +157,10 @@
           "si": null,
           "si_women": 18,
           "lengths_m": {
-            "50": 114,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 114,
+            "62 (wit)": 138,
+            "59 (geel)": 130,
+            "53 (blauw)": 115
           }
         },
         {
@@ -169,10 +169,10 @@
           "si": null,
           "si_women": 14,
           "lengths_m": {
-            "50": 279,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 279,
+            "62 (wit)": 340,
+            "59 (geel)": 328,
+            "53 (blauw)": 294
           }
         },
         {
@@ -181,10 +181,10 @@
           "si": null,
           "si_women": 4,
           "lengths_m": {
-            "50": 425,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 425,
+            "62 (wit)": 535,
+            "59 (geel)": 507,
+            "53 (blauw)": 472
           }
         },
         {
@@ -193,10 +193,10 @@
           "si": null,
           "si_women": 8,
           "lengths_m": {
-            "50": 326,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 326,
+            "62 (wit)": 394,
+            "59 (geel)": 376,
+            "53 (blauw)": 332
           }
         },
         {
@@ -205,10 +205,10 @@
           "si": null,
           "si_women": 12,
           "lengths_m": {
-            "50": 276,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 276,
+            "62 (wit)": 350,
+            "59 (geel)": 334,
+            "53 (blauw)": 298
           }
         },
         {
@@ -217,10 +217,10 @@
           "si": null,
           "si_women": 17,
           "lengths_m": {
-            "50": 248,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 248,
+            "62 (wit)": 320,
+            "59 (geel)": 293,
+            "53 (blauw)": 260
           }
         },
         {
@@ -229,10 +229,10 @@
           "si": null,
           "si_women": 13,
           "lengths_m": {
-            "50": 135,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 135,
+            "62 (wit)": 214,
+            "59 (geel)": 192,
+            "53 (blauw)": 183
           }
         },
         {
@@ -241,10 +241,10 @@
           "si": null,
           "si_women": 5,
           "lengths_m": {
-            "50": 261,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 261,
+            "62 (wit)": 338,
+            "59 (geel)": 318,
+            "53 (blauw)": 303
           }
         },
         {
@@ -253,10 +253,10 @@
           "si": null,
           "si_women": 1,
           "lengths_m": {
-            "50": 409,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 409,
+            "62 (wit)": 512,
+            "59 (geel)": 484,
+            "53 (blauw)": 418
           }
         },
         {
@@ -265,10 +265,10 @@
           "si": null,
           "si_women": 15,
           "lengths_m": {
-            "50": 125,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 125,
+            "62 (wit)": 184,
+            "59 (geel)": 157,
+            "53 (blauw)": 147
           }
         },
         {
@@ -277,10 +277,10 @@
           "si": null,
           "si_women": 11,
           "lengths_m": {
-            "50": 249,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 249,
+            "62 (wit)": 344,
+            "59 (geel)": 296,
+            "53 (blauw)": 281
           }
         },
         {
@@ -289,10 +289,10 @@
           "si": null,
           "si_women": 7,
           "lengths_m": {
-            "50": 297,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 297,
+            "62 (wit)": 360,
+            "59 (geel)": 339,
+            "53 (blauw)": 310
           }
         },
         {
@@ -301,10 +301,10 @@
           "si": null,
           "si_women": 3,
           "lengths_m": {
-            "50": 409,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 409,
+            "62 (wit)": 532,
+            "59 (geel)": 514,
+            "53 (blauw)": 433
           }
         },
         {
@@ -313,10 +313,10 @@
           "si": null,
           "si_women": 9,
           "lengths_m": {
-            "50": 300,
-            "62": null,
-            "59": null,
-            "53": null
+            "50 (rood)": 300,
+            "62 (wit)": 375,
+            "59 (geel)": 356,
+            "53 (blauw)": 314
           }
         }
       ]
@@ -328,16 +328,37 @@
       "scorecard/2024_Baanhandicaptabel_dames.pdf",
       "scorecard/2024_Baanhandicaptabel_heren.pdf",
       "scorecard/hole19.html",
-      "scorecard/page.html"
+      "scorecard/page.html",
+      "scorecard/Layout-NC-Hole-1.png",
+      "scorecard/Layout-NC-Hole-2.png",
+      "scorecard/Layout-NC-Hole-3.png",
+      "scorecard/Layout-NC-Hole-4.png",
+      "scorecard/Layout-NC-Hole-5.png",
+      "scorecard/Layout-NC-Hole-6.png",
+      "scorecard/page-hole-1.html",
+      "scorecard/Layout NC Hole 7.png",
+      "scorecard/Layout NC Hole 8.png",
+      "scorecard/Layout NC Hole 9.png",
+      "scorecard/Layout NC Hole 10.png",
+      "scorecard/Layout NC Hole 11.png",
+      "scorecard/Layout NC Hole 12.png",
+      "scorecard/Layout NC Hole 13.png",
+      "scorecard/Layout NC Hole 14.png",
+      "scorecard/Layout NC Hole 15.png",
+      "scorecard/Layout NC Hole 16.png",
+      "scorecard/Layout NC Hole 17.png",
+      "scorecard/Layout NC Hole 18.png"
     ],
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "CR/slope officieel (baanhandicaptabellen 2024; tees aangeduid als 62/59/53/50, toewijzing aan kolommen afgeleid uit de PDF-tekst). Par, S.I. en lengtes alleen voor tee 50 (dames) uit hole19golf.com; S.I. daar getoond bij de damestee en daarom als si_women opgenomen. Hole19 labelt \"yds\", maar totaal 4882 past bij tee \"50\" in meters - eenheid niet officieel bevestigd. Geen officiële scorekaart online gevonden. South Course (6 holes) niet opgenomen (geen kaart)."
+    "notes": "CR/slope officieel (baanhandicaptabellen 2024; tees aangeduid als 62/59/53/50, toewijzing aan kolommen afgeleid uit de PDF-tekst). Par, S.I. en lengtes alleen voor tee 50 (dames) uit hole19golf.com; S.I. daar getoond bij de damestee en daarom als si_women opgenomen. Hole19 labelt \"yds\", maar totaal 4882 past bij tee \"50\" in meters - eenheid niet officieel bevestigd. Geen officiële scorekaart online gevonden. South Course (6 holes) niet opgenomen (geen kaart). Officiële bron gecontroleerd 29-10-2026: geen scorekaart; wel holepagina's (goyer.nl/nl/de-baan/north-course-hole-1 t/m -18) met per hole een tekst die de par noemt (bevestigt de par van alle 18 holes, totaal 72) en voor holes 1-6 een officiële layout met lengtes per tee wit/geel/blauw/rood. De rode lengtes zijn gelijk aan de Hole19-lengtes van tee 50; wit/geel/blauw zijn als tees 62/59/53 ingevuld (toewijzing afgeleid uit de volgorde, niet officieel bevestigd). Layouts voor holes 7-18 staan niet op de site (bestandsnamen geven 403). S.I. blijft van Hole19 (derden); lengtes holes 7-18 voor 62/59/53 onbekend. Aangevuld 29-10-2026 (in de browser gevonden): de layouts van holes 7-18 staan op https://www.goyer.nl/downloads/Layout%20NC%20Hole%20N.png; daarmee nu officiële lengtes voor alle 18 holes en alle tees. De layouts tonen de kleuren: 62 = wit, 59 = geel, 53 = blauw, 50 = rood (tee-namen aangepast). Totalen: {'62 (wit)': 6237, '59 (geel)': 5841, '53 (blauw)': 5281, '50 (rood)': 4882}. De rode lengtes van Hole19 kwamen exact overeen. S.I. staat niet op de layouts en blijft onbekend."
   },
   "sources": [
     "https://www.goyer.nl/nl/de-baan/north-course-18-holes-",
     "https://www.goyer.nl/nl/de-baan/south-course-6-holes-",
-    "https://www.hole19golf.com/courses/goyer-golf-country-club-north"
+    "https://www.hole19golf.com/courses/goyer-golf-country-club-north",
+    "https://www.goyer.nl/nl/de-baan/north-course-hole-1",
+    "https://www.goyer.nl/nl/de-baan/north-course-hole-7"
   ]
 }

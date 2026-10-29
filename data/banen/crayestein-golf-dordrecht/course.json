@@ -641,7 +641,7 @@
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Clubsite (crayesteingolf.nl) geeft 403 voor curl; handicaptabellen (NGF, 20-09-2021) via WebFetch opgehaald -> CR/slope en par officieel. Officiele scorekaart niet online. Par, S.I. en per-hole lengtes alleen van blauw via hole19golf.com (lengtes in meters: totaal 5179 = officiele/hole19-totaal, hole 18 = 225 m zoals de clubsite noemt). Totale lengtes per tee van Hole19; per-hole lengtes voor wit/geel/rood/oranje onbekend. Geen page.html opgeslagen (403)."
+    "notes": "Clubsite (crayesteingolf.nl) geeft 403 voor curl; handicaptabellen (NGF, 20-09-2021) via WebFetch opgehaald -> CR/slope en par officieel. Officiele scorekaart niet online. Par, S.I. en per-hole lengtes alleen van blauw via hole19golf.com (lengtes in meters: totaal 5179 = officiele/hole19-totaal, hole 18 = 225 m zoals de clubsite noemt). Totale lengtes per tee van Hole19; per-hole lengtes voor wit/geel/rood/oranje onbekend. Geen page.html opgeslagen (403). Officiële bron gecontroleerd 29-10-2026: geen officiële scorekaart gevonden. crayesteingolf.nl geeft 403 voor curl; via WebFetch bekeken: /de-baan/, /de-baan/baanoverzicht/ (alleen beschrijving per hole, geen par/S.I./lengtes per tee), /de-baan/playing-handicap/ (alleen de bekende handicaptabellen 2021) en de page-sitemap (geen scorekaart-PDF/-afbeelding). Ook websearch leverde niets officieels. Holegegevens blijven van Hole19."
   },
   "sources": [
     "https://crayesteingolf.nl/de-baan/playing-handicap/",

@@ -165,7 +165,7 @@
     ],
     "source": "third-party",
     "complete": false,
-    "notes": "Geen officiele scorekaart online (clubsite golfullerberg.nl en ullerberg.nl bevatten geen baandata). Data uit Hole19: par/SI/lengtes alleen voor geel; rood alleen totale lengte (2307). Hole19 labelt lengtes als 'yds' maar 18-holes totaal 5130 = 2x2565 m volgens Hole19-tekst, dus vermoedelijk meters. CR/slope (67.2/113 etc.) bij par 35 lijken 18-holes waarden (2x9) te zijn; niet officieel geverifieerd."
+    "notes": "Officiële bron gecontroleerd 29-10-2026: golfullerberg.nl leidt naar golfclubullerberg.nl, een handicapregistratieclub zonder speelrecht op de baan ('nog niet zo ver'); geen scorekaart of baangegevens. Gegevens blijven van Hole19. | Eerder: Geen officiele scorekaart online (clubsite golfullerberg.nl en ullerberg.nl bevatten geen baandata). Data uit Hole19: par/SI/lengtes alleen voor geel; rood alleen totale lengte (2307). Hole19 labelt lengtes als 'yds' maar 18-holes totaal 5130 = 2x2565 m volgens Hole19-tekst, dus vermoedelijk meters. CR/slope (67.2/113 etc.) bij par 35 lijken 18-holes waarden (2x9) te zijn; niet officieel geverifieerd."
   },
   "sources": [
     "https://golfullerberg.nl/",

@@ -297,17 +297,27 @@
     }
   ],
   "scorecard": {
-    "page_url": "https://www.golfify.io/courses/golfbaan-de-stok",
+    "page_url": "https://golf-relax.nl/baaninformatie/",
     "files": [
       "scorecard/page.html",
       "scorecard/clubsite-baaninformatie.html",
       "scorecard/handicaptabel-winterbaan-heren.png",
-      "scorecard/handicaptabel-winterbaan-dames.png"
+      "scorecard/handicaptabel-winterbaan-dames.png",
+      "scorecard/hole-1-10.jpg",
+      "scorecard/hole-2-11.jpg",
+      "scorecard/hole-3-12.jpg",
+      "scorecard/hole-4-13.jpg",
+      "scorecard/hole-5-14.jpg",
+      "scorecard/hole-6-15.jpg",
+      "scorecard/hole-7-16.jpg",
+      "scorecard/hole-8-17.jpg",
+      "scorecard/hole-9-18.jpg",
+      "scorecard/clubsite-baaninformatie-2026-10-29.html"
     ],
     "source": "third-party",
     "complete": true,
-    "notes": "De clubsite (golf-relax.nl) publiceert geen scorekaart, alleen een handicaptabel voor de ingekorte winterbaan (par 58) en WHS-tabellen van Dongen. Holedata van golfify.io (eenheid niet vermeld, vermoedelijk meters; 2032/1777/1573 per 9 holes, sommen kloppen). Holes 1 en 9 verschillen tussen eerste en tweede ronde. Golfify geeft alleen 9-holesratings (heren geel 30,7/108, rood 30,2/94, oranje 29,1/93; dames geel 33,0/112, rood 31,2/108, oranje 30,6/107); de 18-holeswaarden hier zijn tweemaal de CR met dezelfde slope (WHS-optelling, zelf berekend). 1golf.eu noemt een oudere indeling (par 56, 2398 m).",
-    "retrieved": "2026-10-28"
+    "notes": "De clubsite (golf-relax.nl) publiceert geen scorekaart, alleen een handicaptabel voor de ingekorte winterbaan (par 58) en WHS-tabellen van Dongen. Holedata van golfify.io (eenheid niet vermeld, vermoedelijk meters; 2032/1777/1573 per 9 holes, sommen kloppen). Holes 1 en 9 verschillen tussen eerste en tweede ronde. Golfify geeft alleen 9-holesratings (heren geel 30,7/108, rood 30,2/94, oranje 29,1/93; dames geel 33,0/112, rood 31,2/108, oranje 30,6/107); de 18-holeswaarden hier zijn tweemaal de CR met dezelfde slope (WHS-optelling, zelf berekend). 1golf.eu noemt een oudere indeling (par 56, 2398 m). Officiële bron gecontroleerd 29-10-2026: golf-relax.nl/baaninformatie toont nu holekaarten (hole-1-10.jpg t/m hole-9-18.jpg) met par, stroke (1e/2e ronde) en lengtes rood en geel; die komen exact overeen met de bestaande holedata (ook geel 153/172 op hole 1/10 en 274/255 op 9/18), dus par, S.I. en geel/rood-lengtes zijn nu officieel bevestigd. Oranje-lengtes en alle CR/slope-waarden blijven van golfify (derden); de handicaptabellen die de club linkt zijn die van Dongen en de ingekorte winterbaan.",
+    "retrieved": "2026-10-29"
   },
   "sources": [
     "https://golf-relax.nl/",

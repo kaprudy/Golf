@@ -47,7 +47,7 @@
           "name": "wit",
           "color": "white",
           "gender": "men",
-          "length_m": null,
+          "length_m": 6037,
           "course_rating": 72.1,
           "slope": 132,
           "par": 72
@@ -56,7 +56,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "men",
-          "length_m": null,
+          "length_m": 6002,
           "course_rating": 71.8,
           "slope": 130,
           "par": 72
@@ -65,7 +65,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "women",
-          "length_m": null,
+          "length_m": 6002,
           "course_rating": 78.5,
           "slope": 144,
           "par": 72
@@ -92,7 +92,7 @@
           "name": "rood",
           "color": "red",
           "gender": "men",
-          "length_m": null,
+          "length_m": 5300,
           "course_rating": 68.2,
           "slope": 123,
           "par": 72
@@ -101,7 +101,7 @@
           "name": "rood",
           "color": "red",
           "gender": "women",
-          "length_m": null,
+          "length_m": 5300,
           "course_rating": 74.0,
           "slope": 129,
           "par": 72
@@ -110,7 +110,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "men",
-          "length_m": null,
+          "length_m": 4560,
           "course_rating": 64.5,
           "slope": 109,
           "par": 72
@@ -119,7 +119,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "women",
-          "length_m": null,
+          "length_m": 4560,
           "course_rating": 69.0,
           "slope": 124,
           "par": 72
@@ -132,11 +132,11 @@
           "si": 7,
           "si_women": null,
           "lengths_m": {
+            "wit": 316,
+            "geel": 316,
             "blauw": 292,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 292,
+            "oranje": 229
           }
         },
         {
@@ -145,24 +145,24 @@
           "si": 13,
           "si_women": null,
           "lengths_m": {
+            "wit": 323,
+            "geel": 323,
             "blauw": 289,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 284,
+            "oranje": 235
           }
         },
         {
           "hole": 3,
           "par": 5,
-          "si": 3,
+          "si": 5,
           "si_women": null,
           "lengths_m": {
+            "wit": 479,
+            "geel": 473,
             "blauw": 444,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 436,
+            "oranje": 398
           }
         },
         {
@@ -171,11 +171,11 @@
           "si": 1,
           "si_women": null,
           "lengths_m": {
+            "wit": 391,
+            "geel": 386,
             "blauw": 358,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 355,
+            "oranje": 306
           }
         },
         {
@@ -184,24 +184,24 @@
           "si": 17,
           "si_women": null,
           "lengths_m": {
+            "wit": 176,
+            "geel": 173,
             "blauw": 145,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 123,
+            "oranje": 108
           }
         },
         {
           "hole": 6,
           "par": 5,
-          "si": 5,
+          "si": 3,
           "si_women": null,
           "lengths_m": {
+            "wit": 480,
+            "geel": 480,
             "blauw": 430,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 425,
+            "oranje": 382
           }
         },
         {
@@ -210,37 +210,37 @@
           "si": 15,
           "si_women": null,
           "lengths_m": {
+            "wit": 196,
+            "geel": 190,
             "blauw": 152,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 146,
+            "oranje": 120
           }
         },
         {
           "hole": 8,
           "par": 4,
-          "si": 9,
+          "si": 11,
           "si_women": null,
           "lengths_m": {
+            "wit": 357,
+            "geel": 355,
             "blauw": 337,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 317,
+            "oranje": 272
           }
         },
         {
           "hole": 9,
           "par": 4,
-          "si": 11,
+          "si": 9,
           "si_women": null,
           "lengths_m": {
+            "wit": 328,
+            "geel": 328,
             "blauw": 316,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 301,
+            "oranje": 261
           }
         },
         {
@@ -249,24 +249,24 @@
           "si": 12,
           "si_women": null,
           "lengths_m": {
+            "wit": 340,
+            "geel": 340,
             "blauw": 301,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 285,
+            "oranje": 230
           }
         },
         {
           "hole": 11,
           "par": 5,
-          "si": 2,
+          "si": 4,
           "si_women": null,
           "lengths_m": {
+            "wit": 495,
+            "geel": 495,
             "blauw": 416,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 416,
+            "oranje": 388
           }
         },
         {
@@ -275,89 +275,89 @@
           "si": 14,
           "si_women": null,
           "lengths_m": {
+            "wit": 171,
+            "geel": 165,
             "blauw": 154,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 136,
+            "oranje": 122
           }
         },
         {
           "hole": 13,
           "par": 5,
-          "si": 4,
+          "si": 8,
           "si_women": null,
           "lengths_m": {
+            "wit": 496,
+            "geel": 496,
             "blauw": 442,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 432,
+            "oranje": 380
           }
         },
         {
           "hole": 14,
           "par": 4,
-          "si": 18,
+          "si": 16,
           "si_women": null,
           "lengths_m": {
+            "wit": 328,
+            "geel": 328,
             "blauw": 313,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 305,
+            "oranje": 232
           }
         },
         {
           "hole": 15,
           "par": 4,
-          "si": 6,
+          "si": 2,
           "si_women": null,
           "lengths_m": {
+            "wit": 357,
+            "geel": 350,
             "blauw": 344,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 325,
+            "oranje": 280
           }
         },
         {
           "hole": 16,
           "par": 3,
-          "si": 16,
+          "si": 18,
           "si_women": null,
           "lengths_m": {
+            "wit": 123,
+            "geel": 123,
             "blauw": 116,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 116,
+            "oranje": 103
           }
         },
         {
           "hole": 17,
           "par": 4,
-          "si": 10,
+          "si": 6,
           "si_women": null,
           "lengths_m": {
+            "wit": 336,
+            "geel": 336,
             "blauw": 304,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 301,
+            "oranje": 267
           }
         },
         {
           "hole": 18,
           "par": 4,
-          "si": 8,
+          "si": 10,
           "si_women": null,
           "lengths_m": {
+            "wit": 345,
+            "geel": 345,
             "blauw": 331,
-            "wit": null,
-            "geel": null,
-            "rood": null,
-            "oranje": null
+            "rood": 305,
+            "oranje": 247
           }
         }
       ]
@@ -633,7 +633,6 @@
   "scorecard": {
     "page_url": "https://www.golfenophetrijk.nl/nijmegen/baandetails.html",
     "files": [
-      "scorecard/hole19.html",
       "scorecard/nijmegen-handicaptabel-dames-GB-noord-oost-01032021.pdf",
       "scorecard/nijmegen-handicaptabel-dames-GB-oost-zuid-01032021.pdf",
       "scorecard/nijmegen-handicaptabel-dames-GB-zuid-noord-01032021.pdf",
@@ -642,16 +641,21 @@
       "scorecard/nijmegen-handicaptabel-heren-GB-oost-zuid-01032021.pdf",
       "scorecard/nijmegen-handicaptabel-heren-GB-zuid-noord-01032021.pdf",
       "scorecard/nijmegen-handicaptabel-heren-NB-1-18-01032021.pdf",
-      "scorecard/page.html"
+      "scorecard/page.html",
+      "scorecard/scorekaart-2026-nijmeegse-1-9.png",
+      "scorecard/scorekaart-2026-nijmeegse-10-18.png",
+      "scorecard/scorekaart-2026-groesbeekse-oost.png",
+      "scorecard/nijmegen-plattegrond-golfbaan.pdf"
     ],
-    "source": "third-party",
-    "retrieved": "2026-10-28",
+    "source": "official",
+    "retrieved": "2026-10-29",
     "complete": false,
-    "notes": "CR/slope officieel (handicaptabellen 01-03-2021). Geen officiële scorekaart met holegegevens online gevonden. Nijmeegse baan: par, S.I. en lengtes (alleen blauw) uit hole19golf.com (\"yds\"-label, waarschijnlijk meters). Totale lengtes volgens de site (heren geel / dames rood): Nijmeegse 6002/5300 m, Noord&Oost 5238/4613, Oost&Zuid 5515/4908, Zuid&Noord 5697/5103 m. Gemengde combinaties met de Nijmeegse 1-9 of 10-18 (ook gerateerd) niet opgenomen."
+    "notes": "Officiële bron gecontroleerd 29-10-2026: Nijmeegse baan 1-18 nu volledig officieel: par, S.I. en lengtes van alle tees (wit/geel/blauw/rood/oranje) overgenomen van de gedrukte clubscorekaart 'Uitgave 2026', gepubliceerd als foto op golfclubhetrijkvannijmegen.nl (wp-content/uploads/2026/09/scorekaart-Stijn-Eggink.jpg-scaled.jpeg); alleen de tabellen zijn als uitsnede bewaard (zonder naam/handtekeningen). Totalen kloppen met de kaart: wit 6037, geel 6002, blauw 5484, rood 5300, oranje 4560 m; geel/rood = officiële heren/dames-lengte op baandetails. S.I. = kolom NB1/NB10 (bij 9 holes gelden andere S.I.-kolommen); de eerdere Hole19-S.I. week af (holes 3 en 6 verwisseld). Groesbeekse baan: alleen de kaart van lus Oost staat op de foto (lengtes; S.I. per combinatie), Noord en Zuid niet gevonden, daarom Groesbeekse loops nog zonder holegegevens. CR/slope officieel (handicaptabellen 01-03-2021). Hole19 niet meer gebruikt; alle opgenomen gegevens zijn nu officieel, maar onvolledig (Groesbeekse lussen)."
   },
   "sources": [
     "https://www.golfenophetrijk.nl/nijmegen/baandetails.html",
     "https://www.golfenophetrijk.nl/nijmegen/baaninformatie.html",
-    "https://www.hole19golf.com/courses/golfbaan-het-rijk-van-nijmegen"
+    "https://www.golfclubhetrijkvannijmegen.nl/wp-content/uploads/2026/09/scorekaart-Stijn-Eggink.jpg-scaled.jpeg",
+    "https://www.golfenophetrijk.nl/assets/nijmegen-plattegrond-golfbaan.pdf"
   ]
 }

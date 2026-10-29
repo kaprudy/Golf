@@ -159,16 +159,26 @@
       "scorecard/page.html",
       "scorecard/handicaptabel-1.png",
       "scorecard/handicaptabel-2.png",
-      "scorecard/hole19.html"
+      "scorecard/hole19.html",
+      "scorecard/Sponsors-Hole-1-ITPG.jpg",
+      "scorecard/Sponsors-Hole-2.jpg",
+      "scorecard/Sponsors-Hole-3.jpg",
+      "scorecard/Sponsors-Hole-4.jpg",
+      "scorecard/Sponsors-Hole-5.jpg",
+      "scorecard/Sponsors-Hole-6.jpg",
+      "scorecard/Sponsors-Hole-7-v2.jpg",
+      "scorecard/Sponsors-Hole-8.jpg",
+      "scorecard/Sponsors-Hole-9-Fernandez.jpg"
     ],
     "source": "third-party",
     "complete": true,
-    "notes": "Club publiceert alleen de totale lengte (764 m) en de NGF-baanhandicaptabellen (3-9-2024: 9 holes geel heren 24,3/72, rood dames 25,2/76; 18 holes 48,5/72 en 50,3/76). Holelengtes en S.I. komen van Hole19 (third-party); de holesom 764 m komt overeen met het officiele totaal. Geen aparte lengtes per tee bekend: geel en rood gelijk gezet. Golfkaart noemt ook 'Golfvereniging Uithoorn' (9 holes) vlakbij; geen aparte baan gevonden, waarschijnlijk dezelfde locatie."
+    "notes": "Club publiceert alleen de totale lengte (764 m) en de NGF-baanhandicaptabellen (3-9-2024: 9 holes geel heren 24,3/72, rood dames 25,2/76; 18 holes 48,5/72 en 50,3/76). Holelengtes en S.I. komen van Hole19 (third-party); de holesom 764 m komt overeen met het officiele totaal. Geen aparte lengtes per tee bekend: geel en rood gelijk gezet. Golfkaart noemt ook 'Golfvereniging Uithoorn' (9 holes) vlakbij; geen aparte baan gevonden, waarschijnlijk dezelfde locatie. Officiële bron gecontroleerd 29-10-2026: geen scorekaart gevonden, wel foto's van de officiële holeborden (sponsorborden 2019-2021 in de mediabibliotheek van golfcenteruithoorn.nl). Die bevestigen par 3 op alle holes en de S.I. (18-holesstijl) van holes 1 (15/16), 2 (13/14), 5 (9/10), 6 (5/6), 7 (17/18) en 9 (7/8), gelijk aan de Hole19-volgorde; holes 3, 4 en 8 tonen geen S.I. De borden noemen lengtes 81, 63, 118, 117, 90, 108, 53, 60 en 70 m (som 760 m, kleine borden, slecht leesbaar); Hole19 geeft per hole 1 m meer op holes 1, 3, 4 en 9 (som 764 m = officieel totaal op de site), daarom Hole19-lengtes behouden. Bron blijft derden."
   },
   "sources": [
     "https://www.golfcenteruithoorn.nl/baan-informatie/",
     "https://www.golfcenteruithoorn.nl/greenfee-en-range-tarieven/",
     "https://www.golfcenteruithoorn.nl/contact/",
-    "https://www.hole19golf.com/courses/golfcenter-uithoorn"
+    "https://www.hole19golf.com/courses/golfcenter-uithoorn",
+    "https://www.golfcenteruithoorn.nl/wp-content/uploads/2021/03/Sponsors-Hole-1-ITPG.jpg"
   ]
 }

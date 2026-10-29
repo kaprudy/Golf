@@ -211,13 +211,16 @@
   ],
   "scorecard": {
     "page_url": "https://www.golfpass.com/courses/36544-pitch-putt-strand-horst/scorecard-and-layout",
-    "files": [],
+    "files": [
+      "scorecard/page.html"
+    ],
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Geen officiele website (strandhorst.nl is een te koop staand domein) en geen scorekaartbestand gevonden. Par/SI per hole van GolfPass. Holelengtes op GolfPass staan in yards (standaardeenheid): 1:54, 2:39, 3:55, 4:44, 5:68, 6:63, 7:73, 8:47, 9:52, 10:64, 11:76, 12:51, 13:49, 14:60, 15:49, 16:74, 17:61, 18:67 (totaal 1046 yd); GolfPass noemt elders 964 m, FIPPA 912 m - daarom lengths_m null. Geen CR/slope. Adres Palmbosweg 4 volgens FIPPA/GolfPass (Nominatim plaatst dat nummer bij een bungalowpark); GPS van golfkaart. FIPPA-kalender 2025 vermeldt hier de International Gelders Open, dus baan is actief. page.html = GolfPass-pagina; fippa.html = FIPPA-baanprofiel."
+    "notes": "Officiële bron gecontroleerd 29-10-2026: officiële site pitch-putt-strandhorst.nl is actief: 18 holes par 3 (langste hole 70 m), ook 9 holes; pagina's en mediabibliotheek doorzocht, geen scorekaart of holegegevens. Adres Palmbosweg 4, 3853 LB Ermelo. | Eerder: Geen officiele website (strandhorst.nl is een te koop staand domein) en geen scorekaartbestand gevonden. Par/SI per hole van GolfPass. Holelengtes op GolfPass staan in yards (standaardeenheid): 1:54, 2:39, 3:55, 4:44, 5:68, 6:63, 7:73, 8:47, 9:52, 10:64, 11:76, 12:51, 13:49, 14:60, 15:49, 16:74, 17:61, 18:67 (totaal 1046 yd); GolfPass noemt elders 964 m, FIPPA 912 m - daarom lengths_m null. Geen CR/slope. Adres Palmbosweg 4 volgens FIPPA/GolfPass (Nominatim plaatst dat nummer bij een bungalowpark); GPS van golfkaart. FIPPA-kalender 2025 vermeldt hier de International Gelders Open, dus baan is actief. page.html = GolfPass-pagina; fippa.html = FIPPA-baanprofiel."
   },
   "sources": [
+    "https://www.pitch-putt-strandhorst.nl/golfen/",
     "https://www.golfpass.com/courses/36544-pitch-putt-strand-horst/scorecard-and-layout",
     "https://fippa.org/courses/strand_horst",
     "https://www.leadingcourses.com/clubs/europe+the-netherlands+gelderland/pitch-putt-golf-strand-horst",

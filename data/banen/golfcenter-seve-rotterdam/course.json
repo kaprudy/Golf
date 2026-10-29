@@ -43,7 +43,7 @@
           "name": "heren",
           "color": null,
           "gender": "men",
-          "length_m": 1501,
+          "length_m": 1499,
           "course_rating": null,
           "slope": null,
           "par": 54
@@ -92,7 +92,7 @@
           "si": 9,
           "si_women": null,
           "lengths_m": {
-            "heren": 75
+            "heren": 73
           }
         },
         {
@@ -220,12 +220,13 @@
     "files": [
       "scorecard/page.html",
       "scorecard/golfingrecord-scorecard.html",
-      "scorecard/golfpass-scorecard.html"
+      "scorecard/golfpass-scorecard.html",
+      "scorecard/page-par-3-golfbaan-2026-10-29.html"
     ],
     "source": "third-party",
-    "retrieved": "2026-10-28",
+    "retrieved": "2026-10-29",
     "complete": false,
-    "notes": "Clubsite publiceert geen scorekaart. Holegegevens van golfingrecord.com (tee 'Heren', 18 holes = 2x9 met andere lengtes op holes 10-18, totaal 1501, eenheid niet vermeld; vermoedelijk meters, want 1golf.eu noemt 1497 m). Golfingrecord vermeldt een tweede tee zonder gegevens en CR 51,4 / slope 57; GolfPass geeft andere waarden (9 holes 903, totaal 1638 m, CR 60,2 / slope 105, andere S.I.). Door deze tegenstrijdigheid zijn CR/slope niet ingevuld; gegevens met voorzichtigheid gebruiken."
+    "notes": "Clubsite publiceert geen scorekaart. Holegegevens van golfingrecord.com (tee 'Heren', 18 holes = 2x9 met andere lengtes op holes 10-18, totaal 1501, eenheid niet vermeld; vermoedelijk meters, want 1golf.eu noemt 1497 m). Golfingrecord vermeldt een tweede tee zonder gegevens en CR 51,4 / slope 57; GolfPass geeft andere waarden (9 holes 903, totaal 1638 m, CR 60,2 / slope 105, andere S.I.). Door deze tegenstrijdigheid zijn CR/slope niet ingevuld; gegevens met voorzichtigheid gebruiken. Officiële bron gecontroleerd 29-10-2026: geen officiële scorekaart of handicaptabel (ook geen CR/slope) op seve.nl; de pagina's /golf/ en /golf/golf-par-3-golfbaan/ geven wel per hole de lengte van de 9 holes (51, 70, 89, 86, 73, 120, 76, 107, 83 m = 755 m, alle par 3). Holes 1-9 zijn daarmee officieel bevestigd; hole 5 aangepast van 75 naar 73 m (tee-totaal nu 1499). Holes 10-18 (afwijkende afslagen) en alle S.I. blijven van golfingrecord.com."
   },
   "sources": [
     "https://seve.nl/golf/golf-par-3-golfbaan/",

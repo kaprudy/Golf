@@ -45,92 +45,110 @@
           "name": "geel",
           "color": "yellow",
           "gender": "men",
+          "length_m": 1177,
+          "course_rating": 26.4,
+          "slope": 93,
+          "par": 28
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
           "length_m": null,
-          "course_rating": null,
-          "slope": null,
+          "course_rating": 27.7,
+          "slope": 94,
           "par": 28
         }
       ],
       "hole_data": [
         {
           "hole": 1,
-          "par": null,
+          "par": 3,
           "si": null,
           "si_women": null,
           "lengths_m": {
-            "geel": null
+            "geel": 183,
+            "rood": null
           }
         },
         {
           "hole": 2,
-          "par": null,
+          "par": 3,
           "si": null,
           "si_women": null,
           "lengths_m": {
-            "geel": null
+            "geel": 115,
+            "rood": null
           }
         },
         {
           "hole": 3,
-          "par": null,
+          "par": 3,
           "si": null,
           "si_women": null,
           "lengths_m": {
-            "geel": null
+            "geel": 98,
+            "rood": null
           }
         },
         {
           "hole": 4,
-          "par": null,
+          "par": 3,
           "si": null,
           "si_women": null,
           "lengths_m": {
-            "geel": null
+            "geel": 94,
+            "rood": null
           }
         },
         {
           "hole": 5,
-          "par": null,
+          "par": 3,
           "si": null,
           "si_women": null,
           "lengths_m": {
-            "geel": 116
+            "geel": 116,
+            "rood": null
           }
         },
         {
           "hole": 6,
-          "par": null,
+          "par": 3,
           "si": null,
           "si_women": null,
           "lengths_m": {
-            "geel": 102
+            "geel": 102,
+            "rood": null
           }
         },
         {
           "hole": 7,
-          "par": null,
+          "par": 4,
           "si": null,
           "si_women": null,
           "lengths_m": {
-            "geel": 252
+            "geel": 252,
+            "rood": null
           }
         },
         {
           "hole": 8,
-          "par": null,
+          "par": 3,
           "si": null,
           "si_women": null,
           "lengths_m": {
-            "geel": 136
+            "geel": 136,
+            "rood": null
           }
         },
         {
           "hole": 9,
-          "par": null,
+          "par": 3,
           "si": null,
           "si_women": null,
           "lengths_m": {
-            "geel": 81
+            "geel": 81,
+            "rood": null
           }
         }
       ]
@@ -140,18 +158,23 @@
     "page_url": "https://golfson.nl/courseplanner",
     "files": [
       "scorecard/page-golfify.html",
-      "scorecard/page.html"
+      "scorecard/page.html",
+      "scorecard/Son-WHS-tabel-Par-3-Baan-Dames-en-Heren.pdf",
+      "scorecard/Son-WHS-tabel-Par-3-Baan-Winter-Dames-en-Heren.pdf",
+      "scorecard/courseplanner.html",
+      "scorecard/de-baan.html"
     ],
     "source": "official",
-    "retrieved": "2026-10-28",
+    "retrieved": "2026-10-29",
     "complete": false,
-    "notes": "Officieel (de-baan + courseplanner): 9 holes, 8 par 3 en 1 par 4; lengtes alleen voor holes 5-9 (116, 102, 252, 136, 81 m; hole 7 is de langste, vermoedelijk de par 4). Teekleur van die lengtes niet vermeld (hier als \"geel\" opgeslagen). Geen scorekaart of CR/slope gepubliceerd. Golfify.io geeft par 27 (9x par 3), S.I. 5,15,9,11,3,7,1,13,17 en wit 183,105,98,94,147,102,262,111,81 = 1183 m - wijkt af van de clubsite en is niet overgenomen (page-golfify.html bewaard)."
+    "notes": "Officiële bron gecontroleerd 29-10-2026: de courseplanner noemt nu de lengte van alle holes (1/10 183, 2/11 115, 3/12 98, 4 94 en 13 83, 5/14 116, 6/15 102, 7/16 252, 8/17 136, 9/18 81 m; totaal holes 1-9 1177 m), zonder teekleur (hier als 'geel' opgeslagen). Par: holes 2, 4, 5 en 8 worden expliciet par 3 genoemd, voor 1 en 6 adviseert de pro ze 'als par 4' te spelen (dus par 3); hole 7 (252 m, langste) is de enige par 4 - afgeleid uit par 28 voor 9 holes; 3 en 9 daarmee par 3. Ratings uit 'Son WHS tabel Par-3 Baan' d.d. 15-02-2021 (de-baan, Baanhandicaptabellen Zomer): 1e 9 holes par 28 geel heren CR 26,4/SR 93, rood dames 27,7/94 (2e 9: 26,4/93 en 27,6/93; 18 holes par 56: 52,8/93 en 55,3/94). Geen S.I. of rood-lengtes gepubliceerd. Golfify (par 27, S.I. 5,15,9,11,3,7,1,13,17, wit 1183 m) blijft niet overgenomen (page-golfify.html bewaard)."
   },
   "sources": [
     "https://golfson.nl/de-baan",
     "https://golfson.nl/courseplanner",
     "https://golfson.nl/gasten",
     "https://golfson.nl/contact",
-    "https://www.golfify.io/courses/golfclub-son"
+    "https://www.golfify.io/courses/golfclub-son",
+    "https://golfson.nl/downloadfile/5564674d81b5ed89"
   ]
 }

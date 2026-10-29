@@ -58,7 +58,7 @@
           "name": "rood",
           "color": "red",
           "gender": "men",
-          "length_m": 4836,
+          "length_m": 4754,
           "course_rating": 67.0,
           "slope": 117,
           "par": 70
@@ -67,7 +67,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "men",
-          "length_m": 4116,
+          "length_m": 4040,
           "course_rating": 62.9,
           "slope": 117,
           "par": 70
@@ -85,7 +85,7 @@
           "name": "rood",
           "color": "red",
           "gender": "women",
-          "length_m": 4836,
+          "length_m": 4754,
           "course_rating": 71.4,
           "slope": 127,
           "par": 70
@@ -94,7 +94,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "women",
-          "length_m": 4116,
+          "length_m": 4040,
           "course_rating": 66.6,
           "slope": 117,
           "par": 70
@@ -152,8 +152,8 @@
           "si_women": null,
           "lengths_m": {
             "geel": 335,
-            "rood": 317,
-            "oranje": 276
+            "rood": 276,
+            "oranje": 238
           }
         },
         {
@@ -315,17 +315,25 @@
     "page_url": "https://golfclubgaasterland.nl/golfbaan-friesland/hole-sponsors",
     "files": [
       "scorecard/page.html",
+      "scorecard/hole-1.10.jpg",
+      "scorecard/hole-2.11.jpg",
+      "scorecard/hole-3.12.jpg",
+      "scorecard/hole-4.13.jpg",
+      "scorecard/hole-5.14.jpg",
+      "scorecard/hole-6.15.jpg",
+      "scorecard/hole-7.16.jpg",
+      "scorecard/hole-8.17.jpg",
+      "scorecard/hole-9.18.jpg",
       "scorecard/hcp-tabellen.html",
       "scorecard/hcp-heren-2023.pdf",
       "scorecard/hcp-dames-2023.pdf",
       "scorecard/hcp-par3-9h.pdf",
-      "scorecard/hcp-par3-18h.pdf",
-      "scorecard/golfify-scorecard.html"
+      "scorecard/hcp-par3-18h.pdf"
     ],
     "source": "official",
-    "retrieved": "2026-10-28",
+    "retrieved": "2026-10-29",
     "complete": false,
-    "notes": "Geen scorekaart-PDF/afbeelding op de officiele site; hole-pagina geeft par, lengte (geel) en SI per hole. SI officieel als 11/12 enz. (eerste/tweede ronde bij 18 holes); hier de eerste-ronde-waarde. Lengtes rood/oranje van Golfify (derde partij, totalen 2418/2058 m; Golfify noemt afwijkende oude SI-waarden en 9-holes CR/slope). CR/slope uit officiele HCP-tabellen d.d. 14-09-2023 gelden voor 18 holes (2x9, par 70); tee-lengtes daarom 2x de 9-holes lengte. Paarse par-3 variant: officiele HCP-tabel 9 holes par 27 (CR/slope heren 26,3/84, dames 27,5/86; 18 holes par 54: 52,6/84 en 55,0/86); aangenomen wordt dat dit de 9 holes vanaf paarse tees is, holelengtes niet gepubliceerd. De 6 par-3 oefenholes (433 m, sinds okt. 2025) hebben geen gepubliceerde scorekaart. Architect Alan Rijks volgens 1golf.eu (niet op officiele site bevestigd); founded = oprichting vereniging mei 1987, baan open 2003."
+    "notes": "Geen scorekaart-PDF op de officiele site; de holepagina's (menu Baan > Holes) geven par, lengte geel en SI, en de officiele holetekeningen (hole-N.jpg) geven per hole de lengtes geel/rood/oranje. SI officieel als 11/12 enz. (eerste/tweede ronde bij 18 holes); hier de eerste-ronde-waarde. Let op: een tweede set holepagina's onder Baan > Calamiteitenplan > Holes noemt afwijkende, inconsistente SI-waarden (o.a. 3x 5/6) en is niet gebruikt. CR/slope uit officiele HCP-tabellen d.d. 14-09-2023 gelden voor 18 holes (2x9, par 70); tee-lengtes daarom 2x de 9-holes som (geel 2813, rood 2377, oranje 2020). Paarse par-3 variant: officiele HCP-tabel 9 holes par 27 (CR/slope heren 26,3/84, dames 27,5/86; 18 holes par 54: 52,6/84 en 55,0/86); aangenomen wordt dat dit de 9 holes vanaf paarse tees is, holelengtes en SI niet gepubliceerd (daarom complete=false). De 6 par-3 oefenholes (433 m, sinds okt. 2025) hebben geen gepubliceerde scorekaart. Architect Alan Rijks volgens 1golf.eu (niet op officiele site bevestigd); founded = oprichting vereniging mei 1987, baan open 2003. Officiële bron gecontroleerd 29-10-2026: lengtes rood/oranje (eerder Golfify) vervangen door de officiele holetekeningen; alleen hole 5 week af (Golfify rood 317/oranje 276, officieel 276/238). Holedata grote lus nu volledig officieel; geen officiele lengtes/SI voor de paarse par-3 lus."
   },
   "sources": [
     "https://golfclubgaasterland.nl/",
@@ -335,7 +343,6 @@
     "https://golfclubgaasterland.nl/baan/oefenfaciliteiten",
     "https://golfclubgaasterland.nl/greenfee/greenfee-tarieven",
     "https://golfclubgaasterland.nl/greenfee/starttijden",
-    "https://www.golfify.io/courses/golfclub-gaasterland",
     "https://www.1golf.eu/club/golfclub-gaasterland/"
   ]
 }

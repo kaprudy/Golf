@@ -230,11 +230,12 @@
     "page_url": "https://upevents.nl/golf/",
     "files": [
       "scorecard/page.html",
-      "scorecard/hole19.html"
+      "scorecard/hole19.html",
+      "scorecard/Huisregels-golf-Weesp.pdf"
     ],
     "source": "third-party",
     "complete": false,
-    "notes": "Club (UP Events, golfweesp.nl verwijst door; golfweesp.nl gaf 403 op curl) publiceert geen scorekaart. Par, S.I., gele lengtes en CR/slope komen van Hole19 (third-party, eenheid aangenomen meters); Hole19 geeft voor de 2e negen deels andere lengtes (aparte tees). Rode lengtes per hole onbekend (totaal 2024). Adres bevestigd op upevents.nl. Golfkaart noemt ook 'Golfvereniging Weesp' en 'Golfcentrum Weesp' (zelfde locatie, geen aparte baan gevonden)."
+    "notes": "Club (UP Events, golfweesp.nl verwijst door; golfweesp.nl gaf 403 op curl) publiceert geen scorekaart. Par, S.I., gele lengtes en CR/slope komen van Hole19 (third-party, eenheid aangenomen meters); Hole19 geeft voor de 2e negen deels andere lengtes (aparte tees). Rode lengtes per hole onbekend (totaal 2024). Adres bevestigd op upevents.nl. Golfkaart noemt ook 'Golfvereniging Weesp' en 'Golfcentrum Weesp' (zelfde locatie, geen aparte baan gevonden). Officiële bron gecontroleerd 29-10-2026: golfweesp.nl verwijst naar upevents.nl/golfbaan-weesp/; daar en in de mediabibliotheek (o.a. Huisregels-golf-Weesp.pdf, 09-2026: baan is qualifying, plaatselijke regels op de scorekaart) geen scorekaart gevonden. Gegevens blijven van Hole19."
   },
   "sources": [
     "https://upevents.nl/golf/",
