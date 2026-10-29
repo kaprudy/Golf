@@ -1,0 +1,853 @@
+[
+ {
+  "id": 646,
+  "title": "Hole 1",
+  "type": "hole",
+  "par": "4",
+  "si": "17",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "285"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "269"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "269"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "237"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "220"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-1-Greenside-Bunker-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-1-Greenside-Bunker-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole1HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 661,
+  "title": "Hole 2",
+  "type": "hole",
+  "par": "4",
+  "si": "5",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "358"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "339"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "339"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "287"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "240"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole2HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 1096,
+  "title": "Hole 3",
+  "type": "hole",
+  "par": "5",
+  "si": "11",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "462"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "443"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "405"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "373"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "333"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-3-Heide-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-3-Heide-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole3HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 1097,
+  "title": "Hole 4",
+  "type": "hole",
+  "par": "4",
+  "si": "9",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "345"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "326"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "326"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "282"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "252"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-4-Heide-Zonsopkomst-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-4-Heide-Zonsopkomst-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-4-Greenside-Bunker-Zonsopkomst-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-4-Greenside-Bunker-Zonsopkomst-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-4-Green-Zonsopkomst-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-4-Green-Zonsopkomst-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-4-Green-Drone-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-4-Green-Drone-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-4-Drone-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-4-Drone-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole4HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 1098,
+  "title": "Hole 5",
+  "type": "hole",
+  "par": "3",
+  "si": "15",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "144"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "126"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "126"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "108"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "108"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole5HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 1099,
+  "title": "Hole 6",
+  "type": "hole",
+  "par": "5",
+  "si": "13",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "430"
+   },
+   {
+    "kleur": "Geel ",
+    "afstand": "423"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "378"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "353"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "316"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-6-Green-Drone-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-6-Green-Drone-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-6-Green-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-6-Green-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-6-Greenside-Bunker-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-6-Greenside-Bunker-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole6HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 1100,
+  "title": "Hole 7",
+  "type": "hole",
+  "par": "3",
+  "si": "7",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "104"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "104"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "86"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "86"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "72"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-7-Drone-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-7-Drone-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-7-Green-Zonsondergang-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-7-Green-Zonsondergang-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-7-Tee-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-7-Tee-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-7-Zonsondergang-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-7-Zonsondergang-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole7HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 1101,
+  "title": "Hole 8",
+  "type": "hole",
+  "par": "4",
+  "si": "1",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "360"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "328"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "287"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "287"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "267"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-8-Green-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-8-Green-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-8-Heide-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-8-Heide-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-8-Zonsopkomst-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-8-Zonsopkomst-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole8HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 1102,
+  "title": "Hole 9",
+  "type": "hole",
+  "par": "4",
+  "si": "3",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "406"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "368"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "327"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "327"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "309"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole9HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 1103,
+  "title": "Hole 10",
+  "type": "hole",
+  "par": "4",
+  "si": "10",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "356"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "338"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "317"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "291"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "255"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-10-Green-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-10-Green-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-10-Waste-Area-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/07/The-Duke-Hole-10-Waste-Area-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole10HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 2518,
+  "title": "Hole 11",
+  "type": "hole",
+  "par": "3",
+  "si": "18",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "120"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "111"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "111"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "96"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "78"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-11-Drone-1-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-11-Drone-1-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole11HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 2520,
+  "title": "Hole 12",
+  "type": "hole",
+  "par": "5",
+  "si": "12",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "425"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "425"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "395"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "363"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "319"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole12HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 2521,
+  "title": "Hole 13",
+  "type": "hole",
+  "par": "4",
+  "si": "-1",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit ",
+    "afstand": "367"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "338"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "338"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "330"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "296"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-13-Green-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-13-Green-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-13-Heide-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-13-Heide-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-13-Tee-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-13-Tee-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-13-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-13-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole13HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 2526,
+  "title": "Hole 14",
+  "type": "hole",
+  "par": "4",
+  "si": "8",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "356"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "329"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "318"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "302"
+   },
+   {
+    "kleur": "Oranje ",
+    "afstand": "272"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-14-Tee-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-14-Tee-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-14-Green-Dauw-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-14-Green-Dauw-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-14-Zonsondergang-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-14-Zonsondergang-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-14-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-14-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole14HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 2532,
+  "title": "Hole 15",
+  "type": "hole",
+  "par": "3",
+  "si": "14",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "149"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "149"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "135"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "120"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "93"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-15-Tee-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-15-Tee-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-15-Tee-Heide-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-15-Tee-Heide-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole15HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 2535,
+  "title": "Hole 16",
+  "type": "hole",
+  "par": "4",
+  "si": "16",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "294"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "279"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "279"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "242"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "211"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-16-Green-Drone-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-16-Green-Drone-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-16-Green-Drone-2-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-16-Green-Drone-2-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-16-Green-Heide-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-16-Green-Heide-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-16-Green-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-16-Green-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-16-Schaduw-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-16-Schaduw-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole16HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 2542,
+  "title": "Hole 17",
+  "type": "hole",
+  "par": "4",
+  "si": "4",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "356"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "341"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "318"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "397"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "259"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole17HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ },
+ {
+  "id": 2543,
+  "title": "Hole 18",
+  "type": "hole",
+  "par": "5",
+  "si": "3",
+  "description": "",
+  "afstanden": [
+   {
+    "kleur": "Wit",
+    "afstand": "465"
+   },
+   {
+    "kleur": "Geel",
+    "afstand": "430"
+   },
+   {
+    "kleur": "Blauw",
+    "afstand": "405"
+   },
+   {
+    "kleur": "Rood",
+    "afstand": "370"
+   },
+   {
+    "kleur": "Oranje",
+    "afstand": "342"
+   }
+  ],
+  "media": [
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-18-Tee-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-18-Tee-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-18-Clubhouse-Drone-scaled.jpg",
+    "is_video": false,
+    "thumb": "https://theduke.nl/wp-content/uploads/2026/09/The-Duke-Hole-18-Clubhouse-Drone-150x150.jpg"
+   },
+   {
+    "url": "https://theduke.nl/wp-content/uploads/2026/10/TheDukehole18HD.mp4",
+    "is_video": true,
+    "thumb": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"78\" height=\"52\" viewBox=\"0 0 78 52\"><rect width=\"100%\" height=\"100%\" fill=\"%23333\"/><path d=\"M34 18v16l14-8z\" fill=\"%23fff\"/></svg>"
+   }
+  ]
+ }
+]
