@@ -362,7 +362,8 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
 
 // ---------- Buggystand ----------
 // De telefoon zelf als scherm op de buggy: liggend, scherm blijft aan, grote afstand tot de
-// green en grote knoppen om slagen te tellen. Voorlopig ook achter ?buggy=1.
+// green en grote knoppen om slagen te tellen. Aan met de knop bij de hole, of als je de
+// telefoon dwars legt (dan vraagt de app het).
 
 let bmOn = false;
 let lastTap = null; // laatste tik op + of −, om ongedaan te maken
@@ -437,7 +438,7 @@ function renderBuggyStatus() {
 }
 
 function renderBuggyMode() {
-  $('#bm-open').hidden = !buggyEnabled() || !state.players.length;
+  $('#bm-open').hidden = !state.players.length;
   if (!bmOn) return;
   const h = state.round.currentHole;
   const tee = teeFor(state.players[0] ?? { tee: 'geel' });
@@ -509,11 +510,26 @@ function undoTap() {
   });
 }
 
-// Telefoon liggend tijdens een ronde: de buggystand voorstellen.
-matchMedia('(orientation: landscape) and (max-height: 540px)').addEventListener?.('change', (e) => {
-  if (e.matches && !bmOn && buggyEnabled() && state.players.length && $('#after-round').hidden) {
-    toast('Telefoon op de buggy?<button class="link" data-action="buggy-mode">Buggystand aan</button>', 8000);
-  }
+// Telefoon liggend (op de buggy gezet): vragen of de buggystand aan moet. Eén keer per keer
+// draaien; staat er nog een vraag open (baan of spelers kiezen), dan pas als die klaar is.
+const phoneLandscape = matchMedia('(orientation: landscape) and (max-height: 540px)');
+let bmAsked = false;
+
+function offerBuggyMode() {
+  if (bmOn || bmAsked || !phoneLandscape.matches || !state.players.length || !$('#after-round').hidden) return;
+  bmAsked = true;
+  showSheet(`<h2>Buggystand inschakelen?</h2>
+    <p>Je telefoon ligt dwars. In de buggystand zie je groot de afstand tot de green en tel je de slagen met grote knoppen. Het scherm blijft aan.</p>
+    <div class="button-row bm-offer">
+      <button class="primary" data-action="buggy-mode-yes">Buggystand aan</button>
+      <button data-action="close-after-round">Nee, gewoon scherm</button>
+    </div>`, 'Buggystand inschakelen?');
+}
+
+phoneLandscape.addEventListener?.('change', (e) => {
+  if (e.matches) { offerBuggyMode(); return; }
+  bmAsked = false; // weer rechtop: bij de volgende keer draaien opnieuw vragen
+  if ($('#after-round-body .bm-offer')) closeAfterRound();
 });
 
 // ---------- Cloud (eigen server, zie server/) ----------
@@ -1167,6 +1183,7 @@ function startRound(courseId, holesChoice) {
 function closeAfterRound() {
   const el = $('#after-round');
   if (el) el.hidden = true;
+  setTimeout(offerBuggyMode, 300); // bijv. net de spelers gekozen met de telefoon al op de buggy
 }
 
 // ---------- Hulpfuncties ----------
@@ -1780,6 +1797,7 @@ document.addEventListener('click', (e) => {
     case 'buggy-connect': connectBuggy(); break;
     case 'buggy-mode': $('#toast').hidden = true; enterBuggyMode(); break;
     case 'buggy-mode-off': exitBuggyMode(); break;
+    case 'buggy-mode-yes': $('#after-round').hidden = true; enterBuggyMode(); break;
     case 'bm-undo': undoTap(); break;
     case 'bm-sun':
       try { localStorage.setItem('golfscore-buggy-sun', bmSun() ? '0' : '1'); } catch { /* alleen nu */ }
@@ -2019,7 +2037,8 @@ document.addEventListener('submit', (e) => {
 
 render();
 startPrompt();
-try { if (sessionStorage.getItem(BM_KEY) === '1' && buggyEnabled()) enterBuggyMode({ fullscreen: false }); } catch { /* geen opslag */ }
+try { if (sessionStorage.getItem(BM_KEY) === '1') enterBuggyMode({ fullscreen: false }); } catch { /* geen opslag */ }
+offerBuggyMode(); // app geopend terwijl de telefoon al dwars op de buggy zit
 initCloud();
 if (gpsOn()) startGps();
 
