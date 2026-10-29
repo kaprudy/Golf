@@ -5,6 +5,7 @@ import { queuePush, bgGet, bgDelete } from './bgsync.js';
 import { decideSync, mergeStates, toCloud, fromCloud } from './sync.js';
 import { API_URL } from './config.js';
 import { createBuggy, buggySupported } from './buggy.js';
+import { createWakeLock } from './wakelock.js';
 import { teeAt, toGreen, geoProgress, distanceM } from './gps.js';
 import { analysePlayer, handicapIndexFromDifferentials, scoreName } from './handicap.js';
 
@@ -128,6 +129,7 @@ function adjustScore(playerIndex, delta) {
   const h = state.round.currentHole;
   const cur = scoreOf(p.name, h);
   const next = cur == null ? (delta > 0 ? 1 : 0) : cur + delta;
+  lastTap = { name: p.name, hole: h, prev: cur, prevLive: isLive(p.name, h), at: Date.now() };
   setScore(p.name, h, next < 1 ? null : Math.min(20, next));
   setLive(p.name, h, next >= 1);
   save();
@@ -198,6 +200,7 @@ function onGpsError(err) {
 }
 
 function renderGps() {
+  renderBuggyDistance();
   const el = $('#gps-line');
   if (!el) return;
   el.hidden = !gpsOn();
@@ -353,6 +356,162 @@ function renderBuggy() {
 }
 
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') buggy.resume(); });
+
+// ---------- Buggystand ----------
+// De telefoon zelf als scherm op de buggy: liggend, scherm blijft aan, grote afstand tot de
+// green en grote knoppen om slagen te tellen. Voorlopig ook achter ?buggy=1.
+
+let bmOn = false;
+let lastTap = null; // laatste tik op + of −, om ongedaan te maken
+const BM_UNDO_MS = 8000;
+const BM_KEY = 'golfscore-buggy-mode';
+const wake = createWakeLock(() => renderBuggyStatus());
+const battery = { level: null, charging: false };
+const feedbackHome = { parent: null, next: null };
+
+const bmSun = () => { try { return localStorage.getItem('golfscore-buggy-sun') === '1'; } catch { return false; } };
+
+async function enterBuggyMode({ fullscreen = true } = {}) {
+  if (!bmOn) {
+    bmOn = true;
+    try { sessionStorage.setItem(BM_KEY, '1'); } catch { /* alleen nu */ }
+    document.body.classList.add('buggy-on');
+    $('#buggy-mode').hidden = false;
+    // Vragen en meldingen bij inspreken in de buggystand tonen.
+    const fb = $('#feedback');
+    Object.assign(feedbackHome, { parent: fb.parentNode, next: fb.nextSibling });
+    $('#bm-feedback-slot').append(fb);
+    if (!history.state?.buggy) history.pushState({ buggy: true }, ''); // terugknop sluit de buggystand
+    watchBattery();
+    wake.enable();
+    render();
+  }
+  if (fullscreen && document.documentElement.requestFullscreen && !document.fullscreenElement) {
+    try {
+      await document.documentElement.requestFullscreen({ navigationUI: 'hide' });
+      await screen.orientation?.lock?.('landscape');
+    } catch { /* niet toegestaan: gewoon in het venster */ }
+  }
+}
+
+function exitBuggyMode({ fromHistory = false } = {}) {
+  if (!bmOn) return;
+  bmOn = false;
+  try { sessionStorage.removeItem(BM_KEY); } catch { /* geen opslag */ }
+  document.body.classList.remove('buggy-on');
+  $('#buggy-mode').hidden = true;
+  feedbackHome.parent?.insertBefore($('#feedback'), feedbackHome.next);
+  wake.disable();
+  try { screen.orientation?.unlock?.(); } catch { /* niet vergrendeld */ }
+  if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  if (!fromHistory && history.state?.buggy) history.back();
+  render();
+}
+window.addEventListener('popstate', () => { if (bmOn) exitBuggyMode({ fromHistory: true }); });
+
+let batteryWatched = false;
+function watchBattery() {
+  if (batteryWatched || !navigator.getBattery) return;
+  batteryWatched = true;
+  navigator.getBattery().then((b) => {
+    const update = () => { Object.assign(battery, { level: Math.round(b.level * 100), charging: b.charging }); renderBuggyStatus(); };
+    b.addEventListener('levelchange', update);
+    b.addEventListener('chargingchange', update);
+    update();
+  }).catch(() => {});
+}
+
+function renderBuggyStatus() {
+  const el = $('#bm-status');
+  if (!el || !bmOn) return;
+  const parts = [];
+  if (battery.level != null) {
+    const low = battery.level <= 20 && !battery.charging;
+    parts.push(`<span class="${low ? 'warn' : ''}">${battery.charging ? '⚡' : 'Accu'} ${battery.level}%</span>`);
+  }
+  if (wake.failed) parts.push('<span class="warn">Scherm kan uitgaan</span>');
+  el.innerHTML = parts.join(' · ');
+}
+
+function renderBuggyMode() {
+  $('#bm-open').hidden = !buggyEnabled() || !state.players.length;
+  if (!bmOn) return;
+  const h = state.round.currentHole;
+  const tee = teeFor(state.players[0] ?? { tee: 'geel' });
+  const len = tee.lengths?.[h - 1];
+  $('#bm-hole').textContent = h;
+  $('#bm-meta').innerHTML = `<span>Par <b>${parOf(h)}</b></span><span>SI <b>${course().si[h - 1]}</b></span>${len ? `<span><b>${len}</b> m</span>` : ''}`;
+  $('#bm-players').innerHTML = state.players.map((p, i) => {
+    const s = scoreOf(p.name, h);
+    const { played, toPar } = playerTotals(p);
+    return `<div class="bm-row${isLive(p.name, h) ? ' counting' : ''}">
+      <div class="bm-name"><b>${esc(p.name)}</b><small>${played ? `Totaal <strong>${signed(toPar)}</strong> · ${played} ${played === 1 ? 'hole' : 'holes'}` : 'Nog geen holes'}</small></div>
+      <button class="bm-btn" data-action="minus" data-i="${i}" aria-label="${esc(p.name)}: één slag minder">−</button>
+      <span class="bm-score" aria-label="${s ?? 0} slagen">${s ?? '·'}</span>
+      <button class="bm-btn plus" data-action="plus" data-i="${i}" aria-label="${esc(p.name)}: één slag meer">+</button>
+    </div>`;
+  }).join('') || '<p class="bm-empty">Nog geen spelers. Sluit de buggystand en kies de spelers.</p>';
+  $('#bm-undo').hidden = !lastTap || Date.now() - lastTap.at > BM_UNDO_MS;
+  $('#buggy-mode').classList.toggle('sun', bmSun());
+  $('#bm-sun').setAttribute('aria-pressed', String(bmSun()));
+  renderBuggyStatus();
+  renderBuggyDistance();
+}
+
+// Apart van renderBuggyMode, want de GPS werkt dit elke paar seconden bij. Alleen vervangen
+// wat veranderd is, anders mist een tik op een knop die net opnieuw getekend wordt.
+function setHtml(el, html) { if (el._html !== html) { el.innerHTML = html; el._html = html; } }
+
+function renderBuggyDistance() {
+  if (!bmOn) return;
+  const h = state.round.currentHole;
+  let html;
+  if (!gpsSupported()) html = '<p class="bm-msg">Geen GPS beschikbaar in deze browser.</p>';
+  else if (!gpsOn()) html = '<p class="bm-sub">Afstand tot de green</p><button class="bm-chip" data-action="bm-gps-on">GPS aanzetten</button>';
+  else if (gps.error) html = `<p class="bm-msg">${esc(gps.error)}</p>`;
+  else if (!gps.pos) html = '<p class="bm-msg">GPS zoekt je positie…</p>';
+  else {
+    const dist = toGreen(gps.pos, geoOf(), h);
+    const acc = `GPS ±${Math.round(gps.pos.accuracy)} m`;
+    html = dist != null
+      ? `<div class="bm-num">${dist}<span>m</span></div><p class="bm-sub">tot het midden van de green, vanaf de buggy · ${acc}</p>`
+      : `<p class="bm-msg">Afstand voor hole ${h} is nog niet bekend.</p><p class="bm-sub">${acc}</p>`;
+  }
+  setHtml($('#bm-dist'), html);
+  setHtml($('#bm-suggest'), gps.suggest && gps.suggest !== h
+    ? `<button class="bm-chip" data-action="gps-go" data-hole="${gps.suggest}">Naar hole ${gps.suggest}</button>` : '');
+}
+
+function undoTap() {
+  if (!lastTap) return;
+  const { name, hole, prev, prevLive } = lastTap;
+  lastTap = null;
+  setScore(name, hole, prev);
+  if (hole === state.round.currentHole) setLive(name, hole, prevLive && prev != null);
+  save();
+  render();
+  toast('Ongedaan gemaakt', 2000);
+}
+
+// Hole wisselen door links of rechts te vegen over de afstand.
+{
+  let start = null;
+  const left = document.getElementById('bm-left');
+  left?.addEventListener('pointerdown', (e) => { start = { x: e.clientX, y: e.clientY }; });
+  left?.addEventListener('pointerup', (e) => {
+    if (!start) return;
+    const dx = e.clientX - start.x, dy = e.clientY - start.y;
+    start = null;
+    if (Math.abs(dx) > 70 && Math.abs(dy) < 50) moveHole(dx < 0 ? 1 : -1);
+  });
+}
+
+// Telefoon liggend tijdens een ronde: de buggystand voorstellen.
+matchMedia('(orientation: landscape) and (max-height: 540px)').addEventListener?.('change', (e) => {
+  if (e.matches && !bmOn && buggyEnabled() && state.players.length && $('#after-round').hidden) {
+    toast('Telefoon op de buggy?<button class="link" data-action="buggy-mode">Buggystand aan</button>', 8000);
+  }
+});
 
 // ---------- Cloud (eigen server, zie server/) ----------
 
@@ -1277,6 +1436,9 @@ function toggleMic() {
   recognition.onstart = () => {
     $('#mic').classList.add('listening');
     $('#mic-label').textContent = 'Luistert… (tik om te stoppen)';
+    $('#bm-mic').classList.add('listening');
+    $('#bm-mic-label').textContent = 'Luistert…';
+    $('#bm-live').textContent = '…';
     live.hidden = false;
     live.textContent = '…';
   };
@@ -1289,6 +1451,7 @@ function toggleMic() {
       else interim += res[0].transcript;
     }
     live.textContent = finals.map((f) => f[0]).join(' ') + interim;
+    $('#bm-live').textContent = `“${live.textContent}”`;
   };
   recognition.onerror = (e) => {
     if (e.error === 'not-allowed') showFeedback('<div class="feedback error">Geen toegang tot de microfoon. Sta dit toe in je browser.</div>');
@@ -1308,6 +1471,8 @@ function toggleMic() {
   recognition.onend = () => {
     $('#mic').classList.remove('listening');
     $('#mic-label').textContent = 'Druk en spreek in';
+    $('#bm-mic').classList.remove('listening');
+    $('#bm-mic-label').textContent = 'Inspreken';
     live.hidden = true;
     recognition = null;
     if (!finals.length) return;
@@ -1364,6 +1529,7 @@ function render() {
   renderCloud();
   renderLearning();
   renderBuggy();
+  renderBuggyMode();
   renderGps();
   renderGpsSettings();
 }
@@ -1589,8 +1755,17 @@ document.addEventListener('click', (e) => {
     case 'minus':
       adjustScore(Number(btn.dataset.i), btn.dataset.action === 'plus' ? 1 : -1);
       navigator.vibrate?.(btn.dataset.action === 'plus' ? 25 : [15, 40, 15]); // voelbaar zonder te kijken
+      if (bmOn) { clearTimeout(undoTap.timer); undoTap.timer = setTimeout(renderBuggyMode, BM_UNDO_MS + 50); }
       break;
     case 'buggy-connect': connectBuggy(); break;
+    case 'buggy-mode': $('#toast').hidden = true; enterBuggyMode(); break;
+    case 'buggy-mode-off': exitBuggyMode(); break;
+    case 'bm-undo': undoTap(); break;
+    case 'bm-sun':
+      try { localStorage.setItem('golfscore-buggy-sun', bmSun() ? '0' : '1'); } catch { /* alleen nu */ }
+      renderBuggyMode();
+      break;
+    case 'bm-gps-on': setGpsPref('golfscore-gps', true); startGps(); render(); break;
     case 'gps-mark': gps.editing = false; markPoint(btn.dataset.point); break;
     case 'gps-edit': gps.editing = true; renderGps(); break;
     case 'gps-go':
@@ -1823,6 +1998,7 @@ document.addEventListener('submit', (e) => {
 
 render();
 startPrompt();
+try { if (sessionStorage.getItem(BM_KEY) === '1' && buggyEnabled()) enterBuggyMode({ fullscreen: false }); } catch { /* geen opslag */ }
 initCloud();
 if (gpsOn()) startGps();
 

@@ -38,6 +38,7 @@
           <button class="nav-btn next" data-action="next-hole" aria-label="Volgende hole"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></button>
         </div>
         <div id="hole-meta" class="hole-meta"></div>
+        <button id="bm-open" class="chip-btn bm-open" data-action="buggy-mode" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M18 12h.01"></path></svg>Buggystand</button>
         <div id="gps-line" class="gps-line" aria-live="polite" hidden></div>
         <p id="next-hint" class="next-hint"></p>
       </section>
@@ -185,6 +186,32 @@
     <button data-tab="analyse"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M7 16v-5M12 16V6M17 16v-8"></path></svg><span>Analyse</span></button>
     <button data-tab="instellingen"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"></path><circle cx="16" cy="6" r="2"></circle><circle cx="10" cy="12" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg><span>Instellingen</span></button>
   </nav>
+
+  <!-- BUGGYSTAND: telefoon liggend op de buggy -->
+  <div id="buggy-mode" class="bm" role="dialog" aria-label="Buggystand" hidden>
+    <section id="bm-left" class="bm-left" aria-label="Hole en afstand">
+      <div class="bm-hole">
+        <button class="bm-nav" data-action="prev-hole" aria-label="Vorige hole"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></button>
+        <div class="bm-hole-num"><span class="bm-over">Hole</span><b id="bm-hole">1</b></div>
+        <button class="bm-nav" data-action="next-hole" aria-label="Volgende hole"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></button>
+      </div>
+      <div id="bm-meta" class="bm-meta"></div>
+      <div id="bm-dist" class="bm-dist" aria-live="polite"></div>
+      <div id="bm-suggest"></div>
+    </section>
+    <section class="bm-right" aria-label="Scores deze hole">
+      <div id="bm-players" class="bm-players"></div>
+      <div id="bm-feedback-slot" class="bm-feedback"></div>
+    </section>
+    <div class="bm-bar">
+      <button id="bm-mic" class="bm-mic" data-action="mic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0014 0M12 18v3"></path></svg><span id="bm-mic-label">Inspreken</span></button>
+      <span id="bm-live" class="bm-live" aria-live="polite"></span>
+      <button id="bm-undo" class="bm-tool" data-action="bm-undo" hidden>Ongedaan maken</button>
+      <span id="bm-status" class="bm-status"></span>
+      <button id="bm-sun" class="bm-tool" data-action="bm-sun" aria-pressed="false">Zonstand</button>
+      <button class="bm-tool" data-action="buggy-mode-off">Sluiten</button>
+    </div>
+  </div>
 
   <div id="toast" class="toast" hidden></div>
 
