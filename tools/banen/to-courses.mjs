@@ -47,6 +47,7 @@ const LABEL = {
   'the-links-valley-ermelo/0': 'North', 'the-links-valley-ermelo/1': 'South',
   'drentsche-golf-country-club-zeijerveen/3': 'Rood-Geel', 'drentsche-golf-country-club-zeijerveen/4': 'Wit-Rood',
   'drentsche-golf-country-club-zeijerveen/5': 'Geel-Wit', 'drentsche-golf-country-club-zeijerveen/6': 'Par 3-baan',
+  'golfvereniging-reymerswael-rilland/0': '', // 18 holes: id gelijk houden nu de 12- en 6-holeslus erbij staan
   'het-rijk-van-sybrook-enschede/0': 'Noord-Zuid', 'het-rijk-van-sybrook-enschede/1': 'Oost-Noord', 'het-rijk-van-sybrook-enschede/2': 'Zuid-Oost',
 };
 const COUNTRY = { DE: 'Duitsland' };
@@ -136,6 +137,8 @@ function convert(c, key, loop, ratingLoop, problems) {
     ...((n === 18 ? par : 2 * par) < 60 || tees.every((t) => t.ratingUnknown) ? { countsForIndex: false } : {}),
     location: c.gps?.lat ? { lat: round5(c.gps.lat), lon: round5(c.gps.lon) } : null,
     website: c.website ?? null,
+    // Baan die gaat sluiten (status uit de statuscontrole): de site en de app tonen de notitie.
+    ...(c.status === 'sluit' && c.status_note ? { closing: c.status_note } : {}),
     tees,
   };
 }

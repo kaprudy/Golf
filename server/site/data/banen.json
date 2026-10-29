@@ -3324,6 +3324,190 @@
   ]
  },
  {
+  "id": "golfplezier-twente-hoge-hexel-18-holes",
+  "name": "De Golfweide 18 holes",
+  "town": "Hoge Hexel",
+  "province": "Overijssel",
+  "url": "https://golf.kapital.nl/banen/golfplezier-twente-hoge-hexel-18-holes.html",
+  "website": "https://golfpleziertwente.nl",
+  "location": {
+   "lat": 52.40817,
+   "lon": 6.57135
+  },
+  "holes": 18,
+  "par": 54,
+  "pars": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "strokeIndex": [
+   9,
+   15,
+   5,
+   7,
+   17,
+   1,
+   3,
+   11,
+   13,
+   10,
+   2,
+   12,
+   14,
+   16,
+   8,
+   4,
+   6,
+   18
+  ],
+  "shortCourse": true,
+  "fromClubScorecard": false,
+  "tees": [
+   {
+    "name": "Standaard (heren)",
+    "gender": "h",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     71,
+     44,
+     55,
+     56,
+     49,
+     92,
+     69,
+     50,
+     69,
+     58,
+     55,
+     40,
+     34,
+     39,
+     65,
+     66,
+     58,
+     46
+    ]
+   },
+   {
+    "name": "Standaard (dames)",
+    "gender": "d",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     71,
+     44,
+     55,
+     56,
+     49,
+     92,
+     69,
+     50,
+     69,
+     58,
+     55,
+     40,
+     34,
+     39,
+     65,
+     66,
+     58,
+     46
+    ]
+   }
+  ]
+ },
+ {
+  "id": "golfplezier-twente-hoge-hexel-9-holes",
+  "name": "De Golfweide 9 holes",
+  "town": "Hoge Hexel",
+  "province": "Overijssel",
+  "url": "https://golf.kapital.nl/banen/golfplezier-twente-hoge-hexel-9-holes.html",
+  "website": "https://golfpleziertwente.nl",
+  "location": {
+   "lat": 52.40817,
+   "lon": 6.57135
+  },
+  "holes": 9,
+  "par": 27,
+  "pars": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "strokeIndex": [
+   4,
+   8,
+   2,
+   5,
+   3,
+   6,
+   7,
+   1,
+   9
+  ],
+  "shortCourse": true,
+  "fromClubScorecard": false,
+  "tees": [
+   {
+    "name": "Standaard (heren)",
+    "gender": "h",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     125,
+     56,
+     153,
+     69,
+     86,
+     77,
+     69,
+     124,
+     59
+    ]
+   },
+   {
+    "name": "Standaard (dames)",
+    "gender": "d",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     125,
+     56,
+     153,
+     69,
+     86,
+     77,
+     69,
+     124,
+     59
+    ]
+   }
+  ]
+ },
+ {
   "id": "hattemse-golf-country-club",
   "name": "De Hattemse Golf & Country Club",
   "town": "Hattem",
@@ -7371,7 +7555,7 @@
   "town": "Delft",
   "province": "Zuid-Holland",
   "url": "https://golf.kapital.nl/banen/dsv-concordia-golf-delft.html",
-  "website": null,
+  "website": "https://www.concordiadelft.nl",
   "location": {
    "lat": 52.03059,
    "lon": 4.37243
@@ -7401,7 +7585,7 @@
    4
   ],
   "shortCourse": true,
-  "fromClubScorecard": false,
+  "fromClubScorecard": true,
   "tees": [
    {
     "name": "Geel (heren)",
@@ -7414,7 +7598,7 @@
      135,
      70,
      104,
-     104,
+     129,
      112,
      69,
      133
@@ -7448,7 +7632,7 @@
      135,
      70,
      104,
-     104,
+     129,
      112,
      69,
      133
@@ -9533,6 +9717,116 @@
      355,
      101,
      223
+    ]
+   }
+  ]
+ },
+ {
+  "id": "golfclub-losdorp",
+  "name": "Golf & Country Makkeveld",
+  "town": "Losdorp",
+  "province": "Groningen",
+  "url": "https://golf.kapital.nl/banen/golfclub-losdorp.html",
+  "website": null,
+  "location": {
+   "lat": 53.37251,
+   "lon": 6.84215
+  },
+  "holes": 18,
+  "par": 54,
+  "pars": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "strokeIndex": [
+   17,
+   11,
+   13,
+   1,
+   5,
+   3,
+   9,
+   7,
+   15,
+   18,
+   12,
+   14,
+   2,
+   6,
+   4,
+   10,
+   8,
+   16
+  ],
+  "shortCourse": true,
+  "fromClubScorecard": false,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     58,
+     134,
+     56,
+     160,
+     120,
+     110,
+     66,
+     85,
+     80,
+     58,
+     134,
+     56,
+     160,
+     120,
+     110,
+     66,
+     85,
+     80
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     58,
+     134,
+     56,
+     160,
+     120,
+     110,
+     66,
+     85,
+     80,
+     58,
+     134,
+     56,
+     160,
+     120,
+     110,
+     66,
+     85,
+     80
     ]
    }
   ]
@@ -17521,116 +17815,6 @@
     "courseRating": 49.9,
     "slope": 69,
     "lengths": null
-   }
-  ]
- },
- {
-  "id": "golfbaan-de-achterste-hoef-bladel",
-  "name": "Golfbaan De Achterste Hoef",
-  "town": "Bladel",
-  "province": "Noord-Brabant",
-  "url": "https://golf.kapital.nl/banen/golfbaan-de-achterste-hoef-bladel.html",
-  "website": "https://www.achterstehoef.nl",
-  "location": {
-   "lat": 51.3434,
-   "lon": 5.22781
-  },
-  "holes": 18,
-  "par": 58,
-  "pars": [
-   3,
-   3,
-   3,
-   4,
-   4,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   4,
-   4,
-   3,
-   3,
-   3,
-   3
-  ],
-  "strokeIndex": [
-   17,
-   15,
-   5,
-   3,
-   1,
-   13,
-   11,
-   9,
-   7,
-   18,
-   16,
-   6,
-   4,
-   2,
-   14,
-   12,
-   10,
-   8
-  ],
-  "shortCourse": true,
-  "fromClubScorecard": false,
-  "tees": [
-   {
-    "name": "Geel (heren)",
-    "gender": "h",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     60,
-     97,
-     138,
-     230,
-     230,
-     88,
-     80,
-     95,
-     85,
-     60,
-     97,
-     138,
-     230,
-     250,
-     88,
-     80,
-     95,
-     85
-    ]
-   },
-   {
-    "name": "Geel (dames)",
-    "gender": "d",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     60,
-     97,
-     138,
-     230,
-     230,
-     88,
-     80,
-     95,
-     85,
-     60,
-     97,
-     138,
-     230,
-     250,
-     88,
-     80,
-     95,
-     85
-    ]
    }
   ]
  },
@@ -29843,6 +30027,80 @@
      232,
      102,
      59
+    ]
+   }
+  ]
+ },
+ {
+  "id": "golfbaan-oijense-zij-oss",
+  "name": "Golfbaan Oijense Zij",
+  "town": "Oss",
+  "province": "Noord-Brabant",
+  "url": "https://golf.kapital.nl/banen/golfbaan-oijense-zij-oss.html",
+  "website": "https://oijensezij.nl/",
+  "location": {
+   "lat": 51.78417,
+   "lon": 5.51824
+  },
+  "holes": 9,
+  "par": 27,
+  "pars": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "strokeIndex": [
+   9,
+   7,
+   2,
+   6,
+   3,
+   5,
+   8,
+   1,
+   4
+  ],
+  "shortCourse": true,
+  "fromClubScorecard": false,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     39,
+     70,
+     113,
+     63,
+     89,
+     83,
+     53,
+     131,
+     88
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     39,
+     70,
+     113,
+     63,
+     89,
+     83,
+     53,
+     131,
+     88
     ]
    }
   ]
@@ -44870,168 +45128,6 @@
   ]
  },
  {
-  "id": "gut-dueneburg-haren",
-  "name": "Golfclub Gut Düneburg",
-  "town": "Haren",
-  "province": "Duitsland",
-  "url": "https://golf.kapital.nl/banen/gut-dueneburg-haren.html",
-  "website": "https://www.golf-emsland.de/",
-  "location": {
-   "lat": 52.7792,
-   "lon": 7.2082
-  },
-  "holes": 18,
-  "par": 72,
-  "pars": [
-   4,
-   5,
-   4,
-   3,
-   5,
-   4,
-   4,
-   4,
-   3,
-   4,
-   4,
-   4,
-   5,
-   3,
-   5,
-   3,
-   4,
-   4
-  ],
-  "strokeIndex": [
-   15,
-   9,
-   5,
-   17,
-   11,
-   1,
-   7,
-   3,
-   13,
-   4,
-   8,
-   16,
-   18,
-   6,
-   10,
-   14,
-   12,
-   2
-  ],
-  "shortCourse": false,
-  "fromClubScorecard": false,
-  "tees": [
-   {
-    "name": "Wit (heren)",
-    "gender": "h",
-    "courseRating": 72.9,
-    "slope": 136,
-    "lengths": [
-     328,
-     467,
-     315,
-     139,
-     442,
-     357,
-     337,
-     270,
-     149,
-     376,
-     355,
-     346,
-     464,
-     190,
-     507,
-     154,
-     330,
-     333
-    ]
-   },
-   {
-    "name": "Geel (heren)",
-    "gender": "h",
-    "courseRating": 71.8,
-    "slope": 133,
-    "lengths": [
-     320,
-     455,
-     307,
-     121,
-     432,
-     350,
-     326,
-     258,
-     138,
-     369,
-     345,
-     316,
-     437,
-     173,
-     473,
-     146,
-     319,
-     323
-    ]
-   },
-   {
-    "name": "Blauw (dames)",
-    "gender": "d",
-    "courseRating": 73.6,
-    "slope": 130,
-    "lengths": [
-     263,
-     416,
-     275,
-     121,
-     389,
-     314,
-     297,
-     248,
-     134,
-     306,
-     289,
-     285,
-     371,
-     154,
-     414,
-     125,
-     270,
-     272
-    ]
-   },
-   {
-    "name": "Rood (dames)",
-    "gender": "d",
-    "courseRating": 72.6,
-    "slope": 128,
-    "lengths": [
-     255,
-     405,
-     267,
-     111,
-     381,
-     306,
-     290,
-     235,
-     123,
-     298,
-     284,
-     261,
-     371,
-     145,
-     387,
-     117,
-     262,
-     262
-    ]
-   }
-  ]
- },
- {
   "id": "golfclub-heelsum-airborne-helsum",
   "name": "Golfclub Heelsum Airborne-Helsum",
   "town": "Heelsum",
@@ -46369,116 +46465,6 @@
      75,
      77,
      80
-    ]
-   }
-  ]
- },
- {
-  "id": "golfclub-hoog-vaals",
-  "name": "Golfclub Hoog Vaals",
-  "town": "Vaals",
-  "province": "Limburg",
-  "url": "https://golf.kapital.nl/banen/golfclub-hoog-vaals.html",
-  "website": null,
-  "location": {
-   "lat": 50.76892,
-   "lon": 5.99976
-  },
-  "holes": 18,
-  "par": 58,
-  "pars": [
-   3,
-   4,
-   4,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   4,
-   4,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3
-  ],
-  "strokeIndex": [
-   7,
-   1,
-   3,
-   9,
-   13,
-   17,
-   15,
-   11,
-   5,
-   8,
-   2,
-   4,
-   10,
-   14,
-   18,
-   16,
-   12,
-   6
-  ],
-  "shortCourse": true,
-  "fromClubScorecard": false,
-  "tees": [
-   {
-    "name": "Standaard (heren)",
-    "gender": "h",
-    "courseRating": 54.1,
-    "slope": 91,
-    "lengths": [
-     93,
-     351,
-     340,
-     102,
-     110,
-     81,
-     91,
-     108,
-     132,
-     93,
-     351,
-     340,
-     102,
-     110,
-     81,
-     91,
-     108,
-     132
-    ]
-   },
-   {
-    "name": "Standaard (dames)",
-    "gender": "d",
-    "courseRating": 56.6,
-    "slope": 99,
-    "lengths": [
-     93,
-     320,
-     325,
-     102,
-     110,
-     81,
-     91,
-     108,
-     132,
-     93,
-     320,
-     325,
-     102,
-     110,
-     81,
-     91,
-     108,
-     132
     ]
    }
   ]
@@ -49005,116 +48991,6 @@
      313,
      301,
      307
-    ]
-   }
-  ]
- },
- {
-  "id": "golfclub-losdorp",
-  "name": "Golfclub Losdorp",
-  "town": "Losdorp",
-  "province": "Groningen",
-  "url": "https://golf.kapital.nl/banen/golfclub-losdorp.html",
-  "website": "https://restauranteemshaven.nl/",
-  "location": {
-   "lat": 53.37251,
-   "lon": 6.84215
-  },
-  "holes": 18,
-  "par": 54,
-  "pars": [
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3
-  ],
-  "strokeIndex": [
-   17,
-   11,
-   13,
-   1,
-   5,
-   3,
-   9,
-   7,
-   15,
-   18,
-   12,
-   14,
-   2,
-   6,
-   4,
-   10,
-   8,
-   16
-  ],
-  "shortCourse": true,
-  "fromClubScorecard": false,
-  "tees": [
-   {
-    "name": "Geel (heren)",
-    "gender": "h",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     58,
-     134,
-     56,
-     160,
-     120,
-     110,
-     66,
-     85,
-     80,
-     58,
-     134,
-     56,
-     160,
-     120,
-     110,
-     66,
-     85,
-     80
-    ]
-   },
-   {
-    "name": "Geel (dames)",
-    "gender": "d",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     58,
-     134,
-     56,
-     160,
-     120,
-     110,
-     66,
-     85,
-     80,
-     58,
-     134,
-     56,
-     160,
-     120,
-     110,
-     66,
-     85,
-     80
     ]
    }
   ]
@@ -59969,6 +59845,792 @@
   ]
  },
  {
+  "id": "international-golf-maastricht-championship-course",
+  "name": "Golfpark Maastricht International Championship Course",
+  "town": "Maastricht",
+  "province": "Limburg",
+  "url": "https://golf.kapital.nl/banen/international-golf-maastricht-championship-course.html",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/maastricht/",
+  "location": {
+   "lat": 50.85459,
+   "lon": 5.64394
+  },
+  "holes": 18,
+  "par": 72,
+  "pars": [
+   4,
+   4,
+   3,
+   4,
+   5,
+   3,
+   4,
+   4,
+   4,
+   3,
+   5,
+   3,
+   4,
+   4,
+   5,
+   4,
+   5,
+   4
+  ],
+  "strokeIndex": [
+   14,
+   2,
+   18,
+   8,
+   10,
+   16,
+   6,
+   12,
+   4,
+   15,
+   11,
+   13,
+   9,
+   1,
+   5,
+   17,
+   7,
+   3
+  ],
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Wit (heren)",
+    "gender": "h",
+    "courseRating": 72.5,
+    "slope": 134,
+    "lengths": [
+     307,
+     350,
+     117,
+     330,
+     500,
+     173,
+     338,
+     430,
+     326,
+     170,
+     441,
+     155,
+     375,
+     370,
+     475,
+     290,
+     460,
+     360
+    ]
+   },
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 70.6,
+    "slope": 129,
+    "lengths": [
+     293,
+     340,
+     109,
+     317,
+     472,
+     167,
+     318,
+     388,
+     308,
+     150,
+     413,
+     145,
+     360,
+     340,
+     455,
+     270,
+     421,
+     340
+    ]
+   },
+   {
+    "name": "Blauw (heren)",
+    "gender": "h",
+    "courseRating": 68,
+    "slope": 120,
+    "lengths": [
+     271,
+     310,
+     107,
+     285,
+     426,
+     151,
+     306,
+     388,
+     301,
+     130,
+     403,
+     137,
+     316,
+     330,
+     400,
+     185,
+     377,
+     299
+    ]
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 66.2,
+    "slope": 115,
+    "lengths": [
+     248,
+     300,
+     102,
+     271,
+     371,
+     145,
+     298,
+     354,
+     285,
+     110,
+     374,
+     125,
+     306,
+     330,
+     386,
+     175,
+     361,
+     280
+    ]
+   },
+   {
+    "name": "Oranje (heren)",
+    "gender": "h",
+    "courseRating": 64.2,
+    "slope": 109,
+    "lengths": [
+     223,
+     270,
+     102,
+     244,
+     335,
+     130,
+     268,
+     319,
+     256,
+     110,
+     337,
+     112,
+     269,
+     300,
+     347,
+     157,
+     319,
+     252
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 76.5,
+    "slope": 138,
+    "lengths": [
+     293,
+     340,
+     109,
+     317,
+     472,
+     167,
+     318,
+     388,
+     308,
+     150,
+     413,
+     145,
+     360,
+     340,
+     455,
+     270,
+     421,
+     340
+    ]
+   },
+   {
+    "name": "Blauw (dames)",
+    "gender": "d",
+    "courseRating": 73.4,
+    "slope": 131,
+    "lengths": [
+     271,
+     310,
+     107,
+     285,
+     426,
+     151,
+     306,
+     388,
+     301,
+     130,
+     403,
+     137,
+     316,
+     330,
+     400,
+     185,
+     377,
+     299
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 72,
+    "slope": 126,
+    "lengths": [
+     248,
+     300,
+     102,
+     271,
+     371,
+     145,
+     298,
+     354,
+     285,
+     110,
+     374,
+     125,
+     306,
+     330,
+     386,
+     175,
+     361,
+     280
+    ]
+   },
+   {
+    "name": "Oranje (dames)",
+    "gender": "d",
+    "courseRating": 68.6,
+    "slope": 120,
+    "lengths": [
+     223,
+     270,
+     102,
+     244,
+     335,
+     130,
+     268,
+     319,
+     256,
+     110,
+     337,
+     112,
+     269,
+     300,
+     347,
+     157,
+     319,
+     252
+    ]
+   }
+  ]
+ },
+ {
+  "id": "international-golf-maastricht-gele-lus",
+  "name": "Golfpark Maastricht International Gele lus",
+  "town": "Maastricht",
+  "province": "Limburg",
+  "url": "https://golf.kapital.nl/banen/international-golf-maastricht-gele-lus.html",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/maastricht/",
+  "location": {
+   "lat": 50.85459,
+   "lon": 5.64394
+  },
+  "holes": 9,
+  "par": 35,
+  "pars": [
+   4,
+   4,
+   3,
+   4,
+   5,
+   3,
+   4,
+   4,
+   4
+  ],
+  "strokeIndex": [
+   7,
+   1,
+   9,
+   4,
+   5,
+   8,
+   3,
+   6,
+   2
+  ],
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Wit (heren)",
+    "gender": "h",
+    "courseRating": 35.5,
+    "slope": 136,
+    "lengths": [
+     307,
+     350,
+     117,
+     330,
+     500,
+     173,
+     338,
+     430,
+     326
+    ]
+   },
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 34.8,
+    "slope": 128,
+    "lengths": [
+     293,
+     340,
+     109,
+     317,
+     472,
+     167,
+     318,
+     388,
+     308
+    ]
+   },
+   {
+    "name": "Blauw (heren)",
+    "gender": "h",
+    "courseRating": 34,
+    "slope": 118,
+    "lengths": [
+     271,
+     310,
+     107,
+     285,
+     426,
+     151,
+     306,
+     388,
+     301
+    ]
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 33.2,
+    "slope": 110,
+    "lengths": [
+     248,
+     300,
+     102,
+     271,
+     371,
+     145,
+     298,
+     354,
+     285
+    ]
+   },
+   {
+    "name": "Oranje (heren)",
+    "gender": "h",
+    "courseRating": 32.4,
+    "slope": 107,
+    "lengths": [
+     223,
+     270,
+     102,
+     244,
+     335,
+     130,
+     268,
+     319,
+     256
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 37.5,
+    "slope": 132,
+    "lengths": [
+     293,
+     340,
+     109,
+     317,
+     472,
+     167,
+     318,
+     388,
+     308
+    ]
+   },
+   {
+    "name": "Blauw (dames)",
+    "gender": "d",
+    "courseRating": 36.5,
+    "slope": 128,
+    "lengths": [
+     271,
+     310,
+     107,
+     285,
+     426,
+     151,
+     306,
+     388,
+     301
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 35.9,
+    "slope": 125,
+    "lengths": [
+     248,
+     300,
+     102,
+     271,
+     371,
+     145,
+     298,
+     354,
+     285
+    ]
+   },
+   {
+    "name": "Oranje (dames)",
+    "gender": "d",
+    "courseRating": 34.4,
+    "slope": 116,
+    "lengths": [
+     223,
+     270,
+     102,
+     244,
+     335,
+     130,
+     268,
+     319,
+     256
+    ]
+   }
+  ]
+ },
+ {
+  "id": "international-golf-maastricht-limburg-course",
+  "name": "Golfpark Maastricht International Limburg Course",
+  "town": "Maastricht",
+  "province": "Limburg",
+  "url": "https://golf.kapital.nl/banen/international-golf-maastricht-limburg-course.html",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/maastricht/",
+  "location": {
+   "lat": 50.85459,
+   "lon": 5.64394
+  },
+  "holes": 9,
+  "par": 35,
+  "pars": [
+   4,
+   4,
+   3,
+   4,
+   4,
+   4,
+   3,
+   4,
+   5
+  ],
+  "strokeIndex": [
+   3,
+   5,
+   7,
+   6,
+   1,
+   8,
+   9,
+   2,
+   4
+  ],
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     311,
+     310,
+     116,
+     225,
+     256,
+     242,
+     109,
+     235,
+     405
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     311,
+     310,
+     116,
+     225,
+     256,
+     242,
+     109,
+     235,
+     405
+    ]
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     291,
+     288,
+     116,
+     220,
+     195,
+     198,
+     93,
+     210,
+     378
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     291,
+     288,
+     116,
+     220,
+     195,
+     198,
+     93,
+     210,
+     378
+    ]
+   }
+  ]
+ },
+ {
+  "id": "international-golf-maastricht-rode-lus",
+  "name": "Golfpark Maastricht International Rode lus",
+  "town": "Maastricht",
+  "province": "Limburg",
+  "url": "https://golf.kapital.nl/banen/international-golf-maastricht-rode-lus.html",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/maastricht/",
+  "location": {
+   "lat": 50.85459,
+   "lon": 5.64394
+  },
+  "holes": 9,
+  "par": 37,
+  "pars": [
+   3,
+   5,
+   3,
+   4,
+   4,
+   5,
+   4,
+   5,
+   4
+  ],
+  "strokeIndex": [
+   8,
+   6,
+   7,
+   5,
+   1,
+   3,
+   9,
+   4,
+   2
+  ],
+  "shortCourse": false,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Wit (heren)",
+    "gender": "h",
+    "courseRating": 37,
+    "slope": 132,
+    "lengths": [
+     170,
+     441,
+     155,
+     375,
+     370,
+     475,
+     290,
+     460,
+     360
+    ]
+   },
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 35.8,
+    "slope": 131,
+    "lengths": [
+     150,
+     413,
+     145,
+     360,
+     340,
+     455,
+     270,
+     421,
+     340
+    ]
+   },
+   {
+    "name": "Blauw (heren)",
+    "gender": "h",
+    "courseRating": 34,
+    "slope": 123,
+    "lengths": [
+     130,
+     403,
+     137,
+     316,
+     330,
+     400,
+     185,
+     377,
+     299
+    ]
+   },
+   {
+    "name": "Rood (heren)",
+    "gender": "h",
+    "courseRating": 33.1,
+    "slope": 119,
+    "lengths": [
+     110,
+     374,
+     125,
+     306,
+     330,
+     386,
+     175,
+     361,
+     280
+    ]
+   },
+   {
+    "name": "Oranje (heren)",
+    "gender": "h",
+    "courseRating": 31.8,
+    "slope": 112,
+    "lengths": [
+     110,
+     337,
+     112,
+     269,
+     300,
+     347,
+     157,
+     319,
+     252
+    ]
+   },
+   {
+    "name": "Geel (dames)",
+    "gender": "d",
+    "courseRating": 39.1,
+    "slope": 144,
+    "lengths": [
+     150,
+     413,
+     145,
+     360,
+     340,
+     455,
+     270,
+     421,
+     340
+    ]
+   },
+   {
+    "name": "Blauw (dames)",
+    "gender": "d",
+    "courseRating": 36.9,
+    "slope": 134,
+    "lengths": [
+     130,
+     403,
+     137,
+     316,
+     330,
+     400,
+     185,
+     377,
+     299
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 36.2,
+    "slope": 127,
+    "lengths": [
+     110,
+     374,
+     125,
+     306,
+     330,
+     386,
+     175,
+     361,
+     280
+    ]
+   },
+   {
+    "name": "Oranje (dames)",
+    "gender": "d",
+    "courseRating": 34.3,
+    "slope": 123,
+    "lengths": [
+     110,
+     337,
+     112,
+     269,
+     300,
+     347,
+     157,
+     319,
+     252
+    ]
+   }
+  ]
+ },
+ {
   "id": "golfvereniging-reymerswael-rilland",
   "name": "Golfpark Reymerswael",
   "town": "Rilland",
@@ -62488,190 +63150,6 @@
      37,
      79,
      63
-    ]
-   }
-  ]
- },
- {
-  "id": "golfplezier-twente-hoge-hexel-18-holes",
-  "name": "Golfplezier Twente 18 holes",
-  "town": "Hoge Hexel",
-  "province": "Overijssel",
-  "url": "https://golf.kapital.nl/banen/golfplezier-twente-hoge-hexel-18-holes.html",
-  "website": "https://golfpleziertwente.nl",
-  "location": {
-   "lat": 52.40817,
-   "lon": 6.57135
-  },
-  "holes": 18,
-  "par": 54,
-  "pars": [
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3
-  ],
-  "strokeIndex": [
-   9,
-   15,
-   5,
-   7,
-   17,
-   1,
-   3,
-   11,
-   13,
-   10,
-   2,
-   12,
-   14,
-   16,
-   8,
-   4,
-   6,
-   18
-  ],
-  "shortCourse": true,
-  "fromClubScorecard": false,
-  "tees": [
-   {
-    "name": "Standaard (heren)",
-    "gender": "h",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     71,
-     44,
-     55,
-     56,
-     49,
-     92,
-     69,
-     50,
-     69,
-     58,
-     55,
-     40,
-     34,
-     39,
-     65,
-     66,
-     58,
-     46
-    ]
-   },
-   {
-    "name": "Standaard (dames)",
-    "gender": "d",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     71,
-     44,
-     55,
-     56,
-     49,
-     92,
-     69,
-     50,
-     69,
-     58,
-     55,
-     40,
-     34,
-     39,
-     65,
-     66,
-     58,
-     46
-    ]
-   }
-  ]
- },
- {
-  "id": "golfplezier-twente-hoge-hexel-9-holes",
-  "name": "Golfplezier Twente 9 holes",
-  "town": "Hoge Hexel",
-  "province": "Overijssel",
-  "url": "https://golf.kapital.nl/banen/golfplezier-twente-hoge-hexel-9-holes.html",
-  "website": "https://golfpleziertwente.nl",
-  "location": {
-   "lat": 52.40817,
-   "lon": 6.57135
-  },
-  "holes": 9,
-  "par": 27,
-  "pars": [
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3
-  ],
-  "strokeIndex": [
-   4,
-   8,
-   2,
-   5,
-   3,
-   6,
-   7,
-   1,
-   9
-  ],
-  "shortCourse": true,
-  "fromClubScorecard": false,
-  "tees": [
-   {
-    "name": "Standaard (heren)",
-    "gender": "h",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     125,
-     56,
-     153,
-     69,
-     86,
-     77,
-     69,
-     124,
-     59
-    ]
-   },
-   {
-    "name": "Standaard (dames)",
-    "gender": "d",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     125,
-     56,
-     153,
-     69,
-     86,
-     77,
-     69,
-     124,
-     59
     ]
    }
   ]
@@ -66264,239 +66742,6 @@
      48,
      35,
      47
-    ]
-   }
-  ]
- },
- {
-  "id": "international-golf-maastricht-championship-course",
-  "name": "International Golf Maastricht Championship Course",
-  "town": "Maastricht",
-  "province": "Limburg",
-  "url": "https://golf.kapital.nl/banen/international-golf-maastricht-championship-course.html",
-  "website": "https://www.internationalgolfmaastricht.com/",
-  "location": {
-   "lat": 50.85459,
-   "lon": 5.64394
-  },
-  "holes": 18,
-  "par": 72,
-  "pars": [
-   4,
-   4,
-   3,
-   4,
-   5,
-   3,
-   4,
-   4,
-   4,
-   3,
-   5,
-   3,
-   4,
-   4,
-   5,
-   4,
-   5,
-   4
-  ],
-  "strokeIndex": [
-   14,
-   2,
-   18,
-   8,
-   10,
-   16,
-   6,
-   12,
-   4,
-   15,
-   11,
-   13,
-   9,
-   1,
-   5,
-   17,
-   7,
-   3
-  ],
-  "shortCourse": false,
-  "fromClubScorecard": false,
-  "tees": [
-   {
-    "name": "Wit (heren)",
-    "gender": "h",
-    "courseRating": 72.5,
-    "slope": 134,
-    "lengths": null
-   },
-   {
-    "name": "Geel (heren)",
-    "gender": "h",
-    "courseRating": 70.6,
-    "slope": 129,
-    "lengths": null
-   },
-   {
-    "name": "Blauw (heren)",
-    "gender": "h",
-    "courseRating": 68,
-    "slope": 120,
-    "lengths": [
-     271,
-     310,
-     107,
-     285,
-     426,
-     151,
-     306,
-     388,
-     301,
-     130,
-     403,
-     137,
-     316,
-     330,
-     400,
-     185,
-     377,
-     299
-    ]
-   },
-   {
-    "name": "Rood (heren)",
-    "gender": "h",
-    "courseRating": 66.2,
-    "slope": 115,
-    "lengths": null
-   },
-   {
-    "name": "Oranje (heren)",
-    "gender": "h",
-    "courseRating": 64.2,
-    "slope": 109,
-    "lengths": null
-   },
-   {
-    "name": "Geel (dames)",
-    "gender": "d",
-    "courseRating": 76.5,
-    "slope": 138,
-    "lengths": null
-   },
-   {
-    "name": "Blauw (dames)",
-    "gender": "d",
-    "courseRating": 73.4,
-    "slope": 131,
-    "lengths": [
-     271,
-     310,
-     107,
-     285,
-     426,
-     151,
-     306,
-     388,
-     301,
-     130,
-     403,
-     137,
-     316,
-     330,
-     400,
-     185,
-     377,
-     299
-    ]
-   },
-   {
-    "name": "Rood (dames)",
-    "gender": "d",
-    "courseRating": 72,
-    "slope": 126,
-    "lengths": null
-   },
-   {
-    "name": "Oranje (dames)",
-    "gender": "d",
-    "courseRating": 68.6,
-    "slope": 120,
-    "lengths": null
-   }
-  ]
- },
- {
-  "id": "international-golf-maastricht-limburg-course",
-  "name": "International Golf Maastricht Limburg Course",
-  "town": "Maastricht",
-  "province": "Limburg",
-  "url": "https://golf.kapital.nl/banen/international-golf-maastricht-limburg-course.html",
-  "website": "https://www.internationalgolfmaastricht.com/",
-  "location": {
-   "lat": 50.85459,
-   "lon": 5.64394
-  },
-  "holes": 9,
-  "par": 35,
-  "pars": [
-   4,
-   4,
-   3,
-   4,
-   4,
-   4,
-   3,
-   4,
-   5
-  ],
-  "strokeIndex": [
-   3,
-   5,
-   7,
-   6,
-   1,
-   8,
-   9,
-   2,
-   4
-  ],
-  "shortCourse": false,
-  "fromClubScorecard": false,
-  "tees": [
-   {
-    "name": "Geel (heren)",
-    "gender": "h",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     311,
-     310,
-     116,
-     225,
-     256,
-     242,
-     109,
-     235,
-     387
-    ]
-   },
-   {
-    "name": "Geel (dames)",
-    "gender": "d",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     311,
-     310,
-     116,
-     225,
-     256,
-     242,
-     109,
-     235,
-     387
     ]
    }
   ]
@@ -71916,7 +72161,7 @@
   "town": "Ermelo",
   "province": "Gelderland",
   "url": "https://golf.kapital.nl/banen/pitch-putt-strand-horst-ermelo.html",
-  "website": null,
+  "website": "https://www.pitch-putt-strandhorst.nl",
   "location": {
    "lat": 52.30221,
    "lon": 5.55438
@@ -75254,6 +75499,80 @@
   ]
  },
  {
+  "id": "twentse-golf-academy-bentelo",
+  "name": "Short Golf Hof van Twente",
+  "town": "Bentelo",
+  "province": "Overijssel",
+  "url": "https://golf.kapital.nl/banen/twentse-golf-academy-bentelo.html",
+  "website": "https://twentsegolfacademy.nl",
+  "location": {
+   "lat": 52.2404,
+   "lon": 6.695
+  },
+  "holes": 9,
+  "par": 27,
+  "pars": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "strokeIndex": [
+   2,
+   4,
+   8,
+   7,
+   1,
+   6,
+   3,
+   5,
+   9
+  ],
+  "shortCourse": true,
+  "fromClubScorecard": false,
+  "tees": [
+   {
+    "name": "Standaard (heren)",
+    "gender": "h",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     95,
+     66,
+     43,
+     71,
+     113,
+     78,
+     61,
+     70,
+     34
+    ]
+   },
+   {
+    "name": "Standaard (dames)",
+    "gender": "d",
+    "courseRating": null,
+    "slope": null,
+    "lengths": [
+     95,
+     66,
+     43,
+     71,
+     113,
+     78,
+     61,
+     70,
+     34
+    ]
+   }
+  ]
+ },
+ {
   "id": "shortgolf-swifterbant",
   "name": "Shortgolf Swifterbant",
   "town": "Swifterbant",
@@ -75413,6 +75732,154 @@
     "courseRating": null,
     "slope": null,
     "lengths": null
+   }
+  ]
+ },
+ {
+  "id": "shortgolf-utrecht-nieuwegein-par-3",
+  "name": "ShortGolf Utrecht Par 3",
+  "town": "Nieuwegein",
+  "province": "Utrecht",
+  "url": "https://golf.kapital.nl/banen/shortgolf-utrecht-nieuwegein-par-3.html",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/",
+  "location": {
+   "lat": 52.05806,
+   "lon": 5.09257
+  },
+  "holes": 9,
+  "par": 27,
+  "pars": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "strokeIndex": [
+   4,
+   3,
+   8,
+   9,
+   5,
+   2,
+   1,
+   6,
+   7
+  ],
+  "shortCourse": true,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 23.9,
+    "slope": 65,
+    "lengths": [
+     58,
+     56,
+     56,
+     60,
+     92,
+     123,
+     118,
+     67,
+     75
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 24.6,
+    "slope": 68,
+    "lengths": [
+     58,
+     56,
+     56,
+     60,
+     92,
+     123,
+     118,
+     67,
+     75
+    ]
+   }
+  ]
+ },
+ {
+  "id": "shortgolf-utrecht-nieuwegein-par-3-4",
+  "name": "ShortGolf Utrecht Par 3|4",
+  "town": "Nieuwegein",
+  "province": "Utrecht",
+  "url": "https://golf.kapital.nl/banen/shortgolf-utrecht-nieuwegein-par-3-4.html",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/",
+  "location": {
+   "lat": 52.05806,
+   "lon": 5.09257
+  },
+  "holes": 9,
+  "par": 29,
+  "pars": [
+   4,
+   3,
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   3
+  ],
+  "strokeIndex": [
+   3,
+   4,
+   8,
+   9,
+   1,
+   5,
+   6,
+   7,
+   2
+  ],
+  "shortCourse": true,
+  "fromClubScorecard": true,
+  "tees": [
+   {
+    "name": "Geel (heren)",
+    "gender": "h",
+    "courseRating": 27.1,
+    "slope": 89,
+    "lengths": [
+     232,
+     97,
+     58,
+     45,
+     245,
+     93,
+     60,
+     88,
+     181
+    ]
+   },
+   {
+    "name": "Rood (dames)",
+    "gender": "d",
+    "courseRating": 28.3,
+    "slope": 89,
+    "lengths": [
+     232,
+     97,
+     58,
+     45,
+     245,
+     93,
+     60,
+     88,
+     181
+    ]
    }
   ]
  },
@@ -76616,80 +77083,6 @@
      203,
      174,
      334
-    ]
-   }
-  ]
- },
- {
-  "id": "twentse-golf-academy-bentelo",
-  "name": "Twentse Golf Academy",
-  "town": "Bentelo",
-  "province": "Overijssel",
-  "url": "https://golf.kapital.nl/banen/twentse-golf-academy-bentelo.html",
-  "website": "https://twentsegolfacademy.nl",
-  "location": {
-   "lat": 52.2404,
-   "lon": 6.695
-  },
-  "holes": 9,
-  "par": 27,
-  "pars": [
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3,
-   3
-  ],
-  "strokeIndex": [
-   2,
-   4,
-   8,
-   7,
-   1,
-   6,
-   3,
-   5,
-   9
-  ],
-  "shortCourse": true,
-  "fromClubScorecard": false,
-  "tees": [
-   {
-    "name": "Standaard (heren)",
-    "gender": "h",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     95,
-     66,
-     43,
-     71,
-     113,
-     78,
-     61,
-     70,
-     34
-    ]
-   },
-   {
-    "name": "Standaard (dames)",
-    "gender": "d",
-    "courseRating": null,
-    "slope": null,
-    "lengths": [
-     95,
-     66,
-     43,
-     71,
-     113,
-     78,
-     61,
-     70,
-     34
     ]
    }
   ]

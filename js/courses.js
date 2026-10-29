@@ -236,14 +236,14 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfplezier-twente-hoge-hexel-18-holes', province: 'Overijssel', town: 'Hoge Hexel', dataVersion: 1, name: 'Golfplezier Twente 18 holes (Hoge Hexel)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [9, 15, 5, 7, 17, 1, 3, 11, 13, 10, 2, 12, 14, 16, 8, 4, 6, 18], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.40817, lon: 6.57135 }, website: 'https://golfpleziertwente.nl',
+    id: 'golfplezier-twente-hoge-hexel-18-holes', province: 'Overijssel', town: 'Hoge Hexel', dataVersion: 1, name: 'De Golfweide 18 holes (Hoge Hexel)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [9, 15, 5, 7, 17, 1, 3, 11, 13, 10, 2, 12, 14, 16, 8, 4, 6, 18], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.40817, lon: 6.57135 }, website: 'https://golfpleziertwente.nl',
     tees: [
       { id: 'golfplezier-twente-hoge-hexel-18-holes-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [71, 44, 55, 56, 49, 92, 69, 50, 69, 58, 55, 40, 34, 39, 65, 66, 58, 46] },
       { id: 'golfplezier-twente-hoge-hexel-18-holes-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [71, 44, 55, 56, 49, 92, 69, 50, 69, 58, 55, 40, 34, 39, 65, 66, 58, 46] },
     ],
   },
   {
-    id: 'golfplezier-twente-hoge-hexel-9-holes', province: 'Overijssel', town: 'Hoge Hexel', dataVersion: 1, name: 'Golfplezier Twente 9 holes (Hoge Hexel)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [4, 8, 2, 5, 3, 6, 7, 1, 9], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.40817, lon: 6.57135 }, website: 'https://golfpleziertwente.nl',
+    id: 'golfplezier-twente-hoge-hexel-9-holes', province: 'Overijssel', town: 'Hoge Hexel', dataVersion: 1, name: 'De Golfweide 9 holes (Hoge Hexel)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [4, 8, 2, 5, 3, 6, 7, 1, 9], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.40817, lon: 6.57135 }, website: 'https://golfpleziertwente.nl',
     tees: [
       { id: 'golfplezier-twente-hoge-hexel-9-holes-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [125, 56, 153, 69, 86, 77, 69, 124, 59] },
       { id: 'golfplezier-twente-hoge-hexel-9-holes-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [125, 56, 153, 69, 86, 77, 69, 124, 59] },
@@ -317,7 +317,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'dutch-golf-hattem-grote-lus', province: 'Gelderland', town: 'Hattem', dataVersion: 1, name: 'Dutch Golf Hattem Grote lus', holeCount: 18, parTotal: 60, pars: [3, 3, 4, 4, 4, 3, 3, 3, 3, 3, 3, 4, 4, 4, 3, 3, 3, 3], si: [15, 9, 5, 3, 1, 11, 13, 17, 7, 16, 10, 6, 4, 2, 12, 14, 18, 8], confirmed: true, location: { lat: 52.45867, lon: 6.07199 }, website: 'https://www.dutchgolf.nl',
+    id: 'dutch-golf-hattem-grote-lus', province: 'Gelderland', town: 'Hattem', dataVersion: 1, name: 'Dutch Golf Hattem Grote lus', holeCount: 18, parTotal: 60, pars: [3, 3, 4, 4, 4, 3, 3, 3, 3, 3, 3, 4, 4, 4, 3, 3, 3, 3], si: [15, 9, 5, 3, 1, 11, 13, 17, 7, 16, 10, 6, 4, 2, 12, 14, 18, 8], confirmed: true, location: { lat: 52.45867, lon: 6.07199 }, website: 'https://www.dutchgolf.nl', closing: 'Sluit eind 2026 (eigenaar wil appartementen bouwen). Leden van de Hattemse willen de holes daarna nog gebruiken; onzeker (Geldersch Landschap & Kasteelen). Bron: golf.nl 29-9-2026.',
     tees: [
       { id: 'dutch-golf-hattem-grote-lus-geel-h', name: 'Geel (heren)', gender: 'h', rating: 55, slope: 91, rating9: null, slope9: null, lengths: [74, 85, 198, 270, 320, 92, 92, 75, 130, 74, 85, 198, 270, 320, 92, 92, 75, 130] },
       { id: 'dutch-golf-hattem-grote-lus-rood-h', name: 'Rood (heren)', gender: 'h', rating: 53.9, slope: 84, rating9: null, slope9: null, lengths: [74, 75, 198, 258, 275, 82, 92, 75, 112, 74, 75, 198, 258, 275, 82, 92, 75, 112] },
@@ -444,7 +444,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'twentse-golf-academy-bentelo', province: 'Overijssel', town: 'Bentelo', dataVersion: 1, name: 'Twentse Golf Academy (Bentelo)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [2, 4, 8, 7, 1, 6, 3, 5, 9], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.2404, lon: 6.695 }, website: 'https://twentsegolfacademy.nl',
+    id: 'twentse-golf-academy-bentelo', province: 'Overijssel', town: 'Bentelo', dataVersion: 1, name: 'Short Golf Hof van Twente (Bentelo)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [2, 4, 8, 7, 1, 6, 3, 5, 9], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.2404, lon: 6.695 }, website: 'https://twentsegolfacademy.nl',
     tees: [
       { id: 'twentse-golf-academy-bentelo-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [95, 66, 43, 71, 113, 78, 61, 70, 34] },
       { id: 'twentse-golf-academy-bentelo-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [95, 66, 43, 71, 113, 78, 61, 70, 34] },
@@ -730,15 +730,6 @@ export const DEFAULT_COURSES = [
       { id: 'openbare-golfclub-dronten-rood-d', name: 'Rood (dames)', gender: 'd', rating: 69.1, slope: 120, rating9: 34.5, slope9: 122, lengths: [337, 153, 250, 216, 98, 280, 249, 375, 254, 294, 153, 250, 247, 98, 280, 225, 416, 254], rating9Back: 34.6, slope9Back: 119 },
       { id: 'openbare-golfclub-dronten-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 62, slope: 95, rating9: 31.2, slope9: 96, lengths: [294, 105, 202, 153, 94, 222, 225, 305, 207, 219, 105, 202, 153, 94, 222, 225, 305, 207], rating9Back: 30.9, slope9Back: 94 },
       { id: 'openbare-golfclub-dronten-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 64.5, slope: 100, rating9: 32.4, slope9: 100, lengths: [294, 105, 202, 153, 94, 222, 225, 305, 207, 219, 105, 202, 153, 94, 222, 225, 305, 207], rating9Back: 32.1, slope9Back: 101 },
-    ],
-  },
-  {
-    id: 'gut-dueneburg-haren', province: 'Duitsland', town: 'Haren', dataVersion: 1, name: 'Golfclub Gut Düneburg (Haren)', holeCount: 18, parTotal: 72, pars: [4, 5, 4, 3, 5, 4, 4, 4, 3, 4, 4, 4, 5, 3, 5, 3, 4, 4], si: [15, 9, 5, 17, 11, 1, 7, 3, 13, 4, 8, 16, 18, 6, 10, 14, 12, 2], confirmed: false, fromSources: true, location: { lat: 52.7792, lon: 7.2082 }, website: 'https://www.golf-emsland.de/',
-    tees: [
-      { id: 'gut-dueneburg-haren-wit-h', name: 'Wit (heren)', gender: 'h', rating: 72.9, slope: 136, rating9: null, slope9: null, lengths: [328, 467, 315, 139, 442, 357, 337, 270, 149, 376, 355, 346, 464, 190, 507, 154, 330, 333] },
-      { id: 'gut-dueneburg-haren-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.8, slope: 133, rating9: null, slope9: null, lengths: [320, 455, 307, 121, 432, 350, 326, 258, 138, 369, 345, 316, 437, 173, 473, 146, 319, 323] },
-      { id: 'gut-dueneburg-haren-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 73.6, slope: 130, rating9: null, slope9: null, lengths: [263, 416, 275, 121, 389, 314, 297, 248, 134, 306, 289, 285, 371, 154, 414, 125, 270, 272] },
-      { id: 'gut-dueneburg-haren-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72.6, slope: 128, rating9: null, slope9: null, lengths: [255, 405, 267, 111, 381, 306, 290, 235, 123, 298, 284, 261, 371, 145, 387, 117, 262, 262] },
     ],
   },
   {
@@ -1047,7 +1038,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'pitch-putt-strand-horst-ermelo', province: 'Gelderland', town: 'Ermelo', dataVersion: 1, name: 'Pitch & Putt Golf Strand Horst (Ermelo)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [8, 18, 2, 12, 14, 4, 16, 10, 6, 7, 17, 1, 11, 13, 3, 15, 9, 5], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.30221, lon: 5.55438 }, website: null,
+    id: 'pitch-putt-strand-horst-ermelo', province: 'Gelderland', town: 'Ermelo', dataVersion: 1, name: 'Pitch & Putt Golf Strand Horst (Ermelo)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [8, 18, 2, 12, 14, 4, 16, 10, 6, 7, 17, 1, 11, 13, 3, 15, 9, 5], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.30221, lon: 5.55438 }, website: 'https://www.pitch-putt-strandhorst.nl',
     tees: [
       { id: 'pitch-putt-strand-horst-ermelo-wit-h', name: 'Wit (heren)', gender: 'h', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true },
       { id: 'pitch-putt-strand-horst-ermelo-wit-d', name: 'Wit (dames)', gender: 'd', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true },
@@ -1402,7 +1393,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfclub-losdorp', province: 'Groningen', town: 'Losdorp', dataVersion: 1, name: 'Golfclub Losdorp', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [17, 11, 13, 1, 5, 3, 9, 7, 15, 18, 12, 14, 2, 6, 4, 10, 8, 16], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 53.37251, lon: 6.84215 }, website: 'https://restauranteemshaven.nl/',
+    id: 'golfclub-losdorp', province: 'Groningen', town: 'Losdorp', dataVersion: 1, name: 'Golf & Country Makkeveld (Losdorp)', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [17, 11, 13, 1, 5, 3, 9, 7, 15, 18, 12, 14, 2, 6, 4, 10, 8, 16], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 53.37251, lon: 6.84215 }, website: null,
     tees: [
       { id: 'golfclub-losdorp-geel-h', name: 'Geel (heren)', gender: 'h', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [58, 134, 56, 160, 120, 110, 66, 85, 80, 58, 134, 56, 160, 120, 110, 66, 85, 80] },
       { id: 'golfclub-losdorp-geel-d', name: 'Geel (dames)', gender: 'd', rating: 54, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [58, 134, 56, 160, 120, 110, 66, 85, 80, 58, 134, 56, 160, 120, 110, 66, 85, 80] },
@@ -1611,7 +1602,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfpark-de-purmer-purmerend-gele-lus-rode-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer gele lus + rode lus (Purmerend)', holeCount: 18, parTotal: 71, pars: [4, 5, 3, 4, 4, 4, 3, 4, 5, 4, 4, 4, 3, 4, 3, 5, 3, 5], si: [11, 3, 13, 9, 17, 1, 15, 7, 5, 4, 14, 12, 18, 2, 10, 8, 16, 6], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/',
+    id: 'golfpark-de-purmer-purmerend-gele-lus-rode-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer gele lus + rode lus (Purmerend)', holeCount: 18, parTotal: 71, pars: [4, 5, 3, 4, 4, 4, 3, 4, 5, 4, 4, 4, 3, 4, 3, 5, 3, 5], si: [11, 3, 13, 9, 17, 1, 15, 7, 5, 4, 14, 12, 18, 2, 10, 8, 16, 6], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/', closing: 'Sluit na 31-12-2026 (woningbouw); golf.nl: "Geen golfbaan meer in Purmerend vanaf 2027".',
     tees: [
       { id: 'golfpark-de-purmer-purmerend-gele-lus-rode-lus-wit-h', name: 'Wit (heren)', gender: 'h', rating: 71.5, slope: 131, rating9: null, slope9: null, lengths: [254, 460, 147, 347, 274, 394, 126, 365, 530, 336, 278, 333, 139, 384, 163, 458, 163, 436] },
       { id: 'golfpark-de-purmer-purmerend-gele-lus-rode-lus-geel-h', name: 'Geel (heren)', gender: 'h', rating: 70.1, slope: 128, rating9: null, slope9: null, lengths: [245, 440, 139, 327, 251, 375, 124, 327, 500, 336, 266, 300, 131, 363, 154, 439, 149, 436] },
@@ -1623,7 +1614,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfpark-de-purmer-purmerend-gele-lus-witte-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer gele lus + witte lus (Purmerend)', holeCount: 18, parTotal: 72, pars: [4, 5, 3, 4, 4, 4, 3, 4, 5, 4, 4, 5, 4, 5, 4, 3, 4, 3], si: [11, 3, 13, 9, 17, 1, 15, 7, 5, 12, 14, 4, 18, 2, 10, 16, 6, 8], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/',
+    id: 'golfpark-de-purmer-purmerend-gele-lus-witte-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer gele lus + witte lus (Purmerend)', holeCount: 18, parTotal: 72, pars: [4, 5, 3, 4, 4, 4, 3, 4, 5, 4, 4, 5, 4, 5, 4, 3, 4, 3], si: [11, 3, 13, 9, 17, 1, 15, 7, 5, 12, 14, 4, 18, 2, 10, 16, 6, 8], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/', closing: 'Sluit na 31-12-2026 (woningbouw); golf.nl: "Geen golfbaan meer in Purmerend vanaf 2027".',
     tees: [
       { id: 'golfpark-de-purmer-purmerend-gele-lus-witte-lus-wit-h', name: 'Wit (heren)', gender: 'h', rating: 74, slope: 134, rating9: null, slope9: null, lengths: [254, 460, 147, 347, 274, 394, 126, 365, 530, 372, 343, 524, 308, 490, 401, 220, 343, 189] },
       { id: 'golfpark-de-purmer-purmerend-gele-lus-witte-lus-geel-h', name: 'Geel (heren)', gender: 'h', rating: 72.6, slope: 129, rating9: null, slope9: null, lengths: [245, 440, 139, 327, 251, 375, 124, 327, 500, 364, 318, 494, 288, 462, 368, 193, 332, 180] },
@@ -1635,7 +1626,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfpark-de-purmer-purmerend-witte-lus-rode-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer witte lus + rode lus (Purmerend)', holeCount: 18, parTotal: 71, pars: [4, 4, 5, 4, 5, 4, 3, 4, 3, 4, 4, 4, 3, 4, 3, 5, 3, 5], si: [11, 13, 3, 17, 1, 9, 15, 5, 7, 4, 14, 12, 18, 2, 10, 8, 16, 6], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/',
+    id: 'golfpark-de-purmer-purmerend-witte-lus-rode-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer witte lus + rode lus (Purmerend)', holeCount: 18, parTotal: 71, pars: [4, 4, 5, 4, 5, 4, 3, 4, 3, 4, 4, 4, 3, 4, 3, 5, 3, 5], si: [11, 13, 3, 17, 1, 9, 15, 5, 7, 4, 14, 12, 18, 2, 10, 8, 16, 6], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/', closing: 'Sluit na 31-12-2026 (woningbouw); golf.nl: "Geen golfbaan meer in Purmerend vanaf 2027".',
     tees: [
       { id: 'golfpark-de-purmer-purmerend-witte-lus-rode-lus-wit-h', name: 'Wit (heren)', gender: 'h', rating: 73.1, slope: 134, rating9: null, slope9: null, lengths: [372, 343, 524, 308, 490, 401, 220, 343, 189, 336, 278, 333, 139, 384, 163, 458, 163, 436] },
       { id: 'golfpark-de-purmer-purmerend-witte-lus-rode-lus-geel-h', name: 'Geel (heren)', gender: 'h', rating: 71.4, slope: 133, rating9: null, slope9: null, lengths: [364, 318, 494, 288, 462, 368, 193, 332, 180, 336, 266, 300, 131, 363, 154, 439, 149, 436] },
@@ -1647,7 +1638,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfpark-de-purmer-purmerend-rode-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer Rode lus (Purmerend)', holeCount: 9, parTotal: 35, pars: [4, 4, 4, 3, 4, 3, 5, 3, 5], si: [2, 7, 6, 9, 1, 5, 4, 8, 3], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/',
+    id: 'golfpark-de-purmer-purmerend-rode-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer Rode lus (Purmerend)', holeCount: 9, parTotal: 35, pars: [4, 4, 4, 3, 4, 3, 5, 3, 5], si: [2, 7, 6, 9, 1, 5, 4, 8, 3], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/', closing: 'Sluit na 31-12-2026 (woningbouw); golf.nl: "Geen golfbaan meer in Purmerend vanaf 2027".',
     tees: [
       { id: 'golfpark-de-purmer-purmerend-rode-lus-wit-h', name: 'Wit (heren)', gender: 'h', rating: 35.3, slope: 131, rating9: null, slope9: null, lengths: [336, 278, 333, 139, 384, 163, 458, 163, 436] },
       { id: 'golfpark-de-purmer-purmerend-rode-lus-geel-h', name: 'Geel (heren)', gender: 'h', rating: 34.5, slope: 132, rating9: null, slope9: null, lengths: [336, 266, 300, 131, 363, 154, 439, 149, 436] },
@@ -1659,7 +1650,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfpark-de-purmer-purmerend-witte-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer Witte lus (Purmerend)', holeCount: 9, parTotal: 36, pars: [4, 4, 5, 4, 5, 4, 3, 4, 3], si: [6, 7, 2, 9, 1, 5, 8, 3, 4], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/',
+    id: 'golfpark-de-purmer-purmerend-witte-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer Witte lus (Purmerend)', holeCount: 9, parTotal: 36, pars: [4, 4, 5, 4, 5, 4, 3, 4, 3], si: [6, 7, 2, 9, 1, 5, 8, 3, 4], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/', closing: 'Sluit na 31-12-2026 (woningbouw); golf.nl: "Geen golfbaan meer in Purmerend vanaf 2027".',
     tees: [
       { id: 'golfpark-de-purmer-purmerend-witte-lus-wit-h', name: 'Wit (heren)', gender: 'h', rating: 37.8, slope: 137, rating9: null, slope9: null, lengths: [372, 343, 524, 308, 490, 401, 220, 343, 189] },
       { id: 'golfpark-de-purmer-purmerend-witte-lus-geel-h', name: 'Geel (heren)', gender: 'h', rating: 37, slope: 135, rating9: null, slope9: null, lengths: [364, 318, 494, 288, 462, 368, 193, 332, 180] },
@@ -1671,7 +1662,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfpark-de-purmer-purmerend-gele-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer Gele lus (Purmerend)', holeCount: 9, parTotal: 36, pars: [4, 5, 3, 4, 4, 4, 3, 4, 5], si: [6, 2, 7, 5, 9, 1, 8, 4, 3], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/',
+    id: 'golfpark-de-purmer-purmerend-gele-lus', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer Gele lus (Purmerend)', holeCount: 9, parTotal: 36, pars: [4, 5, 3, 4, 4, 4, 3, 4, 5], si: [6, 2, 7, 5, 9, 1, 8, 4, 3], confirmed: true, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/', closing: 'Sluit na 31-12-2026 (woningbouw); golf.nl: "Geen golfbaan meer in Purmerend vanaf 2027".',
     tees: [
       { id: 'golfpark-de-purmer-purmerend-gele-lus-wit-h', name: 'Wit (heren)', gender: 'h', rating: 36.2, slope: 131, rating9: null, slope9: null, lengths: [254, 460, 147, 347, 274, 394, 126, 365, 530] },
       { id: 'golfpark-de-purmer-purmerend-gele-lus-geel-h', name: 'Geel (heren)', gender: 'h', rating: 35.6, slope: 124, rating9: null, slope9: null, lengths: [245, 440, 139, 327, 251, 375, 124, 327, 500] },
@@ -1683,7 +1674,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfpark-de-purmer-purmerend-shortgolf', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer Shortgolf (Purmerend)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [9, 5, 1, 6, 7, 4, 8, 2, 3], confirmed: true, countsForIndex: false, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/',
+    id: 'golfpark-de-purmer-purmerend-shortgolf', province: 'Noord-Holland', town: 'Purmerend', dataVersion: 1, name: 'Golfpark De Purmer Shortgolf (Purmerend)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [9, 5, 1, 6, 7, 4, 8, 2, 3], confirmed: true, countsForIndex: false, location: { lat: 52.50055, lon: 4.99351 }, website: 'https://www.hollandschegolfclub.nl/golfpark/de-purmer/', closing: 'Sluit na 31-12-2026 (woningbouw); golf.nl: "Geen golfbaan meer in Purmerend vanaf 2027".',
     tees: [
       { id: 'golfpark-de-purmer-purmerend-shortgolf-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 24.1, slope: 64, rating9: null, slope9: null, lengths: [54, 68, 93, 68, 57, 92, 73, 76, 132] },
       { id: 'golfpark-de-purmer-purmerend-shortgolf-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 24.8, slope: 65, rating9: null, slope9: null, lengths: [54, 68, 93, 68, 57, 92, 73, 76, 132] },
@@ -2093,6 +2084,27 @@ export const DEFAULT_COURSES = [
     tees: [
       { id: 'de-utrechtse-houten-par-3-baan-geel-h', name: 'Geel (heren)', gender: 'h', rating: 46.8, slope: 59, rating9: null, slope9: null },
       { id: 'de-utrechtse-houten-par-3-baan-rood-d', name: 'Rood (dames)', gender: 'd', rating: 48.1, slope: 61, rating9: null, slope9: null },
+    ],
+  },
+  {
+    id: 'shortgolf-utrecht-nieuwegein-par-3', province: 'Utrecht', town: 'Nieuwegein', dataVersion: 1, name: 'ShortGolf Utrecht Par 3 (Nieuwegein)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [4, 3, 8, 9, 5, 2, 1, 6, 7], confirmed: true, countsForIndex: false, location: { lat: 52.05806, lon: 5.09257 }, website: 'https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/',
+    tees: [
+      { id: 'shortgolf-utrecht-nieuwegein-par-3-geel-h', name: 'Geel (heren)', gender: 'h', rating: 23.9, slope: 65, rating9: null, slope9: null, lengths: [58, 56, 56, 60, 92, 123, 118, 67, 75] },
+      { id: 'shortgolf-utrecht-nieuwegein-par-3-rood-d', name: 'Rood (dames)', gender: 'd', rating: 24.6, slope: 68, rating9: null, slope9: null, lengths: [58, 56, 56, 60, 92, 123, 118, 67, 75] },
+    ],
+  },
+  {
+    id: 'shortgolf-utrecht-nieuwegein-par-3-4', province: 'Utrecht', town: 'Nieuwegein', dataVersion: 1, name: 'ShortGolf Utrecht Par 3|4 (Nieuwegein)', holeCount: 9, parTotal: 29, pars: [4, 3, 3, 3, 4, 3, 3, 3, 3], si: [3, 4, 8, 9, 1, 5, 6, 7, 2], confirmed: true, countsForIndex: false, location: { lat: 52.05806, lon: 5.09257 }, website: 'https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/',
+    tees: [
+      { id: 'shortgolf-utrecht-nieuwegein-par-3-4-geel-h', name: 'Geel (heren)', gender: 'h', rating: 27.1, slope: 89, rating9: null, slope9: null, lengths: [232, 97, 58, 45, 245, 93, 60, 88, 181] },
+      { id: 'shortgolf-utrecht-nieuwegein-par-3-4-rood-d', name: 'Rood (dames)', gender: 'd', rating: 28.3, slope: 89, rating9: null, slope9: null, lengths: [232, 97, 58, 45, 245, 93, 60, 88, 181] },
+    ],
+  },
+  {
+    id: 'golfbaan-oijense-zij-oss', province: 'Noord-Brabant', town: 'Oss', dataVersion: 1, name: 'Golfbaan Oijense Zij (Oss)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [9, 7, 2, 6, 3, 5, 8, 1, 4], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 51.78417, lon: 5.51824 }, website: 'https://oijensezij.nl/',
+    tees: [
+      { id: 'golfbaan-oijense-zij-oss-geel-h', name: 'Geel (heren)', gender: 'h', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [39, 70, 113, 63, 89, 83, 53, 131, 88] },
+      { id: 'golfbaan-oijense-zij-oss-geel-d', name: 'Geel (dames)', gender: 'd', rating: 27, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [39, 70, 113, 63, 89, 83, 53, 131, 88] },
     ],
   },
   {
@@ -3191,7 +3203,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfcentrum-eindhoven-18-holes', province: 'Noord-Brabant', town: 'Eindhoven', dataVersion: 1, name: 'Golfcentrum Eindhoven 18 holes', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [7, 15, 11, 5, 13, 17, 1, 3, 9, 8, 16, 12, 6, 14, 18, 2, 4, 10], confirmed: true, countsForIndex: false, location: { lat: 51.45613, lon: 5.49102 }, website: 'https://golfcentrumeindhoven.nl',
+    id: 'golfcentrum-eindhoven-18-holes', province: 'Noord-Brabant', town: 'Eindhoven', dataVersion: 1, name: 'Golfcentrum Eindhoven 18 holes', holeCount: 18, parTotal: 54, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], si: [7, 15, 11, 5, 13, 17, 1, 3, 9, 8, 16, 12, 6, 14, 18, 2, 4, 10], confirmed: true, countsForIndex: false, location: { lat: 51.45613, lon: 5.49102 }, website: 'https://golfcentrumeindhoven.nl', closing: 'Sluit per 31-12-2026: op Sportpark De Hondsheuvels komen 750 studentenwoningen (golf.nl/ED, maart 2026).',
     tees: [
       { id: 'golfcentrum-eindhoven-18-holes-geel-h', name: 'Geel (heren)', gender: 'h', rating: 47.2, slope: 57, rating9: null, slope9: null, lengths: [97, 62, 80, 106, 74, 49, 129, 113, 94, 97, 62, 80, 106, 74, 49, 129, 113, 94] },
       { id: 'golfcentrum-eindhoven-18-holes-rood-h', name: 'Rood (heren)', gender: 'h', rating: 46.3, slope: 55, rating9: null, slope9: null, lengths: [84, 56, 80, 94, 74, 49, 112, 101, 67, 84, 56, 80, 94, 74, 49, 112, 101, 67] },
@@ -3200,7 +3212,7 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfcentrum-eindhoven-9-holes', province: 'Noord-Brabant', town: 'Eindhoven', dataVersion: 1, name: 'Golfcentrum Eindhoven 9 holes', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [4, 8, 6, 3, 7, 9, 1, 2, 5], confirmed: true, countsForIndex: false, location: { lat: 51.45613, lon: 5.49102 }, website: 'https://golfcentrumeindhoven.nl',
+    id: 'golfcentrum-eindhoven-9-holes', province: 'Noord-Brabant', town: 'Eindhoven', dataVersion: 1, name: 'Golfcentrum Eindhoven 9 holes', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [4, 8, 6, 3, 7, 9, 1, 2, 5], confirmed: true, countsForIndex: false, location: { lat: 51.45613, lon: 5.49102 }, website: 'https://golfcentrumeindhoven.nl', closing: 'Sluit per 31-12-2026: op Sportpark De Hondsheuvels komen 750 studentenwoningen (golf.nl/ED, maart 2026).',
     tees: [
       { id: 'golfcentrum-eindhoven-9-holes-geel-h', name: 'Geel (heren)', gender: 'h', rating: 23.6, slope: 57, rating9: null, slope9: null, lengths: [97, 62, 80, 106, 74, 49, 129, 113, 94] },
       { id: 'golfcentrum-eindhoven-9-holes-rood-h', name: 'Rood (heren)', gender: 'h', rating: 23.2, slope: 55, rating9: null, slope9: null, lengths: [84, 56, 80, 94, 74, 49, 112, 101, 67] },
@@ -3798,11 +3810,11 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'dsv-concordia-golf-delft', province: 'Zuid-Holland', town: 'Delft', dataVersion: 1, name: 'DSV Concordia Golf (Delft)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [6, 1, 3, 9, 7, 2, 5, 8, 4], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 52.03059, lon: 4.37243 }, website: null,
+    id: 'dsv-concordia-golf-delft', province: 'Zuid-Holland', town: 'Delft', dataVersion: 1, name: 'DSV Concordia Golf (Delft)', holeCount: 9, parTotal: 27, pars: [3, 3, 3, 3, 3, 3, 3, 3, 3], si: [6, 1, 3, 9, 7, 2, 5, 8, 4], confirmed: true, countsForIndex: false, location: { lat: 52.03059, lon: 4.37243 }, website: 'https://www.concordiadelft.nl',
     tees: [
-      { id: 'dsv-concordia-golf-delft-geel-h', name: 'Geel (heren)', gender: 'h', rating: 25.6, slope: 84, rating9: null, slope9: null, lengths: [101, 138, 135, 70, 104, 104, 112, 69, 133] },
+      { id: 'dsv-concordia-golf-delft-geel-h', name: 'Geel (heren)', gender: 'h', rating: 25.6, slope: 84, rating9: null, slope9: null, lengths: [101, 138, 135, 70, 104, 129, 112, 69, 133] },
       { id: 'dsv-concordia-golf-delft-rood-h', name: 'Rood (heren)', gender: 'h', rating: 25.5, slope: 83, rating9: null, slope9: null, lengths: [101, 138, 135, 70, 104, 104, 112, 69, 133] },
-      { id: 'dsv-concordia-golf-delft-geel-d', name: 'Geel (dames)', gender: 'd', rating: 26.6, slope: 89, rating9: null, slope9: null, lengths: [101, 138, 135, 70, 104, 104, 112, 69, 133] },
+      { id: 'dsv-concordia-golf-delft-geel-d', name: 'Geel (dames)', gender: 'd', rating: 26.6, slope: 89, rating9: null, slope9: null, lengths: [101, 138, 135, 70, 104, 129, 112, 69, 133] },
       { id: 'dsv-concordia-golf-delft-rood-d', name: 'Rood (dames)', gender: 'd', rating: 26.5, slope: 88, rating9: null, slope9: null, lengths: [101, 138, 135, 70, 104, 104, 112, 69, 133] },
     ],
   },
@@ -4197,13 +4209,6 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'golfbaan-de-achterste-hoef-bladel', province: 'Noord-Brabant', town: 'Bladel', dataVersion: 1, name: 'Golfbaan De Achterste Hoef (Bladel)', holeCount: 18, parTotal: 58, pars: [3, 3, 3, 4, 4, 3, 3, 3, 3, 3, 3, 3, 4, 4, 3, 3, 3, 3], si: [17, 15, 5, 3, 1, 13, 11, 9, 7, 18, 16, 6, 4, 2, 14, 12, 10, 8], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 51.3434, lon: 5.22781 }, website: 'https://www.achterstehoef.nl',
-    tees: [
-      { id: 'golfbaan-de-achterste-hoef-bladel-geel-h', name: 'Geel (heren)', gender: 'h', rating: 58, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [60, 97, 138, 230, 230, 88, 80, 95, 85, 60, 97, 138, 230, 250, 88, 80, 95, 85] },
-      { id: 'golfbaan-de-achterste-hoef-bladel-geel-d', name: 'Geel (dames)', gender: 'd', rating: 58, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [60, 97, 138, 230, 230, 88, 80, 95, 85, 60, 97, 138, 230, 250, 88, 80, 95, 85] },
-    ],
-  },
-  {
     id: 'golfclub-broekpolder-vlaardingen', province: 'Zuid-Holland', town: 'Vlaardingen', dataVersion: 1, name: 'Golfclub Broekpolder (Vlaardingen)', holeCount: 18, parTotal: 72, pars: [5, 4, 4, 5, 3, 4, 4, 3, 4, 4, 4, 4, 3, 5, 4, 3, 4, 5], si: [14, 6, 12, 8, 10, 2, 4, 18, 16, 5, 7, 1, 15, 9, 3, 13, 17, 11], confirmed: true, location: { lat: 51.93648, lon: 4.31541 }, website: 'https://golfclubbroekpolder.nl',
     tees: [
       { id: 'golfclub-broekpolder-vlaardingen-wit-h', name: 'Wit (heren)', gender: 'h', rating: 74.4, slope: 139, rating9: null, slope9: null, lengths: [472, 423, 347, 530, 179, 382, 390, 154, 297, 433, 373, 378, 167, 495, 364, 154, 268, 495] },
@@ -4559,24 +4564,54 @@ export const DEFAULT_COURSES = [
     ],
   },
   {
-    id: 'international-golf-maastricht-championship-course', province: 'Limburg', town: 'Maastricht', dataVersion: 1, name: 'International Golf Maastricht Championship Course', holeCount: 18, parTotal: 72, pars: [4, 4, 3, 4, 5, 3, 4, 4, 4, 3, 5, 3, 4, 4, 5, 4, 5, 4], si: [14, 2, 18, 8, 10, 16, 6, 12, 4, 15, 11, 13, 9, 1, 5, 17, 7, 3], confirmed: false, fromSources: true, location: { lat: 50.85459, lon: 5.64394 }, website: 'https://www.internationalgolfmaastricht.com/',
+    id: 'international-golf-maastricht-championship-course', province: 'Limburg', town: 'Maastricht', dataVersion: 1, name: 'Golfpark Maastricht International Championship Course', holeCount: 18, parTotal: 72, pars: [4, 4, 3, 4, 5, 3, 4, 4, 4, 3, 5, 3, 4, 4, 5, 4, 5, 4], si: [14, 2, 18, 8, 10, 16, 6, 12, 4, 15, 11, 13, 9, 1, 5, 17, 7, 3], confirmed: true, location: { lat: 50.85459, lon: 5.64394 }, website: 'https://www.hollandschegolfclub.nl/golfpark/maastricht/',
     tees: [
-      { id: 'international-golf-maastricht-championship-course-wit-h', name: 'Wit (heren)', gender: 'h', rating: 72.5, slope: 134, rating9: null, slope9: null },
-      { id: 'international-golf-maastricht-championship-course-geel-h', name: 'Geel (heren)', gender: 'h', rating: 70.6, slope: 129, rating9: null, slope9: null },
+      { id: 'international-golf-maastricht-championship-course-wit-h', name: 'Wit (heren)', gender: 'h', rating: 72.5, slope: 134, rating9: null, slope9: null, lengths: [307, 350, 117, 330, 500, 173, 338, 430, 326, 170, 441, 155, 375, 370, 475, 290, 460, 360] },
+      { id: 'international-golf-maastricht-championship-course-geel-h', name: 'Geel (heren)', gender: 'h', rating: 70.6, slope: 129, rating9: null, slope9: null, lengths: [293, 340, 109, 317, 472, 167, 318, 388, 308, 150, 413, 145, 360, 340, 455, 270, 421, 340] },
       { id: 'international-golf-maastricht-championship-course-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 68, slope: 120, rating9: null, slope9: null, lengths: [271, 310, 107, 285, 426, 151, 306, 388, 301, 130, 403, 137, 316, 330, 400, 185, 377, 299] },
-      { id: 'international-golf-maastricht-championship-course-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.2, slope: 115, rating9: null, slope9: null },
-      { id: 'international-golf-maastricht-championship-course-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 64.2, slope: 109, rating9: null, slope9: null },
-      { id: 'international-golf-maastricht-championship-course-geel-d', name: 'Geel (dames)', gender: 'd', rating: 76.5, slope: 138, rating9: null, slope9: null },
+      { id: 'international-golf-maastricht-championship-course-rood-h', name: 'Rood (heren)', gender: 'h', rating: 66.2, slope: 115, rating9: null, slope9: null, lengths: [248, 300, 102, 271, 371, 145, 298, 354, 285, 110, 374, 125, 306, 330, 386, 175, 361, 280] },
+      { id: 'international-golf-maastricht-championship-course-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 64.2, slope: 109, rating9: null, slope9: null, lengths: [223, 270, 102, 244, 335, 130, 268, 319, 256, 110, 337, 112, 269, 300, 347, 157, 319, 252] },
+      { id: 'international-golf-maastricht-championship-course-geel-d', name: 'Geel (dames)', gender: 'd', rating: 76.5, slope: 138, rating9: null, slope9: null, lengths: [293, 340, 109, 317, 472, 167, 318, 388, 308, 150, 413, 145, 360, 340, 455, 270, 421, 340] },
       { id: 'international-golf-maastricht-championship-course-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 73.4, slope: 131, rating9: null, slope9: null, lengths: [271, 310, 107, 285, 426, 151, 306, 388, 301, 130, 403, 137, 316, 330, 400, 185, 377, 299] },
-      { id: 'international-golf-maastricht-championship-course-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72, slope: 126, rating9: null, slope9: null },
-      { id: 'international-golf-maastricht-championship-course-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 68.6, slope: 120, rating9: null, slope9: null },
+      { id: 'international-golf-maastricht-championship-course-rood-d', name: 'Rood (dames)', gender: 'd', rating: 72, slope: 126, rating9: null, slope9: null, lengths: [248, 300, 102, 271, 371, 145, 298, 354, 285, 110, 374, 125, 306, 330, 386, 175, 361, 280] },
+      { id: 'international-golf-maastricht-championship-course-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 68.6, slope: 120, rating9: null, slope9: null, lengths: [223, 270, 102, 244, 335, 130, 268, 319, 256, 110, 337, 112, 269, 300, 347, 157, 319, 252] },
     ],
   },
   {
-    id: 'international-golf-maastricht-limburg-course', province: 'Limburg', town: 'Maastricht', dataVersion: 1, name: 'International Golf Maastricht Limburg Course', holeCount: 9, parTotal: 35, pars: [4, 4, 3, 4, 4, 4, 3, 4, 5], si: [3, 5, 7, 6, 1, 8, 9, 2, 4], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 50.85459, lon: 5.64394 }, website: 'https://www.internationalgolfmaastricht.com/',
+    id: 'international-golf-maastricht-gele-lus', province: 'Limburg', town: 'Maastricht', dataVersion: 1, name: 'Golfpark Maastricht International Gele lus', holeCount: 9, parTotal: 35, pars: [4, 4, 3, 4, 5, 3, 4, 4, 4], si: [7, 1, 9, 4, 5, 8, 3, 6, 2], confirmed: true, location: { lat: 50.85459, lon: 5.64394 }, website: 'https://www.hollandschegolfclub.nl/golfpark/maastricht/',
     tees: [
-      { id: 'international-golf-maastricht-limburg-course-geel-h', name: 'Geel (heren)', gender: 'h', rating: 35, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [311, 310, 116, 225, 256, 242, 109, 235, 387] },
-      { id: 'international-golf-maastricht-limburg-course-geel-d', name: 'Geel (dames)', gender: 'd', rating: 35, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [311, 310, 116, 225, 256, 242, 109, 235, 387] },
+      { id: 'international-golf-maastricht-gele-lus-wit-h', name: 'Wit (heren)', gender: 'h', rating: 35.5, slope: 136, rating9: null, slope9: null, lengths: [307, 350, 117, 330, 500, 173, 338, 430, 326] },
+      { id: 'international-golf-maastricht-gele-lus-geel-h', name: 'Geel (heren)', gender: 'h', rating: 34.8, slope: 128, rating9: null, slope9: null, lengths: [293, 340, 109, 317, 472, 167, 318, 388, 308] },
+      { id: 'international-golf-maastricht-gele-lus-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 34, slope: 118, rating9: null, slope9: null, lengths: [271, 310, 107, 285, 426, 151, 306, 388, 301] },
+      { id: 'international-golf-maastricht-gele-lus-rood-h', name: 'Rood (heren)', gender: 'h', rating: 33.2, slope: 110, rating9: null, slope9: null, lengths: [248, 300, 102, 271, 371, 145, 298, 354, 285] },
+      { id: 'international-golf-maastricht-gele-lus-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 32.4, slope: 107, rating9: null, slope9: null, lengths: [223, 270, 102, 244, 335, 130, 268, 319, 256] },
+      { id: 'international-golf-maastricht-gele-lus-geel-d', name: 'Geel (dames)', gender: 'd', rating: 37.5, slope: 132, rating9: null, slope9: null, lengths: [293, 340, 109, 317, 472, 167, 318, 388, 308] },
+      { id: 'international-golf-maastricht-gele-lus-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 36.5, slope: 128, rating9: null, slope9: null, lengths: [271, 310, 107, 285, 426, 151, 306, 388, 301] },
+      { id: 'international-golf-maastricht-gele-lus-rood-d', name: 'Rood (dames)', gender: 'd', rating: 35.9, slope: 125, rating9: null, slope9: null, lengths: [248, 300, 102, 271, 371, 145, 298, 354, 285] },
+      { id: 'international-golf-maastricht-gele-lus-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 34.4, slope: 116, rating9: null, slope9: null, lengths: [223, 270, 102, 244, 335, 130, 268, 319, 256] },
+    ],
+  },
+  {
+    id: 'international-golf-maastricht-rode-lus', province: 'Limburg', town: 'Maastricht', dataVersion: 1, name: 'Golfpark Maastricht International Rode lus', holeCount: 9, parTotal: 37, pars: [3, 5, 3, 4, 4, 5, 4, 5, 4], si: [8, 6, 7, 5, 1, 3, 9, 4, 2], confirmed: true, location: { lat: 50.85459, lon: 5.64394 }, website: 'https://www.hollandschegolfclub.nl/golfpark/maastricht/',
+    tees: [
+      { id: 'international-golf-maastricht-rode-lus-wit-h', name: 'Wit (heren)', gender: 'h', rating: 37, slope: 132, rating9: null, slope9: null, lengths: [170, 441, 155, 375, 370, 475, 290, 460, 360] },
+      { id: 'international-golf-maastricht-rode-lus-geel-h', name: 'Geel (heren)', gender: 'h', rating: 35.8, slope: 131, rating9: null, slope9: null, lengths: [150, 413, 145, 360, 340, 455, 270, 421, 340] },
+      { id: 'international-golf-maastricht-rode-lus-blauw-h', name: 'Blauw (heren)', gender: 'h', rating: 34, slope: 123, rating9: null, slope9: null, lengths: [130, 403, 137, 316, 330, 400, 185, 377, 299] },
+      { id: 'international-golf-maastricht-rode-lus-rood-h', name: 'Rood (heren)', gender: 'h', rating: 33.1, slope: 119, rating9: null, slope9: null, lengths: [110, 374, 125, 306, 330, 386, 175, 361, 280] },
+      { id: 'international-golf-maastricht-rode-lus-oranje-h', name: 'Oranje (heren)', gender: 'h', rating: 31.8, slope: 112, rating9: null, slope9: null, lengths: [110, 337, 112, 269, 300, 347, 157, 319, 252] },
+      { id: 'international-golf-maastricht-rode-lus-geel-d', name: 'Geel (dames)', gender: 'd', rating: 39.1, slope: 144, rating9: null, slope9: null, lengths: [150, 413, 145, 360, 340, 455, 270, 421, 340] },
+      { id: 'international-golf-maastricht-rode-lus-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 36.9, slope: 134, rating9: null, slope9: null, lengths: [130, 403, 137, 316, 330, 400, 185, 377, 299] },
+      { id: 'international-golf-maastricht-rode-lus-rood-d', name: 'Rood (dames)', gender: 'd', rating: 36.2, slope: 127, rating9: null, slope9: null, lengths: [110, 374, 125, 306, 330, 386, 175, 361, 280] },
+      { id: 'international-golf-maastricht-rode-lus-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 34.3, slope: 123, rating9: null, slope9: null, lengths: [110, 337, 112, 269, 300, 347, 157, 319, 252] },
+    ],
+  },
+  {
+    id: 'international-golf-maastricht-limburg-course', province: 'Limburg', town: 'Maastricht', dataVersion: 1, name: 'Golfpark Maastricht International Limburg Course', holeCount: 9, parTotal: 35, pars: [4, 4, 3, 4, 4, 4, 3, 4, 5], si: [3, 5, 7, 6, 1, 8, 9, 2, 4], confirmed: true, countsForIndex: false, location: { lat: 50.85459, lon: 5.64394 }, website: 'https://www.hollandschegolfclub.nl/golfpark/maastricht/',
+    tees: [
+      { id: 'international-golf-maastricht-limburg-course-geel-h', name: 'Geel (heren)', gender: 'h', rating: 35, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [311, 310, 116, 225, 256, 242, 109, 235, 405] },
+      { id: 'international-golf-maastricht-limburg-course-geel-d', name: 'Geel (dames)', gender: 'd', rating: 35, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [311, 310, 116, 225, 256, 242, 109, 235, 405] },
+      { id: 'international-golf-maastricht-limburg-course-rood-h', name: 'Rood (heren)', gender: 'h', rating: 35, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [291, 288, 116, 220, 195, 198, 93, 210, 378] },
+      { id: 'international-golf-maastricht-limburg-course-rood-d', name: 'Rood (dames)', gender: 'd', rating: 35, slope: 113, rating9: null, slope9: null, ratingUnknown: true, lengths: [291, 288, 116, 220, 195, 198, 93, 210, 378] },
     ],
   },
   {
@@ -4605,13 +4640,6 @@ export const DEFAULT_COURSES = [
       { id: 'zuid-limburgse-golf-country-club-wittem-blauw-d', name: 'Blauw (dames)', gender: 'd', rating: 73.1, slope: 134, rating9: null, slope9: null, lengths: [354, 329, 124, 325, 159, 286, 437, 287, 393, 395, 158, 324, 316, 116, 300, 399, 130, 305] },
       { id: 'zuid-limburgse-golf-country-club-wittem-rood-d', name: 'Rood (dames)', gender: 'd', rating: 70.8, slope: 125, rating9: null, slope9: null, lengths: [328, 287, 102, 285, 135, 286, 392, 258, 393, 395, 134, 268, 316, 116, 255, 399, 111, 305] },
       { id: 'zuid-limburgse-golf-country-club-wittem-oranje-d', name: 'Oranje (dames)', gender: 'd', rating: 67.3, slope: 116, rating9: null, slope9: null, lengths: [287, 233, 102, 234, 106, 243, 342, 258, 273, 395, 134, 228, 316, 116, 224, 350, 111, 243] },
-    ],
-  },
-  {
-    id: 'golfclub-hoog-vaals', province: 'Limburg', town: 'Vaals', dataVersion: 1, name: 'Golfclub Hoog Vaals', holeCount: 18, parTotal: 58, pars: [3, 4, 4, 3, 3, 3, 3, 3, 3, 3, 4, 4, 3, 3, 3, 3, 3, 3], si: [7, 1, 3, 9, 13, 17, 15, 11, 5, 8, 2, 4, 10, 14, 18, 16, 12, 6], confirmed: false, fromSources: true, countsForIndex: false, location: { lat: 50.76892, lon: 5.99976 }, website: null,
-    tees: [
-      { id: 'golfclub-hoog-vaals-standaard-h', name: 'Standaard (heren)', gender: 'h', rating: 54.1, slope: 91, rating9: null, slope9: null, lengths: [93, 351, 340, 102, 110, 81, 91, 108, 132, 93, 351, 340, 102, 110, 81, 91, 108, 132] },
-      { id: 'golfclub-hoog-vaals-standaard-d', name: 'Standaard (dames)', gender: 'd', rating: 56.6, slope: 99, rating9: null, slope9: null, lengths: [93, 320, 325, 102, 110, 81, 91, 108, 132, 93, 320, 325, 102, 110, 81, 91, 108, 132] },
     ],
   },
   {

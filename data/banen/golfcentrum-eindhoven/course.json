@@ -411,5 +411,8 @@
     "https://golfcentrumeindhoven.nl/informatie/plattegrond-9-holes-baan/",
     "https://golfcentrumeindhoven.nl/contact/",
     "https://golfcentrumeindhoven.nl/"
-  ]
+  ],
+  "status": "sluit",
+  "status_note": "Sluit per 31-12-2026: op Sportpark De Hondsheuvels komen 750 studentenwoningen (golf.nl/ED, maart 2026).",
+  "status_checked": "2026-10-29"
 }

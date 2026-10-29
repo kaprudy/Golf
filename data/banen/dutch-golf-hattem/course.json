@@ -474,6 +474,10 @@
     "https://www.dutchgolf.nl/golfbaan/playing-hcp-tabel/",
     "https://www.dutchgolf.nl/golfbaan/",
     "https://www.dutchgolf.nl/golfbaan/greenfee/",
-    "https://golfkaart.com/api/kaart.json"
-  ]
+    "https://golfkaart.com/api/kaart.json",
+    "https://www.golf.nl/nieuws/2026/sep/2909-stentor-dutch-golf-hattem"
+  ],
+  "status": "sluit",
+  "status_note": "Sluit eind 2026 (eigenaar wil appartementen bouwen). Leden van de Hattemse willen de holes daarna nog gebruiken; onzeker (Geldersch Landschap & Kasteelen). Bron: golf.nl 29-9-2026.",
+  "status_checked": "2026-10-29"
 }

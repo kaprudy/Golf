@@ -869,7 +869,7 @@ function showCoursePicker() {
   const holesText = (c) => (/holes/.test(c.name) ? '' : c.id === 'par3' ? '9 holes' : `${c.holeCount} holes`);
   const heading = (c, dist) => `<button class="course-row" data-action="pick-course" data-course="${esc(c.id)}">
     <span class="course-row-name">${c === home ? '★ ' : ''}${esc(c.name)}</span>
-    <span class="course-row-meta">${[holesText(c), dist].filter(Boolean).join(' · ')}</span></button>`;
+    <span class="course-row-meta">${[holesText(c), dist, (c.closing ?? DEFAULT_COURSES.find((d) => d.id === c.id)?.closing) ? 'gaat sluiten' : ''].filter(Boolean).join(' · ')}</span></button>`;
   const kmText = (c) => (Number.isFinite(km(c, from)) ? `${Math.round(km(c, from))} km` : '');
   const locate = !pickerPos && 'geolocation' in navigator
     ? '<button class="link small" data-action="picker-locate">📍 Zoek baan met GPS</button>' : '';

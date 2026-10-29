@@ -17,8 +17,8 @@
     "source": "golfkaart; OSM reverse geocode geeft 'Pitch&Putt Golf Strand Horst' op deze positie"
   },
   "phone": "+31 341 552 431",
-  "email": null,
-  "website": null,
+  "email": "info@pitch-putt-strandhorst.nl",
+  "website": "https://www.pitch-putt-strandhorst.nl",
   "booking_url": null,
   "founded": null,
   "architect": null,
@@ -220,7 +220,12 @@
   "sources": [
     "https://www.golfpass.com/courses/36544-pitch-putt-strand-horst/scorecard-and-layout",
     "https://fippa.org/courses/strand_horst",
-    "https://www.leadingcourses.com/clubs/europe+the-netherlands+gelderland/pitch-putt-golf-strand-horst"
+    "https://www.leadingcourses.com/clubs/europe+the-netherlands+gelderland/pitch-putt-golf-strand-horst",
+    "https://www.pitch-putt-strandhorst.nl",
+    "https://www.ppbn.nl"
   ],
-  "distance_km_from_dedemsvaart": 69.7
+  "distance_km_from_dedemsvaart": 69.7,
+  "status": "open",
+  "status_note": "Open; eigen site pitch-putt-strandhorst.nl, PPBN-toernooi op 21-11-2026.",
+  "status_checked": "2026-10-29"
 }

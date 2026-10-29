@@ -1,12 +1,12 @@
 {
   "slug": "golfclub-losdorp",
-  "name": "Golfclub Losdorp",
-  "club_name": "Golf & Country Losdorp (bij Restaurant Eemshaven)",
+  "name": "Golf & Country Makkeveld (voorheen Golfclub Losdorp)",
+  "club_name": "Golf & Country Makkeveld",
   "holes_total": 9,
   "course_type": "par-3",
   "address": {
     "street": "Schafferweg 29",
-    "postal_code": "9907 TA",
+    "postal_code": "9909 TA",
     "city": "Losdorp",
     "province": "Groningen",
     "country": "NL"
@@ -17,9 +17,9 @@
     "source": "Google Maps-link op restauranteemshaven.nl (Schafferweg 29)"
   },
   "distance_km_from_dedemsvaart": 89.6,
-  "phone": "0596 591408",
+  "phone": "+31 596 591 408",
   "email": null,
-  "website": "https://restauranteemshaven.nl/",
+  "website": null,
   "booking_url": null,
   "founded": null,
   "architect": null,
@@ -227,6 +227,11 @@
     "https://www.hole19golf.com/courses/golfclub-losdorp",
     "https://restauranteemshaven.nl/",
     "https://golfkaart.com/losdorp/golf-country-losdorp",
-    "https://golfkaart.com/api/kaart.json"
-  ]
+    "https://golfkaart.com/api/kaart.json",
+    "https://golfvandaag.nl",
+    "https://www.golfpass.com"
+  ],
+  "status": "open",
+  "status_note": "Open; heet nu Golf & Country Makkeveld (voorheen Golfclub Losdorp). 9 holes par 27, CR 25,8 / slope 56 (GolfPass).",
+  "status_checked": "2026-10-29"
 }

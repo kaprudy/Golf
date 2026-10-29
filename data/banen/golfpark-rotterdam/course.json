@@ -270,6 +270,10 @@
   "sources": [
     "https://www.hollandschegolfclub.nl/golfpark/rotterdam/",
     "https://www.hollandschegolfclub.nl/golfpark/rotterdam/course/rotterdam-18-holes/",
-    "https://www.hollandschegolfclub.nl/golfpark/rotterdam/course/rotterdam-9-holes/"
-  ]
+    "https://www.hollandschegolfclub.nl/golfpark/rotterdam/course/rotterdam-9-holes/",
+    "https://www.hollandschegolfclub.nl"
+  ],
+  "status": "open",
+  "status_note": "Open: par 3/4-baan sinds 2025, tweede (rode) 9-holeslus geopend 9-9-2026 (HGC).",
+  "status_checked": "2026-10-29"
 }

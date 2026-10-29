@@ -1,0 +1,158 @@
+{
+  "slug": "golfbaan-oijense-zij-oss",
+  "name": "Golfbaan Oijense Zij",
+  "club_name": "Golfbaan Oijense Zij (Stichting Golfbaan Oss)",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Oijenseweg 272",
+    "postal_code": "5346 JG",
+    "city": "Oss",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.7841695,
+    "lon": 5.5182443,
+    "source": "nominatim (Oijenseweg 272, Oss)"
+  },
+  "distance_km_from_dedemsvaart": 111.2,
+  "phone": "0412 690 217",
+  "email": "info@oijensezij.nl",
+  "website": "https://oijensezij.nl/",
+  "booking_url": "https://golfbaanoss.teetime.e-golf4u.nl/app/booking",
+  "founded": 2004,
+  "architect": "Gerard Jol (volgens golfpass.com)",
+  "landscape": "vlak, open polderterrein aan de rand van Oss met enkele vijvers en bunkers",
+  "facilities": [
+    "driving range",
+    "oefengreen",
+    "clubhuis met terras",
+    "golfshop",
+    "golfles (PGA-professionals)",
+    "GVB-cursus"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfbaan Oijense Zij is een compacte 9-holes par-3-baan aan de oostkant van Oss. De holes zijn kort (samen 729 meter), maar waterpartijen en bunkers rond de goed onderhouden greens vragen om precisie. De baan is laagdrempelig en richt zich op zowel beginners als ervaren golfers, met een driving range, golfshop en clubhuis met terras.",
+  "loops": [
+    {
+      "name": "9 holes par 3",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 729,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 39
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 70
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 113
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 63
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 89
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 83
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 53
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 131
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 88
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/golfbaan-oijense-zij-oss",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/hole19-oijense-zij.html",
+      "scorecard/golfpass-oijense-zij.html",
+      "scorecard/Oijense-Zij-Golfbaan-Layout.png"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-29",
+    "complete": true,
+    "notes": "De clubsite (oijensezij.nl) noemt alleen 9 par-3-holes met samen 729 m en toont een baanplattegrond zonder afstanden (Oijense-Zij-Golfbaan-Layout.png); er is geen scorekaart gepubliceerd. Par, S.I. en lengtes per hole komen van hole19golf.com: Hole19 zet 'yds' bij de lengtes, maar de som (729) is gelijk aan de 729 meter op de clubsite, dus als meters overgenomen. Teekleur geel volgens golfpass.com (Yellow, par 27, 729 m, geen CR/slope); jaar 2004 en architect Gerard Jol ook van golfpass.com. Geen course rating/slope gevonden. Volgens de opdrachtgever heeft de baan NGF D-status. Baanstatus open bevestigd op 29-10-2026 (op maandagen in de winterperiode gesloten)."
+  },
+  "sources": [
+    "https://oijensezij.nl/",
+    "https://oijensezij.nl/contact/",
+    "https://www.hole19golf.com/courses/golfbaan-oijense-zij-oss",
+    "https://www.golfpass.com/courses/40088-oijense-zij-golf-course/scorecard-and-layout"
+  ]
+}

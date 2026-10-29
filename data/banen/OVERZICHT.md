@@ -9,7 +9,7 @@ Gegenereerd door `tools/banen/build_course_index.py` uit `data/banen/<slug>/cour
 | 3 | [Pitch & Putt Lemele (De Kleine Esch)](#pitch-putt-lemele) | Lemele | 16.7 | 18 | deels |
 | 4 | [Golfbaan Martensplek](#martensplek-tiendeveen) | Tiendeveen | 19.2 | 18 | compleet |
 | 5 | [Pitch & Putt Martensplek](#pitch-putt-martensplek-tiendeveen) | Tiendeveen | 19.2 | 9 | deels |
-| 6 | [Golfplezier Twente](#golfplezier-twente-hoge-hexel) | Hoge Hexel | 22.7 | 18 | deels |
+| 6 | [De Golfweide (voorheen Golfplezier Twente)](#golfplezier-twente-hoge-hexel) | Hoge Hexel | 22.7 | 18 | deels |
 | 7 | [Golfclub Zwolle](#golfclub-zwolle) | Zwolle | 24.2 | 18 | compleet |
 | 8 | [Golf Club Havelte](#golfclub-havelte) | Havelte | 24.4 | 18 | compleet |
 | 9 | [Golftuin Zwolle](#golftuin-zwolle) | Zwolle (Hoog Zuthem/Windesheim) | 27.1 | 9 | deels |
@@ -30,7 +30,7 @@ Gegenereerd door `tools/banen/build_course_index.py` uit `data/banen/<slug>/cour
 | 24 | [Country Golf Ees](#countrygolf-ees) | Ees | 41.5 | 18 | compleet |
 | 25 | [Golfpark Exloo](#golfpark-exloo) | Exloo | 41.7 | 18 | compleet |
 | 26 | [Golfbaan De Lage Mors](#de-lage-mors-delden) | Delden | 42.5 | 9 | compleet |
-| 27 | [Twentse Golf Academy](#twentse-golf-academy-bentelo) | Bentelo | 43.1 | 9 | compleet |
+| 27 | [Short Golf Hof van Twente (voorheen Twentse Golf Academy)](#twentse-golf-academy-bentelo) | Bentelo | 43.1 | 9 | compleet |
 | 28 | [Pitch & Putt Twente](#pitch-putt-twente-diepenheim) | Diepenheim | 45.7 | 18 | deels |
 | 29 | [Golfclub Driene](#golfclub-driene-hengelo) | Hengelo | 46.1 | 9 | compleet |
 | 30 | [Golf & Country Club 't Kruisselt](#t-kruisselt-de-lutte) | De Lutte | 46.5 | 9 | deels |
@@ -47,207 +47,207 @@ Gegenereerd door `tools/banen/build_course_index.py` uit `data/banen/<slug>/cour
 | 41 | [Lochemse Golf & Country Club De Graafschap](#lochemse-de-graafschap-lochem) | Lochem | 51.8 | 18 | compleet |
 | 42 | [Golf Residentie Dronten](#golf-residentie-dronten) | Dronten | 51.9 | 18 | compleet |
 | 43 | [Openbare Golfclub Dronten](#openbare-golfclub-dronten) | Dronten | 52.0 | 9 | compleet |
-| 44 | [Golfclub Gut Düneburg](#gut-dueneburg-haren) | Haren (Ems) | 54.2 | 18 | compleet |
-| 45 | [Twentse Golf Park](#twentse-golf-park-haaksbergen) | Haaksbergen | 54.4 | 9 | deels |
-| 46 | [Golfclub Emstal](#emstal-lingen) | Lingen (Ems) | 55.4 | 18 | compleet |
-| 47 | [Shortgolf Swifterbant](#shortgolf-swifterbant) | Swifterbant | 56.3 | 18 | deels |
-| 48 | [Golf & Country Club Lauswolt](#golf-country-club-lauswolt) | Beetsterzwaag | 56.7 | 18 | compleet |
-| 49 | [Golfbaan Dorhout Mees](#golfbaan-dorhout-mees) | Biddinghuizen | 57.0 | 9 | deels |
-| 50 | [Veluwse Golfclub](#veluwse-golfclub-hoog-soeren) | Hoog Soeren | 58.4 | 9 | compleet |
-| 51 | [Golfclub De Scherpenbergh](#de-scherpenbergh-lieren) | Lieren | 58.5 | 27 | compleet |
-| 52 | [Noord-Nederlandse Golf & Country Club](#noord-nederlandse-glimmen) | Glimmen | 59.0 | 18 | compleet |
-| 53 | [Golfclub Euregio Bad Bentheim](#euregio-bad-bentheim) | Bad Bentheim | 59.3 | 18 | compleet |
-| 54 | [Golfclub Holthuizen](#holthuizen-roden) | Roden | 60.4 | 9 | compleet |
-| 55 | [Golfbaan Kasteel Engelenburg](#kasteel-engelenburg-brummen) | Brummen | 60.9 | 9 | compleet |
-| 56 | [Golfclub 't Zelle](#t-zelle-hengelo-gld) | Hengelo (Gld) | 60.9 | 27 | compleet |
-| 57 | [Landgoed Ullerberg (golfbaan)](#ullerberg-ermelo) | Leuvenum (Ermelo) | 61.0 | 9 | deels |
-| 58 | [The Links Valley](#the-links-valley-ermelo) | Ermelo | 61.8 | 9 | compleet |
-| 59 | [Golfpark Sint Nyk](#golfpark-sint-nyk) | Legemeer (Sint Nicolaasga) | 61.9 | 18 | compleet |
-| 60 | [Golfclub Landgoed De Compagnie](#de-compagnie-veendam) | Veendam | 62.8 | 18 | compleet |
-| 61 | [Golf- und Landclub Ahaus](#glc-ahaus-alstaette) | Ahaus-Alstätte | 63.0 | 36 | compleet |
-| 62 | [Harderwold Golf & Events](#golf4all-harderwijk) | Zeewolde | 63.0 | 9 | deels |
-| 63 | [Pitch & Putt Golf Groenlo (De Blanckenborg)](#de-blanckenborg-groenlo) | Groenlo | 64.3 | 18 | deels |
-| 64 | [Golfclub Westerwolde](#westerwolde-vlagtwedde) | Vlagtwedde | 65.2 | 9 | compleet |
-| 65 | [Golfclub Gaasterland](#golfclub-gaasterland) | Oudemirdum | 68.1 | 9 | deels |
-| 66 | [Golfclub Flevoland](#golfclub-flevoland) | Lelystad | 68.2 | 12 | compleet |
-| 67 | [Keppelse Golfclub](#keppelse-golfclub-hoog-keppel) | Hoog-Keppel | 68.4 | 18 | compleet |
-| 68 | [Pitch & Putt Golf Strand Horst](#pitch-putt-strand-horst-ermelo) | Ermelo | 69.7 | 18 | deels |
-| 69 | [Golfclub Zeewolde](#golfclub-zeewolde) | Zeewolde | 71.5 | 36 | compleet |
-| 70 | [Golfbaan De Voortwisch](#de-voortwisch-winterswijk) | Winterswijk | 71.6 | 18 | compleet |
-| 71 | [Pitch & Putt Groningen](#pitch-putt-groningen-kardinge) | Groningen | 71.8 | 18 | deels |
-| 72 | [Pitch & Putt Golf Doetinchem](#pitch-putt-doetinchem) | Doetinchem | 71.9 | 18 | deels |
-| 73 | [Rosendaelsche Golfclub](#rosendaelsche-golfclub-arnhem) | Arnhem | 74.1 | 18 | compleet |
-| 74 | [ShortGolf Zeumeren](#shortgolf-zeumeren-voorthuizen) | Voorthuizen | 74.3 | 9 | compleet |
-| 75 | [Golfclub Putten](#golfclub-putten) | Putten | 75.8 | 9 | compleet |
-| 76 | [Pitch & Putt Golf Koudum](#pitch-putt-golf-koudum) | Koudum | 76.0 | 18 | deels |
-| 77 | [Het Buiten-Land Pitch & Putt Golf Leeuwarden](#het-buiten-land-pitch-putt-leeuwarden) | Leeuwarden | 76.5 | 18 | deels |
-| 78 | [Huninga's Heem Pitch & Putt](#huningas-heem-oostwold) | Oostwold | 77.1 | 18 | deels |
-| 79 | [Leeuwarder Golfclub De Groene Ster](#leeuwarder-golfclub-de-groene-ster) | Leeuwarden | 77.7 | 18 | compleet |
-| 80 | [Groningse Golfclub Duurswold](#duurswold-steendam) | Steendam | 77.9 | 9 | compleet |
-| 81 | [Edese Golf Club Papendal](#edese-golfclub-papendal) | Arnhem | 78.5 | 18 | compleet |
-| 82 | [Pitch & Putt Papendal](#pitch-putt-papendal) | Arnhem | 78.6 | 18 | deels |
-| 83 | [Golfclub Münsterland](#gc-muensterland-burgsteinfurt) | Steinfurt (Burgsteinfurt) | 79.5 | 9 | deels |
-| 84 | [Golfclub 't Lohr](#golfclub-t-lohr-voorst) | Voorst (Oude IJsselstreek) | 81.4 | 9 | compleet |
-| 85 | [Golfclub Heelsum](#golfclub-heelsum) | Heelsum | 83.2 | 27 | compleet |
-| 86 | [Golfclub Almeerderhout](#almeerderhout-almere) | Almere | 84.2 | 36 | compleet |
-| 87 | [Golfbaan Landgoed Welderen](#golfbaan-landgoed-welderen) | Elst (Gld) | 84.8 | 27 | compleet |
-| 88 | [Wageningse Golfclub](#wageningse-golfclub) | Wageningen | 86.6 | 9 | compleet |
-| 89 | [Golfclub Hoogland Amersfoort](#golfclub-hoogland-amersfoort) | Hoogland (Amersfoort) | 87.2 | 9 | compleet |
-| 90 | [Pitch & Putt Esonstad](#pitch-putt-esonstad-anjum) | Anjum | 88.5 | 18 | deels |
-| 91 | [Golfbaan Westwoud](#westfriese-golfclub-westwoud) | Westwoud | 88.8 | 18 | compleet |
-| 92 | [Golfclub Losdorp](#golfclub-losdorp) | Losdorp | 89.6 | 9 | deels |
-| 93 | [Golfclub De Hoge Kleij](#golfclub-de-hoge-kleij) | Leusden | 91.0 | 18 | compleet |
-| 94 | [Goyer Golf & Country Club](#goyer-golf-country-club) | Eemnes | 92.0 | 24 | deels |
-| 95 | [Golfbaan De Vlietlanden](#golfbaan-de-vlietlanden-wervershoof) | Wervershoof | 92.3 | 18 | deels |
-| 96 | [Golfclub Anderstein](#golfclub-anderstein) | Maarsbergen | 93.7 | 27 | compleet |
-| 97 | [Golfpark Soestduinen](#golfpark-soestduinen) | Soest | 94.3 | 9 | compleet |
-| 98 | [Golfpark Spandersbosch](#golfpark-spandersbosch-hilversum) | Hilversum | 95.4 | 18 | compleet |
-| 99 | [Hilversumsche Golf Club](#hilversumsche-golf-club-hilversum) | Hilversum | 95.5 | 27 | compleet |
-| 100 | [Golfsociëteit De Lage Vuursche](#golfsocieteit-de-lage-vuursche) | Den Dolder | 96.6 | 18 | compleet |
-| 101 | [Golfbaan Het Rijk van Nijmegen](#golfbaan-het-rijk-van-nijmegen) | Groesbeek | 97.3 | 45 | deels |
-| 102 | [Schaerweijde Golf](#schaerweijde-golf-zeist) | Zeist | 97.9 | 9 | compleet |
-| 103 | [Golfclub 't Jagerspaadje](#golfclub-t-jagerspaadje-hilversum) | Hilversum | 98.5 | 9 | deels |
-| 104 | [Doornse Golfclub](#doornse-golfclub) | Doorn | 98.9 | 9 | compleet |
-| 105 | [Golfpark De Biltse Duinen](#golfpark-de-biltse-duinen) | Bilthoven | 99.2 | 9 | compleet |
-| 106 | [Golfpark De Berendonck](#golfpark-de-berendonck-wijchen) | Wijchen | 99.7 | 27 | compleet |
-| 107 | [Golfpark De Purmer](#golfpark-de-purmer-purmerend) | Purmerend | 99.7 | 36 | compleet |
-| 108 | [Utrechtse Golfclub 'De Pan'](#utrechtse-golfclub-de-pan) | Bosch en Duin | 99.8 | 18 | compleet |
-| 109 | [Gooise Golfclub](#gooise-golfclub-loosdrecht) | Loosdrecht | 100.0 | 9 | compleet |
-| 110 | [Pitch & Putt Golf Molenhoek](#pitch-putt-molenhoek) | Molenhoek | 100.0 | 18 | compleet |
-| 111 | [Golfbaan Hoenderdaal](#golfbaan-hoenderdaal) | Driebergen-Rijsenburg | 101.6 | 9 | compleet |
-| 112 | [Golfbaan Weesp (UP Events)](#golfbaan-weesp) | Weesp | 102.7 | 9 | deels |
-| 113 | [Golfcentrum De Batouwe](#golfcentrum-de-batouwe) | Zoelen (Tiel) | 102.9 | 36 | compleet |
-| 114 | [Golfbaan Kromme Rijn](#golfbaan-kromme-rijn) | Bunnik | 103.4 | 9 | compleet |
-| 115 | [Golfbaan Spierdijk](#golfbaan-spierdijk) | Spierdijk | 103.6 | 9 | deels |
-| 116 | [Golfbaan Kavel 2](#kavel-2-beemster-middenbeemster) | Middenbeemster | 104.3 | 9 | compleet |
-| 117 | [Golfbaan Waterland Amsterdam](#golfbaan-waterland-amsterdam) | Amsterdam | 104.9 | 27 | deels |
-| 118 | [Golfbaan Regthuys](#golfbaan-regthuys-winkel) | Winkel | 105.9 | 27 | compleet |
-| 119 | [Utrechtse Golfclub Amelisweerd](#utrechtse-golfclub-amelisweerd) | Utrecht | 107.1 | 27 | compleet |
-| 120 | [Golfcentrum De Hoge Dijk](#golfcentrum-de-hoge-dijk-amsterdam) | Amsterdam | 107.5 | 27 | deels |
-| 121 | [Old Course Loenen](#old-course-loenen) | Loenen aan de Vecht | 107.5 | 9 | compleet |
-| 122 | [Amsterdam Old Course](#amsterdam-old-course-duivendrecht) | Amsterdam-Duivendrecht | 107.8 | 9 | compleet |
-| 123 | [Golfbaan Ameland](#golfbaan-ameland-hollum) | Hollum (Ameland) | 108.9 | 18 | compleet |
-| 124 | [Golfbaan De Zaanse](#golfbaan-de-zaanse-wijdewormer) | Wijdewormer | 108.9 | 18 | compleet |
-| 125 | [Golfbaan Molenslag](#golfbaan-molenslag-barsingerhorn) | Barsingerhorn | 109.1 | 9 | deels |
-| 126 | [Golfbaan Landgoed Bleijenbeek](#landgoed-bleijenbeek-afferden) | Afferden | 110.6 | 27 | compleet |
-| 127 | [De Utrechtse](#de-utrechtse-houten) | Houten | 110.7 | 18 | deels |
-| 128 | [AMVJ Golf](#amvj-golf-amstelveen) | Amstelveen | 111.3 | 18 | compleet |
-| 129 | [Golf Amsteldijk](#golf-amsteldijk-amstelveen) | Amstelveen | 113.1 | 9 | deels |
-| 130 | [Golfclub De Haar](#golfclub-de-haar) | Haarzuilens (Utrecht) | 113.6 | 18 | deels |
-| 131 | [Golfbaan Dirkshorn](#golfbaan-dirkshorn) | Dirkshorn | 114.1 | 18 | compleet |
-| 132 | [Golfclub Ookmeer](#golfclub-ookmeer-amsterdam) | Amsterdam | 115.4 | 18 | deels |
-| 133 | [Openbare Golfbaan Sloten](#golfbaan-sloten-amsterdam) | Amsterdam | 115.7 | 9 | compleet |
-| 134 | [The Duke (Championship Course)](#the-duke-golf-nistelrode) | Nistelrode | 115.8 | 18 | deels |
-| 135 | [Golfbaan Sluispolder](#sluispolder-noordhollandse-golfclub-alkmaar) | Alkmaar | 116.2 | 27 | deels |
-| 136 | [The International](#the-international-badhoevedorp) | Badhoevedorp | 116.2 | 18 | compleet |
-| 137 | [Golfpark Wilnis](#golfpark-wilnis) | Wilnis | 116.7 | 27 | compleet |
-| 138 | [Golfbaan De Kroonprins](#golfbaan-de-kroonprins-vianen) | Vianen | 116.9 | 27 | compleet |
-| 139 | [Pitch & Putt Kameryck](#pitch-putt-kameryck-kamerik) | Kamerik | 117.7 | 18 | compleet |
-| 140 | [Golfbaan Heiloo](#golf-countryclub-heiloo) | Heiloo | 118.0 | 9 | compleet |
-| 141 | [Amsterdamse Golf Club](#amsterdamse-golf-club-amsterdam) | Amsterdam | 118.1 | 18 | compleet |
-| 142 | [Golfpark De Bonte Bij (voorheen De Leemskuilen)](#golfpark-de-bonte-bij-uden) | Uden | 118.1 | 9 | deels |
-| 143 | [Heemskerkse Golfclub](#heemskerkse-golfclub-heemskerk) | Heemskerk | 118.8 | 27 | deels |
-| 144 | [Golfbaan Overloon](#golfbaan-overloon) | Overloon | 119.0 | 9 | compleet |
-| 145 | [Marine Golfclub Nieuwediep](#marine-golfclub-nieuwediep-den-helder) | Den Helder | 119.2 | 9 | compleet |
-| 146 | [Golfcenter Uithoorn](#golfcenter-uithoorn) | Uithoorn | 119.3 | 9 | compleet |
-| 147 | [Golfclub Houtrak](#golfclub-houtrak-halfweg) | Halfweg | 119.3 | 18 | compleet |
-| 148 | [Golfclub De Dorpswaard](#golfclub-de-dorpswaard-kerkdriel) | Kerkdriel | 119.4 | 9 | compleet |
-| 149 | [Golfbaan Spaarnwoude](#golfbaan-spaarnwoude-velsen-zuid) | Velsen-Zuid | 120.6 | 54 | compleet |
-| 150 | [Golfbaan Ooghduyne](#golfbaan-ooghduyne-julianadorp) | Julianadorp | 120.7 | 9 | compleet |
-| 151 | [Golf- en Countryclub Geijsteren](#golf-countryclub-geijsteren) | Geijsteren | 121.5 | 18 | compleet |
-| 152 | [Golfbaan De Texelse](#de-texelse-de-cocksdorp) | De Cocksdorp | 123.6 | 27 | compleet |
-| 153 | [Golf Maasduinen](#golf-maasduinen-arcen) | Arcen | 123.9 | 9 | deels |
-| 154 | [Golfclub Landgoed Coudewater](#golfclub-landgoed-coudewater-rosmalen) | Rosmalen | 124.3 | 9 | compleet |
-| 155 | [Golf & Country Club Liemeer – Torenbaan](#golf-country-club-liemeer) | Nieuwveen | 125.1 | 18 | compleet |
-| 156 | [Golf & Country Club Liemeer – Bovenlandenbaan](#liemeer-bovenlandenbaan) | Nieuwveen | 125.1 | 9 | compleet |
-| 157 | [Haarlemmermeersche Golfclub](#haarlemmermeersche-golfclub-cruquius) | Cruquius | 125.5 | 36 | deels |
-| 158 | [Golfpark De Haverleij](#golfpark-de-haverleij-den-bosch) | 's-Hertogenbosch | 127.4 | 18 | compleet |
-| 159 | [Golf Parc De Pettelaar](#golf-parc-de-pettelaar-den-bosch) | 's-Hertogenbosch | 128.0 | 9 | deels |
-| 160 | [The Dutch](#the-dutch-spijk) | Spijk (West Betuwe) | 128.8 | 18 | compleet |
-| 161 | [Golfbaan Stippelberg](#golfbaan-stippelberg-bakel) | Bakel (Gemert-Bakel) | 130.0 | 27 | compleet |
-| 162 | [Golfclub Mariënweide](#golfclub-marienweide-aerdenhout) | Aerdenhout | 130.0 | 9 | compleet |
-| 163 | [Golfclub Zeegersloot (Griend/Heuvel)](#golfclub-zeegersloot-alphen) | Alphen aan den Rijn | 130.0 | 18 | compleet |
-| 164 | [Golfclub Zeegersloot – Parkbaan (par 3)](#golfclub-zeegersloot-parkbaan) | Alphen aan den Rijn | 130.0 | 9 | compleet |
-| 165 | [Golfbaan 9par3 Noordeloos](#golfbaan-noordeloos) | Noordeloos | 130.3 | 9 | deels |
-| 166 | [Golfbaan The Dunes](#golfbaan-the-dunes-zandvoort) | Zandvoort | 131.6 | 9 | deels |
-| 167 | [Kennemer Golf & Country Club](#kennemer-golf-country-club-zandvoort) | Zandvoort | 131.6 | 27 | compleet |
-| 168 | [Golfclub d'n Heikant](#golfclub-dn-heikant-aarle-rixtel) | Aarle-Rixtel | 132.2 | 9 | compleet |
-| 169 | [Golfclub De Dommel](#golfclub-de-dommel-sint-michielsgestel) | Sint-Michielsgestel | 132.7 | 18 | compleet |
-| 170 | [Levant Golf (voorheen Golfbaan De Schoot)](#levant-golf-sint-oedenrode) | Sint-Oedenrode | 132.7 | 9 | compleet |
-| 171 | [Bernardus Golf](#bernardus-golf-cromvoirt) | Cromvoirt | 133.7 | 18 | compleet |
-| 172 | [Golfbaan de Golfhorst](#golfhorst-america) | America | 134.8 | 27 | compleet |
-| 173 | [Helmondse Golfclub 'Overbrug'](#helmondse-golfclub-overbrug) | Helmond | 134.8 | 9 | compleet |
-| 174 | [Golfclub Vught (par 3-baan)](#golfclub-vught) | Vught | 135.1 | 9 | compleet |
-| 175 | [Golfbaan Ter Specke](#golfbaan-ter-specke-lisse) | Lisse | 135.6 | 9 | compleet |
-| 176 | [Golfbaan Tespelduyn (Bloembollenbaan)](#golfbaan-tespelduyn-noordwijkerhout) | Noordwijkerhout | 135.7 | 9 | compleet |
-| 177 | [Golfclub Son](#golfclub-son) | Son en Breugel | 136.9 | 9 | deels |
-| 178 | [Golfpark Almkreek](#golfpark-almkreek-almkerk) | Almkerk | 137.0 | 32 | deels |
-| 179 | [De Peelse Golf](#de-peelse-golf-evertsoord) | Evertsoord | 139.5 | 27 | compleet |
-| 180 | [Noordwijkse Golfclub](#noordwijkse-golfclub) | Noordwijk | 139.8 | 18 | compleet |
-| 181 | [Golfclub Kagerzoom](#golfclub-kagerzoom-warmond) | Warmond | 140.5 | 9 | compleet |
-| 182 | [Golfbaan Bentwoud](#golfbaan-bentwoud-benthuizen) | Benthuizen | 141.0 | 27 | compleet |
-| 183 | [Golfbaan Bentwoud – Noordwoud (par 3/4-baan)](#golfbaan-bentwoud-noordwoud) | Benthuizen | 141.0 | 9 | compleet |
-| 184 | [Golf De Gulbergen](#golf-de-gulbergen-mierlo) | Mierlo | 141.3 | 27 | compleet |
-| 185 | [Golf Centrum Noordwijk](#golfcentrum-noordwijk) | Noordwijk | 141.4 | 9 | deels |
-| 186 | [Golf- en wijndomein Kapelkeshof](#kapelkeshof-grashoek) | Grashoek | 141.9 | 21 | compleet |
-| 187 | [Golfclub de Berckt](#golfclub-de-berckt-baarlo) | Baarlo | 142.0 | 9 | compleet |
-| 188 | [Best Golf](#best-golf-country-club) | Best | 142.6 | 18 | compleet |
-| 189 | [Oegstgeester Golfclub](#oegstgeester-golfclub) | Oegstgeest | 143.1 | 9 | compleet |
-| 190 | [Golfcentrum Eindhoven](#golfcentrum-eindhoven) | Eindhoven | 143.5 | 9 | compleet |
-| 191 | [ESTEC Golf Club](#estec-golf-club-noordwijk) | Noordwijk | 144.5 | 9 | compleet |
-| 192 | [Golfpark De Loonsche Duynen](#golfpark-de-loonsche-duynen-de-moer) | De Moer | 144.7 | 27 | compleet |
-| 193 | [Golfpark De Kurenpolder](#golfpark-de-kurenpolder-hank) | Hank | 144.8 | 18 | compleet |
-| 194 | [Golfbaan Het Woold](#golfbaan-het-woold-asten) | Asten-Heusden | 145.1 | 27 | compleet |
-| 195 | [Golfbaan Hitland](#golfbaan-hitland-nieuwerkerk) | Nieuwerkerk aan den IJssel | 145.1 | 18 | deels |
-| 196 | [Golfclub Riel](#golfclub-riel-geldrop) | Geldrop | 145.5 | 9 | compleet |
-| 197 | [Sportfondsen Golfbaan Het Wedde](#golfbaan-het-wedde-voorschoten) | Voorschoten | 145.6 | 9 | compleet |
-| 198 | [Crayestein Golf](#crayestein-golf-dordrecht) | Dordrecht | 145.7 | 18 | deels |
-| 199 | [Crayestein Pitch & Putt](#crayestein-pitch-putt-dordrecht) | Dordrecht | 145.7 | 18 | deels |
-| 200 | [Golfbaan Eyckenduyn](#eyckenduyn-helden) | Helden | 146.0 | 9 | compleet |
-| 201 | [Golfclub Capelle](#golfclub-capelle-capelle-aan-den-ijssel) | Capelle aan den IJssel | 146.7 | 18 | compleet |
-| 202 | [Golfbaan De Swinkelsche](#golfbaan-de-swinkelsche-someren) | Someren | 146.8 | 27 | compleet |
-| 203 | [Golfbaan Crimpenerhout](#golfbaan-crimpenerhout-krimpen-aan-de-lek) | Krimpen aan de Lek | 147.5 | 9 | compleet |
-| 204 | [Golf- en Countryclub De Tongelreep](#golf-countryclub-de-tongelreep-eindhoven) | Eindhoven | 148.8 | 9 | deels |
-| 205 | [Wassenaarse Golfclub Rozenstein](#rozenstein-wassenaar) | Wassenaar | 148.8 | 18 | compleet |
-| 206 | [Golfbaan De Hooge Rotterdamsche](#de-hooge-rotterdamsche-bergschenhoek) | Bergschenhoek | 149.1 | 18 | compleet |
-| 207 | [Golf De Kieviten](#de-kieviten-golf-wassenaar) | Wassenaar | 149.1 | 9 | deels |
-| 208 | [Golfpark Westerpark](#golfpark-westerpark-zoetermeer) | Zoetermeer | 150.2 | 18 | compleet |
-| 209 | [Golf & Recreatiepark 't Caves](#golfpark-t-caves-wintelre) | Wintelre | 150.6 | 18 | deels |
-| 210 | [Golfbaan Kralingen](#golfbaan-kralingen-rotterdam) | Rotterdam | 150.9 | 9 | deels |
-| 211 | [Koninklijke Haagsche Golf & Country Club](#koninklijke-haagsche-wassenaar) | Wassenaar | 151.4 | 18 | compleet |
-| 212 | [Golfcentrum Dongen](#golfcentrum-dongen) | Dongen | 151.9 | 9 | deels |
-| 213 | [Eindhovensche Golf](#eindhovensche-golf-valkenswaard) | Valkenswaard | 152.5 | 18 | deels |
-| 214 | [Leender Golfclub Haviksoord](#leender-golfclub-haviksoord) | Leende | 153.0 | 18 | compleet |
-| 215 | [Haagsche Country Club Groen-Geel (golf)](#hcc-groen-geel-golf-wassenaar) | Wassenaar | 153.5 | 9 | compleet |
-| 216 | [Valkenswaardse Golfclub](#valkenswaardse-golfclub) | Valkenswaard | 153.5 | 9 | compleet |
-| 217 | [Brabant Golf](#brabant-golf-rijen) | Rijen | 153.8 | 9 | deels |
-| 218 | [De Oosterhoutse Golfclub](#oosterhoutse-golfclub) | Oosterhout | 153.8 | 27 | compleet |
-| 219 | [Golf Duinzicht](#golf-duinzicht-wassenaar) | Wassenaar | 153.9 | 9 | compleet |
-| 220 | [Golfpark Gendersteyn](#golfpark-gendersteyn-veldhoven) | Veldhoven | 153.9 | 25 | compleet |
-| 221 | [Prise d'Eau Golf](#prise-deau-golf-tilburg) | Tilburg | 153.9 | 36 | deels |
-| 222 | [Wassenaarse Golf Groendael](#wassenaarse-golf-groendael) | Wassenaar | 154.2 | 9 | compleet |
-| 223 | [Golfcenter Seve Par 3-baan](#golfcenter-seve-rotterdam) | Rotterdam | 154.3 | 9 | deels |
-| 224 | [Golfbaan Leeuwenbergh](#leeuwenbergh-den-haag) | Den Haag | 154.7 | 18 | deels |
-| 225 | [DSV Concordia Golf (par 3-baan)](#dsv-concordia-golf-delft) | Delft | 155.4 | 9 | deels |
-| 226 | [Golfpark De Haenen](#golfpark-de-haenen-teteringen) | Teteringen | 155.9 | 18 | compleet |
-| 227 | [Noord-Brabantsche Golfclub Toxandria](#toxandria-molenschot) | Molenschot | 156.1 | 18 | compleet |
-| 228 | [Golfbaan Landgoed Bergvliet](#landgoed-bergvliet-oosterhout) | Oosterhout | 156.3 | 27 | deels |
-| 229 | [Rijswijkse Golfclub](#rijswijkse-golfclub) | Rijswijk | 156.6 | 18 | compleet |
-| 230 | [Golfbaan Midden-Brabant](#golfbaan-midden-brabant-esbeek) | Esbeek | 156.9 | 27 | compleet |
-| 231 | [Golfclub Landgoed Nieuwkerk](#golfclub-landgoed-nieuwkerk-goirle) | Goirle | 156.9 | 9 | compleet |
-| 232 | [Golfpark Weilenseind](#golfpark-weilenseind-gilze) | Gilze | 157.4 | 9 | compleet |
-| 233 | [Golfpark Rotterdam](#golfpark-rotterdam) | Rotterdam | 157.6 | 18 | deels |
-| 234 | [Golfclub Princenbosch](#golfclub-princenbosch-molenschot) | Molenschot | 159.5 | 36 | compleet |
-| 235 | [De Strijensche Golfclub](#de-strijensche-golfclub-strijen) | Strijen | 160.0 | 9 | compleet |
-| 236 | [Rhoon Golfcenter (18 holes)](#rhoon-golfcenter) | Rhoon | 160.5 | 18 | compleet |
-| 237 | [Rhoon Golfcenter Beverbaan (par 3)](#rhoon-golfcenter-beverbaan) | Rhoon | 160.5 | 18 | compleet |
-| 238 | [Golfbaan Delfland Par 3 Challenge Course](#golfbaan-delfland-par-3-schipluiden) | Schipluiden | 160.6 | 9 | compleet |
-| 239 | [Golfbaan Delfland (Championship Course)](#golfbaan-delfland-schipluiden) | Schipluiden | 160.6 | 27 | compleet |
-| 240 | [De Herkenbosche](#de-herkenbosche-herkenbosch) | Herkenbosch | 161.3 | 27 | deels |
-| 241 | [Golfvereniging Albatross](#golfvereniging-albatross-prinsenbeek) | Prinsenbeek | 162.5 | 9 | compleet |
-| 242 | [Golfbaan Crossmoor](#crossmoor-weert) | Weert | 163.1 | 27 | deels |
-| 243 | [Golfpark Land van Thorn](#golfpark-land-van-thorn-hunsel) | Hunsel | 163.2 | 9 | compleet |
-| 244 | [Golfbaan De Achterste Hoef](#golfbaan-de-achterste-hoef-bladel) | Bladel | 163.3 | 9 | deels |
+| 44 | [Twentse Golf Park](#twentse-golf-park-haaksbergen) | Haaksbergen | 54.4 | 9 | deels |
+| 45 | [Golfclub Emstal](#emstal-lingen) | Lingen (Ems) | 55.4 | 18 | compleet |
+| 46 | [Shortgolf Swifterbant](#shortgolf-swifterbant) | Swifterbant | 56.3 | 18 | deels |
+| 47 | [Golf & Country Club Lauswolt](#golf-country-club-lauswolt) | Beetsterzwaag | 56.7 | 18 | compleet |
+| 48 | [Golfbaan Dorhout Mees](#golfbaan-dorhout-mees) | Biddinghuizen | 57.0 | 9 | deels |
+| 49 | [Veluwse Golfclub](#veluwse-golfclub-hoog-soeren) | Hoog Soeren | 58.4 | 9 | compleet |
+| 50 | [Golfclub De Scherpenbergh](#de-scherpenbergh-lieren) | Lieren | 58.5 | 27 | compleet |
+| 51 | [Noord-Nederlandse Golf & Country Club](#noord-nederlandse-glimmen) | Glimmen | 59.0 | 18 | compleet |
+| 52 | [Golfclub Euregio Bad Bentheim](#euregio-bad-bentheim) | Bad Bentheim | 59.3 | 18 | compleet |
+| 53 | [Golfclub Holthuizen](#holthuizen-roden) | Roden | 60.4 | 9 | compleet |
+| 54 | [Golfbaan Kasteel Engelenburg](#kasteel-engelenburg-brummen) | Brummen | 60.9 | 9 | compleet |
+| 55 | [Golfclub 't Zelle](#t-zelle-hengelo-gld) | Hengelo (Gld) | 60.9 | 27 | compleet |
+| 56 | [Landgoed Ullerberg (golfbaan)](#ullerberg-ermelo) | Leuvenum (Ermelo) | 61.0 | 9 | deels |
+| 57 | [The Links Valley](#the-links-valley-ermelo) | Ermelo | 61.8 | 9 | compleet |
+| 58 | [Golfpark Sint Nyk](#golfpark-sint-nyk) | Legemeer (Sint Nicolaasga) | 61.9 | 18 | compleet |
+| 59 | [Golfclub Landgoed De Compagnie](#de-compagnie-veendam) | Veendam | 62.8 | 18 | compleet |
+| 60 | [Golf- und Landclub Ahaus](#glc-ahaus-alstaette) | Ahaus-Alstätte | 63.0 | 36 | compleet |
+| 61 | [Harderwold Golf & Events](#golf4all-harderwijk) | Zeewolde | 63.0 | 9 | deels |
+| 62 | [Pitch & Putt Golf Groenlo (De Blanckenborg)](#de-blanckenborg-groenlo) | Groenlo | 64.3 | 18 | deels |
+| 63 | [Golfclub Westerwolde](#westerwolde-vlagtwedde) | Vlagtwedde | 65.2 | 9 | compleet |
+| 64 | [Golfclub Gaasterland](#golfclub-gaasterland) | Oudemirdum | 68.1 | 9 | deels |
+| 65 | [Golfclub Flevoland](#golfclub-flevoland) | Lelystad | 68.2 | 12 | compleet |
+| 66 | [Keppelse Golfclub](#keppelse-golfclub-hoog-keppel) | Hoog-Keppel | 68.4 | 18 | compleet |
+| 67 | [Pitch & Putt Golf Strand Horst](#pitch-putt-strand-horst-ermelo) | Ermelo | 69.7 | 18 | deels |
+| 68 | [Golfclub Zeewolde](#golfclub-zeewolde) | Zeewolde | 71.5 | 36 | compleet |
+| 69 | [Golfbaan De Voortwisch](#de-voortwisch-winterswijk) | Winterswijk | 71.6 | 18 | compleet |
+| 70 | [Pitch & Putt Groningen](#pitch-putt-groningen-kardinge) | Groningen | 71.8 | 18 | deels |
+| 71 | [Pitch & Putt Golf Doetinchem](#pitch-putt-doetinchem) | Doetinchem | 71.9 | 18 | deels |
+| 72 | [Rosendaelsche Golfclub](#rosendaelsche-golfclub-arnhem) | Arnhem | 74.1 | 18 | compleet |
+| 73 | [ShortGolf Zeumeren](#shortgolf-zeumeren-voorthuizen) | Voorthuizen | 74.3 | 9 | compleet |
+| 74 | [Golfclub Putten](#golfclub-putten) | Putten | 75.8 | 9 | compleet |
+| 75 | [Pitch & Putt Golf Koudum](#pitch-putt-golf-koudum) | Koudum | 76.0 | 18 | deels |
+| 76 | [Het Buiten-Land Pitch & Putt Golf Leeuwarden](#het-buiten-land-pitch-putt-leeuwarden) | Leeuwarden | 76.5 | 18 | deels |
+| 77 | [Huninga's Heem Pitch & Putt](#huningas-heem-oostwold) | Oostwold | 77.1 | 18 | deels |
+| 78 | [Leeuwarder Golfclub De Groene Ster](#leeuwarder-golfclub-de-groene-ster) | Leeuwarden | 77.7 | 18 | compleet |
+| 79 | [Groningse Golfclub Duurswold](#duurswold-steendam) | Steendam | 77.9 | 9 | compleet |
+| 80 | [Edese Golf Club Papendal](#edese-golfclub-papendal) | Arnhem | 78.5 | 18 | compleet |
+| 81 | [Pitch & Putt Papendal](#pitch-putt-papendal) | Arnhem | 78.6 | 18 | deels |
+| 82 | [Golfclub Münsterland](#gc-muensterland-burgsteinfurt) | Steinfurt (Burgsteinfurt) | 79.5 | 9 | deels |
+| 83 | [Golfclub 't Lohr](#golfclub-t-lohr-voorst) | Voorst (Oude IJsselstreek) | 81.4 | 9 | compleet |
+| 84 | [Golfclub Heelsum](#golfclub-heelsum) | Heelsum | 83.2 | 27 | compleet |
+| 85 | [Golfclub Almeerderhout](#almeerderhout-almere) | Almere | 84.2 | 36 | compleet |
+| 86 | [Golfbaan Landgoed Welderen](#golfbaan-landgoed-welderen) | Elst (Gld) | 84.8 | 27 | compleet |
+| 87 | [Wageningse Golfclub](#wageningse-golfclub) | Wageningen | 86.6 | 9 | compleet |
+| 88 | [Golfclub Hoogland Amersfoort](#golfclub-hoogland-amersfoort) | Hoogland (Amersfoort) | 87.2 | 9 | compleet |
+| 89 | [Pitch & Putt Esonstad](#pitch-putt-esonstad-anjum) | Anjum | 88.5 | 18 | deels |
+| 90 | [Golfbaan Westwoud](#westfriese-golfclub-westwoud) | Westwoud | 88.8 | 18 | compleet |
+| 91 | [Golf & Country Makkeveld (voorheen Golfclub Losdorp)](#golfclub-losdorp) | Losdorp | 89.6 | 9 | deels |
+| 92 | [Golfclub De Hoge Kleij](#golfclub-de-hoge-kleij) | Leusden | 91.0 | 18 | compleet |
+| 93 | [Goyer Golf & Country Club](#goyer-golf-country-club) | Eemnes | 92.0 | 24 | deels |
+| 94 | [Golfbaan De Vlietlanden](#golfbaan-de-vlietlanden-wervershoof) | Wervershoof | 92.3 | 18 | deels |
+| 95 | [Golfclub Anderstein](#golfclub-anderstein) | Maarsbergen | 93.7 | 27 | compleet |
+| 96 | [Golfpark Soestduinen](#golfpark-soestduinen) | Soest | 94.3 | 9 | compleet |
+| 97 | [Golfpark Spandersbosch](#golfpark-spandersbosch-hilversum) | Hilversum | 95.4 | 18 | compleet |
+| 98 | [Hilversumsche Golf Club](#hilversumsche-golf-club-hilversum) | Hilversum | 95.5 | 27 | compleet |
+| 99 | [Golfsociëteit De Lage Vuursche](#golfsocieteit-de-lage-vuursche) | Den Dolder | 96.6 | 18 | compleet |
+| 100 | [Golfbaan Het Rijk van Nijmegen](#golfbaan-het-rijk-van-nijmegen) | Groesbeek | 97.3 | 45 | deels |
+| 101 | [Schaerweijde Golf](#schaerweijde-golf-zeist) | Zeist | 97.9 | 9 | compleet |
+| 102 | [Golfclub 't Jagerspaadje](#golfclub-t-jagerspaadje-hilversum) | Hilversum | 98.5 | 9 | deels |
+| 103 | [Doornse Golfclub](#doornse-golfclub) | Doorn | 98.9 | 9 | compleet |
+| 104 | [Golfpark De Biltse Duinen](#golfpark-de-biltse-duinen) | Bilthoven | 99.2 | 9 | compleet |
+| 105 | [Golfpark De Berendonck](#golfpark-de-berendonck-wijchen) | Wijchen | 99.7 | 27 | compleet |
+| 106 | [Golfpark De Purmer](#golfpark-de-purmer-purmerend) | Purmerend | 99.7 | 36 | compleet |
+| 107 | [Utrechtse Golfclub 'De Pan'](#utrechtse-golfclub-de-pan) | Bosch en Duin | 99.8 | 18 | compleet |
+| 108 | [Gooise Golfclub](#gooise-golfclub-loosdrecht) | Loosdrecht | 100.0 | 9 | compleet |
+| 109 | [Pitch & Putt Golf Molenhoek](#pitch-putt-molenhoek) | Molenhoek | 100.0 | 18 | compleet |
+| 110 | [Golfbaan Hoenderdaal](#golfbaan-hoenderdaal) | Driebergen-Rijsenburg | 101.6 | 9 | compleet |
+| 111 | [Golfbaan Weesp (UP Events)](#golfbaan-weesp) | Weesp | 102.7 | 9 | deels |
+| 112 | [Golfcentrum De Batouwe](#golfcentrum-de-batouwe) | Zoelen (Tiel) | 102.9 | 36 | compleet |
+| 113 | [Golfbaan Kromme Rijn](#golfbaan-kromme-rijn) | Bunnik | 103.4 | 9 | compleet |
+| 114 | [Golfbaan Spierdijk](#golfbaan-spierdijk) | Spierdijk | 103.6 | 9 | deels |
+| 115 | [Golfbaan Kavel 2](#kavel-2-beemster-middenbeemster) | Middenbeemster | 104.3 | 9 | compleet |
+| 116 | [Golfbaan Waterland Amsterdam](#golfbaan-waterland-amsterdam) | Amsterdam | 104.9 | 27 | deels |
+| 117 | [Golfbaan Regthuys](#golfbaan-regthuys-winkel) | Winkel | 105.9 | 27 | compleet |
+| 118 | [Utrechtse Golfclub Amelisweerd](#utrechtse-golfclub-amelisweerd) | Utrecht | 107.1 | 27 | compleet |
+| 119 | [Golfcentrum De Hoge Dijk](#golfcentrum-de-hoge-dijk-amsterdam) | Amsterdam | 107.5 | 27 | deels |
+| 120 | [Old Course Loenen](#old-course-loenen) | Loenen aan de Vecht | 107.5 | 9 | compleet |
+| 121 | [Amsterdam Old Course](#amsterdam-old-course-duivendrecht) | Amsterdam-Duivendrecht | 107.8 | 9 | compleet |
+| 122 | [Golfbaan Ameland](#golfbaan-ameland-hollum) | Hollum (Ameland) | 108.9 | 18 | compleet |
+| 123 | [Golfbaan De Zaanse](#golfbaan-de-zaanse-wijdewormer) | Wijdewormer | 108.9 | 18 | compleet |
+| 124 | [Golfbaan Molenslag](#golfbaan-molenslag-barsingerhorn) | Barsingerhorn | 109.1 | 9 | deels |
+| 125 | [Golfbaan Landgoed Bleijenbeek](#landgoed-bleijenbeek-afferden) | Afferden | 110.6 | 27 | compleet |
+| 126 | [De Utrechtse](#de-utrechtse-houten) | Houten | 110.7 | 18 | deels |
+| 127 | [ShortGolf Utrecht](#shortgolf-utrecht-nieuwegein) | Nieuwegein | 110.8 | 18 | compleet |
+| 128 | [Golfbaan Oijense Zij](#golfbaan-oijense-zij-oss) | Oss | 111.2 | 9 | compleet |
+| 129 | [AMVJ Golf](#amvj-golf-amstelveen) | Amstelveen | 111.3 | 18 | compleet |
+| 130 | [Golf Amsteldijk](#golf-amsteldijk-amstelveen) | Amstelveen | 113.1 | 9 | deels |
+| 131 | [Golfclub De Haar](#golfclub-de-haar) | Haarzuilens (Utrecht) | 113.6 | 18 | deels |
+| 132 | [Golfbaan Dirkshorn](#golfbaan-dirkshorn) | Dirkshorn | 114.1 | 18 | compleet |
+| 133 | [Golfclub Ookmeer](#golfclub-ookmeer-amsterdam) | Amsterdam | 115.4 | 18 | deels |
+| 134 | [Openbare Golfbaan Sloten](#golfbaan-sloten-amsterdam) | Amsterdam | 115.7 | 9 | compleet |
+| 135 | [The Duke (Championship Course)](#the-duke-golf-nistelrode) | Nistelrode | 115.8 | 18 | deels |
+| 136 | [Golfbaan Sluispolder](#sluispolder-noordhollandse-golfclub-alkmaar) | Alkmaar | 116.2 | 27 | deels |
+| 137 | [The International](#the-international-badhoevedorp) | Badhoevedorp | 116.2 | 18 | compleet |
+| 138 | [Golfpark Wilnis](#golfpark-wilnis) | Wilnis | 116.7 | 27 | compleet |
+| 139 | [Golfbaan De Kroonprins](#golfbaan-de-kroonprins-vianen) | Vianen | 116.9 | 27 | compleet |
+| 140 | [Pitch & Putt Kameryck](#pitch-putt-kameryck-kamerik) | Kamerik | 117.7 | 18 | compleet |
+| 141 | [Golfbaan Heiloo](#golf-countryclub-heiloo) | Heiloo | 118.0 | 9 | compleet |
+| 142 | [Amsterdamse Golf Club](#amsterdamse-golf-club-amsterdam) | Amsterdam | 118.1 | 18 | compleet |
+| 143 | [Golfpark De Bonte Bij (voorheen De Leemskuilen)](#golfpark-de-bonte-bij-uden) | Uden | 118.1 | 9 | deels |
+| 144 | [Heemskerkse Golfclub](#heemskerkse-golfclub-heemskerk) | Heemskerk | 118.8 | 27 | deels |
+| 145 | [Golfbaan Overloon](#golfbaan-overloon) | Overloon | 119.0 | 9 | compleet |
+| 146 | [Marine Golfclub Nieuwediep](#marine-golfclub-nieuwediep-den-helder) | Den Helder | 119.2 | 9 | compleet |
+| 147 | [Golfcenter Uithoorn](#golfcenter-uithoorn) | Uithoorn | 119.3 | 9 | compleet |
+| 148 | [Golfclub Houtrak](#golfclub-houtrak-halfweg) | Halfweg | 119.3 | 18 | compleet |
+| 149 | [Golfclub De Dorpswaard](#golfclub-de-dorpswaard-kerkdriel) | Kerkdriel | 119.4 | 9 | compleet |
+| 150 | [Golfbaan Spaarnwoude](#golfbaan-spaarnwoude-velsen-zuid) | Velsen-Zuid | 120.6 | 54 | compleet |
+| 151 | [Golfbaan Ooghduyne](#golfbaan-ooghduyne-julianadorp) | Julianadorp | 120.7 | 9 | compleet |
+| 152 | [Golf- en Countryclub Geijsteren](#golf-countryclub-geijsteren) | Geijsteren | 121.5 | 18 | compleet |
+| 153 | [Golfbaan De Texelse](#de-texelse-de-cocksdorp) | De Cocksdorp | 123.6 | 27 | compleet |
+| 154 | [Golf Maasduinen](#golf-maasduinen-arcen) | Arcen | 123.9 | 9 | deels |
+| 155 | [Golfclub Landgoed Coudewater](#golfclub-landgoed-coudewater-rosmalen) | Rosmalen | 124.3 | 9 | compleet |
+| 156 | [Golf & Country Club Liemeer – Torenbaan](#golf-country-club-liemeer) | Nieuwveen | 125.1 | 18 | compleet |
+| 157 | [Golf & Country Club Liemeer – Bovenlandenbaan](#liemeer-bovenlandenbaan) | Nieuwveen | 125.1 | 9 | compleet |
+| 158 | [Haarlemmermeersche Golfclub](#haarlemmermeersche-golfclub-cruquius) | Cruquius | 125.5 | 36 | deels |
+| 159 | [Golfpark De Haverleij](#golfpark-de-haverleij-den-bosch) | 's-Hertogenbosch | 127.4 | 18 | compleet |
+| 160 | [Golf Parc De Pettelaar](#golf-parc-de-pettelaar-den-bosch) | 's-Hertogenbosch | 128.0 | 9 | deels |
+| 161 | [The Dutch](#the-dutch-spijk) | Spijk (West Betuwe) | 128.8 | 18 | compleet |
+| 162 | [Golfbaan Stippelberg](#golfbaan-stippelberg-bakel) | Bakel (Gemert-Bakel) | 130.0 | 27 | compleet |
+| 163 | [Golfclub Mariënweide](#golfclub-marienweide-aerdenhout) | Aerdenhout | 130.0 | 9 | compleet |
+| 164 | [Golfclub Zeegersloot (Griend/Heuvel)](#golfclub-zeegersloot-alphen) | Alphen aan den Rijn | 130.0 | 18 | compleet |
+| 165 | [Golfclub Zeegersloot – Parkbaan (par 3)](#golfclub-zeegersloot-parkbaan) | Alphen aan den Rijn | 130.0 | 9 | compleet |
+| 166 | [Golfbaan 9par3 Noordeloos](#golfbaan-noordeloos) | Noordeloos | 130.3 | 9 | deels |
+| 167 | [Golfbaan The Dunes](#golfbaan-the-dunes-zandvoort) | Zandvoort | 131.6 | 9 | deels |
+| 168 | [Kennemer Golf & Country Club](#kennemer-golf-country-club-zandvoort) | Zandvoort | 131.6 | 27 | compleet |
+| 169 | [Golfclub d'n Heikant](#golfclub-dn-heikant-aarle-rixtel) | Aarle-Rixtel | 132.2 | 9 | compleet |
+| 170 | [Golfclub De Dommel](#golfclub-de-dommel-sint-michielsgestel) | Sint-Michielsgestel | 132.7 | 18 | compleet |
+| 171 | [Levant Golf (voorheen Golfbaan De Schoot)](#levant-golf-sint-oedenrode) | Sint-Oedenrode | 132.7 | 9 | compleet |
+| 172 | [Bernardus Golf](#bernardus-golf-cromvoirt) | Cromvoirt | 133.7 | 18 | compleet |
+| 173 | [Golfbaan de Golfhorst](#golfhorst-america) | America | 134.8 | 27 | compleet |
+| 174 | [Helmondse Golfclub 'Overbrug'](#helmondse-golfclub-overbrug) | Helmond | 134.8 | 9 | compleet |
+| 175 | [Golfclub Vught (par 3-baan)](#golfclub-vught) | Vught | 135.1 | 9 | compleet |
+| 176 | [Golfbaan Ter Specke](#golfbaan-ter-specke-lisse) | Lisse | 135.6 | 9 | compleet |
+| 177 | [Golfbaan Tespelduyn (Bloembollenbaan)](#golfbaan-tespelduyn-noordwijkerhout) | Noordwijkerhout | 135.7 | 9 | compleet |
+| 178 | [Golfclub Son](#golfclub-son) | Son en Breugel | 136.9 | 9 | deels |
+| 179 | [Golfpark Almkreek](#golfpark-almkreek-almkerk) | Almkerk | 137.0 | 32 | deels |
+| 180 | [De Peelse Golf](#de-peelse-golf-evertsoord) | Evertsoord | 139.5 | 27 | compleet |
+| 181 | [Noordwijkse Golfclub](#noordwijkse-golfclub) | Noordwijk | 139.8 | 18 | compleet |
+| 182 | [Golfclub Kagerzoom](#golfclub-kagerzoom-warmond) | Warmond | 140.5 | 9 | compleet |
+| 183 | [Golfbaan Bentwoud](#golfbaan-bentwoud-benthuizen) | Benthuizen | 141.0 | 27 | compleet |
+| 184 | [Golfbaan Bentwoud – Noordwoud (par 3/4-baan)](#golfbaan-bentwoud-noordwoud) | Benthuizen | 141.0 | 9 | compleet |
+| 185 | [Golf De Gulbergen](#golf-de-gulbergen-mierlo) | Mierlo | 141.3 | 27 | compleet |
+| 186 | [Golf Centrum Noordwijk](#golfcentrum-noordwijk) | Noordwijk | 141.4 | 9 | deels |
+| 187 | [Golf- en wijndomein Kapelkeshof](#kapelkeshof-grashoek) | Grashoek | 141.9 | 21 | compleet |
+| 188 | [Golfclub de Berckt](#golfclub-de-berckt-baarlo) | Baarlo | 142.0 | 9 | compleet |
+| 189 | [Best Golf](#best-golf-country-club) | Best | 142.6 | 18 | compleet |
+| 190 | [Oegstgeester Golfclub](#oegstgeester-golfclub) | Oegstgeest | 143.1 | 9 | compleet |
+| 191 | [Golfcentrum Eindhoven](#golfcentrum-eindhoven) | Eindhoven | 143.5 | 9 | compleet |
+| 192 | [ESTEC Golf Club](#estec-golf-club-noordwijk) | Noordwijk | 144.5 | 9 | compleet |
+| 193 | [Golfpark De Loonsche Duynen](#golfpark-de-loonsche-duynen-de-moer) | De Moer | 144.7 | 27 | compleet |
+| 194 | [Golfpark De Kurenpolder](#golfpark-de-kurenpolder-hank) | Hank | 144.8 | 18 | compleet |
+| 195 | [Golfbaan Het Woold](#golfbaan-het-woold-asten) | Asten-Heusden | 145.1 | 27 | compleet |
+| 196 | [Golfbaan Hitland](#golfbaan-hitland-nieuwerkerk) | Nieuwerkerk aan den IJssel | 145.1 | 18 | deels |
+| 197 | [Golfclub Riel](#golfclub-riel-geldrop) | Geldrop | 145.5 | 9 | compleet |
+| 198 | [Sportfondsen Golfbaan Het Wedde](#golfbaan-het-wedde-voorschoten) | Voorschoten | 145.6 | 9 | compleet |
+| 199 | [Crayestein Golf](#crayestein-golf-dordrecht) | Dordrecht | 145.7 | 18 | deels |
+| 200 | [Crayestein Pitch & Putt](#crayestein-pitch-putt-dordrecht) | Dordrecht | 145.7 | 18 | deels |
+| 201 | [Golfbaan Eyckenduyn](#eyckenduyn-helden) | Helden | 146.0 | 9 | compleet |
+| 202 | [Golfclub Capelle](#golfclub-capelle-capelle-aan-den-ijssel) | Capelle aan den IJssel | 146.7 | 18 | compleet |
+| 203 | [Golfbaan De Swinkelsche](#golfbaan-de-swinkelsche-someren) | Someren | 146.8 | 27 | compleet |
+| 204 | [Golfbaan Crimpenerhout](#golfbaan-crimpenerhout-krimpen-aan-de-lek) | Krimpen aan de Lek | 147.5 | 9 | compleet |
+| 205 | [Golf- en Countryclub De Tongelreep](#golf-countryclub-de-tongelreep-eindhoven) | Eindhoven | 148.8 | 9 | deels |
+| 206 | [Wassenaarse Golfclub Rozenstein](#rozenstein-wassenaar) | Wassenaar | 148.8 | 18 | compleet |
+| 207 | [Golfbaan De Hooge Rotterdamsche](#de-hooge-rotterdamsche-bergschenhoek) | Bergschenhoek | 149.1 | 18 | compleet |
+| 208 | [Golf De Kieviten](#de-kieviten-golf-wassenaar) | Wassenaar | 149.1 | 9 | deels |
+| 209 | [Golfpark Westerpark](#golfpark-westerpark-zoetermeer) | Zoetermeer | 150.2 | 18 | compleet |
+| 210 | [Golf & Recreatiepark 't Caves](#golfpark-t-caves-wintelre) | Wintelre | 150.6 | 18 | deels |
+| 211 | [Golfbaan Kralingen](#golfbaan-kralingen-rotterdam) | Rotterdam | 150.9 | 9 | deels |
+| 212 | [Koninklijke Haagsche Golf & Country Club](#koninklijke-haagsche-wassenaar) | Wassenaar | 151.4 | 18 | compleet |
+| 213 | [Golfcentrum Dongen](#golfcentrum-dongen) | Dongen | 151.9 | 9 | deels |
+| 214 | [Eindhovensche Golf](#eindhovensche-golf-valkenswaard) | Valkenswaard | 152.5 | 18 | deels |
+| 215 | [Leender Golfclub Haviksoord](#leender-golfclub-haviksoord) | Leende | 153.0 | 18 | compleet |
+| 216 | [Haagsche Country Club Groen-Geel (golf)](#hcc-groen-geel-golf-wassenaar) | Wassenaar | 153.5 | 9 | compleet |
+| 217 | [Valkenswaardse Golfclub](#valkenswaardse-golfclub) | Valkenswaard | 153.5 | 9 | compleet |
+| 218 | [Brabant Golf](#brabant-golf-rijen) | Rijen | 153.8 | 9 | deels |
+| 219 | [De Oosterhoutse Golfclub](#oosterhoutse-golfclub) | Oosterhout | 153.8 | 27 | compleet |
+| 220 | [Golf Duinzicht](#golf-duinzicht-wassenaar) | Wassenaar | 153.9 | 9 | compleet |
+| 221 | [Golfpark Gendersteyn](#golfpark-gendersteyn-veldhoven) | Veldhoven | 153.9 | 25 | compleet |
+| 222 | [Prise d'Eau Golf](#prise-deau-golf-tilburg) | Tilburg | 153.9 | 36 | deels |
+| 223 | [Wassenaarse Golf Groendael](#wassenaarse-golf-groendael) | Wassenaar | 154.2 | 9 | compleet |
+| 224 | [Golfcenter Seve Par 3-baan](#golfcenter-seve-rotterdam) | Rotterdam | 154.3 | 9 | deels |
+| 225 | [Golfbaan Leeuwenbergh](#leeuwenbergh-den-haag) | Den Haag | 154.7 | 18 | deels |
+| 226 | [DSV Concordia Golf (par 3-baan)](#dsv-concordia-golf-delft) | Delft | 155.4 | 9 | compleet |
+| 227 | [Golfpark De Haenen](#golfpark-de-haenen-teteringen) | Teteringen | 155.9 | 18 | compleet |
+| 228 | [Noord-Brabantsche Golfclub Toxandria](#toxandria-molenschot) | Molenschot | 156.1 | 18 | compleet |
+| 229 | [Golfbaan Landgoed Bergvliet](#landgoed-bergvliet-oosterhout) | Oosterhout | 156.3 | 27 | deels |
+| 230 | [Rijswijkse Golfclub](#rijswijkse-golfclub) | Rijswijk | 156.6 | 18 | compleet |
+| 231 | [Golfbaan Midden-Brabant](#golfbaan-midden-brabant-esbeek) | Esbeek | 156.9 | 27 | compleet |
+| 232 | [Golfclub Landgoed Nieuwkerk](#golfclub-landgoed-nieuwkerk-goirle) | Goirle | 156.9 | 9 | compleet |
+| 233 | [Golfpark Weilenseind](#golfpark-weilenseind-gilze) | Gilze | 157.4 | 9 | compleet |
+| 234 | [Golfpark Rotterdam](#golfpark-rotterdam) | Rotterdam | 157.6 | 18 | deels |
+| 235 | [Golfclub Princenbosch](#golfclub-princenbosch-molenschot) | Molenschot | 159.5 | 36 | compleet |
+| 236 | [De Strijensche Golfclub](#de-strijensche-golfclub-strijen) | Strijen | 160.0 | 9 | compleet |
+| 237 | [Rhoon Golfcenter (18 holes)](#rhoon-golfcenter) | Rhoon | 160.5 | 18 | compleet |
+| 238 | [Rhoon Golfcenter Beverbaan (par 3)](#rhoon-golfcenter-beverbaan) | Rhoon | 160.5 | 18 | compleet |
+| 239 | [Golfbaan Delfland Par 3 Challenge Course](#golfbaan-delfland-par-3-schipluiden) | Schipluiden | 160.6 | 9 | compleet |
+| 240 | [Golfbaan Delfland (Championship Course)](#golfbaan-delfland-schipluiden) | Schipluiden | 160.6 | 27 | compleet |
+| 241 | [De Herkenbosche](#de-herkenbosche-herkenbosch) | Herkenbosch | 161.3 | 27 | deels |
+| 242 | [Golfvereniging Albatross](#golfvereniging-albatross-prinsenbeek) | Prinsenbeek | 162.5 | 9 | compleet |
+| 243 | [Golfbaan Crossmoor](#crossmoor-weert) | Weert | 163.1 | 27 | deels |
+| 244 | [Golfpark Land van Thorn](#golfpark-land-van-thorn-hunsel) | Hunsel | 163.2 | 9 | compleet |
 | 245 | [Golfclub Broekpolder](#golfclub-broekpolder-vlaardingen) | Vlaardingen | 163.5 | 18 | compleet |
 | 246 | [Golf Ockenburgh](#golf-ockenburgh-den-haag) | Den Haag | 163.9 | 9 | deels |
 | 247 | [Golfbaan Schinkelshoek](#golfbaan-schinkelshoek-vlaardingen) | Vlaardingen | 165.7 | 27 | deels |
@@ -267,17 +267,16 @@ Gegenereerd door `tools/banen/build_course_index.py` uit `data/banen/<slug>/cour
 | 261 | [Golf & Country Club Hoenshuis](#golf-country-club-hoenshuis-voerendaal) | Voerendaal | 194.4 | 18 | compleet |
 | 262 | [Golfclub Meerssen](#golfclub-meerssen-bunde) | Bunde (Meerssen) | 195.8 | 9 | compleet |
 | 263 | [Golfbaan Het Rijk van Margraten](#het-rijk-van-margraten-cadier-en-keer) | Cadier en Keer | 201.8 | 18 | compleet |
-| 264 | [International Golf Maastricht](#international-golf-maastricht) | Maastricht | 202.1 | 27 | deels |
+| 264 | [Golfpark Maastricht International](#international-golf-maastricht) | Maastricht | 202.1 | 27 | compleet |
 | 265 | [Golfpark Reymerswael](#golfvereniging-reymerswael-rilland) | Rilland | 203.1 | 18 | compleet |
 | 266 | [De Zuid Limburgse Golf & Country Club Wittem](#zuid-limburgse-golf-country-club-wittem) | Mechelen (Gulpen-Wittem) | 205.1 | 18 | compleet |
-| 267 | [Golfclub Hoog Vaals](#golfclub-hoog-vaals) | Vaals | 206.1 | 9 | compleet |
-| 268 | [De Goese Golf](#de-goese-golf-goes) | Goes | 211.5 | 27 | compleet |
-| 269 | [Golfbaan Molenberg](#golfbaan-molenberg-burgh-haamstede) | Burgh-Haamstede | 212.7 | 18 | compleet |
-| 270 | [Golfbaan De Zeeuwsche](#de-zeeuwsche-middelburg) | Middelburg | 229.1 | 18 | compleet |
-| 271 | [Golfbaan De Woeste Kop](#de-woeste-kop-axel) | Axel | 230.5 | 18 | compleet |
-| 272 | [Domburgsche Golfclub](#domburgsche-golfclub-domburg) | Domburg | 233.5 | 9 | compleet |
-| 273 | [Golfclub Oostburg – Domein De Brugse Vaart](#golfclub-oostburg-brugse-vaart) | Oostburg | 249.5 | 18 | deels |
-| 274 | [GREENZ Cadzand-Bad (Shortgolf Cadzand-Bad)](#greenz-shortgolf-cadzand-bad) | Cadzand-Bad | 249.7 | 9 | deels |
+| 267 | [De Goese Golf](#de-goese-golf-goes) | Goes | 211.5 | 27 | compleet |
+| 268 | [Golfbaan Molenberg](#golfbaan-molenberg-burgh-haamstede) | Burgh-Haamstede | 212.7 | 18 | compleet |
+| 269 | [Golfbaan De Zeeuwsche](#de-zeeuwsche-middelburg) | Middelburg | 229.1 | 18 | compleet |
+| 270 | [Golfbaan De Woeste Kop](#de-woeste-kop-axel) | Axel | 230.5 | 18 | compleet |
+| 271 | [Domburgsche Golfclub](#domburgsche-golfclub-domburg) | Domburg | 233.5 | 9 | compleet |
+| 272 | [Golfclub Oostburg – Domein De Brugse Vaart](#golfclub-oostburg-brugse-vaart) | Oostburg | 249.5 | 18 | deels |
+| 273 | [GREENZ Cadzand-Bad (Shortgolf Cadzand-Bad)](#greenz-shortgolf-cadzand-bad) | Cadzand-Bad | 249.7 | 9 | deels |
 
 <a id="hooge-graven-ommen"></a>
 ## Hooge Graven Golfclub Ommen
@@ -495,18 +494,18 @@ De 9 holes pitch & putt-baan van Martensplek in Tiendeveen ligt naast de 18 hole
 - **Opmerking:** Geen scorekaart (par/lengtes) online gevonden op de officiele site of bij derden; alleen informatiepagina opgeslagen als page.html. GolfPass vermeldt 9 holes pitch&putt (1991) zonder par/lengte.
 
 <a id="golfplezier-twente-hoge-hexel"></a>
-## Golfplezier Twente
+## De Golfweide (voorheen Golfplezier Twente)
 
 Par 3-baan bij Hoge Hexel, tussen Nijverdal en Wierden, met 18 korte holes in het Twentse boerenland. Volgens Hole19 is er op maandag en dinsdag een 9 holes qualifyinglus en op andere dagen de volledige 18 holes. De officiële website is momenteel in aanbouw; controleer de actuele situatie bij de baan.
 
-- **Club:** Golfplezier Twente
+- **Club:** De Golfweide
 - **Adres:** Bekkenhaarsweg 28, 7645 AJ Hoge Hexel, Overijssel, NL
 - **GPS:** 52.40817, 6.57135
 - **Afstand:** 22.7 km
 - **Type:** par-3
 - **Holes:** 18
 - **Landschap:** agrarisch/open (Twents boerenland)
-- **Telefoon:** +31 546 697 265
+- **Telefoon:** 0546 697 365
 - **E-mail:** info@golfpleziertwente.nl
 - **Website:** https://golfpleziertwente.nl
 - **Greenfee welkom:** True
@@ -1796,12 +1795,12 @@ Moderne 9-holes par-70 baan naast Aparthotel Delden, ontworpen door Frank Pont e
 - **Opmerking:** Scorekaart 26-09-2025. Teekleuren van de drie lengtekolommen (geel/rood/oranje) afgeleid uit totaallengte 4743 m (geel volgens site) en volgorde in handicaptabellen. Twickelbaan: 9 korte holes (par 29) op dezelfde baan met eigen tees; CR geel heren / rood dames vanaf zwart/witte tee.
 
 <a id="twentse-golf-academy-bentelo"></a>
-## Twentse Golf Academy
+## Short Golf Hof van Twente (voorheen Twentse Golf Academy)
 
 Kleinschalige golfaccommodatie in het buitengebied van Bentelo (Hof van Twente), een zusterbaan van het Twentse Golf Park in Haaksbergen. De 9 holes zijn allemaal par 3 en kort (circa 35 tot 115 meter), wat de baan geschikt maakt voor beginners en het oefenen van het korte spel. Er is een driving range en het accent ligt op lessen.
 
-- **Club:** Twentse Golf Academy
-- **Adres:** Bentelosestraat 54a, Bentelo, Overijssel, NL
+- **Club:** Short Golf Hof van Twente
+- **Adres:** Platenkampsweg, Bentelo, Overijssel, NL
 - **GPS:** 52.2404, 6.695
 - **Afstand:** 43.1 km
 - **Type:** par-3
@@ -3141,58 +3140,6 @@ Openbare 9-holes baan uit 2009, aangelegd op de voormalige vuilstort van Dronten
 - **Scorekaartpagina:** https://www.openbaregolfclubdronten.nl/Scorekaart-en-handicap
 - **Bestanden:** [scorecard/OGD-scorekaart.png](openbare-golfclub-dronten/scorecard/OGD-scorekaart.png), [scorecard/OGD-baangids-2026.pdf](openbare-golfclub-dronten/scorecard/OGD-baangids-2026.pdf), [scorecard/OGD-handicaptabel-heren.pdf](openbare-golfclub-dronten/scorecard/OGD-handicaptabel-heren.pdf), [scorecard/OGD-handicaptabel-dames.pdf](openbare-golfclub-dronten/scorecard/OGD-handicaptabel-dames.pdf), [scorecard/page.html](openbare-golfclub-dronten/scorecard/page.html)
 - **Opmerking:** Fysiek 9 holes; holes 1/10, 4/13, 7/16 en 8/17 hebben eigen afslagplaatsen. Hole data uit scorekaart-afbeelding (één SI-kolom). CR/slope uit WHS-baanhandicaptabellen d.d. 13-11-2025.
-
-<a id="gut-dueneburg-haren"></a>
-## Golfclub Gut Düneburg
-
-18-holesbaan op het historische landgoed Gut Düneburg bij Haren (Ems), in een groot park met opvallend veel bos voor het Emsland. Bij het landgoed horen een hotel en restaurant in een 18e-eeuws herenhuis met barokke tuin. Volgens bezoekers heeft hole 18 een eilandgreen. Let op: de website verwijst momenteel alleen naar de renovatie van hotel en restaurant door een nieuwe eigenaar; controleer vooraf of de baan bespeelbaar is.
-
-- **Club:** Golfclub Gut Düneburg (Golfpark Gut Düneburg)
-- **Adres:** Düneburg 1, 49733 Haren (Ems), Niedersachsen, DE
-- **GPS:** 52.7792, 7.2082
-- **Afstand:** 54.2 km
-- **Type:** 18-holes
-- **Holes:** 18
-- **Landschap:** parklandschap met veel bos (landgoed van ca. 300 ha), barokke tuin
-- **Opgericht:** 1996
-- **Architect:** David John Krause
-- **Telefoon:** +49 5932 72740
-- **Website:** https://www.golf-emsland.de/
-- **Faciliteiten:** hotel, restaurant, clubhuis met terras
-
-**Lus 18 holes** — 18 holes, par 72
-
-| Tee | Lengte (m) | CR | Slope | Par |
-|---|---|---|---|---|
-| weiss (men) | 5859 | 72.9 | 136 | 72 |
-| gelb (men) | 5608 | 71.8 | 133 | 72 |
-| blau (women) | 4943 | 73.6 | 130 | 72 |
-| rot (women) | 4760 | 72.6 | 128 | 72 |
-
-| Hole | Par | SI | weiss | gelb | blau | rot |
-|---|---|---|---|---|---|---|
-| 1 | 4 | 15 | 328 | 320 | 263 | 255 |
-| 2 | 5 | 9 | 467 | 455 | 416 | 405 |
-| 3 | 4 | 5 | 315 | 307 | 275 | 267 |
-| 4 | 3 | 17 | 139 | 121 | 121 | 111 |
-| 5 | 5 | 11 | 442 | 432 | 389 | 381 |
-| 6 | 4 | 1 | 357 | 350 | 314 | 306 |
-| 7 | 4 | 7 | 337 | 326 | 297 | 290 |
-| 8 | 4 | 3 | 270 | 258 | 248 | 235 |
-| 9 | 3 | 13 | 149 | 138 | 134 | 123 |
-| 10 | 4 | 4 | 376 | 369 | 306 | 298 |
-| 11 | 4 | 8 | 355 | 345 | 289 | 284 |
-| 12 | 4 | 16 | 346 | 316 | 285 | 261 |
-| 13 | 5 | 18 | 464 | 437 | 371 | 371 |
-| 14 | 3 | 6 | 190 | 173 | 154 | 145 |
-| 15 | 5 | 10 | 507 | 473 | 414 | 387 |
-| 16 | 3 | 14 | 154 | 146 | 125 | 117 |
-| 17 | 4 | 12 | 330 | 319 | 270 | 262 |
-| 18 | 4 | 2 | 333 | 323 | 272 | 262 |
-
-- **Scorekaartpagina:** https://www.golfingrecord.com/golf-scorecard/2c11683d-0473-48af-a56a-f66bcc0958da
-- **Bestanden:** [scorecard/page.html](gut-dueneburg-haren/scorecard/page.html)
-- **Opmerking:** Geen officiële scorekaart beschikbaar: golf-emsland.de toont nu de site van Gut Düneburg GmbH (hotel/gastronomie in renovatie na overname door Albers Group, geen golfinformatie). Gegevens van golfingrecord.com (datum ratings onbekend, mogelijk verouderd; lengtes in meters, sommen kloppen; tees blau en rot gemarkeerd als dames). Status van de baan in 2026 onzeker (komoot meldt dat de baan niet meer in bedrijf is; niet bevestigd). Oprichtingsjaar 1996 en architect volgens golfingrecord.com/zoekresultaten (third-party). Adresvarianten: Düneburg 1 (golfpost.de) / Lipperring 1 (Gelbe Seiten, exploitant Golfpark Gut Düneburg Ferienservice GmbH & Co. KG).
 
 <a id="twentse-golf-park-haaksbergen"></a>
 ## Twentse Golf Park
@@ -4841,6 +4788,8 @@ Pitch & putt-baan van 18 par-3 holes bij recreatiegebied Strand Horst aan het Wo
 - **Holes:** 18
 - **Landschap:** recreatiegebied aan het Wolderwijd (water, bomen, eilandgreens/-tees)
 - **Telefoon:** +31 341 552 431
+- **E-mail:** info@pitch-putt-strandhorst.nl
+- **Website:** https://www.pitch-putt-strandhorst.nl
 - **Greenfee welkom:** True
 
 **Lus 18 holes pitch & putt** — 18 holes, par 54
@@ -6404,19 +6353,18 @@ Pitch & puttbaan op het terrein van vakantiepark Landal Esonstad aan het Lauwers
 - **Opmerking:** Holegegevens uit scorekaart april 2025. CR/slope uit de nieuwere handicaptabellen 15-09-2025 (kaart vermeldt nog oudere waarden: H wit 72,2/132, geel 71/132, blauw 68/119, rood 66,9/117, oranje 64,9/106; D geel 77,1/143, blauw 73,5/136, rood 71,9/129, oranje 68,8/120). 9-holesratings per negen staan in de tabellen. 232241_scorekaart_vF.pdf is een oudere kaart (2024).
 
 <a id="golfclub-losdorp"></a>
-## Golfclub Losdorp
+## Golf & Country Makkeveld (voorheen Golfclub Losdorp)
 
 Kleine, laagdrempelige par 3-baan bij Restaurant Eemshaven in het open Groninger kustland tussen Delfzijl en de Eemshaven. De 9 holes zijn kort (circa 55 tot 160 meter), zodat het spel vooral om de greens draait; de wind van de nabije zee speelt vaak mee. Geschikt voor beginners en om het korte spel te oefenen.
 
-- **Club:** Golf & Country Losdorp (bij Restaurant Eemshaven)
-- **Adres:** Schafferweg 29, 9907 TA Losdorp, Groningen, NL
+- **Club:** Golf & Country Makkeveld
+- **Adres:** Schafferweg 29, 9909 TA Losdorp, Groningen, NL
 - **GPS:** 53.37251, 6.84215
 - **Afstand:** 89.6 km
 - **Type:** par-3
 - **Holes:** 9
 - **Landschap:** open polder/kustlandschap
-- **Telefoon:** 0596 591408
-- **Website:** https://restauranteemshaven.nl/
+- **Telefoon:** +31 596 591 408
 - **Greenfee welkom:** True
 - **Eisen:** Volgens Hole19 geen toegangseisen en geen kledingvoorschriften (niet officieel bevestigd).
 - **Faciliteiten:** restaurant (Restaurant Eemshaven), camperplaatsen
@@ -9290,6 +9238,111 @@ Golfcomplex naast Kasteel Heemstede tussen Houten en Nieuwegein, voorheen bekend
 - **Scorekaartpagina:** https://www.deutrechtse.nl/golfbaan/hcp-tabellen/
 - **Bestanden:** [scorecard/de-utrechtse-18-holes-par-3-baan-dames-en-heren.pdf](de-utrechtse-houten/scorecard/de-utrechtse-18-holes-par-3-baan-dames-en-heren.pdf), [scorecard/de-utrechtse-wedstrijdbaan-18-holes-dames.pdf](de-utrechtse-houten/scorecard/de-utrechtse-wedstrijdbaan-18-holes-dames.pdf), [scorecard/de-utrechtse-wedstrijdbaan-heren-18-holes.pdf](de-utrechtse-houten/scorecard/de-utrechtse-wedstrijdbaan-heren-18-holes.pdf), [scorecard/hole19.html](de-utrechtse-houten/scorecard/hole19.html), [scorecard/page.html](de-utrechtse-houten/scorecard/page.html)
 - **Opmerking:** CR/slope officieel (handicaptabellen 26-09-2023). Par, S.I. en lengtes (alleen geel) van de wedstrijdbaan uit hole19golf.com (nieuwegeinse-golfclub); hole19 labelt de lengtes als "yds" maar het totaal (5490) past bij meters gezien CR 69,6 - eenheid niet officieel bevestigd. Lengtes rood/oranje en holegegevens van de par 3-baan niet gevonden.
+
+<a id="shortgolf-utrecht-nieuwegein"></a>
+## ShortGolf Utrecht
+
+ShortGolf Utrecht ligt op Sportpark Galecop in Nieuwegein en valt onder de Hollandsche Golfclub. Er zijn twee korte 9-holeslussen: een pure par-3-lus voor beginners en een iets langere lus met twee par-4-holes en meer water. Beide lussen zijn qualifying en vrij toegankelijk zonder baanpermissie of handicap, met daarnaast een driving range en oefengreens.
+
+- **Club:** Hollandsche Golfclub – ShortGolf Utrecht
+- **Adres:** Sportpark Galecop 10, 3438 HX Nieuwegein, Utrecht, NL
+- **GPS:** 52.0580647, 5.0925733
+- **Afstand:** 110.8 km
+- **Type:** par-3
+- **Holes:** 18
+- **Landschap:** vlak sportparkterrein met sloten en waterpartijen, aan de rand van Nieuwegein vlak bij Utrecht
+- **Telefoon:** 030 208 3005
+- **E-mail:** info@shortgolf-utrecht.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/boek-een-starttijd-golfpark-shortgolf-utrecht/
+- **Greenfee welkom:** True
+- **Eisen:** Geen baanpermissie of handicap vereist; voor golfers zonder ervaring adviseert de club de par-3-lus.
+- **Faciliteiten:** driving range, oefengreens, golfschool, horeca (hapje & drankje)
+
+**Lus 9 holes Par 3** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 705 | 23.9 | 65 | 27 |
+| rood (women) | 705 | 24.6 | 68 | 27 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 8 | 58 | 58 |
+| 2 | 3 | 6 | 56 | 56 |
+| 3 | 3 | 16 | 56 | 56 |
+| 4 | 3 | 18 | 60 | 60 |
+| 5 | 3 | 10 | 92 | 92 |
+| 6 | 3 | 4 | 123 | 123 |
+| 7 | 3 | 2 | 118 | 118 |
+| 8 | 3 | 12 | 67 | 67 |
+| 9 | 3 | 14 | 75 | 75 |
+
+**Lus 9 holes Par 3|4** — 9 holes, par 29
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 1099 | 27.1 | 89 | 29 |
+| rood (women) | 1099 | 28.3 | 89 | 29 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 5 | 232 | 232 |
+| 2 | 3 | 7 | 97 | 97 |
+| 3 | 3 | 15 | 58 | 58 |
+| 4 | 3 | 17 | 45 | 45 |
+| 5 | 4 | 1 | 245 | 245 |
+| 6 | 3 | 9 | 93 | 93 |
+| 7 | 3 | 11 | 60 | 60 |
+| 8 | 3 | 13 | 88 | 88 |
+| 9 | 3 | 3 | 181 | 181 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/shortgolf-utrecht/course/shortgolf-utrecht-par-3/
+- **Bestanden:** [scorecard/page.html](shortgolf-utrecht-nieuwegein/scorecard/page.html), [scorecard/page-par-3-4.html](shortgolf-utrecht-nieuwegein/scorecard/page-par-3-4.html), [scorecard/SU-SCOREKAART-PAR-3-2026.pdf](shortgolf-utrecht-nieuwegein/scorecard/SU-SCOREKAART-PAR-3-2026.pdf), [scorecard/SHORTGOLF_SCOREKAART9HOLESPAR3-4_2025WEB.pdf](shortgolf-utrecht-nieuwegein/scorecard/SHORTGOLF_SCOREKAART9HOLESPAR3-4_2025WEB.pdf), [scorecard/Golfpark-ShortGolf-Utrecht-Par3-handicaptabellen.pdf](shortgolf-utrecht-nieuwegein/scorecard/Golfpark-ShortGolf-Utrecht-Par3-handicaptabellen.pdf), [scorecard/Golfpark-ShortGolf-Utrecht-Par3-4-handicaptabellen.pdf](shortgolf-utrecht-nieuwegein/scorecard/Golfpark-ShortGolf-Utrecht-Par3-4-handicaptabellen.pdf)
+- **Opmerking:** Officiële scorekaarten via de site van de Hollandsche Golfclub: Par 3 (kaart 2026, 705 m, par 27) en Par 3|4 (kaart '2025WEB', 1099 m, par 29). Geel en rood hebben op beide kaarten dezelfde lengtes. S.I. par-3-lus in 18-holesstijl (alleen even nummers 2-18); Par 3|4-lus oneven 1-17. CR/slope uit handicaptabellen van 13-06-2024 (9 holes; geel heren, rood dames). 18-holeswaarden (lus 2x): Par 3 geel H 47,8/65, rood D 49,1/68 (par 54); Par 3|4 geel H 54,1/89, rood D 56,5/89 (par 58). Let op: de baan is volgens de opdrachtgever in 2026 vernieuwd; de ratings dateren van vóór 2026 en de Par 3|4-kaart is van 2025, dus mogelijk niet actueel. De coursepagina Par 3|4 noemt 'Par 27, 700 meter', wat afwijkt van de scorekaart (par 29, 1099 m); scorekaart aangehouden. Teekleuren van de Par 3-kaart niet visueel gecontroleerd (twee meterkolommen, gelijk aan de andere kaart aangenomen). Baan open bevestigd op 29-10-2026.
+
+<a id="golfbaan-oijense-zij-oss"></a>
+## Golfbaan Oijense Zij
+
+Golfbaan Oijense Zij is een compacte 9-holes par-3-baan aan de oostkant van Oss. De holes zijn kort (samen 729 meter), maar waterpartijen en bunkers rond de goed onderhouden greens vragen om precisie. De baan is laagdrempelig en richt zich op zowel beginners als ervaren golfers, met een driving range, golfshop en clubhuis met terras.
+
+- **Club:** Golfbaan Oijense Zij (Stichting Golfbaan Oss)
+- **Adres:** Oijenseweg 272, 5346 JG Oss, Noord-Brabant, NL
+- **GPS:** 51.7841695, 5.5182443
+- **Afstand:** 111.2 km
+- **Type:** par-3
+- **Holes:** 9
+- **Landschap:** vlak, open polderterrein aan de rand van Oss met enkele vijvers en bunkers
+- **Opgericht:** 2004
+- **Architect:** Gerard Jol (volgens golfpass.com)
+- **Telefoon:** 0412 690 217
+- **E-mail:** info@oijensezij.nl
+- **Website:** https://oijensezij.nl/
+- **Starttijden:** https://golfbaanoss.teetime.e-golf4u.nl/app/booking
+- **Greenfee welkom:** True
+- **Faciliteiten:** driving range, oefengreen, clubhuis met terras, golfshop, golfles (PGA-professionals), GVB-cursus
+
+**Lus 9 holes par 3** — 9 holes, par 27
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 729 |  |  | 27 |
+
+| Hole | Par | SI | geel |
+|---|---|---|---|
+| 1 | 3 | 9 | 39 |
+| 2 | 3 | 7 | 70 |
+| 3 | 3 | 2 | 113 |
+| 4 | 3 | 6 | 63 |
+| 5 | 3 | 3 | 89 |
+| 6 | 3 | 5 | 83 |
+| 7 | 3 | 8 | 53 |
+| 8 | 3 | 1 | 131 |
+| 9 | 3 | 4 | 88 |
+
+- **Scorekaartpagina:** https://www.hole19golf.com/courses/golfbaan-oijense-zij-oss
+- **Bestanden:** [scorecard/page.html](golfbaan-oijense-zij-oss/scorecard/page.html), [scorecard/hole19-oijense-zij.html](golfbaan-oijense-zij-oss/scorecard/hole19-oijense-zij.html), [scorecard/golfpass-oijense-zij.html](golfbaan-oijense-zij-oss/scorecard/golfpass-oijense-zij.html), [scorecard/Oijense-Zij-Golfbaan-Layout.png](golfbaan-oijense-zij-oss/scorecard/Oijense-Zij-Golfbaan-Layout.png)
+- **Opmerking:** De clubsite (oijensezij.nl) noemt alleen 9 par-3-holes met samen 729 m en toont een baanplattegrond zonder afstanden (Oijense-Zij-Golfbaan-Layout.png); er is geen scorekaart gepubliceerd. Par, S.I. en lengtes per hole komen van hole19golf.com: Hole19 zet 'yds' bij de lengtes, maar de som (729) is gelijk aan de 729 meter op de clubsite, dus als meters overgenomen. Teekleur geel volgens golfpass.com (Yellow, par 27, 729 m, geen CR/slope); jaar 2004 en architect Gerard Jol ook van golfpass.com. Geen course rating/slope gevonden. Volgens de opdrachtgever heeft de baan NGF D-status. Baanstatus open bevestigd op 29-10-2026 (op maandagen in de winterperiode gesloten).
 
 <a id="amvj-golf-amstelveen"></a>
 ## AMVJ Golf
@@ -15058,6 +15111,7 @@ De Kieviten is een Wassenaarse omnisportvereniging (opgericht 1926) waarvan de g
 - **Holes:** 9
 - **Landschap:** compacte parkbaan op het sportpark van omnisportvereniging De Kieviten, tussen hockey- en tennisvelden, met bomen en water
 - **Opgericht:** 1983
+- **Telefoon:** 06 3195 6823
 - **Website:** https://www.kieviten.nl/
 - **Greenfee welkom:** True
 - **Eisen:** Volgens 1golf.eu (niet geverifieerd): reserveren nodig, clubpas met geregistreerde handicap; ma-vr handicap 36 vereist.
@@ -16311,6 +16365,7 @@ De golfafdeling van studentenvereniging D.S.V. Concordia heeft aan de Brasserska
 - **Type:** par-3
 - **Holes:** 9
 - **Landschap:** par 3-baan aan de rand van de Delftse Hout
+- **Website:** https://www.concordiadelft.nl
 - **Faciliteiten:** driving range (volgens derden), golfschool (volgens derden)
 
 **Lus Par 3-baan 9 holes** — 9 holes, par 27
@@ -16322,21 +16377,21 @@ De golfafdeling van studentenvereniging D.S.V. Concordia heeft aan de Brasserska
 | geel (women) | 991 | 26.6 | 89 | 27 |
 | rood (women) | 966 | 26.5 | 88 | 27 |
 
-| Hole | Par | SI | rood |
-|---|---|---|---|
-| 1 | 3 | 6 | 101 |
-| 2 | 3 | 1 | 138 |
-| 3 | 3 | 3 | 135 |
-| 4 | 3 | 9 | 70 |
-| 5 | 3 | 7 | 104 |
-| 6 | 3 | 2 | 104 |
-| 7 | 3 | 5 | 112 |
-| 8 | 3 | 8 | 69 |
-| 9 | 3 | 4 | 133 |
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 3 | 11 | 101 | 101 |
+| 2 | 3 | 1 | 138 | 138 |
+| 3 | 3 | 5 | 135 | 135 |
+| 4 | 3 | 17 | 70 | 70 |
+| 5 | 3 | 13 | 104 | 104 |
+| 6 | 3 | 3 | 129 | 104 |
+| 7 | 3 | 9 | 112 | 112 |
+| 8 | 3 | 15 | 69 | 69 |
+| 9 | 3 | 7 | 133 | 133 |
 
-- **Scorekaartpagina:** https://www.hole19golf.com/courses/concordia-delft-golf
-- **Bestanden:** [scorecard/hole19-scorecard.html](dsv-concordia-golf-delft/scorecard/hole19-scorecard.html)
-- **Opmerking:** Geen officiele site met baangegevens gevonden (Hole19 verwijst naar concordiadelft.nl). Par, S.I. en per-hole lengtes van Hole19 voor tee rood (totaal 966); geel alleen totaal (991). CR/slope van Hole19 (niet officieel bevestigd); Hole19 vermeldt ook 18-holes ratings (lus 2x): heren geel 51,1/84, rood 50,9/83; dames geel 53,2/89, rood 52,9/88. GolfPass noemt afwijkende S.I. en totaal 1065. Telefoon volgens derden +31 15 212 6600 (niet bevestigd, niet ingevuld).
+- **Scorekaartpagina:** https://www.concordiadelft.nl/index.php?page=5_DB_Scorekaart
+- **Bestanden:** [scorecard/hole19-scorecard.html](dsv-concordia-golf-delft/scorecard/hole19-scorecard.html), [scorecard/concordia_scorekaart.png](dsv-concordia-golf-delft/scorecard/concordia_scorekaart.png)
+- **Opmerking:** Geen officiele site met baangegevens gevonden (Hole19 verwijst naar concordiadelft.nl). Par, S.I. en per-hole lengtes van Hole19 voor tee rood (totaal 966); geel alleen totaal (991). CR/slope van Hole19 (niet officieel bevestigd); Hole19 vermeldt ook 18-holes ratings (lus 2x): heren geel 51,1/84, rood 50,9/83; dames geel 53,2/89, rood 52,9/88. GolfPass noemt afwijkende S.I. en totaal 1065. Telefoon volgens derden +31 15 212 6600 (niet bevestigd, niet ingevuld). Holegegevens op 29-10-2026 vervangen door de officiële scorekaart van de club (9 holes 2x = par 54, rood 966 m / geel 991 m; S.I. 1–9 oneven, 10–18 even). Ratings ongewijzigd.
 
 <a id="golfpark-de-haenen-teteringen"></a>
 ## Golfpark De Haenen
@@ -17753,52 +17808,6 @@ Golfpark Land van Thorn ligt in Hunsel, niet ver van het witte stadje Thorn, en 
 - **Bestanden:** [scorecard/page.html](golfpark-land-van-thorn-hunsel/scorecard/page.html), [scorecard/Land-van-Thorn-18-holes-MRT-2026.pdf](golfpark-land-van-thorn-hunsel/scorecard/Land-van-Thorn-18-holes-MRT-2026.pdf), [scorecard/Land-van-Thorn-Handicaptabellen.pdf](golfpark-land-van-thorn-hunsel/scorecard/Land-van-Thorn-Handicaptabellen.pdf)
 - **Opmerking:** Officiele scorekaart (maart 2026): kolommen geel, rood, oranje; SI 1-9 oneven, 10-18 even. CR/slope uit de baanhandicaptabellen van 19-03-2025 (18 holes).
 
-<a id="golfbaan-de-achterste-hoef-bladel"></a>
-## Golfbaan De Achterste Hoef
-
-Golfbaan De Achterste Hoef ligt bij het gelijknamige recreatiepark ten zuiden van Bladel, in de bossen van de Kempen tegen de Belgische grens. Het is een korte 9-holesbaan (par 29) met overwegend par 3-holes en twee par 4's, die voor 18 holes twee keer wordt gespeeld.
-
-- **Club:** Golfbaan De Achterste Hoef & Stichting Golfclub Bladel
-- **Adres:** Troprijt 10, 5531 NA Bladel, Noord-Brabant, NL
-- **GPS:** 51.3434035, 5.2278062
-- **Afstand:** 163.3 km
-- **Type:** 9-holes
-- **Holes:** 9
-- **Landschap:** bosrijk Kempenlandschap bij de Belgische grens
-- **Website:** https://www.achterstehoef.nl
-- **Faciliteiten:** oefenfaciliteiten, golfschool, clubhuis (bij recreatiepark De Achterste Hoef)
-
-**Lus 18 holes (9 holes 2x)** — 18 holes, par 58
-
-| Tee | Lengte (m) | CR | Slope | Par |
-|---|---|---|---|---|
-| geel | 2226 |  |  | 58 |
-
-| Hole | Par | SI | geel |
-|---|---|---|---|
-| 1 | 3 | 17 | 60 |
-| 2 | 3 | 15 | 97 |
-| 3 | 3 | 5 | 138 |
-| 4 | 4 | 3 | 230 |
-| 5 | 4 | 1 | 230 |
-| 6 | 3 | 13 | 88 |
-| 7 | 3 | 11 | 80 |
-| 8 | 3 | 9 | 95 |
-| 9 | 3 | 7 | 85 |
-| 10 | 3 | 18 | 60 |
-| 11 | 3 | 16 | 97 |
-| 12 | 3 | 6 | 138 |
-| 13 | 4 | 4 | 230 |
-| 14 | 4 | 2 | 250 |
-| 15 | 3 | 14 | 88 |
-| 16 | 3 | 12 | 80 |
-| 17 | 3 | 10 | 95 |
-| 18 | 3 | 8 | 85 |
-
-- **Scorekaartpagina:** https://www.hole19golf.com/courses/golfbaan-de-achterste-hoef
-- **Bestanden:** [scorecard/page-golfpass.html](golfbaan-de-achterste-hoef-bladel/scorecard/page-golfpass.html), [scorecard/page-hole19.html](golfbaan-de-achterste-hoef-bladel/scorecard/page-hole19.html)
-- **Opmerking:** Geen officiële golfsite of scorekaart gevonden (achterstehoef.nl is de site van het recreatiepark, zonder golfinformatie). Par, S.I. en lengtes van Hole19 (tee "damen", eenheid daar als yds gelabeld; golfpass.com geeft 1123 meters voor 9 holes wit - lengtes waarschijnlijk meters). Teekleur onbekend (hier "geel"). Golfpass noemt Alan Rijks als architect (niet officieel bevestigd). Geen CR/slope.
-
 <a id="golfclub-broekpolder-vlaardingen"></a>
 ## Golfclub Broekpolder
 
@@ -19180,24 +19189,27 @@ Het Rijk van Margraten ligt op het plateau bij Cadier en Keer, tussen akkers, wi
 - **Opmerking:** Officiele scorekaart (par, SI, lengtes geel/rood/oranje; totalen 5709/4962 kloppen met de baandetails) en handicaptabellen van 25-09-2025. De kaart noemt ook 'blauwe tees' maar geeft daar geen lengtes of ratings voor. Short Golf (9 holes par 3) heeft geen gepubliceerde holegegevens.
 
 <a id="international-golf-maastricht"></a>
-## International Golf Maastricht
+## Golfpark Maastricht International
 
-International Golf Maastricht ligt op de Dousberg aan de westrand van Maastricht, pal op de grens: van de 18 holes liggen er dertien in Nederland en vijf in Belgie. De heuvelachtige baan met waterpartijen biedt uitzicht over het Maasdal. Er is ook een kortere 9-holes Limburg Course.
+Golfpark Maastricht International ligt op de Dousberg aan de westrand van Maastricht, precies op de grens: op de 18-holes Championship Course sla je in Nederland af en speel je vijf holes in België. De glooiende baan met hoogteverschillen en water kijkt uit over het Maasdal. Daarnaast is er de kortere 9-holes Limburg Course (par 35), geschikt voor beginners en gevorderden. Sinds maart 2026 maakt het park deel uit van de Hollandsche Golfclub.
 
-- **Club:** International Golf Maastricht
+- **Club:** Hollandsche Golfclub – Golfpark Maastricht International (homecourse van Golfclub Maastricht en Golfclub Lanaken)
 - **Adres:** Dousbergweg 100, 6216 GC Maastricht, Limburg, NL
 - **GPS:** 50.8545886, 5.6439389
 - **Afstand:** 202.1 km
-- **Type:** 18-holes
+- **Type:** 27-holes
 - **Holes:** 27
-- **Landschap:** heuvelachtig op de Dousberg, met water; deels in Belgie
+- **Landschap:** heuvelachtig op de Dousberg (circa 90 m hoog) op de grens met België, 75 hectare, met waterpartijen en uitzicht over het Maasdal; 13 holes in Nederland en 5 in België
 - **Architect:** Steve Marnoch (volgens 1golf.eu)
-- **Telefoon:** 043 328 1740
-- **Website:** https://www.internationalgolfmaastricht.com/
+- **Telefoon:** +31 43 328 1740
+- **E-mail:** info@golfparkmaastricht.nl
+- **Website:** https://www.hollandschegolfclub.nl/golfpark/maastricht/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/maastricht/boek-een-starttijd-maastricht/
 - **Greenfee welkom:** True
-- **Faciliteiten:** 9-holes Limburg Course, clubhuis met terras
+- **Eisen:** Championship Course vanaf handicap 54; Limburg Course vanaf baanpermissie.
+- **Faciliteiten:** driving range, 9-holes Limburg Course, brasserie met bar en terras, lockers, golfschool (Hollandsche Golfclub)
 
-**Lus Championship Course (18 holes)** — 18 holes, par 72
+**Lus Championship Course 18 holes (geel ⇄ rood)** — 18 holes, par 72
 
 | Tee | Lengte (m) | CR | Slope | Par |
 |---|---|---|---|---|
@@ -19211,53 +19223,108 @@ International Golf Maastricht ligt op de Dousberg aan de westrand van Maastricht
 | rood (women) | 4821 | 72.0 | 126 | 72 |
 | oranje (women) | 4350 | 68.6 | 120 | 72 |
 
-| Hole | Par | SI | blauw | wit | geel | rood | oranje |
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
 |---|---|---|---|---|---|---|---|
-| 1 | 4 | 14 | 271 |  |  |  |  |
-| 2 | 4 | 2 | 310 |  |  |  |  |
-| 3 | 3 | 18 | 107 |  |  |  |  |
-| 4 | 4 | 8 | 285 |  |  |  |  |
-| 5 | 5 | 10 | 426 |  |  |  |  |
-| 6 | 3 | 16 | 151 |  |  |  |  |
-| 7 | 4 | 6 | 306 |  |  |  |  |
-| 8 | 4 | 12 | 388 |  |  |  |  |
-| 9 | 4 | 4 | 301 |  |  |  |  |
-| 10 | 3 | 15 | 130 |  |  |  |  |
-| 11 | 5 | 11 | 403 |  |  |  |  |
-| 12 | 3 | 13 | 137 |  |  |  |  |
-| 13 | 4 | 9 | 316 |  |  |  |  |
-| 14 | 4 | 1 | 330 |  |  |  |  |
-| 15 | 5 | 5 | 400 |  |  |  |  |
-| 16 | 4 | 17 | 185 |  |  |  |  |
-| 17 | 5 | 7 | 377 |  |  |  |  |
-| 18 | 4 | 3 | 299 |  |  |  |  |
+| 1 | 4 | 14 | 307 | 293 | 271 | 248 | 223 |
+| 2 | 4 | 2 | 350 | 340 | 310 | 300 | 270 |
+| 3 | 3 | 18 | 117 | 109 | 107 | 102 | 102 |
+| 4 | 4 | 8 | 330 | 317 | 285 | 271 | 244 |
+| 5 | 5 | 10 | 500 | 472 | 426 | 371 | 335 |
+| 6 | 3 | 16 | 173 | 167 | 151 | 145 | 130 |
+| 7 | 4 | 6 | 338 | 318 | 306 | 298 | 268 |
+| 8 | 4 | 12 | 430 | 388 | 388 | 354 | 319 |
+| 9 | 4 | 4 | 326 | 308 | 301 | 285 | 256 |
+| 10 | 3 | 15 | 170 | 150 | 130 | 110 | 110 |
+| 11 | 5 | 11 | 441 | 413 | 403 | 374 | 337 |
+| 12 | 3 | 13 | 155 | 145 | 137 | 125 | 112 |
+| 13 | 4 | 9 | 375 | 360 | 316 | 306 | 269 |
+| 14 | 4 | 1 | 370 | 340 | 330 | 330 | 300 |
+| 15 | 5 | 5 | 475 | 455 | 400 | 386 | 347 |
+| 16 | 4 | 17 | 290 | 270 | 185 | 175 | 157 |
+| 17 | 5 | 7 | 460 | 421 | 377 | 361 | 319 |
+| 18 | 4 | 3 | 360 | 340 | 299 | 280 | 252 |
 
-**Lus Limburg Course (9 holes)** — 9 holes, par 35
+**Lus Gele lus (Championship holes 1-9)** — 9 holes, par 35
 
 | Tee | Lengte (m) | CR | Slope | Par |
 |---|---|---|---|---|
-| geel (women) | 2191 |  |  | 35 |
+| wit (men) | 2871 | 35.5 | 136 | 35 |
+| geel (men) | 2712 | 34.8 | 128 | 35 |
+| blauw (men) | 2545 | 34.0 | 118 | 35 |
+| rood (men) | 2374 | 33.2 | 110 | 35 |
+| oranje (men) | 2147 | 32.4 | 107 | 35 |
+| geel (women) | 2712 | 37.5 | 132 | 35 |
+| blauw (women) | 2545 | 36.5 | 128 | 35 |
+| rood (women) | 2374 | 35.9 | 125 | 35 |
+| oranje (women) | 2147 | 34.4 | 116 | 35 |
 
-| Hole | Par | SI | geel |
-|---|---|---|---|
-| 1 | 4 | 3 | 311 |
-| 2 | 4 | 5 | 310 |
-| 3 | 3 | 7 | 116 |
-| 4 | 4 | 6 | 225 |
-| 5 | 4 | 1 | 256 |
-| 6 | 4 | 8 | 242 |
-| 7 | 3 | 9 | 109 |
-| 8 | 4 | 2 | 235 |
-| 9 | 5 | 4 | 387 |
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 14 | 307 | 293 | 271 | 248 | 223 |
+| 2 | 4 | 2 | 350 | 340 | 310 | 300 | 270 |
+| 3 | 3 | 18 | 117 | 109 | 107 | 102 | 102 |
+| 4 | 4 | 8 | 330 | 317 | 285 | 271 | 244 |
+| 5 | 5 | 10 | 500 | 472 | 426 | 371 | 335 |
+| 6 | 3 | 16 | 173 | 167 | 151 | 145 | 130 |
+| 7 | 4 | 6 | 338 | 318 | 306 | 298 | 268 |
+| 8 | 4 | 12 | 430 | 388 | 388 | 354 | 319 |
+| 9 | 4 | 4 | 326 | 308 | 301 | 285 | 256 |
 
-- **Scorekaartpagina:** https://www.hole19golf.com/courses/international-golf-maastricht-championship
-- **Bestanden:** [scorecard/page.html](international-golf-maastricht/scorecard/page.html), [scorecard/hole19-championship.html](international-golf-maastricht/scorecard/hole19-championship.html), [scorecard/hole19-limburg-course.html](international-golf-maastricht/scorecard/hole19-limburg-course.html)
-- **Opmerking:** Officiele site (internationalgolfmaastricht.com) onbereikbaar: ongeldig TLS-certificaat en standaard hostingpagina. Holegegevens van hole19golf.com (metrisch): par, SI en alleen lengtes blauwe tee voor de Championship Course; CR/slope en totale lengtes per tee ook van Hole19. Limburg Course: par/SI/lengtes gele tee (Hole19 noemt deze tee 'yellow (l)'); ratings voor deze 9 holes zijn bij Hole19 onduidelijk (meerdere sets voor par 35 en par 37). Recente reviews (aug. 2026, 1golf.eu) klagen over de staat van de baan; actuele status onzeker.
+**Lus Rode lus (Championship holes 10-18)** — 9 holes, par 37
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 3096 | 37.0 | 132 | 37 |
+| geel (men) | 2894 | 35.8 | 131 | 37 |
+| blauw (men) | 2577 | 34.0 | 123 | 37 |
+| rood (men) | 2447 | 33.1 | 119 | 37 |
+| oranje (men) | 2203 | 31.8 | 112 | 37 |
+| geel (women) | 2894 | 39.1 | 144 | 37 |
+| blauw (women) | 2577 | 36.9 | 134 | 37 |
+| rood (women) | 2447 | 36.2 | 127 | 37 |
+| oranje (women) | 2203 | 34.3 | 123 | 37 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 10 | 3 | 15 | 170 | 150 | 130 | 110 | 110 |
+| 11 | 5 | 11 | 441 | 413 | 403 | 374 | 337 |
+| 12 | 3 | 13 | 155 | 145 | 137 | 125 | 112 |
+| 13 | 4 | 9 | 375 | 360 | 316 | 306 | 269 |
+| 14 | 4 | 1 | 370 | 340 | 330 | 330 | 300 |
+| 15 | 5 | 5 | 475 | 455 | 400 | 386 | 347 |
+| 16 | 4 | 17 | 290 | 270 | 185 | 175 | 157 |
+| 17 | 5 | 7 | 460 | 421 | 377 | 361 | 319 |
+| 18 | 4 | 3 | 360 | 340 | 299 | 280 | 252 |
+
+**Lus Limburg Course (9 holes, blauw)** — 9 holes, par 35
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| geel (men) | 2209 |  |  | 35 |
+| rood (men) | 1989 |  |  | 35 |
+| geel (women) | 2209 |  |  | 35 |
+| rood (women) | 1989 |  |  | 35 |
+
+| Hole | Par | SI | geel | rood |
+|---|---|---|---|---|
+| 1 | 4 | 5 | 311 | 291 |
+| 2 | 4 | 9 | 310 | 288 |
+| 3 | 3 | 13 | 116 | 116 |
+| 4 | 4 | 11 | 225 | 220 |
+| 5 | 4 | 1 | 256 | 195 |
+| 6 | 4 | 15 | 242 | 198 |
+| 7 | 3 | 17 | 109 | 93 |
+| 8 | 4 | 3 | 235 | 210 |
+| 9 | 5 | 7 | 405 | 378 |
+
+- **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/maastricht/course/maastricht-18-holes-geel-%e2%87%84-rood/
+- **Bestanden:** [scorecard/page.html](international-golf-maastricht/scorecard/page.html), [scorecard/page-limburg-course.html](international-golf-maastricht/scorecard/page-limburg-course.html), [scorecard/IGM-SCOREKAART-18-HOLES-WEB-2026.pdf](international-golf-maastricht/scorecard/IGM-SCOREKAART-18-HOLES-WEB-2026.pdf), [scorecard/MAA-18h-hcp-tabellen-dames-en-heren.pdf](international-golf-maastricht/scorecard/MAA-18h-hcp-tabellen-dames-en-heren.pdf), [scorecard/IGM-Scorekaart-9-holes-WEB.pdf](international-golf-maastricht/scorecard/IGM-Scorekaart-9-holes-WEB.pdf), [scorecard/MAA-Handicaptabellen-dames-en-heren-Limburg-Course.pdf](international-golf-maastricht/scorecard/MAA-Handicaptabellen-dames-en-heren-Limburg-Course.pdf)
+- **Opmerking:** Voorheen International Golf Maastricht (oude site internationalgolfmaastricht.com); per maart 2026 overgenomen door de Hollandsche Golfclub en hernoemd tot Golfpark Maastricht International (slug ongewijzigd). De HGC-URL is /golfpark/maastricht/ (/golfpark/maastricht-international/ geeft 404). Alle holegegevens nu van de officiële HGC-scorekaarten (18 holes 2026, kolommen wit/geel/blauw/rood/oranje visueel gecontroleerd; Limburg Course 9 holes geel/rood); de eerdere Hole19-data zijn vervangen (Hole19 gaf hole 9 Limburg 387 m, kaart 405 m). CR/slope Championship (18, 1e en 2e 9) uit HGC-handicaptabellen gedateerd 11-01-2021. S.I. van de gele en rode lus zijn de 18-holeswaarden (oneven/even verdeeld). Limburg Course: S.I. in 18-holesstijl (oneven 1-17); de tabellen (19-11-2019) geven alleen ratings voor 2x9 (par 70): geel D 69,8/128, rood D 66,3/118, geel H 65,9/114, rood H 63,5/108; de 9-holestabel herhaalt die CR bij par 35 (kennelijk fout), daarom zijn CR/slope voor de 9-holeslus leeg gelaten. HGC noemt de Limburg Course 'blauw', maar de scorekaart kent alleen gele en rode tees. Oprichtingsjaar niet op de HGC-site; architect overgenomen uit eerdere versie (1golf.eu). Bestanden hole19-*.html in scorecard/ zijn oude derde-partijdata en worden niet meer gebruikt.
 
 <a id="golfvereniging-reymerswael-rilland"></a>
 ## Golfpark Reymerswael
 
-Golfpark Reymerswael ligt bij Rilland in het open Zeeuwse landschap tussen de Westerschelde, het Schelde-Rijnkanaal en de polders. De par-71-baan bestaat uit een lus van 12 en een lus van 6 holes, met lage begroeiing en lichte duintoppen, waardoor de wind vaak de doorslag geeft. Het park wordt geëxploiteerd door de Hollandsche Golfclub.
+Golfpark Reymerswael ligt bij Rilland in het open Zeeuwse landschap tussen de Westerschelde, het Schelde-Rijnkanaal en de polders. De baan is opgedeeld in een rode lus van 12 holes en een blauwe lus van 6 holes, die samen een 18-holesronde van par 71 vormen. Lage begroeiing, water en lichte duintoppen maken de wind vaak beslissend. Het park wordt geëxploiteerd door de Hollandsche Golfclub.
 
 - **Club:** Hollandsche Golfclub – Golfpark Reymerswael (Golfvereniging Reymerswael)
 - **Adres:** Grensweg 21, 4411 ST Rilland, Zeeland, NL
@@ -19271,11 +19338,12 @@ Golfpark Reymerswael ligt bij Rilland in het open Zeeuwse landschap tussen de We
 - **Telefoon:** 0113 551 265
 - **E-mail:** info@golfparkreymerswael.nl
 - **Website:** https://www.hollandschegolfclub.nl/golfpark/reymerswael/
+- **Starttijden:** https://www.hollandschegolfclub.nl/golfpark/reymerswael/boek-een-starttijd-golfpark-reymerswael/
 - **Greenfee welkom:** True
-- **Eisen:** Vanaf baanpermissie van de Hollandsche Golfclub.
+- **Eisen:** Vanaf baanpermissie van de Hollandsche Golfclub (scorekaart: handicap 54 of baanpermissie).
 - **Faciliteiten:** driving range, putting green, chipping green, oefenbunker, brasserie
 
-**Lus 18 holes (lus 12 + lus 6)** — 18 holes, par 71
+**Lus 18 holes blauw ⇄ rood (rode lus 12 + blauwe lus 6)** — 18 holes, par 71
 
 | Tee | Lengte (m) | CR | Slope | Par |
 |---|---|---|---|---|
@@ -19310,9 +19378,61 @@ Golfpark Reymerswael ligt bij Rilland in het open Zeeuwse landschap tussen de We
 | 17 | 4 | 5 | 393 | 389 | 361 | 285 | 285 |
 | 18 | 3 | 17 | 132 | 132 | 123 | 123 | 123 |
 
+**Lus Rode lus (12 holes)** — 12 holes, par 48
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 3994 | 71.8 | 128 | 72 |
+| geel (men) | 3873 | 70.7 | 129 | 72 |
+| blauw (men) | 3606 | 69.3 | 123 | 72 |
+| rood (men) | 3325 | 67.3 | 116 | 72 |
+| oranje (men) | 2654 | 63.1 | 107 | 72 |
+| geel (women) | 3873 | 77.3 | 141 | 72 |
+| blauw (women) | 3606 | 75.2 | 138 | 72 |
+| rood (women) | 3325 | 72.4 | 126 | 72 |
+| oranje (women) | 2654 | 66.1 | 109 | 72 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 5 | 4 | 522 | 443 | 443 | 398 | 313 |
+| 2 | 3 | 12 | 164 | 164 | 144 | 144 | 144 |
+| 3 | 4 | 14 | 272 | 272 | 266 | 266 | 204 |
+| 4 | 4 | 10 | 343 | 343 | 343 | 290 | 214 |
+| 5 | 3 | 18 | 139 | 139 | 119 | 119 | 119 |
+| 6 | 5 | 2 | 446 | 446 | 446 | 365 | 267 |
+| 7 | 4 | 6 | 352 | 352 | 352 | 317 | 240 |
+| 8 | 3 | 16 | 162 | 162 | 137 | 137 | 137 |
+| 9 | 4 | 8 | 355 | 355 | 294 | 294 | 245 |
+| 10 | 4 | 15 | 331 | 331 | 306 | 306 | 226 |
+| 11 | 4 | 11 | 382 | 344 | 344 | 277 | 204 |
+| 12 | 5 | 1 | 526 | 522 | 412 | 412 | 341 |
+
+**Lus Blauwe lus (6 holes)** — 6 holes, par 23
+
+| Tee | Lengte (m) | CR | Slope | Par |
+|---|---|---|---|---|
+| wit (men) | 1950 | 36.7 | 137 | 35 |
+| geel (men) | 1906 | 36.2 | 133 | 35 |
+| blauw (men) | 1728 | 34.6 | 121 | 35 |
+| rood (men) | 1591 | 33.4 | 118 | 35 |
+| oranje (men) | 1344 | 32.2 | 97 | 35 |
+| geel (women) | 1906 | 39.6 | 146 | 35 |
+| blauw (women) | 1728 | 37.6 | 138 | 35 |
+| rood (women) | 1591 | 36.3 | 129 | 35 |
+| oranje (women) | 1344 | 33.2 | 120 | 35 |
+
+| Hole | Par | SI | wit | geel | blauw | rood | oranje |
+|---|---|---|---|---|---|---|---|
+| 1 | 4 | 2 | 337 | 337 | 278 | 278 | 245 |
+| 2 | 4 | 10 | 405 | 365 | 297 | 297 | 239 |
+| 3 | 4 | 14 | 347 | 347 | 347 | 286 | 232 |
+| 4 | 4 | 8 | 336 | 336 | 322 | 322 | 220 |
+| 5 | 4 | 6 | 393 | 389 | 361 | 285 | 285 |
+| 6 | 3 | 18 | 132 | 132 | 123 | 123 | 123 |
+
 - **Scorekaartpagina:** https://www.hollandschegolfclub.nl/golfpark/reymerswael/course/18-holes-golfpark-reymerswael/
-- **Bestanden:** [scorecard/REYMERSWAEL_SCOREKAART18HOLES_2025WEB.pdf](golfvereniging-reymerswael-rilland/scorecard/REYMERSWAEL_SCOREKAART18HOLES_2025WEB.pdf), [scorecard/Reymerswael_HCPTabellen_Nov2026.pdf](golfvereniging-reymerswael-rilland/scorecard/Reymerswael_HCPTabellen_Nov2026.pdf), [scorecard/page.html](golfvereniging-reymerswael-rilland/scorecard/page.html), [scorecard/golfingrecord-reymerswael-oud.html](golfvereniging-reymerswael-rilland/scorecard/golfingrecord-reymerswael-oud.html)
-- **Opmerking:** Officiële scorekaart 2025 via de site van de Hollandsche Golfclub (TOT 5944/5779/5334/4916/3998 m, par 71; kolomvolgorde wit/geel/blauw/rood/oranje aangenomen op basis van de handicaptabellen). Holes 13-18 vormen de 6-holeslus (op de kaart ook 1-6 genummerd). CR/slope uit tabellen november 2026. De oude clubsite reymerswael.nl is offline; golfingrecord.com geeft een verouderde indeling (5909 m).
+- **Bestanden:** [scorecard/page.html](golfvereniging-reymerswael-rilland/scorecard/page.html), [scorecard/page-12-holes.html](golfvereniging-reymerswael-rilland/scorecard/page-12-holes.html), [scorecard/page-6-holes.html](golfvereniging-reymerswael-rilland/scorecard/page-6-holes.html), [scorecard/REYMERSWAEL_SCOREKAART18HOLES_2025WEB.pdf](golfvereniging-reymerswael-rilland/scorecard/REYMERSWAEL_SCOREKAART18HOLES_2025WEB.pdf), [scorecard/REYMERSWAEL_SCOREKAART12HOLES_2025WEB.pdf](golfvereniging-reymerswael-rilland/scorecard/REYMERSWAEL_SCOREKAART12HOLES_2025WEB.pdf), [scorecard/REYMERSWAEL_SCOREKAART6HOLES_2025WEB.pdf](golfvereniging-reymerswael-rilland/scorecard/REYMERSWAEL_SCOREKAART6HOLES_2025WEB.pdf), [scorecard/Reymerswael_HCPTabellen_Nov2026.pdf](golfvereniging-reymerswael-rilland/scorecard/Reymerswael_HCPTabellen_Nov2026.pdf), [scorecard/Reymerswael-12-holes-dames-en-heren.pdf](golfvereniging-reymerswael-rilland/scorecard/Reymerswael-12-holes-dames-en-heren.pdf), [scorecard/Reymerswael-6-holes-damen-en-heren.pdf](golfvereniging-reymerswael-rilland/scorecard/Reymerswael-6-holes-damen-en-heren.pdf), [scorecard/golfingrecord-reymerswael-oud.html](golfvereniging-reymerswael-rilland/scorecard/golfingrecord-reymerswael-oud.html)
+- **Opmerking:** HGC deelt de baan in als rode lus (12 holes, par 48, 3994 m wit) en blauwe lus (6 holes, par 23, 1950 m wit); samen de 18-holesbaan 'blauw ⇄ rood' (par 71, 5944 m), die apart te boeken is (2 starttijden). Alle drie de varianten staan als loop: 18 holes (ongewijzigd t.o.v. vorige versie; holes 1-12 = rode lus, 13-18 = blauwe lus 1-6), en nu ook de rode en blauwe lus met eigen officiële scorekaart (2025WEB) en handicaptabellen (03-12-2025). Kolommen wit/geel/blauw/rood/oranje visueel gecontroleerd op de 12-holeskaart. Rode lus: wordt voor qualifying aangevuld tot 18 holes met 6 fictieve holes (netto par); CR/slope gelden daarom voor par 72 (tees.par = 72, lus-par = 48). S.I. zijn de 18-holeswaarden (1-18 met gaten). Blauwe lus: aangevuld met 3 fictieve holes tot 9 (par 35; tees.par = 35, lus-par = 23); S.I. 2,6,8,10,14,18 wijkt af van de S.I. van holes 13-18 op de 18-holeskaart; als losse lus niet qualifying volgens HGC. 18-holes CR/slope uit tabellen november 2026. De oude clubsite reymerswael.nl is offline; golfingrecord.com geeft een verouderde indeling (5909 m).
 
 <a id="zuid-limburgse-golf-country-club-wittem"></a>
 ## De Zuid Limburgse Golf & Country Club Wittem
@@ -19373,54 +19493,6 @@ De baan van de Zuid Limburgse Golf & Country Club ligt bij Mechelen in het Zuid-
 - **Scorekaartpagina:** https://zlgolf.nl/baan/scorekaart/
 - **Bestanden:** [scorecard/page.html](zuid-limburgse-golf-country-club-wittem/scorecard/page.html), [scorecard/Scorekaart-2025.pdf](zuid-limburgse-golf-country-club-wittem/scorecard/Scorekaart-2025.pdf), [scorecard/ZLGCC-WHS-tabel-Heren.pdf](zuid-limburgse-golf-country-club-wittem/scorecard/ZLGCC-WHS-tabel-Heren.pdf), [scorecard/ZLGCC-WHS-tabel-Dames.pdf](zuid-limburgse-golf-country-club-wittem/scorecard/ZLGCC-WHS-tabel-Dames.pdf)
 - **Opmerking:** Officiele scorekaart 2025 (par, SI, lengtes 5 tees, CR/SR); ratings komen overeen met de WHS-tabellen van 19-01-2021. De baaninformatiepagina noemt geel 5451 m / rood 4751 m (oudere waarden; kaart: 5490/4765).
-
-<a id="golfclub-hoog-vaals"></a>
-## Golfclub Hoog Vaals
-
-Golfclub Hoog Vaals ligt in het heuvelland bij Vaals, direct naast vakantiepark Landal Hoog Vaals. De 9-holesbaan bestaat uit zeven par 3's en twee par 4's (par 29) en wordt voor 18 holes twee keer gespeeld. Er zijn een overdekte driving range en een clubhuis.
-
-- **Club:** Golfclub Hoog Vaals
-- **Adres:** Eschberg 12, 6291 NK Vaals, Limburg, NL
-- **GPS:** 50.7689169, 5.999756
-- **Afstand:** 206.1 km
-- **Type:** 9-holes
-- **Holes:** 9
-- **Landschap:** heuvelland naast vakantiepark Landal Hoog Vaals
-- **Telefoon:** 043 306 8345
-- **Greenfee welkom:** True
-- **Faciliteiten:** overdekte driving range, clubhuis, 9 holes par 3-baan (volgens derden)
-
-**Lus 9 holes par 3/4 (2x gespeeld = 18 holes)** — 18 holes, par 58
-
-| Tee | Lengte (m) | CR | Slope | Par |
-|---|---|---|---|---|
-| heren (men) | 2816 | 54.1 | 91 | 58 |
-| dames (women) | 2724 | 56.6 | 99 | 58 |
-
-| Hole | Par | SI | heren | dames |
-|---|---|---|---|---|
-| 1 | 3 | 7 | 93 | 93 |
-| 2 | 4 | 1 | 351 | 320 |
-| 3 | 4 | 3 | 340 | 325 |
-| 4 | 3 | 9 | 102 | 102 |
-| 5 | 3 | 13 | 110 | 110 |
-| 6 | 3 | 17 | 81 | 81 |
-| 7 | 3 | 15 | 91 | 91 |
-| 8 | 3 | 11 | 108 | 108 |
-| 9 | 3 | 5 | 132 | 132 |
-| 10 | 3 | 8 | 93 | 93 |
-| 11 | 4 | 2 | 351 | 320 |
-| 12 | 4 | 4 | 340 | 325 |
-| 13 | 3 | 10 | 102 | 102 |
-| 14 | 3 | 14 | 110 | 110 |
-| 15 | 3 | 18 | 81 | 81 |
-| 16 | 3 | 16 | 91 | 91 |
-| 17 | 3 | 12 | 108 | 108 |
-| 18 | 3 | 6 | 132 | 132 |
-
-- **Scorekaartpagina:** https://www.hole19golf.com/courses/golfclub-hoog-vaals
-- **Bestanden:** [scorecard/page.html](golfclub-hoog-vaals/scorecard/page.html), [scorecard/hole19-golfclub-hoog-vaals.html](golfclub-hoog-vaals/scorecard/hole19-golfclub-hoog-vaals.html), [scorecard/golfify-hoog-vaals.html](golfclub-hoog-vaals/scorecard/golfify-hoog-vaals.html)
-- **Opmerking:** TWIJFELGEVAL: het oude domein golfclubhoogvaals.nl toont nu een ongerelateerde blog; geen officiele bron gevonden en actuele status onbekend (review 2021: baan deels onverzorgd). Par, SI en damestee (rood) van hole19golf.com (metrisch, CR 56.6/SR 99 over 18 holes); herentee-lengtes van golfify.io (holes 2 en 3: 351/340 i.p.v. 320/325; 9-holes CR 27.0/SR 91 -> Hole19 18 holes CR 54.1/SR 91). Teekleur heren onbekend. Telefoonnummer en adres volgens derden (1golf.eu/Hole19).
 
 <a id="de-goese-golf-goes"></a>
 ## De Goese Golf

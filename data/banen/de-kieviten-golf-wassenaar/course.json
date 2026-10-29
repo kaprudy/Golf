@@ -17,7 +17,7 @@
     "source": "nominatim.openstreetmap.org (adres Dr. Mansveltkade 11, Wassenaar)"
   },
   "distance_km_from_dedemsvaart": 149.1,
-  "phone": null,
+  "phone": "06 3195 6823",
   "email": null,
   "website": "https://www.kieviten.nl/",
   "booking_url": null,
@@ -241,6 +241,10 @@
     "https://www.hole19golf.com/courses/golf-de-kieviten",
     "https://www.golfpass.com/courses/23878-kieviten-golf-club/scorecard-and-layout",
     "https://www.1golf.eu/club/golfclub-de-kieviten/",
-    "https://nominatim.openstreetmap.org/"
-  ]
+    "https://nominatim.openstreetmap.org/",
+    "https://www.kieviten.nl"
+  ],
+  "status": "open",
+  "status_note": "Open; clubsite actief (99 jaar). 9 holes C-baan, 1420 m, 7x par 3 en 2x par 4 (par 29), qualifying mogelijk. kieviten.nl geeft 403 aan scripts maar werkt in de browser.",
+  "status_checked": "2026-10-29"
 }
