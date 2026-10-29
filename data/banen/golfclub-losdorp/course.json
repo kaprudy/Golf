@@ -221,7 +221,7 @@
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Holegegevens uit Hole19 (18 holes = 2x de 9 holes, par 3 elk, SI 2e negen = SI 1e negen + 1; tee geel, totaal 1738). Hole19 zet de eenheid als yds; of dit meters zijn is niet zeker, daarom complete=false. Geen course rating/slope gevonden. STATUS ONZEKER: de clubsite golfclublosdorp.nl is inmiddels een ongerelateerde nieuwssite en de pagina /golfactiviteiten op restauranteemshaven.nl geeft 404 (menulink staat er nog). Niet bevestigd dat er nog gegolfd wordt; Hole19 noemt e-mail info@golfclublosdorp.nl, maar dat domein is niet meer van de club; daarom email=null. Golf.nl kent de baan niet (geen NGF-club)."
+    "notes": "Holegegevens uit Hole19 (18 holes = 2x de 9 holes, par 3 elk, SI 2e negen = SI 1e negen + 1; tee geel, totaal 1738). Hole19 zet de eenheid als yds; of dit meters zijn is niet zeker, daarom complete=false. Geen course rating/slope gevonden. STATUS ONZEKER: de clubsite golfclublosdorp.nl is inmiddels een ongerelateerde nieuwssite en de pagina /golfactiviteiten op restauranteemshaven.nl geeft 404 (menulink staat er nog). Niet bevestigd dat er nog gegolfd wordt; Hole19 noemt e-mail info@golfclublosdorp.nl, maar dat domein is niet meer van de club; daarom email=null. Golf.nl kent de baan niet (geen NGF-club). Officiële bron gecontroleerd 29-10-2026: geen eigen website; golf.nl kent de baan niet; enige officiele kanaal is de Facebook-pagina 'Golf & Country Makkeveld' (https://www.facebook.com/people/Golf-Country-Makkeveld/100069547305086/), die zonder browser niet leesbaar is. Geen officiele scorekaart gevonden; Hole19-gegevens blijven staan."
   },
   "sources": [
     "https://www.hole19golf.com/courses/golfclub-losdorp",
@@ -229,7 +229,8 @@
     "https://golfkaart.com/losdorp/golf-country-losdorp",
     "https://golfkaart.com/api/kaart.json",
     "https://golfvandaag.nl",
-    "https://www.golfpass.com"
+    "https://www.golfpass.com",
+    "https://www.facebook.com/people/Golf-Country-Makkeveld/100069547305086/"
   ],
   "status": "open",
   "status_note": "Open; heet nu Golf & Country Makkeveld (voorheen Golfclub Losdorp). 9 holes par 27, CR 25,8 / slope 56 (GolfPass).",

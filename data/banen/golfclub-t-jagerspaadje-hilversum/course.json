@@ -61,10 +61,11 @@
         {
           "hole": 1,
           "par": 3,
-          "si": 5,
+          "si": 3,
           "si_women": null,
           "lengths_m": {
-            "geel": 110
+            "geel": 110,
+            "rood": 110
           }
         },
         {
@@ -73,7 +74,8 @@
           "si": 11,
           "si_women": null,
           "lengths_m": {
-            "geel": 225
+            "geel": 225,
+            "rood": 225
           }
         },
         {
@@ -82,7 +84,8 @@
           "si": 7,
           "si_women": null,
           "lengths_m": {
-            "geel": 230
+            "geel": 230,
+            "rood": 230
           }
         },
         {
@@ -91,7 +94,8 @@
           "si": 1,
           "si_women": null,
           "lengths_m": {
-            "geel": 170
+            "geel": 170,
+            "rood": 170
           }
         },
         {
@@ -100,16 +104,18 @@
           "si": 13,
           "si_women": null,
           "lengths_m": {
-            "geel": 119
+            "geel": 119,
+            "rood": 119
           }
         },
         {
           "hole": 6,
           "par": 4,
-          "si": 3,
+          "si": 5,
           "si_women": null,
           "lengths_m": {
-            "geel": 243
+            "geel": 243,
+            "rood": 243
           }
         },
         {
@@ -118,34 +124,38 @@
           "si": 9,
           "si_women": null,
           "lengths_m": {
-            "geel": 116
+            "geel": 116,
+            "rood": 116
           }
         },
         {
           "hole": 8,
           "par": 3,
-          "si": 17,
+          "si": 15,
           "si_women": null,
           "lengths_m": {
-            "geel": 100
+            "geel": 100,
+            "rood": 100
           }
         },
         {
           "hole": 9,
           "par": 3,
-          "si": 15,
+          "si": 17,
           "si_women": null,
           "lengths_m": {
-            "geel": 87
+            "geel": 87,
+            "rood": 87
           }
         },
         {
           "hole": 10,
           "par": 3,
-          "si": 10,
+          "si": 6,
           "si_women": null,
           "lengths_m": {
-            "geel": 95
+            "geel": 95,
+            "rood": 95
           }
         },
         {
@@ -154,16 +164,18 @@
           "si": 12,
           "si_women": null,
           "lengths_m": {
-            "geel": 225
+            "geel": 225,
+            "rood": 225
           }
         },
         {
           "hole": 12,
           "par": 4,
-          "si": 6,
+          "si": 8,
           "si_women": null,
           "lengths_m": {
-            "geel": 230
+            "geel": 230,
+            "rood": 230
           }
         },
         {
@@ -172,7 +184,8 @@
           "si": 2,
           "si_women": null,
           "lengths_m": {
-            "geel": 170
+            "geel": 170,
+            "rood": 170
           }
         },
         {
@@ -181,7 +194,8 @@
           "si": 14,
           "si_women": null,
           "lengths_m": {
-            "geel": 119
+            "geel": 119,
+            "rood": 119
           }
         },
         {
@@ -190,16 +204,18 @@
           "si": 4,
           "si_women": null,
           "lengths_m": {
-            "geel": 243
+            "geel": 243,
+            "rood": 243
           }
         },
         {
           "hole": 16,
           "par": 3,
-          "si": 8,
+          "si": 10,
           "si_women": null,
           "lengths_m": {
-            "geel": 116
+            "geel": 116,
+            "rood": 116
           }
         },
         {
@@ -208,7 +224,8 @@
           "si": 18,
           "si_women": null,
           "lengths_m": {
-            "geel": 100
+            "geel": 100,
+            "rood": 100
           }
         },
         {
@@ -217,28 +234,34 @@
           "si": 16,
           "si_women": null,
           "lengths_m": {
-            "geel": 87
+            "geel": 87,
+            "rood": 87
           }
         }
       ]
     }
   ],
   "scorecard": {
-    "retrieved": "2026-10-28",
-    "page_url": "https://www.jagerspaadje.nl/",
+    "retrieved": "2026-10-29",
+    "page_url": "https://www.jagerspaadje.nl/copy-of-home-nieuw",
     "files": [
       "scorecard/page.html",
       "scorecard/WHS-1.jpg",
       "scorecard/WHS-2.jpg",
-      "scorecard/hole19.html"
+      "scorecard/hole19.html",
+      "scorecard/alleen-scorekaart-2022.jpg",
+      "scorecard/alleen-baan-2022.jpg",
+      "scorecard/page-baan.html"
     ],
-    "source": "third-party",
-    "complete": false,
-    "notes": "Club publiceert alleen totaal (9 holes: 3x par 4, 6x par 3; 2785 m) en NGF-tabellen 11-01-2021 (18 holes geel heren 55,0/91, rood dames 57,5/102; 9 holes 27,5/91 en 28,8/102). Par, S.I. en lengtes per hole komen van Hole19 (third-party); holesom 2785 m klopt met de clubopgave, par 60 en de par 4-verdeling ook. Rode lengtes per hole niet bekend (totaal gelijk aan geel volgens tabel/Hole19), daarom complete=false."
+    "source": "official",
+    "complete": true,
+    "notes": "Officiële bron gecontroleerd 29-10-2026: officiële scorekaart 2022 ('alleen scorekaart 2022.jpg') op jagerspaadje.nl gevonden. Par, S.I. en lengtes voor 18 holes (2x 9, uit 1400 m / in 1385 m, totaal 2785 m, par 60) vervangen de Hole19-gegevens; Hole19 (derden) had een afwijkende S.I. op holes 1, 6, 8, 9, 10, 12 en 16; lengtes en par waren gelijk. Kaart heeft één lengtekolom voor heren en dames; die is voor geel (heren) en rood (dames) ingevuld. CR/SR op de kaart (heren 55/91, dames 57,5/102) gelijk aan de NGF-tabellen 11-01-2021 (9 holes 27,5/91 en 28,8/102)."
   },
   "sources": [
     "https://www.jagerspaadje.nl/",
     "https://www.jagerspaadje.nl/copy-of-home-nieuw-1",
-    "https://www.hole19golf.com/courses/golfclub-t-jagerspaadje"
+    "https://www.hole19golf.com/courses/golfclub-t-jagerspaadje",
+    "https://static.wixstatic.com/media/f31dae_f16c2d434d9c4af0819db8d1b547b70f~mv2.jpg",
+    "https://www.jagerspaadje.nl/copy-of-home-nieuw"
   ]
 }

@@ -46,7 +46,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "men",
-          "length_m": null,
+          "length_m": 5435,
           "course_rating": 68.5,
           "slope": 114,
           "par": 71
@@ -55,7 +55,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "women",
-          "length_m": null,
+          "length_m": 5435,
           "course_rating": 73.2,
           "slope": 127,
           "par": 71
@@ -64,7 +64,7 @@
           "name": "rood",
           "color": "red",
           "gender": "men",
-          "length_m": null,
+          "length_m": 4767,
           "course_rating": 64.2,
           "slope": 103,
           "par": 71
@@ -73,17 +73,198 @@
           "name": "rood",
           "color": "red",
           "gender": "women",
-          "length_m": null,
+          "length_m": 4767,
           "course_rating": 69.6,
           "slope": 117,
           "par": 71
         }
       ],
-      "hole_data": []
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 423,
+            "rood": 353
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 366,
+            "rood": 356
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 96,
+            "rood": 91
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 331,
+            "rood": 279
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 356,
+            "rood": 323
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 199,
+            "rood": 138
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 414,
+            "rood": 327
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 476,
+            "rood": 422
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 104,
+            "rood": 99
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 453,
+            "rood": 409
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 288,
+            "rood": 277
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 106,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 286,
+            "rood": 243
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 400,
+            "rood": 350
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 429,
+            "rood": 405
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 430,
+            "rood": 373
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 128,
+            "rood": 110
+          }
+        }
+      ]
     }
   ],
   "scorecard": {
-    "page_url": "https://www.dorhoutmeesgolf.nl/golfbaan-flevoland/over-de-baan/",
+    "page_url": "https://www.dorhoutmeesgolf.nl/hole-1/",
     "files": [
       "scorecard/Dorhout-Mees-Heren-Playing-Handicaps-1.pdf",
       "scorecard/Dorhout-Mees-Dames-Playing-handicaps-1.pdf",
@@ -91,13 +272,31 @@
     ],
     "source": "official",
     "retrieved": "2026-10-28",
-    "complete": false,
-    "notes": "Geen officiële hole-voor-hole scorekaart online gevonden (holes-pagina toont alleen foto's). Wel CR/slope/par uit officiële WHS-tabellen d.d. 02-09-2021 (geel/rood, par 71). Ontbreekt: per-hole par, SI en lengtes, totale lengtes, par-3 baan gegevens. Derde-partij-kaarten (golfingrecord.com: Rood/Wit, Oranje, Mees/Groen) horen bij de oude 2x18-holes indeling en zijn niet gebruikt. Telefoonnummer uit derde-partij-bron (leadingcourses/1golf). page.html = over-de-baan-pagina (met handicaptabellen), holes.html = holes-pagina."
+    "complete": true,
+    "notes": "Geen officiële hole-voor-hole scorekaart online gevonden (holes-pagina toont alleen foto's). Wel CR/slope/par uit officiële WHS-tabellen d.d. 02-09-2021 (geel/rood, par 71). Ontbreekt: per-hole par, SI en lengtes, totale lengtes, par-3 baan gegevens. Derde-partij-kaarten (golfingrecord.com: Rood/Wit, Oranje, Mees/Groen) horen bij de oude 2x18-holes indeling en zijn niet gebruikt. Telefoonnummer uit derde-partij-bron (leadingcourses/1golf). page.html = over-de-baan-pagina (met handicaptabellen), holes.html = holes-pagina. Officiële bron gecontroleerd 29-10-2026: site blokkeert curl (403). Via WebFetch: holes-pagina's /hole-1/ t/m /hole-18/ bevatten een korte tekst (o.a. hole 1 par 5, hole 2 par 4) en per hole een holetekening (uploads/2024/02/Hole-N-*.png) die mogelijk lengtes toont, maar die afbeeldingen zijn niet zonder browser te lezen. Geen scorekaart-PDF gevonden; holedata nog leeg. Officiële bron gecontroleerd 29-10-2026 (in de browser, de site blokkeert scripts): par, S.I. en lengtes van de holepagina's /hole-1/ t/m /hole-18/ (9 holes met 18 afslagposities). Holes 1-9: zwarte en paarse tee, holes 10-18: gouden en lichtblauwe tee. De lange tees (zwart/goud, 5435 m) zijn als \"geel\" opgeslagen en de korte (paars/lichtblauw, 4767 m) als \"rood\", passend bij de bestaande ratings geel/rood; de club noemt de kleuren op de holekaarten niet bij naam."
   },
   "sources": [
     "https://www.dorhoutmeesgolf.nl/",
     "https://www.dorhoutmeesgolf.nl/golfbaan-flevoland/over-de-baan/",
     "https://www.dorhoutmeesgolf.nl/golfbaan-flevoland/greenfee/",
-    "https://www.leadingcourses.com/clubs/europe+the-netherlands+flevoland/golfclub-dorhout-mees"
+    "https://www.leadingcourses.com/clubs/europe+the-netherlands+flevoland/golfclub-dorhout-mees",
+    "https://www.dorhoutmeesgolf.nl/hole-1/",
+    "https://www.dorhoutmeesgolf.nl/hole-2/",
+    "https://www.dorhoutmeesgolf.nl/hole-3/",
+    "https://www.dorhoutmeesgolf.nl/hole-4/",
+    "https://www.dorhoutmeesgolf.nl/hole-5/",
+    "https://www.dorhoutmeesgolf.nl/hole-6/",
+    "https://www.dorhoutmeesgolf.nl/hole-7/",
+    "https://www.dorhoutmeesgolf.nl/hole-8/",
+    "https://www.dorhoutmeesgolf.nl/hole-9/",
+    "https://www.dorhoutmeesgolf.nl/hole-10/",
+    "https://www.dorhoutmeesgolf.nl/hole-11/",
+    "https://www.dorhoutmeesgolf.nl/hole-12/",
+    "https://www.dorhoutmeesgolf.nl/hole-13/",
+    "https://www.dorhoutmeesgolf.nl/hole-14/",
+    "https://www.dorhoutmeesgolf.nl/hole-15/",
+    "https://www.dorhoutmeesgolf.nl/hole-16/",
+    "https://www.dorhoutmeesgolf.nl/hole-17/",
+    "https://www.dorhoutmeesgolf.nl/hole-18/"
   ]
 }

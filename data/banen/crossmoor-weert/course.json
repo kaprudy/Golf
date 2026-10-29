@@ -600,7 +600,7 @@
     "source": "official",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Championship Course compleet: par, SI en lengtes van de officiele hole-afbeeldingen (cc-hole-01..18), CR/slope uit de baanhandicaptabellen van 05-10-2021; GolfingRecord geeft dezelfde lengtes maar oudere ratings. Par-3 Course: alleen ratings (18 holes = 2x9: geel heren CR 48.2/SR 68, rood dames CR 49.9/SR 69, par 54); holelengtes en SI niet gepubliceerd (de site toont placeholdertekst 'Par 4 / Stroke 5'), dus null. www.crossmoor.nl verwijst door naar domeinlaurabos.com."
+    "notes": "Championship Course compleet: par, SI en lengtes van de officiele hole-afbeeldingen (cc-hole-01..18), CR/slope uit de baanhandicaptabellen van 05-10-2021; GolfingRecord geeft dezelfde lengtes maar oudere ratings. Par-3 Course: alleen ratings (18 holes = 2x9: geel heren CR 48.2/SR 68, rood dames CR 49.9/SR 69, par 54); holelengtes en SI niet gepubliceerd (de site toont placeholdertekst 'Par 4 / Stroke 5'), dus null. www.crossmoor.nl verwijst door naar domeinlaurabos.com. Officiële bron gecontroleerd 29-10-2026: Championship Course is volledig officieel (hole-afbeeldingen + handicaptabellen); GolfingRecord staat alleen nog als vergelijkingsbron in sources. Par-3 Course: de pagina toont nog steeds placeholders ('Par 4 / Stroke 5'); de nieuwe uploads van oktober 2026 (par3-hole1..9-min.jpg) zijn foto's zonder gegevens en crossmoor-Par-3-2027.pdf is een lidmaatschapsvoorwaarde. Geen officiële holelengtes/SI voor de par-3 gevonden."
   },
   "sources": [
     "https://www.domeinlaurabos.com/golfbaan-crossmoor/",

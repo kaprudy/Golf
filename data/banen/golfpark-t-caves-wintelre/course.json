@@ -77,7 +77,188 @@
           "par": 64
         }
       ],
-      "hole_data": []
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        }
+      ]
     },
     {
       "name": "9 holes",
@@ -121,7 +302,98 @@
           "par": 32
         }
       ],
-      "hole_data": []
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        }
+      ]
     },
     {
       "name": "Par 3-baan 18 holes (9 holes 2x)",
@@ -185,17 +457,28 @@
       "scorecard/t-Caves-18-holes-Dames.pdf",
       "scorecard/t-Caves-18-holes-Heren.pdf",
       "scorecard/t-Caves-9-holes-Dames.pdf",
-      "scorecard/t-Caves-9-holes-Heren.pdf"
+      "scorecard/t-Caves-9-holes-Heren.pdf",
+      "scorecard/flyover-hole-1.jpg",
+      "scorecard/flyover-hole-2.jpg",
+      "scorecard/flyover-hole-3.jpg",
+      "scorecard/flyover-hole-4.jpg",
+      "scorecard/flyover-hole-5.jpg",
+      "scorecard/flyover-hole-6.jpg",
+      "scorecard/flyover-hole-7.jpg",
+      "scorecard/flyover-hole-8.jpg",
+      "scorecard/flyover-hole-9.jpg",
+      "scorecard/de-golfbaan.html"
     ],
     "source": "official",
-    "retrieved": "2026-10-28",
+    "retrieved": "2026-10-29",
     "complete": false,
-    "notes": "Alleen playing-handicaptabellen d.d. 15-09-2026 gepubliceerd (9-holesbaan par 32 en par 3-baan par 27, elk ook als 18 holes). Geen scorekaart of holegegevens (par/S.I./lengtes) online gevonden; ook niet op golfify."
+    "notes": "Officiële bron gecontroleerd 29-10-2026: hetcaves.nl/de-golfbaan toont per hole ('HOLE 1 + HOLE 10' enz.) een fly-overvideo van de club; de titelkaart (thumbnail, bewaard als flyover-hole-N.jpg) geeft par en twee lengtes: 1 par 3 132/153 m, 2 par 3 133/162, 3 par 5 396/440, 4 par 4 294/334, 5 par 3 111/131, 6 par 3 114/125, 7 par 4 223/267, 8 par 3 88/105, 9 par 4 197/220 (totaal 1688/1937 m; par 32 klopt). De par per hole is overgenomen in de lussen '9 holes' en '18 holes (9 holes 2x)' (holes 10-18 = 1-9). De lengtes zijn NIET in lengths_m gezet omdat niet vermeld is bij welke tee (vermoedelijk rood/geel, of 1e/2e ronde) ze horen. Geen S.I. gevonden; par 3-baan zonder holegegevens. Ratings uit de playing-handicaptabellen d.d. 15-09-2026 (9-holesbaan par 32 en par 3-baan par 27, elk ook als 18 holes)."
   },
   "sources": [
     "https://hetcaves.nl/golfbaan/",
     "https://hetcaves.nl/playing-handicap-tabellen/",
     "https://hetcaves.nl/contact/",
-    "https://hetcaves.nl/prijslijst-golfbaan-t-caves-2026/"
+    "https://hetcaves.nl/prijslijst-golfbaan-t-caves-2026/",
+    "https://hetcaves.nl/de-golfbaan/"
   ]
 }

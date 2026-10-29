@@ -5,8 +5,8 @@
   <url><loc>https://golf.kapital.nl/handicap-berekenen.html</loc></url>
   <url><loc>https://golf.kapital.nl/veelgestelde-vragen.html</loc></url>
   <url><loc>https://golf.kapital.nl/provincie/zuid-holland.html</loc></url>
-  <url><loc>https://golf.kapital.nl/provincie/noord-holland.html</loc></url>
   <url><loc>https://golf.kapital.nl/provincie/noord-brabant.html</loc></url>
+  <url><loc>https://golf.kapital.nl/provincie/noord-holland.html</loc></url>
   <url><loc>https://golf.kapital.nl/provincie/gelderland.html</loc></url>
   <url><loc>https://golf.kapital.nl/provincie/limburg.html</loc></url>
   <url><loc>https://golf.kapital.nl/provincie/utrecht.html</loc></url>
@@ -30,6 +30,7 @@
   <url><loc>https://golf.kapital.nl/banen/amvj-golf-amstelveen-veldenbaan-polderbaan.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/bernardus-golf-cromvoirt.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/best-golf-country-club.html</loc></url>
+  <url><loc>https://golf.kapital.nl/banen/brabant-golf-rijen.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/countrygolf-ees.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/crayestein-golf-dordrecht.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/crayestein-golf-dordrecht-1e.html</loc></url>
@@ -74,6 +75,8 @@
   <url><loc>https://golf.kapital.nl/banen/liemeer-bovenlandenbaan.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golf-country-club-liemeer.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfclub-losdorp.html</loc></url>
+  <url><loc>https://golf.kapital.nl/banen/golfpark-t-caves-wintelre-18-holes.html</loc></url>
+  <url><loc>https://golf.kapital.nl/banen/golfpark-t-caves-wintelre-9-holes.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfpark-t-caves-wintelre-par-3-baan.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfpark-t-caves-wintelre-par-3-baan-18-holes.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golf-amsteldijk-amstelveen-a-statusbaan-18-holes.html</loc></url>
@@ -149,6 +152,7 @@
   <url><loc>https://golf.kapital.nl/banen/golfbaan-delfland-schipluiden-rode-lus-blauwe-lus.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfbaan-delfland-schipluiden-rode-lus-gele-lus.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfbaan-dirkshorn.html</loc></url>
+  <url><loc>https://golf.kapital.nl/banen/golfbaan-dorhout-mees.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfbaan-echt-susteren.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/eyckenduyn-helden.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golf-countryclub-heiloo.html</loc></url>
@@ -164,6 +168,8 @@
   <url><loc>https://golf.kapital.nl/banen/golfbaan-het-woold-asten-gezandebaan-par-3.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfbaan-het-woold-asten-vier-eijckenbaan.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfbaan-hitland-nieuwerkerk.html</loc></url>
+  <url><loc>https://golf.kapital.nl/banen/golfbaan-hitland-nieuwerkerk-holes-1-9.html</loc></url>
+  <url><loc>https://golf.kapital.nl/banen/golfbaan-hitland-nieuwerkerk-holes-10-18.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfbaan-hoenderdaal.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/kasteel-engelenburg-brummen.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/kavel-2-beemster-middenbeemster.html</loc></url>
@@ -256,6 +262,7 @@
   <url><loc>https://golf.kapital.nl/banen/golfclub-de-berckt-baarlo.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfclub-de-dommel-sint-michielsgestel.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfclub-de-dorpswaard-kerkdriel.html</loc></url>
+  <url><loc>https://golf.kapital.nl/banen/golfclub-de-haar.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfclub-de-hoge-kleij.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/de-koepel.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/semslanden-gasselte.html</loc></url>
@@ -304,6 +311,7 @@
   <url><loc>https://golf.kapital.nl/banen/golfclub-putten.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfclub-riel-geldrop-18-holes.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfclub-riel-geldrop-9-holes.html</loc></url>
+  <url><loc>https://golf.kapital.nl/banen/golfclub-son.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfclub-vught.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/westerwolde-vlagtwedde.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfclub-westland-s-gravenzande.html</loc></url>
@@ -375,6 +383,7 @@
   <url><loc>https://golf.kapital.nl/banen/greenz-shortgolf-cadzand-bad.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/duurswold-steendam.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/hcc-groen-geel-golf-wassenaar.html</loc></url>
+  <url><loc>https://golf.kapital.nl/banen/hcc-groen-geel-golf-wassenaar-gele-baan.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/haarlemmermeersche-golfclub-cruquius-bolstra.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/haarlemmermeersche-golfclub-cruquius-leeghwater-cruquius.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/haarlemmermeersche-golfclub-cruquius-leeghwater-lynden.html</loc></url>
@@ -447,6 +456,7 @@
   <url><loc>https://golf.kapital.nl/banen/shortgolf-utrecht-nieuwegein-par-3-4.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/shortgolf-zeumeren-voorthuizen.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/golfbaan-het-wedde-voorschoten.html</loc></url>
+  <url><loc>https://golf.kapital.nl/banen/the-duke-golf-nistelrode.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/the-dutch-spijk.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/the-international-badhoevedorp.html</loc></url>
   <url><loc>https://golf.kapital.nl/banen/the-links-valley-ermelo-north.html</loc></url>

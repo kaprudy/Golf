@@ -218,12 +218,13 @@
     "page_url": "https://www.hole19golf.com/courses/pitch-putt-kameryck",
     "files": [
       "scorecard/hole19.html",
-      "scorecard/page.html"
+      "scorecard/page.html",
+      "scorecard/PP-plattegrond.png"
     ],
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": true,
-    "notes": "Geen officiële scorekaart online; par, S.I. en lengtes uit hole19golf.com (tee \"meters\"). Officiële site noemt 18 holes met maximale lengte 70 m. Geen CR/slope."
+    "notes": "Geen officiële scorekaart online; par, S.I. en lengtes uit hole19golf.com (tee \"meters\"). Officiële site noemt 18 holes met maximale lengte 70 m. Geen CR/slope. Officiële bron gecontroleerd 29-10-2026: kameryck.nl en pitch-putt.nl opnieuw doorzocht (pagina's en mediabibliotheek); alleen een plattegrond zonder lengtes/par (PP-plattegrond.png, 2026) en de tekst 'maximum lengte 70 meter'. Geen officiële scorekaart; gegevens blijven van Hole19."
   },
   "sources": [
     "https://kameryck.nl/activiteiten/pitch-putt",

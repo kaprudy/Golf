@@ -32,7 +32,7 @@
   "description_nl": "Groen-Geel is een countryclub aan de Buurtweg in Wassenaar met naast andere sporten een eigen 9-holes golfbaan van par 31. De korte baan bestaat uit vijf par 3's en vier par 4's en ligt vlak bij de banen van Duinzicht en Groendael.",
   "loops": [
     {
-      "name": "9 holes",
+      "name": "9 holes (groene baan)",
       "holes": 9,
       "par": 31,
       "tees": [
@@ -40,7 +40,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "men",
-          "length_m": 1778,
+          "length_m": 1747,
           "course_rating": 29.9,
           "slope": 98,
           "par": 31
@@ -49,7 +49,7 @@
           "name": "rood",
           "color": "red",
           "gender": "men",
-          "length_m": 1714,
+          "length_m": 1747,
           "course_rating": 29.6,
           "slope": 97,
           "par": 31
@@ -58,7 +58,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "women",
-          "length_m": 1778,
+          "length_m": 1747,
           "course_rating": 31.7,
           "slope": 97,
           "par": 31
@@ -67,7 +67,7 @@
           "name": "rood",
           "color": "red",
           "gender": "women",
-          "length_m": 1714,
+          "length_m": 1747,
           "course_rating": 31.3,
           "slope": 95,
           "par": 31
@@ -77,31 +77,28 @@
         {
           "hole": 1,
           "par": 4,
-          "si": 5,
+          "si": 11,
           "si_women": null,
           "lengths_m": {
-            "geel": 275,
-            "rood": 251
+            "baan": 264
           }
         },
         {
           "hole": 2,
           "par": 4,
-          "si": 2,
+          "si": 5,
           "si_women": null,
           "lengths_m": {
-            "geel": 280,
-            "rood": 275
+            "baan": 277
           }
         },
         {
           "hole": 3,
           "par": 3,
-          "si": 8,
+          "si": 17,
           "si_women": null,
           "lengths_m": {
-            "geel": 125,
-            "rood": 125
+            "baan": 123
           }
         },
         {
@@ -110,8 +107,7 @@
           "si": 7,
           "si_women": null,
           "lengths_m": {
-            "geel": 212,
-            "rood": 202
+            "baan": 207
           }
         },
         {
@@ -120,18 +116,16 @@
           "si": 1,
           "si_women": null,
           "lengths_m": {
-            "geel": 286,
-            "rood": 273
+            "baan": 280
           }
         },
         {
           "hole": 6,
           "par": 3,
-          "si": 9,
+          "si": 15,
           "si_women": null,
           "lengths_m": {
-            "geel": 118,
-            "rood": 118
+            "baan": 122
           }
         },
         {
@@ -140,46 +134,153 @@
           "si": 3,
           "si_women": null,
           "lengths_m": {
-            "geel": 185,
-            "rood": 173
+            "baan": 179
           }
         },
         {
           "hole": 8,
           "par": 3,
-          "si": 6,
+          "si": 9,
           "si_women": null,
           "lengths_m": {
-            "geel": 135,
-            "rood": 135
+            "baan": 133
           }
         },
         {
           "hole": 9,
           "par": 3,
-          "si": 4,
+          "si": 13,
           "si_women": null,
           "lengths_m": {
-            "geel": 162,
-            "rood": 162
+            "baan": 162
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gele baan (9 holes)",
+      "holes": 9,
+      "par": 28,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1316,
+          "course_rating": null,
+          "slope": null,
+          "par": 28
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 1316,
+          "course_rating": null,
+          "slope": null,
+          "par": 28
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 134
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 123
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 207
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 161
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 95
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 122
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 179
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 133
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 162
           }
         }
       ]
     }
   ],
   "scorecard": {
-    "page_url": "https://www.golfify.io/courses/haagsche-countryclub-groen-geel",
+    "page_url": "https://www.groengeel.nl/index.php?page=3_scorekaart",
     "files": [
       "scorecard/golfify-scorecard.html",
-      "scorecard/golfpass-scorecard.html"
+      "scorecard/golfpass-scorecard.html",
+      "scorecard/groengeel_scorekaart.png"
     ],
     "source": "third-party",
     "retrieved": "2026-10-28",
-    "complete": true,
-    "notes": "Officiële site groengeel.nl gaf 403 (curl en WebFetch); geen officiële scorekaart bekeken. Holegegevens en CR/SR (9 holes) van golfify.io. GolfPass wijkt af: andere lengtes ('Green' 1751 m, waarden in yards), andere S.I. (11,5,17,7,1,15,3,9,13, 18-holesstijl) en andere ratings – bron dus onzeker, controle bij de club aanbevolen. Geen contactgegevens geverifieerd."
+    "complete": false,
+    "notes": "Officiële site groengeel.nl gaf 403 (curl en WebFetch); geen officiële scorekaart bekeken. Holegegevens en CR/SR (9 holes) van golfify.io. GolfPass wijkt af: andere lengtes ('Green' 1751 m, waarden in yards), andere S.I. (11,5,17,7,1,15,3,9,13, 18-holesstijl) en andere ratings – bron dus onzeker, controle bij de club aanbevolen. Geen contactgegevens geverifieerd. Officiële bron gecontroleerd 29-10-2026: niets gevonden; groengeel.nl blokkeert curl en WebFetch (403) en websearch gaf alleen derden (golfify, GolfPass, 1golf, Hole19). Gegevens ongewijzigd; controle via browser nodig. Officiële bron gecontroleerd 29-10-2026 (in de browser; de site blokkeert scripts): officiële scorekaart versie 10/2023 (2024) met twee 9-holesbanen: Groen (par 31, 1747 m) en Geel (par 28, 1316 m), elk met eigen index voor de 2e ronde (10-18). Par, S.I. en lengtes daarvan overgenomen (één lengte per hole). Ratings Groen blijven van derden; voor Geel geen ratings gevonden (link naar de baanhandicaptabellen 12/2021 geeft een foutpagina)."
   },
   "sources": [
     "https://www.golfify.io/courses/haagsche-countryclub-groen-geel",
-    "https://www.golfpass.com/travel-advisor/courses/23954-haagsche-groen-geel-country-club/scorecard-and-layout"
+    "https://www.golfpass.com/travel-advisor/courses/23954-haagsche-groen-geel-country-club/scorecard-and-layout",
+    "https://www.groengeel.nl/index.php?page=3_scorekaart"
   ]
 }

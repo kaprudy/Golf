@@ -39,21 +39,57 @@
       "par": 36,
       "tees": [
         {
-          "name": "heren",
-          "color": null,
+          "name": "geel",
+          "color": "yellow",
           "gender": "men",
-          "length_m": 2758,
-          "course_rating": null,
-          "slope": null,
+          "length_m": 2778,
+          "course_rating": 34.8,
+          "slope": 115,
           "par": 36
         },
         {
-          "name": "dames",
-          "color": null,
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2476,
+          "course_rating": 33.5,
+          "slope": 105,
+          "par": 36
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 32.1,
+          "slope": 98,
+          "par": 36
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
           "gender": "women",
-          "length_m": 2458,
-          "course_rating": null,
-          "slope": null,
+          "length_m": 2778,
+          "course_rating": 37.6,
+          "slope": 131,
+          "par": 36
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2476,
+          "course_rating": 35.6,
+          "slope": 124,
+          "par": 36
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 33.6,
+          "slope": 112,
           "par": 36
         }
       ],
@@ -64,8 +100,9 @@
           "si": 13,
           "si_women": null,
           "lengths_m": {
-            "heren": 249,
-            "dames": 229
+            "geel": 256,
+            "rood": 245,
+            "oranje": null
           }
         },
         {
@@ -74,8 +111,9 @@
           "si": 3,
           "si_women": null,
           "lengths_m": {
-            "heren": 525,
-            "dames": 458
+            "geel": 525,
+            "rood": 445,
+            "oranje": null
           }
         },
         {
@@ -84,8 +122,9 @@
           "si": 11,
           "si_women": null,
           "lengths_m": {
-            "heren": 115,
-            "dames": 101
+            "geel": 110,
+            "rood": 95,
+            "oranje": null
           }
         },
         {
@@ -94,8 +133,9 @@
           "si": 7,
           "si_women": null,
           "lengths_m": {
-            "heren": 436,
-            "dames": 384
+            "geel": 450,
+            "rood": 387,
+            "oranje": null
           }
         },
         {
@@ -104,8 +144,9 @@
           "si": 5,
           "si_women": null,
           "lengths_m": {
-            "heren": 385,
-            "dames": 344
+            "geel": 390,
+            "rood": 355,
+            "oranje": null
           }
         },
         {
@@ -114,8 +155,9 @@
           "si": 1,
           "si_women": null,
           "lengths_m": {
-            "heren": 411,
-            "dames": 375
+            "geel": 410,
+            "rood": 374,
+            "oranje": null
           }
         },
         {
@@ -124,8 +166,9 @@
           "si": 15,
           "si_women": null,
           "lengths_m": {
-            "heren": 143,
-            "dames": 129
+            "geel": 142,
+            "rood": 115,
+            "oranje": null
           }
         },
         {
@@ -134,8 +177,9 @@
           "si": 9,
           "si_women": null,
           "lengths_m": {
-            "heren": 274,
-            "dames": 238
+            "geel": 275,
+            "rood": 255,
+            "oranje": null
           }
         },
         {
@@ -144,8 +188,9 @@
           "si": 17,
           "si_women": null,
           "lengths_m": {
-            "heren": 220,
-            "dames": 200
+            "geel": 220,
+            "rood": 205,
+            "oranje": null
           }
         }
       ]
@@ -158,12 +203,21 @@
       "scorecard/Dongen-Dames-Hcp-2022.pdf",
       "scorecard/page.html",
       "scorecard/holes-montage.png",
-      "scorecard/golfify-golfcentrum-dongen.html"
+      "scorecard/golfify-golfcentrum-dongen.html",
+      "scorecard/hole_1.jpg",
+      "scorecard/hole_2.jpg",
+      "scorecard/hole_3.jpg",
+      "scorecard/hole_4.jpg",
+      "scorecard/hole_5.jpg",
+      "scorecard/hole_6.jpg",
+      "scorecard/hole_7.jpg",
+      "scorecard/hole_8.jpg",
+      "scorecard/hole_9.jpg"
     ],
-    "source": "third-party",
+    "source": "official",
     "complete": false,
-    "notes": "De clubsite toont alleen uitsneden van holeplattegronden (zonder par/S.I.) en handicaptabellen. Par, S.I. en lengtes van golfify.io (tees \"Mensen\"/\"Dames\"); eenheid onzeker, vermoedelijk yards (de officiële plattegronden tonen kortere afstanden, bv. hole 1 230/219). Officiële ratings 18 holes (par 72, tabel 08-09-2022): heren geel 69,6/115, rood 66,9/105, oranje 64,1/98; dames geel 75,1/131, rood 71,2/124, oranje 67,2/112 — niet aan de 9-holeslus gekoppeld omdat de tee-indeling (geel/rood/oranje) niet overeenkomt met de holegegevens.",
-    "retrieved": "2026-10-28"
+    "notes": "Officiële bron gecontroleerd 29-10-2026: de holeplattegronden op de clubsite (hole_1..9.jpg) geven per hole par, stroke-index (1e/2e ronde, bv. 13/14) en lengtes rood en geel in meters; daarmee zijn de golfify-gegevens (vermoedelijk yards, tees 'Mensen'/'Dames') volledig vervangen. S.I. hier = 1e ronde (oneven, 18-holesstijl; 2e ronde = +1). Totaal geel 2778 m, rood 2476 m. Ratings uit de handicaptabellen d.d. 08-09-2022, blad 9 holes (par 36): heren geel 34,8/115, rood 33,5/105, oranje 32,1/98; dames geel 37,6/131, rood 35,6/124, oranje 33,6/112 (18 holes par 72: heren geel 69,6/115, rood 66,9/105, oranje 64,1/98; dames 75,1/131, 71,2/124, 67,2/112). Oranje-lengtes staan niet op de plattegronden, daarom complete=false. Tee-namen gewijzigd van heren/dames naar geel/rood/oranje.",
+    "retrieved": "2026-10-29"
   },
   "sources": [
     "https://www.golfcentrumdongen.nl/",

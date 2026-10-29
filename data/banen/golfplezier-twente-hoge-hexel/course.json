@@ -17,9 +17,9 @@
     "source": "OpenStreetMap way 55285638 (centroid baan)"
   },
   "distance_km_from_dedemsvaart": 22.7,
-  "phone": "0546 697 365",
-  "email": "info@golfpleziertwente.nl",
-  "website": "https://golfpleziertwente.nl",
+  "phone": "0546 69 72 65",
+  "email": "info@degolfweide.nl",
+  "website": "https://degolfweide.nl/",
   "booking_url": null,
   "founded": null,
   "architect": null,
@@ -33,7 +33,7 @@
   ],
   "greenfee_welcome": true,
   "requirements": null,
-  "description_nl": "Par 3-baan bij Hoge Hexel, tussen Nijverdal en Wierden, met 18 korte holes in het Twentse boerenland. Volgens Hole19 is er op maandag en dinsdag een 9 holes qualifyinglus en op andere dagen de volledige 18 holes. De officiële website is momenteel in aanbouw; controleer de actuele situatie bij de baan.",
+  "description_nl": "Par 3-baan bij Hoge Hexel, tussen Nijverdal en Wierden, die sinds 1 oktober 2026 als De Golfweide door nieuwe eigenaren wordt geëxploiteerd. De NGF-gecertificeerde baan heeft twee lussen: op maandag en dinsdag een 9 holes qualifyinglus, van woensdag tot en met zondag een 18 holes niet-qualifying ronde. Er zijn een overdekte driving range over een vijver, een putting green, chipping green en oefenbunker; reserveren is niet nodig.",
   "loops": [
     {
       "name": "18 holes par 3 (Hole19)",
@@ -320,14 +320,17 @@
     "files": [
       "scorecard/page.html",
       "scorecard/page-qualifying.html",
-      "scorecard/official-home.html"
+      "scorecard/official-home.html",
+      "scorecard/official-golfweide-golfen.html"
     ],
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Geen officiële scorekaart: golfpleziertwente.nl toont alleen 'website onder constructie' (lijkt nu vooral leslocatie). Hole-data uit Hole19 (18 holes 1016 m, par 54; qualifying 9 holes 818 m, par 27); tee-kleur, CR en slope onbekend. Status van de baan onzeker, telefoon uit 1golf.eu-vermelding."
+    "notes": "Officiële bron gecontroleerd 29-10-2026: nieuwe officiële site degolfweide.nl (sinds 1-10-2026) volledig doorzocht (alle sitemap-pagina's): wel lussen/speeldagen, tarieven en contact, maar geen scorekaart, holelengtes, S.I. of CR/slope. Holegegevens blijven van Hole19. Contactgegevens bijgewerkt naar de nieuwe site. | Eerder: Geen officiële scorekaart: golfpleziertwente.nl toont alleen 'website onder constructie' (lijkt nu vooral leslocatie). Hole-data uit Hole19 (18 holes 1016 m, par 54; qualifying 9 holes 818 m, par 27); tee-kleur, CR en slope onbekend. Status van de baan onzeker, telefoon uit 1golf.eu-vermelding."
   },
   "sources": [
+    "https://degolfweide.nl/golfen",
+    "https://degolfweide.nl/nieuws/wij-zijn-de-golfweide",
     "https://www.hole19golf.com/courses/golfplezier-twente",
     "https://www.hole19golf.com/courses/golfplezier-twente-qualifying",
     "https://golfpleziertwente.nl/",

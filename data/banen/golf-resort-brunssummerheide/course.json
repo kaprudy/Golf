@@ -58,7 +58,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "men",
-          "length_m": 5932,
+          "length_m": 5922,
           "course_rating": 72.8,
           "slope": 135,
           "par": 72
@@ -67,7 +67,7 @@
           "name": "blauw",
           "color": "blue",
           "gender": "men",
-          "length_m": null,
+          "length_m": 5491,
           "course_rating": 70.5,
           "slope": 130,
           "par": 72
@@ -76,7 +76,7 @@
           "name": "rood",
           "color": "red",
           "gender": "men",
-          "length_m": 5199,
+          "length_m": 5213,
           "course_rating": 68.8,
           "slope": 124,
           "par": 72
@@ -85,7 +85,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "men",
-          "length_m": null,
+          "length_m": 4623,
           "course_rating": 66.2,
           "slope": 118,
           "par": 72
@@ -94,7 +94,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "women",
-          "length_m": 5932,
+          "length_m": 5922,
           "course_rating": 78.7,
           "slope": 151,
           "par": 72
@@ -103,7 +103,7 @@
           "name": "blauw",
           "color": "blue",
           "gender": "women",
-          "length_m": null,
+          "length_m": 5491,
           "course_rating": 76.1,
           "slope": 140,
           "par": 72
@@ -112,7 +112,7 @@
           "name": "rood",
           "color": "red",
           "gender": "women",
-          "length_m": 5199,
+          "length_m": 5213,
           "course_rating": 74.4,
           "slope": 130,
           "par": 72
@@ -121,7 +121,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "women",
-          "length_m": null,
+          "length_m": 4623,
           "course_rating": 71.2,
           "slope": 119,
           "par": 72
@@ -135,10 +135,10 @@
           "si_women": null,
           "lengths_m": {
             "wit": 488,
-            "geel": 480,
-            "rood": 438,
-            "blauw": null,
-            "oranje": null
+            "geel": 470,
+            "rood": 452,
+            "blauw": 470,
+            "oranje": 377
           }
         },
         {
@@ -150,8 +150,8 @@
             "wit": 392,
             "geel": 372,
             "rood": 320,
-            "blauw": null,
-            "oranje": null
+            "blauw": 320,
+            "oranje": 288
           }
         },
         {
@@ -163,8 +163,8 @@
             "wit": 376,
             "geel": 350,
             "rood": 290,
-            "blauw": null,
-            "oranje": null
+            "blauw": 290,
+            "oranje": 265
           }
         },
         {
@@ -176,8 +176,8 @@
             "wit": 194,
             "geel": 187,
             "rood": 162,
-            "blauw": null,
-            "oranje": null
+            "blauw": 162,
+            "oranje": 120
           }
         },
         {
@@ -189,8 +189,8 @@
             "wit": 338,
             "geel": 324,
             "rood": 276,
-            "blauw": null,
-            "oranje": null
+            "blauw": 324,
+            "oranje": 243
           }
         },
         {
@@ -202,8 +202,8 @@
             "wit": 454,
             "geel": 440,
             "rood": 379,
-            "blauw": null,
-            "oranje": null
+            "blauw": 379,
+            "oranje": 336
           }
         },
         {
@@ -215,8 +215,8 @@
             "wit": 314,
             "geel": 314,
             "rood": 264,
-            "blauw": null,
-            "oranje": null
+            "blauw": 314,
+            "oranje": 231
           }
         },
         {
@@ -228,8 +228,8 @@
             "wit": 186,
             "geel": 169,
             "rood": 151,
-            "blauw": null,
-            "oranje": null
+            "blauw": 169,
+            "oranje": 136
           }
         },
         {
@@ -241,8 +241,8 @@
             "wit": 356,
             "geel": 339,
             "rood": 318,
-            "blauw": null,
-            "oranje": null
+            "blauw": 339,
+            "oranje": 285
           }
         },
         {
@@ -254,8 +254,8 @@
             "wit": 360,
             "geel": 336,
             "rood": 314,
-            "blauw": null,
-            "oranje": null
+            "blauw": 336,
+            "oranje": 283
           }
         },
         {
@@ -267,8 +267,8 @@
             "wit": 143,
             "geel": 127,
             "rood": 111,
-            "blauw": null,
-            "oranje": null
+            "blauw": 127,
+            "oranje": 100
           }
         },
         {
@@ -280,8 +280,8 @@
             "wit": 533,
             "geel": 509,
             "rood": 439,
-            "blauw": null,
-            "oranje": null
+            "blauw": 439,
+            "oranje": 395
           }
         },
         {
@@ -293,8 +293,8 @@
             "wit": 339,
             "geel": 314,
             "rood": 278,
-            "blauw": null,
-            "oranje": null
+            "blauw": 314,
+            "oranje": 250
           }
         },
         {
@@ -306,8 +306,8 @@
             "wit": 136,
             "geel": 130,
             "rood": 113,
-            "blauw": null,
-            "oranje": null
+            "blauw": 130,
+            "oranje": 102
           }
         },
         {
@@ -319,8 +319,8 @@
             "wit": 400,
             "geel": 372,
             "rood": 314,
-            "blauw": null,
-            "oranje": null
+            "blauw": 314,
+            "oranje": 283
           }
         },
         {
@@ -332,8 +332,8 @@
             "wit": 351,
             "geel": 332,
             "rood": 300,
-            "blauw": null,
-            "oranje": null
+            "blauw": 332,
+            "oranje": 270
           }
         },
         {
@@ -345,8 +345,8 @@
             "wit": 408,
             "geel": 379,
             "rood": 331,
-            "blauw": null,
-            "oranje": null
+            "blauw": 331,
+            "oranje": 298
           }
         },
         {
@@ -358,8 +358,8 @@
             "wit": 466,
             "geel": 458,
             "rood": 401,
-            "blauw": null,
-            "oranje": null
+            "blauw": 401,
+            "oranje": 361
           }
         }
       ]
@@ -391,7 +391,7 @@
           "name": "blauw",
           "color": "blue",
           "gender": "men",
-          "length_m": null,
+          "length_m": 5558,
           "course_rating": 70.3,
           "slope": 133,
           "par": 72
@@ -409,7 +409,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "men",
-          "length_m": null,
+          "length_m": 4588,
           "course_rating": 65.4,
           "slope": 119,
           "par": 72
@@ -427,7 +427,7 @@
           "name": "blauw",
           "color": "blue",
           "gender": "women",
-          "length_m": null,
+          "length_m": 5558,
           "course_rating": 75.3,
           "slope": 139,
           "par": 72
@@ -445,7 +445,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "women",
-          "length_m": null,
+          "length_m": 4588,
           "course_rating": 70.3,
           "slope": 123,
           "par": 72
@@ -461,8 +461,8 @@
             "wit": 360,
             "geel": 336,
             "rood": 314,
-            "blauw": null,
-            "oranje": null
+            "blauw": 336,
+            "oranje": 283
           }
         },
         {
@@ -474,8 +474,8 @@
             "wit": 143,
             "geel": 127,
             "rood": 111,
-            "blauw": null,
-            "oranje": null
+            "blauw": 127,
+            "oranje": 100
           }
         },
         {
@@ -487,8 +487,8 @@
             "wit": 533,
             "geel": 509,
             "rood": 439,
-            "blauw": null,
-            "oranje": null
+            "blauw": 439,
+            "oranje": 395
           }
         },
         {
@@ -500,8 +500,8 @@
             "wit": 339,
             "geel": 314,
             "rood": 278,
-            "blauw": null,
-            "oranje": null
+            "blauw": 314,
+            "oranje": 250
           }
         },
         {
@@ -513,8 +513,8 @@
             "wit": 136,
             "geel": 130,
             "rood": 113,
-            "blauw": null,
-            "oranje": null
+            "blauw": 130,
+            "oranje": 102
           }
         },
         {
@@ -526,8 +526,8 @@
             "wit": 400,
             "geel": 372,
             "rood": 314,
-            "blauw": null,
-            "oranje": null
+            "blauw": 314,
+            "oranje": 283
           }
         },
         {
@@ -539,8 +539,8 @@
             "wit": 351,
             "geel": 332,
             "rood": 300,
-            "blauw": null,
-            "oranje": null
+            "blauw": 332,
+            "oranje": 270
           }
         },
         {
@@ -552,8 +552,8 @@
             "wit": 408,
             "geel": 379,
             "rood": 331,
-            "blauw": null,
-            "oranje": null
+            "blauw": 331,
+            "oranje": 298
           }
         },
         {
@@ -565,8 +565,8 @@
             "wit": 466,
             "geel": 458,
             "rood": 401,
-            "blauw": null,
-            "oranje": null
+            "blauw": 401,
+            "oranje": 361
           }
         },
         {
@@ -578,8 +578,8 @@
             "wit": 314,
             "geel": 314,
             "rood": 283,
-            "blauw": null,
-            "oranje": null
+            "blauw": 314,
+            "oranje": 255
           }
         },
         {
@@ -591,8 +591,8 @@
             "wit": 507,
             "geel": 497,
             "rood": 440,
-            "blauw": null,
-            "oranje": null
+            "blauw": 440,
+            "oranje": 396
           }
         },
         {
@@ -604,8 +604,8 @@
             "wit": 152,
             "geel": 143,
             "rood": 117,
-            "blauw": null,
-            "oranje": null
+            "blauw": 143,
+            "oranje": 105
           }
         },
         {
@@ -617,8 +617,8 @@
             "wit": 325,
             "geel": 314,
             "rood": 258,
-            "blauw": null,
-            "oranje": null
+            "blauw": 314,
+            "oranje": 232
           }
         },
         {
@@ -630,8 +630,8 @@
             "wit": 366,
             "geel": 357,
             "rood": 297,
-            "blauw": null,
-            "oranje": null
+            "blauw": 297,
+            "oranje": 267
           }
         },
         {
@@ -643,8 +643,8 @@
             "wit": 506,
             "geel": 467,
             "rood": 422,
-            "blauw": null,
-            "oranje": null
+            "blauw": 467,
+            "oranje": 380
           }
         },
         {
@@ -656,8 +656,8 @@
             "wit": 331,
             "geel": 321,
             "rood": 288,
-            "blauw": null,
-            "oranje": null
+            "blauw": 321,
+            "oranje": 259
           }
         },
         {
@@ -669,8 +669,8 @@
             "wit": 153,
             "geel": 139,
             "rood": 99,
-            "blauw": null,
-            "oranje": null
+            "blauw": 139,
+            "oranje": 48
           }
         },
         {
@@ -682,8 +682,8 @@
             "wit": 423,
             "geel": 399,
             "rood": 338,
-            "blauw": null,
-            "oranje": null
+            "blauw": 399,
+            "oranje": 304
           }
         }
       ]
@@ -706,7 +706,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "men",
-          "length_m": 5926,
+          "length_m": 5916,
           "course_rating": 73.0,
           "slope": 137,
           "par": 72
@@ -715,7 +715,7 @@
           "name": "blauw",
           "color": "blue",
           "gender": "men",
-          "length_m": null,
+          "length_m": 5601,
           "course_rating": 71.3,
           "slope": 134,
           "par": 72
@@ -724,7 +724,7 @@
           "name": "rood",
           "color": "red",
           "gender": "men",
-          "length_m": 5140,
+          "length_m": 5154,
           "course_rating": 68.9,
           "slope": 125,
           "par": 72
@@ -733,7 +733,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "men",
-          "length_m": null,
+          "length_m": 4527,
           "course_rating": 66.1,
           "slope": 123,
           "par": 72
@@ -742,7 +742,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "women",
-          "length_m": 5926,
+          "length_m": 5916,
           "course_rating": 78.5,
           "slope": 151,
           "par": 72
@@ -751,7 +751,7 @@
           "name": "blauw",
           "color": "blue",
           "gender": "women",
-          "length_m": null,
+          "length_m": 5601,
           "course_rating": 76.5,
           "slope": 137,
           "par": 72
@@ -760,7 +760,7 @@
           "name": "rood",
           "color": "red",
           "gender": "women",
-          "length_m": 5140,
+          "length_m": 5154,
           "course_rating": 74.2,
           "slope": 129,
           "par": 72
@@ -769,7 +769,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "women",
-          "length_m": null,
+          "length_m": 4527,
           "course_rating": 70.9,
           "slope": 120,
           "par": 72
@@ -785,8 +785,8 @@
             "wit": 314,
             "geel": 314,
             "rood": 283,
-            "blauw": null,
-            "oranje": null
+            "blauw": 314,
+            "oranje": 255
           }
         },
         {
@@ -798,8 +798,8 @@
             "wit": 507,
             "geel": 497,
             "rood": 440,
-            "blauw": null,
-            "oranje": null
+            "blauw": 440,
+            "oranje": 396
           }
         },
         {
@@ -811,8 +811,8 @@
             "wit": 152,
             "geel": 143,
             "rood": 117,
-            "blauw": null,
-            "oranje": null
+            "blauw": 143,
+            "oranje": 105
           }
         },
         {
@@ -824,8 +824,8 @@
             "wit": 325,
             "geel": 314,
             "rood": 258,
-            "blauw": null,
-            "oranje": null
+            "blauw": 314,
+            "oranje": 232
           }
         },
         {
@@ -837,8 +837,8 @@
             "wit": 366,
             "geel": 357,
             "rood": 297,
-            "blauw": null,
-            "oranje": null
+            "blauw": 297,
+            "oranje": 267
           }
         },
         {
@@ -850,8 +850,8 @@
             "wit": 506,
             "geel": 467,
             "rood": 422,
-            "blauw": null,
-            "oranje": null
+            "blauw": 467,
+            "oranje": 380
           }
         },
         {
@@ -863,8 +863,8 @@
             "wit": 331,
             "geel": 321,
             "rood": 288,
-            "blauw": null,
-            "oranje": null
+            "blauw": 321,
+            "oranje": 259
           }
         },
         {
@@ -876,8 +876,8 @@
             "wit": 153,
             "geel": 139,
             "rood": 99,
-            "blauw": null,
-            "oranje": null
+            "blauw": 139,
+            "oranje": 48
           }
         },
         {
@@ -889,8 +889,8 @@
             "wit": 423,
             "geel": 399,
             "rood": 338,
-            "blauw": null,
-            "oranje": null
+            "blauw": 399,
+            "oranje": 304
           }
         },
         {
@@ -900,10 +900,10 @@
           "si_women": null,
           "lengths_m": {
             "wit": 488,
-            "geel": 480,
-            "rood": 438,
-            "blauw": null,
-            "oranje": null
+            "geel": 470,
+            "rood": 452,
+            "blauw": 470,
+            "oranje": 377
           }
         },
         {
@@ -915,8 +915,8 @@
             "wit": 392,
             "geel": 372,
             "rood": 320,
-            "blauw": null,
-            "oranje": null
+            "blauw": 320,
+            "oranje": 288
           }
         },
         {
@@ -928,8 +928,8 @@
             "wit": 376,
             "geel": 350,
             "rood": 290,
-            "blauw": null,
-            "oranje": null
+            "blauw": 290,
+            "oranje": 265
           }
         },
         {
@@ -941,8 +941,8 @@
             "wit": 194,
             "geel": 187,
             "rood": 162,
-            "blauw": null,
-            "oranje": null
+            "blauw": 162,
+            "oranje": 120
           }
         },
         {
@@ -954,8 +954,8 @@
             "wit": 338,
             "geel": 324,
             "rood": 276,
-            "blauw": null,
-            "oranje": null
+            "blauw": 324,
+            "oranje": 243
           }
         },
         {
@@ -967,8 +967,8 @@
             "wit": 454,
             "geel": 440,
             "rood": 379,
-            "blauw": null,
-            "oranje": null
+            "blauw": 379,
+            "oranje": 336
           }
         },
         {
@@ -980,8 +980,8 @@
             "wit": 314,
             "geel": 314,
             "rood": 264,
-            "blauw": null,
-            "oranje": null
+            "blauw": 314,
+            "oranje": 231
           }
         },
         {
@@ -993,8 +993,8 @@
             "wit": 186,
             "geel": 169,
             "rood": 151,
-            "blauw": null,
-            "oranje": null
+            "blauw": 169,
+            "oranje": 136
           }
         },
         {
@@ -1006,8 +1006,8 @@
             "wit": 356,
             "geel": 339,
             "rood": 318,
-            "blauw": null,
-            "oranje": null
+            "blauw": 339,
+            "oranje": 285
           }
         }
       ]
@@ -1694,19 +1694,45 @@
       "scorecard/brunssummerheide-9-holes-rood-dames.pdf",
       "scorecard/brunssummerheide-9-holes-groen-heren.pdf",
       "scorecard/brunssummerheide-9-holes-groen-dames.pdf",
-      "scorecard/brunssummerheide-par-3-baan-damesand-heren.pdf"
+      "scorecard/brunssummerheide-par-3-baan-damesand-heren.pdf",
+      "scorecard/page-hole-by-hole.html",
+      "scorecard/hbh-baan-1-blauw.jpg",
+      "scorecard/hbh-baan-2-blauw.jpg",
+      "scorecard/hbh-baan-3-blauw.jpg",
+      "scorecard/hbh-baan-4-blauw.jpg",
+      "scorecard/hbh-baan-5-blauw.jpg",
+      "scorecard/hbh-baan-6-blauw.jpg",
+      "scorecard/hbh-baan-7-blauw.jpg",
+      "scorecard/hbh-baan-8-blauw.jpg",
+      "scorecard/hbh-baan-9-blauw.jpg",
+      "scorecard/hbh-baan-1-geel.jpg",
+      "scorecard/hbh-baan-2-geel.jpg",
+      "scorecard/hbh-baan-3-geel.jpg",
+      "scorecard/hbh-baan-4-geel.jpg",
+      "scorecard/hbh-baan-5-geel.jpg",
+      "scorecard/hbh-baan-6-geel.jpg",
+      "scorecard/hbh-baan-7-geel.jpg",
+      "scorecard/hbh-baan-8-geel.jpg",
+      "scorecard/hbh-baan-9-geel.jpg",
+      "scorecard/hbh-baan-1-rood.jpg",
+      "scorecard/hbh-baan-2-rood.jpg",
+      "scorecard/hbh-baan-3-rood.jpg",
+      "scorecard/hbh-baan-4-rood.jpg",
+      "scorecard/hbh-baan-5-rood.jpg",
+      "scorecard/hbh-baan-6-rood.jpg",
+      "scorecard/hbh-baan-7-rood.jpg",
+      "scorecard/hbh-baan-8-rood.jpg",
+      "scorecard/hbh-baan-9-rood.jpg"
     ],
-    "source": "third-party",
-    "retrieved": "2026-10-28",
+    "source": "official",
+    "retrieved": "2026-10-29",
     "complete": false,
-    "notes": "Par en SI per combinatie uit de officiele stroke-indextabellen; CR/slope uit de officiele handicaptabellen (2021). De club publiceert geen lengtes: lengtes wit/geel/rood per lus komen van golfingrecord.com (derden; consistent tussen de combinaties). Lengtes blauw en oranje, de groene lus en de par 3-baan zijn onbekend (null); GolfingRecord-gegevens voor die tees/lussen zijn inconsistent. De groene lus in Rood-Groen heeft een andere parvolgorde dan de Compact Course (officiele tabel). Clubsite: GolfingRecord-pagina's Blue/Yellow, Yellow/Red, Red/Blue."
+    "notes": "Par en SI per combinatie uit de officiele stroke-indextabellen; CR/slope uit de officiele handicaptabellen (2021). Holelengtes (wit/geel/blauw/rood/oranje) van de blauwe, gele en rode lus komen uit de officiele hole-by-hole-afbeeldingen van de club (sectie 'Hole by Hole Blauw/Geel/Rood' op /info; bestanden hbh-baan-<hole>-<lus>.jpg, par per hole gecontroleerd). Blauw-Geel, Geel-Rood en Rood-Blauw zijn daarmee volledig officieel. Rood-Groen: alleen de rode lus (holes 1-9) heeft lengtes; van de groene lus/Compact Course en de par 3-baan publiceert de club geen lengtes (null). Opmerkelijk: rode lus hole 8 oranje staat op de afbeelding als 48 m (zo overgenomen). De groene lus in Rood-Groen heeft een andere parvolgorde dan de Compact Course (officiele tabel). Officiële bron gecontroleerd 29-10-2026: officiële hole-by-hole-lengtes gevonden en de GolfingRecord-lengtes vervangen (de wit/geel/rood-lengtes van GolfingRecord bleken op één hole na gelijk: blauwe lus hole 1 is officieel geel 470 i.p.v. 480 en rood 452 i.p.v. 438); lengtes blauw en oranje toegevoegd. Geen officiële lengtes voor de groene lus en de par 3-baan gevonden."
   },
   "sources": [
     "https://www.golfresortbrunssum.nl/info",
     "https://www.golfresortbrunssum.nl/geschiedenis",
     "https://www.golfresortbrunssum.nl/contact",
-    "https://www.golfingrecord.com/golf-scorecard/70c19e06-db25-f572-39ce-40af40d502bd",
-    "https://www.golfingrecord.com/golf-scorecard/661860c6-1fb8-6c51-be6b-732409a9cc90",
-    "https://www.golfingrecord.com/golf-scorecard/9601fabe-2bfc-19e7-fd8d-a60eac62983b"
+    "https://www.golfresortbrunssum.nl/hole-by-hole"
   ]
 }

@@ -5,8 +5,8 @@
   "holes_total": 9,
   "course_type": "par-3",
   "address": {
-    "street": "Platenkampsweg",
-    "postal_code": null,
+    "street": "Platenkampsweg 3",
+    "postal_code": "7497 MX",
     "city": "Bentelo",
     "province": "Overijssel",
     "country": "NL"
@@ -17,9 +17,9 @@
     "source": "OpenStreetMap leisure=golf_course (middelpunt baan, via Overpass)"
   },
   "distance_km_from_dedemsvaart": 43.1,
-  "phone": "+31 6 16860123",
-  "email": "info@twentsegolfacademy.nl",
-  "website": "https://twentsegolfacademy.nl",
+  "phone": "06 30845087",
+  "email": "info@shortgolfhofvantwente.nl",
+  "website": "https://shortgolfhofvantwente.nl/",
   "booking_url": null,
   "founded": null,
   "architect": null,
@@ -32,7 +32,7 @@
   ],
   "greenfee_welcome": true,
   "requirements": null,
-  "description_nl": "Kleinschalige golfaccommodatie in het buitengebied van Bentelo (Hof van Twente), een zusterbaan van het Twentse Golf Park in Haaksbergen. De 9 holes zijn allemaal par 3 en kort (circa 35 tot 115 meter), wat de baan geschikt maakt voor beginners en het oefenen van het korte spel. Er is een driving range en het accent ligt op lessen.",
+  "description_nl": "Laagdrempelige shortgolfbaan aan de Platenkampsweg in Bentelo, sinds juli 2025 onder de naam Short Golf Hof van Twente. De 9 holes zijn allemaal par 3 en tussen ongeveer 55 en 100 meter lang; de baan ligt aan weerszijden van de Platenkampsweg. Naast de baan zijn er een driving range en golflessen, en ook zonder golfervaring kun je er een ronde spelen.",
   "loops": [
     {
       "name": "Par 3-baan 9 holes",
@@ -43,7 +43,7 @@
           "name": "meters",
           "color": null,
           "gender": null,
-          "length_m": 631,
+          "length_m": 700,
           "course_rating": null,
           "slope": null,
           "par": 27
@@ -53,7 +53,7 @@
         {
           "hole": 1,
           "par": 3,
-          "si": 2,
+          "si": null,
           "si_women": null,
           "lengths_m": {
             "meters": 95
@@ -62,90 +62,94 @@
         {
           "hole": 2,
           "par": 3,
-          "si": 4,
+          "si": null,
           "si_women": null,
           "lengths_m": {
-            "meters": 66
+            "meters": 100
           }
         },
         {
           "hole": 3,
           "par": 3,
-          "si": 8,
+          "si": null,
           "si_women": null,
           "lengths_m": {
-            "meters": 43
+            "meters": 65
           }
         },
         {
           "hole": 4,
           "par": 3,
-          "si": 7,
+          "si": null,
           "si_women": null,
           "lengths_m": {
-            "meters": 71
+            "meters": 95
           }
         },
         {
           "hole": 5,
           "par": 3,
-          "si": 1,
+          "si": null,
           "si_women": null,
           "lengths_m": {
-            "meters": 113
+            "meters": 85
           }
         },
         {
           "hole": 6,
           "par": 3,
-          "si": 6,
+          "si": null,
           "si_women": null,
           "lengths_m": {
-            "meters": 78
+            "meters": 75
           }
         },
         {
           "hole": 7,
           "par": 3,
-          "si": 3,
+          "si": null,
           "si_women": null,
           "lengths_m": {
-            "meters": 61
+            "meters": 55
           }
         },
         {
           "hole": 8,
           "par": 3,
-          "si": 5,
+          "si": null,
           "si_women": null,
           "lengths_m": {
-            "meters": 70
+            "meters": 60
           }
         },
         {
           "hole": 9,
           "par": 3,
-          "si": 9,
+          "si": null,
           "si_women": null,
           "lengths_m": {
-            "meters": 34
+            "meters": 70
           }
         }
       ]
     }
   ],
   "scorecard": {
-    "page_url": "https://www.hole19golf.com/courses/twentse-golf-academy",
+    "page_url": "https://shortgolfhofvantwente.nl/holes/",
     "files": [
+      "scorecard/scorekaart-short-golf-hof-van-twente.pdf",
+      "scorecard/baanplattegrond-2026.png",
       "scorecard/page.html"
     ],
-    "source": "third-party",
-    "retrieved": "2026-10-28",
-    "complete": true,
-    "notes": "Holegegevens (par, SI 1-9, lengte) uit Hole19; tee heet daar \"meters\" (totaal 631, Hole19 labelt het als yds). Geen CR/slope gevonden. Officiële site twentsegolfacademy.nl toont alleen een lege serverpagina (geen inhoud) - status/actualiteit niet officieel te controleren; de club staat wel in de golf.nl-banenzoeker (beschreven als 9 holes par 3 met driving range). Postcode onbekend (Hole19 vermeldt \"7597MR\", vermoedelijk 7497 MR). Telefoon uit golf.nl, e-mail uit Hole19."
+    "source": "official",
+    "retrieved": "2026-10-29",
+    "complete": false,
+    "notes": "Officiële bron gecontroleerd 29-10-2026: officiële scorekaart (PDF, sept. 2026) en holepagina's op shortgolfhofvantwente.nl gevonden: 9 holes par 3, lengtes 95/100/65/95/85/75/55/60/70 m (totaal 700 m). De website (holes-overzicht en hole-9-pagina) noemt voor hole 9 75 m, de scorekaart 70 m (scorekaart aangehouden). Geen S.I. en geen CR/slope gepubliceerd. De oude Hole19-gegevens (Twentse Golf Academy, 631 m, S.I. 1-9) horen bij de vorige indeling en zijn vervangen."
   },
   "sources": [
-    "https://www.hole19golf.com/courses/twentse-golf-academy",
+    "https://shortgolfhofvantwente.nl/holes/",
+    "https://shortgolfhofvantwente.nl/wp-content/uploads/Scorekaart-nieuw-kopie.pdf",
+    "https://shortgolfhofvantwente.nl/contact/",
     "https://www.golf.nl/api/playgolfapi/GetGolfCourses",
     "https://golfkaart.com/api/kaart.json",
     "https://overpass-api.de (leisure=golf_course)",

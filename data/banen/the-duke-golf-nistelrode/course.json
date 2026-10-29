@@ -45,7 +45,7 @@
           "name": "wit",
           "color": "white",
           "gender": "men",
-          "length_m": null,
+          "length_m": 5782,
           "course_rating": 71.3,
           "slope": 137,
           "par": 72
@@ -54,7 +54,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "men",
-          "length_m": null,
+          "length_m": 5466,
           "course_rating": 69.5,
           "slope": 128,
           "par": 72
@@ -63,7 +63,7 @@
           "name": "blauw",
           "color": "blue",
           "gender": "men",
-          "length_m": null,
+          "length_m": 5159,
           "course_rating": 67.9,
           "slope": 124,
           "par": 72
@@ -81,7 +81,7 @@
           "name": "oranje",
           "color": "orange",
           "gender": "men",
-          "length_m": null,
+          "length_m": 4242,
           "course_rating": 63.6,
           "slope": 108,
           "par": 72
@@ -90,7 +90,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "women",
-          "length_m": null,
+          "length_m": 5466,
           "course_rating": 75.9,
           "slope": 141,
           "par": 72
@@ -99,7 +99,7 @@
           "name": "blauw",
           "color": "blue",
           "gender": "women",
-          "length_m": null,
+          "length_m": 5159,
           "course_rating": 73.5,
           "slope": 137,
           "par": 72
@@ -117,13 +117,248 @@
           "name": "oranje",
           "color": "orange",
           "gender": "women",
-          "length_m": null,
+          "length_m": 4242,
           "course_rating": 67.3,
           "slope": 127,
           "par": 72
         }
       ],
-      "hole_data": []
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 285,
+            "geel": 269,
+            "blauw": 269,
+            "rood": 237,
+            "oranje": 220
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 358,
+            "geel": 339,
+            "blauw": 339,
+            "rood": 287,
+            "oranje": 240
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 462,
+            "geel": 443,
+            "blauw": 405,
+            "rood": 373,
+            "oranje": 333
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 345,
+            "geel": 326,
+            "blauw": 326,
+            "rood": 282,
+            "oranje": 252
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 144,
+            "geel": 126,
+            "blauw": 126,
+            "rood": 108,
+            "oranje": 108
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 430,
+            "geel": 423,
+            "blauw": 378,
+            "rood": 353,
+            "oranje": 316
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 104,
+            "geel": 104,
+            "blauw": 86,
+            "rood": 86,
+            "oranje": 72
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 360,
+            "geel": 328,
+            "blauw": 287,
+            "rood": 287,
+            "oranje": 267
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 406,
+            "geel": 368,
+            "blauw": 327,
+            "rood": 327,
+            "oranje": 309
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 356,
+            "geel": 338,
+            "blauw": 317,
+            "rood": 291,
+            "oranje": 255
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 120,
+            "geel": 111,
+            "blauw": 111,
+            "rood": 96,
+            "oranje": 78
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 425,
+            "geel": 425,
+            "blauw": 395,
+            "rood": 363,
+            "oranje": 319
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 367,
+            "geel": 338,
+            "blauw": 338,
+            "rood": 330,
+            "oranje": 296
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 356,
+            "geel": 329,
+            "blauw": 318,
+            "rood": 302,
+            "oranje": 272
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 149,
+            "geel": 149,
+            "blauw": 135,
+            "rood": 120,
+            "oranje": 93
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 294,
+            "geel": 279,
+            "blauw": 279,
+            "rood": 242,
+            "oranje": 211
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 356,
+            "geel": 341,
+            "blauw": 318,
+            "rood": null,
+            "oranje": 259
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 465,
+            "geel": 430,
+            "blauw": 405,
+            "rood": 370,
+            "oranje": 342
+          }
+        }
+      ]
     }
   ],
   "scorecard": {
@@ -132,12 +367,14 @@
       "scorecard/Baanhandicap-Rating-The-Duke-2025.pdf",
       "scorecard/Plattegrond-de-baan-1.png",
       "scorecard/page-golfify.html",
-      "scorecard/page.html"
+      "scorecard/page.html",
+      "scorecard/championship-course-2026-10-29.html",
+      "scorecard/championship-course-holedata.json"
     ],
     "source": "official",
-    "retrieved": "2026-10-28",
+    "retrieved": "2026-10-29",
     "complete": false,
-    "notes": "Geen scorekaart gepubliceerd (alleen plattegrond en baanhandicaptabellen d.d. 10-10-2024, ook per 1e/2e 9 holes, beide par 36). Golfify.io heeft een holetabel (wit 6278/geel 5964/blauw 5650/rood 5134/oranje 4214 m) maar met par 37 uit / 35 in, wat niet strookt met de officiële par 36/36 - daarom niet overgenomen (page-golfify.html bewaard)."
+    "notes": "Geen scorekaart gepubliceerd (alleen plattegrond en baanhandicaptabellen d.d. 10-10-2024, ook per 1e/2e 9 holes, beide par 36). Golfify.io heeft een holetabel (wit 6278/geel 5964/blauw 5650/rood 5134/oranje 4214 m) maar met par 37 uit / 35 in, wat niet strookt met de officiële par 36/36 - daarom niet overgenomen (page-golfify.html bewaard). Officiële bron gecontroleerd 29-10-2026: de pagina Championship Course bevat nu een interactieve baankaart met per hole par, S.I. en afstanden wit/geel/blauw/rood/oranje in meters (data in de pagina-HTML; bewaard als championship-course-2026-10-29.html en -holedata.json). Overgenomen: par (uit 36, in 36), S.I. en lengtes (wit 5782, geel 5466, blauw 5159, oranje 4242 m). Fouten op de site, daarom null: S.I. hole 13 staat als -1 en hole 18 als 3 (dubbel met hole 9; ontbrekend zijn 2 en 6); rood hole 17 staat als 397 m, langer dan geel (341) en wit (356), vermoedelijk tikfout voor 297 - rood-totaal daardoor onbekend. Golfify (wit 6278 'm', par 37/35) blijkt yards en een oudere indeling (hole 9 par 5). Ratings ongewijzigd uit de baanhandicaptabellen d.d. 10-10-2024."
   },
   "sources": [
     "https://theduke.nl/golf/championship-course/",

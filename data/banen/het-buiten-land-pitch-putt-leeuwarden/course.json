@@ -230,7 +230,7 @@
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Geen scorekaart op de officiele site (hetbuiten-land.nl) of op ppgz.nl. Hole-data (par, SI, lengte) van Hole19 (tee 'meters', totaal 993; GolfPass noemt 987 m). GolfPass toont afwijkende lengtes (totaal 1172, vermoedelijk yards maar niet consistent) en een andere SI-volgorde (18,2,10,16,8,12,4,14,6,17,1,9,15,7,11,3,13,5). Hole19 vermeldt CR 48,0 / slope 85 (niet officieel bevestigd, niet overgenomen). Bouwjaar 2006 volgens GolfPass. Lengtes en SI dus onzeker."
+    "notes": "Geen scorekaart op de officiele site (hetbuiten-land.nl) of op ppgz.nl. Hole-data (par, SI, lengte) van Hole19 (tee 'meters', totaal 993; GolfPass noemt 987 m). GolfPass toont afwijkende lengtes (totaal 1172, vermoedelijk yards maar niet consistent) en een andere SI-volgorde (18,2,10,16,8,12,4,14,6,17,1,9,15,7,11,3,13,5). Hole19 vermeldt CR 48,0 / slope 85 (niet officieel bevestigd, niet overgenomen). Bouwjaar 2006 volgens GolfPass. Lengtes en SI dus onzeker. Officiële bron gecontroleerd 29-10-2026: hetbuiten-land.nl blokkeert curl (403); via WebFetch geen scorekaart, plattegrond of holegegevens op de pitch & putt-pagina (alleen 18 holes, ruim 4 ha). Ook ppgz.nl (vereniging Zuiderburen, incl. sitemaps) en golf.nl hebben niets. Hole19-gegevens blijven staan."
   },
   "sources": [
     "https://hetbuiten-land.nl/pitch-putt-golf-leeuwarden/",

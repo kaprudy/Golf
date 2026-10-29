@@ -275,7 +275,7 @@
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Officiele site publiceert geen scorekaart, alleen WHS-tabellen (03-12-2024): 18 holes H geel 56,9/89, rood 55,6/90; D geel 60,0/103, rood 58,9/101; 1e negen H 28,6/94 & 28,0/94, D 30,3/107 & 29,8/106; 2e negen H 28,3/86 & 27,6/87, D 29,8/98 & 29,2/95 (geel/rood). Par en S.I. per hole van hole19golf.com (derden). Hole19 geeft rode tee in 'yds' (217..141, totaal 2865) - eenheid twijfelachtig, daarom lengtes null. GolfAdvisor noemt geel 2960 m."
+    "notes": "Officiele site publiceert geen scorekaart, alleen WHS-tabellen (03-12-2024): 18 holes H geel 56,9/89, rood 55,6/90; D geel 60,0/103, rood 58,9/101; 1e negen H 28,6/94 & 28,0/94, D 30,3/107 & 29,8/106; 2e negen H 28,3/86 & 27,6/87, D 29,8/98 & 29,2/95 (geel/rood). Par en S.I. per hole van hole19golf.com (derden). Hole19 geeft rode tee in 'yds' (217..141, totaal 2865) - eenheid twijfelachtig, daarom lengtes null. GolfAdvisor noemt geel 2960 m. Officiële bron gecontroleerd 29-10-2026: golfbaandevlietlanden.nl (sitemap, mediabibliotheek, local rules, plaatselijke regels) en websearch doorzocht; geen scorekaart, alleen WHS-tabellen. Gegevens ongewijzigd."
   },
   "sources": [
     "https://golfbaandevlietlanden.nl/over-ons/",

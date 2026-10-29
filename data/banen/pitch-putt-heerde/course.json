@@ -46,7 +46,7 @@
           "name": "meters",
           "color": null,
           "gender": null,
-          "length_m": 912,
+          "length_m": 954,
           "course_rating": null,
           "slope": null,
           "par": 54
@@ -56,16 +56,16 @@
         {
           "hole": 1,
           "par": 3,
-          "si": null,
+          "si": 15,
           "si_women": null,
           "lengths_m": {
-            "meters": 53
+            "meters": 50
           }
         },
         {
           "hole": 2,
           "par": 3,
-          "si": null,
+          "si": 17,
           "si_women": null,
           "lengths_m": {
             "meters": 34
@@ -74,7 +74,7 @@
         {
           "hole": 3,
           "par": 3,
-          "si": null,
+          "si": 16,
           "si_women": null,
           "lengths_m": {
             "meters": 45
@@ -83,158 +83,157 @@
         {
           "hole": 4,
           "par": 3,
-          "si": null,
+          "si": 5,
           "si_women": null,
           "lengths_m": {
-            "meters": 50
+            "meters": 62
           }
         },
         {
           "hole": 5,
           "par": 3,
-          "si": null,
+          "si": 1,
           "si_women": null,
           "lengths_m": {
-            "meters": 55
+            "meters": 90
           }
         },
         {
           "hole": 6,
           "par": 3,
-          "si": null,
+          "si": 13,
           "si_women": null,
           "lengths_m": {
-            "meters": 55
+            "meters": 59
           }
         },
         {
           "hole": 7,
           "par": 3,
-          "si": null,
+          "si": 6,
           "si_women": null,
           "lengths_m": {
-            "meters": 46
+            "meters": 47
           }
         },
         {
           "hole": 8,
           "par": 3,
-          "si": null,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 82
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 42
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 8,
           "si_women": null,
           "lengths_m": {
             "meters": 63
           }
         },
         {
-          "hole": 9,
-          "par": 3,
-          "si": null,
-          "si_women": null,
-          "lengths_m": {
-            "meters": 36
-          }
-        },
-        {
-          "hole": 10,
-          "par": 3,
-          "si": null,
-          "si_women": null,
-          "lengths_m": {
-            "meters": 55
-          }
-        },
-        {
           "hole": 11,
           "par": 3,
-          "si": null,
-          "si_women": null,
-          "lengths_m": {
-            "meters": 53
-          }
-        },
-        {
-          "hole": 12,
-          "par": 3,
-          "si": null,
-          "si_women": null,
-          "lengths_m": {
-            "meters": 52
-          }
-        },
-        {
-          "hole": 13,
-          "par": 3,
-          "si": null,
-          "si_women": null,
-          "lengths_m": {
-            "meters": 35
-          }
-        },
-        {
-          "hole": 14,
-          "par": 3,
-          "si": null,
+          "si": 7,
           "si_women": null,
           "lengths_m": {
             "meters": 48
           }
         },
         {
-          "hole": 15,
+          "hole": 12,
           "par": 3,
-          "si": null,
+          "si": 11,
           "si_women": null,
           "lengths_m": {
-            "meters": 53
+            "meters": 56
           }
         },
         {
-          "hole": 16,
+          "hole": 13,
           "par": 3,
-          "si": null,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 36
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 40
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 12,
           "si_women": null,
           "lengths_m": {
             "meters": 54
           }
         },
         {
-          "hole": 17,
+          "hole": 16,
           "par": 3,
-          "si": null,
+          "si": 10,
           "si_women": null,
           "lengths_m": {
-            "meters": 70
+            "meters": 30
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "meters": 66
           }
         },
         {
           "hole": 18,
           "par": 3,
-          "si": null,
+          "si": 2,
           "si_women": null,
           "lengths_m": {
-            "meters": 55
+            "meters": 50
           }
         }
       ]
     }
   ],
   "scorecard": {
-    "page_url": "https://www.pitchenputtheerde.nl/over-pitch-en-putt/",
+    "page_url": "https://www.pitchenputtheerde.nl/golfsoorten/pitch-en-putt/",
     "files": [
-      "scorecard/page.html",
-      "scorecard/hole19.html"
+      "scorecard/page.html"
     ],
-    "source": "third-party",
-    "retrieved": "2026-10-28",
-    "complete": false,
-    "notes": "Geen officiële scorekaart; officiële site vermeldt 18 holes van 30-90 m op 5 ha. Par en lengtes uit Hole19 (totaal 912, label 'meters'; Hole19 toont ook 'yds', eenheid niet 100% zeker). Geen SI/CR/slope."
+    "source": "official",
+    "retrieved": "2026-10-29",
+    "complete": true,
+    "notes": "Officiële bron gecontroleerd 29-10-2026: officiële holetabel (holenaam, S.I., lengte) op pitchenputtheerde.nl/golfsoorten/pitch-en-putt/ gevonden en overgenomen: 18 holes, totaal 954 m. Par wordt daar niet per hole genoemd; par 3 per hole volgens de pitch & putt-spelvorm (par 54). Hole19-lengtes (912 m) en ontbrekende S.I. vervangen. Geen CR/slope."
   },
   "sources": [
+    "https://www.pitchenputtheerde.nl/golfsoorten/pitch-en-putt/",
     "https://www.pitchenputtheerde.nl/over-pitch-en-putt/",
     "https://www.pitchenputtheerde.nl/golfsoorten/",
     "https://www.pitchenputtheerde.nl/contact/",
-    "https://www.openstreetmap.org/relation/1027462",
-    "https://www.hole19golf.com/courses/pitch-putt-golf-heerde"
+    "https://www.openstreetmap.org/relation/1027462"
   ],
   "status": "open",
   "status_note": "Open; evenementen in 2026 (o.a. 5-10-2026).",

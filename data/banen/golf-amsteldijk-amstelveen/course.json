@@ -457,11 +457,13 @@
       "scorecard/hole-6.png",
       "scorecard/hole-7.png",
       "scorecard/hole-8.png",
-      "scorecard/hole-9.png"
+      "scorecard/hole-9.png",
+      "scorecard/Hole-1-plattegrond.png",
+      "scorecard/Hole-3-SI-plattegrond.png"
     ],
     "source": "official",
     "complete": false,
-    "notes": "Lengtes per tee uit de officiele holeplattegronden (tees '52'=wit, '49'=geel, '45'=rood; nummer = 18-holeslengte in hm). Par per hole: clubteksten noemen holes 1,4,7,9 par 3, 5 par 5, 6 en 8 par 4; holes 2 (par 4) en 3 (par 5) volgen uit de officiele baanpar 68 (2x34) en Hole19. S.I. 9 holes van Hole19 (third-party); S.I. voor 18 holes onbekend. CR/slope 18 holes uit de NGF-tabellen 11-09-2023; oranje tee (heren 60,3/99, dames 63,0/104) niet opgenomen want geen lengtes. Geen 9-holes ratings gepubliceerd. Clubtekst noemt hole 6 de kortste par 4 terwijl hole 2 korter is; mogelijk verouderde tekst."
+    "notes": "Lengtes per tee uit de officiele holeplattegronden (tees '52'=wit, '49'=geel, '45'=rood; nummer = 18-holeslengte in hm). Par per hole: clubteksten noemen holes 1,4,7,9 par 3, 5 par 5, 6 en 8 par 4; holes 2 (par 4) en 3 (par 5) volgen uit de officiele baanpar 68 (2x34) en Hole19. S.I. 9 holes van Hole19 (third-party); S.I. voor 18 holes onbekend. CR/slope 18 holes uit de NGF-tabellen 11-09-2023; oranje tee (heren 60,3/99, dames 63,0/104) niet opgenomen want geen lengtes. Geen 9-holes ratings gepubliceerd. Clubtekst noemt hole 6 de kortste par 4 terwijl hole 2 korter is; mogelijk verouderde tekst. Officiële bron gecontroleerd 29-10-2026: geen scorekaart of S.I. gevonden (pagina's, mediabibliotheek, websearch). Wel nieuwe officiële holeplattegronden hole 1 en 3 (09-2026, Hole-1-plattegrond.png, Hole-3-SI-plattegrond.png) toegevoegd; lengtes gelijk aan de bestaande (132/120/105 en 487/462/431 m). Par holes 2-3 en S.I. blijven zoals eerder beschreven."
   },
   "sources": [
     "https://www.amsteldijk.nl/faciliteiten/9-holes-a-status",

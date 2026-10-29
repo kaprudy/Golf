@@ -396,7 +396,8 @@
             "wit": 111
           }
         }
-      ]
+      ],
+      "source": "third-party"
     }
   ],
   "scorecard": {
@@ -411,7 +412,7 @@
     "source": "official",
     "retrieved": "2026-10-28",
     "complete": true,
-    "notes": "18 holes: par, SI en lengtes (geel/rood/oranje) van de officiele scorekaart; CR/slope uit de WHS-tabellen van 06-01-2021. GolfingRecord toont afwijkende (mogelijk nieuwere) waarden: geel heren 66.5/116, rood heren 63.1/104, andere SI-volgorde en geel 5096 m; niet overgenomen. Americabaan: holegegevens (par, SI, lengte) van golfingrecord.com (derden, eenheid vermoedelijk meters, tee 'wit' is aanname van die site); officiele WHS-tabel par 3-baan (18 holes = 2x9): geel heren CR 49.3/SR 60, rood dames CR 50.5/SR 66, par 54. De pitch & putt-oefenbaan is niet opgenomen (geen holegegevens)."
+    "notes": "18 holes: par, SI en lengtes (geel/rood/oranje) van de officiele scorekaart; CR/slope uit de WHS-tabellen van 06-01-2021. GolfingRecord toont afwijkende (mogelijk nieuwere) waarden: geel heren 66.5/116, rood heren 63.1/104, andere SI-volgorde en geel 5096 m; niet overgenomen. Americabaan: holegegevens (par, SI, lengte) van golfingrecord.com (derden, eenheid vermoedelijk meters, tee 'wit' is aanname van die site); officiele WHS-tabel par 3-baan (18 holes = 2x9): geel heren CR 49.3/SR 60, rood dames CR 50.5/SR 66, par 54. De pitch & putt-oefenbaan is niet opgenomen (geen holegegevens). Officiële bron gecontroleerd 29-10-2026: 18 holes al officieel. Voor de Americabaan geen officiële scorekaart gevonden: de mediabibliotheek (ca. 790 bestanden) bevat alleen plaatselijke regels, wedstrijdreglement, aanmeldingsformulier, par3card-flyer en de WHS-tabel; holegegevens Americabaan blijven van GolfingRecord (derden). Americabaan (par 3): holegegevens van GolfingRecord, daarom loops[1].source = \"third-party\"."
   },
   "sources": [
     "https://www.golfbaandegolfhorst.nl/baaninformatie/",

@@ -43,7 +43,7 @@
           "name": "wit",
           "color": "white",
           "gender": "men",
-          "length_m": null,
+          "length_m": 5757,
           "course_rating": 71.8,
           "slope": 141,
           "par": 71
@@ -52,7 +52,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "men",
-          "length_m": null,
+          "length_m": 5377,
           "course_rating": 69.8,
           "slope": 134,
           "par": 71
@@ -61,7 +61,7 @@
           "name": "geel",
           "color": "yellow",
           "gender": "women",
-          "length_m": null,
+          "length_m": 5377,
           "course_rating": 75.9,
           "slope": 139,
           "par": 71
@@ -70,7 +70,7 @@
           "name": "blauw",
           "color": "blue",
           "gender": "men",
-          "length_m": null,
+          "length_m": 4998,
           "course_rating": 67.7,
           "slope": 125,
           "par": 71
@@ -79,7 +79,7 @@
           "name": "blauw",
           "color": "blue",
           "gender": "women",
-          "length_m": null,
+          "length_m": 4998,
           "course_rating": 73.5,
           "slope": 134,
           "par": 71
@@ -88,7 +88,7 @@
           "name": "rood",
           "color": "red",
           "gender": "men",
-          "length_m": null,
+          "length_m": 4403,
           "course_rating": 64.8,
           "slope": 114,
           "par": 71
@@ -97,7 +97,7 @@
           "name": "rood",
           "color": "red",
           "gender": "women",
-          "length_m": null,
+          "length_m": 4403,
           "course_rating": 69.3,
           "slope": 126,
           "par": 71
@@ -121,25 +121,283 @@
           "par": 71
         }
       ],
-      "hole_data": []
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 412,
+            "geel": 412,
+            "blauw": 403,
+            "rood": 382
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 428,
+            "geel": 375,
+            "blauw": 327,
+            "rood": 322
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 326,
+            "geel": 301,
+            "blauw": 270,
+            "rood": 242
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 168,
+            "geel": 157,
+            "blauw": 157,
+            "rood": 139
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 528,
+            "geel": 495,
+            "blauw": 483,
+            "rood": 433
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 137,
+            "geel": 119,
+            "blauw": 99,
+            "rood": 84
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 374,
+            "geel": 348,
+            "blauw": 338,
+            "rood": 297
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 282,
+            "geel": 275,
+            "blauw": 267,
+            "rood": 228
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 147,
+            "geel": 136,
+            "blauw": 122,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 317,
+            "geel": 310,
+            "blauw": 295,
+            "rood": 235
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 157,
+            "geel": 147,
+            "blauw": 90,
+            "rood": 80
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 305,
+            "geel": 267,
+            "blauw": 257,
+            "rood": 230
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 342,
+            "geel": 289,
+            "blauw": 279,
+            "rood": 246
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 476,
+            "geel": 450,
+            "blauw": 402,
+            "rood": 359
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 400,
+            "geel": 386,
+            "blauw": 367,
+            "rood": 313
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 335,
+            "geel": 314,
+            "blauw": 304,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 188,
+            "geel": 178,
+            "blauw": 168,
+            "rood": 127
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 435,
+            "geel": 418,
+            "blauw": 370,
+            "rood": 324
+          }
+        }
+      ]
     }
   ],
   "scorecard": {
-    "page_url": "https://www.gcdehaar.nl/de-baan/handicap-tabellen-heren/",
+    "page_url": "https://www.gcdehaar.nl/de-baan/baanboekje/",
     "files": [
       "scorecard/De-Haar-Dames.pdf",
       "scorecard/De-Haar-Heren.pdf",
-      "scorecard/page.html"
+      "scorecard/page.html",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-01.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-01.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-02.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-02.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-03.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-03.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-04.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-04.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-05.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-05.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-06.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-06.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-07.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-07.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-08.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-08.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-10.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-10.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-11.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-11.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-12.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-12.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-13.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-13.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-14.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-14.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-15.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-15.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-16.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-16.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-17.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-17.jpeg",
+      "scorecard/Golfclub-De-Haar-Green-van-Hole-18.jpeg",
+      "scorecard/Golfclub-De-Haar-Hole-18.jpeg",
+      "scorecard/Hole-9-een.png",
+      "scorecard/Hole-9-twee.png",
+      "scorecard/Golfclub-De-Haar-Legenda.jpeg",
+      "scorecard/page-baanboekje.html"
     ],
     "source": "official",
-    "retrieved": "2026-10-28",
+    "retrieved": "2026-10-29",
     "complete": false,
-    "notes": "Alleen CR/slope (baanhandicaptabellen 15-08-2024) gevonden. De site heeft een interactief baanboekje met lengtes per afslag (symbolen, geen kleuren) maar geen par/S.I. per hole; derden (golfify, golfpass) tonen nog de oude 9-holesbaan (par 72), dus niet gebruikt. Holegegevens ontbreken."
+    "notes": "Officiële bron gecontroleerd 29-10-2026: het interactieve baanboekje op gcdehaar.nl bevat per hole een greenkaart met par en S.I. (hole 9: losse afbeeldingen 2024) en een holekaart met lengtes vanaf vier tees, aangeduid met symbolen (boom, vogel, bloem, blad) in plaats van kleuren. Par (35+36=71) en S.I. van alle 18 holes nu officieel. Toewijzing symbolen aan kleuren is afgeleid, niet officieel: boom=wit (5757 m) en vogel=geel (5377 m) bevestigd door totalen bij GolfAdvisor (derden); bloem=blauw (4998 m) en blad=rood (4403 m) afgeleid uit de volgorde van de course ratings. Geen lengtes voor oranje (CR H 61,1/105, D 64,3/105), daarom complete=false. Hole 1 staat als par 5 (S.I. 7) met slechts 412 m vanaf wit - zo op de officiële kaart. CR/slope uit de baanhandicaptabellen 15-08-2024. Derden (golfify, golfpass) tonen nog de oude 9-holesbaan en zijn niet gebruikt."
   },
   "sources": [
     "https://www.gcdehaar.nl/de-baan/",
     "https://www.gcdehaar.nl/de-baan/baanboekje/",
     "https://www.gcdehaar.nl/de-baan/handicap-tabellen-dames/",
-    "https://www.gcdehaar.nl/de-baan/handicap-tabellen-heren/"
+    "https://www.gcdehaar.nl/de-baan/handicap-tabellen-heren/",
+    "https://www.gcdehaar.nl/wp-content/uploads/revslider/Interactief-Baanboekje/Golfclub-De-Haar-Green-van-Hole-01.jpeg",
+    "https://www.gcdehaar.nl/wp-content/uploads/2024/04/Hole-9-een.png",
+    "https://www.golfadvisor.com/courses/23015-haar-golf-club"
   ]
 }

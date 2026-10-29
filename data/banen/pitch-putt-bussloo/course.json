@@ -345,7 +345,7 @@
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": false,
-    "notes": "Geen scorekaart op de officiele site (page.html = officiele pitch & putt-pagina). Holedata (par, SI, afstanden) van Golfify per lus A/B/C; Golfify nummert elke lus 1-9, hier doorgenummerd 1-27. Golfify vermeldt de eenheid niet expliciet (vermoedelijk meters). Geen course rating/slope (pitch & putt)."
+    "notes": "Officiële bron gecontroleerd 29-10-2026: multifunbussloo.nl (pitch-en-putt-pagina + mediabibliotheek) doorzocht; alleen 27 holes bevestigd, geen scorekaart of holegegevens. | Eerder: Geen scorekaart op de officiele site (page.html = officiele pitch & putt-pagina). Holedata (par, SI, afstanden) van Golfify per lus A/B/C; Golfify nummert elke lus 1-9, hier doorgenummerd 1-27. Golfify vermeldt de eenheid niet expliciet (vermoedelijk meters). Geen course rating/slope (pitch & putt)."
   },
   "sources": [
     "https://multifunbussloo.nl/outdoor/pitch-en-putt/",

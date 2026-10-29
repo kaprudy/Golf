@@ -40,16 +40,7 @@
       "par": 27,
       "tees": [
         {
-          "name": "home",
-          "color": null,
-          "gender": null,
-          "length_m": 625,
-          "course_rating": null,
-          "slope": null,
-          "par": 27
-        },
-        {
-          "name": "qualifying",
+          "name": "geel",
           "color": "yellow",
           "gender": null,
           "length_m": 708,
@@ -62,100 +53,102 @@
         {
           "hole": 1,
           "par": 3,
-          "si": 8,
+          "si": 15,
           "si_women": null,
           "lengths_m": {
-            "home": 49
+            "geel": 49
           }
         },
         {
           "hole": 2,
           "par": 3,
-          "si": 5,
+          "si": 13,
           "si_women": null,
           "lengths_m": {
-            "home": 44
+            "geel": 44
           }
         },
         {
           "hole": 3,
           "par": 3,
-          "si": 2,
+          "si": 1,
           "si_women": null,
           "lengths_m": {
-            "home": 81
+            "geel": 116
           }
         },
         {
           "hole": 4,
           "par": 3,
-          "si": 7,
+          "si": 11,
           "si_women": null,
           "lengths_m": {
-            "home": 69
+            "geel": 69
           }
         },
         {
           "hole": 5,
           "par": 3,
-          "si": 1,
+          "si": 3,
           "si_women": null,
           "lengths_m": {
-            "home": 66
+            "geel": 91
           }
         },
         {
           "hole": 6,
           "par": 3,
-          "si": 4,
+          "si": 7,
           "si_women": null,
           "lengths_m": {
-            "home": 82
+            "geel": 105
           }
         },
         {
           "hole": 7,
           "par": 3,
-          "si": 3,
+          "si": 5,
           "si_women": null,
           "lengths_m": {
-            "home": 108
+            "geel": 108
           }
         },
         {
           "hole": 8,
           "par": 3,
-          "si": 9,
+          "si": 17,
           "si_women": null,
           "lengths_m": {
-            "home": 51
+            "geel": 51
           }
         },
         {
           "hole": 9,
           "par": 3,
-          "si": 6,
+          "si": 9,
           "si_women": null,
           "lengths_m": {
-            "home": 75
+            "geel": 75
           }
         }
       ]
     }
   ],
   "scorecard": {
-    "page_url": "https://www.hole19golf.com/courses/golfbaan-9par3-noordeloos",
+    "page_url": "https://www.golfbaannoordeloos.nl/wp-content/uploads/2021/05/Golf_scorekaart3.jpg",
     "files": [
+      "scorecard/Golf_scorekaart3.jpg",
+      "scorecard/Golf_scorekaart2.jpg",
       "scorecard/hole19-scorecard.html"
     ],
-    "source": "third-party",
-    "retrieved": "2026-10-28",
-    "complete": false,
-    "notes": "Clubsite (golfbaannoordeloos.nl) geeft 403 voor curl en publiceert via WebFetch geen scorekaart. Par, S.I. en lengtes van Hole19 (tee 'home', totaal 625, eenheid niet vermeld). Hole19 noemt ook een 'qualifying'-tee van 708 zonder holelengtes; GolfPass/GolfAdvisor geven gele tee 708 m met CR 23,3 / slope 75 (niet officieel bevestigd, niet ingevuld). Hole19-ratings voor 'home' (49,8/47 en 51,5/66) zijn onwaarschijnlijk en niet overgenomen."
+    "source": "official",
+    "retrieved": "2026-10-29",
+    "complete": true,
+    "notes": "Officiële bron gecontroleerd 29-10-2026: officiële scorekaart (Golf_scorekaart3.jpg) en plattegrond (Golf_scorekaart2.jpg) van golfbaannoordeloos.nl (staan in de page-sitemap van de clubsite; via WebFetch opgehaald omdat curl 403 kreeg). Par, S.I. (18-holesstijl: alleen oneven 1-17) en lengtes van de gele tee (totaal 708 m, = som per hole) daarvan overgenomen. Op de plattegrond hebben holes 3, 5 en 6 een aparte qualifying-tee (Q); de kaart geeft alleen de gele (qualifying) lengtes. De eerdere Hole19-gegevens (tee 'home' 625: 49/44/81/69/66/82/108/51/75, met andere S.I.) zijn vervangen; tee 'qualifying' heet nu 'geel' zoals op de kaart. Geen CR/slope op de clubsite (GolfPass noemt geel 23,3/75, niet officieel, niet ingevuld)."
   },
   "sources": [
     "https://www.golfbaannoordeloos.nl/",
-    "https://www.hole19golf.com/courses/golfbaan-9par3-noordeloos",
-    "https://www.golfpass.com/courses/35672-noordeloos-golf-course/scorecard-and-layout"
+    "https://www.golfbaannoordeloos.nl/page-sitemap.xml",
+    "https://www.golfbaannoordeloos.nl/wp-content/uploads/2021/05/Golf_scorekaart3.jpg"
   ]
 }

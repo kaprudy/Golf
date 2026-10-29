@@ -18,8 +18,8 @@
   },
   "distance_km_from_dedemsvaart": 100.0,
   "phone": "024 388 0552",
-  "email": null,
-  "website": null,
+  "email": "molenhoek@pitch-putt.nl",
+  "website": "https://pitch-putt.nl/locaties/molenhoek/",
   "booking_url": null,
   "founded": null,
   "architect": null,
@@ -30,7 +30,7 @@
   ],
   "greenfee_welcome": true,
   "requirements": null,
-  "description_nl": "Deze pitch & puttbaan ligt in Molenhoek (gemeente Mook en Middelaar), achter het sportcentrum aan de Lierweg, in een oude zandafgraving. De 18 holes zijn allemaal par 3 en meten ongeveer 40 tot 70 meter, geschikt voor beginners en voor het oefenen van het korte spel. Spelen gaat volgens derden op afspraak.",
+  "description_nl": "Deze pitch & puttbaan ligt in Molenhoek (gemeente Mook en Middelaar), achter het sportcentrum aan de Lierweg, in een oude zandafgraving. De 18 holes zijn allemaal par 3 en meten ongeveer 40 tot 70 meter, geschikt voor beginners en voor het oefenen van het korte spel. Volgens de exploitant is de baan van dinsdag tot en met zondag overdag open; er wordt ook voetgolf gespeeld.",
   "loops": [
     {
       "name": "Pitch & putt (18 holes)",
@@ -217,14 +217,16 @@
     "page_url": "https://www.hole19golf.com/courses/pitch-putt-golf-molenhoek",
     "files": [
       "scorecard/hole19-pitch-putt-golf-molenhoek.html",
-      "scorecard/golfify-pitch-putt-golf-molenhoek.html"
+      "scorecard/golfify-pitch-putt-golf-molenhoek.html",
+      "scorecard/page-pitch-putt-nl.html"
     ],
     "source": "third-party",
     "retrieved": "2026-10-28",
     "complete": true,
-    "notes": "Geen officiele website gevonden. Par, SI en lengtes (metrisch, 979 m) van hole19golf.com, CR 45.0/slope 85 ook van Hole19 (geslacht niet vermeld). Golfify geeft dezelfde SI met lengtes in vermoedelijk yards (totaal 1071). FIPPA (2012) noemt een andere SI-volgorde. Openingstijden volgens Kidsproof 'op afspraak'. Ligt in Limburg (Mook en Middelaar), niet in de opgegeven gemeentelijst."
+    "notes": "Par, SI en lengtes (metrisch, 979 m) van hole19golf.com, CR 45.0/slope 85 ook van Hole19 (geslacht niet vermeld). Golfify geeft dezelfde SI met lengtes in vermoedelijk yards (totaal 1071). FIPPA (2012) noemt een andere SI-volgorde. Ligt in Limburg (Mook en Middelaar), niet in de opgegeven gemeentelijst. Officiële bron gecontroleerd 29-10-2026: officiële exploitantpagina gevonden (pitch-putt.nl/locaties/molenhoek/, keten Pitch & Putt) met adres, telefoon, e-mail en openingstijden (di-zo 10-17 uur), maar zonder scorekaart, holegegevens of CR/slope; ook de mediabibliotheek van pitch-putt.nl bevat geen scorekaart. Holegegevens blijven van Hole19 (derden)."
   },
   "sources": [
+    "https://pitch-putt.nl/locaties/molenhoek/",
     "https://www.hole19golf.com/courses/pitch-putt-golf-molenhoek",
     "https://www.golfify.io/courses/pitch-putt-golf-molenhoek",
     "https://fippa.org/courses/molenhoek_netherlands"

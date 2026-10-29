@@ -46,8 +46,8 @@
           "color": "white",
           "gender": "men",
           "length_m": 1544,
-          "course_rating": 29.5,
-          "slope": 100,
+          "course_rating": 30.4,
+          "slope": 106,
           "par": 29
         },
         {
@@ -55,8 +55,8 @@
           "color": "yellow",
           "gender": "men",
           "length_m": 1439,
-          "course_rating": 28.9,
-          "slope": 101,
+          "course_rating": 30.0,
+          "slope": 106,
           "par": 29
         },
         {
@@ -64,8 +64,8 @@
           "color": "red",
           "gender": "men",
           "length_m": 1375,
-          "course_rating": 28.5,
-          "slope": 97,
+          "course_rating": 29.9,
+          "slope": 101,
           "par": 29
         },
         {
@@ -73,8 +73,8 @@
           "color": "blue",
           "gender": "women",
           "length_m": 1439,
-          "course_rating": 30.5,
-          "slope": 108,
+          "course_rating": 31.5,
+          "slope": 113,
           "par": 29
         },
         {
@@ -82,8 +82,8 @@
           "color": "red",
           "gender": "women",
           "length_m": 1375,
-          "course_rating": 30.0,
-          "slope": 104,
+          "course_rating": 31.4,
+          "slope": 111,
           "par": 29
         }
       ],
@@ -91,11 +91,13 @@
         {
           "hole": 1,
           "par": 3,
-          "si": 6,
+          "si": 11,
           "si_women": null,
           "lengths_m": {
+            "wit": 207,
             "geel": 157,
-            "blauw": 157
+            "blauw": 157,
+            "rood": 152
           }
         },
         {
@@ -104,99 +106,128 @@
           "si": 1,
           "si_women": null,
           "lengths_m": {
+            "wit": 310,
             "geel": 301,
-            "blauw": 301
+            "blauw": 301,
+            "rood": 283
           }
         },
         {
           "hole": 3,
           "par": 3,
-          "si": 8,
+          "si": 15,
           "si_women": null,
           "lengths_m": {
+            "wit": 113,
             "geel": 105,
-            "blauw": 105
+            "blauw": 105,
+            "rood": 95
           }
         },
         {
           "hole": 4,
           "par": 3,
-          "si": 4,
+          "si": 7,
           "si_women": null,
           "lengths_m": {
+            "wit": 168,
             "geel": 155,
-            "blauw": 155
+            "blauw": 155,
+            "rood": 148
           }
         },
         {
           "hole": 5,
           "par": 3,
-          "si": 2,
+          "si": 3,
           "si_women": null,
           "lengths_m": {
+            "wit": 179,
             "geel": 179,
-            "blauw": 179
+            "blauw": 179,
+            "rood": 175
           }
         },
         {
           "hole": 6,
           "par": 3,
-          "si": 7,
+          "si": 13,
           "si_women": null,
           "lengths_m": {
+            "wit": 110,
             "geel": 94,
-            "blauw": 94
+            "blauw": 94,
+            "rood": 90
           }
         },
         {
           "hole": 7,
           "par": 3,
-          "si": 9,
+          "si": 17,
           "si_women": null,
           "lengths_m": {
+            "wit": 83,
             "geel": 77,
-            "blauw": 77
+            "blauw": 77,
+            "rood": 77
           }
         },
         {
           "hole": 8,
           "par": 4,
-          "si": 3,
+          "si": 5,
           "si_women": null,
           "lengths_m": {
+            "wit": 252,
             "geel": 252,
-            "blauw": 252
+            "blauw": 252,
+            "rood": 243
           }
         },
         {
           "hole": 9,
           "par": 3,
-          "si": 5,
+          "si": 9,
           "si_women": null,
           "lengths_m": {
+            "wit": 122,
             "geel": 119,
-            "blauw": 119
+            "blauw": 119,
+            "rood": 112
           }
         }
       ]
     }
   ],
   "scorecard": {
-    "retrieved": "2026-10-28",
-    "page_url": "https://thedunes.nl/de-baan/",
+    "retrieved": "2026-10-29",
+    "page_url": "https://www.dezandvoortse.nl/the-dunes/",
     "files": [
       "scorecard/page.html",
+      "scorecard/9-holesTheDunes2021.png",
+      "scorecard/scorekaarten.png",
+      "scorecard/9holestabel.png",
+      "scorecard/golfbaanTheDunes2024april10.jpg",
+      "scorecard/baanhandicapheren9.png",
+      "scorecard/baanhandicapdames9.png",
+      "scorecard/baanhandicapheren18.png",
+      "scorecard/baanhandicapdames18.png",
+      "scorecard/page-dezandvoortse-whs.html",
+      "scorecard/page-dezandvoortse.html",
       "scorecard/hole19.html",
       "scorecard/golfingrecord.html"
     ],
-    "source": "third-party",
-    "complete": false,
-    "notes": "De club publiceert geen scorekaart of handicaptabel (alleen hole-video's). Par, S.I., lengtes (geel heren = blauw dames, 1439 m) en CR/slope komen van Hole19 (third-party; eenheid op de site 'yds' maar totalen komen overeen met GolfPass 1544 m wit, dus vermoedelijk meters). Holelengtes voor wit en rood onbekend. Hole19 18 holes: wit 58,9/100, geel 57,8/101, rood heren 56,9/97, blauw dames 60,9/108, rood dames 59,9/104. 1golf.eu (via zoekresultaat; site blokkeert met Cloudflare) geeft afwijkende ratings (geel 58,5/97). GolfingRecord geeft dezelfde par/S.I.-volgorde niet (S.I. 11,1,15,7,3,13,17,5,9)."
+    "source": "official",
+    "complete": true,
+    "notes": "Officiële bron gecontroleerd 29-10-2026: scorekaart van Golfclub De Zandvoortse (de vereniging op The Dunes, gelinkt vanaf thedunes.nl) gevonden op dezandvoortse.nl (9-holesTheDunes2021.png; dezelfde kaart staat op een foto van 2024): par, S.I. (18-holesstijl, oneven 1-17) en lengtes wit/geel-blauw/rood (1544/1439/1375 m) vervangen de Hole19-gegevens. CR/slope uit de NGF-baanhandicaptabellen 18-01-2021 op dezelfde site: 9 holes H wit 30,4/106, geel 30,0/106, rood 29,9/101, D blauw 31,5/113, rood 31,4/111; 18 holes H 60,7/106, 60,0/106, 59,7/101, D 63,0/113, 62,8/111. Hole19 (derden) noemt lagere ratings (bijv. wit 9 holes 29,5/100) - mogelijk een latere herrating die niet officieel gepubliceerd is gevonden. Exploitant thedunes.nl zelf publiceert geen kaart."
   },
   "sources": [
     "https://thedunes.nl/",
     "https://thedunes.nl/de-baan/",
     "https://www.hole19golf.com/courses/golfbaan-the-dunes",
-    "https://www.golfingrecord.com/golf-scorecard/91cdacee-561b-f91e-db47-5d066b19741a"
+    "https://www.golfingrecord.com/golf-scorecard/91cdacee-561b-f91e-db47-5d066b19741a",
+    "https://www.dezandvoortse.nl/the-dunes/",
+    "https://www.dezandvoortse.nl/whs-handicap-tabellen/",
+    "https://www.dezandvoortse.nl/wp-content/uploads/2021/08/9-holesTheDunes2021.png"
   ]
 }

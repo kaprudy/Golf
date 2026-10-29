@@ -55,7 +55,7 @@
           "name": "rood",
           "color": "red",
           "gender": "women",
-          "length_m": null,
+          "length_m": 2374,
           "course_rating": 55.3,
           "slope": 89,
           "par": 58
@@ -69,7 +69,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 117,
-            "rood": null
+            "rood": 117
           }
         },
         {
@@ -79,7 +79,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 126,
-            "rood": null
+            "rood": 126
           }
         },
         {
@@ -89,7 +89,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 75,
-            "rood": null
+            "rood": 75
           }
         },
         {
@@ -99,7 +99,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 84,
-            "rood": null
+            "rood": 84
           }
         },
         {
@@ -109,7 +109,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 62,
-            "rood": null
+            "rood": 62
           }
         },
         {
@@ -119,7 +119,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 126,
-            "rood": null
+            "rood": 126
           }
         },
         {
@@ -129,7 +129,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 126,
-            "rood": null
+            "rood": 126
           }
         },
         {
@@ -139,7 +139,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 201,
-            "rood": null
+            "rood": 201
           }
         },
         {
@@ -149,7 +149,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 270,
-            "rood": null
+            "rood": 270
           }
         },
         {
@@ -159,7 +159,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 117,
-            "rood": null
+            "rood": 117
           }
         },
         {
@@ -169,7 +169,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 126,
-            "rood": null
+            "rood": 126
           }
         },
         {
@@ -179,7 +179,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 75,
-            "rood": null
+            "rood": 75
           }
         },
         {
@@ -189,7 +189,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 84,
-            "rood": null
+            "rood": 84
           }
         },
         {
@@ -199,7 +199,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 62,
-            "rood": null
+            "rood": 62
           }
         },
         {
@@ -209,7 +209,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 126,
-            "rood": null
+            "rood": 126
           }
         },
         {
@@ -219,7 +219,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 126,
-            "rood": null
+            "rood": 126
           }
         },
         {
@@ -229,7 +229,7 @@
           "si_women": null,
           "lengths_m": {
             "geel": 201,
-            "rood": null
+            "rood": 201
           }
         },
         {
@@ -239,29 +239,29 @@
           "si_women": null,
           "lengths_m": {
             "geel": 270,
-            "rood": null
+            "rood": 270
           }
         }
       ]
     }
   ],
   "scorecard": {
-    "page_url": "https://golfmaasduinen.nl/golfbaan/",
+    "page_url": "https://golfmaasduinen.nl/scoorkaartmaasduinen2019-1024x516/",
     "files": [
+      "scorecard/ScoorkaartMaasduinen2019-1024x516-1.jpg",
       "scorecard/page.html",
       "scorecard/page-baan-handicap-tabel.html",
-      "scorecard/Maasduinen-WHS-tabel-Par-3-Baan-Dames-en-Heren.pdf",
-      "scorecard/hole19-golf-maasduinen.html"
+      "scorecard/Maasduinen-WHS-tabel-Par-3-Baan-Dames-en-Heren.pdf"
     ],
-    "source": "third-party",
-    "retrieved": "2026-10-28",
-    "complete": false,
-    "notes": "Club publiceert geen scorekaart. Par, SI en lengtes (geel, metrisch) van hole19golf.com; par 58 over 18 holes klopt met de officiele WHS-tabel (11-01-2021): geel heren CR 53.2/SR 84, rood dames CR 55.3/SR 89. Lengtes rode tee onbekend. GolfingRecord en Greenfee365 tonen een oudere versie (9x par 3, par 27, geel 959 m); niet gebruikt. Hole19 noemt CR 55.0/slope 68 (afwijkend)."
+    "source": "official",
+    "retrieved": "2026-10-29",
+    "complete": true,
+    "notes": "Officiele scorekaart (versie 2019-5; afbeelding in de mediabibliotheek van golfmaasduinen.nl, niet vanaf een pagina gelinkt): par, SI (18-holesstijl, 2x9) en lengtes voor beide teekolommen (eerste kolom = geel, tweede = rood; identiek), totaal 2374 m, par 58. CR/slope uit de officiele WHS-tabel (11-01-2021): geel heren CR 53.2/SR 84, rood dames CR 55.3/SR 89. Officiële bron gecontroleerd 29-10-2026: officiële scorekaart gevonden; de eerdere Hole19-gegevens (par/SI/geel) bleken identiek en zijn nu officieel, rode lengtes toegevoegd. Bestand hole19-golf-maasduinen.html in scorecard/ is oude derde-partijdata en wordt niet meer gebruikt."
   },
   "sources": [
     "https://golfmaasduinen.nl/golfbaan/",
     "https://golfmaasduinen.nl/baan-handicap-tabel/",
     "https://golfmaasduinen.nl/contact/",
-    "https://www.hole19golf.com/courses/golf-maasduinen"
+    "https://golfmaasduinen.nl/wp-content/uploads/2026/08/ScoorkaartMaasduinen2019-1024x516-1.jpg"
   ]
 }

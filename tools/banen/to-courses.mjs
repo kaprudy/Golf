@@ -47,7 +47,8 @@ const LABEL = {
   'the-links-valley-ermelo/0': 'North', 'the-links-valley-ermelo/1': 'South',
   'drentsche-golf-country-club-zeijerveen/3': 'Rood-Geel', 'drentsche-golf-country-club-zeijerveen/4': 'Wit-Rood',
   'drentsche-golf-country-club-zeijerveen/5': 'Geel-Wit', 'drentsche-golf-country-club-zeijerveen/6': 'Par 3-baan',
-  'golfvereniging-reymerswael-rilland/0': '', // 18 holes: id gelijk houden nu de 12- en 6-holeslus erbij staan
+  'golfvereniging-reymerswael-rilland/0': '',
+  'hcc-groen-geel-golf-wassenaar/0': '', 'hcc-groen-geel-golf-wassenaar/1': 'Gele baan', // groene baan houdt zijn id // 18 holes: id gelijk houden nu de 12- en 6-holeslus erbij staan
   'het-rijk-van-sybrook-enschede/0': 'Noord-Zuid', 'het-rijk-van-sybrook-enschede/1': 'Oost-Noord', 'het-rijk-van-sybrook-enschede/2': 'Zuid-Oost',
 };
 const COUNTRY = { DE: 'Duitsland' };
@@ -120,7 +121,9 @@ function convert(c, key, loop, ratingLoop, problems) {
     const base = (loop.tees ?? []).length ? loop.tees : [{ name: 'standaard' }];
     for (const t of base) for (const g of ['h', 'd']) add(t, g, par, 113, true);
   }
-  const official = c.scorecard?.source === 'official';
+  // Bron per lus (loop.source) gaat voor de bron van de hele baan: een club kan voor de grote baan een
+  // eigen scorekaart hebben en voor de par 3-baan alleen gegevens van derden.
+  const official = (loop.source ?? c.scorecard?.source) === 'official';
   return {
     id: key.id,
     province: COUNTRY[c.address?.country] ?? c.address?.province ?? null,
