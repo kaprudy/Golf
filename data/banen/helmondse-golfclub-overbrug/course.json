@@ -1,0 +1,280 @@
+{
+  "slug": "helmondse-golfclub-overbrug",
+  "name": "Helmondse Golfclub 'Overbrug'",
+  "club_name": "Helmondse Golfclub 'Overbrug'",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Verliefd Laantje 3a",
+    "postal_code": "5707 LG",
+    "city": "Helmond",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.4961685,
+    "lon": 5.6477328,
+    "source": "nominatim.openstreetmap.org (Verliefd Laantje 3A)"
+  },
+  "distance_km_from_dedemsvaart": 134.8,
+  "phone": "0492 330899",
+  "email": "secretaris@hgc-overbrug.nl",
+  "website": "https://hgc-overbrug.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Frank Pont (vernieuwing 2016, volgens golfcoursearchitecture.net)",
+  "landscape": null,
+  "facilities": [
+    "clubhuis (Golfclubhuis Tien)",
+    "golfschool"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Clubhandicap 54 (GVB), EGA-handicap of baanpermissie van HGC Overbrug",
+  "description_nl": "De Helmondse Golfclub 'Overbrug' heeft een 9-holesbaan aan de westkant van Helmond, in de wijk Overbrug bij de Warande. Over 18 holes is het een par 71 met afwisselend lange par 5's en korte par 3's; voor de tweede negen zijn twee holes anders ingericht. Gasten met GVB of handicap zijn welkom.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5397,
+          "course_rating": 68.4,
+          "slope": 124,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4596,
+          "course_rating": 65.0,
+          "slope": 111,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5397,
+          "course_rating": 74.2,
+          "slope": 132,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4596,
+          "course_rating": 69.1,
+          "slope": 123,
+          "par": 71
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 399,
+            "rood": 348
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 461,
+            "rood": 413
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 236,
+            "rood": 219
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 262,
+            "rood": 226
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 482,
+            "rood": 399
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 109,
+            "rood": 93
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 352,
+            "rood": 284
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 175,
+            "rood": 123
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 290,
+            "rood": 252
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 399,
+            "rood": 348
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 461,
+            "rood": 413
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 236,
+            "rood": 219
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 143,
+            "rood": 116
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 482,
+            "rood": 399
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 93,
+            "rood": 85
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 352,
+            "rood": 284
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 175,
+            "rood": 123
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 290,
+            "rood": 252
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://hgc-overbrug.nl/scorekaart-handicap-tabellen/",
+    "files": [
+      "scorecard/Handicaplijst.png",
+      "scorecard/MGS200845-HGC_Scorekaart_2021.jpg",
+      "scorecard/MGS200845-HGC_Scorekaart_20212.jpg",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 2021 (JPG): 9 holes 2x; holes 13 (par 3, 143/116 m) en 15 (93/85 m) verschillen van holes 4 (par 4) en 6. CR/slope op de kaart (heren en dames, geel/rood). Handicaplijst.png (2021) meegeleverd. E-mailadres op de site is geobfusceerd weergegeven."
+  },
+  "sources": [
+    "https://hgc-overbrug.nl/scorekaart-handicap-tabellen/",
+    "https://www.golfcoursearchitecture.net/content/PgrID/573/PageID/1/artmid/574/articleid/12580",
+    "https://hgc-overbrug.nl/contact/",
+    "https://hgc-overbrug.nl/greenfee/"
+  ]
+}

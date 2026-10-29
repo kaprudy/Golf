@@ -1,0 +1,285 @@
+{
+  "slug": "golfclub-vught",
+  "name": "Golfclub Vught (par 3-baan)",
+  "club_name": "Golfclub Vught",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "De Bus 2",
+    "postal_code": "5262 LV",
+    "city": "Vught",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.6291098,
+    "lon": 5.2713586,
+    "source": "nominatim.openstreetmap.org (De Bus 2)"
+  },
+  "distance_km_from_dedemsvaart": 135.1,
+  "phone": "0411 602304",
+  "email": null,
+  "website": "https://www.golfclubvught.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Martin van der Stokker",
+  "landscape": "parkachtig, omzoomd door bomen, met vijver (naast sportpark)",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "chipping green",
+    "clubhuis",
+    "golfschool (Absolute Golf)",
+    "monobuggy"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Handicap 54 (NGF-pas tonen); uitzondering voor leerlingen van Absolute Golf met baanpermissie",
+  "description_nl": "Golfclub Vught speelt op een compacte 9-holes par 3-baan bij een sportpark aan de rand van Vught. De holes variëren van circa 70 tot 126 meter en liggen tussen bomenrijen en rond een vijver, wat de baan geschikt maakt om het korte spel te oefenen. Wie 18 holes wil lopen speelt de lus twee keer, met een eigen strokeverdeling voor de tweede negen.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1830,
+          "course_rating": 49.4,
+          "slope": 74,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 1748,
+          "course_rating": 48.8,
+          "slope": 73,
+          "par": 54
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 1830,
+          "course_rating": 51.3,
+          "slope": 75,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1748,
+          "course_rating": 50.4,
+          "slope": 74,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 118,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 69,
+            "rood": 69
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 70,
+            "rood": 70
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": 114
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 118,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 101,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 107,
+            "rood": 107
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 120,
+            "rood": 120
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 118,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 69,
+            "rood": 69
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 70,
+            "rood": 70
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": 114
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 118,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 101,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 86,
+            "rood": 86
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 107,
+            "rood": 107
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfclubvught.nl/golfclub_vught/plattegrond_en_scorekaart",
+    "files": [
+      "scorecard/Plattegroend-en-Scorekaart-tbv-website3179.jpg",
+      "scorecard/Vught-WHS-tabel-18-holes-Dames-en-Heren.pdf",
+      "scorecard/Vught-WHS-tabel-9-holes-Dames-en-Heren.pdf",
+      "scorecard/page-handicap.html",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "9-holes par 3-baan, 2x gespeeld; holes 10-18 hebben eigen S.I. (even), lengtes gelijk. Kaart: kolommen H (geel) en D (rood). CR/slope uit WHS-tabel 18 holes d.d. 18-01-2021; er is ook een 9-holes tabel."
+  },
+  "sources": [
+    "https://www.golfclubvught.nl/golfclub_vught/plattegrond_en_scorekaart",
+    "https://www.golfclubvught.nl/gasten/wat_is_mijn_baanhandicap",
+    "https://www.golfclubvught.nl/gasten/greenfee",
+    "https://www.golfclubvught.nl/"
+  ]
+}

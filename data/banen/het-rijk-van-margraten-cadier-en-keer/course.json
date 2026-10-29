@@ -1,0 +1,323 @@
+{
+  "slug": "het-rijk-van-margraten-cadier-en-keer",
+  "name": "Golfbaan Het Rijk van Margraten",
+  "club_name": "Golfvereniging Het Rijk van Margraten",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Bemelerweg 99",
+    "postal_code": "6267 AL",
+    "city": "Cadier en Keer",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 50.8384478,
+    "lon": 5.7574572,
+    "source": "nominatim (Bemelerweg 99, Cadier en Keer)"
+  },
+  "distance_km_from_dedemsvaart": 201.8,
+  "phone": "043 356 99 99",
+  "email": "info@golfbaanhetrijkvanmargraten.nl",
+  "website": "https://www.golfenophetrijk.nl/margraten.html",
+  "booking_url": "https://www.golfenophetrijk.nl/margraten/starttijd-reserveren.html",
+  "founded": 2002,
+  "architect": "Alan Rijks",
+  "landscape": "parkbaan in het heuvelland tussen landerijen, wijngaarden en oude bossen",
+  "facilities": [
+    "short golf 9 holes par 3 (50-80 m)",
+    "overdekte driving range",
+    "oefenfaciliteiten",
+    "golfschool",
+    "restaurant met terras",
+    "buggy's en handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Handicap 54",
+  "description_nl": "Het Rijk van Margraten ligt op het plateau bij Cadier en Keer, tussen akkers, wijngaarden en oude bossen in het Zuid-Limburgse heuvelland. De parkbaan uit 2002 (ontwerp Alan Rijks, par 72) opent opvallend met een korte par 3 en heeft afwisselende holes met weidse uitzichten. Er is ook een 9-holes shortgolfbaan met holes van 50 tot 80 meter.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5709,
+          "course_rating": 70.6,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4962,
+          "course_rating": 67.6,
+          "slope": 114,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4181,
+          "course_rating": 63.5,
+          "slope": 110,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5709,
+          "course_rating": 76.6,
+          "slope": 143,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4962,
+          "course_rating": 72.5,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4181,
+          "course_rating": 68.2,
+          "slope": 111,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 106,
+            "rood": 92,
+            "oranje": 68
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 388,
+            "rood": 320,
+            "oranje": 284
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 324,
+            "rood": 283,
+            "oranje": 255
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 424,
+            "rood": 374,
+            "oranje": 327
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145,
+            "rood": 121,
+            "oranje": 102
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 247,
+            "rood": 217,
+            "oranje": 186
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 382,
+            "rood": 307,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 263,
+            "rood": 232,
+            "oranje": 186
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 454,
+            "rood": 399,
+            "oranje": 358
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 339,
+            "rood": 299,
+            "oranje": 239
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 441,
+            "rood": 395,
+            "oranje": 355
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 434,
+            "rood": 379,
+            "oranje": 326
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 141,
+            "rood": 123,
+            "oranje": 95
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 406,
+            "rood": 358,
+            "oranje": 327
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 397,
+            "rood": 348,
+            "oranje": 274
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 348,
+            "rood": 308,
+            "oranje": 237
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 155,
+            "rood": 133,
+            "oranje": 92
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 315,
+            "rood": 274,
+            "oranje": 214
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfenophetrijk.nl/margraten/baandetails.html",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-baaninformatie.html",
+      "scorecard/margraten-scorekaart-18-holes.pdf",
+      "scorecard/Rijk-van-Margraten-Heren.pdf",
+      "scorecard/Rijk-van-Margraten-Dames.pdf",
+      "scorecard/margraten-plattegrond-golfbaan.pdf",
+      "scorecard/margraten-plattegrond-short-golf.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Officiele scorekaart (par, SI, lengtes geel/rood/oranje; totalen 5709/4962 kloppen met de baandetails) en handicaptabellen van 25-09-2025. De kaart noemt ook 'blauwe tees' maar geeft daar geen lengtes of ratings voor. Short Golf (9 holes par 3) heeft geen gepubliceerde holegegevens."
+  },
+  "sources": [
+    "https://www.golfenophetrijk.nl/margraten/baandetails.html",
+    "https://www.golfenophetrijk.nl/margraten/baaninformatie.html",
+    "https://www.golfenophetrijk.nl/margraten/greenfee.html",
+    "https://www.golfenophetrijk.nl/margraten/contactgegevens.html"
+  ]
+}

@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Alleen eigen scripts; verbinding alleen met de eigen server (golf.kapital.nl). GitHub Pages kan geen
+       headers zetten, daarom als meta-tag. Faalt de e2e-test op een CSP-melding, dan hier aanvullen. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://golf.kapital.nl; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="theme-color" content="#F4EEE2" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#171a15" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">

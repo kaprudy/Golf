@@ -1,0 +1,422 @@
+{
+  "slug": "golfhorst-america",
+  "name": "Golfbaan de Golfhorst",
+  "club_name": "Golfvereniging Golfhorst",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Raamweg 8",
+    "postal_code": "5966 RM",
+    "city": "America",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.4265026,
+    "lon": 5.9682364,
+    "source": "nominatim (adres Raamweg 8, America)"
+  },
+  "distance_km_from_dedemsvaart": 134.8,
+  "phone": "077 464 90 70",
+  "email": "info@golfbaandegolfhorst.nl",
+  "website": "https://www.golfbaandegolfhorst.nl/",
+  "booking_url": null,
+  "founded": 1997,
+  "architect": null,
+  "landscape": "glooiend, open parkland met grote hoogteverschillen aan de rand van de Peel",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "chipping green",
+    "golfschool",
+    "restaurant",
+    "buggyverhuur",
+    "par 3-baan (Americabaan)",
+    "oefenbaan"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "NGF-pas tonen (baanpermissie/handicap vereist volgens greenfeevoorwaarden)",
+  "description_nl": "De Golfhorst ligt bij America in Noord-Limburg, op een besloten terrein aan de rand van de Peel. De 18-holesbaan uit 1997 is relatief kort (par 70) maar opvallend heuvelachtig, waardoor afstanden en hoger gelegen greens de uitdaging bepalen. Naast de grote baan is er de Americabaan, een 9-holes par 3-baan.",
+  "loops": [
+    {
+      "name": "18 holes (par 70)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5098,
+          "course_rating": 67.3,
+          "slope": 122,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4370,
+          "course_rating": 63.4,
+          "slope": 110,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 3836,
+          "course_rating": 61.8,
+          "slope": 103,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5098,
+          "course_rating": 72.9,
+          "slope": 126,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4370,
+          "course_rating": 68.1,
+          "slope": 119,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 3836,
+          "course_rating": 64.8,
+          "slope": 112,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 445,
+            "rood": 368,
+            "oranje": 304
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 416,
+            "rood": 367,
+            "oranje": 324
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 458,
+            "rood": 398,
+            "oranje": 346
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 101,
+            "rood": 94,
+            "oranje": 92
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 350,
+            "rood": 303,
+            "oranje": 251
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 295,
+            "rood": 271,
+            "oranje": 249
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 105,
+            "oranje": 100
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "rood": 143,
+            "oranje": 143
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 339,
+            "rood": 281,
+            "oranje": 233
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 152,
+            "rood": 134,
+            "oranje": 118
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 471,
+            "rood": 400,
+            "oranje": 340
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 341,
+            "rood": 306,
+            "oranje": 278
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 443,
+            "rood": 382,
+            "oranje": 329
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115,
+            "rood": 103,
+            "oranje": 103
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 230,
+            "rood": 197,
+            "oranje": 182
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 182,
+            "rood": 127,
+            "oranje": 89
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 312,
+            "rood": 271,
+            "oranje": 235
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 139,
+            "rood": 120,
+            "oranje": 120
+          }
+        }
+      ]
+    },
+    {
+      "name": "Americabaan par 3 (9 holes)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 888,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 91
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 99
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 137
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 141
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 121
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 54
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 61
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 73
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 111
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfbaandegolfhorst.nl/baaninformatie/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/826_Scorekaart_GroteBaan_A_HR.pdf",
+      "scorecard/Golfhorst-WHS-tabel-Heren.pdf",
+      "scorecard/Golfhorst-WHS-tabel-Dames.pdf",
+      "scorecard/Golfhorst-WHS-tabel-Par-3-Baan-Dames-en-Heren.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "18 holes: par, SI en lengtes (geel/rood/oranje) van de officiele scorekaart; CR/slope uit de WHS-tabellen van 06-01-2021. GolfingRecord toont afwijkende (mogelijk nieuwere) waarden: geel heren 66.5/116, rood heren 63.1/104, andere SI-volgorde en geel 5096 m; niet overgenomen. Americabaan: holegegevens (par, SI, lengte) van golfingrecord.com (derden, eenheid vermoedelijk meters, tee 'wit' is aanname van die site); officiele WHS-tabel par 3-baan (18 holes = 2x9): geel heren CR 49.3/SR 60, rood dames CR 50.5/SR 66, par 54. De pitch & putt-oefenbaan is niet opgenomen (geen holegegevens)."
+  },
+  "sources": [
+    "https://www.golfbaandegolfhorst.nl/baaninformatie/",
+    "https://www.golfbaandegolfhorst.nl/tarieven/",
+    "https://www.golfingrecord.com/golf-scorecard/8081a8c4-fc0d-4002-be83-c1ea09fc413b",
+    "https://www.golfingrecord.com/golf-scorecard/f10d3f20-9512-4ee7-8912-67e8f7423681"
+  ]
+}

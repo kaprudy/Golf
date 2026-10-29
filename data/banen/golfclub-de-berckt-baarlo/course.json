@@ -1,0 +1,279 @@
+{
+  "slug": "golfclub-de-berckt-baarlo",
+  "name": "Golfclub de Berckt",
+  "club_name": "Golfclub de Berckt",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "De Berckt 1",
+    "postal_code": "5991 PD",
+    "city": "Baarlo",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.342196,
+    "lon": 6.1112203,
+    "source": "nominatim (De Berckt 1, Baarlo)"
+  },
+  "distance_km_from_dedemsvaart": 142.0,
+  "phone": "06 39 12 91 29",
+  "email": "info@golfclubdeberckt.nl",
+  "website": "https://golfclubdeberckt.nl/",
+  "booking_url": "https://www.nexxchange.com/search/teetimes/golfclub-de-berckt",
+  "founded": null,
+  "architect": null,
+  "landscape": "parkbaan met meanderend water op het landgoed van Kasteel de Berckt",
+  "facilities": [
+    "driving range",
+    "putting green (6 holes)",
+    "6 holes pitch & chip oefenbaan",
+    "clubhuis",
+    "golflessen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Baanpermissie vereist",
+  "description_nl": "Golfclub de Berckt ligt bij Baarlo, vlak onder Venlo, naast het landgoed van Kasteel de Berckt. De 9-holesbaan heeft par 32 maar vraagt door waterpartijen, bunkers en lastige greens om tactisch spel, met risk-and-reward par 4- en 5-holes en pittige par 3's. Er is ook een kleine pitch & chip-oefenbaan.",
+  "loops": [
+    {
+      "name": "9 holes (2x gespeeld = 18 holes)",
+      "holes": 18,
+      "par": 64,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 3650,
+          "course_rating": 60.4,
+          "slope": 102,
+          "par": 64
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 3402,
+          "course_rating": 59.8,
+          "slope": 96,
+          "par": 64
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 3650,
+          "course_rating": 63.0,
+          "slope": 109,
+          "par": 64
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 3402,
+          "course_rating": 62.4,
+          "slope": 105,
+          "par": 64
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 228,
+            "rood": 202
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 163,
+            "rood": 149
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 133
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 460,
+            "rood": 436
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 118,
+            "rood": 118
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 266,
+            "rood": 254
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 88,
+            "rood": 88
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 252,
+            "rood": 221
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 228,
+            "rood": 202
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 163,
+            "rood": 149
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 140,
+            "rood": 133
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 460,
+            "rood": 436
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 118,
+            "rood": 118
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 266,
+            "rood": 254
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 100
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 88,
+            "rood": 88
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 252,
+            "rood": 221
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfclubdeberckt.nl/baan/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/scorekaart-2017-06-29-binnenkant.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Officiele scorekaart (versie 29-06-2017) met par, SI (18-holesstijl) en lengtes geel/rood en CR/SR (heren geel 60.4/102, rood 59.8/96; dames geel 63.0/109, rood 62.4/105). Ratings kunnen inmiddels herzien zijn. GolfingRecord toont afgeronde, afwijkende lengtes en SI; niet gebruikt. Telefoon: clubhuis; ook 06 10442516."
+  },
+  "sources": [
+    "https://golfclubdeberckt.nl/baan/",
+    "https://golfclubdeberckt.nl/contact/"
+  ]
+}

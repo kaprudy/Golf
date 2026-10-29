@@ -1,0 +1,469 @@
+{
+  "slug": "oegstgeester-golfclub",
+  "name": "Oegstgeester Golfclub",
+  "club_name": "Oegstgeester Golfclub (OGC)",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Van Houdringelaan 15",
+    "postal_code": "2341 BN",
+    "city": "Oegstgeest",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1869582,
+    "lon": 4.4629996,
+    "source": "nominatim.openstreetmap.org (adres Van Houdringelaan 15, Oegstgeest)"
+  },
+  "distance_km_from_dedemsvaart": 143.1,
+  "phone": "071 515 05 06",
+  "email": null,
+  "website": "https://www.oegstgeestergolfclub.nl",
+  "booking_url": null,
+  "founded": 1986,
+  "architect": null,
+  "landscape": "vlak parkterrein met waterpartijen",
+  "facilities": [
+    "clubhuis",
+    "golfprofessional",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "De Oegstgeester Golfclub werd in 1986 opgericht vanuit voetbalvereniging UDO en is een laagdrempelige vrijwilligersvereniging aan de rand van Oegstgeest. De korte 9-holesbaan (par 30, met twee par 4's) wordt overal van matten afgeslagen; daarnaast is er een nog kortere variant, de Korte Baan (par 28), die ook in de winter wordt gebruikt.",
+  "loops": [
+    {
+      "name": "Standaardbaan 18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 60,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2816,
+          "course_rating": 56.1,
+          "slope": 92,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2646,
+          "course_rating": 55.3,
+          "slope": 93,
+          "par": 60
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2816,
+          "course_rating": 58.3,
+          "slope": 104,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2646,
+          "course_rating": 57.8,
+          "slope": 95,
+          "par": 60
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 124,
+            "rood": 124
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 91,
+            "rood": 91
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 230,
+            "rood": 190
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 231,
+            "rood": 186
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "rood": 137
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 229,
+            "rood": 229
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 154,
+            "rood": 154
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 124,
+            "rood": 124
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 91,
+            "rood": 91
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 230,
+            "rood": 190
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 231,
+            "rood": 186
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 137,
+            "rood": 137
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 229,
+            "rood": 229
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 154,
+            "rood": 154
+          }
+        }
+      ]
+    },
+    {
+      "name": "Korte Baan 18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 56,
+      "tees": [
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2134,
+          "course_rating": 51.7,
+          "slope": 81,
+          "par": 56
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2134,
+          "course_rating": 54.1,
+          "slope": 78,
+          "par": 56
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 124
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 91
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 190
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 65
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 95
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 79
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 152
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 117
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 154
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 124
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 91
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 190
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 65
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 95
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 79
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 152
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 117
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "rood": 154
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.oegstgeestergolfclub.nl/baaninformatie/290-scorekaarten.html",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/Scorekaart_standaard_baan_maart_2025.png",
+      "scorecard/scorekaart_kleine_baan-jan2026.png"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Standaardbaan: scorekaart maart 2025 (geel/rood, CR/SR op de kaart: heren 56,1/55,3 – 92/93; dames 58,3/57,8 – 104/95). Korte Baan: scorekaart jan 2026 (alleen rood; holes K4–K7 en K13–K16 zijn de korte varianten; heren CR 51,7 SR 81, dames 54,1/78). Handicaptabellen als PDF op baaninformatie/356-playing-handicaps.html (niet gedownload). E-mail alleen voor ledenadministratie/bestuur gepubliceerd."
+  },
+  "sources": [
+    "https://www.oegstgeestergolfclub.nl/baaninformatie/290-scorekaarten.html",
+    "https://www.oegstgeestergolfclub.nl/algemeen/clubinformatie.html",
+    "https://www.oegstgeestergolfclub.nl/contact.html",
+    "https://www.oegstgeestergolfclub.nl/algemeen/tarieven.html"
+  ]
+}

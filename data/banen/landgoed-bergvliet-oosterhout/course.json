@@ -1,0 +1,426 @@
+{
+  "slug": "landgoed-bergvliet-oosterhout",
+  "name": "Golfbaan Landgoed Bergvliet",
+  "club_name": "Golfbaan Landgoed Bergvliet / Golfclub Bergvliet",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Salesdreef 2",
+    "postal_code": "4904 SW",
+    "city": "Oosterhout",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.6355,
+    "lon": 4.7948,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 156.3,
+  "phone": "076 57 95 666",
+  "email": "contact@landgoedbergvliet.nl",
+  "website": "https://www.landgoedbergvliet.nl/golf",
+  "booking_url": "https://www.landgoedbergvliet.nl/golf/starttijden",
+  "founded": 2007,
+  "architect": "Gerard Jol en Michiel van der Vaart",
+  "landscape": "glooiend, deels links-achtig, langs bosranden en waterpartijen op een historisch landgoed",
+  "facilities": [
+    "par 3-baan (9 holes)",
+    "driving range/oefenfaciliteiten",
+    "golfschool",
+    "Het Koetshuis (horeca/feestlocatie)",
+    "lockers"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Par 3-baan alleen met baanpermissie of handicap.",
+  "description_nl": "Bergvliet ligt op een eeuwenoud landgoed tussen de Vrachelse Heide en de Oosterhoutse bossen, waar in 2007 een golfbaan werd aangelegd. De 18-holes par-71-baan van Gerard Jol en Michiel van der Vaart is glooiend en soms links-achtig, met bijna overal een bosrand als decor; de twee lussen kunnen ook los worden gespeeld. Daarnaast is er een 9-holes par 3-baan met holes van ongeveer honderd meter.",
+  "loops": [
+    {
+      "name": "18 holes (lus A + lus B)",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 5928,
+          "course_rating": 71.4,
+          "slope": 137,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5553,
+          "course_rating": 69.5,
+          "slope": 131,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5063,
+          "course_rating": 67.6,
+          "slope": 121,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4694,
+          "course_rating": 65.8,
+          "slope": 110,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4038,
+          "course_rating": 64.0,
+          "slope": 107,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5553,
+          "course_rating": 75.8,
+          "slope": 145,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5063,
+          "course_rating": 72.6,
+          "slope": 136,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4694,
+          "course_rating": 70.3,
+          "slope": 128,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4038,
+          "course_rating": 68.3,
+          "slope": 115,
+          "par": 71
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 151,
+            "geel": 141,
+            "blauw": 141,
+            "rood": 131,
+            "oranje": 127
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 332,
+            "geel": 300,
+            "blauw": 291,
+            "rood": 256,
+            "oranje": 208
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 499,
+            "geel": 476,
+            "blauw": 406,
+            "rood": 401,
+            "oranje": 355
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 200,
+            "geel": 171,
+            "blauw": 171,
+            "rood": 148,
+            "oranje": 123
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 339,
+            "geel": 322,
+            "blauw": 313,
+            "rood": 282,
+            "oranje": 230
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 166,
+            "geel": 138,
+            "blauw": 129,
+            "rood": 119,
+            "oranje": 108
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 486,
+            "geel": 473,
+            "blauw": 411,
+            "rood": 406,
+            "oranje": 367
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 376,
+            "geel": 355,
+            "blauw": 350,
+            "rood": 303,
+            "oranje": 248
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 512,
+            "geel": 486,
+            "blauw": 410,
+            "rood": 404,
+            "oranje": 344
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 306,
+            "geel": 285,
+            "blauw": 290,
+            "rood": 231,
+            "oranje": 220
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 171,
+            "geel": 156,
+            "blauw": 156,
+            "rood": 132,
+            "oranje": 116
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 360,
+            "geel": 332,
+            "blauw": 286,
+            "rood": 281,
+            "oranje": 242
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 384,
+            "geel": 373,
+            "blauw": 321,
+            "rood": 316,
+            "oranje": 258
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 515,
+            "geel": 491,
+            "blauw": 414,
+            "rood": 406,
+            "oranje": 380
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 188,
+            "geel": 165,
+            "blauw": 157,
+            "rood": 144,
+            "oranje": 94
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 479,
+            "geel": 458,
+            "blauw": 386,
+            "rood": 380,
+            "oranje": 354
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 329,
+            "geel": 310,
+            "blauw": 310,
+            "rood": 259,
+            "oranje": 205
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 135,
+            "geel": 121,
+            "blauw": 121,
+            "rood": 95,
+            "oranje": 59
+          }
+        }
+      ]
+    },
+    {
+      "name": "Par 3-baan 18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 49.7,
+          "slope": 67,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 51.3,
+          "slope": 70,
+          "par": 54
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.landgoedbergvliet.nl/golf/golfbaan/18-holesbaan",
+    "files": [
+      "scorecard/bergvliet-heren-17feb24.pdf",
+      "scorecard/bergvliet-dames-17feb24.pdf",
+      "scorecard/bergvliet-whs-tabel-par-3-baan-dames-en-heren.pdf",
+      "scorecard/page.html",
+      "scorecard/hole-1.html",
+      "scorecard/hole-2.html",
+      "scorecard/hole-3.html",
+      "scorecard/hole-4.html",
+      "scorecard/hole-5.html",
+      "scorecard/hole-6.html",
+      "scorecard/hole-7.html",
+      "scorecard/hole-8.html",
+      "scorecard/hole-9.html",
+      "scorecard/hole-10.html",
+      "scorecard/hole-11.html",
+      "scorecard/hole-12.html",
+      "scorecard/hole-13.html",
+      "scorecard/hole-14.html",
+      "scorecard/hole-15.html",
+      "scorecard/hole-16.html",
+      "scorecard/hole-17.html",
+      "scorecard/hole-18.html"
+    ],
+    "source": "official",
+    "complete": false,
+    "notes": "Par, S.I. en lengtes per tee van de officiële holepagina's (hole-1 t/m hole-18); geen scorekaart-PDF gevonden, dus totale lengtes zijn som van de holes. Let op: de overzichtspagina koppelt par/S.I. één hole verschoven; de holepagina's zijn aangehouden. Ratings 18 holes uit tabellen 13-02-2024. Par 3-baan: alleen ratings (tabel 05-01-2021, 18 holes par 54); geen holedata gepubliceerd, daarom complete=false.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.landgoedbergvliet.nl/golf/golfbaan/18-holesbaan",
+    "https://www.landgoedbergvliet.nl/golf/golf-spelen/handicaptabellen",
+    "https://www.landgoedbergvliet.nl/golf/golfbaan/9-holes-par3-baan",
+    "https://www.landgoedbergvliet.nl/golf/golfbaan/historie"
+  ]
+}

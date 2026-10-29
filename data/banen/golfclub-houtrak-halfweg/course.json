@@ -1,0 +1,415 @@
+{
+  "slug": "golfclub-houtrak-halfweg",
+  "name": "Golfclub Houtrak",
+  "club_name": "Golfclub Houtrak",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Machineweg 1-b",
+    "postal_code": "1165 NB",
+    "city": "Halfweg",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.3991349,
+    "lon": 4.7280273,
+    "source": "nominatim.openstreetmap.org (adres)"
+  },
+  "distance_km_from_dedemsvaart": 119.3,
+  "phone": "+31 23 513 2939",
+  "email": "secretariaat@houtrak.nl",
+  "website": "https://houtrak.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Gerard Jol",
+  "landscape": "mix van bos en open polder, met vijvers en sloten; stervormige opzet rond het clubhuis",
+  "facilities": [
+    "18-holes championship course",
+    "driving range",
+    "oefengreens",
+    "par 3-oefenholes",
+    "bistro",
+    "handicarts (afhankelijk van baanstatus)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Handicap WHS 35,0 of beter; geldige NGF-pas/GSN-nummer; starttijd max. 3 dagen vooruit via de caddiemaster.",
+  "description_nl": "Houtrak bij Halfweg is een 18-holes championship course van architect Gerard Jol, gelegen tussen bos en polder in het recreatiegebied Spaarnwoude. Door de stervormige opzet komen veel holes bij het clubhuis samen, zodat ook kortere rondes goed te spelen zijn. Water, gevarieerde par 3's zoals de veertiende en goed onderhouden greens maken de baan uitdagend voor elk niveau.",
+  "loops": [
+    {
+      "name": "Noord-Zuid (zomerlus)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "zwart",
+          "color": "black",
+          "gender": "men",
+          "length_m": 6502,
+          "course_rating": 75.1,
+          "slope": 145,
+          "par": 72
+        },
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6250,
+          "course_rating": 74.0,
+          "slope": 139,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5968,
+          "course_rating": 72.1,
+          "slope": 138,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5377,
+          "course_rating": 69.4,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5113,
+          "course_rating": 68.0,
+          "slope": 121,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4285,
+          "course_rating": 64.3,
+          "slope": 115,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5968,
+          "course_rating": 78.6,
+          "slope": 147,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5377,
+          "course_rating": 74.9,
+          "slope": 139,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5113,
+          "course_rating": 73.1,
+          "slope": 136,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4285,
+          "course_rating": 68.5,
+          "slope": 120,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 405,
+            "wit": 360,
+            "geel": 347,
+            "blauw": 347,
+            "rood": 292,
+            "oranje": 232
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 488,
+            "wit": 476,
+            "geel": 467,
+            "blauw": 405,
+            "rood": 395,
+            "oranje": 330
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 381,
+            "wit": 373,
+            "geel": 373,
+            "blauw": 314,
+            "rood": 314,
+            "oranje": 270
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 394,
+            "wit": 361,
+            "geel": 351,
+            "blauw": 346,
+            "rood": 309,
+            "oranje": 258
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 173,
+            "wit": 169,
+            "geel": 163,
+            "blauw": 155,
+            "rood": 147,
+            "oranje": 147
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 390,
+            "wit": 390,
+            "geel": 380,
+            "blauw": 327,
+            "rood": 321,
+            "oranje": 246
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 187,
+            "wit": 163,
+            "geel": 157,
+            "blauw": 139,
+            "rood": 139,
+            "oranje": 98
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 481,
+            "wit": 481,
+            "geel": 465,
+            "blauw": 389,
+            "rood": 389,
+            "oranje": 334
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 400,
+            "wit": 390,
+            "geel": 346,
+            "blauw": 336,
+            "rood": 293,
+            "oranje": 262
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 407,
+            "wit": 374,
+            "geel": 362,
+            "blauw": 314,
+            "rood": 309,
+            "oranje": 252
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 162,
+            "wit": 153,
+            "geel": 143,
+            "blauw": 134,
+            "rood": 124,
+            "oranje": 87
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 357,
+            "wit": 357,
+            "geel": 331,
+            "blauw": 320,
+            "rood": 285,
+            "oranje": 238
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 476,
+            "wit": 476,
+            "geel": 447,
+            "blauw": 383,
+            "rood": 378,
+            "oranje": 334
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 139,
+            "wit": 139,
+            "geel": 135,
+            "blauw": 130,
+            "rood": 120,
+            "oranje": 120
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 406,
+            "wit": 372,
+            "geel": 349,
+            "blauw": 317,
+            "rood": 317,
+            "oranje": 289
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 368,
+            "wit": 337,
+            "geel": 310,
+            "blauw": 280,
+            "rood": 280,
+            "oranje": 202
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 406,
+            "wit": 397,
+            "geel": 390,
+            "blauw": 338,
+            "rood": 332,
+            "oranje": 260
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 482,
+            "wit": 482,
+            "geel": 452,
+            "blauw": 403,
+            "rood": 369,
+            "oranje": 326
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://houtrak.nl/gasten/scorekaart/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/NZ1.png",
+      "scorecard/NZ2.jpg",
+      "scorecard/NZ3.jpg",
+      "scorecard/NZ4.jpg",
+      "scorecard/NZ5.jpg",
+      "scorecard/Handicaptabel-NZ-heren-18-holes-tijdelijk-2023.pdf",
+      "scorecard/Handicaptabel-NZ-dames-18-holes-tijdelijk-2023.pdf"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Scorekaart Noord-Zuid (zomercircuit, half maart - half november) met CR/SR op de kaart; de club noemt de bijbehorende handicaptabellen 'tijdelijk' (geldig vanaf 13-3-2023). In de winter wordt dezelfde baan als Buiten-Binnen gespeeld met andere volgorde en eigen tabellen (niet opgenomen; geen scorekaart gepubliceerd). Alle tee-totalen kloppen met de holesom."
+  },
+  "sources": [
+    "https://houtrak.nl/gasten/scorekaart/",
+    "https://houtrak.nl/gasten/playing-handicaps/",
+    "https://houtrak.nl/gasten/baaninformatie/",
+    "https://houtrak.nl/gasten/tarieven/",
+    "https://houtrak.nl/gasten/contact-en-openingstijden/"
+  ]
+}

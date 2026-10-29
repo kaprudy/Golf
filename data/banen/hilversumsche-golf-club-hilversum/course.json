@@ -1,0 +1,389 @@
+{
+  "slug": "hilversumsche-golf-club-hilversum",
+  "name": "Hilversumsche Golf Club",
+  "club_name": "Hilversumsche Golf Club",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Soestdijkerstraatweg 172",
+    "postal_code": "1213 XJ",
+    "city": "Hilversum",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.2060898,
+    "lon": 5.2092329,
+    "source": "nominatim.openstreetmap.org (adres)"
+  },
+  "distance_km_from_dedemsvaart": 95.5,
+  "phone": "+31 35 685 7060",
+  "email": "secretariaat@hilversumschegolfclub.nl",
+  "website": "https://www.hilversumschegolfclub.nl/",
+  "booking_url": null,
+  "founded": 1895,
+  "architect": "Henry Burrows (9 holes), Harry S. Colt (18 holes, 1928); later aanpassingen door Guy Campbell en Kyle Phillips",
+  "landscape": "heide- en bosbaan op zandgrond (heathland, 'links style')",
+  "facilities": [
+    "18-holes baan",
+    "9-holes Kievitbaan (par 30)",
+    "oefenfaciliteiten",
+    "golfprofessionals",
+    "shop",
+    "Brasserie de Kievit / clubhuis"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Greenfeespelers welkom tegen dagcontributie (lager tarief voor NGF/EGA-leden van een baangebonden club); zie bezoekersregeling.",
+  "description_nl": "De Hilversumsche, opgericht in 1895, is een van de oudste en meest gerenommeerde clubs van Nederland en speelt sinds 1917 aan de Soestdijkerstraatweg. De 18-holes heide- en bosbaan kreeg in 1928 haar huidige vorm naar ontwerp van Harry Colt en werd later door Kyle Phillips gerenoveerd. Smalle fairways door bos en heide, strategische bunkers en geraffineerde greens maken haar tot een vaste gast in de toplijsten; het Dutch Open werd er vele malen gespeeld.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6303,
+          "course_rating": 75.1,
+          "slope": 145,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5848,
+          "course_rating": 72.5,
+          "slope": 139,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5391,
+          "course_rating": 70.3,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5061,
+          "course_rating": 68.6,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4484,
+          "course_rating": 65.5,
+          "slope": 122,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5848,
+          "course_rating": 78.7,
+          "slope": 154,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5391,
+          "course_rating": 75.6,
+          "slope": 148,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5061,
+          "course_rating": 73.6,
+          "slope": 138,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4484,
+          "course_rating": 70.5,
+          "slope": 128,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 486,
+            "geel": 441,
+            "blauw": 438,
+            "rood": 429,
+            "oranje": 387
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 314,
+            "geel": 309,
+            "blauw": 301,
+            "rood": 274,
+            "oranje": 202
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 378,
+            "geel": 344,
+            "blauw": 316,
+            "rood": 312,
+            "oranje": 274
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 412,
+            "geel": 371,
+            "blauw": 316,
+            "rood": 314,
+            "oranje": 262
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 204,
+            "geel": 190,
+            "blauw": 165,
+            "rood": 163,
+            "oranje": 102
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 413,
+            "geel": 391,
+            "blauw": 344,
+            "rood": 313,
+            "oranje": 310
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 443,
+            "geel": 436,
+            "blauw": 427,
+            "rood": 388,
+            "oranje": 346
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 162,
+            "geel": 125,
+            "blauw": 123,
+            "rood": 113,
+            "oranje": 103
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 389,
+            "geel": 316,
+            "blauw": 319,
+            "rood": 259,
+            "oranje": 255
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 166,
+            "geel": 148,
+            "blauw": 141,
+            "rood": 112,
+            "oranje": 109
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 434,
+            "geel": 384,
+            "blauw": 337,
+            "rood": 314,
+            "oranje": 311
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 320,
+            "geel": 318,
+            "blauw": 316,
+            "rood": 272,
+            "oranje": 211
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 441,
+            "geel": 433,
+            "blauw": 400,
+            "rood": 382,
+            "oranje": 378
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 114,
+            "geel": 109,
+            "blauw": 97,
+            "rood": 95,
+            "oranje": 93
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 435,
+            "geel": 411,
+            "blauw": 342,
+            "rood": 334,
+            "oranje": 332
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 380,
+            "geel": 332,
+            "blauw": 306,
+            "rood": 304,
+            "oranje": 236
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 356,
+            "geel": 346,
+            "blauw": 293,
+            "rood": 291,
+            "oranje": 225
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 456,
+            "geel": 444,
+            "blauw": 410,
+            "rood": 392,
+            "oranje": 348
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://www.hilversumschegolfclub.nl/wp/baanhandicap-tabellen/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-spelersinformatie.html",
+      "scorecard/Course-Guide-HGC-gecrompimeerd.pdf",
+      "scorecard/2021-02-08-Hilversumsche-WHS-tabel-Heren.pdf",
+      "scorecard/2021-02-08-Hilversumsche-WHS-tabel-Dames.pdf",
+      "scorecard/2023-06-26-WHS-tabel-18-holes-Kievitbaan-Dames-Heren.pdf",
+      "scorecard/2023-06-26-WHS-tabel-9-holes-Kievitbaan-Dames-Heren.pdf",
+      "scorecard/hole19.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Par, S.I. en lengtes uit het officiele baanboekje 2026 (FINAL-VERSION-Baanboekje_Hilversumsche_18_hole_course.pdf, 65 MB, niet bewaard; tekst geparsed). Volgorde van de vijf lengtes per hole (wit, geel, blauw, rood, oranje) bevestigd via Hole19 (blauw per hole gelijk). CR/SR uit WHS-tabellen 08-02-2021 (zomer; er zijn ook wintertabellen). Holesom rood 5061 en oranje 4484; Hole19 noemt 5080 en 4554 (mogelijk oudere tees). Kievitbaan (9 holes, par 30; geel heren 27,5/94, rood dames 29,0/99; 18 holes 55,0/94 en 58,0/99) zonder holegegevens, niet als lus opgenomen. Geen scorekaart gepubliceerd (QR-code op de kaart)."
+  },
+  "sources": [
+    "https://www.hilversumschegolfclub.nl/wp/baanhandicap-tabellen/",
+    "https://www.hilversumschegolfclub.nl/wp/spelersinformatie/",
+    "https://www.hilversumschegolfclub.nl/wp/contact/",
+    "https://www.hilversumschegolfclub.nl/wp/history/",
+    "https://www.hilversumschegolfclub.nl/content/uploads/2026/01/FINAL-VERSION-Baanboekje_Hilversumsche_18_hole_course.pdf",
+    "https://www.hole19golf.com/courses/hilversumsche-golf-club"
+  ]
+}

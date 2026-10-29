@@ -1,0 +1,957 @@
+{
+  "slug": "prise-deau-golf-tilburg",
+  "name": "Prise d'Eau Golf",
+  "club_name": "Prise d'Eau Golf / Golfclub Prise d'Eau",
+  "holes_total": 36,
+  "course_type": "27-holes",
+  "address": {
+    "street": "Gilzerbaan 400",
+    "postal_code": "5032 VC",
+    "city": "Tilburg",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.5493,
+    "lon": 4.9947,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 153.9,
+  "phone": "+31 13 462 8200",
+  "email": null,
+  "website": "https://prisedeau-golf.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "bos- en parkbaan aan de westrand van Tilburg",
+  "facilities": [
+    "par 3-baan De Warande (9 holes)",
+    "driving range en oefenfaciliteiten",
+    "golfschool",
+    "De Gasterij (horeca)",
+    "golfgames/footgolf-achtige fun-activiteiten"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geldig handicapbewijs, handicaplimiet 54 (volgens 1golf.eu).",
+  "description_nl": "Prise d'Eau aan de westkant van Tilburg heeft 27 holes in drie lussen (De Blaak, De Sijsten en De Leij) die in drie 18-holescombinaties worden gespeeld. Daarnaast ligt er de par 3-baan De Warande, die meermaals tot mooiste par 3-baan van Nederland is uitgeroepen. Het complex heeft ruime oefenfaciliteiten en een gasterij.",
+  "loops": [
+    {
+      "name": "Blaak + Sijsten",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6404,
+          "course_rating": 73.8,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 6048,
+          "course_rating": 71.7,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5521,
+          "course_rating": 69.4,
+          "slope": 123,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5162,
+          "course_rating": 67.4,
+          "slope": 119,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 6048,
+          "course_rating": 78.4,
+          "slope": 137,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5521,
+          "course_rating": 75.3,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5162,
+          "course_rating": 73.1,
+          "slope": 123,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 346,
+            "geel": 337,
+            "blauw": 328,
+            "rood": 319
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 154,
+            "geel": 146,
+            "blauw": 137,
+            "rood": 128
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 511,
+            "geel": 469,
+            "blauw": 421,
+            "rood": 397
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 381,
+            "geel": 346,
+            "blauw": 326,
+            "rood": 283
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 180,
+            "geel": 172,
+            "blauw": 159,
+            "rood": 150
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 519,
+            "geel": 506,
+            "blauw": 457,
+            "rood": 450
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 379,
+            "geel": 355,
+            "blauw": 334,
+            "rood": 313
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 333,
+            "geel": 323,
+            "blauw": 285,
+            "rood": 275
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 387,
+            "geel": 361,
+            "blauw": 349,
+            "rood": 310
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 352,
+            "geel": 343,
+            "blauw": 311,
+            "rood": 286
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 387,
+            "geel": 377,
+            "blauw": 305,
+            "rood": 288
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 355,
+            "geel": 339,
+            "blauw": 328,
+            "rood": 289
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 190,
+            "geel": 172,
+            "blauw": 162,
+            "rood": 153
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 448,
+            "geel": 396,
+            "blauw": 386,
+            "rood": 348
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 305,
+            "geel": 285,
+            "blauw": 270,
+            "rood": 238
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 507,
+            "geel": 471,
+            "blauw": 405,
+            "rood": 394
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 140,
+            "geel": 132,
+            "blauw": 114,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 530,
+            "geel": 518,
+            "blauw": 444,
+            "rood": 435
+          }
+        }
+      ]
+    },
+    {
+      "name": "Leij + Sijsten",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6422,
+          "course_rating": 74.2,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 6013,
+          "course_rating": 71.6,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5475,
+          "course_rating": 69.1,
+          "slope": 123,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5071,
+          "course_rating": 66.9,
+          "slope": 118,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 6013,
+          "course_rating": 78.6,
+          "slope": 135,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5475,
+          "course_rating": 74.9,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5071,
+          "course_rating": 72.3,
+          "slope": 123,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 378,
+            "geel": 350,
+            "blauw": 323,
+            "rood": 307
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 367,
+            "geel": 342,
+            "blauw": 307,
+            "rood": 289
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 406,
+            "geel": 376,
+            "blauw": 355,
+            "rood": 339
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 188,
+            "geel": 172,
+            "blauw": 165,
+            "rood": 153
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 384,
+            "geel": 350,
+            "blauw": 338,
+            "rood": 292
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 477,
+            "geel": 447,
+            "blauw": 391,
+            "rood": 371
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 494,
+            "geel": 467,
+            "blauw": 418,
+            "rood": 381
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 159,
+            "geel": 142,
+            "blauw": 127,
+            "rood": 111
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 355,
+            "geel": 334,
+            "blauw": 326,
+            "rood": 291
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 352,
+            "geel": 343,
+            "blauw": 311,
+            "rood": 286
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 387,
+            "geel": 377,
+            "blauw": 305,
+            "rood": 288
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 355,
+            "geel": 339,
+            "blauw": 328,
+            "rood": 289
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 190,
+            "geel": 172,
+            "blauw": 162,
+            "rood": 153
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 448,
+            "geel": 396,
+            "blauw": 386,
+            "rood": 348
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 305,
+            "geel": 285,
+            "blauw": 270,
+            "rood": 238
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 507,
+            "geel": 471,
+            "blauw": 405,
+            "rood": 394
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 140,
+            "geel": 132,
+            "blauw": 114,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 530,
+            "geel": 518,
+            "blauw": 444,
+            "rood": 435
+          }
+        }
+      ]
+    },
+    {
+      "name": "Blaak + Leij",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6398,
+          "course_rating": 74.0,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5995,
+          "course_rating": 71.5,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5546,
+          "course_rating": 69.0,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5159,
+          "course_rating": 66.8,
+          "slope": 121,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5995,
+          "course_rating": 78.5,
+          "slope": 133,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5546,
+          "course_rating": 75.3,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5159,
+          "course_rating": 72.7,
+          "slope": 125,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 346,
+            "geel": 337,
+            "blauw": 328,
+            "rood": 319
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 154,
+            "geel": 146,
+            "blauw": 137,
+            "rood": 128
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 511,
+            "geel": 469,
+            "blauw": 421,
+            "rood": 397
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 381,
+            "geel": 346,
+            "blauw": 326,
+            "rood": 283
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 180,
+            "geel": 172,
+            "blauw": 159,
+            "rood": 150
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 519,
+            "geel": 506,
+            "blauw": 457,
+            "rood": 450
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 379,
+            "geel": 355,
+            "blauw": 334,
+            "rood": 313
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 333,
+            "geel": 323,
+            "blauw": 285,
+            "rood": 275
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 387,
+            "geel": 361,
+            "blauw": 349,
+            "rood": 310
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 378,
+            "geel": 350,
+            "blauw": 323,
+            "rood": 307
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 367,
+            "geel": 342,
+            "blauw": 307,
+            "rood": 289
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 406,
+            "geel": 376,
+            "blauw": 355,
+            "rood": 339
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 188,
+            "geel": 172,
+            "blauw": 165,
+            "rood": 153
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 384,
+            "geel": 350,
+            "blauw": 338,
+            "rood": 292
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 477,
+            "geel": 447,
+            "blauw": 391,
+            "rood": 371
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 494,
+            "geel": 467,
+            "blauw": 418,
+            "rood": 381
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 159,
+            "geel": 142,
+            "blauw": 127,
+            "rood": 111
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 355,
+            "geel": 334,
+            "blauw": 326,
+            "rood": 291
+          }
+        }
+      ]
+    },
+    {
+      "name": "Par 3-baan De Warande 18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 49.8,
+          "slope": 74,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 51.5,
+          "slope": 76,
+          "par": 54
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://prisedeau-golf.nl/de-baan/handicaptabel/",
+    "files": [
+      "scorecard/Prise-dEau-18-holes-De-Blaak-De-Sijsten-Heren.pdf",
+      "scorecard/Prise-dEau-18-holes-De-Blaak-De-Sijsten-Dames.pdf",
+      "scorecard/Prise-dEau-18-holes-De-Sijsten-De-Leij-Heren.pdf",
+      "scorecard/Prise-dEau-18-holes-De-Sijsten-De-Leij-Dames.pdf",
+      "scorecard/Prise-dEau-18-holes-De-Leij-De-Blaak-Heren.pdf",
+      "scorecard/Prise-dEau-18-holes-De-Leij-De-Blaak-Dames.pdf",
+      "scorecard/Prise-dEau-Par-3-Baan-Dames-Heren.pdf",
+      "scorecard/page.html",
+      "scorecard/golfify-leij-sijsten.html",
+      "scorecard/golfify-blaak-leij.html",
+      "scorecard/clubsite-handicaptabel.html"
+    ],
+    "source": "third-party",
+    "complete": false,
+    "notes": "De clubsite publiceert geen scorekaart, alleen handicaptabellen (jan. 2024; daaruit komen de CR/slope-waarden, per combinatie, wit alleen heren). Holedata (par, S.I., lengtes) van golfify.io; de golfify-totalen (bv. 6404/6048/5521/5162 m) zijn niet met de clubsite te controleren. Golfify noemt de combinaties Blaak-Sijsten, Leij-Sijsten en Blaak-Leij (met die volgorde voor holes 1-9/10-18), terwijl de club Sijsten-De Leij en De Leij-De Blaak noemt; de S.I. per combinatie kan daardoor afwijken. Par 3-baan De Warande: alleen ratings (18 holes par 54), geen betrouwbare holedata (golfify vermeldt 300 m per hole). Daarom complete=false.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://prisedeau-golf.nl/de-baan/",
+    "https://prisedeau-golf.nl/de-baan/handicaptabel/",
+    "https://www.golfify.io/courses/prise-d-eau-golf-blaak-sijsten",
+    "https://www.golfify.io/courses/prise-d-eau-golf-leij-sijsten",
+    "https://www.golfify.io/courses/prise-d-eau-golf-blaak-leij",
+    "https://www.1golf.eu/en/club/prise-d-eau-golf/"
+  ]
+}

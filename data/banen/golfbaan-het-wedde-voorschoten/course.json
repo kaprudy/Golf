@@ -1,0 +1,265 @@
+{
+  "slug": "golfbaan-het-wedde-voorschoten",
+  "name": "Sportfondsen Golfbaan Het Wedde",
+  "club_name": "Sportfondsen Golfbaan Het Wedde / Voorschotense Golfclub",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Richard Wagnerlaan 85",
+    "postal_code": "2253 CD",
+    "city": "Voorschoten",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1391341,
+    "lon": 4.4519268,
+    "source": "nominatim.openstreetmap.org (adres Richard Wagnerlaan 85, Voorschoten)"
+  },
+  "distance_km_from_dedemsvaart": 145.6,
+  "phone": "071 561 48 48",
+  "email": "hetwedde@sportfondsen.nl",
+  "website": "https://golfbaanhetwedde.sportfondsen.nl",
+  "booking_url": "https://golfbaanhetwedde.sportfondsen.nl/starttijd/",
+  "founded": null,
+  "architect": null,
+  "landscape": "bosrijk park met waterpartijen",
+  "facilities": [
+    "driving range (overdekt, verlicht, max. 30 m)",
+    "putting green (verlicht)",
+    "oefengreen met bunker",
+    "horeca",
+    "golfschool (Mountain Lion Golf Academy)",
+    "golfshop"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Het Wedde is een openbare 9-holes par 3-baan in Voorschoten, naast het gelijknamige zwembad, en thuisbaan van de Voorschotense Golfclub. De korte holes liggen in een bosrijke omgeving met veel water, smalle fairways en goed geplaatste bunkers, wat de baan ook voor ervaren spelers interessant maakt. Er wordt van matten afgeslagen.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x gespeeld)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1860,
+          "course_rating": 51.2,
+          "slope": 87,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1860,
+          "course_rating": 53.4,
+          "slope": 89,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 101,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 65,
+            "rood": 65
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 131,
+            "rood": 131
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 153,
+            "rood": 153
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 83,
+            "rood": 83
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 117,
+            "rood": 117
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 101,
+            "rood": 101
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 60,
+            "rood": 60
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 65,
+            "rood": 65
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 98,
+            "rood": 98
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 131,
+            "rood": 131
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 153,
+            "rood": 153
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 122,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 83,
+            "rood": 83
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfbaanhetwedde.sportfondsen.nl/golfen/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/2025-scorekaart-Golfbaan-Het-Wedde.pdf",
+      "scorecard/Voorschotense-GC-slagentabel-27-11-2025.pdf",
+      "scorecard/Voorschotense_WHS_tabel_Par-3.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart mei 2025 heeft één lengtekolom (MTR, uit 930 m per negen; afslaan van de mat verplicht); dezelfde lengtes zijn hier voor geel (heren) en rood (dames) gezet. De website noemt 1001 m. CR/SR uit slagentabel d.d. 23-10-2025 (18 holes; 9 holes heren 25,6/87, dames 26,7/89); oudere tabel (18-01-2021) ook opgeslagen."
+  },
+  "sources": [
+    "https://golfbaanhetwedde.sportfondsen.nl/golfbaan/",
+    "https://golfbaanhetwedde.sportfondsen.nl/golfen/",
+    "https://golfbaanhetwedde.sportfondsen.nl/faciliteiten/"
+  ]
+}

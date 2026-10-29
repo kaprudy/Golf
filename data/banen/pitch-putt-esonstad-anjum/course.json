@@ -1,0 +1,265 @@
+{
+  "slug": "pitch-putt-esonstad-anjum",
+  "name": "Pitch & Putt Esonstad",
+  "club_name": "Pitch & Putt Esonstad (Esonstad Events, Landal Esonstad)",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Skanserwei 28",
+    "postal_code": "9133 DV",
+    "city": "Anjum",
+    "province": "Friesland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 53.37565,
+    "lon": 6.15874,
+    "source": "nominatim.openstreetmap.org (Skanserwei 28, Anjum)"
+  },
+  "distance_km_from_dedemsvaart": 88.5,
+  "phone": "0519 329555",
+  "email": "fe.esonstad@landal.com",
+  "website": "https://www.esonstadevents.nl/pitchenputt/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "polder/kleigrond met waterpartijen (Lauwersmeer)",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "materiaalverhuur",
+    "horeca",
+    "footgolf",
+    "indoorspeelparadijs"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen GVB of ervaring nodig; vooraf reserveren noodzakelijk (e-mail of telefoon).",
+  "description_nl": "Pitch & puttbaan op het terrein van vakantiepark Landal Esonstad aan het Lauwersmeer bij Anjum. De 18 holes zijn verdeeld over twee lussen, De Seedyk (1-9) en De Terpen (10-18), met holes van circa 35 tot 90 meter rond vijvers en sloten. Bedoeld voor iedereen, ook zonder golfervaring: materiaal en uitleg zijn bij de prijs inbegrepen.",
+  "loops": [
+    {
+      "name": "Pitch & Putt 18 holes (De Seedyk 1-9, De Terpen 10-18)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": null,
+          "length_m": 1012,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        },
+        {
+          "name": "extra",
+          "color": null,
+          "gender": null,
+          "length_m": 1138,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 48,
+            "extra": 48
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 53,
+            "extra": 53
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 59,
+            "extra": 59
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 48,
+            "extra": 48
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 67,
+            "extra": 83
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 43,
+            "extra": 43
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 54,
+            "extra": 54
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 36,
+            "extra": 57
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 52,
+            "extra": 52
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 60,
+            "extra": 80
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 76,
+            "extra": 76
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 63,
+            "extra": 86
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 58,
+            "extra": 58
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 57,
+            "extra": 57
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 58,
+            "extra": 88
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50,
+            "extra": 50
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 59,
+            "extra": 75
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 71,
+            "extra": 71
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.esonstadevents.nl/pitchenputt/",
+    "files": [
+      "scorecard/esonstad-plattegrond.jpg",
+      "scorecard/hole19.html",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Lengtes per hole uit de officiële baanplattegrond (esonstad-plattegrond.jpg): standaardafslag plus extra afslagpunten (E) bij holes 5, 8, 10, 12, 15 en 17; voor de overige holes is de E-lengte gelijk aan de standaardafslag. Toewijzing van elke E aan de hole erboven in de lijst volgt Hole19 (e tee: in 641 = gelijk aan deze toewijzing). Par 3 per hole en par 54 alleen uit derden (Hole19, GolfPass); S.I. nergens gepubliceerd. Hole19 noemt hole 6 vanaf e-tee 46 m, plattegrond 43 m. Geen CR/slope. www.pitchenputt-esonstad.nl verwijst door naar esonstadevents.nl (site in herbouw)."
+  },
+  "sources": [
+    "https://www.esonstadevents.nl/pitchenputt/",
+    "https://www.hole19golf.com/courses/pitch-putt-golf-esonstad",
+    "https://www.golfpass.com/courses/40087-esonstad-pitch-putt/scorecard-and-layout",
+    "https://golfkaart.com/api/kaart.json"
+  ]
+}

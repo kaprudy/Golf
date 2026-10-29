@@ -1,0 +1,351 @@
+{
+  "slug": "wassenaarse-golf-groendael",
+  "name": "Wassenaarse Golf Groendael",
+  "club_name": "Wassenaarse Golfclub Groendael (Golfpark Groendael B.V.)",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Groenendaal 3",
+    "postal_code": "2244 BK",
+    "city": "Wassenaar",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1090593,
+    "lon": 4.3365689,
+    "source": "nominatim.openstreetmap.org (adres Groenendaal 3, Wassenaar)"
+  },
+  "distance_km_from_dedemsvaart": 154.2,
+  "phone": "070 314 40 00",
+  "email": "info@wassenaarsegolf.nl",
+  "website": "https://groendael.nl",
+  "booking_url": null,
+  "founded": 2007,
+  "architect": "Bruno Steensels",
+  "landscape": "binnenduin/park met waterpartijen",
+  "facilities": [
+    "driving range (overdekt, over water met drijvende ballen)",
+    "putting green",
+    "chip- & putt area",
+    "grass tee",
+    "clubhuis",
+    "restaurant",
+    "sauna en fitnessruimte",
+    "golfprofessional"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Greenfeespelers maandag t/m donderdag (niet op feestdagen), handicap 28 of lager; introducés handicap 54; NGF-pas tonen; max. 5x per jaar als gast",
+  "description_nl": "Groendael is een besloten 9-holesbaan uit 2007 tussen Wassenaar en Den Haag, ontworpen door Bruno Steensels. De par 35-baan draait om plaatsing en coursemanagement: bunkers, vijvers en helmgras omringen snelle, golvende greens, met als blikvanger een par 5 van 500 meter naar een zeer grote green. Opvallend is de overdekte driving range waar over water wordt afgeslagen.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x gespeeld)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5290,
+          "course_rating": 71.2,
+          "slope": 140,
+          "par": 70
+        },
+        {
+          "name": "zwart",
+          "color": "black",
+          "gender": "men",
+          "length_m": 5098,
+          "course_rating": null,
+          "slope": null,
+          "par": 70
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5010,
+          "course_rating": 69.4,
+          "slope": 137,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4400,
+          "course_rating": 66.6,
+          "slope": 126,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5290,
+          "course_rating": 76.8,
+          "slope": 157,
+          "par": 70
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5010,
+          "course_rating": 74.6,
+          "slope": 153,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4400,
+          "course_rating": 72.5,
+          "slope": 138,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 305,
+            "zwart": 305,
+            "blauw": 305,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135,
+            "zwart": 126,
+            "blauw": 126,
+            "rood": 114
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 351,
+            "zwart": 320,
+            "blauw": 310,
+            "rood": 265
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 500,
+            "zwart": 475,
+            "blauw": 458,
+            "rood": 390
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 306,
+            "zwart": 283,
+            "blauw": 283,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 337,
+            "zwart": 329,
+            "blauw": 318,
+            "rood": 284
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 101,
+            "zwart": 101,
+            "blauw": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 322,
+            "zwart": 322,
+            "blauw": 322,
+            "rood": 286
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 288,
+            "zwart": 288,
+            "blauw": 288,
+            "rood": 248
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 305,
+            "zwart": 305,
+            "blauw": 305,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135,
+            "zwart": 126,
+            "blauw": 126,
+            "rood": 114
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 351,
+            "zwart": 320,
+            "blauw": 310,
+            "rood": 265
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 500,
+            "zwart": 475,
+            "blauw": 458,
+            "rood": 390
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 306,
+            "zwart": 283,
+            "blauw": 283,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 337,
+            "zwart": 329,
+            "blauw": 318,
+            "rood": 284
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 101,
+            "zwart": 101,
+            "blauw": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 322,
+            "zwart": 322,
+            "blauw": 322,
+            "rood": 286
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 288,
+            "zwart": 288,
+            "blauw": 288,
+            "rood": 248
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://groendael.nl/golf/phcp-tabellen/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/caddieboekje.pdf",
+      "scorecard/phcp-1.pdf",
+      "scorecard/phcp-2.pdf",
+      "scorecard/phcp-3.pdf",
+      "scorecard/phcp-4.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Holegegevens uit de scorekaart in het caddieboekje (kolommen Geel, Zwart, Blauw, Rood; S.I. 1-9 / 10-18). In de holebeschrijving staat bij hole 8 'stroke index 5/4', de scorekaart geeft 5 en 6 (scorekaart aangehouden). CR/SR 18 holes uit baanhandicaptabellen d.d. 10-12-2024 (phcp-1 heren 18, phcp-4 dames 18); 9 holes: heren geel 35,6/140, blauw 34,7/137, rood 33,3/126; dames geel 38,4/157, blauw 37,3/153, rood 36,3/138 (par 35). Voor zwart geen rating gepubliceerd. Caddieboekje noemt medal 18 holes 5290 m."
+  },
+  "sources": [
+    "https://groendael.nl/golf/baaninformatie/",
+    "https://groendael.nl/golf/caddieboekje/",
+    "https://groendael.nl/golf/phcp-tabellen/",
+    "https://groendael.nl/golf/gasten-introductie/"
+  ]
+}

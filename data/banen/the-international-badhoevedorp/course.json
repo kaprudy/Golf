@@ -1,0 +1,392 @@
+{
+  "slug": "the-international-badhoevedorp",
+  "name": "The International",
+  "club_name": "The International",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Oude Haagseweg 200",
+    "postal_code": "1171 PE",
+    "city": "Badhoevedorp",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.3302884,
+    "lon": 4.8020098,
+    "source": "nominatim.openstreetmap.org (adres)"
+  },
+  "distance_km_from_dedemsvaart": 116.2,
+  "phone": "+31 20 303 4444",
+  "email": "info@theinternational.nl",
+  "website": "https://www.theinternational.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Ian Woosnam i.s.m. Mastergolf",
+  "landscape": "sterk geaccidenteerd (hoogteverschillen tot 14 m) met waterpartijen, nabij Schiphol",
+  "facilities": [
+    "18-holes baan",
+    "driving range",
+    "golfschool",
+    "restaurant",
+    "vergaderruimtes",
+    "fitness club",
+    "bag drop"
+  ],
+  "greenfee_welcome": false,
+  "requirements": "Besloten club: alleen leden en hun gasten (op uitnodiging).",
+  "description_nl": "The International bij Badhoevedorp is een exclusieve ledenclub met een 18-holesbaan ontworpen door Ian Woosnam en Mastergolf. Kunstmatig aangelegde heuvels met tot 14 meter hoogteverschil, veel water en grote, sterk geonduleerde greens maken het een veeleisende baan. De baan is alleen toegankelijk voor leden en hun introducés en was gastheer van het KLM Open.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 73,
+      "tees": [
+        {
+          "name": "zwart",
+          "color": "black",
+          "gender": "men",
+          "length_m": 6662,
+          "course_rating": 76.4,
+          "slope": 146,
+          "par": 73
+        },
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6479,
+          "course_rating": 75.2,
+          "slope": 141,
+          "par": 73
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 6115,
+          "course_rating": 73.2,
+          "slope": 137,
+          "par": 73
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5914,
+          "course_rating": 72.0,
+          "slope": 136,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5116,
+          "course_rating": 67.7,
+          "slope": 127,
+          "par": 73
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 6115,
+          "course_rating": 80.0,
+          "slope": 152,
+          "par": 73
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5914,
+          "course_rating": 78.9,
+          "slope": 150,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5116,
+          "course_rating": 73.8,
+          "slope": 136,
+          "par": 73
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 451,
+            "wit": 466,
+            "geel": 451,
+            "blauw": 444,
+            "rood": 390
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 361,
+            "wit": 345,
+            "geel": 323,
+            "blauw": 323,
+            "rood": 280
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 516,
+            "wit": 512,
+            "geel": 480,
+            "blauw": 459,
+            "rood": 407
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 155,
+            "wit": 128,
+            "geel": 109,
+            "blauw": 109,
+            "rood": 88
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 312,
+            "wit": 312,
+            "geel": 291,
+            "blauw": 291,
+            "rood": 247
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 363,
+            "wit": 363,
+            "geel": 343,
+            "blauw": 343,
+            "rood": 294
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 209,
+            "wit": 193,
+            "geel": 183,
+            "blauw": 178,
+            "rood": 152
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 539,
+            "wit": 512,
+            "geel": 487,
+            "blauw": 469,
+            "rood": 430
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 434,
+            "wit": 409,
+            "geel": 382,
+            "blauw": 359,
+            "rood": 306
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 401,
+            "wit": 381,
+            "geel": 358,
+            "blauw": 351,
+            "rood": 277
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 323,
+            "wit": 323,
+            "geel": 307,
+            "blauw": 307,
+            "rood": 284
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 437,
+            "wit": 420,
+            "geel": 397,
+            "blauw": 395,
+            "rood": 332
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 177,
+            "wit": 177,
+            "geel": 161,
+            "blauw": 153,
+            "rood": 139
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 379,
+            "wit": 379,
+            "geel": 359,
+            "blauw": 334,
+            "rood": 287
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 530,
+            "wit": 506,
+            "geel": 487,
+            "blauw": 485,
+            "rood": 403
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 380,
+            "wit": 377,
+            "geel": 342,
+            "blauw": 316,
+            "rood": 273
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 213,
+            "wit": 197,
+            "geel": 192,
+            "blauw": 174,
+            "rood": 147
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 482,
+            "wit": 479,
+            "geel": 463,
+            "blauw": 424,
+            "rood": 380
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://www.theinternational.nl/holes/hole-1/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-handicap-heren.html",
+      "scorecard/page-handicap-dames.html",
+      "scorecard/holes/hole-1.html",
+      "scorecard/holes/hole-2.html",
+      "scorecard/holes/hole-3.html",
+      "scorecard/holes/hole-4.html",
+      "scorecard/holes/hole-5.html",
+      "scorecard/holes/hole-6.html",
+      "scorecard/holes/hole-7.html",
+      "scorecard/holes/hole-8.html",
+      "scorecard/holes/hole-9.html",
+      "scorecard/holes/hole-10.html",
+      "scorecard/holes/hole-11.html",
+      "scorecard/holes/hole-12.html",
+      "scorecard/holes/hole-13.html",
+      "scorecard/holes/hole-14.html",
+      "scorecard/holes/hole-15.html",
+      "scorecard/holes/hole-16.html",
+      "scorecard/holes/hole-17.html",
+      "scorecard/holes/hole-18.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Geen scorekaartbestand gepubliceerd; par, S.I. en lengtes per tee komen van de 18 holepagina's op de clubsite, CR/slope van de handicaptabelpagina's. De club benoemt tees met nummers 67/65/61/59/51 (zwart/wit/geel/blauw/rood, ~totale lengte in hm). Hole 1: zwart 451 m is korter dan wit 466 m volgens de site, zo overgenomen. Ook 9-holes ratings (voor/achter) staan op de site. Onbekend of de holes 1-9 de 'front nine' met par 37 zijn: dat volgt uit de holepagina's (voor 37, achter 36)."
+  },
+  "sources": [
+    "https://www.theinternational.nl/de-baan/",
+    "https://www.theinternational.nl/de-baan/handicaptabel/playing-handicap-heren/",
+    "https://www.theinternational.nl/de-baan/handicaptabel/playing-handicap-dames/",
+    "https://www.theinternational.nl/holes/hole-1/"
+  ]
+}

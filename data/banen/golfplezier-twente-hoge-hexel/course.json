@@ -1,7 +1,7 @@
 {
   "slug": "golfplezier-twente-hoge-hexel",
-  "name": "Golfplezier Twente",
-  "club_name": "Golfplezier Twente",
+  "name": "De Golfweide (voorheen Golfplezier Twente)",
+  "club_name": "De Golfweide",
   "holes_total": 18,
   "course_type": "par-3",
   "address": {
@@ -17,7 +17,7 @@
     "source": "OpenStreetMap way 55285638 (centroid baan)"
   },
   "distance_km_from_dedemsvaart": 22.7,
-  "phone": "+31 546 697 265",
+  "phone": "0546 697 365",
   "email": "info@golfpleziertwente.nl",
   "website": "https://golfpleziertwente.nl",
   "booking_url": null,
@@ -332,6 +332,10 @@
     "https://www.hole19golf.com/courses/golfplezier-twente-qualifying",
     "https://golfpleziertwente.nl/",
     "https://www.1golf.eu/club/golfplezier-twente/",
-    "https://www.openstreetmap.org/way/55285638"
-  ]
+    "https://www.openstreetmap.org/way/55285638",
+    "https://www.golf.nl/nieuws/2026/okt/2810-golfplezier-twente-golfweide"
+  ],
+  "status": "open",
+  "status_note": "Open; per 1-10-2026 verkocht aan Tim en Coen Letteboer en hernoemd tot De Golfweide (golf.nl 28-10-2026). Op ma/di een 9-holes qualifyinglus.",
+  "status_checked": "2026-10-29"
 }

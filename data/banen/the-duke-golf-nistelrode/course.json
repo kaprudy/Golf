@@ -1,0 +1,148 @@
+{
+  "slug": "the-duke-golf-nistelrode",
+  "name": "The Duke (Championship Course)",
+  "club_name": "The Duke Golf Club",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Slotenseweg 11",
+    "postal_code": "5388 RC",
+    "city": "Nistelrode",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.7175277,
+    "lon": 5.5609073,
+    "source": "nominatim.openstreetmap.org (Slotenseweg 11)"
+  },
+  "distance_km_from_dedemsvaart": 115.8,
+  "phone": "+31 412 611992",
+  "email": "receptie@theduke.nl",
+  "website": "https://theduke.nl",
+  "booking_url": null,
+  "founded": 1991,
+  "architect": null,
+  "landscape": "bos en heide",
+  "facilities": [
+    "academy",
+    "clubhuis",
+    "restaurant The Charles",
+    "suites (overnachten)",
+    "businessclub",
+    "on course service"
+  ],
+  "greenfee_welcome": null,
+  "requirements": "Besloten (leden)club; spelen voor niet-leden o.a. via golfarrangementen/business-lidmaatschap - voorwaarden niet op de site vermeld",
+  "description_nl": "The Duke ligt in een oud bos- en heidegebied tussen Nistelrode en Vorstenbosch. De club begon in 1991 met negen holes en groeide uit tot een 18-holes Championship Course van par 72 met snelle greens en smalle, door bomen omzoomde fairways. Bij de baan horen een luxe clubhuis met restaurant en suites.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 71.3,
+          "slope": 137,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 69.5,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 67.9,
+          "slope": 124,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 65.5,
+          "slope": 121,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 63.6,
+          "slope": 108,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 75.9,
+          "slope": 141,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 73.5,
+          "slope": 137,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 71.5,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 67.3,
+          "slope": 127,
+          "par": 72
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://theduke.nl/golf/championship-course/",
+    "files": [
+      "scorecard/Baanhandicap-Rating-The-Duke-2025.pdf",
+      "scorecard/Plattegrond-de-baan-1.png",
+      "scorecard/page-golfify.html",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen scorekaart gepubliceerd (alleen plattegrond en baanhandicaptabellen d.d. 10-10-2024, ook per 1e/2e 9 holes, beide par 36). Golfify.io heeft een holetabel (wit 6278/geel 5964/blauw 5650/rood 5134/oranje 4214 m) maar met par 37 uit / 35 in, wat niet strookt met de officiële par 36/36 - daarom niet overgenomen (page-golfify.html bewaard)."
+  },
+  "sources": [
+    "https://theduke.nl/golf/championship-course/",
+    "https://theduke.nl/contact/",
+    "https://theduke.nl/about-the-duke/",
+    "https://www.golfify.io/courses/the-duke"
+  ]
+}

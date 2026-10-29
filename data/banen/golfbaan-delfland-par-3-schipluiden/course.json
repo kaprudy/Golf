@@ -1,0 +1,233 @@
+{
+  "slug": "golfbaan-delfland-par-3-schipluiden",
+  "name": "Golfbaan Delfland Par 3 Challenge Course",
+  "club_name": "Golfbaan Delfland",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Abtsrechtseweg 1",
+    "postal_code": "2636 HZ",
+    "city": "Schipluiden",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.9791483,
+    "lon": 4.3281679,
+    "source": "Nominatim (OpenStreetMap), adres Abtsrechtseweg 1 (clubhuis)"
+  },
+  "distance_km_from_dedemsvaart": 160.6,
+  "phone": "015 380 79 11",
+  "email": "info@delflandgolf.nl",
+  "website": "https://www.delflandgolf.nl",
+  "booking_url": "https://www.delflandgolf.nl/reserveer-starttijd/reserveren-starttijd/",
+  "founded": null,
+  "architect": null,
+  "landscape": "polder met waterpartijen en bunkers",
+  "facilities": [
+    "verlichting (avondgolf)",
+    "driving range",
+    "oefengreens",
+    "Brasserie Delfland"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Minimaal baanpermissie",
+  "description_nl": "De Par 3 Challenge Course is de verlichte korte baan van Golfbaan Delfland in Schipluiden. De negen par 3-holes van 70 tot 138 meter worden afgewisseld door bunkers en water en zijn ook 's avonds te spelen. Een goede baan om het korte spel te oefenen of snel een rondje te lopen.",
+  "loops": [
+    {
+      "name": "Par 3 Challenge Course (2x9 holes)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "baan",
+          "color": null,
+          "gender": null,
+          "length_m": 1872,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 90
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 136
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 70
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 106
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 91
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 138
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 115
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 108
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 82
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 90
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 136
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 70
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 106
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 91
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 138
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 115
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 108
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 82
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.delflandgolf.nl/golfen/baaninformatie/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/delfland-score-kaart-par-3-challenge-course-1.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart met één lengtekolom ('meter', geen teekleur) en 9 holes die 2x worden gespeeld (holes 10-18 met even S.I.). De gelinkte 'tabel dames en heren' is hetzelfde bestand als de scorekaart; CR/slope dus onbekend."
+  },
+  "sources": [
+    "https://www.delflandgolf.nl/golfen/baaninformatie/",
+    "https://www.delflandgolf.nl/contact/faq/"
+  ]
+}

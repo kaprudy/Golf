@@ -1,0 +1,318 @@
+{
+  "slug": "marine-golfclub-nieuwediep-den-helder",
+  "name": "Marine Golfclub Nieuwediep",
+  "club_name": "Marine Golfclub \"Nieuwediep\"",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Kortevliet 1BB",
+    "postal_code": "1786 PK",
+    "city": "Den Helder",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.9287314,
+    "lon": 4.7729887,
+    "source": "nominatim (Kortevliet, Den Helder)"
+  },
+  "phone": "+31 223 697 258",
+  "email": "greenfee@marinegolfclub.nl",
+  "website": "https://www.marinegolfclub.nl/golf2/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "open polder-/kustbaan naast Maritiem Vliegkamp De Kooy",
+  "facilities": [
+    "clubhuis met bar (geen restaurant)",
+    "2 slagkooien (geen driving range)",
+    "putting green",
+    "chipping green",
+    "oefenbunker",
+    "buggyverhuur (beperkt)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Greenfee op afspraak via e-mail (enkele dagen vooraf) of via introductie door een lid; hek is afgesloten, gastheer laat bezoekers binnen",
+  "description_nl": "Kleine 9-holesbaan van een door leden gerunde personeelsvereniging, direct naast marinevliegveld De Kooy bij Den Helder. Het onderhoud wordt volledig door vrijwilligers gedaan. Met wisselende afslagen speel je 18 holes, par 70; bezoekers maken vooraf een afspraak.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5460,
+          "course_rating": 69.0,
+          "slope": 120,
+          "par": 70
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5042,
+          "course_rating": 66.4,
+          "slope": 116,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4624,
+          "course_rating": 64.1,
+          "slope": 108,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5460,
+          "course_rating": 76.0,
+          "slope": 130,
+          "par": 70
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5042,
+          "course_rating": 72.6,
+          "slope": 126,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4624,
+          "course_rating": 68.9,
+          "slope": 122,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 457,
+            "blauw": 457,
+            "rood": 380
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 169,
+            "blauw": 142,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 339,
+            "blauw": 339,
+            "rood": 284
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 366,
+            "blauw": 307,
+            "rood": 307
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 296,
+            "blauw": 296,
+            "rood": 266
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 364,
+            "blauw": 315,
+            "rood": 315
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "blauw": 129,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 309,
+            "blauw": 254,
+            "rood": 254
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 301,
+            "blauw": 301,
+            "rood": 258
+          }
+        },
+        {
+          "hole": 10,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 457,
+            "blauw": 380,
+            "rood": 380
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 169,
+            "blauw": 169,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 339,
+            "blauw": 284,
+            "rood": 284
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 366,
+            "blauw": 366,
+            "rood": 307
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 296,
+            "blauw": 266,
+            "rood": 266
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 364,
+            "blauw": 364,
+            "rood": 315
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "blauw": 106,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 309,
+            "blauw": 309,
+            "rood": 254
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 301,
+            "blauw": 258,
+            "rood": 258
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.marinegolfclub.nl/golf2/baaninfo/",
+    "files": [
+      "scorecard/Scorekaart-jan-2024-voorkant.pdf",
+      "scorecard/Baanboekje.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart jan 2024: 9-holesbaan, holes 10-18 met deels andere afslagen (blauw) en eigen S.I. 9-holes ratings: geel 69,0/120 (H) 76,0/130 (D); blauw 1e/2e negen H 66,4/66,5 SR 119/112, D 73,2/72,1 SR 127/126; rood 64,1/108 (H) 68,9/122 (D). Greenfee EUR 35 per dag."
+  },
+  "sources": [
+    "https://www.marinegolfclub.nl/golf2/baaninfo/",
+    "https://www.marinegolfclub.nl/golf2/bezoekers/",
+    "https://www.marinegolfclub.nl/golf2/contact/"
+  ],
+  "distance_km_from_dedemsvaart": 119.2
+}

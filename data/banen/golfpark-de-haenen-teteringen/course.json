@@ -1,0 +1,344 @@
+{
+  "slug": "golfpark-de-haenen-teteringen",
+  "name": "Golfpark De Haenen",
+  "club_name": "Golfpark De Haenen",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Laan der Continenten 70",
+    "postal_code": "4847 DG",
+    "city": "Teteringen",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.616,
+    "lon": 4.8343,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 155.9,
+  "phone": "076 578 39 50",
+  "email": "info@dehaenen.nl",
+  "website": "https://www.dehaenen.nl/",
+  "booking_url": "https://www.dehaenen.nl/greenfee-speler",
+  "founded": null,
+  "architect": null,
+  "landscape": "parkbaan met waterreservoirs en een kunstpark",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "pitch & putting green",
+    "kunststof putting green",
+    "par 3-/academy course (6 holes)",
+    "clubhuis",
+    "businessclub"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Greenfeespelers elke dag welkom; voor de academy course (6 holes) is een GVB verplicht.",
+  "description_nl": "Golfpark De Haenen ligt aan de rand van Breda bij Teteringen en combineert een 18-holes par-70-baan met een kunstpark vol beelden. De baan is parkachtig met waterreservoirs die op meerdere holes meespelen. Naast de grote baan is er een korte academy course van zes holes en zijn er uitgebreide oefenfaciliteiten.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": null,
+          "length_m": 5733,
+          "course_rating": null,
+          "slope": null,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": null,
+          "length_m": 5460,
+          "course_rating": null,
+          "slope": null,
+          "par": 70
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": null,
+          "length_m": 5225,
+          "course_rating": null,
+          "slope": null,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": null,
+          "length_m": 4659,
+          "course_rating": null,
+          "slope": null,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": null,
+          "length_m": 4094,
+          "course_rating": null,
+          "slope": null,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 365,
+            "geel": 349,
+            "blauw": 328,
+            "rood": 320,
+            "oranje": 261
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 347,
+            "geel": 343,
+            "blauw": 292,
+            "rood": 287,
+            "oranje": 248
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 485,
+            "geel": 483,
+            "blauw": 483,
+            "rood": 404,
+            "oranje": 376
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 149,
+            "geel": 132,
+            "blauw": 130,
+            "rood": 115,
+            "oranje": 115
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 472,
+            "geel": 465,
+            "blauw": 381,
+            "rood": 377,
+            "oranje": 335
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 395,
+            "geel": 380,
+            "blauw": 371,
+            "rood": 312,
+            "oranje": 280
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 153,
+            "geel": 141,
+            "blauw": 139,
+            "rood": 125,
+            "oranje": 125
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 181,
+            "geel": 154,
+            "blauw": 143,
+            "rood": 131,
+            "oranje": 117
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 372,
+            "geel": 358,
+            "blauw": 321,
+            "rood": 316,
+            "oranje": 257
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 152,
+            "geel": 152,
+            "blauw": 140,
+            "rood": 140,
+            "oranje": 140
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 277,
+            "geel": 272,
+            "blauw": 272,
+            "rood": 247,
+            "oranje": 202
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 171,
+            "geel": 155,
+            "blauw": 155,
+            "rood": 144,
+            "oranje": 144
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 474,
+            "geel": 461,
+            "blauw": 460,
+            "rood": 380,
+            "oranje": 335
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 336,
+            "geel": 314,
+            "blauw": 311,
+            "rood": 268,
+            "oranje": 226
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 384,
+            "geel": 366,
+            "blauw": 360,
+            "rood": 297,
+            "oranje": 266
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 360,
+            "geel": 343,
+            "blauw": 337,
+            "rood": 291,
+            "oranje": 240
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 339,
+            "geel": 290,
+            "blauw": 308,
+            "rood": 244,
+            "oranje": 209
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 321,
+            "geel": 302,
+            "blauw": 294,
+            "rood": 261,
+            "oranje": 218
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.dehaenen.nl/onze-holes",
+    "files": [
+      "scorecard/dh_scorekaarten3-luikdef-2023.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Scorekaart 2023 (UIT 2919/2805/2588/2387/2114, IN 2814/2655/2637/2272/1980, TOT 5733/5460/5225/4659/4094; klopt). Geen CR/slope gepubliceerd op de clubsite; golfify/golfingrecord noemen geel CR 69/slope 126 en wit slope 129, maar bij oudere lengtes (5729/5456 m) — niet overgenomen. De par 3-/academy course (6 holes) heeft geen gepubliceerde holedata.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.dehaenen.nl/onze-holes",
+    "https://www.dehaenen.nl/greenfee-speler"
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "slug": "golfclub-oostburg-brugse-vaart",
+  "name": "Golfclub Oostburg – Domein De Brugse Vaart",
+  "club_name": "Golfclub Oostburg (Golfvereniging De Brugse Vaart)",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Brugse Vaart 10",
+    "postal_code": "4501 NE",
+    "city": "Oostburg",
+    "province": "Zeeland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.3244,
+    "lon": 3.4633,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 249.5,
+  "phone": "+31 117 453 410",
+  "email": "info@golfoostburg.com",
+  "website": "https://www.golfoostburg.com/",
+  "booking_url": null,
+  "founded": 1986,
+  "architect": null,
+  "landscape": "parkbaan met veel waterpartijen aan de oevers van de Brugse Vaart, bij het oude Zwin",
+  "facilities": [],
+  "greenfee_welcome": true,
+  "requirements": "Geldig handicapbewijs van de eigen club; handicaplimiet 36 (volgens 1golf.eu).",
+  "description_nl": "De baan van Golfclub Oostburg ligt in West-Zeeuws-Vlaanderen langs de Brugse Vaart, een kanaal dat Brugge in de zestiende eeuw liet graven tegen de verzanding van het Zwin. Sinds 1986 ligt hier een lange par-73-baan met veel water. Door de ligging vlak bij de Belgische grens komen er veel Vlaamse spelers.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 73,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": null,
+          "length_m": 7002,
+          "course_rating": null,
+          "slope": null,
+          "par": 73
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 6135,
+          "course_rating": 73.8,
+          "slope": 139,
+          "par": 73
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": null,
+          "length_m": 5975,
+          "course_rating": null,
+          "slope": null,
+          "par": 73
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": null,
+          "length_m": 5679,
+          "course_rating": null,
+          "slope": null,
+          "par": 73
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 176,
+            "geel": 151,
+            "blauw": 154,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 529,
+            "geel": 475,
+            "blauw": 501,
+            "rood": 419
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 197,
+            "geel": 172,
+            "blauw": 175,
+            "rood": 160
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 419,
+            "geel": 371,
+            "blauw": 384,
+            "rood": 371
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 434,
+            "geel": 385,
+            "blauw": 372,
+            "rood": 361
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 493,
+            "geel": 437,
+            "blauw": 414,
+            "rood": 400
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 339,
+            "geel": 302,
+            "blauw": 287,
+            "rood": 278
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 209,
+            "geel": 181,
+            "blauw": 160,
+            "rood": 149
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 589,
+            "geel": 517,
+            "blauw": 477,
+            "rood": 467
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 463,
+            "geel": 410,
+            "blauw": 402,
+            "rood": 392
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 386,
+            "geel": 332,
+            "blauw": 318,
+            "rood": 309
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 149,
+            "geel": 126,
+            "blauw": 126,
+            "rood": 115
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 441,
+            "geel": 375,
+            "blauw": 362,
+            "rood": 352
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 525,
+            "geel": 463,
+            "blauw": 444,
+            "rood": 432
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 173,
+            "geel": 150,
+            "blauw": 156,
+            "rood": 150
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 394,
+            "geel": 345,
+            "blauw": 329,
+            "rood": 320
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 460,
+            "geel": 389,
+            "blauw": 376,
+            "rood": 369
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 626,
+            "geel": 554,
+            "blauw": 538,
+            "rood": 493
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfify.io/courses/golfclub-oostburg-domein-de-brugse-vaart",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/golfingrecord-brugse-vaart.html",
+      "scorecard/1golf-brugse-vaart.html",
+      "scorecard/clubsite-home.html"
+    ],
+    "source": "third-party",
+    "complete": false,
+    "notes": "De clubsite (golfoostburg.com) publiceert geen scorekaart. Holedata van golfify.io (identiek aan golfingrecord.com). Eenheid onzeker: golfingrecord noemt het yards, en 7002 yd = 6402 m, precies de lengte die 1golf.eu voor geel heren in meters geeft (en 5975 yd = 5464 m voor rood dames). Daarom complete=false. CR/slope: golfify/golfingrecord geel 73,8/139; 1golf.eu geeft geel heren CR 74/130 (6402 m) en rood dames CR 75/132 (5464 m) — tegenstrijdig, alleen de golfify-waarde voor geel is overgenomen. Het oostelijke OSM-polygoon r19527293 bij Oostburg is waarschijnlijk dezelfde baan.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.golfoostburg.com/",
+    "https://www.golfify.io/courses/golfclub-oostburg-domein-de-brugse-vaart",
+    "https://www.golfingrecord.com/golf-scorecard/4b310d72-7fd7-47ae-8a88-22fb6836300f",
+    "https://www.1golf.eu/en/club/golfvereniging-de-brugse-vaart/"
+  ],
+  "status": "open",
+  "status_note": "Open; 18 holes Championship Course (golfoostburg.com). Holegegevens blijven onzeker (zie notes).",
+  "status_checked": "2026-10-29"
+}

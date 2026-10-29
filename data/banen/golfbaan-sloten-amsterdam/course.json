@@ -1,0 +1,262 @@
+{
+  "slug": "golfbaan-sloten-amsterdam",
+  "name": "Openbare Golfbaan Sloten",
+  "club_name": "Golfclub Sloten",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Sloterweg 1045",
+    "postal_code": "1066 CD",
+    "city": "Amsterdam",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.3398019,
+    "lon": 4.8062431,
+    "source": "nominatim.openstreetmap.org (adres)"
+  },
+  "distance_km_from_dedemsvaart": 115.7,
+  "phone": "+31 20 614 2402",
+  "email": "info@golfbaansloten.nl",
+  "website": "https://www.golfbaansloten.nl/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "parkachtig sportpark met bomen en sloten (Sportpark Sloten)",
+  "facilities": [
+    "9-holes baan (par 29)",
+    "driving range",
+    "golfschool",
+    "clubhuis"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Openbare Golfbaan Sloten ligt op Sportpark Sloten aan de zuidwestkant van Amsterdam. De negen holes (zeven par 3's en twee par 4's) slingeren tussen bomen en sloten, met smalle fairways en kleine greens die precisie vragen. De baan is openbaar, qualifying en dankzij goede drainage bijna het hele jaar bespeelbaar.",
+  "loops": [
+    {
+      "name": "18 holes (2x 9)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2742,
+          "course_rating": 56.2,
+          "slope": 98,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2742,
+          "course_rating": 59.1,
+          "slope": 110,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 143,
+            "rood": 143
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "rood": 129
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 167,
+            "rood": 167
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 136
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 158,
+            "rood": 158
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 208,
+            "rood": 208
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134,
+            "rood": 134
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 154,
+            "rood": 154
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 143,
+            "rood": 143
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 129,
+            "rood": 129
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 167,
+            "rood": 167
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136,
+            "rood": 136
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 142
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 158,
+            "rood": 158
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 208,
+            "rood": 208
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 134,
+            "rood": 134
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 154,
+            "rood": 154
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "retrieved": "2026-10-28",
+    "page_url": "https://www.golfbaansloten.nl/over-golfbaan-sloten/de-baan/scorecard",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/OGS-ScoreCard01.jpg",
+      "scorecard/OGDS-ScoreCard02.jpg"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Scorekaart met één lengte per hole (gele kolom) en CR/SR voor 18 holes (heren 56,2/98, dames 59,1/110); tee-kleur heren/dames afgeleid van de kleurvlakken op de kaart. Hole19 geeft afwijkend alle holes par 3 (par 27); de officiele kaart (par 29) is gevolgd. Totalen kloppen. Geen 9-holes rating op de kaart (EGA-tabel op site is een zeer grote scan, niet gebruikt)."
+  },
+  "sources": [
+    "https://www.golfbaansloten.nl/over-golfbaan-sloten/de-baan/scorecard",
+    "https://www.golfbaansloten.nl/",
+    "https://www.golfbaansloten.nl/over-golfbaan-sloten/adres-en-route"
+  ]
+}

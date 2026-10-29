@@ -1,0 +1,243 @@
+{
+  "slug": "golfbaan-catharinenburg-par-3-melissant",
+  "name": "Golfbaan Catharinenburg Par 3-baan",
+  "club_name": "Golfbaan Catharinenburg / Golfclub Roxenisse",
+  "holes_total": 18,
+  "course_type": "par-3",
+  "address": {
+    "street": "Bouwdijk 9",
+    "postal_code": "3248 LA",
+    "city": "Melissant",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.7739428,
+    "lon": 4.0575558,
+    "source": "Nominatim (OpenStreetMap), adres Bouwdijk 9"
+  },
+  "distance_km_from_dedemsvaart": 187.8,
+  "phone": "0187 60 50 60",
+  "email": "info@catharinenburg.nl",
+  "website": "https://www.catharinenburg.nl",
+  "booking_url": "https://catharinenburg.golfer.intogolf.nl/#/teetimes",
+  "founded": null,
+  "architect": null,
+  "landscape": "polder",
+  "facilities": [
+    "driving range",
+    "oefengreens",
+    "restaurant"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Naast de grote baan heeft Catharinenburg in Melissant een 18-holes par 3-baan van samen 2339 meter. De holes variëren van 71 tot 191 meter en vragen vooral om precieze ijzerslagen. Een goede plek om het korte spel te oefenen of een kortere ronde te lopen.",
+  "loops": [
+    {
+      "name": "Par 3-baan 18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2339,
+          "course_rating": 51.7,
+          "slope": 74,
+          "par": 54
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2339,
+          "course_rating": 54.0,
+          "slope": 79,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 94
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 80
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 191
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 138
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 151
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 158
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 101
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 71
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 176
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 156
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 151
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 145
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 149
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 133
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.catharinenburg.nl/golfcomplex/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/Par-3-catharinenburg.png",
+      "scorecard/Par-3.png",
+      "scorecard/PAR3_baantekening_LDS_0717.jpg",
+      "scorecard/WHS-ROX-Par3.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Eén lengtekolom (geel). CR/slope uit tabel Golfclub Roxenisse 18-01-2021: geel heren 51,7/74, rood dames 54,0/79 (lengte rood niet apart vermeld; hier gelijk aan geel genoteerd als 'geel' dames). 9-holes ratings: 25,9/74 (heren) en 27,0/79 (dames)."
+  },
+  "sources": [
+    "https://www.catharinenburg.nl/golfcomplex/"
+  ]
+}

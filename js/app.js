@@ -77,6 +77,9 @@ function migrate(saved) {
   }
   saved.round.courseId ??= 'hooge-graven';
   saved.homeCourseId ??= 'hooge-graven';
+  // Ook voor gegevens uit de cloud (bij synchroniseren): een oudere versie van de app kende geen playerPool.
+  saved.players ??= [];
+  saved.playerPool = (saved.playerPool ?? []).filter((p) => !saved.players.some((x) => x.name === p.name));
   return saved;
 }
 
@@ -100,8 +103,8 @@ let state = load();
 state.sync ??= { localChangedAt: null, syncedAt: null };
 state.learning ??= { consent: null };
 delete state.apiKey; // de koppeling met de Claude API is eruit; een bewaarde sleutel niet laten staan
-// Spelers van eerdere rondes die nu niet meespelen (met hun handicap, tee en bijnamen).
-state.playerPool = (state.playerPool ?? []).filter((p) => !state.players.some((x) => x.name === p.name));
+// state.playerPool: spelers van eerdere rondes die nu niet meespelen (met hun handicap, tee en
+// bijnamen); migrate() zorgt dat de lijst er altijd is, ook na synchroniseren.
 
 // Lokaal opslaan; een wijziging door de gebruiker wordt daarna ook naar de cloud gestuurd.
 function save({ fromCloud: fromRemote = false } = {}) {
@@ -662,10 +665,21 @@ function renderCloud() {
   } else if (cloud.user) {
     el.innerHTML = `<p class="small">Ingelogd als <b>${esc(cloud.user.email ?? '')}</b>.<br>
       <span class="muted">${esc(cloud.status || 'Je gegevens worden automatisch bewaard op de server.')}</span></p>
+      ${cloudErrorBox()}
       <div class="button-row">
         <button data-action="cloud-sync">Nu synchroniseren</button>
         <button data-action="cloud-logout">Uitloggen</button>
       </div>
+      <details class="cloud-security">
+        <summary class="small">Wachtwoord en toestellen</summary>
+        <form class="cloud-form" data-form="cloud-password">
+          <label>Huidig wachtwoord <input id="cloud-old-password" type="password" autocomplete="current-password" required></label>
+          <label>Nieuw wachtwoord <input id="cloud-new-password" type="password" autocomplete="new-password" minlength="8" placeholder="minstens 8 tekens" required></label>
+          <div class="button-row"><button type="submit">Wachtwoord wijzigen</button></div>
+          <p class="small muted">Andere telefoons en computers worden daarbij uitgelogd.</p>
+        </form>
+        <button class="link small" data-action="cloud-logout-others">Alle andere toestellen uitloggen</button>
+      </details>
       <button class="link small danger" data-action="cloud-delete">Mijn account en gegevens op de server verwijderen</button>`;
   } else {
     el.innerHTML = `<p class="small muted">Log in om je spelers, banen en rondes op de server te bewaren. Op een nieuwe telefoon log je in en staat alles er weer.</p>
@@ -721,6 +735,12 @@ async function cloudAction(action, submitter) {
       syncNow();
     } else if (action === 'cloud-sync') {
       syncNow();
+    } else if (action === 'cloud-password') {
+      await api.changePassword($('#cloud-old-password').value, $('#cloud-new-password').value);
+      cloud.status = 'Wachtwoord gewijzigd. Andere toestellen zijn uitgelogd.';
+    } else if (action === 'cloud-logout-others') {
+      const n = await api.logoutOthers();
+      cloud.status = n ? `${n} ${n === 1 ? 'ander toestel' : 'andere toestellen'} uitgelogd.` : 'Er waren geen andere toestellen ingelogd.';
     } else if (action === 'cloud-logout') {
       await api.signOut();
       cloud.user = null;
@@ -1008,7 +1028,7 @@ function showCoursePicker() {
   const holesText = (c) => (/holes/.test(c.name) ? '' : c.id === 'par3' ? '9 holes' : `${c.holeCount} holes`);
   const heading = (c, dist) => `<button class="course-row" data-action="pick-course" data-course="${esc(c.id)}">
     <span class="course-row-name">${c === home ? '★ ' : ''}${esc(c.name)}</span>
-    <span class="course-row-meta">${[holesText(c), dist].filter(Boolean).join(' · ')}</span></button>`;
+    <span class="course-row-meta">${[holesText(c), dist, (c.closing ?? DEFAULT_COURSES.find((d) => d.id === c.id)?.closing) ? 'gaat sluiten' : ''].filter(Boolean).join(' · ')}</span></button>`;
   const kmText = (c) => (Number.isFinite(km(c, from)) ? `${Math.round(km(c, from))} km` : '');
   const locate = !pickerPos && 'geolocation' in navigator
     ? '<button class="link small" data-action="picker-locate">📍 Zoek baan met GPS</button>' : '';
@@ -1870,6 +1890,7 @@ document.addEventListener('click', (e) => {
     case 'cloud-device':
     case 'cloud-sync':
     case 'cloud-logout':
+    case 'cloud-logout-others':
     case 'cloud-delete':
     case 'cloud-test':
       cloudAction(btn.dataset.action);
@@ -2002,6 +2023,44 @@ try { if (sessionStorage.getItem(BM_KEY) === '1' && buggyEnabled()) enterBuggyMo
 initCloud();
 if (gpsOn()) startGps();
 
+// Nieuwe versie van de app: de nieuwe service worker neemt het meteen over (skipWaiting en
+// clients.claim in sw.js). Dan één keer herladen, zodat ook app.js en de rest nieuw zijn, maar
+// niet midden in typen, inspreken of het bevestigen van een score; de stand staat al in localStorage.
+const busyForReload = () => recognition !== null || pending !== null
+  || ['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName);
+function reloadForUpdate() {
+  if (busyForReload() && document.visibilityState === 'visible') {
+    // Straks opnieuw proberen: na het typen of als de app naar de achtergrond gaat.
+    document.addEventListener('focusout', () => setTimeout(reloadForUpdate, 300), { once: true });
+    document.addEventListener('visibilitychange', reloadForUpdate, { once: true });
+    setTimeout(reloadForUpdate, 30000);
+    return;
+  }
+  if (reloadForUpdate.done) return;
+  reloadForUpdate.done = true;
+  try { sessionStorage.setItem('golfscore-updated', '1'); } catch { /* geen opslag: dan zonder melding */ }
+  location.reload();
+}
+
 if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
+  // De eerste keer dat een service worker de pagina overneemt (eerste installatie) is er niets te
+  // verversen; elke volgende keer is het een nieuwe versie.
+  let controlled = Boolean(navigator.serviceWorker.controller);
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (controlled) reloadForUpdate();
+    controlled = true;
+  });
+  navigator.serviceWorker.register('sw.js').then((reg) => {
+    // Een geopende app (op het beginscherm) laadt niet opnieuw bij terugkomen: dan zelf kijken of er
+    // een nieuwe versie is. Dat is één klein verzoek (sw.js).
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') reg.update().catch(() => {});
+    });
+  }).catch(() => {});
+  try {
+    if (sessionStorage.getItem('golfscore-updated')) {
+      sessionStorage.removeItem('golfscore-updated');
+      toast('Nieuwe versie van de app geladen.');
+    }
+  } catch { /* geen opslag */ }
 }

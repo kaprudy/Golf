@@ -1,0 +1,329 @@
+{
+  "slug": "domburgsche-golfclub-domburg",
+  "name": "Domburgsche Golfclub",
+  "club_name": "Domburgsche Golfclub",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Schelpweg 26",
+    "postal_code": "4357 BP",
+    "city": "Domburg",
+    "province": "Zeeland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.5615,
+    "lon": 3.4895,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 233.5,
+  "phone": "0118 586 106",
+  "email": "secretariaat@domburgschegolfclub.nl",
+  "website": "https://www.domburgschegolfclub.nl/",
+  "booking_url": "https://www.domburgschegolfclub.nl/gasten/tarieven-greenfeespelers",
+  "founded": 1914,
+  "architect": "E.C. Warren (1914); later aangepast met Alan Rijks",
+  "landscape": "links in de duinen aan zee",
+  "facilities": [
+    "driving range",
+    "clubhuis/horeca",
+    "handicarts",
+    "buggy",
+    "trolleys (gratis)",
+    "golfschool"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geldige pas met handicap; buiten juli/augustus max. hcp 36,0, in juli/augustus max. 28,0 (met één medespeler max. 36,0).",
+  "description_nl": "De Domburgsche ligt in de duinen achter het strand van Domburg en is in 1914 aangelegd, waarmee het een van de oudste banen van Nederland is. De 9 holes worden voor 18 holes twee keer gespeeld met deels andere afslagen. Bomkraters uit de Tweede Wereldoorlog zijn in het ontwerp opgenomen als grasbunkers, en de wind maakt het een echte linksbaan.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5217,
+          "course_rating": 67.6,
+          "slope": 123,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4658,
+          "course_rating": 64.8,
+          "slope": 111,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4034,
+          "course_rating": 61.5,
+          "slope": 93,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5217,
+          "course_rating": 73.7,
+          "slope": 128,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4658,
+          "course_rating": 69.9,
+          "slope": 122,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4034,
+          "course_rating": 63.9,
+          "slope": 107,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 268,
+            "rood": 268,
+            "oranje": 225
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 296,
+            "rood": 286,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 124,
+            "oranje": 119
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 504,
+            "rood": 442,
+            "oranje": 403
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135,
+            "rood": 109,
+            "oranje": 103
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 439,
+            "rood": 388,
+            "oranje": 331
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 331,
+            "rood": 295,
+            "oranje": 257
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 163,
+            "rood": 139,
+            "oranje": 91
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 324,
+            "rood": 258,
+            "oranje": 248
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 295,
+            "oranje": 225
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 296,
+            "rood": 286,
+            "oranje": 256
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 142,
+            "rood": 124,
+            "oranje": 119
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 504,
+            "rood": 442,
+            "oranje": 403
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135,
+            "rood": 109,
+            "oranje": 71
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 439,
+            "rood": 388,
+            "oranje": 331
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 331,
+            "rood": 295,
+            "oranje": 257
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 163,
+            "rood": 139,
+            "oranje": 91
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 303,
+            "rood": 271,
+            "oranje": 248
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.domburgschegolfclub.nl/baan/plattegrond",
+    "files": [
+      "scorecard/handicaptabellen.pdf",
+      "scorecard/page.html",
+      "scorecard/holes-montage.png",
+      "scorecard/hole1-10.jpg",
+      "scorecard/hole2-11.jpg",
+      "scorecard/hole3-12.jpg",
+      "scorecard/hole4-13.jpg",
+      "scorecard/hole5-14.jpg",
+      "scorecard/hole6-15.jpg",
+      "scorecard/hole7-16.jpg",
+      "scorecard/hole8-17.jpg",
+      "scorecard/hole9.jpg",
+      "scorecard/hole18.jpg"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Holedata (par, S.I., lengtes geel/rood/oranje) van de officiële holeplattegronden per hole (1/10 t/m 9 en 18); 1e negen oneven S.I., 2e negen even. Holes 1/10 en 5/14 hebben verschillende lengtes. CR/slope uit handicaptabellen 03-06-2025 (18 holes). 9-holesratings heren geel 33,8/123, rood 32,4/110 (1e) en 32,5/111 (2e), oranje 30,8/93; dames geel 36,9/128 (1e) 36,9/127 (2e), rood 34,9/120 en 35,1/123, oranje 32,0/107. Totale lengtes zijn som van de holes (geen totaal op de kaart).",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.domburgschegolfclub.nl/baan",
+    "https://www.domburgschegolfclub.nl/baan/plattegrond",
+    "https://www.domburgschegolfclub.nl/media/Holes/handicaptabellen.pdf",
+    "https://www.domburgschegolfclub.nl/gasten/tarieven-greenfeespelers"
+  ]
+}

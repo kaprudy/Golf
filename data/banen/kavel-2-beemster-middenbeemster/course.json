@@ -1,0 +1,185 @@
+{
+  "slug": "kavel-2-beemster-middenbeemster",
+  "name": "Golfbaan Kavel 2",
+  "club_name": "Golfclub Kavel 2 (Kavel II Beemster)",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Volgerweg 42",
+    "postal_code": "1462 HR",
+    "city": "Middenbeemster",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.5255837,
+    "lon": 4.9210146,
+    "source": "nominatim (Volgerweg 42, Middenbeemster)"
+  },
+  "phone": "+31 299 416 665",
+  "email": "info@kavel2.nl",
+  "website": "https://kavel2.nl/",
+  "booking_url": null,
+  "founded": 2004,
+  "architect": "Hans Oskam (ontwerp 2000)",
+  "landscape": "vlakke polderbaan in de Beemster (UNESCO-werelderfgoed) met sloten en waterpartijen; baan max. 1,5 m hoog",
+  "facilities": [
+    "hotel",
+    "restaurant",
+    "golfschool",
+    "golfshop",
+    "golfsimulator",
+    "footgolf",
+    "par 3-baan (in course)",
+    "buggyverhuur",
+    "lockers"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Geen lidmaatschap nodig (greenfee)",
+  "description_nl": "Negen holes met A-status in de Beemsterpolder, onderdeel van een familiebedrijf met hotel en restaurant. Door de bouwbeperkingen in het UNESCO-gebied is de baan vlak, maar sloten, een eilandgreen op hole 7 en water rond de laatste hole zorgen voor uitdaging. Greenfeespelers zijn welkom.",
+  "loops": [
+    {
+      "name": "9 holes (par 32)",
+      "holes": 9,
+      "par": 32,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": null,
+          "length_m": 2107,
+          "course_rating": null,
+          "slope": null,
+          "par": 32
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": null,
+          "length_m": 1915,
+          "course_rating": null,
+          "slope": null,
+          "par": 32
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 155,
+            "rood": 136
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 277
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 269,
+            "rood": 248
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 126,
+            "rood": 106
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 368,
+            "rood": 338
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 76,
+            "rood": 70
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 306,
+            "rood": 279
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 194,
+            "rood": 176
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 311,
+            "rood": 285
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://kavel2.nl/golfbaan/baanlayout/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-hole-1.html",
+      "scorecard/page-hole-2.html",
+      "scorecard/page-hole-3.html",
+      "scorecard/page-hole-4.html",
+      "scorecard/page-hole-5.html",
+      "scorecard/page-hole-6.html",
+      "scorecard/page-hole-7.html",
+      "scorecard/page-hole-8.html",
+      "scorecard/page-hole-9.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Geen scorekaart-PDF; par, S.I. en lengtes per teebox van de 9 holepagina's (tee-kleur afgeleid van icoonkleur: rood #ef2929, geel #fff130). S.I. alleen oneven (18-holesstijl), geen even S.I. voor een tweede ronde gepubliceerd. Totaal geel 2107 m, rood 1915 m (berekend). Geen course/slope rating gevonden op de site. Er wordt ook een 'in course' par 3-baan (9 holes) genoemd, zonder holegegevens."
+  },
+  "sources": [
+    "https://kavel2.nl/golfbaan/",
+    "https://kavel2.nl/golfbaan/baanlayout/",
+    "https://kavel2.nl/golfbaan/tarieven/",
+    "https://kavel2.nl/hole/hole-1/"
+  ],
+  "distance_km_from_dedemsvaart": 104.3
+}

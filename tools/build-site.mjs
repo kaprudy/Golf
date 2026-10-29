@@ -108,6 +108,7 @@ function badges(c) {
     official(c) ? '<span class="badge ok">Scorekaart van de club</span>' : '<span class="badge warn">Nog te controleren</span>',
     BASE_GEO[c.id] ? '<span class="badge">GPS-afstanden</span>' : '',
     c.countsForIndex === false ? '<span class="badge">Telt niet voor handicap</span>' : '',
+    c.closing ? '<span class="badge warn">Gaat sluiten</span>' : '',
   ].join('');
 }
 
@@ -245,6 +246,7 @@ for (const c of courses) {
     <h1>${esc(title(c))}</h1>
     <p class="lead">${esc(summary)}${esc(ratingSentence)}</p>
     <div class="badges">${badges(c)}</div>
+    ${c.closing ? `<p class="alert">${esc(c.closing)}</p>` : ''}
   </section>
 
   <section class="facts">
@@ -360,7 +362,7 @@ for (const c of courses) {
     ['Hoe installeer ik Golfscore op mijn iPhone?', 'Open kaprudy.github.io/Golf in Safari, tik op de deelknop en kies “Zet op beginscherm”.'],
     ['Hoe installeer ik Golfscore op Android?', 'Open kaprudy.github.io/Golf in Chrome, tik op het menu (drie puntjes) en kies “App installeren” of “Toevoegen aan startscherm”.'],
     ['Heb ik een account nodig?', 'Nee. Je gegevens worden bewaard en gekoppeld aan je telefoon. Met een account met e-mailadres zie je ze ook terug op een nieuwe telefoon.'],
-    ['Welke golfbanen staan erin?', `${DEFAULT_COURSES.length} banen in Overijssel, Gelderland, Drenthe, Friesland, Flevoland, Groningen en net over de grens in Duitsland, met par, stroke index, course rating en slope per tee.`],
+    ['Welke golfbanen staan erin?', `${DEFAULT_COURSES.length} banen in heel Nederland en net over de grens in Duitsland, met par, stroke index, course rating en slope per tee.`],
     ['Mijn baan staat er niet bij. Wat nu?', 'In de app voeg je zelf een baan toe via Instellingen. Je vult de par en stroke index per hole in en de course rating en slope van de tees.'],
     ['Telt een ronde op een par 3-baan mee voor mijn handicap?', 'Nee. Rondes op pitch & putt- en par 3-banen tellen in Golfscore niet mee voor de handicapindicatie; je ziet wel je score en stableford.'],
     ['Hoe nauwkeurig is de afstand tot de green?', 'De app gebruikt de GPS van je telefoon, meestal tot op een paar meter nauwkeurig. De afstand is tot het midden van de green.'],
@@ -409,7 +411,7 @@ Sitemap: ${SITE}/sitemap.xml
 `;
 files['llms.txt'] = `# Golfscore
 
-> Golfscore is een Nederlandstalige web-app voor golfers: slagen inspreken of tikken tijdens de ronde, GPS-afstand tot de green, en na de ronde bruto, stableford, score differential en een handicapindicatie volgens het World Handicap System (WHS). De app werkt ook zonder bereik. Deze site bevat ook de scorekaarten, course ratings en slopes van ${DEFAULT_COURSES.length} golfbanen in Oost-Nederland en net over de grens.
+> Golfscore is een Nederlandstalige web-app voor golfers: slagen inspreken of tikken tijdens de ronde, GPS-afstand tot de green, en na de ronde bruto, stableford, score differential en een handicapindicatie volgens het World Handicap System (WHS). De app werkt ook zonder bereik. Deze site bevat ook de scorekaarten, course ratings en slopes van ${DEFAULT_COURSES.length} golfbanen in Nederland en net over de grens.
 
 - App: ${APP}
 - Broncode: ${REPO}

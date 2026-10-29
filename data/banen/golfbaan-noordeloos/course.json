@@ -1,0 +1,161 @@
+{
+  "slug": "golfbaan-noordeloos",
+  "name": "Golfbaan 9par3 Noordeloos",
+  "club_name": "Golfbaan Noordeloos",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Nieuwendijk 20",
+    "postal_code": "4225 PE",
+    "city": "Noordeloos",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.8980999,
+    "lon": 4.9277511,
+    "source": "Nominatim (OpenStreetMap), adres Nieuwendijk 20 (Maria Johanna Hoeve)"
+  },
+  "distance_km_from_dedemsvaart": 130.3,
+  "phone": "0183 58 9524",
+  "email": "info@golfbaannoordeloos.nl",
+  "website": "https://www.golfbaannoordeloos.nl",
+  "booking_url": "https://www.golfbaannoordeloos.nl/starttijden/",
+  "founded": null,
+  "architect": null,
+  "landscape": "landelijke par 3-baan bij een boerderij in de Alblasserwaard",
+  "facilities": [
+    "oefenfaciliteiten",
+    "golfles",
+    "clinics",
+    "brasserie"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfbaan Noordeloos ligt op het erf van de Maria Johanna Hoeve in de Alblasserwaard (gemeente Molenlanden). Het is een kleine, NGF-gecertificeerde 9-holes par 3-baan met korte holes tussen ongeveer 45 en 110 meter, een brasserie en mogelijkheden voor lessen en clinics.",
+  "loops": [
+    {
+      "name": "9 holes par 3",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "home",
+          "color": null,
+          "gender": null,
+          "length_m": 625,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        },
+        {
+          "name": "qualifying",
+          "color": "yellow",
+          "gender": null,
+          "length_m": 708,
+          "course_rating": null,
+          "slope": null,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "home": 49
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "home": 44
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "home": 81
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "home": 69
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "home": 66
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "home": 82
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "home": 108
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "home": 51
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "home": 75
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/golfbaan-9par3-noordeloos",
+    "files": [
+      "scorecard/hole19-scorecard.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Clubsite (golfbaannoordeloos.nl) geeft 403 voor curl en publiceert via WebFetch geen scorekaart. Par, S.I. en lengtes van Hole19 (tee 'home', totaal 625, eenheid niet vermeld). Hole19 noemt ook een 'qualifying'-tee van 708 zonder holelengtes; GolfPass/GolfAdvisor geven gele tee 708 m met CR 23,3 / slope 75 (niet officieel bevestigd, niet ingevuld). Hole19-ratings voor 'home' (49,8/47 en 51,5/66) zijn onwaarschijnlijk en niet overgenomen."
+  },
+  "sources": [
+    "https://www.golfbaannoordeloos.nl/",
+    "https://www.hole19golf.com/courses/golfbaan-9par3-noordeloos",
+    "https://www.golfpass.com/courses/35672-noordeloos-golf-course/scorecard-and-layout"
+  ]
+}

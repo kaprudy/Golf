@@ -1,0 +1,201 @@
+{
+  "slug": "golfpark-t-caves-wintelre",
+  "name": "Golf & Recreatiepark 't Caves",
+  "club_name": "Golf & Recreatiepark 't Caves",
+  "holes_total": 18,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Veneind 5",
+    "postal_code": "5513 NE",
+    "city": "Wintelre",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.436071,
+    "lon": 5.3371508,
+    "source": "nominatim.openstreetmap.org (Veneind 5)"
+  },
+  "distance_km_from_dedemsvaart": 150.6,
+  "phone": "040-205 1805",
+  "email": "info@hetcaves.nl",
+  "website": "https://hetcaves.nl",
+  "booking_url": null,
+  "founded": 2011,
+  "architect": null,
+  "landscape": "landelijk, omringd door zandpaden, met waterpartijen",
+  "facilities": [
+    "9-holes par 3-baan",
+    "uitgebreid oefengedeelte",
+    "golfschool",
+    "camping",
+    "restaurant"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "9-holesbaan: NGF-baanpermissie; geen kledingvoorschriften",
+  "description_nl": "Golf & Recreatiepark 't Caves ligt in het buitengebied van Wintelre, ten westen van Eindhoven, en combineert golf met een camping. De 9-holesbaan uit 2011 (par 32, met dubbele afslagen) heeft smalle fairways, taaie rough en grote glooiende greens met water dat steeds terugkomt. Daarnaast is er een 9-holes par 3-baan en een groot oefengedeelte.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 64,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 61.6,
+          "slope": 105,
+          "par": 64
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 58.9,
+          "slope": 98,
+          "par": 64
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 65.3,
+          "slope": 113,
+          "par": 64
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 62.4,
+          "slope": 104,
+          "par": 64
+        }
+      ],
+      "hole_data": []
+    },
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 32,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 30.8,
+          "slope": 105,
+          "par": 32
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 29.5,
+          "slope": 98,
+          "par": 32
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 32.7,
+          "slope": 113,
+          "par": 32
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 31.2,
+          "slope": 104,
+          "par": 32
+        }
+      ],
+      "hole_data": []
+    },
+    {
+      "name": "Par 3-baan 18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 47.1,
+          "slope": 62,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 48.6,
+          "slope": 64,
+          "par": 54
+        }
+      ],
+      "hole_data": []
+    },
+    {
+      "name": "Par 3-baan (9 holes)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 23.6,
+          "slope": 62,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 24.3,
+          "slope": 64,
+          "par": 27
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://hetcaves.nl/playing-handicap-tabellen/",
+    "files": [
+      "scorecard/18-holes-par-3.pdf",
+      "scorecard/9-holes-par-3.pdf",
+      "scorecard/page.html",
+      "scorecard/t-Caves-18-holes-Dames.pdf",
+      "scorecard/t-Caves-18-holes-Heren.pdf",
+      "scorecard/t-Caves-9-holes-Dames.pdf",
+      "scorecard/t-Caves-9-holes-Heren.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Alleen playing-handicaptabellen d.d. 15-09-2026 gepubliceerd (9-holesbaan par 32 en par 3-baan par 27, elk ook als 18 holes). Geen scorekaart of holegegevens (par/S.I./lengtes) online gevonden; ook niet op golfify."
+  },
+  "sources": [
+    "https://hetcaves.nl/golfbaan/",
+    "https://hetcaves.nl/playing-handicap-tabellen/",
+    "https://hetcaves.nl/contact/",
+    "https://hetcaves.nl/prijslijst-golfbaan-t-caves-2026/"
+  ]
+}

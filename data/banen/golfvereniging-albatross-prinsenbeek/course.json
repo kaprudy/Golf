@@ -1,0 +1,316 @@
+{
+  "slug": "golfvereniging-albatross-prinsenbeek",
+  "name": "Golfvereniging Albatross",
+  "club_name": "Golfvereniging Albatross",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Weimersedreef 19",
+    "postal_code": "4841 KG",
+    "city": "Prinsenbeek",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.6181,
+    "lon": 4.6987,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 162.5,
+  "phone": "076 5419449",
+  "email": "info@albatrossgolf.nl",
+  "website": "https://www.albatrossgolf.nl/",
+  "booking_url": null,
+  "founded": 1987,
+  "architect": "Alan Rijks",
+  "landscape": "parkbaan op een oud landgoed (voormalig hockeycomplex) bij Breda",
+  "facilities": [
+    "clubhuis met Brasserie Boschdal",
+    "golfpro/lessen",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Albatross is een Bredase golfvereniging uit 1987 die speelt op een 9-holes baan van Alan Rijks bij Prinsenbeek, op het terrein van een voormalig hockeycomplex. De baan werd in fasen aangelegd en was in 1992 compleet. Het clubhuis met brasserie ligt als een klaverblad midden in de baan.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5455,
+          "course_rating": 70.3,
+          "slope": 127,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4828,
+          "course_rating": 67.6,
+          "slope": 112,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4314,
+          "course_rating": 65.3,
+          "slope": 115,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5455,
+          "course_rating": 75.1,
+          "slope": 147,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4828,
+          "course_rating": 72.2,
+          "slope": 128,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4314,
+          "course_rating": 70.4,
+          "slope": 111,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 295,
+            "rood": 270,
+            "oranje": 238
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 95,
+            "oranje": 95
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 258,
+            "rood": 234,
+            "oranje": 209
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 167,
+            "rood": 145,
+            "oranje": 128
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 379,
+            "rood": 335,
+            "oranje": 295
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 361,
+            "rood": 308,
+            "oranje": 268
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 442,
+            "rood": 376,
+            "oranje": 352
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 334,
+            "rood": 307,
+            "oranje": 267
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 404,
+            "rood": 359,
+            "oranje": 305
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 295,
+            "rood": 270,
+            "oranje": 238
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 110,
+            "rood": 95,
+            "oranje": 95
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 258,
+            "rood": 234,
+            "oranje": 209
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 167,
+            "rood": 145,
+            "oranje": 128
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 379,
+            "rood": 335,
+            "oranje": 295
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 361,
+            "rood": 308,
+            "oranje": 268
+          }
+        },
+        {
+          "hole": 16,
+          "par": 5,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 442,
+            "rood": 376,
+            "oranje": 352
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 334,
+            "rood": 307,
+            "oranje": 267
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 359,
+            "rood": 329,
+            "oranje": 305
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.albatrossgolf.nl/de-baan/scorekaart/",
+    "files": [
+      "scorecard/Scorekaart.jpg",
+      "scorecard/Albatross-Heren-handicap-tabel-15-9-2022.pdf",
+      "scorecard/Albatross-Dames-handicap-tabel-15-9-2022.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Scorekaart als kleine afbeelding (500 px) op de site; cijfers gecontroleerd met OUT 2750/2429/2157 en IN 2705/2399/2157 (hole 18 korter dan hole 9). CR/slope uit handicaptabellen 15-09-2022; de scorekaart zelf toont oudere ratings (o.a. geel heren 69,6/134). 9-holesratings heren geel 35,3/129, rood 33,9/111, oranje 32,7/114; dames geel 37,7/147, rood 36,1/131, oranje 35,2/111.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.albatrossgolf.nl/de-baan/scorekaart/",
+    "https://www.albatrossgolf.nl/de-baan/handicap-tabellen/",
+    "https://www.albatrossgolf.nl/de-vereniging/historie/"
+  ]
+}

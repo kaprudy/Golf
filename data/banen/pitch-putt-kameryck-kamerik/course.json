@@ -1,0 +1,233 @@
+{
+  "slug": "pitch-putt-kameryck-kamerik",
+  "name": "Pitch & Putt Kameryck",
+  "club_name": "Pitch & Putt Kameryck",
+  "holes_total": 18,
+  "course_type": "pitch-putt",
+  "address": {
+    "street": "Oortjespad 3",
+    "postal_code": "3471 HD",
+    "city": "Kamerik",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.130472,
+    "lon": 4.9071178,
+    "source": "nominatim (Kameryck, Oortjespad 3, Kamerik)"
+  },
+  "distance_km_from_dedemsvaart": 117.7,
+  "phone": "+31 348 400 771",
+  "email": "info@kameryck.nl",
+  "website": "https://pitch-putt.nl/locaties/kameryck/",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "pitch & puttbaan in het polderlandschap van het Groene Hart",
+  "facilities": [
+    "restaurant",
+    "blotevoetenpad",
+    "groepsarrangementen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "geen golfvaardigheidsbewijs nodig",
+  "description_nl": "Achttien-holes pitch & puttbaan bij recreatieboerderij Kameryck in de polder bij Kamerik. De holes zijn kort (circa 25 tot 70 meter) en je speelt met een pitch- en een putterclub, zonder golfvaardigheidsbewijs. De baan wordt veel gebruikt voor familie-uitjes en bedrijfsuitjes, gecombineerd met het restaurant ter plaatse.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": null,
+          "length_m": 904,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 60
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 51
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 26
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 38
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 53
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 63
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 67
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 56
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 35
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 55
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 40
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 50
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 45
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 58
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 70
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 52
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 35
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/pitch-putt-kameryck",
+    "files": [
+      "scorecard/hole19.html",
+      "scorecard/page.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Geen officiële scorekaart online; par, S.I. en lengtes uit hole19golf.com (tee \"meters\"). Officiële site noemt 18 holes met maximale lengte 70 m. Geen CR/slope."
+  },
+  "sources": [
+    "https://kameryck.nl/activiteiten/pitch-putt",
+    "https://pitch-putt.nl/locaties/kameryck/",
+    "https://www.hole19golf.com/courses/pitch-putt-kameryck"
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "slug": "golfbaan-de-swinkelsche-someren",
+  "name": "Golfbaan De Swinkelsche",
+  "club_name": "Golfbaan De Swinkelsche",
+  "holes_total": 27,
+  "course_type": "27-holes",
+  "address": {
+    "street": "Maarheezerdijk 12",
+    "postal_code": "5712 PC",
+    "city": "Someren",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.3738915,
+    "lon": 5.6673129,
+    "source": "nominatim.openstreetmap.org (De Swinkelsche, Maarheezerdijk 12)"
+  },
+  "distance_km_from_dedemsvaart": 146.8,
+  "phone": null,
+  "email": "info@golfbaandeswinkelsche.nl",
+  "website": "https://www.golfbaandeswinkelsche.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Frank Pont",
+  "landscape": "bos, heide en water (o.a. beekje Peelrijt)",
+  "facilities": [
+    "aquarange (driving range)",
+    "4 oefengreens (putting, chipping, pitching)",
+    "9-holes par 3 Peelrijtbaan",
+    "golfschool",
+    "horeca",
+    "businessclub"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Peelrijtbaan: minimaal baanpermissie of hcp 54; Championship Course: niet expliciet vermeld",
+  "description_nl": "De Swinkelsche ligt tussen Someren en Maarheeze en is een 27-holes complex naar ontwerp van Frank Pont. De 18-holes Championship Course combineert brede fairways met grote, sterk glooiende greens en grillig gevormde bunkers, tussen bos, heide en grote waterpartijen. De 9-holes par 3 Peelrijtbaan rond de aquarange is bedoeld voor beginners en het korte spel.",
+  "loops": [
+    {
+      "name": "Championship Course (18 holes)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "zwart",
+          "color": "black",
+          "gender": "men",
+          "length_m": 6401,
+          "course_rating": 75.3,
+          "slope": 145,
+          "par": 72
+        },
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6125,
+          "course_rating": 73.0,
+          "slope": 138,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5835,
+          "course_rating": 72.1,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5388,
+          "course_rating": 69.8,
+          "slope": 121,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5021,
+          "course_rating": 68.0,
+          "slope": 116,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5835,
+          "course_rating": 77.9,
+          "slope": 146,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5388,
+          "course_rating": 75.1,
+          "slope": 137,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5021,
+          "course_rating": 73.5,
+          "slope": 132,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 390,
+            "wit": 373,
+            "geel": 354,
+            "blauw": 323,
+            "rood": 303
+          }
+        },
+        {
+          "hole": 2,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 445,
+            "wit": 442,
+            "geel": 434,
+            "blauw": 404,
+            "rood": 376
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 275,
+            "wit": 271,
+            "geel": 264,
+            "blauw": 251,
+            "rood": 238
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 415,
+            "wit": 400,
+            "geel": 376,
+            "blauw": 353,
+            "rood": 329
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 215,
+            "wit": 199,
+            "geel": 182,
+            "blauw": 167,
+            "rood": 154
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 346,
+            "wit": 337,
+            "geel": 321,
+            "blauw": 302,
+            "rood": 283
+          }
+        },
+        {
+          "hole": 7,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 476,
+            "wit": 456,
+            "geel": 436,
+            "blauw": 395,
+            "rood": 356
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 429,
+            "wit": 412,
+            "geel": 389,
+            "blauw": 368,
+            "rood": 333
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 174,
+            "wit": 158,
+            "geel": 145,
+            "blauw": 120,
+            "rood": 105
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 428,
+            "wit": 408,
+            "geel": 391,
+            "blauw": 360,
+            "rood": 342
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 305,
+            "wit": 290,
+            "geel": 274,
+            "blauw": 261,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 170,
+            "wit": 144,
+            "geel": 134,
+            "blauw": 120,
+            "rood": 110
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 360,
+            "wit": 350,
+            "geel": 335,
+            "blauw": 314,
+            "rood": 282
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 520,
+            "wit": 502,
+            "geel": 469,
+            "blauw": 448,
+            "rood": 424
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 354,
+            "wit": 337,
+            "geel": 332,
+            "blauw": 323,
+            "rood": 305
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 364,
+            "wit": 347,
+            "geel": 332,
+            "blauw": 281,
+            "rood": 268
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 182,
+            "wit": 174,
+            "geel": 163,
+            "blauw": 148,
+            "rood": 133
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "zwart": 553,
+            "wit": 525,
+            "geel": 504,
+            "blauw": 450,
+            "rood": 421
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfbaandeswinkelsche.nl/baanlayout/",
+    "files": [
+      "scorecard/Swinkelsche-Dames.pdf",
+      "scorecard/Swinkelsche-Heren.pdf",
+      "scorecard/Swinkelsche-Par-3-baan-18-holes-Dames-en-Heren.pdf",
+      "scorecard/hole-1.jpg",
+      "scorecard/hole-10.jpg",
+      "scorecard/hole-11.jpg",
+      "scorecard/hole-12.jpg",
+      "scorecard/hole-13.jpg",
+      "scorecard/hole-14.jpg",
+      "scorecard/hole-15.jpg",
+      "scorecard/hole-16.jpg",
+      "scorecard/hole-17.jpg",
+      "scorecard/hole-18.jpg",
+      "scorecard/hole-2.jpg",
+      "scorecard/hole-3.jpg",
+      "scorecard/hole-4.jpg",
+      "scorecard/hole-5.jpg",
+      "scorecard/hole-6.jpg",
+      "scorecard/hole-7.jpg",
+      "scorecard/hole-8.jpg",
+      "scorecard/hole-9.jpg",
+      "scorecard/page-baaninformatie.html",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Geen scorekaart-PDF; par, S.I. en lengtes per tee (zwart/wit/geel/blauw/rood) afgelezen van de hole-tekeningen op /baanlayout/ (2021). CR/slope uit handicaptabellen 27-11-2024 (ook per 9 holes). Peelrijtbaan (9 holes par 3): alleen ratings 18 holes (geel heren 47,3/56, rood heren 46,8/55, geel dames 48,6/60, rood dames 48,0/59), geen holegegevens - niet als loop opgenomen. Telefoonnummer niet eenduidig op de contactpagina gevonden."
+  },
+  "sources": [
+    "https://www.golfbaandeswinkelsche.nl/baanlayout/",
+    "https://www.golfbaandeswinkelsche.nl/baaninformatie/",
+    "https://www.golfbaandeswinkelsche.nl/contact/",
+    "https://www.golfbaandeswinkelsche.nl/gasten/tarieven-2026/"
+  ]
+}

@@ -1,0 +1,612 @@
+{
+  "slug": "crossmoor-weert",
+  "name": "Golfbaan Crossmoor",
+  "club_name": "Golf- en Country Club Crossmoor",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Laurabosweg 8",
+    "postal_code": "6006 VR",
+    "city": "Weert",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.2225922,
+    "lon": 5.6441135,
+    "source": "nominatim (Laurabosweg 8, Weert)"
+  },
+  "distance_km_from_dedemsvaart": 163.1,
+  "phone": "0495 518 438",
+  "email": "info@domeinlaurabos.com",
+  "website": "https://www.domeinlaurabos.com/golfbaan-crossmoor/",
+  "booking_url": "https://domeinlaurabos.smarteventmanager.com/book/?CompanyCode=DLB&StandardReservationGroupCode=golfbaan",
+  "founded": null,
+  "architect": "Joan Dudok van Heel (eerste 9 holes) en Hans Hertzberger (tweede 9 holes, 1988)",
+  "landscape": "bos en heide in de Laurabossen, langs de Tungelroysche beek, met waterpartijen",
+  "facilities": [
+    "par 3-baan (9 holes)",
+    "driving range",
+    "oefenfaciliteiten",
+    "golfpro/lessen",
+    "Brasserie Laurius",
+    "Hotel Laurabos",
+    "tennis"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "NGF-handicapbewijs tonen verplicht",
+  "description_nl": "Crossmoor ligt in de Laurabossen bij Weert, begrensd door bos en de meanderende Tungelroysche beek. De Championship Course combineert open en door bomen omzoomde holes met waterpartijen; de eerste negen zijn van Joan Dudok van Heel, de tweede negen van Hans Hertzberger (1988). Er is daarnaast een 9-holes par 3-baan, en hotel en brasserie van Domein Laurabos liggen naast de baan.",
+  "loops": [
+    {
+      "name": "Championship Course (18 holes)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 6198,
+          "course_rating": 73.5,
+          "slope": 136,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 6013,
+          "course_rating": 72.6,
+          "slope": 133,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5323,
+          "course_rating": 69.3,
+          "slope": 124,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5182,
+          "course_rating": 68.4,
+          "slope": 123,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4471,
+          "course_rating": 64.5,
+          "slope": 115,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 6013,
+          "course_rating": 78.6,
+          "slope": 145,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5323,
+          "course_rating": 74.8,
+          "slope": 127,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5182,
+          "course_rating": 74.1,
+          "slope": 125,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4471,
+          "course_rating": 69.5,
+          "slope": 120,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 390,
+            "geel": 375,
+            "blauw": 344,
+            "rood": 326,
+            "oranje": 275
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 169,
+            "geel": 162,
+            "blauw": 150,
+            "rood": 150,
+            "oranje": 141
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 478,
+            "geel": 468,
+            "blauw": 401,
+            "rood": 391,
+            "oranje": 346
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 345,
+            "geel": 340,
+            "blauw": 296,
+            "rood": 296,
+            "oranje": 254
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 397,
+            "geel": 385,
+            "blauw": 335,
+            "rood": 325,
+            "oranje": 279
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 344,
+            "geel": 340,
+            "blauw": 293,
+            "rood": 293,
+            "oranje": 253
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 425,
+            "geel": 420,
+            "blauw": 357,
+            "rood": 345,
+            "oranje": 299
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 183,
+            "geel": 155,
+            "blauw": 163,
+            "rood": 146,
+            "oranje": 126
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 462,
+            "geel": 457,
+            "blauw": 395,
+            "rood": 380,
+            "oranje": 324
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 173,
+            "geel": 166,
+            "blauw": 155,
+            "rood": 140,
+            "oranje": 121
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 325,
+            "geel": 320,
+            "blauw": 290,
+            "rood": 290,
+            "oranje": 246
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 392,
+            "geel": 354,
+            "blauw": 330,
+            "rood": 315,
+            "oranje": 279
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 323,
+            "geel": 310,
+            "blauw": 282,
+            "rood": 275,
+            "oranje": 235
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 352,
+            "geel": 345,
+            "blauw": 297,
+            "rood": 280,
+            "oranje": 236
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 466,
+            "geel": 457,
+            "blauw": 390,
+            "rood": 385,
+            "oranje": 339
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 377,
+            "geel": 367,
+            "blauw": 330,
+            "rood": 330,
+            "oranje": 279
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 133,
+            "geel": 133,
+            "blauw": 121,
+            "rood": 121,
+            "oranje": 110
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 464,
+            "geel": 459,
+            "blauw": 394,
+            "rood": 394,
+            "oranje": 329
+          }
+        }
+      ]
+    },
+    {
+      "name": "Par-3 Course (9 holes, 2x gespeeld)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 48.2,
+          "slope": 68,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 49.9,
+          "slope": 69,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.domeinlaurabos.com/golfbaan-crossmoor/championship-course/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-par-3-course.html",
+      "scorecard/cc-hole-01.jpg",
+      "scorecard/cc-hole-02.jpg",
+      "scorecard/cc-hole-03.jpg",
+      "scorecard/cc-hole-04.jpg",
+      "scorecard/cc-hole-05.jpg",
+      "scorecard/cc-hole-06.jpg",
+      "scorecard/cc-hole-07.jpg",
+      "scorecard/cc-hole-08.jpg",
+      "scorecard/cc-hole-09.jpg",
+      "scorecard/cc-hole-10.jpg",
+      "scorecard/cc-hole-11.jpg",
+      "scorecard/cc-hole-12.jpg",
+      "scorecard/cc-hole-13.jpg",
+      "scorecard/cc-hole-14.jpg",
+      "scorecard/cc-hole-15.jpg",
+      "scorecard/cc-hole-16.jpg",
+      "scorecard/cc-hole-17.jpg",
+      "scorecard/cc-hole-18.jpg",
+      "scorecard/handicap-cc-heren.pdf",
+      "scorecard/handicap-cc-dames.pdf",
+      "scorecard/handicap-par-3-dames-heren.pdf",
+      "scorecard/plattegrond-p3.webp"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Championship Course compleet: par, SI en lengtes van de officiele hole-afbeeldingen (cc-hole-01..18), CR/slope uit de baanhandicaptabellen van 05-10-2021; GolfingRecord geeft dezelfde lengtes maar oudere ratings. Par-3 Course: alleen ratings (18 holes = 2x9: geel heren CR 48.2/SR 68, rood dames CR 49.9/SR 69, par 54); holelengtes en SI niet gepubliceerd (de site toont placeholdertekst 'Par 4 / Stroke 5'), dus null. www.crossmoor.nl verwijst door naar domeinlaurabos.com."
+  },
+  "sources": [
+    "https://www.domeinlaurabos.com/golfbaan-crossmoor/",
+    "https://www.domeinlaurabos.com/golfbaan-crossmoor/championship-course/",
+    "https://www.domeinlaurabos.com/golfbaan-crossmoor/par-3-course/",
+    "https://www.domeinlaurabos.com/golfbaan-crossmoor/greenfee/",
+    "https://www.golfingrecord.com/golf-scorecard/59eda3a5-7d2d-4a7e-821e-58bd92462fca"
+  ]
+}

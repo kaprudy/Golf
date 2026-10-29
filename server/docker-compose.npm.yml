@@ -8,7 +8,8 @@ services:
     container_name: golf-web
     restart: unless-stopped
     volumes:
-      - ./web-npm.conf:/etc/nginx/conf.d/default.conf:ro
+      # Hele map (niet het losse bestand): na git checkout ziet 'nginx -s reload' in deploy.sh dan de nieuwe versie.
+      - ./nginx-npm:/etc/nginx/conf.d:ro
       - ./site:/srv/site:ro
       # Banenlijst van de app (voor banen.html). De hele map, niet het losse bestand: git vervangt
       # courses.js bij elke deploy door een nieuw bestand, en een los gekoppeld bestand blijft dan oud.

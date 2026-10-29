@@ -1,0 +1,286 @@
+{
+  "slug": "golfbaan-ooghduyne-julianadorp",
+  "name": "Golfbaan Ooghduyne",
+  "club_name": "Golfclub Ooghduyne",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Ooghduyne 520",
+    "postal_code": "1787 PC",
+    "city": "Julianadorp",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.8952504,
+    "lon": 4.7331982,
+    "source": "nominatim (Ooghduyne 520, Julianadorp)"
+  },
+  "phone": "+31 223 698 319",
+  "email": "info@golfbaanooghduyne.nl",
+  "website": "https://golfbaanooghduyne.nl/",
+  "booking_url": "https://ooghduyne.golfer.intogolf.nl/#/teetimes",
+  "founded": 1992,
+  "architect": "Gerard Jol",
+  "landscape": "duinrand/zandgrond met bomenrijen en waterpartijen, bij Landal Beach Resort Ooghduyne",
+  "facilities": [
+    "driving range (on water)",
+    "oefenbunker",
+    "pitching green",
+    "putting green",
+    "par 3-/familiebaan",
+    "clubhuis Duinoogh",
+    "golfschool",
+    "buggy's"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "GVB/handicap vereist op de 9-holesbaan; familiebaan zonder GVB",
+  "description_nl": "Negen holes met A-status op zandgrond vlak achter de duinen bij Julianadorp aan Zee, ontworpen door Gerard Jol. Door aparte afslagen voor de tweede ronde speel je 18 holes waarbij enkele holes van par wisselen. De baan is vrijwel het hele jaar bespeelbaar; ernaast ligt een familiebaan voor beginners.",
+  "loops": [
+    {
+      "name": "18 holes (2x 9, aparte afslagen)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5545,
+          "course_rating": 70.3,
+          "slope": 123,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4784,
+          "course_rating": 66.1,
+          "slope": 114,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5545,
+          "course_rating": 76.1,
+          "slope": 134,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4784,
+          "course_rating": 71.2,
+          "slope": 122,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 5,
+          "si_women": 5,
+          "lengths_m": {
+            "geel": 339,
+            "rood": 297
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 3,
+          "si_women": 3,
+          "lengths_m": {
+            "geel": 340,
+            "rood": 298
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": 13,
+          "lengths_m": {
+            "geel": 160,
+            "rood": 140
+          }
+        },
+        {
+          "hole": 4,
+          "par": 5,
+          "si": 9,
+          "si_women": 7,
+          "lengths_m": {
+            "geel": 448,
+            "rood": 378
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": 1,
+          "lengths_m": {
+            "geel": 420,
+            "rood": 353
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 11,
+          "si_women": 11,
+          "lengths_m": {
+            "geel": 319,
+            "rood": 283
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": 15,
+          "lengths_m": {
+            "geel": 127,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 8,
+          "par": 5,
+          "si": 7,
+          "si_women": 9,
+          "lengths_m": {
+            "geel": 465,
+            "rood": 386
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 17,
+          "si_women": 17,
+          "lengths_m": {
+            "geel": 141,
+            "rood": 127
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 4,
+          "si_women": 4,
+          "lengths_m": {
+            "geel": 342,
+            "rood": 297
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 6,
+          "si_women": 8,
+          "lengths_m": {
+            "geel": 325,
+            "rood": 280
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 10,
+          "si_women": 14,
+          "lengths_m": {
+            "geel": 186,
+            "rood": 163
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 2,
+          "si_women": 2,
+          "lengths_m": {
+            "geel": 413,
+            "rood": 344
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 14,
+          "si_women": 10,
+          "lengths_m": {
+            "geel": 441,
+            "rood": 379
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 12,
+          "si_women": 12,
+          "lengths_m": {
+            "geel": 314,
+            "rood": 272
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": 16,
+          "lengths_m": {
+            "geel": 139,
+            "rood": 136
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 8,
+          "si_women": 6,
+          "lengths_m": {
+            "geel": 459,
+            "rood": 375
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 16,
+          "si_women": 18,
+          "lengths_m": {
+            "geel": 167,
+            "rood": 154
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfbaanooghduyne.nl/banen/",
+    "files": [
+      "scorecard/Holes-Golfbaan-Ooghduynen.pdf",
+      "scorecard/Ooghduyne-Heren-nieuwe-handicap-tabellen.pdf",
+      "scorecard/Ooghduyne-Dames-nieuwe-handicaptabellen.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Geen losse scorekaart; holegegevens uit het holeboekje (PDF, 2023): par, lengte en index per tee geel en rood. Gele en rode tee hebben elk een eigen S.I.: 'si' = index gele tee, 'si_women' = index rode tee (geldt ook voor heren van rood). Ratings uit handicaptabellen 30-06-2022. Totaal geel 5545 m klopt met site; totaal rood (4784 m) berekend uit de holelengtes. Familiebaan (par 3) zonder gepubliceerde scorekaart niet opgenomen; voetgolf genegeerd."
+  },
+  "sources": [
+    "https://golfbaanooghduyne.nl/banen/",
+    "https://golfbaanooghduyne.nl/contact/",
+    "https://golfbaanooghduyne.nl/club/",
+    "https://golfbaanooghduyne.nl/tarieven/"
+  ],
+  "distance_km_from_dedemsvaart": 120.7
+}

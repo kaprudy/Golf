@@ -1,0 +1,657 @@
+{
+  "slug": "golfbaan-het-rijk-van-nijmegen",
+  "name": "Golfbaan Het Rijk van Nijmegen",
+  "club_name": "Golfbaan Het Rijk van Nijmegen",
+  "holes_total": 45,
+  "course_type": "27-holes",
+  "address": {
+    "street": "Postweg 17",
+    "postal_code": "6561 KJ",
+    "city": "Groesbeek",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.7902888,
+    "lon": 5.9224192,
+    "source": "nominatim (Postweg 17, Groesbeek)"
+  },
+  "distance_km_from_dedemsvaart": 97.3,
+  "phone": "+31 24 397 6644",
+  "email": "info@golfbaanhetrijkvannijmegen.nl",
+  "website": "https://www.golfenophetrijk.nl/nijmegen.html",
+  "booking_url": null,
+  "founded": 1985,
+  "architect": "Baron P. Rolin",
+  "landscape": "heuvelachtige parkbaan met oude bomenlanen en waste areas",
+  "facilities": [
+    "clubhuis",
+    "restaurant",
+    "golfshop",
+    "driving range",
+    "oefenfaciliteiten",
+    "buggy's",
+    "handicarts",
+    "golfschool"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Groot golfcomplex met 45 holes op de stuwwal tussen Nijmegen en Groesbeek: een 18-holes Nijmeegse baan en de 27-holes Groesbeekse baan met de lussen Noord, Oost en Zuid. Grote hoogteverschillen, blinde holes, oude lanen en waste areas geven de baan karakter, met uitzicht tot over de Duitse grens. Door lussen te combineren zijn zes verschillende 18-holesrondes mogelijk.",
+  "loops": [
+    {
+      "name": "Nijmeegse baan 1-18",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 72.1,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 71.8,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 78.5,
+          "slope": 144,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5484,
+          "course_rating": 69.1,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5484,
+          "course_rating": 75.1,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 68.2,
+          "slope": 123,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 74.0,
+          "slope": 129,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 64.5,
+          "slope": 109,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 69.0,
+          "slope": 124,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 292,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 289,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 444,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 358,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 145,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 430,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 152,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 337,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 316,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 301,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 416,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 154,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 442,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 313,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 344,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 116,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 304,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "blauw": 331,
+            "wit": null,
+            "geel": null,
+            "rood": null,
+            "oranje": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Groesbeekse baan Noord & Oost",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 69.1,
+          "slope": 128,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 68.0,
+          "slope": 123,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 73.3,
+          "slope": 137,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 66.8,
+          "slope": 119,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 71.4,
+          "slope": 131,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 64.8,
+          "slope": 114,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 69.5,
+          "slope": 123,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 63.1,
+          "slope": 110,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 67.0,
+          "slope": 115,
+          "par": 71
+        }
+      ],
+      "hole_data": []
+    },
+    {
+      "name": "Groesbeekse baan Oost & Zuid",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 70.9,
+          "slope": 135,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 69.9,
+          "slope": 132,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 75.9,
+          "slope": 144,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 68.8,
+          "slope": 123,
+          "par": 71
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 73.6,
+          "slope": 139,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 67.5,
+          "slope": 117,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 72.1,
+          "slope": 134,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 65.1,
+          "slope": 116,
+          "par": 71
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 69.9,
+          "slope": 125,
+          "par": 71
+        }
+      ],
+      "hole_data": []
+    },
+    {
+      "name": "Groesbeekse baan Zuid & Noord",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 71.6,
+          "slope": 131,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 70.6,
+          "slope": 128,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 76.5,
+          "slope": 142,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 69.1,
+          "slope": 122,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 74.4,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 67.6,
+          "slope": 122,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 73.3,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 65.4,
+          "slope": 118,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 70.7,
+          "slope": 123,
+          "par": 72
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfenophetrijk.nl/nijmegen/baandetails.html",
+    "files": [
+      "scorecard/hole19.html",
+      "scorecard/nijmegen-handicaptabel-dames-GB-noord-oost-01032021.pdf",
+      "scorecard/nijmegen-handicaptabel-dames-GB-oost-zuid-01032021.pdf",
+      "scorecard/nijmegen-handicaptabel-dames-GB-zuid-noord-01032021.pdf",
+      "scorecard/nijmegen-handicaptabel-dames-NB-1-18-01032021.pdf",
+      "scorecard/nijmegen-handicaptabel-heren-GB-noord-oost-01032021.pdf",
+      "scorecard/nijmegen-handicaptabel-heren-GB-oost-zuid-01032021.pdf",
+      "scorecard/nijmegen-handicaptabel-heren-GB-zuid-noord-01032021.pdf",
+      "scorecard/nijmegen-handicaptabel-heren-NB-1-18-01032021.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "CR/slope officieel (handicaptabellen 01-03-2021). Geen officiële scorekaart met holegegevens online gevonden. Nijmeegse baan: par, S.I. en lengtes (alleen blauw) uit hole19golf.com (\"yds\"-label, waarschijnlijk meters). Totale lengtes volgens de site (heren geel / dames rood): Nijmeegse 6002/5300 m, Noord&Oost 5238/4613, Oost&Zuid 5515/4908, Zuid&Noord 5697/5103 m. Gemengde combinaties met de Nijmeegse 1-9 of 10-18 (ook gerateerd) niet opgenomen."
+  },
+  "sources": [
+    "https://www.golfenophetrijk.nl/nijmegen/baandetails.html",
+    "https://www.golfenophetrijk.nl/nijmegen/baaninformatie.html",
+    "https://www.hole19golf.com/courses/golfbaan-het-rijk-van-nijmegen"
+  ]
+}

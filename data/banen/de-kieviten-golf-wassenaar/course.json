@@ -1,0 +1,250 @@
+{
+  "slug": "de-kieviten-golf-wassenaar",
+  "name": "Golf De Kieviten",
+  "club_name": "De Kieviten (golfafdeling)",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Dr. Mansveltkade 11",
+    "postal_code": "2242 TZ",
+    "city": "Wassenaar",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1539871,
+    "lon": 4.388145,
+    "source": "nominatim.openstreetmap.org (adres Dr. Mansveltkade 11, Wassenaar)"
+  },
+  "distance_km_from_dedemsvaart": 149.1,
+  "phone": "06 3195 6823",
+  "email": null,
+  "website": "https://www.kieviten.nl/",
+  "booking_url": null,
+  "founded": 1983,
+  "architect": null,
+  "landscape": "compacte parkbaan op het sportpark van omnisportvereniging De Kieviten, tussen hockey- en tennisvelden, met bomen en water",
+  "facilities": [
+    "9-holes executive baan (par 29)",
+    "driving range",
+    "oefen-/puttinggreen",
+    "clubhuis met bar/restaurant",
+    "golfles"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Volgens 1golf.eu (niet geverifieerd): reserveren nodig, clubpas met geregistreerde handicap; ma-vr handicap 36 vereist.",
+  "description_nl": "De Kieviten is een Wassenaarse omnisportvereniging (opgericht 1926) waarvan de golfafdeling sinds 1983 een eigen korte 9-holesbaan heeft op het sportpark aan de Dr. Mansveltkade, naast Rozenstein. De baan van par 29 telt zeven par 3's en twee korte par 4's en ligt ingeklemd tussen de hockey- en tennisvelden, zodat vooral nauwkeurig ijzerspel telt.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x gespeeld)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2840,
+          "course_rating": 56.4,
+          "slope": 91,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 59.1,
+          "slope": 99,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 71
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 185
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 235
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 169
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 228
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 160
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 132
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 71
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 185
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 235
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 169
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 228
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 115
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 125
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hole19golf.com/courses/golf-de-kieviten",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/golfpass.html",
+      "scorecard/1golf.html"
+    ],
+    "source": "third-party",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Officiele site kieviten.nl gaf 403 (CloudFront) voor curl en WebFetch; geen officiele scorekaart gezien. Par, S.I. (1-18, 9 holes 2x gespeeld: 1e ronde oneven, 2e ronde even) en lengtes (metrisch, per 9 holes 1420 m, totaal 2840 m) van Hole19 (tee 'men'); som pars 29+29=58 en som lengtes 2840 kloppen. CR/SR: Hole19 en GolfPass heren 56,4/91 en dames 59,1/99 (beide 2840 m); 1golf.eu geeft Geel heren 56,4/97 en Rood dames 59,6/102 - afwijkend, bron onzeker. Teenamen geel (heren) / rood (dames) volgens 1golf.eu; Hole19 noemt alleen 'men'/'ladies'. Lengtes dameste (rood) per hole onbekend (Hole19 noemt ook 2840 m totaal, mogelijk dezelfde afslagen). Telefoon niet eenduidig (+31 70 220 9005 bij 1golf/GolfPass, +31 70 511 4649 elders) en daarom null. 1golf noemt seizoen 9 januari - 31 augustus en greenfee EUR 30 (EUR 20 jeugd/introducees). Hole19 noemt de baan ten onrechte 18 holes. Wassenaarse Golf Groendael is een andere baan (Groenendaal 3)."
+  },
+  "sources": [
+    "https://www.hole19golf.com/courses/golf-de-kieviten",
+    "https://www.golfpass.com/courses/23878-kieviten-golf-club/scorecard-and-layout",
+    "https://www.1golf.eu/club/golfclub-de-kieviten/",
+    "https://nominatim.openstreetmap.org/",
+    "https://www.kieviten.nl"
+  ],
+  "status": "open",
+  "status_note": "Open; clubsite actief (99 jaar). 9 holes C-baan, 1420 m, 7x par 3 en 2x par 4 (par 29), qualifying mogelijk. kieviten.nl geeft 403 aan scripts maar werkt in de browser.",
+  "status_checked": "2026-10-29"
+}

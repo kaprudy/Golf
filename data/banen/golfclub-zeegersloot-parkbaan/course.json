@@ -1,0 +1,269 @@
+{
+  "slug": "golfclub-zeegersloot-parkbaan",
+  "name": "Golfclub Zeegersloot – Parkbaan (par 3)",
+  "club_name": "Golfclub Zeegersloot",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Kromme Aarweg 5",
+    "postal_code": "2403 NB",
+    "city": "Alphen aan den Rijn",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.1439815,
+    "lon": 4.6972412,
+    "source": "nominatim.openstreetmap.org (adres Kromme Aarweg 5, Alphen aan den Rijn; restaurant/clubhuis)"
+  },
+  "distance_km_from_dedemsvaart": 130.0,
+  "phone": "0172 44 54 41",
+  "email": "secretariaat@zeegersloot.nl",
+  "website": "https://zeegersloot.nl",
+  "booking_url": null,
+  "founded": 1984,
+  "architect": null,
+  "landscape": "polder/park langs de N207",
+  "facilities": [
+    "driving range",
+    "oefencentrum",
+    "18-holesbaan Griend/Heuvel",
+    "clubhuis"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Spelers met baanpermissie spelen vanaf de oranje tees",
+  "description_nl": "De Parkbaan is de 9-holes par 3-baan van Golfclub Zeegersloot, gelegen tussen het clubhuis en de N207. De holes variëren van ruim 110 tot bijna 190 meter vanaf geel/rood en liggen tussen greppels en sloten. Beginners met baanpermissie spelen vanaf sterk verkorte oranje afslagen.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x gespeeld)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel/rood",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2504,
+          "course_rating": 54.3,
+          "slope": 75,
+          "par": 54
+        },
+        {
+          "name": "geel/rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2504,
+          "course_rating": 56.5,
+          "slope": 81,
+          "par": 54
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 1040,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 151,
+            "oranje": 60
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 116,
+            "oranje": 40
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 121,
+            "oranje": 50
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 150,
+            "oranje": 80
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 189,
+            "oranje": 70
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 132,
+            "oranje": 50
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 111,
+            "oranje": 50
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 122,
+            "oranje": 50
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 160,
+            "oranje": 70
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 151,
+            "oranje": 60
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 116,
+            "oranje": 40
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 121,
+            "oranje": 50
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 150,
+            "oranje": 80
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 189,
+            "oranje": 70
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 132,
+            "oranje": 50
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 111,
+            "oranje": 50
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 122,
+            "oranje": 50
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel/rood": 160,
+            "oranje": 70
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://zeegersloot.nl/praktischeinfo/",
+    "files": [
+      "scorecard/Scorekaart_PB-2020.pdf",
+      "scorecard/Zeegersloot-WHS-tabel-Par-3-Baan.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "zeegersloot.nl geeft 403 op curl; PDF's opgehaald via WebFetch. Scorekaart Parkbaan december 2020: één kolom 'Geel/Rood' (heren geel, dames rood, zelfde lengtes) en een oranje kolom voor baanpermissie (geen rating). CR/SR uit WHS-tabel Par-3 Baan d.d. 19-01-2021 (18 holes; 9 holes heren 27,2/75, dames 28,3/81)."
+  },
+  "sources": [
+    "https://zeegersloot.nl/banen/",
+    "https://zeegersloot.nl/praktischeinfo/"
+  ]
+}

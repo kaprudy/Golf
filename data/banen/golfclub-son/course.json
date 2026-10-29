@@ -1,0 +1,157 @@
+{
+  "slug": "golfclub-son",
+  "name": "Golfclub Son",
+  "club_name": "Golfclub Son",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Rooijseweg 11",
+    "postal_code": "5691 PA",
+    "city": "Son en Breugel",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.5239114,
+    "lon": 5.4884411,
+    "source": "nominatim.openstreetmap.org (Rooijseweg 11, sportpark De Gentiaan)"
+  },
+  "distance_km_from_dedemsvaart": 136.9,
+  "phone": "0499 - 842581",
+  "email": "clubhuis@golfson.nl",
+  "website": "https://golfson.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "sportpark (vlakke fairways tussen sportvelden, bosranden, water)",
+  "facilities": [
+    "driving range (12 afslagplaatsen, 4 overdekt)",
+    "oefengreens",
+    "oefenbunkers",
+    "pitch- en chipveld",
+    "clubhuis",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Minimaal NGF-golfbaanpermissie (NGF-pas tonen)",
+  "description_nl": "Golfclub Son speelt op sportpark De Gentiaan aan de rand van Son. De negen holes, op één na par 3, zijn slim tussen de sportvelden aangelegd en hebben vlakke fairways maar gewelfde greens, met bunkers, water en boomgroepen als hindernissen. Op vaste dagdelen dient de baan als oefenaccommodatie met range en oefengreens.",
+  "loops": [
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 28,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": null,
+          "slope": null,
+          "par": 28
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": null,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": null,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": null,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": null,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": null,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 116
+          }
+        },
+        {
+          "hole": 6,
+          "par": null,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102
+          }
+        },
+        {
+          "hole": 7,
+          "par": null,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 252
+          }
+        },
+        {
+          "hole": 8,
+          "par": null,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 136
+          }
+        },
+        {
+          "hole": 9,
+          "par": null,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 81
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfson.nl/courseplanner",
+    "files": [
+      "scorecard/page-golfify.html",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Officieel (de-baan + courseplanner): 9 holes, 8 par 3 en 1 par 4; lengtes alleen voor holes 5-9 (116, 102, 252, 136, 81 m; hole 7 is de langste, vermoedelijk de par 4). Teekleur van die lengtes niet vermeld (hier als \"geel\" opgeslagen). Geen scorekaart of CR/slope gepubliceerd. Golfify.io geeft par 27 (9x par 3), S.I. 5,15,9,11,3,7,1,13,17 en wit 183,105,98,94,147,102,262,111,81 = 1183 m - wijkt af van de clubsite en is niet overgenomen (page-golfify.html bewaard)."
+  },
+  "sources": [
+    "https://golfson.nl/de-baan",
+    "https://golfson.nl/courseplanner",
+    "https://golfson.nl/gasten",
+    "https://golfson.nl/contact",
+    "https://www.golfify.io/courses/golfclub-son"
+  ]
+}

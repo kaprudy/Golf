@@ -1,0 +1,246 @@
+{
+  "slug": "golfbaan-hoenderdaal",
+  "name": "Golfbaan Hoenderdaal",
+  "club_name": "Health Center Hoenderdaal (golf)",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Hoendersteeg 7",
+    "postal_code": "3972 NA",
+    "city": "Driebergen-Rijsenburg",
+    "province": "Utrecht",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.0544603,
+    "lon": 5.2609041,
+    "source": "nominatim (Hoendersteeg 7, Driebergen)"
+  },
+  "distance_km_from_dedemsvaart": 101.6,
+  "phone": "+31 343 529 333",
+  "email": null,
+  "website": "https://hoenderdaal.com/",
+  "booking_url": null,
+  "founded": 1996,
+  "architect": "Alan Rijks",
+  "landscape": "parkachtige baan met bunkers en water",
+  "facilities": [
+    "TrackMan driving range (32 overdekte plekken, verlicht)",
+    "chipping green",
+    "putting green",
+    "oefenbunkers",
+    "sportshop",
+    "tennis",
+    "fitness/health center"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "minimaal NGF-baanpermissie",
+  "description_nl": "Korte 9-holesbaan (par 28, acht par 3's en één par 4) bij het sport- en gezondheidscentrum Hoenderdaal in Driebergen, sinds 1996 en ontworpen door Alan Rijks. De parkachtige baan met bunkers en water is toegankelijk voor iedereen met baanpermissie. Er is een overdekte TrackMan-driving range met verlichting.",
+  "loops": [
+    {
+      "name": "Par 3/4-baan (9 holes 2x)",
+      "holes": 18,
+      "par": 56,
+      "tees": [
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": "men",
+          "length_m": 1754,
+          "course_rating": 50.2,
+          "slope": 77,
+          "par": 56
+        },
+        {
+          "name": "standaard",
+          "color": null,
+          "gender": "women",
+          "length_m": 1754,
+          "course_rating": 51.6,
+          "slope": 80,
+          "par": 56
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 85
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 99
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 61
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 222
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 45
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 89
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 65
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 101
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 110
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 85
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 99
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 61
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 222
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 45
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 89
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 65
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 101
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "standaard": 110
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://hoenderdaal.com/sportaanbod/golf-utrechtseheuvelrug/golfbaan",
+    "files": [
+      "scorecard/Handicaptabellendamesenheren2023.jpg",
+      "scorecard/Hole_lay_out_golfbaan_hoenderdaal.pdf",
+      "scorecard/golfbaan_plattegrond_en_layout.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Hole-lay-out (PDF) met par, lengte en S.I. per hole (1/10 t/m 9/18); één afslag. Baanhandicaptabel 2023 (18 holes par 56; 9 holes heren 25,1/77, dames 25,8/80)."
+  },
+  "sources": [
+    "https://hoenderdaal.com/sportaanbod/golf-utrechtseheuvelrug/golfbaan"
+  ]
+}

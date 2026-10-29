@@ -1,0 +1,102 @@
+{
+  "slug": "akkermans-golf-de-heen",
+  "name": "Akkermans Golf De Heen",
+  "club_name": "Akkermans Leisure & Golf / Golfvereniging De Heensche",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Heense Molenweg 23",
+    "postal_code": "4655 TB",
+    "city": "De Heen",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.607,
+    "lon": 4.2453,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 187.3,
+  "phone": "+31 167 502621",
+  "email": "info@akkermans.com",
+  "website": "https://akkermans.com/golfbaan/",
+  "booking_url": "https://akkermans.com/toegang-en-reserveren/",
+  "founded": null,
+  "architect": null,
+  "landscape": "landelijk polderlandschap aan de Brabantse Wal met waterpartijen en hoogteverschillen",
+  "facilities": [
+    "driving range 200 m (deels overdekt)",
+    "oefengreens met bunker",
+    "golfschool",
+    "grand café met terras"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Baanpermissie of handicapbewijs vereist; zonder alleen onder begeleiding van iemand met een geldig handicapbewijs.",
+  "description_nl": "Par 3-baan van Akkermans Leisure & Golf in De Heen, waar Brabant en Zeeland elkaar raken; ook golfvereniging De Heensche speelt hier. De 9 greens hebben elk twee afslagplaatsen, waardoor een ronde van 18 holes ontstaat met holes van ongeveer 62 tot 115 meter. Waterpartijen, bunkers en glooiende greens maken de korte baan uitdagend.",
+  "loops": [
+    {
+      "name": "Par 3-baan 18 holes (9 greens, 18 afslagplaatsen)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 48.1,
+          "slope": 68,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 48.0,
+          "slope": 67,
+          "par": 54
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 49.5,
+          "slope": 69,
+          "par": 54
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 49.4,
+          "slope": 68,
+          "par": 54
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://deheensche.nl/de-baan/scorekaart-akkermansgolf/",
+    "files": [
+      "scorecard/20250107-Nieuwe-baanindeling.jpg",
+      "scorecard/20250106-handicaptabel-18-holes-Heren.pdf",
+      "scorecard/20250106-handicaptabel-18-holes-Dames.pdf",
+      "scorecard/page.html",
+      "scorecard/akkermans-golfbaan.html"
+    ],
+    "source": "official",
+    "complete": false,
+    "notes": "Begin 2025 is de baan aangepast en de holevolgorde vernieuwd (nieuwe plattegrond 07-01-2025); de nieuwe scorekaart is volgens De Heensche nog niet gepubliceerd. Daarom geen holedata. Ratings uit de handicaptabellen van 06-01-2025 (18 holes par 54). Oudere derden-gegevens (GolfPass/Golfify: 9 holes van 68-114 m, 738 m) dateren van vóór de wijziging en spreken elkaar tegen over de S.I.; niet overgenomen.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://deheensche.nl/",
+    "https://deheensche.nl/de-baan/handicaptabellen-akkermans-golf/",
+    "https://akkermans.com/golfbaan/",
+    "https://akkermans.com/toegang-en-reserveren/"
+  ]
+}

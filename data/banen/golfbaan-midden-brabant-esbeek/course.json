@@ -1,0 +1,384 @@
+{
+  "slug": "golfbaan-midden-brabant-esbeek",
+  "name": "Golfbaan Midden-Brabant",
+  "club_name": "Golfclub Midden-Brabant",
+  "holes_total": 27,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Dunsedijk 1",
+    "postal_code": "5085 ND",
+    "city": "Esbeek",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.4439,
+    "lon": 5.1466,
+    "source": "golfkaart.com/api/kaart.json"
+  },
+  "distance_km_from_dedemsvaart": 156.9,
+  "phone": "013 516 9966",
+  "email": "receptie@golfmiddenbrabant.nl",
+  "website": "https://www.golfmiddenbrabant.nl/",
+  "booking_url": "https://www.golfmiddenbrabant.nl/gasten/starttijdentarieven",
+  "founded": 2001,
+  "architect": null,
+  "landscape": "Brabants coulisselandschap op landgoed De Utrecht, met solitaire bomen, lanen en waterpartijen",
+  "facilities": [
+    "9-holes par 3 pitch & putt-baan (35-95 m, vrij toegankelijk)",
+    "driving range",
+    "oefengreen",
+    "horeca in boerderij De Ekster",
+    "lockers",
+    "vergaderruimte"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfbaan Midden-Brabant ligt op landgoed De Utrecht bij Esbeek en werd in 2001 aangelegd. De gevarieerde 18-holes par-72-baan loopt langs bospartijen, lanen en waterpartijen, met onder meer een dubbelgreen voor de par 5-holes 3 en 6 en een par 3 over water. Naast de grote baan is er een vrij toegankelijke 9-holes pitch & putt-baan.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 5875,
+          "course_rating": 72.0,
+          "slope": 141,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5593,
+          "course_rating": 70.4,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5362,
+          "course_rating": 69.7,
+          "slope": 126,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4926,
+          "course_rating": 67.0,
+          "slope": 120,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4691,
+          "course_rating": 65.8,
+          "slope": 116,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5593,
+          "course_rating": 76.6,
+          "slope": 147,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5362,
+          "course_rating": 75.7,
+          "slope": 139,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4926,
+          "course_rating": 72.8,
+          "slope": 132,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4691,
+          "course_rating": 70.3,
+          "slope": 130,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 394,
+            "geel": 368,
+            "blauw": 337,
+            "rood": 337,
+            "oranje": 310
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 238,
+            "geel": 227,
+            "blauw": 216,
+            "rood": 188,
+            "oranje": 178
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 481,
+            "geel": 454,
+            "blauw": 405,
+            "rood": 397,
+            "oranje": 387
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 144,
+            "geel": 135,
+            "blauw": 135,
+            "rood": 118,
+            "oranje": 118
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 383,
+            "geel": 361,
+            "blauw": 321,
+            "rood": 321,
+            "oranje": 312
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 478,
+            "geel": 460,
+            "blauw": 460,
+            "rood": 403,
+            "oranje": 380
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 193,
+            "geel": 183,
+            "blauw": 167,
+            "rood": 160,
+            "oranje": 149
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 327,
+            "geel": 306,
+            "blauw": 306,
+            "rood": 272,
+            "oranje": 255
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 334,
+            "geel": 322,
+            "blauw": 322,
+            "rood": 287,
+            "oranje": 275
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 326,
+            "geel": 312,
+            "blauw": 312,
+            "rood": 276,
+            "oranje": 269
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 300,
+            "geel": 300,
+            "blauw": 292,
+            "rood": 245,
+            "oranje": 236
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 463,
+            "geel": 440,
+            "blauw": 383,
+            "rood": 383,
+            "oranje": 371
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 191,
+            "geel": 181,
+            "blauw": 171,
+            "rood": 153,
+            "oranje": 153
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 464,
+            "geel": 440,
+            "blauw": 440,
+            "rood": 378,
+            "oranje": 363
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 166,
+            "geel": 152,
+            "blauw": 152,
+            "rood": 125,
+            "oranje": 125
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 303,
+            "geel": 303,
+            "blauw": 294,
+            "rood": 294,
+            "oranje": 247
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 352,
+            "geel": 330,
+            "blauw": 330,
+            "rood": 298,
+            "oranje": 290
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 338,
+            "geel": 319,
+            "blauw": 319,
+            "rood": 291,
+            "oranje": 273
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfmiddenbrabant.nl/de_baan/baanoverzicht",
+    "files": [
+      "scorecard/scorekaart-juli-2024.png",
+      "scorecard/Midden-Brabant-Heren-26-06-24.pdf",
+      "scorecard/Midden-Brabant-Dames-26-06-24.pdf",
+      "scorecard/par-3-lay-out-2025.png",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "complete": true,
+    "notes": "Scorekaart juli 2024 (afbeelding; Out 2972/2816/2669/2483/2364, In 2903/2777/2693/2443/2327, Tot 5875/5593/5362/4926/4691; klopt). CR/slope uit tabellen 26-06-2024. De 9-holes par 3 pitch & putt-baan (holes 35-95 m) heeft geen gepubliceerde holelengtes; alleen een plattegrond.",
+    "retrieved": "2026-10-28"
+  },
+  "sources": [
+    "https://www.golfmiddenbrabant.nl/de_baan",
+    "https://www.golfmiddenbrabant.nl/de_baan/baanoverzicht",
+    "https://www.golfmiddenbrabant.nl/de_baan/stroke_index_tabellen",
+    "https://www.golfmiddenbrabant.nl/gasten/pitch__putt_baan"
+  ]
+}

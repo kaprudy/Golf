@@ -1,0 +1,346 @@
+{
+  "slug": "the-dutch-spijk",
+  "name": "The Dutch",
+  "club_name": "The Dutch Golf",
+  "holes_total": 18,
+  "course_type": "18-holes",
+  "address": {
+    "street": "Haarweg 3",
+    "postal_code": "4212 KJ",
+    "city": "Spijk (West Betuwe)",
+    "province": "Gelderland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.8501949,
+    "lon": 5.0199612,
+    "source": "nominatim (Haarweg 3, Spijk)"
+  },
+  "distance_km_from_dedemsvaart": 128.8,
+  "phone": "+31 88 339 9120",
+  "email": "membershipservices@thedutch.nl",
+  "website": "https://thedutch.nl/",
+  "booking_url": null,
+  "founded": 2011,
+  "architect": "Colin Montgomerie",
+  "landscape": "rivierlandschap/polder langs de Linge met veel water",
+  "facilities": [
+    "clubhuis",
+    "restaurant",
+    "academy",
+    "putting studio",
+    "clubfitting",
+    "driving range",
+    "vergaderfaciliteiten"
+  ],
+  "greenfee_welcome": false,
+  "requirements": "private club: spelen als member of gast van een member",
+  "description_nl": "Private championshipbaan bij Spijk, vlak bij Gorinchem, in 2011 geopend en ontworpen onder leiding van Colin Montgomerie. De par 71-baan ligt in het rivierenlandschap met veel water en strategisch geplaatste bunkers, en heeft vier tees met namen in plaats van kleuren. De club richt zich op members en hun gasten en heeft een uitgebreide academy.",
+  "loops": [
+    {
+      "name": "18 holes",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "The Dutch Futures",
+          "color": null,
+          "gender": "men",
+          "length_m": 6331,
+          "course_rating": 74.7,
+          "slope": 144,
+          "par": 71
+        },
+        {
+          "name": "Made in Scotland",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5817,
+          "course_rating": 72.0,
+          "slope": 143,
+          "par": 71
+        },
+        {
+          "name": "Made in Scotland",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5817,
+          "course_rating": 79.4,
+          "slope": 159,
+          "par": 71
+        },
+        {
+          "name": "The Dutch",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 5326,
+          "course_rating": 69.9,
+          "slope": 131,
+          "par": 71
+        },
+        {
+          "name": "The Dutch",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 5326,
+          "course_rating": 75.8,
+          "slope": 150,
+          "par": 71
+        },
+        {
+          "name": "Tartan",
+          "color": "red",
+          "gender": "men",
+          "length_m": 5076,
+          "course_rating": 68.7,
+          "slope": 128,
+          "par": 71
+        },
+        {
+          "name": "Tartan",
+          "color": "red",
+          "gender": "women",
+          "length_m": 5076,
+          "course_rating": 74.4,
+          "slope": 145,
+          "par": 71
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 361,
+            "Made in Scotland": 303,
+            "The Dutch": 291,
+            "Tartan": 263
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 404,
+            "Made in Scotland": 370,
+            "The Dutch": 340,
+            "Tartan": 340
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 362,
+            "Made in Scotland": 332,
+            "The Dutch": 320,
+            "Tartan": 301
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 147,
+            "Made in Scotland": 125,
+            "The Dutch": 113,
+            "Tartan": 102
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 414,
+            "Made in Scotland": 338,
+            "The Dutch": 376,
+            "Tartan": 332
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 448,
+            "Made in Scotland": 442,
+            "The Dutch": 431,
+            "Tartan": 362
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 318,
+            "Made in Scotland": 297,
+            "The Dutch": 284,
+            "Tartan": 256
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 169,
+            "Made in Scotland": 148,
+            "The Dutch": 136,
+            "Tartan": 117
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 425,
+            "Made in Scotland": 396,
+            "The Dutch": 349,
+            "Tartan": 349
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 168,
+            "Made in Scotland": 158,
+            "The Dutch": 136,
+            "Tartan": 136
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 444,
+            "Made in Scotland": 410,
+            "The Dutch": 373,
+            "Tartan": 373
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 376,
+            "Made in Scotland": 342,
+            "The Dutch": 303,
+            "Tartan": 303
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 510,
+            "Made in Scotland": 499,
+            "The Dutch": 429,
+            "Tartan": 429
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 194,
+            "Made in Scotland": 164,
+            "The Dutch": 154,
+            "Tartan": 122
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 506,
+            "Made in Scotland": 476,
+            "The Dutch": 409,
+            "Tartan": 409
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 160,
+            "Made in Scotland": 150,
+            "The Dutch": 119,
+            "Tartan": 119
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 368,
+            "Made in Scotland": 345,
+            "The Dutch": 303,
+            "Tartan": 303
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "The Dutch Futures": 557,
+            "Made in Scotland": 522,
+            "The Dutch": 460,
+            "Tartan": 460
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://thedutch.nl/tees-scorecard/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/tees_dutch@2x-e1617701110906.png"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Par, S.I. en lengtes per hole van de holepagina's (thedutch.nl/holes/hole-1 t/m 18, 4 lengtes in volgorde Futures/Made in Scotland/The Dutch/Tartan, volgorde afgeleid uit de totalen); CR/slope en totalen uit de tees-afbeelding. Hole 5 vermeldt 338 m voor Made in Scotland en 376 m voor The Dutch (mogelijk omgewisseld). Geen PDF-scorekaart online. Controle: 18 holes Made in Scotland: som holes 5817 vs kaart 5867 (verschil -50)."
+  },
+  "sources": [
+    "https://thedutch.nl/tees-scorecard/",
+    "https://thedutch.nl/holes/",
+    "https://thedutch.nl/contact-en-bereikbaarheid/",
+    "https://thedutch.nl/geschiedenis/"
+  ]
+}

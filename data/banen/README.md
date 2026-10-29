@@ -1,8 +1,10 @@
-# Banen rond Dedemsvaart (≤ 80 km)
+# Golfbanen in Nederland
 
-Baangegevens voor import in de app: 80 golfbanen (75 NL, 5 DE) binnen 80 km hemelsbreed van
-Dedemsvaart, verzameld op 28-10-2026 uit de scorekaarten van de clubs (waar die er niet zijn: Hole19,
-Golfify, GolfPass; zie `scorecard.source` en `scorecard.notes` per baan).
+Baangegevens voor import in de app: alle speelbare golfbanen in Nederland (18, 9 en 27 holes, par 3,
+pitch & putt en shortgolf met een gepubliceerde scorekaart), plus een paar banen net over de grens in
+Duitsland. Per provincie verzameld op 28-10-2026 uit de scorekaarten en handicaptabellen van de clubs;
+waar die er niet zijn uit Hole19, Golfify, GolfPass of GolfingRecord (zie `scorecard.source` en
+`scorecard.notes` per baan). Gecontroleerd tegen de clublijst van golf.nl.
 
 | Bestand | Inhoud |
 |---|---|
@@ -40,4 +42,4 @@ Elke lus (of 18-holes combinatie) wordt een baan in `DEFAULT_COURSES`. Banen die
 `js/courses.js` staan (Hooge Graven, De Hoek, Gelpenberg, Driene, Lochem, …) worden overgeslagen; zie
 `SKIP`, `REPLACE` en `LABEL` in het script. Niet overgenomen: lussen van 12 holes (de app kent 9 of 18),
 banen zonder holegegevens die geen par 3-baan zijn, en tees waarvan de par afwijkt van die van de baan.
-Verhoog na een wijziging ook `CACHE` in `sw.js`.
+De cacheversie in `sw.js` hoeft niet meer met de hand omhoog: de deploy zet er de commit in.

@@ -1,0 +1,402 @@
+{
+  "slug": "golfbaan-overloon",
+  "name": "Golfbaan Overloon",
+  "club_name": "Golfbaan Overloon",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Kuluutweg 8",
+    "postal_code": "5825 BC",
+    "city": "Overloon",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.5766993,
+    "lon": 5.9531214,
+    "source": "nominatim.openstreetmap.org (Kuluutweg 8)"
+  },
+  "distance_km_from_dedemsvaart": 119.0,
+  "phone": "06 - 57 13 88 93",
+  "email": "info@golfbaanoverloon.nl",
+  "website": "https://www.golfbaanoverloon.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "landelijk, met waterpartijen (o.a. bij holes 6, 7 en 9)",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "chipping green",
+    "golfclinics",
+    "golfprofessionals",
+    "horeca",
+    "overnachten"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golfbaan Overloon is een kleinschalige 9-holes par 3/4-baan in het buitengebied van Overloon, in het Land van Cuijk. De baan telt zeven korte par 3's en twee par 4's, met water bij een aantal holes, en is daardoor ook geschikt voor beginnende golfers. Er zijn oefenfaciliteiten en clinics.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 60,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 3128,
+          "course_rating": 58.6,
+          "slope": 84,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2828,
+          "course_rating": 57.3,
+          "slope": 82,
+          "par": 60
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 3128,
+          "course_rating": 60.0,
+          "slope": 98,
+          "par": 60
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2828,
+          "course_rating": 60.6,
+          "slope": 93,
+          "par": 60
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 265
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 158,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 280,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 82,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 147
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 290,
+            "rood": 253
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 265
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 158,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 280,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 82,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 147
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 290,
+            "rood": 253
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        }
+      ]
+    },
+    {
+      "name": "9 holes",
+      "holes": 9,
+      "par": 30,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1564,
+          "course_rating": 29.3,
+          "slope": 84,
+          "par": 30
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 1414,
+          "course_rating": 28.7,
+          "slope": 82,
+          "par": 30
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 302,
+            "rood": 265
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 158,
+            "rood": 122
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 280,
+            "rood": 240
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 102,
+            "rood": 102
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 95
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 82,
+            "rood": 82
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 147,
+            "rood": 147
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 290,
+            "rood": 253
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 108,
+            "rood": 108
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfbaanoverloon.nl/golfbaan-overloon/baaninfo/",
+    "files": [
+      "scorecard/overloon-whs-tabellen-aangepast-web-dames.pdf",
+      "scorecard/overloon-whs-tabellen-aangepast-web-heren.pdf",
+      "scorecard/page.html",
+      "scorecard/scorekaart_binnenzijde-proef.pdf",
+      "scorecard/tee-borden-2018.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart \"binnenzijde-proef\" (PDF): twee lengtekolommen zonder kleuraanduiding in de tekstlaag - als geel/rood aangenomen (handicaptabellen kennen alleen geel en rood). CR/slope uit WHS-tabellen 12-01-2021 (heren 9 en 18 holes, dames 18 holes; dames 9 holes niet goed leesbaar in de PDF en weggelaten). 9-holes S.I. in 18-holes stijl (oneven). Tee-borden 2018 (PDF, 10 MB) meegeleverd."
+  },
+  "sources": [
+    "https://www.golfbaanoverloon.nl/golfbaan-overloon/baaninfo/",
+    "https://www.golfbaanoverloon.nl/",
+    "https://www.golfbaanoverloon.nl/golfbaan-overloon/tarieven/"
+  ]
+}

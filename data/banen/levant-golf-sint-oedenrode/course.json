@@ -1,0 +1,356 @@
+{
+  "slug": "levant-golf-sint-oedenrode",
+  "name": "Levant Golf (voorheen Golfbaan De Schoot)",
+  "club_name": "Levant",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Schootsedijk 18",
+    "postal_code": "5491 TD",
+    "city": "Sint-Oedenrode",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.5843626,
+    "lon": 5.4408209,
+    "source": "nominatim.openstreetmap.org (adrespunt Schootsedijk 18)"
+  },
+  "distance_km_from_dedemsvaart": 132.7,
+  "phone": "+31 (0)413-473011",
+  "email": "reception@levant.nl",
+  "website": "https://www.levant.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "parkachtig met waterpartijen (buitengebied Olland)",
+  "facilities": [
+    "driving range (deels overdekt)",
+    "putting green",
+    "oefengreens",
+    "6-holes par 3 Short Course",
+    "Golf Academy",
+    "restaurant"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "9/18 holes: GVB/baanpermissie (niet expliciet vermeld); Short Course zonder GVB of baanpermissie",
+  "description_nl": "Levant is de vernieuwde naam van de golfbaan De Schoot in het buitengebied van Sint-Oedenrode, tegen Schijndel aan. De 9-holesbaan van par 36 speelt met waterpartijen en goed geplaatste bunkers en kan met aparte tees en strokeverdeling als 18 holes worden gelopen. Daarnaast is er een kleine par 3-baan van zes holes voor beginners en het korte spel.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 72,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5736,
+          "course_rating": 71.4,
+          "slope": 130,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "men",
+          "length_m": 5384,
+          "course_rating": 69.5,
+          "slope": 115,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4936,
+          "course_rating": 67.2,
+          "slope": 114,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": 4438,
+          "course_rating": 64.5,
+          "slope": 107,
+          "par": 72
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5736,
+          "course_rating": 77.4,
+          "slope": 139,
+          "par": 72
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": "women",
+          "length_m": 5384,
+          "course_rating": 74.5,
+          "slope": 136,
+          "par": 72
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4936,
+          "course_rating": 73.1,
+          "slope": 134,
+          "par": 72
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": 4438,
+          "course_rating": 69.2,
+          "slope": 119,
+          "par": 72
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 282,
+            "blauw": 267,
+            "rood": 245,
+            "oranje": 224
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 336,
+            "blauw": 312,
+            "rood": 294,
+            "oranje": 264
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 464,
+            "blauw": 452,
+            "rood": 389,
+            "oranje": 347
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 121,
+            "blauw": 115,
+            "rood": 99,
+            "oranje": 89
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 349,
+            "blauw": 335,
+            "rood": 291,
+            "oranje": 262
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 479,
+            "blauw": 436,
+            "rood": 424,
+            "oranje": 386
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 284,
+            "blauw": 271,
+            "rood": 237,
+            "oranje": 213
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 177,
+            "blauw": 145,
+            "rood": 152,
+            "oranje": 135
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 377,
+            "blauw": 359,
+            "rood": 333,
+            "oranje": 299
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 282,
+            "blauw": 267,
+            "rood": 245,
+            "oranje": 224
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 367,
+            "blauw": 312,
+            "rood": 333,
+            "oranje": 264
+          }
+        },
+        {
+          "hole": 12,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 484,
+            "blauw": 452,
+            "rood": 402,
+            "oranje": 347
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 119,
+            "blauw": 115,
+            "rood": 102,
+            "oranje": 89
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 354,
+            "blauw": 335,
+            "rood": 298,
+            "oranje": 262
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 460,
+            "blauw": 436,
+            "rood": 408,
+            "oranje": 386
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 284,
+            "blauw": 271,
+            "rood": 237,
+            "oranje": 213
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 157,
+            "blauw": 145,
+            "rood": 128,
+            "oranje": 135
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 360,
+            "blauw": 359,
+            "rood": 319,
+            "oranje": 299
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.levant.nl/golfbaan/",
+    "files": [
+      "scorecard/Handicap-tabel-dames.pdf",
+      "scorecard/Handicap-tabel-heren.pdf",
+      "scorecard/Levant-Golf_Scorekaart_18-holes.pdf",
+      "scorecard/Levant-Golf_Scorekaart_9-holes.pdf",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaarten 9 en 18 holes (apr. 2026) hebben dezelfde inhoud: 9 holes 2x met eigen S.I. en voor geel/rood andere lengtes op 10-18. Kleuren geel/blauw/rood/oranje voor de 4 meterkolommen afgeleid uit de volgorde van de handicaptabellen (Golfclub De Schoot, 20-09-2022); opvallend: kolom 2 (blauw) is op hole 8 en 11 korter dan kolom 3 (rood) - zo gedrukt. CR/slope van de kaart; handicaptabel 2022 geeft heren blauw 69,6/119 i.p.v. 69,5/115. Ook 9-holes ratings per helft in de tabellen. 6-holes Short Course: geen kaart."
+  },
+  "sources": [
+    "https://www.levant.nl/golfbaan/",
+    "https://www.levant.nl/contact/",
+    "https://www.levant.nl/over-ons/"
+  ]
+}

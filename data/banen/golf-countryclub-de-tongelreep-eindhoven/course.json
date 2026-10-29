@@ -1,0 +1,309 @@
+{
+  "slug": "golf-countryclub-de-tongelreep-eindhoven",
+  "name": "Golf- en Countryclub De Tongelreep",
+  "club_name": "Golf- en Countryclub De Tongelreep",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Charles Roelslaan 15",
+    "postal_code": "5644 HX",
+    "city": "Eindhoven",
+    "province": "Noord-Brabant",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.4083651,
+    "lon": 5.4738223,
+    "source": "nominatim.openstreetmap.org (Charles Roelslaan 15)"
+  },
+  "distance_km_from_dedemsvaart": 148.8,
+  "phone": "040 252 09 62",
+  "email": "info@golfdetongelreep.nl",
+  "website": "https://www.golfdetongelreep.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "parkbaan met licht glooiende fairways en waterpartijen",
+  "facilities": [
+    "driving range (Golfcampus)",
+    "par 3-baan (6 holes, deels in aanleg)",
+    "Golf Academy",
+    "clubrestaurant Hole 19",
+    "buggyverhuur"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "De Tongelreep ligt aan de zuidkant van Eindhoven naast het zwembad- en sportcomplex van dezelfde naam. De 9-holes parkbaan is in 2026 vernieuwd tot een par 35 (par 70 over 18 holes) met smalle, licht glooiende fairways, kleine greens en verschillende waterpartijen. Naast de baan liggen een driving range en een kleine par 3-baan.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x)",
+      "holes": 18,
+      "par": 70,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5430,
+          "course_rating": 68.5,
+          "slope": 123,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4668,
+          "course_rating": 64.8,
+          "slope": 109,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 60.2,
+          "slope": 108,
+          "par": 70
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5430,
+          "course_rating": 74.1,
+          "slope": 131,
+          "par": 70
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4668,
+          "course_rating": 70.1,
+          "slope": 122,
+          "par": 70
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 63.6,
+          "slope": 103,
+          "par": 70
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 335,
+            "rood": 270
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 330,
+            "rood": 270
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 374,
+            "rood": 335
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 315,
+            "rood": 279
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135,
+            "rood": 125
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 421,
+            "rood": 371
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 164,
+            "rood": 137
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 168,
+            "rood": 128
+          }
+        },
+        {
+          "hole": 9,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 473,
+            "rood": 419
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 335,
+            "rood": 270
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 330,
+            "rood": 270
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 374,
+            "rood": 335
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 315,
+            "rood": 279
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 135,
+            "rood": 125
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 421,
+            "rood": 371
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 164,
+            "rood": 137
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 168,
+            "rood": 128
+          }
+        },
+        {
+          "hole": 18,
+          "par": 5,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 473,
+            "rood": 419
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfdetongelreep.nl/baan-layout-2026",
+    "files": [
+      "scorecard/handicaptabel-dames-18-tijdelijk-2026-07-28.pdf",
+      "scorecard/handicaptabel-heren-18-tijdelijk-2026-07-28.pdf",
+      "scorecard/hole-1.png",
+      "scorecard/hole-2.png",
+      "scorecard/hole-3.png",
+      "scorecard/hole-4.png",
+      "scorecard/hole-5.png",
+      "scorecard/hole-6.png",
+      "scorecard/hole-7.png",
+      "scorecard/hole-8.png",
+      "scorecard/hole-9.png",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Vernieuwde baan (qualifying vanaf 23-08-2026). Par en lengtes geel/rood per hole van de hole-afbeeldingen op /baan-layout-2026 (hole 1/10 t/m 9/18); geen scorekaart met S.I. gepubliceerd, oranje lengtes onbekend. Op hole 3 komt een nieuwe gele tee (huidige geel wordt rood). CR/slope uit tijdelijke 18-holes handicaptabellen d.d. 28-07-2026. Par 3-baan (6 holes) niet opgenomen."
+  },
+  "sources": [
+    "https://www.golfdetongelreep.nl/baan-layout-2026",
+    "https://www.golfdetongelreep.nl/golfbaan",
+    "https://www.golfdetongelreep.nl/tarieven2026",
+    "https://www.golfdetongelreep.nl/par3-baan"
+  ]
+}

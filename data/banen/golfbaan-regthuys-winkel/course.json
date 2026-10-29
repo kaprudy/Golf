@@ -1,0 +1,749 @@
+{
+  "slug": "golfbaan-regthuys-winkel",
+  "name": "Golfbaan Regthuys",
+  "club_name": "Golfvereniging Regthuys",
+  "holes_total": 27,
+  "course_type": "27-holes",
+  "address": {
+    "street": "Limmerschouw 49B",
+    "postal_code": "1731 RM",
+    "city": "Winkel",
+    "province": "Noord-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.754016,
+    "lon": 4.9086498,
+    "source": "nominatim (Limmerschouw 49, Winkel)"
+  },
+  "phone": "+31 224 540 216",
+  "email": "contact@regthuysgolf.nl",
+  "website": "https://www.regthuysgolf.nl/",
+  "booking_url": "https://www.regthuysgolf.nl/reserveren",
+  "founded": 2006,
+  "architect": null,
+  "landscape": "Westfries polderlandschap met waterpartijen, o.a. een green binnen de Westfriese Omringdijk en een tulpvormige hole",
+  "facilities": [
+    "driving range (Trackman)",
+    "9-holes par 3-baan (korte lus)",
+    "putting green",
+    "clubhuis/horeca",
+    "golfshop",
+    "golflessen",
+    "buggy's/handicarts",
+    "footgolf",
+    "partygolf"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Publieke golfbaan in Winkel met twee negens (Tulpenlus en Dijklus, samen par 71) en een korte par 3-lus. Opvallend zijn de hole met een green binnen de Westfriese Omringdijk en de hole in de vorm van een tulp. De baan groeide tussen 2006 en 2013 stap voor stap uit tot 27 holes en staat bekend om een gastvrije, ongedwongen sfeer.",
+  "loops": [
+    {
+      "name": "Tulpenlus + Dijklus (18 holes)",
+      "holes": 18,
+      "par": 71,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 5408,
+          "course_rating": 69.4,
+          "slope": 123,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 5201,
+          "course_rating": 68.3,
+          "slope": 124,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 4535,
+          "course_rating": 65.5,
+          "slope": 108,
+          "par": 71
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 5201,
+          "course_rating": 73.5,
+          "slope": 136,
+          "par": 71
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 4535,
+          "course_rating": 69.8,
+          "slope": 125,
+          "par": 71
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 300,
+            "geel": 289,
+            "rood": 248
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 312,
+            "geel": 292,
+            "rood": 222
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 448,
+            "geel": 442,
+            "rood": 407
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 320,
+            "geel": 311,
+            "rood": 277
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 288,
+            "geel": 283,
+            "rood": 260
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 248,
+            "geel": 243,
+            "rood": 226
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 150,
+            "geel": 145,
+            "rood": 135
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 142,
+            "geel": 136,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 301,
+            "geel": 296,
+            "rood": 246
+          }
+        },
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 373,
+            "geel": 337,
+            "rood": 293
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 186,
+            "geel": 160,
+            "rood": 130
+          }
+        },
+        {
+          "hole": 12,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 333,
+            "geel": 330,
+            "rood": 262
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 341,
+            "geel": 336,
+            "rood": 309
+          }
+        },
+        {
+          "hole": 14,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 527,
+            "geel": 494,
+            "rood": 430
+          }
+        },
+        {
+          "hole": 15,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 435,
+            "geel": 430,
+            "rood": 388
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 131,
+            "geel": 118,
+            "rood": 103
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 322,
+            "geel": 317,
+            "rood": 262
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 251,
+            "geel": 242,
+            "rood": 225
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tulpenlus",
+      "holes": 9,
+      "par": 35,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 2509,
+          "course_rating": 33.5,
+          "slope": 120,
+          "par": 35
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2437,
+          "course_rating": 33.0,
+          "slope": 118,
+          "par": 35
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2133,
+          "course_rating": 32.3,
+          "slope": 102,
+          "par": 35
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2437,
+          "course_rating": 35.9,
+          "slope": 130,
+          "par": 35
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2133,
+          "course_rating": 33.9,
+          "slope": 126,
+          "par": 35
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 300,
+            "geel": 289,
+            "rood": 248
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 312,
+            "geel": 292,
+            "rood": 222
+          }
+        },
+        {
+          "hole": 3,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 448,
+            "geel": 442,
+            "rood": 407
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 320,
+            "geel": 311,
+            "rood": 277
+          }
+        },
+        {
+          "hole": 5,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 288,
+            "geel": 283,
+            "rood": 260
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 248,
+            "geel": 243,
+            "rood": 226
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 150,
+            "geel": 145,
+            "rood": 135
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 142,
+            "geel": 136,
+            "rood": 112
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 301,
+            "geel": 296,
+            "rood": 246
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dijklus",
+      "holes": 9,
+      "par": 36,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": "men",
+          "length_m": 2899,
+          "course_rating": 35.9,
+          "slope": 126,
+          "par": 36
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2764,
+          "course_rating": 35.3,
+          "slope": 131,
+          "par": 36
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2402,
+          "course_rating": 33.3,
+          "slope": 115,
+          "par": 36
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2764,
+          "course_rating": 37.7,
+          "slope": 142,
+          "par": 36
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2402,
+          "course_rating": 35.9,
+          "slope": 124,
+          "par": 36
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 4,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 373,
+            "geel": 337,
+            "rood": 293
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 186,
+            "geel": 160,
+            "rood": 130
+          }
+        },
+        {
+          "hole": 3,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 333,
+            "geel": 330,
+            "rood": 262
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 341,
+            "geel": 336,
+            "rood": 309
+          }
+        },
+        {
+          "hole": 5,
+          "par": 5,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 527,
+            "geel": 494,
+            "rood": 430
+          }
+        },
+        {
+          "hole": 6,
+          "par": 5,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 435,
+            "geel": 430,
+            "rood": 388
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 131,
+            "geel": 118,
+            "rood": 103
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 322,
+            "geel": 317,
+            "rood": 262
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 251,
+            "geel": 242,
+            "rood": 225
+          }
+        }
+      ]
+    },
+    {
+      "name": "Korte lus (par 3)",
+      "holes": 9,
+      "par": 27,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 728,
+          "course_rating": 23.7,
+          "slope": 58,
+          "par": 27
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 728,
+          "course_rating": 24.4,
+          "slope": 61,
+          "par": 27
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 68,
+            "rood": 68
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 78,
+            "rood": 78
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 93,
+            "rood": 93
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 72,
+            "rood": 72
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 127,
+            "rood": 127
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 89,
+            "rood": 89
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 71,
+            "rood": 71
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 61,
+            "rood": 61
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 69,
+            "rood": 69
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.regthuysgolf.nl/onze-banen/handicaptabel-scorekaart",
+    "files": [
+      "scorecard/REG22-Scorekaart-binnen.jpg",
+      "scorecard/REG22-Scorekaart-CR-SR.jpg",
+      "scorecard/Hcptabel-heren.pdf",
+      "scorecard/Hcptabel-dames.pdf",
+      "scorecard/Hcptabel-par3-dames-heren.pdf",
+      "scorecard/dijklus-hole1.jpg",
+      "scorecard/kortelus-hole1.jpg",
+      "scorecard/kortelus-hole2.jpg",
+      "scorecard/kortelus-hole3.jpg",
+      "scorecard/kortelus-hole4.jpg",
+      "scorecard/kortelus-hole5.jpg",
+      "scorecard/kortelus-hole6.jpg",
+      "scorecard/kortelus-hole7.jpg",
+      "scorecard/kortelus-hole8.jpg",
+      "scorecard/kortelus-hole9.jpg",
+      "scorecard/page.html"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart 2022: Tulpenlus (out, par 35) + Dijklus (in, par 36) = par 71. S.I. in 18-holesstijl: Tulpenlus alleen even, Dijklus alleen oneven (9-holeslussen dus geen permutatie 1..9). Dijklus hole 1 rood: kaart slecht leesbaar (293/298), holepagina zegt 239 m; 293 gekozen omdat dat de lustotaal 2402 m van de kaart sluit. Ratings uit handicaptabellen 09-09-2021. Korte lus: par, S.I. (oneven, 18-holesstijl) en lengte uit de holepagina's (geel=rood); ratings 9 holes geel heren 23,7/58, rood dames 24,4/61; 18 holes 47,3/58 en 48,7/61."
+  },
+  "sources": [
+    "https://www.regthuysgolf.nl/onze-banen/handicaptabel-scorekaart",
+    "https://www.regthuysgolf.nl/onze-banen/korte-lus",
+    "https://www.regthuysgolf.nl/onze-banen/ontstaan-regthuys",
+    "https://www.regthuysgolf.nl/tarievenlijst"
+  ],
+  "distance_km_from_dedemsvaart": 105.9
+}

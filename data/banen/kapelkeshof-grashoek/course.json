@@ -1,0 +1,519 @@
+{
+  "slug": "kapelkeshof-grashoek",
+  "name": "Golf- en wijndomein Kapelkeshof",
+  "club_name": "Kapelkeshof (Pitch & Putt Peel en Maas)",
+  "holes_total": 21,
+  "course_type": "par-3",
+  "address": {
+    "street": "Roomweg 85",
+    "postal_code": "5985 NS",
+    "city": "Grashoek",
+    "province": "Limburg",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.3653149,
+    "lon": 5.9431894,
+    "source": "nominatim (Kapelkeshof, Roomweg 85, Grashoek)"
+  },
+  "distance_km_from_dedemsvaart": 141.9,
+  "phone": "077 308 2677",
+  "email": "info@kapelkeshof.nl",
+  "website": "https://www.kapelkeshof.nl/",
+  "booking_url": "https://kapelkeshof.teetime.e-golf4u.nl/app/booking/teetime",
+  "founded": null,
+  "architect": null,
+  "landscape": "landelijk Peelrandgebied met water en natuurlijke biotoop",
+  "facilities": [
+    "18 holes par 3 (Kapelkeshofbaan, pitch & putt)",
+    "9 holes par 3/4 (Solarisbaan)",
+    "golfclinics",
+    "horeca",
+    "wijngaard",
+    "overnachten (ParcPods)"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Kapelkeshofbaan: geen eisen (vanaf 10 jaar, onervaren spelers na korte instructie); Solarisbaan: baanpermissie of minimaal handicap 54",
+  "description_nl": "Kapelkeshof in Grashoek combineert een wijndomein met een golfcomplex van 21 holes. De 18 holes par 3 Kapelkeshofbaan (holes van circa 40 tot 150 meter) is open voor iedereen en geschikt voor groepen en beginners. Voor geoefende golfers is er de 9-holes par 3/4 Solarisbaan met smalle fairways en een natuurlijke omgeving.",
+  "loops": [
+    {
+      "name": "Kapelkeshofbaan (18 holes par 3)",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "niveau 1",
+          "color": "niveau",
+          "gender": null,
+          "length_m": 1121,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        },
+        {
+          "name": "niveau 2",
+          "color": "niveau",
+          "gender": null,
+          "length_m": 1292,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        },
+        {
+          "name": "niveau 3",
+          "color": "niveau",
+          "gender": null,
+          "length_m": 1307,
+          "course_rating": null,
+          "slope": null,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 40,
+            "niveau 2": 70,
+            "niveau 3": 70
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 59,
+            "niveau 2": 59,
+            "niveau 3": 59
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 68,
+            "niveau 2": 68,
+            "niveau 3": 68
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 83,
+            "niveau 2": 83,
+            "niveau 3": 83
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 40,
+            "niveau 2": 71,
+            "niveau 3": 71
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 94,
+            "niveau 2": 135,
+            "niveau 3": 150
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 66,
+            "niveau 2": 66,
+            "niveau 3": 66
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 55,
+            "niveau 2": 55,
+            "niveau 3": 55
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 51,
+            "niveau 2": 73,
+            "niveau 3": 73
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 53,
+            "niveau 2": 53,
+            "niveau 3": 53
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 87,
+            "niveau 2": 87,
+            "niveau 3": 87
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 76,
+            "niveau 2": 89,
+            "niveau 3": 89
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 52,
+            "niveau 2": 52,
+            "niveau 3": 52
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 50,
+            "niveau 2": 69,
+            "niveau 3": 69
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 55,
+            "niveau 2": 70,
+            "niveau 3": 70
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 54,
+            "niveau 2": 54,
+            "niveau 3": 54
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 85,
+            "niveau 2": 85,
+            "niveau 3": 85
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "niveau 1": 53,
+            "niveau 2": 53,
+            "niveau 3": 53
+          }
+        }
+      ]
+    },
+    {
+      "name": "Solarisbaan (9 holes par 3/4, 2x gespeeld)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2168,
+          "course_rating": 52.7,
+          "slope": 84,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 1986,
+          "course_rating": 51.8,
+          "slope": 81,
+          "par": 58
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2168,
+          "course_rating": 54.3,
+          "slope": 91,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 1986,
+          "course_rating": 53.9,
+          "slope": 83,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 70,
+            "rood": 70
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 59,
+            "rood": 59
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 68,
+            "rood": 68
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 83,
+            "rood": 83
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 71,
+            "rood": 71
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 135
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 92,
+            "rood": 92
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 246,
+            "rood": 210
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 245,
+            "rood": 205
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 70,
+            "rood": 70
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 59,
+            "rood": 59
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 68,
+            "rood": 68
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 83,
+            "rood": 83
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 71,
+            "rood": 71
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 150,
+            "rood": 135
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 92,
+            "rood": 92
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 246,
+            "rood": 210
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 245,
+            "rood": 205
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.kapelkeshof.nl/golf/layout-golfbaan/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-golfbaan.html",
+      "scorecard/Kapelkeshofbaan_scorekaart_A6-2023.jpg",
+      "scorecard/Kapelkeshofbaan_scorekaart_A6-20232.jpg",
+      "scorecard/Solarisbaan_scorekaart_A6-2022.jpg",
+      "scorecard/Solarisbaan_scorekaart_A6-20222.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Officiele scorekaarten (afbeeldingen). Kapelkeshofbaan: lengtes per 'niveau' (geen teekleuren, geen ratings); lege vakjes bij niveau 2/3 = zelfde afslag als het lagere niveau (bevestigd door de 'in'-totalen 612/612). Kaarttotaal 'out' niveau 2/3 (656/685) wijkt af van de som van de holes (680/695). Solarisbaan: ratings van de kaart (heren geel 52.7/84, rood 51.8/81; dames geel 54.3/91, rood 53.9/83). De op de site genoemde 9 holes 'Peelrandbaan' heeft geen gepubliceerde kaart."
+  },
+  "sources": [
+    "https://www.kapelkeshof.nl/golf/golfbaan",
+    "https://www.kapelkeshof.nl/golf/layout-golfbaan/",
+    "https://www.kapelkeshof.nl/contact"
+  ]
+}

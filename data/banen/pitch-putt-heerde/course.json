@@ -235,5 +235,8 @@
     "https://www.pitchenputtheerde.nl/contact/",
     "https://www.openstreetmap.org/relation/1027462",
     "https://www.hole19golf.com/courses/pitch-putt-golf-heerde"
-  ]
+  ],
+  "status": "open",
+  "status_note": "Open; evenementen in 2026 (o.a. 5-10-2026).",
+  "status_checked": "2026-10-29"
 }

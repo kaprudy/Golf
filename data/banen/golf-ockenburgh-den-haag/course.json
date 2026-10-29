@@ -1,0 +1,285 @@
+{
+  "slug": "golf-ockenburgh-den-haag",
+  "name": "Golf Ockenburgh",
+  "club_name": "Golfclub Ockenburgh / Stichting Golf Ockenburgh",
+  "holes_total": 9,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Wijndaelerweg 125",
+    "postal_code": "2554 CA",
+    "city": "Den Haag",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.0564296,
+    "lon": 4.2171906,
+    "source": "nominatim.openstreetmap.org (adres Wijndaelerweg 125, Den Haag)"
+  },
+  "distance_km_from_dedemsvaart": 163.9,
+  "phone": "070 325 89 04",
+  "email": "reageren@golfockenburgh.nl",
+  "website": "https://golfockenburgh.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": null,
+  "landscape": "duinbaan (beschut tussen Den Haag en Kijkduin)",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "chipping green",
+    "oefenbunker",
+    "clubhuis met restaurant",
+    "Golf Academy",
+    "jeu-de-boulesbaan",
+    "handicarts"
+  ],
+  "greenfee_welcome": true,
+  "requirements": null,
+  "description_nl": "Golf Ockenburgh is een openbare 9-holesbaan aan de rand van Den Haag, beschut gelegen in de duinen bij Kijkduin. De par 32-baan telt vier par 3's en vijf par 4's, met smalle fairways, veel bunkers en enkele waterpartijen, waaronder een korte eilandhole. Door de zandondergrond blijft de baan ook na regen goed bespeelbaar.",
+  "loops": [
+    {
+      "name": "18 holes (9 holes 2x gespeeld)",
+      "holes": 18,
+      "par": 64,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 61.7,
+          "slope": 113,
+          "par": 64
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 60.1,
+          "slope": 106,
+          "par": 64
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 65.3,
+          "slope": 122,
+          "par": 64
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 63.2,
+          "slope": 117,
+          "par": 64
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 6,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 7,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 8,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 9,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 15,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 17,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": null,
+          "si_women": null,
+          "lengths_m": {
+            "geel": null,
+            "rood": null
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://golfockenburgh.nl/whs-baanhandicap-tabellen/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/baanboekje-HbH-2026.pdf",
+      "scorecard/WHS-tabel-18-holes-heren.jpg",
+      "scorecard/WHS-tabel-18-holes-dames.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Geen scorekaart met S.I. en lengtes per tee gevonden. Par per hole uit het baanboekje 'Hole by Hole 2026' (som 32 per negen, consistent met par 64 in de WHS-tabellen). Baanboekje noemt per hole één lengte zonder teekleur: 1=170, 2=134, 3=160, 4=266, 5=76, 6=256, 7=234, 8=269, 9=283 m (totaal 1848 m); niet aan een tee toegekend. CR/SR 18 holes uit WHS-tabellen (2022); 9-holestabellen staan ook op de site."
+  },
+  "sources": [
+    "https://golfockenburgh.nl/golfbaan/",
+    "https://golfockenburgh.nl/whs-baanhandicap-tabellen/",
+    "https://golfockenburgh.nl/greenfee-tarieven-2026/"
+  ]
+}

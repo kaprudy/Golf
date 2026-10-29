@@ -1,0 +1,242 @@
+{
+  "slug": "rhoon-golfcenter-beverbaan",
+  "name": "Rhoon Golfcenter Beverbaan (par 3)",
+  "club_name": "Rhoon Golfcenter / Golfclub Oude Maas",
+  "holes_total": 18,
+  "course_type": "par-3",
+  "address": {
+    "street": "Veerweg 2A",
+    "postal_code": "3161 EX",
+    "city": "Rhoon",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.836435,
+    "lon": 4.4600748,
+    "source": "Nominatim (OpenStreetMap), adres Veerweg 2A"
+  },
+  "distance_km_from_dedemsvaart": 160.5,
+  "phone": "010 501 80 58",
+  "email": "info@rhoongolfcenter.nl",
+  "website": "https://www.rhoongolfcenter.nl/golfbaan/par-3-baan/",
+  "booking_url": "https://www.rhoongolfcenter.nl/golfen/reserveren/",
+  "founded": null,
+  "architect": null,
+  "landscape": "polder",
+  "facilities": [
+    "driving range",
+    "putting greens",
+    "Brasserie Rhoonse Polder"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Volgens de site ook zonder handicap 54 te spelen (mini-holes)",
+  "description_nl": "De Beverbaan is de par 3-baan van Rhoon Golfcenter. Volgens de scorekaart telt hij 18 korte holes van 91 tot 154 meter (par 54), ideaal om het korte spel te oefenen of als opstap naar de grote baan. De huidige website spreekt van een par 3-baan van zes holes.",
+  "loops": [
+    {
+      "name": "Beverbaan 18 holes",
+      "holes": 18,
+      "par": 54,
+      "tees": [
+        {
+          "name": "baan",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2094,
+          "course_rating": 51.0,
+          "slope": 76,
+          "par": 54
+        },
+        {
+          "name": "baan",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2094,
+          "course_rating": 52.9,
+          "slope": 80,
+          "par": 54
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 102
+          }
+        },
+        {
+          "hole": 2,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 98
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 108
+          }
+        },
+        {
+          "hole": 4,
+          "par": 3,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 120
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 148
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 105
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 116
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 110
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 105
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 133
+          }
+        },
+        {
+          "hole": 11,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 105
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 113
+          }
+        },
+        {
+          "hole": 13,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 111
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 91
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 146
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 120
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 154
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "baan": 109
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.rhoongolfcenter.nl/golfbaan/handicapregistratie--tabel/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/scorekaart-beverbaan-rhoon-golfcenter.pdf",
+      "scorecard/handicap-tabel-par-3--6-holes_1708352715.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart Beverbaan: 18 holes par 54, één lengtekolom (2094 m). CR/slope uit de tabel d.d. 12-05-2022 (geel heren 51,0/76, rood dames 52,9/80; 1e 9: 25,3/74 en 26,2/79; 2e 9: 25,8/77 en 26,8/82); in beide tees dezelfde lengtes. LET OP: de huidige site en de kop van het tabelbestand spreken van een PAR-3 baan van 6 holes; mogelijk is de baan ingekort en is de scorekaart verouderd."
+  },
+  "sources": [
+    "https://www.rhoongolfcenter.nl/golfbaan/par-3-baan/",
+    "https://www.rhoongolfcenter.nl/golfbaan/handicapregistratie--tabel/"
+  ]
+}

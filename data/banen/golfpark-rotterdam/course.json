@@ -1,0 +1,279 @@
+{
+  "slug": "golfpark-rotterdam",
+  "name": "Golfpark Rotterdam",
+  "club_name": "Golfpark Rotterdam (Hollandsche Golfclub)",
+  "holes_total": 18,
+  "course_type": "9-holes",
+  "address": {
+    "street": "Vareseweg 93",
+    "postal_code": "3047 AT",
+    "city": "Rotterdam",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 51.946948,
+    "lon": 4.4034944,
+    "source": "Nominatim (OpenStreetMap), object Golfpark Rotterdam, Vareseweg 93"
+  },
+  "distance_km_from_dedemsvaart": 157.6,
+  "phone": "010 600 3596",
+  "email": "info@golfparkrotterdam.nl",
+  "website": "https://www.hollandschegolfclub.nl/golfpark/rotterdam/",
+  "booking_url": "https://www.hollandschegolfclub.nl/golfpark/rotterdam/boek-een-starttijd-golfpark-rotterdam/",
+  "founded": null,
+  "architect": null,
+  "landscape": "open, glooiend polderlandschap aan de Schie met zicht op de Rotterdamse skyline",
+  "facilities": [
+    "driving range",
+    "putting green",
+    "chipping- en pitching green",
+    "bunkergreen",
+    "tijdelijk hoofdgebouw/brasserie",
+    "golflessen"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Rode lus: handicap 54 of baanpermissie van de Hollandsche Golfclub; shortgolfbaan: geen eisen",
+  "description_nl": "Golfpark Rotterdam is een nieuw golfpark van de Hollandsche Golfclub in de polder bij Overschie, aan de Schie. Sinds eind augustus 2026 zijn een 9-holes shortgolfbaan (par 28) en de nieuwe rode lus van de grote baan (holes 10-18, par 36) bespeelbaar; de overige negen holes volgen later. Het landschap is open en glooiend met uitzicht op de skyline van Rotterdam.",
+  "loops": [
+    {
+      "name": "Rode lus (holes 10-18)",
+      "holes": 9,
+      "par": 36,
+      "tees": [
+        {
+          "name": "wit",
+          "color": "white",
+          "gender": null,
+          "length_m": 3216,
+          "course_rating": null,
+          "slope": null,
+          "par": 36
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": null,
+          "length_m": 2929,
+          "course_rating": null,
+          "slope": null,
+          "par": 36
+        },
+        {
+          "name": "blauw",
+          "color": "blue",
+          "gender": null,
+          "length_m": 2830,
+          "course_rating": null,
+          "slope": null,
+          "par": 36
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": null,
+          "length_m": 2489,
+          "course_rating": null,
+          "slope": null,
+          "par": 36
+        },
+        {
+          "name": "oranje",
+          "color": "orange",
+          "gender": null,
+          "length_m": 2454,
+          "course_rating": null,
+          "slope": null,
+          "par": 36
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 10,
+          "par": 4,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 339,
+            "geel": 304,
+            "blauw": 296,
+            "rood": 265,
+            "oranje": 258
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 412,
+            "geel": 386,
+            "blauw": 371,
+            "rood": 323,
+            "oranje": 323
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 158,
+            "geel": 142,
+            "blauw": 134,
+            "rood": 114,
+            "oranje": 111
+          }
+        },
+        {
+          "hole": 13,
+          "par": 5,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 494,
+            "geel": 454,
+            "blauw": 436,
+            "rood": 375,
+            "oranje": 375
+          }
+        },
+        {
+          "hole": 14,
+          "par": 4,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 344,
+            "geel": 322,
+            "blauw": 316,
+            "rood": 276,
+            "oranje": 272
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 156,
+            "geel": 134,
+            "blauw": 130,
+            "rood": 118,
+            "oranje": 112
+          }
+        },
+        {
+          "hole": 16,
+          "par": 4,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 421,
+            "geel": 388,
+            "blauw": 368,
+            "rood": 335,
+            "oranje": 329
+          }
+        },
+        {
+          "hole": 17,
+          "par": 5,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 526,
+            "geel": 463,
+            "blauw": 447,
+            "rood": 404,
+            "oranje": 400
+          }
+        },
+        {
+          "hole": 18,
+          "par": 4,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "wit": 366,
+            "geel": 336,
+            "blauw": 332,
+            "rood": 279,
+            "oranje": 274
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shortgolf 9 holes (par 3|4)",
+      "holes": 9,
+      "par": 28,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 1097,
+          "course_rating": 25.2,
+          "slope": 62,
+          "par": 28
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": null,
+          "course_rating": 24.5,
+          "slope": 58,
+          "par": 28
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 1097,
+          "course_rating": 26.2,
+          "slope": 69,
+          "par": 28
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": null,
+          "course_rating": 25.5,
+          "slope": 63,
+          "par": 28
+        }
+      ],
+      "hole_data": []
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.hollandschegolfclub.nl/golfpark/rotterdam/course/rotterdam-18-holes/",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/page-9-holes.html",
+      "scorecard/RTM-Hole-10-18-WEB.pdf",
+      "scorecard/RTM-HCP-mededeling-18-holes-2026-Basis.pdf",
+      "scorecard/Golfpark-Rotterdam-handicaptabellen.pdf",
+      "scorecard/Rotterdam-Bord-2025-scaled.jpg"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": false,
+    "notes": "Baan in aanleg. Rode lus: scorekaart '9 holes tijdelijk in plaats van 18 holes' met holes 10-18 (S.I. even, 18-holes-stijl); vijf lengtekolommen zonder namen, op kleur wit/geel/blauw/rood/oranje; CR/slope nog niet bekend (mededeling op de site). Shortgolfbaan: alleen par 28 en 1097 m op de site, geen holegegevens; CR/slope uit de tabel 'Golfpark Rotterdam 18-holes Par-3 Baan' d.d. 04-11-2025 (9 holes: heren geel 25,2/62, rood 24,5/58; dames geel 26,2/69, rood 25,5/63; 18 holes heren 50,4/62 en 49,0/58, dames 52,4/69 en 50,9/63). Holes 1-9 van de grote baan nog niet open."
+  },
+  "sources": [
+    "https://www.hollandschegolfclub.nl/golfpark/rotterdam/",
+    "https://www.hollandschegolfclub.nl/golfpark/rotterdam/course/rotterdam-18-holes/",
+    "https://www.hollandschegolfclub.nl/golfpark/rotterdam/course/rotterdam-9-holes/",
+    "https://www.hollandschegolfclub.nl"
+  ],
+  "status": "open",
+  "status_note": "Open: par 3/4-baan sinds 2025, tweede (rode) 9-holeslus geopend 9-9-2026 (HGC).",
+  "status_checked": "2026-10-29"
+}

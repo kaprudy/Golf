@@ -1,0 +1,280 @@
+{
+  "slug": "golfbaan-bentwoud-noordwoud",
+  "name": "Golfbaan Bentwoud – Noordwoud (par 3/4-baan)",
+  "club_name": "Golfbaan Bentwoud",
+  "holes_total": 9,
+  "course_type": "par-3",
+  "address": {
+    "street": "Boslaan 3",
+    "postal_code": "2731 LD",
+    "city": "Benthuizen",
+    "province": "Zuid-Holland",
+    "country": "NL"
+  },
+  "gps": {
+    "lat": 52.0734311,
+    "lon": 4.5722349,
+    "source": "nominatim.openstreetmap.org (adres Boslaan 3, Benthuizen)"
+  },
+  "distance_km_from_dedemsvaart": 141.0,
+  "phone": "0172 58 30 10",
+  "email": "info@golfbaanbentwoud.nl",
+  "website": "https://www.golfbaanbentwoud.nl",
+  "booking_url": null,
+  "founded": null,
+  "architect": "Jol Golf Design",
+  "landscape": "polder/nieuw landschap (Bentwoud)",
+  "facilities": [
+    "driving range",
+    "27-holes wedstrijdbaan",
+    "clubhuis/restaurant",
+    "golfles"
+  ],
+  "greenfee_welcome": true,
+  "requirements": "Enige golfervaring vereist; zonder handicap toegestaan mits een ervaren speler met handicap meespeelt; eigen golftas (huur mogelijk)",
+  "description_nl": "Noordwoud is de korte qualifying lus van Golfbaan Bentwoud, met zeven par 3's en twee par 4's (par 29). De baan is bedoeld voor beginners en voor wie snel een korte ronde wil spelen, en mag onder begeleiding van een speler met handicap ook zonder handicapbewijs worden gespeeld. Twee holes lopen onder een hoogspanningslijn door.",
+  "loops": [
+    {
+      "name": "18 holes (Noordwoud 2x gespeeld)",
+      "holes": 18,
+      "par": 58,
+      "tees": [
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "men",
+          "length_m": 2692,
+          "course_rating": 57.4,
+          "slope": 89,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "men",
+          "length_m": 2410,
+          "course_rating": 53.3,
+          "slope": 86,
+          "par": 58
+        },
+        {
+          "name": "geel",
+          "color": "yellow",
+          "gender": "women",
+          "length_m": 2692,
+          "course_rating": 57.4,
+          "slope": 91,
+          "par": 58
+        },
+        {
+          "name": "rood",
+          "color": "red",
+          "gender": "women",
+          "length_m": 2410,
+          "course_rating": 55.7,
+          "slope": 87,
+          "par": 58
+        }
+      ],
+      "hole_data": [
+        {
+          "hole": 1,
+          "par": 3,
+          "si": 10,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 115
+          }
+        },
+        {
+          "hole": 2,
+          "par": 4,
+          "si": 4,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 246,
+            "rood": 236
+          }
+        },
+        {
+          "hole": 3,
+          "par": 3,
+          "si": 18,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 87,
+            "rood": 87
+          }
+        },
+        {
+          "hole": 4,
+          "par": 4,
+          "si": 2,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 300,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 5,
+          "par": 3,
+          "si": 14,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 101,
+            "rood": 89
+          }
+        },
+        {
+          "hole": 6,
+          "par": 3,
+          "si": 16,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 96,
+            "rood": 83
+          }
+        },
+        {
+          "hole": 7,
+          "par": 3,
+          "si": 8,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 161,
+            "rood": 149
+          }
+        },
+        {
+          "hole": 8,
+          "par": 3,
+          "si": 12,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 114
+          }
+        },
+        {
+          "hole": 9,
+          "par": 3,
+          "si": 6,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 73
+          }
+        },
+        {
+          "hole": 10,
+          "par": 3,
+          "si": 9,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 115
+          }
+        },
+        {
+          "hole": 11,
+          "par": 4,
+          "si": 3,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 246,
+            "rood": 236
+          }
+        },
+        {
+          "hole": 12,
+          "par": 3,
+          "si": 17,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 87,
+            "rood": 87
+          }
+        },
+        {
+          "hole": 13,
+          "par": 4,
+          "si": 1,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 300,
+            "rood": 259
+          }
+        },
+        {
+          "hole": 14,
+          "par": 3,
+          "si": 13,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 101,
+            "rood": 89
+          }
+        },
+        {
+          "hole": 15,
+          "par": 3,
+          "si": 15,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 96,
+            "rood": 83
+          }
+        },
+        {
+          "hole": 16,
+          "par": 3,
+          "si": 7,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 161,
+            "rood": 149
+          }
+        },
+        {
+          "hole": 17,
+          "par": 3,
+          "si": 11,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 130,
+            "rood": 114
+          }
+        },
+        {
+          "hole": 18,
+          "par": 3,
+          "si": 5,
+          "si_women": null,
+          "lengths_m": {
+            "geel": 95,
+            "rood": 73
+          }
+        }
+      ]
+    }
+  ],
+  "scorecard": {
+    "page_url": "https://www.golfbaanbentwoud.nl/site/course-rating",
+    "files": [
+      "scorecard/page.html",
+      "scorecard/scorekaart_gbb_PAR3-4_februari_2025_V2.pdf",
+      "scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-noordwoud-heren.pdf",
+      "scorecard/handicaptabel-2024-golfbaan-bentwoud-18-holes-noordwoud-dames.pdf"
+    ],
+    "source": "official",
+    "retrieved": "2026-10-28",
+    "complete": true,
+    "notes": "Scorekaart Noordwoud februari 2025 V2: twee kaarthelften met S.I. even (10,4,18,...) en oneven (9,3,17,...); hier holes 1-9 = linker kaart, 10-18 = rechter kaart (volgorde niet expliciet op de kaart). Per 9 holes par 29, geel 1346 m, rood 1205 m. CR/SR 18 holes uit handicaptabellen d.d. 09-01-2024; heren geel staat daar als CR 57,4 (gelijk aan dames geel) – zo overgenomen. 9 holes: heren geel 27,4/89, rood 26,7/86; dames geel 28,7/91, rood 27,9/87."
+  },
+  "sources": [
+    "https://www.golfbaanbentwoud.nl/site/course-rating",
+    "https://www.golfbaanbentwoud.nl/site/handicaptabel"
+  ]
+}
