@@ -17,12 +17,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="/style.css">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Golfscore", "url": "https://kaprudy.github.io/Golf/", "applicationCategory": "SportsApplication", "operatingSystem": "Android, iOS, web", "inLanguage": "nl", "description": "Golfscores inspreken of tikken tijdens de ronde, GPS-afstand tot de green, en stableford, score differential en handicapindicatie volgens het World Handicap System. Werkt ook zonder bereik.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "featureList": ["Scores inspreken in het Nederlands", "Tikken per slag", "GPS-afstand tot de green", "Handicap berekenen volgens het WHS", "Werkt zonder internet", "Course rating en slope van meer dan 100 banen"], "sameAs": ["https://github.com/kaprudy/Golf"]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Golfscore", "url": "https://kaprudy.github.io/Golf/", "applicationCategory": "SportsApplication", "operatingSystem": "Android, iOS, web", "inLanguage": "nl", "description": "Golfscores inspreken of tikken tijdens de ronde, GPS-afstand tot de green, en stableford, score differential en handicapindicatie volgens het World Handicap System. Werkt ook zonder bereik.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "featureList": ["Scores inspreken in het Nederlands", "Tikken per slag", "GPS-afstand tot de green", "Handicap berekenen volgens het WHS", "Werkt zonder internet", "Course rating en slope van meer dan 100 banen", "Buggystand: telefoon als scherm op de golfbuggy"], "sameAs": ["https://github.com/kaprudy/Golf"]}</script>
 </head>
 <body>
 <nav class="nav" aria-label="Hoofdmenu">
   <div class="nav-in">
     <a class="brand" href="/">Golfscore</a>
+    <a class="hide-sm" href="#buggystand">Buggy</a>
     <a class="hide-sm" href="#installeren">Installeren</a>
     <a href="/banen.html">Banen</a>
     <a class="hide-sm" href="/handicap-berekenen.html">Handicap</a>
@@ -55,6 +56,21 @@
       <li><h3>Na de ronde</h3>Je ziet per speler bruto, stableford, score differential en een handicapindicatie, berekend volgens het World Handicap System, met uitleg hoe het berekend is.</li>
     </ol>
     <p class="small muted" style="margin-top:12px">Slecht bereik op de baan? Geen probleem: de app werkt zonder internet verder en bewaart alles op je telefoon. Zodra er weer verbinding is, wordt alles vanzelf gesynchroniseerd.</p>
+  </section>
+
+  <section id="buggystand">
+    <h2>Op de buggy</h2>
+    <p>Rijd je met een buggy? Zet je telefoon in een houder op de buggy en tik op <b>Buggystand</b>. Leg je de telefoon dwars, dan vraagt de app het zelf.</p>
+    <figure class="wide-shot"><img src="img/buggystand.webp" alt="Buggystand: links groot de afstand tot de green, rechts per speler grote knoppen om slagen te tellen" loading="lazy" width="1290" height="585"></figure>
+    <ul class="ticks">
+      <li><b>Groot de afstand tot de green</b>, leesbaar vanaf de stoel. Het is de afstand vanaf de buggy, niet vanaf je bal.</li>
+      <li><b>Grote + en − per speler</b> om slagen te tellen, ook met handschoen. Mis getikt? Met <em>Ongedaan maken</em> draai je de laatste tik terug.</li>
+      <li><b>Het scherm blijft aan</b> zolang de buggystand open is. Op Android gaat de app naar volledig scherm.</li>
+      <li><b>Zonstand</b> voor fel zonlicht: zwart op wit met extra contrast.</li>
+      <li>Vegen of de pijlen voor de volgende hole. Met GPS springt de app vanzelf naar de hole waar je op de tee staat.</li>
+      <li>Met <b>Sluiten</b> of de terugknop ga je terug naar het gewone scherm; je ronde loopt gewoon door.</li>
+    </ul>
+    <p class="small muted">Tip: GPS en een scherm dat aan blijft kosten accu. De app toont het percentage; een USB-lader in de buggy helpt.</p>
   </section>
 
   <section id="installeren">
