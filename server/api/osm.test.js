@@ -28,6 +28,22 @@ test('holes uit OpenStreetMap', () => {
   assert.deepEqual([r.greens, r.tees], [1, 1]);
 });
 
+test('hole die in OSM andersom getekend is (van green naar tee) wordt omgedraaid', () => {
+  const r = parseOverpass({ elements: [
+    { type: 'way', id: 1, tags: { leisure: 'golf_course', name: 'Baan' }, geometry: square(52.50, 6.40, 0.02) },
+    { type: 'way', id: 20, tags: { golf: 'green' }, geometry: square(52.50795, 6.40695, 0.0002) },
+    { type: 'way', id: 30, tags: { golf: 'tee' }, geometry: square(52.505, 6.405, 0.0001) },
+    { type: 'way', id: 10, tags: { golf: 'hole', ref: '3' }, geometry: [{ lat: 52.508, lon: 6.407 }, { lat: 52.507, lon: 6.406 }, { lat: 52.505, lon: 6.405 }] },
+  ] });
+  const [h] = r.holes;
+  assert.equal(h.reversed, true);
+  assert.deepEqual(h.tee, { lat: 52.505, lon: 6.405 });
+  assert.deepEqual(h.green, { lat: 52.50803, lon: 6.40703 });
+  assert.equal(h.greenFromArea, true);
+  // Goed getekend: niet omdraaien
+  assert.equal(parseOverpass(fixture).holes.some((x) => x.reversed), false);
+});
+
 test('query is veilig', () => {
   assert.ok(!buildQuery({ name: 'x"];out;(' }).includes('"];out;('));
   assert.match(buildQuery({ lat: 52.5, lon: 6.4 }), /around:2500,52\.50000,6\.40000/);

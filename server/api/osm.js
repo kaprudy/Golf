@@ -74,16 +74,27 @@ export function parseOverpass(json) {
   const greens = elements.filter((e) => e.tags?.golf === 'green').map((e) => ({ ref: int(e.tags.ref), center: centroid(geom(e)), poly: geom(e) }))
     .filter((g) => g.poly.length > 2);
 
+  const tees = elements.filter((e) => e.tags?.golf === 'tee').map((e) => ({ center: centroid(geom(e)), poly: geom(e) }))
+    .filter((t) => t.poly.length > 2);
+  // De greenvlakte waarin een punt ligt (of de dichtstbijzijnde binnen 40 m); idem voor tees (25 m).
+  const greenAt = (p) => greens.find((g) => inside(p, g.poly))
+    ?? greens.map((g) => ({ g, d: distanceM(p, g.center) })).filter((x) => x.d < 40).sort((a, b) => a.d - b.d)[0]?.g;
+  const teeAt = (p) => tees.some((t) => inside(p, t.poly) || distanceM(p, t.center) < 25);
+
   const holes = [];
   for (const e of elements) {
     if (e.tags?.golf !== 'hole') continue;
-    const line = geom(e);
+    let line = geom(e);
     if (line.length < 2) continue;
+    // Een hole hoort van tee naar green getekend te zijn, maar soms staat hij in OSM andersom.
+    // Dan ligt het begin op de green (of het eind op een tee): de lijn omdraaien.
+    const score = (greenAt(line.at(-1)) ? 1 : 0) - (greenAt(line[0]) ? 1 : 0) + (teeAt(line[0]) ? 1 : 0) - (teeAt(line.at(-1)) ? 1 : 0);
+    const reversed = score < 0;
+    if (reversed) line = [...line].reverse();
     const tee = round6(line[0]);
     const end = round6(line.at(-1));
-    // Midden van de green: de greenvlakte waar de lijn eindigt (of de dichtstbijzijnde binnen 40 m).
-    const green = greens.find((g) => inside(end, g.poly))
-      ?? greens.map((g) => ({ g, d: distanceM(end, g.center) })).filter((x) => x.d < 40).sort((a, b) => a.d - b.d)[0]?.g;
+    // Midden van de green: de greenvlakte waar de lijn eindigt.
+    const green = greenAt(end);
     let length = 0;
     for (let i = 1; i < line.length; i++) length += distanceM(line[i - 1], line[i]);
     const course = courses.find((c) => c.rings.some((r) => inside(tee, r)));
@@ -97,6 +108,7 @@ export function parseOverpass(json) {
       tee,
       green: green?.center ?? end,
       greenFromArea: Boolean(green),
+      ...(reversed ? { reversed: true } : {}),
       lengthM: Math.round(length),
     });
   }
