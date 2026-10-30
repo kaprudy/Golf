@@ -218,11 +218,11 @@ function renderGps() {
     ${dist != null
       ? `<p class="gps-dist"><span class="gps-num">${dist}</span> m <span class="muted">tot de hole</span></p>`
       : `<p class="gps-msg">${canMark() ? 'Leg de green van deze hole vast om de afstand te zien.' : 'Voor deze hole is de afstand nog niet bekend.'}</p>`}
-    <p class="muted small gps-acc">GPS ±${Math.round(gps.pos.accuracy)} m</p>
+    <p class="muted small gps-acc">GPS ±${Math.round(gps.pos.accuracy)} m${course().geo?.[h] ? ' · <b>eigen vastgelegde punten</b>' : ''}</p>
     ${gps.suggest ? `<button class="link" data-action="gps-go" data-hole="${gps.suggest}">Je staat op de tee van hole ${gps.suggest}: ga naar hole ${gps.suggest}</button>` : ''}
     ${!canMark() ? ''
       : points.tee && points.green && !gps.editing
-      ? '<button class="link small" data-action="gps-edit">Tee of green opnieuw vastleggen</button>'
+      ? `<button class="link small" data-action="gps-edit">Tee of green opnieuw vastleggen</button>${course().geo?.[h] && (BASE_GEO[course().id]?.[h]) ? ` <button class="link small" data-action="gps-reset-hole">Eigen punten van hole ${h} wissen (terug naar de kaart)</button>` : ''}`
       : `<div class="gps-actions">
       <button class="chip-btn" data-action="gps-mark" data-point="tee">${points.tee ? 'Tee opnieuw vastleggen' : 'Ik sta op de tee'}</button>
       <button class="chip-btn" data-action="gps-mark" data-point="green">${points.green ? 'Green opnieuw vastleggen' : 'Ik sta op de green'}</button>
@@ -1594,6 +1594,7 @@ function render() {
   renderCloud();
   renderLearning();
   renderBuggy();
+  renderFinish();
   renderBuggyMode();
   renderGps();
   renderGpsSettings();
@@ -1790,11 +1791,40 @@ function archiveRound() {
   return true;
 }
 
+// Afronden: op de laatste hole (met een score daar) of als alle holes ingevuld zijn.
+const roundSaved = () => state.history.some((r) => r.id === state.round.id);
+function canFinish() {
+  const holes = roundHoles();
+  const last = holes.at(-1);
+  const anyOn = (h) => state.players.some((p) => scoreOf(p.name, h) != null);
+  const all = state.players.length > 0 && state.players.every((p) => holes.every((h) => scoreOf(p.name, h) != null));
+  return all || (state.round.currentHole === last && anyOn(last));
+}
+
+function renderFinish() {
+  const show = canFinish();
+  const saved = roundSaved();
+  $('#finish-row').hidden = !show;
+  $('#finish-row').innerHTML = saved
+    ? '<p class="small muted">Ronde opgeslagen.</p><div class="button-row"><button data-action="show-results">Uitslag bekijken</button><button class="primary" data-action="finish-new">Nieuwe ronde</button></div>'
+    : '<button class="primary finish-btn" data-action="finish-round">Ronde afronden</button>';
+  $('#bm-finish').hidden = !show || saved;
+  $('#analysis-new').hidden = !saved;
+}
+
+// Ronde afronden: de laatste getikte hole telt mee, opslaan en de uitslag tonen.
+function finishRound() {
+  state.round.live = null;
+  if (bmOn) exitBuggyMode();
+  saveRound();
+  switchTab('analyse');
+}
+
 function saveRound() {
   if (!archiveRound()) { toast('Nog geen scores om op te slaan.'); return; }
   save();
   render();
-  toast('Ronde opgeslagen. Start een nieuwe ronde via Instellingen.');
+  toast('Ronde opgeslagen.');
   afterRound();
 }
 
@@ -1834,6 +1864,16 @@ document.addEventListener('click', (e) => {
     case 'bm-gps-on': setGpsPref('golfscore-gps', true); startGps(); render(); break;
     case 'gps-mark': gps.editing = false; markPoint(btn.dataset.point); break;
     case 'gps-edit': gps.editing = true; renderGps(); break;
+    case 'gps-reset-hole': {
+      const h = state.round.currentHole;
+      if (confirm(`Je eigen tee en green van hole ${h} wissen? De app gebruikt dan weer de kaartgegevens.`)) {
+        delete course().geo?.[h];
+        if (course().geo && !Object.keys(course().geo).length) delete course().geo;
+        save(); render();
+        toast(`Hole ${h} gebruikt weer de kaartgegevens.`);
+      }
+      break;
+    }
     case 'gps-go':
       state.round.currentHole = Number(btn.dataset.hole);
       gps.suggest = null;
@@ -1898,6 +1938,9 @@ document.addEventListener('click', (e) => {
       break;
     }
     case 'save-round': saveRound(); break;
+    case 'finish-round': finishRound(); break;
+    case 'show-results': switchTab('analyse'); break;
+    case 'finish-new': showCoursePicker(); break;
     case 'export': {
       const blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
       const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `golfscore-${new Date().toISOString().slice(0, 10)}.json` });
