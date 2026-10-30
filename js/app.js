@@ -478,7 +478,7 @@ function renderBuggyDistance() {
     const dist = toGreen(gps.pos, geoOf(), h);
     const acc = `GPS ±${Math.round(gps.pos.accuracy)} m`;
     html = dist != null
-      ? `<div class="bm-num">${dist}<span>m</span></div><p class="bm-sub">tot het midden van de green, vanaf de buggy · ${acc}</p>`
+      ? `<div class="bm-num">${dist}<span>m</span></div><p class="bm-label">tot de hole</p><p class="bm-sub">gemeten tot het midden van de green, vanaf de buggy · ${acc}</p>`
       : `<p class="bm-msg">Afstand voor hole ${h} is nog niet bekend.</p><p class="bm-sub">${acc}</p>`;
   }
   setHtml($('#bm-dist'), html);

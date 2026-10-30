@@ -368,7 +368,7 @@ for (const c of courses) {
     ['Welke golfbanen staan erin?', `${DEFAULT_COURSES.length} banen in heel Nederland en net over de grens in Duitsland, met par, stroke index, course rating en slope per tee.`],
     ['Mijn baan staat er niet bij. Wat nu?', 'In de app voeg je zelf een baan toe via Instellingen. Je vult de par en stroke index per hole in en de course rating en slope van de tees.'],
     ['Telt een ronde op een par 3-baan mee voor mijn handicap?', 'Nee. Rondes op pitch & putt- en par 3-banen tellen in Golfscore niet mee voor de handicapindicatie; je ziet wel je score en stableford.'],
-    ['Kan ik mijn telefoon op de buggy gebruiken?', 'Ja. Zet je telefoon in een houder op de buggy en tik op “Buggystand”, of leg hem dwars: dan vraagt de app het zelf. Je ziet groot de afstand tot de green en telt de slagen met grote knoppen; het scherm blijft aan. Met de zonstand is het ook in fel zonlicht goed leesbaar.'],
+    ['Kan ik mijn telefoon op de buggy gebruiken?', 'Ja. Zet je telefoon in een houder op de buggy en tik op “Buggystand”, of leg hem dwars: dan vraagt de app het zelf. Je ziet groot de afstand tot de hole en telt de slagen met grote knoppen; het scherm blijft aan. Met de zonstand is het ook in fel zonlicht goed leesbaar.'],
     ['Hoe nauwkeurig is de afstand tot de green?', 'De app gebruikt de GPS van je telefoon, meestal tot op een paar meter nauwkeurig. De afstand is tot het midden van de green.'],
     ['Wat gebeurt er met mijn gegevens?', 'Alleen je spelers, banen en rondes worden bewaard, via een beveiligde verbinding. Je locatie tijdens de ronde blijft op je telefoon. Je kunt je account en gegevens altijd verwijderen in de app.'],
   ];
