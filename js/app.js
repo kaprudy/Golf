@@ -216,8 +216,8 @@ function renderGps() {
   const dist = toGreen(gps.pos, geoOf(), h);
   el.innerHTML = `
     ${dist != null
-      ? `<p class="gps-dist"><span class="gps-num">${dist}</span> m <span class="muted">tot de green</span></p>`
-      : `<p class="gps-msg">${canMark() ? 'Leg de green van deze hole vast om de afstand te zien.' : 'Voor deze hole is de afstand tot de green nog niet bekend.'}</p>`}
+      ? `<p class="gps-dist"><span class="gps-num">${dist}</span> m <span class="muted">tot de hole</span></p>`
+      : `<p class="gps-msg">${canMark() ? 'Leg de green van deze hole vast om de afstand te zien.' : 'Voor deze hole is de afstand nog niet bekend.'}</p>`}
     <p class="muted small gps-acc">GPS ±${Math.round(gps.pos.accuracy)} m</p>
     ${gps.suggest ? `<button class="link" data-action="gps-go" data-hole="${gps.suggest}">Je staat op de tee van hole ${gps.suggest}: ga naar hole ${gps.suggest}</button>` : ''}
     ${!canMark() ? ''
@@ -265,8 +265,8 @@ function renderGpsSettings() {
     <label class="check"><input type="checkbox" id="gps-auto" ${gpsAuto() ? 'checked' : ''} ${gpsOn() ? '' : 'disabled'}> Automatisch naar de hole van de tee waar je staat</label>
     <p class="small">Bekend voor ${esc(course().name)}: <b>${p.tees}</b> van ${p.total} tees, <b>${p.greens}</b> van ${p.total} greens${fromOsm ? ` (uit OpenStreetMap © OpenStreetMap-bijdragers, aangevuld met ${own.tees + own.greens} eigen punten)` : ''}.</p>
     <p class="small muted">${canMark()
-      ? 'Je mag tees en greens vastleggen: doe dat tijdens een ronde per hole één keer (knoppen bij het holenummer). Daarna zien alle spelers de afstand tot de green en op welke tee ze staan.'
-      : 'De app toont de afstand tot de green en springt naar de juiste hole als je op de tee staat, op de holes waarvan de tees en greens bekend zijn.'}
+      ? 'Je mag tees en greens vastleggen: doe dat tijdens een ronde per hole één keer (knoppen bij het holenummer). Daarna zien alle spelers de afstand tot de hole en op welke tee ze staan.'
+      : 'De app toont de afstand tot de hole (het midden van de green) en springt naar de juiste hole als je op de tee staat, op de holes waarvan de tees en greens bekend zijn.'}
     Je locatie blijft op je telefoon. GPS werkt alleen met de app open en kost wat extra batterij.</p>
     ${canMark() && own.tees + own.greens ? `<button class="link small danger" data-action="gps-clear">Eigen GPS-punten van deze baan wissen</button>` : ''}`;
 }
@@ -471,7 +471,7 @@ function renderBuggyDistance() {
   const h = state.round.currentHole;
   let html;
   if (!gpsSupported()) html = '<p class="bm-msg">Geen GPS beschikbaar in deze browser.</p>';
-  else if (!gpsOn()) html = '<p class="bm-sub">Afstand tot de green</p><button class="bm-chip" data-action="bm-gps-on">GPS aanzetten</button>';
+  else if (!gpsOn()) html = '<p class="bm-sub">Afstand tot de hole</p><button class="bm-chip" data-action="bm-gps-on">GPS aanzetten</button>';
   else if (gps.error) html = `<p class="bm-msg">${esc(gps.error)}</p>`;
   else if (!gps.pos) html = '<p class="bm-msg">GPS zoekt je positie…</p>';
   else {
@@ -519,7 +519,7 @@ function offerBuggyMode() {
   if (bmOn || bmAsked || !phoneLandscape.matches || !state.players.length || !$('#after-round').hidden) return;
   bmAsked = true;
   showSheet(`<h2>Buggystand inschakelen?</h2>
-    <p>Je telefoon ligt dwars. In de buggystand zie je groot de afstand tot de green en tel je de slagen met grote knoppen. Het scherm blijft aan.</p>
+    <p>Je telefoon ligt dwars. In de buggystand zie je groot de afstand tot de hole en tel je de slagen met grote knoppen. Het scherm blijft aan.</p>
     <div class="button-row bm-offer">
       <button class="primary" data-action="buggy-mode-yes">Buggystand aan</button>
       <button data-action="close-after-round">Nee, gewoon scherm</button>
