@@ -466,3 +466,8 @@ body.buggy-on .toast { z-index: 25; bottom: calc(10px + env(safe-area-inset-bott
 .finish-row { margin-top: 12px; }
 .finish-btn { width: 100%; min-height: 52px; font-size: 1.05rem; }
 .bm-finish { background: var(--bm-accent) !important; border-color: var(--bm-accent) !important; color: var(--bm-on-accent) !important; font-weight: 600; }
+
+/* Buggystand gedimd bij stilstand: donker overdekt (minder stroom op OLED); tik om op te lichten */
+.bm::after { content: ''; position: fixed; inset: 0; z-index: 2; background: #000; opacity: 0; pointer-events: none; transition: opacity .8s; }
+.bm.dimmed::after { opacity: .72; }
+@media (prefers-reduced-motion: reduce) { .bm::after { transition: none; } }

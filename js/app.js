@@ -171,6 +171,7 @@ function stopGps() {
 function onPosition(p) {
   gps.pos = { lat: p.coords.latitude, lon: p.coords.longitude, accuracy: p.coords.accuracy };
   gps.error = null;
+  noteMovement(gps.pos);
   // Alleen reageren als je een (andere) tee op loopt, niet zolang je er blijft staan.
   let tee = teeAt(gps.pos, geoOf(), roundHoles());
   // Twee keer rond over dezelfde holes (par 3-baan): in de tweede ronde holes 10–18 kiezen.
@@ -263,6 +264,7 @@ function renderGpsSettings() {
   el.innerHTML = `
     <label class="check"><input type="checkbox" id="gps-on" ${gpsOn() ? 'checked' : ''}> GPS gebruiken tijdens de ronde</label>
     <label class="check"><input type="checkbox" id="gps-auto" ${gpsAuto() ? 'checked' : ''} ${gpsOn() ? '' : 'disabled'}> Automatisch naar de hole van de tee waar je staat</label>
+    <label class="check"><input type="checkbox" id="bm-dim" ${bmDimPref() ? 'checked' : ''} ${gpsOn() ? '' : 'disabled'}> Buggystand: scherm dimmen als de buggy even stilstaat</label>
     <p class="small">Bekend voor ${esc(course().name)}: <b>${p.tees}</b> van ${p.total} tees, <b>${p.greens}</b> van ${p.total} greens${fromOsm ? ` (uit OpenStreetMap © OpenStreetMap-bijdragers, aangevuld met ${own.tees + own.greens} eigen punten)` : ''}.</p>
     <p class="small muted">${canMark()
       ? 'Je mag tees en greens vastleggen: doe dat tijdens een ronde per hole één keer (knoppen bij het holenummer). Daarna zien alle spelers de afstand tot de hole en op welke tee ze staan.'
@@ -388,6 +390,8 @@ async function enterBuggyMode({ fullscreen = true } = {}) {
     if (!history.state?.buggy) history.pushState({ buggy: true }, ''); // terugknop sluit de buggystand
     watchBattery();
     wake.enable();
+    dim.anchor = null;
+    wakeScreen();
     render();
   }
   if (fullscreen && document.documentElement.requestFullscreen && !document.fullscreenElement) {
@@ -404,6 +408,7 @@ function exitBuggyMode({ fromHistory = false } = {}) {
   try { sessionStorage.removeItem(BM_KEY); } catch { /* geen opslag */ }
   document.body.classList.remove('buggy-on');
   $('#buggy-mode').hidden = true;
+  setDim(false);
   feedbackHome.parent?.insertBefore($('#feedback'), feedbackHome.next);
   wake.disable();
   try { screen.orientation?.unlock?.(); } catch { /* niet vergrendeld */ }
@@ -484,6 +489,41 @@ function renderBuggyDistance() {
   setHtml($('#bm-dist'), html);
   setHtml($('#bm-suggest'), gps.suggest && gps.suggest !== h
     ? `<button class="bm-chip" data-action="gps-go" data-hole="${gps.suggest}">Naar hole ${gps.suggest}</button>` : '');
+}
+
+// Stroom besparen: staat de buggy even stil (GPS) en raakt niemand het scherm aan, dan wordt
+// het scherm donker overdekt. Op OLED-schermen kost dat minder stroom. Rijden of een tik licht
+// het weer op; die eerste tik doet verder niets, zodat je niet per ongeluk een slag telt.
+const DIM_AFTER_MS = 45000;
+const DIM_MOVE_M = 12;
+const dim = { anchor: null, since: Date.now(), on: false, swallowUntil: 0 };
+const bmDimPref = () => gpsPref('golfscore-buggy-dim', true);
+
+function setDim(on) {
+  dim.on = on;
+  $('#buggy-mode')?.classList.toggle('dimmed', on);
+}
+function wakeScreen() { dim.since = Date.now(); setDim(false); }
+
+function noteMovement(pos) {
+  const moved = !dim.anchor || distanceM(dim.anchor, pos) > DIM_MOVE_M + Math.min(pos.accuracy ?? 0, 20);
+  if (moved) { dim.anchor = pos; wakeScreen(); }
+}
+setInterval(() => {
+  if (bmOn && !dim.on && bmDimPref() && gpsOn() && gps.pos && Date.now() - dim.since > DIM_AFTER_MS) setDim(true);
+}, 5000);
+{
+  const el = document.getElementById('buggy-mode');
+  el?.addEventListener('pointerdown', (e) => {
+    if (!dim.on) { dim.since = Date.now(); return; }
+    e.preventDefault();
+    e.stopPropagation();
+    dim.swallowUntil = Date.now() + 700;
+    wakeScreen();
+  }, true);
+  el?.addEventListener('click', (e) => {
+    if (Date.now() < dim.swallowUntil) { e.preventDefault(); e.stopPropagation(); dim.swallowUntil = 0; }
+  }, true);
 }
 
 function undoTap() {
@@ -2077,6 +2117,10 @@ document.addEventListener('change', (e) => {
   } else if (t.id === 'learn-on') {
     if (t.checked) { enableLearning(); uploadSamples(); } else disableLearning();
     render();
+    return;
+  } else if (t.id === 'bm-dim') {
+    setGpsPref('golfscore-buggy-dim', t.checked);
+    if (!t.checked) setDim(false);
     return;
   } else if (t.id === 'gps-auto') {
     setGpsPref('golfscore-gps-auto', t.checked);
