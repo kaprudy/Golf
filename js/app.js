@@ -203,6 +203,12 @@ function onGpsError(err) {
   renderGps();
 }
 
+// Verder dan dit van de green (thuis, onderweg): geen afstand tonen, die zegt dan niets. De
+// langste holes zijn ruim 500 m; met een omweg via het buggypad blijft 1 km ruim genoeg.
+const FAR_M = 1000;
+const farFromHole = (dist) => dist != null && dist > FAR_M;
+const farText = (dist) => `Je bent nog niet bij de baan (${(dist / 1000).toLocaleString('nl-NL', { maximumFractionDigits: 1 })} km). De afstand tot de hole verschijnt zodra je er bent.`;
+
 function renderGps() {
   renderBuggyDistance();
   const el = $('#gps-line');
@@ -215,6 +221,7 @@ function renderGps() {
   if (gps.error) { el.innerHTML = `<p class="gps-msg">${esc(gps.error)}</p>`; return; }
   if (!gps.pos) { el.innerHTML = '<p class="gps-msg">GPS zoekt je positie…</p>'; return; }
   const dist = toGreen(gps.pos, geoOf(), h);
+  if (farFromHole(dist)) { el.innerHTML = `<p class="gps-msg">${farText(dist)}</p>`; return; }
   el.innerHTML = `
     ${dist != null
       ? `<p class="gps-dist"><span class="gps-num">${dist}</span> m <span class="muted">tot de hole</span></p>`
@@ -482,7 +489,8 @@ function renderBuggyDistance() {
   else {
     const dist = toGreen(gps.pos, geoOf(), h);
     const acc = `GPS ±${Math.round(gps.pos.accuracy)} m`;
-    html = dist != null
+    html = farFromHole(dist) ? `<p class="bm-msg">${farText(dist)}</p>`
+      : dist != null
       ? `<div class="bm-num">${dist}<span>m</span></div><p class="bm-label">tot de hole</p><p class="bm-sub">gemeten tot het midden van de green, vanaf de buggy · ${acc}</p>`
       : `<p class="bm-msg">Afstand voor hole ${h} is nog niet bekend.</p><p class="bm-sub">${acc}</p>`;
   }
