@@ -396,3 +396,18 @@ test('uitslag delen: link, zelfde ronde dezelfde link, openbare pagina veilig', 
   assert.equal((await call('POST', '/api/shares', { token, body: { share: { holes: [1], players: [] } } })).status, 400);
   assert.equal((await call('POST', '/api/shares', { token, body: { share: { holes: [0, 99], players: [{ name: 'x', scores: [1, 1] }] } } })).status, 400);
 });
+
+test('Dockerfile kopieert elk bestand dat de server gebruikt', async () => {
+  const fs = await import('node:fs');
+  const dir = new URL('.', import.meta.url);
+  const copied = /^COPY (.+) \.\/$/m.exec(fs.readFileSync(new URL('Dockerfile', dir), 'utf8'))[1].split(/\s+/);
+  const seen = new Set();
+  const walk = (file) => {
+    if (seen.has(file)) return;
+    seen.add(file);
+    for (const [, dep] of fs.readFileSync(new URL(file, dir), 'utf8').matchAll(/from '\.\/([\w-]+\.js)'/g)) walk(dep);
+  };
+  walk('server.js');
+  walk('backup.js');
+  for (const f of seen) assert.ok(copied.includes(f), `${f} ontbreekt in de COPY-regel van de Dockerfile`);
+});
