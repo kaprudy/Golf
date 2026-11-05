@@ -168,12 +168,25 @@ function stopGps() {
   Object.assign(gps, { watchId: null, pos: null, error: null, lastTee: null, suggest: null });
 }
 
+// Holes waarvan de tee nu logisch is: de huidige, de volgende en de eerste nog open hole.
+// Nog niets gespeeld (begin van de ronde): elke hole, want je kunt ook op 10 beginnen.
+function expectedHoles() {
+  const holes = roundHoles();
+  const anyScore = holes.some((h) => state.players.some((p) => scoreOf(p.name, h) != null));
+  if (!anyScore) return holes;
+  const cur = state.round.currentHole;
+  const next = holes[holes.indexOf(cur) + 1];
+  return [...new Set([cur, next, nextOpenHole(cur)].filter((h) => h != null))];
+}
+
 function onPosition(p) {
   gps.pos = { lat: p.coords.latitude, lon: p.coords.longitude, accuracy: p.coords.accuracy };
   gps.error = null;
   noteMovement(gps.pos);
-  // Alleen reageren als je een (andere) tee op loopt, niet zolang je er blijft staan.
-  let tee = teeAt(gps.pos, geoOf(), roundHoles());
+  // Alleen reageren als je een (andere) tee op loopt, niet zolang je er blijft staan. En alleen
+  // de tee van een hole die je logisch gezien nu speelt: loop je van hole 2 naar 3 langs de tee
+  // van hole 8, dan niet naar hole 8 springen. Wil je echt een hole overslaan, blader dan zelf.
+  let tee = teeAt(gps.pos, geoOf(), expectedHoles());
   // Twee keer rond over dezelfde holes (par 3-baan): in de tweede ronde holes 10–18 kiezen.
   const geo = geoOf();
   const same = (a, b) => a && b && a.lat === b.lat && a.lon === b.lon;
@@ -443,9 +456,9 @@ function renderBuggyStatus() {
   const parts = [];
   if (battery.level != null) {
     const low = battery.level <= 20 && !battery.charging;
-    parts.push(`<span class="${low ? 'warn' : ''}">${battery.charging ? '⚡' : 'Accu'} ${battery.level}%</span>`);
+    parts.push(`<span class="${low ? 'warn' : ''}">${battery.charging ? '⚡' : '🔋'}${battery.level}%</span>`);
   }
-  if (wake.failed) parts.push('<span class="warn">Scherm kan uitgaan</span>');
+  if (wake.failed) parts.push('<span class="warn" title="Het scherm kan vanzelf uitgaan">scherm kan uit</span>');
   el.innerHTML = parts.join(' · ');
 }
 
@@ -491,7 +504,7 @@ function renderBuggyDistance() {
     const acc = `GPS ±${Math.round(gps.pos.accuracy)} m`;
     html = farFromHole(dist) ? `<p class="bm-msg">${farText(dist)}</p>`
       : dist != null
-      ? `<div class="bm-num">${dist}<span>m</span></div><p class="bm-label">tot de hole</p><p class="bm-sub">gemeten tot het midden van de green, vanaf de buggy · ${acc}</p>`
+      ? `<div class="bm-num">${dist}<span>m</span></div><p class="bm-label">tot de hole</p><p class="bm-sub">midden green · vanaf de buggy · ${acc}</p>`
       : `<p class="bm-msg">Afstand voor hole ${h} is nog niet bekend.</p><p class="bm-sub">${acc}</p>`;
   }
   setHtml($('#bm-dist'), html);
