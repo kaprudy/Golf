@@ -490,3 +490,21 @@ body.buggy-on .toast { z-index: 25; bottom: calc(10px + env(safe-area-inset-bott
 .share-box { margin: 14px 0 6px; }
 .share-box p { margin-top: 6px; }
 button.whatsapp { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #1F7A4C; border-color: #1F7A4C; color: #fff; font-weight: 600; }
+
+/* Golfregels in het kort */
+.top { flex-wrap: nowrap; }
+.top-course { flex: 1; }
+.rules-btn { flex: none; display: inline-flex; align-items: center; gap: 5px; min-height: 34px; padding: 0 12px; margin-left: auto; border-radius: 17px;
+  border: 1px solid var(--border); background: var(--card); color: var(--accent-ink); font-size: .85rem; font-weight: 600; align-self: center; }
+#rules-search { width: 100%; margin: 4px 0 10px; }
+.rules-list { display: grid; gap: 6px; }
+.rule { border: 1px solid var(--border); border-radius: 14px; background: var(--bg); }
+.rule summary { display: flex; gap: 10px; align-items: flex-start; padding: 9px 12px; cursor: pointer; list-style: none; }
+.rule summary::-webkit-details-marker { display: none; }
+.rule summary b { display: block; font-size: .95rem; color: var(--text); }
+.rule-short { display: block; font-size: .85rem; font-weight: 400; color: var(--muted); line-height: 1.35; }
+.rule[open] summary { padding-bottom: 4px; }
+.rule p { margin: 0; padding: 0 12px 10px; font-size: .9rem; line-height: 1.45; }
+.rule[hidden] { display: none; }
+.marks { display: flex; gap: 3px; padding-top: 3px; flex: none; }
+.mark { width: 8px; height: 20px; border-radius: 3px; border: 1px solid var(--border-strong); }

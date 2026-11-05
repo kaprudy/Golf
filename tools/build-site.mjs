@@ -9,6 +9,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DEFAULT_COURSES, BASE_GEO, isShortCourse } from '../js/courses.js';
 import { distanceM } from '../js/gps.js';
+import { RULES } from '../js/rules.js';
+import { renderSharePage } from '../server/api/share.js';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'server', 'site');
 // Versie van de stylesheet in de link, zodat een browser na een wijziging niet de oude uit de cache houdt.
@@ -81,6 +83,7 @@ ${jsonld.map((j) => `  <script type="application/ld+json">${JSON.stringify(j)}</
     <a class="brand" href="/">Golfscore</a>
     ${nav('/banen.html', 'Banen', 'banen')}
     <span class="hide-sm">${nav('/handicap-berekenen.html', 'Handicap', 'handicap')}</span>
+    <span class="hide-sm">${nav('/golfregels.html', 'Regels', 'regels')}</span>
     <span class="hide-sm">${nav('/veelgestelde-vragen.html', 'Vragen', 'faq')}</span>
     <a class="cta" href="${APP}">Open de app</a>
   </div>
@@ -91,7 +94,7 @@ ${body}
 <footer class="site-footer">
   <div class="footer-in">
     <div><b>Golfscore</b> · golfscores inspreken, GPS-afstanden en handicap volgens WHS</div>
-    <div class="footer-links"><a href="/">Home</a> <a href="/banen.html">Banen</a> <a href="/handicap-berekenen.html">Handicap berekenen</a> <a href="/veelgestelde-vragen.html">Veelgestelde vragen</a> <a href="${REPO}">Broncode op GitHub</a></div>
+    <div class="footer-links"><a href="/">Home</a> <a href="/banen.html">Banen</a> <a href="/handicap-berekenen.html">Handicap berekenen</a> <a href="/golfregels.html">Golfregels</a> <a href="/veelgestelde-vragen.html">Veelgestelde vragen</a> <a href="${REPO}">Broncode op GitHub</a></div>
     <div class="muted small">Een persoonlijk project · gehost op kapital.nl · baangegevens van de clubs · kaartgegevens © OpenStreetMap-bijdragers</div>
   </div>
 </footer>
@@ -392,6 +395,54 @@ for (const c of courses) {
   });
 }
 
+// Golfregels in het kort (zelfde tekst als in de app, js/rules.js)
+{
+  const marks = (r) => (r.marks.length ? `<span class="marks" aria-hidden="true">${r.marks.map((c) => `<span class="mark" style="background:${c}"></span>`).join('')}</span>` : '');
+  const body = `
+  <section class="hero">
+    ${crumbs([['Home', '/'], ['Golfregels', '/golfregels.html']])}
+    <h1>Golfregels in het kort</h1>
+    <p class="lead">Wat betekenen de witte, gele, rode en blauwe paaltjes? Wat doe je met een bal in de struiken, op het pad of in de bunker? Kort samengevat uit de Regels van golf (2023). Dit lijstje staat ook in de app, onder de knop <b>Regels</b>.</p>
+  </section>
+  <section class="rules-page">
+    ${RULES.map((r) => `<article class="rule-card" id="${r.id}">
+      <h2>${marks(r)}${esc(r.title)}</h2>
+      <p><b>${esc(r.short)}</b></p>
+      <p>${esc(r.body)}</p>
+      <p class="small muted">${esc(r.rule)}</p>
+    </article>`).join('')}
+  </section>
+  <p class="small muted">Plaatselijke regels van de club gaan voor; die staan op de scorekaart of het mededelingenbord.</p>`;
+  files['golfregels.html'] = page({
+    path: '/golfregels.html', active: 'regels', body,
+    title: 'Golfregels in het kort: paaltjes, onspeelbare bal, verloren bal | Golfscore',
+    description: 'Wat betekenen witte, gele, rode en blauwe paaltjes op de golfbaan? Onspeelbare bal, verloren bal, droppen, bunker en green: de golfregels kort uitgelegd (Regels van golf 2023).',
+    jsonld: [breadcrumb([['Home', '/'], ['Golfregels', '/golfregels.html']]), {
+      '@context': 'https://schema.org', '@type': 'FAQPage',
+      mainEntity: RULES.map((r) => ({ '@type': 'Question', name: r.title, acceptedAnswer: { '@type': 'Answer', text: `${r.short} ${r.body} (${r.rule})` } })),
+    }],
+  });
+}
+
+// Voorbeeld van een gedeelde uitslag (zo ziet golf.kapital.nl/u/… eruit)
+{
+  const p = (name, scores, stableford) => ({ name, scores, stableford });
+  const html = renderSharePage('voorbeeld', {
+    course: 'Hooge Graven', date: '2026-10-24', tee: null,
+    holes: Array.from({ length: 18 }, (_, i) => i + 1),
+    pars: [4, 3, 4, 4, 4, 5, 3, 5, 3, 5, 3, 4, 4, 4, 5, 4, 4, 4],
+    players: [
+      p('Rudy', [5, 3, 5, 4, 6, 6, 2, 6, 4, 6, 4, 5, 4, 5, 6, 4, 5, 5], 36),
+      p('Peter', [4, 4, 3, 5, 5, 5, 4, 6, 3, 5, 3, 5, 5, 4, 5, 5, 4, 4], 38),
+      p('Anne', [5, 4, 6, 5, 5, 7, 3, 6, 4, 6, 4, 6, 5, 5, 6, 5, 5, 6], 33),
+    ],
+  });
+  files['voorbeeld-uitslag.html'] = html
+    .replace(`${SITE}/u/voorbeeld`, `${SITE}/voorbeeld-uitslag.html`)
+    .replace('<div class="overline">Uitslag ·', '<div class="overline">Voorbeeld · Uitslag ·')
+    .replace('<link rel="stylesheet" href="/style.css">', `<link rel="stylesheet" href="${CSS}">`);
+}
+
 // Open gegevens, sitemap, robots en llms.txt
 files['data/banen.json'] = `${JSON.stringify(courses.map((c) => ({
   id: c.id, name: title(c), town: c.town, province: c.province, url: SITE + courseUrl(c), website: c.website ?? null,
@@ -400,7 +451,7 @@ files['data/banen.json'] = `${JSON.stringify(courses.map((c) => ({
   tees: c.tees.map((t) => ({ name: t.name, gender: t.gender, courseRating: t.ratingUnknown ? null : t.rating, slope: t.ratingUnknown ? null : t.slope, lengths: t.lengths ?? null })),
 })), null, 1)}\n`;
 
-const pages = ['/', '/banen.html', '/handicap-berekenen.html', '/veelgestelde-vragen.html',
+const pages = ['/', '/banen.html', '/handicap-berekenen.html', '/golfregels.html', '/veelgestelde-vragen.html',
   ...provinces.map((p) => `/provincie/${p.slug}.html`), ...courses.map(courseUrl)];
 files['sitemap.xml'] = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -426,6 +477,7 @@ files['llms.txt'] = `# Golfscore
 - [Home: hoe werkt het en installeren op Android en iPhone](${SITE}/)
 - [Golfbanen per provincie](${SITE}/banen.html)
 - [Handicap berekenen volgens het WHS](${SITE}/handicap-berekenen.html)
+- [Golfregels in het kort: paaltjes, onspeelbare en verloren bal, droppen](${SITE}/golfregels.html)
 - [Veelgestelde vragen](${SITE}/veelgestelde-vragen.html)
 
 ## Provincies

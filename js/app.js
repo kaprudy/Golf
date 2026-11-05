@@ -6,6 +6,7 @@ import { decideSync, mergeStates, toCloud, fromCloud } from './sync.js';
 import { API_URL } from './config.js';
 import { createBuggy, buggySupported } from './buggy.js';
 import { createWakeLock } from './wakelock.js';
+import { RULES } from './rules.js';
 import { teeAt, toGreen, geoProgress, distanceM } from './gps.js';
 import { analysePlayer, handicapIndexFromDifferentials, scoreName } from './handicap.js';
 
@@ -1927,6 +1928,35 @@ async function shareRound(how) {
   if (!window.open(wa, '_blank')) location.href = wa;
 }
 
+// ---------- Golfregels in het kort ----------
+
+function ruleItem(r) {
+  const marks = r.marks.map((c) => `<span class="mark" style="background:${c}"></span>`).join('');
+  return `<details class="rule" data-rule="${r.id}"><summary>${marks ? `<span class="marks" aria-hidden="true">${marks}</span>` : ''}<span><b>${esc(r.title)}</b><span class="rule-short">${esc(r.short)}</span></span></summary>
+    <p>${esc(r.body)} <span class="muted">(${esc(r.rule)})</span></p></details>`;
+}
+
+function showRules() {
+  showSheet(`<h2>Golfregels in het kort</h2>
+    <input id="rules-search" type="search" placeholder="Zoek: rood, struiken, pad…" autocomplete="off" aria-label="Zoek in de regels">
+    <div id="rules-list" class="rules-list">${RULES.map(ruleItem).join('')}</div>
+    <p id="rules-none" class="small muted" hidden>Niets gevonden.</p>
+    <p class="small muted">Samengevat uit de Regels van golf (2023). Plaatselijke regels van de club gaan voor.</p>`, 'Golfregels in het kort');
+}
+
+function filterRules(q) {
+  const words = q.toLowerCase().split(/\s+/).filter(Boolean);
+  let shown = 0;
+  for (const el of document.querySelectorAll('#rules-list .rule')) {
+    const r = RULES.find((x) => x.id === el.dataset.rule);
+    const text = `${r.title} ${r.short} ${r.body}`.toLowerCase();
+    const hit = words.every((w) => text.includes(w));
+    el.hidden = !hit;
+    if (hit) shown++;
+  }
+  $('#rules-none').hidden = shown > 0;
+}
+
 function saveRound() {
   if (!archiveRound()) { toast('Nog geen scores om op te slaan.'); return; }
   save();
@@ -2046,6 +2076,7 @@ document.addEventListener('click', (e) => {
     }
     case 'save-round': saveRound(); break;
     case 'finish-round': finishRound(); break;
+    case 'show-rules': showRules(); break;
     case 'share-whatsapp': shareRound('whatsapp'); break;
     case 'share-other': shareRound('other'); break;
     case 'show-results': switchTab('analyse'); break;
@@ -2210,6 +2241,8 @@ document.addEventListener('change', (e) => {
   save();
   render();
 });
+
+document.addEventListener('input', (e) => { if (e.target.id === 'rules-search') filterRules(e.target.value); });
 
 document.addEventListener('submit', (e) => {
   const form = e.target.closest('[data-form]');

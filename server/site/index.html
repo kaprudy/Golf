@@ -16,8 +16,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/style.css?v=44602e4b49">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Golfscore", "url": "https://kaprudy.github.io/Golf/", "applicationCategory": "SportsApplication", "operatingSystem": "Android, iOS, web", "inLanguage": "nl", "description": "Golfscores inspreken of tikken tijdens de ronde, GPS-afstand tot de green, en stableford, score differential en handicapindicatie volgens het World Handicap System. Werkt ook zonder bereik.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "featureList": ["Scores inspreken in het Nederlands", "Tikken per slag", "GPS-afstand tot de green", "Handicap berekenen volgens het WHS", "Werkt zonder internet", "Course rating en slope van meer dan 100 banen", "Buggystand: telefoon als scherm op de golfbuggy"], "sameAs": ["https://github.com/kaprudy/Golf"]}</script>
+  <link rel="stylesheet" href="/style.css?v=fd6f303cbd">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Golfscore", "url": "https://kaprudy.github.io/Golf/", "applicationCategory": "SportsApplication", "operatingSystem": "Android, iOS, web", "inLanguage": "nl", "description": "Golfscores inspreken of tikken tijdens de ronde, GPS-afstand tot de green, en stableford, score differential en handicapindicatie volgens het World Handicap System. Werkt ook zonder bereik.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "featureList": ["Scores inspreken in het Nederlands", "Tikken per slag", "GPS-afstand tot de green", "Handicap berekenen volgens het WHS", "Werkt zonder internet", "Course rating en slope van meer dan 100 banen", "Buggystand: telefoon als scherm op de golfbuggy", "Uitslag delen via WhatsApp", "Golfregels in het kort"], "sameAs": ["https://github.com/kaprudy/Golf"]}</script>
 </head>
 <body>
 <nav class="nav" aria-label="Hoofdmenu">
@@ -27,6 +27,7 @@
     <a class="hide-sm" href="#installeren">Installeren</a>
     <a href="/banen.html">Banen</a>
     <a class="hide-sm" href="/handicap-berekenen.html">Handicap</a>
+    <a class="hide-sm" href="/golfregels.html">Regels</a>
     <a class="hide-sm" href="/veelgestelde-vragen.html">Vragen</a>
     <a class="cta" href="https://kaprudy.github.io/Golf/">Open de app</a>
   </div>
@@ -73,6 +74,25 @@
       <li>Met <b>Sluiten</b> of de terugknop ga je terug naar het gewone scherm; je ronde loopt gewoon door.</li>
     </ul>
     <p class="small muted">Tip: GPS en een scherm dat aan blijft kosten accu. De app toont het percentage; het dimmen bij stilstand scheelt vooral op telefoons met een OLED-scherm; een USB-lader in de buggy helpt.</p>
+  </section>
+
+  <section id="delen">
+    <h2>Uitslag delen</h2>
+    <div class="split">
+      <div>
+        <p>Na de ronde deel je de uitslag met één tik via <b>WhatsApp</b>. Je medespelers krijgen een link naar de scorekaart op golf.kapital.nl: de stand, de scores per hole met birdies en bogeys in kleur, en stableford als je handicap bekend is.</p>
+        <p>Speel je de ronde nog af of pas je een score aan? Deel opnieuw: de link blijft hetzelfde en de scores worden bijgewerkt.</p>
+        <p><a href="/voorbeeld-uitslag.html">Bekijk een voorbeeld van een gedeelde uitslag →</a></p>
+        <p class="small muted">Alleen de namen en scores van die ronde staan op de pagina, en zoekmachines nemen hem niet op.</p>
+      </div>
+      <figure><img src="img/uitslag.webp" alt="Gedeelde uitslag: stand en scorekaart van een ronde op Hooge Graven" loading="lazy" width="390" height="780"></figure>
+    </div>
+  </section>
+
+  <section id="regels">
+    <h2>Golfregels in het kort</h2>
+    <p>Wat betekenen de rode paaltjes? En wat doe je met een bal tussen de struiken? In de app tik je rechtsboven op <b>Regels</b> voor een kort, doorzoekbaar lijstje: paaltjes en lijnen, onspeelbare en verloren bal, obstakels, droppen, bunker en green.</p>
+    <p><a href="/golfregels.html">Lees de golfregels in het kort →</a></p>
   </section>
 
   <section id="installeren">
@@ -124,7 +144,7 @@
 <footer class="site-footer">
   <div class="footer-in">
     <div><b>Golfscore</b> · golfscores inspreken, GPS-afstanden en handicap volgens WHS</div>
-    <div class="footer-links"><a href="/">Home</a> <a href="/banen.html">Banen</a> <a href="/handicap-berekenen.html">Handicap berekenen</a> <a href="/veelgestelde-vragen.html">Veelgestelde vragen</a> <a href="https://github.com/kaprudy/Golf">Broncode op GitHub</a></div>
+    <div class="footer-links"><a href="/">Home</a> <a href="/banen.html">Banen</a> <a href="/handicap-berekenen.html">Handicap berekenen</a> <a href="/golfregels.html">Golfregels</a> <a href="/veelgestelde-vragen.html">Veelgestelde vragen</a> <a href="https://github.com/kaprudy/Golf">Broncode op GitHub</a></div>
     <div class="muted small">Een persoonlijk project · gehost op kapital.nl · baangegevens van de clubs · kaartgegevens © OpenStreetMap-bijdragers</div>
   </div>
 </footer>

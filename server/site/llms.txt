@@ -10,6 +10,7 @@
 - [Home: hoe werkt het en installeren op Android en iPhone](https://golf.kapital.nl/)
 - [Golfbanen per provincie](https://golf.kapital.nl/banen.html)
 - [Handicap berekenen volgens het WHS](https://golf.kapital.nl/handicap-berekenen.html)
+- [Golfregels in het kort: paaltjes, onspeelbare en verloren bal, droppen](https://golf.kapital.nl/golfregels.html)
 - [Veelgestelde vragen](https://golf.kapital.nl/veelgestelde-vragen.html)
 
 ## Provincies
