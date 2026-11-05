@@ -182,6 +182,12 @@ export const fetchVocab = () => api('GET', '/api/vocab');
 // Gebruik (app geopend, ronde gestart/opgeslagen) voor het beheeroverzicht. Geen locatie.
 export const sendEvents = (events) => api('POST', '/api/events', { events });
 
+// Uitslag delen: geeft de openbare link (golf.kapital.nl/u/…). Zelfde ronde: zelfde link.
+export async function shareRound(roundId, share) {
+  const { path } = await api('POST', '/api/shares', { roundId: String(roundId), share });
+  return API_URL + path;
+}
+
 // Controleert of de server bereikbaar is. Geeft {ok, error}.
 export async function testConnection() {
   try {

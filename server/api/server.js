@@ -17,6 +17,8 @@
 //   DELETE /api/samples                         -> eigen voorbeelden verwijderen
 //   GET    /api/vocab                           -> geleerde woorden (voor iedereen, zonder inloggen)
 //   POST   /api/events     {events:[...]}      -> {stored}   gebruik: app geopend, ronde gestart/opgeslagen
+//   POST   /api/shares     {roundId, share}    -> {id, path}  uitslag delen (zelfde ronde: zelfde link)
+//   GET    /u/<id>                              -> openbare pagina met de gedeelde uitslag (HTML)
 //   GET    /api/osm/course?name=…|lat=…&lon=…   -> holes (tee, green, par) uit OpenStreetMap
 //   POST   /api/admin/perms {userId, perm, on}   -> rechten toekennen (bijv. 'gps-mark')
 //   GET    /api/admin/overview                  -> overzicht voor beheerders (ADMIN_USER_IDS)
@@ -27,6 +29,7 @@ import crypto from 'node:crypto';
 import { DatabaseSync } from 'node:sqlite';
 import { learnVocabulary, wordStats } from './learn.js';
 import { fetchCourse } from './osm.js';
+import { cleanShare, renderSharePage, renderNotFound, ShareError } from './share.js';
 
 const PORT = Number(process.env.PORT ?? 3000);
 const DB_PATH = process.env.DB_PATH ?? '/data/golf.db';
@@ -43,12 +46,13 @@ const LIMITS = {
   eventsPerUser: 20000, // gebeurtenissen (app geopend, ronde gestart …) per account
   osmPerIpPerHour: 30, // nieuwe OSM-zoekvragen per IP-adres per uur (anonieme accounts zijn gratis)
   osmPerHour: 300, // nieuwe OSM-zoekvragen voor de hele server per uur (Overpass niet overbelasten)
+  sharesPerDay: 50, // gedeelde uitslagen per account per 24 uur
 };
 const OSM_CACHE_MAX = 500;
 const TOKEN_DAYS = 180;
 const MAX_SAMPLES_PER_CALL = 200;
 const MAX_SAMPLE_BYTES = 4000;
-const EVENT_KINDS = new Set(['open', 'round_start', 'round_saved']);
+const EVENT_KINDS = new Set(['open', 'round_start', 'round_saved', 'round_shared']);
 const MAX_EVENTS_PER_CALL = 100;
 const VOCAB_CACHE_MS = 10 * 60 * 1000;
 
@@ -91,6 +95,15 @@ export function openDatabase(path = DB_PATH) {
     );
     CREATE INDEX IF NOT EXISTS app_events_time ON app_events(created_at);
     CREATE INDEX IF NOT EXISTS app_events_user ON app_events(user_id, kind, created_at);
+    CREATE TABLE IF NOT EXISTS shares (
+      id         TEXT PRIMARY KEY,
+      user_id    INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      round_id   TEXT,
+      created_at TEXT NOT NULL,
+      updated_at TEXT NOT NULL,
+      data       TEXT NOT NULL
+    );
+    CREATE UNIQUE INDEX IF NOT EXISTS shares_round ON shares(user_id, round_id);
   `);
   // Anonieme accounts (alleen een geheim van de telefoon, geen e-mail). Kolom later toegevoegd.
   if (!db.prepare('PRAGMA table_info(users)').all().some((c) => c.name === 'device_hash')) {
@@ -225,6 +238,10 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
                           ON CONFLICT(user_id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at`),
     deleteUser: db.prepare('DELETE FROM users WHERE id = ?'),
     userByDevice: db.prepare('SELECT * FROM users WHERE device_hash = ?'),
+    shareById: db.prepare('SELECT * FROM shares WHERE id = ?'),
+    shareByRound: db.prepare('SELECT id FROM shares WHERE user_id = ? AND round_id = ?'),
+    insertShare: db.prepare('INSERT INTO shares (id, user_id, round_id, created_at, updated_at, data) VALUES (?, ?, ?, ?, ?, ?)'),
+    updateShare: db.prepare('UPDATE shares SET data = ?, updated_at = ? WHERE id = ?'),
     insertDeviceUser: db.prepare('INSERT INTO users (email, pw_hash, created_at, device_hash) VALUES (?, ?, ?, ?)'),
     upgradeUser: db.prepare('UPDATE users SET email = ?, pw_hash = ?, device_hash = NULL WHERE id = ?'),
     userById: db.prepare('SELECT * FROM users WHERE id = ?'),
@@ -376,6 +393,11 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
       installed: one(`SELECT COUNT(DISTINCT user_id) n FROM app_events WHERE kind = 'open' AND created_at > ?
         AND json_extract(data, '$.standalone') = 1`, ago(30)).n,
     };
+    const shares = {
+      total: one('SELECT COUNT(*) n FROM shares').n,
+      last30: one('SELECT COUNT(*) n FROM shares WHERE created_at > ?', ago(30)).n,
+      users30: one('SELECT COUNT(DISTINCT user_id) n FROM shares WHERE created_at > ?', ago(30)).n,
+    };
     const rounds = db.prepare(`SELECT json_extract(data, '$.course') course, kind, COUNT(*) n, COUNT(DISTINCT user_id) users
         FROM app_events WHERE kind IN ('round_start', 'round_saved') AND created_at > ? GROUP BY course, kind`).all(ago(30));
     const geo = courseGeo(); // vult ook courseNames
@@ -391,7 +413,7 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
     const candidates = wordStats(rows).slice(0, 60).map((w) => ({ ...w, learned: learned.has(w.word) }));
     return {
       generatedAt: new Date().toISOString(), users, active, registrations, recentUsers, samples, recentSamples, vocab, candidates,
-      sessions, rounds: Object.values(roundsByCourse).sort((a, b) => b.started - a.started), geo,
+      sessions, shares, rounds: Object.values(roundsByCourse).sort((a, b) => b.started - a.started), geo,
     };
   }
 
@@ -416,6 +438,15 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
     const key = `${req.method} ${url.pathname}`;
 
     if (key === 'GET /api/health') return send(res, 200, { ok: true });
+
+    // Openbare pagina van een gedeelde uitslag (via WhatsApp); geen inloggen nodig.
+    if (req.method === 'GET' && url.pathname.startsWith('/u/')) {
+      const id = url.pathname.slice(3);
+      const row = /^[A-Za-z0-9_-]{8,24}$/.test(id) ? q.shareById.get(id) : null;
+      const html = row ? renderSharePage(id, JSON.parse(row.data)) : renderNotFound();
+      res.writeHead(row ? 200 : 404, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-cache', 'X-Content-Type-Options': 'nosniff' });
+      return res.end(html);
+    }
     if (key === 'GET /api/vocab') return send(res, 200, vocabulary());
 
     if (key === 'POST /api/register' || key === 'POST /api/login') {
@@ -543,6 +574,20 @@ export function createServer(db, { adminIds = ADMIN_USER_IDS, osm = fetchCourse,
       }
       vocabCache = null;
       return send(res, 200, { stored });
+    }
+    if (key === 'POST /api/shares') {
+      if (tooMany(`share:${user.id}`, limit.sharesPerDay, 24 * 3600e3)) throw new HttpError(429, 'Vandaag al heel vaak gedeeld, probeer het morgen opnieuw');
+      const { roundId: rawRound, share } = await readJson(req);
+      let data;
+      try { data = cleanShare(share); } catch (err) { if (err instanceof ShareError) throw new HttpError(400, err.message); throw err; }
+      const roundId = typeof rawRound === 'string' && rawRound.length <= 64 ? rawRound : null;
+      const now = new Date().toISOString();
+      // Dezelfde ronde opnieuw delen: zelfde link, bijgewerkte scores.
+      const existing = roundId ? q.shareByRound.get(user.id, roundId) : null;
+      const id = existing?.id ?? crypto.randomBytes(9).toString('base64url');
+      if (existing) q.updateShare.run(JSON.stringify(data), now, id);
+      else q.insertShare.run(id, user.id, roundId, now, now, JSON.stringify(data));
+      return send(res, existing ? 200 : 201, { id, path: `/u/${id}` });
     }
     if (key === 'POST /api/events') {
       const { events } = await readJson(req);

@@ -19,6 +19,11 @@
 		reverse_proxy api:3000
 	}
 
+	# Gedeelde uitslagen (golf.kapital.nl/u/<id>): de API maakt de pagina.
+	handle /u/* {
+		reverse_proxy api:3000
+	}
+
 	# Banenlijst rechtstreeks uit de app (voor banen.html)
 	handle /data/courses.js {
 		root * /srv/app

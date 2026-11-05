@@ -370,6 +370,7 @@ for (const c of courses) {
     ['Telt een ronde op een par 3-baan mee voor mijn handicap?', 'Nee. Rondes op pitch & putt- en par 3-banen tellen in Golfscore niet mee voor de handicapindicatie; je ziet wel je score en stableford.'],
     ['Kan ik mijn telefoon op de buggy gebruiken?', 'Ja. Zet je telefoon in een houder op de buggy en tik op “Buggystand”, of leg hem dwars: dan vraagt de app het zelf. Je ziet groot de afstand tot de hole en telt de slagen met grote knoppen; het scherm blijft aan. Met de zonstand is het ook in fel zonlicht goed leesbaar.'],
     ['Hoe nauwkeurig is de afstand tot de hole?', 'De app gebruikt de GPS van je telefoon, meestal tot op een paar meter nauwkeurig. De afstand tot de hole is gemeten tot het midden van de green. Ben je meer dan een kilometer van de hole, bijvoorbeeld thuis, dan toont de app geen afstand.'],
+    ['Kan ik de uitslag delen?', 'Ja. Na de ronde tik je op “Delen via WhatsApp”. Je medespelers krijgen een link naar de scorekaart op golf.kapital.nl, met de stand en de scores per hole. Iedereen met de link ziet de namen en scores van die ronde.'],
     ['Wat gebeurt er met mijn gegevens?', 'Alleen je spelers, banen en rondes worden bewaard, via een beveiligde verbinding. Je locatie tijdens de ronde blijft op je telefoon. Je kunt je account en gegevens altijd verwijderen in de app.'],
   ];
   const body = `

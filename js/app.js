@@ -1867,10 +1867,12 @@ function renderFinish() {
   const saved = roundSaved();
   $('#finish-row').hidden = !show;
   $('#finish-row').innerHTML = saved
-    ? '<p class="small muted">Ronde opgeslagen.</p><div class="button-row"><button data-action="show-results">Uitslag bekijken</button><button class="primary" data-action="finish-new">Nieuwe ronde</button></div>'
+    ? '<p class="small muted">Ronde opgeslagen.</p><div class="button-row"><button data-action="show-results">Uitslag bekijken</button><button class="whatsapp" data-action="share-whatsapp">Delen via WhatsApp</button><button class="primary" data-action="finish-new">Nieuwe ronde</button></div>'
     : '<button class="primary finish-btn" data-action="finish-round">Ronde afronden</button>';
   $('#bm-finish').hidden = !show || saved;
   $('#analysis-new').hidden = !saved;
+  $('#share-box').hidden = !cloudConfigured || !computeResults().length;
+  $('#share-other').hidden = !navigator.share;
 }
 
 // Ronde afronden: de laatste getikte hole telt mee, opslaan en de uitslag tonen.
@@ -1879,6 +1881,50 @@ function finishRound() {
   if (bmOn) exitBuggyMode();
   saveRound();
   switchTab('analyse');
+}
+
+// ---------- Uitslag delen (WhatsApp) ----------
+// De server maakt een openbare pagina met de scorekaart; wie de link opent, ziet ook hoe je de
+// app installeert. Alleen namen, holes, par en scores gaan mee.
+
+function sharePayload() {
+  const holes = roundHoles();
+  return {
+    course: course().name.replace(/\s*\(\d+ holes\)$/, ''), // de gespeelde holes staan er apart bij
+    date: new Date(state.round.date ?? Date.now()).toLocaleDateString('sv-SE'), // JJJJ-MM-DD, lokale datum
+    holes,
+    pars: holes.map(parOf),
+    players: computeResults().map((r) => ({ name: r.name, scores: r.scores.map((s) => (s == null || s === '' ? null : Number(s))), stableford: r.stableford })),
+  };
+}
+
+function shareText(url) {
+  const ranked = computeResults().slice().sort((a, b) => b.holesPlayed - a.holesPlayed || a.toPar - b.toPar);
+  const when = new Date(state.round.date ?? Date.now()).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long' });
+  const holes = roundHoles();
+  const which = holes.length < course().holeCount ? ` (holes ${holes[0]}–${holes.at(-1)})` : '';
+  return `⛳ ${course().name.replace(/\s*\(\d+ holes\)$/, '')}${which}, ${when}\n${ranked.map((r) => `${r.name} ${r.gross} (${signed(r.toPar)})`).join(' · ')}\n\nScorekaart: ${url}`;
+}
+
+async function shareRound(how) {
+  if (!navigator.onLine) { toast('Geen internet. Delen kan zodra je weer bereik hebt; de ronde blijft bewaard.'); return; }
+  const api = await cloudApi();
+  if (!api || !cloud.user) { toast('Delen lukt nog niet: de app is niet met de server verbonden. Probeer het zo nog eens.'); return; }
+  let url;
+  try {
+    url = await api.shareRound(state.round.id, sharePayload());
+  } catch (err) {
+    toast(`Delen lukte niet: ${esc(err.message)}`);
+    return;
+  }
+  const text = shareText(url);
+  logEvent('round_shared', { how, course: course().id });
+  if (how === 'other' && navigator.share) {
+    try { await navigator.share({ title: `Uitslag ${course().name}`, text }); } catch { /* geannuleerd */ }
+    return;
+  }
+  const wa = `https://wa.me/?text=${encodeURIComponent(text)}`;
+  if (!window.open(wa, '_blank')) location.href = wa;
 }
 
 function saveRound() {
@@ -2000,6 +2046,8 @@ document.addEventListener('click', (e) => {
     }
     case 'save-round': saveRound(); break;
     case 'finish-round': finishRound(); break;
+    case 'share-whatsapp': shareRound('whatsapp'); break;
+    case 'share-other': shareRound('other'); break;
     case 'show-results': switchTab('analyse'); break;
     case 'finish-new': showCoursePicker(); break;
     case 'export': {

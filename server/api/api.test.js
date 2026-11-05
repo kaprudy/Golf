@@ -358,3 +358,41 @@ test('OpenStreetMap: grens per IP-adres, ook met steeds een nieuw anoniem accoun
     srv.close();
   }
 });
+
+test('uitslag delen: link, zelfde ronde dezelfde link, openbare pagina veilig', async () => {
+  const { body: { token } } = await call('POST', '/api/device', { body: { secret: 'd'.repeat(40) } });
+  const share = {
+    course: 'Hooge Graven (18 holes)', date: '2026-11-05', tee: 'Geel', holes: [1, 2, 3], pars: [4, 3, 5],
+    players: [
+      { name: 'Rudy <script>alert(1)</script>', scores: [5, 3, 4], stableford: 7 },
+      { name: 'Peter', scores: [4, 4, null], extra: 'weg' },
+      { name: 'Leeg', scores: [null, null, null] },
+    ],
+  };
+  assert.equal((await call('POST', '/api/shares', { body: { roundId: 'r1', share } })).status, 401);
+  const a = await call('POST', '/api/shares', { token, body: { roundId: 'r1', share } });
+  assert.equal(a.status, 201);
+  assert.match(a.body.path, /^\/u\/[A-Za-z0-9_-]{12}$/);
+  // Scores aangepast en opnieuw gedeeld: zelfde link
+  const b = await call('POST', '/api/shares', { token, body: { roundId: 'r1', share: { ...share, players: [{ name: 'Rudy', scores: [4, 3, 4] }] } } });
+  assert.deepEqual([b.status, b.body.id], [200, a.body.id]);
+  const other = await call('POST', '/api/shares', { token, body: { roundId: 'r2', share } });
+  assert.notEqual(other.body.id, a.body.id);
+
+  const page = await fetch(base + other.body.path);
+  assert.equal(page.status, 200);
+  assert.match(page.headers.get('content-type'), /text\/html/);
+  const html = await page.text();
+  assert.ok(!html.includes('<script>alert(1)</script>'));
+  assert.ok(html.includes('Rudy &lt;script&gt;alert(1)&lt;/script&gt; 12 (E)'));
+  assert.ok(html.includes('Peter 8 (+1)'));
+  assert.ok(!html.includes('Leeg'));
+  assert.match(html, /og:title" content="⛳ Hooge Graven \(18 holes\), 5 november 2026"/);
+  assert.match(html, /noindex/);
+  const updated = await (await fetch(base + a.body.path)).text();
+  assert.ok(updated.includes('Rudy 11 (-1)'));
+
+  assert.equal((await fetch(`${base}/u/bestaatniet123`)).status, 404);
+  assert.equal((await call('POST', '/api/shares', { token, body: { share: { holes: [1], players: [] } } })).status, 400);
+  assert.equal((await call('POST', '/api/shares', { token, body: { share: { holes: [0, 99], players: [{ name: 'x', scores: [1, 1] }] } } })).status, 400);
+});
