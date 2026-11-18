@@ -7,6 +7,7 @@ import { API_URL } from './config.js';
 import { createBuggy, buggySupported } from './buggy.js';
 import { createWakeLock } from './wakelock.js';
 import { RULES } from './rules.js';
+import { clubFor, DEFAULT_IRON7 } from './clubs.js';
 import { teeAt, toGreen, geoProgress, distanceM } from './gps.js';
 import { analysePlayer, handicapIndexFromDifferentials, scoreName } from './handicap.js';
 
@@ -223,6 +224,20 @@ const FAR_M = 1000;
 const farFromHole = (dist) => dist != null && dist > FAR_M;
 const farText = (dist) => `Je bent nog niet bij de baan (${(dist / 1000).toLocaleString('nl-NL', { maximumFractionDigits: 1 })} km). De afstand tot de hole verschijnt zodra je er bent.`;
 
+// Clubadvies per speler op de afstand tot de hole (uit hun 7-ijzer, zie Instellingen).
+const iron7Of = (p) => p.iron7 ?? DEFAULT_IRON7[teeFor(p).gender === 'd' ? 'd' : 'h'];
+function clubText(c, short = true) {
+  if (!c) return '';
+  return c.club === 'chip' ? 'chip' : `${short ? c.club : c.name}${c.reach ? '' : ' (niet in één slag)'}`;
+}
+function clubLine(dist) {
+  if (dist == null || farFromHole(dist) || !state.players.length) return '';
+  const advice = state.players.map((p) => ({ name: p.name, c: clubFor(dist, iron7Of(p)) })).filter((x) => x.c);
+  if (!advice.length) return '';
+  if (advice.length === 1) return `<p class="club-line">Club: <b>${esc(clubText(advice[0].c, false))}</b></p>`;
+  return `<p class="club-line">Club: ${advice.map((x) => `<b>${esc(clubText(x.c))}</b> ${esc(x.name)}`).join(' · ')}</p>`;
+}
+
 function renderGps() {
   renderBuggyDistance();
   const el = $('#gps-line');
@@ -238,7 +253,7 @@ function renderGps() {
   if (farFromHole(dist)) { el.innerHTML = `<p class="gps-msg">${farText(dist)}</p>`; return; }
   el.innerHTML = `
     ${dist != null
-      ? `<p class="gps-dist"><span class="gps-num">${dist}</span> m <span class="muted">tot de hole</span></p>`
+      ? `<p class="gps-dist"><span class="gps-num">${dist}</span> m <span class="muted">tot de hole</span></p>${clubLine(dist)}`
       : `<p class="gps-msg">${canMark() ? 'Leg de green van deze hole vast om de afstand te zien.' : 'Voor deze hole is de afstand nog niet bekend.'}</p>`}
     <p class="muted small gps-acc">GPS ±${Math.round(gps.pos.accuracy)} m${course().geo?.[h] ? ' · <b>eigen vastgelegde punten</b>' : ''}</p>
     ${gps.suggest ? `<button class="link" data-action="gps-go" data-hole="${gps.suggest}">Je staat op de tee van hole ${gps.suggest}: ga naar hole ${gps.suggest}</button>` : ''}
@@ -475,7 +490,7 @@ function renderBuggyMode() {
     const s = scoreOf(p.name, h);
     const { played, toPar } = playerTotals(p);
     return `<div class="bm-row${isLive(p.name, h) ? ' counting' : ''}">
-      <div class="bm-name"><b>${esc(p.name)}</b><small>${played ? `Totaal <strong>${signed(toPar)}</strong> · ${played} ${played === 1 ? 'hole' : 'holes'}` : 'Nog geen holes'}</small></div>
+      <div class="bm-name"><b>${esc(p.name)}</b><small><span class="bm-club" data-club-i="${i}" hidden></span>${played ? `Totaal <strong>${signed(toPar)}</strong> · ${played} ${played === 1 ? 'hole' : 'holes'}` : 'Nog geen holes'}</small></div>
       <button class="bm-btn" data-action="minus" data-i="${i}" aria-label="${esc(p.name)}: één slag minder">−</button>
       <span class="bm-score" aria-label="${s ?? 0} slagen">${s ?? '·'}</span>
       <button class="bm-btn plus" data-action="plus" data-i="${i}" aria-label="${esc(p.name)}: één slag meer">+</button>
@@ -509,6 +524,14 @@ function renderBuggyDistance() {
       : `<p class="bm-msg">Afstand voor hole ${h} is nog niet bekend.</p><p class="bm-sub">${acc}</p>`;
   }
   setHtml($('#bm-dist'), html);
+  // Clubadvies in de spelersrijen: alleen de tekst aanpassen, de rijen zelf blijven staan.
+  const dist = gps.pos && gpsOn() ? toGreen(gps.pos, geoOf(), h) : null;
+  document.querySelectorAll('#bm-players .bm-club').forEach((el) => {
+    const c = dist != null && !farFromHole(dist) ? clubFor(dist, iron7Of(state.players[Number(el.dataset.clubI)] ?? {})) : null;
+    const text = c ? clubText(c) : '';
+    if (el.textContent !== text) el.textContent = text;
+    el.hidden = !text;
+  });
   setHtml($('#bm-suggest'), gps.suggest && gps.suggest !== h
     ? `<button class="bm-chip" data-action="gps-go" data-hole="${gps.suggest}">Naar hole ${gps.suggest}</button>` : '');
 }
@@ -1798,6 +1821,7 @@ function renderSettings() {
     <input type="number" step="0.1" min="-10" max="54" value="${p.index ?? ''}" placeholder="HCP" data-player="${i}" data-field="index" aria-label="Handicap index">
     <select data-player="${i}" data-field="tee" aria-label="Tee">${tees.map((t) => `<option value="${t.id}" ${t.id === teeFor(p).id ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</select>
     <button data-action="remove-player" data-i="${i}" aria-label="Verwijderen">✕</button>
+    <label class="iron7 small">7-ijzer slaat ${esc(p.name)} <input type="number" inputmode="numeric" min="40" max="250" step="5" value="${p.iron7 ?? ''}" placeholder="${iron7Of({ ...p, iron7: null })}" data-player="${i}" data-field="iron7" aria-label="Afstand 7-ijzer van ${esc(p.name)} in meters"> m <span class="muted">(voor het clubadvies)</span></label>
     ${p.aliases?.length ? `<div class="aliases small muted">Herkent ook: ${p.aliases.map(esc).join(', ')}
       <button class="link inline" data-action="clear-aliases" data-i="${i}">wissen</button></div>` : ''}
   </div>`).join('');
@@ -2191,6 +2215,9 @@ document.addEventListener('change', (e) => {
       }
     } else if (t.dataset.field === 'index') {
       p.index = t.value === '' ? null : Math.min(54, Number(t.value));
+    } else if (t.dataset.field === 'iron7') {
+      const v = Number(t.value);
+      p.iron7 = t.value === '' || !(v > 0) ? null : Math.max(40, Math.min(250, Math.round(v)));
     } else if (course().id === state.courses[0].id) {
       p.tee = t.value;
     } else {

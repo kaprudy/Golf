@@ -508,3 +508,11 @@ button.whatsapp { display: inline-flex; align-items: center; justify-content: ce
 .rule[hidden] { display: none; }
 .marks { display: flex; gap: 3px; padding-top: 3px; flex: none; }
 .mark { width: 8px; height: 20px; border-radius: 3px; border: 1px solid var(--border-strong); }
+
+/* Clubadvies */
+.club-line { margin: 2px 0 0; font-size: .95rem; }
+.club-line b { color: var(--accent-ink); }
+.iron7 { grid-column: 1 / -1; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; color: var(--muted); }
+.iron7 input { width: 76px; min-height: 36px; }
+.bm-club { display: inline-block; margin-right: 6px; padding: 0 7px; border-radius: 8px; background: var(--bm-accent); color: var(--bm-on-accent); font-weight: 700; font-size: .85rem; }
+.bm-club[hidden] { display: none; }
