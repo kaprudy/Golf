@@ -516,3 +516,9 @@ button.whatsapp { display: inline-flex; align-items: center; justify-content: ce
 .iron7 input { width: 76px; min-height: 36px; }
 .bm-club { display: inline-block; margin-right: 6px; padding: 0 7px; border-radius: 8px; background: var(--bm-accent); color: var(--bm-on-accent); font-weight: 700; font-size: .85rem; }
 .bm-club[hidden] { display: none; }
+
+.bag { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-bottom: 4px; }
+.bag .muted { margin-right: 4px; }
+.bag-club { min-height: 34px; min-width: 38px; padding: 0 8px; border-radius: 10px; font-size: .8rem; font-weight: 600;
+  border: 1px solid var(--border); background: var(--bg); color: var(--muted); text-decoration: line-through; }
+.bag-club[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); text-decoration: none; }

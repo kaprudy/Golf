@@ -20,3 +20,18 @@ test('clubadvies op afstand, uit de 7-ijzer', () => {
   const list = carries(130).map((x) => x.carry);
   assert.deepEqual(list, [...list].sort((a, b) => b - a));
 });
+
+test('alleen clubs uit de tas', () => {
+  const bag = ['5H', '6i', '7i', '9i', 'PW', 'SW'];
+  assert.equal(clubFor(120, 130, bag).club, '7i'); // geen 8-ijzer en de 9 haalt het niet: de 7
+  assert.equal(clubFor(112, 130, bag).club, '9i');
+  assert.equal(clubFor(126, 130, bag).club, '7i');
+  assert.equal(clubFor(150, 130, bag).club, '5H'); // geen 5-ijzer
+  assert.equal(clubFor(60, 130, bag).club, 'SW');
+  assert.deepEqual([clubFor(220, 130, bag).club, clubFor(220, 130, bag).reach], ['5H', false]);
+  assert.equal(clubFor(120, 130, []), null);
+  // Standaardtas: geen 4-ijzer of lob wedge
+  assert.equal(clubFor(50, 130).club, 'SW');
+  assert.equal(clubFor(70, 130, ['LW', 'SW']).club, 'SW');
+  assert.equal(clubFor(55, 130, ['LW', 'SW']).club, 'LW');
+});

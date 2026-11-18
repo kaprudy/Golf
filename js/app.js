@@ -7,7 +7,7 @@ import { API_URL } from './config.js';
 import { createBuggy, buggySupported } from './buggy.js';
 import { createWakeLock } from './wakelock.js';
 import { RULES } from './rules.js';
-import { clubFor, DEFAULT_IRON7 } from './clubs.js';
+import { clubFor, DEFAULT_IRON7, DEFAULT_BAG, CLUBS } from './clubs.js';
 import { teeAt, toGreen, geoProgress, distanceM } from './gps.js';
 import { analysePlayer, handicapIndexFromDifferentials, scoreName } from './handicap.js';
 
@@ -226,13 +226,14 @@ const farText = (dist) => `Je bent nog niet bij de baan (${(dist / 1000).toLocal
 
 // Clubadvies per speler op de afstand tot de hole (uit hun 7-ijzer, zie Instellingen).
 const iron7Of = (p) => p.iron7 ?? DEFAULT_IRON7[teeFor(p).gender === 'd' ? 'd' : 'h'];
+const bagOf = (p) => p.bag ?? DEFAULT_BAG;
 function clubText(c, short = true) {
   if (!c) return '';
   return c.club === 'chip' ? 'chip' : `${short ? c.club : c.name}${c.reach ? '' : ' (niet in één slag)'}`;
 }
 function clubLine(dist) {
   if (dist == null || farFromHole(dist) || !state.players.length) return '';
-  const advice = state.players.map((p) => ({ name: p.name, c: clubFor(dist, iron7Of(p)) })).filter((x) => x.c);
+  const advice = state.players.map((p) => ({ name: p.name, c: clubFor(dist, iron7Of(p), bagOf(p)) })).filter((x) => x.c);
   if (!advice.length) return '';
   if (advice.length === 1) return `<p class="club-line">Club: <b>${esc(clubText(advice[0].c, false))}</b></p>`;
   return `<p class="club-line">Club: ${advice.map((x) => `<b>${esc(clubText(x.c))}</b> ${esc(x.name)}`).join(' · ')}</p>`;
@@ -527,7 +528,8 @@ function renderBuggyDistance() {
   // Clubadvies in de spelersrijen: alleen de tekst aanpassen, de rijen zelf blijven staan.
   const dist = gps.pos && gpsOn() ? toGreen(gps.pos, geoOf(), h) : null;
   document.querySelectorAll('#bm-players .bm-club').forEach((el) => {
-    const c = dist != null && !farFromHole(dist) ? clubFor(dist, iron7Of(state.players[Number(el.dataset.clubI)] ?? {})) : null;
+    const pl = state.players[Number(el.dataset.clubI)] ?? {};
+    const c = dist != null && !farFromHole(dist) ? clubFor(dist, iron7Of(pl), bagOf(pl)) : null;
     const text = c ? clubText(c) : '';
     if (el.textContent !== text) el.textContent = text;
     el.hidden = !text;
@@ -1822,6 +1824,7 @@ function renderSettings() {
     <select data-player="${i}" data-field="tee" aria-label="Tee">${tees.map((t) => `<option value="${t.id}" ${t.id === teeFor(p).id ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</select>
     <button data-action="remove-player" data-i="${i}" aria-label="Verwijderen">✕</button>
     <label class="iron7 small">7-ijzer slaat ${esc(p.name)} <input type="number" inputmode="numeric" min="40" max="250" step="5" value="${p.iron7 ?? ''}" placeholder="${iron7Of({ ...p, iron7: null })}" data-player="${i}" data-field="iron7" aria-label="Afstand 7-ijzer van ${esc(p.name)} in meters"> m <span class="muted">(voor het clubadvies)</span></label>
+    <div class="bag small" role="group" aria-label="Clubs in de tas van ${esc(p.name)}"><span class="muted">In de tas:</span>${CLUBS.map(([c, name]) => `<button class="bag-club" data-action="toggle-club" data-i="${i}" data-club="${c}" aria-pressed="${bagOf(p).includes(c)}" title="${name}">${c}</button>`).join('')}</div>
     ${p.aliases?.length ? `<div class="aliases small muted">Herkent ook: ${p.aliases.map(esc).join(', ')}
       <button class="link inline" data-action="clear-aliases" data-i="${i}">wissen</button></div>` : ''}
   </div>`).join('');
@@ -2101,6 +2104,16 @@ document.addEventListener('click', (e) => {
     case 'save-round': saveRound(); break;
     case 'finish-round': finishRound(); break;
     case 'show-rules': showRules(); break;
+    case 'toggle-club': {
+      const p = state.players[Number(btn.dataset.i)];
+      const bag = new Set(bagOf(p));
+      if (bag.has(btn.dataset.club)) bag.delete(btn.dataset.club); else bag.add(btn.dataset.club);
+      // In de volgorde van lang naar kort bewaren; de standaardtas niet apart opslaan
+      const list = CLUBS.map(([c]) => c).filter((c) => bag.has(c));
+      if (list.join() === DEFAULT_BAG.join()) delete p.bag; else p.bag = list;
+      save(); render();
+      break;
+    }
     case 'share-whatsapp': shareRound('whatsapp'); break;
     case 'share-other': shareRound('other'); break;
     case 'show-results': switchTab('analyse'); break;
