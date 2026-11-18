@@ -12,7 +12,8 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    # Vast op 24.04: Playwright kan (nog) geen Chromium installeren op ubuntu-latest (26.04).
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
